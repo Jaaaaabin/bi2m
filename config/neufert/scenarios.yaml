@@ -11,7 +11,7 @@
 
 K01:
   scenario: {class: IfcBuilding, where: [{measure: building.top_storey_rise, op: '>', param: H_HR}]}
-  note: a building whose highest storey holding spaces rises more than H_HR above the ground storey (bi2m-ea 2026-10-20, 1 corpus model at 25 m; roof and parapet levels do not count)
+  note: a building whose highest storey holding spaces rises more than H_HR above the ground storey (checked 2026-10-20, 1 corpus model at 25 m; roof and parapet levels do not count)
 K05: {scenario: null, reason: the plot boundary is a site input the models do not carry}
 K06: {scenario: null, reason: the zoning plan's limits are a project input}
 K10:
@@ -261,7 +261,7 @@ K145:
 K146: {scenario: null, reason: full air conditioning is a project fact}
 K147:
   related: [{via: parts, class: IfcMember}]
-  note: "the mullions (IfcMember) of the curtain walls, not their plates (bi2m-ea 2026-10-20: the plates were half of all context members)"
+  note: "the mullions (IfcMember) of the curtain walls, not their plates (checked 2026-10-20: the plates were half of all context members)"
   scenario: {class: IfcCurtainWall}
 K148:
   scenario: {class: IfcCovering, predefined: CEILING}

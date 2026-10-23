@@ -8,6 +8,8 @@ rules, ...) turn an IFC file into **intent records**: groups of elements plus
 the evidence for them. The viewer shows each record on the model so a person
 can accept or reject it.
 
+![The bi2m viewer: one column-alignment record highlighted on the example model](docs/screenshot.png)
+
 ```
 IFC file ──> src/extraction ──> src/recognition ──> JSON shard per model ──> viewer
 ```
@@ -122,4 +124,5 @@ ones. Four are verified; the rest are drafts awaiting human validation.
 ## License
 
 [MIT](LICENSE). The ported engine in `Interfaces/Frontend/core/engine/` keeps
-its own MIT notice.
+its own MIT notice. The example model `data/example_autcon.ifc` is licensed
+under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

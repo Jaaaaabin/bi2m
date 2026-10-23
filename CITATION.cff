@@ -1,0 +1,67 @@
+cff-version: 1.2.0
+message: "If you use bi2m, please cite it as below."
+title: "bi2m: design-intent recognition for IFC building models"
+type: software
+authors:
+  - family-names: Wu
+    given-names: Jiabin
+    orcid: "https://orcid.org/0009-0001-4861-826X"
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/Jaaaaabin/bi2m"
+keywords:
+  - IFC
+  - BIM
+  - design intent
+  - ifcopenshell
+references:
+  - type: article
+    title: "Enhancing IFC models with reference grids by re-engineering building component placement logic"
+    authors:
+      - family-names: Wu
+        given-names: Jiabin
+      - family-names: Esser
+        given-names: Sebastian
+      - family-names: Nousias
+        given-names: Stavros
+      - family-names: Sacks
+        given-names: Rafael
+      - family-names: Borrmann
+        given-names: André
+    journal: "Automation in Construction"
+    volume: 178
+    start: 106351
+    year: 2025
+    doi: "10.1016/j.autcon.2025.106351"
+  - type: conference-paper
+    title: "Enriching IFC Models with Spatial Design Logic and Parametrics to Improve Design Adaptability – The Case of Alignment Grids"
+    authors:
+      - family-names: Wu
+        given-names: Jiabin
+      - family-names: Esser
+        given-names: Sebastian
+      - family-names: Nousias
+        given-names: Stavros
+      - family-names: Borrmann
+        given-names: André
+    collection-title: "Advances in Information Technology in Civil and Building Engineering (Lecture Notes in Civil Engineering)"
+    start: 91
+    end: 105
+    year: 2025
+    doi: "10.1007/978-3-031-84208-5_8"
+  - type: conference-paper
+    title: "The Beginning, Not the End: Revisiting Automated Compliance Checking for BIM-Based Design Adaptation"
+    authors:
+      - family-names: Wu
+        given-names: Jiabin
+      - family-names: Fuchs
+        given-names: Stefan
+      - family-names: Bloch
+        given-names: Tanya
+      - family-names: Borrmann
+        given-names: André
+    collection-title: "Computing in Civil Engineering 2025"
+    start: 659
+    end: 669
+    year: 2026
+    doi: "10.1061/9780784486436.070"

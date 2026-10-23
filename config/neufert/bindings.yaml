@@ -23,7 +23,7 @@ K01:
     - measure: building.top_storey_rise
       op: '>'
       param: H_HR
-  scenario_note: a building whose highest storey holding spaces rises more than H_HR above the ground storey (bi2m-ea 2026-10-20,
+  scenario_note: a building whose highest storey holding spaces rises more than H_HR above the ground storey (checked 2026-10-20,
     1 corpus model at 25 m; roof and parapet levels do not count)
 
 K05:
@@ -2515,7 +2515,7 @@ K147:
     related:
     - via: parts
       class: IfcMember
-  scenario_note: 'the mullions (IfcMember) of the curtain walls, not their plates (bi2m-ea 2026-10-20: the plates were half
+  scenario_note: 'the mullions (IfcMember) of the curtain walls, not their plates (checked 2026-10-20: the plates were half
     of all context members)'
 
 K148:

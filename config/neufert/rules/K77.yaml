@@ -1,0 +1,4 @@
+# config/rules/K77.yaml
+rule: K77
+params:
+  F_BALC: {op: "in", value: [0.25, 0.5], default: 0.25, severity: "REPORT", desc: "Share of balcony / loggia / terrace area counted"}

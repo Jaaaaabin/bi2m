@@ -1,0 +1,4 @@
+# config/rules/K24.yaml
+rule: K24
+params:
+  OP_BANNED: {op: "in", value: ["SLIDING_TO_LEFT", "SLIDING_TO_RIGHT", "DOUBLE_DOOR_SLIDING", "REVOLVING"], severity: "FAIL", desc: "Operation types not allowed"}

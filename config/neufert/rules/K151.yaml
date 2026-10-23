@@ -1,0 +1,5 @@
+# config/rules/K151.yaml
+rule: K151
+params:
+  N_ONE:   {op: "<=", value: 25, unit: "storeys", severity: "INFO", desc: "Storeys served by one lift group"}
+  N_SPLIT: {op: ">", value: 6, unit: "lifts", severity: "WARN", desc: "Lifts above which two groups are used"}

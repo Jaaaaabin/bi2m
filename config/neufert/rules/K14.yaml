@@ -1,0 +1,5 @@
+# config/rules/K14.yaml
+rule: K14
+params:
+  D_MIN:  {op: ">=", value: 1.9, unit: "m", severity: "WARN", desc: "Spiral stair diameter"}
+  W_WALK: {op: ">=", value: 0.8, unit: "m", severity: "WARN", desc: "Usable walking width"}

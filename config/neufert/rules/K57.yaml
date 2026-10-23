@@ -1,0 +1,4 @@
+# config/rules/K57.yaml
+rule: K57
+params:
+  U:    {op: "<=", value: null, unit: "W/m²K", source: "project_input(\"u_target_external_wall\")", severity: "WARN", desc: "Thermal transmittance"}

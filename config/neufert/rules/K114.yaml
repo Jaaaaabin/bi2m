@@ -1,0 +1,6 @@
+# config/rules/K114.yaml
+rule: K114
+params:
+  DESK:      {op: ">=", value: [1.2, 0.8], unit: "m", severity: "WARN", desc: "Desktop size"}
+  DESK_SPEC: {op: ">=", value: [2.0, 0.8], unit: "m", severity: "WARN", desc: "Desktop for specialist work"}
+  A_MOVE:    {op: ">=", value: 1.5, unit: "m²", severity: "WARN", desc: "Free movement area per workstation"}

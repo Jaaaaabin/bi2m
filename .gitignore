@@ -1,0 +1,81 @@
+# === Machine-specific settings (see .env.example) ===
+/.env
+
+# === Python / uv ===
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# === VIBE ===
+.agents
+.claude
+skills-lock.json
+
+# === Local research workspace: literature notes, agent findings and
+# downloaded papers/patents (personal working copies, not redistributed).
+# Anchored to repo root. ===
+/research/
+
+# === OS / IDE ===
+.DS_Store
+Thumbs.db
+.vscode/
+*.code-workspace
+
+# === Windows shell-redirection artifact (some agent tooling creates a literal
+# 'nul' file instead of redirecting to the NUL device) ===
+nul
+**/nul
+
+# === Extraction/pipeline outputs ===
+data/extracted/
+
+# === Remotely-uploaded IFC files (vite.config.js's /api/upload-ifc) - each
+# upload gets its own data/uploads/<uploadId>/ folder (raw .ifc + its
+# extraction cache), isolated from other uploads and from the data/*.ifc
+# dev fixtures below. Same confidentiality/large-file reasoning as the "Raw
+# IFC test data" rule right after this one. ===
+data/uploads/
+
+# === Raw IFC test data (large, and filenames match real project reference
+# numbers - see src/extraction/project_calibration.py). Mirrors the existing
+# *.ifc rule in Interfaces/Frontend/data_vis_test/.gitignore. ===
+data/*.ifc
+data/*.rvt
+
+# No models in git, no exceptions (decided 2026-09-20). test_0/test_1 were
+# committed as "small fixtures" (14.5MB together) and un-tracked the same day
+# (those 2026-09-20 names are pre-rename: data/test_0.ifc is now test_3.ifc,
+# test_1.ifc still is test_1.ifc);
+# they stay in history unless it is rewritten. Fresh clones get models via
+# the example-models route or a manual copy into data/.
+
+# === Reference-only external clone (NOT src/tempo/, which is this project's
+# own deferred GA code and IS tracked - this is a full copy of the separate
+# upstream NepomukWolf/vscode-ifc-dev project, kept around only as porting
+# reference for Interfaces/Frontend/core/engine/ (see engine/README.md for
+# the MIT attribution). 84 files / 5.5MB, including its own package-lock.json,
+# CI workflows, docs site, and two .ifc fixture files - nothing outside this
+# directory references it, so none of it needs to live in this repo's
+# history. Anchored to repo root (leading /) so it does NOT match
+# src/tempo/. ===
+/tempo/
+
+# Derived frontend artefacts: web-ifc engine files copied
+# from node_modules on every dev start/build, and e2e harness output.
+Interfaces/Frontend/core/public/wasm/
+Interfaces/Frontend/core/scripts/e2e/out/
+
+# Neufert source plans and validation pack (local working copies, not part of the repo history).
+/neufert_logic.md
+/neufert_ifc_requirement_logic.md
+/neufert_validation_pack.json
+
+# === Maintainer notes (local working copies, untracked 2026-10-23): the long
+# engineering log and plans (DEV, DETECTORS, PLAN), MODALITY, SIG, RL. The
+# public documentation is README.md, CONTRIBUTING.md and docs/. ===
+/notes/
+# Design studies (local working copies).
+/docs/superpowers/

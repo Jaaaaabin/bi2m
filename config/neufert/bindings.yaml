@@ -1,0 +1,2654 @@
+# bi2m bindings for the Neufert K-rules (see docs/detectors.md "The 13 Neufert categories").
+# One entry per KID. Thresholds live in rules/<KID>.yaml (verbatim from neufert_logic.md); this file says
+# which Topic and family run the rule, what it selects, which measures it reads and against which params.
+# status: bound | partial: <what is skipped> (info only) | deferred: <reason>. Generated 2026-10-18 from the
+# cards, then hand-maintained. `scenario` (2026-10-20): the selector that finds the situation the card addresses
+# (scenarios.yaml, else applies, else select); `scenario_reason` when there is none.
+
+K01:
+  title: High-rise buildings
+  topic: site
+  family: footprint
+  rule_type: MUST
+  priority: ★★★
+  level: site_building
+  status: 'deferred: family ''footprint'' not built'
+  scope: storey
+  needs:
+  - family:footprint
+  applies_text: Buildings for long-term human occupation. Height is measured on the facade side where the ground is lowest.
+  scenario:
+    class: IfcBuilding
+    where:
+    - measure: building.top_storey_rise
+      op: '>'
+      param: H_HR
+  scenario_note: a building whose highest storey holding spaces rises more than H_HR above the ground storey (bi2m-ea 2026-10-20,
+    1 corpus model at 25 m; roof and parapet levels do not count)
+
+K05:
+  title: Setback areas (Abstandsfläche)
+  topic: site
+  family: footprint
+  rule_type: MUST
+  priority: ★★★
+  level: site_building
+  status: 'deferred: project input (zoning_area_and_building_class)'
+  scope: storey
+  needs:
+  - family:footprint
+  - input:project
+  - input:zoning_area_and_building_class
+  applies_text: Every external wall facing a plot boundary. The state LBO can change factors and exceptions.
+  scenario: null
+  scenario_reason: the plot boundary is a site input the models do not carry
+
+K06:
+  title: Plot coverage ratio and floor-area ratio
+  topic: site
+  family: aggregate
+  rule_type: CALC
+  priority: ★★
+  level: site_building
+  status: 'deferred: project input (full_storey_definition, grz_max, gfz_max)'
+  scope: storey
+  needs:
+  - input:project
+  - input:full_storey_definition
+  - input:grz_max
+  - input:gfz_max
+  applies_text: Only when the zoning plan sets limits. Otherwise report GRZ and GFZ.
+  scenario: null
+  scenario_reason: the zoning plan's limits are a project input
+
+K07:
+  title: Step-length (comfort) formula
+  topic: stairs
+  family: measure
+  rule_type: SHOULD
+  priority: ★★★
+  level: storey
+  status: bound
+  scope: storey
+  select:
+    class: IfcStairFlight
+  derived:
+    flight.step_length: 2*flight.riser + flight.tread
+  checks:
+  - measure: flight.step_length
+    param: STEP_MIN
+  - measure: flight.step_length
+    param: STEP_MAX
+  applies_text: All stair flights.
+  scenario:
+    class: IfcStairFlight
+    related:
+    - via: storey
+
+K08:
+  title: Optimum pitch and riser/tread ratio
+  topic: stairs
+  family: measure
+  rule_type: GUIDE
+  priority: ★★
+  level: storey
+  status: bound
+  scope: storey
+  select:
+    class: IfcStairFlight
+  checks:
+  - measure: flight.pitch_deg
+    param: PITCH_OPT
+  - measure: flight.riser
+    param: R_OPT
+  - measure: flight.tread
+    param: T_OPT
+  applies_text: All stair flights; comfort optimum.
+  scenario:
+    class: IfcStairFlight
+    related:
+    - via: storey
+
+K09:
+  title: Number of steps per run
+  topic: stairs
+  family: measure
+  rule_type: SHOULD
+  priority: ★★★
+  level: storey
+  status: 'widened: every stair flight is judged, the legally-essential gate is not evaluated (steps counted as risers)'
+  scope: storey
+  select:
+    class: IfcStairFlight
+  checks:
+  - measure: flight.risers
+    param: N_MIN
+  - measure: flight.risers
+    param: N_MAX
+  applies_text: Legally essential stairs.
+  scenario:
+    class: IfcStairFlight
+    related:
+    - via: storey
+
+K10:
+  title: Landings
+  topic: stairs
+  family: provision
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'deferred: essential-stair fact and landing geometry are not available'
+  scope: storey
+  needs:
+  - fact:essential_stairs
+  - geom:element_geometry
+  - geom:flight_landing
+  applies_text: Legally essential stairs.
+  scenario:
+    class: IfcStair
+    where:
+    - measure: stair.core_storeys
+      op: '>='
+      value: 2
+    related:
+    - via: parts
+      class: IfcSlab
+    - via: served_storeys
+  scenario_note: stairs connecting storeys (the landing rule applies to every legally essential stair)
+
+K11:
+  title: Essential stair width and riser/tread ratio
+  topic: stairs
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'widened: every flight is judged against W_ESS, R_MAX and T_MIN, the legally-essential gate is not evaluated and
+    a non-essential stair may legitimately be narrower (K19), so fail becomes info; W_HR (residential high-rise) is not evaluated'
+  scope: storey
+  select:
+    class: IfcStairFlight
+  checks:
+  - measure: flight.width
+    param: W_ESS
+  - measure: flight.riser
+    param: R_MAX
+  - measure: flight.tread
+    param: T_MIN
+  applies_text: Legally essential stairs, except in residential buildings with ≤ 2 flats (K12).
+  scenario:
+    class: IfcStairFlight
+    related:
+    - via: storey
+
+K12:
+  title: Stairs for up to two flats
+  topic: stairs
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'deferred: the dwelling count per building needs a selector over the inferred units (the flight width exists)'
+  scope: storey
+  needs:
+  - select:dwelling_units
+  applies_text: Residential buildings with no more than two flats.
+  scenario:
+    class: IfcStair
+    where:
+    - measure: element.building_dwellings
+      op: '>='
+      value: 1
+    - measure: element.building_dwellings
+      op: <=
+      value: 2
+    related:
+    - via: parts
+      class: IfcStairFlight
+    - via: served_storeys
+      span: own
+  scenario_note: stairs of a building with one or two inferred dwellings (the card's "no more than two flats")
+
+K13:
+  title: Outside stairs and office stairs
+  topic: stairs
+  family: measure
+  rule_type: GUIDE
+  priority: ★
+  level: storey
+  status: bound
+  scope: storey
+  select:
+    class: IfcStair
+    prop:
+      IsExternal: true
+    expand: IfcStairFlight
+  checks:
+  - measure: flight.riser
+    param: R_LO–R_HI
+  - measure: flight.tread
+    param: T_LO–T_HI
+  applies_text: Outside stairs. Office and emergency stairs have no numeric value here.
+  scenario:
+    class: IfcStair
+    prop:
+      IsExternal: true
+    expand: IfcStairFlight
+
+K14:
+  title: Spiral staircases
+  topic: stairs
+  family: measure
+  rule_type: SHOULD
+  priority: ★★
+  level: storey
+  status: 'deferred: the sole stair inside a dwelling needs a selector over the inferred units and the stair-in-room relation'
+  scope: storey
+  needs:
+  - select:dwelling_units
+  - relation:contains
+  applies_text: Spiral stairs that are the sole connecting stair inside a house.
+  scenario:
+    class: IfcStair
+    predefined: SPIRAL_STAIR
+    where:
+    - measure: stair.turn_deg
+      op: '>='
+      value: 270
+    related:
+    - via: parts
+      class: IfcStairFlight
+    - via: served_storeys
+      span: own
+  scenario_note: a SPIRAL_STAIR whose walking line turns 270 degrees or more (Revit types any stair with an arc as SPIRAL_STAIR;
+    38 of 184 corpus stairs turn that far)
+
+K15:
+  title: Railing heights for galleries, mezzanines, balconies
+  topic: stairs
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'widened: every IfcRailing is judged, the drop is approximated by the rise of the railing''s storey above the ground
+    storey (DROP_HI splits H_LOW from H_HIGH on it), the 1 m compulsory-railing drop and the workplace case are not evaluated,
+    and a declared Height may be the family''s imperial default (templateValue / imperialDefault flag it)'
+  scope: storey
+  select:
+    class: IfcRailing
+  checks:
+  - measure: railing.height
+    param: H_LOW
+    when:
+      measure: element.storey_rise
+      param: DROP_HI
+      side: below
+  - measure: railing.height
+    param: H_HIGH
+    when:
+      measure: element.storey_rise
+      param: DROP_HI
+      side: above
+  applies_text: Galleries, mezzanines, balconies, theatre circles and any edge with a drop of at least DROP_REQ.
+  scenario:
+    class: IfcRailing
+    related:
+    - via: storey
+
+K16:
+  title: Barrier-free ramps
+  topic: stairs
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'deferred: no barrier-free gate; Pset_RampFlightCommon carries no Slope in the template, landings and handrails
+    are geometry'
+  scope: storey
+  needs:
+  - fact:public_building
+  - geom:element_geometry
+  - geom:flight_landing
+  - geom:railing_sides
+  applies_text: Barrier-free ramps.
+  scenario:
+    class: IfcRamp
+    related:
+    - via: parts
+      class: IfcRampFlight
+
+K17:
+  title: Handrails on both sides (public buildings)
+  topic: stairs
+  family: provision
+  rule_type: MUST
+  priority: ★
+  level: storey
+  status: 'deferred: handrails per flight side need railing geometry'
+  scope: storey
+  needs:
+  - geom:element_geometry
+  - geom:railing_sides
+  applies_text: Stairs in publicly accessible buildings (MBO §50).
+  scenario:
+    class: IfcStair
+    expand: IfcRailing
+  scenario_note: the railings of stairs (handrails per flight side); the public-building scope is not known
+
+K18:
+  title: Lift waiting area
+  topic: stairs
+  family: measure
+  rule_type: SHOULD
+  priority: ★★
+  level: storey
+  status: 'deferred: lifts are rare (3 of 40 local models) and the waiting-area geometry is not built'
+  scope: storey
+  needs:
+  - fact:lifts
+  - geom:element_geometry
+  applies_text: Lift waiting areas.
+  scenario:
+  - class: IfcTransportElement
+    use: lift
+  - class: IfcSpace
+    use: lift
+    exclude_use: lobby|horizontal_circulation
+  scenario_note: lift cars and shaft spaces; a lift-named lobby or corridor is not the lift
+
+K19:
+  title: Non-essential stairs
+  topic: stairs
+  family: measure
+  rule_type: MUST
+  priority: ★
+  level: storey
+  status: bound
+  scope: storey
+  select:
+    class: IfcStairFlight
+  checks:
+  - measure: flight.width
+    param: W_NE
+  - measure: flight.riser
+    param: R_NE
+  - measure: flight.tread
+    param: T_NE
+  notes: 'every flight is judged although the card addresses non-essential stairs only: an essential stair is held to stricter
+    values (K11: 1.00 m, 0.17 / 0.28), so a flight that falls short of W_NE, R_NE or T_NE fails whichever class its stair
+    is; the population is wider, the fails are sound'
+  applies_text: Stairs that are not legally essential.
+  scenario:
+    class: IfcStairFlight
+    related:
+    - via: storey
+
+K20:
+  title: Landing width ≥ stair width
+  topic: stairs
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'deferred: W_LAND is an expression param (the adjoining flight''s width) and the landing''s own width is geometry
+    not built; the flight width exists'
+  scope: storey
+  needs:
+  - op:expr
+  - geom:flight_landing
+  applies_text: All stairs with landings.
+  scenario:
+    class: IfcStair
+    expand: IfcSlab
+  scenario_note: stairs with landing slabs among their parts
+
+K22:
+  title: Usual door widths in housing
+  topic: doors
+  family: measure
+  rule_type: GUIDE
+  priority: ★★
+  level: element
+  status: 'deferred: door -> reached rooms selector (door role) not built'
+  scope: storey
+  needs:
+  - select:door_rooms
+  applies_text: Doors in housing.
+  scenario:
+    class: IfcDoor
+    role: unit.entrance_doors
+    related:
+    - via: host_wall
+  scenario_note: the doors of the inferred dwellings (their entrance doors; room doors inside a flat have no role yet)
+
+K23:
+  title: Clear height of internal doors
+  topic: doors
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: 'partial: the clear passage height is read where a door declares it (Durchgangshöhe, Architekturlichte Höhe, ClearHeight:
+    708 doors of 26 corpus models), else the opening''s OverallHeight stands in, visible in the sources; a pass on an overall
+    height is not a measured clear height'
+  scope: storey
+  select:
+    class: IfcDoor
+    prop:
+      IsExternal: false
+  notes: a door with no IsExternal anywhere is reported as nodata on the gate (2026-10-20), not skipped
+  checks:
+  - measure: door.clear_height
+    param: H_DOOR
+  - measure: door.clear_height
+    param: H_BETTER
+  applies_text: Internal doors.
+  scenario:
+    class: IfcDoor
+    prop:
+      IsExternal: false
+    related:
+    - via: host_wall
+
+K24:
+  title: Door types at emergency exits
+  topic: doors
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: 'widened: emergency exits approximated by external doors (IsExternal); FireExit is tagged in 3 of 370 corpus models'
+  scope: storey
+  select:
+    class: IfcDoor
+    prop:
+      IsExternal: true
+  checks:
+  - measure: door.operation
+    param: OP_BANNED
+    negate: true
+  applies_text: Emergency exits.
+  scenario:
+    class: IfcDoor
+    prop:
+      IsExternal: true
+    related:
+    - via: host_wall
+
+K25:
+  title: Flat front doors accessed by lift
+  topic: doors
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: 'widened: flat entrance doors are the inferred units'' entrance doors, storeys served by a lift come from the lift
+    stacks (facts.vertical_cores), and OverallWidth / OverallHeight are the opening, not the clear passage, so fail and warn
+    become info'
+  scope: storey
+  select:
+    class: IfcDoor
+    role: unit.entrance_doors
+    where:
+    - measure: element.storey_lift_cores
+      op: '>'
+      value: 0
+  checks:
+  - measure: door.clear_width
+    param: W_LIFT
+  - measure: door.clear_height
+    param: H_LIFT
+  applies_text: Flat front doors reached by lift (MBO).
+  scenario:
+    class: IfcDoor
+    role: unit.entrance_doors
+    where:
+    - measure: element.storey_lift_cores
+      op: '>'
+      value: 0
+    related:
+    - via: storey
+
+K26:
+  title: Clear width of barrier-free doors
+  topic: accessibility
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: element
+  status: 'deferred: publicly accessible / barrier-free building flag is not available on the corpus'
+  scope: storey
+  needs:
+  - fact:public_building
+  applies_text: Barrier-free / publicly accessible buildings (MBO §50).
+  scenario: null
+  scenario_reason: barrier-free / publicly accessible is a building scope the models do not state
+
+K27:
+  title: Step-free access and public-building scope
+  topic: accessibility
+  family: route
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'deferred: step-free reachability needs lifts and ramps (rare on the corpus) and the public-building scope'
+  scope: storey
+  needs:
+  - fact:lifts
+  - fact:public_building
+  applies_text: Barrier-free buildings and the public parts of publicly accessible buildings.
+  scenario: null
+  scenario_reason: the public parts of a publicly accessible building are a scope the models do not state
+
+K28:
+  title: Wheelchair movement space
+  topic: accessibility
+  family: measure
+  rule_type: SHOULD
+  priority: ★★★
+  level: space
+  status: 'deferred: free-square test needs furniture footprints; the plan''s fits_square is a disc test'
+  scope: storey
+  needs:
+  - geom:furniture_footprints
+  - geom:free_square
+  applies_text: Every room in barrier-free buildings; corridors in publicly accessible buildings.
+  scenario: null
+  scenario_reason: barrier-free is a building scope the models do not state
+
+K29:
+  title: Barrier-free toilets
+  topic: accessibility
+  family: provision
+  rule_type: MUST
+  priority: ★★
+  level: space
+  status: 'deferred: barrier-free public building flag and door swing are not available'
+  scope: storey
+  needs:
+  - fact:public_building
+  - geom:door_swing
+  applies_text: Barrier-free public buildings.
+  scenario:
+    class: IfcSpace
+    use: wc|bathroom
+    prop:
+      HandicapAccessible: true
+  scenario_note: sanitary rooms declared accessible (Pset_SpaceCommon.HandicapAccessible)
+
+K30:
+  title: Barrier-free lifts
+  topic: accessibility
+  family: provision
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'deferred: lifts are rare (3 of 40 local models); barrier-free lift properties unverified'
+  scope: storey
+  needs:
+  - fact:lifts
+  - fact:public_building
+  applies_text: Lifts in barrier-free buildings.
+  scenario:
+  - class: IfcTransportElement
+    use: lift
+  - class: IfcSpace
+    use: lift
+    exclude_use: lobby|horizontal_circulation
+  - class: IfcDoor
+    use: lift
+  scenario_note: lifts by any of the three sources; the barrier-free scope is not known
+
+K32:
+  title: Movement area beside stairs
+  topic: accessibility
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: storey
+  status: 'deferred: movement area beside stairs is geometry not built'
+  scope: storey
+  needs:
+  - geom:element_geometry
+  applies_text: Barrier-free public buildings.
+  scenario: null
+  scenario_reason: barrier-free public building is a scope the models do not state
+
+K33:
+  title: Wheelchair passing places in long corridors
+  topic: accessibility
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: space
+  status: 'deferred: corridor medial-axis length and passing-place square are geometry not built'
+  scope: storey
+  needs:
+  - geom:free_square
+  - geom:element_geometry
+  applies_text: Corridors and routes in barrier-free buildings.
+  scenario: null
+  scenario_reason: barrier-free building is a scope the models do not state
+
+K34:
+  title: Accessible floor in multi-flat buildings
+  topic: accessibility
+  family: route
+  rule_type: MUST
+  priority: ★★
+  level: zone
+  status: 'deferred: needs a step-free route (lifts) and door and turning-space checks per dwelling (the dwellings exist)'
+  scope: storey
+  needs:
+  - fact:lifts
+  - geom:free_square
+  applies_text: Buildings with more than two flats.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    where:
+    - measure: element.building_dwellings
+      op: '>'
+      value: 2
+    related:
+    - via: unit_doors
+  scenario_note: the rooms of inferred dwellings in a building with more than two of them (the card's N_FLATS logic)
+
+K35:
+  title: Barrier-free bathrooms in dwellings
+  topic: accessibility
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: space
+  status: 'deferred: the barrier-free dwelling scope is a project input; the fixture clearances are geometry not built'
+  scope: storey
+  needs:
+  - input:project
+  - geom:free_square
+  applies_text: Bathrooms in barrier-free dwellings.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    use: bathroom
+    related:
+    - via: doors
+    - via: furniture
+  scenario_note: bathrooms inside inferred dwellings; whether the dwelling is barrier-free is not known
+
+K36:
+  title: Living room in wheelchair users' dwellings
+  topic: accessibility
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: space
+  status: 'deferred: persons per dwelling are not available (OccupancyNumber on 1 of 370 models; beds would be a proxy)'
+  scope: storey
+  needs:
+  - fact:persons
+  applies_text: Living rooms in dwellings for wheelchair users.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    use: living
+    related:
+    - via: windows
+    - via: furniture
+
+K37:
+  title: Movement area widths in barrier-free dwellings
+  topic: accessibility
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: space
+  status: 'deferred: movement area widths are geometry not built'
+  scope: storey
+  needs:
+  - geom:element_geometry
+  applies_text: Barrier-free dwellings.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: furniture
+      kind: bed|seat|desk
+    - via: unit_doors
+  scenario_note: the rooms of inferred dwellings; whether the dwelling is barrier-free is not known
+
+K38:
+  title: Escape distance
+  topic: escape
+  family: route
+  rule_type: MUST
+  priority: ★★★
+  level: zone
+  status: bound
+  scope: storey
+  select:
+    class: IfcSpace
+    use: living|bedroom|dining|office|meeting|dwelling|cellar
+  targets:
+    fact: exit_seeds
+    use: vertical_core
+  checks:
+  - param: D_ESC
+  notes: inhabited rooms = the habitable concepts plus cellar rooms; targets = rooms an external door touches plus rooms named
+    as vertical circulation, a superset of the legally essential stairs; the distance is a lower bound, so a fail is sound
+    and a pass optimistic
+  applies_text: Inhabited rooms and basements.
+  scenario:
+    class: IfcSpace
+    use: living|bedroom|dining|office|meeting|dwelling|cellar
+
+K39:
+  title: Two independent escape routes
+  topic: escape
+  family: route
+  rule_type: MUST
+  priority: ★★★
+  level: zone
+  status: 'deferred: two INDEPENDENT routes need disjoint-path search and the essential-stair fact'
+  scope: storey
+  needs:
+  - metric:independent_routes
+  - fact:essential_stairs
+  applies_text: Units with at least one occupied room, on every storey.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: unit_doors
+
+K40:
+  title: Escape windows
+  topic: escape
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: 'partial: only the sill height is judged; the clear opening size needs lining data'
+  scope: storey
+  select:
+    class: IfcWindow
+    prop:
+      FireExit: true
+  checks:
+  - measure: window.sill_height
+    param: SILL_ESC
+  applies_text: Windows used as an escape route.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    use: living|bedroom
+    related:
+    - via: windows
+  scenario_note: the habitable rooms of dwellings, which need an escape window; the rule itself judges the FireExit-tagged
+    windows
+
+K41:
+  title: Exit width by number of people
+  topic: escape
+  family: aggregate
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: 'deferred: occupancy per assembly space (OccupancyNumber on 1 of 370 models) and the exit doors of a space are not
+    available'
+  scope: storey
+  needs:
+  - fact:persons
+  - select:door_rooms
+  applies_text: Catering and assembly spaces.
+  scenario:
+    class: IfcSpace
+    use: assembly_hall|canteen
+    exclude_role: unit.rooms
+    related:
+    - via: doors
+  scenario_note: assembly and catering rooms outside dwellings (a flat's dining room is not an assembly space)
+
+K42:
+  title: Fire compartments and fire compartment walls
+  topic: escape
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: zone
+  status: 'deferred: fire_compartments in egress_fire covers the door side; wall ratings absent (see fire_compartments.py)'
+  scope: storey
+  needs:
+  - fact:wall_fire_rating
+  applies_text: Larger buildings under the MBO.
+  scenario:
+  - class: IfcWall
+    has_prop:
+    - FireRating
+  - class: IfcZone
+    use: fire_compartment
+  scenario_note: walls declaring a fire rating (14 corpus models) or zones named as fire compartments
+
+K43:
+  title: Main stairs in a continuous stairwell
+  topic: escape
+  family: adjacency
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'deferred: a stairwell enclosed by walls is a boundary relation, not a door relation'
+  scope: storey
+  needs:
+  - relation:boundary
+  - fact:essential_stairs
+  applies_text: Main / legally essential staircases.
+  scenario:
+    class: IfcSpace
+    use: vertical_core
+    exclude_use: horizontal_circulation
+    related:
+    - via: doors
+    - via: neighbours
+  scenario_note: stairwell rooms (the enclosed staircase; a "stair hall" that is also a corridor is not one)
+
+K44:
+  title: F 30 side walls of escape corridors
+  topic: escape
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: 'deferred: escape corridors are not identified'
+  scope: storey
+  needs:
+  - fact:escape_corridors
+  applies_text: Side walls of escape corridors.
+  scenario:
+    class: IfcSpace
+    use: horizontal_circulation
+    related:
+    - via: doors
+  scenario_note: corridors; which of them are escape corridors is not known
+
+K45:
+  title: Escape corridors in high-rise buildings
+  topic: escape
+  family: route
+  rule_type: MUST
+  priority: ★★★
+  level: zone
+  status: 'deferred: escape corridors in high-rise buildings: corridor identification, is_highrise, corridor length and dead
+    ends'
+  scope: storey
+  needs:
+  - fact:escape_corridors
+  - fact:is_highrise
+  - metric:corridor_length
+  applies_text: Escape corridors in high-rise buildings.
+  scenario:
+    class: IfcBuilding
+    where:
+    - measure: building.top_storey_rise
+      op: '>'
+      value: 22
+  scenario_note: the high-rise definition (top occupied storey above 22 m, K01's H_HR)
+
+K46:
+  title: Storey-to-storey fire protection of high-rise façades
+  topic: escape
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: 'deferred: facade fire protection needs is_highrise and spandrel geometry'
+  scope: storey
+  needs:
+  - fact:is_highrise
+  - geom:element_geometry
+  applies_text: High-rise facades.
+  scenario:
+    class: IfcBuilding
+    where:
+    - measure: building.top_storey_rise
+      op: '>'
+      value: 22
+
+K47:
+  title: Subdividing long corridors; stairway closures
+  topic: escape
+  family: adjacency
+  rule_type: MUST
+  priority: ★★
+  level: zone
+  status: 'deferred: essential escape corridors and their section lengths are not identified'
+  scope: storey
+  needs:
+  - fact:escape_corridors
+  - metric:corridor_length
+  applies_text: Legally essential escape corridors.
+  scenario:
+    class: IfcSpace
+    use: horizontal_circulation
+    related:
+    - via: doors
+  scenario_note: corridors; which of them are legally essential is not known
+
+K48:
+  title: Windows in workrooms
+  topic: daylight
+  family: aggregate
+  rule_type: MUST
+  priority: ★★★
+  level: space
+  status: 'deferred: window widths per bounding external wall and wall lengths per room are wall geometry not built'
+  scope: storey
+  needs:
+  - geom:wall_axis
+  - metric:windows_per_wall
+  applies_text: Workrooms (workplace guidelines).
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+    exclude_role: unit.rooms
+    related:
+    - via: windows
+  scenario_note: office rooms outside dwellings (a home office is not a workplace of an office building)
+
+K52:
+  title: Window width for view out
+  topic: daylight
+  family: measure
+  rule_type: GUIDE
+  priority: ★
+  level: space
+  status: 'deferred: window width for view needs the sightline; informational'
+  scope: storey
+  needs:
+  - geom:sightline
+  - family:classify
+  applies_text: Rooms needing a view out.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office|living|bedroom|meeting
+    related:
+    - via: windows
+
+K53:
+  title: Working area distance from window
+  topic: daylight
+  family: route
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'deferred: distance of the working area from the window wall needs the window positions per room (workstations exist)'
+  scope: storey
+  needs:
+  - metric:distance_to_window
+  applies_text: Industrial workrooms with side lighting.
+  scenario:
+    class: IfcSpace
+    use: workshop
+    related:
+    - via: windows
+  scenario_note: workshop / production rooms by name (2 corpus models)
+
+K57:
+  title: Single-leaf external walls and additional insulation
+  topic: envelope
+  family: composition
+  rule_type: GUIDE
+  priority: ★★★
+  level: element
+  status: 'deferred: project input (u_target_external_wall)'
+  scope: storey
+  needs:
+  - family:composition
+  - input:project
+  - input:u_target_external_wall
+  applies_text: Single-leaf external walls.
+  scenario:
+    class: IfcWall
+    prop:
+      IsExternal: true
+  scenario_note: external walls; the leaf count needs the material layer set (composition family)
+
+K58:
+  title: 'Cavity walls: outer leaf and air gap'
+  topic: envelope
+  family: composition
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: 'deferred: family ''composition'' not built'
+  scope: storey
+  needs:
+  - family:composition
+  applies_text: Cavity (double-leaf) external walls.
+  scenario:
+    class: IfcWall
+    prop:
+      IsExternal: true
+  scenario_note: external walls; whether a wall is a cavity wall needs the material layer set
+
+K59:
+  title: Concrete external walls need additional insulation
+  topic: envelope
+  family: composition
+  rule_type: MUST
+  priority: ★★★
+  level: element
+  status: 'deferred: family ''composition'' not built'
+  scope: storey
+  needs:
+  - family:composition
+  applies_text: Solid concrete external walls.
+  scenario:
+    class: IfcWall
+    prop:
+      IsExternal: true
+  scenario_note: external walls; the concrete material needs the layer set
+
+K60:
+  title: Air gap behind rear-ventilated skins
+  topic: envelope
+  family: composition
+  rule_type: MUST
+  priority: ★
+  level: element
+  status: 'deferred: family ''composition'' not built'
+  scope: storey
+  needs:
+  - family:composition
+  applies_text: Rear-ventilated external skins.
+  scenario:
+    class: IfcCovering
+    predefined: CLADDING
+
+K61:
+  title: Thermal resistance and U-value calculation
+  topic: envelope
+  family: composition
+  rule_type: CALC
+  priority: ★★★
+  level: element
+  status: 'deferred: family ''composition'' not built'
+  scope: storey
+  needs:
+  - family:composition
+  applies_text: External building elements.
+  scenario:
+  - class: IfcWall
+    prop:
+      IsExternal: true
+  - class: IfcRoof
+  - class: IfcSlab
+    predefined: ROOF
+
+K63:
+  title: Drainage slope of flat roofs
+  topic: envelope
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: bound
+  scope: storey
+  select:
+  - class: IfcSlab
+    predefined: ROOF
+  - class: IfcRoof
+    expand: IfcSlab
+    expand_leaf: true
+  notes: 'the ROOF slabs plus every IfcRoof read through its slab parts, or itself when it is a leaf with its own body (0286:
+    three leaf roofs, no ROOF slab; 2026-10-20)'
+  checks:
+  - measure: roof.slope_percent
+    param: S_MIN
+    when:
+      measure: roof.slope_percent
+      param: S_FLAT
+  - measure: roof.slope_percent
+    param: S_REC
+    when:
+      measure: roof.slope_percent
+      param: S_FLAT
+  applies_text: Flat roofs.
+  scenario:
+  - class: IfcSlab
+    predefined: ROOF
+  - class: IfcRoof
+    expand: IfcSlab
+    expand_leaf: true
+
+K65:
+  title: Vapour barrier on the warm side
+  topic: envelope
+  family: composition
+  rule_type: MUST
+  priority: ★
+  level: element
+  status: 'deferred: family ''composition'' not built'
+  scope: storey
+  needs:
+  - family:composition
+  applies_text: External walls and roofs.
+  scenario:
+  - class: IfcWall
+    prop:
+      IsExternal: true
+  - class: IfcRoof
+  - class: IfcSlab
+    predefined: ROOF
+
+K66:
+  title: Slope of green roofs
+  topic: envelope
+  family: measure
+  rule_type: GUIDE
+  priority: ★
+  level: element
+  status: 'deferred: green-roof classification (vegetation layer) not available'
+  scope: storey
+  needs:
+  - fact:green_roof
+  applies_text: Planted roofs.
+  scenario:
+  - class: IfcRoof
+  - class: IfcSlab
+    predefined: ROOF
+  scenario_note: roofs; the vegetation layer that makes a planted roof is not read
+
+K67:
+  title: Pitched roof insulation and ventilation
+  topic: envelope
+  family: composition
+  rule_type: INFO
+  priority: ★★
+  level: element
+  status: 'deferred: family ''composition'' not built'
+  scope: storey
+  needs:
+  - family:composition
+  applies_text: Pitched roofs.
+  scenario:
+  - class: IfcRoof
+    where:
+    - measure: roof.pitch_deg
+      op: '>'
+      value: 0
+  - class: IfcSlab
+    predefined: ROOF
+    where:
+    - measure: roof.pitch_deg
+      op: '>'
+      value: 0
+  scenario_note: pitched roofs (a pitch above zero, from the declared angle or the geometry)
+
+K68:
+  title: Sound insulation of party walls
+  topic: walls
+  family: adjacency
+  rule_type: MUST
+  priority: ★★★
+  level: element
+  status: 'deferred: separating walls between units are a wall relation, not a door relation (the dwellings exist)'
+  scope: storey
+  needs:
+  - relation:wall
+  applies_text: Party walls between houses or flats.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    where:
+    - measure: element.building_dwellings
+      op: '>='
+      value: 2
+    related:
+    - via: unit_doors
+  scenario_note: the rooms of inferred dwellings in a building with two or more (party walls need the wall-to-room relation)
+
+K69:
+  title: Modular coordination and nominal dimensions
+  topic: walls
+  family: footprint
+  rule_type: GUIDE
+  priority: ★★
+  level: element
+  status: 'deferred: family ''footprint'' not built'
+  scope: storey
+  needs:
+  - family:footprint
+  applies_text: Modular coordination.
+  scenario:
+    class: IfcGrid
+
+K70:
+  title: Building classes and load-bearing wall fire resistance
+  topic: walls
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: element
+  status: 'deferred: building class is a project input'
+  scope: storey
+  needs:
+  - input:project
+  - input:building_class
+  applies_text: Load-bearing and bracing walls and columns.
+  scenario:
+    class:
+    - IfcWall
+    - IfcColumn
+    prop:
+      LoadBearing: true
+
+K72:
+  title: Separating walls between residential/commercial units
+  topic: walls
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: element
+  status: 'deferred: separating walls between units are a wall relation; fire ratings on walls are rare (14 of 370 models)'
+  scope: storey
+  needs:
+  - relation:wall
+  - fact:wall_fire_rating
+  applies_text: Separating walls between residential / commercial units.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    where:
+    - measure: element.building_dwellings
+      op: '>='
+      value: 2
+    related:
+    - via: unit_doors
+
+K73:
+  title: Combustibility of external walls and claddings
+  topic: walls
+  family: composition
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: 'deferred: project input (reaction_to_fire_class_of_mate)'
+  scope: storey
+  needs:
+  - family:composition
+  - input:project
+  - input:reaction_to_fire_class_of_mate
+  applies_text: External walls and claddings.
+  scenario:
+  - class: IfcWall
+    prop:
+      IsExternal: true
+  - class: IfcCovering
+    predefined: CLADDING
+
+K74:
+  title: Minimum requirements for habitable rooms
+  topic: rooms
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: space
+  status: bound
+  scope: storey
+  select:
+    class: IfcSpace
+    use: living|bedroom|dining|kitchen|office|meeting|dwelling
+  derived:
+    space.glazing_ratio: space.glazed_area / space.area
+  checks:
+  - measure: space.area
+    param: A_MIN
+  - measure: space.height
+    param: H_MIN
+  - measure: space.glazing_ratio
+    param: F_WIN
+  notes: habitable = living|bedroom|dining|kitchen|office|meeting|dwelling (vocabulary concepts; kitchens since 2026-10-20,
+    the validation pack judges them as habitable rooms); window area is OverallWidth x OverallHeight of the windows nearest
+    to the room within 0.6 m; a room with no window assigned is nodata, not a glazing failure
+  applies_text: Habitable rooms.
+  scenario:
+    class: IfcSpace
+    use: living|bedroom|dining|kitchen|office|meeting|dwelling
+    related:
+    - via: windows
+
+K76:
+  title: Calculating the living area
+  topic: rooms
+  family: aggregate
+  rule_type: CALC
+  priority: ★★★
+  level: zone
+  status: 'deferred: slicing a space by clear height needs 3D space geometry cut at 1 m and 2 m'
+  scope: storey
+  needs:
+  - geom:space_slices
+  applies_text: Living-area calculation per dwelling.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: unit_doors
+
+K77:
+  title: Balconies in the living area
+  topic: rooms
+  family: aggregate
+  rule_type: CALC
+  priority: ★★
+  level: zone
+  status: 'deferred: F_BALC is a range with a default and the result feeds the living-area fact (K76-K78), REPORT only'
+  scope: storey
+  needs:
+  - fact:living_area
+  applies_text: Living-area calculation per dwelling.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    use: balcony
+    related:
+    - via: unit_doors
+
+K78:
+  title: 'Living area: scope and clear measurement'
+  topic: rooms
+  family: aggregate
+  rule_type: CALC
+  priority: ★★★
+  level: zone
+  status: 'deferred: MEAS is a string under op `is`; the living-area fact (K76-K78) is not built'
+  scope: storey
+  needs:
+  - op:is
+  - fact:living_area
+  applies_text: Living-area calculation (Housing Area Regulation 2003).
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: unit_doors
+
+K79:
+  title: DIN 277 area categories and lettable area
+  topic: rooms
+  family: aggregate
+  rule_type: CALC
+  priority: ★★★
+  level: site_building
+  status: 'deferred: DIN 277 gross floor area needs the storey footprint union (Qto GrossFloorArea on 5 of 370 models)'
+  scope: storey
+  needs:
+  - geom:storey_footprint
+  applies_text: All buildings; area reporting.
+  scenario: null
+  scenario_reason: applies to every building (area reporting); there is no situation to find
+
+K80:
+  title: DIN 277 gross and net built volume
+  topic: rooms
+  family: aggregate
+  rule_type: CALC
+  priority: ★★
+  level: site_building
+  status: 'deferred: gross built volume needs the storey footprint union and storey heights'
+  scope: storey
+  needs:
+  - geom:storey_footprint
+  applies_text: All buildings; volume reporting.
+  scenario: null
+  scenario_reason: applies to every building (volume reporting); there is no situation to find
+
+K81:
+  title: Balcony area
+  topic: housing
+  family: measure
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'deferred: the balcony threshold is indexed by persons per dwelling, which are not available'
+  scope: storey
+  needs:
+  - fact:persons
+  applies_text: Dwellings with a balcony.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    use: balcony
+    related:
+    - via: unit_doors
+
+K82:
+  title: Connections to open spaces
+  topic: housing
+  family: adjacency
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'widened: dwellings are inferred from the door graph; open spaces are the rooms tagged IsExternal or named as balcony/terrace;
+    R_MORE (more than one open space) is not evaluated'
+  scope: storey
+  per: dwelling
+  from:
+    external: true
+  to:
+    concept: living|office|dining
+  relation: door
+  quantifier: all
+  checks:
+  - param: R_FIRST
+  applies_text: Dwellings with open spaces.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: unit_doors
+    - via: neighbours
+
+K83:
+  title: Lifts and flats per floor
+  topic: housing
+  family: provision
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'widened: residential = a building whose storeys hold inferred dwellings (facts.dwelling_units), full storeys =
+    those storeys; lifts = IfcTransportElement named as a lift (12 of 13 corpus models with transport elements; the thirteenth
+    has escalators); a missing lift is as often unmodelled as absent, so fail becomes info; FPF (flats per floor per core)
+    is not evaluated'
+  scope: storey
+  per: building
+  count:
+    class: IfcTransportElement
+    use: lift
+  checks:
+  - param: N_LIFT
+    exists: true
+    when:
+      measure: building.dwelling_storeys
+      param: N_LIFT
+  notes: 'the card''s EXIST: N_LIFT gates the building (more than 5 storeys with dwellings) and lends its severity; `exists`
+    makes the threshold "at least one" since the card names no count param for the lifts'
+  applies_text: Residential buildings.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: unit_doors
+  scenario_note: a residential building (inferred dwellings); the five-storey gate of the card is judged by the rule
+
+K85:
+  title: Grouped plan and central corridor plan
+  topic: housing
+  family: classify
+  rule_type: INFO
+  priority: ★★★
+  level: zone
+  status: 'deferred: family ''classify'' not built'
+  scope: storey
+  needs:
+  - family:classify
+  applies_text: Dwellings.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: unit_doors
+
+K87:
+  title: Kitchen, WC and stairs off hall
+  topic: housing
+  family: adjacency
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'widened: dwellings and their entrance halls are inferred from the door graph; the staircase is skipped'
+  scope: storey
+  per: dwelling
+  from:
+    concept: kitchen|wc|bathroom
+  to:
+    role: unit.hall
+  relation: door
+  quantifier: all
+  checks:
+  - param: R_HALL
+  applies_text: Dwellings.
+  scenario:
+    class: IfcSpace
+    role: unit.halls
+    related:
+    - via: neighbours
+    - via: doors
+
+K89:
+  title: Corridor width within the dwelling
+  topic: housing
+  family: measure
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'deferred: corridor clear width is geometry not built (a corridor''s OBB short side is a wall-to-wall width only
+    for a straight corridor)'
+  scope: storey
+  needs:
+  - geom:corridor_width
+  applies_text: Corridors inside dwellings.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    use: horizontal_circulation
+    related:
+    - via: unit_doors
+
+K90:
+  title: 'Detached house: open-space access per storey'
+  topic: housing
+  family: adjacency
+  rule_type: INFO
+  priority: ★
+  level: space
+  status: 'widened: every building is judged, the detached-house gate is not evaluated; open spaces are the rooms tagged IsExternal
+    or named as balcony/terrace'
+  scope: storey
+  per: storey
+  from:
+    concept: living|bedroom|dining|kitchen|office|dwelling
+  to:
+    external: true
+  relation: door
+  quantifier: count
+  checks:
+  - param: N_ACCESS
+  applies_text: Detached houses.
+  scenario:
+  - class: IfcSpace
+    prop:
+      IsExternal: true
+    related:
+    - via: neighbours
+    - via: doors
+  - class: IfcSpace
+    use: balcony
+  scenario_note: open spaces (external or balcony/terrace rooms); the detached-house gate is not known
+
+K91:
+  title: One or three flats per floor
+  topic: housing
+  family: measure
+  rule_type: GUIDE
+  priority: ★★★
+  level: storey
+  status: 'widened: stair cores are stacks of IfcStair bodies (facts.vertical_cores) and dwellings per floor are the inferred
+    units assigned to the nearest core, so "one flat per floor" may be an undercount; a lift serves the core when a lift stack
+    shares a storey with it; warn becomes info; the FPF == 3 note is not evaluated'
+  scope: storey
+  select:
+    class: IfcStair
+    where:
+    - measure: stair.core_flats_per_floor
+      op: ==
+      value: 1
+    - measure: stair.core_has_lift
+      op: ==
+      value: 0
+  checks:
+  - measure: stair.core_storeys
+    param: N_1F
+  notes: the where conditions are the card's logic (fpf == 1 AND no lift), N_1F its threshold; every stair of the core carries
+    the core's storey count
+  applies_text: Multi-storey housing.
+  scenario:
+    class: IfcStair
+    where:
+    - measure: stair.core_flats_per_floor
+      op: '>='
+      value: 1
+    related:
+    - via: parts
+      class: IfcStairFlight
+    - via: served_storeys
+  scenario_note: stairs whose core serves at least one inferred dwelling per floor; the rule judges the no-lift, one-flat
+    case
+
+K92:
+  title: Terraced house depth and width
+  topic: housing
+  family: footprint
+  rule_type: GUIDE
+  priority: ★★★
+  level: site_building
+  status: 'deferred: family ''footprint'' not built'
+  scope: storey
+  needs:
+  - family:footprint
+  applies_text: Terraced houses (lit from two facades only).
+  scenario:
+    class: IfcSpace
+    use: terraced_house
+  scenario_note: rooms named as part of a terraced house (14 corpus models); weak, by name only
+
+K93:
+  title: Entrance recess dimensions
+  topic: housing
+  family: measure
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'deferred: entrance recess geometry not built'
+  scope: storey
+  needs:
+  - geom:element_geometry
+  applies_text: Entrance doors of dwellings / houses.
+  scenario:
+    class: IfcDoor
+    role: unit.entrance_doors
+    related:
+    - via: host_wall
+
+K94:
+  title: Mandatory kitchen and storeroom per dwelling
+  topic: housing
+  family: provision
+  rule_type: MUST
+  priority: ★★★
+  level: zone
+  status: 'widened: dwellings are inferred from the door graph (facts.dwelling_units); storerooms are the rooms named as storage
+    INSIDE the unit, an allocated cellar storeroom is not tied to its flat by anything in the files'
+  scope: storey
+  per: dwelling
+  count:
+    class: IfcSpace
+    use: kitchen
+  checks:
+  - param: N_KITCHEN
+  - param: N_STORE
+    count:
+      class: IfcSpace
+      use: storage
+  applies_text: Every dwelling (house or flat).
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: unit_doors
+
+K103:
+  title: Bathroom
+  topic: bedrooms
+  family: provision
+  rule_type: MUST
+  priority: ★★★
+  level: zone
+  status: 'widened: dwellings are inferred from the door graph; a bathroom is a room matching the bathroom or wc concept,
+    fixtures are not read'
+  scope: storey
+  per: dwelling
+  count:
+    class: IfcSpace
+    use: bathroom|wc
+  checks:
+  - param: N_BATH
+  applies_text: Every dwelling.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: unit_doors
+
+K107:
+  title: Storage space within the flat
+  topic: bedrooms
+  family: measure
+  rule_type: GUIDE
+  priority: ★★
+  level: zone
+  status: 'deferred: the living area per dwelling (K76-K78) is not built'
+  scope: storey
+  needs:
+  - fact:living_area
+  applies_text: Flats.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: unit_doors
+
+K109:
+  title: Bathroom types
+  topic: bedrooms
+  family: classify
+  rule_type: CALC
+  priority: ★
+  level: space
+  status: 'deferred: family ''classify'' not built'
+  scope: storey
+  needs:
+  - family:classify
+  applies_text: Sanitary rooms.
+  scenario:
+  - class: IfcSanitaryTerminal
+    related:
+    - via: furniture
+      use: sanitary_accessory
+    - via: doors
+  - class: IfcSpace
+    use: bathroom|wc
+
+K112:
+  title: Clear ceiling height in offices
+  topic: offices
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: bound
+  scope: storey
+  select:
+    class: IfcSpace
+    use: office
+  checks:
+  - measure: space.height
+    param: H_OFF
+  - measure: space.height
+    param: H_MIN
+  - measure: space.height
+    param: H_LARGE
+    when:
+      measure: space.area
+      param: A_LARGE
+  - measure: space.height
+    param: H_AUX
+    select:
+      class: IfcSpace
+      use: horizontal_circulation|wc|bathroom
+  applies_text: Office workrooms, corridors and sanitary rooms.
+  scenario:
+    class: IfcSpace
+    use: office
+
+K113:
+  title: Total area per workstation
+  topic: offices
+  family: aggregate
+  rule_type: GUIDE
+  priority: ★★★
+  level: space
+  status: 'widened: the office-building gate is approximated by the presence of office rooms, and the gross floor area (BGF)
+    by the sum of every space''s net area, a lower bound, so a value below A_TOT is sound and one above is optimistic'
+  scope: storey
+  per: building
+  applies:
+    class: IfcSpace
+    use: office|open_plan_office
+  numerator:
+    select:
+      class: IfcSpace
+    measure: space.area
+  denominator:
+    select:
+      class: IfcSpace
+      use: office|open_plan_office|meeting
+    measure: space.workstations
+  checks:
+  - param: A_TOT
+  applies_text: Office buildings.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+
+K114:
+  title: Workstation dimensions
+  topic: offices
+  family: measure
+  rule_type: GUIDE
+  priority: ★
+  level: space
+  status: 'deferred: desktop size and the free movement area need furniture footprints (the desks themselves are counted)'
+  scope: storey
+  needs:
+  - geom:furniture_footprints
+  applies_text: Office workstations.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+    exclude_role: unit.rooms
+    where:
+    - measure: space.workstations
+      op: '>'
+      value: 0
+    related:
+    - via: furniture
+      kind: desk
+
+K115:
+  title: Office depth, room width and module
+  topic: offices
+  family: measure
+  rule_type: GUIDE
+  priority: ★★★
+  level: space
+  status: 'deferred: grid module and clear dimensions need the declared grid; informational'
+  scope: storey
+  needs:
+  - fact:declared_grid
+  - family:classify
+  applies_text: Office rooms.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+    exclude_role: unit.rooms
+
+K116:
+  title: Building depth and daylight depth
+  topic: offices
+  family: footprint
+  rule_type: GUIDE
+  priority: ★★★
+  level: site_building
+  status: 'deferred: family ''footprint'' not built'
+  scope: storey
+  needs:
+  - family:footprint
+  applies_text: Office buildings; the depth check only for central-corridor layouts.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+    exclude_role: unit.rooms
+
+K117:
+  title: Office types
+  topic: offices
+  family: classify
+  rule_type: INFO
+  priority: ★★
+  level: space
+  status: 'deferred: N_GROUP is an approximate range (~= over two values) and both params carry severity CLASS, which the
+    comparator and the outcome classes have no meaning for; the workstation count per office room exists'
+  scope: storey
+  needs:
+  - family:classify
+  - op:approx_range
+  - severity:class
+  applies_text: Office spaces.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+    exclude_role: unit.rooms
+
+K118:
+  title: Conference area
+  topic: offices
+  family: route
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'deferred: the entrance-area room (the room the main entrance door opens into) has no role yet; seats per conference
+    room would come from the seating kind of the furnishing helper once it does'
+  scope: storey
+  needs:
+  - role:entrance_room
+  applies_text: Conference areas.
+  scenario:
+    class: IfcSpace
+    use: meeting
+    related:
+    - via: furniture
+      kind: seat
+    - via: neighbours
+
+K119:
+  title: Office toilets and tea kitchens
+  topic: offices
+  family: aggregate
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'partial: A_WC_WS (toilet area per workstation) and A_TK (mean tea-kitchen area) are judged; WS_PER_WC and WS_PER_TK
+    are ranges under a <= op the comparator has no meaning for, and the kitchens'' distance to the workstations is not evaluated;
+    the ratios are per storey (2026-10-20: the validation pack judges the toilets of a floor against that floor''s workstations)'
+  scope: storey
+  per: storey
+  applies:
+    class: IfcSpace
+    use: office|open_plan_office
+  denominator:
+    select:
+      class: IfcSpace
+      use: office|open_plan_office|meeting
+    measure: space.workstations
+  checks:
+  - param: A_WC_WS
+    numerator:
+      select:
+        class: IfcSpace
+        use: wc|bathroom
+      measure: space.area
+  - param: A_TK
+    numerator:
+      select:
+        class: IfcSpace
+        use: kitchen
+      measure: space.area
+    denominator:
+      count:
+        class: IfcSpace
+        use: kitchen
+  applies_text: Office buildings.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+
+K120:
+  title: Workplace toilets (workplace regulations)
+  topic: offices
+  family: route
+  rule_type: MUST
+  priority: ★★
+  level: space
+  status: 'partial: D_WC judged from each office room''s representative point to the nearest wc through doors; N_SEP (project
+    input) and WC_PER_BASIN (fixtures) are not evaluated'
+  scope: storey
+  select:
+    class: IfcSpace
+    use: office|open_plan_office|meeting
+  targets:
+    use: wc|bathroom
+  checks:
+  - param: D_WC
+  notes: the office room stands in for its workstations; the distance is a lower bound, so a fail is sound and a pass optimistic
+  applies_text: Workplaces (workplace regulations).
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office|meeting
+
+K121:
+  title: Volume per person in halls
+  topic: offices
+  family: measure
+  rule_type: GUIDE
+  priority: ★
+  level: space
+  status: 'deferred: assembly halls: the plan''s ''hall'' word is bi2m''s circulation word; no distinct concept yet'
+  scope: storey
+  needs:
+  - vocab:assembly_hall
+  applies_text: Halls for speech or music.
+  scenario:
+    class: IfcSpace
+    use: assembly_hall
+    related:
+    - via: doors
+    - via: furniture
+      kind: seat
+
+K122:
+  title: Cleaner's room and caretaker's rooms
+  topic: offices
+  family: provision
+  rule_type: GUIDE
+  priority: ★
+  level: space
+  status: 'widened: applies when the model has office spaces (the office-building gate approximated); the caretaker rooms
+    are not evaluated'
+  scope: storey
+  applies:
+    class: IfcSpace
+    use: office
+  count:
+    class: IfcSpace
+    use: cleaning
+  per: storey
+  checks:
+  - param: N_CLEAN
+  applies_text: Office buildings.
+  scenario:
+    class: IfcSpace
+    use: office
+
+K123:
+  title: Filing and archive rooms
+  topic: offices
+  family: measure
+  rule_type: GUIDE
+  priority: ★
+  level: space
+  status: 'partial: clear height only; basement/attic placement and the archive floor load (project input) are not evaluated'
+  scope: storey
+  select:
+    class: IfcSpace
+    use: filing
+  checks:
+  - measure: space.height
+    param: H_FILE
+  applies_text: Filing and archive rooms.
+  scenario:
+    class: IfcSpace
+    use: filing
+
+K124:
+  title: Office entrance area
+  topic: offices
+  family: adjacency
+  rule_type: INFO
+  priority: ★
+  level: space
+  status: 'deferred: the entrance-area room (the room the main entrance door opens into) has no role yet'
+  scope: storey
+  needs:
+  - role:entrance_room
+  applies_text: Office buildings.
+  scenario:
+    class: IfcSpace
+    use: lobby
+    related:
+    - via: doors
+    - via: neighbours
+
+K125:
+  title: Staff restaurant location
+  topic: offices
+  family: route
+  rule_type: GUIDE
+  priority: ★
+  level: space
+  status: 'deferred: no vocabulary concept for canteens and staff restaurants yet (workstations exist)'
+  scope: storey
+  needs:
+  - vocab:canteen
+  applies_text: Office buildings with a staff restaurant.
+  scenario:
+    class: IfcSpace
+    use: canteen
+
+K126:
+  title: Group room distance to window
+  topic: offices
+  family: route
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'deferred: workstation to nearest window distance needs the window positions per room (workstations exist, as room
+    counts)'
+  scope: storey
+  needs:
+  - metric:distance_to_window
+  applies_text: Group rooms (small open-plan offices).
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+    exclude_role: unit.rooms
+    where:
+    - measure: space.workstations
+      op: '>'
+      value: 0
+    related:
+    - via: windows
+    - via: furniture
+      kind: desk
+
+K127:
+  title: Corridors within small use units
+  topic: offices
+  family: aggregate
+  rule_type: INFO
+  priority: ★★
+  level: zone
+  status: 'deferred: the use-unit area is a CLASS exemption flag for K44, K45 and K47, which are not built; no outcome of
+    its own'
+  scope: storey
+  needs:
+  - severity:class
+  - fact:escape_corridors
+  applies_text: Combined use units.
+  scenario: null
+  scenario_reason: combined-use (combi-office) units have no vocabulary concept yet
+
+K128:
+  title: Staff rest room in catering kitchens
+  topic: offices
+  family: provision
+  rule_type: MUST
+  priority: ★★
+  level: space
+  status: 'deferred: project input (number_of_kitchen_employees)'
+  scope: storey
+  needs:
+  - input:project
+  - input:number_of_kitchen_employees
+  applies_text: Catering kitchens (workplace regulations).
+  scenario:
+    class: IfcSpace
+    use: canteen|kitchen
+  scenario_note: catering kitchens are not told apart from tea kitchens by name alone
+
+K129:
+  title: Seminar room size and depth
+  topic: offices
+  family: measure
+  rule_type: GUIDE
+  priority: ★★★
+  level: space
+  status: 'widened: A_STUD is judged from the seats modelled in each seminar room, a floor, so the area per seat is an upper
+    bound and warn becomes info; F_DEPTH (depth vs clear height with windows on one wall only) is not evaluated'
+  scope: storey
+  select:
+    class: IfcSpace
+    use: meeting
+  derived:
+    space.area_per_seat: space.area / space.seats
+  checks:
+  - measure: space.area_per_seat
+    param: A_STUD
+  notes: seminar rooms = the meeting concept (seminar, classroom, conference ...); seats = seating furniture per room (facts.seats,
+    the classifier shared with furniture_occupancy); a room without seats is nodata
+  applies_text: University seminar rooms (usual sizes 20, 40, 50, 60 seats).
+  scenario:
+    class: IfcSpace
+    use: meeting
+    related:
+    - via: windows
+    - via: furniture
+      kind: seat
+
+K130:
+  title: Offices for university academic staff
+  topic: offices
+  family: measure
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'deferred: academic staff offices need the university scope'
+  scope: storey
+  needs:
+  - fact:building_use
+  applies_text: University offices for teaching and research staff.
+  scenario:
+    class: IfcSpace
+    use: university
+  scenario_note: lecture halls, institutes and professors' rooms by name (19 corpus models)
+
+K131:
+  title: Fit-out grid equals façade grid
+  topic: offices
+  family: footprint
+  rule_type: GUIDE
+  priority: ★★★
+  level: site_building
+  status: 'deferred: family ''footprint'' not built'
+  scope: storey
+  needs:
+  - family:footprint
+  applies_text: Office and other buildings with an adaptable fit-out grid.
+  scenario:
+    class: IfcGrid
+
+K132:
+  title: Grid module and building depth
+  topic: offices
+  family: footprint
+  rule_type: GUIDE
+  priority: ★★★
+  level: site_building
+  status: 'deferred: family ''footprint'' not built'
+  scope: storey
+  needs:
+  - family:footprint
+  applies_text: Office buildings.
+  scenario:
+    class: IfcGrid
+
+K133:
+  title: Single-, two- and three-row layouts
+  topic: offices
+  family: classify
+  rule_type: INFO
+  priority: ★★★
+  level: site_building
+  status: 'deferred: family ''classify'' not built'
+  scope: storey
+  needs:
+  - family:classify
+  applies_text: Office / administration buildings.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+    exclude_role: unit.rooms
+
+K134:
+  title: Staircase spacing (30 m / 60 m)
+  topic: offices
+  family: route
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'partial: D_STAIR judged; SP_STAIRS and SP_END (staircase spacing geometry) are not evaluated'
+  scope: storey
+  select:
+    class: IfcSpace
+    use: living|bedroom|dining|office|meeting|dwelling
+  targets:
+    use: vertical_core
+  checks:
+  - param: D_STAIR
+  notes: occupied rooms = the habitable concepts; targets = rooms named as vertical circulation (any stair, a superset of
+    the essential ones); lower-bound distance
+  applies_text: All buildings with occupied rooms (MBO 2002).
+  scenario:
+    class: IfcSpace
+    use: living|bedroom|dining|office|meeting|dwelling
+
+K135:
+  title: Combi-office
+  topic: offices
+  family: classify
+  rule_type: INFO
+  priority: ★★
+  level: zone
+  status: 'deferred: family ''classify'' not built'
+  scope: storey
+  needs:
+  - family:classify
+  applies_text: Office floors.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+    exclude_role: unit.rooms
+
+K136:
+  title: 'Single-room offices: no furniture in escape routes'
+  topic: offices
+  family: adjacency
+  rule_type: MUST
+  priority: ★★
+  level: space
+  status: 'deferred: escape corridors and furniture footprints are not available'
+  scope: storey
+  needs:
+  - fact:escape_corridors
+  - geom:furniture_footprints
+  applies_text: Escape routes (corridors).
+  scenario:
+    class: IfcSpace
+    use: horizontal_circulation|lobby
+    related:
+    - via: doors
+    - via: furniture
+      inside: true
+  scenario_note: corridors and lobbies; which of them are escape routes is not known
+
+K137:
+  title: Depth of open-plan offices
+  topic: offices
+  family: measure
+  rule_type: INFO
+  priority: ★★
+  level: space
+  status: bound
+  scope: storey
+  select:
+    class: IfcSpace
+    use: open_plan_office
+  checks:
+  - measure: space.depth
+    param: D_OPEN
+  applies_text: Open-plan offices.
+  scenario:
+    class: IfcSpace
+    use: open_plan_office
+    related:
+    - via: windows
+
+K138:
+  title: Space saving of hot-desk offices
+  topic: offices
+  family: aggregate
+  rule_type: INFO
+  priority: ★
+  level: zone
+  status: 'deferred: the area saving against personalised offices needs a baseline layout that is a project input; informational'
+  scope: storey
+  needs:
+  - input:project
+  applies_text: Hot-desk / business-club offices.
+  scenario: null
+  scenario_reason: hot-desk offices are a project fact
+
+K139:
+  title: Reversible office buildings (for letting)
+  topic: offices
+  family: classify
+  rule_type: INFO
+  priority: ★
+  level: site_building
+  status: 'deferred: project input (letting_adaptability_concept)'
+  scope: storey
+  needs:
+  - family:classify
+  - vocab:assembly_hall
+  - input:project
+  - input:letting_adaptability_concept
+  applies_text: Office buildings for letting.
+  scenario: null
+  scenario_reason: letting is a project fact
+
+K140:
+  title: Components of workstation area
+  topic: offices
+  family: aggregate
+  rule_type: CALC
+  priority: ★★
+  level: space
+  status: 'deferred: the five workstation area components are furniture footprints and swing zones; REPORT only'
+  scope: storey
+  needs:
+  - geom:furniture_footprints
+  applies_text: Office workstations.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+    exclude_role: unit.rooms
+    where:
+    - measure: space.workstations
+      op: '>'
+      value: 0
+    related:
+    - via: furniture
+      kind: desk
+
+K141:
+  title: Area per workstation (immediate and traffic)
+  topic: offices
+  family: aggregate
+  rule_type: GUIDE
+  priority: ★★★
+  level: site_building
+  status: 'widened: the workstation count is the desks modelled per room, a floor (furniture_occupancy''s reading), so every
+    ratio is an upper bound; a value below the range is a sound finding, one above is not, and warn becomes info'
+  scope: storey
+  per: building
+  applies:
+    class: IfcSpace
+    use: office|open_plan_office
+  denominator:
+    select:
+      class: IfcSpace
+      use: office|open_plan_office|meeting
+    measure: space.workstations
+  checks:
+  - param: A_WS
+    numerator:
+      select:
+        class: IfcSpace
+        use: office|open_plan_office
+      measure: space.area
+  - param: A_ADD
+    numerator:
+      select:
+        class: IfcSpace
+        use: meeting|storage|filing
+      measure: space.area
+  - param: A_TR
+    numerator:
+      select:
+        class: IfcSpace
+        use: horizontal_circulation|lobby
+      measure: space.area
+  notes: workstations = desks per room (facts.workstations, the furniture classifier shared with furniture_occupancy) or the
+    room's OccupancyNumber; areas are net (Qto or footprint) where the card says gross; the building is the container, so
+    one ratio per model
+  applies_text: Office buildings.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+
+K142:
+  title: Screen workstations and windows
+  topic: offices
+  family: route
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'deferred: viewing direction of a workstation needs furniture orientation (the desks themselves are counted)'
+  scope: storey
+  needs:
+  - geom:furniture_orientation
+  applies_text: Screen workstations.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+    exclude_role: unit.rooms
+    where:
+    - measure: space.workstations
+      op: '>'
+      value: 0
+    related:
+    - via: windows
+    - via: furniture
+      kind: desk
+
+K143:
+  title: 'Filing: space and location'
+  topic: offices
+  family: measure
+  rule_type: CALC
+  priority: ★
+  level: space
+  status: 'deferred: the filing unit''s length and width are furniture footprints; the formula is a REPORT with no threshold'
+  scope: storey
+  needs:
+  - geom:furniture_footprints
+  applies_text: Filing systems.
+  scenario:
+    class: IfcSpace
+    use: filing
+    related:
+    - via: furniture
+
+K144:
+  title: Post room
+  topic: offices
+  family: measure
+  rule_type: GUIDE
+  priority: ★
+  level: space
+  status: 'deferred: post room location is informational'
+  scope: storey
+  needs:
+  - family:classify
+  applies_text: Post rooms.
+  scenario:
+    class: IfcSpace
+    use: post_room
+
+K145:
+  title: Data centres and server rooms
+  topic: offices
+  family: measure
+  rule_type: GUIDE
+  priority: ★
+  level: space
+  status: 'deferred: raised floor, air terminals and access control are not identified'
+  scope: storey
+  needs:
+  - geom:element_geometry
+  applies_text: Data centres and server rooms.
+  scenario:
+    class: IfcSpace
+    use: server_room
+
+K146:
+  title: Effect of full air conditioning on building volume
+  topic: offices
+  family: aggregate
+  rule_type: INFO
+  priority: ★★
+  level: site_building
+  status: 'deferred: air terminals are absent from the corpus (0 of 370 models) and the BRI reference is a project input'
+  scope: storey
+  needs:
+  - input:project
+  - geom:storey_footprint
+  applies_text: Fully air-conditioned buildings.
+  scenario: null
+  scenario_reason: full air conditioning is a project fact
+
+K147:
+  title: Façade mullions and partition connections
+  topic: offices
+  family: footprint
+  rule_type: GUIDE
+  priority: ★★
+  level: element
+  status: 'deferred: family ''footprint'' not built'
+  scope: storey
+  needs:
+  - family:footprint
+  applies_text: Curtain-wall facades with partition connections.
+  scenario:
+    class: IfcCurtainWall
+    related:
+    - via: parts
+      class: IfcMember
+  scenario_note: 'the mullions (IfcMember) of the curtain walls, not their plates (bi2m-ea 2026-10-20: the plates were half
+    of all context members)'
+
+K148:
+  title: 'Light partitions: sound insulation and continuation'
+  topic: offices
+  family: composition
+  rule_type: GUIDE
+  priority: ★★
+  level: element
+  status: 'deferred: family ''composition'' not built'
+  scope: storey
+  needs:
+  - family:composition
+  applies_text: Light partitions with raised floors / suspended ceilings.
+  scenario:
+    class: IfcCovering
+    predefined: CEILING
+  scenario_note: suspended ceilings present (the partition-to-ceiling connection itself is not read)
+
+K149:
+  title: Fire service lift (above 30 m)
+  topic: highrise
+  family: provision
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'deferred: is_highrise is not available (no corpus building above 22 m) and FireFightingLift is set on no lift'
+  scope: storey
+  needs:
+  - fact:is_highrise
+  - fact:fire_fighting_lift
+  applies_text: High-rise buildings above 30 m.
+  scenario:
+    class: IfcBuilding
+    where:
+    - measure: building.top_storey_rise
+      op: '>'
+      param: H_FFL
+
+K150:
+  title: 'High-rise emergency stairs: wellhole, smoke outlet, exit'
+  topic: highrise
+  family: route
+  rule_type: MUST
+  priority: ★★
+  level: storey
+  status: 'deferred: is_highrise, wellhole and vent-opening geometry are not available'
+  scope: storey
+  needs:
+  - fact:is_highrise
+  - geom:element_geometry
+  applies_text: Emergency stairs in high-rise buildings.
+  scenario:
+    class: IfcBuilding
+    where:
+    - measure: building.top_storey_rise
+      op: '>'
+      value: 22
+
+K151:
+  title: Lift groups in high-rise buildings
+  topic: highrise
+  family: footprint
+  rule_type: GUIDE
+  priority: ★★
+  level: storey
+  status: 'deferred: family ''footprint'' not built'
+  scope: storey
+  needs:
+  - family:footprint
+  applies_text: High-rise buildings.
+  scenario:
+    class: IfcBuilding
+    where:
+    - measure: building.top_storey_rise
+      op: '>'
+      value: 22
+
+K152:
+  title: High-rise building groups
+  topic: highrise
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: site_building
+  status: 'deferred: project input (fire service access level)'
+  scope: storey
+  needs:
+  - input:project
+  - input:fire_service_access_level
+  applies_text: High-rise buildings (K01).
+  scenario:
+    class: IfcBuilding
+    where:
+    - measure: building.top_storey_rise
+      op: '>'
+      value: 22
+
+K153:
+  title: Use restrictions for high-rise buildings
+  topic: highrise
+  family: classify
+  rule_type: MUST
+  priority: ★
+  level: site_building
+  status: 'deferred: family ''classify'' not built'
+  scope: storey
+  needs:
+  - family:classify
+  applies_text: High-rise buildings in Germany.
+  scenario:
+    class: IfcBuilding
+    where:
+    - measure: building.top_storey_rise
+      op: '>'
+      value: 22
+
+K154:
+  title: Cleaning of high-rise windows
+  topic: highrise
+  family: measure
+  rule_type: INFO
+  priority: ★
+  level: element
+  status: 'deferred: high-rise window cleaning needs is_highrise'
+  scope: storey
+  needs:
+  - fact:is_highrise
+  applies_text: High-rise windows.
+  scenario:
+    class: IfcBuilding
+    where:
+    - measure: building.top_storey_rise
+      op: '>'
+      value: 22
+

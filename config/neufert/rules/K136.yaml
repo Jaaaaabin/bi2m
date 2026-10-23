@@ -1,0 +1,4 @@
+# config/rules/K136.yaml
+rule: K136
+params:
+  FURN: {op: "is", value: "none", severity: "FAIL", desc: "Furniture in escape routes"}

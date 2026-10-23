@@ -1,0 +1,7 @@
+# config/rules/K16.yaml
+rule: K16
+params:
+  SLOPE_MAX: {op: "<=", value: 6, unit: "%", severity: "FAIL", desc: "Ramp slope"}
+  W_MIN:     {op: ">=", value: 1.2, unit: "m", severity: "FAIL", desc: "Clear ramp width"}
+  L_RUN:     {op: "<=", value: 6.0, unit: "m", severity: "FAIL", desc: "Run length before an intermediate landing"}
+  L_LAND:    {op: ">=", value: 1.5, unit: "m", severity: "FAIL", desc: "Landing length"}

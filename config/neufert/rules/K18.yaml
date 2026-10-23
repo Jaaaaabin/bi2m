@@ -1,0 +1,5 @@
+# config/rules/K18.yaml
+rule: K18
+params:
+  D_WAIT: {op: ">=", expr: "car_depth", unit: "m", severity: "WARN", desc: "Waiting area depth"}
+  A_WAIT: {op: ">=", expr: "car_depth * shaft_width", unit: "m²", severity: "WARN", desc: "Waiting area size"}

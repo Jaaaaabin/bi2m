@@ -1,0 +1,88 @@
+# CI. Lint, typecheck, unit tests and a budgeted
+# production build for the viewer; a compile/import smoke for the Python
+# recognition package. The Playwright e2e harnesses (Interfaces/Frontend/core/
+# scripts/e2e/) are NOT run here: they need the IFC fixtures in data/, which
+# are deliberately not in git (no models in git) - run `npm run e2e` locally.
+#
+# Every step below was run locally on 2026-09-21 before this workflow had ever
+# executed on a runner: `npm run lint`, `npm run typecheck`, `npm run
+# test:unit` (31 tests), `npm run build:check` (all 12 chunks within budget),
+# `python -m compileall -q src scripts`, and `recognize_intents.py
+# --list-categories` (22 categories). So a first red run means the runner
+# differs from a developer machine, not that the commands are wrong.
+name: ci
+
+on:
+  push:
+    branches: [main, intent]
+  pull_request:
+
+# A second push to the same branch supersedes the first - no point finishing a
+# build for a commit nobody will look at again.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Interfaces/Frontend/core
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          # 24, not the 22 LTS: it is what this project is developed and
+          # verified on, and what generated package-lock.json (npm 11). The
+          # point of this job is "does what the author runs still work
+          # elsewhere", so it pins the author's major. 22 also works.
+          node-version: 24
+          cache: npm
+          cache-dependency-path: Interfaces/Frontend/core/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run test:unit
+      - run: npm run build:check
+      - uses: actions/upload-artifact@v4
+        # always(): a build that busts a chunk budget still produces a dist,
+        # and that dist is exactly what you need to see to judge the
+        # regression. if-no-files-found: ignore keeps an earlier failure (one
+        # that got nowhere near writing dist/) from adding a second,
+        # misleading warning on top of the real error.
+        if: always()
+        with:
+          name: dist
+          path: Interfaces/Frontend/core/dist
+          if-no-files-found: ignore
+          retention-days: 7
+
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+      # Deterministic: both pyproject.toml and uv.lock are tracked, and
+      # requires-python is >=3.12, which uv provisions itself.
+      - run: uv sync
+      - run: uv run python -m compileall -q src scripts
+      - run: uv run python scripts/recognize_intents.py --list-categories
+
+  # The self-hosting image (README "Host it yourself"): it builds, its Python
+  # environment runs the pipeline, and the server answers on the page and API.
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t bi2m:ci .
+      - run: docker run --rm bi2m:ci python scripts/recognize_intents.py --list-categories
+      - name: Server answers
+        run: |
+          docker run -d --name bi2m -p 127.0.0.1:3000:3000 bi2m:ci
+          for i in $(seq 1 30); do curl -sf localhost:3000/api/example-models && break; sleep 1; done
+          curl -sf -o /dev/null localhost:3000/
+          docker logs bi2m

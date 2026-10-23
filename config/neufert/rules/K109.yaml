@@ -1,0 +1,4 @@
+# config/rules/K109.yaml
+rule: K109
+params:
+  TYPE: {op: "class", value: ["WC", "shower room", "bathroom", "full bathroom"], severity: "CLASS", desc: "Bathroom category"}

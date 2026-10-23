@@ -1,0 +1,497 @@
+# The hand-written layer of the Neufert bindings (see docs/detectors.md "The 13 Neufert categories").
+# One entry per rule that is bound, partial or widened: status, family (when it differs from the card's default),
+# select / applies / targets / count / per / from / to / relation / quantifier, derived measures, checks, notes.
+# scripts/neufert_bindings.py merges these over the card-derived defaults into bindings.yaml; binding a new rule
+# is an entry here, the same kind of edit as a threshold in rules/<KID>.yaml. No script carries a rule id.
+
+K07:
+  status: bound
+  select:
+    class: IfcStairFlight
+  derived:
+    flight.step_length: 2*flight.riser + flight.tread
+  checks:
+  - measure: flight.step_length
+    param: STEP_MIN
+  - measure: flight.step_length
+    param: STEP_MAX
+
+K08:
+  status: bound
+  select:
+    class: IfcStairFlight
+  checks:
+  - measure: flight.pitch_deg
+    param: PITCH_OPT
+  - measure: flight.riser
+    param: R_OPT
+  - measure: flight.tread
+    param: T_OPT
+
+K09:
+  status: 'widened: every stair flight is judged, the legally-essential gate is not evaluated (steps counted as risers)'
+  select:
+    class: IfcStairFlight
+  checks:
+  - measure: flight.risers
+    param: N_MIN
+  - measure: flight.risers
+    param: N_MAX
+
+K13:
+  status: bound
+  select:
+    class: IfcStair
+    prop:
+      IsExternal: true
+    expand: IfcStairFlight
+  checks:
+  - measure: flight.riser
+    param: R_LO–R_HI
+  - measure: flight.tread
+    param: T_LO–T_HI
+
+K15:
+  status: 'widened: every IfcRailing is judged, the drop is approximated by the rise of the railing''s storey above the ground
+    storey (DROP_HI splits H_LOW from H_HIGH on it), the 1 m compulsory-railing drop and the workplace case are not evaluated,
+    and a declared Height may be the family''s imperial default (templateValue / imperialDefault flag it)'
+  select:
+    class: IfcRailing
+  checks:
+  - measure: railing.height
+    param: H_LOW
+    when:
+      measure: element.storey_rise
+      param: DROP_HI
+      side: below
+  - measure: railing.height
+    param: H_HIGH
+    when:
+      measure: element.storey_rise
+      param: DROP_HI
+      side: above
+
+K23:
+  status: 'partial: the clear passage height is read where a door declares it (Durchgangshöhe, Architekturlichte Höhe, ClearHeight:
+    708 doors of 26 corpus models), else the opening''s OverallHeight stands in, visible in the sources; a pass on an overall
+    height is not a measured clear height'
+  select:
+    class: IfcDoor
+    prop:
+      IsExternal: false
+  notes: 'a door with no IsExternal anywhere is reported as nodata on the gate (2026-10-20), not skipped'
+  checks:
+  - measure: door.clear_height
+    param: H_DOOR
+  - measure: door.clear_height
+    param: H_BETTER
+
+K24:
+  status: 'widened: emergency exits approximated by external doors (IsExternal); FireExit is tagged in 3 of 370 corpus models'
+  select:
+    class: IfcDoor
+    prop:
+      IsExternal: true
+  checks:
+  - measure: door.operation
+    param: OP_BANNED
+    negate: true
+
+K38:
+  status: bound
+  family: route
+  select:
+    class: IfcSpace
+    use: living|bedroom|dining|office|meeting|dwelling|cellar
+  targets:
+    fact: exit_seeds
+    use: vertical_core
+  checks:
+  - param: D_ESC
+  notes: inhabited rooms = the habitable concepts plus cellar rooms; targets = rooms an external door touches plus rooms named
+    as vertical circulation, a superset of the legally essential stairs; the distance is a lower bound, so a fail is sound
+    and a pass optimistic
+
+K40:
+  status: 'partial: only the sill height is judged; the clear opening size needs lining data'
+  select:
+    class: IfcWindow
+    prop:
+      FireExit: true
+  checks:
+  - measure: window.sill_height
+    param: SILL_ESC
+
+K63:
+  status: bound
+  select:
+  - class: IfcSlab
+    predefined: ROOF
+  - class: IfcRoof
+    expand: IfcSlab
+    expand_leaf: true
+  notes: 'the ROOF slabs plus every IfcRoof read through its slab parts, or itself when it is a leaf with its own body
+    (0286: three leaf roofs, no ROOF slab; 2026-10-20)'
+  checks:
+  - measure: roof.slope_percent
+    param: S_MIN
+    when:
+      measure: roof.slope_percent
+      param: S_FLAT
+  - measure: roof.slope_percent
+    param: S_REC
+    when:
+      measure: roof.slope_percent
+      param: S_FLAT
+
+K74:
+  status: bound
+  select:
+    class: IfcSpace
+    use: living|bedroom|dining|kitchen|office|meeting|dwelling
+  derived:
+    space.glazing_ratio: space.glazed_area / space.area
+  checks:
+  - measure: space.area
+    param: A_MIN
+  - measure: space.height
+    param: H_MIN
+  - measure: space.glazing_ratio
+    param: F_WIN
+  notes: habitable = living|bedroom|dining|kitchen|office|meeting|dwelling (vocabulary concepts; kitchens since 2026-10-20, the
+    validation pack judges them as habitable rooms); window area is OverallWidth x OverallHeight of the windows nearest to the
+    room within 0.6 m; a room with no window assigned is nodata, not a glazing failure
+
+K82:
+  status: 'widened: dwellings are inferred from the door graph; open spaces are the rooms tagged IsExternal or named as balcony/terrace;
+    R_MORE (more than one open space) is not evaluated'
+  family: adjacency
+  per: dwelling
+  from:
+    external: true
+  to:
+    concept: living|office|dining
+  relation: door
+  quantifier: all
+  checks:
+  - param: R_FIRST
+
+K87:
+  status: 'widened: dwellings and their entrance halls are inferred from the door graph; the staircase is skipped'
+  family: adjacency
+  per: dwelling
+  from:
+    concept: kitchen|wc|bathroom
+  to:
+    role: unit.hall
+  relation: door
+  quantifier: all
+  checks:
+  - param: R_HALL
+
+K90:
+  status: 'widened: every building is judged, the detached-house gate is not evaluated; open spaces are the rooms tagged IsExternal
+    or named as balcony/terrace'
+  family: adjacency
+  per: storey
+  from:
+    concept: living|bedroom|dining|kitchen|office|dwelling
+  to:
+    external: true
+  relation: door
+  quantifier: count
+  checks:
+  - param: N_ACCESS
+
+K94:
+  status: 'widened: dwellings are inferred from the door graph (facts.dwelling_units); storerooms are the rooms named as
+    storage INSIDE the unit, an allocated cellar storeroom is not tied to its flat by anything in the files'
+  family: provision
+  per: dwelling
+  count:
+    class: IfcSpace
+    use: kitchen
+  checks:
+  - param: N_KITCHEN
+  - param: N_STORE
+    count:
+      class: IfcSpace
+      use: storage
+
+K103:
+  status: 'widened: dwellings are inferred from the door graph; a bathroom is a room matching the bathroom or wc concept,
+    fixtures are not read'
+  family: provision
+  per: dwelling
+  count:
+    class: IfcSpace
+    use: bathroom|wc
+  checks:
+  - param: N_BATH
+
+K112:
+  status: bound
+  select:
+    class: IfcSpace
+    use: office
+  checks:
+  - measure: space.height
+    param: H_OFF
+  - measure: space.height
+    param: H_MIN
+  - measure: space.height
+    param: H_LARGE
+    when:
+      measure: space.area
+      param: A_LARGE
+  - measure: space.height
+    param: H_AUX
+    select:
+      class: IfcSpace
+      use: horizontal_circulation|wc|bathroom
+
+K120:
+  status: 'partial: D_WC judged from each office room''s representative point to the nearest wc through doors; N_SEP (project
+    input) and WC_PER_BASIN (fixtures) are not evaluated'
+  family: route
+  select:
+    class: IfcSpace
+    use: office|open_plan_office|meeting
+  targets:
+    use: wc|bathroom
+  checks:
+  - param: D_WC
+  notes: the office room stands in for its workstations; the distance is a lower bound, so a fail is sound and a pass optimistic
+
+K122:
+  status: 'widened: applies when the model has office spaces (the office-building gate approximated); the caretaker rooms
+    are not evaluated'
+  applies:
+    class: IfcSpace
+    use: office
+  count:
+    class: IfcSpace
+    use: cleaning
+  per: storey
+  checks:
+  - param: N_CLEAN
+
+K123:
+  status: 'partial: clear height only; basement/attic placement and the archive floor load (project input) are not evaluated'
+  select:
+    class: IfcSpace
+    use: filing
+  checks:
+  - measure: space.height
+    param: H_FILE
+
+K134:
+  status: 'partial: D_STAIR judged; SP_STAIRS and SP_END (staircase spacing geometry) are not evaluated'
+  family: route
+  select:
+    class: IfcSpace
+    use: living|bedroom|dining|office|meeting|dwelling
+  targets:
+    use: vertical_core
+  checks:
+  - param: D_STAIR
+  notes: occupied rooms = the habitable concepts; targets = rooms named as vertical circulation (any stair, a superset of
+    the essential ones); lower-bound distance
+
+K137:
+  status: bound
+  select:
+    class: IfcSpace
+    use: open_plan_office
+  checks:
+  - measure: space.depth
+    param: D_OPEN
+
+
+K141:
+  status: 'widened: the workstation count is the desks modelled per room, a floor (furniture_occupancy''s reading), so every
+    ratio is an upper bound; a value below the range is a sound finding, one above is not, and warn becomes info'
+  family: aggregate
+  per: building
+  applies:
+    class: IfcSpace
+    use: office|open_plan_office
+  denominator:
+    select:
+      class: IfcSpace
+      use: office|open_plan_office|meeting
+    measure: space.workstations
+  checks:
+  - param: A_WS
+    numerator:
+      select:
+        class: IfcSpace
+        use: office|open_plan_office
+      measure: space.area
+  - param: A_ADD
+    numerator:
+      select:
+        class: IfcSpace
+        use: meeting|storage|filing
+      measure: space.area
+  - param: A_TR
+    numerator:
+      select:
+        class: IfcSpace
+        use: horizontal_circulation|lobby
+      measure: space.area
+  notes: 'workstations = desks per room (facts.workstations, the furniture classifier shared with furniture_occupancy) or
+    the room''s OccupancyNumber; areas are net (Qto or footprint) where the card says gross; the building is the
+    container, so one ratio per model'
+
+K113:
+  status: 'widened: the office-building gate is approximated by the presence of office rooms, and the gross floor area (BGF)
+    by the sum of every space''s net area, a lower bound, so a value below A_TOT is sound and one above is optimistic'
+  family: aggregate
+  per: building
+  applies:
+    class: IfcSpace
+    use: office|open_plan_office
+  numerator:
+    select:
+      class: IfcSpace
+    measure: space.area
+  denominator:
+    select:
+      class: IfcSpace
+      use: office|open_plan_office|meeting
+    measure: space.workstations
+  checks:
+  - param: A_TOT
+
+K119:
+  status: 'partial: A_WC_WS (toilet area per workstation) and A_TK (mean tea-kitchen area) are judged; WS_PER_WC and
+    WS_PER_TK are ranges under a <= op the comparator has no meaning for, and the kitchens'' distance to the
+    workstations is not evaluated; the ratios are per storey (2026-10-20: the validation pack judges the toilets of a
+    floor against that floor''s workstations)'
+  family: aggregate
+  per: storey
+  applies:
+    class: IfcSpace
+    use: office|open_plan_office
+  denominator:
+    select:
+      class: IfcSpace
+      use: office|open_plan_office|meeting
+    measure: space.workstations
+  checks:
+  - param: A_WC_WS
+    numerator:
+      select:
+        class: IfcSpace
+        use: wc|bathroom
+      measure: space.area
+  - param: A_TK
+    numerator:
+      select:
+        class: IfcSpace
+        use: kitchen
+      measure: space.area
+    denominator:
+      count:
+        class: IfcSpace
+        use: kitchen
+
+K129:
+  status: 'widened: A_STUD is judged from the seats modelled in each seminar room, a floor, so the area per seat is an upper
+    bound and warn becomes info; F_DEPTH (depth vs clear height with windows on one wall only) is not evaluated'
+  select:
+    class: IfcSpace
+    use: meeting
+  derived:
+    space.area_per_seat: space.area / space.seats
+  checks:
+  - measure: space.area_per_seat
+    param: A_STUD
+  notes: 'seminar rooms = the meeting concept (seminar, classroom, conference ...); seats = seating furniture per room
+    (facts.seats, the classifier shared with furniture_occupancy); a room without seats is nodata'
+
+K19:
+  status: bound
+  select:
+    class: IfcStairFlight
+  checks:
+  - measure: flight.width
+    param: W_NE
+  - measure: flight.riser
+    param: R_NE
+  - measure: flight.tread
+    param: T_NE
+  notes: 'every flight is judged although the card addresses non-essential stairs only: an essential stair is held to
+    stricter values (K11: 1.00 m, 0.17 / 0.28), so a flight that falls short of W_NE, R_NE or T_NE fails whichever class
+    its stair is; the population is wider, the fails are sound'
+
+K11:
+  status: 'widened: every flight is judged against W_ESS, R_MAX and T_MIN, the legally-essential gate is not evaluated and
+    a non-essential stair may legitimately be narrower (K19), so fail becomes info; W_HR (residential high-rise) is not
+    evaluated'
+  select:
+    class: IfcStairFlight
+  checks:
+  - measure: flight.width
+    param: W_ESS
+  - measure: flight.riser
+    param: R_MAX
+  - measure: flight.tread
+    param: T_MIN
+
+K83:
+  status: 'widened: residential = a building whose storeys hold inferred dwellings (facts.dwelling_units), full storeys = those
+    storeys; lifts = IfcTransportElement named as a lift (12 of 13 corpus models with transport elements; the
+    thirteenth has escalators); a missing lift is as often unmodelled as absent, so fail becomes info; FPF (flats per
+    floor per core) is not evaluated'
+  family: provision
+  per: building
+  count:
+    class: IfcTransportElement
+    use: lift
+  checks:
+  - param: N_LIFT
+    exists: true
+    when:
+      measure: building.dwelling_storeys
+      param: N_LIFT
+  notes: 'the card''s EXIST: N_LIFT gates the building (more than 5 storeys with dwellings) and lends its severity; `exists`
+    makes the threshold "at least one" since the card names no count param for the lifts'
+
+K91:
+  status: 'widened: stair cores are stacks of IfcStair bodies (facts.vertical_cores) and dwellings per floor are the inferred
+    units assigned to the nearest core, so "one flat per floor" may be an undercount; a lift serves the core when a lift
+    stack shares a storey with it; warn becomes info; the FPF == 3 note is not evaluated'
+  family: measure
+  select:
+    class: IfcStair
+    where:
+    - measure: stair.core_flats_per_floor
+      op: '=='
+      value: 1
+    - measure: stair.core_has_lift
+      op: '=='
+      value: 0
+  checks:
+  - measure: stair.core_storeys
+    param: N_1F
+  notes: the where conditions are the card's logic (fpf == 1 AND no lift), N_1F its threshold; every stair of the core carries
+    the core's storey count
+
+K25:
+  status: 'widened: flat entrance doors are the inferred units'' entrance doors, storeys served by a lift come from the lift
+    stacks (facts.vertical_cores), and OverallWidth / OverallHeight are the opening, not the clear passage, so fail and
+    warn become info'
+  select:
+    class: IfcDoor
+    role: unit.entrance_doors
+    where:
+    - measure: element.storey_lift_cores
+      op: '>'
+      value: 0
+  checks:
+  - measure: door.clear_width
+    param: W_LIFT
+  - measure: door.clear_height
+    param: H_LIFT

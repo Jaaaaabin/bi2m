@@ -1,0 +1,5 @@
+# config/rules/K40.yaml
+rule: K40
+params:
+  W_ESCW___H_ESCW: {op: ">=", value: [0.9, 1.2], unit: "m", severity: "FAIL", desc: "Clear opening"}
+  SILL_ESC:        {op: "<=", value: 1.2, unit: "m", severity: "FAIL", desc: "Sill height"}

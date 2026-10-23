@@ -1,0 +1,4 @@
+# config/rules/K39.yaml
+rule: K39
+params:
+  N_ROUTES: {op: ">=", value: 2, severity: "FAIL", desc: "Independent escape routes per storey"}

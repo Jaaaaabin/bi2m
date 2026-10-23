@@ -1,0 +1,7 @@
+# config/rules/K22.yaml
+rule: K22
+params:
+  "W_DOOR[room]": {op: "~=", value: 0.8, unit: "m", severity: "INFO", desc: "Room doors"}
+  "W_DOOR[bath]": {op: "~=", value: 0.7, unit: "m", severity: "INFO", desc: "Bath / WC doors"}
+  "W_DOOR[flat]": {op: ">=", value: 0.9, unit: "m", severity: "WARN", desc: "Flat entrance doors"}
+  "W_DOOR[front]": {op: "<=", value: 1.15, unit: "m", severity: "INFO", desc: "Front doors"}

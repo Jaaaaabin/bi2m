@@ -1,0 +1,5 @@
+# config/rules/K09.yaml
+rule: K09
+params:
+  N_MIN: {op: ">=", value: 3, unit: "steps", severity: "FAIL", desc: "Steps per run, minimum"}
+  N_MAX: {op: "<=", value: 18, unit: "steps", severity: "WARN", desc: "Steps per run, maximum (\"should\")"}

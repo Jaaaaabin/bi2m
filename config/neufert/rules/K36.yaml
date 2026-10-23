@@ -1,0 +1,8 @@
+# config/rules/K36.yaml
+rule: K36
+params:
+  "A_LIV[1]": {op: ">=", value: 22, unit: "m²", severity: "FAIL", desc: "1 person"}
+  "A_LIV[2–4]": {op: ">=", value: 24, unit: "m²", severity: "FAIL", desc: "2–4 persons"}
+  "A_LIV[5]": {op: ">=", value: 26, unit: "m²", severity: "FAIL", desc: "5 persons"}
+  "A_LIV[6]": {op: ">=", value: 28, unit: "m²", severity: "FAIL", desc: "6 persons"}
+  W_LIV:      {op: ">=", value: 3.75, unit: "m", severity: "FAIL", desc: "Minimum room width, 1–2 persons"}

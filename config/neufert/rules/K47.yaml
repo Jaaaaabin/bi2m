@@ -1,0 +1,5 @@
+# config/rules/K47.yaml
+rule: K47
+params:
+  L_SECT: {op: ">", value: 30, unit: "m", severity: "FAIL", desc: "Corridor length before sub-division"}
+  DOOR:   {op: "is", value: "self-closing, smoke-proof", severity: "FAIL", desc: "Section and stairwell doors"}

@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "model": "example_autcon.ifc",
+  "note": "Authored example: one spec of each shape kind, drawn by the Lines (test) button together with the record-derived demo set. Coordinates in `ifcPlan` are the detectors' plan metres; anchors name elements by GlobalId. `style.width` above 1 draws a fat line (pixels); only a fat line can be `dashed`.",
+  "lines": [
+    {
+      "id": "sidecar:spline-stack",
+      "kind": "spline",
+      "samples": 12,
+      "points": [
+        {
+          "guid": "0i7LRe3pP1yAV$Tn36Rw8I",
+          "at": "center"
+        },
+        {
+          "guid": "0nfJAfls9FHwWUEPKYw2e7",
+          "at": "center"
+        },
+        {
+          "guid": "2wwkhajRz9dOXaXiRcjNmc",
+          "at": "center"
+        },
+        {
+          "guid": "2wwkhajRz9dOXaXiRcjNmJ",
+          "at": "center"
+        }
+      ],
+      "style": {
+        "color": "#f59e0b",
+        "width": 3
+      },
+      "meta": {
+        "label": "Spline through the centres of a 4-storey column stack (anchors)",
+        "source": "sidecar"
+      }
+    },
+    {
+      "id": "sidecar:circle-foot",
+      "kind": "circle",
+      "radius": 1.5,
+      "points": [
+        {
+          "guid": "0i7LRe3pP1yAV$Tn36Rw8I",
+          "at": "bottom"
+        }
+      ],
+      "style": {
+        "color": "#22c55e",
+        "width": 3
+      },
+      "meta": {
+        "label": "Circle, radius 1.5 m, centred on the stack's base column foot (anchor)",
+        "source": "sidecar"
+      }
+    },
+    {
+      "id": "sidecar:arc-plan",
+      "kind": "arc",
+      "space": "ifcPlan",
+      "radius": 4,
+      "startDeg": 0,
+      "endDeg": 180,
+      "height": {
+        "guid": "0i7LRe3pP1yAV$Tn36Rw8I",
+        "at": "bottom"
+      },
+      "points": [
+        [
+          39.179,
+          43.365
+        ]
+      ],
+      "style": {
+        "color": "#0ea5e9",
+        "width": 3
+      },
+      "meta": {
+        "label": "Half arc, radius 4 m, around the stack in plan metres; floor height from an anchor",
+        "source": "sidecar"
+      }
+    },
+    {
+      "id": "sidecar:polygon-plan",
+      "kind": "polygon",
+      "space": "ifcPlan",
+      "height": {
+        "guid": "0i7LRe3pP1yAV$Tn36Rw8I",
+        "at": "bottom"
+      },
+      "points": [
+        [
+          33.179,
+          40.365
+        ],
+        [
+          37.179,
+          38.365
+        ],
+        [
+          42.179,
+          39.365
+        ],
+        [
+          44.179,
+          44.365
+        ],
+        [
+          40.179,
+          47.365
+        ],
+        [
+          34.179,
+          45.365
+        ]
+      ],
+      "style": {
+        "color": "#a855f7",
+        "width": 3,
+        "dashed": true
+      },
+      "meta": {
+        "label": "Irregular hexagon in plan metres around the stack",
+        "source": "sidecar"
+      }
+    },
+    {
+      "id": "sidecar:outline-room",
+      "kind": "outline",
+      "points": [
+        {
+          "guid": "1SipKwVz55Hfp7EGZMqFMC"
+        }
+      ],
+      "style": {
+        "color": "#16a34a",
+        "opacity": 0.9,
+        "width": 3
+      },
+      "meta": {
+        "label": "Exact floor outline of a corridor space, read from its fragment geometry",
+        "source": "sidecar"
+      }
+    }
+  ]
+}

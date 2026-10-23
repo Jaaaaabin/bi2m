@@ -1,0 +1,4 @@
+# config/rules/K65.yaml
+rule: K65
+params:
+  POS:  {op: "is", value: "warm (interior) side of insulation", severity: "FAIL", desc: "Vapour barrier position"}

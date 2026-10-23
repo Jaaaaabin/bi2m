@@ -1,0 +1,4 @@
+# config/rules/K20.yaml
+rule: K20
+params:
+  W_LAND: {op: ">=", expr: "stair_width", unit: "m", severity: "FAIL", desc: "Landing width"}

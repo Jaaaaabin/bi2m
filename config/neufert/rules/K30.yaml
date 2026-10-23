@@ -1,0 +1,6 @@
+# config/rules/K30.yaml
+rule: K30
+params:
+  W_CAR:   {op: ">=", value: 1.1, unit: "m", severity: "FAIL", desc: "Car clear width"}
+  D_CAR:   {op: ">=", value: 1.4, unit: "m", severity: "FAIL", desc: "Car clear depth"}
+  A_FRONT: {op: ">=", value: [1.5, 1.5], unit: "m", alt: "and >= car floor area", severity: "FAIL", desc: "Movement area in front of door"}

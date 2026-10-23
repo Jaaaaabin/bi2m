@@ -1,0 +1,6 @@
+# config/rules/K120.yaml
+rule: K120
+params:
+  D_WC:         {op: "<=", value: 100, unit: "m", alt: "or within one storey (no escalator)", severity: "FAIL", desc: "Distance from workstation to toilet"}
+  N_SEP:        {op: ">", value: 5, unit: "persons", severity: "FAIL", desc: "Employees above which sexes are separated"}
+  WC_PER_BASIN: {op: "<=", value: 5, severity: "FAIL", desc: "WCs per washbasin"}

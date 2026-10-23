@@ -1,0 +1,499 @@
+[
+    {
+        "id": "alignment",
+        "label": "Column Alignment",
+        "intentTypes": [
+            "alignment_column_group",
+            "grid_line_consistency",
+            "grid_line_gap"
+        ],
+        "domain": "structural",
+        "level": "building",
+        "maturity": "verified"
+    },
+    {
+        "id": "connection",
+        "label": "Horizontal Space Boundary",
+        "intentTypes": [
+            "connection_boundary_adjacency"
+        ],
+        "domain": "spatial",
+        "level": "room",
+        "maturity": "verified"
+    },
+    {
+        "id": "structural",
+        "label": "Vertical Placement Continuity",
+        "intentTypes": [
+            "structural_column_support",
+            "structural_wall_support",
+            "structural_unsupported_base",
+            "structural_stack_termination"
+        ],
+        "domain": "structural",
+        "level": "building",
+        "maturity": "verified"
+    },
+    {
+        "id": "vertical",
+        "label": "Vertical Space Alignment",
+        "intentTypes": [
+            "vertical_space_connection"
+        ],
+        "domain": "spatial",
+        "level": "building",
+        "maturity": "verified"
+    },
+    {
+        "id": "circulation",
+        "label": "Vertical Circulation",
+        "intentTypes": [
+            "circulation_vertical_link"
+        ],
+        "domain": "circulation",
+        "level": "building",
+        "maturity": "draft"
+    },
+    {
+        "id": "envelope",
+        "label": "Vertical Envelope Continuity",
+        "intentTypes": [
+            "envelope_footprint_continuity",
+            "envelope_setback"
+        ],
+        "domain": "spatial",
+        "level": "building",
+        "maturity": "draft"
+    },
+    {
+        "id": "window_alignment",
+        "label": "Vertical Window Alignment (retired, now in Window Stacks and Clusters)",
+        "intentTypes": [],
+        "domain": "daylight",
+        "level": "building",
+        "maturity": "draft",
+        "retired": "window_patterns"
+    },
+    {
+        "id": "lighting_clusters",
+        "label": "Lighting Clusters (retired, now in Window Stacks and Clusters)",
+        "intentTypes": [],
+        "domain": "daylight",
+        "level": "building",
+        "maturity": "draft",
+        "retired": "window_patterns"
+    },
+    {
+        "id": "circulation_horizontal",
+        "label": "Horizontal Circulation (retired, now in Room Access)",
+        "intentTypes": [],
+        "domain": "circulation",
+        "level": "storey",
+        "maturity": "draft",
+        "retired": "room_access"
+    },
+    {
+        "id": "beam_framing",
+        "label": "Beam Framing Modules",
+        "intentTypes": [
+            "beam_framing_module"
+        ],
+        "domain": "structural",
+        "level": "storey",
+        "maturity": "draft"
+    },
+    {
+        "id": "egress_access",
+        "label": "External Access Points (retired, now in Egress and Fire)",
+        "intentTypes": [],
+        "domain": "circulation",
+        "level": "storey",
+        "maturity": "draft",
+        "retired": "egress_fire"
+    },
+    {
+        "id": "space_access",
+        "label": "Room Access Network (retired, now in Room Access)",
+        "intentTypes": [],
+        "domain": "circulation",
+        "level": "storey",
+        "maturity": "draft",
+        "retired": "room_access"
+    },
+    {
+        "id": "unit_typology",
+        "label": "Repeated Unit Types (retired, now in Repeated Units)",
+        "intentTypes": [],
+        "domain": "spatial",
+        "level": "building",
+        "maturity": "draft",
+        "retired": "repeated_units"
+    },
+    {
+        "id": "daylight_rooms",
+        "label": "Room Daylight Provision",
+        "intentTypes": [
+            "daylight_room_group",
+            "daylight_deficit"
+        ],
+        "domain": "daylight",
+        "level": "storey",
+        "maturity": "draft"
+    },
+    {
+        "id": "furniture_occupancy",
+        "label": "Furnished Occupancy",
+        "intentTypes": [
+            "furniture_occupancy"
+        ],
+        "domain": "functional",
+        "level": "storey",
+        "maturity": "draft"
+    },
+    {
+        "id": "sanitary_provision",
+        "label": "Sanitary Provision",
+        "intentTypes": [
+            "sanitary_provision"
+        ],
+        "domain": "services",
+        "level": "storey",
+        "maturity": "draft"
+    },
+    {
+        "id": "curtainwall_assembly",
+        "label": "Curtain Wall Assemblies",
+        "intentTypes": [
+            "curtainwall_assembly"
+        ],
+        "domain": "constructional",
+        "level": "storey",
+        "maturity": "draft"
+    },
+    {
+        "id": "fire_compartments",
+        "label": "Fire Compartments (retired, now in Egress and Fire)",
+        "intentTypes": [],
+        "domain": "regulatory",
+        "level": "storey",
+        "maturity": "draft",
+        "retired": "egress_fire"
+    },
+    {
+        "id": "egress_reachability",
+        "label": "Egress Reachability (retired, now in Egress and Fire)",
+        "intentTypes": [],
+        "domain": "regulatory",
+        "level": "storey",
+        "maturity": "draft",
+        "retired": "egress_fire"
+    },
+    {
+        "id": "convention_outlier",
+        "label": "Convention Outliers",
+        "intentTypes": [
+            "convention_outlier"
+        ],
+        "domain": "constructional",
+        "level": "building",
+        "maturity": "draft"
+    },
+    {
+        "id": "thermal_envelope",
+        "label": "External Envelope Boundary",
+        "intentTypes": [
+            "envelope_thermal_boundary"
+        ],
+        "domain": "environmental",
+        "level": "storey",
+        "maturity": "draft"
+    },
+    {
+        "id": "grid_claims",
+        "label": "Column Alignment Continuity (retired, now in Column Alignment)",
+        "intentTypes": [],
+        "domain": "structural",
+        "level": "building",
+        "maturity": "draft",
+        "retired": "alignment"
+    },
+    {
+        "id": "space_syntax",
+        "label": "Space Syntax (retired, now in Room Access)",
+        "intentTypes": [],
+        "domain": "circulation",
+        "level": "storey",
+        "maturity": "draft",
+        "retired": "room_access"
+    },
+    {
+        "id": "unit_layout",
+        "label": "Unit Layouts (retired, now in Repeated Units)",
+        "intentTypes": [],
+        "domain": "spatial",
+        "level": "building",
+        "maturity": "draft",
+        "retired": "repeated_units"
+    },
+    {
+        "id": "room_access",
+        "label": "Room Access",
+        "intentTypes": [
+            "access_reachable_group",
+            "access_isolated_space",
+            "access_door_anomaly",
+            "access_storey_without_rooms",
+            "syntax_integration_core",
+            "syntax_ring",
+            "circulation_horizontal_space"
+        ],
+        "domain": "circulation",
+        "level": "storey",
+        "maturity": "draft"
+    },
+    {
+        "id": "egress_fire",
+        "label": "Egress and Fire",
+        "intentTypes": [
+            "egress_reachable",
+            "egress_unreachable",
+            "egress_external_access",
+            "fire_compartment",
+            "fire_compartment_singletons"
+        ],
+        "domain": "regulatory",
+        "level": "storey",
+        "maturity": "draft"
+    },
+    {
+        "id": "window_patterns",
+        "label": "Window Stacks and Clusters",
+        "intentTypes": [
+            "window_vertical_alignment",
+            "window_bay_interrupted",
+            "window_lighting_cluster"
+        ],
+        "domain": "daylight",
+        "level": "building",
+        "maturity": "draft"
+    },
+    {
+        "id": "repeated_units",
+        "label": "Repeated Units",
+        "intentTypes": [
+            "unit_type_recurrence",
+            "unit_layout_recurrence"
+        ],
+        "domain": "spatial",
+        "level": "building",
+        "maturity": "draft"
+    },
+    {
+        "id": "neufert_site",
+        "label": "Neufert: Site and massing",
+        "intentTypes": [
+            "neufert_site_pass",
+            "neufert_site_fail",
+            "neufert_site_warn",
+            "neufert_site_info",
+            "neufert_site_nodata",
+            "neufert_site_scenario"
+        ],
+        "domain": "neufert",
+        "level": "building",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_rooms",
+        "label": "Neufert: Habitable-room standards and area calculation",
+        "intentTypes": [
+            "neufert_rooms_pass",
+            "neufert_rooms_fail",
+            "neufert_rooms_warn",
+            "neufert_rooms_info",
+            "neufert_rooms_nodata",
+            "neufert_rooms_scenario"
+        ],
+        "domain": "neufert",
+        "level": "building",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_housing",
+        "label": "Neufert: Housing: layout and entrance",
+        "intentTypes": [
+            "neufert_housing_pass",
+            "neufert_housing_fail",
+            "neufert_housing_warn",
+            "neufert_housing_info",
+            "neufert_housing_nodata",
+            "neufert_housing_scenario"
+        ],
+        "domain": "neufert",
+        "level": "building",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_offices",
+        "label": "Neufert: Offices",
+        "intentTypes": [
+            "neufert_offices_pass",
+            "neufert_offices_fail",
+            "neufert_offices_warn",
+            "neufert_offices_info",
+            "neufert_offices_nodata",
+            "neufert_offices_scenario"
+        ],
+        "domain": "neufert",
+        "level": "building",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_highrise",
+        "label": "Neufert: High-rise buildings",
+        "intentTypes": [
+            "neufert_highrise_pass",
+            "neufert_highrise_fail",
+            "neufert_highrise_warn",
+            "neufert_highrise_info",
+            "neufert_highrise_nodata",
+            "neufert_highrise_scenario"
+        ],
+        "domain": "neufert",
+        "level": "building",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_stairs",
+        "label": "Neufert: Stairs, ramps, lifts and railings",
+        "intentTypes": [
+            "neufert_stairs_pass",
+            "neufert_stairs_fail",
+            "neufert_stairs_warn",
+            "neufert_stairs_info",
+            "neufert_stairs_nodata",
+            "neufert_stairs_scenario"
+        ],
+        "domain": "neufert",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_accessibility",
+        "label": "Neufert: Accessibility",
+        "intentTypes": [
+            "neufert_accessibility_pass",
+            "neufert_accessibility_fail",
+            "neufert_accessibility_warn",
+            "neufert_accessibility_info",
+            "neufert_accessibility_nodata",
+            "neufert_accessibility_scenario"
+        ],
+        "domain": "neufert",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_escape",
+        "label": "Neufert: Escape and fire protection",
+        "intentTypes": [
+            "neufert_escape_pass",
+            "neufert_escape_fail",
+            "neufert_escape_warn",
+            "neufert_escape_info",
+            "neufert_escape_nodata",
+            "neufert_escape_scenario"
+        ],
+        "domain": "neufert",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_bedrooms",
+        "label": "Neufert: Housing: bedrooms, bathrooms and storage",
+        "intentTypes": [
+            "neufert_bedrooms_pass",
+            "neufert_bedrooms_fail",
+            "neufert_bedrooms_warn",
+            "neufert_bedrooms_info",
+            "neufert_bedrooms_nodata",
+            "neufert_bedrooms_scenario"
+        ],
+        "domain": "neufert",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_daylight",
+        "label": "Neufert: Daylight, sunlight, ventilation and windows",
+        "intentTypes": [
+            "neufert_daylight_pass",
+            "neufert_daylight_fail",
+            "neufert_daylight_warn",
+            "neufert_daylight_info",
+            "neufert_daylight_nodata",
+            "neufert_daylight_scenario"
+        ],
+        "domain": "neufert",
+        "level": "room",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_doors",
+        "label": "Neufert: Doors",
+        "intentTypes": [
+            "neufert_doors_pass",
+            "neufert_doors_fail",
+            "neufert_doors_warn",
+            "neufert_doors_info",
+            "neufert_doors_nodata",
+            "neufert_doors_scenario"
+        ],
+        "domain": "neufert",
+        "level": "room",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_envelope",
+        "label": "Neufert: Building envelope and thermal insulation",
+        "intentTypes": [
+            "neufert_envelope_pass",
+            "neufert_envelope_fail",
+            "neufert_envelope_warn",
+            "neufert_envelope_info",
+            "neufert_envelope_nodata",
+            "neufert_envelope_scenario"
+        ],
+        "domain": "neufert",
+        "level": "room",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_walls",
+        "label": "Neufert: Walls and construction",
+        "intentTypes": [
+            "neufert_walls_pass",
+            "neufert_walls_fail",
+            "neufert_walls_warn",
+            "neufert_walls_info",
+            "neufert_walls_nodata",
+            "neufert_walls_scenario"
+        ],
+        "domain": "neufert",
+        "level": "room",
+        "maturity": "draft",
+        "section": "neufert"
+    }
+]

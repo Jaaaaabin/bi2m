@@ -1,0 +1,6 @@
+# config/rules/K12.yaml
+rule: K12
+params:
+  W_2F:  {op: ">=", value: 0.8, unit: "m", severity: "FAIL", desc: "Usable stair width"}
+  R_MAX: {op: "<=", value: 0.17, unit: "m", severity: "FAIL", desc: "Riser / tread (ratio 17/28)"}
+  T_MIN: {op: ">=", value: 0.28, unit: "m", severity: "FAIL", desc: "Riser / tread (ratio 17/28)"}

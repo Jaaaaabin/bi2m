@@ -1,0 +1,6 @@
+# config/rules/K58.yaml
+rule: K58
+params:
+  T_OUTER:   {op: ">=", value: 0.09, unit: "m", severity: "FAIL", desc: "Outer leaf thickness"}
+  T_GAP_MIN: {op: ">=", value: 0.04, unit: "m", severity: "FAIL", desc: "Air gap"}
+  T_GAP_MAX: {op: "<=", value: 0.15, unit: "m", severity: "FAIL", desc: "Air gap"}

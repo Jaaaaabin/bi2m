@@ -1,0 +1,5 @@
+# config/rules/K73.yaml
+rule: K73
+params:
+  MAT_WALL: {op: "is", value: "non-combustible", severity: "FAIL", desc: "Non-load-bearing external walls (classes 4–5)"}
+  MAT_CLAD: {op: "is", value: "flame-resistant", severity: "FAIL", desc: "Claddings incl. insulation and substructure"}

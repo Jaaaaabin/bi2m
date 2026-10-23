@@ -1,0 +1,6 @@
+# config/rules/K107.yaml
+rule: K107
+params:
+  A_STORE: {op: ">=", value: 1, unit: "m²", severity: "WARN", desc: "Storage area"}
+  W_STORE: {op: ">=", value: 0.75, unit: "m", severity: "WARN", desc: "Storage clear width"}
+  F_STORE: {op: ">=", value: 2, unit: "% of floor area", severity: "WARN", desc: "Storage in larger flats (may be split)"}

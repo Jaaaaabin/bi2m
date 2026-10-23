@@ -1,0 +1,4 @@
+# config/rules/K91.yaml
+rule: K91
+params:
+  N_1F: {op: "<=", value: 4, unit: "storeys", severity: "WARN", desc: "Storeys with one flat per floor and no lift"}

@@ -1,0 +1,4 @@
+# config/rules/K127.yaml
+rule: K127
+params:
+  A_UNIT: {op: "<", value: 400, unit: "m²", severity: "CLASS", desc: "Unit area below which corridors are not escape routes"}

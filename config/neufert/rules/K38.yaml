@@ -1,0 +1,4 @@
+# config/rules/K38.yaml
+rule: K38
+params:
+  D_ESC: {op: "<=", value: 35, unit: "m", severity: "FAIL", desc: "Any point to a legally essential stairwell or exit"}

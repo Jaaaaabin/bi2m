@@ -1,0 +1,7 @@
+# config/rules/K79.yaml
+rule: K79
+params:
+  NUF:  {op: "class", value: null, unit: "m²", severity: "REPORT", desc: "Usable area: all uses not in TF or VF"}
+  TF:   {op: "class", value: null, unit: "m²", severity: "REPORT", desc: "Technical function area: plant rooms, shafts"}
+  VF:   {op: "class", value: null, unit: "m²", severity: "REPORT", desc: "Traffic area: corridors, stairs, lifts"}
+  TOL:  {op: "<=", value: 1, unit: "%", severity: "WARN", desc: "Consistency tolerance (suggested)"}

@@ -1,0 +1,6 @@
+# config/rules/K93.yaml
+rule: K93
+params:
+  W_REC:      {op: ">=", value: 1.25, unit: "m", severity: "WARN", desc: "Recess width"}
+  W_REC_PREF: {op: ">=", value: 1.5, unit: "m", severity: "INFO", desc: "Preferred recess width"}
+  D_REC:      {op: "~=", value: 1.0, unit: "m", severity: "WARN", desc: "Recess depth"}

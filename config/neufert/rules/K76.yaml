@@ -1,0 +1,8 @@
+# config/rules/K76.yaml
+rule: K76
+params:
+  H_FULL: {op: ">=", value: 2.0, unit: "m", severity: "REPORT", desc: "Clear height counted in full"}
+  H_HALF: {op: ">=", value: 1.0, unit: "m", severity: "REPORT", desc: "Clear height counted at half"}
+  W_FULL: {op: "==", value: 1.0, severity: "REPORT", desc: "Weights"}
+  W_HALF: {op: "==", value: 0.5, severity: "REPORT", desc: "Weights"}
+  EXCL:   {op: "in", value: ["basements", "garages", "offices"], severity: "CLASS", desc: "Excluded rooms"}

@@ -1,0 +1,6 @@
+# config/rules/K150.yaml
+rule: K150
+params:
+  W_WELL:     {op: ">=", value: 0.8, unit: "m", severity: "FAIL", desc: "Wellhole width"}
+  F_VENT:     {op: ">=", value: 5, unit: "%", severity: "FAIL", desc: "Smoke outlet as share of stairwell floor area"}
+  A_VENT_MIN: {op: ">=", value: 1.0, unit: "m²", severity: "FAIL", desc: "Smoke outlet minimum area"}

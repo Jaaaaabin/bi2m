@@ -1,0 +1,5 @@
+# config/rules/K60.yaml
+rule: K60
+params:
+  GAP_PANEL: {op: ">=", value: 0.02, unit: "m", severity: "FAIL", desc: "Air gap behind panel cladding"}
+  GAP_BRICK: {op: ">=", value: 0.04, unit: "m", severity: "FAIL", desc: "Air gap behind brickwork skin"}

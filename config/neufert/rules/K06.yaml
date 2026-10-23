@@ -1,0 +1,5 @@
+# config/rules/K06.yaml
+rule: K06
+params:
+  GRZ_MAX: {op: "<=", value: null, source: "Pset_SiteCommon.SiteCoverageRatio | project_input(\"grz_max\")", severity: "FAIL", desc: "Plot coverage ratio limit (Pset_SiteCommon.SiteCoverageRatio or zoning plan)"}
+  GFZ_MAX: {op: "<=", value: null, source: "Pset_SiteCommon.FloorAreaRatio | project_input(\"gfz_max\")", severity: "FAIL", desc: "Floor-area ratio limit (Pset_SiteCommon.FloorAreaRatio or zoning plan)"}

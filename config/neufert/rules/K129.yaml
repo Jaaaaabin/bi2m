@@ -1,0 +1,5 @@
+# config/rules/K129.yaml
+rule: K129
+params:
+  A_STUD:  {op: "in", value: [1.9, 2.0], unit: "m²", severity: "WARN", desc: "Area per student"}
+  F_DEPTH: {op: "<=", value: 2.5, factor_of: "clear ceiling height", severity: "WARN", desc: "Room depth with single-sided natural ventilation"}

@@ -1,0 +1,5 @@
+# config/rules/K26.yaml
+rule: K26
+params:
+  W_BF: {op: ">=", value: 0.9, unit: "m", severity: "FAIL", desc: "Clear passage width"}
+  STEP: {op: "is", value: "step-free", severity: "FAIL", desc: "Threshold at the accessible entrance"}

@@ -1,0 +1,8 @@
+# config/rules/K48.yaml
+rule: K48
+params:
+  F_VIEW:          {op: ">=", value: 0.1, severity: "FAIL", desc: "Window width as share of total wall width"}
+  "SILL_LO–SILL_HI": {op: "in", value: [0.85, 1.25], unit: "m", severity: "WARN", desc: "Sill height for view at eye level"}
+  H_TALL:          {op: ">", value: 3.5, unit: "m", severity: "PARAM", desc: "Room height above which the glass-area rule applies"}
+  F_GLASS:         {op: ">=", value: 30, unit: "%", severity: "FAIL", desc: "Glass area as share of external wall area"}
+  F_IND:           {op: "~=", value: 0.1, severity: "INFO", desc: "Industrial: window area / floor area (≤ 600 m²; fine work 1/5)"}

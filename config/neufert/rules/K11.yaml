@@ -1,0 +1,7 @@
+# config/rules/K11.yaml
+rule: K11
+params:
+  W_ESS: {op: ">=", value: 1.0, unit: "m", severity: "FAIL", desc: "Usable stair width"}
+  W_HR:  {op: ">=", value: 1.25, unit: "m", severity: "FAIL", desc: "Usable stair width, residential high-rise"}
+  R_MAX: {op: "<=", value: 0.17, unit: "m", severity: "FAIL", desc: "Riser / tread (ratio 17/28)"}
+  T_MIN: {op: ">=", value: 0.28, unit: "m", severity: "FAIL", desc: "Riser / tread (ratio 17/28)"}

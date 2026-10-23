@@ -1,0 +1,5 @@
+# config/rules/K46.yaml
+rule: K46
+params:
+  H_PAR:  {op: ">=", value: 1.0, unit: "m", severity: "FAIL", desc: "Parapet height, W 90-A"}
+  P_PROJ: {op: ">=", value: 1.5, unit: "m", severity: "FAIL", desc: "Horizontal projection, W 90-A (alternative)"}

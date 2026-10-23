@@ -1,0 +1,2777 @@
+/* ======== Self-hosted type ========
+   Space Grotesk 400/600, the same three woff2 subsets Google served, now
+   from /fonts/ - no third-party origin on the critical path, and no CORP
+   problem once cross-origin isolation is on. */
+/* vietnamese */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2) format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301,
+    U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2) format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+    U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2) format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301,
+    U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2) format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+    U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ======== Design tokens ========
+   Single source of truth for spacing/color/etc. The old version had the
+   sidebar width hardcoded in three unrelated places (#sidebar-panel width,
+   #viewer-wrapper margin-left, h1 margin-left) that had to be kept in sync
+   by hand. Now there's exactly one, and layout uses CSS Grid instead of
+   margin arithmetic. */
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f0f0f0;
+  --color-border: #dcdcdc;
+  --color-accent: #f4c430;
+  --color-accent-hover: #dcae1c;
+  --color-accent-active: #e3ccfd;
+  --color-text: #111111;
+  --color-text-muted: #666666;
+  --color-danger: #e05252;
+  --color-danger-hover: #c73e3e;
+  --color-success: #2f9e5e;
+  --color-success-hover: #278a4f;
+  --color-dot: #c4c4c4;
+  --color-overlay: rgba(255, 255, 255, 0.85);
+  --color-row-border: #f0f0f0;
+  --color-btn-bg: #ffffff;
+
+  /* Categorical palette for recognized intent groups (see
+     visualizeIntentGroups/createIntentPanel in ThatOpenCompanyLoader.js) -
+     one color per intent, applied both to the 3D highlight and the panel's
+     swatch dots. Fixed order (never cycled per-render), assigned by
+     colorIndex = registry.py CATEGORIES insertion order (alignment,
+     connection, structural, vertical, circulation, envelope,
+     window_alignment, lighting_clusters, circulation_horizontal), so all 9
+     slots are pinned to specific named colors - maroon (Horizontal Placement
+     Alignment), cyan (Horizontal Space Boundary), red (Vertical Placement
+     Continuity), blue (Vertical Space Alignment), green (Vertical
+     Circulation) per explicit user request, purple (Vertical Envelope
+     Continuity), a muted mustard-gold (Vertical Window Alignment -
+     thematically "daylight", but deliberately darker/more desaturated than
+     --color-accent's own bright gold so an intent swatch is never mistaken
+     for generic UI chrome), rose/pink (Lighting Clusters - this slot's
+     category was originally "Horizontal Window Sightline", replaced
+     2026-09-18 by the current one; same slot, no color reassignment), and
+     teal (Horizontal Circulation - added 2026-09-18 at the END of
+     registry.py's CATEGORIES dict specifically so every earlier category
+     keeps its existing colorIndex/color; inserting a new entry in the
+     MIDDLE of that dict would silently reassign every later category's
+     color, which is exactly what happened once here before being caught
+     and fixed) - not the original CVD-validated palette. No spares left;
+     a 10th category would need to start cycling the palette (see
+     visualizeIntentGroups's own comment on that). */
+  --intent-color-1: #7a2e2e;
+  --intent-color-2: #0097a7;
+  --intent-color-3: #d32f2f;
+  --intent-color-4: #2a78d6;
+  --intent-color-5: #1b8a3a;
+  --intent-color-6: #4a3aa7;
+  --intent-color-7: #9c7a0a;
+  --intent-color-8: #c2185b;
+  --intent-color-9: #00695c;
+
+  --font-family: "Space Grotesk", sans-serif;
+  /* Indices, GUIDs and readouts: a zero-byte system monospace stack instead
+     of the generic `monospace` keyword. */
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* Type scale. 11px is the floor: nothing the
+     user has to read is set smaller. Counts and readouts use tabular
+     numerals so a changing digit never shifts its neighbours. */
+  --fs-1: 11px; /* captions, indices, counts, badges */
+  --fs-2: 12px; /* panel body: evidence, eyebrows, hints */
+  --fs-3: 13px; /* row labels, category headers */
+  --fs-4: 16px; /* page and sidebar headings */
+
+  /* One value, one mode: the sidebar has been a fixed 44px column since
+     2026-09-24 (see #sidebar-panel). 44 - 6 - 6 padding = 32px of content. */
+  --sidebar-width: 44px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --transition-fast: 0.2s ease;
+}
+
+/* Dark palette: applied when the OS prefers dark AND the user hasn't
+   explicitly chosen light, OR when the user has explicitly chosen dark
+   (data-theme="dark", toggled by #theme-toggle-btn, persisted in
+   localStorage - see ThatOpenCompanyLoader.js). */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #14161a;
+    --color-surface: #1c1f24;
+    --color-surface-alt: #24272c;
+    --color-border: #33383f;
+    --color-accent: #f0cf6e;
+    --color-accent-hover: #f7dc8a;
+    --color-accent-active: #a98be0;
+    --color-text: #eef0f2;
+    --color-text-muted: #9aa0a8;
+    --color-dot: #2c2f35;
+    --color-overlay: rgba(20, 22, 26, 0.85);
+    --color-row-border: #2a2d33;
+    --color-btn-bg: #24272c;
+    --intent-color-1: #a85a5a;
+    --intent-color-2: #4dd0e1;
+    --intent-color-3: #ef5350;
+    --intent-color-4: #3987e5;
+    --intent-color-5: #43a047;
+    --intent-color-6: #9085e9;
+    --intent-color-7: #d4b03c;
+    --intent-color-8: #f06292;
+    --intent-color-9: #4db6ac;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #14161a;
+  --color-surface: #1c1f24;
+  --color-surface-alt: #24272c;
+  --color-border: #33383f;
+  --color-accent: #f0cf6e;
+  --color-accent-hover: #f7dc8a;
+  --color-accent-active: #a98be0;
+  --color-text: #eef0f2;
+  --color-text-muted: #9aa0a8;
+  --color-dot: #2c2f35;
+  --color-overlay: rgba(20, 22, 26, 0.85);
+  --color-row-border: #2a2d33;
+  --color-btn-bg: #24272c;
+  --intent-color-1: #a85a5a;
+  --intent-color-2: #4dd0e1;
+  --intent-color-3: #ef5350;
+  --intent-color-4: #3987e5;
+  --intent-color-5: #43a047;
+  --intent-color-6: #9085e9;
+  --intent-color-7: #d4b03c;
+  --intent-color-8: #f06292;
+  --intent-color-9: #4db6ac;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ======== Page shell (CSS Grid: sidebar | main content) ======== */
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  background-image: radial-gradient(var(--color-dot) 1px, transparent 0);
+  background-size: 16px 16px;
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  min-height: 100vh;
+}
+
+/* ======== Sidebar ========
+   ONE COLUMN, ONE MODE since 2026-09-24 (owner's decision). There used to be
+   two: a 200px expanded panel and a 44px collapsed one, switched by
+   #sidebar-collapse-btn (page/sidebar.js, both now deleted) and remembered in
+   `bi2m:sidebarCollapsed`. The narrow one is all that is left, so
+   --sidebar-width is simply 44px and the grid column never changes - which is
+   why the `transition: grid-template-columns` that used to animate the fold
+   is gone too, along with every `body.sidebar-collapsed` rule.
+   44px = 32px of usable content between 6px paddings, which is what every
+   control in here is sized against: 30px buttons, and a 6px-wide transparency
+   track with its percentage underneath.
+   A flex COLUMN rather than the old block flow, because the panel now has a
+   top and a bottom: the button groups stack from the top, and #sidebar-content
+   takes `margin-top: auto` so it and the viewer-management group below it sit
+   at the foot of the column. On a short viewport the auto margin collapses to
+   nothing and the panel scrolls (overflow-y), rather than the bottom group
+   sliding off the screen. */
+#sidebar-panel {
+  grid-column: 1;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  background-color: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  padding: 20px 6px;
+  box-shadow: var(--shadow-sm);
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+}
+
+.app-main {
+  grid-column: 2;
+  min-width: 0; /* let flex/grid children shrink instead of overflowing the column */
+  padding: 20px;
+}
+
+/* ======== Sidebar buttons ========
+   Order down the column, set by the owner 2026-09-24: Theme, Upload,
+   Auto-open Camera + Intents; then Examples and Library (the two "open a
+   model from the server" buttons); then the transparency slider; then
+   Add viewer, Remove viewer, Sync cameras, Match sizes at the very bottom.
+   .sidebar-buttons-group is the CLUSTER, and the two gaps - 14px between
+   groups, 6px between buttons inside one - are the only thing separating one
+   cluster from the next. It was called .sidebar-buttons-row until 2026-09-24,
+   which was accurate only in the expanded mode that no longer exists; the two
+   flyout popovers (page/exampleModels.js, page/libraryModels.js) position
+   themselves against the group's box and were renamed with it. */
+.sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sidebar-buttons-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Pins the transparency slider - and the viewer-management group after it -
+   to the foot of the column. See #sidebar-panel's comment. */
+#sidebar-content {
+  margin-top: auto;
+}
+
+.sidebar-buttons button {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+.sidebar-buttons svg {
+  width: 16px;
+  height: 16px;
+}
+
+.sidebar-buttons button .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.sidebar-buttons button:hover {
+  background-color: var(--color-accent-hover);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-md);
+}
+
+.sidebar-buttons button:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-accent-active);
+  outline-offset: 2px;
+}
+
+.sidebar-buttons button .icon {
+  color: var(--color-text);
+}
+
+/* Inline SVG icons (the sprite in index.html; icons.js for JS-built ones).
+   fill: currentColor keeps every existing `color` rule in charge. */
+.icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  fill: currentColor;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+/* ---- #example-models-btn's popover - lives as a direct child of <body>
+   (see index.html), not #sidebar-panel, and is positioned via JS against
+   the button's own live bounding rect, not CSS top/left - see
+   initExampleModelsButton in ThatOpenCompanyLoader.js. ---- */
+.example-models-flyout {
+  position: fixed;
+  z-index: 2000;
+  width: 260px;
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+}
+
+.example-models-hint,
+.example-models-status {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.example-models-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.example-models-item,
+.viewer-empty-example-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  padding: 6px 8px;
+  font-family: var(--font-family);
+  font-size: 12px;
+  color: var(--color-text);
+  background: var(--color-btn-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: left;
+}
+
+.example-models-item:hover,
+.viewer-empty-example-item:hover {
+  background: var(--color-accent);
+}
+
+.example-models-item:disabled,
+.viewer-empty-example-item:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.example-models-item-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.example-models-item-size {
+  flex-shrink: 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-1);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- #library-models-btn's popover (2026-09-23) - the IFC library served by
+   /api/library-models. Same body-level, JS-positioned placement as the
+   example-models flyout above; its own classes so nothing that selects
+   .example-models-item ever matches a library entry. Existing tokens only. ---- */
+.library-models-flyout {
+  position: fixed;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 340px;
+  max-height: min(70vh, 640px);
+  padding: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+}
+
+/* display:flex above would defeat the hidden attribute's UA rule. */
+.library-models-flyout[hidden] {
+  display: none;
+}
+
+.library-models-hint,
+.library-models-status {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.library-models-search {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  font-family: var(--font-family);
+  font-size: 12px;
+  color: var(--color-text);
+  background: var(--color-btn-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.library-models-search:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+.library-models-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.library-models-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  padding: 6px 8px;
+  font-family: var(--font-family);
+  font-size: 12px;
+  color: var(--color-text);
+  background: var(--color-btn-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: left;
+}
+
+.library-models-item[hidden] {
+  display: none;
+}
+
+.library-models-item:hover {
+  background: var(--color-accent);
+}
+
+.library-models-item:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.library-models-item-name {
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.library-models-item-key {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: var(--fs-1);
+}
+
+.library-models-item-size {
+  flex-shrink: 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-1);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Clusters (2026-09-23): native <details>, one per reason to look. */
+.library-models-cluster > summary {
+  cursor: pointer;
+  padding: 4px 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.library-models-cluster-count {
+  margin-left: 6px;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.library-models-cluster-note {
+  margin: 2px 0 6px;
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.library-models-cluster-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.library-models-subhead {
+  margin: 6px 0 2px;
+  font-size: var(--fs-1);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.library-models-subhead[hidden],
+.library-models-cluster[hidden] {
+  display: none;
+}
+
+.library-models-badge {
+  flex-shrink: 0;
+  padding: 1px 6px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: var(--fs-1);
+  color: var(--color-text-muted);
+}
+
+/* The one accent: a residual model is a finding, not a file. */
+.library-models-badge.is-residual {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+
+#sync-cam-btn.active,
+#panels-default-btn.active {
+  background-color: var(--color-accent-active);
+  color: white;
+}
+
+/* ======== Bulk section toggle (Select All / None) ======== */
+.section-bulk-toggle {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.bulk-toggle-btn {
+  font-family: var(--font-family);
+  font-size: 11px;
+  padding: 3px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-btn-bg);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.bulk-toggle-btn:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+/* ======== Viewer layout ======== */
+#viewer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  justify-content: center;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  transition:
+    background-color var(--transition-fast),
+    outline var(--transition-fast);
+  outline: 2px dashed transparent;
+}
+
+/* Visual feedback while a file is dragged over the viewer area */
+#viewer-wrapper.drag-active {
+  background-color: rgba(255, 229, 158, 0.25);
+  outline: 2px dashed var(--color-accent-hover);
+}
+
+.viewer-container {
+  width: 30%;
+  min-width: 280px;
+  min-height: 200px;
+  aspect-ratio: 16 / 9; /* initial shape only - resizing below sets explicit
+                           width/height, which takes over from this */
+  background-color: var(--color-surface-alt);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  position: relative; /* anchors .viewer-resize-handle (below) */
+
+  /* Flexible sizing: drag .viewer-resize-handle (bottom-right corner) to
+     resize this viewer independently of the others, without disturbing the
+     flex-wrap arrangement they all sit in. A custom JS-driven handle (see
+     attachResizeHandle in ThatOpenCompanyLoader.js) replaces the native CSS
+     `resize: both` used previously - native resize fires no events during
+     the drag, so there was no way to read Shift/Ctrl modifier keys and
+     support aspect-ratio-locked / single-axis resizing. flex: 0 0 auto keeps
+     the flex layout from fighting the resize once explicit width/height are
+     set by it. */
+  overflow: hidden;
+  flex: 0 0 auto;
+
+  /* Column layout: .viewer-row (the 3D viewport + docked right-side filter
+     panel). .viewer-camera-panel used to be a full-span strip below it; it
+     floats over the canvas now and, since 2026-09-23, is a child of
+     .viewer-canvas-area (see its own comment), so this column has one row. */
+  display: flex;
+  flex-direction: column;
+}
+
+/* The single viewer present at page load (see index.html) starts much
+   larger than the normal default size - width 80% of #viewer-wrapper (the
+   main content area to the right of the sidebar, not the raw viewport -
+   using a percentage here rather than vw keeps this from overflowing next
+   to the fixed-width sidebar); height follows automatically since
+   aspect-ratio (16/9, above) is unchanged. Scoped to this one ID, not the
+   shared .viewer-container class, so viewers added later (via "+" or bulk
+   upload) still start at the normal 30% size. */
+#viewerContainer1 {
+  width: 80%; /* initial only - applySingleViewerLayout writes explicit px.
+                 Its own min-width/min-height (560/400) were removed 2026-09-21
+                 so every tile shares .viewer-container's 280/200 and tiles
+                 agree when a second viewer opens. */
+}
+
+.viewer-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  min-height: 0; /* let this shrink within the column instead of overflowing */
+}
+
+.viewer-resize-handle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 16px;
+  height: 16px;
+  z-index: 20;
+  cursor: nwse-resize;
+  opacity: 0.6;
+  background: linear-gradient(
+    135deg,
+    transparent 0 40%,
+    var(--color-border) 40% 46%,
+    transparent 46% 54%,
+    var(--color-border) 54% 60%,
+    transparent 60% 100%
+  );
+}
+
+.viewer-resize-handle:hover {
+  opacity: 1;
+}
+
+/* Opening the filter panel grows the TILE (min-width jumps up), rather than
+   shrinking the canvas into it - at the base 280px min-width, a fixed 220px
+   panel would otherwise leave the 3D viewport a barely-usable sliver. min-
+   width always wins over an explicit resize-set width in the CSS box model,
+   so this also widens a tile the user has already manually shrunk via the
+   resize handle. */
+.viewer-container.filters-open {
+  min-width: 480px;
+}
+
+.viewer-canvas-area {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 120px; /* floor so the canvas never gets squeezed to nothing */
+  height: 100%;
+  overflow: hidden;
+}
+
+.viewer-filter-panel {
+  flex: 0 0 auto;
+  width: 0;
+  overflow: hidden;
+  border-left: 1px solid var(--color-border);
+  background: var(--color-surface);
+  transition: width var(--transition-fast);
+}
+
+.viewer-container.filters-open .viewer-filter-panel {
+  width: 220px;
+  overflow-y: auto;
+}
+
+.viewer-filter-panel-inner {
+  width: 220px; /* fixed, so content doesn't reflow/wrap while the panel's
+                   outer width is mid-transition */
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+/* ======== Intent validation panel (docked left - mirrors the filter
+   panel's docked-right mechanics, so the two can open independently without
+   fighting for the same edge) ======== */
+.viewer-intent-panel {
+  flex: 0 0 auto;
+  width: 0;
+  overflow: hidden;
+  order: -1; /* left of .viewer-canvas-area in the .viewer-row flex row */
+  border-right: 1px solid var(--color-border);
+  background: var(--color-surface);
+  transition: width var(--transition-fast);
+}
+
+/* 1/4 of the surrounding viewer tile's own current width, not a fixed px
+   value - scales with the tile as it's resized. flex: 0 0 auto (above) plus
+   an explicit percentage width means this stays at exactly that fraction
+   rather than growing/shrinking with the canvas. */
+.viewer-container.intent-open .viewer-intent-panel {
+  /* clamp(): still a quarter of the tile on a wide screen, but never so
+     narrow that 13px category labels truncate to three letters on a 1280px
+     laptop (pulled forward with the type scale that depends on it). */
+  width: clamp(260px, 25%, 380px);
+  overflow-y: auto;
+}
+
+.viewer-intent-panel-inner {
+  /* Fills the now-variable outer width (was a fixed 260px matching a fixed
+     outer width) - the only real cost is that panel content can reflow
+     slightly while .viewer-intent-panel's own width transition animates,
+     accepted since a fixed px here can no longer be correct for every tile
+     size. */
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+/* With the intent panel open, the tile-anchored intent and shortcuts toggles
+   float over its bottom-left corner: end the content 48px above the bottom
+   (10 + 30 + 8) so the footer's Compute/Export are never under them when the
+   panel is scrolled to the end. */
+.viewer-container.intent-open .viewer-intent-panel-inner {
+  padding-bottom: 48px;
+}
+
+/* Mirrors .viewer-container.filters-open's min-width bump - a fixed 260px
+   panel needs more headroom than the 220px filter panel since each row
+   carries a label, evidence text, and three buttons, not just a checkbox. */
+.viewer-container.intent-open {
+  min-width: 520px;
+}
+
+.viewer-container.intent-open.filters-open {
+  min-width: 740px;
+}
+
+/* A FAILED shard request, as opposed to a model without results:
+   panels/intentPanel.js swaps the empty line for the reason plus a Retry
+   button (2026-10-01). */
+.intent-empty.intent-load-error {
+  color: var(--color-danger);
+}
+
+.intent-empty.intent-load-error .intent-retry-btn {
+  margin-left: 6px;
+}
+
+.intent-empty {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  padding: 8px 0;
+}
+
+/* ---- Compute section (top of panel) - assembles the
+   recognize_intents.py CLI command, runnable via "Run" (POSTs to a
+   vite-dev-server-only API route, see vite.config.js) or via copy/paste with
+   "Copy Command". Shown even with 0 intents yet - that's exactly when it's
+   most useful. ---- */
+.intent-compute-section {
+  margin-bottom: 10px;
+}
+
+/* Right half of the panel only (2026-10-01, owner's request): the intent and
+   shortcuts toggles float over the panel's bottom-left corner, so the two
+   footer buttons keep to the half they never cover. The flyout that opens
+   below Compute stays full width. .intent-export-btn does the same. */
+.intent-compute-toggle-btn {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+.intent-compute-flyout {
+  margin-top: 8px;
+  padding: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-btn-bg);
+}
+
+.intent-compute-hint {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.intent-compute-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.intent-compute-category {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+.intent-compute-command {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-mono);
+  font-size: var(--fs-1);
+  padding: 6px;
+  margin-bottom: 6px;
+  resize: vertical;
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.intent-compute-actions {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.intent-compute-actions .bulk-toggle-btn {
+  flex: 1;
+}
+
+/* In-progress state for the Run button itself (see the runBtn click handler
+   in ThatOpenCompanyLoader.js) - on top of the separate .intent-compute-
+   status text below, so "a run is happening" is visible right on the
+   button being clicked, not only in a status line that could be missed. */
+.intent-compute-run-btn.is-running {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: default;
+}
+
+.intent-compute-run-btn.is-running::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  border: 2px solid var(--color-text-muted);
+  border-top-color: var(--color-text);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+.intent-compute-status {
+  font-size: 11px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.intent-compute-status-running {
+  color: var(--color-text-muted);
+}
+
+.intent-compute-status-success {
+  color: var(--color-success);
+}
+
+.intent-compute-stream {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: var(--fs-1);
+  color: var(--color-text-muted);
+}
+
+.intent-compute-status-error {
+  color: var(--color-danger);
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+/* ---- Review progress (whole model) - text plus the same ledger bar the
+   headers carry. Mirrored into the page status strip via the
+   `intent-review-progress` event. ---- */
+.intent-progress {
+  margin: 2px 0 10px;
+  font-size: var(--fs-2);
+  color: var(--color-text-muted);
+  --icon-color: var(--color-text);
+}
+
+.intent-progress-text {
+  font-variant-numeric: tabular-nums;
+}
+
+.intent-progress .intent-ledger {
+  position: static;
+  display: flex;
+  margin-top: 5px;
+  height: 4px;
+}
+
+/* Footer block: heading, Compute…, Export Verdicts - at the very bottom of
+   the panel since 2026-09-21 (was the top). */
+.intent-panel-footer {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.intent-panel-footer .viewer-filter-heading {
+  margin: 0;
+}
+
+.intent-panel-footer .intent-compute-section {
+  margin-bottom: 0;
+}
+
+/* Pre-flight: which categories cannot apply to this model and why. One
+   <summary> line folded by default; the per-reason list opens on click. */
+.intent-preflight {
+  margin: -4px 0 10px;
+  font-size: var(--fs-1);
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+
+.intent-preflight-summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.intent-preflight-summary::-webkit-details-marker {
+  display: none;
+}
+
+.intent-preflight-summary::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 4px solid var(--color-text-muted);
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transition: transform var(--transition-fast);
+}
+
+.intent-preflight[open] .intent-preflight-summary::before {
+  transform: rotate(90deg);
+}
+
+.intent-preflight-summary:hover {
+  color: var(--color-text);
+}
+
+.intent-preflight-body {
+  margin: 4px 0 0 10px;
+}
+
+.intent-preflight-why {
+  font-weight: 600;
+}
+
+/* "↔ N": found independently by N other-detector intents (corroboration). */
+.intent-corroborates {
+  flex: 0 0 auto;
+  font-size: var(--fs-1);
+  font-variant-numeric: tabular-nums;
+  padding: 0 6px;
+  border-radius: 999px;
+  border: 1px solid var(--icon-color, var(--color-border));
+  color: var(--color-text);
+  cursor: help;
+}
+
+/* ---- Filter strip. Filtering only sets `hidden`
+   on rows; the DOM stays complete. ---- */
+.intent-filter-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.intent-filter-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: var(--fs-2);
+  padding: 5px 9px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-btn-bg);
+  color: var(--color-text);
+}
+
+.intent-filter-input:focus-visible {
+  outline: 2px solid var(--color-accent-active);
+  outline-offset: 1px;
+}
+
+.intent-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.intent-chip {
+  font-family: var(--font-family);
+  font-size: var(--fs-1);
+  padding: 2px 9px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.intent-chip:hover {
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.intent-chip[aria-pressed="true"] {
+  background: var(--color-text);
+  border-color: var(--color-text);
+  color: var(--color-surface);
+}
+
+.intent-category-section.is-filtered-empty > .intent-category-header {
+  opacity: 0.45;
+}
+
+/* ---- Keyboard cheat sheet: floating over the tile (panels/
+   shortcutsPanel.js), bottom-left above its own toggle button, the same
+   opacity/visibility mechanics as .viewer-camera-panel so it never resizes
+   the render. Toggled by the corner button or `?`. Toggle and sheet are
+   children of .viewer-container since 2026-09-23, like the intent toggle
+   beside them, so the bottom-left pair stays put when the intent panel
+   opens. ---- */
+.viewer-shortcuts-toggle-btn {
+  position: absolute;
+  left: 48px; /* right of .viewer-intent-toggle-btn (left:10px, 30px wide, 8px gap) */
+  bottom: 10px;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  background: var(--color-btn-bg);
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.viewer-shortcuts-toggle-btn:hover {
+  background: #e0e0e0;
+  transform: scale(1.1);
+}
+
+.viewer-shortcuts-toggle-btn .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent);
+}
+
+.viewer-container.shortcuts-open .viewer-shortcuts-toggle-btn {
+  background: var(--color-accent);
+}
+
+.viewer-container.shortcuts-open .viewer-shortcuts-toggle-btn .icon {
+  color: var(--color-text);
+}
+
+.viewer-shortcuts-panel {
+  position: absolute;
+  left: 10px;
+  bottom: 48px;
+  z-index: 40;
+  width: 250px;
+  max-width: calc(100% - 20px);
+  padding: 10px 12px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  font-size: var(--fs-1);
+  color: var(--color-text-muted);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+}
+
+.viewer-container.shortcuts-open .viewer-shortcuts-panel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.viewer-shortcuts-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.viewer-shortcuts-close {
+  width: 22px;
+  height: 22px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.viewer-shortcuts-close:hover {
+  background: rgba(128, 128, 128, 0.2);
+}
+
+.viewer-shortcuts-hint {
+  margin-top: 8px;
+  font-size: var(--fs-1);
+  color: var(--color-text-muted);
+}
+
+.intent-shortcuts-title {
+  font-weight: 600;
+  font-size: var(--fs-2);
+  color: var(--color-text);
+}
+
+.intent-shortcuts-list {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 10px;
+  align-items: baseline;
+}
+
+.intent-shortcuts-list dt,
+.intent-shortcuts-list dd {
+  margin: 0;
+}
+
+.intent-shortcuts-list kbd {
+  font-family: var(--font-mono);
+  font-size: var(--fs-1);
+  padding: 0 4px;
+  border: 1px solid var(--color-border);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  background: var(--color-surface-alt);
+  color: var(--color-text);
+}
+
+/* ---- Verdict ledger (the panel's signature).
+   One thin bar along the bottom edge of every header: accepted = solid fill,
+   rejected = dashed, pending = the empty track. Coloured by the header's own
+   --icon-color (the category colour; domain headers fall back to the muted
+   text colour since they span several categories). State is carried by fill
+   and texture, never by a second hue - the same rule the strikethrough on
+   rejected rows follows. The headers are position:sticky, which is a
+   positioned box, so the absolutely placed bar rides along with them. ---- */
+.intent-ledger {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  display: flex;
+  border-radius: 2px;
+  overflow: hidden;
+  background: var(--color-border);
+  --ledger-color: var(--icon-color, var(--color-text-muted));
+}
+
+.intent-ledger-seg {
+  height: 100%;
+  width: 0;
+  flex: 0 0 auto;
+  transition: width var(--transition-fast);
+}
+
+.intent-ledger-accepted {
+  background: var(--ledger-color);
+}
+
+.intent-ledger-rejected {
+  /* Vertical 2px-on / 2px-off dashes: a diagonal hatch rasterises to a
+     paler solid inside a 3px-tall bar and stops being distinguishable from
+     the accepted fill (checked at 2x device scale, 2026-09-21). */
+  background: repeating-linear-gradient(90deg, var(--ledger-color) 0 2px, transparent 2px 4px);
+}
+
+/* Fully reviewed: the count takes the category colour, nothing louder. */
+.intent-category-header.is-complete .intent-category-count,
+.intent-domain-header.is-complete .intent-domain-count {
+  color: var(--icon-color, var(--color-text));
+  font-weight: 600;
+}
+
+/* ---- Domain sections (see registry.py's domain/scope/maturity taxonomy -
+   "structural" = columns/walls, "spatial" = rooms) - one level above
+   category sections, same native <details>/<summary> mechanism. Visually
+   heavier than a category header (uppercase, border-bottom) so the two
+   nesting levels stay easy to tell apart at a glance. ---- */
+.intent-domain-section {
+  margin-bottom: 14px;
+}
+
+/* Both section headers stick while their section scrolls: a category with
+   50 rows used to scroll its own title out of view, leaving no way to fold it
+   without scrolling all the way back up. The scroll container is
+   .viewer-container.intent-open .viewer-intent-panel (overflow-y: auto) and
+   nothing between it and these <summary> elements clips, so sticky works at
+   both levels. Each header sticks only within its own <details> (its
+   containing block), so it releases naturally when that section ends. The
+   domain header has a fixed height so the category header can sit exactly
+   below it (--intent-domain-header-h) instead of overlapping. */
+:root {
+  --intent-domain-header-h: 26px;
+}
+
+.intent-domain-header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  height: var(--intent-domain-header-h);
+  box-sizing: border-box;
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 4px 0 6px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--fs-2);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  list-style: none;
+}
+
+.intent-domain-header .intent-ledger {
+  bottom: -1px; /* sits on the border line, so an empty ledger IS the border */
+  height: 2px;
+}
+
+.intent-domain-header::-webkit-details-marker {
+  display: none;
+}
+
+.intent-domain-label {
+  flex: 1 1 auto;
+}
+
+.intent-domain-count {
+  flex-shrink: 0;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+.intent-domain-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 2px;
+}
+
+/* ---- Category sections (native <details>/<summary> - free collapse state
+   and keyboard/screen-reader support, no hand-rolled toggle JS needed) ---- */
+.intent-category-section {
+  margin-bottom: 10px;
+}
+
+.intent-category-header {
+  position: sticky;
+  top: var(--intent-domain-header-h);
+  z-index: 2;
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 4px 0 6px; /* 6px below: room for the 3px ledger bar */
+  font-size: var(--fs-3);
+  font-weight: 600;
+  color: var(--color-text);
+  list-style: none; /* hide the default <summary> disclosure triangle - the icon carries category identity instead */
+}
+
+.intent-category-header::-webkit-details-marker {
+  display: none;
+}
+
+.intent-category-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--icon-color, var(--color-text-muted));
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
+}
+
+.intent-category-label {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.intent-category-count {
+  flex-shrink: 0;
+  font-size: var(--fs-1);
+  font-weight: 400;
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* A "draft"-maturity category (see registry.py) - a heuristic still needing
+   more human validation, unlike this panel's other (deterministic-rule or
+   real-IFC-relation) categories. Dashed border reads as "provisional"
+   without needing a whole second color. */
+.intent-category-draft-badge {
+  flex-shrink: 0;
+  font-size: var(--fs-1);
+  font-variant: small-caps;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  padding: 0 6px;
+  border: 1px dashed var(--color-text-muted);
+  border-radius: 999px;
+  color: var(--color-text-muted);
+}
+
+.intent-category-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.intent-row {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 6px 8px;
+  background: var(--color-btn-bg);
+  transition: border-color var(--transition-fast);
+  /* Keyboard review lands rows under the two sticky headers otherwise
+     (domain 26px + category ~30px). */
+  scroll-margin-top: calc(var(--intent-domain-header-h) + 34px);
+  scroll-margin-bottom: 8px;
+}
+
+.intent-row:hover {
+  border-color: var(--color-accent-hover);
+}
+
+/* The keyboard's current row: the category colour on the border, and the
+   focus ring only when focus is actually visible. */
+.intent-row.is-current {
+  border-color: var(--icon-color, var(--color-accent-hover));
+}
+
+.intent-row:focus-visible {
+  outline: 2px solid var(--color-accent-active);
+  outline-offset: 1px;
+}
+
+.intent-row-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+
+/* Category identity (color) and accept/reject status (fill) in one icon:
+   an unfilled ring is category-colored but not yet accepted (pending OR
+   rejected look the same here - rejected gets its own separate signal
+   below, on the row's label, so status is never carried by fill alone). */
+.intent-status-icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border: 2px solid var(--icon-color, var(--color-text-muted));
+  background: transparent;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
+}
+
+.intent-status-icon.status-accepted {
+  background: var(--icon-color, var(--color-text-muted));
+}
+
+/* The one animation in this panel: when a Refer's
+   camera transition has landed (`intent-refer-complete`), the row's ring
+   pulses once in its category colour. Nothing else in the panel moves. */
+@keyframes intent-pulse {
+  0% {
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.18),
+      0 0 0 0 var(--icon-color, var(--color-accent));
+  }
+  70% {
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.18),
+      0 0 0 9px transparent;
+  }
+  100% {
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.18),
+      0 0 0 0 transparent;
+  }
+}
+
+.intent-status-icon.is-pulsing {
+  animation: intent-pulse 0.45s ease-out 1;
+}
+
+/* CSS transitions/animations only. The camera's animated Refer transition is
+   camera-controls' own JS and deliberately left as it is. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  .intent-status-icon.is-pulsing {
+    animation: none;
+  }
+}
+
+/* "<category>-<NNN>" display handle (writers.py stamps it per shard). Muted
+   monospace so it reads as a reference, not as part of the label. */
+.intent-index {
+  font-family: var(--font-mono);
+  font-size: var(--fs-1);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+.intent-label {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: var(--fs-3);
+  color: var(--color-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Rejected: struck-through + muted label - a shape/text signal, not a hue,
+   so it reads the same for a colorblind reviewer as for anyone else. */
+.intent-row.verdict-rejected .intent-label {
+  text-decoration: line-through;
+  color: var(--color-text-muted);
+}
+
+.intent-evidence {
+  font-size: var(--fs-2);
+  line-height: 1.4;
+  color: var(--color-text-muted);
+  margin-bottom: 5px;
+  /* Two lines by default; the full text is one click (or `e`) away. */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.intent-row.is-expanded .intent-evidence {
+  display: block;
+  -webkit-line-clamp: unset;
+}
+
+/* Only rows whose evidence really overflows get the affordance. */
+.intent-row.has-more .intent-evidence {
+  cursor: pointer;
+}
+
+.intent-row.has-more .intent-evidence:hover {
+  color: var(--color-text);
+}
+
+.intent-row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* Refer is the row's primary action: outlined in the category colour so the
+   eye finds it first; Accept/Reject are compact; Reset stays in the DOM (the
+   automation contract) but fades until there is something to reset. */
+.intent-row-actions .intent-refer-btn {
+  border-color: var(--icon-color, var(--color-border));
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.intent-row-actions .intent-accept-btn,
+.intent-row-actions .intent-reject-btn,
+.intent-row-actions .intent-reset-btn {
+  padding: 3px 8px;
+}
+
+.intent-row-actions .intent-reset-btn {
+  opacity: 0.45;
+  transition:
+    opacity var(--transition-fast),
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.intent-row[data-verdict="accepted"] .intent-reset-btn,
+.intent-row[data-verdict="rejected"] .intent-reset-btn,
+.intent-row .intent-refer-btn.is-active ~ .intent-reset-btn,
+.intent-row-actions .intent-reset-btn:hover,
+.intent-row-actions .intent-reset-btn:focus-visible {
+  opacity: 1;
+}
+
+/* Refer/Accept/Reject stay "pressed" (color-filled) after a click, until
+   Reset clears them - same --icon-color the row's status icon fills with
+   (inherited from .intent-row, see createIntentPanel), so a row's active
+   buttons always match its category color rather than introducing a
+   separate accept=green/reject=red button-fill convention. */
+.intent-row-actions .bulk-toggle-btn.is-active {
+  background: var(--icon-color, var(--color-accent));
+  border-color: var(--icon-color, var(--color-accent));
+  color: #ffffff;
+}
+
+.intent-accept-btn:hover {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: #ffffff;
+}
+
+.intent-reject-btn:hover {
+  background: var(--color-danger);
+  border-color: var(--color-danger);
+  color: #ffffff;
+}
+
+.intent-export-btn {
+  display: block;
+  width: 50%; /* right half, like .intent-compute-toggle-btn (2026-10-01) */
+  margin-left: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ======== Camera panel (floating, bottom-right) ========
+   Split out from .viewer-filter-panel so the presets/projection/saved views
+   get real room instead of being squeezed into a 220px docked column -
+   toggled independently via .viewer-camera-toggle-btn (bottom-right corner),
+   not the filters-open gear icon. Floats over the 3D viewport - a child of
+   .viewer-canvas-area since 2026-09-23, so it shares the toggle button's
+   containing block whatever the docked filter panel is doing - instead of
+   being a docked flex sibling that pushes/shrinks the canvas: opening or
+   closing this panel never resizes or re-frames the render.
+   Layout since 2026-09-23 (owner's decision): five rows - presets,
+   switchers, readouts, Context slider, and a bottom row (view name + Save)
+   whose right end is left free for two corner buttons - Snapshot and the
+   toggle, in that order, so the row reads Save / Snapshot / Camera left to
+   right. Both stay CORNER buttons (bottom 20px, 30px round) and are NOT
+   moved into the panel (the panel is rebuilt on every load); the panel
+   reaches down to them instead: `bottom: 16px` plus the inner 4px bottom
+   padding puts the 30px bottom row exactly on their 20-50px band,
+   `right: 10px` puts the toggle 10px inside the panel's right edge - the
+   same as the left padding - and .viewer-camera-bottom-row's padding-right
+   keeps the Save button clear of both. 16px, not less: .viewer-resize-handle owns the literal 16x16
+   corner (z-index 20) and is a real drag target, so the panel touches it
+   and never covers it. The toggle's own z-index (41) puts it above this
+   panel (40), so it stays clickable and closes the panel from inside the
+   bottom row. `max-height` keeps the same 50px clearance at the top as
+   before (the top row's 10+30px plus a 10px gap) - the panel grows upward
+   with saved views and was once measured covering the top-row buttons on
+   a short tile. 66px = 16px bottom offset + 50px top clearance. */
+.viewer-camera-panel {
+  position: absolute;
+  right: 10px;
+  bottom: 16px;
+  /* ~60% of the old 50%/260/420 footprint. In practice this panel is always
+     at its max-width (any viewer wider than ~630px exceeds it), so max-width
+     is the number that is actually visible: 420px -> 252px. min-width has to
+     stay below it - min-width beats max-width in CSS, so the old 260px floor
+     would have pinned the panel wider than the cap on narrow viewers.
+     40%, not the old 30%: the containing block is .viewer-canvas-area now,
+     which the docked intent panel narrows to ~75% of the tile, so 40% of it
+     is the same 30% of the tile as before and the default tile still hits
+     the 252px cap. Affordable because the camera actions dropped from seven
+     buttons to four: Front/Back/Left/Right are one cycling switcher (see
+     createViewerMenu in panels/filterPanel.js). */
+  width: 40%;
+  min-width: 200px;
+  max-width: 252px;
+  max-height: calc(100% - 66px);
+  overflow-y: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  z-index: 40;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+}
+
+.viewer-container.camera-open .viewer-camera-panel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* 4px at the bottom, not 10px: with the panel's 16px offset that centres the
+   30px bottom row on the toggle button's band (see the header comment). */
+.viewer-camera-panel-inner {
+  padding: 10px 10px 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* A row of two pills sharing the width equally - "Top View Max" / "Side View
+   (45°)", and the two switchers. nowrap + min-width:0 so a label ellipsizes
+   rather than wrapping the row on a narrow tile. */
+.viewer-camera-row > .bulk-toggle-btn {
+  flex: 1 1 0;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Elevation, Azimuth and Distance (or Zoom, in orthographic) on one line,
+   each a labelled number input (owner's layout, 2026-10-01): caption above,
+   input below, three equal columns inside the 252px panel. */
+.viewer-camera-readouts {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.viewer-camera-readout {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 11px; /* the app's floor for interface text (review_workflow.py pins it) */
+  color: var(--color-text-muted);
+}
+
+.viewer-camera-readout input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: 11px;
+  padding: 2px 4px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-btn-bg);
+  color: var(--color-text);
+}
+
+/* The bottom row: the view-name input, the archive-glyph Save button, and
+   74px kept free at the right for the two corner buttons that complete the
+   row - Snapshot (58-88px from the canvas corner) and the camera toggle
+   (20-50px). This content box ends 20px from the corner, so 74px puts its
+   right edge at 94px: 6px clear of Snapshot's left edge, the same gap the
+   toggle alone used to get. */
+.viewer-camera-bottom-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 30px;
+  padding-right: 74px;
+}
+
+.viewer-camera-bottom-row .viewer-view-name-input {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+}
+
+/* A square icon button in the panel's own idiom (border, radius, btn-bg). */
+.viewer-icon-btn {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-btn-bg);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.viewer-icon-btn:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.viewer-icon-btn .icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Text for screen readers (and the harnesses that read it) that takes no
+   visual room - the Context slider's percentage and scope count. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viewer-filter-heading {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-family: var(--font-family);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.viewer-filter-section {
+  margin-bottom: 16px;
+}
+
+.viewer-filter-section bim-checkbox {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.viewer-guid-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: var(--font-mono);
+  font-size: var(--fs-1);
+  padding: 6px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-btn-bg);
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+
+.viewer-guid-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.viewer-guid-status {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  min-height: 14px;
+}
+
+.viewer-camera-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.viewer-camera-readout-row {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.viewer-camera-angle-value,
+.viewer-camera-distance-value {
+  font-weight: 600;
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.viewer-view-name-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: 11px;
+  padding: 4px 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-btn-bg);
+  color: var(--color-text);
+}
+
+.viewer-saved-views-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* No saved views yet: take no room (and no flex gap) above the bottom row. */
+.viewer-saved-views-list:empty {
+  display: none;
+}
+
+.viewer-saved-view-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.viewer-saved-view-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: left;
+  font-family: var(--font-family);
+  font-size: 11px;
+  padding: 4px 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-btn-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.viewer-saved-view-name:hover {
+  background: var(--color-accent);
+}
+
+.viewer-saved-view-delete {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.viewer-saved-view-delete:hover {
+  background: var(--color-danger);
+  color: white;
+}
+
+/* ---- The one-line status under the readouts ---- */
+.viewer-view-status {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  white-space: normal;
+  word-break: break-word;
+}
+
+.viewer-view-status:empty {
+  display: none;
+}
+
+.viewer-view-status.is-error {
+  color: var(--color-danger);
+}
+
+/* BCF in the bottom row: the icon button's height and look, three letters
+   instead of a glyph, so a little wider than the square. 11px like all text. */
+.viewer-view-bcf-btn,
+.viewer-snapshot-meta-btn {
+  width: auto;
+  padding: 0 6px;
+  font-family: var(--font-family);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+/* The Meta switch (2026-10-22) is a pressed toggle in the same idiom as the
+   Lines button: accent fill while on, so the state is legible at a glance. */
+.viewer-snapshot-meta-btn[aria-pressed="true"] {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+}
+
+/* The sidebar no longer collapses below this breakpoint: at 44px it costs a
+   phone less than the full-width horizontal bar it used to become, and that
+   bar would have had to hold a 20vh vertical slider (2026-09-24). Only the
+   tiles reflow. */
+@media (max-width: 900px) {
+  .viewer-container {
+    width: 100%;
+  }
+}
+
+/* ======== Page title ======== */
+h1 {
+  margin: 2px 0 10px;
+  font-size: 18px;
+  font-family: var(--font-family);
+}
+
+/* ==== Per-viewer icon buttons (close / unload / filters toggle) ====
+   Since 2026-09-23 (owner's decision): close and Unload model sit as a pair
+   in the top-LEFT corner of the canvas, the filters toggle alone in the
+   top-RIGHT corner of the TILE, and the Reset-camera home button is gone
+   (the camera panel's Top View Max is the same fit). The row is still 30px
+   buttons at top:10px, which is what --inspector-top and
+   .viewer-camera-panel's max-height are measured against. */
+.viewer-settings-btn,
+.viewer-unload-btn,
+.viewer-lines-btn,
+.viewer-close-btn {
+  position: absolute;
+  top: 10px;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  background: var(--color-btn-bg);
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+/* Unload model (eject glyph) sits right of the close button (left:10px +
+   30px + 8px gap) and is ALWAYS shown - including on a tile with nothing
+   loaded, where it is simply inert (unloadModelFromViewer returns immediately
+   unless viewer.hasModel). It carries --color-danger permanently rather than
+   only on hover: it is the one control here that throws work away, and a
+   reviewer who has been judging intents for an hour should be able to see
+   that without hovering. .viewer-container.has-model is still set/removed
+   around a load - it is what the automation reads - it just no longer
+   decides visibility. */
+.viewer-unload-btn {
+  left: 48px;
+}
+/* Lines (test), third in the top-left row (2026-10-01): 10 + 30 +
+   8 + 30 + 8. An accent disc while lines are drawn (aria-pressed, set from
+   the line engine's own event), a progress cursor while anchors resolve
+   (aria-busy). A test control: the whole block goes when real line sources
+   replace the button. */
+.viewer-lines-btn {
+  left: 86px;
+}
+.viewer-lines-btn:hover {
+  background: #e0e0e0;
+  transform: scale(1.1);
+}
+.viewer-lines-btn .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent);
+}
+.viewer-lines-btn[aria-pressed="true"] {
+  background: var(--color-accent);
+}
+.viewer-lines-btn[aria-pressed="true"] .icon {
+  color: #fff;
+}
+.viewer-lines-btn[aria-busy="true"] {
+  cursor: progress;
+  opacity: 0.7;
+}
+/* Hover tooltip for a drawn line or shape (views/linePicker.js, 2026-10-01):
+   inside the canvas area, positioned by the picker next to the pointer,
+   never a pointer target itself. */
+.viewer-line-tooltip {
+  position: absolute;
+  z-index: 12;
+  display: none;
+  max-width: 320px;
+  padding: 4px 8px;
+  background: var(--color-btn-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  box-shadow: var(--shadow-md);
+  font-size: 12px;
+  line-height: 1.3;
+  pointer-events: none;
+}
+.viewer-line-tooltip.is-visible {
+  display: block;
+}
+/* Top-LEFT corner (moved there 2026-09-21). */
+.viewer-close-btn {
+  left: 10px;
+}
+/* The filters toggle is a child of .viewer-container, not .viewer-canvas-area
+   (ThatOpenCompanyLoader.js, 2026-09-23), so it keeps this spot when the
+   220px filter panel it opens narrows the canvas - a canvas-anchored button
+   jumped left out from under the pointer on every click. */
+.viewer-settings-btn {
+  right: 10px;
+}
+
+/* With the filter panel open the toggle floats over its top-right corner;
+   start the panel's content below that 30px button (10 + 30 + 8). */
+.viewer-container.filters-open .viewer-filter-panel-inner {
+  padding-top: 48px;
+}
+
+.viewer-settings-btn:hover {
+  background: #e0e0e0;
+  transform: scale(1.1);
+}
+
+.viewer-unload-btn:hover {
+  background: var(--color-danger);
+  transform: scale(1.1);
+}
+
+.viewer-unload-btn:hover .icon {
+  color: #fff;
+}
+
+.viewer-close-btn:hover {
+  background: var(--color-danger);
+  color: white;
+  transform: scale(1.1);
+}
+
+.viewer-settings-btn .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent);
+}
+
+.viewer-unload-btn .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--color-danger);
+}
+
+.viewer-close-btn {
+  font-size: 18px;
+  line-height: 1;
+  color: var(--color-text-muted);
+  font-weight: bold;
+}
+
+/* Bottom-right corner of the canvas (not the top row with reset/filters/
+   close) - a PAIR of corner buttons that also serve as the last two controls
+   of the open camera panel's bottom row: Snapshot (left) captures the
+   current render, the camera toggle (right) opens and closes
+   .viewer-camera-panel, a floating panel anchored just above this same
+   corner (see its own comment for why), not the docked right-side filter
+   panel. Both are corner-anchored rather than panel children so they keep
+   one fixed position whether the panel is open or shut, the same "static
+   location" idiom as .viewer-settings-btn and .viewer-intent-toggle-btn.
+   right/bottom: 20px, not the more obvious 10px - .viewer-resize-handle
+   (below) occupies the literal 0-16px corner and is a real drag target
+   (attachResizeHandle in ThatOpenCompanyLoader.js), not decorative, so it
+   can't just be shrunk to make room. 20px clears its 16px footprint with a
+   4px gap, keeping both elements' full hit area intact. Snapshot then sits
+   at 58px = 20 + 30 + an 8px gap, the same gap the close/unload pair uses. */
+.viewer-camera-toggle-btn,
+.viewer-snapshot-btn {
+  position: absolute;
+  bottom: 20px;
+  z-index: 41; /* above .viewer-camera-panel (40): when the panel is open it
+                  reaches down to these buttons, which sit at the right end of
+                  the panel's bottom row - the toggle must stay clickable to
+                  close it, and Snapshot must stay clickable at all */
+  width: 30px;
+  height: 30px;
+  background: var(--color-btn-bg);
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.viewer-camera-toggle-btn {
+  right: 20px;
+}
+
+.viewer-snapshot-btn {
+  right: 58px;
+}
+
+.viewer-camera-toggle-btn:hover,
+.viewer-snapshot-btn:hover {
+  background: #e0e0e0;
+  transform: scale(1.1);
+}
+
+.viewer-camera-toggle-btn .icon,
+.viewer-snapshot-btn .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent);
+}
+
+/* Snapshot flashes accent for a moment when a capture succeeds - the only
+   in-page sign that anything happened, since the file itself lands in the
+   browser's downloads and never in the page. Driven by a class the click
+   handler adds and removes (ThatOpenCompanyLoader.js), not by :active, so it
+   outlives the click and only ever fires on a capture that actually wrote a
+   PNG. Its own `background` beats the shared rule above by source order. The
+   glyph flips to white for the same reason .viewer-unload-btn:hover does:
+   the icon is --color-accent as well, so leaving it alone paints a solid
+   accent disc with no icon in it. */
+.viewer-snapshot-btn.is-capturing {
+  background: var(--color-accent);
+}
+
+.viewer-snapshot-btn.is-capturing .icon {
+  color: #fff;
+}
+
+/* Bottom-left corner. Toggles .viewer-intent-panel, docked on the opposite
+   side from .viewer-filter-panel so the two side panels don't compete for
+   the same edge. A child of .viewer-container since 2026-09-23 (like
+   .viewer-settings-btn, ThatOpenCompanyLoader.js), so it stays in the tile's
+   lower-left when the panel it opens pushes the canvas right; with the panel
+   open it floats over the panel's bottom-left corner, and
+   .viewer-intent-panel-inner ends its content 48px above the bottom. */
+.viewer-intent-toggle-btn {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  background: var(--color-btn-bg);
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.viewer-intent-toggle-btn:hover {
+  background: #e0e0e0;
+  transform: scale(1.1);
+}
+
+.viewer-intent-toggle-btn .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent);
+}
+
+/* ======== Loading overlay ======== */
+.viewer-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--color-overlay);
+  font-family: var(--font-family);
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.viewer-loading-spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-accent-hover);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ======== Inline load-error banner ========
+   Replaces alert() - a blocking native dialog - with an in-place, dismissible
+   banner scoped to the viewer tile that failed, so a bad file in one viewer
+   doesn't interrupt anything else on the page. */
+.viewer-error {
+  position: absolute;
+  inset: 0;
+  z-index: 51;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  text-align: center;
+  background: var(--color-overlay);
+  font-family: var(--font-family);
+}
+
+.viewer-error-icon {
+  color: var(--color-danger);
+  width: 28px;
+  height: 28px;
+}
+
+.viewer-error-message {
+  font-size: 12px;
+  color: var(--color-text);
+  max-width: 80%;
+  overflow-wrap: break-word;
+}
+
+.viewer-error-dismiss {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.viewer-error-dismiss:hover {
+  background: rgba(128, 128, 128, 0.2);
+}
+
+/* ======== Empty-viewer placeholder ========
+   Shown until a model is loaded into this viewer; removed the moment one is.
+   pointer-events: none so it never blocks the corner buttons or drag-and-drop
+   underneath it. */
+.viewer-empty-placeholder {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  pointer-events: none;
+  color: var(--color-text-muted);
+  font-family: var(--font-family);
+  font-size: 12px;
+}
+
+.viewer-empty-placeholder .icon {
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+}
+
+/* The empty tile also offers the server's example models (dev only - the
+   endpoint exists only under `vite dev`), so a first model is one click away
+   instead of behind the sidebar's cloud icon. The
+   placeholder itself stays click-through; only this list takes pointer events. */
+.viewer-empty-examples {
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 10px;
+  width: min(280px, 80%);
+}
+
+.viewer-empty-examples-hint {
+  font-size: var(--fs-1);
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+/* Vertical since 2026-09-24 - the sidebar is 32px of usable width, which a
+   horizontal track and a "Transparency" caption cannot share. The word moved
+   into the tooltip (transparency.js) and a .visually-hidden <label>; the
+   percentage under the track is the visible caption. */
+.transparency-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.transparency-value {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+/* Custom range slider: filled track up to the thumb (via --_fill, set in JS
+   on every "input" event) instead of a plain uncolored native track, plus a
+   larger touch-friendly thumb and a live percentage readout above it. */
+.styled-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  margin: 0;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    var(--color-accent-hover) var(--_fill, 0%),
+    var(--color-border) var(--_fill, 0%)
+  );
+  outline: none;
+  cursor: pointer;
+}
+
+.styled-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-accent-hover);
+  border: 2px solid var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.styled-range::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+.styled-range::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--color-border);
+}
+
+.styled-range::-moz-range-progress {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--color-accent-hover);
+}
+
+.styled-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-accent-hover);
+  border: 2px solid var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+}
+
+/* ---- Vertical variant (the sidebar's global transparency slider, 2026-09-24)
+   A MODIFIER, not a change to .styled-range: the camera panel's Context slider
+   is still horizontal and shares every rule above.
+   `writing-mode: vertical-lr` alone turns the track upright but puts the
+   MINIMUM at the top; `direction: rtl` flips it so 0% is at the bottom and
+   100% at the top, which is what the owner asked for and what a transparency
+   control should read like. Measured across all four combinations of
+   vertical-lr/vertical-rl and ltr/rtl in Chromium: only the rtl pair puts the
+   thumb below the midpoint at value 25.
+   The fill gradient has to turn with it - `to top`, so --_fill still means
+   "filled up to the thumb" - and Firefox's pseudo-elements are made
+   transparent rather than re-sized, so the element's own gradient shows
+   through there too instead of being painted over by ::-moz-range-track.
+   `20vh` is the owner's "at most a fifth of the panel", and it is a viewport
+   unit ON PURPOSE: #sidebar-panel is `height: 100vh`, but its own height is
+   not a definite containing block for a percentage here, so `height: 20%`
+   would silently resolve to the control's intrinsic size (~129px in Chromium)
+   and merely look about right. */
+.styled-range.is-vertical {
+  width: 6px;
+  height: 20vh;
+  writing-mode: vertical-lr;
+  direction: rtl;
+  background: linear-gradient(
+    to top,
+    var(--color-accent-hover) var(--_fill, 0%),
+    var(--color-border) var(--_fill, 0%)
+  );
+}
+
+.styled-range.is-vertical::-moz-range-track,
+.styled-range.is-vertical::-moz-range-progress {
+  background: transparent;
+}
+
+.ifc-name-label {
+  padding: 4px 5px;
+  background-color: transparent;
+  /* --color-text-muted, not --color-accent (2026-10-01): the gold measured
+     1.44:1 on the light tile; muted text passes AA in both themes. */
+  color: var(--color-text-muted);
+  font-family: var(--font-family);
+  font-size: 14px;
+  text-align: center;
+  /* Centred on the canvas (2026-09-23, owner's decision; it used to start at
+     left:48px beside the close button). The symmetric 90px margins keep it
+     clear of the top-left pair (close + Unload end at 78px) and of the
+     filters toggle at the top-right (40px), whichever way it ellipsizes. */
+  max-width: calc(100% - 2 * 90px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+  /* Vertically centred on the 30px buttons in the same row (top:10 + 15 = 25;
+     this box is ~24px tall, so 13 + 12 = 25). */
+  top: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+/* ======== Element Inspector (React island, see InspectorPanel.jsx) ======== */
+/* Top-right, not bottom-right: that corner already holds the camera toggle,
+   the resize grip and the floating camera panel, which this panel used to
+   cover completely (252 x 168 px, measured 2026-09-20).
+   --inspector-top clears the page strip and the tile's own top button
+   row (30px buttons at top:10px - since 2026-09-23 only the filters toggle
+   is on the right, close and Unload sit top-left, Reset camera is gone; the
+   row's geometry is unchanged) in the single-viewer layout. */
+:root {
+  --inspector-top: 124px;
+}
+
+#inspector-root {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2000;
+  pointer-events: none; /* re-enabled on the panel itself so empty space stays click-through */
+}
+
+.inspector-panel {
+  pointer-events: auto;
+  width: 320px;
+  max-height: calc(100vh - var(--inspector-top) - 16px);
+  margin: var(--inspector-top) 16px 16px;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.inspector-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--color-accent);
+}
+
+.inspector-title {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.inspector-close {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--color-text);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.inspector-close:hover {
+  background: rgba(128, 128, 128, 0.2);
+}
+
+.inspector-meta {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 11px;
+}
+
+.inspector-file {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-bottom: 2px;
+}
+
+.inspector-guid {
+  font-size: 11px;
+  font-family: monospace;
+  color: var(--color-text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.inspector-class {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-bottom: 2px;
+}
+
+.inspector-type {
+  font-size: 11px;
+  color: var(--color-text);
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.inspector-repr {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.inspector-preview {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inspector-preview-toggle {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-family: inherit;
+  color: var(--color-text);
+  background: var(--color-btn-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.inspector-preview-toggle:hover {
+  background: var(--color-surface-alt);
+}
+
+.inspector-preview-viewport {
+  position: relative;
+  margin-top: 8px;
+  height: 180px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--color-surface-alt);
+}
+
+.inspector-preview-viewport canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.inspector-preview-status {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.inspector-preview-error {
+  color: var(--color-danger);
+  text-align: center;
+  padding: 0 12px;
+}
+
+.inspector-body {
+  overflow-y: auto;
+  padding: 6px 14px 12px;
+}
+
+.inspector-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--color-row-border);
+  font-size: 12px;
+}
+
+.inspector-key {
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.inspector-value {
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.inspector-empty {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  padding: 8px 0;
+}
+/* ======== Dev performance HUD (hud.js, ?hud only) ======== */
+#perf-hud {
+  position: fixed;
+  left: 8px;
+  bottom: 8px;
+  z-index: 3000;
+  margin: 0;
+  padding: 6px 8px;
+  font-family: var(--font-mono);
+  font-size: var(--fs-1);
+  line-height: 1.4;
+  color: var(--color-text);
+  background: var(--color-overlay);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  pointer-events: none;
+}

@@ -1,0 +1,6 @@
+# config/rules/K74.yaml
+rule: K74
+params:
+  A_MIN: {op: ">=", value: 8, unit: "m²", severity: "FAIL", desc: "Floor area"}
+  H_MIN: {op: ">=", value: 2.4, unit: "m", severity: "FAIL", desc: "Clear ceiling height"}
+  F_WIN: {op: ">=", value: 0.125, severity: "FAIL", desc: "Window area / room area"}

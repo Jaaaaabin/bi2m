@@ -1,0 +1,5 @@
+# config/rules/K10.yaml
+rule: K10
+params:
+  H_LAND: {op: ">=", value: 2.75, unit: "m", severity: "FAIL", desc: "Storey height above which a landing is required"}
+  L_LAND: {op: ">=", expr: "n * (2*r + t) + t, n >= 1", unit: "m", severity: "WARN", desc: "Landing length"}

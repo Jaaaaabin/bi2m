@@ -1,0 +1,304 @@
+# The scenario layer of the Neufert bindings (2026-10-20): per card, the selector that finds the
+# SITUATION the card addresses in a model, independent of whether the requirement itself is judged. The engine emits
+# one `scenario` record per rule and model when the population is non-empty (members = the population, the status
+# and the blocker in the summary), nothing when it is empty, and nothing when the scenario is `null` here: then the
+# gate of the card is itself the missing fact (a high-rise, a public building, a zoning plan) and `reason` says so.
+#
+# A scenario must name a discriminating facet (a use concept, a role, a property gate, a predefined type, a where
+# condition on a logic constant of the card, or a rare element class such as IfcRamp or IfcGrid); a bare IfcSpace or
+# IfcWall finds every model and says nothing. A rule not listed here takes its `applies` selector, else its rule-level
+# `select` (scripts/neufert_bindings.py). Same selector grammar as bound.yaml (select.py); a list is a union.
+
+K01:
+  scenario: {class: IfcBuilding, where: [{measure: building.top_storey_rise, op: '>', param: H_HR}]}
+  note: a building whose highest storey holding spaces rises more than H_HR above the ground storey (bi2m-ea 2026-10-20, 1 corpus model at 25 m; roof and parapet levels do not count)
+K05: {scenario: null, reason: the plot boundary is a site input the models do not carry}
+K06: {scenario: null, reason: the zoning plan's limits are a project input}
+K10:
+  related: [{via: parts, class: IfcSlab}, {via: served_storeys}]
+  scenario: {class: IfcStair, where: [{measure: stair.core_storeys, op: '>=', value: 2}]}
+  note: stairs connecting storeys (the landing rule applies to every legally essential stair)
+K12:
+  related: [{via: parts, class: IfcStairFlight}, {via: served_storeys, span: own}]
+  scenario: {class: IfcStair, where: [{measure: element.building_dwellings, op: '>=', value: 1}, {measure: element.building_dwellings, op: '<=', value: 2}]}
+  note: stairs of a building with one or two inferred dwellings (the card's "no more than two flats")
+K14:
+  related: [{via: parts, class: IfcStairFlight}, {via: served_storeys, span: own}]
+  scenario: {class: IfcStair, predefined: SPIRAL_STAIR, where: [{measure: stair.turn_deg, op: '>=', value: 270}]}
+  note: a SPIRAL_STAIR whose walking line turns 270 degrees or more (Revit types any stair with an arc as SPIRAL_STAIR; 38 of 184 corpus stairs turn that far)
+K16:
+  related: [{via: parts, class: IfcRampFlight}]
+  scenario: {class: IfcRamp}
+K17:
+  scenario: {class: IfcStair, expand: IfcRailing}
+  note: the railings of stairs (handrails per flight side); the public-building scope is not known
+K18:
+  scenario: [{class: IfcTransportElement, use: lift}, {class: IfcSpace, use: lift, exclude_use: lobby|horizontal_circulation}]
+  note: lift cars and shaft spaces; a lift-named lobby or corridor is not the lift
+K20:
+  scenario: {class: IfcStair, expand: IfcSlab}
+  note: stairs with landing slabs among their parts
+K22:
+  related: [{via: host_wall}]
+  scenario: {class: IfcDoor, role: unit.entrance_doors}
+  note: the doors of the inferred dwellings (their entrance doors; room doors inside a flat have no role yet)
+K26: {scenario: null, reason: barrier-free / publicly accessible is a building scope the models do not state}
+K27: {scenario: null, reason: the public parts of a publicly accessible building are a scope the models do not state}
+K28: {scenario: null, reason: barrier-free is a building scope the models do not state}
+K29:
+  scenario: {class: IfcSpace, use: wc|bathroom, prop: {HandicapAccessible: true}}
+  note: sanitary rooms declared accessible (Pset_SpaceCommon.HandicapAccessible)
+K30:
+  scenario: [{class: IfcTransportElement, use: lift}, {class: IfcSpace, use: lift, exclude_use: lobby|horizontal_circulation}, {class: IfcDoor, use: lift}]
+  note: lifts by any of the three sources; the barrier-free scope is not known
+K32: {scenario: null, reason: barrier-free public building is a scope the models do not state}
+K33: {scenario: null, reason: barrier-free building is a scope the models do not state}
+K34:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms, where: [{measure: element.building_dwellings, op: '>', value: 2}]}
+  note: the rooms of inferred dwellings in a building with more than two of them (the card's N_FLATS logic)
+K35:
+  related: [{via: doors}, {via: furniture}]
+  scenario: {class: IfcSpace, role: unit.rooms, use: bathroom}
+  note: bathrooms inside inferred dwellings; whether the dwelling is barrier-free is not known
+K36:
+  related: [{via: windows}, {via: furniture}]
+  scenario: {class: IfcSpace, role: unit.rooms, use: living}
+K37:
+  related: [{via: furniture, kind: bed|seat|desk}, {via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms}
+  note: the rooms of inferred dwellings; whether the dwelling is barrier-free is not known
+K39:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms}
+K40:
+  related: [{via: windows}]
+  scenario: {class: IfcSpace, role: unit.rooms, use: living|bedroom}
+  note: the habitable rooms of dwellings, which need an escape window; the rule itself judges the FireExit-tagged windows
+K41:
+  related: [{via: doors}]
+  scenario: {class: IfcSpace, use: assembly_hall|canteen, exclude_role: unit.rooms}
+  note: assembly and catering rooms outside dwellings (a flat's dining room is not an assembly space)
+K42:
+  scenario: [{class: IfcWall, has_prop: [FireRating]}, {class: IfcZone, use: fire_compartment}]
+  note: walls declaring a fire rating (14 corpus models) or zones named as fire compartments
+K43:
+  related: [{via: doors}, {via: neighbours}]
+  scenario: {class: IfcSpace, use: vertical_core, exclude_use: horizontal_circulation}
+  note: stairwell rooms (the enclosed staircase; a "stair hall" that is also a corridor is not one)
+K44:
+  related: [{via: doors}]
+  scenario: {class: IfcSpace, use: horizontal_circulation}
+  note: corridors; which of them are escape corridors is not known
+K45:
+  scenario: {class: IfcBuilding, where: [{measure: building.top_storey_rise, op: '>', value: 22}]}
+  note: the high-rise definition (top occupied storey above 22 m, K01's H_HR)
+K46:
+  scenario: {class: IfcBuilding, where: [{measure: building.top_storey_rise, op: '>', value: 22}]}
+K47:
+  related: [{via: doors}]
+  scenario: {class: IfcSpace, use: horizontal_circulation}
+  note: corridors; which of them are legally essential is not known
+K48:
+  related: [{via: windows}]
+  scenario: {class: IfcSpace, use: office|open_plan_office, exclude_role: unit.rooms}
+  note: office rooms outside dwellings (a home office is not a workplace of an office building)
+K52:
+  related: [{via: windows}]
+  scenario: {class: IfcSpace, use: office|open_plan_office|living|bedroom|meeting}
+K53:
+  related: [{via: windows}]
+  scenario: {class: IfcSpace, use: workshop}
+  note: workshop / production rooms by name (2 corpus models)
+K57:
+  scenario: {class: IfcWall, prop: {IsExternal: true}}
+  note: external walls; the leaf count needs the material layer set (composition family)
+K58:
+  scenario: {class: IfcWall, prop: {IsExternal: true}}
+  note: external walls; whether a wall is a cavity wall needs the material layer set
+K59:
+  scenario: {class: IfcWall, prop: {IsExternal: true}}
+  note: external walls; the concrete material needs the layer set
+K60:
+  scenario: {class: IfcCovering, predefined: CLADDING}
+K61:
+  scenario: [{class: IfcWall, prop: {IsExternal: true}}, {class: IfcRoof}, {class: IfcSlab, predefined: ROOF}]
+K65:
+  scenario: [{class: IfcWall, prop: {IsExternal: true}}, {class: IfcRoof}, {class: IfcSlab, predefined: ROOF}]
+K66:
+  scenario: [{class: IfcRoof}, {class: IfcSlab, predefined: ROOF}]
+  note: roofs; the vegetation layer that makes a planted roof is not read
+K67:
+  scenario: [{class: IfcRoof, where: [{measure: roof.pitch_deg, op: '>', value: 0}]}, {class: IfcSlab, predefined: ROOF, where: [{measure: roof.pitch_deg, op: '>', value: 0}]}]
+  note: pitched roofs (a pitch above zero, from the declared angle or the geometry)
+K68:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms, where: [{measure: element.building_dwellings, op: '>=', value: 2}]}
+  note: the rooms of inferred dwellings in a building with two or more (party walls need the wall-to-room relation)
+K69:
+  scenario: {class: IfcGrid}
+K70:
+  scenario: {class: [IfcWall, IfcColumn], prop: {LoadBearing: true}}
+K72:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms, where: [{measure: element.building_dwellings, op: '>=', value: 2}]}
+K73:
+  scenario: [{class: IfcWall, prop: {IsExternal: true}}, {class: IfcCovering, predefined: CLADDING}]
+K76:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms}
+K77:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms, use: balcony}
+K78:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms}
+K79: {scenario: null, reason: applies to every building (area reporting); there is no situation to find}
+K80: {scenario: null, reason: applies to every building (volume reporting); there is no situation to find}
+K81:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms, use: balcony}
+K82:
+  related: [{via: unit_doors}, {via: neighbours}]
+  scenario: {class: IfcSpace, role: unit.rooms}
+K83:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms}
+  note: a residential building (inferred dwellings); the five-storey gate of the card is judged by the rule
+K85:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms}
+K87:
+  related: [{via: neighbours}, {via: doors}]
+  scenario: {class: IfcSpace, role: unit.halls}
+K90:
+  related: [{via: neighbours}, {via: doors}]
+  scenario: [{class: IfcSpace, prop: {IsExternal: true}}, {class: IfcSpace, use: balcony}]
+  note: open spaces (external or balcony/terrace rooms); the detached-house gate is not known
+K94:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms}
+K103:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms}
+K89:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms, use: horizontal_circulation}
+K91:
+  related: [{via: parts, class: IfcStairFlight}, {via: served_storeys}]
+  scenario: {class: IfcStair, where: [{measure: stair.core_flats_per_floor, op: '>=', value: 1}]}
+  note: stairs whose core serves at least one inferred dwelling per floor; the rule judges the no-lift, one-flat case
+K92:
+  scenario: {class: IfcSpace, use: terraced_house}
+  note: rooms named as part of a terraced house (14 corpus models); weak, by name only
+K93:
+  related: [{via: host_wall}]
+  scenario: {class: IfcDoor, role: unit.entrance_doors}
+K107:
+  related: [{via: unit_doors}]
+  scenario: {class: IfcSpace, role: unit.rooms}
+K109:
+  related: [{via: furniture, use: sanitary_accessory}, {via: doors}]
+  scenario: [{class: IfcSanitaryTerminal}, {class: IfcSpace, use: bathroom|wc}]
+K114:
+  related: [{via: furniture, kind: desk}]
+  scenario: {class: IfcSpace, use: office|open_plan_office, exclude_role: unit.rooms, where: [{measure: space.workstations, op: '>', value: 0}]}
+K115:
+  scenario: {class: IfcSpace, use: office|open_plan_office, exclude_role: unit.rooms}
+K116:
+  scenario: {class: IfcSpace, use: office|open_plan_office, exclude_role: unit.rooms}
+K117:
+  scenario: {class: IfcSpace, use: office|open_plan_office, exclude_role: unit.rooms}
+K118:
+  related: [{via: furniture, kind: seat}, {via: neighbours}]
+  scenario: {class: IfcSpace, use: meeting}
+K121:
+  related: [{via: doors}, {via: furniture, kind: seat}]
+  scenario: {class: IfcSpace, use: assembly_hall}
+K124:
+  related: [{via: doors}, {via: neighbours}]
+  scenario: {class: IfcSpace, use: lobby}
+K125:
+  scenario: {class: IfcSpace, use: canteen}
+K126:
+  related: [{via: windows}, {via: furniture, kind: desk}]
+  scenario: {class: IfcSpace, use: office|open_plan_office, exclude_role: unit.rooms, where: [{measure: space.workstations, op: '>', value: 0}]}
+K127: {scenario: null, reason: combined-use (combi-office) units have no vocabulary concept yet}
+K128:
+  scenario: {class: IfcSpace, use: canteen|kitchen}
+  note: catering kitchens are not told apart from tea kitchens by name alone
+K130:
+  scenario: {class: IfcSpace, use: university}
+  note: lecture halls, institutes and professors' rooms by name (19 corpus models)
+K131:
+  scenario: {class: IfcGrid}
+K132:
+  scenario: {class: IfcGrid}
+K133:
+  scenario: {class: IfcSpace, use: office|open_plan_office, exclude_role: unit.rooms}
+K135:
+  scenario: {class: IfcSpace, use: office|open_plan_office, exclude_role: unit.rooms}
+K136:
+  related: [{via: doors}, {via: furniture, inside: true}]
+  note: only furniture standing strictly inside the corridor footprint (pieces against the wall from the room side are not in the escape route)
+  scenario: {class: IfcSpace, use: horizontal_circulation|lobby}
+  note: corridors and lobbies; which of them are escape routes is not known
+K138: {scenario: null, reason: hot-desk offices are a project fact}
+K139: {scenario: null, reason: letting is a project fact}
+K140:
+  related: [{via: furniture, kind: desk}]
+  scenario: {class: IfcSpace, use: office|open_plan_office, exclude_role: unit.rooms, where: [{measure: space.workstations, op: '>', value: 0}]}
+K142:
+  related: [{via: windows}, {via: furniture, kind: desk}]
+  scenario: {class: IfcSpace, use: office|open_plan_office, exclude_role: unit.rooms, where: [{measure: space.workstations, op: '>', value: 0}]}
+K143:
+  related: [{via: furniture}]
+  scenario: {class: IfcSpace, use: filing}
+K144:
+  scenario: {class: IfcSpace, use: post_room}
+K145:
+  scenario: {class: IfcSpace, use: server_room}
+K146: {scenario: null, reason: full air conditioning is a project fact}
+K147:
+  related: [{via: parts, class: IfcMember}]
+  note: "the mullions (IfcMember) of the curtain walls, not their plates (bi2m-ea 2026-10-20: the plates were half of all context members)"
+  scenario: {class: IfcCurtainWall}
+K148:
+  scenario: {class: IfcCovering, predefined: CEILING}
+  note: suspended ceilings present (the partition-to-ceiling connection itself is not read)
+K149:
+  scenario: {class: IfcBuilding, where: [{measure: building.top_storey_rise, op: '>', param: H_FFL}]}
+K150:
+  scenario: {class: IfcBuilding, where: [{measure: building.top_storey_rise, op: '>', value: 22}]}
+K151:
+  scenario: {class: IfcBuilding, where: [{measure: building.top_storey_rise, op: '>', value: 22}]}
+K152:
+  scenario: {class: IfcBuilding, where: [{measure: building.top_storey_rise, op: '>', value: 22}]}
+K153:
+  scenario: {class: IfcBuilding, where: [{measure: building.top_storey_rise, op: '>', value: 22}]}
+K154:
+  scenario: {class: IfcBuilding, where: [{measure: building.top_storey_rise, op: '>', value: 22}]}
+K74:
+  related: [{via: windows}]
+K129:
+  related: [{via: windows}, {via: furniture, kind: seat}]
+K137:
+  related: [{via: windows}]
+K07:
+  related: [{via: storey}]
+K08:
+  related: [{via: storey}]
+K09:
+  related: [{via: storey}]
+K11:
+  related: [{via: storey}]
+K19:
+  related: [{via: storey}]
+K15:
+  related: [{via: storey}]
+K24:
+  related: [{via: host_wall}]
+K25:
+  related: [{via: storey}]
+K23:
+  related: [{via: host_wall}]

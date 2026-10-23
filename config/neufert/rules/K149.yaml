@@ -1,0 +1,6 @@
+# config/rules/K149.yaml
+rule: K149
+params:
+  H_FFL:     {op: ">", value: 30, unit: "m", severity: "CLASS", desc: "Height requiring a fire-service lift"}
+  R_FFL:     {op: "<=", value: 50, unit: "m", severity: "FAIL", desc: "Radius from the fire-service lift to any occupied point"}
+  FR_ACCESS: {op: ">=", value: 30, unit: "min", severity: "FAIL", desc: "Fire rating of access routes", rating: "T 30"}

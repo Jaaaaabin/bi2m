@@ -1,0 +1,5 @@
+# config/rules/K82.yaml
+rule: K82
+params:
+  R_FIRST: {op: "in", value: ["living", "working", "dining"], severity: "WARN", desc: "Rooms the (first) open space connects to"}
+  R_MORE:  {op: "in", value: ["bedrooms", "kitchen"], severity: "INFO", desc: "Additional rooms when > 1 open space"}

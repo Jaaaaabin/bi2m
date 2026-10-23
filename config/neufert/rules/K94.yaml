@@ -1,0 +1,5 @@
+# config/rules/K94.yaml
+rule: K94
+params:
+  N_KITCHEN: {op: ">=", value: 1, severity: "FAIL", desc: "Kitchens / kitchenettes per dwelling"}
+  N_STORE:   {op: ">=", value: 1, severity: "FAIL", desc: "Storerooms per dwelling"}

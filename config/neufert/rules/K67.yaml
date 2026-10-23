@@ -1,0 +1,4 @@
+# config/rules/K67.yaml
+rule: K67
+params:
+  ORDER: {op: "is", value: "vapour barrier → insulation → (ventilation) → underlay → covering", severity: "INFO", desc: "Expected order (inside → outside)"}

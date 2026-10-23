@@ -1,0 +1,4 @@
+# config/rules/K103.yaml
+rule: K103
+params:
+  N_BATH: {op: ">=", value: 1, severity: "FAIL", desc: "Bathrooms (bath/shower + WC, own room) per dwelling"}

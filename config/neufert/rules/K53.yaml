@@ -1,0 +1,4 @@
+# config/rules/K53.yaml
+rule: K53
+params:
+  F_WD: {op: "<=", value: 2, factor_of: "clear window height", severity: "WARN", desc: "Working-area distance from window"}

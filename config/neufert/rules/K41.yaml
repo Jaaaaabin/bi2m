@@ -1,0 +1,5 @@
+# config/rules/K41.yaml
+rule: K41
+params:
+  W_PER: {op: ">=", value: 1.0, unit: "m", severity: "FAIL", desc: "Exit width per people"}
+  P_PER: {op: "per", value: 150, unit: "persons", severity: "FAIL", desc: "Exit width per people"}

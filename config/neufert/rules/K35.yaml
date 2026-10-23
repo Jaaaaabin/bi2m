@@ -1,0 +1,6 @@
+# config/rules/K35.yaml
+rule: K35
+params:
+  W_SIDE___D_SIDE: {op: ">=", value: [0.95, 0.7], unit: "m", severity: "FAIL", desc: "Side movement area beside WC"}
+  C_OTHER:         {op: ">=", value: 0.3, unit: "m", severity: "FAIL", desc: "Distance to wall / furniture on the other side"}
+  T_MOVE:          {op: ">=", value: [1.5, 1.5], unit: "m", severity: "FAIL", desc: "Movement area in shower and in front of WC and basin"}

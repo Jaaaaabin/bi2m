@@ -1,0 +1,4 @@
+# config/rules/K128.yaml
+rule: K128
+params:
+  N_EMP: {op: ">", value: 10, unit: "persons", severity: "FAIL", desc: "Employees above which a rest room is needed"}

@@ -1,0 +1,4 @@
+# config/rules/K32.yaml
+rule: K32
+params:
+  W_MOVE: {op: ">=", value: 1.5, unit: "m", severity: "FAIL", desc: "Movement area at top / bottom of stairs"}

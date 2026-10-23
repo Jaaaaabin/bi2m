@@ -1,0 +1,6 @@
+# config/rules/K19.yaml
+rule: K19
+params:
+  W_NE: {op: ">=", value: 0.5, unit: "m", severity: "FAIL", desc: "Usable stair width"}
+  R_NE: {op: "<=", value: 0.21, unit: "m", severity: "FAIL", desc: "Riser / tread (ratio 21/21)"}
+  T_NE: {op: ">=", value: 0.21, unit: "m", severity: "FAIL", desc: "Riser / tread (ratio 21/21)"}

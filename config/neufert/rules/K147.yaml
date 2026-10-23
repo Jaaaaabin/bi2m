@@ -1,0 +1,4 @@
+# config/rules/K147.yaml
+rule: K147
+params:
+  W_MULL: {op: ">=", expr: "thickness of connecting partition", unit: "m", severity: "WARN", desc: "Mullion width"}

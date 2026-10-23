@@ -1,0 +1,4 @@
+# config/rules/K90.yaml
+rule: K90
+params:
+  N_ACCESS: {op: ">=", value: 1, severity: "INFO", desc: "Open-space access per storey"}

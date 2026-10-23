@@ -1,0 +1,7 @@
+# config/rules/K115.yaml
+rule: K115
+params:
+  M_SINGLE: {op: "==", value: 1.5, unit: "m", severity: "INFO", desc: "Module for single-room offices"}
+  D_2WS:    {op: "~=", value: 4.4, unit: "m", severity: "INFO", desc: "Clear room dimension for double workstation (2 × 2.20)"}
+  M_COMBI:  {op: "==", value: 1.35, unit: "m", severity: "INFO", desc: "Module for combi-offices"}
+  W_COMBI:  {op: "~=", value: 3.8, unit: "m", severity: "INFO", desc: "Room width on 1.35 m module (2 workstations, 0.90 deep)"}

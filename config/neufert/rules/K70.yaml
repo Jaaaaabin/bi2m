@@ -1,0 +1,8 @@
+# config/rules/K70.yaml
+rule: K70
+params:
+  CLS35:     {op: "trigger", value: {dwellings_gt: 2, usable_area_ge: 400}, severity: "CLASS", desc: "Class 3–5 trigger"}
+  "FR[5]":   {op: ">=", value: 90, unit: "min", severity: "FAIL", desc: "Class 5: fireproof", rating: "F 90"}
+  "FR[4]":   {op: ">=", value: 60, unit: "min", severity: "FAIL", desc: "Class 4: highly fire-retarding", rating: "F 60"}
+  "FR[1–2]": {op: ">=", value: 30, unit: "min", severity: "FAIL", desc: "Classes 1–2: fire-retarding", rating: "F 30"}
+  FR_CELLAR: {op: ">=", value: 90, unit: "min", alt: "classes 1-2: 30", severity: "FAIL", desc: "Basements: fireproof (classes 1–2 fire-retarding)"}

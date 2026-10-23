@@ -1,0 +1,6 @@
+# config/rules/K42.yaml
+rule: K42
+params:
+  L_COMP:  {op: "<=", value: 40, unit: "m", severity: "FAIL", desc: "Maximum fire compartment extent"}
+  FR_WALL: {op: ">=", value: 90, severity: "FAIL", desc: "Fire compartment wall", rating: "F 90-A (90 min, non-combustible)"}
+  FR_DOOR: {op: ">=", value: 90, unit: "min", rating: "T 90", self_closing: true, severity: "FAIL", desc: "Doors in compartment walls"}

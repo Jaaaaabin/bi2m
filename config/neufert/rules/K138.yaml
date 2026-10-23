@@ -1,0 +1,4 @@
+# config/rules/K138.yaml
+rule: K138
+params:
+  SAVE: {op: "in", value: [20, 50], unit: "%", severity: "INFO", desc: "Area saving vs personalised offices"}

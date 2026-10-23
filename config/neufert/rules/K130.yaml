@@ -1,0 +1,7 @@
+# config/rules/K130.yaml
+rule: K130
+params:
+  "A_ROLE[professor]":    {op: "in", value: [20, 24], unit: "m²", severity: "WARN", desc: "Professor"}
+  "A_ROLE[sci__assistant]": {op: "~=", value: 15, unit: "m²", severity: "WARN", desc: "Scientific assistant"}
+  "A_ROLE[assistant]":    {op: "~=", value: 20, unit: "m²", severity: "WARN", desc: "Assistant"}
+  "A_ROLE[secretary]":    {op: "~=", value: 15, unit: "m²", severity: "WARN", desc: "Secretary (double occupation 20)"}

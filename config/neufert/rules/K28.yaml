@@ -1,0 +1,5 @@
+# config/rules/K28.yaml
+rule: K28
+params:
+  T_TURN: {op: ">=", value: [1.5, 1.5], unit: "m", severity: "WARN", desc: "Turning square"}
+  W_CORR: {op: ">=", value: 1.5, unit: "m", severity: "FAIL", desc: "Corridor / entrance hall width (public buildings)"}

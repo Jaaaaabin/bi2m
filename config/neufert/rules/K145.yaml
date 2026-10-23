@@ -1,0 +1,4 @@
+# config/rules/K145.yaml
+rule: K145
+params:
+  H_RAISED: {op: "~=", value: 0.7, unit: "m", severity: "WARN", desc: "Raised floor height"}

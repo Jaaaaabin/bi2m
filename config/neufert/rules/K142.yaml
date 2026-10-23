@@ -1,0 +1,4 @@
+# config/rules/K142.yaml
+rule: K142
+params:
+  ANG:  {op: "<=", value: 15, unit: "°", severity: "WARN", desc: "View direction vs window facade (suggested tolerance)"}

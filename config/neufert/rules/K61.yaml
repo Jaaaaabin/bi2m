@@ -1,0 +1,6 @@
+# config/rules/K61.yaml
+rule: K61
+params:
+  R_SI:    {op: "==", value: 0.13, unit: "m²K/W", severity: "REPORT", desc: "Surface resistances, horizontal heat flow (walls)"}
+  R_SE:    {op: "==", value: 0.04, unit: "m²K/W", severity: "REPORT", desc: "Surface resistances, horizontal heat flow (walls)"}
+  FORMULA: {op: "is", value: "R = d/λ ; 1/U = R_si + ΣR + R_se", severity: "REPORT", desc: "Calculation"}

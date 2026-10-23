@@ -1,0 +1,5 @@
+# config/rules/K37.yaml
+rule: K37
+params:
+  W_MOVE: {op: ">=", value: 1.2, unit: "m", severity: "FAIL", desc: "Movement area width"}
+  CASES:  {op: "in", value: ["routes in the dwelling", "between walls", "beside furniture approached sideways", "access side of a non-wheelchair user’s bed", "next to operated equipment", "between ramp wheel kerbs"], severity: "PARAM", desc: "Where it applies"}

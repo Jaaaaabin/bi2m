@@ -1,0 +1,47 @@
+{
+  "dependencies": {
+    "@thatopen/components": "^2.4.3",
+    "@thatopen/components-front": "^2.4.3",
+    "@thatopen/fragments": "^2.4.0",
+    "@thatopen/ui": "^2.4.5",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "three": "^0.160.1",
+    "web-ifc": "^0.0.66"
+  },
+  "name": "thatopencompany-vite",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "npm run lint && npm run typecheck && npm run test:unit",
+    "build:check": "vite build && node scripts/checkBundleSize.mjs",
+    "e2e": "python3 scripts/e2e/run_all.py",
+    "e2e:quick": "python3 scripts/e2e/run_all.py --quick",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc -p jsconfig.json",
+    "test:unit": "vitest run",
+    "test:all": "npm test && npm run e2e:quick",
+    "start": "node server/serve.mjs"
+  },
+  "author": "Jiabin Wu",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.8",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "vite-plugin-compression2": "^2.5.3",
+    "vitest": "^5.0.1"
+  },
+  "type": "module"
+}

@@ -1,0 +1,4 @@
+# config/rules/K52.yaml
+rule: K52
+params:
+  F_W:  {op: ">=", value: 65, unit: "%", severity: "WARN", desc: "Window width / room width (structural opening)"}

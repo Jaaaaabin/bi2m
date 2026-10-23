@@ -1,0 +1,4 @@
+# config/rules/K131.yaml
+rule: K131
+params:
+  TOL_GRID: {op: "<=", value: 0.05, unit: "m", severity: "WARN", desc: "Partition junction to facade grid line (suggested)"}

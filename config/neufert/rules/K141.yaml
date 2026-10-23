@@ -1,0 +1,6 @@
+# config/rules/K141.yaml
+rule: K141
+params:
+  A_WS:  {op: "in", value: [11, 15], unit: "m²", severity: "WARN", desc: "Immediate workstation area per workstation (avg 13)"}
+  A_ADD: {op: "in", value: [1.5, 4.2], unit: "m²", severity: "WARN", desc: "Additional area per workstation (avg 2.5)"}
+  A_TR:  {op: "in", value: [2.2, 6.0], unit: "m²", severity: "WARN", desc: "Traffic area per workstation (avg 4.5)"}

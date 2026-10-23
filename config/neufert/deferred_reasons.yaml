@@ -1,0 +1,218 @@
+# Why a card stays deferred, per rule: a sentence, or {reason, needs} with explicit tags. scripts/neufert_bindings.py
+# derives the `needs` tags from the words of a plain sentence and from the card's project inputs; explicit tags win.
+# A `family:<name>` tag is only valid for a family that is still a stub (verify_neufert checks it).
+
+K09: essential-stair fact (legally essential stairs) is not available
+K10: essential-stair fact and landing geometry are not available
+K12:
+  reason: the dwelling count per building needs a selector over the inferred units (the flight width exists)
+  needs:
+  - select:dwelling_units
+K14:
+  reason: the sole stair inside a dwelling needs a selector over the inferred units and the stair-in-room relation
+  needs:
+  - select:dwelling_units
+  - relation:contains
+K16: no barrier-free gate; Pset_RampFlightCommon carries no Slope in the template, landings and handrails are geometry
+K17: handrails per flight side need railing geometry
+K18: lifts are rare (3 of 40 local models) and the waiting-area geometry is not built
+K20:
+  reason: W_LAND is an expression param (the adjoining flight's width) and the landing's own width is geometry not built; the
+    flight width exists
+  needs:
+  - op:expr
+  - geom:flight_landing
+K22: door -> reached rooms selector (door role) not built
+K26: publicly accessible / barrier-free building flag is not available on the corpus
+K27:
+  reason: step-free reachability needs lifts and ramps (rare on the corpus) and the public-building scope
+  needs:
+  - fact:lifts
+  - fact:public_building
+K28: free-square test needs furniture footprints; the plan's fits_square is a disc test
+K29: barrier-free public building flag and door swing are not available
+K30: lifts are rare (3 of 40 local models); barrier-free lift properties unverified
+K32: movement area beside stairs is geometry not built
+K33: corridor medial-axis length and passing-place square are geometry not built
+K34:
+  reason: needs a step-free route (lifts) and door and turning-space checks per dwelling (the dwellings exist)
+  needs:
+  - fact:lifts
+  - geom:free_square
+K35:
+  reason: the barrier-free dwelling scope is a project input; the fixture clearances are geometry not built
+  needs:
+  - input:project
+  - geom:free_square
+K36:
+  reason: persons per dwelling are not available (OccupancyNumber on 1 of 370 models; beds would be a proxy)
+  needs:
+  - fact:persons
+K37: movement area widths are geometry not built
+K39:
+  reason: two INDEPENDENT routes need disjoint-path search and the essential-stair fact
+  needs:
+  - metric:independent_routes
+  - fact:essential_stairs
+K42: fire_compartments in egress_fire covers the door side; wall ratings absent (see fire_compartments.py)
+K43:
+  reason: a stairwell enclosed by walls is a boundary relation, not a door relation
+  needs:
+  - relation:boundary
+  - fact:essential_stairs
+K44: escape corridors are not identified
+K45:
+  reason: 'escape corridors in high-rise buildings: corridor identification, is_highrise, corridor length and dead ends'
+  needs:
+  - fact:escape_corridors
+  - fact:is_highrise
+  - metric:corridor_length
+K46: facade fire protection needs is_highrise and spandrel geometry
+K47:
+  reason: essential escape corridors and their section lengths are not identified
+  needs:
+  - fact:escape_corridors
+  - metric:corridor_length
+K52: window width for view needs the sightline; informational
+K53:
+  reason: distance of the working area from the window wall needs the window positions per room (workstations exist)
+  needs:
+  - metric:distance_to_window
+K66: green-roof classification (vegetation layer) not available
+K68:
+  reason: separating walls between units are a wall relation, not a door relation (the dwellings exist)
+  needs:
+  - relation:wall
+K70: building class is a project input
+K72:
+  reason: separating walls between units are a wall relation; fire ratings on walls are rare (14 of 370 models)
+  needs:
+  - relation:wall
+  - fact:wall_fire_rating
+K81:
+  reason: the balcony threshold is indexed by persons per dwelling, which are not available
+  needs:
+  - fact:persons
+K89:
+  reason: corridor clear width is geometry not built (a corridor's OBB short side is a wall-to-wall width only for a straight corridor)
+  needs:
+  - geom:corridor_width
+K93: entrance recess geometry not built
+K94: dwelling units are not available
+K103: dwelling units are not available
+K107:
+  reason: the living area per dwelling (K76-K78) is not built
+  needs:
+  - fact:living_area
+K114:
+  reason: desktop size and the free movement area need furniture footprints (the desks themselves are counted)
+  needs:
+  - geom:furniture_footprints
+K115: grid module and clear dimensions need the declared grid; informational
+K118:
+  reason: the entrance-area room (the room the main entrance door opens into) has no role yet; seats per conference room
+    would come from the seating kind of the furnishing helper once it does
+  needs:
+  - role:entrance_room
+K121: 'assembly halls: the plan''s ''hall'' word is bi2m''s circulation word; no distinct concept yet'
+K124:
+  reason: the entrance-area room (the room the main entrance door opens into) has no role yet
+  needs:
+  - role:entrance_room
+K125:
+  reason: no vocabulary concept for canteens and staff restaurants yet (workstations exist)
+  needs:
+  - vocab:canteen
+K126:
+  reason: workstation to nearest window distance needs the window positions per room (workstations exist, as room counts)
+  needs:
+  - metric:distance_to_window
+K128: project input (number_of_kitchen_employees)
+K129:
+  reason: F_DEPTH needs the windows on one external wall (window host walls per room); A_STUD runs
+  needs:
+  - metric:windows_per_wall
+K130: academic staff offices need the university scope
+K136:
+  reason: escape corridors and furniture footprints are not available
+  needs:
+  - fact:escape_corridors
+  - geom:furniture_footprints
+K142:
+  reason: viewing direction of a workstation needs furniture orientation (the desks themselves are counted)
+  needs:
+  - geom:furniture_orientation
+K143:
+  reason: the filing unit's length and width are furniture footprints; the formula is a REPORT with no threshold
+  needs:
+  - geom:furniture_footprints
+K144: post room location is informational
+K145: raised floor, air terminals and access control are not identified
+K149:
+  reason: is_highrise is not available (no corpus building above 22 m) and FireFightingLift is set on no lift
+  needs:
+  - fact:is_highrise
+  - fact:fire_fighting_lift
+K150:
+  reason: is_highrise, wellhole and vent-opening geometry are not available
+  needs:
+  - fact:is_highrise
+  - geom:element_geometry
+K152: project input (fire service access level)
+K154: high-rise window cleaning needs is_highrise
+K117:
+  reason: N_GROUP is an approximate range (~= over two values) and both params carry severity CLASS, which the comparator and
+    the outcome classes have no meaning for; the workstation count per office room exists
+  needs:
+  - family:classify
+  - op:approx_range
+  - severity:class
+K138:
+  reason: the area saving against personalised offices needs a baseline layout that is a project input; informational
+  needs:
+  - input:project
+K140:
+  reason: the five workstation area components are furniture footprints and swing zones; REPORT only
+  needs:
+  - geom:furniture_footprints
+K41:
+  reason: occupancy per assembly space (OccupancyNumber on 1 of 370 models) and the exit doors of a space are not available
+  needs:
+  - fact:persons
+  - select:door_rooms
+K48:
+  reason: window widths per bounding external wall and wall lengths per room are wall geometry not built
+  needs:
+  - geom:wall_axis
+  - metric:windows_per_wall
+K76:
+  reason: slicing a space by clear height needs 3D space geometry cut at 1 m and 2 m
+  needs:
+  - geom:space_slices
+K77:
+  reason: F_BALC is a range with a default and the result feeds the living-area fact (K76-K78), REPORT only
+  needs:
+  - fact:living_area
+K78:
+  reason: MEAS is a string under op `is`; the living-area fact (K76-K78) is not built
+  needs:
+  - op:is
+  - fact:living_area
+K79:
+  reason: DIN 277 gross floor area needs the storey footprint union (Qto GrossFloorArea on 5 of 370 models)
+  needs:
+  - geom:storey_footprint
+K80:
+  reason: gross built volume needs the storey footprint union and storey heights
+  needs:
+  - geom:storey_footprint
+K127:
+  reason: the use-unit area is a CLASS exemption flag for K44, K45 and K47, which are not built; no outcome of its own
+  needs:
+  - severity:class
+  - fact:escape_corridors
+K146:
+  reason: air terminals are absent from the corpus (0 of 370 models) and the BRI reference is a project input
+  needs:
+  - input:project
+  - geom:storey_footprint

@@ -1,0 +1,7 @@
+# config/rules/K01.yaml
+rule: K01
+params:
+  H_HR:     {op: ">", value: 22, unit: "m", severity: "CLASS", desc: "Uppermost occupied floor above ground → building is high-rise"}
+  H_HR_MAX: {op: "<=", value: 60, unit: "m", severity: "PARAM", desc: "Upper height for this stair rule"}
+  N_STAIR:  {op: ">=", value: 2, severity: "FAIL", desc: "Emergency stairs, opposite, in separate fire compartments"}
+  W_STAIR:  {op: ">=", value: 1.25, unit: "m", severity: "FAIL", desc: "Walking width of each emergency stair"}

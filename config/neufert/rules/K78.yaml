@@ -1,0 +1,4 @@
+# config/rules/K78.yaml
+rule: K78
+params:
+  MEAS: {op: "is", value: "clear space from the face of the cladding", severity: "REPORT", desc: "Measurement basis"}

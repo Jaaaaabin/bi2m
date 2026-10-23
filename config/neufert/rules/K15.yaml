@@ -1,0 +1,9 @@
+# config/rules/K15.yaml
+rule: K15
+params:
+  DROP_REQ: {op: ">=", value: 1.0, unit: "m", severity: "FAIL", desc: "Height difference that makes a railing compulsory"}
+  DROP_HI:  {op: "split", value: 12, unit: "m", severity: "PARAM", desc: "Drop that switches to the higher railing"}
+  H_LOW:    {op: ">=", value: 0.9, unit: "m", severity: "FAIL", desc: "Railing height, drop < 12 m"}
+  H_HIGH:   {op: ">=", value: 1.1, unit: "m", severity: "FAIL", desc: "Railing height, drop > 12 m"}
+  H_WORK:   {op: ">=", value: 1.0, unit: "m", severity: "FAIL", desc: "Railing height in workplaces"}
+  GAP_WORK: {op: ">=", value: 0.2, unit: "m", severity: "PARAM", desc: "Stairwell gap allowing H_WORK above 12 m"}

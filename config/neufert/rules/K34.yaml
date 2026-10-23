@@ -1,0 +1,5 @@
+# config/rules/K34.yaml
+rule: K34
+params:
+  N_FLATS:   {op: ">", value: 2, unit: "flats", severity: "CLASS", desc: "Flats in the building"}
+  ROOMS_ACC: {op: "in", value: ["living rooms", "bedrooms", "1 WC", "1 bathroom", "kitchen"], severity: "FAIL", desc: "Rooms that must be wheelchair-accessible"}

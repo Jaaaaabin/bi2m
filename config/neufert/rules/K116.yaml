@@ -1,0 +1,6 @@
+# config/rules/K116.yaml
+rule: K116
+params:
+  D_MIN:    {op: ">=", value: 12, unit: "m", severity: "WARN", desc: "Building depth, lower bound"}
+  D_MAX:    {op: "<=", value: 13, unit: "m", severity: "WARN", desc: "Building depth, upper bound"}
+  DL_DEPTH: {op: "<=", value: 7.0, unit: "m", severity: "WARN", desc: "Room depth with usable daylight"}

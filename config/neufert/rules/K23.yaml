@@ -1,0 +1,5 @@
+# config/rules/K23.yaml
+rule: K23
+params:
+  H_DOOR:   {op: ">=", value: 2.1, unit: "m", severity: "FAIL", desc: "Clear opening height"}
+  H_BETTER: {op: ">=", value: 2.25, unit: "m", severity: "INFO", desc: "Better value (not the minimum)"}

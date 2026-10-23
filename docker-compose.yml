@@ -1,0 +1,34 @@
+# Self-hosting: `docker compose up -d --build`, then open http://localhost:3000.
+# Settings come from the environment or a .env file next to this one:
+#   BI2M_PORT  host port (default 3000)
+#   BI2M_DATA  host folder mounted as data/ - put example_*.ifc models here
+#              to list them in the viewer; uploads and verdicts land here too
+#   BI2M_UID / BI2M_GID  your user and group id (`id -u` / `id -g`) when they
+#              are not 1000, so files written to BI2M_DATA stay yours
+services:
+  bi2m:
+    build: .
+    image: bi2m
+    # Loopback only: the API takes uploads and runs recognition without any
+    # login. Drop "127.0.0.1:" only behind a reverse proxy with auth.
+    ports:
+      - "127.0.0.1:${BI2M_PORT:-3000}:3000"
+    user: "${BI2M_UID:-1000}:${BI2M_GID:-1000}"
+    environment:
+      # web-ifc's multi-threaded build needs cross-origin isolation; untested
+      # on the production server, so off unless you want to try it ("1").
+      BI2M_COI: "0"
+      # Optional model library (see README): mount a corpus and its vis index.
+      # BI2M_IFC_CORPUS: /corpus
+      # BI2M_VIS_DIR: /corpus_vis
+    volumes:
+      - ${BI2M_DATA:-./data}:/app/data
+      - intents:/app/Interfaces/Frontend/core/public/res/intents
+      - tiles:/app/Interfaces/Frontend/core/public/tiles
+      # - /path/to/ifc/corpus:/corpus:ro
+      # - /path/to/corpus_vis:/corpus_vis:ro
+    restart: unless-stopped
+
+volumes:
+  intents:
+  tiles:

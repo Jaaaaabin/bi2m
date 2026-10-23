@@ -1,0 +1,4 @@
+# config/rules/K122.yaml
+rule: K122
+params:
+  N_CLEAN: {op: ">=", value: 1, severity: "WARN", desc: "Cleaner’s rooms per floor"}

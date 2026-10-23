@@ -1,0 +1,4 @@
+# config/rules/K124.yaml
+rule: K124
+params:
+  FUNCS: {op: "in", value: ["lobby", "access control", "information", "visitor registration", "waiting zone"], severity: "INFO", desc: "Entrance-area functions"}

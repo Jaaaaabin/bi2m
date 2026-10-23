@@ -1,0 +1,4 @@
+# config/rules/K148.yaml
+rule: K148
+params:
+  RULE: {op: "is", value: "slab to slab, or sound-insulating ceiling / floor elements", severity: "WARN", desc: "Partition continuation"}

@@ -1,0 +1,6 @@
+# config/rules/K92.yaml
+rule: K92
+params:
+  D_MAX: {op: "<=", value: 12, unit: "m", severity: "WARN", desc: "Economic building depth"}
+  W_MIN: {op: ">=", value: 4, unit: "m", severity: "WARN", desc: "House width, lower bound"}
+  W_MAX: {op: "<=", value: 8, unit: "m", severity: "WARN", desc: "House width, upper bound"}

@@ -1,0 +1,4 @@
+# config/rules/K133.yaml
+rule: K133
+params:
+  ROWS: {op: "class", value: [1, 2, 3], severity: "CLASS", desc: "Layout class"}

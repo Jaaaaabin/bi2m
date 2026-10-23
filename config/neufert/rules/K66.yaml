@@ -1,0 +1,5 @@
+# config/rules/K66.yaml
+rule: K66
+params:
+  P_GREEN: {op: "<=", value: 25, unit: "°", severity: "WARN", desc: "Pitch of planted pitched roofs"}
+  S_GREEN: {op: "<=", value: [2, 3], unit: "%", severity: "WARN", desc: "Slope of planted flat roofs"}

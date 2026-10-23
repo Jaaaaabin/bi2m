@@ -1,0 +1,4 @@
+# config/rules/K153.yaml
+rule: K153
+params:
+  USE_BANNED: {op: "not_in", value: ["school", "hospital", "home for the elderly"], severity: "FAIL", desc: "Uses not allowed in high-rise buildings"}

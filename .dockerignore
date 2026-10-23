@@ -1,0 +1,30 @@
+# Build context for the Dockerfile. Anything local-only stays out: models,
+# uploads and extraction caches (data/), tile sets (~250k files), installed
+# dependencies, notes and agent state.
+.git
+.github
+.venv
+.claude
+.agents
+.superpowers
+research
+data
+docs
+visualization
+**/node_modules
+**/__pycache__
+**/.env
+*.md
+neufert_validation_pack.json
+Interfaces/Frontend/data_vis_test
+Interfaces/Frontend/core/dist
+Interfaces/Frontend/core/public/tiles
+Interfaces/Frontend/core/public/wasm
+Interfaces/Frontend/core/scripts/e2e/out
+# Recognition results are per-model output, never baked into the image (a
+# local build would otherwise ship whatever this machine has computed). The
+# image starts empty; results land in the `intents` volume.
+Interfaces/Frontend/core/public/res/intents/*.json
+Interfaces/Frontend/core/public/res/lines/*.json
+!Interfaces/Frontend/core/public/res/lines/index.json
+!Interfaces/Frontend/core/public/res/lines/34b3f3dac339ade6.json

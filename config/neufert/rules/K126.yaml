@@ -1,0 +1,4 @@
+# config/rules/K126.yaml
+rule: K126
+params:
+  D_WIN: {op: "<=", value: 7.5, unit: "m", severity: "WARN", desc: "Workplace distance to a window"}

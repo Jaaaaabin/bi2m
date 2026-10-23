@@ -1,0 +1,5 @@
+# config/rules/K80.yaml
+rule: K80
+params:
+  h_gross: {op: "def", value: null, unit: "m", severity: "REPORT", desc: "Height for BRI: top of floor covering to top of floor covering of next level"}
+  h_net:   {op: "def", value: null, unit: "m", severity: "REPORT", desc: "Height for NRI: clear ceiling height"}

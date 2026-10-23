@@ -1,0 +1,4 @@
+# config/rules/K87.yaml
+rule: K87
+params:
+  R_HALL: {op: "in", value: ["kitchen", "WC", "staircase"], severity: "WARN", desc: "Rooms directly off the entrance hall"}

@@ -1,0 +1,71 @@
+# === Node / Vite / Frontend ===
+node_modules/
+dist/
+.cache/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.env
+.env.*
+.eslintcache
+.parcel-cache/
+.next/
+.nuxt/
+out/
+
+# === OS / IDE ===
+.DS_Store
+Thumbs.db
+.vscode/
+*.code-workspace
+
+# === Editor / Misc ===
+*.swp
+*.swo
+*.orig
+
+# === Archive / Data output (customize as needed) ===
+archive/*.zip
+*.bak
+
+# === Temporary files ===
+temp
+*.log
+
+# === Data/Test (optional, if you don't want to track test data) ===
+data_vis_test/
+
+# === Generated tile-conversion output (scripts/tileIfc.mjs) - build
+# artifact regenerated from a raw .ifc, not source; matches dist/ above in
+# not belonging in git history. ===
+Frontend/core/public/tiles/
+
+# === Intent shards from uploaded models - local state, not source ===
+# Only affects UNTRACKED files, which is exactly the intent: the fixture
+# shards and index.json are already tracked and keep behaving normally.
+# Everything else under here is produced by pressing Run on a file dragged
+# into the viewer, whose bytes live in the gitignored data/uploads/ - so a
+# tracked shard for one would reference a model nobody else has, and the
+# tracked index would drift on every Run. Found the hard way on 2026-09-24:
+# 14 such shards had accumulated, 9 from files of unknown origin, one whose
+# IFC header carried a person's name and their employer's OneDrive path.
+# A genuinely new FIXTURE shard needs `git add -f` - deliberate, since
+# data/ now holds one model and almost every new shard is upload-derived.
+Frontend/core/public/res/intents/*.json
+
+# === Line sidecars from scripts/grid_lines.py - local state, not source ===
+# Same reasoning as the intent shards above: each file is the declared
+# IfcGrid of one model that lives outside the repo (an upload or a library
+# model) and is rewritten whenever the script reruns. The two `!` lines keep
+# what the repo itself needs: index.json, and the example model's
+# hand-written sidecar, whose five sample shapes
+# scripts/e2e/overlay_lines.py checks.
+Frontend/core/public/res/lines/*.json
+!Frontend/core/public/res/lines/index.json
+!Frontend/core/public/res/lines/34b3f3dac339ade6.json
+
+# === Lock / state files ===
+*.lock
+*.pid
+Frontend/core/public/res/intents/index.json

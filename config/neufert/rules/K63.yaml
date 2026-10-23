@@ -1,0 +1,6 @@
+# config/rules/K63.yaml
+rule: K63
+params:
+  S_FLAT: {op: "<=", value: 5, unit: "%", severity: "CLASS", desc: "Slope up to which a roof is flat"}
+  S_MIN:  {op: ">=", value: 2, unit: "%", severity: "FAIL", desc: "Minimum drainage slope"}
+  S_REC:  {op: ">=", value: 5, unit: "%", note: "about 3°", severity: "WARN", desc: "Recommended slope (flatness tolerances, deflection)"}

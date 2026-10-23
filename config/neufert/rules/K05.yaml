@@ -1,0 +1,14 @@
+# config/rules/K05.yaml
+rule: K05
+params:
+  F_GEN:     {op: "factor", value: 0.4, unit: "× H", severity: "FAIL", desc: "Setback factor, general"}
+  F_COM:     {op: "factor", value: 0.2, unit: "× H", severity: "FAIL", desc: "Setback factor, commercial / industrial areas"}
+  T_MIN:     {op: ">=", value: 3.0, unit: "m", severity: "FAIL", desc: "Minimum setback depth"}
+  T_CL12:    {op: "==", value: 3.0, unit: "m", severity: "PARAM", desc: "Setback depth, building classes 1–2 with ≤ N_CL12 storeys"}
+  N_CL12:    {op: "<=", value: 3, unit: "storeys", severity: "PARAM", desc: "Overground storeys for the class 1–2 rule"}
+  PITCH_LIM: {op: "split", value: 70, unit: "°", severity: "PARAM", desc: "Roof pitch limit for the roof-height share"}
+  ROOF_LOW:  {op: "factor", value: 0.3333, severity: "PARAM", desc: "Roof height share when pitch ≤ PITCH_LIM"}
+  ROOF_HIGH: {op: "factor", value: 1, severity: "PARAM", desc: "Roof height share when pitch ≥ PITCH_LIM"}
+  P_SHARE:   {op: "<", value: 0.3333, severity: "PARAM", desc: "Exempt projections: share of wall width"}
+  P_DEPTH:   {op: "<=", value: 1.5, unit: "m", severity: "PARAM", desc: "Exempt projections: depth"}
+  P_DIST:    {op: ">=", value: 2.0, unit: "m", severity: "PARAM", desc: "Exempt projections: distance to opposite boundary"}

@@ -1,0 +1,5 @@
+# config/rules/K81.yaml
+rule: K81
+params:
+  "A_BALC[3–4]": {op: "~=", value: 7, unit: "m²", severity: "WARN", desc: "Balcony for 3–4 persons"}
+  "A_BALC[5–6]": {op: "~=", value: 9, unit: "m²", severity: "WARN", desc: "Balcony for 5–6 persons"}

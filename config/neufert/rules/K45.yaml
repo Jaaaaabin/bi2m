@@ -1,0 +1,9 @@
+# config/rules/K45.yaml
+rule: K45
+params:
+  W_ESC:   {op: ">=", value: 1.25, unit: "m", severity: "FAIL", desc: "Escape route width"}
+  D_WALK:  {op: "<=", value: 25, unit: "m", severity: "FAIL", desc: "Walking distance from any room point"}
+  L_2DIR:  {op: "<=", value: 40, unit: "m", severity: "FAIL", desc: "Corridor with two escape directions"}
+  S_SMOKE: {op: "<=", value: 20, unit: "m", severity: "FAIL", desc: "Spacing of smoke-proof self-closing doors"}
+  L_DEAD:  {op: "<=", value: 10, unit: "m", severity: "FAIL", desc: "Dead-end corridor length"}
+  L_DEAD2: {op: "<=", value: 20, unit: "m", severity: "FAIL", desc: "Dead-end length with second escape route"}

@@ -1,0 +1,8 @@
+# config/rules/K68.yaml
+rule: K68
+params:
+  M_PARTY:  {op: ">=", value: 400, unit: "kg/m²", severity: "FAIL", desc: "Mass per unit area"}
+  J_MIN:    {op: ">=", value: 0.03, unit: "m", severity: "FAIL", desc: "Separating joint width"}
+  M_LEAF:   {op: ">=", value: 150, unit: "kg/m²", severity: "FAIL", desc: "Mass per leaf (incl. plaster)"}
+  J_WIDE:   {op: ">", value: 0.05, unit: "m", severity: "FAIL", desc: "Joint > 50 mm → mass per leaf"}
+  M_LEAF_W: {op: ">=", value: 100, unit: "kg/m²", severity: "FAIL", desc: "Joint > 50 mm → mass per leaf"}

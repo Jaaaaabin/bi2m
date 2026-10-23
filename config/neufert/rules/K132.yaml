@@ -1,0 +1,9 @@
+# config/rules/K132.yaml
+rule: K132
+params:
+  M1:    {op: "==", value: 1.35, unit: "m", severity: "INFO", desc: "Grid module for combi-offices"}
+  D1:    {op: "~=", value: 13.4, unit: "m", severity: "WARN", desc: "Building depth with M1"}
+  M2:    {op: "==", value: 1.5, unit: "m", severity: "INFO", desc: "Grid module for single / combi-offices"}
+  D2:    {op: "~=", value: 12.5, unit: "m", severity: "WARN", desc: "Building depth with M2"}
+  TOL_M: {op: "<=", value: 0.02, unit: "m", severity: "PARAM", desc: "Matching tolerances (suggested)"}
+  TOL_D: {op: "<=", value: 0.3, unit: "m", severity: "PARAM", desc: "Matching tolerances (suggested)"}

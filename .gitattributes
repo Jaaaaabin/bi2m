@@ -1,0 +1,16 @@
+# Normalize line endings to LF in the repository itself, regardless of
+# which OS commits a file, and check out as LF on every platform. Without
+# this, line endings depend on each collaborator's global core.autocrlf
+# (Windows commonly defaults to true, Linux/macOS to input/false) - the
+# classic source of "every line shows as changed" diffs and, worse, a
+# CRLF-after-shebang breaking a shell script's execution on Linux/macOS.
+# Added before the first commit specifically so history starts clean.
+* text=auto eol=lf
+
+# Assets that should never go through line-ending normalization.
+*.wasm binary
+*.ifc binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary

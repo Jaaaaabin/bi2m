@@ -1,0 +1,9 @@
+# config/rules/K152.yaml
+rule: K152
+params:
+  G_I:    {op: "in", value: [22, 30], unit: "m", severity: "CLASS", desc: "Group I height band"}
+  G_II:   {op: "in", value: [30, 60], unit: "m", severity: "CLASS", desc: "Group II height band"}
+  G_III:  {op: "in", value: [60, 200], unit: "m", severity: "CLASS", desc: "Group III height band"}
+  G_IV:   {op: ">", value: 200, unit: "m", severity: "CLASS", desc: "Group IV height band"}
+  N_FFL:  {op: ">=", value: 1, severity: "FAIL", desc: "Fire-service lifts from group II"}
+  FR_III: {op: ">=", value: 120, unit: "min", severity: "FAIL", desc: "Fire resistance of structurally significant elements from group III", rating: "F 120"}

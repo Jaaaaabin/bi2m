@@ -1,0 +1,22 @@
+[project]
+name = "bi2m"
+version = "0.1.0"
+description = "Design-intent recognition for IFC building models, with a web viewer"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = [
+    "ifcopenshell>=0.8.5",
+    "matplotlib>=3.11.1",
+    "networkx>=3.6.1",
+    "numpy>=2.5.2",
+    "pyyaml>=6.0.3",
+    "scikit-learn>=1.9.0",
+    "shapely>=2.1.2",
+]
+
+[dependency-groups]
+dev = [
+    "playwright>=1.63.0",
+]

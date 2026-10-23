@@ -1,0 +1,6 @@
+# config/rules/K29.yaml
+rule: K29
+params:
+  N_WC:   {op: ">=", value: 1, severity: "FAIL", desc: "Wheelchair toilets per sanitary facility"}
+  SWING:  {op: "is", value: "outward", severity: "FAIL", desc: "Door swing of toilets, showers, changing rooms"}
+  H_SEAT: {op: "~=", value: 0.48, unit: "m", severity: "INFO", desc: "WC seat height"}

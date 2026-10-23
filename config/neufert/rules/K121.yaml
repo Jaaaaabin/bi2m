@@ -1,0 +1,5 @@
+# config/rules/K121.yaml
+rule: K121
+params:
+  V_SPEECH: {op: ">=", value: 4, unit: "m³", severity: "WARN", desc: "Volume per person, speech"}
+  V_MUSIC:  {op: ">=", value: 10, unit: "m³", severity: "WARN", desc: "Volume per person, concert music"}

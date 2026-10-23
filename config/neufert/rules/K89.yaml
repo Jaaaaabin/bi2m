@@ -1,0 +1,4 @@
+# config/rules/K89.yaml
+rule: K89
+params:
+  W_CORR: {op: ">=", value: 1.0, unit: "m", severity: "WARN", desc: "Corridor width in dwellings"}

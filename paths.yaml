@@ -1,0 +1,106 @@
+# Cross-platform path configuration for Mac/Windows co-development
+#
+# Rule of thumb: use forward slashes ("/") for every repo-relative path below.
+# Forward slashes work natively on Windows, macOS, and Linux in Python (pathlib),
+# Node.js, Vite, and Git. Never hardcode backslashes or absolute drive paths
+# (e.g. "H:\dev\...") into scripts or committed config — they break on Mac/Linux
+# and on any teammate's machine with a different drive letter or home directory.
+#
+# Only the `venv` section below is genuinely OS-specific (different executable
+# names/extensions), so it is the one place split by platform.
+
+paths:
+  # Python backend (bi2m root)
+  src_dir: src                   # individual Python modules
+  scripts_dir: scripts           # running sub-pipelines (thin entry points into src/)
+  data_dir: data                 # test data
+  visualization_dir: visualization  # future visual-output additions (empty for now)
+  # The batch snapshot driver; writes into $BI2M_VIS_DIR,
+  # whose internal layout is the `vis_outputs` block below.
+  autocamera_script: scripts/autocamera.py
+  # The batch tiler: reads the corpus, writes streamable tile sets into
+  # `tiles_dir` below. No BI2M_* output variable, unlike autocamera.py - its
+  # output lives inside the repo as a gitignored build artifact.
+  tile_corpus_script: scripts/tile_corpus.py
+
+  # Frontend (Interfaces module)
+  frontend_root: Interfaces/Frontend
+  frontend_core: Interfaces/Frontend/core
+  # Under public/ specifically (not a plain core/res/) - Vite only copies
+  # publicDir contents into a production build; a sibling-of-index.html res/
+  # was dev-server-only (served by Vite's dev middleware, silently absent
+  # from `npm run build`'s dist/ - confirmed by inspection).
+  frontend_resources: Interfaces/Frontend/core/public/res
+  highlight_map: Interfaces/Frontend/core/public/res/map_visualization.json
+  # One shard per model, named by the model's CONTENT key (see
+  # src/file_identity.py) plus a small index.json catalogue - replaces the
+  # former single intent_groups.json, which had to be read and rewritten in
+  # full to record one category of one model. See
+  # docs/architecture.md "The shard".
+  intent_shards: Interfaces/Frontend/core/public/res/intents
+  intent_index: Interfaces/Frontend/core/public/res/intents/index.json
+  intent_categories: Interfaces/Frontend/core/public/res/intent_categories.json
+  # Pre-converted geometry+property tile sets the viewer streams from instead
+  # of re-parsing a raw .ifc, one folder per model, also keyed by content
+  # (scripts/tileIfc.mjs). Gitignored - a build artifact, not source.
+  tiles_dir: Interfaces/Frontend/core/public/tiles
+  frontend_test_sandbox: Interfaces/Frontend/data_vis_test
+  verdicts_dir: data/verdicts
+  # One subfolder per uploaded model (vite.config.js's /api/upload-ifc), named
+  # by the file's CONTENT key. Two different files that happen to share a name
+  # get different folders; the same file uploaded twice reuses one instead of
+  # writing another copy. Gitignored (see .gitignore).
+  remote_uploads_dir: data/uploads
+
+# Layout of the per-model visual outputs a RENDERER writes for the IFC library
+# (autocamera snapshots today; floor plans, axonometrics and detector overlays
+# later). The ROOT of that tree is deliberately absent from this file: it lives
+# on a storage mount outside the repo and differs per machine, so it comes from
+# BI2M_VIS_DIR or --out, exactly as scripts/build_vis_index.py already requires.
+# What belongs here is what is the SAME on every machine - the folder and file
+# names inside that root - so the renderer and whatever reads its output agree
+# on them in one place.
+#
+#   $BI2M_VIS_DIR/<content_key>/meta.json
+#   $BI2M_VIS_DIR/<content_key>/snapshots/top.png
+#   $BI2M_VIS_DIR/<content_key>/snapshots/side45.png
+#
+# One folder per model, named by the model's CONTENT key (src/file_identity.py)
+# and never by its 0001.ifc-style number: the corpus is renumbered after every
+# screening pass, so a folder named for a number stops describing its contents.
+# The number lives in exactly one place, the vis index's `name` field.
+vis_outputs:
+  model_dir: "{content_key}"   # one folder per model; the key is the folder name
+  meta_file: meta.json         # written by the renderer, not by build_vis_index.py
+  snapshots_dir: snapshots     # camera snapshots, one file per view
+  views:                       # view name (autocamera.py --views) -> file name
+    top: top.png
+    side45: side45.png
+  # Review packets (built 2026-10-01): one PNG
+  # per intent per view, named by content key, intent id and view name so a
+  # file joins back to its record without the folder. The view record itself
+  # is in meta.json under `packets`.
+  packets_dir: packets
+  packet_file: "{content_key}-{intent_id}-{view}.png"
+
+# OS-specific values (executable names/extensions differ; content is otherwise identical)
+venv:
+  windows:
+    activate: .venv\Scripts\activate
+    python: .venv\Scripts\python.exe
+  mac:
+    activate: .venv/bin/activate
+    python: .venv/bin/python
+  linux:
+    activate: .venv/bin/activate
+    python: .venv/bin/python
+
+# Usage:
+# - Python: load with `yaml.safe_load(open("paths.yaml"))`, then join
+#   `paths["data_dir"]` etc. onto `pathlib.Path(__file__).resolve().parents[N]`
+#   rather than embedding OS-specific separators.
+# - Node/Vite: load with a YAML parser (e.g. `js-yaml`) or mirror the repo-relative
+#   keys as plain JS constants — `path.join()` already normalizes separators per OS.
+# - Never commit a machine-specific absolute path here. If a script needs one,
+#   read it from an environment variable or a local (gitignored) override file
+#   instead of adding it to this shared config.

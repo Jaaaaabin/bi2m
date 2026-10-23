@@ -1,0 +1,8 @@
+# config/rules/K112.yaml
+rule: K112
+params:
+  H_OFF:   {op: ">=", value: 2.75, unit: "m", severity: "WARN", desc: "Clear height, offices"}
+  H_MIN:   {op: ">=", value: 2.5, unit: "m", severity: "FAIL", desc: "Clear height, offices with sedentary work (2.75 − 0.25)"}
+  H_AUX:   {op: ">=", value: 2.3, unit: "m", severity: "FAIL", desc: "Clear height, corridors and sanitary rooms"}
+  A_LARGE: {op: ">", value: 100, unit: "m²", severity: "WARN", desc: "Workrooms larger than 100 m² (guideline)"}
+  H_LARGE: {op: ">=", value: 3.0, unit: "m", severity: "WARN", desc: "Workrooms larger than 100 m² (guideline)"}

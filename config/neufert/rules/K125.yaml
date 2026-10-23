@@ -1,0 +1,4 @@
+# config/rules/K125.yaml
+rule: K125
+params:
+  LOC:  {op: "is", value: "near reception, outside access control", severity: "WARN", desc: "Canteen location"}

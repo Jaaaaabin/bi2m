@@ -1,0 +1,4 @@
+# config/rules/K113.yaml
+rule: K113
+params:
+  A_TOT: {op: "in", value: [23, 45], unit: "m²", severity: "WARN", desc: "Total space per workstation"}

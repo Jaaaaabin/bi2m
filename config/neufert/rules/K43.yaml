@@ -1,0 +1,5 @@
+# config/rules/K43.yaml
+rule: K43
+params:
+  ENCL: {op: "is", value: "continuous over all storeys, enclosed", severity: "FAIL", desc: "Stairwell enclosure"}
+  EXIT: {op: "is", value: "direct or via escape corridor", severity: "FAIL", desc: "Exit to the open air"}

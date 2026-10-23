@@ -1,0 +1,4 @@
+# config/rules/K139.yaml
+rule: K139
+params:
+  {}   # no numeric thresholds

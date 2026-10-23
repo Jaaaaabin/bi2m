@@ -1,0 +1,5 @@
+# config/rules/K72.yaml
+rule: K72
+params:
+  FR_SEP: {op: ">=", expr: "fire_minutes(load-bearing elements of the storey)", unit: "min", severity: "FAIL", desc: "Fire resistance"}
+  EXT:    {op: "is", value: "to structural slab / roof cladding", severity: "FAIL", desc: "Wall extent"}

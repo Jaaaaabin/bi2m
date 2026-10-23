@@ -1,0 +1,5 @@
+# config/rules/K83.yaml
+rule: K83
+params:
+  N_LIFT: {op: ">", value: 5, unit: "storeys", severity: "FAIL", desc: "Full storeys above which a lift is required"}
+  FPF:    {op: "==", value: 2, severity: "INFO", desc: "Flats per floor (most common access)"}

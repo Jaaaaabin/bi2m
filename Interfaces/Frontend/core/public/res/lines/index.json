@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "files": {
+    "016bc977fd362f79": {
+      "model": "016bc977fd362f79.ifc",
+      "lines": 42,
+      "gridLines": 42,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "173355f10c9665c7": {
+      "model": "173355f10c9665c7.ifc",
+      "lines": 25,
+      "gridLines": 25,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "32c49fb2f9c0fcb9": {
+      "model": "32c49fb2f9c0fcb9.ifc",
+      "lines": 18,
+      "gridLines": 18,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "34b3f3dac339ade6": {
+      "model": "example_autcon.ifc",
+      "lines": 5,
+      "note": "authored example"
+    },
+    "3ef234726d638702": {
+      "model": "3ef234726d638702.ifc",
+      "lines": 18,
+      "gridLines": 18,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "4173e835995368bb": {
+      "model": "4173e835995368bb.ifc",
+      "lines": 17,
+      "gridLines": 17,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "4558d77b1f18361e": {
+      "model": "4558d77b1f18361e.ifc",
+      "lines": 15,
+      "gridLines": 15,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "461463834ace39e6": {
+      "model": "461463834ace39e6.ifc",
+      "lines": 13,
+      "gridLines": 13,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "654d77285c2cbe1b": {
+      "model": "654d77285c2cbe1b.ifc",
+      "lines": 19,
+      "gridLines": 19,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "6708560507dfd462": {
+      "model": "6708560507dfd462.ifc",
+      "lines": 9,
+      "gridLines": 9,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "73a644297fedba9c": {
+      "model": "73a644297fedba9c.ifc",
+      "lines": 10,
+      "gridLines": 10,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "7e6c23d552b50194": {
+      "model": "7e6c23d552b50194.ifc",
+      "lines": 12,
+      "gridLines": 12,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "93c9676db91d4540": {
+      "model": "93c9676db91d4540.ifc",
+      "lines": 13,
+      "gridLines": 13,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "a2b650f1267b7b20": {
+      "model": "a2b650f1267b7b20.ifc",
+      "lines": 45,
+      "gridLines": 45,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "b4ec74d6f99bac88": {
+      "model": "b4ec74d6f99bac88.ifc",
+      "lines": 10,
+      "gridLines": 10,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "bd6c9e784a47a74b": {
+      "model": "bd6c9e784a47a74b.ifc",
+      "lines": 6,
+      "gridLines": 6,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "c99be381a798220e": {
+      "model": "c99be381a798220e.ifc",
+      "lines": 30,
+      "gridLines": 30,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "ca07d61c17be71f1": {
+      "model": "ca07d61c17be71f1.ifc",
+      "lines": 18,
+      "gridLines": 18,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "d85a2ea7d39de66f": {
+      "model": "d85a2ea7d39de66f.ifc",
+      "lines": 16,
+      "gridLines": 16,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    },
+    "e8e8c39ad64bf66a": {
+      "model": "e8e8c39ad64bf66a.ifc",
+      "lines": 18,
+      "gridLines": 18,
+      "note": "declared IfcGrid (scripts/grid_lines.py)"
+    }
+  }
+}

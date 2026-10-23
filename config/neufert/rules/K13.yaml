@@ -1,0 +1,5 @@
+# config/rules/K13.yaml
+rule: K13
+params:
+  "R_LO–R_HI": {op: "in", value: [0.12, 0.16], unit: "m", severity: "WARN", desc: "Riser range (low steps outdoors)"}
+  "T_LO–T_HI": {op: "in", value: [0.3, 0.41], unit: "m", severity: "WARN", desc: "Matching tread range (41 → 30 cm)"}

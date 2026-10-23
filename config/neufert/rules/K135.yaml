@@ -1,0 +1,4 @@
+# config/rules/K135.yaml
+rule: K135
+params:
+  TYPE: {op: "class", value: "combi-office", severity: "CLASS", desc: "Office type"}

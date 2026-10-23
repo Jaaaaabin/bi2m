@@ -1,0 +1,5 @@
+# config/rules/K25.yaml
+rule: K25
+params:
+  W_LIFT: {op: ">=", value: 0.9, unit: "m", severity: "FAIL", desc: "Clear opening width"}
+  H_LIFT: {op: ">=", value: 2.1, unit: "m", severity: "WARN", desc: "Door height"}

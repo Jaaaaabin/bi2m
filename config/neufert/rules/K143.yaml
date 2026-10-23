@@ -1,0 +1,5 @@
+# config/rules/K143.yaml
+rule: K143
+params:
+  P_ADD: {op: "==", value: 0.5, unit: "m", severity: "REPORT", desc: "Constant in passage-space formula ½ L × W + 0.5 m"}
+  SAVE:  {op: "in", value: [100, 120], unit: "%", severity: "INFO", desc: "Saving with mobile filing systems"}

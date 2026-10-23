@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewer</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Type and icons are self-hosted: Space Grotesk
+       via @font-face in style.css (/fonts/), icons as the inline SVG sprite
+       at the top of <body>. No third-party origin is contacted on load. -->
+  </head>
+  <body>
+    <!-- Icon sprite: the 17 Material Symbols (Outlined, weight 400) this page
+       uses, plus two hand-drawn glyphs (icon-eject, icon-polyline), inlined as <symbol>s so no icon font is downloaded (was 314 KB
+       from fonts.gstatic.com for the first 12 glyphs) and icons never render as
+       their ligature names while a font loads. Source: @material-symbols/svg-400
+       (Apache-2.0). Use: <svg class="icon"><use href="#icon-home"/></svg>;
+       fill is currentColor, so existing `color` rules keep applying. -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none" aria-hidden="true">
+      <symbol id="icon-aspect_ratio" viewBox="0 -960 960 960">
+        <path
+          d="M577-274h191v-194h-60v134H577v60ZM193-492h60v-134h131v-60H193v194Zm-53 332q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm0-60h680v-520H140v520Zm0 0v-520 520Z"
+        />
+      </symbol>
+      <symbol id="icon-cloud" viewBox="0 -960 960 960">
+        <path
+          d="M251-160q-88 0-149.5-61.5T40-371q0-78 50-137t127-71q20-97 94-158.5T482-799q112 0 189 81.5T748-522v24q72-2 122 46.5T920-329q0 69-50 119t-119 50H251Zm0-60h500q45 0 77-32t32-77q0-45-32-77t-77-32h-63v-84q0-91-61-154t-149-63q-88 0-149.5 63T267-522h-19q-62 0-105 43.5T100-371q0 63 44 107t107 44Zm229-260Z"
+        />
+      </symbol>
+      <symbol id="icon-dark_mode" viewBox="0 -960 960 960">
+        <path
+          d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q8 0 17 .5t23 1.5q-36 32-56 79t-20 99q0 90 63 153t153 63q52 0 99-18.5t79-51.5q1 12 1.5 19.5t.5 14.5q0 150-105 255T480-120Zm0-60q109 0 190-67.5T771-406q-25 11-53.67 16.5Q688.67-384 660-384q-114.69 0-195.34-80.66Q384-545.31 384-660q0-24 5-51.5t18-62.5q-98 27-162.5 109.5T180-480q0 125 87.5 212.5T480-180Zm-4-297Z"
+        />
+      </symbol>
+      <symbol id="icon-light_mode" viewBox="0 -960 960 960">
+        <path
+          d="M480-340q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Zm0 60q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-450H40v-60h160v60Zm720 0H760v-60h160v60ZM450-760v-160h60v160h-60Zm0 720v-160h60v160h-60ZM262-658l-100-97 43-44 96 100-39 41Zm494 496-98-100 41-41 99 98-42 43Zm-99-537 98-99 44 42-99 98-43-41ZM162-205l99-98 42 42-98 99-43-43Zm318-275Z"
+        />
+      </symbol>
+      <symbol id="icon-error" viewBox="0 -960 960 960">
+        <path
+          d="M479.98-280q14.02 0 23.52-9.48t9.5-23.5q0-14.02-9.48-23.52t-23.5-9.5q-14.02 0-23.52 9.48t-9.5 23.5q0 14.02 9.48 23.52t23.5 9.5ZM453-433h60v-253h-60v253Zm27.27 353q-82.74 0-155.5-31.5Q252-143 197.5-197.5t-86-127.34Q80-397.68 80-480.5t31.5-155.66Q143-709 197.5-763t127.34-85.5Q397.68-880 480.5-880t155.66 31.5Q709-817 763-763t85.5 127Q880-563 880-480.27q0 82.74-31.5 155.5Q817-252 763-197.68q-54 54.31-127 86Q563-80 480.27-80Zm.23-60Q622-140 721-239.5t99-241Q820-622 721.19-721T480-820q-141 0-240.5 98.81T140-480q0 141 99.5 240.5t241 99.5Zm-.5-340Z"
+        />
+      </symbol>
+      <symbol id="icon-fact_check" viewBox="0 -960 960 960">
+        <path
+          d="M132-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h696q24 0 42 18t18 42v600q0 24-18 42t-42 18H132Zm0-60h696v-600H132v600Zm68-100h200v-80H200v80Zm382-80 198-198-57-57-141 142-57-57-56 57 113 113Zm-382-80h200v-80H200v80Zm0-160h200v-80H200v80Zm-68 420v-600 600Z"
+        />
+      </symbol>
+      <symbol id="icon-home" viewBox="0 -960 960 960">
+        <path
+          d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z"
+        />
+      </symbol>
+      <symbol id="icon-photo_camera" viewBox="0 -960 960 960">
+        <path
+          d="M479.5-267q72.5 0 121.5-49t49-121.5q0-72.5-49-121T479.5-607q-72.5 0-121 48.5t-48.5 121q0 72.5 48.5 121.5t121 49Zm0-60q-47.5 0-78.5-31.5t-31-79q0-47.5 31-78.5t78.5-31q47.5 0 79 31t31.5 78.5q0 47.5-31.5 79t-79 31.5ZM140-120q-24 0-42-18t-18-42v-513q0-23 18-41.5t42-18.5h147l73-87h240l73 87h147q23 0 41.5 18.5T880-693v513q0 24-18.5 42T820-120H140Zm0-60h680v-513H645l-73-87H388l-73 87H140v513Zm340-257Z"
+        />
+      </symbol>
+      <symbol id="icon-tune" viewBox="0 -960 960 960">
+        <path
+          d="M427-120v-225h60v83h353v60H487v82h-60Zm-307-82v-60h247v60H120Zm187-166v-82H120v-60h187v-84h60v226h-60Zm120-82v-60h413v60H427Zm166-165v-225h60v82h187v60H653v83h-60Zm-473-83v-60h413v60H120Z"
+        />
+      </symbol>
+      <symbol id="icon-upload_file" viewBox="0 -960 960 960">
+        <path
+          d="M452-202h60v-201l82 82 42-42-156-152-154 154 42 42 84-84v201ZM220-80q-24 0-42-18t-18-42v-680q0-24 18-42t42-18h361l219 219v521q0 24-18 42t-42 18H220Zm331-554v-186H220v680h520v-494H551ZM220-820v186-186 680-680Z"
+        />
+      </symbol>
+      <symbol id="icon-keyboard" viewBox="0 -960 960 960">
+        <path
+          d="M140-200q-24 0-42-18.5T80-260v-440q0-24 18-42t42-18h680q24 0 42 18t18 42v440q0 23-18 41.5T820-200H140Zm0-60h680v-440H140v440Zm160-65h360v-60H300v60Zm-97-125h60v-60h-60v60Zm124 0h60v-60h-60v60Zm123 0h60v-60h-60v60Zm124 0h60v-60h-60v60Zm123 0h60v-60h-60v60ZM203-575h60v-60h-60v60Zm124 0h60v-60h-60v60Zm123 0h60v-60h-60v60Zm124 0h60v-60h-60v60Zm123 0h60v-60h-60v60ZM140-260v-440 440Z"
+        />
+      </symbol>
+      <symbol id="icon-view_sidebar" viewBox="0 -960 960 960">
+        <path
+          d="M140-160q-24.75 0-42.37-17.63Q80-195.25 80-220v-520q0-24.75 17.63-42.38Q115.25-800 140-800h680q24.75 0 42.38 17.62Q880-764.75 880-740v520q0 24.75-17.62 42.37Q844.75-160 820-160H140Zm543-443h137v-137H683v137Zm0 186h137v-126H683v126ZM140-220h483v-520H140v520Zm543 0h137v-137H683v137Z"
+        />
+      </symbol>
+      <!-- zoom_in / zoom_out frame the camera panel's Context slider; archive is
+           its Save-view button, screenshot its Snapshot button (2026-09-23). -->
+      <symbol id="icon-zoom_in" viewBox="0 -960 960 960">
+        <path
+          d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Zm-40-60v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z"
+        />
+      </symbol>
+      <symbol id="icon-zoom_out" viewBox="0 -960 960 960">
+        <path
+          d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400ZM280-540v-80h200v80H280Z"
+        />
+      </symbol>
+      <symbol id="icon-archive" viewBox="0 -960 960 960">
+        <path
+          d="M480-240 320-400l56-56 64 62v-166h80v166l64-62 56 56-160 160ZM160-120q-33 0-56.5-23.5T80-200v-499q0-14 4.5-27t13.5-24l50-61q11-14 27.5-21.5T210-840h540q18 0 34.5 7.5T812-811l50 61q9 11 13.5 24t4.5 27v499q0 33-23.5 56.5T800-120H160Zm16-600h608l-34-40H210l-34 40Zm-16 80v440h640v-440H160Z"
+        />
+      </symbol>
+      <symbol id="icon-screenshot" viewBox="0 -960 960 960">
+        <path
+          d="M638-360h-60v140H438v60h200v-200ZM260-40q-24.75 0-42.37-17.63Q200-75.25 200-100v-760q0-24 18-42t42-18h438q24.75 0 42.38 17.62Q758-884.75 758-860v150q18 3 30 16.95 12 13.96 12 31.63V-587q0 19-12 33t-30 17v437q0 24.75-17.62 42.37Q722.75-40 698-40H260Zm0-60h438v-760H260v760Zm0 0v-760 760Zm60-500h60v-140h140v-60H320v200Z"
+        />
+      </symbol>
+      <!-- Hand-drawn (2026-10-01): a polyline with three nodes, for the Lines (test) button. -->
+      <symbol id="icon-polyline" viewBox="0 -960 960 960">
+        <path
+          d="M150-250 480-650 810-330"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="72"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <circle cx="150" cy="-250" r="95" />
+        <circle cx="480" cy="-650" r="95" />
+        <circle cx="810" cy="-330" r="95" />
+      </symbol>
+      <symbol id="icon-eject" viewBox="0 -960 960 960">
+        <path d="M480-680 240-400h480L480-680ZM240-280v-60h480v60H240Z" />
+      </symbol>
+      <symbol id="icon-database" viewBox="0 -960 960 960">
+        <path
+          d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-488q86 0 176.5-26.5T773-694q-27-32-117.5-59T480-780q-88 0-177 26t-117 60q28 35 116 60.5T480-608Zm-1 214q42 0 84-4.5t80.5-13.5q38.5-9 73.5-22t63-29v-155q-29 16-64 29t-74 22q-39 9-80 14t-83 5q-42 0-84-5t-80.5-14q-38.5-9-73-22T180-618v155q27 16 61 29t72.5 22q38.5 9 80.5 13.5t85 4.5Zm1 214q48 0 99-8.5t93.5-22.5q42.5-14 72-31t35.5-35v-125q-28 16-63 28.5T643.5-352q-38.5 9-80 13.5T479-334q-43 0-85-4.5T313.5-352q-38.5-9-72.5-21.5T180-402v126q5 17 34 34.5t72 31q43 13.5 94 22t100 8.5Z"
+        />
+      </symbol>
+    </svg>
+
+    <!-- Fixed Sidebar Panel (a landmark: the page's controls) -->
+    <aside id="sidebar-panel" aria-label="Controls">
+      <!-- ONE COLUMN, ONE MODE (2026-09-24, owner's decision). This panel used
+         to have two forms - a 200px expanded one and a 44px collapsed one,
+         switched by #sidebar-collapse-btn, with the "Controls" heading and the
+         transparency slider hidden in the narrow form. Only the narrow form is
+         left: 44px wide, every control stacked in a single column, and the
+         transparency slider turned on its side so it still fits (see
+         .styled-range.is-vertical in style.css). The heading went with the
+         toggle - this <aside>'s own aria-label already names the region, so a
+         screen reader loses nothing. .sidebar-buttons-group is what puts a gap
+         between clusters of buttons; it was called a "row" while there was a
+         wide mode in which the buttons really did sit side by side. -->
+      <div class="sidebar-buttons">
+        <div class="sidebar-buttons-group">
+          <!-- Theme is the first button in the column (owner, 2026-09-24). -->
+          <button id="theme-toggle-btn" title="Theme" aria-label="Theme">
+            <svg class="icon" id="theme-toggle-icon" aria-hidden="true">
+              <use href="#icon-dark_mode"></use>
+            </svg>
+          </button>
+          <!-- <button id="manual-refresh-btn" title="Manually refresh highlights">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6a6 6 0 01-6 6v2c4.42 0 8-3.58 8-8s-3.58-8-8-8zm-6 6a6 6 0 016-6V2c-4.42 0-8 3.58-8 8s3.58 8 8 8v-2a6 6 0 01-6-6z" fill="#33363F"/>
+          </svg>
+        </button> -->
+          <!-- New Bulk Upload icon-only button -->
+          <button id="bulk-upload-btn" title="Upload" aria-label="Upload">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h4.66V9h3.84L12 2z" fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+        <!-- The two "open a model from the server" buttons (2026-09-23):
+             Examples and the IFC library, which opens #library-models-flyout -
+             page/libraryModels.js and vite.config.js's /api/library-models.
+             Read-only: never uploads, tiles or runs. -->
+        <div class="sidebar-buttons-group">
+          <!-- Loads one of this server's data/test_*.ifc example models directly -
+             for when the browser is reached over an SSH port-forward and the
+             file picker above can only see the client machine's own files. -->
+          <button id="example-models-btn" title="Examples" aria-label="Examples">
+            <svg class="icon" aria-hidden="true"><use href="#icon-cloud"></use></svg>
+          </button>
+          <button id="library-models-btn" title="Library" aria-label="Library">
+            <svg class="icon" aria-hidden="true"><use href="#icon-database"></use></svg>
+          </button>
+        </div>
+        <!-- Last in the upper part (owner, 2026-09-24): a display preference,
+             not a way of getting a model in, so it closes the top block rather
+             than sitting among the buttons that open one. Intent + camera
+             panels open by default (on = also opens them in every viewer now).
+             Decided 2026-09-20. -->
+        <div class="sidebar-buttons-group">
+          <button
+            id="panels-default-btn"
+            title="Auto-open Camera + Intents"
+            aria-label="Auto-open Camera + Intents"
+          >
+            <svg class="icon" aria-hidden="true"><use href="#icon-view_sidebar"></use></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Global Transparency Control (0-100%), vertical since 2026-09-24:
+           0% at the BOTTOM, 100% at the top, at most a fifth of the panel's
+           height. The label is there for the `for`/`id` pairing and the
+           screen reader, not for the eye - 32px of usable width has no room
+           for the word, so the live percentage below the track is the whole
+           visible caption. #sidebar-content keeps its id: it is what pins
+           this and the buttons under it to the bottom of the column. -->
+      <div id="sidebar-content">
+        <div class="transparency-slider">
+          <label for="global-opacity-slider" class="visually-hidden">Transparency</label>
+          <input
+            type="range"
+            id="global-opacity-slider"
+            class="styled-range is-vertical"
+            min="0"
+            max="100"
+            value="0"
+          />
+          <span id="transparency-value" class="transparency-value">0%</span>
+        </div>
+      </div>
+
+      <!-- Viewer management, at the foot of the column (owner, 2026-09-24):
+           add and remove a tile, then sync every tile's camera and match every
+           tile's size. All four act on the SET of open viewers rather than on
+           any one model, which is why they sit apart from the buttons above. -->
+      <div class="sidebar-buttons sidebar-buttons-bottom">
+        <div class="sidebar-buttons-group">
+          <button id="add-viewer-btn" title="Add viewer" aria-label="Add viewer">+</button>
+          <button id="remove-viewer-btn" title="Remove viewer" aria-label="Remove viewer">−</button>
+          <button id="sync-cam-btn" title="Sync cameras" aria-label="Sync cameras">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C8.36428 6 5.23207 9.21014 3.81198 10.9343C3.42382 11.4056 3.22974 11.6412 3.22974 12C3.22974 12.3588 3.42382 12.5944 3.81198 13.0657C5.23207 14.7899 8.36428 18 12 18C15.6357 18 18.768 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00002 10.3431 9.00002 12C9.00002 13.6569 10.3432 15 12 15Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button id="match-sizes-btn" title="Match sizes" aria-label="Match sizes">
+            <svg class="icon" aria-hidden="true"><use href="#icon-aspect_ratio"></use></svg>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content (grid column 2 - see style.css) -->
+    <main class="app-main">
+      <h1>Viewer</h1>
+      <div id="viewer-wrapper">
+        <div id="viewerContainer1" class="viewer-container"></div>
+      </div>
+    </main>
+
+    <!-- Element Inspector (React island - see InspectorPanel.jsx). Not loaded
+       eagerly - see inspectorBootstrap.js, which dynamically imports it on
+       first element selection instead of paying for React on every page load. -->
+    <div id="inspector-root"></div>
+
+    <!-- Popover for #example-models-btn - a sibling of #sidebar-panel (not
+       nested inside it) so its position:fixed placement (set in JS from the
+       button's own bounding rect) never gets clipped by the sidebar's own
+       overflow-x:hidden. -->
+    <div id="example-models-flyout" class="example-models-flyout" hidden></div>
+    <!-- Popover for #library-models-btn - same placement rules as the example
+       flyout above (body-level, positioned in JS from the button's rect). -->
+    <div id="library-models-flyout" class="library-models-flyout" hidden></div>
+
+    <!-- JavaScript -->
+    <script type="module" src="ThatOpenCompanyLoader.js"></script>
+    <script type="module" src="inspectorBootstrap.js"></script>
+  </body>
+</html>

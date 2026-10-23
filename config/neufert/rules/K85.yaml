@@ -1,0 +1,4 @@
+# config/rules/K85.yaml
+rule: K85
+params:
+  PLAN: {op: "class", value: ["grouped", "central-corridor"], severity: "CLASS", desc: "Plan type"}

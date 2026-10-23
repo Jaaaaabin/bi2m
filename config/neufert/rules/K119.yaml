@@ -1,0 +1,7 @@
+# config/rules/K119.yaml
+rule: K119
+params:
+  WS_PER_WC: {op: "<=", value: [50, 80], severity: "WARN", desc: "Workstations per toilet unit"}
+  A_WC_WS:   {op: "in", value: [0.6, 0.8], unit: "m²", severity: "INFO", desc: "Toilet area per workstation"}
+  WS_PER_TK: {op: "<=", value: [50, 100], severity: "WARN", desc: "Workstations per tea kitchen"}
+  A_TK:      {op: "~=", value: 10, unit: "m²", severity: "INFO", desc: "Tea kitchen area"}

@@ -1,0 +1,5 @@
+# config/rules/K44.yaml
+rule: K44
+params:
+  FR_CORR: {op: ">=", value: 30, unit: "min", severity: "FAIL", desc: "Corridor wall fire resistance", rating: "F 30"}
+  H_GLASS: {op: ">=", value: 1.8, unit: "m", severity: "FAIL", desc: "Lower edge of G-glazing above floor"}

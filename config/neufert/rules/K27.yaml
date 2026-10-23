@@ -1,0 +1,4 @@
+# config/rules/K27.yaml
+rule: K27
+params:
+  USE_PUBLIC: {op: "in", value: ["cultural", "educational", "sports", "leisure", "health care", "office/administration", "courts", "sales", "catering", "car parks", "garages", "toilets"], severity: "CLASS", desc: "Publicly accessible uses"}

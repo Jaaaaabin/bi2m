@@ -1,0 +1,5 @@
+# config/rules/K117.yaml
+rule: K117
+params:
+  N_GROUP: {op: "~=", value: [4, 16], severity: "CLASS", desc: "Workstations in a group office"}
+  N_OPEN:  {op: ">=", value: 100, severity: "CLASS", desc: "Workstations in a large open-plan office"}

@@ -1,0 +1,4 @@
+# config/rules/K144.yaml
+rule: K144
+params:
+  A_POST: {op: "in", value: [0.3, 0.5], unit: "m²", severity: "INFO", desc: "Space per work position (packing / sorting tables)"}

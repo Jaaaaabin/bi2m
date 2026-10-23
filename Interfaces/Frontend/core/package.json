@@ -9,7 +9,8 @@
     "three": "^0.160.1",
     "web-ifc": "^0.0.66"
   },
-  "name": "thatopencompany-vite",
+  "name": "bi2m-viewer",
+  "private": true,
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
@@ -31,7 +32,7 @@
   },
   "author": "Jiabin Wu",
   "license": "MIT",
-  "description": "",
+  "description": "Browser viewer and API server for bi2m intent records",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@vitejs/plugin-react": "^6.1.1",

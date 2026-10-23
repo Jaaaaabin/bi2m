@@ -34,18 +34,18 @@ DEFAULT_DOOR_MARGIN_M = 0.4
 MIN_TRIANGLE_AREA = 1e-6
 # A space whose floor sits this far from its container storey's elevation,
 # while another storey's elevation is within STOREY_SNAP_M of it, is treated
-# as attached to the wrong storey object (tumgni_all/0007: spaces on "Level 1"
+# as attached to the wrong storey object (private-corpus model 0007: spaces on "Level 1"
 # with their floor 3.2 m below it, at "Level 0"). Conservative on purpose:
 # a correctly attached space never moves.
 STOREY_MISATTACH_M = 1.0
 STOREY_SNAP_M = 0.6
 # A shape-anchored door is accepted only when it meets one or two rooms - the
 # physically possible answers. Models whose space geometry sits in a local
-# frame (tumgni_all/0017, 0211: every floor at z=0, footprints stacked in
+# frame (private-corpus models 0017, 0211: every floor at z=0, footprints stacked in
 # plan) make a shape centre "reach" 59 rooms at once; that is not a fix.
 SHAPE_ANCHOR_MAX_REACH = 2
 # Revit exports Areas and Zones as IfcSpace next to the Rooms they contain, and
-# some files carry the same room twice. In tumgni_all/0180 76 of 77 spaces on a
+# some files carry the same room twice. In private-corpus model 0180 76 of 77 spaces on a
 # storey overlap another by more than 30 % of their area. A space whose
 # footprint is covered >= CONTAINER_COVER by >= 2 other spaces it encloses is
 # a container, not a room; two footprints overlapping >= DUPLICATE_OVERLAP of
@@ -56,7 +56,7 @@ CONTAINER_MIN_CHILDREN = 2
 CONTAINED_FRACTION = 0.8
 DUPLICATE_OVERLAP = 0.9
 # When more than this share of a storey's spaces would count as containers the
-# footprints themselves are degenerate (tumgni_all/0180: 295 of 385 spaces
+# footprints themselves are degenerate (private-corpus model 0180: 295 of 385 spaces
 # "contain" others), and thinning them would only hide that. The storey is
 # left as it is and recorded in `degenerate_storeys`.
 DEGENERATE_CONTAINER_SHARE = 0.3
@@ -111,7 +111,7 @@ def space_footprints(model, spaces):
 def shape_centres(model, elements):
     """{guid: (x, y)} - the plan centre of each element's triangulated shape,
     in metres. The anchor of last resort for a door whose placement chain
-    resolves somewhere else (tumgni_all/0017, 0113, 0211: placements 16-80 m
+    resolves somewhere else (private-corpus models 0017, 0113, 0211: placements 16-80 m
     from every room, shapes at 0.0 m from one)."""
     if not elements:
         return {}

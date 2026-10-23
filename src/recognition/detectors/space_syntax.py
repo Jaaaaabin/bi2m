@@ -26,7 +26,7 @@ connectivity-degree fallback for circulation_horizontal was
 considered and NOT built: a large room with many doors would read as a
 corridor. Measured 2026-09-23 on 45 models - the four fixtures with rooms
 and doors (test_1, test_3, test_4, test_5) and 41 of 42 evenly spaced
-tumgni_all models (every ninth; 0298's door graph is unusable) - over the
+private-corpus models (every ninth; 0298's door graph is unusable) - over the
 106 components of >= 5 rooms that contain a keyword-named circulation
 room, taking the single top-ranked room of each component:
 
@@ -46,7 +46,7 @@ it pulls in the rooms around the hub (kitchens and WCs off the lobby),
 which are integrated but are not what a reviewer is being asked about.
 
 Names are not the ground truth here, and on the failures they are the part
-that is wrong. tumgni_all/0253 (content key c14302b1d97ac16c) calls its
+that is wrong. private-corpus model 0253 (content key c14302b1d97ac16c) calls its
 corridor "10 Floor" - a translation of the German Flur - and the keyword
 detector instead picks "38 Entrance", the least integrated room of the
 nine; integration puts "10 Floor" first (RRA 0.11, on 91 % of shortest
@@ -72,7 +72,7 @@ precision against keyword names is 0.79 at this size.
 Two things this is not. It is not a route length: depth is door-steps,
 egress_reachability.py measures metres. And it is not a verdict about the
 building. The door graph is what the model states; where corridors are not
-modelled as spaces (67 of 370 tumgni_all models) the
+modelled as spaces (67 of 370 private-corpus models) the
 storey falls apart into small components and nothing here fires. Doors that
 reach three rooms join only the nearest two (room_graph.py says why), so
 components can be smaller than space_access's where that happens.

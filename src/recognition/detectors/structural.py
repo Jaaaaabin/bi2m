@@ -180,7 +180,7 @@ def _detect_column_supports(model, columns, file_key, tolerance_m):
         # The tie-break is the COLUMN's guid (`cid`), as in the wall stacks
         # below. Until 2026-09-22 it was the storey's guid, which is equal for
         # every same-storey member and therefore broke no tie at all: on
-        # tumgni_all/0388.ifc, whose stacks branch to several columns per
+        # private-corpus model 0388, whose stacks branch to several columns per
         # storey, 32 of 40 structural ids changed between two identical runs.
         # No corpus stack has two members on one storey, so corpus ids are
         # unaffected (scripts/verify_units.py checks that).

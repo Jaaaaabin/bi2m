@@ -20,7 +20,7 @@ describe("content-addressed file identity", () => {
   });
   it("legacyNameKey strips the extension only", () => {
     expect(legacyNameKey("test_1.ifc")).toBe("test_1");
-    expect(legacyNameKey("1_11103093_AR.IFC")).toBe("1_11103093_AR");
+    expect(legacyNameKey("1_00000001_AR.IFC")).toBe("1_00000001_AR");
     expect(legacyNameKey(".ifc")).toBe(".ifc");
     expect(legacyNameKey("")).toBe("model");
   });

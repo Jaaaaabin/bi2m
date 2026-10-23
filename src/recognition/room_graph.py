@@ -10,7 +10,7 @@ before imports it.
 
 The room graph differs from AccessGraph.groups_for_storey in one deliberate
 way. A door is a permeability between exactly two spaces, but at the 0.4 m
-margin 10.9 % of door placements in a 41-model tumgni_all sample reach three
+margin 10.9 % of door placements in a 41-model private-corpus sample reach three
 or more rooms (522 of 4,786 placed doors; data/test_3.ifc: 40 of 135), and
 groups_for_storey joins every pair of them. For connectivity that is
 harmless. For depth and rings it is not: a door touching rooms A, B and C

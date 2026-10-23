@@ -51,7 +51,7 @@ def _get_location_column(column):
     ):
         c_location_pt_directplacement = column.ObjectPlacement.RelativePlacement.Location.Coordinates
         # The parent placement usually places the storey, but not always:
-        # tumgni_all/0386.ifc places its columns relative to the IfcBuilding,
+        # private-corpus model 0386 places its columns relative to the IfcBuilding,
         # which has no Elevation and used to abort the whole extraction.
         placed = column.ObjectPlacement.PlacementRelTo.PlacesObject
         rel_storey_elevation = getattr(placed[0], "Elevation", None) if placed else None

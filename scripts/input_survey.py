@@ -48,8 +48,8 @@ SCHEMA_RE = re.compile(rb"FILE_SCHEMA\s*\(\s*\(\s*'([^']+)'")
 # The ASSIGNED length unit, resolved through IfcUnitAssignment: Revit files
 # declare several SI length units (metre for derived units, plus the project
 # unit), so "a millimetre unit exists somewhere" is not "the file is in
-# millimetres". One centimetre model (pre-renumber tumgni_all/0060.ifc, removed
-# from the corpus on 2026-09-23, original in save/tumgni_save/0060.ifc) declared
+# millimetres". One centimetre model (pre-renumber private-corpus model 0060,
+# removed from the corpus on 2026-09-23 and kept aside) declared
 # metre, decimetre and centimetre and was authored in centimetres.
 UNIT_ASSIGNMENT_RE = re.compile(rb"IFCUNITASSIGNMENT\(\(([^)]*)\)\)")
 SI_LENGTH_RE = re.compile(rb"#(\d+)\s*=\s*IFCSIUNIT\(\*,\.LENGTHUNIT\.,(\$|\.[A-Z]+\.),\.METRE\.\)")
@@ -85,7 +85,7 @@ FLIGHT_RE = re.compile(rb"IFC(?:STAIR|RAMP)FLIGHT\('[^']*',[^,]*,[^,]*,[^,]*,[^,
 FIXTURE_RE = re.compile(rb"IFC(?:FURNISHINGELEMENT|FURNITURE|SYSTEMFURNITUREELEMENT|FLOWTERMINAL|SANITARYTERMINAL|BUILDINGELEMENTPROXY)\('[^']*',[^,]*,'([^']*)'")
 
 # Name conventions the detectors key on (English, from the code) and the German
-# equivalents this library is expected to carry (tumgni is a TUM export set).
+# equivalents this library is expected to carry (the private corpus is a German export set).
 CIRC_H_EN = ("corridor", "hall", "lobby", "foyer", "vestibule", "passage", "aisle")
 CIRC_H_DE = ("flur", "gang", "korridor", "halle", "diele", "vorraum", "eingang", "windfang", "erschlie")
 CIRC_V_EN = ("stair", "elevator", "lift", "shaft", "escalator", "ramp")

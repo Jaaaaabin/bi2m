@@ -39,18 +39,16 @@ data/extracted/
 # IFC test data" rule right after this one. ===
 data/uploads/
 
-# === Raw IFC test data (large, and filenames match real project reference
-# numbers - see src/extraction/project_calibration.py). Mirrors the existing
-# *.ifc rule in Interfaces/Frontend/data_vis_test/.gitignore. ===
+# === Raw IFC models (large, and most are not ours to publish). Mirrors the
+# existing *.ifc rule in Interfaces/Frontend/data_vis_test/.gitignore. ===
 data/*.ifc
 data/*.rvt
 
-# No models in git, no exceptions (decided 2026-09-20). test_0/test_1 were
-# committed as "small fixtures" (14.5MB together) and un-tracked the same day
-# (those 2026-09-20 names are pre-rename: data/test_0.ifc is now test_3.ifc,
-# test_1.ifc still is test_1.ifc);
-# they stay in history unless it is rewritten. Fresh clones get models via
-# the example-models route or a manual copy into data/.
+# The one exception: the example model (9.5 MB), which the
+# verify_* scripts and the browser tests run on and whose shard is tracked.
+# Keep it byte-identical: its content key names that shard
+# (.gitattributes keeps *.ifc out of line-ending normalisation).
+!data/example_autcon.ifc
 
 # === Reference-only external clone (NOT src/tempo/, which is this project's
 # own deferred GA code and IS tracked - this is a full copy of the separate

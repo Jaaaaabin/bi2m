@@ -324,7 +324,7 @@ def main():
     parser.add_argument("--scratch")
     parser.add_argument("--per-model-timeout", type=float, default=0,
                         help="seconds; run each model in a child process and record a timeout instead of stalling "
-                             "(tumgni_all/0233 alone ran past 20 minutes)")
+                             "(private-corpus model 0233 alone ran past 20 minutes)")
     args = parser.parse_args()
     if args.report:
         report(json.load(open(args.report)))

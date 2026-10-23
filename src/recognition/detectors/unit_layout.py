@@ -19,7 +19,7 @@ Candidates, per storey, on room_graph.py's door graph:
   - every MAXIMAL single-door part of a component: the smaller side of a
     door whose removal splits the component, when nothing larger of the
     same kind contains it - a unit entered through one door from a
-    corridor that IS modelled (tumgni_all/0208, content key
+    corridor that IS modelled (private-corpus model 0208, content key
     70c5715315419707 below: 55 instances of one 8-room layout inside five
     48-room floors, which unit_typology sees only as two floor programs).
 Both levels are kept on purpose: a floor plate and the apartment inside it
@@ -40,7 +40,7 @@ changes; two exact classes that share a hash take a -2, -3 suffix in order
 of their smallest room GUID.
 
 Room areas are evidence, not a gate. Measured 2026-09-23 on 45 models (the
-four fixtures with rooms and doors, and 41 of 42 evenly spaced tumgni_all
+four fixtures with rooms and doors, and 41 of 42 evenly spaced private-corpus
 models - every ninth; 0298's door graph is unusable), the worst room-area
 difference between an instance and the first one has no plateau to put a
 threshold in: of the 49 layouts found, 18 are exact copies, 12 differ by up
@@ -58,14 +58,14 @@ unit_typology's 3-room matches apart, topology cannot. On the sample the
 cut costs 13 of 62 groups.
 
 What the sample shows (DEFAULT settings): recurring layouts in 25 of the
-42 tumgni_all models against 17 for unit_typology; both fire on 16, this
+42 private-corpus models against 17 for unit_typology; both fire on 16, this
 alone on 9 - models whose repeated units are named inconsistently, in
 German or not at all - and unit_typology alone on 1 (a 3-room type, below
 DEFAULT_MIN_ROOMS). 144 of the 230 instances in those 42 models are
 single-door parts of a larger floor, which unit_typology cannot see.
 data/test_5.ifc gives the same 24 apartments unit_typology finds by name
 and its 19-room office core three times; data/test_1.ifc its three
-identical 13-room office floors; tumgni_all/0289 (043653332ec17ab1) one
+identical 13-room office floors; private-corpus model 0289 (043653332ec17ab1) one
 6-room layout seven times where the names split it into two programs of
 four and three instances.
 """

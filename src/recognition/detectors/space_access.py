@@ -191,7 +191,7 @@ def detect(model, extracted, file_key,
             ))
 
     # Storeys that have doors but no room footprint at all: the rooms were
-    # not modelled there (tumgni_all/0062: 51 spaces on Level 0, doors on four
+    # not modelled there (private-corpus model 0062: 51 spaces on Level 0, doors on four
     # levels). One record per storey saying so, instead of every door on it
     # becoming an "anomaly" for reaching nothing (2026-09-23).
     for storey_guid, door_guids in sorted(graph.doors_by_storey.items()):

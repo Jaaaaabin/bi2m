@@ -15,7 +15,7 @@ import ifcopenshell
 
 from toolsQuickUtils import time_decorator
 
-from . import columns, curtainwalls, floor_refinement, floors, model_loader, project_calibration, viz, walls, writers
+from . import columns, curtainwalls, floor_refinement, floors, model_loader, viz, walls, writers
 from .model_loader import get_file_prefix_code
 
 
@@ -50,8 +50,8 @@ class IfcDataExtractor:
             self.doors = []
             self.windows = []
 
-            self.elev, self.azim = project_calibration.get_view_settings(self.ifc_file_name)
-            self.slabs = project_calibration.remove_slab_outliers(self.slabs, self.ifc_file_name)
+            # Camera angles (elevation/azimuth, degrees) for the 3D plots.
+            self.elev, self.azim = 25, 50
 
             print(f"=====================IfcExtractor=====================\n"
                   f"{self.ifc_file_name}\n"

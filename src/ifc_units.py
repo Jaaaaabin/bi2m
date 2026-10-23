@@ -9,7 +9,7 @@ feed coordinates in, and only one of them is already metres:
         -> METRES. IfcOpenShell converts to SI unless CONVERT_BACK_UNITS is
            set, and model_loader.configure_settings never sets it.
     ifcopenshell.util.placement.get_local_placement(ObjectPlacement)
-        -> PROJECT UNITS. Millimetres in 133 of the 518 tumgni_all models,
+        -> PROJECT UNITS. Millimetres in 133 of the 518 private-corpus models,
            centimetres in 13, feet in 2 (scripts/input_survey.py, 2026-09-22).
     raw attributes: IfcBuildingStorey.Elevation, IfcWindow.OverallHeight,
     IfcCartesianPoint.Coordinates read off an entity

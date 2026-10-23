@@ -21,14 +21,14 @@ and CI does not check it; format only the files you touch.
 ```bash
 uv run python -m compileall -q src scripts
 uv run python scripts/recognize_intents.py --list-categories
+uv run python scripts/verify_units.py    # first: builds the example's extraction cache
 for f in scripts/verify_*.py; do echo "== $f"; uv run python "$f" || echo "FAILED: $f"; done
 git status --short    # the verify runs must not change any tracked file
 ```
 
 CI (`.github/workflows/ci.yml`) runs the viewer checks above, the first two
 Python lines, and a Docker build with a smoke test of the server. It does not
-run the `verify_*` scripts or the browser tests, because they need models that
-are not in git.
+run the `verify_*` scripts or the browser tests yet.
 
 ### The `verify_*` scripts
 
@@ -37,7 +37,8 @@ a failure. None of them writes to the real shard directory.
 
 | Script | Needs |
 |---|---|
-| `verify_registry`, `verify_soft_signals`, `verify_units`, `verify_shared_modules` | `data/example_autcon.ifc` (and its stored shard, which is tracked) |
+| `verify_units`, `verify_shared_modules` | `data/example_autcon.ifc` and its stored shard (both tracked) |
+| `verify_registry`, `verify_soft_signals` | the same, plus the example's extraction cache, which a `verify_units` run writes to `data/extracted/` |
 | `verify_rollups`, `verify_session`, `verify_grid_lines`, `verify_grid_words` | nothing outside the repository |
 | `verify_neufert` | the Neufert source plan (`neufert_logic.md`), a maintainer file that is not in the repository; on a fresh clone one of its checks fails, so skip it |
 
@@ -51,13 +52,15 @@ does this for every `.ifc` in `data/`.
 ```bash
 cd Interfaces/Frontend/core
 npm run dev                                     # in one terminal
-uv run playwright install chromium              # once
+uv run playwright install chromium              # once; on Linux add --with-deps (sudo) for its system libraries
 uv run python scripts/e2e/run_all.py --quick    # in another; drops the 2-minute perf audit
 ```
 
 They drive a real browser against the dev server and need
 `data/example_autcon.ifc`. The suite expects that model to be parsed, not
 tiled, so do not run `tileIfc.mjs` on it.
+
+Add `?hud` to the page URL for a live frame-time and draw-call overlay.
 
 ### Bundle budget
 
@@ -69,8 +72,10 @@ never checked.
 
 ## Data and models
 
-- No IFC models in git. `data/*.ifc` and `data/uploads/` are ignored. Get a
-  model into `data/` by hand, or drop it onto the viewer.
+- One IFC model is in git: `data/example_autcon.ifc`, which the checks and
+  browser tests run on. Keep it byte-identical, because its content key names
+  its tracked shard. Every other `data/*.ifc` and `data/uploads/` is ignored.
+  Get a model into `data/` by hand, or drop it onto the viewer.
 - A model is identified by its **content key** (first 16 hex of the SHA-256 of
   its bytes), never by its file name. Keys name shard files, extraction caches,
   tile sets and upload folders.

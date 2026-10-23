@@ -47,9 +47,7 @@ from recognition.access_graph import AccessGraph  # noqa: E402
 from recognition.registry import CATEGORIES  # noqa: E402
 
 DATA_DIR = REPO_ROOT / "data"
-# The one model data/ keeps: metres, with a tracked shard. Models are not in
-# git (.gitignore "No models in git"), so a fresh copy of the repo needs it
-# copied into data/ by hand.
+# The one model in git (see .gitignore): metres, with a tracked shard.
 EXAMPLE = DATA_DIR / "example_autcon.ifc"
 MM_DOOR_TRANSLATION = (17161.49557909889, -2500.25, 0.0)
 SHARDS_DIR = REPO_ROOT / "Interfaces" / "Frontend" / "core" / "public" / "res" / "intents"
@@ -246,7 +244,7 @@ def section_library(library):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--library", help="folder with the tumgni_all picks (0061, 0456, 0386, 0060, 0390)")
+    parser.add_argument("--library", help="folder with the private-corpus picks (0061, 0456, 0386, 0060, 0390)")
     parser.add_argument("--skip-corpus", action="store_true")
     args = parser.parse_args()
     section_helper()

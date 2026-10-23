@@ -43,26 +43,29 @@ from local_env import env_path  # noqa: E402
 PACK = REPO_ROOT / "neufert_validation_pack.json"
 OUT_DIR = REPO_ROOT / "research" / "neufert"
 
-# project id -> IFC4 file under BI2M_IFC_ROOT (matched on 2026-10-20 by element counts,
-# re-checked here on every run). IFC2X3 projects (duplex, 4351) and the two
-# not on disk (samuel_macalister_sample_house, ac20's IFC4 export) are absent.
+# project id -> (folder variable, IFC4 file under it), matched on 2026-10-20 by
+# element counts and re-checked here on every run. BI2M_IFC_CORPUS is the
+# private corpus, BI2M_IFC_ROOT the folder holding the public ones. IFC2X3
+# projects (duplex, 4351) and the two not on disk (samuel_macalister_sample_house,
+# ac20's IFC4 export) are absent.
 BENCHMARKS = {
-    "fantasy_residential_building_1": "tumgni_all/0263.ifc",
-    "fantasy_hotel_1": "tumgni_all/0251.ifc",
-    "fantasy_office_building_1": "tumgni_all/0281.ifc",
-    "fantasy_office_building_2": "tumgni_all/0286.ifc",
-    "fantasy_office_building_3": "tumgni_all/0290.ifc",
-    "fzk_house": "openrepo/20201030AC20-FZK-Haus.ifc",
+    "fantasy_residential_building_1": ("BI2M_IFC_CORPUS", "0263.ifc"),
+    "fantasy_hotel_1": ("BI2M_IFC_CORPUS", "0251.ifc"),
+    "fantasy_office_building_1": ("BI2M_IFC_CORPUS", "0281.ifc"),
+    "fantasy_office_building_2": ("BI2M_IFC_CORPUS", "0286.ifc"),
+    "fantasy_office_building_3": ("BI2M_IFC_CORPUS", "0290.ifc"),
+    "fzk_house": ("BI2M_IFC_ROOT", "openrepo/20201030AC20-FZK-Haus.ifc"),
     # a later export of the same building (70 doors where the pack counts 64)
-    "digital_hub": "openrepo/20201208DigitalHub_ARC.ifc",
+    "digital_hub": ("BI2M_IFC_ROOT", "openrepo/20201208DigitalHub_ARC.ifc"),
 }
 
 
-def benchmark_path(relative):
-    """A BENCHMARKS entry under BI2M_IFC_ROOT, the folder holding the corpora."""
-    root = env_path("BI2M_IFC_ROOT")
+def benchmark_path(entry):
+    """A BENCHMARKS entry: its file under the folder its variable names."""
+    variable, relative = entry
+    root = env_path(variable)
     if root is None:
-        sys.exit("Set BI2M_IFC_ROOT (in .env at the repository root, see .env.example)")
+        sys.exit(f"Set {variable} (in .env at the repository root, see .env.example)")
     return str(root / relative)
 COUNT_CLASSES = ("Space", "Door", "Window", "Stair", "Railing")
 # quoted figures: "0.20 m", "20 cm", "910 mm", "13.37 m²", "17 risers", "1.135 × 2.43 m"
@@ -200,8 +203,8 @@ def report(pack, only=None):
              f"{len(live)} live rules; {len(pack['advanced_qa'])} advanced cases.", ""]
     totals = Counter()
     per_rule = defaultdict(Counter)
-    for project_id, relative in BENCHMARKS.items():
-        path = benchmark_path(relative)
+    for project_id, entry in BENCHMARKS.items():
+        path = benchmark_path(entry)
         if only and project_id not in only:
             continue
         project = projects[project_id]

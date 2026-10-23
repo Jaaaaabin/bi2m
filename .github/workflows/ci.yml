@@ -1,15 +1,8 @@
-# CI. Lint, typecheck, unit tests and a budgeted
-# production build for the viewer; a compile/import smoke for the Python
-# recognition package. The Playwright e2e harnesses (Interfaces/Frontend/core/
-# scripts/e2e/) are NOT run here: they need the IFC fixtures in data/, which
-# are deliberately not in git (no models in git) - run `npm run e2e` locally.
-#
-# Every step below was run locally on 2026-09-21 before this workflow had ever
-# executed on a runner: `npm run lint`, `npm run typecheck`, `npm run
-# test:unit` (31 tests), `npm run build:check` (all 12 chunks within budget),
-# `python -m compileall -q src scripts`, and `recognize_intents.py
-# --list-categories` (22 categories). So a first red run means the runner
-# differs from a developer machine, not that the commands are wrong.
+# CI. Lint, typecheck, unit tests and a budgeted production build for the
+# viewer; a compile/import smoke for the Python recognition package; a Docker
+# build with a smoke test of the server. The verify_* scripts and the
+# Playwright e2e harnesses (Interfaces/Frontend/core/scripts/e2e/) are not run
+# here yet - see CONTRIBUTING.md for running them locally.
 name: ci
 
 on:
@@ -72,7 +65,7 @@ jobs:
       - run: uv run python -m compileall -q src scripts
       - run: uv run python scripts/recognize_intents.py --list-categories
 
-  # The self-hosting image (README "Host it yourself"): it builds, its Python
+  # The self-hosting image (README "Start with Docker"): it builds, its Python
   # environment runs the pipeline, and the server answers on the page and API.
   docker:
     runs-on: ubuntu-latest

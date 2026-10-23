@@ -72,7 +72,8 @@ false-positive rates, and promoting a `draft` category all wait on it.
 
 ## Engineering gaps
 
-- The `verify_*` scripts and the browser tests are not run in CI, because they
-  need models that are not in git. Giving CI a small synthetic fixture would
-  close that.
+- The `verify_*` scripts and the browser tests are not run in CI yet. The
+  example model is in the repository now, so the scripts could run there
+  (all but `verify_neufert`'s source-plan check); the browser tests also need
+  a dev server and a browser on the runner.
 - `src/tempo/` (grid optimisation) is parked and needs extra packages.

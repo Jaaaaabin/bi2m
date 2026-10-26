@@ -18,6 +18,8 @@ services:
       # web-ifc's multi-threaded build needs cross-origin isolation; untested
       # on the production server, so off unless you want to try it ("1").
       BI2M_COI: "0"
+      # Largest accepted upload, in MB.
+      BI2M_MAX_UPLOAD_MB: "${BI2M_MAX_UPLOAD_MB:-500}"
       # Optional model library (see README): mount a corpus and its vis index.
       # BI2M_IFC_CORPUS: /corpus
       # BI2M_VIS_DIR: /corpus_vis

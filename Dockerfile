@@ -1,6 +1,6 @@
 # Self-hosted bi2m: the built viewer, its API (Interfaces/Frontend/core/
 # server/) and the Python recognition pipeline in one container. See
-# README.md "Start with Docker". Development does not use this file.
+# README.md "Build with Docker". Development does not use this file.
 
 # 1. Viewer build. Dev dependencies are pruned afterwards; three and web-ifc
 #    stay, because scripts/tileIfc.mjs tiles uploads at runtime.

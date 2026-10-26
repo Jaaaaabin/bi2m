@@ -51,6 +51,23 @@ function contentKeyOf(buffer) {
 // scripts/recognize_intents.py).
 const TOKEN_RE = /^[A-Za-z0-9_.-]+$/;
 
+// The upload route holds a whole model in memory before hashing it, so it
+// refuses bodies above this size (413). 500 MB by default, above the largest
+// real model seen so far (288 MB); BI2M_MAX_UPLOAD_MB raises or lowers it.
+const DEFAULT_MAX_UPLOAD_MB = 500;
+const maxUploadMb = Number(process.env.BI2M_MAX_UPLOAD_MB);
+const MAX_UPLOAD_MB = maxUploadMb > 0 ? maxUploadMb : DEFAULT_MAX_UPLOAD_MB;
+const MAX_UPLOAD_BYTES = MAX_UPLOAD_MB * 1024 * 1024;
+
+function uploadTooLarge(res, bytes) {
+  // The body may not have been read in full, so the socket is not reused.
+  res.setHeader("Connection", "close");
+  sendJson(res, 413, {
+    ok: false,
+    error: `File too large (${(bytes / 1024 / 1024).toFixed(0)} MB; the limit is ${MAX_UPLOAD_MB} MB, set by BI2M_MAX_UPLOAD_MB).`,
+  });
+}
+
 // The example-models route's allowlist: only generically named test_*.ifc
 // and example_*.ifc copies, whose names carry no project reference number -
 // never every data/*.ifc file, which can be a real, confidential project
@@ -262,9 +279,32 @@ export function registerApiRoutes(use) {
     // fileKey is already a validated safe token, so this is just a
     // human-traceable prefix - Date.now() is what actually guarantees no
     // two uploads (even of files named identically) ever share a folder.
+    // Content-Length rejects an oversized upload before any of it is read;
+    // the running count catches a body sent without one (or with a wrong one).
+    const declaredBytes = Number(req.headers["content-length"]);
+    if (declaredBytes > MAX_UPLOAD_BYTES) {
+      uploadTooLarge(res, declaredBytes);
+      req.resume();
+      return;
+    }
     const chunks = [];
-    req.on("data", (chunk) => chunks.push(chunk));
+    let receivedBytes = 0;
+    let tooLarge = false;
+    req.on("data", (chunk) => {
+      receivedBytes += chunk.length;
+      if (tooLarge) return;
+      if (receivedBytes > MAX_UPLOAD_BYTES) {
+        tooLarge = true;
+        chunks.length = 0;
+        return;
+      }
+      chunks.push(chunk);
+    });
     req.on("end", async () => {
+      if (tooLarge) {
+        uploadTooLarge(res, receivedBytes);
+        return;
+      }
       const buffer = Buffer.concat(chunks);
       if (!buffer.length) {
         sendJson(res, 400, { ok: false, error: "Empty upload body." });

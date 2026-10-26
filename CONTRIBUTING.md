@@ -27,8 +27,9 @@ git status --short    # the verify runs must not change any tracked file
 ```
 
 CI (`.github/workflows/ci.yml`) runs the viewer checks above, the first two
-Python lines, and a Docker build with a smoke test of the server. It does not
-run the `verify_*` scripts or the browser tests yet.
+Python lines and one recognition run on the example model, each on Linux,
+macOS and Windows, plus a Docker build with a smoke test of the server on
+Linux. It does not run the `verify_*` scripts or the browser tests yet.
 
 ### The `verify_*` scripts
 

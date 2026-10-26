@@ -16,24 +16,26 @@ IFC file ──> src/extraction ──> src/recognition ──> JSON shard per m
 
 ## Getting started
 
-There are three ways to run bi2m. All of them serve the same viewer and API
-on http://localhost:3000.
+There are two ways to run bi2m. Both serve the same viewer and API on
+http://localhost:3000.
 
-| | Quick start (uv) | Without Docker | Docker |
-|---|---|---|---|
-| Purpose | development | self-hosting | self-hosting |
-| Needs on the host | uv and Node 24 | uv and Node 24 | Docker only |
-| Commands | `uv sync`, `npm ci`, `npm run dev` | `uv sync`, `npm ci && npm run build && npm start` | `docker compose up -d --build` |
-| Result | same viewer and API on port 3000, with live reload | same, as a production build | same, in a container |
+| | 1. Quick start with uv | 2. Build with Docker |
+|---|---|---|
+| Role | development | self-hosting |
+| Needs on the host | uv and Node 24 | Docker only |
+| Commands | `uv sync`, `npm ci`, `npm run dev` | `docker compose up -d --build` |
+| Result | viewer and API on port 3000, with live reload | the same as a production build, in a container |
 
 Once it runs, an empty viewer tile lists `example_autcon`, the one model in
 the repository (`data/example_autcon.ifc`). Pick it, or drop your own `.ifc`
 file onto a tile, then press **Compute** to run recognition.
 
-### 1. Quick start with uv
+### 1. Quick start with uv (development)
 
-Needs [uv](https://docs.astral.sh/uv/) (it installs Python 3.12 itself) and
-Node 24.
+For working on the code: the viewer reloads as you edit. Needs
+[uv](https://docs.astral.sh/uv/) (it installs Python 3.12 itself) and Node 24.
+Works on Linux, macOS and Windows (x64). On Windows on ARM, use Docker:
+ifcopenshell has no build for it.
 
 ```bash
 uv sync
@@ -42,18 +44,14 @@ npm ci
 npm run dev        # http://localhost:3000, with live reload
 ```
 
-To self-host without Docker, build the viewer once and serve the build
-instead:
+Settings, such as the model library's corpus folder, go in a `.env` file at
+the repository root: copy `.env.example`.
 
-```bash
-uv sync
-cd Interfaces/Frontend/core
-npm ci && npm run build && npm start
-```
+### 2. Build with Docker (self-hosting)
 
-### 2. Start with Docker
-
-Needs only Docker, with its Compose and Buildx plugins (on Ubuntu's
+For running bi2m as a service, without installing Python or Node. Needs only
+Docker, with its Compose and Buildx plugins. Docker Desktop (Windows, macOS)
+includes both. On Linux, install them if they are missing (Ubuntu's
 `docker.io`: `sudo apt install docker-compose-v2 docker-buildx`).
 
 ```bash
@@ -67,8 +65,10 @@ Settings go in `.env` next to `docker-compose.yml`:
 | `BI2M_PORT` | host port (default 3000) |
 | `BI2M_DATA` | host folder mounted as `data/` (default `./data`) |
 | `BI2M_UID`, `BI2M_GID` | your user and group id, if not 1000 |
+| `BI2M_MAX_UPLOAD_MB` | largest model you can upload, in MB (default 500) |
 
-Without the Compose plugin, plain Docker does the same:
+On Linux without the Compose plugin, plain Docker does the same (a bash
+command; on Windows and macOS, use Compose as above):
 
 ```bash
 docker build -t bi2m .
@@ -82,9 +82,10 @@ docker run -d --name bi2m --restart unless-stopped \
 
 ### Before you expose it
 
-Self-hosted either way, the server has no login and listens on `127.0.0.1`
-only. Put a reverse proxy with authentication in front before exposing it.
-The model library needs an IFC corpus: see `.env.example`.
+The server has no login and listens on `127.0.0.1` only. Put a reverse proxy
+with authentication in front before exposing it. The model library needs an
+IFC corpus: see `.env.example`. To report a security problem, see
+[SECURITY.md](SECURITY.md).
 
 ## Command line
 
@@ -125,4 +126,6 @@ ones. Four are verified; the rest are drafts awaiting human validation.
 
 [MIT](LICENSE). The ported engine in `Interfaces/Frontend/core/engine/` keeps
 its own MIT notice. The example model `data/example_autcon.ifc` is licensed
-under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The viewer's
+font, Space Grotesk, is under the SIL Open Font License 1.1
+([`Interfaces/Frontend/core/public/fonts/OFL.txt`](Interfaces/Frontend/core/public/fonts/OFL.txt)).

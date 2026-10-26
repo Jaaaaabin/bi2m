@@ -24,7 +24,7 @@ def write_json(path, data, indent=4):
     os.makedirs(directory, exist_ok=True)
     tmp_path = os.path.join(directory, f".{os.path.basename(path)}.{os.getpid()}.tmp")
     try:
-        with open(tmp_path, "w") as json_file:
+        with open(tmp_path, "w", encoding="utf-8") as json_file:
             json.dump(data, json_file, indent=indent)
         os.replace(tmp_path, path)
     except IOError as e:
@@ -39,7 +39,7 @@ def read_json_file(file_path):
     or an empty list if the file itself does not exist."""
     if os.path.isfile(file_path):
         try:
-            with open(file_path, "r") as file:
+            with open(file_path, "r", encoding="utf-8") as file:
                 return json.load(file)
         except FileNotFoundError:
             print(f"File {file_path} not found.")

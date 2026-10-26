@@ -148,7 +148,7 @@ otherwise.
 
 | Route | What |
 |---|---|
-| `POST /api/upload-ifc` | stores the body under `data/uploads/<key>/`, with the key computed from the bytes that arrived; starts a background tile build |
+| `POST /api/upload-ifc` | stores the body under `data/uploads/<key>/`, with the key computed from the bytes that arrived; starts a background tile build. Refuses bodies over `BI2M_MAX_UPLOAD_MB` (default 500) with 413 |
 | `POST /api/recognize-intents` | spawns `scripts/recognize_intents.py` for a file key and a category list (with `BI2M_PYTHON`, or `uv run python` otherwise) and returns its outcome |
 | `GET /api/tile-status?fileKey=` | `ready`, `building`, `failed` or `none` |
 | `GET /api/example-models[?fileKey=]` | lists, or streams, the `example_*.ifc` and `test_*.ifc` files in `data/`; nothing else in `data/` can be reached through it |

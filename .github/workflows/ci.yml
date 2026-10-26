@@ -1,6 +1,7 @@
 # CI. Lint, typecheck, unit tests and a budgeted production build for the
-# viewer; a compile/import smoke for the Python recognition package; a Docker
-# build with a smoke test of the server. The verify_* scripts and the
+# viewer; a compile/import smoke and one recognition run for the Python
+# package - both on Linux, macOS and Windows, the platforms the README
+# promises; a Docker build with a smoke test of the server (Linux only). The verify_* scripts and the
 # Playwright e2e harnesses (Interfaces/Frontend/core/scripts/e2e/) are not run
 # here yet - see CONTRIBUTING.md for running them locally.
 name: ci
@@ -18,7 +19,12 @@ concurrency:
 
 jobs:
   frontend:
-    runs-on: ubuntu-latest
+    strategy:
+      # Report every platform, not just the first one to fail.
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     defaults:
       run:
         working-directory: Interfaces/Frontend/core
@@ -44,7 +50,8 @@ jobs:
         # regression. if-no-files-found: ignore keeps an earlier failure (one
         # that got nowhere near writing dist/) from adding a second,
         # misleading warning on top of the real error.
-        if: always()
+        # Once per run: the bundle is the same on every platform.
+        if: always() && matrix.os == 'ubuntu-latest'
         with:
           name: dist
           path: Interfaces/Frontend/core/dist
@@ -52,7 +59,11 @@ jobs:
           retention-days: 7
 
   python:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5
@@ -64,8 +75,11 @@ jobs:
       - run: uv sync
       - run: uv run python -m compileall -q src scripts
       - run: uv run python scripts/recognize_intents.py --list-categories
+      # The tracked example model through the whole pipeline: ifcopenshell's
+      # platform build, file encodings (cp1252 on Windows) and paths.
+      - run: uv run python scripts/recognize_intents.py --files example_autcon
 
-  # The self-hosting image (README "Start with Docker"): it builds, its Python
+  # The self-hosting image (README "Build with Docker"): it builds, its Python
   # environment runs the pipeline, and the server answers on the page and API.
   docker:
     runs-on: ubuntu-latest

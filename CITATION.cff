@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use bi2m, please cite it as below."
-title: "bi2m: design-intent recognition for IFC building models"
+title: "bi2m: Building Intent Information Modeling"
 type: software
 authors:
   - family-names: Wu

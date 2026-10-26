@@ -11,7 +11,7 @@ Only the latest commit on `main` is supported; fixes are not backported.
 ## What the server trusts
 
 bi2m is a research tool meant to run on your own machine. Its server
-(`Interfaces/Frontend/core/server/`, used by `npm run dev`, `npm start` and the
+(`viewer/server/`, used by `npm run dev`, `npm start` and the
 Docker image) has **no login**. Anyone who can reach its port can:
 
 - upload files, which are stored under `data/uploads/` (up to

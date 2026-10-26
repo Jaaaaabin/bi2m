@@ -32,7 +32,7 @@
   },
   "author": "Jiabin Wu",
   "license": "MIT",
-  "description": "Browser viewer and API server for bi2m intent records",
+  "description": "Browser viewer and API server for bi2m (Building Intent Information Modeling)",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@vitejs/plugin-react": "^6.1.1",

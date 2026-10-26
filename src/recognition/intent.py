@@ -1,7 +1,7 @@
 """Shared "recognized intent group" record shape.
 
 Every detector in `detectors/` returns a list of these dicts - the exact
-shape `Interfaces/Frontend/core/res/intent_groups.json` already ships
+shape `viewer/res/intent_groups.json` already ships
 (originally as a hand-authored mock) and `ThatOpenCompanyLoader.js`/
 `createIntentPanel` already consume. A real detector's output is therefore
 a drop-in replacement for the mock: no frontend change needed as long as a

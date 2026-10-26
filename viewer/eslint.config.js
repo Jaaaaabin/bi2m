@@ -10,7 +10,6 @@ export default [
       "node_modules/**",
       "public/**",
       "scripts/e2e/**",
-      "scripts/spikes/**",
       "tests/unit/out/**",
     ],
   },

@@ -6,7 +6,7 @@ per-intent scoping - walk the corpus, load each model into the viewer, apply
 the camera panel's two whole-building presets ("Top" and "Side 45°") and
 capture one PNG per view.
 
-Usage (the dev server must be running: `npm run dev` in Interfaces/Frontend/core):
+Usage (the dev server must be running: `npm run dev` in viewer):
     # BI2M_VIS_DIR (output folder) comes from .env or the environment
     uv run python scripts/autocamera.py                 # every model in the library
     uv run python scripts/autocamera.py --limit 3       # a sample
@@ -15,7 +15,7 @@ Usage (the dev server must be running: `npm run dev` in Interfaces/Frontend/core
     uv run python scripts/autocamera.py --json /tmp/autocamera.json
 
 REVIEW PACKETS (2026-10-01, the per-intent half the first version left open).
-Every view is a VIEW SPEC now (Interfaces/Frontend/core/views/viewSpec.js,
+Every view is a VIEW SPEC now (viewer/views/viewSpec.js,
 docs/architecture.md "Viewer"): the two whole-model views are the specs behind the "Top"
 and "Side 45" buttons, applied through the app's own applyView (reached via
 the viewerRegistry.js import hook), and `--spec FILE` replaces them with any list of
@@ -112,7 +112,7 @@ except ImportError:
              "playwright install chromium`")
 
 # The viewer to drive. Defaults to the server the e2e harnesses read
-# (Interfaces/Frontend/core/scripts/e2e/_common.py), with its own override so a
+# (viewer/scripts/e2e/_common.py), with its own override so a
 # long run can be pointed at a private port and leave :3000 to whoever is
 # working in it.
 BASE_URL = os.environ.get(
@@ -317,7 +317,7 @@ def fetch_models(base_url, timeout=120):
         sys.exit(f"{url} answered {err.code}: {message}")
     except OSError as err:
         sys.exit(f"Could not reach the dev server at {base_url} ({err}). "
-                 "Start it with `npm run dev` in Interfaces/Frontend/core.")
+                 "Start it with `npm run dev` in viewer.")
     if "json" not in content_type:
         # The SPA fallback answered: this server predates the route, or it is a
         # production build, which has no dev-only API at all.

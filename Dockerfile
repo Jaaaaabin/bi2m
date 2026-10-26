@@ -1,14 +1,14 @@
-# Self-hosted bi2m: the built viewer, its API (Interfaces/Frontend/core/
+# Self-hosted bi2m: the built viewer, its API (viewer/
 # server/) and the Python recognition pipeline in one container. See
-# README.md "Build with Docker". Development does not use this file.
+# README.md "Host with Docker". Development does not use this file.
 
 # 1. Viewer build. Dev dependencies are pruned afterwards; three and web-ifc
 #    stay, because scripts/tileIfc.mjs tiles uploads at runtime.
 FROM node:24-bookworm-slim AS web
-WORKDIR /app/Interfaces/Frontend/core
-COPY Interfaces/Frontend/core/package.json Interfaces/Frontend/core/package-lock.json ./
+WORKDIR /app/viewer
+COPY viewer/package.json viewer/package-lock.json ./
 RUN npm ci
-COPY Interfaces/Frontend/core/ ./
+COPY viewer/ ./
 RUN npm run build && npm prune --omit=dev
 
 # 2. Python environment from uv.lock, without the dev group (playwright).
@@ -37,13 +37,13 @@ COPY pyproject.toml paths.yaml ./
 COPY src/ src/
 COPY scripts/ scripts/
 COPY config/ config/
-COPY --from=web /app/Interfaces/Frontend/core /app/Interfaces/Frontend/core
+COPY --from=web /app/viewer /app/viewer
 # Everything the server writes is world-writable, so the container runs as
 # whatever uid docker-compose.yml passes (BI2M_UID) and can still write into
 # a bind-mounted data/ owned by that user on the host.
-RUN mkdir -p data/uploads data/verdicts \
-        Interfaces/Frontend/core/public/res/intents Interfaces/Frontend/core/public/tiles \
- && chmod -R a+rwX data Interfaces/Frontend/core/public/res Interfaces/Frontend/core/public/tiles
+RUN mkdir -p data/uploads \
+        viewer/public/res/intents viewer/public/tiles \
+ && chmod -R a+rwX data viewer/public/res viewer/public/tiles
 USER 1000:1000
 EXPOSE 3000
-CMD ["node", "Interfaces/Frontend/core/server/serve.mjs"]
+CMD ["node", "viewer/server/serve.mjs"]

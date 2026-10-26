@@ -6,7 +6,7 @@ reproducible.
 
 ## Checks before you push
 
-**Viewer** (`Interfaces/Frontend/core`):
+**Viewer** (`viewer`):
 
 ```bash
 npm test             # ESLint + tsc over the pure modules + Vitest unit tests
@@ -51,7 +51,7 @@ does this for every `.ifc` in `data/`.
 ### Browser tests
 
 ```bash
-cd Interfaces/Frontend/core
+cd viewer
 npm run dev                                     # in one terminal
 uv run playwright install chromium              # once; on Linux add --with-deps (sudo) for its system libraries
 uv run python scripts/e2e/run_all.py --quick    # in another; drops the 2-minute perf audit
@@ -65,7 +65,7 @@ Add `?hud` to the page URL for a live frame-time and draw-call overlay.
 
 ### Bundle budget
 
-`Interfaces/Frontend/core/scripts/checkBundleSize.mjs` fails the build when a chunk grows more than 10%
+`viewer/scripts/checkBundleSize.mjs` fails the build when a chunk grows more than 10%
 past its gzip budget. Raise a budget deliberately, in that file, with the
 reason next to the number. When the app-code chunk trips, lazy-load before you
 raise it. A new lazy chunk needs its own budget entry; a chunk without one is
@@ -80,7 +80,7 @@ never checked.
 - A model is identified by its **content key** (first 16 hex of the SHA-256 of
   its bytes), never by its file name. Keys name shard files, extraction caches,
   tile sets and upload folders.
-- Five fixture shards are tracked in `Interfaces/Frontend/core/public/res/intents/`.
+- Five fixture shards are tracked in `viewer/public/res/intents/`.
   Every other shard comes from pressing Compute on a model that other people do
   not have, so new ones are ignored. Add one deliberately with `git add -f`.
   `index.json` there is a local catalogue and is not tracked.

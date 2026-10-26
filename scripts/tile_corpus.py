@@ -8,20 +8,20 @@ before the user's hand leaves the mouse. Measured on test_5.ifc (18.5 MB):
 13.1 s to a reviewable panel parsed, 0.6 s streamed, after 3.0 s of conversion
 here.
 
-    npm run dev                       # in Interfaces/Frontend/core, another shell
+    npm run dev                       # in viewer, another shell
     uv run python scripts/tile_corpus.py --dry-run     # what is missing
     uv run python scripts/tile_corpus.py --stride 30   # a spread, to sanity-check
     uv run python scripts/tile_corpus.py               # the whole library
     uv run python scripts/tile_corpus.py --fixtures    # data/*.ifc instead
 
-This drives `Interfaces/Frontend/core/scripts/tileIfc.mjs` once per model
+This drives `viewer/scripts/tileIfc.mjs` once per model
 rather than reimplementing it: that script is what `/api/upload-ifc` already
 spawns for an uploaded file, so a batch-tiled model and an uploaded one get
 byte-identical treatment. Nothing about the conversion lives here.
 
 READS the corpus, WRITES only inside the repo. Tile sets go to
-`Interfaces/Frontend/core/public/tiles/<content_key>/`, which is a gitignored
-build artifact (Interfaces/.gitignore) - so no BI2M_* output variable, unlike
+`viewer/public/tiles/<content_key>/`, which is a gitignored
+build artifact (.gitignore) - so no BI2M_* output variable, unlike
 autocamera.py's $BI2M_VIS_DIR. The corpus itself is never written to.
 
 Resumable: a model whose `tileset.json` already exists is skipped unless
@@ -43,7 +43,7 @@ import time
 import urllib.request
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
-FRONTEND_CORE = REPO_ROOT / "Interfaces" / "Frontend" / "core"
+FRONTEND_CORE = REPO_ROOT / "viewer"
 TILER = FRONTEND_CORE / "scripts" / "tileIfc.mjs"
 TILES_DIR = FRONTEND_CORE / "public" / "tiles"
 sys.path.append(str(REPO_ROOT / "src"))

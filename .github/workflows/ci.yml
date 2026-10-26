@@ -2,7 +2,7 @@
 # viewer; a compile/import smoke and one recognition run for the Python
 # package - both on Linux, macOS and Windows, the platforms the README
 # promises; a Docker build with a smoke test of the server (Linux only). The verify_* scripts and the
-# Playwright e2e harnesses (Interfaces/Frontend/core/scripts/e2e/) are not run
+# Playwright e2e harnesses (viewer/scripts/e2e/) are not run
 # here yet - see CONTRIBUTING.md for running them locally.
 name: ci
 
@@ -27,7 +27,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     defaults:
       run:
-        working-directory: Interfaces/Frontend/core
+        working-directory: viewer
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -38,7 +38,7 @@ jobs:
           # elsewhere", so it pins the author's major. 22 also works.
           node-version: 24
           cache: npm
-          cache-dependency-path: Interfaces/Frontend/core/package-lock.json
+          cache-dependency-path: viewer/package-lock.json
       - run: npm ci
       - run: npm run lint
       - run: npm run typecheck
@@ -54,7 +54,7 @@ jobs:
         if: always() && matrix.os == 'ubuntu-latest'
         with:
           name: dist
-          path: Interfaces/Frontend/core/dist
+          path: viewer/dist
           if-no-files-found: ignore
           retention-days: 7
 
@@ -79,7 +79,7 @@ jobs:
       # platform build, file encodings (cp1252 on Windows) and paths.
       - run: uv run python scripts/recognize_intents.py --files example_autcon
 
-  # The self-hosting image (README "Build with Docker"): it builds, its Python
+  # The self-hosting image (README "Host with Docker"): it builds, its Python
   # environment runs the pipeline, and the server answers on the page and API.
   docker:
     runs-on: ubuntu-latest

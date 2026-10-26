@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _common import BASE_URL, CHROMIUM_ARGS
 from playwright.sync_api import sync_playwright
 
-REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", ".."))
+REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 KEYS = os.environ.get("BI2M_E2E_STREAMED_KEYS", "c99be381a798220e,3ef234726d638702").split(",")
 V = "#viewerContainer1"
 # web-ifc never runs on a streamed model; the fragments OPFS cache logs

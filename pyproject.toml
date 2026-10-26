@@ -1,7 +1,7 @@
 [project]
 name = "bi2m"
 version = "0.1.0"
-description = "Design-intent recognition for IFC building models, with a web viewer"
+description = "Building Intent Information Modeling: design-intent recognition for IFC building models, with a web viewer"
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]

@@ -25,8 +25,8 @@ services:
       # BI2M_VIS_DIR: /corpus_vis
     volumes:
       - ${BI2M_DATA:-./data}:/app/data
-      - intents:/app/Interfaces/Frontend/core/public/res/intents
-      - tiles:/app/Interfaces/Frontend/core/public/tiles
+      - intents:/app/viewer/public/res/intents
+      - tiles:/app/viewer/public/tiles
       # - /path/to/ifc/corpus:/corpus:ro
       # - /path/to/corpus_vis:/corpus_vis:ro
     restart: unless-stopped

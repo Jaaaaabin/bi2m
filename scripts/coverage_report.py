@@ -34,7 +34,7 @@ from file_identity import resolve_file_identity  # noqa: E402
 from io_utils import read_json_file  # noqa: E402
 
 DATA_DIR = REPO_ROOT / "data"
-INTENTS_DIR = REPO_ROOT / "Interfaces" / "Frontend" / "core" / "public" / "res" / "intents"
+INTENTS_DIR = REPO_ROOT / "viewer" / "public" / "res" / "intents"
 EXCLUDED = ("IfcSpatialStructureElement", "IfcAnnotation", "IfcGrid")
 
 

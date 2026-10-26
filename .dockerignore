@@ -10,21 +10,19 @@
 research
 data
 docs
-visualization
 **/node_modules
 **/__pycache__
 **/.env
 *.md
 neufert_validation_pack.json
-Interfaces/Frontend/data_vis_test
-Interfaces/Frontend/core/dist
-Interfaces/Frontend/core/public/tiles
-Interfaces/Frontend/core/public/wasm
-Interfaces/Frontend/core/scripts/e2e/out
+viewer/dist
+viewer/public/tiles
+viewer/public/wasm
+viewer/scripts/e2e/out
 # Recognition results are per-model output, never baked into the image (a
 # local build would otherwise ship whatever this machine has computed). The
 # image starts empty; results land in the `intents` volume.
-Interfaces/Frontend/core/public/res/intents/*.json
-Interfaces/Frontend/core/public/res/lines/*.json
-!Interfaces/Frontend/core/public/res/lines/index.json
-!Interfaces/Frontend/core/public/res/lines/34b3f3dac339ade6.json
+viewer/public/res/intents/*.json
+viewer/public/res/lines/*.json
+!viewer/public/res/lines/index.json
+!viewer/public/res/lines/34b3f3dac339ade6.json

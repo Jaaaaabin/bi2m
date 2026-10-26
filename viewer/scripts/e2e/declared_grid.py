@@ -33,8 +33,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _common import BASE_URL, CHROMIUM_ARGS
 from playwright.sync_api import sync_playwright
 
-REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", ".."))
-LINES_DIR = os.path.join(REPO, "Interfaces", "Frontend", "core", "public", "res", "lines")
+REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+LINES_DIR = os.path.join(REPO, "viewer", "public", "res", "lines")
 V = "#viewerContainer1"
 B = f"{V} .viewer-lines-btn"
 TOL_M = 0.35  # grid_words.CORNER_TOL_M

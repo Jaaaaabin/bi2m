@@ -50,7 +50,7 @@ DATA_DIR = REPO_ROOT / "data"
 # The one model in git (see .gitignore): metres, with a tracked shard.
 EXAMPLE = DATA_DIR / "example_autcon.ifc"
 MM_DOOR_TRANSLATION = (17161.49557909889, -2500.25, 0.0)
-SHARDS_DIR = REPO_ROOT / "Interfaces" / "Frontend" / "core" / "public" / "res" / "intents"
+SHARDS_DIR = REPO_ROOT / "viewer" / "public" / "res" / "intents"
 # Categories whose only unit-dependent input is a placement (daylight_rooms,
 # beam_framing and convention_outlier also scale raw attributes, which the
 # invariance check below deliberately does not fake).

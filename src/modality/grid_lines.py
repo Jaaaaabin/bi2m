@@ -3,7 +3,7 @@
 The viewer cannot draw a model's own IfcGrid: web-ifc 0.0.66 builds no mesh
 for curves (it logs one "unexpected mesh type" per axis instead), and a tiled
 model never runs web-ifc in the browser at all. So the axes are read here,
-with declared_grid, and written as line specs (Interfaces/Frontend/core/
+with declared_grid, and written as line specs (viewer/
 views/lineSpec.js) into the model's line sidecar, where the viewer's "Lines"
 button already looks (views/lineSidecar.js).
 

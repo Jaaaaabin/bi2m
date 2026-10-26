@@ -14,7 +14,6 @@ paths:
   src_dir: src                   # individual Python modules
   scripts_dir: scripts           # running sub-pipelines (thin entry points into src/)
   data_dir: data                 # test data
-  visualization_dir: visualization  # future visual-output additions (empty for now)
   # The batch snapshot driver; writes into $BI2M_VIS_DIR,
   # whose internal layout is the `vis_outputs` block below.
   autocamera_script: scripts/autocamera.py
@@ -23,29 +22,26 @@ paths:
   # output lives inside the repo as a gitignored build artifact.
   tile_corpus_script: scripts/tile_corpus.py
 
-  # Frontend (Interfaces module)
-  frontend_root: Interfaces/Frontend
-  frontend_core: Interfaces/Frontend/core
+  # Viewer
+  frontend_core: viewer
   # Under public/ specifically (not a plain core/res/) - Vite only copies
   # publicDir contents into a production build; a sibling-of-index.html res/
   # was dev-server-only (served by Vite's dev middleware, silently absent
   # from `npm run build`'s dist/ - confirmed by inspection).
-  frontend_resources: Interfaces/Frontend/core/public/res
-  highlight_map: Interfaces/Frontend/core/public/res/map_visualization.json
+  frontend_resources: viewer/public/res
+  highlight_map: viewer/public/res/map_visualization.json
   # One shard per model, named by the model's CONTENT key (see
   # src/file_identity.py) plus a small index.json catalogue - replaces the
   # former single intent_groups.json, which had to be read and rewritten in
   # full to record one category of one model. See
   # docs/architecture.md "The shard".
-  intent_shards: Interfaces/Frontend/core/public/res/intents
-  intent_index: Interfaces/Frontend/core/public/res/intents/index.json
-  intent_categories: Interfaces/Frontend/core/public/res/intent_categories.json
+  intent_shards: viewer/public/res/intents
+  intent_index: viewer/public/res/intents/index.json
+  intent_categories: viewer/public/res/intent_categories.json
   # Pre-converted geometry+property tile sets the viewer streams from instead
   # of re-parsing a raw .ifc, one folder per model, also keyed by content
   # (scripts/tileIfc.mjs). Gitignored - a build artifact, not source.
-  tiles_dir: Interfaces/Frontend/core/public/tiles
-  frontend_test_sandbox: Interfaces/Frontend/data_vis_test
-  verdicts_dir: data/verdicts
+  tiles_dir: viewer/public/tiles
   # One subfolder per uploaded model (vite.config.js's /api/upload-ifc), named
   # by the file's CONTENT key. Two different files that happen to share a name
   # get different folders; the same file uploaded twice reuses one instead of

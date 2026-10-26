@@ -70,7 +70,7 @@ import ifcopenshell  # noqa: E402
 from file_identity import compute_content_key  # noqa: E402
 
 DATA_DIR = REPO_ROOT / "data"
-INTENTS_DIR = REPO_ROOT / "Interfaces" / "Frontend" / "core" / "public" / "res" / "intents"
+INTENTS_DIR = REPO_ROOT / "viewer" / "public" / "res" / "intents"
 
 
 def build_profile(ifc_path):

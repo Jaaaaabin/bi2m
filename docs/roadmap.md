@@ -76,4 +76,4 @@ false-positive rates, and promoting a `draft` category all wait on it.
   example model is in the repository now, so the scripts could run there
   (all but `verify_neufert`'s source-plan check); the browser tests also need
   a dev server and a browser on the runner.
-- `src/tempo/` (grid optimisation) is parked and needs extra packages.
+- Grid optimisation (GA-driven) is parked outside the repository.

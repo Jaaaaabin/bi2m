@@ -4,7 +4,7 @@ How a model gets from an IFC file to a reviewed set of intents. Paths are
 relative to the repository root.
 
 ```
-                     Python (src/, scripts/)                          Node + browser (Interfaces/Frontend/core/)
+                     Python (src/, scripts/)                          Node + browser (viewer/)
  IFC file ─┬─> file_identity ──> content key ─────────────────────────────┐
            │                                                              │
            ├─> extraction ──> data/extracted/<key>/  (cache)              │
@@ -28,9 +28,9 @@ stored verdicts, so the same model is found again whatever the file is called,
 and two different files with the same name never collide.
 
 Four implementations compute it and must agree: `src/file_identity.py`,
-`Interfaces/Frontend/core/fileIdentity.js` (browser, `crypto.subtle`),
+`viewer/fileIdentity.js` (browser, `crypto.subtle`),
 `server/api.mjs` (`node:crypto`) and `scripts/tileIfc.mjs` (the last three under
-`Interfaces/Frontend/core/`). `crypto.subtle`
+`viewer/`). `crypto.subtle`
 needs a secure context, so the viewer must be opened on `localhost` or over
 https; elsewhere it warns and falls back to a filename key. The IFC header's own
 identifiers (file name, author, project GUID) are kept only as local provenance.
@@ -76,7 +76,7 @@ exist and how they are labelled and coloured. See [detectors.md](detectors.md).
 
 ## The shard
 
-`Interfaces/Frontend/core/public/res/intents/<key>.json`:
+`viewer/public/res/intents/<key>.json`:
 
 ```
 storeVersion   2
@@ -99,7 +99,7 @@ category list, generated from the registry. The viewer fetches one shard
 lazily, for the model that is open. Only a few fixture shards are tracked in
 git; every other shard is local output.
 
-## Viewer (`Interfaces/Frontend/core/`)
+## Viewer (`viewer/`)
 
 Plain JavaScript on Vite, three.js and the That Open Components libraries
 (web-ifc, fragments), with one small React component for the inspector. There is
@@ -137,9 +137,9 @@ no custom IFC parsing in the viewer.
 
 Heavy parts are split into their own chunks (`three`, `web-ifc`, `thatopen`,
 `react`), and `scripts/checkBundleSize.mjs` enforces a per-chunk budget.
-Paths in this section are relative to `Interfaces/Frontend/core/`.
+Paths in this section are relative to `viewer/`.
 
-## Server (`Interfaces/Frontend/core/server/`)
+## Server (`viewer/server/`)
 
 `server/api.mjs` holds the routes; `vite dev` mounts them as middleware and
 `server/serve.mjs` serves them together with the built viewer (`npm start`, the

@@ -1,5 +1,5 @@
 """Content-addressed file identity - the Python half of
-Interfaces/Frontend/core/fileIdentity.js.
+viewer/fileIdentity.js.
 
 Both sides must produce the SAME key for the same bytes, since that key is
 what joins a browser session's model to the intent results this pipeline

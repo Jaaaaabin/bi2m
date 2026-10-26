@@ -7,7 +7,7 @@ summarises. Exit 1 if any script fails a check or exits non-zero.
   python3 scripts/e2e/run_all.py review_workflow contract   # a subset
 
 Requirements: `pip install playwright && playwright install chromium`, and
-the viewer running (`npm run dev` in Interfaces/Frontend/core).
+the viewer running (`npm run dev` in viewer).
 Rules: a comparison only counts when the script reached its
 assertion AND exited 0; verdict storage is restored by the scripts that
 touch it, so nothing here persists review state.

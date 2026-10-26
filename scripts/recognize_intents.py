@@ -2,7 +2,7 @@
 
 Runs the detectors registered in src/recognition/registry.py against IFC
 files in the data directory, writing results to
-Interfaces/Frontend/core/public/res/intents/<fileKey>.json - one shard per
+viewer/public/res/intents/<fileKey>.json - one shard per
 model, plus a small index.json catalogue - which is what
 ThatOpenCompanyLoader.js fetches lazily for whichever model is actually open.
 `--categories`/`--files` let a run cover only a subset of either, without
@@ -51,7 +51,7 @@ from recognition.session import ModelSession  # noqa: E402
 from recognition.writers import read_preflight, recomputed_with_tombstones, write_category_manifest, write_intent_shard  # noqa: E402
 
 DATA_DIR = REPO_ROOT / "data"
-FRONTEND_RES_DIR = REPO_ROOT / "Interfaces" / "Frontend" / "core" / "public" / "res"
+FRONTEND_RES_DIR = REPO_ROOT / "viewer" / "public" / "res"
 INTENT_CATEGORIES_PATH = FRONTEND_RES_DIR / "intent_categories.json"
 
 # Bump when a change to src/extraction/ alters what any of the extraction

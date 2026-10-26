@@ -12,7 +12,7 @@ import path from "node:path";
 
 // This file lives in server/, one level below the viewer root.
 const CORE_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const REPO_ROOT = path.resolve(CORE_DIR, "../../..");
+const REPO_ROOT = path.resolve(CORE_DIR, "..");
 const TILES_DIR = path.join(CORE_DIR, "public", "tiles");
 const DATA_DIR = path.join(REPO_ROOT, "data");
 const UPLOADS_DIR = path.join(DATA_DIR, "uploads");
@@ -31,7 +31,7 @@ function uploadIfcPath(fileKey) {
   return path.join(UPLOADS_DIR, fileKey, `${fileKey}.ifc`);
 }
 
-// Must stay identical to Interfaces/Frontend/core/fileIdentity.js's
+// Must stay identical to viewer/fileIdentity.js's
 // computeContentKey() and src/file_identity.py's compute_content_key():
 // SHA-256 over the raw bytes, first 16 lowercase hex chars. The browser
 // computes this key for the same file independently, and the upload route
@@ -59,9 +59,10 @@ const maxUploadMb = Number(process.env.BI2M_MAX_UPLOAD_MB);
 const MAX_UPLOAD_MB = maxUploadMb > 0 ? maxUploadMb : DEFAULT_MAX_UPLOAD_MB;
 const MAX_UPLOAD_BYTES = MAX_UPLOAD_MB * 1024 * 1024;
 
+// Answered only once the whole body has arrived (and been discarded): closing
+// the connection while the client is still sending makes a reverse proxy in
+// front report 502 instead of passing this message on.
 function uploadTooLarge(res, bytes) {
-  // The body may not have been read in full, so the socket is not reused.
-  res.setHeader("Connection", "close");
   sendJson(res, 413, {
     ok: false,
     error: `File too large (${(bytes / 1024 / 1024).toFixed(0)} MB; the limit is ${MAX_UPLOAD_MB} MB, set by BI2M_MAX_UPLOAD_MB).`,
@@ -279,12 +280,12 @@ export function registerApiRoutes(use) {
     // fileKey is already a validated safe token, so this is just a
     // human-traceable prefix - Date.now() is what actually guarantees no
     // two uploads (even of files named identically) ever share a folder.
-    // Content-Length rejects an oversized upload before any of it is read;
+    // Content-Length rejects an oversized upload without keeping any of it;
     // the running count catches a body sent without one (or with a wrong one).
     const declaredBytes = Number(req.headers["content-length"]);
     if (declaredBytes > MAX_UPLOAD_BYTES) {
-      uploadTooLarge(res, declaredBytes);
       req.resume();
+      req.on("end", () => uploadTooLarge(res, declaredBytes));
       return;
     }
     const chunks = [];

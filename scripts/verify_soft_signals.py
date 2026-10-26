@@ -288,7 +288,7 @@ def section_example():
         return
     key = resolve_file_identity(example, example.name)["key"]
     cache = REPO_ROOT / "data" / "extracted" / key / "recognition_cache.json"
-    shard = REPO_ROOT / "Interfaces" / "Frontend" / "core" / "public" / "res" / "intents" / f"{key}.json"
+    shard = REPO_ROOT / "viewer" / "public" / "res" / "intents" / f"{key}.json"
     if not (cache.exists() and shard.exists()):
         check("example extraction cache and shard present", False, (str(cache), str(shard)))
         return

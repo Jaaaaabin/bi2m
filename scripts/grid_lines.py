@@ -3,7 +3,7 @@
     uv run python scripts/grid_lines.py model.ifc [model.ifc ...]
     uv run python scripts/grid_lines.py data/uploads/*/*.ifc
 
-Writes the model's declared axes into Interfaces/Frontend/core/public/res/
+Writes the model's declared axes into viewer/public/res/
 lines/<content key>.json and lists the key in index.json beside it, so the
 viewer's Lines button draws them (views/lineSidecar.js). --out-dir writes
 elsewhere. A directory argument means every *.ifc in it, in name order.
@@ -34,7 +34,7 @@ from file_identity import resolve_file_identity  # noqa: E402
 from ifc_units import length_scale, unit_name  # noqa: E402
 from modality.grid_lines import GRID_LINE_PREFIX, model_grid_lines  # noqa: E402
 
-LINES_DIR = REPO_ROOT / "Interfaces" / "Frontend" / "core" / "public" / "res" / "lines"
+LINES_DIR = REPO_ROOT / "viewer" / "public" / "res" / "lines"
 SIDECAR_SCHEMA = 1  # views/lineSidecar.js LINE_SIDECAR_SCHEMA
 GENERATOR = "scripts/grid_lines.py"
 

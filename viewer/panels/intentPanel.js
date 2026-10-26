@@ -46,8 +46,8 @@ const DOMAIN_ORDER = ["structural", "spatial", "daylight", "circulation"];
 // A manifest entry may carry `section` (the Neufert Topic categories,
 // 2026-10-18): it is grouped under that section, after the levels, instead
 // of under its level.
-const LEVEL_LABELS = { room: "Room", storey: "Storey", building: "Building", neufert: "Neufert" };
-const LEVEL_ORDER = ["room", "storey", "building", "neufert"];
+const LEVEL_LABELS = { room: "Room", storey: "Storey", building: "Building", neufert: "Neufert", rules: "Rules (ours)" };
+const LEVEL_ORDER = ["room", "storey", "building", "neufert", "rules"];
 
 const domainLabel = (domain) =>
   LEVEL_LABELS[domain] ??

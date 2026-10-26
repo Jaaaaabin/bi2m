@@ -540,3 +540,26 @@ for _suffix, _topic, _level, _classes in NEUFERT_TOPICS:
         "signals": (),
         "soft_signals": tuple(_classes),
     }
+
+
+# Appended 2026-10-26 (branch zihan_dev1) - at the END, per docs/detectors.md rule 5. Our Neufert rules (rules/):
+# one category per design-decision topic, in their own panel section "rules". Each record is one rule x outcome
+# (pass / fail / unknown / scenario) with the verbatim Neufert quote and the measured values; see
+# src/recognition/zihan_rules.py. They read the graphs in runs/graphs/, so they produce nothing for a model that
+# has none.
+from .zihan_rules import SECTION as _ZR_SECTION, TOPICS as _ZR_TOPICS  # noqa: E402
+from .zihan_rules import detector as _zr_detector, intent_types as _zr_types  # noqa: E402
+
+for _t in _ZR_TOPICS:
+    CATEGORIES[_t["category"]] = {
+        "label": _t["label"],
+        "intent_types": _zr_types(_t["category"]),
+        "detector": _zr_detector(_t["category"]),
+        "extraction_keys": (),
+        "domain": _ZR_SECTION,
+        "level": _t["level"],
+        "section": _ZR_SECTION,
+        "maturity": "draft",
+        "signals": (),
+        "soft_signals": (),
+    }

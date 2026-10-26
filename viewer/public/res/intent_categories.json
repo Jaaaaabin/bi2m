@@ -495,5 +495,215 @@
         "level": "room",
         "maturity": "draft",
         "section": "neufert"
+    },
+    {
+        "id": "rules_t01",
+        "label": "Rules T01: Stair geometry",
+        "intentTypes": [
+            "rules_t01_pass",
+            "rules_t01_fail",
+            "rules_t01_unknown",
+            "rules_t01_scenario"
+        ],
+        "domain": "rules",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_t02",
+        "label": "Rules T02: Escape routes & stair placement",
+        "intentTypes": [
+            "rules_t02_pass",
+            "rules_t02_fail",
+            "rules_t02_unknown",
+            "rules_t02_scenario"
+        ],
+        "domain": "rules",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_t03",
+        "label": "Rules T03: Building depth & daylight",
+        "intentTypes": [
+            "rules_t03_pass",
+            "rules_t03_fail",
+            "rules_t03_unknown",
+            "rules_t03_scenario"
+        ],
+        "domain": "rules",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_t04",
+        "label": "Rules T04: Layout type & grid module",
+        "intentTypes": [
+            "rules_t04_pass",
+            "rules_t04_fail",
+            "rules_t04_unknown",
+            "rules_t04_scenario"
+        ],
+        "domain": "rules",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_t05",
+        "label": "Rules T05: Lifts & step-free access",
+        "intentTypes": [
+            "rules_t05_pass",
+            "rules_t05_fail",
+            "rules_t05_unknown",
+            "rules_t05_scenario"
+        ],
+        "domain": "rules",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_t06",
+        "label": "Rules T06: Storey & clear height",
+        "intentTypes": [
+            "rules_t06_pass",
+            "rules_t06_fail",
+            "rules_t06_unknown",
+            "rules_t06_scenario"
+        ],
+        "domain": "rules",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_t07",
+        "label": "Rules T07: Sanitary & ancillary provision",
+        "intentTypes": [
+            "rules_t07_pass",
+            "rules_t07_fail",
+            "rules_t07_unknown",
+            "rules_t07_scenario"
+        ],
+        "domain": "rules",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_t08",
+        "label": "Rules T08: Corridors, doors & accessibility",
+        "intentTypes": [
+            "rules_t08_pass",
+            "rules_t08_fail",
+            "rules_t08_unknown",
+            "rules_t08_scenario"
+        ],
+        "domain": "rules",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_t09",
+        "label": "Rules T09: Workplace density & office type",
+        "intentTypes": [
+            "rules_t09_pass",
+            "rules_t09_fail",
+            "rules_t09_unknown",
+            "rules_t09_scenario"
+        ],
+        "domain": "rules",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_t11",
+        "label": "Rules T11: High-rise threshold & fire compartments",
+        "intentTypes": [
+            "rules_t11_pass",
+            "rules_t11_fail",
+            "rules_t11_unknown",
+            "rules_t11_scenario"
+        ],
+        "domain": "rules",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_s01",
+        "label": "Rules S01: Railings & guards",
+        "intentTypes": [
+            "rules_s01_pass",
+            "rules_s01_fail",
+            "rules_s01_unknown",
+            "rules_s01_scenario"
+        ],
+        "domain": "rules",
+        "level": "room",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_s02",
+        "label": "Rules S02: Door modules & exit door types",
+        "intentTypes": [
+            "rules_s02_pass",
+            "rules_s02_fail",
+            "rules_s02_unknown",
+            "rules_s02_scenario"
+        ],
+        "domain": "rules",
+        "level": "room",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_s03",
+        "label": "Rules S03: External wall build-up & glazing",
+        "intentTypes": [
+            "rules_s03_pass",
+            "rules_s03_fail",
+            "rules_s03_unknown",
+            "rules_s03_scenario"
+        ],
+        "domain": "rules",
+        "level": "room",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_s04",
+        "label": "Rules S04: Roof build-up",
+        "intentTypes": [
+            "rules_s04_pass",
+            "rules_s04_fail",
+            "rules_s04_unknown",
+            "rules_s04_scenario"
+        ],
+        "domain": "rules",
+        "level": "room",
+        "maturity": "draft",
+        "section": "rules"
+    },
+    {
+        "id": "rules_c01",
+        "label": "Rules C01: Measurement conventions",
+        "intentTypes": [
+            "rules_c01_pass",
+            "rules_c01_fail",
+            "rules_c01_unknown",
+            "rules_c01_scenario"
+        ],
+        "domain": "rules",
+        "level": "building",
+        "maturity": "draft",
+        "section": "rules"
     }
 ]

@@ -1,0 +1,1575 @@
+[
+ {
+  "kid": "K03",
+  "topic": "场地与体量",
+  "title": "车位与通道尺寸",
+  "summary": "多层停车库：车库条例要求车位最小宽度 2.30 m，FGSV 因车辆变大建议所有公众可达车位最小宽度 2.50 m；图示示例：90° 停车、通道宽 5.50 m、车位宽 2.50 m；加油站相关州规定中车位尺寸为 2.50 × 5.00 m = 12.50 m²。",
+  "priority": 2,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "The Garage (multi-storey car park) Regulations require a minimum width for parking spaces of 2.30 m.",
+    "page_id": "page_0404",
+    "book_page": "392",
+    "chapter": "Transport",
+    "subheadings": [
+     "PARKING FACILITIES"
+    ],
+    "source": "body",
+    "context": "For multi-storey car parks the requirements for the layout of parking spaces and access are in principle the same as for open car parks. The Garage (multi-storey car park) Regulations require a minimum width for parking spaces of 2.30 m. The Research Company for Roads and Traffic (FGSV), however, recommends a minimum width of 2.50 m for all publicly accessible parking spaces on account of the increasing size of cars."
+   },
+   {
+    "quote": "The Research Company for Roads and Traffic (FGSV), however, recommends a minimum width of 2.50 m for all publicly accessible parking spaces on account of the increasing size of cars.",
+    "page_id": "page_0404",
+    "book_page": "392",
+    "chapter": "Transport",
+    "subheadings": [
+     "PARKING FACILITIES"
+    ],
+    "source": "body",
+    "context": "For multi-storey car parks the requirements for the layout of parking spaces and access are in principle the same as for open car parks. The Garage (multi-storey car park) Regulations require a minimum width for parking spaces of 2.30 m. The Research Company for Roads and Traffic (FGSV), however, recommends a minimum width of 2.50 m for all publicly accessible parking spaces on account of the increasing size of cars."
+   },
+   {
+    "quote": "90° parking, access 5.50 m wide, parking space 2.50 m wide",
+    "page_id": "page_0402",
+    "book_page": "390",
+    "chapter": "Transport",
+    "subheadings": [
+     "PARKING FACILITIES"
+    ],
+    "source": "caption",
+    "context": "90° parking, access 5.50 m wide, parking space 2.50 m wide"
+   },
+   {
+    "quote": "Parking space size (2.50 × 5.00 m = 12.50 m²)",
+    "page_id": "page_0412",
+    "book_page": "400",
+    "chapter": "Transport",
+    "subheadings": [
+     "PARKING FACILITIES"
+    ],
+    "source": "body",
+    "context": "Important regulations and technical rules:\nIn addition to the relevant building regulations:\nWHG (water management law) applies, on account of the storage of fuel and associated water, fire and explosion hazards.\nVAwS (regulation of requirements for the handling of substances harmful to groundwater) mostly concerns specialist firms and testing duties.\nTRwS (technical rules for substances harmful to water)\nTRbF (technical rules for flammable liquids)\nPetrol stations must be erected by certified specialist firms (WHG).\nState regulations control:\n1. Parking space size (2.50 × 5.00 m = 12.50 m²)\n2. Required number of parking spaces (e.g. depending on the extent of premises, and the number of petrol pumps and people working at the station).\n3. Required queuing space for automatic car wash (e.g. area sufficient for 50% of the hourly washing capacity).\nFor design purposes, dimensions specific to cars should be considered:\nTurning circle:    car 12.50 m    HGV 26.00 m\nVehicle width:    car 1.85 m    HGV 2.50 m\nVehicle length:   car 5.00 m    HGV 18.00 m with trailer\nThese data can be used to derive the dimensions of pump islands and passage widths → 3 – 5.\n\nThe paving around the petrol pumps must be impervious to liquids"
+   }
+  ]
+ },
+ {
+  "kid": "K06",
+  "topic": "场地与体量",
+  "title": "建筑密度与容积率",
+  "summary": "土地利用条例规定的规划法建设用途度量参数：建筑密度（plot coverage ratio）为可允许的建成面积占地块面积之比，建成面积包括建筑平面面积及车库、停车位及其通道、附属面积和地块下方的地下设施；容积率（floor-area ratio）为可允许的楼层面积（所有完整楼层外轮廓尺寸，不含附属面积、阳台、凉廊、露台及允许建在退距内的构筑物）与地块面积之比。",
+  "priority": 2,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "the plot coverage ratio determines the permissible ratio of built area on the plot (plan area of building including garages, parking places and their access, subsidiary areas... and underground facilities beneath the plot)",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Measures of building use → 1\nThe land use regulation specifies parameters for the measurement of building use in planning law: the plot coverage ratio determines the permissible ratio of built area on the plot (plan area of building including garages, parking places and their access, subsidiary areas... and underground facilities beneath the plot) and the floor-area ratio (determines the permissible ratio of storey area (external dimensions of all full floors, without subsidiary areas..., balconies, loggias, terraces and structures which are permissible inside setback areas) to the plot area.\nThe building mass number represents how many cubic metres of building mass (external dimensions of the building facilities from floor level of the lowest to the ceiling of the highest full storey, including occupied rooms in the intermediate floors with their stairwells, surrounding walls and slabs but without subsidiary rooms..., balconies, loggias, terraces and structures which are permissible inside the setback area under state law) are permissible per square metre of plot area."
+   },
+   {
+    "quote": "the floor-area ratio (determines the permissible ratio of storey area (external dimensions of all full floors, without subsidiary areas..., balconies, loggias, terraces and structures which are permissible inside setback areas) to the plot area.",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Measures of building use → 1\nThe land use regulation specifies parameters for the measurement of building use in planning law: the plot coverage ratio determines the permissible ratio of built area on the plot (plan area of building including garages, parking places and their access, subsidiary areas... and underground facilities beneath the plot) and the floor-area ratio (determines the permissible ratio of storey area (external dimensions of all full floors, without subsidiary areas..., balconies, loggias, terraces and structures which are permissible inside setback areas) to the plot area.\nThe building mass number represents how many cubic metres of building mass (external dimensions of the building facilities from floor level of the lowest to the ceiling of the highest full storey, including occupied rooms in the intermediate floors with their stairwells, surrounding walls and slabs but without subsidiary rooms..., balconies, loggias, terraces and structures which are permissible inside the setback area under state law) are permissible per square metre of plot area."
+   }
+  ]
+ },
+ {
+  "kid": "K09",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "每段梯段步数",
+  "summary": "必要楼梯每段 3–18 步；18 步上限是“应当”性规定。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps",
+    "page_id": "page_0132",
+    "book_page": "120",
+    "chapter": "Building components",
+    "subheadings": [
+     "STAIRS"
+    ],
+    "source": "body",
+    "context": "Various calculations and dimensional requirements for the construction of stairs appear in national building regulations and standards. In the UK, British Standards and the building regulations should be consulted (see Approved Document K). For workplaces, the regulations of the relevant health and safety body are to be observed. According to German standards, residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio, stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21 but legally essential stairs 1.00 m, 17/28, high-rise flats 1.25 m width. Stair width in public buildings is calculated according to the required evacuation time → p. 318 (Stadiums). Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps → 5, landing length = \\( n \\) times length of stride + 1 depth of tread (e.g. riser to tread 17/29 = \\( 1 \times 63 + 29 = 92 \\) cm or \\( 2 \times 63 + 29 = 1.55 \\) m). Doors opening into the stairwell must not obstruct the stair width. The 18-step rule is a 'should' regulation. For stairs intended to be prestigious the requirement to provide landings is mitigated."
+   },
+   {
+    "quote": "The 18-step rule is a 'should' regulation.",
+    "page_id": "page_0132",
+    "book_page": "120",
+    "chapter": "Building components",
+    "subheadings": [
+     "STAIRS"
+    ],
+    "source": "body",
+    "context": "Various calculations and dimensional requirements for the construction of stairs appear in national building regulations and standards. In the UK, British Standards and the building regulations should be consulted (see Approved Document K). For workplaces, the regulations of the relevant health and safety body are to be observed. According to German standards, residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio, stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21 but legally essential stairs 1.00 m, 17/28, high-rise flats 1.25 m width. Stair width in public buildings is calculated according to the required evacuation time → p. 318 (Stadiums). Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps → 5, landing length = \\( n \\) times length of stride + 1 depth of tread (e.g. riser to tread 17/29 = \\( 1 \times 63 + 29 = 92 \\) cm or \\( 2 \times 63 + 29 = 1.55 \\) m). Doors opening into the stairwell must not obstruct the stair width. The 18-step rule is a 'should' regulation. For stairs intended to be prestigious the requirement to provide landings is mitigated."
+   }
+  ]
+ },
+ {
+  "kid": "K12",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "两户以下住宅的楼梯",
+  "summary": "不超过两户的住宅，楼梯可用宽度 ≥ 0.80 m、踏步比 17/28。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio",
+    "page_id": "page_0132",
+    "book_page": "120",
+    "chapter": "Building components",
+    "subheadings": [
+     "STAIRS"
+    ],
+    "source": "body",
+    "context": "Various calculations and dimensional requirements for the construction of stairs appear in national building regulations and standards. In the UK, British Standards and the building regulations should be consulted (see Approved Document K). For workplaces, the regulations of the relevant health and safety body are to be observed. According to German standards, residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio, stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21 but legally essential stairs 1.00 m, 17/28, high-rise flats 1.25 m width. Stair width in public buildings is calculated according to the required evacuation time → p. 318 (Stadiums). Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps → 5, landing length = \\( n \\) times length of stride + 1 depth of tread (e.g. riser to tread 17/29 = \\( 1 \times 63 + 29 = 92 \\) cm or \\( 2 \times 63 + 29 = 1.55 \\) m). Doors opening into the stairwell must not obstruct the stair width. The 18-step rule is a 'should' regulation. For stairs intended to be prestigious the requirement to provide landings is mitigated."
+   }
+  ]
+ },
+ {
+  "kid": "K15",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "楼座、夹层、阳台的护栏高度",
+  "summary": "楼座、夹层、阳台及剧院楼座看台须设护栏，高差 ≥ 1 m 起强制：坠落高度 < 12 m 时 h = 0.90 m；坠落高度 > 12 m 时 h = 1.10 m；工作场所坠落高度 < 12 m 时 h = 1.00 m（图注另称楼梯井宽 ≥ 20 cm 时 > 12 m 亦为 1.00 m）。",
+  "priority": 3,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "Galleries, mezzanines, balconies and circle seating in theatres must have a protective guard rail (height h), compulsory from 1 m height difference:",
+    "page_id": "page_0134",
+    "book_page": "122",
+    "chapter": "Building components",
+    "subheadings": [
+     "STAIRS"
+    ],
+    "source": "body",
+    "context": "Galleries, mezzanines, balconies and circle seating in theatres must have a protective guard rail (height h), compulsory from 1 m height difference:"
+   },
+   {
+    "quote": "drop <12 m, h = 0.90 m",
+    "page_id": "page_0134",
+    "book_page": "122",
+    "chapter": "Building components",
+    "subheadings": [
+     "STAIRS"
+    ],
+    "source": "body",
+    "context": "drop <12 m, h = 0.90 m\ndrop <12 m, h = 1.00 m for workplaces and if the stairwell is at least 20 cm wide, also for over 12 m h."
+   },
+   {
+    "quote": "drop >12 m, h = 1.10 m",
+    "page_id": "page_0134",
+    "book_page": "122",
+    "chapter": "Building components",
+    "subheadings": [
+     "STAIRS"
+    ],
+    "source": "body",
+    "context": "drop >12 m, h = 1.10 m"
+   },
+   {
+    "quote": "drop <12 m, h = 1.00 m for workplaces",
+    "page_id": "page_0134",
+    "book_page": "122",
+    "chapter": "Building components",
+    "subheadings": [
+     "STAIRS"
+    ],
+    "source": "body",
+    "context": "drop <12 m, h = 0.90 m\ndrop <12 m, h = 1.00 m for workplaces and if the stairwell is at least 20 cm wide, also for over 12 m h."
+   }
+  ]
+ },
+ {
+  "kid": "K18",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "电梯候梯区",
+  "summary": "候梯区不得占用楼梯；单台电梯候梯区进深（自井道门墙量起）应等于轿厢进深；无障碍电梯门前活动区不得与其他交通路线和活动区重叠。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "minimum usable depth between shaft door wall and opposing wall, measured in the direction of the depth of the car, should equal the car depth",
+    "page_id": "page_0142",
+    "book_page": "130",
+    "chapter": "Building components",
+    "subheadings": [
+     "LIFTS"
+    ],
+    "source": "body",
+    "context": "The waiting area (lobby) in front of the lift shaft must be laid out and designed so that:\n– lift users entering and leaving the lift do not obstruct each other more than necessary, even if carrying luggage\n– the largest items to be transported by the lift (e.g. prams, wheelchairs, stretchers, coffins, furniture) can be loaded and unloaded without risk of injury to people or damage to the building or the lift, and causing the least possible obstruction to other users.\nWaiting area in front of a single lift:\n– minimum usable depth between shaft door wall and opposing wall, measured in the direction of the depth of the car, should equal the car depth → 2.\n– minimum usable area should equal the product of lift car depth and shaft width.\nWaiting area in front of adjacent lifts:\n– minimum usable depth between shaft door wall and opposing wall, measured in the direction of the depth of the car, should equal the depth of the deepest car."
+   },
+   {
+    "quote": "This area must not overlap with other traffic routes and movement areas.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "Lifts\nCars of lifts must have a min. clear width of 1.10 m and a clear depth of 1.40 m. The movement area in front of the doors must be as large as the floor area of the car, but min. 1.50 m wide and 1.50 m deep → 6. This area must not overlap with other traffic routes and movement areas."
+   },
+   {
+    "quote": "Provide sufficient space for waiting and queuing → p. 130 which must not infringe on stairs.",
+    "page_id": "page_0140",
+    "book_page": "128",
+    "chapter": "Building components",
+    "subheadings": [
+     "LIFTS"
+    ],
+    "source": "body",
+    "context": "For all buildings, lifts should normally be positioned at the source of traffic flow. Provide sufficient space for waiting and queuing → p. 130 which must not infringe on stairs. Carefully plan the connection to the traffic routes. There are two different drive systems for lifts:\n1. Traction sheave drive (for cable lifts) → ①\n2. Hydraulic lifts → ② – ③"
+   }
+  ]
+ },
+ {
+  "kid": "K21",
+  "topic": "门",
+  "title": "洞口尺寸 ≠ 净通行宽度",
+  "summary": "门的结构洞口/外形尺寸和净通行宽度不同，要扣除门框等构造厚度。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "difference between structural opening and clear pass-through dimension",
+    "page_id": "page_0126",
+    "book_page": "114",
+    "chapter": "Building components",
+    "subheadings": [
+     "DOORS"
+    ],
+    "source": "body",
+    "context": "Frame construction\nIn the specification of a classic frame construction, in addition to the consideration of the differing constructional thicknesses (difference between structural opening and clear pass-through dimension), the different variants of rebated frame (UK) or rebated door and frame (German) have to be taken into account, together with the location of the door in the wall. For plain doors in rebated frames → 10, the quality of construction is important, because inaccuracies in the frame or in hanging the door will immediately be clearly visible. The joint between frame and wall surface can only remain in order in the long term if a shadow joint is specified, because otherwise the transition from wall to door frame will become disarranged with the first redecoration at the latest. Architraves can only solve this problem until the first redecoration."
+   }
+  ]
+ },
+ {
+  "kid": "K24",
+  "topic": "门",
+  "title": "紧急出口的门型",
+  "summary": "紧急出口处不允许使用推拉门和旋转门，因为危险情况下它们可能堵塞出口；旋转门通行能力较低，高峰时门扇可折叠推到一侧（图示有带附加紧急出口的旋转门示例）。",
+  "priority": 2,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "Sliding doors and revolving doors are not permissible at emergency exits, which they can block in circumstances of danger.",
+    "page_id": "page_0125",
+    "book_page": "113",
+    "chapter": "Building components",
+    "subheadings": [
+     "DOORS"
+    ],
+    "source": "body",
+    "context": "Sliding doors and revolving doors are not permissible at emergency exits, which they can block in circumstances of danger."
+   },
+   {
+    "quote": "Because revolving doors can cope with relatively little through traffic, the door leaves can be folded at peak times and pushed to the side.",
+    "page_id": "page_0022",
+    "book_page": "10",
+    "chapter": "Basics",
+    "subheadings": [
+     "DRAWINGS"
+    ],
+    "source": "body",
+    "context": "Revolving doors replace wind lobbies → 21 – 23 and offer an opening without draughts. Because revolving doors can cope with relatively little through traffic, the door leaves can be folded at peak times and pushed to the side."
+   },
+   {
+    "quote": "Revolving door with additional emergency exits",
+    "page_id": "page_0127",
+    "book_page": "115",
+    "chapter": "Building components",
+    "subheadings": [
+     "DOORS"
+    ],
+    "source": "caption",
+    "context": "6 Revolving door with additional emergency exits"
+   }
+  ]
+ },
+ {
+  "kid": "K27",
+  "topic": "无障碍",
+  "title": "无障碍：无台阶通达与公众可达建筑的适用范围",
+  "summary": "按无障碍原则设计的建筑，所有楼层须无台阶可达（即通过电梯或坡道）。另按 MBO §50，公众可达建筑面向公众的部分须能供残障人士、老人和带小孩的人无需他人帮助按用途进出使用，尤其适用于文化、教育、体育、休闲和医疗设施，办公、行政建筑和法院，商业和餐饮场所，停车场、车库和厕所。",
+  "priority": 3,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "All levels of buildings designed in accordance with the principles of accessibility must be accessible without steps, i.e. using a lift or a ramp.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "Accessibility without steps\nAll levels of buildings designed in accordance with the principles of accessibility must be accessible without steps, i.e. using a lift or a ramp."
+   },
+   {
+    "quote": "This requirement applies notably to cultural, educational, sport, leisure and health facilities, offices, administration buildings and courts, sales and catering establishments, parking, garages and toilets.",
+    "page_id": "page_0037",
+    "book_page": "25",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "(2) Buildings which are publicly accessible, must in their parts serving the general public be capable of being accessed and used, according to their purpose, by disabled people, old people and people with small children, without outside help. This requirement applies notably to cultural, educational, sport, leisure and health facilities, offices, administration buildings and courts, sales and catering establishments, parking, garages and toilets."
+   },
+   {
+    "quote": "This requirement applies notably to cultural, educational, sport, leisure and health facilities, offices, administration buildings and courts",
+    "page_id": "page_0037",
+    "book_page": "25",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "(2) Buildings which are publicly accessible, must in their parts serving the general public be capable of being accessed and used, according to their purpose, by disabled people, old people and people with small children, without outside help. This requirement applies notably to cultural, educational, sport, leisure and health facilities, offices, administration buildings and courts, sales and catering establishments, parking, garages and toilets."
+   }
+  ]
+ },
+ {
+  "kid": "K30",
+  "topic": "无障碍",
+  "title": "无障碍电梯",
+  "summary": "电梯轿厢净宽 ≥ 1.10 m、净深 ≥ 1.40 m；门前活动区 ≥ 1.50 × 1.50 m。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Cars of lifts must have a min. clear width of 1.10 m and a clear depth of 1.40 m.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "Lifts\nCars of lifts must have a min. clear width of 1.10 m and a clear depth of 1.40 m. The movement area in front of the doors must be as large as the floor area of the car, but min. 1.50 m wide and 1.50 m deep → 6. This area must not overlap with other traffic routes and movement areas."
+   },
+   {
+    "quote": "The movement area in front of the doors must be as large as the floor area of the car, but min. 1.50 m wide and 1.50 m deep",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "Lifts\nCars of lifts must have a min. clear width of 1.10 m and a clear depth of 1.40 m. The movement area in front of the doors must be as large as the floor area of the car, but min. 1.50 m wide and 1.50 m deep → 6. This area must not overlap with other traffic routes and movement areas."
+   }
+  ]
+ },
+ {
+  "kid": "K33",
+  "topic": "无障碍",
+  "title": "长走廊轮椅会车位",
+  "summary": "长于 15 m 的走廊和通道须设宽、深均 ≥ 1.80 m 的两轮椅会车位。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Corridors and routes longer than 15 m must have a passing place for two wheelchair users of at least 1.80 m width and depth.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "Corridors and meeting areas\nCorridors and routes longer than 15 m must have a passing place for two wheelchair users of at least 1.80 m width and depth."
+   }
+  ]
+ },
+ {
+  "kid": "K36",
+  "topic": "无障碍",
+  "title": "轮椅住宅的起居室",
+  "summary": "含就餐区的起居室最小面积：1 人 22 m²、2–4 人 24 m²、5 人 26 m²、6 人 28 m²；1–2 人户最小房间宽度 3.75 m。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "For a living room with an eating area, the minimum floor area should be: in a flat for one person 22 m², for 2–4 people 24 m², for five people 26 m² and for six people 28 m²; minimum room width 3.75 m (1–2 person household).",
+    "page_id": "page_0036",
+    "book_page": "24",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "Living area\nAdequate freedom of movement for wheelchair users is important in living rooms. There should also be room for at least two further wheelchair users as visitors. For a living room with an eating area, the minimum floor area should be: in a flat for one person 22 m², for 2–4 people 24 m², for five people 26 m² and for six people 28 m²; minimum room width 3.75 m (1–2 person household)."
+   }
+  ]
+ },
+ {
+  "kid": "K39",
+  "topic": "疏散与防火",
+  "title": "疏散窗",
+  "summary": "作为疏散路线的窗，净开口 ≥ 0.9 × 1.2 m，窗台高 ≤ 1.2 m。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "If the window serves as an escape route, it must have a clear opening of at least 0.9 × 1.2 m and a sill height of max. 1.2 m above floor level.",
+    "page_id": "page_0109",
+    "book_page": "97",
+    "chapter": "Building components",
+    "subheadings": [
+     "WINDOWS"
+    ],
+    "source": "body",
+    "context": "The window, as an element built into the wall, has essential functions apart from just closing the opening. It controls the level of natural lighting, the supply and extraction of air to and from the room, and the view out for connection with the world. These functions can also be fulfilled by separate elements: overhead lights, ventilation flaps and shop windows, respectively.\nThe size and location of windows in rooms, in addition to the requirements under building regulations and the rules for daylight in interiors (see Daylight → pp. 488 ff.), are determined above all by architectural considerations. Their external impact has a decisive influence on the appearance of the façade. Important factors are: the location in the wall, with internal windows emphasising the wall depth and external windows allowing the wall to present as a surface; the proportions of width to height; the ratio of construction thickness to glass area (visible frame, casements and possibly glazing bar widths); and the relationship to other façade elements (which is often neglected when replacing windows).\nIn the interior, windows are responsible for light direction, which is essential for the architectural effect of a room. Most decisive is the location on plan, which may have to be supplemented by sun shading equipment or light directing glass. The type of opening determines the functional quality as a ventilation element. How far do the casements open into the room? Is the window sill still usable when the window is open? (Tilted windows are not sufficient for through ventilation! They ensure only the slow cooling of a room.) There may also be specific requirements for fire protection or for resistance against break-in or damage. Resistance classes → pp. 107, 118. If the window serves as an escape route, it must have a clear opening of at least 0.9 × 1.2 m and a sill height of max. 1.2 m above floor level.\nIn the Netherlands, regulations stipulate the sizes of windows in relation to the angle of incidence of the light.\n\nRefurbishment"
+   }
+  ]
+ },
+ {
+  "kid": "K42",
+  "topic": "疏散与防火",
+  "title": "主楼梯须设在连续封闭的楼梯间",
+  "summary": "主楼梯须设在连续封闭的楼梯间内，连同其通道和通向室外的出口都须能安全用于疏散。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "All main staircases must be enclosed in a continuous stairwell, which is designed and arranged so that, including its access routes and exit to the open air, it can safely be used for escape.",
+    "page_id": "page_0133",
+    "book_page": "121",
+    "chapter": "Building components",
+    "subheadings": [
+     "STAIRS"
+    ],
+    "source": "body",
+    "context": "For determining the dimensions and form of stairs, their overall functional and design purpose is just as important as the relationships described above. Not just changing level is important, but how the level is changed. For outside stairs, low steps are preferable, with dimensions of 12 × 41 to 16 × 30 cm. Stairs in offices or emergency stairs should, in contrast, make it possible to change level quickly. All main staircases must be enclosed in a continuous stairwell, which is designed and arranged so that, including its access routes and exit to the open air, it can safely be used for escape. Exit width should be \\( \\leq \\) stair width."
+   }
+  ]
+ },
+ {
+  "kid": "K45",
+  "topic": "疏散与防火",
+  "title": "高层建筑立面的层间防火",
+  "summary": "高层建筑每层须有高 ≥ 1 m 的 W 90 A 防火窗槛墙，或外挑 ≥ 1.5 m 的 W 90 A 水平构件；全玻璃（含双层）幕墙须特别审批并采用喷淋等措施防止火势窜层。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "In order to avoid fire spreading from one storey to the one above, there must be W 90 A fire-resistant parapets at least 1 m high (fire spreading height).",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "HIGH-RISE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Façade\nIn order to avoid fire spreading from one storey to the one above, there must be W 90 A fire-resistant parapets at least 1 m high (fire spreading height). Alternatively, a W 90 A horizontal building element projecting at least 1.5 m from the façade can be provided. All-glass façades (also double façades) are permitted only with special approvals if particular protection measures (area sprinklers, mist extinguishing systems) can prevent the spread of fire to the next storey → 7."
+   },
+   {
+    "quote": "Alternatively, a W 90 A horizontal building element projecting at least 1.5 m from the façade can be provided.",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "HIGH-RISE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Façade\nIn order to avoid fire spreading from one storey to the one above, there must be W 90 A fire-resistant parapets at least 1 m high (fire spreading height). Alternatively, a W 90 A horizontal building element projecting at least 1.5 m from the façade can be provided. All-glass façades (also double façades) are permitted only with special approvals if particular protection measures (area sprinklers, mist extinguishing systems) can prevent the spread of fire to the next storey → 7."
+   },
+   {
+    "quote": "All-glass façades (also double façades) are permitted only with special approvals if particular protection measures (area sprinklers, mist extinguishing systems) can prevent the spread of fire to the next storey",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "HIGH-RISE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Façade\nIn order to avoid fire spreading from one storey to the one above, there must be W 90 A fire-resistant parapets at least 1 m high (fire spreading height). Alternatively, a W 90 A horizontal building element projecting at least 1.5 m from the façade can be provided. All-glass façades (also double façades) are permitted only with special approvals if particular protection measures (area sprinklers, mist extinguishing systems) can prevent the spread of fire to the next storey → 7."
+   }
+  ]
+ },
+ {
+  "kid": "K48",
+  "topic": "采光、日照、通风与窗",
+  "title": "厨房朝向",
+  "summary": "厨房最好朝东北或西北。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "The location of the kitchen is ideally on the northeast or northwest",
+    "page_id": "page_0161",
+    "book_page": "149",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Location\nThe location of the kitchen is ideally on the northeast or northwest, in the immediate vicinity of the entrance area (short distances for shopping, rubbish etc.), to the (vegetable) garden and the cellar. There should be sensible internal room relationships with the dining room, utility room and larder. It should ideally be possible to see the front door, children’s play area and terrace from the kitchen → ④."
+   }
+  ]
+ },
+ {
+  "kid": "K51",
+  "topic": "采光、日照、通风与窗",
+  "title": "视野：窗宽不小于房间宽 65%",
+  "summary": "为保证向外的视野，窗宽（按毛洞口尺寸）不应小于房间宽度的 65%。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "The minimum window width as a percentage, before finishings, should not be less than 65% of the room width.",
+    "page_id": "page_0507",
+    "book_page": "495",
+    "chapter": "Building services",
+    "subheadings": [
+     "DAYLIGHT"
+    ],
+    "source": "caption",
+    "context": "The minimum window width as a percentage, before finishings, should not be less than 65% of the room width. For larger room depths and a wide angle to adjacent buildings, even a window width of 100% may not be sufficient."
+   }
+  ]
+ },
+ {
+  "kid": "K54",
+  "topic": "采光、日照、通风与窗",
+  "title": "按朝向选择遮阳",
+  "summary": "北向只有六七月清晨有直射阳光，简单的室内遮阳即可；东、西向应用可调遮阳挡低角度阳光；南向窗主要在早春和秋季低太阳时需要有效遮阳，盛夏小挑檐即可。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "On north sides, direct sunshine can only be expected in the mornings in June and July and simple internal systems are sufficient. If the alignment is largely west or east, movable systems should shade the low sun.",
+    "page_id": "page_0512",
+    "book_page": "500",
+    "chapter": "Building services",
+    "subheadings": [
+     "DAYLIGHT"
+    ],
+    "source": "body",
+    "context": "Systems\nSystem selection depends mainly on the compass direction of the window to be protected. On north sides, direct sunshine can only be expected in the mornings in June and July and simple internal systems are sufficient. If the alignment is largely west or east, movable systems should shade the low sun."
+   },
+   {
+    "quote": "South windows need effective shading above all in the early year and autumn, with low sun. In the high summer, slight roof overhangs are sufficient to avoid direct sunshine.",
+    "page_id": "page_0512",
+    "book_page": "500",
+    "chapter": "Building services",
+    "subheadings": [
+     "DAYLIGHT"
+    ],
+    "source": "body",
+    "context": "South windows need effective shading above all in the early year and autumn, with low sun. In the high summer, slight roof overhangs are sufficient to avoid direct sunshine."
+   }
+  ]
+ },
+ {
+  "kid": "K57",
+  "topic": "围护结构与保温",
+  "title": "夹心墙（双叶墙）的外叶与空气层",
+  "summary": "夹心墙由内侧承重叶墙和外侧非承重防护面层组成，外叶最小厚 90 mm，可做空气层、空气层加保温、满填保温或中间抹灰层；空气层宽度至少 40 mm、最多 150 mm。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Cavity walls consist of an inner load-bearing wall and an outer non-load-bearing weather protection facing (minimum thickness 90 mm). They can be built with an air gap, with air gap and thermal insulation, with cavity-filling insulation and with intermediate plaster layer",
+    "page_id": "page_0087",
+    "book_page": "75",
+    "chapter": "Building components",
+    "subheadings": [
+     "WALLS"
+    ],
+    "source": "body",
+    "context": "Cavity walls consist of an inner load-bearing wall and an outer non-load-bearing weather protection facing (minimum thickness 90 mm). They can be built with an air gap, with air gap and thermal insulation, with cavity-filling insulation and with intermediate plaster layer → 7 – 10. The masonry leaves are connected with ties of non-rusting steel. The width of the air gap should be min. 40 mm (max. 150 mm). Vertical expansion joints should be provided in the external leaf and there should also be ventilation openings (e.g. open vertical joints) at the top and bottom, with the openings at the bottom also serving to drain water p. 77 → 3."
+   },
+   {
+    "quote": "The width of the air gap should be min. 40 mm (max. 150 mm).",
+    "page_id": "page_0087",
+    "book_page": "75",
+    "chapter": "Building components",
+    "subheadings": [
+     "WALLS"
+    ],
+    "source": "body",
+    "context": "Cavity walls consist of an inner load-bearing wall and an outer non-load-bearing weather protection facing (minimum thickness 90 mm). They can be built with an air gap, with air gap and thermal insulation, with cavity-filling insulation and with intermediate plaster layer → 7 – 10. The masonry leaves are connected with ties of non-rusting steel. The width of the air gap should be min. 40 mm (max. 150 mm). Vertical expansion joints should be provided in the external leaf and there should also be ventilation openings (e.g. open vertical joints) at the top and bottom, with the openings at the bottom also serving to drain water p. 77 → 3."
+   }
+  ]
+ },
+ {
+  "kid": "K60",
+  "topic": "围护结构与保温",
+  "title": "热阻与传热系数计算",
+  "summary": "单层热阻 R = d/λ（d 以 m 计）；总热阻 1/U = R_si + R + R_se，U 为其倒数；表面空气层热阻只能占 1/U 的有限比例。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Thermal resistance R, unit m^2K/W [m^2hK/kcal] is a property of a layer: R = d/λ (d = layer thickness in m).",
+    "page_id": "page_0483",
+    "book_page": "471",
+    "chapter": "Building services",
+    "subheadings": [
+     "BUILDING PHYSICS"
+    ],
+    "source": "body",
+    "context": "Thermal resistance R, unit m^2K/W [m^2hK/kcal] is a property of a layer: R = d/λ (d = layer thickness in m). The calculation of the thermal resistance is important for the determination of the heat transfer coefficient U → ③ – ④."
+   },
+   {
+    "quote": "Overall resistance 1/U, unit m^2K/W [m^2hK/kcal], is the sum of the resistances of a building element to the transmission of heat (thermal resistances and surface resistances): 1/U = R_{si} + R + R_{se}",
+    "page_id": "page_0483",
+    "book_page": "471",
+    "chapter": "Building services",
+    "subheadings": [
+     "BUILDING PHYSICS"
+    ],
+    "source": "body",
+    "context": "Overall resistance 1/U, unit m^2K/W [m^2hK/kcal], is the sum of the resistances of a building element to the transmission of heat (thermal resistances and surface resistances): 1/U = R_{si} + R + R_{se}"
+   },
+   {
+    "quote": "The surface air film cannot exceed a certain proportion X of the overall resistance 1/U",
+    "page_id": "page_0484",
+    "book_page": "472",
+    "chapter": "Building services",
+    "subheadings": [
+     "BUILDING PHYSICS"
+    ],
+    "source": "body",
+    "context": "But in example → ⑤ condensation is formed on the inner face of the building element, because the proportion of the surface air film is too large. The surface air film cannot exceed a certain proportion X of the overall resistance 1/U → ③."
+   }
+  ]
+ },
+ {
+  "kid": "K63",
+  "topic": "围护结构与保温",
+  "title": "平屋面构造：暖屋面与倒置屋面",
+  "summary": "非通风单层（暖）屋面中承重结构、隔汽层、保温层和防水层构成整体；倒置屋面将防水兼隔汽层直接铺在结构上，闭孔保温板松铺其上并压重固定。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Non-ventilated, single-layer construction ('warm roof'), in which the load-bearing structure, vapour barrier, thermal insulation and waterproofing (including intermediate layers) form a composite element.",
+    "page_id": "page_0104",
+    "book_page": "92",
+    "chapter": "Building components",
+    "subheadings": [
+     "ROOFS"
+    ],
+    "source": "body",
+    "context": "Non-ventilated, single-layer construction ('warm roof'), in which the load-bearing structure, vapour barrier, thermal insulation and waterproofing (including intermediate layers) form a composite element."
+   },
+   {
+    "quote": "or an 'upside-down roof' → 8 (waterproofing and vapour barrier are applied as one layer directly onto the load-bearing construction and the closed-cell insulation is loosely laid on top and secured with a gravel layer)",
+    "page_id": "page_0104",
+    "book_page": "92",
+    "chapter": "Building components",
+    "subheadings": [
+     "ROOFS"
+    ],
+    "source": "body",
+    "context": "This can either be the conventional construction → 10, or an 'upside-down roof' → 8 (waterproofing and vapour barrier are applied as one layer directly onto the load-bearing construction and the closed-cell insulation is loosely laid on top and secured with a gravel layer), or a combination of both construction types (e.g. a 'plus roof'), or with internal insulation → 9."
+   }
+  ]
+ },
+ {
+  "kid": "K66",
+  "topic": "围护结构与保温",
+  "title": "坡屋面保温位置与通风构造",
+  "summary": "坡屋面保温一般为矿棉卷材，铺在椽间和椽下，室内侧设隔汽层；通风屋面在挂瓦下垫层与保温之间另有通风层，需更大椽高且只有在隔汽层和通风都可靠时才有效，因此业内多采用非通风构造。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Thermal insulation is generally in the form of mineral wool roll material and is installed between and under the rafters or as prefabricated insulation elements, sometimes with interlocking, vapour barrier on the room side and battens fixed to the rafters",
+    "page_id": "page_0102",
+    "book_page": "90",
+    "chapter": "Building components",
+    "subheadings": [
+     "ROOFS"
+    ],
+    "source": "body",
+    "context": "Thermal insulation is generally in the form of mineral wool roll material and is installed between and under the rafters or as prefabricated insulation elements, sometimes with interlocking, vapour barrier on the room side and battens fixed to the rafters → 10."
+   },
+   {
+    "quote": "Ventilated roofs require additional rafter depth and work properly only with a correctly installed vapour barrier and functioning roof ventilation. Therefore the building industry commonly prefers unventilated roof construction.",
+    "page_id": "page_0102",
+    "book_page": "90",
+    "chapter": "Building components",
+    "subheadings": [
+     "ROOFS"
+    ],
+    "source": "body",
+    "context": "Ventilated roofs require additional rafter depth and work properly only with a correctly installed vapour barrier and functioning roof ventilation. Therefore the building industry commonly prefers unventilated roof construction."
+   },
+   {
+    "quote": "ventilated roof construction has an additional ventilation gap between underlay and thermal insulation, to remove spray and condensate.",
+    "page_id": "page_0102",
+    "book_page": "90",
+    "chapter": "Building components",
+    "subheadings": [
+     "ROOFS"
+    ],
+    "source": "body",
+    "context": "Building methods\nThermally insulated roofs can be divided into ventilated and non-ventilated construction. In addition to the ventilation space between roof covering and underlay (or lower layer of roof), which is required in both cases, ventilated roof construction has an additional ventilation gap between underlay and thermal insulation, to remove spray and condensate."
+   }
+  ]
+ },
+ {
+  "kid": "K69",
+  "topic": "墙体与构造",
+  "title": "建筑等级与承重墙耐火",
+  "summary": "（书中在垃圾间规定处以括号注明）住宅超过两套或使用面积达 400 m² 的建筑属于建筑等级 3–5。承重及支撑墙、柱在等级 5 的建筑中须为防火（耐火）构造，等级 4 须为高度阻燃，等级 1 和 2 须为阻燃。",
+  "priority": 3,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "buildings with more than two flats or a usable area of 400 m² (building classes 3–5)",
+    "page_id": "page_0476",
+    "book_page": "464",
+    "chapter": "Agriculture",
+    "subheadings": [
+     "SUPPLY AND DISPOSAL"
+    ],
+    "source": "body",
+    "context": "Solid waste can be temporarily stored inside the building. Waste can be stored temporarily inside buildings with more than two flats or a usable area of 400 m² (building classes 3–5) only if the rubbish collection room complies with the following requirements:"
+   },
+   {
+    "quote": "Load-bearing and bracing walls and columns must be constructed fireproof in buildings of class 5, highly fire-retarding in buildings of class 4 and fire-retarding in buildings of classes 1 and 2",
+    "page_id": "page_0526",
+    "book_page": "514",
+    "chapter": "Building services",
+    "subheadings": [
+     "FIRE PROTECTION"
+    ],
+    "source": "body",
+    "context": "Load-bearing and bracing walls and columns must be constructed fireproof in buildings of class 5, highly fire-retarding in buildings of class 4 and fire-retarding in buildings of classes 1 and 2). This does not apply to the uppermost storeys of roof spaces without occupied rooms above them and balconies. In cellars, they have to be constructed fireproof and, in buildings of classes 1 and 2, fire-retarding."
+   }
+  ]
+ },
+ {
+  "kid": "K72",
+  "topic": "墙体与构造",
+  "title": "外墙及外墙饰面的燃烧性能",
+  "summary": "非承重外墙及承重外墙的非承重部分（等级 1–3 除外）须用不燃（至少阻燃）材料；等级 1、2 的建筑可用普通可燃材料（如木材）做外墙饰面，前提是能有效防止火势蔓延到相邻建筑。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Non-load-bearing external walls and non-load-bearing parts of load-bearing external walls are (except for buildings of building classes 1–3) to be constructed of non-combustible (at least fire-retarding) materials.",
+    "page_id": "page_0526",
+    "book_page": "514",
+    "chapter": "Building services",
+    "subheadings": [
+     "FIRE PROTECTION"
+    ],
+    "source": "body",
+    "context": "Non-load-bearing external walls and non-load-bearing parts of load-bearing external walls are (except for buildings of building classes 1–3) to be constructed of non-combustible (at least fire-retarding) materials. External wall claddings, including insulation and support construction, have to be made of flame-resistant materials. For buildings of classes 1 and 2, external wall claddings of normally flammable materials are permissible, if the spread of fire to neighbouring buildings is effectively prevented."
+   },
+   {
+    "quote": "For buildings of classes 1 and 2, external wall claddings of normally flammable materials are permissible, if the spread of fire to neighbouring buildings is effectively prevented.",
+    "page_id": "page_0526",
+    "book_page": "514",
+    "chapter": "Building services",
+    "subheadings": [
+     "FIRE PROTECTION"
+    ],
+    "source": "body",
+    "context": "Non-load-bearing external walls and non-load-bearing parts of load-bearing external walls are (except for buildings of building classes 1–3) to be constructed of non-combustible (at least fire-retarding) materials. External wall claddings, including insulation and support construction, have to be made of flame-resistant materials. For buildings of classes 1 and 2, external wall claddings of normally flammable materials are permissible, if the spread of fire to neighbouring buildings is effectively prevented."
+   }
+  ]
+ },
+ {
+  "kid": "K75",
+  "topic": "居室标准与面积计算",
+  "title": "居住面积计算",
+  "summary": "净高 ≥ 2 m 的部分全额计入，1–2 m 计一半；地下室、车库、办公室等不计。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Floor areas are included in the calculation either completely (for rooms and parts of rooms with a clear ceiling height of at least 2 m), or a half (for rooms and parts of rooms with a clear ceiling height of at least 1 m and less than 2 m)",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Housing area regulations → p. 136\nHousing area regulations apply to calculations of residential area according to the law to promote living space (includes housing subsidies): the living area of a dwelling covers all rooms which belong exclusively to the relevant dwelling, including conservatories, swimming pools (if enclosed on all sides), balconies, loggias, terraces, but not subsidiary rooms (cellars, garages etc:), offices and rooms which do not comply with the building regulations.\nThe floor area of a room is determined from the clear dimensions between the building elements, from the outer face of the element’s cladding (which includes window and door claddings, skirting boards, stoves, ovens, baths, built-in furniture, free-standing installations, movable partitions). The floor area is measured in completed rooms or from a suitable building drawing.\nFloor areas are included in the calculation either completely (for rooms and parts of rooms with a clear ceiling height of at least 2 m), or a half (for rooms and parts of rooms with a clear ceiling height of at least 1 m and less than 2 m) or a quarter (balconies, loggias, terraces etc.)."
+   },
+   {
+    "quote": "but not subsidiary rooms (cellars, garages etc:), offices and rooms which do not comply with the building regulations",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Housing area regulations → p. 136\nHousing area regulations apply to calculations of residential area according to the law to promote living space (includes housing subsidies): the living area of a dwelling covers all rooms which belong exclusively to the relevant dwelling, including conservatories, swimming pools (if enclosed on all sides), balconies, loggias, terraces, but not subsidiary rooms (cellars, garages etc:), offices and rooms which do not comply with the building regulations.\nThe floor area of a room is determined from the clear dimensions between the building elements, from the outer face of the element’s cladding (which includes window and door claddings, skirting boards, stoves, ovens, baths, built-in furniture, free-standing installations, movable partitions). The floor area is measured in completed rooms or from a suitable building drawing.\nFloor areas are included in the calculation either completely (for rooms and parts of rooms with a clear ceiling height of at least 2 m), or a half (for rooms and parts of rooms with a clear ceiling height of at least 1 m and less than 2 m) or a quarter (balconies, loggias, terraces etc.)."
+   },
+   {
+    "quote": "Floor areas are included in the calculation either completely (for rooms and parts of rooms with a clear ceiling height of at least 2 m)",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Housing area regulations → p. 136\nHousing area regulations apply to calculations of residential area according to the law to promote living space (includes housing subsidies): the living area of a dwelling covers all rooms which belong exclusively to the relevant dwelling, including conservatories, swimming pools (if enclosed on all sides), balconies, loggias, terraces, but not subsidiary rooms (cellars, garages etc:), offices and rooms which do not comply with the building regulations.\nThe floor area of a room is determined from the clear dimensions between the building elements, from the outer face of the element’s cladding (which includes window and door claddings, skirting boards, stoves, ovens, baths, built-in furniture, free-standing installations, movable partitions). The floor area is measured in completed rooms or from a suitable building drawing.\nFloor areas are included in the calculation either completely (for rooms and parts of rooms with a clear ceiling height of at least 2 m), or a half (for rooms and parts of rooms with a clear ceiling height of at least 1 m and less than 2 m) or a quarter (balconies, loggias, terraces etc.)."
+   }
+  ]
+ },
+ {
+  "kid": "K78",
+  "topic": "居室标准与面积计算",
+  "title": "DIN 277 面积分类与可出租面积",
+  "summary": "毛面积按外轮廓计算，结构面积是墙柱所占面积，净面积是构件之间的面积，再分为使用、技术和交通面积；可出租面积（GIF）不含楼梯、电梯、紧急出口、设备间和管井。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "The gross floor area is the sum of the plan area of all levels (without usable roof areas), measured between the external dimensions of the surrounding building elements at floor height.",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "The gross floor area is the sum of the plan area of all levels (without usable roof areas), measured between the external dimensions of the surrounding building elements at floor height. The constructional floor area is the sum of the plan area of all surrounding building elements (walls, columns, pillars, chimneys, non-accessible shafts, door openings, niches, apertures) measured between the external dimensions at floor height. The net floor area is the usable floor area between the building elements (without door and window openings, cut-outs and niches) measured at floor level. The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.). The gross built volume is the sum of the floor areas of all levels multiplied by the relevant height (measured between top of floor covering and top of floor covering of the next level, in the basement from the underside of the constructional structural invert in the roof to the top of the roof covering, without external stairs, light wells, roof overhangs, dormer windows, chimneys, etc.). The net built volume is the net floor area multiplied by the relevant clear ceiling height."
+   },
+   {
+    "quote": "The constructional floor area is the sum of the plan area of all surrounding building elements (walls, columns, pillars, chimneys, non-accessible shafts, door openings, niches, apertures) measured between the external dimensions at floor height.",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "The gross floor area is the sum of the plan area of all levels (without usable roof areas), measured between the external dimensions of the surrounding building elements at floor height. The constructional floor area is the sum of the plan area of all surrounding building elements (walls, columns, pillars, chimneys, non-accessible shafts, door openings, niches, apertures) measured between the external dimensions at floor height. The net floor area is the usable floor area between the building elements (without door and window openings, cut-outs and niches) measured at floor level. The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.). The gross built volume is the sum of the floor areas of all levels multiplied by the relevant height (measured between top of floor covering and top of floor covering of the next level, in the basement from the underside of the constructional structural invert in the roof to the top of the roof covering, without external stairs, light wells, roof overhangs, dormer windows, chimneys, etc.). The net built volume is the net floor area multiplied by the relevant clear ceiling height."
+   },
+   {
+    "quote": "The net floor area is the usable floor area between the building elements (without door and window openings, cut-outs and niches) measured at floor level.",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "The gross floor area is the sum of the plan area of all levels (without usable roof areas), measured between the external dimensions of the surrounding building elements at floor height. The constructional floor area is the sum of the plan area of all surrounding building elements (walls, columns, pillars, chimneys, non-accessible shafts, door openings, niches, apertures) measured between the external dimensions at floor height. The net floor area is the usable floor area between the building elements (without door and window openings, cut-outs and niches) measured at floor level. The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.). The gross built volume is the sum of the floor areas of all levels multiplied by the relevant height (measured between top of floor covering and top of floor covering of the next level, in the basement from the underside of the constructional structural invert in the roof to the top of the roof covering, without external stairs, light wells, roof overhangs, dormer windows, chimneys, etc.). The net built volume is the net floor area multiplied by the relevant clear ceiling height."
+   },
+   {
+    "quote": "The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.).",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "The gross floor area is the sum of the plan area of all levels (without usable roof areas), measured between the external dimensions of the surrounding building elements at floor height. The constructional floor area is the sum of the plan area of all surrounding building elements (walls, columns, pillars, chimneys, non-accessible shafts, door openings, niches, apertures) measured between the external dimensions at floor height. The net floor area is the usable floor area between the building elements (without door and window openings, cut-outs and niches) measured at floor level. The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.). The gross built volume is the sum of the floor areas of all levels multiplied by the relevant height (measured between top of floor covering and top of floor covering of the next level, in the basement from the underside of the constructional structural invert in the roof to the top of the roof covering, without external stairs, light wells, roof overhangs, dormer windows, chimneys, etc.). The net built volume is the net floor area multiplied by the relevant clear ceiling height."
+   },
+   {
+    "quote": "The following do not belong to the letting area: stairs, lifts, emergency exits, escape balconies, services rooms, shafts, protection rooms, areas of columns, pillars and separate walls, areas with a clear ceiling height of 1.50 m or less.",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Calculation of commercial letting areas\nThe guidelines for the calculation of commercial letting areas, issued by the Property Industry Research Company (GIF) creates a uniform standard for the determination of leased commercial and office space. The leased space is calculated from two types of area:\n1. Areas with exclusive right of use, individually listed in types of area according to DIN 277: basement garage with number of places (see above), indirectly usable areas (loggias, balconies, atriums, areas with room heights between 1.50 m and 2.30 m.\n2. Areas with communal right of use, individually listed as: rooms for communal use (WCs/bathrooms, staff rooms, etc.) and communal traffic areas (entrance halls, corridors, etc.).\nThe following do not belong to the letting area: stairs, lifts, emergency exits, escape balconies, services rooms, shafts, protection rooms, areas of columns, pillars and separate walls, areas with a clear ceiling height of 1.50 m or less.\nThe relevant areas are measured at floor level between solid walls (including skirtings and fittings built in on site (radiators etc.), and room heights are measured between top of finished floor level and underside of the (suspended) ceiling."
+   },
+   {
+    "quote": "2. Areas with communal right of use, individually listed as: rooms for communal use (WCs/bathrooms, staff rooms, etc.) and communal traffic areas (entrance halls, corridors, etc.).",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Calculation of commercial letting areas\nThe guidelines for the calculation of commercial letting areas, issued by the Property Industry Research Company (GIF) creates a uniform standard for the determination of leased commercial and office space. The leased space is calculated from two types of area:\n1. Areas with exclusive right of use, individually listed in types of area according to DIN 277: basement garage with number of places (see above), indirectly usable areas (loggias, balconies, atriums, areas with room heights between 1.50 m and 2.30 m.\n2. Areas with communal right of use, individually listed as: rooms for communal use (WCs/bathrooms, staff rooms, etc.) and communal traffic areas (entrance halls, corridors, etc.).\nThe following do not belong to the letting area: stairs, lifts, emergency exits, escape balconies, services rooms, shafts, protection rooms, areas of columns, pillars and separate walls, areas with a clear ceiling height of 1.50 m or less.\nThe relevant areas are measured at floor level between solid walls (including skirtings and fittings built in on site (radiators etc.), and room heights are measured between top of finished floor level and underside of the (suspended) ceiling."
+   }
+  ]
+ },
+ {
+  "kid": "K81",
+  "topic": "住宅·户型组织与入户",
+  "title": "户外空间的连接",
+  "summary": "户外空间一般与起居、工作和就餐空间相连；有多个户外空间时也可接卧室、厨房。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "They generally have a spatial relationship to living and working areas and dining rooms",
+    "page_id": "page_0167",
+    "book_page": "155",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "They generally have a spatial relationship to living and working areas and dining rooms (with more than one open area, this can also include bedrooms, kitchens etc.). Good orientation (compass direction, view), sufficient size and protection from overlooking, noise and weather (wind, rain, strong sunshine) are decisive for the quality of open areas."
+   },
+   {
+    "quote": "with more than one open area, this can also include bedrooms, kitchens etc.",
+    "page_id": "page_0167",
+    "book_page": "155",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "They generally have a spatial relationship to living and working areas and dining rooms (with more than one open area, this can also include bedrooms, kitchens etc.). Good orientation (compass direction, view), sufficient size and protection from overlooking, noise and weather (wind, rain, strong sunshine) are decisive for the quality of open areas."
+   }
+  ]
+ },
+ {
+  "kid": "K84",
+  "topic": "住宅·户型组织与入户",
+  "title": "分组式平面与中廊式平面",
+  "summary": "分组式平面（20 世纪初出现）将户内分为两个房间组：起居区（起居室、厨房和就餐区）和睡眠区（卧室和卫生间）。中廊式平面（19 世纪末城市公寓的典型平面）沿两侧立面布置房间，所有房间都可独立进入和使用。",
+  "priority": 3,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "the separation of areas inside the apartment into two 'room groups': the living areas (living room, kitchen and dining area) and the sleeping area (bedrooms and bathrooms)",
+    "page_id": "page_0157",
+    "book_page": "145",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "FLOOR PLANS"
+    ],
+    "source": "body",
+    "context": "Grouped room floor plan → ②\nThe idea of the grouped room floor plan developed at the start of the 20th century and is based on the separation of areas inside the apartment into two 'room groups': the living areas (living room, kitchen and dining area) and the sleeping area (bedrooms and bathrooms)."
+   },
+   {
+    "quote": "All rooms can be accessed and used separately.",
+    "page_id": "page_0157",
+    "book_page": "145",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "FLOOR PLANS"
+    ],
+    "source": "body",
+    "context": "Central corridor plan → ①\nThe central corridor plan is the classic floor plan of late 19th-century urban apartment blocks. The rooms are arranged along the two façades and are separated by the (load-bearing) middle wall and the central corridor parallel to it. All rooms can be accessed and used separately. Common and individual areas can be arranged on opposing sides of the façade and related to the particular qualities of the specific side of the building."
+   }
+  ]
+ },
+ {
+  "kid": "K87",
+  "topic": "住宅·户型组织与入户",
+  "title": "防风门斗",
+  "summary": "入口直通室外时，门厅应以内门围合（防风门斗）；天气不利时建议设门斗；从楼梯间进户时，楼梯间本身即可挡风。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "if the entrance is into a stair shaft, then this can provide wind protection",
+    "page_id": "page_0158",
+    "book_page": "146",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Entrance\nThe entrance is the face of a house, where visitors gain their first impression. A multitude of functions have to be practically arranged and appropriately designed → ①. If the entrance is into the open air, it should be protected from the prevailing wind direction if possible. If weather conditions are unfavourable, a lobby is also recommended to prevent wind blowing through → p. 136 (if the entrance is into a stair shaft, then this can provide wind protection)."
+   },
+   {
+    "quote": "The entrance hall should be enclosed where the entrance leads directly to the open air with an inner door (wind lobby function).",
+    "page_id": "page_0159",
+    "book_page": "147",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Entrance hall\nThe entrance hall should be enclosed where the entrance leads directly to the open air with an inner door (wind lobby function). It should also offer sufficient room for a lot of moving around → ④. This is where reception, greeting, taking off and putting on coats, and taking leave all take place, but also offers the first orientation for the visitor → ① – ③. Countless objects therefore have to be arranged practically yet tidily in this limited space → ⑤, ⑥. The most important communal areas like the kitchen, WC and staircase should be directly accessible from the entrance hall."
+   },
+   {
+    "quote": "If weather conditions are unfavourable, a lobby is also recommended to prevent wind blowing through",
+    "page_id": "page_0158",
+    "book_page": "146",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Entrance\nThe entrance is the face of a house, where visitors gain their first impression. A multitude of functions have to be practically arranged and appropriately designed → ①. If the entrance is into the open air, it should be protected from the prevailing wind direction if possible. If weather conditions are unfavourable, a lobby is also recommended to prevent wind blowing through → p. 136 (if the entrance is into a stair shaft, then this can provide wind protection)."
+   }
+  ]
+ },
+ {
+  "kid": "K90",
+  "topic": "住宅·户型组织与入户",
+  "title": "一梯一户限四层（无电梯）；一梯三户",
+  "summary": "一梯一户交通面积占比高、较不经济（“叠摞的联排”/城市别墅），不设电梯时一般限四层；一梯三户兼顾居住品质与经济性。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "There is access to only one flat on each floor. This is relatively uneconomic due to the high proportion of the total floor area taken up for access, but can often give the feeling of living in a 'stacked terrace'. The flats are also marketed as town villas. There is a general limitation to four floors without a lift.",
+    "page_id": "page_0154",
+    "book_page": "142",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ACCESS"
+    ],
+    "source": "body",
+    "context": "One flat per floor → ①\nThere is access to only one flat on each floor. This is relatively uneconomic due to the high proportion of the total floor area taken up for access, but can often give the feeling of living in a 'stacked terrace'. The flats are also marketed as town villas. There is a general limitation to four floors without a lift."
+   },
+   {
+    "quote": "Three flats per floor offers a favourable combination of residential quality and value for money.",
+    "page_id": "page_0154",
+    "book_page": "142",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ACCESS"
+    ],
+    "source": "body",
+    "context": "Three flats per floor offers a favourable combination of residential quality and value for money. This layout is also suitable for corner buildings → ③. Flats with differing numbers of rooms can be arranged on each floor (e.g. 2-, 3- and 4-room flats). Four flats per floor offers an adequate combination of residential quality and value for money if the floor plans are designed appropriately. In particular the so-called point houses → ⑤ + ⑦ enable differentiated orientation of flats on each floor."
+   }
+  ]
+ },
+ {
+  "kid": "K93",
+  "topic": "住宅·户型组织与入户",
+  "title": "每户必备厨房与储藏间",
+  "summary": "按建筑法规，每套住宅（独户住宅或公寓）至少要有一个厨房或小厨房，并须配备足够大的储藏间。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "According to the building regulations, every house or flat must have at least one kitchen or kitchenette for cooking.",
+    "page_id": "page_0161",
+    "book_page": "149",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "The kitchen is a workplace inside the home and at the same time an important living room and meeting point for the occupants and their guests, with various relationships to other areas of the house. According to the building regulations, every house or flat must have at least one kitchen or kitchenette for cooking."
+   },
+   {
+    "quote": "The building regulations require that every flat or house be provided with a sufficiently large storeroom.",
+    "page_id": "page_0174",
+    "book_page": "162",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Storerooms\nStorerooms are used for keeping and storing cleaning equipment, tools, cleaning agents, shopping baskets, and bulky items like bags, suitcases, washing baskets and stepladders. Sufficiently large storerooms, particularly in flats, make a considerable contribution to comfort. The building regulations require that every flat or house be provided with a sufficiently large storeroom."
+   }
+  ]
+ },
+ {
+  "kid": "K96",
+  "topic": "住宅·厨房与就餐",
+  "title": "开放式厨房",
+  "summary": "开放式厨房需良好通风和排烟，以免油烟影响起居和就餐区。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Open kitchens require good ventilation and extraction in order not to impair the living and dining room areas with cooking smells.",
+    "page_id": "page_0162",
+    "book_page": "150",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Modern kitchen designs are moving away from the fitted kitchen. The kitchen area is seen as an ensemble of independent objects developed in each case from formal and functional conditions, which are grouped like pieces of furniture in an (ideally generous) residential room. Open kitchens require good ventilation and extraction in order not to impair the living and dining room areas with cooking smells. In many cases, a mobile divider is to be recommended, for example using a curtain → 9."
+   }
+  ]
+ },
+ {
+  "kid": "K99",
+  "topic": "住宅·厨房与就餐",
+  "title": "餐桌尺寸与就餐人数",
+  "summary": "每人约需 60 × 40 cm 桌面，桌子中间另留 20 cm 放餐具；就餐区至少容纳 4 人；圆餐桌直径至少 0.90 m，最好 1.10–1.25 m。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "It should always offer space for at least 4 people.",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Minimum requirements\nThe dining area should be laid out to accommodate the anticipated size of the household. It should always offer space for at least 4 people."
+   },
+   {
+    "quote": "In order to be able to eat comfortably, a person needs a table area of approx. 60 × 40 cm",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Equipment and space requirements\nIn order to be able to eat comfortably, a person needs a table area of approx. 60 × 40 cm → ①. This results in sufficient distance from a neighbour and room for a complete place setting. The centre of the table should have a 20 cm strip for plates, pots and bowls."
+   },
+   {
+    "quote": "The centre of the table should have a 20 cm strip for plates, pots and bowls.",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Equipment and space requirements\nIn order to be able to eat comfortably, a person needs a table area of approx. 60 × 40 cm → ①. This results in sufficient distance from a neighbour and room for a complete place setting. The centre of the table should have a 20 cm strip for plates, pots and bowls."
+   },
+   {
+    "quote": "A comfortable round dining table has a diameter of min. 0.90 m, though 1.10–1.25 m would be preferable.",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "A comfortable round dining table has a diameter of min. 0.90 m, though 1.10–1.25 m would be preferable."
+   }
+  ]
+ },
+ {
+  "kid": "K102",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "卫生间",
+  "summary": "每户至少一个卫生间（含浴缸/淋浴和厕所的独立房间）；大户型宜浴厕分设或加客用 WC；卫生间通常紧邻卧室。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "according to building regulations, belongs to the minimum equipment of a flat or house.",
+    "page_id": "page_0172",
+    "book_page": "160",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "A bathroom is defined as an independent room with bath/shower and toilet and, according to building regulations, belongs to the minimum equipment of a flat or house. In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided. The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3). The bathroom is normally next to the bedroom → ⑤ – ⑥, ⑧ – ⑩, although it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft → ⑧ – ⑨."
+   },
+   {
+    "quote": "The bathroom is normally next to the bedroom",
+    "page_id": "page_0172",
+    "book_page": "160",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "A bathroom is defined as an independent room with bath/shower and toilet and, according to building regulations, belongs to the minimum equipment of a flat or house. In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided. The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3). The bathroom is normally next to the bedroom → ⑤ – ⑥, ⑧ – ⑩, although it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft → ⑧ – ⑨."
+   },
+   {
+    "quote": "A bathroom is defined as an independent room with bath/shower and toilet",
+    "page_id": "page_0172",
+    "book_page": "160",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "A bathroom is defined as an independent room with bath/shower and toilet and, according to building regulations, belongs to the minimum equipment of a flat or house. In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided. The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3). The bathroom is normally next to the bedroom → ⑤ – ⑥, ⑧ – ⑩, although it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft → ⑧ – ⑨."
+   },
+   {
+    "quote": "In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided.",
+    "page_id": "page_0172",
+    "book_page": "160",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "A bathroom is defined as an independent room with bath/shower and toilet and, according to building regulations, belongs to the minimum equipment of a flat or house. In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided. The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3). The bathroom is normally next to the bedroom → ⑤ – ⑥, ⑧ – ⑩, although it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft → ⑧ – ⑨."
+   }
+  ]
+ },
+ {
+  "kid": "K105",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "衣柜的位置与通风",
+  "summary": "衣柜用于存放衣物、床品、鞋和箱子，通常设在卧室；步入式衣帽间需要适当通风。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "They serve to store (larger) items of clothing, linen, shoes and suitcases, and are normally situated in the bedroom.",
+    "page_id": "page_0171",
+    "book_page": "159",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Details and fitting out\nWardrobes and linen cupboards are an essential part of fitting out a home. They serve to store (larger) items of clothing, linen, shoes and suitcases, and are normally situated in the bedroom."
+   },
+   {
+    "quote": "Walk-in wardrobes also require appropriate ventilation",
+    "page_id": "page_0171",
+    "book_page": "159",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "When wardrobes are sited along external walls, care should be taken that the thermal insulation is adequate and that ventilation is provided. Walk-in wardrobes also require appropriate ventilation → 4."
+   }
+  ]
+ },
+ {
+  "kid": "K108",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "卫生间类型",
+  "summary": "卫生间分四类：（客用）WC＝WC＋洗手盆；淋浴间＝淋浴＋洗手盆；浴室＝浴缸＋洗手盆＋WC；完整浴室＝浴缸＋淋浴＋洗手盆＋WC。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "The basic bathroom categories are: (guest) WCs with WC and washbasin → 3 - 4, shower rooms with shower and basin → 5 - 6, bathrooms with bath, washbasin and WC → 7 - 8, full bathrooms with bath, shower, washbasin and WC → 10.",
+    "page_id": "page_0173",
+    "book_page": "161",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "The basic bathroom categories are: (guest) WCs with WC and washbasin → 3 - 4, shower rooms with shower and basin → 5 - 6, bathrooms with bath, washbasin and WC → 7 - 8, full bathrooms with bath, shower, washbasin and WC → 10."
+   }
+  ]
+ },
+ {
+  "kid": "K111",
+  "topic": "办公",
+  "title": "办公楼室内净高",
+  "summary": "办公楼（按 Vst 规定）室内净高 2.75 m（便于日后加设架空地板和较深吊顶）；以坐姿工作为主时可降低 25 cm，但净高不低于 2.50 m；走廊和卫生设施允许为 2.30 m。（另：工业与工商建筑一章给出面积大于 100 m² 的工作间净高参考值 3.00 m。）",
+  "priority": 3,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "guideline 3.00 m for working rooms larger than 100 m^2",
+    "page_id": "page_0278",
+    "book_page": "266",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Construction, spans, room heights\nRoom heights should be determined depending on building depth and working room height (guideline 3.00 m for working rooms larger than 100 m^2)."
+   },
+   {
+    "quote": "Ceiling height 2.75 m according to Vst regulation",
+    "page_id": "page_0255",
+    "book_page": "243",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Structure – influence of construction on the layout of offices → ① – ④. Construction proposals for the cross-sections of two-row office buildings with the following loading assumptions: normal 5 KN/m², additional 2 KN/m² for screed (8 cm for floor duct and supply connections).\nCeiling height 2.75 m according to Vst regulation (enables the later installation of raised floor and deeper suspended ceilings). For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear. Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs). According to Kahl (→ refs), the cost-effectiveness of a structure is less dependent on the optimisation of the individual components (e.g. pre-cast elements), and much more on their integration into a functional building. Differentiation between longitudinal and transverse spanning systems → ① – ④.\nConstructive scope for decision-making via the example of a reinforced concrete slab with 6.50 m span. Criteria: almost identical costs; higher weight has influence on costs for load transfer and foundations; thicker slab has advantages through greater stiffness under differing loading (box-outs, spreader beams, point loads, various spans, various floor constructions).\nRibbed slabs: Only economical over longer spans (less self-weight, higher labour costs for formwork). Cutting through the ribs is not possible, due to lack of space. Supporting beams have the same soffit level.\nSlab beams (double T or Pi-slabs): These are structurally advantageous for long spans. Installation should run parallel to the web; crossing runs should be carried out in the corridor → ① – ④. The façade plane can lie behind, between or in front of the structural plane. Greatest variability with separation of construction and external envelope. Layout of columns, front face of façade, back face of façade, in front or behind, have no influence on the compartmentalisation of the façade or the division arrangement (grid, corner detail).\nInternal columns → p. 240 ④ A–D: If the slab cantilevers with a cantilever of c = 1/5 L–1/3 L, the span is economical. Bracing through walls acting as deep beams, storey frames and the provision of solid access cores and end-fixed side zones.\nBuilding the walls: Solid partition walls can replace columns and supporting beams, or can be considered as deep beams to"
+   },
+   {
+    "quote": "Ceiling height 2.75 m according to Vst regulation (enables the later installation of raised floor and deeper suspended ceilings).",
+    "page_id": "page_0255",
+    "book_page": "243",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Structure – influence of construction on the layout of offices → ① – ④. Construction proposals for the cross-sections of two-row office buildings with the following loading assumptions: normal 5 KN/m², additional 2 KN/m² for screed (8 cm for floor duct and supply connections).\nCeiling height 2.75 m according to Vst regulation (enables the later installation of raised floor and deeper suspended ceilings). For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear. Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs). According to Kahl (→ refs), the cost-effectiveness of a structure is less dependent on the optimisation of the individual components (e.g. pre-cast elements), and much more on their integration into a functional building. Differentiation between longitudinal and transverse spanning systems → ① – ④.\nConstructive scope for decision-making via the example of a reinforced concrete slab with 6.50 m span. Criteria: almost identical costs; higher weight has influence on costs for load transfer and foundations; thicker slab has advantages through greater stiffness under differing loading (box-outs, spreader beams, point loads, various spans, various floor constructions).\nRibbed slabs: Only economical over longer spans (less self-weight, higher labour costs for formwork). Cutting through the ribs is not possible, due to lack of space. Supporting beams have the same soffit level.\nSlab beams (double T or Pi-slabs): These are structurally advantageous for long spans. Installation should run parallel to the web; crossing runs should be carried out in the corridor → ① – ④. The façade plane can lie behind, between or in front of the structural plane. Greatest variability with separation of construction and external envelope. Layout of columns, front face of façade, back face of façade, in front or behind, have no influence on the compartmentalisation of the façade or the division arrangement (grid, corner detail).\nInternal columns → p. 240 ④ A–D: If the slab cantilevers with a cantilever of c = 1/5 L–1/3 L, the span is economical. Bracing through walls acting as deep beams, storey frames and the provision of solid access cores and end-fixed side zones.\nBuilding the walls: Solid partition walls can replace columns and supporting beams, or can be considered as deep beams to"
+   },
+   {
+    "quote": "For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear.",
+    "page_id": "page_0255",
+    "book_page": "243",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Structure – influence of construction on the layout of offices → ① – ④. Construction proposals for the cross-sections of two-row office buildings with the following loading assumptions: normal 5 KN/m², additional 2 KN/m² for screed (8 cm for floor duct and supply connections).\nCeiling height 2.75 m according to Vst regulation (enables the later installation of raised floor and deeper suspended ceilings). For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear. Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs). According to Kahl (→ refs), the cost-effectiveness of a structure is less dependent on the optimisation of the individual components (e.g. pre-cast elements), and much more on their integration into a functional building. Differentiation between longitudinal and transverse spanning systems → ① – ④.\nConstructive scope for decision-making via the example of a reinforced concrete slab with 6.50 m span. Criteria: almost identical costs; higher weight has influence on costs for load transfer and foundations; thicker slab has advantages through greater stiffness under differing loading (box-outs, spreader beams, point loads, various spans, various floor constructions).\nRibbed slabs: Only economical over longer spans (less self-weight, higher labour costs for formwork). Cutting through the ribs is not possible, due to lack of space. Supporting beams have the same soffit level.\nSlab beams (double T or Pi-slabs): These are structurally advantageous for long spans. Installation should run parallel to the web; crossing runs should be carried out in the corridor → ① – ④. The façade plane can lie behind, between or in front of the structural plane. Greatest variability with separation of construction and external envelope. Layout of columns, front face of façade, back face of façade, in front or behind, have no influence on the compartmentalisation of the façade or the division arrangement (grid, corner detail).\nInternal columns → p. 240 ④ A–D: If the slab cantilevers with a cantilever of c = 1/5 L–1/3 L, the span is economical. Bracing through walls acting as deep beams, storey frames and the provision of solid access cores and end-fixed side zones.\nBuilding the walls: Solid partition walls can replace columns and supporting beams, or can be considered as deep beams to"
+   },
+   {
+    "quote": "Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs).",
+    "page_id": "page_0255",
+    "book_page": "243",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Structure – influence of construction on the layout of offices → ① – ④. Construction proposals for the cross-sections of two-row office buildings with the following loading assumptions: normal 5 KN/m², additional 2 KN/m² for screed (8 cm for floor duct and supply connections).\nCeiling height 2.75 m according to Vst regulation (enables the later installation of raised floor and deeper suspended ceilings). For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear. Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs). According to Kahl (→ refs), the cost-effectiveness of a structure is less dependent on the optimisation of the individual components (e.g. pre-cast elements), and much more on their integration into a functional building. Differentiation between longitudinal and transverse spanning systems → ① – ④.\nConstructive scope for decision-making via the example of a reinforced concrete slab with 6.50 m span. Criteria: almost identical costs; higher weight has influence on costs for load transfer and foundations; thicker slab has advantages through greater stiffness under differing loading (box-outs, spreader beams, point loads, various spans, various floor constructions).\nRibbed slabs: Only economical over longer spans (less self-weight, higher labour costs for formwork). Cutting through the ribs is not possible, due to lack of space. Supporting beams have the same soffit level.\nSlab beams (double T or Pi-slabs): These are structurally advantageous for long spans. Installation should run parallel to the web; crossing runs should be carried out in the corridor → ① – ④. The façade plane can lie behind, between or in front of the structural plane. Greatest variability with separation of construction and external envelope. Layout of columns, front face of façade, back face of façade, in front or behind, have no influence on the compartmentalisation of the façade or the division arrangement (grid, corner detail).\nInternal columns → p. 240 ④ A–D: If the slab cantilevers with a cantilever of c = 1/5 L–1/3 L, the span is economical. Bracing through walls acting as deep beams, storey frames and the provision of solid access cores and end-fixed side zones.\nBuilding the walls: Solid partition walls can replace columns and supporting beams, or can be considered as deep beams to"
+   },
+   {
+    "quote": "Corridors and sanitary facilities are permitted to be 2.30 m high",
+    "page_id": "page_0255",
+    "book_page": "243",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Structure – influence of construction on the layout of offices → ① – ④. Construction proposals for the cross-sections of two-row office buildings with the following loading assumptions: normal 5 KN/m², additional 2 KN/m² for screed (8 cm for floor duct and supply connections).\nCeiling height 2.75 m according to Vst regulation (enables the later installation of raised floor and deeper suspended ceilings). For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear. Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs). According to Kahl (→ refs), the cost-effectiveness of a structure is less dependent on the optimisation of the individual components (e.g. pre-cast elements), and much more on their integration into a functional building. Differentiation between longitudinal and transverse spanning systems → ① – ④.\nConstructive scope for decision-making via the example of a reinforced concrete slab with 6.50 m span. Criteria: almost identical costs; higher weight has influence on costs for load transfer and foundations; thicker slab has advantages through greater stiffness under differing loading (box-outs, spreader beams, point loads, various spans, various floor constructions).\nRibbed slabs: Only economical over longer spans (less self-weight, higher labour costs for formwork). Cutting through the ribs is not possible, due to lack of space. Supporting beams have the same soffit level.\nSlab beams (double T or Pi-slabs): These are structurally advantageous for long spans. Installation should run parallel to the web; crossing runs should be carried out in the corridor → ① – ④. The façade plane can lie behind, between or in front of the structural plane. Greatest variability with separation of construction and external envelope. Layout of columns, front face of façade, back face of façade, in front or behind, have no influence on the compartmentalisation of the façade or the division arrangement (grid, corner detail).\nInternal columns → p. 240 ④ A–D: If the slab cantilevers with a cantilever of c = 1/5 L–1/3 L, the span is economical. Bracing through walls acting as deep beams, storey frames and the provision of solid access cores and end-fixed side zones.\nBuilding the walls: Solid partition walls can replace columns and supporting beams, or can be considered as deep beams to"
+   }
+  ]
+ },
+ {
+  "kid": "K114",
+  "topic": "办公",
+  "title": "办公室进深、开间与模数",
+  "summary": "工位进深 2.20 m（桌 80 + 活动 100 + 后柜 40），房间净深 4.40 m；单间办公室模数 1.50 m、组合办公 1.35 m；开间 3.80 m（约 18 m²）可放两个进深 0.90 m 的电脑工位。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "The modular dimensions, which have proved successful in recent years, are 1.50 m for single-room offices and 1.35 m for office types based on the combi principle.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDING"
+    ],
+    "source": "body",
+    "context": "Grid module spacings define possible room sizes through the resulting spacing of columns and façades. The fitting out and façade grids must be the same in order to enable the partitions to connect to the windows. The structural grid can be offset against the fitting out grid. This reduces the problem of connecting the partitions to columns, but loses space in the rooms, which contain columns. Because of the different lifecycles of the building elements, an adaptable module dimension should be chosen. The modular dimensions, which have proved successful in recent years, are 1.50 m for single-room offices and 1.35 m for office types based on the combi principle."
+   },
+   {
+    "quote": "Workstation depth 2.20 m (80 cm desk, 1 m movement area, 40 cm shelf behind). With 10 cm wall thickness, this gives 4.40 m clear room space.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDING"
+    ],
+    "source": "body",
+    "context": "Modular dimension 1.50 m\nThis is the economical module dimension for single-room offices consisting mainly of double workstations. Workstation depth 2.20 m (80 cm desk, 1 m movement area, 40 cm shelf behind). With 10 cm wall thickness, this gives 4.40 m clear room space.\nThe usual depth of buildings with central corridors is 12–13 m. This dimension is only of limited practicality for combi-offices."
+   },
+   {
+    "quote": "This is the economical module dimension for single-room offices consisting mainly of double workstations.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDING"
+    ],
+    "source": "body",
+    "context": "Modular dimension 1.50 m\nThis is the economical module dimension for single-room offices consisting mainly of double workstations. Workstation depth 2.20 m (80 cm desk, 1 m movement area, 40 cm shelf behind). With 10 cm wall thickness, this gives 4.40 m clear room space.\nThe usual depth of buildings with central corridors is 12–13 m. This dimension is only of limited practicality for combi-offices."
+   },
+   {
+    "quote": "Room widths of 3.80 m (~18 m^2 usable area) enable:",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDING"
+    ],
+    "source": "body",
+    "context": "Modular dimension 1.35 m\nRoom widths of 3.80 m (~18 m^2 usable area) enable:\n– additional filing storage; two computer workstations with a depth of 0.90 m, as recommended by accident insurance companies; one drawing board or drawing machine and one desk; one desk and meeting table for four people. All usual office workstations are possible, offering high flexibility of use without moving the partitions."
+   },
+   {
+    "quote": "two computer workstations with a depth of 0.90 m, as recommended by accident insurance companies",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDING"
+    ],
+    "source": "body",
+    "context": "Modular dimension 1.35 m\nRoom widths of 3.80 m (~18 m^2 usable area) enable:\n– additional filing storage; two computer workstations with a depth of 0.90 m, as recommended by accident insurance companies; one drawing board or drawing machine and one desk; one desk and meeting table for four people. All usual office workstations are possible, offering high flexibility of use without moving the partitions."
+   }
+  ]
+ },
+ {
+  "kid": "K117",
+  "topic": "办公",
+  "title": "会议区",
+  "summary": "会议区每座约 2.5 m²（不含附属空间），储藏和备餐等附属空间约为会议面积的 1/3；会议区应从入口区直达。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "A conference area requires about 2.5 m^2 per seat (without subsidiary areas).",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Conferences, training\nConference areas should be directly accessible from the entrance area. Provide sliding partitions (which can divide large rooms), tables, seating, presentation media, and also store rooms and a pantry for catering (these subsidiary rooms require about 1/3 of the conference area). Good noise reduction is important. A conference area requires about 2.5 m^2 per seat (without subsidiary areas). Space requirement ~ 0.3–1.0 m^2 per workstation."
+   },
+   {
+    "quote": "Conference areas should be directly accessible from the entrance area.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Conferences, training\nConference areas should be directly accessible from the entrance area. Provide sliding partitions (which can divide large rooms), tables, seating, presentation media, and also store rooms and a pantry for catering (these subsidiary rooms require about 1/3 of the conference area). Good noise reduction is important. A conference area requires about 2.5 m^2 per seat (without subsidiary areas). Space requirement ~ 0.3–1.0 m^2 per workstation."
+   },
+   {
+    "quote": "store rooms and a pantry for catering (these subsidiary rooms require about 1/3 of the conference area)",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Conferences, training\nConference areas should be directly accessible from the entrance area. Provide sliding partitions (which can divide large rooms), tables, seating, presentation media, and also store rooms and a pantry for catering (these subsidiary rooms require about 1/3 of the conference area). Good noise reduction is important. A conference area requires about 2.5 m^2 per seat (without subsidiary areas). Space requirement ~ 0.3–1.0 m^2 per workstation."
+   }
+  ]
+ },
+ {
+  "kid": "K120",
+  "topic": "办公",
+  "title": "厅室的每人容积",
+  "summary": "声学所需容积的参考值：讲话 4 m³/人，（音乐会）音乐 10 m³/人；容积过小则混响不足。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Guideline values are 4 m³/person for speech and 10 m³/person for (concert) music. If the volume is too small, this allows too little reverberation.",
+    "page_id": "page_0495",
+    "book_page": "483",
+    "chapter": "Building services",
+    "subheadings": [
+     "BUILDING PHYSICS"
+    ],
+    "source": "body",
+    "context": "The volume required for good sound depends on the purpose of the room (→ p. 482 6). Guideline values are 4 m³/person for speech and 10 m³/person for (concert) music. If the volume is too small, this allows too little reverberation."
+   }
+  ]
+ },
+ {
+  "kid": "K123",
+  "topic": "办公",
+  "title": "办公楼入口区",
+  "summary": "入口区连接公共区与工作区，主要功能为门厅、门禁、问询、访客登记和等候区，是企业形象的第一印象。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Connection between public and working areas. The important functions are lobby, access control, information, visitor registration and waiting zone.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Entrance area\nConnection between public and working areas. The important functions are lobby, access control, information, visitor registration and waiting zone. Important area for the company’s corporate identity – the first impression is decisive!"
+   },
+   {
+    "quote": "Important area for the company’s corporate identity – the first impression is decisive!",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Entrance area\nConnection between public and working areas. The important functions are lobby, access control, information, visitor registration and waiting zone. Important area for the company’s corporate identity – the first impression is decisive!"
+   }
+  ]
+ },
+ {
+  "kid": "K126",
+  "topic": "办公",
+  "title": "小型使用单元内的走廊",
+  "summary": "组合使用单元面积小于 400 m² 时，其内部走廊不受疏散通道要求的约束。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "For combined use units of less than 400 m², the corridors are not subject to the requirements for escape routes.",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Access systems\nFixed points are sanitary facilities, stairwells, lift shafts etc., situated at maximum spacings defined in the building regulations → 8 – 12. The arrangement of these determines urban development’s building structure → 7 – 16. For combined use units of less than 400 m², the corridors are not subject to the requirements for escape routes."
+   }
+  ]
+ },
+ {
+  "kid": "K129",
+  "topic": "办公",
+  "title": "高校教研人员办公室面积",
+  "summary": "高校教研人员办公室面积参考值：教授 20–24 m²，科研助理 15 m²，助理 20 m²，秘书 15 m²（两人合用 20 m²）。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "professor 20–24 m² scientific assistant 15 m² assistant 20 m² secretary 15 m² (double occupation 20 m²)",
+    "page_id": "page_0214",
+    "book_page": "202",
+    "chapter": "Education and research",
+    "subheadings": [
+     "UNIVERSITIES AND COLLEGES"
+    ],
+    "source": "body",
+    "context": "Offices for scientific personnel → ⑤\nprofessor 20–24 m²\nscientific assistant 15 m²\nassistant 20 m²\nsecretary 15 m² (double occupation 20 m²)"
+   }
+  ]
+ },
+ {
+  "kid": "K132",
+  "topic": "酒店与餐饮",
+  "title": "餐厅",
+  "summary": "餐厅通道净宽 ≥ 0.80 m、门 0.90 m；就餐区净高：≤ 50 m² 为 2.50 m，> 50 m² 为 2.75 m，> 100 m² ≥ 3.00 m。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Minimum clear width of aisles in restaurants 0.80 m, doors 0.90 m",
+    "page_id": "page_0187",
+    "book_page": "175",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "CATERING"
+    ],
+    "source": "body",
+    "context": "Before any restaurant or other catering establishment is built, the organisational processes must be determined with the operator. The following have to be decided: what food will be on the menu, what quality and quantity will be on offer? Which service system will be used, whether à la carte with fixed or changing daily menus, plate or table service, self-service or mixed? For design purposes, it is important to know which target clientele is aimed for. The site itself will help to determine the most suitable type of restaurant. Appoint specialists in: kitchen equipment, electrical, heating, ventilation and sanitary design.\n\nThe main room in a restaurant is the dining room. Its furniture and fittings should be appropriate for the business. A number of additional tables or chairs should be available, so that table groupings are flexible. Provide special tables for regulars. Side rooms and conference rooms should always be flexibly furnished in order to permit variations. A food bar with fixed stools can be arranged for customers in a hurry. Larger dining rooms should be split into zones. Kitchen, side rooms, toilets and sanitary installations should be grouped around the dining room, also in the basement → 8.\n\nColumns in a dining room are best located in the centre of a group of tables or at the corners of the tables → 3. The ceiling heights of dining areas with a floor area ≤50 m² = 2.50 m, > 50 m² = 2.75 m and >100 m² ≥3.00 m; above or below galleries ≥2.50 m.\n\nEmergency exits 1.0 m wide per 150 people using them. Minimum clear width of aisles in restaurants 0.80 m, doors 0.90 m → 9.\n\nToilets in public houses, bars or restaurants: Stairs to toilets, wash, staff and storage rooms, usable width ≤1.10 m. Clear walk-through height ≤2.10 m measured vertically. Window area ≤1/10 of the floor area of a restaurant."
+   },
+   {
+    "quote": "The ceiling heights of dining areas with a floor area ≤50 m² = 2.50 m, > 50 m² = 2.75 m and >100 m² ≥3.00 m",
+    "page_id": "page_0187",
+    "book_page": "175",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "CATERING"
+    ],
+    "source": "body",
+    "context": "Before any restaurant or other catering establishment is built, the organisational processes must be determined with the operator. The following have to be decided: what food will be on the menu, what quality and quantity will be on offer? Which service system will be used, whether à la carte with fixed or changing daily menus, plate or table service, self-service or mixed? For design purposes, it is important to know which target clientele is aimed for. The site itself will help to determine the most suitable type of restaurant. Appoint specialists in: kitchen equipment, electrical, heating, ventilation and sanitary design.\n\nThe main room in a restaurant is the dining room. Its furniture and fittings should be appropriate for the business. A number of additional tables or chairs should be available, so that table groupings are flexible. Provide special tables for regulars. Side rooms and conference rooms should always be flexibly furnished in order to permit variations. A food bar with fixed stools can be arranged for customers in a hurry. Larger dining rooms should be split into zones. Kitchen, side rooms, toilets and sanitary installations should be grouped around the dining room, also in the basement → 8.\n\nColumns in a dining room are best located in the centre of a group of tables or at the corners of the tables → 3. The ceiling heights of dining areas with a floor area ≤50 m² = 2.50 m, > 50 m² = 2.75 m and >100 m² ≥3.00 m; above or below galleries ≥2.50 m.\n\nEmergency exits 1.0 m wide per 150 people using them. Minimum clear width of aisles in restaurants 0.80 m, doors 0.90 m → 9.\n\nToilets in public houses, bars or restaurants: Stairs to toilets, wash, staff and storage rooms, usable width ≤1.10 m. Clear walk-through height ≤2.10 m measured vertically. Window area ≤1/10 of the floor area of a restaurant."
+   }
+  ]
+ }
+]

@@ -1,0 +1,1114 @@
+[
+ {
+  "kid": "K046",
+  "topic": "疏散与防火",
+  "title": "高层建筑立面的层间防火",
+  "summary": "高层建筑每层须有高 ≥ 1 m 的 W 90 A 防火窗槛墙，或外挑 ≥ 1.5 m 的 W 90 A 水平构件；全玻璃（含双层）幕墙须特别审批并采用喷淋等措施防止火势窜层。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "In order to avoid fire spreading from one storey to the one above, there must be W 90 A fire-resistant parapets at least 1 m high (fire spreading height).",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "Façade\nIn order to avoid fire spreading from one storey to the one above, there must be W 90 A fire-resistant parapets at least 1 m high (fire spreading height). Alternatively, a W 90 A horizontal building element projecting at least 1.5 m from the façade can be provided. All-glass façades (also double façades) are permitted only with special approvals if particular protection measures (area sprinklers, mist extinguishing systems) can prevent the spread of fire to the next storey → 7."
+   },
+   {
+    "quote": "Alternatively, a W 90 A horizontal building element projecting at least 1.5 m from the façade can be provided.",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "Façade\nIn order to avoid fire spreading from one storey to the one above, there must be W 90 A fire-resistant parapets at least 1 m high (fire spreading height). Alternatively, a W 90 A horizontal building element projecting at least 1.5 m from the façade can be provided. All-glass façades (also double façades) are permitted only with special approvals if particular protection measures (area sprinklers, mist extinguishing systems) can prevent the spread of fire to the next storey → 7."
+   },
+   {
+    "quote": "All-glass façades (also double façades) are permitted only with special approvals if particular protection measures (area sprinklers, mist extinguishing systems) can prevent the spread of fire to the next storey",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "Façade\nIn order to avoid fire spreading from one storey to the one above, there must be W 90 A fire-resistant parapets at least 1 m high (fire spreading height). Alternatively, a W 90 A horizontal building element projecting at least 1.5 m from the façade can be provided. All-glass façades (also double façades) are permitted only with special approvals if particular protection measures (area sprinklers, mist extinguishing systems) can prevent the spread of fire to the next storey → 7."
+   }
+  ]
+ },
+ {
+  "kid": "K047",
+  "topic": "疏散与防火",
+  "title": "长疏散走廊分段与楼梯间的封闭",
+  "summary": "长度超过 30 m 的必要疏散走廊须用自闭、防烟的门分段；楼梯与作为疏散路线的走廊之间的门也须自闭、防烟。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Closures between stairways and corridors legally essential as escape routes and also for the division of legally essential corridors more than 30 m long must be self-closing and smoke-proof",
+    "page_id": "page_0529",
+    "book_page": "517",
+    "chapter": "Building services",
+    "context": "Closures between stairways and corridors legally essential as escape routes and also for the division of legally essential corridors more than 30 m long must be self-closing and smoke-proof → p. 511."
+   }
+  ]
+ },
+ {
+  "kid": "K048",
+  "topic": "采光、日照、通风与窗",
+  "title": "工作间的窗",
+  "summary": "工作间（按工作场所指南）：所有对外视线窗的总宽度须至少为全部墙宽总和的 1/10；对外视线宜在视平线高度（窗台高 0.85–1.25 m）；高度超过 3.5 m 的工作间，窗玻璃面积须至少为外墙面积的 30%。工业建筑中窗面积的近似值：面积不超过 600 m² 的房间约为地面面积的 1/10，精细作业约 1/5。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "1/10 of the floor area for rooms up to 600 m²",
+    "page_id": "page_0278",
+    "book_page": "266",
+    "chapter": "Industry and trade",
+    "context": "Approx. figures for window areas: 1/10 of the floor area for rooms up to 600 m² (Workplace Guidelines 7/1 → p. 263); for fine work, provide 1/5 of the floor area."
+   },
+   {
+    "quote": "The total width of all visual connections to the outside must be at least 1/10 of the total width of all walls, according to workplace guidelines",
+    "page_id": "page_0109",
+    "book_page": "97",
+    "chapter": "Building components",
+    "context": "Workrooms\nThe required window area can be roughly worked out using the following rules. The total width of all visual connections to the outside must be at least 1/10 of the total width of all walls, according to workplace guidelines → 7. Possible visual connection to the outside should be at eye level (window sill heights of 0.85 –1.25 m) → p. 96 9 – 16. For workrooms more than 3.5 m high, the glass area of the window must be at least 30% of the outside wall area → 8. For rooms with dimensions corresponding to those of residential rooms, the minimum height of the glass area is 1.3 m.\nWith the increasing use of existing sources of energy, the optimisation of thermal losses and gains and the control of light through windows merit a separate design prepared by experts."
+   },
+   {
+    "quote": "Possible visual connection to the outside should be at eye level (window sill heights of 0.85 –1.25 m)",
+    "page_id": "page_0109",
+    "book_page": "97",
+    "chapter": "Building components",
+    "context": "Workrooms\nThe required window area can be roughly worked out using the following rules. The total width of all visual connections to the outside must be at least 1/10 of the total width of all walls, according to workplace guidelines → 7. Possible visual connection to the outside should be at eye level (window sill heights of 0.85 –1.25 m) → p. 96 9 – 16. For workrooms more than 3.5 m high, the glass area of the window must be at least 30% of the outside wall area → 8. For rooms with dimensions corresponding to those of residential rooms, the minimum height of the glass area is 1.3 m.\nWith the increasing use of existing sources of energy, the optimisation of thermal losses and gains and the control of light through windows merit a separate design prepared by experts."
+   },
+   {
+    "quote": "For workrooms more than 3.5 m high, the glass area of the window must be at least 30% of the outside wall area",
+    "page_id": "page_0109",
+    "book_page": "97",
+    "chapter": "Building components",
+    "context": "Workrooms\nThe required window area can be roughly worked out using the following rules. The total width of all visual connections to the outside must be at least 1/10 of the total width of all walls, according to workplace guidelines → 7. Possible visual connection to the outside should be at eye level (window sill heights of 0.85 –1.25 m) → p. 96 9 – 16. For workrooms more than 3.5 m high, the glass area of the window must be at least 30% of the outside wall area → 8. For rooms with dimensions corresponding to those of residential rooms, the minimum height of the glass area is 1.3 m.\nWith the increasing use of existing sources of energy, the optimisation of thermal losses and gains and the control of light through windows merit a separate design prepared by experts."
+   }
+  ]
+ },
+ {
+  "kid": "K049",
+  "topic": "采光、日照、通风与窗",
+  "title": "厨房朝向",
+  "summary": "厨房最好朝东北或西北。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "The location of the kitchen is ideally on the northeast or northwest",
+    "page_id": "page_0161",
+    "book_page": "149",
+    "chapter": "Residential buildings",
+    "context": "Location\nThe location of the kitchen is ideally on the northeast or northwest, in the immediate vicinity of the entrance area (short distances for shopping, rubbish etc.), to the (vegetable) garden and the cellar. There should be sensible internal room relationships with the dining room, utility room and larder. It should ideally be possible to see the front door, children’s play area and terrace from the kitchen → ④."
+   }
+  ]
+ },
+ {
+  "kid": "K050",
+  "topic": "采光、日照、通风与窗",
+  "title": "无窗厨房",
+  "summary": "无窗厨房（含小厨房）一般不可取，只有在保证有效通风时才允许。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Kitchens and kitchenettes without windows are generally undesirable and only permissible if effective ventilation is guaranteed.",
+    "page_id": "page_0161",
+    "book_page": "149",
+    "chapter": "Residential buildings",
+    "context": "Kitchens and kitchenettes without windows are generally undesirable and only permissible if effective ventilation is guaranteed. As a habitable room, the kitchen must have a clear ceiling height of at least 2.40 m and a window area (structural dimensions) of at least 1/8 of the net floor area."
+   }
+  ]
+ },
+ {
+  "kid": "K051",
+  "topic": "采光、日照、通风与窗",
+  "title": "玻璃面最小高度 1.3 m",
+  "summary": "尺度相当于居室的工作间，玻璃面高度至少 1.3 m；住宅为优化能耗也可套用工作间的开窗标准。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "For rooms with dimensions corresponding to those of residential rooms, the minimum height of the glass area is 1.3 m.",
+    "page_id": "page_0109",
+    "book_page": "97",
+    "chapter": "Building components",
+    "context": "Workrooms\nThe required window area can be roughly worked out using the following rules. The total width of all visual connections to the outside must be at least 1/10 of the total width of all walls, according to workplace guidelines → 7. Possible visual connection to the outside should be at eye level (window sill heights of 0.85 –1.25 m) → p. 96 9 – 16. For workrooms more than 3.5 m high, the glass area of the window must be at least 30% of the outside wall area → 8. For rooms with dimensions corresponding to those of residential rooms, the minimum height of the glass area is 1.3 m.\nWith the increasing use of existing sources of energy, the optimisation of thermal losses and gains and the control of light through windows merit a separate design prepared by experts."
+   },
+   {
+    "quote": "In order to optimise the energy balance, the criteria for workrooms can be applied.",
+    "page_id": "page_0109",
+    "book_page": "97",
+    "chapter": "Building components",
+    "context": "Residential construction\nThe minimum requirement for structural window apertures in occupied rooms is specified in the state building regulations and is 1/8 or 1/10 of the plan area of the room. Further design constraints are the distance from buildings opposite (shadow formation) and the requirements of the energy saving regulation EnEV. In order to optimise the energy balance, the criteria for workrooms can be applied."
+   }
+  ]
+ },
+ {
+  "kid": "K052",
+  "topic": "采光、日照、通风与窗",
+  "title": "视野：窗宽不小于房间宽 65%",
+  "summary": "为保证向外的视野，窗宽（按毛洞口尺寸）不应小于房间宽度的 65%。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "The minimum window width as a percentage, before finishings, should not be less than 65% of the room width.",
+    "page_id": "page_0507",
+    "book_page": "495",
+    "chapter": "Building services",
+    "context": "The minimum window width as a percentage, before finishings, should not be less than 65% of the room width. For larger room depths and a wide angle to adjacent buildings, even a window width of 100% may not be sufficient."
+   }
+  ]
+ },
+ {
+  "kid": "K053",
+  "topic": "采光、日照、通风与窗",
+  "title": "工作区距窗约为 2 倍窗净高",
+  "summary": "（工业建筑）侧窗采光时，工作区到窗的距离宜为窗净高的 2 倍。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The distance of the working area from the window should be twice as long as the clear window height",
+    "page_id": "page_0278",
+    "book_page": "266",
+    "chapter": "Industry and trade",
+    "context": "Lighting\nMulti-storey buildings with windows on one side should face northeast, and, with windows on both sides facing north and south, they should be oriented east–west. The summer sun thus only shines into the interior to a limited extent and is easy to shade with blinds (possibly continuously motorised sun awnings), but in winter the room is pleasantly sunlit (no disturbing shadows in the working area) → ④. The distance of the working area from the window should be twice as long as the clear window height → ②."
+   }
+  ]
+ },
+ {
+  "kid": "K054",
+  "topic": "采光、日照、通风与窗",
+  "title": "办公与工作建筑的朝向",
+  "summary": "朝向说法不一：据 Rosenauer，美国 90% 的办公楼采用东西向主轴，因为深入室内的早晚阳光造成干扰，而南向阳光较易用遮阳帘遮挡；据 Joedicke，南北向主轴可使所有房间获得日照，北向房间只适用于无走廊的布局。工业建筑中，单侧开窗的多层建筑宜朝东北，南北两侧开窗的宜东西向布置。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "According to Rosenauer, 90% of all office buildings in the USA have a main axis E/W, because the deeply penetrating morning and evening sun is a disturbance.",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "context": "Building alignment\nCompass orientation is variously estimated. According to Rosenauer, 90% of all office buildings in the USA have a main axis E/W, because the deeply penetrating morning and evening sun is a disturbance. Sun from the south can be shaded more easily with sun blinds. According to Joedicke (→ refs), the main axis in the N/S alignment is to ensure sunlight through all rooms. North-facing rooms are acceptable only for layouts without a corridor."
+   },
+   {
+    "quote": "Sun from the south can be shaded more easily with sun blinds.",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "context": "Building alignment\nCompass orientation is variously estimated. According to Rosenauer, 90% of all office buildings in the USA have a main axis E/W, because the deeply penetrating morning and evening sun is a disturbance. Sun from the south can be shaded more easily with sun blinds. According to Joedicke (→ refs), the main axis in the N/S alignment is to ensure sunlight through all rooms. North-facing rooms are acceptable only for layouts without a corridor."
+   },
+   {
+    "quote": "Multi-storey buildings with windows on one side should face northeast, and, with windows on both sides facing north and south, they should be oriented east–west.",
+    "page_id": "page_0278",
+    "book_page": "266",
+    "chapter": "Industry and trade",
+    "context": "Lighting\nMulti-storey buildings with windows on one side should face northeast, and, with windows on both sides facing north and south, they should be oriented east–west. The summer sun thus only shines into the interior to a limited extent and is easy to shade with blinds (possibly continuously motorised sun awnings), but in winter the room is pleasantly sunlit (no disturbing shadows in the working area) → ④. The distance of the working area from the window should be twice as long as the clear window height → ②."
+   },
+   {
+    "quote": "According to Joedicke (→ refs), the main axis in the N/S alignment is to ensure sunlight through all rooms.",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "context": "Building alignment\nCompass orientation is variously estimated. According to Rosenauer, 90% of all office buildings in the USA have a main axis E/W, because the deeply penetrating morning and evening sun is a disturbance. Sun from the south can be shaded more easily with sun blinds. According to Joedicke (→ refs), the main axis in the N/S alignment is to ensure sunlight through all rooms. North-facing rooms are acceptable only for layouts without a corridor."
+   },
+   {
+    "quote": "North-facing rooms are acceptable only for layouts without a corridor.",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "context": "Building alignment\nCompass orientation is variously estimated. According to Rosenauer, 90% of all office buildings in the USA have a main axis E/W, because the deeply penetrating morning and evening sun is a disturbance. Sun from the south can be shaded more easily with sun blinds. According to Joedicke (→ refs), the main axis in the N/S alignment is to ensure sunlight through all rooms. North-facing rooms are acceptable only for layouts without a corridor."
+   }
+  ]
+ },
+ {
+  "kid": "K055",
+  "topic": "采光、日照、通风与窗",
+  "title": "按朝向选择遮阳",
+  "summary": "北向只有六七月清晨有直射阳光，简单的室内遮阳即可；东、西向应用可调遮阳挡低角度阳光；南向窗主要在早春和秋季低太阳时需要有效遮阳，盛夏小挑檐即可。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "On north sides, direct sunshine can only be expected in the mornings in June and July and simple internal systems are sufficient. If the alignment is largely west or east, movable systems should shade the low sun.",
+    "page_id": "page_0512",
+    "book_page": "500",
+    "chapter": "Building services",
+    "context": "Systems\nSystem selection depends mainly on the compass direction of the window to be protected. On north sides, direct sunshine can only be expected in the mornings in June and July and simple internal systems are sufficient. If the alignment is largely west or east, movable systems should shade the low sun."
+   },
+   {
+    "quote": "South windows need effective shading above all in the early year and autumn, with low sun. In the high summer, slight roof overhangs are sufficient to avoid direct sunshine.",
+    "page_id": "page_0512",
+    "book_page": "500",
+    "chapter": "Building services",
+    "context": "South windows need effective shading above all in the early year and autumn, with low sun. In the high summer, slight roof overhangs are sufficient to avoid direct sunshine."
+   }
+  ]
+ },
+ {
+  "kid": "K056",
+  "topic": "采光、日照、通风与窗",
+  "title": "遮阳挑檐的出挑计算",
+  "summary": "出挑长度 A = tan(遮阳角 α) × 窗高 H，最少可减去墙厚 D；北纬 50° 以下南墙正午的遮阳角：6 月 21 日 27°，5 月 1 日/7 月 31 日 40°，春分秋分 50°。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "Projection A = tan shadow angle",
+    "page_id": "page_0512",
+    "book_page": "500",
+    "chapter": "Building services",
+    "context": "21 June (summer solstice), midday \\( \\alpha' = 63^\\circ, \\alpha = 27^\\circ \\); 1 May and 31 July, midday \\( \\alpha' = 50^\\circ, \\alpha = 40^\\circ \\); 21 March and 21 September (equinoxes) midday \\( \\alpha' = 40^\\circ, \\alpha = 50^\\circ \\).\nProjection A = tan shadow angle \\( \\alpha \times \\) window height H;\nbut min. projection A = (tan shadow angle \\( \\alpha \times \\) window height H) – wall thickness D"
+   },
+   {
+    "quote": "but min. projection A = (tan shadow angle",
+    "page_id": "page_0512",
+    "book_page": "500",
+    "chapter": "Building services",
+    "context": "21 June (summer solstice), midday \\( \\alpha' = 63^\\circ, \\alpha = 27^\\circ \\); 1 May and 31 July, midday \\( \\alpha' = 50^\\circ, \\alpha = 40^\\circ \\); 21 March and 21 September (equinoxes) midday \\( \\alpha' = 40^\\circ, \\alpha = 50^\\circ \\).\nProjection A = tan shadow angle \\( \\alpha \times \\) window height H;\nbut min. projection A = (tan shadow angle \\( \\alpha \times \\) window height H) – wall thickness D"
+   },
+   {
+    "quote": "21 June (summer solstice), midday \\( \\alpha' = 63^\\circ, \\alpha = 27^\\circ \\); 1 May and 31 July, midday \\( \\alpha' = 50^\\circ, \\alpha = 40^\\circ \\); 21 March and 21 September (equinoxes) midday \\( \\alpha' = 40^\\circ, \\alpha = 50^\\circ \\).",
+    "page_id": "page_0512",
+    "book_page": "500",
+    "chapter": "Building services",
+    "context": "21 June (summer solstice), midday \\( \\alpha' = 63^\\circ, \\alpha = 27^\\circ \\); 1 May and 31 July, midday \\( \\alpha' = 50^\\circ, \\alpha = 40^\\circ \\); 21 March and 21 September (equinoxes) midday \\( \\alpha' = 40^\\circ, \\alpha = 50^\\circ \\).\nProjection A = tan shadow angle \\( \\alpha \times \\) window height H;\nbut min. projection A = (tan shadow angle \\( \\alpha \times \\) window height H) – wall thickness D"
+   }
+  ]
+ },
+ {
+  "kid": "K057",
+  "topic": "围护结构与保温",
+  "title": "单层外墙与附加保温层",
+  "summary": "单层外墙在建筑物理上没有问题，但由于保温要求高，只能用高保温材料（如加气砌块）配专用保温砂浆和抹灰砌筑；因此单层墙加附加保温层（外保温或内保温）是常见的替代做法。保温层外侧因受热积聚和基层抗剪强度低而有开裂风险，因此这里采用网格增强的矿物抹灰（或聚合物改性抹灰）。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Single-leaf external walls → ① – ② are unproblematic regarding building physics, but on account of the high thermal insulation requirements can only be built with materials with high thermal insulation value (e.g. aerated blocks) and special thermally insulated mortars and plasters.",
+    "page_id": "page_0087",
+    "book_page": "75",
+    "chapter": "Building components",
+    "context": "External wall construction\nSingle-leaf external walls → ① – ② are unproblematic regarding building physics, but on account of the high thermal insulation requirements can only be built with materials with high thermal insulation value (e.g. aerated blocks) and special thermally insulated mortars and plasters. If the blocks used are susceptible to frost damage, they have to be rendered or protected in other ways. If the masonry is externally visible, then each course must consist of at least two rows of blocks of the same height with a continuous 20 mm thick longitudinal joint between them, and each course staggered and mortared without voids."
+   },
+   {
+    "quote": "Single-leaf walls with additional insulation layers → ③ – ⑥ (external, internal insulation → Building physics, p. 471 ff.) are therefore a common alternative.",
+    "page_id": "page_0087",
+    "book_page": "75",
+    "chapter": "Building components",
+    "context": "Single-leaf walls with additional insulation layers → ③ – ⑥ (external, internal insulation → Building physics, p. 471 ff.) are therefore a common alternative."
+   },
+   {
+    "quote": "On the external side of the insulating layers, there is a risk of cracking due to heat build-up and substrate with poor shear strength, so mineral render reinforced with mesh is used here (or plastic modified render).",
+    "page_id": "page_0485",
+    "book_page": "473",
+    "chapter": "Building services",
+    "context": "On the external side of the insulating layers, there is a risk of cracking due to heat build-up and substrate with poor shear strength, so mineral render reinforced with mesh is used here (or plastic modified render)."
+   },
+   {
+    "quote": "are unproblematic regarding building physics, but on account of the high thermal insulation requirements can only be built with materials with high thermal insulation value (e.g. aerated blocks) and special thermally insulated mortars and plasters.",
+    "page_id": "page_0087",
+    "book_page": "75",
+    "chapter": "Building components",
+    "context": "External wall construction\nSingle-leaf external walls → ① – ② are unproblematic regarding building physics, but on account of the high thermal insulation requirements can only be built with materials with high thermal insulation value (e.g. aerated blocks) and special thermally insulated mortars and plasters. If the blocks used are susceptible to frost damage, they have to be rendered or protected in other ways. If the masonry is externally visible, then each course must consist of at least two rows of blocks of the same height with a continuous 20 mm thick longitudinal joint between them, and each course staggered and mortared without voids."
+   }
+  ]
+ },
+ {
+  "kid": "K058",
+  "topic": "围护结构与保温",
+  "title": "夹心墙（双叶墙）的外叶与空气层",
+  "summary": "夹心墙由内侧承重叶墙和外侧非承重防护面层组成，外叶最小厚 90 mm，可做空气层、空气层加保温、满填保温或中间抹灰层；空气层宽度至少 40 mm、最多 150 mm。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Cavity walls consist of an inner load-bearing wall and an outer non-load-bearing weather protection facing (minimum thickness 90 mm). They can be built with an air gap, with air gap and thermal insulation, with cavity-filling insulation and with intermediate plaster layer",
+    "page_id": "page_0087",
+    "book_page": "75",
+    "chapter": "Building components",
+    "context": "Cavity walls consist of an inner load-bearing wall and an outer non-load-bearing weather protection facing (minimum thickness 90 mm). They can be built with an air gap, with air gap and thermal insulation, with cavity-filling insulation and with intermediate plaster layer → 7 – 10. The masonry leaves are connected with ties of non-rusting steel. The width of the air gap should be min. 40 mm (max. 150 mm). Vertical expansion joints should be provided in the external leaf and there should also be ventilation openings (e.g. open vertical joints) at the top and bottom, with the openings at the bottom also serving to drain water p. 77 → 3."
+   },
+   {
+    "quote": "The width of the air gap should be min. 40 mm (max. 150 mm).",
+    "page_id": "page_0087",
+    "book_page": "75",
+    "chapter": "Building components",
+    "context": "Cavity walls consist of an inner load-bearing wall and an outer non-load-bearing weather protection facing (minimum thickness 90 mm). They can be built with an air gap, with air gap and thermal insulation, with cavity-filling insulation and with intermediate plaster layer → 7 – 10. The masonry leaves are connected with ties of non-rusting steel. The width of the air gap should be min. 40 mm (max. 150 mm). Vertical expansion joints should be provided in the external leaf and there should also be ventilation openings (e.g. open vertical joints) at the top and bottom, with the openings at the bottom also serving to drain water p. 77 → 3."
+   }
+  ]
+ },
+ {
+  "kid": "K059",
+  "topic": "围护结构与保温",
+  "title": "混凝土外墙必须附加保温",
+  "summary": "实心混凝土墙只有加设附加保温层才能用作外墙：外保温系统，或带夹心保温（可加背通风）的多叶构造；带夹心保温的双层钢筋混凝土墙常用作大尺寸外墙构件。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Solid concrete walls can be used as external walls only with an additional thermal insulation layer. This can be as an external thermal insulation system → ① or as a multi-leaf construction (analogous to p. 75) with core insulation and possibly back-ventilation.",
+    "page_id": "page_0090",
+    "book_page": "78",
+    "chapter": "Building components",
+    "context": "Reinforced concrete walls → ① – ②\nReinforced concrete walls can be concreted on site or pre-cast.\nSolid concrete walls can be used as external walls only with an additional thermal insulation layer. This can be as an external thermal insulation system → ① or as a multi-leaf construction (analogous to p. 75) with core insulation and possibly back-ventilation. Two-layer reinforced concrete walls → ① with core insulation are used particularly as large-format external wall elements."
+   },
+   {
+    "quote": "Two-layer reinforced concrete walls → ① with core insulation are used particularly as large-format external wall elements.",
+    "page_id": "page_0090",
+    "book_page": "78",
+    "chapter": "Building components",
+    "context": "Reinforced concrete walls → ① – ②\nReinforced concrete walls can be concreted on site or pre-cast.\nSolid concrete walls can be used as external walls only with an additional thermal insulation layer. This can be as an external thermal insulation system → ① or as a multi-leaf construction (analogous to p. 75) with core insulation and possibly back-ventilation. Two-layer reinforced concrete walls → ① with core insulation are used particularly as large-format external wall elements."
+   },
+   {
+    "quote": "Solid concrete walls can be used as external walls only with an additional thermal insulation layer.",
+    "page_id": "page_0090",
+    "book_page": "78",
+    "chapter": "Building components",
+    "context": "Reinforced concrete walls → ① – ②\nReinforced concrete walls can be concreted on site or pre-cast.\nSolid concrete walls can be used as external walls only with an additional thermal insulation layer. This can be as an external thermal insulation system → ① or as a multi-leaf construction (analogous to p. 75) with core insulation and possibly back-ventilation. Two-layer reinforced concrete walls → ① with core insulation are used particularly as large-format external wall elements."
+   }
+  ]
+ },
+ {
+  "kid": "K060",
+  "topic": "围护结构与保温",
+  "title": "背通风外挂层的空气间层",
+  "summary": "背通风可消除较不透汽外层的隔汽效应；板材类外挂层后的空气间层至少 20 mm，砖砌外层至少 40 mm。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "The rear ventilation of the skin removes the vapour barrier effect of the relatively vapour-sealed outer layers. The width of the air gap with panel-like external skin amounts to min. 20 mm, or for brickwork outer skin min. 40 mm.",
+    "page_id": "page_0485",
+    "book_page": "473",
+    "chapter": "Building services",
+    "context": "Construction with rear-ventilated outer skin → ⑤ – ⑥\nThe rear ventilation of the skin removes the vapour barrier effect of the relatively vapour-sealed outer layers. The width of the air gap with panel-like external skin amounts to min. 20 mm, or for brickwork outer skin min. 40 mm."
+   }
+  ]
+ },
+ {
+  "kid": "K061",
+  "topic": "围护结构与保温",
+  "title": "热阻与传热系数计算",
+  "summary": "单层热阻 R = d/λ（d 以 m 计）；总热阻 1/U = R_si + R + R_se，U 为其倒数；表面空气层热阻只能占 1/U 的有限比例。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Thermal resistance R, unit m^2K/W [m^2hK/kcal] is a property of a layer: R = d/λ (d = layer thickness in m).",
+    "page_id": "page_0483",
+    "book_page": "471",
+    "chapter": "Building services",
+    "context": "Thermal resistance R, unit m^2K/W [m^2hK/kcal] is a property of a layer: R = d/λ (d = layer thickness in m). The calculation of the thermal resistance is important for the determination of the heat transfer coefficient U → ③ – ④."
+   },
+   {
+    "quote": "Overall resistance 1/U, unit m^2K/W [m^2hK/kcal], is the sum of the resistances of a building element to the transmission of heat (thermal resistances and surface resistances): 1/U = R_{si} + R + R_{se}",
+    "page_id": "page_0483",
+    "book_page": "471",
+    "chapter": "Building services",
+    "context": "Overall resistance 1/U, unit m^2K/W [m^2hK/kcal], is the sum of the resistances of a building element to the transmission of heat (thermal resistances and surface resistances): 1/U = R_{si} + R + R_{se}"
+   },
+   {
+    "quote": "The surface air film cannot exceed a certain proportion X of the overall resistance 1/U",
+    "page_id": "page_0484",
+    "book_page": "472",
+    "chapter": "Building services",
+    "context": "But in example → ⑤ condensation is formed on the inner face of the building element, because the proportion of the surface air film is too large. The surface air film cannot exceed a certain proportion X of the overall resistance 1/U → ③."
+   }
+  ]
+ },
+ {
+  "kid": "K062",
+  "topic": "围护结构与保温",
+  "title": "热桥与构件连接",
+  "summary": "热桥是保温明显低于周围的构件部位；良好保温不仅要求高保温构件，还要求构件之间连接得当；围护结构保温越好，热桥后果越严重。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Thermal bridges are parts of building elements with low thermal insulation compared with surrounding areas.",
+    "page_id": "page_0485",
+    "book_page": "473",
+    "chapter": "Building services",
+    "context": "Thermal bridge\nThermal bridges are parts of building elements with low thermal insulation compared with surrounding areas. This results in the proportion of the surface air film in the overall resistance increasing so that the surface temperature of the inner side of the thermal bridge sinks and condensation forms."
+   },
+   {
+    "quote": "Good thermal insulation includes not only highly insulated building components, but also the appropriate connections between the building elements.",
+    "page_id": "page_0486",
+    "book_page": "474",
+    "chapter": "Building services",
+    "context": "Good thermal insulation includes not only highly insulated building components, but also the appropriate connections between the building elements. There is a danger of additional heat loss at these joints and low surface temperature in the building elements during the heating period. Additional consumption of energy for heating and the possibility of condensation and mould formation are the result. Thus it should be borne in mind that this thermal bridging effect can have considerably worse consequences with highly insulated elements than with building elements with less thermal insulation. Thermal bridges can be considered, according to EnEV, for the determination of the annual heating energy demand by increasing the thermal transmission values (U-values) or in a separate verification."
+   },
+   {
+    "quote": "Thus it should be borne in mind that this thermal bridging effect can have considerably worse consequences with highly insulated elements than with building elements with less thermal insulation.",
+    "page_id": "page_0486",
+    "book_page": "474",
+    "chapter": "Building services",
+    "context": "Good thermal insulation includes not only highly insulated building components, but also the appropriate connections between the building elements. There is a danger of additional heat loss at these joints and low surface temperature in the building elements during the heating period. Additional consumption of energy for heating and the possibility of condensation and mould formation are the result. Thus it should be borne in mind that this thermal bridging effect can have considerably worse consequences with highly insulated elements than with building elements with less thermal insulation. Thermal bridges can be considered, according to EnEV, for the determination of the annual heating energy demand by increasing the thermal transmission values (U-values) or in a separate verification."
+   }
+  ]
+ },
+ {
+  "kid": "K063",
+  "topic": "围护结构与保温",
+  "title": "平屋面排水坡度",
+  "summary": "坡度不超过 5% 的屋面为平屋面；无坡平屋面只在例外情况下作为特殊构造；平屋面一般至少 2% 坡度，考虑平整度误差和挠度建议至少 5%（3°）。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Flat roofs are defined as roofs with a slope of up to 5%. Flat roofs without slope are possible as a special construction in exceptional cases. Flat roofs should generally have a minimum slope of 2%.",
+    "page_id": "page_0103",
+    "book_page": "91",
+    "chapter": "Building components",
+    "context": "Flat roofs are defined as roofs with a slope of up to 5%. Flat roofs without slope are possible as a special construction in exceptional cases. Flat roofs should generally have a minimum slope of 2%. On account of unavoidable flatness tolerances and deflection of the construction, however, it is recommended to construct flat roofs with a minimum slope of 5% (3°)."
+   },
+   {
+    "quote": "it is recommended to construct flat roofs with a minimum slope of 5% (3°).",
+    "page_id": "page_0103",
+    "book_page": "91",
+    "chapter": "Building components",
+    "context": "Flat roofs are defined as roofs with a slope of up to 5%. Flat roofs without slope are possible as a special construction in exceptional cases. Flat roofs should generally have a minimum slope of 2%. On account of unavoidable flatness tolerances and deflection of the construction, however, it is recommended to construct flat roofs with a minimum slope of 5% (3°)."
+   }
+  ]
+ },
+ {
+  "kid": "K064",
+  "topic": "围护结构与保温",
+  "title": "平屋面构造：暖屋面与倒置屋面",
+  "summary": "非通风单层（暖）屋面中承重结构、隔汽层、保温层和防水层构成整体；倒置屋面将防水兼隔汽层直接铺在结构上，闭孔保温板松铺其上并压重固定。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Non-ventilated, single-layer construction ('warm roof'), in which the load-bearing structure, vapour barrier, thermal insulation and waterproofing (including intermediate layers) form a composite element.",
+    "page_id": "page_0104",
+    "book_page": "92",
+    "chapter": "Building components",
+    "context": "Non-ventilated, single-layer construction ('warm roof'), in which the load-bearing structure, vapour barrier, thermal insulation and waterproofing (including intermediate layers) form a composite element."
+   },
+   {
+    "quote": "or an 'upside-down roof' → 8 (waterproofing and vapour barrier are applied as one layer directly onto the load-bearing construction and the closed-cell insulation is loosely laid on top and secured with a gravel layer)",
+    "page_id": "page_0104",
+    "book_page": "92",
+    "chapter": "Building components",
+    "context": "This can either be the conventional construction → 10, or an 'upside-down roof' → 8 (waterproofing and vapour barrier are applied as one layer directly onto the load-bearing construction and the closed-cell insulation is loosely laid on top and secured with a gravel layer), or a combination of both construction types (e.g. a 'plus roof'), or with internal insulation → 9."
+   }
+  ]
+ },
+ {
+  "kid": "K065",
+  "topic": "围护结构与保温",
+  "title": "隔汽层设在暖侧",
+  "summary": "若隔汽层在外侧（冷侧），整个水蒸气压力梯度都发生在那里，会产生冷凝；要避免冷凝，须在暖侧设置隔汽层。较新的构造（暖屋面、暖立面）外侧有隔汽层（如防水层），因此另设内侧隔汽层。坡屋面中隔汽层位于保温层下方，以防屋面构造内部冷凝。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "More recent building ('warm roof', 'warm façade') features an external vapour barrier layer (e.g. waterproofing) and, on account of this, an additional internal vapour barrier.",
+    "page_id": "page_0485",
+    "book_page": "473",
+    "chapter": "Building services",
+    "context": "Construction with vapour barrier → 3 – 4\nMore recent building ('warm roof', 'warm façade') features an external vapour barrier layer (e.g. waterproofing) and, on account of this, an additional internal vapour barrier. In order to prevent condensation on the inside face of the building element, the layers in front of the vapour barrier cannot exceed a certain proportion of the overall thermal resistance → p. 472. Warm façades require careful construction and have therefore mostly become established as prefabricated systems (sandwich construction). In a warm roof, a water vapour pressure equalisation layer is arranged under the waterproofing, and only an equalisation layer for the damping of stresses is provided under the vapour barrier."
+   },
+   {
+    "quote": "If there is a vapour barrier on the outside, then the entire vapour pressure gradient occurs there and the result is condensation → 8; if this is to be avoided, then a vapour barrier must be installed on the warm side",
+    "page_id": "page_0484",
+    "book_page": "472",
+    "chapter": "Building services",
+    "context": "Vapour barrier at the correct location\nIf there is a vapour barrier on the outside, then the entire vapour pressure gradient occurs there and the result is condensation → 8; if this is to be avoided, then a vapour barrier must be installed on the warm side with an equivalent diffusion resistance suitable for the location, in which case the layers in front of the vapour barrier must not exceed a certain proportion of the overall thermal resistance 1/U → 9."
+   },
+   {
+    "quote": "The vapour barrier is under the thermal insulation to prevent condensation inside the roof construction.",
+    "page_id": "page_0102",
+    "book_page": "90",
+    "chapter": "Building components",
+    "context": "The vapour barrier is under the thermal insulation to prevent condensation inside the roof construction. When the vapour barrier is installed, it is important that all air flow between interior and roof construction is prevented. Any penetration points, laps and junctions with building elements must be carefully sealed. Inner cladding is normally plasterboard on support construction (pay attention to the possibility of cracks!)."
+   }
+  ]
+ },
+ {
+  "kid": "K066",
+  "topic": "围护结构与保温",
+  "title": "种植屋面的坡度",
+  "summary": "种植的坡屋面坡度不应超过 25°，种植平屋面坡度最大 2–3%。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "The pitch of gabled roofs should not exceed 25° and flat roofs should have a maximum slope of 2–3%.",
+    "page_id": "page_0106",
+    "book_page": "94",
+    "chapter": "Building components",
+    "context": "Slopes for roof planting\nThe pitch of gabled roofs should not exceed 25° and flat roofs should have a maximum slope of 2–3%."
+   }
+  ]
+ },
+ {
+  "kid": "K067",
+  "topic": "围护结构与保温",
+  "title": "坡屋面保温位置与通风构造",
+  "summary": "坡屋面保温一般为矿棉卷材，铺在椽间和椽下，室内侧设隔汽层；通风屋面在挂瓦下垫层与保温之间另有通风层，需更大椽高且只有在隔汽层和通风都可靠时才有效，因此业内多采用非通风构造。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Thermal insulation is generally in the form of mineral wool roll material and is installed between and under the rafters or as prefabricated insulation elements, sometimes with interlocking, vapour barrier on the room side and battens fixed to the rafters",
+    "page_id": "page_0102",
+    "book_page": "90",
+    "chapter": "Building components",
+    "context": "Thermal insulation is generally in the form of mineral wool roll material and is installed between and under the rafters or as prefabricated insulation elements, sometimes with interlocking, vapour barrier on the room side and battens fixed to the rafters → 10."
+   },
+   {
+    "quote": "Ventilated roofs require additional rafter depth and work properly only with a correctly installed vapour barrier and functioning roof ventilation. Therefore the building industry commonly prefers unventilated roof construction.",
+    "page_id": "page_0102",
+    "book_page": "90",
+    "chapter": "Building components",
+    "context": "Ventilated roofs require additional rafter depth and work properly only with a correctly installed vapour barrier and functioning roof ventilation. Therefore the building industry commonly prefers unventilated roof construction."
+   },
+   {
+    "quote": "ventilated roof construction has an additional ventilation gap between underlay and thermal insulation, to remove spray and condensate.",
+    "page_id": "page_0102",
+    "book_page": "90",
+    "chapter": "Building components",
+    "context": "Building methods\nThermally insulated roofs can be divided into ventilated and non-ventilated construction. In addition to the ventilation space between roof covering and underlay (or lower layer of roof), which is required in both cases, ventilated roof construction has an additional ventilation gap between underlay and thermal insulation, to remove spray and condensate."
+   }
+  ]
+ },
+ {
+  "kid": "K068",
+  "topic": "墙体与构造",
+  "title": "分户墙隔声",
+  "summary": "住宅之间或户与户之间的分户墙宜始终达到至少 400 kg/m² 的面密度。对于贯通整栋房屋进深设分隔缝的（房屋之间的）双叶分户墙：每叶（含抹灰）面密度须至少 150 kg/m²，分隔缝至少 30 mm；缝宽大于 50 mm 时每叶可为 100 kg/m²；缝腔内须满铺无缝的纤维隔声板。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "for this reason, party walls between flats or houses should always weigh at least 400 kg/m².",
+    "page_id": "page_0490",
+    "book_page": "478",
+    "chapter": "Building services",
+    "context": "Secondary path transmission reduces the effectiveness of airborne sound insulation more than that of impact sound insulation. For this reason, test certificates for sound-insulated walls should always include the consideration of secondary paths normal in a building. Particularly effective as secondary paths are panels which bend stiffly and have a density of 10–160 kg/m²; for this reason, party walls between flats or houses should always weigh at least 400 kg/m²."
+   },
+   {
+    "quote": "The mass per unit area of the individual layers with plaster must be at least 150 kg/m^2, and the thickness of the separating joint must be at least 30 mm. With a thickness of the separating joint (layer spacing) of more than 50 mm, the mass of each skin can be 100 kg/m^2. The joint cavity is to be filled with gapless full-surface fibre insulating boards",
+    "page_id": "page_0491",
+    "book_page": "479",
+    "chapter": "Building services",
+    "context": "Party walls\nThe diagram → 1 shows a two-skin party wall with a separating joint over the entire depth of the houses. The mass per unit area of the individual layers with plaster must be at least 150 kg/m^2, and the thickness of the separating joint must be at least 30 mm. With a thickness of the separating joint (layer spacing) of more than 50 mm, the mass of each skin can be 100 kg/m^2. The joint cavity is to be filled with gapless full-surface fibre insulating boards, as in DIN 18165 (impact sound insulation boards or separating joint boards approved for this application) without sound bridges."
+   }
+  ]
+ },
+ {
+  "kid": "K069",
+  "topic": "墙体与构造",
+  "title": "模数协调与标志尺寸",
+  "summary": "基本模数 M = 100 mm，扩大模数 3M = 300 mm、6M = 600 mm、12M = 1200 mm；构造（标志）尺寸由模数尺寸扣除或加上灰缝/面层厚度得到，如砖模数长 25 cm、灰缝 1 cm、标志尺寸 24 cm，现浇混凝土墙 25 cm。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The units of the modular system are the basic module M = 100 mm and the multi-modules 3 M = 300 mm, 6 M = 600 mm and 12 M = 1200 mm.",
+    "page_id": "page_0047",
+    "book_page": "35",
+    "chapter": "Basics",
+    "context": "The units of the modular system are the basic module M = 100 mm and the multi-modules 3 M = 300 mm, 6 M = 600 mm and 12 M = 1200 mm. There are also standardised non-modular supplementary dimensions l = 25 mm, 50 mm and 75 mm for fitting elements or overlapping connections → 11. Combination rules can be used to fit building components of various sizes into a modular coordinate system."
+   },
+   {
+    "quote": "Structural dimensions or nominal dimensions (for construction types with joints and wall finishes) are derived from modular dimensions by deducting or adding the component for the joint or the finish thickness.",
+    "page_id": "page_0046",
+    "book_page": "34",
+    "chapter": "Basics",
+    "context": "Terms\nBuilding preferred numbers are those for modular construction dimensions and the individual, structural and finished dimensions derived from them.\nModular dimensions are only theoretical dimensions, but are the basis for the individual, structural and finished dimensions used in practice. Structural dimensions or nominal dimensions (for construction types with joints and wall finishes) are derived from modular dimensions by deducting or adding the component for the joint or the finish thickness. (Example: modular dimension for the length of a brick = 25 cm; thickness of the vertical joint = 1 cm; nominal dimension for the length of the brick = 24 cm; modular dimension for the thickness of poured concrete walls = nominal dimension = 25 cm).\nIndividual dimensions are dimensions (mostly small) for units of structure or finishing such as joint thicknesses, plaster thicknesses, door rebate sizes, wall projection sizes, tolerances.\nStructural dimensions are of the unfinished structure, such as masonry dimensions (without plaster thicknesses), structural slab thicknesses, sizes of unplastered door and window openings.\nFinished dimensions are for the finished building, such as clear sizes of plastered rooms and openings, storage space dimensions, floor-to-floor heights.\nNominal dimensions are the same as modular dimensions for building types without joints. For building types with joints, the nominal dimension is the modular dimension less the joint thicknesses.\nSmall dimensions are 2.5 cm and less. They can be selected from the sizes: 2.5 cm; 2 cm; 1.6 cm; 1.25 cm; 1 cm; 8 mm; 6.3 mm; 5 mm; 3.2 mm; 2.5 mm; 2 mm; 1.6 mm; 1.25 mm; 1 mm."
+   },
+   {
+    "quote": "Example: modular dimension for the length of a brick = 25 cm; thickness of the vertical joint = 1 cm; nominal dimension for the length of the brick = 24 cm; modular dimension for the thickness of poured concrete walls = nominal dimension = 25 cm",
+    "page_id": "page_0046",
+    "book_page": "34",
+    "chapter": "Basics",
+    "context": "Terms\nBuilding preferred numbers are those for modular construction dimensions and the individual, structural and finished dimensions derived from them.\nModular dimensions are only theoretical dimensions, but are the basis for the individual, structural and finished dimensions used in practice. Structural dimensions or nominal dimensions (for construction types with joints and wall finishes) are derived from modular dimensions by deducting or adding the component for the joint or the finish thickness. (Example: modular dimension for the length of a brick = 25 cm; thickness of the vertical joint = 1 cm; nominal dimension for the length of the brick = 24 cm; modular dimension for the thickness of poured concrete walls = nominal dimension = 25 cm).\nIndividual dimensions are dimensions (mostly small) for units of structure or finishing such as joint thicknesses, plaster thicknesses, door rebate sizes, wall projection sizes, tolerances.\nStructural dimensions are of the unfinished structure, such as masonry dimensions (without plaster thicknesses), structural slab thicknesses, sizes of unplastered door and window openings.\nFinished dimensions are for the finished building, such as clear sizes of plastered rooms and openings, storage space dimensions, floor-to-floor heights.\nNominal dimensions are the same as modular dimensions for building types without joints. For building types with joints, the nominal dimension is the modular dimension less the joint thicknesses.\nSmall dimensions are 2.5 cm and less. They can be selected from the sizes: 2.5 cm; 2 cm; 1.6 cm; 1.25 cm; 1 cm; 8 mm; 6.3 mm; 5 mm; 3.2 mm; 2.5 mm; 2 mm; 1.6 mm; 1.25 mm; 1 mm."
+   }
+  ]
+ },
+ {
+  "kid": "K070",
+  "topic": "墙体与构造",
+  "title": "建筑等级与承重墙耐火",
+  "summary": "（书中在垃圾间规定处以括号注明）住宅超过两套或使用面积达 400 m² 的建筑属于建筑等级 3–5。承重及支撑墙、柱在等级 5 的建筑中须为防火（耐火）构造，等级 4 须为高度阻燃，等级 1 和 2 须为阻燃；此规定不适用于其上方无居室的屋顶空间最上层及阳台；在地下室中须为防火构造，等级 1 和 2 的建筑为阻燃。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "buildings with more than two flats or a usable area of 400 m² (building classes 3–5)",
+    "page_id": "page_0476",
+    "book_page": "464",
+    "chapter": "Agriculture",
+    "context": "Solid waste can be temporarily stored inside the building. Waste can be stored temporarily inside buildings with more than two flats or a usable area of 400 m² (building classes 3–5) only if the rubbish collection room complies with the following requirements:"
+   },
+   {
+    "quote": "Load-bearing and bracing walls and columns must be constructed fireproof in buildings of class 5, highly fire-retarding in buildings of class 4 and fire-retarding in buildings of classes 1 and 2",
+    "page_id": "page_0526",
+    "book_page": "514",
+    "chapter": "Building services",
+    "context": "Load-bearing and bracing walls and columns must be constructed fireproof in buildings of class 5, highly fire-retarding in buildings of class 4 and fire-retarding in buildings of classes 1 and 2). This does not apply to the uppermost storeys of roof spaces without occupied rooms above them and balconies. In cellars, they have to be constructed fireproof and, in buildings of classes 1 and 2, fire-retarding."
+   },
+   {
+    "quote": "This does not apply to the uppermost storeys of roof spaces without occupied rooms above them and balconies.",
+    "page_id": "page_0526",
+    "book_page": "514",
+    "chapter": "Building services",
+    "context": "Load-bearing and bracing walls and columns must be constructed fireproof in buildings of class 5, highly fire-retarding in buildings of class 4 and fire-retarding in buildings of classes 1 and 2). This does not apply to the uppermost storeys of roof spaces without occupied rooms above them and balconies. In cellars, they have to be constructed fireproof and, in buildings of classes 1 and 2, fire-retarding."
+   }
+  ]
+ },
+ {
+  "kid": "K071",
+  "topic": "墙体与构造",
+  "title": "地下室墙体与楼板耐火",
+  "summary": "地下室中的承重及支撑墙体和柱须为防火构造，等级 1、2 的建筑可为阻燃构造；楼板须为防火或至少阻燃，地下室顶板须为防火（等级 1、2 建筑、屋顶空间上方的楼板及住宅户内楼板等有例外）。钢筋混凝土板、空心砌块楼板等实心楼板在一定条件下无需附加防护即有足够耐火能力。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "In cellars, they have to be constructed fireproof and, in buildings of classes 1 and 2, fire-retarding.",
+    "page_id": "page_0526",
+    "book_page": "514",
+    "chapter": "Building services",
+    "context": "Load-bearing and bracing walls and columns must be constructed fireproof in buildings of class 5, highly fire-retarding in buildings of class 4 and fire-retarding in buildings of classes 1 and 2). This does not apply to the uppermost storeys of roof spaces without occupied rooms above them and balconies. In cellars, they have to be constructed fireproof and, in buildings of classes 1 and 2, fire-retarding."
+   },
+   {
+    "quote": "Ceilings must be fireproof, or at least fire-retarding, and slabs over cellars must be fireproof.",
+    "page_id": "page_0527",
+    "book_page": "515",
+    "chapter": "Building services",
+    "context": "Ceilings must be fireproof, or at least fire-retarding, and slabs over cellars must be fireproof. Openings in ceilings and floor slabs for which a fire resistance duration is necessary are prohibited. If openings are required, they must be fitted with fire protection closures (doors, etc.) constructed with a fire resistance duration corresponding to that of the slab."
+   },
+   {
+    "quote": "Exceptions apply for buildings of classes 1 and 2, slabs and ceilings above roof spaces, and balconies, slabs and ceilings within residential dwellings.",
+    "page_id": "page_0527",
+    "book_page": "515",
+    "chapter": "Building services",
+    "context": "Exceptions apply for buildings of classes 1 and 2, slabs and ceilings above roof spaces, and balconies, slabs and ceilings within residential dwellings."
+   },
+   {
+    "quote": "Solid slabs (e.g. reinforced concrete slabs → ①, hollow pot floors) have sufficient fire resistance under certain conditions without additional protection measures.",
+    "page_id": "page_0527",
+    "book_page": "515",
+    "chapter": "Building services",
+    "context": "Solid slabs (e.g. reinforced concrete slabs → ①, hollow pot floors) have sufficient fire resistance under certain conditions without additional protection measures. Numerous construction types are classified in DIN 4102 → ③. Floors consisting of timber joists, steel joists or concrete slabs on profiled metal decking must be protected against fire from below (suspended ceiling → ⑤) and above (covering, screed), in which case the connections at walls and any inserts in the floor have to be taken into account. The fire resistance achieved is normally verified with a test certificate → p. 512. In this case, the entire construction is included in the evaluation. Also usual is the installation of self-supporting suspended ceilings with their own fire resistance class (e.g. to protect the installations in the ceiling void)."
+   }
+  ]
+ },
+ {
+  "kid": "K072",
+  "topic": "墙体与构造",
+  "title": "住宅/商业单元之间的分隔墙",
+  "summary": "居住或商业单元之间（或单元与其他用途房间之间）分隔墙的耐火时间须与该层承重构件相当，并须一直砌到结构楼板（屋顶空间内到屋面覆层）。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "The fire resistance duration of separating walls between residential or commercial units (or units and rooms used otherwise) must correspond to the quality of the load-bearing components of the storey. These must extend to the structural slab (in roof spaces up to the roof cladding).",
+    "page_id": "page_0526",
+    "book_page": "514",
+    "chapter": "Building services",
+    "context": "Separating walls\nThe fire resistance duration of separating walls between residential or commercial units (or units and rooms used otherwise) must correspond to the quality of the load-bearing components of the storey. These must extend to the structural slab (in roof spaces up to the roof cladding). Openings are limited to the size and number required for their use and must be closed by components which are at least fire-retarding, sealed and self-closing."
+   }
+  ]
+ },
+ {
+  "kid": "K073",
+  "topic": "墙体与构造",
+  "title": "外墙及外墙饰面的燃烧性能",
+  "summary": "非承重外墙及承重外墙的非承重部分（建筑等级 1–3 除外）须用不燃（至少阻燃）材料建造；外墙饰面（含保温层及支撑构造）须用难燃材料；等级 1、2 的建筑如能有效防止火势蔓延至相邻建筑，允许外墙饰面采用普通可燃材料。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Non-load-bearing external walls and non-load-bearing parts of load-bearing external walls are (except for buildings of building classes 1–3) to be constructed of non-combustible (at least fire-retarding) materials.",
+    "page_id": "page_0526",
+    "book_page": "514",
+    "chapter": "Building services",
+    "context": "Non-load-bearing external walls and non-load-bearing parts of load-bearing external walls are (except for buildings of building classes 1–3) to be constructed of non-combustible (at least fire-retarding) materials. External wall claddings, including insulation and support construction, have to be made of flame-resistant materials. For buildings of classes 1 and 2, external wall claddings of normally flammable materials are permissible, if the spread of fire to neighbouring buildings is effectively prevented."
+   },
+   {
+    "quote": "External wall claddings, including insulation and support construction, have to be made of flame-resistant materials.",
+    "page_id": "page_0526",
+    "book_page": "514",
+    "chapter": "Building services",
+    "context": "Non-load-bearing external walls and non-load-bearing parts of load-bearing external walls are (except for buildings of building classes 1–3) to be constructed of non-combustible (at least fire-retarding) materials. External wall claddings, including insulation and support construction, have to be made of flame-resistant materials. For buildings of classes 1 and 2, external wall claddings of normally flammable materials are permissible, if the spread of fire to neighbouring buildings is effectively prevented."
+   },
+   {
+    "quote": "For buildings of classes 1 and 2, external wall claddings of normally flammable materials are permissible, if the spread of fire to neighbouring buildings is effectively prevented.",
+    "page_id": "page_0526",
+    "book_page": "514",
+    "chapter": "Building services",
+    "context": "Non-load-bearing external walls and non-load-bearing parts of load-bearing external walls are (except for buildings of building classes 1–3) to be constructed of non-combustible (at least fire-retarding) materials. External wall claddings, including insulation and support construction, have to be made of flame-resistant materials. For buildings of classes 1 and 2, external wall claddings of normally flammable materials are permissible, if the spread of fire to neighbouring buildings is effectively prevented."
+   }
+  ]
+ },
+ {
+  "kid": "K074",
+  "topic": "居室标准与面积计算",
+  "title": "居室最低要求",
+  "summary": "居室最小面积 8 m²、净高 2.40 m，窗面积为房间面积的 1/8。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "minimum requirements for floor area (8 m^2), ceiling height (2.40 m), orientation, ventilation and lighting (window area 1/8 of the room area)",
+    "page_id": "page_0179",
+    "book_page": "167",
+    "chapter": "Accommodation",
+    "context": "Requirements\nStudent flats are 'living places' and not considered as residential homes in the sense of the building regulations. The general requirements of the building regulations essentially concern residential rooms with minimum requirements for floor area (8 m^2), ceiling height (2.40 m), orientation, ventilation and lighting (window area 1/8 of the room area), accessibility requirements (i.e. for disabled people) and escape routes (two independent escape routes from each floor, one of which is a legally essential stairway). The state guidelines for student residences set recommended dimensions for living places (approx. 12 m^2 for single rooms and approx. 16 m^2 for flats). In addition to this, a certain area will be required for communal use."
+   }
+  ]
+ },
+ {
+  "kid": "K075",
+  "topic": "居室标准与面积计算",
+  "title": "厨房作为居室",
+  "summary": "厨房作为居室时净高 ≥ 2.40 m，窗面积 ≥ 净地面面积的 1/8。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "As a habitable room, the kitchen must have a clear ceiling height of at least 2.40 m and a window area (structural dimensions) of at least 1/8 of the net floor area.",
+    "page_id": "page_0161",
+    "book_page": "149",
+    "chapter": "Residential buildings",
+    "context": "Kitchens and kitchenettes without windows are generally undesirable and only permissible if effective ventilation is guaranteed. As a habitable room, the kitchen must have a clear ceiling height of at least 2.40 m and a window area (structural dimensions) of at least 1/8 of the net floor area."
+   }
+  ]
+ },
+ {
+  "kid": "K076",
+  "topic": "居室标准与面积计算",
+  "title": "居住面积计算",
+  "summary": "净高 ≥ 2 m 的部分全额计入，1–2 m 计一半；地下室、车库、办公室等不计。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Floor areas are included in the calculation either completely (for rooms and parts of rooms with a clear ceiling height of at least 2 m), or a half (for rooms and parts of rooms with a clear ceiling height of at least 1 m and less than 2 m)",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "context": "Housing area regulations → p. 136\nHousing area regulations apply to calculations of residential area according to the law to promote living space (includes housing subsidies): the living area of a dwelling covers all rooms which belong exclusively to the relevant dwelling, including conservatories, swimming pools (if enclosed on all sides), balconies, loggias, terraces, but not subsidiary rooms (cellars, garages etc:), offices and rooms which do not comply with the building regulations.\nThe floor area of a room is determined from the clear dimensions between the building elements, from the outer face of the element’s cladding (which includes window and door claddings, skirting boards, stoves, ovens, baths, built-in furniture, free-standing installations, movable partitions). The floor area is measured in completed rooms or from a suitable building drawing.\nFloor areas are included in the calculation either completely (for rooms and parts of rooms with a clear ceiling height of at least 2 m), or a half (for rooms and parts of rooms with a clear ceiling height of at least 1 m and less than 2 m) or a quarter (balconies, loggias, terraces etc.)."
+   },
+   {
+    "quote": "but not subsidiary rooms (cellars, garages etc:), offices and rooms which do not comply with the building regulations",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "context": "Housing area regulations → p. 136\nHousing area regulations apply to calculations of residential area according to the law to promote living space (includes housing subsidies): the living area of a dwelling covers all rooms which belong exclusively to the relevant dwelling, including conservatories, swimming pools (if enclosed on all sides), balconies, loggias, terraces, but not subsidiary rooms (cellars, garages etc:), offices and rooms which do not comply with the building regulations.\nThe floor area of a room is determined from the clear dimensions between the building elements, from the outer face of the element’s cladding (which includes window and door claddings, skirting boards, stoves, ovens, baths, built-in furniture, free-standing installations, movable partitions). The floor area is measured in completed rooms or from a suitable building drawing.\nFloor areas are included in the calculation either completely (for rooms and parts of rooms with a clear ceiling height of at least 2 m), or a half (for rooms and parts of rooms with a clear ceiling height of at least 1 m and less than 2 m) or a quarter (balconies, loggias, terraces etc.)."
+   },
+   {
+    "quote": "Floor areas are included in the calculation either completely (for rooms and parts of rooms with a clear ceiling height of at least 2 m)",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "context": "Housing area regulations → p. 136\nHousing area regulations apply to calculations of residential area according to the law to promote living space (includes housing subsidies): the living area of a dwelling covers all rooms which belong exclusively to the relevant dwelling, including conservatories, swimming pools (if enclosed on all sides), balconies, loggias, terraces, but not subsidiary rooms (cellars, garages etc:), offices and rooms which do not comply with the building regulations.\nThe floor area of a room is determined from the clear dimensions between the building elements, from the outer face of the element’s cladding (which includes window and door claddings, skirting boards, stoves, ovens, baths, built-in furniture, free-standing installations, movable partitions). The floor area is measured in completed rooms or from a suitable building drawing.\nFloor areas are included in the calculation either completely (for rooms and parts of rooms with a clear ceiling height of at least 2 m), or a half (for rooms and parts of rooms with a clear ceiling height of at least 1 m and less than 2 m) or a quarter (balconies, loggias, terraces etc.)."
+   }
+  ]
+ },
+ {
+  "kid": "K077",
+  "topic": "居室标准与面积计算",
+  "title": "阳台计入居住面积",
+  "summary": "阳台、凉廊和露台属于居住面积的一部分，一般按其面积的 25–50% 计入。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Balconies, loggias and terraces are a part of the living areas, for which they are normally calculated as 25–50%",
+    "page_id": "page_0167",
+    "book_page": "155",
+    "chapter": "Residential buildings",
+    "context": "Open-air areas\nThe attractiveness of housing can be considerably enhanced through open-air areas (balconies, loggias and terraces) adjoining the rooms. In the summer these offer a desirable extension of living space for relaxing, lounging, sleeping, reading and eating, and can also offer an extended working area or an easily supervised open-air play area for children. Balconies, loggias and terraces are a part of the living areas, for which they are normally calculated as 25–50% → housing area regulation, p. 136."
+   }
+  ]
+ },
+ {
+  "kid": "K078",
+  "topic": "居室标准与面积计算",
+  "title": "住宅面积的计入范围与净尺寸量法",
+  "summary": "（按 2003 年《住宅面积计算条例》，用于住房建设补贴法）住宅面积包括专属于该户的所有房间的地面面积；房间面积按构件之间的净空间确定，从构件饰面层表面量起，可在建成房间内实测，或按合适的施工图计算。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "The area of a house or flat includes the floor area of all rooms which belong exclusively to the house",
+    "page_id": "page_0148",
+    "book_page": "136",
+    "chapter": "Residential buildings",
+    "context": "Housing area regulation\nThe 'Regulation for the calculation of the housing area' of 25/11/2003 is used to work out the area of houses and flats for the purpose of the Law to Subsidise House Building. The area of a house or flat includes the floor area of all rooms which belong exclusively to the house or, in the case of a residential home the areas intended for the sole use of the owner → 2."
+   },
+   {
+    "quote": "The floor area of a room is determined from the clearance space between building components and starts from the face of the cladding of the building component",
+    "page_id": "page_0148",
+    "book_page": "136",
+    "chapter": "Residential buildings",
+    "context": "The floor area of a room is determined from the clearance space between building components and starts from the face of the cladding of the building component → ③. The floor area is measured in the completed room, or can be calculated from a suitable construction drawing. Floor areas are calculated according to → ④."
+   }
+  ]
+ },
+ {
+  "kid": "K079",
+  "topic": "居室标准与面积计算",
+  "title": "DIN 277 面积分类与可出租面积",
+  "summary": "毛面积按外轮廓计算，结构面积是墙柱所占面积，净面积是构件之间的面积，再分为使用、技术和交通面积；可出租面积（GIF）不含楼梯、电梯、紧急出口、设备间和管井。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "The gross floor area is the sum of the plan area of all levels (without usable roof areas), measured between the external dimensions of the surrounding building elements at floor height.",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "context": "The gross floor area is the sum of the plan area of all levels (without usable roof areas), measured between the external dimensions of the surrounding building elements at floor height. The constructional floor area is the sum of the plan area of all surrounding building elements (walls, columns, pillars, chimneys, non-accessible shafts, door openings, niches, apertures) measured between the external dimensions at floor height. The net floor area is the usable floor area between the building elements (without door and window openings, cut-outs and niches) measured at floor level. The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.). The gross built volume is the sum of the floor areas of all levels multiplied by the relevant height (measured between top of floor covering and top of floor covering of the next level, in the basement from the underside of the constructional structural invert in the roof to the top of the roof covering, without external stairs, light wells, roof overhangs, dormer windows, chimneys, etc.). The net built volume is the net floor area multiplied by the relevant clear ceiling height."
+   },
+   {
+    "quote": "The constructional floor area is the sum of the plan area of all surrounding building elements (walls, columns, pillars, chimneys, non-accessible shafts, door openings, niches, apertures) measured between the external dimensions at floor height.",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "context": "The gross floor area is the sum of the plan area of all levels (without usable roof areas), measured between the external dimensions of the surrounding building elements at floor height. The constructional floor area is the sum of the plan area of all surrounding building elements (walls, columns, pillars, chimneys, non-accessible shafts, door openings, niches, apertures) measured between the external dimensions at floor height. The net floor area is the usable floor area between the building elements (without door and window openings, cut-outs and niches) measured at floor level. The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.). The gross built volume is the sum of the floor areas of all levels multiplied by the relevant height (measured between top of floor covering and top of floor covering of the next level, in the basement from the underside of the constructional structural invert in the roof to the top of the roof covering, without external stairs, light wells, roof overhangs, dormer windows, chimneys, etc.). The net built volume is the net floor area multiplied by the relevant clear ceiling height."
+   },
+   {
+    "quote": "The net floor area is the usable floor area between the building elements (without door and window openings, cut-outs and niches) measured at floor level.",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "context": "The gross floor area is the sum of the plan area of all levels (without usable roof areas), measured between the external dimensions of the surrounding building elements at floor height. The constructional floor area is the sum of the plan area of all surrounding building elements (walls, columns, pillars, chimneys, non-accessible shafts, door openings, niches, apertures) measured between the external dimensions at floor height. The net floor area is the usable floor area between the building elements (without door and window openings, cut-outs and niches) measured at floor level. The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.). The gross built volume is the sum of the floor areas of all levels multiplied by the relevant height (measured between top of floor covering and top of floor covering of the next level, in the basement from the underside of the constructional structural invert in the roof to the top of the roof covering, without external stairs, light wells, roof overhangs, dormer windows, chimneys, etc.). The net built volume is the net floor area multiplied by the relevant clear ceiling height."
+   },
+   {
+    "quote": "The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.).",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "context": "The gross floor area is the sum of the plan area of all levels (without usable roof areas), measured between the external dimensions of the surrounding building elements at floor height. The constructional floor area is the sum of the plan area of all surrounding building elements (walls, columns, pillars, chimneys, non-accessible shafts, door openings, niches, apertures) measured between the external dimensions at floor height. The net floor area is the usable floor area between the building elements (without door and window openings, cut-outs and niches) measured at floor level. The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.). The gross built volume is the sum of the floor areas of all levels multiplied by the relevant height (measured between top of floor covering and top of floor covering of the next level, in the basement from the underside of the constructional structural invert in the roof to the top of the roof covering, without external stairs, light wells, roof overhangs, dormer windows, chimneys, etc.). The net built volume is the net floor area multiplied by the relevant clear ceiling height."
+   },
+   {
+    "quote": "The following do not belong to the letting area: stairs, lifts, emergency exits, escape balconies, services rooms, shafts, protection rooms, areas of columns, pillars and separate walls, areas with a clear ceiling height of 1.50 m or less.",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "context": "Calculation of commercial letting areas\nThe guidelines for the calculation of commercial letting areas, issued by the Property Industry Research Company (GIF) creates a uniform standard for the determination of leased commercial and office space. The leased space is calculated from two types of area:\n1. Areas with exclusive right of use, individually listed in types of area according to DIN 277: basement garage with number of places (see above), indirectly usable areas (loggias, balconies, atriums, areas with room heights between 1.50 m and 2.30 m.\n2. Areas with communal right of use, individually listed as: rooms for communal use (WCs/bathrooms, staff rooms, etc.) and communal traffic areas (entrance halls, corridors, etc.).\nThe following do not belong to the letting area: stairs, lifts, emergency exits, escape balconies, services rooms, shafts, protection rooms, areas of columns, pillars and separate walls, areas with a clear ceiling height of 1.50 m or less.\nThe relevant areas are measured at floor level between solid walls (including skirtings and fittings built in on site (radiators etc.), and room heights are measured between top of finished floor level and underside of the (suspended) ceiling."
+   },
+   {
+    "quote": "2. Areas with communal right of use, individually listed as: rooms for communal use (WCs/bathrooms, staff rooms, etc.) and communal traffic areas (entrance halls, corridors, etc.).",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "context": "Calculation of commercial letting areas\nThe guidelines for the calculation of commercial letting areas, issued by the Property Industry Research Company (GIF) creates a uniform standard for the determination of leased commercial and office space. The leased space is calculated from two types of area:\n1. Areas with exclusive right of use, individually listed in types of area according to DIN 277: basement garage with number of places (see above), indirectly usable areas (loggias, balconies, atriums, areas with room heights between 1.50 m and 2.30 m.\n2. Areas with communal right of use, individually listed as: rooms for communal use (WCs/bathrooms, staff rooms, etc.) and communal traffic areas (entrance halls, corridors, etc.).\nThe following do not belong to the letting area: stairs, lifts, emergency exits, escape balconies, services rooms, shafts, protection rooms, areas of columns, pillars and separate walls, areas with a clear ceiling height of 1.50 m or less.\nThe relevant areas are measured at floor level between solid walls (including skirtings and fittings built in on site (radiators etc.), and room heights are measured between top of finished floor level and underside of the (suspended) ceiling."
+   }
+  ]
+ },
+ {
+  "kid": "K080",
+  "topic": "居室标准与面积计算",
+  "title": "DIN 277 建筑体积（总体积与净体积）",
+  "summary": "按 DIN 277，总建筑体积为各层楼面面积乘以相应高度（自本层地面面层顶量至上层地面面层顶），净建筑体积为净面积乘以相应的室内净高。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The net built volume is the net floor area multiplied by the relevant clear ceiling height.",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "context": "The gross floor area is the sum of the plan area of all levels (without usable roof areas), measured between the external dimensions of the surrounding building elements at floor height. The constructional floor area is the sum of the plan area of all surrounding building elements (walls, columns, pillars, chimneys, non-accessible shafts, door openings, niches, apertures) measured between the external dimensions at floor height. The net floor area is the usable floor area between the building elements (without door and window openings, cut-outs and niches) measured at floor level. The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.). The gross built volume is the sum of the floor areas of all levels multiplied by the relevant height (measured between top of floor covering and top of floor covering of the next level, in the basement from the underside of the constructional structural invert in the roof to the top of the roof covering, without external stairs, light wells, roof overhangs, dormer windows, chimneys, etc.). The net built volume is the net floor area multiplied by the relevant clear ceiling height."
+   },
+   {
+    "quote": "The gross built volume is the sum of the floor areas of all levels multiplied by the relevant height (measured between top of floor covering and top of floor covering of the next level",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "context": "The gross floor area is the sum of the plan area of all levels (without usable roof areas), measured between the external dimensions of the surrounding building elements at floor height. The constructional floor area is the sum of the plan area of all surrounding building elements (walls, columns, pillars, chimneys, non-accessible shafts, door openings, niches, apertures) measured between the external dimensions at floor height. The net floor area is the usable floor area between the building elements (without door and window openings, cut-outs and niches) measured at floor level. The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.). The gross built volume is the sum of the floor areas of all levels multiplied by the relevant height (measured between top of floor covering and top of floor covering of the next level, in the basement from the underside of the constructional structural invert in the roof to the top of the roof covering, without external stairs, light wells, roof overhangs, dormer windows, chimneys, etc.). The net built volume is the net floor area multiplied by the relevant clear ceiling height."
+   }
+  ]
+ },
+ {
+  "kid": "K081",
+  "topic": "住宅·户型组织与入户",
+  "title": "阳台面积",
+  "summary": "3–4 人阳台约 7 m²，5–6 人约 9 m²。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "B = 9.0 m^2 balcony for 5–6 people",
+    "page_id": "page_0167",
+    "book_page": "155",
+    "chapter": "Residential buildings",
+    "context": "A = 7.0 m^2 balcony for 3–4 people\nB = 9.0 m^2 balcony for 5–6 people"
+   },
+   {
+    "quote": "A = 7.0 m^2 balcony for 3–4 people",
+    "page_id": "page_0167",
+    "book_page": "155",
+    "chapter": "Residential buildings",
+    "context": "A = 7.0 m^2 balcony for 3–4 people\nB = 9.0 m^2 balcony for 5–6 people"
+   }
+  ]
+ },
+ {
+  "kid": "K082",
+  "topic": "住宅·户型组织与入户",
+  "title": "户外空间的连接",
+  "summary": "户外空间一般与起居、工作和就餐空间相连；有多个户外空间时也可接卧室、厨房。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "They generally have a spatial relationship to living and working areas and dining rooms",
+    "page_id": "page_0167",
+    "book_page": "155",
+    "chapter": "Residential buildings",
+    "context": "They generally have a spatial relationship to living and working areas and dining rooms (with more than one open area, this can also include bedrooms, kitchens etc.). Good orientation (compass direction, view), sufficient size and protection from overlooking, noise and weather (wind, rain, strong sunshine) are decisive for the quality of open areas."
+   },
+   {
+    "quote": "with more than one open area, this can also include bedrooms, kitchens etc.",
+    "page_id": "page_0167",
+    "book_page": "155",
+    "chapter": "Residential buildings",
+    "context": "They generally have a spatial relationship to living and working areas and dining rooms (with more than one open area, this can also include bedrooms, kitchens etc.). Good orientation (compass direction, view), sufficient size and protection from overlooking, noise and weather (wind, rain, strong sunshine) are decisive for the quality of open areas."
+   }
+  ]
+ },
+ {
+  "kid": "K083",
+  "topic": "住宅·户型组织与入户",
+  "title": "电梯与每层户数",
+  "summary": "超过五个完整楼层的住宅须设电梯；一梯两户是最常见的交通组织方式。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Lifts are required for residential buildings of more than five full floors",
+    "page_id": "page_0154",
+    "book_page": "142",
+    "chapter": "Residential buildings",
+    "context": "Lifts are required for residential buildings of more than five full floors → p. 128. If a residential building is more than 22 m above ground level, then the provisions for high-rise buildings apply → p. 244."
+   },
+   {
+    "quote": "Two flats per floor is the most common access method, with balanced advantages of residential quality and value for money.",
+    "page_id": "page_0154",
+    "book_page": "142",
+    "chapter": "Residential buildings",
+    "context": "Two to four flats per floor → ② – ④\nTwo flats per floor is the most common access method, with balanced advantages of residential quality and value for money. The arrangement allows various (and flexible) floor plan solutions → ⑥ and offers good possibilities for adaptation in every compass direction."
+   }
+  ]
+ },
+ {
+  "kid": "K084",
+  "topic": "住宅·户型组织与入户",
+  "title": "设备噪声与安静房间",
+  "summary": "电梯、给排水管、燃气立管等噪声源不得设在起居室、卧室等需要安静的房间墙内；电梯应设独立井道，缝内填 3 cm 以上矿棉。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Noisy elements of services (water pipes, waste pipes, gas riser pipes, waste disposal units, lifts) may not be installed in the walls of rooms where quiet is required (living rooms, bedrooms).",
+    "page_id": "page_0492",
+    "book_page": "480",
+    "chapter": "Building services",
+    "context": "Sound from services\nSound from services can occur as plumbing fixture sound, pipework sound or filling/emptying sounds. The maximum permissible sound level from services in neighbouring residential units is 35 dB (A). Noisy elements of services (water pipes, waste pipes, gas riser pipes, waste disposal units, lifts) may not be installed in the walls of rooms where quiet is required (living rooms, bedrooms)."
+   },
+   {
+    "quote": "Lifts should be installed in separate shafts (joints filled with >3 cm mineral fibre)",
+    "page_id": "page_0493",
+    "book_page": "481",
+    "chapter": "Building services",
+    "context": "Lifts should be installed in separate shafts (joints filled with >3 cm mineral fibre) → 7; otherwise, the top of the shaft should be elastically supported → 8."
+   }
+  ]
+ },
+ {
+  "kid": "K085",
+  "topic": "住宅·户型组织与入户",
+  "title": "分组式平面与中廊式平面",
+  "summary": "分组式平面（20 世纪初出现）将户内分为两个房间组：起居区（起居室、厨房和就餐区）和睡眠区（卧室和卫生间）。中廊式平面（19 世纪末城市公寓的典型平面）沿两侧立面布置房间，所有房间都可独立进入和使用。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "the separation of areas inside the apartment into two 'room groups': the living areas (living room, kitchen and dining area) and the sleeping area (bedrooms and bathrooms)",
+    "page_id": "page_0157",
+    "book_page": "145",
+    "chapter": "Residential buildings",
+    "context": "Grouped room floor plan → ②\nThe idea of the grouped room floor plan developed at the start of the 20th century and is based on the separation of areas inside the apartment into two 'room groups': the living areas (living room, kitchen and dining area) and the sleeping area (bedrooms and bathrooms)."
+   },
+   {
+    "quote": "All rooms can be accessed and used separately.",
+    "page_id": "page_0157",
+    "book_page": "145",
+    "chapter": "Residential buildings",
+    "context": "Central corridor plan → ①\nThe central corridor plan is the classic floor plan of late 19th-century urban apartment blocks. The rooms are arranged along the two façades and are separated by the (load-bearing) middle wall and the central corridor parallel to it. All rooms can be accessed and used separately. Common and individual areas can be arranged on opposing sides of the façade and related to the particular qualities of the specific side of the building."
+   }
+  ]
+ },
+ {
+  "kid": "K086",
+  "topic": "住宅·户型组织与入户",
+  "title": "卧室朝向与位置",
+  "summary": "卧室最小面积约 13 m²（父母房或双人卧室）和约 8 m²（单人房）；卧室一般朝东或东南（父母）、朝南至西（儿童），并与起居室分处住宅的不同部分。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "These would normally be aligned to east or southeast (parents) or south to west (children) and separated from the living room in another part of the home.",
+    "page_id": "page_0169",
+    "book_page": "157",
+    "chapter": "Residential buildings",
+    "context": "→ ② – ③: bedrooms with minimal space of approx. 13 m² (as parents’ room or twin bedroom) and approx. 8 m² (single room). These would normally be aligned to east or southeast (parents) or south to west (children) and separated from the living room in another part of the home."
+   }
+  ]
+ },
+ {
+  "kid": "K087",
+  "topic": "住宅·户型组织与入户",
+  "title": "门厅直达厨房、WC 和楼梯",
+  "summary": "厨房、WC 和楼梯这几个最重要的公共部分应能从门厅直接到达。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The most important communal areas like the kitchen, WC and staircase should be directly accessible from the entrance hall.",
+    "page_id": "page_0159",
+    "book_page": "147",
+    "chapter": "Residential buildings",
+    "context": "Entrance hall\nThe entrance hall should be enclosed where the entrance leads directly to the open air with an inner door (wind lobby function). It should also offer sufficient room for a lot of moving around → ④. This is where reception, greeting, taking off and putting on coats, and taking leave all take place, but also offers the first orientation for the visitor → ① – ③. Countless objects therefore have to be arranged practically yet tidily in this limited space → ⑤, ⑥. The most important communal areas like the kitchen, WC and staircase should be directly accessible from the entrance hall."
+   }
+  ]
+ },
+ {
+  "kid": "K088",
+  "topic": "住宅·户型组织与入户",
+  "title": "防风门斗",
+  "summary": "入口直通室外时，门厅应以内门围合（防风门斗）；天气不利时建议设门斗；从楼梯间进户时，楼梯间本身即可挡风。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "if the entrance is into a stair shaft, then this can provide wind protection",
+    "page_id": "page_0158",
+    "book_page": "146",
+    "chapter": "Residential buildings",
+    "context": "Entrance\nThe entrance is the face of a house, where visitors gain their first impression. A multitude of functions have to be practically arranged and appropriately designed → ①. If the entrance is into the open air, it should be protected from the prevailing wind direction if possible. If weather conditions are unfavourable, a lobby is also recommended to prevent wind blowing through → p. 136 (if the entrance is into a stair shaft, then this can provide wind protection)."
+   },
+   {
+    "quote": "The entrance hall should be enclosed where the entrance leads directly to the open air with an inner door (wind lobby function).",
+    "page_id": "page_0159",
+    "book_page": "147",
+    "chapter": "Residential buildings",
+    "context": "Entrance hall\nThe entrance hall should be enclosed where the entrance leads directly to the open air with an inner door (wind lobby function). It should also offer sufficient room for a lot of moving around → ④. This is where reception, greeting, taking off and putting on coats, and taking leave all take place, but also offers the first orientation for the visitor → ① – ③. Countless objects therefore have to be arranged practically yet tidily in this limited space → ⑤, ⑥. The most important communal areas like the kitchen, WC and staircase should be directly accessible from the entrance hall."
+   },
+   {
+    "quote": "If weather conditions are unfavourable, a lobby is also recommended to prevent wind blowing through",
+    "page_id": "page_0158",
+    "book_page": "146",
+    "chapter": "Residential buildings",
+    "context": "Entrance\nThe entrance is the face of a house, where visitors gain their first impression. A multitude of functions have to be practically arranged and appropriately designed → ①. If the entrance is into the open air, it should be protected from the prevailing wind direction if possible. If weather conditions are unfavourable, a lobby is also recommended to prevent wind blowing through → p. 136 (if the entrance is into a stair shaft, then this can provide wind protection)."
+   }
+  ]
+ },
+ {
+  "kid": "K089",
+  "topic": "住宅·户型组织与入户",
+  "title": "户内走道宽度",
+  "summary": "书中示例假定户内走道最小宽度为 1 m，可供两人错身；但这一宽度放不下柜子，柜子最好做成嵌入式。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The examples assume a minimum corridor width of 1 m, which allows two people to pass.",
+    "page_id": "page_0160",
+    "book_page": "148",
+    "chapter": "Residential buildings",
+    "context": "Corridor widths\nThe width of a corridor depends on its location, the number and arrangement of the doors opening off it (doors one side, both sides) and the number of people using it → ②. The greatest accessibility offered by various sizes and layouts of corridors to rooms more than 2 m wide is shown in → ③ – ⑭. The examples assume a minimum corridor width of 1 m, which allows two people to pass. This width does not, however, permit the siting of cupboards, which would be better built-in → ⑥ + ⑨. When arranging the doors, the location of beds and built-in cupboards needs to be taken into account (see above)."
+   },
+   {
+    "quote": "This width does not, however, permit the siting of cupboards, which would be better built-in",
+    "page_id": "page_0160",
+    "book_page": "148",
+    "chapter": "Residential buildings",
+    "context": "Corridor widths\nThe width of a corridor depends on its location, the number and arrangement of the doors opening off it (doors one side, both sides) and the number of people using it → ②. The greatest accessibility offered by various sizes and layouts of corridors to rooms more than 2 m wide is shown in → ③ – ⑭. The examples assume a minimum corridor width of 1 m, which allows two people to pass. This width does not, however, permit the siting of cupboards, which would be better built-in → ⑥ + ⑨. When arranging the doors, the location of beds and built-in cupboards needs to be taken into account (see above)."
+   }
+  ]
+ },
+ {
+  "kid": "K090",
+  "topic": "住宅·户型组织与入户",
+  "title": "独立住宅每层通往户外",
+  "summary": "独立住宅（自住住宅的原型）从每一层都可直接通往其他私有或半公共的户外空间（如花园、露台、内院或屋顶花园）。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "It has direct access from each storey to further private or semi-public open spaces (e.g. garden, terrace, inner courtyard or roof garden)",
+    "page_id": "page_0151",
+    "book_page": "139",
+    "chapter": "Residential buildings",
+    "context": "Detached house and row access\nThe individually accessed, detached house standing on its own plot is the prototype for the 'owner-occupied' house. It has a prestigious level access from the road, which is reached through an area at the front ('front garden'). It has direct access from each storey to further private or semi-public open spaces (e.g. garden, terrace, inner courtyard or roof garden) → 2."
+   }
+  ]
+ }
+]

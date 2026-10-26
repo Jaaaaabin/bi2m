@@ -1,0 +1,42 @@
+id,question,ground_truth,ifc_model,project,category,split,neufert_tier,neufert_topic
+410,What are the heights of the building levels?,"Building Level Heights:
+
+   3rd Floor:
+   - Elevation: 11.10 m
+
+   4th Floor:
+   - Elevation: 14.80 m
+
+   5th Floor:
+   - Elevation: 18.50 m
+
+   Note: Ground/1st/2nd/3rd floors are all modeled under '3rd Floor' storey.
+   The 5th Floor (Elevation: 18.50 m) is used for roof modeling.",arc,fantasy_office_building_2,2,test,tier2,T2_storey_heights
+413,"What is the distribution of offices by floor, including their individual areas?","Office Distribution by Floor:
+   Total offices identified: 13
+
+   Note: Space definitions are limited in this model.
+
+   Groundfloor:
+     • Office 1: 14.63 sq m
+     • Office 2: 14.62 sq m
+     • Office 3: 14.62 sq m
+     • Office 4: 14.93 sq m
+
+   1st Floor:
+     • Office 5: 14.62 sq m
+     • Office 6: 14.62 sq m
+     • Office 7: 14.93 sq m
+
+   2nd Floor:
+     • Office 8: 14.62 sq m
+     • Office 9: 14.62 sq m
+     • Office 10: 14.93 sq m
+
+   3rd Floor:
+     • Office 11: 14.62 sq m
+     • Office 12: 14.62 sq m
+     • Office 13: 14.93 sq m",arc,fantasy_office_building_2,2,test,tier2,T2_room_program
+415,What furniture is available in office 13?,"Office 13 Furniture:
+   - Schreibtisch-Kombination-01:Typ1:2589494
+   - Regal-01:1500 x 600 x 2500:2589498",arc,fantasy_office_building_2,1,train,tier2,T2_furniture_in_room

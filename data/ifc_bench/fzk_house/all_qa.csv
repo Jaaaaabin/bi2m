@@ -1,0 +1,384 @@
+id,question,ground_truth,ifc_model,project,category,split
+507,What is the project information and location details for this building?,"Building Information:
+   - Project Name: Projekt-FZK-Haus
+   - Project Description: Projekt FZK-House create by KHH Forschuungszentrum Karlsruhe
+   - Building Name: FZK-Haus
+   - Site/Location: Gelaende
+   - Latitude: 49°6'1""0.566
+   - Longitude: 8°26'11""0.5404
+
+   Building Type Analysis:
+   - Residential building
+   - 2-level structure
+   - German attribute names
+   - BIM modeling with ARCHICAD authoring",arc,fzk_house,1,train
+508,"What are the key building metrics including element counts, number of levels, total spaces, and footprint area?","Building Scale:
+   - Total Structural Elements: 46
+   - Number of Levels: 2 storeys
+   - Total Spaces: 7 defined spaces
+   - Building footprint: 120 sq m",arc,fzk_house,2,train
+509,Which software and standards were applied?,"Modeling Standards:
+   - IFC Schema: IFC4
+   - File Format: Industry Foundation Classes (IFC)
+
+   Originating Application:
+   - Software: ARCHICAD 20.0.0
+   - Developer: GRAPHISOFT
+   - IFC Add-on: IFC2x3 add-on version: 4009 GER FULL",arc,fzk_house,1,train
+510,"What is the space breakdown by level and function, including areas?","Based on the IFC model analysis, here is the space breakdown by level and function including areas:
+
+Erdgeschoss (Ground Floor) - Total: 101.39 m²
+- Wohnen (Living): 25.99 m²
+- Schlafzimmer (Bedroom): 22.07 m²
+- Küche (Kitchen): 16.31 m²
+- Buero (Office): 12.98 m²
+- Bad (Bathroom): 12.50 m²
+- Flur (Hallway): 11.53 m²
+
+Dachgeschoss (Upper Floor) - Total: 107.16 m²
+- Galerie: 107.16 m²",arc,fzk_house,2,train
+511,"What are all the rooms on the ground level, including their areas and ceiling heights?","Ground Level (Erdgeschoss): 6 spaces
+   Total Ground Floor Area: 98.8 sq m
+
+   Ground Level Room Layout:
+   - Room 5: Wohnen (25.2 sq m, 2.5m height)
+   - Room 4: Schlafzimmer (21.4 sq m, 2.5m height)
+   - Room 6: KÖºche (16.3 sq m, 2.5m height)
+   - Room 2: Buero (12.6 sq m, 2.5m height)
+   - Room 3: Bad (12.1 sq m, 2.5m height)
+   - Room 1: Flur (11.2 sq m, 2.5m height)",arc,fzk_house,1,train
+512,"What are all the rooms in the attic level, including their areas and ceiling heights?","Attic Level (Dachgeschoss): 1 spaces
+   Total Attic Floor Area: 74.5 sq m
+
+   Attic Level Room Layout:
+   - Room 7: Galerie (74.5 sq m, 4.0m height)",arc,fzk_house,1,test
+513,"What are the elevation, floor height, and floor-to-floor height for each level?","Building Level Heights:
+
+   Erdgeschoss:
+   - Elevation: 0.00 m
+   - Floor Height: 2.70 m
+   - Gross Floor Area: 119.8 sq m
+
+   Dachgeschoss:
+   - Elevation: 2.70 m
+   - Floor Height: 2.00 m
+   - Gross Floor Area: 121.7 sq m
+
+   Floor-to-Floor Heights:
+   - Erdgeschoss to Dachgeschoss: 2.70 m",arc,fzk_house,1,test
+514,Which room in the building is the largest?,"Largest Room: Room 7
+   Function: Galerie
+   Area: 74.5 sq m
+   Level: Dachgeschoss
+   Height: 4.00 m
+   Volume: 298.04 cu m",arc,fzk_house,1,train
+515,"What door types are present in the building, how many of each type, and what are their dimensions?","Total Doors: 5
+
+   Door Types and Quantities:
+   - IFC TÖºr - Eine Öñffnunsgrichtung: 3 doors
+   - EingangstÖºr: 1 doors
+   - SchiebetÖºr_3-teilig: 1 door
+
+   Individual Door Details:
+   - Terrassentuer: SchiebetÖºr_3-teilig (2010mm x 2375mm)
+   - Haustuer: EingangstÖºr (1010mm x 2010mm)
+   - Innentuer-1: IFC TÖºr - Eine Öñffnunsgrichtung (885mm x 2010mm)
+   - Innentuer-2: IFC TÖºr - Eine Öñffnunsgrichtung (885mm x 2010mm)
+   - Innentuer-3: IFC TÖºr - Eine Öñffnunsgrichtung (885mm x 2010mm)",arc,fzk_house,2,test
+516,Which three doors have the greatest widths in the building?,"Three Largest Door Widths:
+   1. 2010mm - Terrassentuer (SchiebetÖºr_3-teilig)
+   2. 1010mm - Haustuer (EingangstÖºr)
+   3. 885mm - Innentuer-1 (IFC TÖºr - Eine Öñffnunsgrichtung)",arc,fzk_house,2,train
+517,"What is the narrowest door width used in the building, and which doors have this width?","the Shortest Door Width is 885mm, which is used in:
+   1.  Innentuer-1 (IFC TÖºr - Eine Öñffnunsgrichtung)
+   2. Innentuer-2 (IFC TÖºr - Eine Öñffnunsgrichtung)
+   3. Innentuer-3 (IFC TÖºr - Eine Öñffnunsgrichtung)",arc,fzk_house,2,train
+518,"What window types are present in the building, how many of each, and how are they distributed by floor?","Total Windows: 11
+
+   Window Types and Quantities:
+   - IFC Fenster - zwei Panele - Vertikal: 9 windows (81.8%)
+   - Rundfenster 13: 2 windows (18.2%)
+
+   Windows by Location:
+   Ground Floor (EG): 9 windows
+   Attic Floor (OG): 2 windows",arc,fzk_house,2,test
+519,"What is the maximum window width used in this building, and which windows have this width?","the Largest Window Width is 2000mm, which is used in:
+   1. EG-Fenster-1 (IFC Fenster - zwei Panele - Vertikal)
+   2. EG-Fenster-2 (IFC Fenster - zwei Panele - Vertikal)
+   3. EG-Fenster-3 (IFC Fenster - zwei Panele - Vertikal)
+   4. EG-Fenster-4 (IFC Fenster - zwei Panele - Vertikal)
+   5. EG-Fenster-5 (IFC Fenster - zwei Panele - Vertikal)
+   6. EG-Fenster-6 (IFC Fenster - zwei Panele - Vertikal)
+   7. EG-Fenster-7 (IFC Fenster - zwei Panele - Vertikal)
+   8. EG-Fenster-8 (IFC Fenster - zwei Panele - Vertikal)
+   9. EG-Fenster-9 (IFC Fenster - zwei Panele - Vertikal)",arc,fzk_house,2,test
+520,"What is the minimum window width used in the building, and which windows have this width?","the Shortest Window Width is 1000mm, which is used in:
+   1. OG-Fenster-2 (Rundfenster 13)
+   2. OG-Fenster-1 (Rundfenster 13)",arc,fzk_house,2,test
+521,"What wall types are used throughout the building, with their respective quantities?","Total Walls: 13
+
+   Wall Types:
+   - Leichtbeton 102890359 300: 8 walls
+   - Leichtbeton 102890359 240: 5 walls",arc,fzk_house,2,test
+522,"Which walls form the exterior envelope, and what are their properties including thickness and total length?","Exterior Walls: 8 walls
+
+   Exterior Wall Types:
+   - Leichtbeton 102890359 300
+
+   Exterior Wall Properties:
+   - Thickness: 300mm
+   - Material: Leichtbeton 102890359
+   - Total Length: 85.60 m",arc,fzk_house,2,test
+523,"Which walls are used on the interior partitions, and what are their properties including thickness and total length?","Interior Walls: 5 walls
+
+   Interior Wall Types:
+   - Leichtbeton 102890359 240
+
+   Interior Wall Properties:
+   - Thickness: 240mm
+   - Material: Leichtbeton 102890359
+   - Total Length: 24.06 m",arc,fzk_house,2,train
+524,Which materials are used to construct the walls?,"Wall Materials Used: 1 unique materials
+
+   Leichtbeton 102890359:
+   - Used in: Leichtbeton 102890359 240, Leichtbeton 102890359 300",arc,fzk_house,1,train
+525,What materials are used for the exterior walls?,"Exterior Wall Materials:
+   - Leichtbeton 102890359",arc,fzk_house,1,test
+526,What materials are specified for the interior walls?,"Interior Wall Materials:
+   - Leichtbeton 102890359",arc,fzk_house,1,train
+527,What are the thicknesses of the various wall types?,"Wall Thicknesses by Type:
+   - Leichtbeton 102890359 240: 240mm
+   - Leichtbeton 102890359 300: 300mm",arc,fzk_house,1,test
+528,What percentage of walls are load-bearing versus non-load-bearing?,"Load-bearing classification fields exist but are not populated.
+All walls have 'Tragende Funktion' property set to 'Nicht definiert' (Not defined).",arc,fzk_house,4,train
+529,What is the total length of exterior walls?,Exterior Walls are 85.60 m in total.,arc,fzk_house,2,train
+530,What is the total length of interior walls?,Interior Walls are 24.06 m in total.,arc,fzk_house,2,test
+531,"What is the building's total net floor area, broken down by level?","Total Net Floor Area: 173.3 sq m
+
+   Net Floor Area by Level:
+   - Erdgeschoss: 98.8 sq m (57.0%)
+   - Dachgeschoss: 74.5 sq m (43.0%)",arc,fzk_house,2,train
+532,Which coverings are applied inside the building?,No Covering elements found in the model.,arc,fzk_house,4,train
+533,Which materials are used for the ceilings?,"Ceiling Material Analysis:
+   - Floor slabs (ceiling from below): 1 elements
+   - Covering elements: 0 elements
+
+   Ceiling Materials:
+   - Solid 397409098",arc,fzk_house,1,train
+534,What furniture items are present in the building?,No furniture elements found in the model.,arc,fzk_house,4,train
+535,Which sanitary fixtures and equipment are present in the building?,No sanitary equipment found in this model.,arc,fzk_house,4,train
+536,How many toilets are located on the ground floor?,"Toilet/Bathroom spaces on ground floor: 1
+
+   Ground floor toilet/bathroom spaces:
+   - Room 3: Bad (12.1 sq m)",arc,fzk_house,2,test
+537,Which stair types are used in the building?,"Total Stairs: 1
+
+   Stair 1: Wendeltreppe
+   - Level: Erdgeschoss
+
+   Related Circulation Elements:
+   - Railings: 2
+     - Railing 1 (Level: Dachgeschoss)
+     - Railing 2 (Level: Dachgeschoss)",arc,fzk_house,1,train
+538,What is the total volume of all floor slabs combined?,"Floor Slab Analysis:
+   - Total floor slabs: 1
+   - Slab-033: Thickness: 200mm
+   - Total gross floor slab volume: 23.13 cu m
+   - Total net floor slab volume: 19.97 cu m",arc,fzk_house,2,test
+539,Which types of railings are installed?,"Total Railings: 2
+
+   Railing 1: Railing 1
+   - Level: Dachgeschoss
+   - Materials: Solid
+
+   Railing 2: Railing 2
+   - Level: Dachgeschoss
+   - Materials: Solid
+
+   Railing Installation Summary:
+   - Connected to stairs: 0 stair(s)
+   - Primary location: Dachgeschoss level",arc,fzk_house,1,train
+540,"Which rooms have the highest ceiling heights, and what is that height value?","Highest Ceiling Height: 4.00 m
+
+   Rooms with highest ceiling height (4.00 m):
+   - Room 7: Galerie
+     Level: Dachgeschoss, Area: 74.5 sq m
+
+   All Rooms Ranked by Ceiling Height:
+   1. Room 7 (Galerie): 4.00 m (Dachgeschoss)
+   2. Room 4 (Schlafzimmer): 2.50 m (Erdgeschoss)
+   3. Room 3 (Bad): 2.50 m (Erdgeschoss)
+   4. Room 2 (Buero): 2.50 m (Erdgeschoss)
+   5. Room 5 (Wohnen): 2.50 m (Erdgeschoss)
+   6. Room 1 (Flur): 2.50 m (Erdgeschoss)
+   7. Room 6 (KÖºche): 2.50 m (Erdgeschoss)",arc,fzk_house,2,train
+541,"How is the building's space allocated by function, with areas and percentages for each?","Building Space Utilization Analysis:
+   Total Building Area: 173.3 sq m
+   Total Functions: 7
+
+   Space Utilization by Function:
+
+   Galerie:
+   - Total Area: 74.5 sq m
+   - Number of Spaces: 1
+
+   Wohnen:
+   - Total Area: 25.2 sq m
+   - Number of Spaces: 1
+
+   Schlafzimmer:
+   - Total Area: 21.4 sq m
+   - Number of Spaces: 1
+
+   KÖºche:
+   - Total Area: 16.3 sq m
+   - Number of Spaces: 1
+
+   Buero:
+   - Total Area: 12.6 sq m
+   - Number of Spaces: 1
+
+   Bad:
+   - Total Area: 12.1 sq m
+   - Number of Spaces: 1
+
+   Flur:
+   - Total Area: 11.2 sq m
+   - Number of Spaces: 1
+
+   Functional Category Summary:
+   - Residential/Living: 137.4 sq m (79.3%)
+   - Service/Circulation: 23.3 sq m (13.4%)
+   - Work/Office: 12.6 sq m (7.3%)",arc,fzk_house,2,test
+542,Which door types include fire rating data?,No door types have fire rating information in this model.,arc,fzk_house,4,test
+543,Which window types include fire rating information?,No window types have fire rating information in this model.,arc,fzk_house,4,train
+544,"What are the main structural elements in this building, grouped by type with their counts?","Structural Elements Summary:
+   - Beams: 4 elements
+   - Columns: 0 elements
+   - Members (roof structure): 42 elements
+   - Slabs: 4 elements
+     - Floor slabs: 1
+     - Roof slabs: 2
+     - Base/foundation slabs: 1
+   - Foundations: 0 elements
+
+   Total Structural Elements: 50",arc,fzk_house,2,test
+545,"Which beam types are used in the structure, with their quantities and properties?","Total Beams: 4
+
+   Beam Types and Quantities:
+   - Unterzug-1: 1 beams
+   - Pfette-2-1: 1 beams
+   - Pfette-1-1: 1 beams
+   - First: 1 beams
+
+   Beam Details:
+
+   Beam: Unterzug-1
+   - Level: Erdgeschoss
+   - Length: 4.08 m
+   - Width: 0.20 m
+   - Depth: 0.24 m
+   - CrossSectionArea: 0.048 sq m
+   - Materials: Radial Gradient Fill 1515460218
+
+   Beam: Pfette-2-1
+   - Level: Dachgeschoss
+   - Materials: Solid
+
+   Beam: Pfette-1-1
+   - Level: Dachgeschoss
+   - Materials: Solid
+
+   Beam: First
+   - Level: Dachgeschoss
+   - Materials: Solid",arc,fzk_house,2,train
+546,Which column types are present in the building?,No columns found in this building model.,arc,fzk_house,4,test
+547,"What slab types are used, how many of each, and what are their thicknesses?","Slab Analysis: 4 total slabs
+
+   Slab Classification:
+   - FLOOR Slabs: 1
+   - ROOF Slabs: 2
+   - BASESLAB Slabs: 1
+
+   FLOOR Slab Details:
+   - Slab-033 (Level: Dachgeschoss)
+     Thickness: 200mm
+     Area: 115.6 sq m
+     Volume: 23.13 cu m
+     Materials: Solid 397409098
+
+   ROOF Slab Details:
+   - Dach-1 (Level: Dachgeschoss)
+     Thickness: 200mm
+     Area: 82.6 sq m
+     Volume: 16.51 cu m
+     Materials: Solid 397409098
+   - Dach-2 (Level: Dachgeschoss)
+     Thickness: 200mm
+     Area: 82.6 sq m
+     Volume: 16.51 cu m
+     Materials: Solid 397409098
+
+   BASESLAB Slab Details:
+   - Bodenplatte (Level: Erdgeschoss)
+     Thickness: 200mm
+     Area: 120.0 sq m
+     Volume: 24.00 cu m
+     Materials: Stahlbeton 65690",arc,fzk_house,2,test
+548,"Which roof structural components are employed, including slabs, members, and beams?","Roof Structural Elements:
+   - Roof Slabs: 2
+     - Dach-1: 82.6 sq m, 200mm thick
+     - Dach-2: 82.6 sq m, 200mm thick
+   - Total Roof Area: 165.1 sq m
+   - Total Roof Volume: 33.02 cu m
+
+   - Roof Structural Members: 42
+   Roof Member Types:
+     - Sparren: 42 members
+
+   - Roof Beams: 3
+     - Pfette-2-1
+     - Pfette-1-1
+     - First
+
+   Roof Structural System Summary:
+   - Timber frame roof structure with 42 rafters (Sparren)
+   - 2 concrete roof slab(s)
+   - 3 ridge beam(s) and purlins (Pfetten)",arc,fzk_house,2,train
+549,Which MEP systems are installed in this building?,No MEP systems found in this building model.,arc,fzk_house,4,train
+550,What types of piping are used throughout the building?,No piping systems found in this building model.,arc,fzk_house,4,test
+551,Which heating systems are installed?,No heating systems found in this architectural model.,arc,fzk_house,4,test
+552,Which cooling systems are installed?,No cooling systems found in this architectural model.,arc,fzk_house,4,test
+553,What electrical components are present in the building?,No electrical components found in this architectural model.,arc,fzk_house,4,test
+554,Which construction phases are represented in the model?,"Construction Phases Found:
+   - Bestand: 95 elements (100.0%)
+
+   Phase Distribution by Element Type:
+   Walls: 26 elements
+     - Bestand: 26
+   Doors: 5 elements
+     - Bestand: 5
+   Windows: 11 elements
+     - Bestand: 11
+   Slabs: 4 elements
+     - Bestand: 4
+   Structural: 46 elements
+     - Bestand: 46
+   Circulation: 3 elements
+     - Bestand: 3",arc,fzk_house,2,test
+555,Which elements correspond to renovation work versus existing construction?,"Construction Type Analysis:
+   - Renovation elements: 0
+   - New construction: 0
+   - Demolition elements: 0
+
+   Building Composition:
+   - 100.0% existing construction
+   - 0.0% other phases
+
+   Element types that are entirely existing construction:
+   - All walls are existing (Bestand)
+   - All doors are existing (Bestand)
+   - All windows are existing (Bestand)
+   - All slabs are existing (Bestand)
+   - All structural are existing (Bestand)
+   - All circulation are existing (Bestand)",arc,fzk_house,2,train

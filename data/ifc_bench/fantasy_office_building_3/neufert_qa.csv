@@ -1,0 +1,84 @@
+id,question,ground_truth,ifc_model,project,category,split,neufert_tier,neufert_topic
+444,What are the elevations of the building levels?,"Building Level Elevations:
+   - EG: 0.00 m above ground
+   - OG1: 3.70 m above ground
+   - OK OG2: 7.40 m above ground
+   - OK OG3: 11.10 m above ground
+   - OK OG4: 14.80 m above ground
+   - OK OG5: 18.50 m above ground",arc,fantasy_office_building_3,2,train,tier2,T2_storey_heights
+447,"What types of office spaces are available in this building, and could you provide a breakdown of their quantities?","Office Space Types:
+   Total office spaces: 31
+
+   Office types breakdown:
+   - Open-plan offices: 6
+     • Open-plan office 1 (EG): 54.57 sq m
+     • Open-plan office 2 (OK OG2): 56.60 sq m
+     • Open-plan office 2 (OK OG3): 56.67 sq m
+     • Open-plan office 1 (OG1): 54.57 sq m
+     • Open-plan office 1 (OK OG2): 54.57 sq m
+     • Open-plan office 1 (OK OG3): 54.57 sq m
+
+   - Small office spaces: 5
+     • Small office space (EG): 27.28 sq m
+     • Small office space (OG1): 27.28 sq m
+     • Small office space (OK OG2): 27.28 sq m
+     • Small office space (OK OG3): 27.28 sq m
+     • Small office space (OK OG4): 27.28 sq m
+
+   - Individual offices: 20
+     • Individual office 1 (EG): 10.96 sq m
+     • Individual office 2 (EG): 11.08 sq m
+     • Individual office 3 (EG): 11.26 sq m
+     • Individual office 4 (EG): 11.04 sq m
+     • Individual office 1 (OG1): 10.96 sq m
+     • Individual office 2 (OG1): 11.08 sq m
+     • Individual office 3 (OG1): 11.26 sq m
+     • Individual office 4 (OG1): 11.04 sq m
+     • Individual office 1 (OK OG2): 10.96 sq m
+     • Individual office 2 (OK OG2): 11.08 sq m
+     • Individual office 3 (OK OG2): 11.26 sq m
+     • Individual office 4 (OK OG2): 11.04 sq m
+     • Individual office 1 (OK OG3): 10.96 sq m
+     • Individual office 2 (OK OG3): 11.08 sq m
+     • Individual office 3 (OK OG3): 11.26 sq m
+     • Individual office 4 (OK OG3): 11.04 sq m
+     • Individual office 1 (OK OG4): 10.96 sq m
+     • Individual office 2 (OK OG4): 11.08 sq m
+     • Individual office 3 (OK OG4): 11.26 sq m
+     • Individual office 4 (OK OG4): 11.04 sq m",arc,fantasy_office_building_3,2,train,tier2,T2_room_program
+449,What furniture is available in Open-plan office on the ground floor?,"Open-plan office: Open-plan office 1
+   - Total furniture items: 8
+
+   Furniture breakdown:
+   - Schreibtisch-Kombination-01:Typ1: 8 item(s)",arc,fantasy_office_building_3,2,test,tier2,T2_furniture_in_room
+450,"What restroom spaces are on the second floor, along with their areas?","Restrooms on OK OG2:
+   - Total restroom spaces: 2
+   - Total restroom area: 17.11 sq m
+
+   Restroom spaces:
+   - Toilet men: 8.34 sq m
+   - Toilet women: 8.77 sq m",arc,fantasy_office_building_3,2,train,tier2,T2_room_program
+451,"How many individual office rooms are available on each floor, including their total areas?","Individual Office Rooms by Floor:
+   (Excludes open-plan and small office spaces)
+
+   EG:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   OG1:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   OK OG2:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   OK OG3:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   OK OG4:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   Total individual office rooms in building: 20",arc,fantasy_office_building_3,2,train,tier2,T2_room_program

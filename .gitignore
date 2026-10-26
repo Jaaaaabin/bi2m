@@ -75,3 +75,18 @@ viewer/public/res/intents/*.json
 viewer/public/res/lines/*.json
 !viewer/public/res/lines/index.json
 !viewer/public/res/lines/34b3f3dac339ade6.json
+
+# === zihan_dev1: Neufert knowledge → rules work (see BIM_INTENT.md) ===
+# The Neufert book and everything parsed from it in full (PDF, VLM pages, embeddings, page/figure dataset) are not ours
+# to publish; neither are the 370-model corpus, the ifc-bench models, or graphs extracted from them.
+/data/neufert/
+/data/model_ifc4_0001-0370/
+/data/model_ifc4_0001-0370.zip
+/data/ifc_bench/**/*.ifc
+/runs/graphs/
+/runs/intent_pilot_residential/
+/archive/0_archi_rag_agent/tier1/
+/archive/3_cuatesting/
+# The colleague sweep output stays in research (bi2m keeps /research/ local); our review file is merged into rules/_review.json.
+/neufert_applicability_*.json
+/rules_review_*.json

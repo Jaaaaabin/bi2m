@@ -1,0 +1,206 @@
+{
+  "v1_quotes@dev": {
+    "split": "dev",
+    "n": 807,
+    "positives_full_marks": "415/437 = 95.0%",
+    "negatives_false_correct": "0/370 = 0.0%",
+    "by_kind": {
+      "gold": "72/74",
+      "accept": "131/141",
+      "paraphrase": "70/74",
+      "verbose": "71/74",
+      "terse": "71/74",
+      "distractor": "222/222",
+      "near_miss": "74/74",
+      "omission": "74/74"
+    },
+    "mean_input_tokens": 596
+  },
+  "v1_context@dev": {
+    "split": "dev",
+    "n": 807,
+    "positives_full_marks": "431/437 = 98.6%",
+    "negatives_false_correct": "0/370 = 0.0%",
+    "by_kind": {
+      "gold": "74/74",
+      "accept": "136/141",
+      "paraphrase": "73/74",
+      "verbose": "74/74",
+      "terse": "74/74",
+      "distractor": "222/222",
+      "near_miss": "74/74",
+      "omission": "74/74"
+    },
+    "mean_input_tokens": 842
+  },
+  "v2_quotes@dev": {
+    "split": "dev",
+    "n": 807,
+    "positives_full_marks": "421/437 = 96.3%",
+    "negatives_false_correct": "1/370 = 0.3%",
+    "by_kind": {
+      "gold": "72/74",
+      "accept": "133/141",
+      "paraphrase": "72/74",
+      "verbose": "72/74",
+      "terse": "72/74",
+      "distractor": "221/222",
+      "near_miss": "74/74",
+      "omission": "74/74"
+    },
+    "mean_input_tokens": 729
+  },
+  "v2_context@dev": {
+    "split": "dev",
+    "n": 807,
+    "positives_full_marks": "431/437 = 98.6%",
+    "negatives_false_correct": "0/370 = 0.0%",
+    "by_kind": {
+      "gold": "74/74",
+      "accept": "136/141",
+      "paraphrase": "73/74",
+      "verbose": "74/74",
+      "terse": "74/74",
+      "distractor": "222/222",
+      "near_miss": "74/74",
+      "omission": "74/74"
+    },
+    "mean_input_tokens": 975
+  },
+  "v3_both@dev": {
+    "split": "dev",
+    "n": 807,
+    "positives_full_marks": "437/437 = 100.0%",
+    "negatives_false_correct": "0/370 = 0.0%",
+    "by_kind": {
+      "gold": "74/74",
+      "accept": "141/141",
+      "paraphrase": "74/74",
+      "verbose": "74/74",
+      "terse": "74/74",
+      "distractor": "222/222",
+      "near_miss": "74/74",
+      "omission": "74/74"
+    },
+    "mean_input_tokens": 1140
+  },
+  "v3_both_checks@dev": {
+    "split": "dev",
+    "n": 807,
+    "positives_full_marks": "434/437 = 99.3%",
+    "negatives_false_correct": "0/370 = 0.0%",
+    "by_kind": {
+      "gold": "74/74",
+      "accept": "138/141",
+      "paraphrase": "74/74",
+      "verbose": "74/74",
+      "terse": "74/74",
+      "distractor": "222/222",
+      "near_miss": "74/74",
+      "omission": "74/74"
+    },
+    "mean_input_tokens": 1214
+  },
+  "v1_quotes@holdout": {
+    "split": "holdout",
+    "n": 657,
+    "positives_full_marks": "349/352 = 99.1%",
+    "negatives_false_correct": "1/305 = 0.3%",
+    "by_kind": {
+      "gold": "61/61",
+      "accept": "106/108",
+      "paraphrase": "61/61",
+      "verbose": "61/61",
+      "terse": "60/61",
+      "distractor": "183/183",
+      "near_miss": "61/61",
+      "omission": "60/61"
+    },
+    "mean_input_tokens": 605
+  },
+  "v2_context@holdout": {
+    "split": "holdout",
+    "n": 657,
+    "positives_full_marks": "346/352 = 98.3%",
+    "negatives_false_correct": "1/305 = 0.3%",
+    "by_kind": {
+      "gold": "60/61",
+      "accept": "105/108",
+      "paraphrase": "60/61",
+      "verbose": "60/61",
+      "terse": "61/61",
+      "distractor": "183/183",
+      "near_miss": "61/61",
+      "omission": "60/61"
+    },
+    "mean_input_tokens": 902
+  },
+  "v3_both@holdout": {
+    "split": "holdout",
+    "n": 657,
+    "positives_full_marks": "350/352 = 99.4%",
+    "negatives_false_correct": "2/305 = 0.7%",
+    "by_kind": {
+      "gold": "61/61",
+      "accept": "106/108",
+      "paraphrase": "61/61",
+      "verbose": "61/61",
+      "terse": "61/61",
+      "distractor": "183/183",
+      "near_miss": "61/61",
+      "omission": "59/61"
+    },
+    "mean_input_tokens": 1129
+  },
+  "v3_both_checks@holdout": {
+    "split": "holdout",
+    "n": 657,
+    "positives_full_marks": "350/352 = 99.4%",
+    "negatives_false_correct": "1/305 = 0.3%",
+    "by_kind": {
+      "gold": "61/61",
+      "accept": "106/108",
+      "paraphrase": "61/61",
+      "verbose": "61/61",
+      "terse": "61/61",
+      "distractor": "183/183",
+      "near_miss": "61/61",
+      "omission": "60/61"
+    },
+    "mean_input_tokens": 1203
+  },
+  "v3_both_checks@dev#rep1": {
+    "split": "dev",
+    "n": 807,
+    "positives_full_marks": "437/437 = 100.0%",
+    "negatives_false_correct": "0/370 = 0.0%",
+    "by_kind": {
+      "gold": "74/74",
+      "accept": "141/141",
+      "paraphrase": "74/74",
+      "verbose": "74/74",
+      "terse": "74/74",
+      "distractor": "222/222",
+      "near_miss": "74/74",
+      "omission": "74/74"
+    },
+    "mean_input_tokens": 1214
+  },
+  "v3_both_checks@holdout#rep1": {
+    "split": "holdout",
+    "n": 657,
+    "positives_full_marks": "350/352 = 99.4%",
+    "negatives_false_correct": "1/305 = 0.3%",
+    "by_kind": {
+      "gold": "61/61",
+      "accept": "106/108",
+      "paraphrase": "61/61",
+      "verbose": "61/61",
+      "terse": "61/61",
+      "distractor": "183/183",
+      "near_miss": "61/61",
+      "omission": "60/61"
+    },
+    "mean_input_tokens": 1203
+  }
+}

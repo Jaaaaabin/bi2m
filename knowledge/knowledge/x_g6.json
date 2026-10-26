@@ -1,0 +1,50 @@
+[
+ {
+  "topic": "墙体与构造",
+  "title": "建筑等级与承重墙耐火",
+  "summary": "超过两套住宅或使用面积达 400 m² 的建筑属于建筑等级 3–5；承重及支撑墙、柱在等级 5 须为防火（耐火）构件，等级 4 须为高度阻燃，等级 1 和 2 只需阻燃（如 F 30）。",
+  "prefixes": [
+   "Load-bearing and bracing walls and columns must be constructed fireproof",
+   "buildings with more than two flats or a usable area of 400 m²",
+   "This does not apply to the uppermost storeys of roof spaces"
+  ]
+ },
+ {
+  "topic": "墙体与构造",
+  "title": "地下室墙体与楼板耐火",
+  "summary": "地下室内的承重墙须为防火（耐火）构件，仅等级 1、2 的建筑可为阻燃；楼板须为防火或至少阻燃，地下室顶板须为防火；钢筋混凝土等实心楼板在一定条件下无需附加防护即有足够耐火能力。",
+  "prefixes": [
+   "In cellars, they have to be constructed fireproof",
+   "Ceilings must be fireproof, or at least fire-retarding",
+   "Solid slabs (e.g. reinforced concrete slabs",
+   "Exceptions apply for buildings of classes 1 and 2, slabs and ceilings above roof"
+  ]
+ },
+ {
+  "topic": "墙体与构造",
+  "title": "住宅/商业单元之间的分隔墙",
+  "summary": "居住或商业单元之间（或单元与其他用途房间之间）分隔墙的耐火时间须与该层承重构件相当，并须一直砌到结构楼板（屋顶空间内到屋面覆层）。",
+  "prefixes": [
+   "The fire resistance duration of separating walls between residential or commercial units"
+  ]
+ },
+ {
+  "topic": "墙体与构造",
+  "title": "外墙及外墙饰面的燃烧性能",
+  "summary": "非承重外墙及承重外墙的非承重部分（等级 1–3 除外）须用不燃（至少阻燃）材料；等级 1、2 的建筑可用普通可燃材料（如木材）做外墙饰面，前提是能有效防止火势蔓延到相邻建筑。",
+  "prefixes": [
+   "Non-load-bearing external walls and non-load-bearing parts",
+   "For buildings of classes 1 and 2, external wall claddings",
+   "External wall claddings, including insulation and support construction"
+  ]
+ },
+ {
+  "topic": "疏散与防火",
+  "title": "疏散走廊侧墙 F 30",
+  "summary": "作为疏散路线侧墙的走廊墙须为阻燃构造（F 30），其上的采光开口可用 G 级防火玻璃；非承重分隔墙可做成不同品质（耐火等级）的轻钢/木龙骨隔墙。",
+  "prefixes": [
+   "A typical area of application for G-glazing",
+   "Non-load-bearing separating walls can be constructed as stud partitions"
+  ]
+ }
+]

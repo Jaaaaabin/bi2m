@@ -1,0 +1,67 @@
+{
+  "gemini/mcq": {
+    "n": 3,
+    "accuracy": 1.0,
+    "labels": {
+      "correct": 3
+    },
+    "needs_review": 0,
+    "median_latency_s": 2.6
+  },
+  "gemini/open": {
+    "n": 3,
+    "accuracy": 0.667,
+    "labels": {
+      "partially_correct": 1,
+      "correct": 2
+    },
+    "needs_review": 0,
+    "median_latency_s": 3.25
+  },
+  "jev/mcq": {
+    "n": 3,
+    "accuracy": 0.667,
+    "labels": {
+      "correct": 2,
+      "incorrect": 1
+    },
+    "needs_review": 0,
+    "median_latency_s": 0.31
+  },
+  "luna/mcq": {
+    "n": 3,
+    "accuracy": 1.0,
+    "labels": {
+      "correct": 3
+    },
+    "needs_review": 0,
+    "median_latency_s": 2.9
+  },
+  "luna/open": {
+    "n": 3,
+    "accuracy": 1.0,
+    "labels": {
+      "correct": 3
+    },
+    "needs_review": 1,
+    "median_latency_s": 5.8
+  },
+  "sonnet/mcq": {
+    "n": 3,
+    "accuracy": 1.0,
+    "labels": {
+      "correct": 3
+    },
+    "needs_review": 0,
+    "median_latency_s": 3.86
+  },
+  "sonnet/open": {
+    "n": 3,
+    "accuracy": 1.0,
+    "labels": {
+      "correct": 3
+    },
+    "needs_review": 0,
+    "median_latency_s": 3.44
+  }
+}

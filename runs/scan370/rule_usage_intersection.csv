@@ -1,0 +1,104 @@
+rid,title,status,mine_fires,mine_context,theirs_applicable,theirs_judged,K,core,flag
+R03,踏步比与步距公式,active,347,364,354,347,"K07,K08",True,review decision: keep
+R04,必要楼梯的梯段步数与休息平台,active,332,364,354,347,"K09,K10,K20",True,review decision: keep
+R05,必要楼梯的宽度与踏步比,active,364,364,354,354,K11,True,review decision: keep — 扶手这个太细节了我感觉， 其他的可以保留要不扶手这个删掉。
+R56,非法定必要楼梯的最小尺寸,active,0,364,354,354,K19,True,review decision: keep
+R21,外墙、外墙饰面与屋面覆盖的燃烧性能,active,349,349,353,0,K73,True,review decision: keep — 这个挺好的 但是是不是基本所有的默认值都是满足的？
+R44,采暖房间外窗至少双层/中空玻璃,active,341,341,,,,False,review decision: keep
+R07,门的净高与无障碍净宽,active,369,369,340,340,"K23,K26",True,review decision: keep
+R42,门洞模数与净宽折减,active,369,369,340,340,"K26,K23",False,review decision: keep
+R06,护栏高度按坠落高度分档,active,337,337,337,322,K15,False,review decision: keep
+R43,紧急出口的门型与宽度,active,315,315,319,319,"K24,K41",False,review decision: keep
+R45,平屋面坡度与隔汽层位置,active,288,288,364,93,"K63,K65",False,review decision: keep
+R30,使用单元 ≥ 400 m² 时走廊为必要走廊：侧墙 F 30,active,157,310,275,0,"K127,K44",True,review decision: keep
+R65,长疏散走廊分段与楼梯间门,active,136,311,275,0,K47,True,review decision: keep
+R25,必要楼梯的尺寸限值（非住宅）,active,267,267,354,354,"K11,K09",True,review decision: keep — 这个是不是有点和r03有点重？ 区别是什么？
+R11,工作场所厕所配置,active,167,238,260,154,"K120,K119",True,review decision: keep
+R47,办公楼楼板跨度与荷载,active,237,237,,,,True,review decision: keep
+R23,疏散距离按建筑类型：办公 ≤ 35 m，楼梯间距 30 / 60 m,active,229,229,321,253,"K38,K134",True,review decision: keep
+R33,茶水间：每 50–100 工位一间 ~10 m²,active,63,238,225,154,K119,True,review decision: keep
+R34,每层保洁间；中央垃圾房与物业用房,active,238,238,225,225,K122,True,review decision: keep
+R10,自然采光进深,active,238,238,221,0,K116,True,"review decision: keep — R10 的 THEN 改成""工作房间从采光面起的进深不宜超过约 7 m；更深的部分无法靠天光""，并把进深改为按窗所在墙的法线量；无窗的问题只留给 R38。你同意"
+R02,办公楼室内净高,active,220,220,335,335,K112,True,review decision: keep
+R87,单间办公的走廊是疏散通道，不得放家具,active,218,218,291,0,K136,True,review decision: keep
+R39,窗与工作区：视野宽度与进深,active,207,207,316,0,"K52,K53,K116",True,review decision: keep
+R08,混凝土外墙必须附加保温层,active,200,200,353,0,K59,False,review decision: keep
+R12,会议区每座面积,active,190,190,201,0,K118,True,review decision: keep
+R09,每工位面积指标,active,130,177,225,156,"K141,K113",True,review decision: keep
+R18,每工位的附属面积与总面积,active,177,177,225,156,"K141,K113",True,review decision: keep — 对 这个我感觉ok。 按我的理解这个是不是就是给的是每个房间用途的参考面积？ 如果是的话， 是不是可以拆成更细的规则 比如说一般什么区域涉及多大之类的
+R24,必要楼梯：封闭楼梯间、出口宽度、楼梯间开门,active,360,360,152,0,K43,True,review decision: keep — 我哦觉得最后一段可以不要 那个30min 自闭门可以不要了
+R58,住宅超过五个完整楼层须设电梯,active,44,97,92,1,K83,True,review decision: keep
+R36,组团办公 4–16 工位、距窗 ≤ 7.5 m；大开间依赖人工照明,active,80,80,221,0,"K117,K126",True,review decision: keep
+R95,单层外墙：高保温材料或附加保温层,active,64,64,353,0,K57,False,"review (one-sided): the colleague sweep finds it in 353 models, my context matches in only 64"
+R96,夹心墙的外叶与空气层,active,33,33,353,0,K58,False,"review (one-sided): the colleague sweep finds it in 353 models, my context matches in only 33"
+R55,螺旋楼梯作为户内唯一楼梯,active,64,64,20,0,K14,True,review decision: keep
+R83,厅室的每人容积（声学）,active,201,201,10,0,K121,True,"review (one-sided): my context matches in 201 models, the colleague sweep finds it in only 10"
+R48,容积率与建筑密度的计量口径,active,370,370,0,0,K06,False,"review (one-sided): my context matches in 370 models, the colleague sweep finds it in only 0"
+R49,DIN 277 面积分类与可出租面积,active,370,370,0,0,K79,False,"review (one-sided): my context matches in 370 models, the colleague sweep finds it in only 0"
+R50,DIN 277 建筑体积的量法,active,366,366,0,0,K80,False,"review (one-sided): my context matches in 366 models, the colleague sweep finds it in only 0"
+R57,无障碍建筑楼梯起止处的活动区,active,250,250,0,0,K32,True,"review (one-sided): my context matches in 250 models, the colleague sweep finds it in only 0"
+R71,轮椅转身空间与无障碍走廊宽度,active,256,256,0,0,K28,True,"review (one-sided): my context matches in 256 models, the colleague sweep finds it in only 0"
+R72,长走廊的轮椅会车位,active,150,182,0,0,K33,True,"review (one-sided): my context matches in 182 models, the colleague sweep finds it in only 0"
+R20,建筑等级决定承重构件与楼板的耐火要求,archived,369,369,358,0,K70,True,review decision: archive — 这个也pending一下 我感觉太细节了 有点不好说 
+R98,热阻与传热系数的计算,archived,349,349,364,0,K61,False,review decision: archive
+R46,隔墙与吊顶/架空地板、立面竖梃的连接,archived,287,287,345,0,"K148,K147",False,review decision: archive
+R82,卫生间类型的判定,archived,267,267,274,0,K109,True,review decision: archive
+R102,模数协调与标志尺寸,archived,370,370,265,0,K69,True,review decision: archive
+R14,办公楼朝向与北向房间,archived,0,238,,,,True,review decision: archive
+R16,网格模数：装修网格 = 立面网格，1.50 / 1.35 m,archived,238,238,265,0,"K131,K132,K115",True,review decision: archive — 这个太细节了
+R26,办公与疏散楼梯应便于快速通行；气派楼梯的平台豁免,archived,232,232,341,7,"K13,K10",True,review decision: archive
+R15,单排、双排、三排平面与建筑类型,archived,234,234,221,0,K133,True,review decision: archive
+R35,入口区及其相邻关系：会议区、餐厅、轮椅停放,archived,238,238,221,0,"K124,K118,K125",True,review decision: archive
+R38,工作间的窗面积,archived,235,259,221,0,K48,True,review decision: archive
+R32,工作场所厕所的布置细则,archived,189,189,260,118,"K120,K29",True,review decision: archive
+R17,中廊式办公楼的建筑进深,archived,172,172,265,0,"K116,K132",True,review decision: archive — 这个也太细节了 感觉不是很好判断
+R37,工位的桌面与活动面积,archived,233,233,149,0,"K114,K140",True,review decision: archive
+R89,屏幕工位的视线方向,archived,0,226,149,0,K142,True,review decision: archive
+R100,坡屋面保温的位置与通风构造,archived,119,119,201,0,K67,False,review decision: archive
+R22,每层每个使用单元两条独立疏散路线,archived,366,366,92,0,K39,True,review decision: archive — 这个pending一下 太细节了
+R66,住宅居住面积的计算方法,archived,97,97,92,0,"K76,K77,K78",False,review decision: archive
+R67,户内分组：起居区与睡眠区,archived,0,97,92,0,K85,True,review decision: archive
+R68,每套住宅的最低配置：厨房、储藏间、卫生间,archived,97,97,92,92,"K94,K103",True,review decision: archive
+R69,户内储藏空间,archived,97,97,92,0,K107,True,review decision: archive
+R75,无障碍住宅的户内活动区宽度 1.20 m,archived,0,91,92,0,K37,True,review decision: archive
+R76,居室的最低要求,archived,81,81,326,326,K74,True,review decision: archive
+R93,作为疏散路线的窗,archived,12,337,75,0,K40,True,"review (one-sided): my context matches in 337 models, the colleague sweep finds it in only 75"
+R28,无障碍电梯：轿厢与门前活动区,archived,77,77,73,0,"K30,K18",True,
+R59,一梯一户无电梯时限四层,archived,0,72,92,41,K91,True,"review (one-sided): the colleague sweep finds it in 92 models, my context matches in only 72"
+R63,超过两户的住宅须有一层无障碍,archived,9,97,72,0,K34,True,"review (one-sided): my context matches in 97 models, the colleague sweep finds it in only 72"
+R81,入户凹口尺寸,archived,0,80,69,0,K93,True,"review (one-sided): my context matches in 80 models, the colleague sweep finds it in only 69"
+R91,住宅门的净开启宽度,archived,97,97,69,0,K22,True,"review (one-sided): my context matches in 97 models, the colleague sweep finds it in only 69"
+R74,轮椅住宅的起居室最小面积与宽度,archived,0,72,64,0,K36,True,
+R78,门厅直达厨房、WC 和楼梯,archived,55,55,69,62,K87,True,review decision: archive
+R73,无障碍住宅的卫浴活动区,archived,0,74,50,0,K35,True,
+R80,独立住宅每层直通户外,archived,97,97,40,18,K90,True,"review (one-sided): my context matches in 97 models, the colleague sweep finds it in only 40"
+R79,户内走道宽度,archived,70,70,29,0,K89,True,review decision: archive
+R88,大空间办公的进深,archived,36,36,29,24,K137,True,
+R84,餐饮厨房员工超过 10 人须设休息室,archived,0,24,182,0,K128,True,"review (one-sided): the colleague sweep finds it in 182 models, my context matches in only 24"
+R92,电梯到达的住户户门,archived,0,25,24,24,K25,True,
+R54,不超过两户的住宅楼梯,archived,0,94,20,0,K12,True,"review (one-sided): my context matches in 94 models, the colleague sweep finds it in only 20"
+R41,机房 / 服务器机房的空间要求,archived,20,20,17,0,K145,True,
+R77,阳台面积与户外空间的连接,archived,15,15,92,8,"K81,K82",True,"review (one-sided): the colleague sweep finds it in 92 models, my context matches in only 15"
+R99,种植屋面的坡度,archived,15,15,268,0,K66,False,"review (one-sided): the colleague sweep finds it in 268 models, my context matches in only 15"
+R19,防火分区 ≤ 40 m 与防火墙,archived,206,370,14,0,K42,True,"review (one-sided): my context matches in 370 models, the colleague sweep finds it in only 14"
+R70,组合式办公（combi-office）的组织,archived,0,10,221,0,K135,True,"review (one-sided): the colleague sweep finds it in 221 models, my context matches in only 10"
+R85,研讨室的规模与进深,archived,10,10,201,157,K129,True,"review (one-sided): the colleague sweep finds it in 201 models, my context matches in only 10"
+R29,无障碍坡道,archived,7,7,7,0,K16,True,
+R40,档案室：楼面荷载与位置,archived,6,6,7,7,"K123,K143",True,
+R86,高校教研人员办公室面积,archived,0,6,10,0,K130,True,
+R01,高层建筑判定,archived,1,370,1,0,K01,True,"review (one-sided): my context matches in 370 models, the colleague sweep finds it in only 1"
+R31,单元之间的分隔墙,archived,1,1,80,0,K72,True,"review (one-sided): the colleague sweep finds it in 80 models, my context matches in only 1"
+R52,高层建筑分级与各级要求,archived,1,1,1,0,K152,True,
+R53,高层建筑的用途限制,archived,0,1,1,0,K153,True,
+R61,高层疏散楼梯的梯井、排烟与出口,archived,1,1,1,0,K150,True,
+R94,高层建筑立面的层间防火,archived,1,1,1,0,K46,True,
+R103,高层外窗的清洁方式,archived,0,1,1,0,K154,True,
+R13,退距深度按墙高计算,archived,349,349,0,0,K05,False,"review (one-sided): my context matches in 349 models, the colleague sweep finds it in only 0"
+R27,无台阶通达所有楼层（公众可达建筑）,archived,256,256,0,0,K27,True,"review (one-sided): my context matches in 256 models, the colleague sweep finds it in only 0"
+R51,联排住宅的进深与面宽,archived,0,97,0,0,K92,True,"review (one-sided): my context matches in 97 models, the colleague sweep finds it in only 0"
+R60,消防电梯（高度超过 30 m）,archived,0,0,0,0,K149,True,
+R62,高层电梯分组,archived,0,0,1,0,K151,True,
+R64,高层建筑疏散走道,archived,0,0,1,0,K45,True,
+R90,收发室面积,archived,0,0,0,0,K144,True,
+R97,背通风外挂层的空气间层,archived,0,0,1,0,K60,False,
+R101,分户墙的面密度,archived,0,0,80,0,K68,False,"review (one-sided): the colleague sweep finds it in 80 models, my context matches in only 0"

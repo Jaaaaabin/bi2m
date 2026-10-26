@@ -1,0 +1,130 @@
+id,question,ground_truth,ifc_model,project,category,split,neufert_tier,neufert_topic
+670,"What are the elevations of all building levels, including any additional height information such as floor-to-floor measurements and level connections?","Building Level Information:
+   - Foundation:
+     Elevation: -0.80 m
+
+   - Level 1 Living Rm.:
+     Elevation: -0.55 m
+
+   - Level 1:
+     Elevation: 0 m
+
+   - Level 2:
+     Elevation: 3.00 m
+
+   - Roof Line:
+     Elevation: 6.00 m
+     Floor-to-floor from Level 2: 3.00 m
+
+   Notes:
+   - 'Level 1' and 'Level 1 Living Rm.' are connected (same level)
+   - 'Ceiling' and 'Level 2' are connected (same level)",arc,samuel_macalister_sample_house,2,test,tier2,T2_storey_heights
+671,"How is the building's space utilized by function, with areas and percentages?","Building Space Utilization Analysis:
+   - Total Functions: 11
+   - Total Spaces: 14
+
+   Functional Category Summary:
+   - Bedroom Spaces: 3 spaces
+   - Bathroom Spaces: 4 spaces
+   - Kitchen/Dining Spaces: 1 space
+
+   Functions with Area Data:
+   - Kitchen & Dining: 73.0 sq m (26.2% of measured)
+     Spaces: 1
+   - Living: 70.3 sq m (25.2% of measured)
+     Spaces: 1
+   - Entry Hall: 30.7 sq m (11.0% of measured)
+     Spaces: 1
+   - Bedroom: 27.6 sq m (9.9% of measured)
+     Spaces: 2, Average: 13.8 sq m
+   - Master Bedroom: 27.0 sq m (9.7% of measured)
+     Spaces: 1
+   - Hall: 23.8 sq m (8.5% of measured)
+     Spaces: 1
+   - Bath: 10.7 sq m (3.8% of measured)
+     Spaces: 3, Average: 3.6 sq m
+   - Master Bath: 7.1 sq m (2.6% of measured)
+     Spaces: 1
+   - Laundry: 5.3 sq m (1.9% of measured)
+     Spaces: 1
+   - Mech.: 2.1 sq m (0.7% of measured)
+     Spaces: 1
+   - Linen: 1.4 sq m (0.5% of measured)
+     Spaces: 1",arc,samuel_macalister_sample_house,2,train,tier2,T2_space_use_by_function
+673,What ceiling height information is available in this model?,"Space-specific ceiling height information is not available in this model.
+
+Available Information:
+- The model contains building level elevations
+- Individual space heights are not included
+- Based on building design, spaces on level 2 may have higher ceilings",arc,samuel_macalister_sample_house,4,test,tier2,T2_ceiling_heights
+675,"What is the statistical breakdown of door widths in the building, including the average width, the range of widths, and the distribution of the most common widths?","Average Door Width: 1263 mm (1.26 m)
+   - Width range: 800 - 1890 mm
+   - Most common widths:
+     800 mm: 7 doors (43.8%)
+     1450 mm: 5 doors (31.2%)
+     1890 mm: 3 doors (18.8%)
+     1750 mm: 1 doors (6.2%)",arc,samuel_macalister_sample_house,2,test,tier2,T2_door_widths
+676,"What is the largest door width in the building, and which doors have this width?","Largest Door Width: 1890 mm (1.89 m)
+
+Doors with largest width:
+- Pocket_Slider_Door_5851: 3 door(s)",arc,samuel_macalister_sample_house,2,test,tier2,T2_door_widths
+678,"What is the maximum window width in this building, and how many windows have this width?","Largest Window Width: 1500 mm (1.50 m)
+
+Windows with largest width:
+- Single Window:Standard: 15 window(s)",arc,samuel_macalister_sample_house,2,test,tier2,T2_window_sizes
+694,"What furniture and appliances are available in the kitchen on level 1, including quantities of each item?","Kitchen Spaces on Level 1:
+   - 101: Kitchen & Dining
+
+   Kitchen Furniture Available:
+   - Bar Chair: 6 item(s)
+   - 4500_Kitchen Island_DW: 1 item(s)
+   - 4500_Kitchen Island: 1 item(s)
+   - Seat - Single with Island: 1 item(s)
+
+   Kitchen Appliances Available:
+   - Miele Built-in Microwave M 8260-2:Miele Microwave M 8260-2:696998
+   - Miele Built-in Rangehood DA 2210:Rangehood DA-2210:679009
+   - Miele Built-under Dishwasher G 4101 U CS:Miele Built-under Dishwasher G 4101 U CS:694796
+   - Miele Induction Cooktop KM 6350 LPT:Miele Induction Cooktop 6350 LPT:680539
+   - Miele MasterCool KF 1911 Vi:Miele Fridge/Freezer KF 1911 Vi:684791
+   - Miele Oven H 5681 BP:Miele Oven H 5681 BP:686184",arc,samuel_macalister_sample_house,1,train,tier2,T2_furniture_in_room
+695,Which appliances are available in the laundry room?,"Laundry Spaces found:
+   - 104: Laundry
+
+Laundry Appliances Available:
+   - Miele Tumble Dryer T 7944 C (ID: 677695)
+   - Miele Washing Machine W 5820 WPS (ID: 674370)",arc,samuel_macalister_sample_house,1,train,tier2,T2_furniture_in_room
+697,"How many bathrooms are there, and where are they located?","Bathroom Locations (by level):
+- Level 1: 1 bathroom
+  * Room 103: Bath
+- Level 2: 3 bathrooms
+  * Room 207: Master Bath
+  * Room 203: Bath
+  * Room 205: Bath",arc,samuel_macalister_sample_house,2,test,tier2,T2_room_program
+698,What is the size of the living room terrace?,The terrace area of the living room is 17.7 sq m.,arc,samuel_macalister_sample_house,3,train,tier2,T2_room_program
+699,What is the size of the master bedroom terrace?,The terrace area of the master bedroom is 9 sq m.,arc,samuel_macalister_sample_house,3,test,tier2,T2_room_program
+701,"Could you provide a comprehensive breakdown of the stairs in the building, including the total count, specific stair types with their quantities, construction types, and any related circulation elements?","Total Stairs: 3
+
+Stair Types:
+- Precast Stair:Stair:513254: 1 stair(s)
+- Assembled Stair:Stair:665557: 1 stair(s)
+- Precast Stair:Stair:725045: 1 stair(s)
+
+Stair Construction Types:
+- Precast Concrete: 2 stair(s)
+- Assembled/Prefabricated: 1 stair(s)
+
+Related Circulation Elements:
+- Railings: 10 elements
+- Stair landings: 1 element",arc,samuel_macalister_sample_house,2,test,tier2,T2_stairs_railings
+704,"Could you provide a comprehensive breakdown of all railings in the building, including their types, heights, and installation contexts?","Total Railings: 10
+
+   Railing Types:
+   - Railing: 10 railing(s)
+
+   Railing Heights:
+   - 1100 mm: 10 railing(s)
+
+   Railing Installation Context:
+   - Associated with stairs: 3 stair elements",arc,samuel_macalister_sample_house,2,train,tier2,T2_stairs_railings
+712,What is the size of the parking area?,"This information is not available directly from the BIM model. However, through manual measurement, I estimate the parking area to be approximately 85 m².",arc,samuel_macalister_sample_house,3,train,tier1,T1_parking

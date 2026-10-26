@@ -1,0 +1,83 @@
+[
+ {
+  "topic": "结构与模数",
+  "title": "模数协调与标志尺寸",
+  "summary": "基本模数 M = 100 mm，扩大模数 3M = 300 mm、6M = 600 mm、12M = 1200 mm；构造（标志）尺寸由模数尺寸扣除或加上灰缝/面层厚度得到，如砖模数长 25 cm、灰缝 1 cm、标志尺寸 24 cm，现浇混凝土墙 25 cm。",
+  "prefixes": [
+   "The units of the modular system are the basic module M = 100 mm",
+   "Structural dimensions or nominal dimensions (for construction types with joints",
+   "Example: modular dimension for the length of a brick = 25 cm"
+  ]
+ },
+ {
+  "topic": "办公",
+  "title": "保洁间与物业用房",
+  "summary": "办公楼每层应设一间保洁间（存放清洁设备，最好有给水和拖把池）；物业管理员需要位于中心位置的休息室、储藏室和工作间。",
+  "prefixes": [
+   "A cleaner’s room should be provided on every floor",
+   "The caretaker should have a rest room, store and workshop"
+  ]
+ },
+ {
+  "topic": "办公",
+  "title": "档案室",
+  "summary": "档案/文件室须干燥，不宜设在阁楼和地下室；文件存放层净高约 2.10 m（2 个办公层 = 3 个文件层）；档案室楼面荷载按 7.5–12.5 kN/m² 设计（密集架取高值）。",
+  "prefixes": [
+   "The rooms must be dry, so attic and cellar are inadvisable",
+   "ceiling clearance height 2.10 m (2 storeys of normal office space",
+   "Archive rooms should be designed for an increased floor loading"
+  ]
+ },
+ {
+  "topic": "办公",
+  "title": "办公楼入口区",
+  "summary": "入口区连接公共区与工作区，主要功能为门厅、门禁、问询、访客登记和等候区，是企业形象的第一印象。",
+  "prefixes": [
+   "Connection between public and working areas. The important functions are lobby",
+   "Important area for the company’s corporate identity"
+  ]
+ },
+ {
+  "topic": "办公",
+  "title": "员工餐厅位置",
+  "summary": "办公楼食堂/自助餐厅宜靠近接待处并位于门禁之外，以便外来访客使用。",
+  "prefixes": [
+   "Location near the reception and outside the access control"
+  ]
+ },
+ {
+  "topic": "办公",
+  "title": "组团办公室到窗距离",
+  "summary": "组团办公室（小型开敞办公）适合需要持续交流的工作组，工位周边到窗的距离最大 7.5 m。",
+  "prefixes": [
+   "Group rooms (smaller open-plan) are suitable for work groups",
+   "via the size of the workplace surroundings (max. 7.5 m to a window)"
+  ]
+ },
+ {
+  "topic": "办公",
+  "title": "小型使用单元内的走廊",
+  "summary": "组合使用单元面积小于 400 m² 时，其内部走廊不受疏散通道要求的约束。",
+  "prefixes": [
+   "For combined use units of less than 400 m²"
+  ]
+ },
+ {
+  "topic": "酒店与餐饮",
+  "title": "酒店基本功能区",
+  "summary": "酒店必备：作为中枢的大堂与接待、与大堂相连的餐饮区、行政、员工区、客房区和后勤服务区；即使一星级也须设独立的接待区。",
+  "prefixes": [
+   "The essential areas are: hotel lobby and reception",
+   "reception as a separate area"
+  ]
+ },
+ {
+  "topic": "酒店与餐饮",
+  "title": "餐厅与厨房、卫生间的组织",
+  "summary": "厨房、附属用房、厕所和卫生设施应围绕餐厅布置；餐厨的出餐台最好位于备餐区和餐厅之间。",
+  "prefixes": [
+   "Kitchen, side rooms, toilets and sanitary installations should be grouped around the dining room",
+   "Servery for restaurant kitchens with counter or self-service"
+  ]
+ }
+]

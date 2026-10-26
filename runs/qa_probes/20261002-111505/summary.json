@@ -1,0 +1,44 @@
+{
+  "opus/mcq": {
+    "n": 135,
+    "accuracy": 0.911,
+    "labels": {
+      "correct": 123,
+      "incorrect": 12
+    },
+    "needs_review": 0,
+    "median_latency_s": 5.09
+  },
+  "opus/open": {
+    "n": 135,
+    "accuracy": 0.43,
+    "labels": {
+      "correct": 58,
+      "partially_correct": 61,
+      "incorrect": 16
+    },
+    "needs_review": 39,
+    "median_latency_s": 6.08
+  },
+  "sol/mcq": {
+    "n": 135,
+    "accuracy": 0.874,
+    "labels": {
+      "correct": 118,
+      "incorrect": 17
+    },
+    "needs_review": 0,
+    "median_latency_s": 3.52
+  },
+  "sol/open": {
+    "n": 135,
+    "accuracy": 0.526,
+    "labels": {
+      "correct": 71,
+      "partially_correct": 46,
+      "incorrect": 18
+    },
+    "needs_review": 18,
+    "median_latency_s": 6.84
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "models": "opus,sol",
+  "formats": "mcq,open",
+  "limit": null,
+  "kids": "K01",
+  "shuffle_seed": 1,
+  "workers": 6,
+  "no_judge": false,
+  "probes": "/Users/zihandeng/Desktop/1_Projects/4_bim_intent/ifc_bench_neufert/hard_qa/knowledge_probes.jsonl",
+  "model_ids": {
+    "opus": "claude-opus-5-5",
+    "sol": "gpt-6.1-sol"
+  }
+}

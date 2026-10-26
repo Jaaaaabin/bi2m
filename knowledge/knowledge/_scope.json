@@ -1,0 +1,652 @@
+{
+ "K01": {
+  "title": "高层建筑",
+  "label": "in",
+  "note": ""
+ },
+ "K02": {
+  "title": "私宅停车",
+  "label": "unsure",
+  "note": ""
+ },
+ "K03": {
+  "title": "车位与通道尺寸",
+  "label": "unsure",
+  "note": ""
+ },
+ "K04": {
+  "title": "体形系数 A/Ve",
+  "label": "unsure",
+  "note": ""
+ },
+ "K05": {
+  "title": "退距（Abstandsfläche）",
+  "label": "in",
+  "note": ""
+ },
+ "K06": {
+  "title": "建筑密度与容积率",
+  "label": "in",
+  "note": ""
+ },
+ "K07": {
+  "title": "舒适步距公式",
+  "label": "in",
+  "note": ""
+ },
+ "K08": {
+  "title": "最佳坡度与踏步比",
+  "label": "in",
+  "note": ""
+ },
+ "K09": {
+  "title": "每段梯段步数",
+  "label": "in",
+  "note": ""
+ },
+ "K10": {
+  "title": "休息平台",
+  "label": "in",
+  "note": ""
+ },
+ "K11": {
+  "title": "必要楼梯宽度与踏步比",
+  "label": "in",
+  "note": ""
+ },
+ "K12": {
+  "title": "两户以下住宅的楼梯",
+  "label": "in",
+  "note": ""
+ },
+ "K13": {
+  "title": "室外楼梯与办公楼梯的取向",
+  "label": "in",
+  "note": ""
+ },
+ "K14": {
+  "title": "螺旋楼梯",
+  "label": "in",
+  "note": ""
+ },
+ "K15": {
+  "title": "楼座、夹层、阳台的护栏高度",
+  "label": "in",
+  "note": ""
+ },
+ "K16": {
+  "title": "无障碍坡道",
+  "label": "in",
+  "note": ""
+ },
+ "K17": {
+  "title": "公共建筑楼梯两侧扶手",
+  "label": "in",
+  "note": ""
+ },
+ "K18": {
+  "title": "电梯候梯区",
+  "label": "in",
+  "note": ""
+ },
+ "K19": {
+  "title": "非必要楼梯",
+  "label": "in",
+  "note": ""
+ },
+ "K20": {
+  "title": "休息平台宽度不小于梯段宽度",
+  "label": "in",
+  "note": ""
+ },
+ "K21": {
+  "title": "洞口尺寸 ≠ 净通行宽度",
+  "label": "unsure",
+  "note": ""
+ },
+ "K22": {
+  "title": "住宅门的常规宽度",
+  "label": "in",
+  "note": ""
+ },
+ "K23": {
+  "title": "内门净高",
+  "label": "in",
+  "note": ""
+ },
+ "K24": {
+  "title": "紧急出口的门型",
+  "label": "in",
+  "note": ""
+ },
+ "K25": {
+  "title": "电梯入户的户门",
+  "label": "in",
+  "note": ""
+ },
+ "K26": {
+  "title": "无障碍门净宽",
+  "label": "in",
+  "note": ""
+ },
+ "K27": {
+  "title": "无障碍：无台阶通达与公众可达建筑的适用范围",
+  "label": "in",
+  "note": ""
+ },
+ "K28": {
+  "title": "轮椅活动空间",
+  "label": "in",
+  "note": ""
+ },
+ "K29": {
+  "title": "无障碍卫生间",
+  "label": "in",
+  "note": ""
+ },
+ "K30": {
+  "title": "无障碍电梯",
+  "label": "in",
+  "note": ""
+ },
+ "K31": {
+  "title": "轮椅停车位",
+  "label": "unsure",
+  "note": ""
+ },
+ "K32": {
+  "title": "楼梯起止处活动区",
+  "label": "in",
+  "note": ""
+ },
+ "K33": {
+  "title": "长走廊轮椅会车位",
+  "label": "in",
+  "note": ""
+ },
+ "K34": {
+  "title": "多户住宅的无障碍楼层",
+  "label": "in",
+  "note": ""
+ },
+ "K35": {
+  "title": "无障碍住宅卫浴",
+  "label": "in",
+  "note": ""
+ },
+ "K36": {
+  "title": "轮椅住宅的起居室",
+  "label": "in",
+  "note": ""
+ },
+ "K37": {
+  "title": "无障碍住宅的户内活动区宽度",
+  "label": "in",
+  "note": ""
+ },
+ "K38": {
+  "title": "疏散距离",
+  "label": "in",
+  "note": ""
+ },
+ "K39": {
+  "title": "两条独立疏散路线",
+  "label": "in",
+  "note": ""
+ },
+ "K40": {
+  "title": "疏散窗",
+  "label": "in",
+  "note": ""
+ },
+ "K41": {
+  "title": "出口宽度（按人数）",
+  "label": "in",
+  "note": ""
+ },
+ "K42": {
+  "title": "防火分区与防火墙",
+  "label": "in",
+  "note": ""
+ },
+ "K43": {
+  "title": "主楼梯须设在连续封闭的楼梯间",
+  "label": "in",
+  "note": ""
+ },
+ "K44": {
+  "title": "疏散走廊侧墙 F 30",
+  "label": "in",
+  "note": ""
+ },
+ "K45": {
+  "title": "高层建筑的疏散走道",
+  "label": "in",
+  "note": ""
+ },
+ "K46": {
+  "title": "高层建筑立面的层间防火",
+  "label": "in",
+  "note": ""
+ },
+ "K47": {
+  "title": "长疏散走廊分段与楼梯间的封闭",
+  "label": "in",
+  "note": ""
+ },
+ "K48": {
+  "title": "工作间的窗",
+  "label": "in",
+  "note": ""
+ },
+ "K49": {
+  "title": "厨房朝向",
+  "label": "unsure",
+  "note": ""
+ },
+ "K50": {
+  "title": "无窗厨房",
+  "label": "unsure",
+  "note": ""
+ },
+ "K51": {
+  "title": "玻璃面最小高度 1.3 m",
+  "label": "unsure",
+  "note": ""
+ },
+ "K52": {
+  "title": "视野：窗宽不小于房间宽 65%",
+  "label": "in",
+  "note": ""
+ },
+ "K53": {
+  "title": "工作区距窗约为 2 倍窗净高",
+  "label": "in",
+  "note": ""
+ },
+ "K54": {
+  "title": "办公与工作建筑的朝向",
+  "label": "out",
+  "note": ""
+ },
+ "K55": {
+  "title": "按朝向选择遮阳",
+  "label": "unsure",
+  "note": ""
+ },
+ "K56": {
+  "title": "遮阳挑檐的出挑计算",
+  "label": "unsure",
+  "note": ""
+ },
+ "K57": {
+  "title": "单层外墙与附加保温层",
+  "label": "in",
+  "note": ""
+ },
+ "K58": {
+  "title": "夹心墙（双叶墙）的外叶与空气层",
+  "label": "in",
+  "note": ""
+ },
+ "K59": {
+  "title": "混凝土外墙必须附加保温",
+  "label": "in",
+  "note": ""
+ },
+ "K60": {
+  "title": "背通风外挂层的空气间层",
+  "label": "in",
+  "note": ""
+ },
+ "K61": {
+  "title": "热阻与传热系数计算",
+  "label": "in",
+  "note": ""
+ },
+ "K62": {
+  "title": "热桥与构件连接",
+  "label": "unsure",
+  "note": ""
+ },
+ "K63": {
+  "title": "平屋面排水坡度",
+  "label": "in",
+  "note": ""
+ },
+ "K64": {
+  "title": "平屋面构造：暖屋面与倒置屋面",
+  "label": "out",
+  "note": ""
+ },
+ "K65": {
+  "title": "隔汽层设在暖侧",
+  "label": "in",
+  "note": ""
+ },
+ "K66": {
+  "title": "种植屋面的坡度",
+  "label": "in",
+  "note": ""
+ },
+ "K67": {
+  "title": "坡屋面保温位置与通风构造",
+  "label": "in",
+  "note": ""
+ },
+ "K68": {
+  "title": "分户墙隔声",
+  "label": "in",
+  "note": ""
+ },
+ "K69": {
+  "title": "模数协调与标志尺寸",
+  "label": "in",
+  "note": ""
+ },
+ "K70": {
+  "title": "建筑等级与承重墙耐火",
+  "label": "in",
+  "note": ""
+ },
+ "K71": {
+  "title": "地下室墙体与楼板耐火",
+  "label": "unsure",
+  "note": ""
+ },
+ "K72": {
+  "title": "住宅/商业单元之间的分隔墙",
+  "label": "in",
+  "note": ""
+ },
+ "K73": {
+  "title": "外墙及外墙饰面的燃烧性能",
+  "label": "in",
+  "note": ""
+ },
+ "K74": {
+  "title": "居室最低要求",
+  "label": "in",
+  "note": ""
+ },
+ "K75": {
+  "title": "厨房作为居室",
+  "label": "unsure",
+  "note": ""
+ },
+ "K76": {
+  "title": "居住面积计算",
+  "label": "in",
+  "note": ""
+ },
+ "K77": {
+  "title": "阳台计入居住面积",
+  "label": "in",
+  "note": ""
+ },
+ "K78": {
+  "title": "住宅面积的计入范围与净尺寸量法",
+  "label": "in",
+  "note": ""
+ },
+ "K79": {
+  "title": "DIN 277 面积分类与可出租面积",
+  "label": "in",
+  "note": ""
+ },
+ "K80": {
+  "title": "DIN 277 建筑体积（总体积与净体积）",
+  "label": "in",
+  "note": ""
+ },
+ "K81": {
+  "title": "阳台面积",
+  "label": "in",
+  "note": ""
+ },
+ "K82": {
+  "title": "户外空间的连接",
+  "label": "in",
+  "note": ""
+ },
+ "K83": {
+  "title": "电梯与每层户数",
+  "label": "in",
+  "note": ""
+ },
+ "K84": {
+  "title": "设备噪声与安静房间",
+  "label": "out",
+  "note": ""
+ },
+ "K85": {
+  "title": "分组式平面与中廊式平面",
+  "label": "in",
+  "note": ""
+ },
+ "K86": {
+  "title": "卧室朝向与位置",
+  "label": "unsure",
+  "note": ""
+ },
+ "K87": {
+  "title": "门厅直达厨房、WC 和楼梯",
+  "label": "in",
+  "note": ""
+ },
+ "K88": {
+  "title": "防风门斗",
+  "label": "out",
+  "note": ""
+ },
+ "K89": {
+  "title": "户内走道宽度",
+  "label": "in",
+  "note": ""
+ },
+ "K90": {
+  "title": "独立住宅每层通往户外",
+  "label": "in",
+  "note": ""
+ },
+ "K91": {
+  "title": "一梯一户限四层（无电梯）；一梯三户",
+  "label": "in",
+  "note": ""
+ },
+ "K92": {
+  "title": "联排住宅进深 ≤12 m、面宽 4–8 m",
+  "label": "in",
+  "note": ""
+ },
+ "K93": {
+  "title": "入户凹口尺寸",
+  "label": "in",
+  "note": ""
+ },
+ "K94": {
+  "title": "每户必备厨房与储藏间",
+  "label": "in",
+  "note": ""
+ },
+ "K95": {
+  "title": "厨房宽度与操作空间",
+  "label": "out",
+  "note": ""
+ },
+ "K96": {
+  "title": "厨房面积与类型",
+  "label": "out",
+  "note": ""
+ },
+ "K97": {
+  "title": "开放式厨房",
+  "label": "out",
+  "note": ""
+ },
+ "K98": {
+  "title": "厨房位置",
+  "label": "out",
+  "note": ""
+ },
+ "K99": {
+  "title": "就餐区的朝向与连接",
+  "label": "out",
+  "note": ""
+ },
+ "K100": {
+  "title": "餐桌尺寸与就餐人数",
+  "label": "out",
+  "note": ""
+ },
+ "K101": {
+  "title": "储藏与食品间靠近厨房",
+  "label": "out",
+  "note": ""
+ },
+ "K102": {
+  "title": "卧室最小面积",
+  "label": "unsure",
+  "note": ""
+ },
+ "K103": {
+  "title": "卫生间",
+  "label": "in",
+  "note": ""
+ },
+ "K104": {
+  "title": "没有洗衣间时",
+  "label": "out",
+  "note": ""
+ },
+ "K105": {
+  "title": "洗衣间",
+  "label": "out",
+  "note": ""
+ },
+ "K106": {
+  "title": "衣柜的位置与通风",
+  "label": "unsure",
+  "note": ""
+ },
+ "K107": {
+  "title": "户内储藏空间",
+  "label": "in",
+  "note": ""
+ },
+ "K108": {
+  "title": "卫生间朝向、采光与通风",
+  "label": "unsure",
+  "note": ""
+ },
+ "K109": {
+  "title": "卫生间类型",
+  "label": "in",
+  "note": ""
+ },
+ "K110": {
+  "title": "卫浴与厨房共用管井",
+  "label": "out",
+  "note": ""
+ },
+ "K111": {
+  "title": "婴儿车与自行车公共储藏间",
+  "label": "out",
+  "note": ""
+ },
+ "K112": {
+  "title": "办公楼室内净高",
+  "label": "in",
+  "note": ""
+ },
+ "K113": {
+  "title": "每工位总面积",
+  "label": "in",
+  "note": ""
+ },
+ "K114": {
+  "title": "工位尺寸",
+  "label": "in",
+  "note": ""
+ },
+ "K115": {
+  "title": "办公室进深、开间与模数",
+  "label": "in",
+  "note": ""
+ },
+ "K116": {
+  "title": "建筑进深与采光深度",
+  "label": "in",
+  "note": ""
+ },
+ "K117": {
+  "title": "办公室类型",
+  "label": "in",
+  "note": ""
+ },
+ "K118": {
+  "title": "会议区",
+  "label": "in",
+  "note": ""
+ },
+ "K119": {
+  "title": "办公卫生间与茶水间配置",
+  "label": "in",
+  "note": ""
+ },
+ "K120": {
+  "title": "工作场所厕所（劳动场所规定）",
+  "label": "in",
+  "note": ""
+ },
+ "K121": {
+  "title": "厅室的每人容积",
+  "label": "in",
+  "note": ""
+ },
+ "K122": {
+  "title": "保洁间与物业用房",
+  "label": "in",
+  "note": ""
+ },
+ "K123": {
+  "title": "档案室",
+  "label": "in",
+  "note": ""
+ },
+ "K124": {
+  "title": "办公楼入口区",
+  "label": "in",
+  "note": ""
+ },
+ "K125": {
+  "title": "员工餐厅位置",
+  "label": "in",
+  "note": ""
+ },
+ "K126": {
+  "title": "组团办公室到窗距离",
+  "label": "in",
+  "note": ""
+ },
+ "K127": {
+  "title": "小型使用单元内的走廊",
+  "label": "in",
+  "note": ""
+ },
+ "K128": {
+  "title": "餐饮厨房员工休息室",
+  "label": "in",
+  "note": ""
+ },
+ "K129": {
+  "title": "研讨室的规模与进深",
+  "label": "in",
+  "note": ""
+ },
+ "K130": {
+  "title": "高校教研人员办公室面积",
+  "label": "in",
+  "note": ""
+ }
+}

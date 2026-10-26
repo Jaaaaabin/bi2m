@@ -1,0 +1,665 @@
+[
+ {
+  "kid": "K131",
+  "title": "装修网格与立面网格一致",
+  "question": "In German (DIN-based) office design practice: Which two planning grids of an office building must coincide so that partitions can connect to the windows, and which grid may be offset against them?",
+  "answer": "The fit-out (partition) grid and the façade grid must be the same; the structural grid can be offset against the fit-out grid",
+  "accept": [
+   "fit-out grid = façade grid; structural grid may be offset",
+   "partition grid and facade grid identical, structural grid offset"
+  ],
+  "mcq": {
+   "options": [
+    "All three grids must always coincide",
+    "Fit-out grid and façade grid must coincide; the structural grid may be offset",
+    "Structural grid and fit-out grid must coincide; the façade grid may be offset",
+    "Structural grid and façade grid must coincide; the fit-out grid may be offset"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Fit-out grid and façade grid must be the same",
+   "Structural grid can be offset against the fit-out grid"
+  ],
+  "modality": "must",
+  "difficulty": "recall",
+  "basis": [
+   "The fitting out and façade grids must be the same in order to enable the partitions to connect to the windows.",
+   "The structural grid can be offset against the fitting out grid. This reduces the problem of connecting the partitions to columns, but loses space in the rooms, which contain columns."
+  ]
+ },
+ {
+  "kid": "K132",
+  "title": "网格模数与建筑进深的搭配",
+  "question": "In German (DIN-based) office design practice: What building depth goes with a 1.35 m grid module as the economical form for combi-offices, and what building depth goes with a 1.50 m grid module (economical for single offices or combi-offices)?",
+  "answer": "13.40 m with the 1.35 m module; 12.50 m with the 1.50 m module",
+  "accept": [
+   "13.40 m and 12.50 m",
+   "13.4 m / 12.5 m"
+  ],
+  "mcq": {
+   "options": [
+    "12.50 m and 13.40 m",
+    "13.40 m and 12.50 m",
+    "15.00 m and 12.00 m",
+    "11.00 m and 13.40 m"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "1.35 m module: building depth 13.40 m",
+   "1.50 m module: building depth 12.50 m"
+  ],
+  "modality": "should",
+  "difficulty": "recall",
+  "basis": [
+   "Grid module 1.35 m, building depth 13.40 m, an economical form of building for combi-offices, but for single offices this produces deep and badly proportioned rooms.",
+   "Grid module 1.50 m, building depth 12.50 m, an economical form of building for single offices or for combi-offices; this provides a narrow communal zone and 10% fewer workstations at the window than with ②."
+  ]
+ },
+ {
+  "kid": "K133",
+  "title": "单排、双排与三排布局",
+  "question": "In German (DIN-based) office design practice: Among single-row, two-row and three-row office layouts, which is described as normally practical only for high-rise buildings, and why?",
+  "answer": "The three-row layout with a large supply zone at the centre of the building, because of the greater proportion of vertical transport in high-rise buildings",
+  "accept": [
+   "three-row layout (central supply core), due to the greater share of vertical transport"
+  ],
+  "mcq": {
+   "options": [
+    "The layout without corridor, because it saves circulation area",
+    "The two-row layout, because the cores sit in well-lit zones",
+    "The three-row layout, because of the greater proportion of vertical transport",
+    "The single-row layout, because it gives every room daylight"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Three-row layout / large central supply zone",
+   "Reason: greater proportion of vertical transport in high-rise buildings"
+  ],
+  "modality": "should",
+  "difficulty": "recall",
+  "basis": [
+   "A large supply zone at the centre of the building is normally practical only for high-rise buildings (greater proportion of vertical transport)."
+  ]
+ },
+ {
+  "kid": "K134",
+  "title": "楼梯间的间距（30 m / 60 m）",
+  "question": "Under the German model building code (MBO 2002), every point in an occupied room must be within 35 m of a staircase. In office buildings, what spacing of the staircases does this lead to in practice (a) from the end of the building and (b) from each other?",
+  "answer": "(a) about 30 m from the end of the building; (b) about 60 m from each other",
+  "accept": [
+   "30 m and 60 m",
+   "30 m / 60 m"
+  ],
+  "mcq": {
+   "options": [
+    "25 m; 50 m",
+    "35 m; 70 m",
+    "30 m; 60 m",
+    "20 m; 40 m"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "About 30 m from the end of the building",
+   "About 60 m between staircases"
+  ],
+  "modality": "must",
+  "difficulty": "recall",
+  "basis": [
+   "According to MBO 2002, every point in an occupied room must be \\( \\leq 35 \\) m from a staircase.",
+   "This in practice leads to a spacing of the staircases from the end of the building of 30 m and from each other of 60 m"
+  ]
+ },
+ {
+  "kid": "K135",
+  "title": "组合式办公（combi-office）",
+  "question": "In German (DIN-based) office design practice: In a combi-office, how are the individual offices separated from the central connection zone, and what is located in that zone?",
+  "answer": "Very small single offices are separated by glass walls from the deep connection zone, which holds the communally used infrastructure",
+  "accept": [
+   "glass walls; shared (communal) infrastructure in the central zone"
+  ],
+  "mcq": {
+   "options": [
+    "By a corridor wall with doors only; the archive",
+    "By glass walls; the communally used infrastructure",
+    "By movable screens; the individual workstations",
+    "By solid fire walls; the escape stairs"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Glass walls between small single offices and the connection zone",
+   "Communally used infrastructure is in the connection zone"
+  ],
+  "modality": "should",
+  "difficulty": "recall",
+  "basis": [
+   "Combi-office: Very small single offices are separated by glass walls from the deep connection zone, in which communally used infrastructure is located."
+  ]
+ },
+ {
+  "kid": "K136",
+  "title": "单间办公：疏散通道内不得放家具",
+  "question": "In German (DIN-based) office design practice: In a conventional single-room (cellular) office layout along a corridor, why does jointly used infrastructure end up occupying window space inside the rooms?",
+  "answer": "Because no furniture is allowed in escape routes (the corridor), so shared equipment cannot stand there",
+  "accept": [
+   "no furniture is permitted in escape routes",
+   "the corridor is an escape route and must be kept free of furniture"
+  ],
+  "mcq": {
+   "options": [
+    "Because no furniture is allowed in escape routes",
+    "Because corridors must be at least 2.50 m wide",
+    "Because shared equipment needs natural ventilation",
+    "Because the corridor is too dark for shared equipment"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "No furniture allowed in escape routes / corridor"
+  ],
+  "modality": "must",
+  "difficulty": "recall",
+  "basis": [
+   "Jointly used infrastructure occupies expensive window space in occupied rooms, because no furniture is allowed in escape routes."
+  ]
+ },
+ {
+  "kid": "K137",
+  "title": "大空间办公的进深",
+  "question": "In German (DIN-based) office design practice: What room depths were typical of the open-plan offices of the 1960s, a depth that resulted in high costs for building services?",
+  "answer": "20–30 m",
+  "accept": [
+   "20 to 30 m",
+   "20-30 metres"
+  ],
+  "mcq": {
+   "options": [
+    "20–30 m",
+    "7–10 m",
+    "12–13 m",
+    "40–50 m"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Room depths of 20–30 m"
+  ],
+  "modality": "descriptive",
+  "difficulty": "recall",
+  "basis": [
+   "The extensive room depths of 20–30 m resulted in high costs for building services"
+  ]
+ },
+ {
+  "kid": "K138",
+  "title": "非固定工位办公的面积节省",
+  "question": "In German (DIN-based) office design practice: In a 'hot desk' office (business club) combined with teleworking or many travelling staff, what space savings are possible compared with personalised offices?",
+  "answer": "20–50%",
+  "accept": [
+   "20 to 50 %",
+   "20-50 percent"
+  ],
+  "mcq": {
+   "options": [
+    "20–50%",
+    "5–10%",
+    "10–15%",
+    "60–80%"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Savings of 20–50%"
+  ],
+  "modality": "descriptive",
+  "difficulty": "recall",
+  "basis": [
+   "Combined with teleworking or with a high proportion of travelling representatives, savings of 20–50% are possible compared with personalised offices"
+  ]
+ },
+ {
+  "kid": "K139",
+  "title": "可逆办公楼（出租办公）",
+  "question": "In German (DIN-based) office design practice: For what kind of occupier is a 'reversible office' building (Revibüro) mainly suitable?",
+  "answer": "Offices for renting to tenants who are not yet known",
+  "accept": [
+   "rental offices for unknown future tenants",
+   "speculative office space to let"
+  ],
+  "mcq": {
+   "options": [
+    "Public authorities with archive duties",
+    "A single owner-occupier with fixed staff numbers",
+    "Offices let to tenants who are not yet known",
+    "Call centres with shift work"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Rental to tenants not yet known"
+  ],
+  "modality": "descriptive",
+  "difficulty": "recall",
+  "basis": [
+   "This type of building is mainly suitable for offices for renting to tenants who are not yet known"
+  ]
+ },
+ {
+  "kid": "K140",
+  "title": "工位面积的构成",
+  "question": "In German (DIN-based) office design practice: The current standard no longer fixes workplace dimensions but distinguishes several kinds of area at a workstation. Name the five areas.",
+  "answer": "Work area (table), shelf area (plan area of the furniture), furniture function area (space for doors and drawers), movement area at the workstation, and traffic and through-passages",
+  "accept": [
+   "work area, shelf area, furniture function area, movement area, traffic/through-passage area"
+  ],
+  "mcq": {
+   "options": [
+    "Work, storage, meeting, break and printing areas",
+    "Work, shelf, furniture function, movement, and traffic/through-passage areas",
+    "Net, gross, usable, technical and circulation areas",
+    "Desk, chair, screen, cabinet and lighting areas"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Work area (table)",
+   "Shelf area",
+   "Furniture function area",
+   "Movement area",
+   "Traffic and through-passages"
+  ],
+  "modality": "must",
+  "difficulty": "recall",
+  "basis": [
+   "– work area: table\n– shelf area: plan area of the furniture\n– furniture function area: space required for doors and drawers\n– movement area at the workstation\n– traffic and through-passages"
+  ]
+ },
+ {
+  "kid": "K141",
+  "title": "每工位面积指标（直接工位与交通面积）",
+  "question": "In German (DIN-based) office design practice: In the average gross space requirement per office workstation, what range (and average) is given for (a) the immediate workstation and (b) the traffic area?",
+  "answer": "(a) 11–15 m², average 13 m²; (b) 2.2–6.0 m², average 4.5 m²",
+  "accept": [
+   "11–15 m² (13) and 2.2–6.0 m² (4.5)",
+   "immediate workstation 11-15 m2; traffic area 2.2-6.0 m2"
+  ],
+  "mcq": {
+   "options": [
+    "11–15 m² (avg. 13); 6.0–10.0 m² (avg. 8)",
+    "11–15 m² (avg. 13); 2.2–6.0 m² (avg. 4.5)",
+    "8–10 m² (avg. 9); 1.0–2.0 m² (avg. 1.5)",
+    "15–20 m² (avg. 18); 2.2–6.0 m² (avg. 4.5)"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Immediate workstation 11–15 m² (average 13)",
+   "Traffic area 2.2–6.0 m² (average 4.5)"
+  ],
+  "modality": "should",
+  "difficulty": "recall",
+  "basis": [
+   "Workstation | Immediate workstation | 11–15 | 13 | 15.5",
+   "Traffic area | 2.2–6.0 | 4.5"
+  ]
+ },
+ {
+  "kid": "K142",
+  "title": "屏幕工位与窗的关系",
+  "question": "In German (DIN-based) office design practice: How should the direction of view to a computer screen be oriented relative to the window façade and the light bands?",
+  "answer": "Parallel to the window façade and to the light bands, with the screen if possible in between",
+  "accept": [
+   "parallel to the windows and the light bands"
+  ],
+  "mcq": {
+   "options": [
+    "With the back to the window",
+    "Facing the window",
+    "At 45° to the window façade",
+    "Parallel to the window façade and light bands"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "View direction parallel to window façade and light bands"
+  ],
+  "modality": "should",
+  "difficulty": "recall",
+  "basis": [
+   "The view to the screen should be parallel to the window façade and to light bands, with the screen if possible in-between."
+  ]
+ },
+ {
+  "kid": "K143",
+  "title": "档案存放的面积与位置",
+  "question": "In German (DIN-based) office design practice: In the formula for the space needed by a filing system (filing furniture of length L and width W), how is the passage space calculated?",
+  "answer": "½ L × W + 0.5 m",
+  "accept": [
+   "0.5 × L × W + 0.5 m",
+   "half of L × W plus 0.5 m"
+  ],
+  "mcq": {
+   "options": [
+    "L × W + 1.0 m",
+    "¼ L × W + 1.0 m",
+    "½ L × W + 0.5 m",
+    "2 × L × W"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Passage space = ½ L × W + 0.5 m"
+  ],
+  "modality": "descriptive",
+  "difficulty": "recall",
+  "basis": [
+   "L × W (filing furniture) = space for furniture\n+ ½ L × W + 0.5 m = passage space"
+  ]
+ },
+ {
+  "kid": "K144",
+  "title": "收发室",
+  "question": "In German (DIN-based) office design practice: What space requirement is given for the post room of an office building?",
+  "answer": "About 0.3–0.5 m² per work position",
+  "accept": [
+   "0.3–0.5 m²",
+   "0.3 to 0.5 m2 per workstation"
+  ],
+  "mcq": {
+   "options": [
+    "0.05–0.1 m²",
+    "1.0–1.5 m²",
+    "0.3–0.5 m²",
+    "2.0–2.5 m²"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "0.3–0.5 m² per work position"
+  ],
+  "modality": "descriptive",
+  "difficulty": "recall",
+  "basis": [
+   "Space requirement – 0.3-0.5 m² per work position."
+  ]
+ },
+ {
+  "kid": "K145",
+  "title": "数据中心与服务器机房",
+  "question": "In German (DIN-based) office design practice: What raised-floor height should data centres or server rooms have because of the large amount of installation?",
+  "answer": "70 cm",
+  "accept": [
+   "0.70 m",
+   "700 mm"
+  ],
+  "mcq": {
+   "options": [
+    "70 cm",
+    "30 cm",
+    "120 cm",
+    "15 cm"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "70 cm raised floor"
+  ],
+  "modality": "should",
+  "difficulty": "recall",
+  "basis": [
+   "These rooms should have a 70 cm raised floor on account of the large amount of installation, and should be air-conditioned."
+  ]
+ },
+ {
+  "kid": "K146",
+  "title": "全空调对建筑体积的影响",
+  "question": "In German (DIN-based) office design practice: By what factor are the gross built volume and the total construction costs of a fully air-conditioned office building higher than for a building without air conditioning?",
+  "answer": "1.3–1.5 times",
+  "accept": [
+   "1.3 to 1.5 times",
+   "30–50% higher"
+  ],
+  "mcq": {
+   "options": [
+    "2–3 times",
+    "1.05–1.1 times",
+    "1.3–1.5 times",
+    "1.8–2.0 times"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Factor 1.3–1.5"
+  ],
+  "modality": "descriptive",
+  "difficulty": "recall",
+  "basis": [
+   "The gross built volume and the total construction costs for air-conditioned buildings are 1.3–1.5 times higher than for buildings without air conditioning"
+  ]
+ },
+ {
+  "kid": "K147",
+  "title": "立面竖梃与隔墙的连接",
+  "question": "In German (DIN-based) office design practice: What requirement applies to the vertical profiles of an office façade that lie on the modular grid?",
+  "answer": "They should be wide enough to connect a partition",
+  "accept": [
+   "wide enough for a partition wall to connect"
+  ],
+  "mcq": {
+   "options": [
+    "At most 50 mm wide to maximise daylight",
+    "Set back at least 20 cm behind the columns",
+    "Wide enough to connect a partition",
+    "Thermally broken and at least F 30"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Profiles on the grid wide enough to connect a partition"
+  ],
+  "modality": "should",
+  "difficulty": "recall",
+  "basis": [
+   "Vertical profiles in the façade, which lie on the modular grid, should be wide enough to connect a partition."
+  ]
+ },
+ {
+  "kid": "K148",
+  "title": "轻质隔墙的隔声与上下延续",
+  "question": "In German (DIN-based) office design practice: Where light partitions are combined with raised access floors and suspended ceilings, what must be provided to prevent sound transfer above and below the partitions?",
+  "answer": "Either the partitions are continued vertically (through floor void and ceiling void), or these elements are sound-insulating in themselves",
+  "accept": [
+   "vertical continuation of the partitions, or sound-insulating floor/ceiling elements"
+  ],
+  "mcq": {
+   "options": [
+    "Carpet throughout and acoustic plaster on the walls",
+    "Vertical continuation of the partitions, or floor and ceiling elements that are sound-insulating in themselves",
+    "Double partitions with 40 mm mineral wool only",
+    "A 10 cm air gap above every partition"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Vertical continuation of partitions",
+   "or sound-insulating raised floor / suspended ceiling elements"
+  ],
+  "modality": "must",
+  "difficulty": "recall",
+  "basis": [
+   "With raised access floors and suspended ceilings, either vertical continuation of any possible partitions is to be provided or these elements are to be sound-insulating in themselves"
+  ]
+ },
+ {
+  "kid": "K149",
+  "title": "消防电梯（高度超过 30 m）",
+  "question": "Under the German high-rise building guideline: above what building height is at least one fire service lift in its own shaft required, and within what radius must it reach every point of an occupied room?",
+  "answer": "More than 30 m; within a radius of 50 m",
+  "accept": [
+   "> 30 m; 50 m",
+   "30 m and 50 m"
+  ],
+  "mcq": {
+   "options": [
+    "> 30 m; 50 m",
+    "> 22 m; 35 m",
+    "> 30 m; 25 m",
+    "> 60 m; 50 m"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Fire service lift above 30 m height",
+   "Every point of an occupied room within a 50 m radius"
+  ],
+  "modality": "must",
+  "difficulty": "recall",
+  "basis": [
+   "In high-rise buildings more than 30 m high, there must be at least one fire service lift in its own shaft, from where every point of an occupied room can be reached within a radius of 50 m."
+  ]
+ },
+ {
+  "kid": "K150",
+  "title": "高层疏散楼梯的梯井、排烟与出口",
+  "question": "Under the German high-rise building guideline: what minimum width must the wellhole of an emergency stair have, and what size of smoke outlet is required at its highest point?",
+  "answer": "Wellhole min. 0.80 m wide; smoke outlet 5% of the floor area but at least 1 m²",
+  "accept": [
+   "0.80 m; 5% of floor area, min. 1 m²",
+   "80 cm and 5 % (min. 1 m2)"
+  ],
+  "mcq": {
+   "options": [
+    "0.20 m; 5% of the floor area, min. 1 m²",
+    "1.25 m; 10% of the floor area, min. 2 m²",
+    "0.80 m; 1% of the floor area, min. 0.5 m²",
+    "0.80 m; 5% of the floor area, min. 1 m²"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Wellhole min. 0.80 m",
+   "Smoke outlet 5% of floor area, min. 1 m²"
+  ],
+  "modality": "must",
+  "difficulty": "recall",
+  "basis": [
+   "The wellhole must be min. 0.80 m wide in order to avoid having to lay hoses on the stairs.",
+   "Smoke outlets must be provided at their highest point (5% of the floor area but min. 1 m^2)."
+  ]
+ },
+ {
+  "kid": "K151",
+  "title": "高层电梯分组",
+  "question": "In high-rise building design practice: up to about how many storeys is one group of lifts serving all floors usual, and above how many lifts should they be divided into two groups?",
+  "answer": "Up to about 25 storeys; more than 6 lifts",
+  "accept": [
+   "25 storeys; 6 lifts"
+  ],
+  "mcq": {
+   "options": [
+    "About 25 storeys; more than 6 lifts",
+    "About 40 storeys; more than 8 lifts",
+    "About 10 storeys; more than 3 lifts",
+    "About 25 storeys; more than 12 lifts"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "One lift group up to about 25 storeys",
+   "Two groups if more than 6 lifts"
+  ],
+  "modality": "should",
+  "difficulty": "recall",
+  "basis": [
+   "Up to about 25 storeys, it is usual to provide one group of lifts with all lifts serving all floors. If more than 6 lifts are necessary, they should be divided into two groups."
+  ]
+ },
+ {
+  "kid": "K152",
+  "title": "高层建筑的分级",
+  "question": "In the German classification of high-rise buildings by height above the fire service parking area, what height range is group II and what special requirement applies to it, and what must elements of structural significance achieve in group III (60–200 m)?",
+  "answer": "Group II: 30–60 m, at least 1 fire service lift; group III: elements of structural significance must be F 120",
+  "accept": [
+   "30–60 m with one fire service lift; F 120"
+  ],
+  "mcq": {
+   "options": [
+    "22–30 m, sprinklers; F 90",
+    "60–100 m, at least 1 fire service lift; F 120",
+    "30–60 m, at least 1 fire service lift; F 120",
+    "30–60 m, two safety stairs; F 180"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Group II = 30–60 m",
+   "At least 1 fire service lift",
+   "Group III: structurally significant elements F 120"
+  ],
+  "modality": "must",
+  "difficulty": "recall",
+  "basis": [
+   "II | 30–60 m | at least 1 fire service lift",
+   "III | 60–200 m | elements of structural significance must be F 120 and many fire service lifts can be required"
+  ]
+ },
+ {
+  "kid": "K153",
+  "title": "高层建筑的用途限制",
+  "question": "In Germany, which uses are ruled out for high-rise buildings by the applicable regulations?",
+  "answer": "Schools, hospitals and homes for elderly people",
+  "accept": [
+   "schools, hospitals, old people’s homes"
+  ],
+  "mcq": {
+   "options": [
+    "Schools, hospitals and homes for elderly people",
+    "Car parks, laboratories and archives",
+    "Shops, restaurants and cinemas",
+    "Hotels, apartments and offices"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Schools",
+   "Hospitals",
+   "Homes for elderly people"
+  ],
+  "modality": "must",
+  "difficulty": "recall",
+  "basis": [
+   "In Germany, use as schools, hospitals or homes for elderly people is ruled out by the applicable regulations."
+  ]
+ },
+ {
+  "kid": "K154",
+  "title": "高层外窗的清洁",
+  "question": "In high-rise building design practice: how must window areas be cleaned that cannot be cleaned safely from inside?",
+  "answer": "From the outside, by trained personnel using suitable apparatus",
+  "accept": [
+   "from outside by trained staff with suitable equipment"
+  ],
+  "mcq": {
+   "options": [
+    "From the outside by trained personnel using suitable apparatus",
+    "They are not permitted above 22 m",
+    "They must be designed as fixed self-cleaning glazing",
+    "From inside using extendable tools only"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Cleaned from outside",
+   "By trained personnel with suitable apparatus"
+  ],
+  "modality": "must",
+  "difficulty": "recall",
+  "basis": [
+   "Window areas which cannot be cleaned safely from inside, must be cleaned from the outside by trained personnel using suitable apparatus"
+  ]
+ }
+]

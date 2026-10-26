@@ -1,0 +1,2928 @@
+{
+ "project": "fantasy_residential_building_1",
+ "schema": "IFC4",
+ "length_unit_scale": 1.0,
+ "storeys": [
+  [
+   "Ground Floor",
+   0.0
+  ],
+  [
+   "First Floor",
+   3.4
+  ],
+  [
+   "Second Floor",
+   6.8
+  ],
+  [
+   "Roof",
+   10.2
+  ]
+ ],
+ "spaces": [
+  {
+   "gid": "023QtKJ6HCCOLkx1zIPfFd",
+   "name": "1",
+   "longname": "Lobby",
+   "storey": "Ground Floor",
+   "area": 21.27,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    8.6,
+    2.49,
+    6.15
+   ]
+  },
+  {
+   "gid": "1ukZ5vVJr5ihXDwicUzD03",
+   "name": "2",
+   "longname": "Stairwell 1",
+   "storey": "Ground Floor",
+   "area": 20.81,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    4.6,
+    9.55
+   ]
+  },
+  {
+   "gid": "1ukZ5vVJr5ihXDwicUzD04",
+   "name": "3",
+   "longname": "Wardrobe",
+   "storey": "Ground Floor",
+   "area": 18.07,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    4.27,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ukZ5vVJr5ihXDwicUzD09",
+   "name": "4",
+   "longname": "Toilet",
+   "storey": "Ground Floor",
+   "area": 4.33,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.47,
+    1.75,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ukZ5vVJr5ihXDwicUzD0A",
+   "name": "5",
+   "longname": "Kitchen and Dining room",
+   "storey": "Ground Floor",
+   "area": 38.45,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    7.18,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ukZ5vVJr5ihXDwicUzD_7",
+   "name": "6",
+   "longname": "Living room",
+   "storey": "Ground Floor",
+   "area": 36.53,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    6.83,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ukZ5vVJr5ihXDwicUzD_8",
+   "name": "7",
+   "longname": "Bedroom",
+   "storey": "Ground Floor",
+   "area": 26.42,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    6.6,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ukZ5vVJr5ihXDwicUzD_D",
+   "name": "8",
+   "longname": "Office",
+   "storey": "Ground Floor",
+   "area": 8.18,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.26,
+    2.51,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ukZ5vVJr5ihXDwicUzD_E",
+   "name": "9",
+   "longname": "Bathroom",
+   "storey": "Ground Floor",
+   "area": 13.37,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    2.48,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ukZ5vVJr5ihXDwicUzD_p",
+   "name": "10",
+   "longname": "Utility room",
+   "storey": "Ground Floor",
+   "area": 9.42,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.93,
+    2.4,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ukZ5vVJr5ihXDwicUzDxr",
+   "name": "11",
+   "longname": "Stairwell 2",
+   "storey": "Ground Floor",
+   "area": 20.48,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    4.54,
+    9.55
+   ]
+  },
+  {
+   "gid": "3NrXws1pXA7hAwZi$$q7ii",
+   "name": "12",
+   "longname": "Wardrobe",
+   "storey": "Ground Floor",
+   "area": 18.07,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    4.27,
+    2.75
+   ]
+  },
+  {
+   "gid": "3NrXws1pXA7hAwZi$$q7in",
+   "name": "13",
+   "longname": "Toilet",
+   "storey": "Ground Floor",
+   "area": 4.33,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.47,
+    1.75,
+    2.75
+   ]
+  },
+  {
+   "gid": "3NrXws1pXA7hAwZi$$q7io",
+   "name": "14",
+   "longname": "Kitchen and Dining room",
+   "storey": "Ground Floor",
+   "area": 38.45,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    7.18,
+    2.75
+   ]
+  },
+  {
+   "gid": "3NrXws1pXA7hAwZi$$q7k7",
+   "name": "15",
+   "longname": "Living room",
+   "storey": "Ground Floor",
+   "area": 36.53,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    6.83,
+    2.75
+   ]
+  },
+  {
+   "gid": "3NrXws1pXA7hAwZi$$q7k8",
+   "name": "16",
+   "longname": "Bedroom",
+   "storey": "Ground Floor",
+   "area": 26.42,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    6.6,
+    2.75
+   ]
+  },
+  {
+   "gid": "3NrXws1pXA7hAwZi$$q7kD",
+   "name": "17",
+   "longname": "Office",
+   "storey": "Ground Floor",
+   "area": 8.18,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.26,
+    2.51,
+    2.75
+   ]
+  },
+  {
+   "gid": "3NrXws1pXA7hAwZi$$q7kE",
+   "name": "18",
+   "longname": "Bathroom",
+   "storey": "Ground Floor",
+   "area": 13.37,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    2.47,
+    2.75
+   ]
+  },
+  {
+   "gid": "3NrXws1pXA7hAwZi$$q7kJ",
+   "name": "19",
+   "longname": "Utility room",
+   "storey": "Ground Floor",
+   "area": 9.42,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.93,
+    2.4,
+    2.75
+   ]
+  },
+  {
+   "gid": "3NrXws1pXA7hAwZi$$q7b4",
+   "name": "20",
+   "longname": "Wardrobe",
+   "storey": "First Floor",
+   "area": 18.07,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    4.27,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvNq",
+   "name": "21",
+   "longname": "Toilet",
+   "storey": "First Floor",
+   "area": 4.34,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.48,
+    1.75,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvNt",
+   "name": "22",
+   "longname": "Kitchen and Dining room",
+   "storey": "First Floor",
+   "area": 38.47,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    7.18,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvLk",
+   "name": "23",
+   "longname": "Living room",
+   "storey": "First Floor",
+   "area": 36.55,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    6.83,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvLX",
+   "name": "24",
+   "longname": "Bedroom",
+   "storey": "First Floor",
+   "area": 26.42,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    6.6,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvLa",
+   "name": "25",
+   "longname": "Office",
+   "storey": "First Floor",
+   "area": 8.18,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.26,
+    2.51,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvLd",
+   "name": "26",
+   "longname": "Bathroom",
+   "storey": "First Floor",
+   "area": 13.37,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    2.48,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvLQ",
+   "name": "27",
+   "longname": "Utility room",
+   "storey": "First Floor",
+   "area": 9.42,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.93,
+    2.4,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvLT",
+   "name": "28",
+   "longname": "Wardrobe",
+   "storey": "First Floor",
+   "area": 18.07,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    4.27,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvLG",
+   "name": "29",
+   "longname": "Toilet",
+   "storey": "First Floor",
+   "area": 4.34,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.48,
+    1.75,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvLJ",
+   "name": "30",
+   "longname": "Kitchen and Dining room",
+   "storey": "First Floor",
+   "area": 38.47,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    7.18,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvLM",
+   "name": "31",
+   "longname": "Living room",
+   "storey": "First Floor",
+   "area": 36.55,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    6.83,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvL9",
+   "name": "32",
+   "longname": "Bedroom",
+   "storey": "First Floor",
+   "area": 26.42,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    6.6,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvLC",
+   "name": "33",
+   "longname": "Office",
+   "storey": "First Floor",
+   "area": 8.18,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.26,
+    2.51,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvLF",
+   "name": "34",
+   "longname": "Bathroom",
+   "storey": "First Floor",
+   "area": 13.37,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    2.47,
+    2.75
+   ]
+  },
+  {
+   "gid": "13vD6wwjX3jgC9hM58FvL2",
+   "name": "35",
+   "longname": "Utility room",
+   "storey": "First Floor",
+   "area": 9.42,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.93,
+    2.4,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tLM",
+   "name": "36",
+   "longname": "Wardrobe",
+   "storey": "Second Floor",
+   "area": 18.07,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    4.27,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tLI",
+   "name": "37",
+   "longname": "Toilet",
+   "storey": "Second Floor",
+   "area": 4.34,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.48,
+    1.75,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tLV",
+   "name": "38",
+   "longname": "Kitchen and Dining room",
+   "storey": "Second Floor",
+   "area": 38.47,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    7.18,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tLS",
+   "name": "39",
+   "longname": "Living room",
+   "storey": "Second Floor",
+   "area": 36.55,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    6.83,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tLP",
+   "name": "40",
+   "longname": "Bedroom",
+   "storey": "Second Floor",
+   "area": 26.42,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    6.6,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tL6",
+   "name": "41",
+   "longname": "Office",
+   "storey": "Second Floor",
+   "area": 8.18,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.26,
+    2.51,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tL3",
+   "name": "42",
+   "longname": "Bathroom",
+   "storey": "Second Floor",
+   "area": 13.37,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    2.48,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tL0",
+   "name": "43",
+   "longname": "Wardrobe",
+   "storey": "Second Floor",
+   "area": 18.07,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    4.27,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tLD",
+   "name": "44",
+   "longname": "Toilet",
+   "storey": "Second Floor",
+   "area": 4.34,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.48,
+    1.75,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tLA",
+   "name": "45",
+   "longname": "Kitchen and Dining room",
+   "storey": "Second Floor",
+   "area": 38.47,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    7.18,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tLt",
+   "name": "46",
+   "longname": "Living room",
+   "storey": "Second Floor",
+   "area": 36.55,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    6.83,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tLq",
+   "name": "47",
+   "longname": "Bedroom",
+   "storey": "Second Floor",
+   "area": 26.42,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    6.6,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tLn",
+   "name": "48",
+   "longname": "Office",
+   "storey": "Second Floor",
+   "area": 8.18,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.26,
+    2.51,
+    2.75
+   ]
+  },
+  {
+   "gid": "2rutt9qzXC5vZv4Yye2tL_",
+   "name": "49",
+   "longname": "Bathroom",
+   "storey": "Second Floor",
+   "area": 13.37,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.4,
+    2.47,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ifvqS9PfDWeMui_f_rFQh",
+   "name": "50",
+   "longname": "Balcony 1",
+   "storey": "First Floor",
+   "area": 88.74,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.0,
+    29.66,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ifvqS9PfDWeMui_f_rFGU",
+   "name": "51",
+   "longname": "Balcony 2",
+   "storey": "First Floor",
+   "area": 88.72,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.0,
+    29.66,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ifvqS9PfDWeMui_f_rF9E",
+   "name": "52",
+   "longname": "Balcony 3",
+   "storey": "Second Floor",
+   "area": 88.92,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.0,
+    29.64,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ifvqS9PfDWeMui_f_rF2z",
+   "name": "53",
+   "longname": "Balcony 4",
+   "storey": "Second Floor",
+   "area": 13.75,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.01,
+    6.85,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ifvqS9PfDWeMui_f_rE$8",
+   "name": "54",
+   "longname": "Balcony 5",
+   "storey": "Second Floor",
+   "area": 13.86,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.0,
+    6.93,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ifvqS9PfDWeMui_f_rEut",
+   "name": "55",
+   "longname": "Balcony 6",
+   "storey": "Second Floor",
+   "area": 89.85,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.02,
+    29.7,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ifvqS9PfDWeMui_f_rEkT",
+   "name": "56",
+   "longname": "Balcony 7",
+   "storey": "Second Floor",
+   "area": 23.71,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    8.0,
+    2.97,
+    2.75
+   ]
+  },
+  {
+   "gid": "1ifvqS9PfDWeMui_f_rEh5",
+   "name": "57",
+   "longname": "Balcony 8 (shared balcony)",
+   "storey": "Second Floor",
+   "area": 20.99,
+   "area_src": "Pset_SpaceCustom.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    8.0,
+    2.63,
+    2.75
+   ]
+  }
+ ],
+ "doors": [
+  {
+   "gid": "1jb8FOtKXAMxDAYOorL4Xy",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:487449",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Toilet",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "185oqOAbvFBPiBKVxC25Oy",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:533775",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Kitchen and Dining room",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0Fl73vL3fD7h41$K13zjWn",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:548991",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Utility room"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "19Uauy9rjAs86tsK7WvxMH",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:580951",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "19Uauy9rjAs86tsK7WvxLt",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:581041",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "19Uauy9rjAs86tsK7WvxPV",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:581273",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "19Uauy9rjAs86tsK7WvxSd",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:581601",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "19Uauy9rjAs86tsK7WvuYT",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:581723",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "19Uauy9rjAs86tsK7WvuXv",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:581823",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "19Uauy9rjAs86tsK7Wvudn",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:581943",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "19Uauy9rjAs86tsK7Wvubl",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:582057",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "33jtwUDUPDpOMIqp0fE6G0",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:666113",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.26,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Bedroom",
+    "Living room"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "33jtwUDUPDpOMIqp0fE6IH",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:666256",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.26,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Bedroom",
+    "Office"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1B8zheoLv0avhNvrhkARVY",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:803692",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Utility room"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1C2465LnHARBtzuYAQtmxr",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:803706",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1C2465LnHARBtzuYAQtmxq",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:803707",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1C2465LnHARBtzuYAQtmxp",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:803708",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1C2465LnHARBtzuYAQtmxo",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:803709",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1C2465LnHARBtzuYAQtmxn",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:803710",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1C2465LnHARBtzuYAQtmxm",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:803711",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1C2465LnHARBtzuYAQtmuF",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:803712",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1C2465LnHARBtzuYAQtmuE",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:803713",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Ground Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1C2465LnHARBtzuYAQtmub",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:803754",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.26,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Bedroom",
+    "Living room"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1C2465LnHARBtzuYAQtmua",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:803755",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.26,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Bedroom",
+    "Office"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0tBMoA8GH3VA7a$3sSJGyC",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:813766",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "First Floor",
+   "spaces": [
+    "Toilet",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0tBMoA8GH3VA7a$3sSJGy7",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:813773",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "First Floor",
+   "spaces": [
+    "Kitchen and Dining room",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0tBMoA8GH3VA7a$3sSJGyT",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:813783",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.26,
+   "storey": "First Floor",
+   "spaces": [
+    "Bedroom",
+    "Living room"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "273BqsXefBl8QjNI5_imgF",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:820574",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 1"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "273BqsXefBl8QjNI5_imel",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:820734",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 1"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "273BqsXefBl8QjNI5_imb9",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:820888",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 1"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0Gdovt2hPA5hsQcCIkJ8mY",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:822545",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 1"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0Gdovt2hPA5hsQcCIkJ8pG",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:822755",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 1"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0Gdovt2hPA5hsQcCIkJ8y4",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:822839",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 1"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0PKPx7i6L72QnyNmEaDa1J",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:824821",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.26,
+   "storey": "First Floor",
+   "spaces": [
+    "Bedroom",
+    "Office"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2drhJVS$v4gusbmFpcfshs",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:825789",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 1"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2drhJVS$v4gusbmFpcfsag",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:825953",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 1"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_jU",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:840075",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "First Floor",
+   "spaces": [
+    "Toilet",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_j5",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:840080",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "First Floor",
+   "spaces": [
+    "Kitchen and Dining room",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_j7",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:840082",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.26,
+   "storey": "First Floor",
+   "spaces": [
+    "Bedroom",
+    "Living room"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_in",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:840164",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 2"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_im",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:840165",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 2"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_ip",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:840166",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 2"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_iW",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:840181",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 2"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_iZ",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:840182",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 2"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_iY",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:840183",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 2"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_ZK",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:840193",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.26,
+   "storey": "First Floor",
+   "spaces": [
+    "Bedroom",
+    "Office"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_Z4",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:840209",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 2"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_Z7",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:840210",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "First Floor",
+   "spaces": [
+    "Balcony 2"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "06gyUag89EaRv52$iIynl3",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:919917",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Toilet",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "06gyUag89EaRv52$iIynlK",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:919930",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Kitchen and Dining room",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0wWzhGA85BmABLFeqDOnOd",
+   "name": "TU DF 1 - Haustüre:Front Door:933984",
+   "type": "TU DF 1 - Haustüre:Front Door",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.135,
+   "height": 2.43,
+   "storey": "First Floor",
+   "spaces": [
+    "Stairwell 1",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0wWzhGA85BmABLFeqDOnTP",
+   "name": "TU DF 1 - Haustüre:Front Door:934174",
+   "type": "TU DF 1 - Haustüre:Front Door",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.135,
+   "height": 2.43,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Stairwell 1",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0wWzhGA85BmABLFeqDOnV0",
+   "name": "TU DF 1 - Haustüre:Front Door:934279",
+   "type": "TU DF 1 - Haustüre:Front Door",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.135,
+   "height": 2.43,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Stairwell 2",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0wWzhGA85BmABLFeqDOnHG",
+   "name": "TU DF 1 - Haustüre:Front Door:934423",
+   "type": "TU DF 1 - Haustüre:Front Door",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.135,
+   "height": 2.43,
+   "storey": "First Floor",
+   "spaces": [
+    "Stairwell 2",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1cPCOuJxHAURgGeW1MlVtI",
+   "name": "Doors_Interior_WUNDERWERK-est-1964_All-glass-door-Burgos_GER:Standard - Bitte laden Sie die Revit Family Type Catalog:939221",
+   "type": "Doors_Interior_WUNDERWERK-est-1964_All-glass-door-Burgos_GER:Standard - Bitte laden Sie die Revit Family Type Catalog",
+   "op": "NOTDEFINED",
+   "width": 1.042,
+   "height": 2.121,
+   "storey": "First Floor",
+   "spaces": [
+    "Bathroom",
+    "Bedroom"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1cPCOuJxHAURgGeW1MlVz7",
+   "name": "Doors_Interior_WUNDERWERK-est-1964_All-glass-door-Burgos_GER:Standard - Bitte laden Sie die Revit Family Type Catalog:939584",
+   "type": "Doors_Interior_WUNDERWERK-est-1964_All-glass-door-Burgos_GER:Standard - Bitte laden Sie die Revit Family Type Catalog",
+   "op": "NOTDEFINED",
+   "width": 1.042,
+   "height": 2.121,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Bathroom",
+    "Bedroom"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYkzx",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:946012",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "Second Floor",
+   "spaces": [
+    "Toilet",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYkz6",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:946017",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "Second Floor",
+   "spaces": [
+    "Kitchen and Dining room",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYkz4",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:946019",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.26,
+   "storey": "Second Floor",
+   "spaces": [
+    "Bedroom",
+    "Living room"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYk_l",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:946056",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 3"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYk_k",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:946057",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 3"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYk_j",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:946058",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 3"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYk_t",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:946064",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 3"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYk_s",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:946065",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 3"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYk_r",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:946066",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 3"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYk_$",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:946072",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.26,
+   "storey": "Second Floor",
+   "spaces": [
+    "Bedroom",
+    "Office"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYk__",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:946073",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 3"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYk_z",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:946074",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 3"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYk_M",
+   "name": "TU DF 1 - Haustüre:Front Door:946097",
+   "type": "TU DF 1 - Haustüre:Front Door",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.135,
+   "height": 2.43,
+   "storey": "Second Floor",
+   "spaces": [
+    "Stairwell 1",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1zd7CBFUPAlvZ18vcQYk_L",
+   "name": "Doors_Interior_WUNDERWERK-est-1964_All-glass-door-Burgos_GER:Standard - Bitte laden Sie die Revit Family Type Catalog:946098",
+   "type": "Doors_Interior_WUNDERWERK-est-1964_All-glass-door-Burgos_GER:Standard - Bitte laden Sie die Revit Family Type Catalog",
+   "op": "NOTDEFINED",
+   "width": 1.042,
+   "height": 2.121,
+   "storey": "Second Floor",
+   "spaces": [
+    "Bathroom",
+    "Bedroom"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWyJ",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:960209",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 6"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWyG",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:960210",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 6"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWyH",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:960211",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 6"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWyM",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:960212",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 6"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWyN",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:960213",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 6"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWyK",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:960214",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 6"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWyL",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:960215",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 6"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWyQ",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:960216",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 6"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWDf",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:961195",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "Second Floor",
+   "spaces": [
+    "Toilet",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWDo",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:961200",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "Second Floor",
+   "spaces": [
+    "Kitchen and Dining room",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWDm",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:961202",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.26,
+   "storey": "Second Floor",
+   "spaces": [
+    "Bedroom",
+    "Living room"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWDs",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:961204",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.26,
+   "storey": "Second Floor",
+   "spaces": [
+    "Bedroom",
+    "Office"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWDt",
+   "name": "TU DF 1 - Haustüre:Front Door:961205",
+   "type": "TU DF 1 - Haustüre:Front Door",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.135,
+   "height": 2.43,
+   "storey": "Second Floor",
+   "spaces": [
+    "Stairwell 2",
+    "Wardrobe"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWDq",
+   "name": "Doors_Interior_WUNDERWERK-est-1964_All-glass-door-Burgos_GER:Standard - Bitte laden Sie die Revit Family Type Catalog:961206",
+   "type": "Doors_Interior_WUNDERWERK-est-1964_All-glass-door-Burgos_GER:Standard - Bitte laden Sie die Revit Family Type Catalog",
+   "op": "NOTDEFINED",
+   "width": 1.042,
+   "height": 2.121,
+   "storey": "Second Floor",
+   "spaces": [
+    "Bathroom",
+    "Bedroom"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWC8",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:961226",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 4"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqW9E",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:961420",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 4"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2odsreyuHD88JhNDddqWNC",
+   "name": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200:961550",
+   "type": "Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200",
+   "op": "NOTDEFINED",
+   "width": 1.829,
+   "height": 2.134,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 5"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2A3bYrYLPCFfKR9IrprgvC",
+   "name": "ASSA_ABLOY_SemiTransparent_NonHosted:Semi Transparent non hosted:981400",
+   "type": "ASSA_ABLOY_SemiTransparent_NonHosted:Semi Transparent non hosted",
+   "op": "NOTDEFINED",
+   "width": 5.631,
+   "height": 0.228,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Lobby"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3yt5iHkuT7cwFfSmaBrXHK",
+   "name": "TU SF 2 - Lift Zentral:DL - 705 x 2100:986886",
+   "type": "TU SF 2 - Lift Zentral:DL - 705 x 2100",
+   "op": "DOUBLE_DOOR_SLIDING",
+   "width": 0.945,
+   "height": 2.52,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Stairwell 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3yt5iHkuT7cwFfSmaBrXJJ",
+   "name": "TU SF 2 - Lift Zentral:DL - 705 x 2100:987009",
+   "type": "TU SF 2 - Lift Zentral:DL - 705 x 2100",
+   "op": "DOUBLE_DOOR_SLIDING",
+   "width": 0.945,
+   "height": 2.52,
+   "storey": "First Floor",
+   "spaces": [
+    "Stairwell 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3yt5iHkuT7cwFfSmaBrWkl",
+   "name": "TU SF 2 - Lift Zentral:DL - 705 x 2100:987389",
+   "type": "TU SF 2 - Lift Zentral:DL - 705 x 2100",
+   "op": "DOUBLE_DOOR_SLIDING",
+   "width": 0.945,
+   "height": 2.52,
+   "storey": "First Floor",
+   "spaces": [
+    "Stairwell 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3yt5iHkuT7cwFfSmaBrWe6",
+   "name": "TU SF 2 - Lift Zentral:DL - 705 x 2100:987476",
+   "type": "TU SF 2 - Lift Zentral:DL - 705 x 2100",
+   "op": "DOUBLE_DOOR_SLIDING",
+   "width": 0.945,
+   "height": 2.52,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Stairwell 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "033wON4Gr0eQL5wPF6Swp7",
+   "name": "TU SF 2 - Lift Zentral:DL - 705 x 2100:1004686",
+   "type": "TU SF 2 - Lift Zentral:DL - 705 x 2100",
+   "op": "DOUBLE_DOOR_SLIDING",
+   "width": 0.945,
+   "height": 2.52,
+   "storey": "Second Floor",
+   "spaces": [
+    "Stairwell 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "033wON4Gr0eQL5wPF6Swr0",
+   "name": "TU SF 2 - Lift Zentral:DL - 705 x 2100:1004809",
+   "type": "TU SF 2 - Lift Zentral:DL - 705 x 2100",
+   "op": "DOUBLE_DOOR_SLIDING",
+   "width": 0.945,
+   "height": 2.52,
+   "storey": "Second Floor",
+   "spaces": [
+    "Stairwell 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3bWsoCR_D6o8gis5zYboAt",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:1010223",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "First Floor",
+   "spaces": [
+    "Utility room"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3bWsoCR_D6o8gis5zYboGW",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:1010872",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "First Floor",
+   "spaces": [
+    "Utility room"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2RT3NrVjT2qPX_6pJoyMwZ",
+   "name": "Doors_Interior_WUNDERWERK-est-1964_All-glass-door-Burgos_GER:Standard - Bitte laden Sie die Revit Family Type Catalog:1013979",
+   "type": "Doors_Interior_WUNDERWERK-est-1964_All-glass-door-Burgos_GER:Standard - Bitte laden Sie die Revit Family Type Catalog",
+   "op": "NOTDEFINED",
+   "width": 1.042,
+   "height": 2.121,
+   "storey": "Ground Floor",
+   "spaces": [
+    "Bathroom",
+    "Bedroom"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2RT3NrVjT2qPX_6pJoyMy$",
+   "name": "Doors_Interior_WUNDERWERK-est-1964_All-glass-door-Burgos_GER:Standard - Bitte laden Sie die Revit Family Type Catalog:1014087",
+   "type": "Doors_Interior_WUNDERWERK-est-1964_All-glass-door-Burgos_GER:Standard - Bitte laden Sie die Revit Family Type Catalog",
+   "op": "NOTDEFINED",
+   "width": 1.042,
+   "height": 2.121,
+   "storey": "First Floor",
+   "spaces": [
+    "Bathroom",
+    "Bedroom"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2yR3WtZNL4iu84WUSBvo$w",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:1051460",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "Second Floor",
+   "spaces": [
+    "Stairwell 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2yR3WtZNL4iu84WUSBvo$V",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:1051489",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "Second Floor",
+   "spaces": [
+    "Balcony 7"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2yR3WtZNL4iu84WUSBvoWh",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:1051797",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "Second Floor",
+   "spaces": [
+    "Stairwell 2"
+   ],
+   "fire": null,
+   "external": false
+  }
+ ],
+ "windows": [
+  {
+   "gid": "0RgKgXPa5AqeGvHba2KWCl",
+   "name": "Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:866810",
+   "type": "Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight",
+   "width": 1.22,
+   "height": 1.55,
+   "storey": "First Floor",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Bathroom"
+   ]
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2KW3$",
+   "name": "Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:866858",
+   "type": "Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight",
+   "width": 1.22,
+   "height": 1.55,
+   "storey": "First Floor",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Bathroom"
+   ]
+  },
+  {
+   "gid": "0eNSff11H9VhE9adIdTgas",
+   "name": "Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:868037",
+   "type": "Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight",
+   "width": 1.22,
+   "height": 1.55,
+   "storey": "Ground Floor",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Bathroom"
+   ]
+  },
+  {
+   "gid": "0eNSff11H9VhE9adIdTgar",
+   "name": "Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:868038",
+   "type": "Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight",
+   "width": 1.22,
+   "height": 1.55,
+   "storey": "Ground Floor",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Bathroom"
+   ]
+  },
+  {
+   "gid": "06gyUag89EaRv52$iIynJo",
+   "name": "Fenster 2-flg - mit Anschlag:2.01 x 1.01:919132",
+   "type": "Fenster 2-flg - mit Anschlag:2.01 x 1.01",
+   "width": 2.014,
+   "height": 1.02,
+   "storey": "First Floor",
+   "sill_approx": 1.5,
+   "spaces": [
+    "Utility room"
+   ]
+  },
+  {
+   "gid": "06gyUag89EaRv52$iIynJm",
+   "name": "Fenster 2-flg - mit Anschlag:2.01 x 1.01:919134",
+   "type": "Fenster 2-flg - mit Anschlag:2.01 x 1.01",
+   "width": 2.014,
+   "height": 1.02,
+   "storey": "First Floor",
+   "sill_approx": 1.5,
+   "spaces": [
+    "Utility room"
+   ]
+  },
+  {
+   "gid": "01fbTcJgz1b8Z$wgfmHMhW",
+   "name": "Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:1004531",
+   "type": "Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight",
+   "width": 1.22,
+   "height": 1.55,
+   "storey": "Second Floor",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Bathroom"
+   ]
+  },
+  {
+   "gid": "01fbTcJgz1b8Z$wgfmHMhd",
+   "name": "Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:1004532",
+   "type": "Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight",
+   "width": 1.22,
+   "height": 1.55,
+   "storey": "Second Floor",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Bathroom"
+   ]
+  },
+  {
+   "gid": "0yGBWyEb5AiB5TDSaZPYPA",
+   "name": "Fenster 2-flg - mit Anschlag:2.01 x 1.01:1007987",
+   "type": "Fenster 2-flg - mit Anschlag:2.01 x 1.01",
+   "width": 2.014,
+   "height": 1.02,
+   "storey": "Ground Floor",
+   "sill_approx": 1.5,
+   "spaces": [
+    "Utility room"
+   ]
+  },
+  {
+   "gid": "0yGBWyEb5AiB5TDSaZPYPD",
+   "name": "Fenster 2-flg - mit Anschlag:2.01 x 1.01:1007988",
+   "type": "Fenster 2-flg - mit Anschlag:2.01 x 1.01",
+   "width": 2.014,
+   "height": 1.02,
+   "storey": "Ground Floor",
+   "sill_approx": 1.5,
+   "spaces": [
+    "Utility room"
+   ]
+  }
+ ],
+ "stairs": [
+  {
+   "gid": "0x91Se489FYhy58yJ24bZZ",
+   "cls": "IfcStair",
+   "name": "Betonfertigteil-Treppe:Treppe:482287",
+   "predefined": "NOTDEFINED",
+   "storey": "Ground Floor",
+   "n_riser": 17.0,
+   "riser": 0.2,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 17.0,
+    "Pset_StairCommon.NumberOfTreads": 17.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.27,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 17.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "0tBMoA8GH3VA7a$3sSJGza",
+   "cls": "IfcStair",
+   "name": "Betonfertigteil-Treppe:Treppe:813742",
+   "predefined": "NOTDEFINED",
+   "storey": "First Floor",
+   "n_riser": 17.0,
+   "riser": 0.2,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 17.0,
+    "Pset_StairCommon.NumberOfTreads": 17.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.27,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 17.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_kC",
+   "cls": "IfcStair",
+   "name": "Ortbetontreppe:Treppe:840025",
+   "predefined": "NOTDEFINED",
+   "storey": "Ground Floor",
+   "n_riser": 17.0,
+   "riser": 0.2,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 17.0,
+    "Pset_StairCommon.NumberOfTreads": 17.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.27,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 17.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "2pRqe9din5Sehq8CcnCas7",
+   "cls": "IfcStair",
+   "name": "Ortbetontreppe:Treppe:991197",
+   "predefined": "NOTDEFINED",
+   "storey": "First Floor",
+   "n_riser": 17.0,
+   "riser": 0.2,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 17.0,
+    "Pset_StairCommon.NumberOfTreads": 17.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.27,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 17.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "0VDtd6CSH14BkmxY3n1Lme",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:1046027",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "Ground Floor",
+   "n_riser": 51.0,
+   "riser": 0.133,
+   "tread": 0.368,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 51.0,
+    "Pset_StairCommon.NumberOfTreads": 51.0,
+    "Pset_StairCommon.RiserHeight": 0.133,
+    "Pset_StairCommon.TreadLength": 0.368,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.368,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.368,
+    "Pset_StairFlightCommon.NumberOfRiser": 51.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 51.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.133,
+    "Pset_StairFlightCommon.TreadLength": 0.368,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.368,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.368
+   }
+  },
+  {
+   "gid": "0x91Se489FYhy58yJ24bZ_",
+   "cls": "IfcStairFlight",
+   "name": "Betonfertigteil-Treppe:Treppe:482287 Run 1",
+   "predefined": "WINDER",
+   "storey": "Ground Floor",
+   "n_riser": 17.0,
+   "riser": 0.2,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 17.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "0tBMoA8GH3VA7a$3sSJGzb",
+   "cls": "IfcStairFlight",
+   "name": "Betonfertigteil-Treppe:Treppe:813742 Run 1",
+   "predefined": "WINDER",
+   "storey": "First Floor",
+   "n_riser": 17.0,
+   "riser": 0.2,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 17.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "0RgKgXPa5AqeGvHba2K_kF",
+   "cls": "IfcStairFlight",
+   "name": "Ortbetontreppe:Treppe:840025 Run 1",
+   "predefined": "WINDER",
+   "storey": "Ground Floor",
+   "n_riser": 17.0,
+   "riser": 0.2,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 17.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "2pRqe9din5Sehq8CcnCas4",
+   "cls": "IfcStairFlight",
+   "name": "Ortbetontreppe:Treppe:991197 Run 1",
+   "predefined": "WINDER",
+   "storey": "First Floor",
+   "n_riser": 17.0,
+   "riser": 0.2,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 17.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "0VDtd6CSH14BkmxY3n1Lnt",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:1046027 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "Ground Floor",
+   "n_riser": 51.0,
+   "riser": 0.133,
+   "tread": 0.368,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.368,
+    "Pset_StairFlightCommon.NumberOfRiser": 51.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 51.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.133,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.368,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.368
+   }
+  }
+ ],
+ "railings": [
+  {
+   "name": "Geländer:Holzhandlauf:482769",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "Ground Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:813745",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:834588",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:840029",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "Ground Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:963804",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Second Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:964110",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Second Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:964456",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Second Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:964832",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Second Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:991200",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:993932",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Second Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1001130",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Second Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1001376",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Second Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1001457",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Second Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1001539",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Second Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1003792",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1003945",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1004134",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Second Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1004278",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Second Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1017835",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1018507",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1018830",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1019183",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1021286",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1021431",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1021607",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1021796",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1021973",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "First Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1046126",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Ground Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1046130",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Ground Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1047552",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Second Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Glas - Ohne Pfosten:1047824",
+   "type": "Geländer:Glas - Ohne Pfosten",
+   "storey": "Second Floor",
+   "height": 1.219
+  }
+ ],
+ "furniture": [
+  {
+   "where": "Bathroom",
+   "item": "Sanitary_Accessories_Roca_BAIA-Hanger-Greige",
+   "n": 8
+  },
+  {
+   "where": "Bathroom",
+   "item": "Sanitary_Mirrors_Ideagroup_ASOLA-mirror",
+   "n": 8
+  },
+  {
+   "where": "Bathroom",
+   "item": "Sanitary_Shower-screens_Ideagroup_Vitrum-shower-enclosure-walk-in-VT1LCP8",
+   "n": 4
+  },
+  {
+   "where": "Bedroom",
+   "item": "Bett-06",
+   "n": 4
+  },
+  {
+   "where": "Bedroom",
+   "item": "C710-hexagonal side table-Talo outdoor-Expormim",
+   "n": 8
+  },
+  {
+   "where": "Bedroom, Office",
+   "item": "Desk",
+   "n": 4
+  },
+  {
+   "where": "Bedroom, Office",
+   "item": "Furniture_Office Chairs_KOKUYO_Mondeno",
+   "n": 4
+  },
+  {
+   "where": "Kitchen and Dining room",
+   "item": "Chair-Breuer",
+   "n": 16
+  },
+  {
+   "where": "Kitchen and Dining room",
+   "item": "Küchenzeile-01 Generisch",
+   "n": 4
+  },
+  {
+   "where": "Kitchen and Dining room",
+   "item": "Küchenzeile-02 Kombination",
+   "n": 4
+  },
+  {
+   "where": "Kitchen and Dining room",
+   "item": "Küchenzeile-05 Kombination",
+   "n": 4
+  },
+  {
+   "where": "Kitchen and Dining room",
+   "item": "Table-Dining Oval",
+   "n": 4
+  },
+  {
+   "where": "Living room",
+   "item": "Furniture_Shelving-And-Storage_Sedus_Se-Matrix",
+   "n": 4
+  },
+  {
+   "where": "Toilet, Wardrobe",
+   "item": "Sanitary_Mirrors_Ideagroup_ASOLA-mirror",
+   "n": 4
+  },
+  {
+   "where": "Toilet, Wardrobe",
+   "item": "Sanitary_Toilet-Accessories_Roca_BAIA-Floor-standing-toilet-brush-Greige",
+   "n": 4
+  },
+  {
+   "where": "Utility room",
+   "item": "Tall Cabinet-Shelf Unit",
+   "n": 8
+  },
+  {
+   "where": "Wardrobe",
+   "item": "Furniture_Hooks&Hangers_Essem-Design_Hook-Strip_2",
+   "n": 6
+  },
+  {
+   "where": "Wardrobe",
+   "item": "Furniture_Mirrors_Fritz-Hansen_Mirror-long",
+   "n": 4
+  },
+  {
+   "where": "Wardrobe",
+   "item": "Tall-Cabinet_Case-Systems_Wardrobe-Storage_T2310",
+   "n": 36
+  }
+ ],
+ "other_counts": {
+  "IfcCurtainWall": 42,
+  "IfcColumn": 28,
+  "IfcBeam": 5,
+  "IfcSlab": 25,
+  "IfcRoof": 2,
+  "IfcTransportElement": 0,
+  "IfcRelSpaceBoundary": 0
+ }
+}

@@ -1,0 +1,386 @@
+id,question,ground_truth,ifc_model,project,category,split
+369,What is the project information and location for this building?,"Note: The data stored for project information and building name are incomplete. However, the building design and furniture indicates an office building.
+
+Project Information:
+   - Project Name: Projektnummer
+   - Long Name: Projektname
+   - Description: N/A
+
+   Site Location:
+   - Site Name: Default
+   - Latitude: 48° 8' 20""
+   - Longitude: 11° 34' 48""",arc,fantasy_office_building_1,1,train
+370,Which software and modeling standards were applied?,"Modeling Standards:
+   - IFC Schema: IFC4
+
+   Software Information:
+   - Application: Autodesk Revit 2025 (DEU)
+   - Version: 2025",arc,fantasy_office_building_1,1,train
+371,"What is the space breakdown by level, with individual room areas?","Space Breakdown by Level:
+   Total Building: 44 spaces, 1257.07 sq m
+
+   EG:
+   - Number of spaces: 14
+   - Total area: 331.69 sq m
+   - Individual spaces:
+     • Space 1: Lobby - 98.29 sq m
+     • Space 2: WC - 4.87 sq m
+     • Space 3: WC - 3.53 sq m
+     • Space 4: WC - 3.53 sq m
+     • Space 5: Lobby - 18.09 sq m
+     • Space 6: Working Space - 34.91 sq m
+     • Space 7: WC - 2.63 sq m
+     • Space 24: Lobby - 98.29 sq m
+     • Space 25: WC - 4.87 sq m
+     • Space 26: WC - 3.53 sq m
+     • Space 27: WC - 3.53 sq m
+     • Space 28: Working Space - 34.91 sq m
+     • Space 29: Lobby - 18.09 sq m
+     • Space 30: WC - 2.63 sq m
+
+   OG1:
+   - Number of spaces: 6
+   - Total area: 144.97 sq m
+   - Individual spaces:
+     • Space 8: Meeting Room - 16.34 sq m
+     • Space 9: Meeting Room - 16.34 sq m
+     • Space 10: Working Space - 53.52 sq m
+     • Space 11: WC - 2.63 sq m
+     • Space 12: WC - 2.63 sq m
+     • Space 13: Working Space - 53.52 sq m
+
+   OG2:
+   - Number of spaces: 10
+   - Total area: 334.06 sq m
+   - Individual spaces:
+     • Space 14: Working Space - 103.83 sq m
+     • Space 15: WC - 3.53 sq m
+     • Space 16: WC - 3.53 sq m
+     • Space 17: Working Space - 53.52 sq m
+     • Space 18: WC - 2.63 sq m
+     • Space 19: Working Space - 103.83 sq m
+     • Space 20: WC - 3.53 sq m
+     • Space 21: WC - 3.53 sq m
+     • Space 22: Working Space - 53.52 sq m
+     • Space 23: WC - 2.63 sq m
+
+   OG3:
+   - Number of spaces: 10
+   - Total area: 334.06 sq m
+   - Individual spaces:
+     • Space 31: Working Space - 103.83 sq m
+     • Space 32: Working Space - 103.83 sq m
+     • Space 33: WC - 3.53 sq m
+     • Space 34: WC - 3.53 sq m
+     • Space 35: WC - 3.53 sq m
+     • Space 36: WC - 3.53 sq m
+     • Space 37: Working Space - 53.52 sq m
+     • Space 38: WC - 2.63 sq m
+     • Space 39: WC - 2.63 sq m
+     • Space 40: Working Space - 53.52 sq m
+
+   OG4:
+   - Number of spaces: 4
+   - Total area: 112.29 sq m
+   - Individual spaces:
+     • Space 41: Working Space - 53.52 sq m
+     • Space 42: WC - 2.63 sq m
+     • Space 43: WC - 2.63 sq m
+     • Space 44: Working Space - 53.52 sq m",arc,fantasy_office_building_1,3,test
+372,What is the gross floor area of each floor?,"Gross Floor Area by Level:
+   - EG: 331.69 sq m
+   - OG1: 144.97 sq m
+   - OG2: 334.06 sq m
+   - OG3: 334.06 sq m
+   - OG4: 112.29 sq m
+
+   Total Building Area: 1257.07 sq m",arc,fantasy_office_building_1,3,test
+373,"What are all the spaces on ground floor, with their areas?","Ground Floor (EG) Spaces:
+   Total: 14 spaces
+   - Space 1: Lobby - 98.29 sq m
+   - Space 2: WC - 4.87 sq m
+   - Space 3: WC - 3.53 sq m
+   - Space 4: WC - 3.53 sq m
+   - Space 5: Lobby - 18.09 sq m
+   - Space 6: Working Space - 34.91 sq m
+   - Space 7: WC - 2.63 sq m
+   - Space 24: Lobby - 98.29 sq m
+   - Space 25: WC - 4.87 sq m
+   - Space 26: WC - 3.53 sq m
+   - Space 27: WC - 3.53 sq m
+   - Space 28: Working Space - 34.91 sq m
+   - Space 29: Lobby - 18.09 sq m
+   - Space 30: WC - 2.63 sq m
+
+   Total Ground Floor Area: 331.69 sq m",arc,fantasy_office_building_1,3,train
+374,"What are all the spaces on level 1, with their areas?","Level 1 (OG1) Spaces:
+   Total: 6 spaces
+   - Space 8: Meeting Room - 16.34 sq m
+   - Space 9: Meeting Room - 16.34 sq m
+   - Space 10: Working Space - 53.52 sq m
+   - Space 11: WC - 2.63 sq m
+   - Space 12: WC - 2.63 sq m
+   - Space 13: Working Space - 53.52 sq m
+
+   Total Level 1 Area: 144.97 sq m",arc,fantasy_office_building_1,3,test
+375,"What are all the spaces on level 2, with their areas?","Level 2 (OG2) Spaces:
+   Total: 10 spaces
+   - Space 14: Working Space - 103.83 sq m
+   - Space 15: WC - 3.53 sq m
+   - Space 16: WC - 3.53 sq m
+   - Space 17: Working Space - 53.52 sq m
+   - Space 18: WC - 2.63 sq m
+   - Space 19: Working Space - 103.83 sq m
+   - Space 20: WC - 3.53 sq m
+   - Space 21: WC - 3.53 sq m
+   - Space 22: Working Space - 53.52 sq m
+   - Space 23: WC - 2.63 sq m
+
+   Total Level 2 Area: 334.06 sq m",arc,fantasy_office_building_1,2,train
+376,"What are all the spaces on level 3, with their areas?","Level 3 (OG3) Spaces:
+   Total: 10 spaces
+   - Space 31: Working Space - 103.83 sq m
+   - Space 32: Working Space - 103.83 sq m
+   - Space 33: WC - 3.53 sq m
+   - Space 34: WC - 3.53 sq m
+   - Space 35: WC - 3.53 sq m
+   - Space 36: WC - 3.53 sq m
+   - Space 37: Working Space - 53.52 sq m
+   - Space 38: WC - 2.63 sq m
+   - Space 39: WC - 2.63 sq m
+   - Space 40: Working Space - 53.52 sq m
+
+   Total Level 3 Area: 334.06 sq m",arc,fantasy_office_building_1,3,train
+377,"What are all the spaces on level 4, with their areas?","Level 4 (OG4) Spaces:
+   Total: 4 spaces
+   - Space 41: Working Space - 53.52 sq m
+   - Space 42: WC - 2.63 sq m
+   - Space 43: WC - 2.63 sq m
+   - Space 44: Working Space - 53.52 sq m
+
+   Total Level 4 Area: 112.29 sq m",arc,fantasy_office_building_1,3,train
+378,What are the heights of the building levels?,"Building Level Heights:
+   - EG: Elevation 0.000 m
+   - OG1: Elevation 4.800 m
+   - OG2: Elevation 9.600 m
+   - OG3: Elevation 14.400 m
+   - OG4: Elevation 19.200 m",arc,fantasy_office_building_1,2,train
+379,"Could you provide a breakdown of working spaces by floor, including the count and details of each space?","Working Spaces by Floor:
+   Total working spaces in building: 14
+
+   EG: 2 working spaces
+   - Space 6: Working Space - 34.91 sq m
+   - Space 28: Working Space - 34.91 sq m
+
+   OG1: 2 working spaces
+   - Space 10: Working Space - 53.52 sq m
+   - Space 13: Working Space - 53.52 sq m
+
+   OG2: 4 working spaces
+   - Space 14: Working Space - 103.83 sq m
+   - Space 17: Working Space - 53.52 sq m
+   - Space 19: Working Space - 103.83 sq m
+   - Space 22: Working Space - 53.52 sq m
+
+   OG3: 4 working spaces
+   - Space 31: Working Space - 103.83 sq m
+   - Space 32: Working Space - 103.83 sq m
+   - Space 37: Working Space - 53.52 sq m
+   - Space 40: Working Space - 53.52 sq m
+
+   OG4: 2 working spaces
+   - Space 41: Working Space - 53.52 sq m
+   - Space 44: Working Space - 53.52 sq m",arc,fantasy_office_building_1,2,test
+380,"Could you provide a complete furniture inventory for the building, including the total count and a breakdown of quantities by furniture type?","Furniture Inventory:
+   Total furniture items: 64
+
+   Furniture by type:
+   - Schreibtisch-Kombination-02 mit PC:Typ1: 30 items
+   - Hocker-06:Typ1: 8 items
+   - Sofa-02:B 800: 8 items
+   - Tisch_Empfang:Tisch_empfang: 4 items
+   - Drehstuhl-01:Typ1: 4 items
+   - Tisch-02:D 600, H 350, Glas: 4 items
+   - Sofa-08:2000 x 800: 2 items
+   - Tisch-04:800 x 800 x 450: 2 items
+   - Tisch-Stuhl-Kombination-08 Konferenz:2400 x 1000 x 750 - 8 Stühle: 2 items",arc,fantasy_office_building_1,2,test
+381,"What furniture items are available in working space 28, and how many of each type are there?","Furniture in Working Space 28:
+   Total items: 7
+
+   Furniture used:
+   - Schreibtisch-Kombination-02 mit PC:Typ1: 7 items",arc,fantasy_office_building_1,2,train
+382,"Which door types are installed in the building, with their quantities?","Door Types in Building:
+   Total doors: 34
+
+   Door types:
+   - Drehflügel 1-flg - Stahlzarge:88.5 x 2.26: 28 doors
+   - TU Fassade - 1-flg-Drehflügel:GG - Türe 10 mm: 4 doors
+   - Drehflügel 2-flg - Variabel:Drehflügel 2-flg - Variabel: 2 doors",arc,fantasy_office_building_1,2,train
+383,"Which window types are present in this building, including their sizing and quantities?","Window Types in Building:
+   Total windows: 42
+
+   Window types with sizing:
+   - Fenster 2-flg - Variabel:Fenster 2-flg - Variabel: 30 windows
+     Typical dimensions: 2.50 m (W) x 1.80 m (H)
+   - Fenster 1-flg - mit Anschlag:1.01 x 1.80: 12 windows
+     Typical dimensions: 1.01 m (W) x 1.80 m (H)",arc,fantasy_office_building_1,2,test
+384,"What types of walls are used in the building, with their quantities?","Wall Types in Building:
+   Total walls: 64
+
+   Wall types:
+   - Basiswand:GK 10.0: 46 walls
+   - Basiswand:STB 20.0 WD 12.0: 8 walls
+   - Basiswand:STB 25.0 WD 12.0: 6 walls
+   - Basiswand:GK 12.5: 2 walls
+   - Basiswand:STB 25.0: 2 walls",arc,fantasy_office_building_1,2,train
+385,"Which wall types are used on the exterior of the building, including their quantities?","Exterior Wall Types:
+   Total exterior walls: 14
+
+   Exterior wall types:
+   - Basiswand:STB 20.0 WD 12.0: 8 walls
+   - Basiswand:STB 25.0 WD 12.0: 6 walls",arc,fantasy_office_building_1,2,train
+386,"Which wall types are used for interior, with their counts?","Interior Wall Types:
+   Total interior walls: 50
+
+   Interior wall types:
+   - Basiswand:GK 10.0: 46 walls
+   - Basiswand:GK 12.5: 2 walls
+   - Basiswand:STB 25.0: 2 walls",arc,fantasy_office_building_1,2,train
+387,"What materials are used in each wall type, along with their layer thicknesses?","Wall Material Layers and Thicknesses:
+
+   Basiswand:STB 25.0 WD 12.0:
+   - Total thickness: 370 mm
+      Layers:
+      - StB - Ortbeton, thickness: 25 cm
+      - Wärmedämmung - Hart, thickness: 12 cm
+
+   Basiswand:STB 20.0 WD 12.0:
+   - Total thickness: 370 mm
+      Layers:
+      - StB - Ortbeton, thickness: 20 cm
+      - Wärmedämmung - Hart, thickness: 12 cm
+      - MW - Gipskarton, thickness: 5 cm
+
+   Basiswand:GK 10.0:
+   - Total thickness: 100 mm
+      Layers:
+      - MW - Gipskarton, thickness: 1.25 cm
+      - Wärmedämmung - Hart, thickness: 7.5 cm
+      - MW - Gipskarton, thickness: 1.25 cm
+
+   Basiswand:GK 12.5:
+   - Total thickness: 125 mm
+      Layers:
+      - MW - Gipskarton, thickness: 2.5 cm
+      - Wärmedämmung - Hart, thickness: 7.5 cm
+      - MW - Gipskarton, thickness: 2.5 cm
+
+   Basiswand:STB 25.0:
+   - Total thickness: 250 mm
+      Layers:
+      - StB - Ortbeton, thickness: 25 cm",arc,fantasy_office_building_1,1,train
+388,What are the thicknesses of the different wall types?,"Wall Type Thicknesses:
+   - Basiswand:STB 25.0 WD 12.0: 370 mm
+   - Basiswand:STB 20.0 WD 12.0: 370 mm
+   - Basiswand:GK 10.0: 100 mm
+   - Basiswand:GK 12.5: 125 mm
+   - Basiswand:STB 25.0: 250 mm",arc,fantasy_office_building_1,2,test
+389,What proportion of walls are load-bearing?,"Load-Bearing Wall Analysis:
+   - Load-bearing walls: 14
+   - Non-load-bearing walls: 50
+   - Load-bearing percentage: 21.9%",arc,fantasy_office_building_1,2,test
+390,What is the total length of exterior walls and how many exterior walls are there in the building?,"Exterior Wall Length:
+   - Total exterior wall length: 151.06 m
+   - Number of exterior walls: 14",arc,fantasy_office_building_1,2,test
+391,What is the building's footprint area?,The building's footprint area is 331.69 sq m.,arc,fantasy_office_building_1,3,test
+392,"What types of curtain walls are installed in the building, and how many of each type are there?","Curtain Wall Types:
+   Total curtain walls: 38
+
+   Curtain wall types:
+   - Fassade:Raster 1.5 x 3.0m: 34 curtain walls
+   - Fassade:Raster 2,4 x 2,4: 4 curtain walls",arc,fantasy_office_building_1,2,test
+393,Which materials are used in the ceilings?,Ceiling material information is not available in this model.,arc,fantasy_office_building_1,4,train
+394,"How many meeting rooms are available, and where are they?","Meeting Room Count:
+   Total meeting rooms: 2
+
+   2 meeting rooms are located on OG1: Space 8 and Space 9. Both are adjacent to Working Space 10, positioned at its two opposite ends.",arc,fantasy_office_building_1,2,train
+395,"How many restrooms are there on each floor, along with their areas?","Restroom Count by Floor:
+   Total restrooms: 24
+
+   EG: 8 restrooms
+   - Space 2: WC - 4.87 sq m
+   - Space 3: WC - 3.53 sq m
+   - Space 4: WC - 3.53 sq m
+   - Space 7: WC - 2.63 sq m
+   - Space 25: WC - 4.87 sq m
+   - Space 26: WC - 3.53 sq m
+   - Space 27: WC - 3.53 sq m
+   - Space 30: WC - 2.63 sq m
+
+   OG1: 2 restrooms
+   - Space 11: WC - 2.63 sq m
+   - Space 12: WC - 2.63 sq m
+
+   OG2: 6 restrooms
+   - Space 15: WC - 3.53 sq m
+   - Space 16: WC - 3.53 sq m
+   - Space 18: WC - 2.63 sq m
+   - Space 20: WC - 3.53 sq m
+   - Space 21: WC - 3.53 sq m
+   - Space 23: WC - 2.63 sq m
+
+   OG3: 6 restrooms
+   - Space 33: WC - 3.53 sq m
+   - Space 34: WC - 3.53 sq m
+   - Space 35: WC - 3.53 sq m
+   - Space 36: WC - 3.53 sq m
+   - Space 38: WC - 2.63 sq m
+   - Space 39: WC - 2.63 sq m
+
+   OG4: 2 restrooms
+   - Space 42: WC - 2.63 sq m
+   - Space 43: WC - 2.63 sq m",arc,fantasy_office_building_1,2,test
+396,"Can you provide an analysis of the building's structural system, including the likely structural type, a breakdown of structural components with their quantities, and the materials used?","Structural System Assessment:
+The structural system is not directly understandable from the data stored in the model, but a likely option for the primary structural system could be a Frame structure.
+
+Structural Components:
+- Columns: 34
+- Beams: 8
+- Floor slabs: 18
+
+Structural Material:
+Reinforced concrete (StB - Stahlbeton)",arc,fantasy_office_building_1,4,train
+397,What are the slab types and their thicknesses?,"Slab Types and Thicknesses:
+   Total slabs: 18
+
+   Slab types:
+   - Geschossdecke:STB 20.0, insul, parquet: 12 slabs, total thickness: 41 cm
+   - Geschossdecke:STB 20.0 groundfloor: 4 slabs, total thickness: 48 cm
+   - Geschossdecke:STB 20.0, insul, concrete: 2 slabs, total thickness: 32 cm",arc,fantasy_office_building_1,2,train
+398,"What is the total volume of all floor slabs combined, and could you provide a breakdown of the volume by slab type?","Floor Slab Volume:
+   - Number of floor slabs: 18
+   - Total volume: 577.37 cu m
+
+   Volume breakdown by slab type:
+   - Geschossdecke:STB 20.0 groundfloor: 190.08 cu m (4 slabs)
+   - Geschossdecke:STB 20.0, insul, parquet: 351.17 cu m (12 slabs)
+   - Geschossdecke:STB 20.0, insul, concrete: 36.12 cu m (2 slabs)",arc,fantasy_office_building_1,3,train
+399,Is fire rating information available for doors in this model?,Fire rating information for doors is not available in this model.,arc,fantasy_office_building_1,4,train
+400,Is fire rating information available for windows in this model?,Fire rating information for windows is not available in this model.,arc,fantasy_office_building_1,4,test
+401,"What are the different column types present in this building, including their quantities and specifications?","Column Types in Building:
+   Total columns: 34
+
+   Column types:
+   - STB Stütze - rund:STB d=20: 20 columns
+     Diameter: 20 cm (0.20 m)
+   - STB Stütze - rund:STB d=25: 8 columns
+     Diameter: 25 cm (0.25 m)
+   - STB Stütze - rund:STB d=30: 6 columns
+     Diameter: 30 cm (0.30 m)",arc,fantasy_office_building_1,2,train
+402,"What is the total concrete volume used in slabs, columns and beams?","Total Concrete Volume:
+   - Floor slabs: 261.62 cu m (18 elements)
+   - Columns: 7.80 cu m (34 elements)
+   - Beams: 24.55 cu m (8 elements)
+
+   TOTAL CONCRETE VOLUME: 293.97 cu m",arc,fantasy_office_building_1,2,train
+403,Are light fixtures included in this building model?,Light fixtures are not included in this model.,arc,fantasy_office_building_1,1,train

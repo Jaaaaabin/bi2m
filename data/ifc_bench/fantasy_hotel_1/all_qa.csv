@@ -1,0 +1,261 @@
+id,question,ground_truth,ifc_model,project,category,split
+328,"What is the project information, building name and usage, and location data for this building?","Note: The data stored for project information, building name, and location are imprecise. However, the building usage indicates a motel.
+
+The data stored in the file are:
+Project Information:
+   - Project Name: Project Number
+   - Project Long Name: Project Name
+   - Project Phase: Project Status
+
+   Building Information:
+   - Building Name: Building Name
+   - Building Long Name: Building Name
+
+   Location Data:
+   - Address: Enter address hereAddress Line 2
+   - Region: Boston
+   - Country: MA
+   - Latitude: (42, 21, 31, 401672)
+   - Longitude: (-71, -3, -24, -345703)",arc,fantasy_hotel_1,1,train
+329,What software and modeling standards were used?,"Software Information:
+   - Application: Autodesk Revit 2024 (ENU)
+   - Version: 2024
+
+   Modeling Standards:
+   - IFC Schema: IFC4",arc,fantasy_hotel_1,1,train
+330,"What is the space breakdown by level, grouped by space function?","Space Breakdown by Level:
+
+   GROUND FLOOR:
+   - Number of spaces: 14
+   - By function:
+     • Guest Rooms: 11 spaces
+     • Other: 2 spaces
+     • Food Service: 1 space
+
+   FIRST FLOOR:
+   - Number of spaces: 12
+   - By function:
+     • Guest Rooms: 9 spaces
+     • Bathrooms: 2 spaces
+     • Other: 1 space
+
+   Total Spaces in Building: 26",arc,fantasy_hotel_1,2,train
+331,"Does this building have an underground level? If so, what are all the spaces in the underground level with their areas?","No underground level is defined in this building model.
+
+The building has 4 storeys:
+- GROUND FLOOR
+- FIRST FLOOR
+- L3
+- Mumti",arc,fantasy_hotel_1,1,train
+332,"What are all the spaces on the ground level, grouped by function?","Ground Floor Spaces (Total: 14):
+
+   Kitchen (1 spaces):
+   - 102: KITCHEN
+
+   Bathrooms (2 spaces):
+   - 108: BATHROOM
+   - 109: BATHROOM
+
+   Guest Rooms (9 spaces):
+   - 100: LIVING ROOM
+   - 101: LIVING ROOM
+   - 103: LIVING ROOM
+   - 104: Room Name
+   - 105: Room Name
+   - 106: MASTER BEDROOM
+   - 107: MASTER BEDROOM
+   - 110: MASTER BEDROOM
+   - 112: MASTER BEDROOM
+
+   Other (2 spaces):
+   - 111: STAIRCASE
+   - 113: STAIRCASE
+
+Note: Based on the building's function as a motel, rooms with various names have been grouped and categorized as 'Guest Room'.",arc,fantasy_hotel_1,2,test
+333,"What are all the spaces on level 1, grouped by function?","First Floor Spaces (Total: 12):
+
+   Bathrooms (2 spaces):
+   - 116: BATH
+   - 117: WASH BASIN
+
+   Guest Rooms (9 spaces):
+   - 114: LIVING ROOM
+   - 115: LIVING ROOM
+   - 118: MASTER BEDROOM
+   - 120: MASTER BEDROOM
+   - 121: MASTER BEDROOM
+   - 123: MASTER BEDROOM
+   - 124: LIVING ROOM
+   - 125: LIVING ROOM
+   - 126: LIVING ROOM
+
+   Other (1 spaces):
+   - 119: STAIRCASE
+
+Note: Based on the building's function as a motel, rooms with various names have been grouped and categorized as 'Guest Room'.",arc,fantasy_hotel_1,2,test
+334,"What is the total number of guest rooms in the building, and how are they distributed by floor?","Total Guest Rooms: 20
+
+   Distribution by Floor:
+   - FIRST FLOOR: 9 guest rooms
+   - GROUND FLOOR: 11 guest rooms
+
+Note: Based on the building's function as a motel, rooms with various names have been grouped and categorized as 'Guest Room'.",arc,fantasy_hotel_1,2,train
+335,What are the elevations for each level?,"Level Elevations:
+   - GROUND FLOOR: 0.00m
+   - FIRST FLOOR: 4.90m
+   - L3: 9.80m
+   - Mumti: 11.80m",arc,fantasy_hotel_1,2,train
+336,What is the largest room in the building?,Room area data is not available in this model. Space area properties exist but contain no values (all areas are 0 or undefined).,arc,fantasy_hotel_1,4,train
+337,"What door types are present in this building, with their quantities?","Door Types (Total: 25 doors):
+   - M_Door-Passage-Single-Flush:900 x 2400mm (900mm x 2400mm): 8 (32.0%)
+   - Doors_IntAys_1:1210x2110mm-Sgl_Swing (1210mm x 2110mm): 8 (32.0%)
+   - M_Door-Passage-Single-Flush:900 x 2200mm (900mm x 2200mm): 5 (20.0%)
+   - M_Door-Interior-Single-1_Panel-Wood:300 x 2000mm (300mm x 2000mm): 3 (12.0%)
+   - M_Door-Passage-Single-Vision_Lite:750 x 2000mm (750mm x 2000mm): 1 (4.0%)",arc,fantasy_hotel_1,2,test
+338,"What are the distinct window sizes present, along with how many windows exist for each size?","Distinct Window Sizes (Total: 73 windows):
+   - 910mm x 910mm: 51 windows (69.9%)
+   - 1524mm x 610mm: 12 windows (16.4%)
+   - 600mm x 900mm: 10 windows (13.7%)",arc,fantasy_hotel_1,2,train
+339,"What curtain wall types are present in this building, including their quantities, and distribution by floor?","Curtain Wall Types (Total: 23 curtain walls):
+   - Curtain Wall:_Not Defined: 15 (65.2%)
+   - Curtain Wall:M_Storefront: 8 (34.8%)
+
+   Distribution by Floor:
+   - FIRST FLOOR: 4 curtain walls
+   - GROUND FLOOR: 19 curtain walls",arc,fantasy_hotel_1,2,test
+340,What are the different window widths used in the building and how many windows use each width?,"There are 3 different windows types with different widths in this building:
+   1. 1524mm (1.52m) - used in 12 windows
+   2. 910mm (0.91m) - used in 51 windows
+   3. 600mm (0.60m) - used in 10 windows",arc,fantasy_hotel_1,2,test
+341,"What wall types are used in the building, along with their quantities?","Wall Types (Total: 53 walls):
+   - Basic Wall:Generic - 200mm (200mm thick): 25 (47.2%)
+   - Basic Wall:Generic - 100mm (100mm thick): 20 (37.7%)
+   - Basic Wall:Generic - 100mm Brick (100mm thick): 8 (15.1%)",arc,fantasy_hotel_1,2,test
+342,"What are the types of interior walls used in the building, and what is the quantity of each type?","All walls are modelled as exterior, which is imprecise. However, Interior walls can be identified based on load-bearing status and wall thickness.
+
+Likely Interior Wall Types (Total: 28 walls):
+- Basic Wall:Generic - 100mm (100mm): 20 walls
+- Basic Wall:Generic - 100mm Brick (100mm): 8 walls",arc,fantasy_hotel_1,3,test
+343,What materials are used in each wall type?,Detailed material layer information for walls is not available in this model.,arc,fantasy_hotel_1,4,train
+344,What are specific thickness values for each wall type?,"Wall Thicknesses:
+   - Basic Wall:Generic - 200mm: 20cm
+   - Basic Wall:Generic - 100mm:  10cm
+   - Basic Wall:Generic - 100mm Brick: 10cm",arc,fantasy_hotel_1,2,train
+345,What percentage of walls are load-bearing vs non-load-bearing?,"Load-Bearing Analysis (Total: 53 walls):
+   - Load-bearing walls: 25 (47.2%)
+   - Non-load-bearing walls: 28 (52.8%)",arc,fantasy_hotel_1,2,test
+346,"What is the total net floor area of the building, broken down by level?","Net floor area data is not available in this model.
+   Space area properties are present but contain no calculated values.",arc,fantasy_hotel_1,4,train
+347,What coverings are used in the building?,No covering elements are defined in this building model.,arc,fantasy_hotel_1,4,test
+348,What materials are used in the ceilings?,No ceiling coverings or ceiling-specific elements with material assignments are defined.,arc,fantasy_hotel_1,2,test
+349,"Could you provide a detailed inventory of all furniture in the building, including quantities and dimensions for each type?","Furniture Inventory (Total: 89 items):
+
+- Bed-Box:Double 53"" x 74"": 25 items
+- Furniture_Cabinet_File_Lateral_3-Drawer:760 x 500 x 915mm: 20 items
+- Furniture_Sofa_2:2100x830x380mm: 9 items
+- Furniture_Couch_Viper:2290x950x340mm: 8 items
+- Furniture_Cabinet_Storage:1200x550x2100mm: 8 items
+- M_Table-Coffee:0610 x 0610 x 0610mm: 5 items
+- M_Table-Dining Oval:0915 x 1830mm: 4 items
+- M_Chair-Breuer:M_Chair-Breuer: 4 items
+- M_Bench-Locker Room:1220 x 457 x 356mm: 3 items
+- M_Bed-Shaker:1422 x 1981mm - Double: 1 item
+- M_Table-Dining Round w Chairs:0915mm Diameter: 1 item
+- M_TV - Flat Screen:0810mm: 1 item",arc,fantasy_hotel_1,2,test
+350,What furniture can be found in room 112?,"Room 112: MASTER BEDROOM
+   Total furniture items: 8
+
+   Furniture List:
+   - Bed-Box:Double 53"" x 74"" (2 items)
+   - Furniture_Sofa_2:2100x830x380mm
+   - Furniture_Cabinet_File_Lateral_3-Drawer:760 x 500 x 915mm (3 items)
+   - Furniture_Cabinet_Storage:1200x550x2100mm
+   - M_Table-Dining Oval:0915 x 1830mm",arc,fantasy_hotel_1,1,train
+351,"Could you provide a breakdown of the sanitary equipment in this building by type, along with a detailed list of all fixtures?","Sanitary Equipment (Total: 10 fixtures):
+
+Summary by Type:
+- Sink: 5
+- Urinal: 3
+- Toilet: 2
+
+Detailed List:
+- M_Toilet-Domestic-3D:M_Toilet-Domestic-3D
+- M_Toilet-Domestic-3D:M_Toilet-Domestic-3D
+- M_Sink - Corner Floor:610 mm
+- M_Sink - Corner Floor:610 mm
+- M_Sink - Corner Floor:610 mm
+- M_Sink - Corner Floor:610 mm
+- M_Urinal-Wall-3D:M_Urinal-Wall-3D
+- M_Urinal-Wall-3D:M_Urinal-Wall-3D
+- M_Urinal-Wall-3D:M_Urinal-Wall-3D
+- M_Sink Kitchen-Double:1000 x 535mm",arc,fantasy_hotel_1,2,train
+352,What are the bathroom spaces on each floor?,"Ground Floor Bathrooms:
+   - 108: BATHROOM
+   - 109: BATHROOM
+
+First Floor Bathrooms:
+   - 116: BATH
+   - 117: WASH BASIN",arc,fantasy_hotel_1,2,test
+353,What is the sum of all floor slab volumes in the building?,"Floor slab volume data is not available in this model. While 49 slab elements exist, volume quantities are not stored.",arc,fantasy_hotel_1,4,test
+354,Which door types have fire rating information?,No door types in this building have fire rating information defined.,arc,fantasy_hotel_1,4,train
+355,Which window types have fire rating information?,No window types in this building have fire rating information defined.,arc,fantasy_hotel_1,4,train
+356,"What structural elements are in this building, grouped by type with their counts?","Structural Elements:
+   - Beams: 117
+   - Columns: 39
+   - Slabs: 49
+   - Members: 82
+   - Plates: 29
+
+   Total Structural Elements: 205",arc,fantasy_hotel_1,2,train
+357,"What beam types are used in this building, and what are their quantities?","Beam Types (Total: 117 beams):
+   - M_Concrete-Rectangular Beam:200 x 400mm: 117",arc,fantasy_hotel_1,2,train
+358,"What column types are used in this building, with their quantities?","Column Types (Total: 39 columns):
+   - M_Concrete-Rectangular-Column:200*200 mm: 39",arc,fantasy_hotel_1,2,test
+359,What are the column dimensions?,"Column Dimensions:
+- M_Concrete-Rectangular-Column: 200mm x 200mm (Square)",arc,fantasy_hotel_1,2,test
+360,"Could you provide a breakdown of all slab types in the project, including their quantities and thicknesses?","Slab Types and Thicknesses (Total: 49 slabs):
+   - Floor:Road center line: 30 slabs, thickness not specified
+   - Floor:grass 1m: 6 slabs, 1000mm thick
+   - Floor:slab 200 mm 2: 3 slabs, 200mm thick
+   - Floor:tile 1m 2: 2 slabs, 1000mm thick
+   - Floor:Generic 300mm: 1 slabs, 300mm thick
+   - Floor:Generic 200 mm: 1 slabs, 200mm thick
+   - Floor:conc 200 mm: 1 slabs, 200mm thick
+   - Floor:10cm asphalt: 1 slabs, 100mm thick
+   - Floor:10cm asphalt 2: 1 slabs, 100mm thick
+   - Floor:concrete floor 80cm: 1 slabs, 800mm thick
+   - Floor:concrete floor 1m 2: 1 slabs, 1000mm thick
+   - Floor:side walk inner: 1 slabs, thickness not specified",arc,fantasy_hotel_1,2,test
+361,How many MEP components are there by system type?,"MEP Components by System Type:
+   - Plumbing Fixtures: 10
+   - Lighting Fixtures: 29
+
+   Total Identified MEP Components: 39",arc,fantasy_hotel_1,2,train
+362,What heating systems are installed?,"No heating-specific MEP elements (boilers, radiators, heating coils) are defined.",arc,fantasy_hotel_1,4,train
+363,What cooling systems are installed?,"No cooling-specific MEP elements (chillers, cooling coils, AC units) are defined.",arc,fantasy_hotel_1,4,test
+364,"What lighting fixtures are present in this building, and how many of each type are installed?","Electrical components identified:
+   - Lighting Fixtures: 29
+
+   Lighting Fixture Types:
+     • Lighting_Fixtures_LP_Sgl:250_Watt_Halogen: 18
+     • Lighting_Fixtures_Street_Luminaries_Sgl:250_Watt_Halogen: 7
+     • Lighting_Fixtures_LP_Dbl:5000mm_Height: 4",arc,fantasy_hotel_1,2,test
+365,"What is the total number of staircases, and what is the width of each staircase?","Total Staircases: 4
+
+   Staircase Details:
+   - Assembled Stair:Stair:1644242
+     Width: Not specified in properties
+   - Assembled Stair:Stair:1646359
+     Width: Not specified in properties
+   - Assembled Stair:Stair:1751844
+     Width: Not specified in properties
+   - Assembled Stair:Stair:1752399
+     Width: Not specified in properties",arc,fantasy_hotel_1,2,train
+366,List all lighting fixture types and their respective quantities on the ground floor.,"Lighting Fixtures by Floor (Total: 29 fixtures):
+
+   GROUND FLOOR: 29 fixtures
+     • Lighting_Fixtures_LP_Sgl:250_Watt_Halogen: 18
+     • Lighting_Fixtures_Street_Luminaries_Sgl:250_Watt_Halogen: 7
+     • Lighting_Fixtures_LP_Dbl:5000mm_Height: 4",arc,fantasy_hotel_1,2,train
+367,"What materials are used for floor finishes, and what is the total area covered by each material type?",No floor or floor covering elements with material assignments and area calculations are defined.,arc,fantasy_hotel_1,4,test
+368,What parking-related elements or areas are defined in the model?,"No spaces with parking-related functions or dedicated parking elements were found in the model. However, an exterior space in front of the building, with an area of approximately 518 sq m, appears to serve as a parking area.",arc,fantasy_hotel_1,4,test

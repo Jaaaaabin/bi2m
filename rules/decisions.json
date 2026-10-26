@@ -1,0 +1,1446 @@
+{
+ "n_rules": 103,
+ "n_topics": 17,
+ "tiers": {
+  "core": "核心：早期设计里讲究多的决策",
+  "secondary": "次要：细节或信号弱",
+  "convention": "计量口径"
+ },
+ "topics": [
+  {
+   "did": "T01",
+   "tier": "core",
+   "title": "楼梯几何",
+   "title_en": "Stair geometry",
+   "question": "踢面 / 踏面、每段几级、要不要平台、梯段多宽——按用途不同全都不一样。",
+   "question_en": "Riser / tread, risers per flight, landings, flight width: all depend on the building type.",
+   "why_tricky": "新手会画出一部能走的楼梯，但踢面是层高除出来的（19.37 cm），踏面随手 25，一段 20 级不设平台；书里的 2r+t = 59–65、每段 ≤ 18 级、必要楼梯 r ≤ 19 / t ≥ 26 / w ≥ 1.00、住宅 17/28、非必要 21/21，一条都不知道。",
+   "why_tricky_en": "A novice gets a walkable stair, but the riser is storey height ÷ n (19.37 cm), the tread is 25 by habit, 20 risers without a landing; 2r+t = 59–65, ≤ 18 risers per flight, r ≤ 19 / t ≥ 26 / w ≥ 1.00 for essential stairs, 17/28 for dwellings are all unknown to them.",
+   "rules": [
+    "R03",
+    "R04",
+    "R05",
+    "R25",
+    "R26",
+    "R54",
+    "R55",
+    "R56"
+   ],
+   "signals": [
+    "r/t = 17/28、17/29 或 18/27 整，全楼一致",
+    "2r + t 在 59–65 内",
+    "梯段宽 1.00 / 1.25 m 整",
+    "每段 ≤ 18 级并有平台"
+   ],
+   "defaults": [
+    "Revit 按层高自动均分踢面（19.37 等奇数值），踏面默认 250–280",
+    "ArchiCAD 默认 17 × 29——命中书值但可能是默认"
+   ],
+   "note": "370 个里 347 个有数据；2r+t 超限 192 个、踢面 > 19 cm 213 个——最常被忽略的知识。",
+   "coverage": {
+    "n_models": 370,
+    "context": 364,
+    "fires": 364,
+    "any_pass": 346,
+    "any_fail": 312
+   },
+   "rule_titles": {
+    "R03": "踏步比与步距公式",
+    "R04": "必要楼梯的梯段步数与休息平台",
+    "R05": "必要楼梯的宽度与踏步比",
+    "R25": "必要楼梯的尺寸限值（非住宅）",
+    "R26": "办公与疏散楼梯应便于快速通行；气派楼梯的平台豁免",
+    "R54": "不超过两户的住宅楼梯",
+    "R55": "螺旋楼梯作为户内唯一楼梯",
+    "R56": "非法定必要楼梯的最小尺寸"
+   },
+   "rule_stats": {
+    "R03": {
+     "fires": 347,
+     "pass": 155,
+     "fail": 192,
+     "unknown": 0
+    },
+    "R04": {
+     "fires": 332,
+     "pass": 158,
+     "fail": 167,
+     "unknown": 0
+    },
+    "R05": {
+     "fires": 364,
+     "pass": 323,
+     "fail": 30,
+     "unknown": 0
+    },
+    "R25": {
+     "fires": 267,
+     "pass": 44,
+     "fail": 213,
+     "unknown": 0
+    },
+    "R26": {
+     "fires": 232,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R54": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R55": {
+     "fires": 64,
+     "pass": 64,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R56": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Storey"
+   ]
+  },
+  {
+   "did": "T02",
+   "tier": "core",
+   "title": "疏散路线与楼梯布置",
+   "title_en": "Escape routes & stair placement",
+   "question": "每层几部楼梯、放在哪、楼梯间要不要封闭、最远的房间离楼梯多远、长走廊要不要分段。",
+   "question_en": "How many stairs per storey, where, enclosed or not, maximum travel distance, subdividing long corridors.",
+   "why_tricky": "新手把楼梯放在大厅中间一部了事；书里要求每个使用单元两条独立路线、办公 ≤ 35 m / 高层 25 m、楼梯间间距约 30 / 60 m、主楼梯须在封闭楼梯间内、走廊 > 30 m 要用防烟门分段、疏散通道内不许放家具。",
+   "why_tricky_en": "A novice drops one open stair in the hall; the book wants two independent routes per use unit, ≤ 35 m travel (25 m high-rise), stairs about 30 / 60 m apart, main stairs in enclosed stairwells, corridors over 30 m subdivided, no furniture in escape routes.",
+   "rules": [
+    "R22",
+    "R23",
+    "R24",
+    "R61",
+    "R64",
+    "R65",
+    "R87",
+    "R93"
+   ],
+   "signals": [
+    "楼梯间是独立 IfcSpace，有门与大厅隔开",
+    "楼梯分布在平面两端，间距 30–60 m",
+    "≥ 2 部楼梯且任一房间 ≤ 35 m"
+   ],
+   "defaults": [
+    "防烟门 / 自闭属性几乎没人填（SelfClosing、SmokeStop 全缺）——判不了分段"
+   ],
+   "note": "两条路线 354 个 pass，但封闭楼梯间只有 106 个 pass、254 个 fail：楼梯“有”但“不对”。",
+   "coverage": {
+    "n_models": 370,
+    "context": 370,
+    "fires": 370,
+    "any_pass": 365,
+    "any_fail": 339
+   },
+   "rule_titles": {
+    "R22": "每层每个使用单元两条独立疏散路线",
+    "R23": "疏散距离按建筑类型：办公 ≤ 35 m，楼梯间距 30 / 60 m",
+    "R24": "必要楼梯：封闭楼梯间、出口宽度、楼梯间开门",
+    "R61": "高层疏散楼梯的梯井、排烟与出口",
+    "R64": "高层建筑疏散走道",
+    "R65": "长疏散走廊分段与楼梯间门",
+    "R87": "单间办公的走廊是疏散通道，不得放家具",
+    "R93": "作为疏散路线的窗"
+   },
+   "rule_stats": {
+    "R22": {
+     "fires": 366,
+     "pass": 354,
+     "fail": 12,
+     "unknown": 0
+    },
+    "R23": {
+     "fires": 229,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R24": {
+     "fires": 360,
+     "pass": 106,
+     "fail": 254,
+     "unknown": 0
+    },
+    "R61": {
+     "fires": 1,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R64": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R65": {
+     "fires": 136,
+     "pass": 13,
+     "fail": 123,
+     "unknown": 0
+    },
+    "R87": {
+     "fires": 218,
+     "pass": 55,
+     "fail": 162,
+     "unknown": 0
+    },
+    "R93": {
+     "fires": 12,
+     "pass": 10,
+     "fail": 2,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Element",
+    "Space",
+    "Storey",
+    "Zone"
+   ]
+  },
+  {
+   "did": "T03",
+   "tier": "core",
+   "title": "进深与采光",
+   "title_en": "Building depth & daylight",
+   "question": "房间能做多深、楼能做多厚还靠自然采光；窗要开多宽；大开间放在哪。",
+   "question_en": "How deep a room and a building can be and still be daylit; window width; where open-plan zones go.",
+   "why_tricky": "新手把平面做成 50 m 见方、中间放工位；书里说自然采光约 7 m 进深、中廊式整体 12–13 m、窗宽 ≥ 65% 房间宽、组团工位距窗 ≤ 7.5 m、≥ 100 工位的大开间才可以全靠人工照明。",
+   "why_tricky_en": "A novice draws a 50 m square plate with desks in the middle; the book gives ~7 m daylight depth, 12–13 m for corridor-type buildings, window width ≥ 65 % of room width, ≤ 7.5 m to a window for group rooms.",
+   "rules": [
+    "R10",
+    "R17",
+    "R38",
+    "R39",
+    "R88",
+    "R89",
+    "R103"
+   ],
+   "signals": [
+    "房间进深 ≤ 7 m 且一致",
+    "建筑进深 12.5 / 13.4 m（对应 1.50 / 1.35 模数）",
+    "窗宽比 ≥ 0.65",
+    "没有无窗的工作间"
+   ],
+   "defaults": [
+    "Revit 默认窗 1.2 × 1.2 / 0.9 × 1.2，一间一扇——窗宽比 0.3–0.5 多半是默认窗的结果"
+   ],
+   "note": "0204 的核心大开间无窗、外圈窗宽比 0.47，是典型的“没用知识”；全数据集窗宽比 fail 119 / 207。",
+   "coverage": {
+    "n_models": 370,
+    "context": 310,
+    "fires": 274,
+    "any_fail": 238,
+    "any_pass": 170
+   },
+   "rule_titles": {
+    "R10": "自然采光进深",
+    "R17": "中廊式办公楼的建筑进深",
+    "R38": "工作间的窗面积",
+    "R39": "窗与工作区：视野宽度与进深",
+    "R88": "大空间办公的进深",
+    "R89": "屏幕工位的视线方向",
+    "R103": "高层外窗的清洁方式"
+   },
+   "rule_stats": {
+    "R10": {
+     "fires": 238,
+     "pass": 48,
+     "fail": 147,
+     "unknown": 0
+    },
+    "R17": {
+     "fires": 172,
+     "pass": 5,
+     "fail": 166,
+     "unknown": 0
+    },
+    "R38": {
+     "fires": 235,
+     "pass": 149,
+     "fail": 86,
+     "unknown": 0
+    },
+    "R39": {
+     "fires": 207,
+     "pass": 88,
+     "fail": 119,
+     "unknown": 0
+    },
+    "R88": {
+     "fires": 36,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R89": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R103": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Element",
+    "Site & Building",
+    "Space"
+   ]
+  },
+  {
+   "did": "T04",
+   "tier": "core",
+   "title": "平面类型与网格模数",
+   "title_en": "Layout type & grid module",
+   "question": "单排、双排、还是大开间；轴网取多少；隔墙能不能接到窗上；柱子落在哪。",
+   "question_en": "Single-row, double-row or open plan; the grid module; whether partitions meet the mullions; where columns fall.",
+   "why_tricky": "新手先画 6 × 6 或 7.5 m 柱网再往里塞房间；书里是先定装修模数 1.50（单间）或 1.35（组合）、立面网格必须等于装修网格、再由模数反推进深 12.5 / 13.4，结构网格可以错开。",
+   "why_tricky_en": "A novice starts with a 6 × 6 or 7.5 m column grid and fills rooms in; the book starts from the fit-out module 1.50 (cellular) or 1.35 (combi), makes the façade grid equal to it, derives the depth, and lets the structural grid be offset.",
+   "rules": [
+    "R14",
+    "R15",
+    "R16",
+    "R47",
+    "R51",
+    "R70",
+    "R102"
+   ],
+   "signals": [
+    "轴网是 1.35 / 1.50 的整倍数",
+    "房间开间 = n × 模数（2.70、4.05、3.00、4.50）",
+    "隔墙落在窗间墙或竖梃上",
+    "双排布置（走廊两侧都有采光房间）"
+   ],
+   "defaults": [
+    "5 / 6 / 7.5 / 8.1 m 柱网是教学习惯，与书无关",
+    "墙厚 24 / 36.5 是德国砖模数的肌肉记忆，不等于查了书"
+   ],
+   "note": "模数一致性 R102 pass 212 / fail 157；平面类型 R15 还没机械化判定。",
+   "coverage": {
+    "n_models": 370,
+    "context": 370,
+    "fires": 370,
+    "any_fail": 157,
+    "any_pass": 212
+   },
+   "rule_titles": {
+    "R14": "办公楼朝向与北向房间",
+    "R15": "单排、双排、三排平面与建筑类型",
+    "R16": "网格模数：装修网格 = 立面网格，1.50 / 1.35 m",
+    "R47": "办公楼楼板跨度与荷载",
+    "R51": "联排住宅的进深与面宽",
+    "R70": "组合式办公（combi-office）的组织",
+    "R102": "模数协调与标志尺寸"
+   },
+   "rule_stats": {
+    "R14": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R15": {
+     "fires": 234,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R16": {
+     "fires": 238,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R47": {
+     "fires": 237,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R51": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R70": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R102": {
+     "fires": 370,
+     "pass": 212,
+     "fail": 157,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Element",
+    "Site & Building",
+    "Zone"
+   ]
+  },
+  {
+   "did": "T05",
+   "tier": "core",
+   "title": "电梯与无台阶到达",
+   "title_en": "Lifts & step-free access",
+   "question": "几层以上必须有电梯、公共建筑是否要无台阶到达每层、电梯放哪、轿厢多大。",
+   "question_en": "When a lift is mandatory, step-free access to every storey in public buildings, where lifts go, car size.",
+   "why_tricky": "新手要么不放电梯，要么放一个方块；书里：住宅 > 5 个完整楼层必须有电梯，公众可达建筑所有楼层须无台阶可达，轿厢 ≥ 1.10 × 1.40，门前 1.50 × 1.50 不得与通道重叠，电梯组与主楼梯间组合布置。",
+   "why_tricky_en": "A novice either omits lifts or drops a box; the book: lifts mandatory above 5 full storeys in housing, step-free access to all storeys in public buildings, car ≥ 1.10 × 1.40, a 1.50 × 1.50 area in front, lifts grouped with the main stair.",
+   "rules": [
+    "R27",
+    "R28",
+    "R58",
+    "R60",
+    "R62"
+   ],
+   "signals": [
+    "IfcTransportElement 或名为 lift 的竖向房间贯通各层",
+    "电梯紧贴楼梯间",
+    "轿厢 1.10 × 1.40 / 1.10 × 2.10"
+   ],
+   "defaults": [
+    "电梯常是 Proxy 或只有门（0204：17 扇电梯门，楼上没有井道）"
+   ],
+   "note": "255 个多层公共建筑里 201 个没有任何电梯——数据集里最大面积的空白。",
+   "coverage": {
+    "n_models": 370,
+    "context": 353,
+    "fires": 312,
+    "any_fail": 233,
+    "any_pass": 69
+   },
+   "rule_titles": {
+    "R27": "无台阶通达所有楼层（公众可达建筑）",
+    "R28": "无障碍电梯：轿厢与门前活动区",
+    "R58": "住宅超过五个完整楼层须设电梯",
+    "R60": "消防电梯（高度超过 30 m）",
+    "R62": "高层电梯分组"
+   },
+   "rule_stats": {
+    "R27": {
+     "fires": 256,
+     "pass": 55,
+     "fail": 201,
+     "unknown": 0
+    },
+    "R28": {
+     "fires": 77,
+     "pass": 12,
+     "fail": 1,
+     "unknown": 0
+    },
+    "R58": {
+     "fires": 44,
+     "pass": 13,
+     "fail": 31,
+     "unknown": 0
+    },
+    "R60": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R62": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Storey"
+   ]
+  },
+  {
+   "did": "T06",
+   "tier": "core",
+   "title": "层高与净高",
+   "title_en": "Storey & clear height",
+   "question": "层高定多少才能在扣掉楼板、吊顶、架空地板后还剩够净高。",
+   "question_en": "Which storey height leaves enough clear height after slab, ceiling void and raised floor.",
+   "why_tricky": "新手层高 3.0 m、板 0.2 m 就以为够了；书里办公净高 ≥ 2.75（坐姿房间 2.50、走廊卫生间 2.30），住宅居室 2.40，而且要预留架空地板和吊顶，所以层高常要 3.4–3.75。",
+   "why_tricky_en": "A novice takes 3.0 m storeys with a 0.2 m slab; the book asks ≥ 2.75 clear in offices (2.50 seated rooms, 2.30 corridors), 2.40 in dwellings, plus room for raised floors and ceilings, so storeys of 3.4–3.75.",
+   "rules": [
+    "R02"
+   ],
+   "signals": [
+    "IfcSpace 高度 = 2.75 / 2.50 / 2.30 / 2.40 整",
+    "层高 − 板厚 − 吊顶 恰好 ≥ 2.75"
+   ],
+   "defaults": [
+    "Revit 房间高度默认 = 层高或 2.4384 (8 ft)",
+    "ArchiCAD 默认层高 3.00"
+   ],
+   "note": "2.75 的精确值在 0204 和 fantasy_office_building_1 都出现，信号最清楚；220 个有房间的模型里 188 pass。",
+   "coverage": {
+    "n_models": 370,
+    "context": 220,
+    "fires": 220,
+    "any_pass": 188,
+    "any_fail": 32
+   },
+   "rule_titles": {
+    "R02": "办公楼室内净高"
+   },
+   "rule_stats": {
+    "R02": {
+     "fires": 220,
+     "pass": 188,
+     "fail": 32,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Space"
+   ]
+  },
+  {
+   "did": "T07",
+   "tier": "core",
+   "title": "卫生间与后勤配置",
+   "title_en": "Sanitary & ancillary provision",
+   "question": "每层几个厕所、按多少人配、男女怎么分、前室隔间怎么组织；茶水间、保洁间、餐厅放哪。",
+   "question_en": "Toilets per storey by headcount, gender split, anteroom + cubicles; tea kitchens, cleaner's rooms, canteen.",
+   "why_tricky": "新手每层画一个 WC；书里按人数定：> 5 人分设男女、每工位到厕所 ≤ 100 m 或一层、前室 + 隔间、每 5 个 WC 一个洗手盆、每 50–100 工位一间茶水间、每层保洁间、餐厅在门禁外靠入口。",
+   "why_tricky_en": "A novice draws one WC per floor; the book sizes by headcount: separate M/F above 5 staff, ≤ 100 m or one storey to a toilet, anteroom + cubicles, 1 basin per 5 WCs, a tea kitchen per 50–100 workstations, a cleaner's room per storey, the canteen outside access control.",
+   "rules": [
+    "R11",
+    "R32",
+    "R33",
+    "R34",
+    "R35",
+    "R82",
+    "R84",
+    "R90"
+   ],
+   "signals": [
+    "厕所成对（男/女）布置在核心筒旁",
+    "厕所数与工位数成比例",
+    "茶水间数 ≈ 工位 / 50–100",
+    "餐厅在入口层"
+   ],
+   "defaults": [
+    "洁具几乎无人建模（IfcSanitaryTerminal ≈ 0），只能按房间名数"
+   ],
+   "note": "依赖房间命名；R11 在 167 个办公模型上 122 pass，R33 茶水间 38 fail / 63。",
+   "coverage": {
+    "n_models": 370,
+    "context": 332,
+    "fires": 330,
+    "only_unknown": 149,
+    "any_fail": 68,
+    "any_pass": 138
+   },
+   "rule_titles": {
+    "R11": "工作场所厕所配置",
+    "R32": "工作场所厕所的布置细则",
+    "R33": "茶水间：每 50–100 工位一间 ~10 m²",
+    "R34": "每层保洁间；中央垃圾房与物业用房",
+    "R35": "入口区及其相邻关系：会议区、餐厅、轮椅停放",
+    "R82": "卫生间类型的判定",
+    "R84": "餐饮厨房员工超过 10 人须设休息室",
+    "R90": "收发室面积"
+   },
+   "rule_stats": {
+    "R11": {
+     "fires": 167,
+     "pass": 122,
+     "fail": 45,
+     "unknown": 0
+    },
+    "R32": {
+     "fires": 189,
+     "pass": 11,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R33": {
+     "fires": 63,
+     "pass": 25,
+     "fail": 38,
+     "unknown": 0
+    },
+    "R34": {
+     "fires": 238,
+     "pass": 9,
+     "fail": 0,
+     "unknown": 229
+    },
+    "R35": {
+     "fires": 238,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R82": {
+     "fires": 267,
+     "pass": 27,
+     "fail": 0,
+     "unknown": 240
+    },
+    "R84": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R90": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Space",
+    "Zone"
+   ]
+  },
+  {
+   "did": "T08",
+   "tier": "core",
+   "title": "走廊、门与无障碍尺寸",
+   "title_en": "Corridors, doors & accessibility",
+   "question": "走廊多宽、门多宽多高、轮椅转身和会车位、坡道坡度——公共建筑一律按无障碍算。",
+   "question_en": "Corridor width, door width and height, turning and passing places, ramp slope: public buildings count as accessible.",
+   "why_tricky": "新手走廊 1.2 m、门 0.8 m；书里公众可达建筑走廊 ≥ 1.50、> 15 m 设 1.80 × 1.80 会车位、门净宽 ≥ 0.90、内门净高 ≥ 2.10、每个房间 1.50 × 1.50 转身位、坡道 ≤ 6%。",
+   "why_tricky_en": "A novice uses 1.2 m corridors and 0.8 m doors; the book: ≥ 1.50 corridors in public buildings, 1.80 × 1.80 passing places beyond 15 m, ≥ 0.90 clear door width, ≥ 2.10 door height, a 1.50 × 1.50 turning space per room, ramps ≤ 6 %.",
+   "rules": [
+    "R07",
+    "R29",
+    "R57",
+    "R63",
+    "R71",
+    "R72",
+    "R73",
+    "R74",
+    "R75"
+   ],
+   "signals": [
+    "走廊 1.50 / 1.80 m 整",
+    "所有内门 ≥ 0.90（含卫生间）",
+    "坡道 6% 且 ≤ 6 m 一段"
+   ],
+   "defaults": [
+    "Revit 默认门 900 × 2100 ——看着 pass 其实是默认",
+    "走廊宽度常由轴网决定（1.2 / 1.5 / 2.0）"
+   ],
+   "note": "门 R07 fail 147 / 369，多半是卫生间门 0.6–0.8；走廊宽度 R71 pass 195 / 256。",
+   "coverage": {
+    "n_models": 370,
+    "context": 370,
+    "fires": 370,
+    "any_pass": 304,
+    "any_fail": 178
+   },
+   "rule_titles": {
+    "R07": "门的净高与无障碍净宽",
+    "R29": "无障碍坡道",
+    "R57": "无障碍建筑楼梯起止处的活动区",
+    "R63": "超过两户的住宅须有一层无障碍",
+    "R71": "轮椅转身空间与无障碍走廊宽度",
+    "R72": "长走廊的轮椅会车位",
+    "R73": "无障碍住宅的卫浴活动区",
+    "R74": "轮椅住宅的起居室最小面积与宽度",
+    "R75": "无障碍住宅的户内活动区宽度 1.20 m"
+   },
+   "rule_stats": {
+    "R07": {
+     "fires": 369,
+     "pass": 222,
+     "fail": 147,
+     "unknown": 0
+    },
+    "R29": {
+     "fires": 7,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R57": {
+     "fires": 250,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R63": {
+     "fires": 9,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R71": {
+     "fires": 256,
+     "pass": 195,
+     "fail": 60,
+     "unknown": 0
+    },
+    "R72": {
+     "fires": 150,
+     "pass": 142,
+     "fail": 8,
+     "unknown": 0
+    },
+    "R73": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R74": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R75": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Element",
+    "Space",
+    "Storey",
+    "Zone"
+   ]
+  },
+  {
+   "did": "T09",
+   "tier": "core",
+   "title": "工位密度与办公室类型",
+   "title_en": "Workplace density & office type",
+   "question": "一个工位给多少面积、单间 / 组团 / 大开间怎么分、会议室每座多大。",
+   "question_en": "Area per workstation, cellular / group / open-plan mix, area per conference seat.",
+   "why_tricky": "新手按桌子能塞几张算；书里直接工位 11–15 m²、整栋楼每工位 23–45 m²、组团 4–16 工位、会议 2.5 m²/座、桌面 ≥ 1.20 × 0.80。",
+   "why_tricky_en": "A novice fits as many desks as the room takes; the book gives 11–15 m² per workstation, 23–45 m² gross per workstation, group rooms of 4–16, 2.5 m² per conference seat, desks ≥ 1.20 × 0.80.",
+   "rules": [
+    "R09",
+    "R12",
+    "R18",
+    "R36",
+    "R37",
+    "R40",
+    "R41",
+    "R83",
+    "R85",
+    "R86"
+   ],
+   "signals": [
+    "单人间 ≈ 12–13 m²、双人间 ≈ 18–20 m²（模数间）",
+    "会议 2.5 m²/座",
+    "组团 ≤ 16 工位"
+   ],
+   "defaults": [
+    "Revit 默认桌 1830 × 915 (6 × 3 ft)；\"Chair - Desk\" 族名会被误数"
+   ],
+   "note": "需要家具；R09 在 130 个模型上 pass 24 / fail 68（多数过密或过松）。",
+   "coverage": {
+    "n_models": 370,
+    "context": 296,
+    "fires": 296,
+    "any_pass": 250,
+    "any_fail": 165
+   },
+   "rule_titles": {
+    "R09": "每工位面积指标",
+    "R12": "会议区每座面积",
+    "R18": "每工位的附属面积与总面积",
+    "R36": "组团办公 4–16 工位、距窗 ≤ 7.5 m；大开间依赖人工照明",
+    "R37": "工位的桌面与活动面积",
+    "R40": "档案室：楼面荷载与位置",
+    "R41": "机房 / 服务器机房的空间要求",
+    "R83": "厅室的每人容积（声学）",
+    "R85": "研讨室的规模与进深",
+    "R86": "高校教研人员办公室面积"
+   },
+   "rule_stats": {
+    "R09": {
+     "fires": 130,
+     "pass": 24,
+     "fail": 68,
+     "unknown": 0
+    },
+    "R12": {
+     "fires": 190,
+     "pass": 111,
+     "fail": 19,
+     "unknown": 0
+    },
+    "R18": {
+     "fires": 177,
+     "pass": 43,
+     "fail": 134,
+     "unknown": 0
+    },
+    "R36": {
+     "fires": 80,
+     "pass": 57,
+     "fail": 23,
+     "unknown": 0
+    },
+    "R37": {
+     "fires": 233,
+     "pass": 222,
+     "fail": 11,
+     "unknown": 0
+    },
+    "R40": {
+     "fires": 6,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R41": {
+     "fires": 20,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R83": {
+     "fires": 201,
+     "pass": 121,
+     "fail": 15,
+     "unknown": 0
+    },
+    "R85": {
+     "fires": 10,
+     "pass": 1,
+     "fail": 6,
+     "unknown": 0
+    },
+    "R86": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Site & Building",
+    "Space"
+   ]
+  },
+  {
+   "did": "T10",
+   "tier": "core",
+   "title": "住宅户型基本配置",
+   "title_en": "Dwelling layout essentials",
+   "question": "每户必须有什么房间、居室最小多大多高、阳台多大、门厅要通哪里、户门多宽。",
+   "question_en": "What every flat must contain, habitable-room minimums, balcony size, hall adjacencies, flat entrance door.",
+   "why_tricky": "新手画几个卧室一个客厅就算一户；书里每户必有厨房 + 储藏 + 独立卫生间，居室 ≥ 8 m² / 净高 2.40 / 窗 1/8，储藏 ≥ 1 m² 或 2%，门厅直达厨房、WC、楼梯，户门 ≥ 0.90，户内走道 1.00。",
+   "why_tricky_en": "A novice draws bedrooms and a living room; the book requires kitchen + storage + a separate bathroom per flat, habitable rooms ≥ 8 m² / 2.40 clear / window 1/8, storage ≥ 1 m² or 2 %, hall giving onto kitchen, WC and stair, flat door ≥ 0.90, internal corridors 1.00.",
+   "rules": [
+    "R59",
+    "R67",
+    "R68",
+    "R69",
+    "R76",
+    "R77",
+    "R78",
+    "R79",
+    "R80",
+    "R81",
+    "R91",
+    "R92"
+   ],
+   "signals": [
+    "每户都有 storage / Abstellraum",
+    "居室 ≥ 8 m²、2.40",
+    "阳台 7 / 9 m²",
+    "户内走道 1.00 整"
+   ],
+   "defaults": [
+    "住宅模型多无 IfcZone，户的边界要从户门推"
+   ],
+   "note": "97 个住宅模型里 R68（厨房+储藏+卫生间）只有 24 个 pass，几乎都是缺储藏间。",
+   "coverage": {
+    "n_models": 370,
+    "context": 97,
+    "fires": 97,
+    "any_pass": 97,
+    "any_fail": 97
+   },
+   "rule_titles": {
+    "R59": "一梯一户无电梯时限四层",
+    "R67": "户内分组：起居区与睡眠区",
+    "R68": "每套住宅的最低配置：厨房、储藏间、卫生间",
+    "R69": "户内储藏空间",
+    "R76": "居室的最低要求",
+    "R77": "阳台面积与户外空间的连接",
+    "R78": "门厅直达厨房、WC 和楼梯",
+    "R79": "户内走道宽度",
+    "R80": "独立住宅每层直通户外",
+    "R81": "入户凹口尺寸",
+    "R91": "住宅门的净开启宽度",
+    "R92": "电梯到达的住户户门"
+   },
+   "rule_stats": {
+    "R59": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R67": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R68": {
+     "fires": 97,
+     "pass": 24,
+     "fail": 73,
+     "unknown": 0
+    },
+    "R69": {
+     "fires": 97,
+     "pass": 32,
+     "fail": 65,
+     "unknown": 0
+    },
+    "R76": {
+     "fires": 81,
+     "pass": 26,
+     "fail": 55,
+     "unknown": 0
+    },
+    "R77": {
+     "fires": 15,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R78": {
+     "fires": 55,
+     "pass": 8,
+     "fail": 47,
+     "unknown": 0
+    },
+    "R79": {
+     "fires": 70,
+     "pass": 67,
+     "fail": 3,
+     "unknown": 0
+    },
+    "R80": {
+     "fires": 97,
+     "pass": 48,
+     "fail": 32,
+     "unknown": 0
+    },
+    "R81": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R91": {
+     "fires": 97,
+     "pass": 86,
+     "fail": 5,
+     "unknown": 0
+    },
+    "R92": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Element",
+    "Space",
+    "Storey",
+    "Zone"
+   ]
+  },
+  {
+   "did": "T11",
+   "tier": "core",
+   "title": "高层门槛与防火分区",
+   "title_en": "High-rise threshold & fire compartments",
+   "question": "最高楼层一过 22 m 规则全变；楼长超过 40 m 要不要防火墙；承重构件要什么耐火等级。",
+   "question_en": "Above 22 m every rule changes; buildings over 40 m need a fire wall; fire resistance of load-bearing elements.",
+   "why_tricky": "新手不知道 22 m 是一道门槛（两部 1.25 m 楼梯、消防电梯、25 m 疏散距离、层间防火槛墙），也不知道 40 m 要分防火分区；这两条在早期体量阶段就决定了方案能不能成立。",
+   "why_tricky_en": "A novice does not know 22 m is a threshold (two 1.25 m stairs, fire lift, 25 m travel, spandrels) nor that 40 m length needs compartments; both are decided at the massing stage.",
+   "rules": [
+    "R01",
+    "R19",
+    "R20",
+    "R21",
+    "R30",
+    "R31",
+    "R52",
+    "R53",
+    "R94"
+   ],
+   "signals": [
+    "最高楼层标高刻意停在 21.x m",
+    "有贯通到屋面、把平面切成 ≤ 40 m 段的墙",
+    "FireRating 填了值"
+   ],
+   "defaults": [
+    "FireRating 在 365 / 370 个模型里为空；地块、用途 IFC 里没有"
+   ],
+   "note": "门槛型知识：数据集里只有 1 个高层，防火等级几乎不可见——GT 大多为 unknown，但作为“知不知道门槛”的题目很有价值。",
+   "coverage": {
+    "n_models": 370,
+    "context": 370,
+    "fires": 370,
+    "only_unknown": 57,
+    "any_pass": 312,
+    "any_fail": 2
+   },
+   "rule_titles": {
+    "R01": "高层建筑判定",
+    "R19": "防火分区 ≤ 40 m 与防火墙",
+    "R20": "建筑等级决定承重构件与楼板的耐火要求",
+    "R21": "外墙、外墙饰面与屋面覆盖的燃烧性能",
+    "R30": "使用单元 ≥ 400 m² 时走廊为必要走廊：侧墙 F 30",
+    "R31": "单元之间的分隔墙",
+    "R52": "高层建筑分级与各级要求",
+    "R53": "高层建筑的用途限制",
+    "R94": "高层建筑立面的层间防火"
+   },
+   "rule_stats": {
+    "R01": {
+     "fires": 1,
+     "pass": 1,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R19": {
+     "fires": 206,
+     "pass": 1,
+     "fail": 0,
+     "unknown": 205
+    },
+    "R20": {
+     "fires": 369,
+     "pass": 3,
+     "fail": 0,
+     "unknown": 366
+    },
+    "R21": {
+     "fires": 349,
+     "pass": 311,
+     "fail": 2,
+     "unknown": 36
+    },
+    "R30": {
+     "fires": 157,
+     "pass": 3,
+     "fail": 0,
+     "unknown": 154
+    },
+    "R31": {
+     "fires": 1,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R52": {
+     "fires": 1,
+     "pass": 1,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R53": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R94": {
+     "fires": 1,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Element",
+    "Site & Building",
+    "Zone"
+   ]
+  },
+  {
+   "did": "S01",
+   "tier": "secondary",
+   "title": "栏杆与护栏",
+   "title_en": "Railings & guards",
+   "question": "栏杆多高（按坠落高度分档）。",
+   "question_en": "Railing height by drop height.",
+   "why_tricky": "细节层面；几乎总是软件默认值。",
+   "why_tricky_en": "Detailing; almost always a software default.",
+   "rules": [
+    "R06"
+   ],
+   "signals": [
+    "0.90 / 1.00 / 1.10 整"
+   ],
+   "defaults": [
+    "Revit 1.2192 (4 ft)、ArchiCAD 0.90"
+   ],
+   "note": "",
+   "coverage": {
+    "n_models": 370,
+    "context": 337,
+    "fires": 337,
+    "any_pass": 273,
+    "any_fail": 60
+   },
+   "rule_titles": {
+    "R06": "护栏高度按坠落高度分档"
+   },
+   "rule_stats": {
+    "R06": {
+     "fires": 337,
+     "pass": 273,
+     "fail": 60,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Storey"
+   ]
+  },
+  {
+   "did": "S02",
+   "tier": "secondary",
+   "title": "门洞模数与出口门型",
+   "title_en": "Door modules & exit door types",
+   "question": "门洞是不是标准模数；紧急出口不用旋转门。",
+   "question_en": "Modular door openings; no revolving doors at exits.",
+   "why_tricky": "施工层面的讲究，早期设计不会考虑。",
+   "why_tricky_en": "Construction-level detail, not an early-design concern.",
+   "rules": [
+    "R42",
+    "R43"
+   ],
+   "signals": [
+    "洞口 875 / 1000 / 1125",
+    "旋转门旁有平开门"
+   ],
+   "defaults": [
+    "族名里的 900 × 2100"
+   ],
+   "note": "",
+   "coverage": {
+    "n_models": 370,
+    "context": 369,
+    "fires": 369,
+    "any_fail": 311,
+    "any_pass": 222
+   },
+   "rule_titles": {
+    "R42": "门洞模数与净宽折减",
+    "R43": "紧急出口的门型与宽度"
+   },
+   "rule_stats": {
+    "R42": {
+     "fires": 369,
+     "pass": 65,
+     "fail": 304,
+     "unknown": 0
+    },
+    "R43": {
+     "fires": 315,
+     "pass": 188,
+     "fail": 32,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Element"
+   ]
+  },
+  {
+   "did": "S03",
+   "tier": "secondary",
+   "title": "外墙构造与玻璃",
+   "title_en": "External wall build-up & glazing",
+   "question": "单层 / 夹心 / 混凝土加保温；U 值；外窗玻璃。",
+   "question_en": "Single-leaf / cavity / concrete + insulation; U-value; glazing.",
+   "why_tricky": "材料层只有 1/3 的模型有；属于深化设计。",
+   "why_tricky_en": "Only a third of the models carry material layers; detailed design.",
+   "rules": [
+    "R08",
+    "R44",
+    "R95",
+    "R96",
+    "R97",
+    "R98"
+   ],
+   "signals": [
+    "独立保温层 12–20 cm",
+    "36.5 单层保温砖"
+   ],
+   "defaults": [
+    "Generic 200 mm 墙无材料层"
+   ],
+   "note": "",
+   "coverage": {
+    "n_models": 370,
+    "context": 366,
+    "fires": 366,
+    "only_unknown": 105,
+    "any_pass": 174,
+    "any_fail": 220
+   },
+   "rule_titles": {
+    "R08": "混凝土外墙必须附加保温层",
+    "R44": "采暖房间外窗至少双层/中空玻璃",
+    "R95": "单层外墙：高保温材料或附加保温层",
+    "R96": "夹心墙的外叶与空气层",
+    "R97": "背通风外挂层的空气间层",
+    "R98": "热阻与传热系数的计算"
+   },
+   "rule_stats": {
+    "R08": {
+     "fires": 200,
+     "pass": 26,
+     "fail": 157,
+     "unknown": 0
+    },
+    "R44": {
+     "fires": 341,
+     "pass": 0,
+     "fail": 121,
+     "unknown": 220
+    },
+    "R95": {
+     "fires": 64,
+     "pass": 1,
+     "fail": 0,
+     "unknown": 63
+    },
+    "R96": {
+     "fires": 33,
+     "pass": 7,
+     "fail": 26,
+     "unknown": 0
+    },
+    "R97": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R98": {
+     "fires": 349,
+     "pass": 162,
+     "fail": 0,
+     "unknown": 187
+    }
+   },
+   "levels": [
+    "Element"
+   ]
+  },
+  {
+   "did": "S04",
+   "tier": "secondary",
+   "title": "屋面构造",
+   "title_en": "Roof build-up",
+   "question": "排水坡度、隔汽层、坡屋面保温、种植。",
+   "question_en": "Drainage slope, vapour barrier, pitched-roof insulation, green roof.",
+   "why_tricky": "构造层面；PitchAngle 多为空。",
+   "why_tricky_en": "Construction level; PitchAngle mostly empty.",
+   "rules": [
+    "R45",
+    "R99",
+    "R100"
+   ],
+   "signals": [
+    "2% / 5% 坡度"
+   ],
+   "defaults": [
+    "Revit 屋面 0°"
+   ],
+   "note": "",
+   "coverage": {
+    "n_models": 370,
+    "context": 288,
+    "fires": 288,
+    "only_unknown": 110,
+    "any_pass": 137,
+    "any_fail": 50
+   },
+   "rule_titles": {
+    "R45": "平屋面坡度与隔汽层位置",
+    "R99": "种植屋面的坡度",
+    "R100": "坡屋面保温的位置与通风构造"
+   },
+   "rule_stats": {
+    "R45": {
+     "fires": 288,
+     "pass": 129,
+     "fail": 49,
+     "unknown": 110
+    },
+    "R99": {
+     "fires": 15,
+     "pass": 8,
+     "fail": 1,
+     "unknown": 6
+    },
+    "R100": {
+     "fires": 119,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 119
+    }
+   },
+   "levels": [
+    "Element"
+   ]
+  },
+  {
+   "did": "S05",
+   "tier": "secondary",
+   "title": "隔墙与隔声",
+   "title_en": "Partitions & acoustics",
+   "question": "隔墙到板还是到吊顶；分户墙面密度。",
+   "question_en": "Partitions to slab or ceiling; party-wall mass.",
+   "why_tricky": "信号弱，IFC 无隔声数据。",
+   "why_tricky_en": "Weak signal, no acoustic data in IFC.",
+   "rules": [
+    "R46",
+    "R101"
+   ],
+   "signals": [
+    "隔墙高 = 层高"
+   ],
+   "defaults": [
+    "墙高默认 = 层高"
+   ],
+   "note": "",
+   "coverage": {
+    "n_models": 370,
+    "context": 287,
+    "fires": 287
+   },
+   "rule_titles": {
+    "R46": "隔墙与吊顶/架空地板、立面竖梃的连接",
+    "R101": "分户墙的面密度"
+   },
+   "rule_stats": {
+    "R46": {
+     "fires": 287,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R101": {
+     "fires": 0,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Element"
+   ]
+  },
+  {
+   "did": "C01",
+   "tier": "convention",
+   "title": "面积、体积与退距的计量口径",
+   "title_en": "Measurement conventions",
+   "question": "容积率、DIN 277、建筑体积、居住面积、退距按什么口径算——不是设计决策。",
+   "question_en": "How FAR, DIN 277 areas, volume, living area and setbacks are measured: not a design decision.",
+   "why_tricky": "给其他主题提供“量”的定义。",
+   "why_tricky_en": "Provides the quantities other topics use.",
+   "rules": [
+    "R13",
+    "R48",
+    "R49",
+    "R50",
+    "R66"
+   ],
+   "signals": [],
+   "defaults": [
+    "IFC 无地块；无 Qto 时面积为包围盒近似"
+   ],
+   "note": "",
+   "coverage": {
+    "n_models": 370,
+    "context": 370,
+    "fires": 370,
+    "any_pass": 368,
+    "any_fail": 157
+   },
+   "rule_titles": {
+    "R13": "退距深度按墙高计算",
+    "R48": "容积率与建筑密度的计量口径",
+    "R49": "DIN 277 面积分类与可出租面积",
+    "R50": "DIN 277 建筑体积的量法",
+    "R66": "住宅居住面积的计算方法"
+   },
+   "rule_stats": {
+    "R13": {
+     "fires": 349,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 370
+    },
+    "R48": {
+     "fires": 370,
+     "pass": 0,
+     "fail": 0,
+     "unknown": 370
+    },
+    "R49": {
+     "fires": 370,
+     "pass": 213,
+     "fail": 157,
+     "unknown": 0
+    },
+    "R50": {
+     "fires": 366,
+     "pass": 366,
+     "fail": 0,
+     "unknown": 0
+    },
+    "R66": {
+     "fires": 97,
+     "pass": 97,
+     "fail": 0,
+     "unknown": 0
+    }
+   },
+   "levels": [
+    "Site & Building",
+    "Zone"
+   ]
+  }
+ ]
+}

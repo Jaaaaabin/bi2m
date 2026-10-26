@@ -1,0 +1,521 @@
+id,question,ground_truth,ifc_model,project,category,split
+435,"What is the project information, site location, and building details for this project?","Project Information:
+   - Project Name: 130625
+   - Project Long Name: BIM_Aufgabe_1_Gebäudetyp_A
+
+Site and Location:
+   - Site Name: Default
+   - Latitude: 48° 8' 55""871887
+   - Longitude: 11° 34' 4""792556
+
+Building:
+   - Building Name: Bürogebäude
+   - Building Usage: Office",arc,fantasy_office_building_3,1,train
+436,Which software and modeling standards were applied?,"IFC Schema: IFC4
+
+   Software Used:
+   - Application: Autodesk Revit 2024 (DEU)
+   - Version: 2024",arc,fantasy_office_building_3,1,train
+437,"What is the space breakdown by level, with individual room areas?","Space Breakdown by Building Level:
+   Total spaces in building: 87
+
+   EG (EG):
+   - Total spaces: 18
+   - Total area: 358.01 sq m
+   - Individual spaces:
+     • Staircase core (west): 13.87 sq m
+     • Elevater shaft 1: 2.21 sq m
+     • Kitchen: 27.28 sq m
+     • Meeting room 1: 15.16 sq m
+     • Meeting room 2: 15.16 sq m
+     • Open-plan office 1: 54.57 sq m
+     • Small office space: 27.28 sq m
+     • Toilet women: 8.77 sq m
+     • Staircase core (east): 14.43 sq m
+     • Elevator shaft 2: 2.21 sq m
+     • Loby: 57.22 sq m
+     • Individual office 1: 10.96 sq m
+     • Individual office 2: 11.08 sq m
+     • Individual office 3: 11.26 sq m
+     • Individual office 4: 11.04 sq m
+     • Corridor east: 32.68 sq m
+     • Corridor west: 34.07 sq m
+     • Toilet men: 8.76 sq m
+
+   OG1 (OG1):
+   - Total spaces: 17
+   - Total area: 299.30 sq m
+   - Individual spaces:
+     • Elevater shaft 1: 2.21 sq m
+     • Staircase core (west): 13.87 sq m
+     • Corridor west: 33.54 sq m
+     • Toilet men: 8.34 sq m
+     • Individual office 2: 11.08 sq m
+     • Individual office 1: 10.96 sq m
+     • Kitchen: 27.28 sq m
+     • Meeting room 1: 15.16 sq m
+     • Open-plan office 1: 54.57 sq m
+     • Meeting room 2: 15.16 sq m
+     • Small office space: 27.28 sq m
+     • Individual office 3: 11.26 sq m
+     • Individual office 4: 11.04 sq m
+     • Toilet women: 8.77 sq m
+     • Corridor east: 32.14 sq m
+     • Staircase core (east): 14.43 sq m
+     • Elevator shaft 2: 2.21 sq m
+
+   OK OG2 (OK OG2):
+   - Total spaces: 18
+   - Total area: 355.90 sq m
+   - Individual spaces:
+     • Staircase core (west): 13.87 sq m
+     • Elevater shaft 1: 2.21 sq m
+     • Corridor west: 33.54 sq m
+     • Toilet men: 8.34 sq m
+     • Individual office 2: 11.08 sq m
+     • Open-plan office 2: 56.60 sq m
+     • Individual office 1: 10.96 sq m
+     • Kitchen: 27.28 sq m
+     • Meeting room 1: 15.16 sq m
+     • Open-plan office 1: 54.57 sq m
+     • Meeting room 2: 15.16 sq m
+     • Small office space: 27.28 sq m
+     • Individual office 3: 11.26 sq m
+     • Individual office 4: 11.04 sq m
+     • Toilet women: 8.77 sq m
+     • Corridor east: 32.14 sq m
+     • Staircase core (east): 14.43 sq m
+     • Elevator shaft 2: 2.21 sq m
+
+   OK OG3 (OK OG3):
+   - Total spaces: 18
+   - Total area: 355.97 sq m
+   - Individual spaces:
+     • Staircase core (west): 13.87 sq m
+     • Elevater shaft 1: 2.21 sq m
+     • Corridor west: 33.54 sq m
+     • Toilet men: 8.34 sq m
+     • Individual office 2: 11.08 sq m
+     • Open-plan office 2: 56.67 sq m
+     • Individual office 1: 10.96 sq m
+     • Kitchen: 27.28 sq m
+     • Meeting room 1: 15.16 sq m
+     • Open-plan office 1: 54.57 sq m
+     • Meeting room 2: 15.16 sq m
+     • Small office space: 27.28 sq m
+     • Individual office 3: 11.26 sq m
+     • Individual office 4: 11.04 sq m
+     • Toilet women: 8.77 sq m
+     • Corridor east: 32.14 sq m
+     • Staircase core (east): 14.43 sq m
+     • Elevator shaft 2: 2.21 sq m
+
+   OK OG4 (OK OG4):
+   - Total spaces: 16
+   - Total area: 244.55 sq m
+   - Individual spaces:
+     • Staircase core (west): 13.87 sq m
+     • Elevater shaft 1: 2.21 sq m
+     • Corridor west: 33.54 sq m
+     • Toilet men: 8.34 sq m
+     • Individual office 2: 11.08 sq m
+     • Individual office 1: 10.96 sq m
+     • Kitchen: 27.28 sq m
+     • Meeting room 1: 15.07 sq m
+     • Meeting room 2: 15.07 sq m
+     • Small office space: 27.28 sq m
+     • Individual office 3: 11.26 sq m
+     • Individual office 4: 11.04 sq m
+     • Toilet women: 8.77 sq m
+     • Corridor east: 32.14 sq m
+     • Staircase core (east): 14.43 sq m
+     • Elevator shaft 2: 2.21 sq m",arc,fantasy_office_building_3,2,train
+438,What is the gross floor area of each floor?,"Gross Floor Area by Level:
+   - EG: 358.01 sq m (18 spaces)
+   - OG1: 299.30 sq m (17 spaces)
+   - OK OG2: 355.90 sq m (18 spaces)
+   - OK OG3: 355.97 sq m (18 spaces)
+   - OK OG4: 244.55 sq m (16 spaces)
+   - OK OG5: 0.00 sq m (0 spaces)
+
+   Total Building Area: 1613.73 sq m",arc,fantasy_office_building_3,3,test
+439,"What are all the spaces on ground floor, with their areas?","Ground Floor (EG) Spaces:
+   Total spaces: 18
+   Total area: 358.01 sq m
+
+   Individual spaces:
+   - Staircase core (west): 13.87 sq m
+   - Elevater shaft 1: 2.21 sq m
+   - Kitchen: 27.28 sq m
+   - Meeting room 1: 15.16 sq m
+   - Meeting room 2: 15.16 sq m
+   - Open-plan office 1: 54.57 sq m
+   - Small office space: 27.28 sq m
+   - Toilet women: 8.77 sq m
+   - Staircase core (east): 14.43 sq m
+   - Elevator shaft 2: 2.21 sq m
+   - Loby: 57.22 sq m
+   - Individual office 1: 10.96 sq m
+   - Individual office 2: 11.08 sq m
+   - Individual office 3: 11.26 sq m
+   - Individual office 4: 11.04 sq m
+   - Corridor east: 32.68 sq m
+   - Corridor west: 34.07 sq m
+   - Toilet men: 8.76 sq m",arc,fantasy_office_building_3,3,test
+440,"What are all the spaces on level 1, with their areas?","Level 1 (OG1) Spaces:
+   Total spaces: 17
+   Total area: 299.30 sq m
+
+   Individual spaces:
+   - Elevater shaft 1: 2.21 sq m
+   - Staircase core (west): 13.87 sq m
+   - Corridor west: 33.54 sq m
+   - Toilet men: 8.34 sq m
+   - Individual office 2: 11.08 sq m
+   - Individual office 1: 10.96 sq m
+   - Kitchen: 27.28 sq m
+   - Meeting room 1: 15.16 sq m
+   - Open-plan office 1: 54.57 sq m
+   - Meeting room 2: 15.16 sq m
+   - Small office space: 27.28 sq m
+   - Individual office 3: 11.26 sq m
+   - Individual office 4: 11.04 sq m
+   - Toilet women: 8.77 sq m
+   - Corridor east: 32.14 sq m
+   - Staircase core (east): 14.43 sq m
+   - Elevator shaft 2: 2.21 sq m",arc,fantasy_office_building_3,3,train
+441,"What are all the spaces on level 2, with their areas?","Level 2 (OK OG2) Spaces:
+   Total spaces: 18
+   Total area: 355.90 sq m
+
+   Individual spaces:
+   - Staircase core (west): 13.87 sq m
+   - Elevater shaft 1: 2.21 sq m
+   - Corridor west: 33.54 sq m
+   - Toilet men: 8.34 sq m
+   - Individual office 2: 11.08 sq m
+   - Open-plan office 2: 56.60 sq m
+   - Individual office 1: 10.96 sq m
+   - Kitchen: 27.28 sq m
+   - Meeting room 1: 15.16 sq m
+   - Open-plan office 1: 54.57 sq m
+   - Meeting room 2: 15.16 sq m
+   - Small office space: 27.28 sq m
+   - Individual office 3: 11.26 sq m
+   - Individual office 4: 11.04 sq m
+   - Toilet women: 8.77 sq m
+   - Corridor east: 32.14 sq m
+   - Staircase core (east): 14.43 sq m
+   - Elevator shaft 2: 2.21 sq m",arc,fantasy_office_building_3,2,test
+442,"What are all the spaces on level 3, with their areas?","Level 3 (OK OG3) Spaces:
+   Total spaces: 18
+   Total area: 355.97 sq m
+
+   Individual spaces:
+   - Staircase core (west): 13.87 sq m
+   - Elevater shaft 1: 2.21 sq m
+   - Corridor west: 33.54 sq m
+   - Toilet men: 8.34 sq m
+   - Individual office 2: 11.08 sq m
+   - Open-plan office 2: 56.67 sq m
+   - Individual office 1: 10.96 sq m
+   - Kitchen: 27.28 sq m
+   - Meeting room 1: 15.16 sq m
+   - Open-plan office 1: 54.57 sq m
+   - Meeting room 2: 15.16 sq m
+   - Small office space: 27.28 sq m
+   - Individual office 3: 11.26 sq m
+   - Individual office 4: 11.04 sq m
+   - Toilet women: 8.77 sq m
+   - Corridor east: 32.14 sq m
+   - Staircase core (east): 14.43 sq m
+   - Elevator shaft 2: 2.21 sq m",arc,fantasy_office_building_3,2,test
+443,"What are all the spaces on level 4, with their areas?","Level 4 (OK OG4) Spaces:
+   Total spaces: 16
+   Total area: 244.55 sq m
+
+   Individual spaces:
+   - Staircase core (west): 13.87 sq m
+   - Elevater shaft 1: 2.21 sq m
+   - Corridor west: 33.54 sq m
+   - Toilet men: 8.34 sq m
+   - Individual office 2: 11.08 sq m
+   - Individual office 1: 10.96 sq m
+   - Kitchen: 27.28 sq m
+   - Meeting room 1: 15.07 sq m
+   - Meeting room 2: 15.07 sq m
+   - Small office space: 27.28 sq m
+   - Individual office 3: 11.26 sq m
+   - Individual office 4: 11.04 sq m
+   - Toilet women: 8.77 sq m
+   - Corridor east: 32.14 sq m
+   - Staircase core (east): 14.43 sq m
+   - Elevator shaft 2: 2.21 sq m",arc,fantasy_office_building_3,3,train
+444,What are the elevations of the building levels?,"Building Level Elevations:
+   - EG: 0.00 m above ground
+   - OG1: 3.70 m above ground
+   - OK OG2: 7.40 m above ground
+   - OK OG3: 11.10 m above ground
+   - OK OG4: 14.80 m above ground
+   - OK OG5: 18.50 m above ground",arc,fantasy_office_building_3,2,train
+445,What is the total gross area of each floor?,"Total Gross Area by Floor:
+   - EG: 358.01 sq m
+   - OG1: 299.30 sq m
+   - OK OG2: 355.90 sq m
+   - OK OG3: 355.97 sq m
+   - OK OG4: 244.55 sq m
+
+   Total Building Gross Area: 1613.73 sq m",arc,fantasy_office_building_3,3,train
+446,"What types of vertical circulation elements are present in the building (stairs, elevators, ramps, escalators), and how many of each type exist? Please include any relevant sub-components or detailed breakdowns.","Vertical Circulation Elements:
+   - Stairs: 2 staircase assemblies, including 10 stair elements
+   - Stair flights: 18 flights
+   - Ramps: 0
+   - Escalators: 0
+   - Elevators: 2 elevator shafts
+
+Note: 10 elevator shaft spaces exist in the model. The elevator transport elements are not modeled, but the spaces indicate that elevators are present as a method of vertical circulation.",arc,fantasy_office_building_3,2,test
+447,"What types of office spaces are available in this building, and could you provide a breakdown of their quantities?","Office Space Types:
+   Total office spaces: 31
+
+   Office types breakdown:
+   - Open-plan offices: 6
+     • Open-plan office 1 (EG): 54.57 sq m
+     • Open-plan office 2 (OK OG2): 56.60 sq m
+     • Open-plan office 2 (OK OG3): 56.67 sq m
+     • Open-plan office 1 (OG1): 54.57 sq m
+     • Open-plan office 1 (OK OG2): 54.57 sq m
+     • Open-plan office 1 (OK OG3): 54.57 sq m
+
+   - Small office spaces: 5
+     • Small office space (EG): 27.28 sq m
+     • Small office space (OG1): 27.28 sq m
+     • Small office space (OK OG2): 27.28 sq m
+     • Small office space (OK OG3): 27.28 sq m
+     • Small office space (OK OG4): 27.28 sq m
+
+   - Individual offices: 20
+     • Individual office 1 (EG): 10.96 sq m
+     • Individual office 2 (EG): 11.08 sq m
+     • Individual office 3 (EG): 11.26 sq m
+     • Individual office 4 (EG): 11.04 sq m
+     • Individual office 1 (OG1): 10.96 sq m
+     • Individual office 2 (OG1): 11.08 sq m
+     • Individual office 3 (OG1): 11.26 sq m
+     • Individual office 4 (OG1): 11.04 sq m
+     • Individual office 1 (OK OG2): 10.96 sq m
+     • Individual office 2 (OK OG2): 11.08 sq m
+     • Individual office 3 (OK OG2): 11.26 sq m
+     • Individual office 4 (OK OG2): 11.04 sq m
+     • Individual office 1 (OK OG3): 10.96 sq m
+     • Individual office 2 (OK OG3): 11.08 sq m
+     • Individual office 3 (OK OG3): 11.26 sq m
+     • Individual office 4 (OK OG3): 11.04 sq m
+     • Individual office 1 (OK OG4): 10.96 sq m
+     • Individual office 2 (OK OG4): 11.08 sq m
+     • Individual office 3 (OK OG4): 11.26 sq m
+     • Individual office 4 (OK OG4): 11.04 sq m",arc,fantasy_office_building_3,2,train
+448,"What furniture types are present in the building, specifying quantities and distribution by floor?","Furniture in Building:
+   Total furniture items: 112
+
+   Furniture types:
+   - Schreibtisch-Kombination-01:Typ1: 44 item(s)
+   - Schreibtisch-Kombination-02 mit PC:Typ1: 35 item(s)
+   - Tisch-Stuhl-Kombination-08 Konferenz:2000 x 1000 x 750 - 6 Stühle: 10 item(s)
+   - Tisch-Bank-Kombination-07 variabel ohne Rücklehnen:Typ1: 10 item(s)
+   - Küchenzeile-02 Kombination:Küchenzeile: 5 item(s)
+   - Tisch-19:1600 x 800 x 750: 2 item(s)
+   - Sofa-07:Typ1: 2 item(s)
+   - Hocker-02:Typ1: 2 item(s)
+   - Sofa-11:2300 x 225: 1 item(s)
+   - Tisch-21 Couch:1000 x 530 x 385: 1 item(s)
+
+   Furniture distribution by floor:
+   - EG: 28 items
+   - OG1: 20 items
+   - OK OG2: 26 items
+   - OK OG3: 26 items
+   - OK OG4: 12 items
+   - OK OG5: 0 items",arc,fantasy_office_building_3,2,train
+449,What furniture is available in Open-plan office on the ground floor?,"Open-plan office: Open-plan office 1
+   - Total furniture items: 8
+
+   Furniture breakdown:
+   - Schreibtisch-Kombination-01:Typ1: 8 item(s)",arc,fantasy_office_building_3,2,test
+450,"What restroom spaces are on the second floor, along with their areas?","Restrooms on OK OG2:
+   - Total restroom spaces: 2
+   - Total restroom area: 17.11 sq m
+
+   Restroom spaces:
+   - Toilet men: 8.34 sq m
+   - Toilet women: 8.77 sq m",arc,fantasy_office_building_3,2,train
+451,"How many individual office rooms are available on each floor, including their total areas?","Individual Office Rooms by Floor:
+   (Excludes open-plan and small office spaces)
+
+   EG:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   OG1:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   OK OG2:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   OK OG3:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   OK OG4:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   Total individual office rooms in building: 20",arc,fantasy_office_building_3,2,train
+452,"Which door types are installed in the building, with their quantities?","Door Types in Building:
+   Total doors: 75
+
+   Door types:
+   - Drehflügel 1-flg - Stahlzarge:88.5 x 2.26: 28 door(s)
+   - Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel: 24 door(s)
+   - TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175: 12 door(s)
+   - TU DF 1 - Rahmenstock Falztüre:ML - 885X2135 - EI 30: 5 door(s)
+   - TU DF 1 - Rahmenstock Falztüre:DL - 800 x 2000: 5 door(s)
+   - TU Karussell:ML - 2010 x 2250: 1 door(s)",arc,fantasy_office_building_3,2,train
+453,"Which window types are present in this building, including their sizing and quantities?","Window Types in Building:
+   Total windows: 167
+
+   Window types with dimensions:
+   - FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000: 139 window(s)
+     Size: 2000 mm x 3000 mm (W x H)
+   - FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000: 18 window(s)
+     Size: 1100 mm x 3000 mm (W x H)
+   - FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000: 10 window(s)
+     Size: 1000 mm x 3000 mm (W x H)",arc,fantasy_office_building_3,2,test
+454,"What types of walls are used in the building, with their quantities?","Wall Types in Building:
+   Total walls: 223
+
+   Wall types:
+   - Basiswand:STB 30.0: 61 wall(s)
+   - Basiswand:MW 11.5: 50 wall(s)
+   - Basiswand:STB 20.0: 34 wall(s)
+   - Basiswand:STB 25.0: 30 wall(s)
+   - Basiswand:GK 25.0: 28 wall(s)
+   - Basiswand:GK 12.5: 20 wall(s)",arc,fantasy_office_building_3,2,test
+455,"Which wall types are used on the exterior of the building, including their quantities?","Exterior Wall Types:
+   Total exterior walls: 75
+
+   Exterior wall types:
+   - Basiswand:STB 30.0: 55 wall(s)
+   - Basiswand:STB 20.0: 10 wall(s)
+   - Basiswand:MW 11.5: 4 wall(s)
+   - Basiswand:STB 25.0: 2 wall(s)
+   - Basiswand:GK 25.0: 2 wall(s)
+   - Basiswand:GK 12.5: 2 wall(s)",arc,fantasy_office_building_3,2,train
+456,"Which wall types are used for interior, with their counts?","Interior Wall Types:
+   Total interior walls: 148
+
+   Interior wall types:
+   - Basiswand:MW 11.5: 46 wall(s)
+   - Basiswand:STB 25.0: 28 wall(s)
+   - Basiswand:GK 25.0: 26 wall(s)
+   - Basiswand:STB 20.0: 24 wall(s)
+   - Basiswand:GK 12.5: 18 wall(s)
+   - Basiswand:STB 30.0: 6 wall(s)",arc,fantasy_office_building_3,2,train
+457,What materials are used in each wall type?,"Wall Type Materials, by layer:
+
+   - Basiswand:STB 30.0:
+      -  StB - Ortbeton
+
+   - Basiswand:STB 25.0:
+      -  StB - Ortbeton
+
+   - Basiswand:STB 20.0:
+      -  StB - Ortbeton
+
+   - Basiswand:GK 25.0:
+      -  MW - Gipskarton
+      -  Wärmedämmung - Hart (3 layers)
+      -  MW - Gipskarton
+
+   - Basiswand:GK 12.5:
+      -  MW - Gipskarton
+      -  Wärmedämmung - Hart
+      -  MW - Gipskarton
+
+   - Basiswand:MW 11.5:
+      -  MW - Ziegel, verputzt",arc,fantasy_office_building_3,1,train
+458,What are the thicknesses of the different wall types?,"Wall Thicknesses by Type:
+   - Basiswand:STB 30.0: 30.0 cm
+   - Basiswand:STB 25.0: 25.0 cm
+   - Basiswand:STB 20.0: 20.0 cm
+   - Basiswand:MW 11.5: 11.5 cm
+   - Basiswand:GK 25.0: 25.0 cm
+   - Basiswand:GK 12.5: 12.5 cm",arc,fantasy_office_building_3,2,train
+459,"What proportion of walls are load-bearing, including the total count and breakdown of load-bearing walls by type?","Load-Bearing Wall Analysis:
+   - Total walls: 223
+   - Load-bearing walls: 98 (43.9%)
+   - Non-load-bearing walls: 125 (56.1%)
+
+   Load-bearing wall types:
+   - Basiswand:STB 30.0: 58 wall(s)
+   - Basiswand:STB 25.0: 30 wall(s)
+   - Basiswand:STB 20.0: 10 wall(s)",arc,fantasy_office_building_3,2,train
+460,What is the total length of exterior walls?,Wall length values are not available in this model.,arc,fantasy_office_building_3,4,test
+461,What is the building's footprint area?,Building Footprint 518.97 sq m.,arc,fantasy_office_building_3,3,train
+462,"Which types of curtain walls are installed, specifying their quantities?","Curtain Wall Types:
+   Total curtain walls: 5
+
+   Curtain wall types:
+   - Fassade:Raster 1.25 x 3.70m - mit Pfosten 2: 5 element(s)",arc,fantasy_office_building_3,2,train
+463,Which materials are used in the ceilings?,Ceiling material information is not available in this model. No IfcCovering elements with ceiling type found.,arc,fantasy_office_building_3,4,test
+464,"What MEP components are used in this model, grouped by the MEP system they belong to, and how are these components distributed across the floors?","MEP Components by System:
+   Total MEP components: 115
+
+   Sanitary/Plumbing System (65 components):
+   - WC 02:WC: 30 unit(s)
+   - Urinal 02:Urinal: 25 unit(s)
+   - Waschtisch-Kombi-Doppel WB mit Spiegelkästen:1300 x 580 x 860: 10 unit(s)
+
+   Ventilation/HVAC System: No components found
+
+   Bathroom Accessories (50 components):
+   - Klobürste Boden-Zylinder:115 x 150 x 370: 30 unit(s)
+   - Handtuchhalter Wand-2 x Stäbe:350 x 60 x 50: 20 unit(s)
+
+   MEP distribution by floor:
+   - EG: 23 components
+   - OG1: 23 components
+   - OK OG2: 23 components
+   - OK OG3: 23 components
+   - OK OG4: 23 components",arc,fantasy_office_building_3,2,train
+465,"What are the slab types, their thicknesses, and quantities, grouped by category?","Slab Types and Thicknesses:
+   Total slabs: 17
+
+   Slab types:
+   - Basisdach:Titanzink - Eindeckung: 4 slab(s), Thickness: Not available
+   - Massivtreppenpodest:100 mm Stärke: 4 slab(s), Thickness: 100 mm (0.100 m)
+   - Massivtreppenpodest:100 mm Stärke (1): 4 slab(s), Thickness: 100 mm (0.100 m)
+   - Geschossdecke:STB 25.0: 2 slab(s), Thickness: 250 mm (0.250 m)
+   - Geschossdecke:STB 35.0: 1 slab(s), Thickness: 350 mm (0.350 m)
+   - Bodenplatte:STB 50cm: 1 slab(s), Thickness: 500 mm (0.500 m)
+   - Geschossdecke:STB 30.0: 1 slab(s), Thickness: 300 mm (0.300 m)
+
+   Slabs by category:
+   - Floor slabs: 4
+   - Roof slabs: 4
+   - Landing slabs: 8
+   - Base slabs: 1",arc,fantasy_office_building_3,2,test
+466,What is the total volume of all floor slabs combined?,"Floor slab volume values are not available in this model, However manual measurement shows 690.7 cu m for total floor slab volume.",arc,fantasy_office_building_3,4,test
+467,Is fire rating information available for any door types in this model?,Fire rating information for doors is not available in this model. No fire rating properties found in door specifications.,arc,fantasy_office_building_3,4,train
+468,Is fire rating information available for windows in this model?,Fire rating information for windows is not available in this model. No fire rating properties found in window specifications.,arc,fantasy_office_building_3,4,train
+469,"Which column types are present in this building, including their dimensions and quantities?","Column Types in Building:
+   Total columns: 20
+
+   Column types with dimensions:
+   - STB Stütze - rund:STB d=30: 12 column(s)
+     Diameter: 30 cm (0.30 m)
+   - STB Stütze - rund:STB d=25: 4 column(s)
+     Diameter: 25 cm (0.25 m)
+   - STB Stütze - rund:STB d=20: 4 column(s)
+     Diameter: 20 cm (0.20 m)",arc,fantasy_office_building_3,2,test

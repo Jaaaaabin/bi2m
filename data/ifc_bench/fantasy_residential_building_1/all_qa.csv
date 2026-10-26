@@ -1,0 +1,369 @@
+id,question,ground_truth,ifc_model,project,category,split
+470,What is the project information and location for this building?,"Note: The data stored for project information and building name are incomplete. However, the building design and furniture indicates a residential building.
+
+Project Information:
+   - Project Name: Projektnummer
+   - Project Description: Not specified
+
+   Location Information:
+   - Site Name: Default
+   - Latitude: 48° 8' 20""
+   - Longitude: 11° 34' 48""",arc,fantasy_residential_building_1,1,test
+471,Which software and modeling standards were applied?,"Software Information:
+   - Application: Autodesk Revit 2025 (DEU)
+   - Version: 2025
+
+   Modeling Standards:
+   - IFC Schema: IFC4",arc,fantasy_residential_building_1,1,test
+472,"What is the space breakdown by level, with individual room areas?","Space Breakdown by Level:
+
+   Ground Floor (Elevation: 0.00m):
+   - Number of spaces: 19
+   - Total area: 372.10 sq m
+   - Individual spaces:
+     • Space 1: Lobby (21.27 sq m)
+     • Space 10: Utility room (9.42 sq m)
+     • Space 11: Stairwell 2 (20.48 sq m)
+     • Space 12: Wardrobe (18.07 sq m)
+     • Space 13: Toilet (4.33 sq m)
+     • Space 14: Kitchen and Dining room (38.45 sq m)
+     • Space 15: Living room (36.53 sq m)
+     • Space 16: Bedroom (26.42 sq m)
+     • Space 17: Office (8.18 sq m)
+     • Space 18: Bathroom (13.37 sq m)
+     • Space 19: Utility room (9.42 sq m)
+     • Space 2: Stairwell 1 (20.81 sq m)
+     • Space 3: Wardrobe (18.07 sq m)
+     • Space 4: Toilet (4.33 sq m)
+     • Space 5: Kitchen and Dining room (38.45 sq m)
+     • Space 6: Living room (36.53 sq m)
+     • Space 7: Bedroom (26.42 sq m)
+     • Space 8: Office (8.18 sq m)
+     • Space 9: Bathroom (13.37 sq m)
+
+   First Floor (Elevation: 3.40m):
+   - Number of spaces: 18
+   - Total area: 487.10 sq m
+   - Individual spaces:
+     • Space 20: Wardrobe (18.07 sq m)
+     • Space 21: Toilet (4.34 sq m)
+     • Space 22: Kitchen and Dining room (38.47 sq m)
+     • Space 23: Living room (36.55 sq m)
+     • Space 24: Bedroom (26.42 sq m)
+     • Space 25: Office (8.18 sq m)
+     • Space 26: Bathroom (13.37 sq m)
+     • Space 27: Utility room (9.42 sq m)
+     • Space 28: Wardrobe (18.07 sq m)
+     • Space 29: Toilet (4.34 sq m)
+     • Space 30: Kitchen and Dining room (38.47 sq m)
+     • Space 31: Living room (36.55 sq m)
+     • Space 32: Bedroom (26.42 sq m)
+     • Space 33: Office (8.18 sq m)
+     • Space 34: Bathroom (13.37 sq m)
+     • Space 35: Utility room (9.42 sq m)
+     • Space 50: Balcony 1 (88.74 sq m)
+     • Space 51: Balcony 2 (88.72 sq m)
+
+   Second Floor (Elevation: 6.80m):
+   - Number of spaces: 20
+   - Total area: 541.88 sq m
+   - Individual spaces:
+     • Space 36: Wardrobe (18.07 sq m)
+     • Space 37: Toilet (4.34 sq m)
+     • Space 38: Kitchen and Dining room (38.47 sq m)
+     • Space 39: Living room (36.55 sq m)
+     • Space 40: Bedroom (26.42 sq m)
+     • Space 41: Office (8.18 sq m)
+     • Space 42: Bathroom (13.37 sq m)
+     • Space 43: Wardrobe (18.07 sq m)
+     • Space 44: Toilet (4.34 sq m)
+     • Space 45: Kitchen and Dining room (38.47 sq m)
+     • Space 46: Living room (36.55 sq m)
+     • Space 47: Bedroom (26.42 sq m)
+     • Space 48: Office (8.18 sq m)
+     • Space 49: Bathroom (13.37 sq m)
+     • Space 52: Balcony 3 (88.92 sq m)
+     • Space 53: Balcony 4 (13.75 sq m)
+     • Space 54: Balcony 5 (13.86 sq m)
+     • Space 55: Balcony 6 (89.85 sq m)
+     • Space 56: Balcony 7 (23.71 sq m)
+     • Space 57: Balcony 8 (shared balcony) (20.99 sq m)",arc,fantasy_residential_building_1,3,test
+473,"What are all the spaces on ground floor, with their areas?","Ground Floor Spaces:
+   - Total spaces: 19
+   - Total area: 372.10 sq m
+
+   Detailed space list:
+   - Space 1: Lobby (21.27 sq m)
+   - Space 10: Utility room (9.42 sq m)
+   - Space 11: Stairwell 2 (20.48 sq m)
+   - Space 12: Wardrobe (18.07 sq m)
+   - Space 13: Toilet (4.33 sq m)
+   - Space 14: Kitchen and Dining room (38.45 sq m)
+   - Space 15: Living room (36.53 sq m)
+   - Space 16: Bedroom (26.42 sq m)
+   - Space 17: Office (8.18 sq m)
+   - Space 18: Bathroom (13.37 sq m)
+   - Space 19: Utility room (9.42 sq m)
+   - Space 2: Stairwell 1 (20.81 sq m)
+   - Space 3: Wardrobe (18.07 sq m)
+   - Space 4: Toilet (4.33 sq m)
+   - Space 5: Kitchen and Dining room (38.45 sq m)
+   - Space 6: Living room (36.53 sq m)
+   - Space 7: Bedroom (26.42 sq m)
+   - Space 8: Office (8.18 sq m)
+   - Space 9: Bathroom (13.37 sq m)",arc,fantasy_residential_building_1,2,train
+474,"What are all the spaces on level 1, with their areas?","First Floor Spaces:
+   - Total spaces: 18
+   - Total area: 487.10 sq m
+
+   Detailed space list:
+   - Space 20: Wardrobe (18.07 sq m)
+   - Space 21: Toilet (4.34 sq m)
+   - Space 22: Kitchen and Dining room (38.47 sq m)
+   - Space 23: Living room (36.55 sq m)
+   - Space 24: Bedroom (26.42 sq m)
+   - Space 25: Office (8.18 sq m)
+   - Space 26: Bathroom (13.37 sq m)
+   - Space 27: Utility room (9.42 sq m)
+   - Space 28: Wardrobe (18.07 sq m)
+   - Space 29: Toilet (4.34 sq m)
+   - Space 30: Kitchen and Dining room (38.47 sq m)
+   - Space 31: Living room (36.55 sq m)
+   - Space 32: Bedroom (26.42 sq m)
+   - Space 33: Office (8.18 sq m)
+   - Space 34: Bathroom (13.37 sq m)
+   - Space 35: Utility room (9.42 sq m)
+   - Space 50: Balcony 1 (88.74 sq m)
+   - Space 51: Balcony 2 (88.72 sq m)",arc,fantasy_residential_building_1,3,test
+475,"What are all the spaces on level 2, with their areas?","Second Floor Spaces:
+   - Total spaces: 20
+   - Total area: 541.88 sq m
+
+   Detailed space list:
+   - Space 36: Wardrobe (18.07 sq m)
+   - Space 37: Toilet (4.34 sq m)
+   - Space 38: Kitchen and Dining room (38.47 sq m)
+   - Space 39: Living room (36.55 sq m)
+   - Space 40: Bedroom (26.42 sq m)
+   - Space 41: Office (8.18 sq m)
+   - Space 42: Bathroom (13.37 sq m)
+   - Space 43: Wardrobe (18.07 sq m)
+   - Space 44: Toilet (4.34 sq m)
+   - Space 45: Kitchen and Dining room (38.47 sq m)
+   - Space 46: Living room (36.55 sq m)
+   - Space 47: Bedroom (26.42 sq m)
+   - Space 48: Office (8.18 sq m)
+   - Space 49: Bathroom (13.37 sq m)
+   - Space 52: Balcony 3 (88.92 sq m)
+   - Space 53: Balcony 4 (13.75 sq m)
+   - Space 54: Balcony 5 (13.86 sq m)
+   - Space 55: Balcony 6 (89.85 sq m)
+   - Space 56: Balcony 7 (23.71 sq m)
+   - Space 57: Balcony 8 (shared balcony) (20.99 sq m)",arc,fantasy_residential_building_1,3,train
+476,What are the heights of the building levels?,"Building Level Heights:
+
+   Level Elevations:
+   - Ground Floor: 0.00m above ground
+   - First Floor: 3.40m above ground
+   - Second Floor: 6.80m above ground
+   - Roof: 10.20m above ground",arc,fantasy_residential_building_1,1,train
+477,How many residential units are in this building?,"Residential Units are not explicitly defined in the model. However, it can be implied that 6 units are present in total, 2 units on each level.",arc,fantasy_residential_building_1,4,train
+478,What is the typical room configuration found in the residential units?,"Unit Configuration Analysis:
+- All residential units seem to follow the same linear plan configuration.
+
+Typical unit configuration:
+- Wardrobe
+- Toilet
+- Kitchen and Dining room
+- Living room
+- Bedroom
+- Office
+- Bathroom",arc,fantasy_residential_building_1,3,train
+479,"Which door types are installed in the building, with their quantities?","Door Types in Building:
+   - Total doors: 101
+
+   Door types by quantity:
+   - Door-Solar_Innovations-Multi_Track_Sliding_Glass_Door_XO:SI8200: 51 doors (Dimensions: 1.83m × 2.13m)
+   - Drehflügel 1-flg - Stahlzarge:88.5 x 2.26: 19 doors (Dimensions: 0.89m × 2.26m)
+   - Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel: 12 doors (Dimensions: 1.00m × 2.26m)
+   - TU DF 1 - Haustüre:Front Door: 6 doors (Dimensions: 1.14m × 2.43m)
+   - Doors_Interior_WUNDERWERK-est-1964_All-glass-door-Burgos_GER:Standard - Bitte laden Sie die Revit Family Type Catalog: 6 doors (Dimensions: 1.04m × 2.12m)
+   - TU SF 2 - Lift Zentral:DL - 705 x 2100: 6 doors (Dimensions: 0.95m × 2.52m)
+   - ASSA_ABLOY_SemiTransparent_NonHosted:Semi Transparent non hosted: 1 door (Dimensions: 5.63m × 0.23m)",arc,fantasy_residential_building_1,2,test
+480,Which door model has the largest width?,"Largest Door Width:
+   - Door type: ASSA_ABLOY_SemiTransparent_NonHosted:Semi Transparent non hosted
+   - Width: 5.63m",arc,fantasy_residential_building_1,2,test
+481,"Which window types are present in this building, including their sizing and quantities?","Window Types in Building:
+   - Total windows: 10
+
+   Window types with sizing:
+   - Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight:Windows_Opening-Hinge_S9000_Single-leaf-Turn-Tilt-window-with-Sublight: 6 windows
+     • Size: 1.22m × 1.55m (width × height)
+
+   - Fenster 2-flg - mit Anschlag:2.01 x 1.01: 4 windows
+     • Size: 2.01m × 1.02m (width × height)",arc,fantasy_residential_building_1,2,train
+482,"What types of walls are used in the building, with their quantities?","Wall Types in Building:
+   - Total walls: 104
+
+   Wall types by quantity:
+   - Basiswand:STB 15.0 - Sichtbeton: 56 walls
+   - Basiswand:STB 30.0 - Sichtbeton 1: 24 walls
+   - Basiswand:MW 15cm 2: 12 walls
+   - Basiswand:GK 15 2: 12 walls",arc,fantasy_residential_building_1,2,test
+483,"Which wall types are used on the exterior of the building, including their quantities?","Exterior Wall Types:
+   - Total exterior walls: 24
+
+   Exterior wall types:
+   - Basiswand:STB 30.0 - Sichtbeton 1: 24 walls",arc,fantasy_residential_building_1,2,train
+484,"Which wall types are used for interior partitions, with their counts?","Interior Wall Types:
+   - Total interior walls: 80
+
+   Wall types:
+   - Basiswand:STB 15.0 - Sichtbeton: 56 walls
+   - Basiswand:MW 15cm 2: 12 walls
+   - Basiswand:GK 15 2: 12 walls",arc,fantasy_residential_building_1,2,train
+485,Which materials is used in the exterior walls?,"The materials used for the exterior walls are:
+- StB - Sichtbeton (1) (which could be translated to exposed concrete)",arc,fantasy_residential_building_1,1,test
+486,Which materials are used in the interior walls?,"Interior Wall Materials:
+
+   Based on interior wall type analysis:
+   - Concrete (Sichtbeton)
+   - Drywall with insulation (MW system)
+   - Gypsum board partition (GK system)",arc,fantasy_residential_building_1,2,train
+487,What are the thicknesses of the different wall types?,"Wall Thicknesses:
+   - Basiswand:STB 15.0 - Sichtbeton: 150mm
+   - Basiswand:STB 30.0 - Sichtbeton 1: 300mm
+   - Basiswand:MW 15cm 2: 150mm
+   - Basiswand:GK 15 2: 150mm",arc,fantasy_residential_building_1,2,test
+488,"Could you provide a breakdown of the walls by load-bearing status, including the counts and the proportion of load-bearing walls?","Load-Bearing Wall Analysis:
+   - Load-bearing walls: 48
+   - Non-load-bearing walls: 56
+   - Proportion load-bearing: 46.2%",arc,fantasy_residential_building_1,2,train
+489,What is the total length of exterior walls?,The total length of exterior walls is 464 meters.,arc,fantasy_residential_building_1,3,test
+490,What is the building's footprint area?,Building Footprint Area is approximately 630 sq m.,arc,fantasy_residential_building_1,3,train
+491,"What types of curtain walls are installed in the building, and how many of each type?","Curtain wall types:
+- Fassade:kein Raster: 41
+- Fassade:Raster 1.25 x 2.25m - mit Pfosten: 1",arc,fantasy_residential_building_1,2,train
+492,Which materials are used in the ceilings?,"Ceiling material information is not available in this model.
+
+Available ceiling information:
+- The model contains 2 covering elements
+- Material data for ceilings is not specified in the model",arc,fantasy_residential_building_1,4,train
+493,"Could you provide a detailed inventory of all furniture items in the building, including quantities for each type?","Furniture Inventory:
+   - Total furniture items: 138
+
+   Furniture types:
+   - Tall-Cabinet_Case-Systems_Wardrobe-Storage_T2310:T2310: 36 items
+   - Chair-Breuer:Chair-Breuer: 16 items
+   - C710-hexagonal side table-Talo outdoor-Expormim:36x32x47 cm / 14.25""x12.5""x18.5"": 8 items
+   - Sanitary_Mirrors_Ideagroup_ASOLA-mirror:SPA513: 8 items
+   - Sanitary_Accessories_Roca_BAIA-Hanger-Greige:40 - Greige: 8 items
+   - Tall Cabinet-Shelf Unit:30"": 8 items
+   - Furniture_Hooks&Hangers_Essem-Design_Hook-Strip_2:Hook Strip 2 - 900 mm: 6 items
+   - Sanitary_Mirrors_Ideagroup_ASOLA-mirror:SPA509: 4 items
+   - Furniture_Mirrors_Fritz-Hansen_Mirror-long:Default: 4 items
+   - Küchenzeile-02 Kombination:Küchenzeile: 4 items
+   - Küchenzeile-05 Kombination:Typ1: 4 items
+   - Küchenzeile-01 Generisch:Typ1: 4 items
+   - Furniture_Shelving-And-Storage_Sedus_Se-Matrix:Configuration 01: 4 items
+   - Bett-06:1600x2000: 4 items
+   - Sanitary_Toilet-Accessories_Roca_BAIA-Floor-standing-toilet-brush-Greige:40 - Greige: 4 items",arc,fantasy_residential_building_1,2,test
+494,"What furniture items are in space 5 (kitchen) on the ground floor, and what is the basic information about this space?","Space 5 Information:
+   - Name: Kitchen and Dining room
+   - Area: 38.45 sq m
+
+   Kitchen furniture identified:
+   - Küchenzeile-02 Kombination:Küchenzeile: 4 items
+   - Küchenzeile-05 Kombination:Typ1: 4 items
+   - Küchenzeile-01 Generisch:Typ1: 4 items",arc,fantasy_residential_building_1,2,train
+495,"How many Laundry/Utility Rooms are present in the building, and what is the area of each room?","Laundry/Utility Rooms Found:
+   - Total count: 4
+
+   Room details:
+   - Utility room (Space 10, Ground Floor): 9.42 sq m
+   - Utility room (Space 19, Ground Floor): 9.42 sq m
+   - Utility room (Space 27, First Floor): 9.42 sq m
+   - Utility room (Space 35, First Floor): 9.42 sq m",arc,fantasy_residential_building_1,3,train
+496,"Could you provide a complete inventory of sanitary equipment in the building, including the total count and a breakdown by equipment type with quantities?","Sanitary Equipment Inventory:
+- Total sanitary items: 24
+
+Sanitary equipment types:
+- Single Handle Faucet_Wall Mount_Fontana Showers_FS9562:FS9553: 8 items
+- Sanitary_Toilet-Accessories_Roca_BAIA-Floor-standing-toilet-brush-Greige:40 - Greige: 4 items
+- Sanitary_Shower-screens_Ideagroup_Vitrum-shower-enclosure-walk-in-VT1LCP8:VT1LCP8: 4 items
+- Sanitary_Basins_Mirage_Happiness-HP160T_IT:Happiness  HP160T: 4 items
+- Shower Set_Wall Mount_Fontana Showers_FS1171:FS114PRS: 4 items",arc,fantasy_residential_building_1,2,train
+497,"How many bathrooms are there in total, and how are they distributed across the floors?","Bathroom Count:
+   - Total bathrooms/toilets: 12
+
+   Distribution by floor:
+   - Ground Floor: 4 bathroom(s)
+     • Space 4: Toilet (4.33 sq m)
+     • Space 9: Bathroom (13.37 sq m)
+     • Space 13: Toilet (4.33 sq m)
+     • Space 18: Bathroom (13.37 sq m)
+
+   - First Floor: 4 bathroom(s)
+     • Space 21: Toilet (4.34 sq m)
+     • Space 26: Bathroom (13.37 sq m)
+     • Space 29: Toilet (4.34 sq m)
+     • Space 34: Bathroom (13.37 sq m)
+
+   - Second Floor: 4 bathroom(s)
+     • Space 37: Toilet (4.34 sq m)
+     • Space 42: Bathroom (13.37 sq m)
+     • Space 44: Toilet (4.34 sq m)
+     • Space 49: Bathroom (13.37 sq m)",arc,fantasy_residential_building_1,2,train
+498,How many balconies are there on each floor? And what are their areas?,"Balconies by Floor:
+
+   First Floor:
+   - Number of balconies: 2
+   - Total balcony area: 177.46 sq m
+   - Individual balconies:
+     • Space 50: 88.74 sq m
+     • Space 51: 88.72 sq m
+
+   Second Floor:
+   - Number of balconies: 6
+   - Total balcony area: 251.08 sq m
+   - Individual balconies:
+     • Space 52: 88.92 sq m
+     • Space 53: 13.75 sq m
+     • Space 54: 13.86 sq m
+     • Space 55: 89.85 sq m
+     • Space 56: 23.71 sq m
+     • Space 57: 20.99 sq m",arc,fantasy_residential_building_1,3,test
+499,"Could you provide a breakdown of all railing types used in the building, including the quantities of each type?","Railing Types in Building:
+- Total railings: 31
+
+Railing types by quantity:
+- Geländer:Glas - Ohne Pfosten: 27
+- Geländer:Holzhandlauf: 4
+
+Note: Based on building design with glass facades and balconies, these railings are primarily used for balcony safety barriers",arc,fantasy_residential_building_1,2,test
+500,"What are the possible structural systems of this building, given the available model data?","The structural system is not directly understandable from the data stored in the model. The primary system could be:
+- Frame structure
+- Load-bearing wall system",arc,fantasy_residential_building_1,4,train
+501,"What are the slab types in the building, their quantities, and available thickness information?","Slab Types and Thicknesses:
+   - Total slabs: 25
+
+   Slab types:
+   - Basisdach:Titanzink - Eindeckung [ROOF]: 8 slab(s)
+   - Fundament:60 x 60 x 1.20 [BASESLAB]: 7 slab(s) - Thickness: 600mm
+   - Fundament:1.00 x 1.00 x 1.20 [BASESLAB]: 7 slab(s) - Thickness: 10mm
+   - Geschossdecke:STB 20.0 [FLOOR]: 2 slab(s) - Thickness: 200mm
+   - Bodenplatte:STB 50cm [BASESLAB]: 1 slab(s) - Thickness: 500mm",arc,fantasy_residential_building_1,2,test
+502,What is the total volume of all floor slabs combined?,Total floor slab volume calculation is not available from this model. Volume quantities are not included in the IFC export,arc,fantasy_residential_building_1,4,test
+503,Is fire rating information available for doors in this model?,Fire rating information for doors is not available in this model.,arc,fantasy_residential_building_1,4,train
+504,Which window types include fire rating information?,Fire rating information for windows is not available in this model.,arc,fantasy_residential_building_1,4,train
+505,What are the different types of columns in this building and how many of each type are present?,"Column Types in Building:
+   - Total columns: 28
+
+   Column types:
+   - STB Stütze - rechteckig:STB 25 x 25: 11 columns
+   - STB Stütze - rund:STB d=25: 11 columns
+   - STB Stütze - rund:STB d=30: 6 columns",arc,fantasy_residential_building_1,2,train
+506,"What type of roof is used in this building, what materials is it made of, and what is the breakdown of roof slabs?","The roof is a hipped roof, made out of a wooden structure covered by Titanium zinc coverings.
+
+Roof slabs:
+- Basisdach:Titanzink - Eindeckung [ROOF]: 8",arc,fantasy_residential_building_1,2,test

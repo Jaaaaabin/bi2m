@@ -1,0 +1,1030 @@
+[
+ {
+  "kid": "K001",
+  "topic": "场地与体量",
+  "title": "高层建筑",
+  "summary": "高层建筑指供人长期停留、最高楼层在建筑一侧高出地面 > 22 m 的建筑；高度 ≤ 60 m 的高层须至少设两部相对布置、位于两个不同防火分区的疏散楼梯，其通行宽度须 ≥ 1.25 m（例外情况下可批准仅设一部安全楼梯）。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "High-rise buildings are those intended for long-term human occupation whose upper-most floor on one side of the building is more than 22 m above ground level.",
+    "page_id": "page_0256",
+    "book_page": "244",
+    "chapter": "Administration and offices",
+    "context": "Definition of high-rise buildings\nHigh-rise buildings are those intended for long-term human occupation whose upper-most floor on one side of the building is more than 22 m above ground level."
+   },
+   {
+    "quote": "High-rise buildings up to 60 m high: at least two emergency stairs must be available, which must be located opposite in two separate fire compartments. Their walking width must be at least 1.25 m.",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "Stairs\nHigh-rise buildings up to 60 m high: at least two emergency stairs must be available, which must be located opposite in two separate fire compartments. Their walking width must be at least 1.25 m. The wellhole must be min. 0.80 m wide in order to avoid having to lay hoses on the stairs. Smoke outlets must be provided at their highest point (5% of the floor area but min. 1 m^2). The exit must be directly into the open air or through a lobby without any fire load. In exceptional cases, one staircase can be approved for high-rise buildings up to 60 m in height, if it is a safety staircase. Requirements for the location of stairs → 2 – 5."
+   }
+  ]
+ },
+ {
+  "kid": "K002",
+  "topic": "场地与体量",
+  "title": "私宅停车",
+  "summary": "私宅可减少停车面积；车棚比车库更经济，建筑物理上也更有利。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "A reduction in the parking area is possible for private houses.",
+    "page_id": "page_0178",
+    "book_page": "166",
+    "chapter": "Residential buildings",
+    "context": "Space requirement → 7 – 12. A reduction in the parking area is possible for private houses. The tendency of modern cars to get larger (including in height) should be taken into account."
+   },
+   {
+    "quote": "In addition to garages, roofed-over parking places (carports) represent a cheaper, more beneficial in terms of building physics",
+    "page_id": "page_0178",
+    "book_page": "166",
+    "chapter": "Residential buildings",
+    "context": "In addition to garages, roofed-over parking places (carports) represent a cheaper, more beneficial in terms of building physics (no condensation in cold cars in the winter!) and space-saving possibility for protecting cars adequately from the weather (a close wall on the weather side is a good idea). A combination with enclosed storerooms (for bicycles etc.) is to be recommended → 11. Carports are particularly suitable for communal parking places → 12."
+   }
+  ]
+ },
+ {
+  "kid": "K003",
+  "topic": "场地与体量",
+  "title": "车位与通道尺寸",
+  "summary": "多层停车库：车库条例要求车位最小宽度 2.30 m，FGSV 因车辆变大建议所有公众可达车位最小宽度 2.50 m；图示示例：90° 停车、通道宽 5.50 m、车位宽 2.50 m；加油站相关州规定中车位尺寸为 2.50 × 5.00 m = 12.50 m²。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The Garage (multi-storey car park) Regulations require a minimum width for parking spaces of 2.30 m.",
+    "page_id": "page_0404",
+    "book_page": "392",
+    "chapter": "Transport",
+    "context": "For multi-storey car parks the requirements for the layout of parking spaces and access are in principle the same as for open car parks. The Garage (multi-storey car park) Regulations require a minimum width for parking spaces of 2.30 m. The Research Company for Roads and Traffic (FGSV), however, recommends a minimum width of 2.50 m for all publicly accessible parking spaces on account of the increasing size of cars."
+   },
+   {
+    "quote": "The Research Company for Roads and Traffic (FGSV), however, recommends a minimum width of 2.50 m for all publicly accessible parking spaces on account of the increasing size of cars.",
+    "page_id": "page_0404",
+    "book_page": "392",
+    "chapter": "Transport",
+    "context": "For multi-storey car parks the requirements for the layout of parking spaces and access are in principle the same as for open car parks. The Garage (multi-storey car park) Regulations require a minimum width for parking spaces of 2.30 m. The Research Company for Roads and Traffic (FGSV), however, recommends a minimum width of 2.50 m for all publicly accessible parking spaces on account of the increasing size of cars."
+   },
+   {
+    "quote": "90° parking, access 5.50 m wide, parking space 2.50 m wide",
+    "page_id": "page_0402",
+    "book_page": "390",
+    "chapter": "Transport",
+    "context": "90° parking, access 5.50 m wide, parking space 2.50 m wide"
+   },
+   {
+    "quote": "Parking space size (2.50 × 5.00 m = 12.50 m²)",
+    "page_id": "page_0412",
+    "book_page": "400",
+    "chapter": "Transport",
+    "context": "Important regulations and technical rules:\nIn addition to the relevant building regulations:\nWHG (water management law) applies, on account of the storage of fuel and associated water, fire and explosion hazards.\nVAwS (regulation of requirements for the handling of substances harmful to groundwater) mostly concerns specialist firms and testing duties.\nTRwS (technical rules for substances harmful to water)\nTRbF (technical rules for flammable liquids)\nPetrol stations must be erected by certified specialist firms (WHG).\nState regulations control:\n1. Parking space size (2.50 × 5.00 m = 12.50 m²)\n2. Required number of parking spaces (e.g. depending on the extent of premises, and the number of petrol pumps and people working at the station).\n3. Required queuing space for automatic car wash (e.g. area sufficient for 50% of the hourly washing capacity).\nFor design purposes, dimensions specific to cars should be considered:\nTurning circle:    car 12.50 m    HGV 26.00 m\nVehicle width:    car 1.85 m    HGV 2.50 m\nVehicle length:   car 5.00 m    HGV 18.00 m with trailer\nThese data can be used to derive the dimensions of pump islands and passage widths → 3 – 5.\n\nThe paving around the petrol pumps must be impervious to liquids"
+   }
+  ]
+ },
+ {
+  "kid": "K004",
+  "topic": "场地与体量",
+  "title": "体形系数 A/Ve",
+  "summary": "按 EnEV 2007，建筑允许的年一次能源需求由传热外围护面积 A 与采暖体积 Ve 之比（A/Ve）确定。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Depending on the ratio of heat-transmitting area A to heated building volumes V_e (A/V_e ratio), the maximum permissible annual primary energy demand will be determined according to EnEV 2007, according to the envelope area process.",
+    "page_id": "page_0486",
+    "book_page": "474",
+    "chapter": "Building services",
+    "context": "Depending on the ratio of heat-transmitting area A to heated building volumes V_e (A/V_e ratio), the maximum permissible annual primary energy demand will be determined according to EnEV 2007, according to the envelope area process. The basis for this is the monthly balance procedure (DIN EN 832) with the conditions given in DIN 4108."
+   }
+  ]
+ },
+ {
+  "kid": "K005",
+  "topic": "场地与体量",
+  "title": "退距（Abstandsfläche）",
+  "summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；建筑等级 1 和 2、地上不超过三层的建筑外墙前，3 m 深度即足够；各州 LBO 规定不同并有其他例外。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，垂直于墙面测量；坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入。退距须位于本地块内（也可延伸至公共交通、绿地或水域的中线，或延伸至依公法确定不可建造的其他地块）。檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient.",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤.",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "They may also lie on public traffic, green and water areas, but only to their centre.",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "Setback areas are the spaces between buildings and their plot boundaries.",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas).",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient.",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "Setback areas must be on the plot itself",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   }
+  ]
+ },
+ {
+  "kid": "K006",
+  "topic": "场地与体量",
+  "title": "建筑密度与容积率",
+  "summary": "土地利用条例规定的规划法建设用途度量参数：建筑密度（plot coverage ratio）为可允许的建成面积占地块面积之比，建成面积包括建筑平面面积及车库、停车位及其通道、附属面积和地块下方的地下设施；容积率（floor-area ratio）为可允许的楼层面积（所有完整楼层外轮廓尺寸，不含附属面积、阳台、凉廊、露台及允许建在退距内的构筑物）与地块面积之比。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "the plot coverage ratio determines the permissible ratio of built area on the plot (plan area of building including garages, parking places and their access, subsidiary areas... and underground facilities beneath the plot)",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "context": "Measures of building use → 1\nThe land use regulation specifies parameters for the measurement of building use in planning law: the plot coverage ratio determines the permissible ratio of built area on the plot (plan area of building including garages, parking places and their access, subsidiary areas... and underground facilities beneath the plot) and the floor-area ratio (determines the permissible ratio of storey area (external dimensions of all full floors, without subsidiary areas..., balconies, loggias, terraces and structures which are permissible inside setback areas) to the plot area.\nThe building mass number represents how many cubic metres of building mass (external dimensions of the building facilities from floor level of the lowest to the ceiling of the highest full storey, including occupied rooms in the intermediate floors with their stairwells, surrounding walls and slabs but without subsidiary rooms..., balconies, loggias, terraces and structures which are permissible inside the setback area under state law) are permissible per square metre of plot area."
+   },
+   {
+    "quote": "the floor-area ratio (determines the permissible ratio of storey area (external dimensions of all full floors, without subsidiary areas..., balconies, loggias, terraces and structures which are permissible inside setback areas) to the plot area.",
+    "page_id": "page_0075",
+    "book_page": "63",
+    "chapter": "Design process",
+    "context": "Measures of building use → 1\nThe land use regulation specifies parameters for the measurement of building use in planning law: the plot coverage ratio determines the permissible ratio of built area on the plot (plan area of building including garages, parking places and their access, subsidiary areas... and underground facilities beneath the plot) and the floor-area ratio (determines the permissible ratio of storey area (external dimensions of all full floors, without subsidiary areas..., balconies, loggias, terraces and structures which are permissible inside setback areas) to the plot area.\nThe building mass number represents how many cubic metres of building mass (external dimensions of the building facilities from floor level of the lowest to the ceiling of the highest full storey, including occupied rooms in the intermediate floors with their stairwells, surrounding walls and slabs but without subsidiary rooms..., balconies, loggias, terraces and structures which are permissible inside the setback area under state law) are permissible per square metre of plot area."
+   }
+  ]
+ },
+ {
+  "kid": "K007",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "舒适步距公式",
+  "summary": "踏步高 r 与踏面宽 t 应满足 2r + t = 59–65 cm（成人步距）。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "In order to determine a suitable pitch with the lowest energy requirement, this formula applies: 2 r + t = 59–65 cm.",
+    "page_id": "page_0133",
+    "book_page": "121",
+    "chapter": "Building components",
+    "context": "The experience of using stairs and access routes is very varied: from the creative possibilities of the most diverse residential stairs to an elaborate outside staircase, which one can stride up and down. Climbing stairs takes on average seven times the energy input as walking on the flat. From the physiological point of view, the best use of 'climbing effort' is at a stair pitch of 30° and a ratio of riser (r) to tread (t) of 17/29. The pitch is determined by the stride length of an adult (approx. 59–65 cm). In order to determine a suitable pitch with the lowest energy requirement, this formula applies: 2 r + t = 59–65 cm."
+   }
+  ]
+ },
+ {
+  "kid": "K008",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "最佳坡度与踏步比",
+  "summary": "最省力的是 30° 坡度、踏步比 17/29。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "the best use of 'climbing effort' is at a stair pitch of 30° and a ratio of riser (r) to tread (t) of 17/29.",
+    "page_id": "page_0133",
+    "book_page": "121",
+    "chapter": "Building components",
+    "context": "The experience of using stairs and access routes is very varied: from the creative possibilities of the most diverse residential stairs to an elaborate outside staircase, which one can stride up and down. Climbing stairs takes on average seven times the energy input as walking on the flat. From the physiological point of view, the best use of 'climbing effort' is at a stair pitch of 30° and a ratio of riser (r) to tread (t) of 17/29. The pitch is determined by the stride length of an adult (approx. 59–65 cm). In order to determine a suitable pitch with the lowest energy requirement, this formula applies: 2 r + t = 59–65 cm."
+   }
+  ]
+ },
+ {
+  "kid": "K009",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "每段梯段步数",
+  "summary": "必要楼梯每段 3–18 步；18 步上限是“应当”性规定。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps",
+    "page_id": "page_0132",
+    "book_page": "120",
+    "chapter": "Building components",
+    "context": "Various calculations and dimensional requirements for the construction of stairs appear in national building regulations and standards. In the UK, British Standards and the building regulations should be consulted (see Approved Document K). For workplaces, the regulations of the relevant health and safety body are to be observed. According to German standards, residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio, stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21 but legally essential stairs 1.00 m, 17/28, high-rise flats 1.25 m width. Stair width in public buildings is calculated according to the required evacuation time → p. 318 (Stadiums). Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps → 5, landing length = \\( n \\) times length of stride + 1 depth of tread (e.g. riser to tread 17/29 = \\( 1 \times 63 + 29 = 92 \\) cm or \\( 2 \times 63 + 29 = 1.55 \\) m). Doors opening into the stairwell must not obstruct the stair width. The 18-step rule is a 'should' regulation. For stairs intended to be prestigious the requirement to provide landings is mitigated."
+   },
+   {
+    "quote": "The 18-step rule is a 'should' regulation.",
+    "page_id": "page_0132",
+    "book_page": "120",
+    "chapter": "Building components",
+    "context": "Various calculations and dimensional requirements for the construction of stairs appear in national building regulations and standards. In the UK, British Standards and the building regulations should be consulted (see Approved Document K). For workplaces, the regulations of the relevant health and safety body are to be observed. According to German standards, residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio, stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21 but legally essential stairs 1.00 m, 17/28, high-rise flats 1.25 m width. Stair width in public buildings is calculated according to the required evacuation time → p. 318 (Stadiums). Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps → 5, landing length = \\( n \\) times length of stride + 1 depth of tread (e.g. riser to tread 17/29 = \\( 1 \times 63 + 29 = 92 \\) cm or \\( 2 \times 63 + 29 = 1.55 \\) m). Doors opening into the stairwell must not obstruct the stair width. The 18-step rule is a 'should' regulation. For stairs intended to be prestigious the requirement to provide landings is mitigated."
+   }
+  ]
+ },
+ {
+  "kid": "K010",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "休息平台",
+  "summary": "层高 ≥ 2.75 m 的必要楼梯必须设休息平台；平台长度 = n × 步距 + 1 个踏面。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Stairs with landings are required in legally essential stairways with a storey height of \\( \\geq 2.75 \\) m.",
+    "page_id": "page_0133",
+    "book_page": "121",
+    "chapter": "Building components",
+    "context": "6 Stairs with landings cover the surface area of single flight stairs + the landing. Stairs with landings are required in legally essential stairways with a storey height of \\( \\geq 2.75 \\) m. Landing width \\( \\geq \\) stair width."
+   },
+   {
+    "quote": "landing length = \\( n \\) times length of stride + 1 depth of tread",
+    "page_id": "page_0132",
+    "book_page": "120",
+    "chapter": "Building components",
+    "context": "Various calculations and dimensional requirements for the construction of stairs appear in national building regulations and standards. In the UK, British Standards and the building regulations should be consulted (see Approved Document K). For workplaces, the regulations of the relevant health and safety body are to be observed. According to German standards, residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio, stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21 but legally essential stairs 1.00 m, 17/28, high-rise flats 1.25 m width. Stair width in public buildings is calculated according to the required evacuation time → p. 318 (Stadiums). Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps → 5, landing length = \\( n \\) times length of stride + 1 depth of tread (e.g. riser to tread 17/29 = \\( 1 \times 63 + 29 = 92 \\) cm or \\( 2 \times 63 + 29 = 1.55 \\) m). Doors opening into the stairwell must not obstruct the stair width. The 18-step rule is a 'should' regulation. For stairs intended to be prestigious the requirement to provide landings is mitigated."
+   }
+  ]
+ },
+ {
+  "kid": "K011",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "必要楼梯宽度与踏步比",
+  "summary": "按德国标准（住宅建筑），法定必要楼梯（作为疏散路线）的可用梯宽至少 1.00 m、踏步比 17/28；对比：不超过两户的住宅楼梯可用宽度至少 0.80 m（17/28），非必要楼梯 0.50 m（21/21），高层住宅 1.25 m。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "legally essential stairs 1.00 m, 17/28",
+    "page_id": "page_0132",
+    "book_page": "120",
+    "chapter": "Building components",
+    "context": "Various calculations and dimensional requirements for the construction of stairs appear in national building regulations and standards. In the UK, British Standards and the building regulations should be consulted (see Approved Document K). For workplaces, the regulations of the relevant health and safety body are to be observed. According to German standards, residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio, stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21 but legally essential stairs 1.00 m, 17/28, high-rise flats 1.25 m width. Stair width in public buildings is calculated according to the required evacuation time → p. 318 (Stadiums). Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps → 5, landing length = \\( n \\) times length of stride + 1 depth of tread (e.g. riser to tread 17/29 = \\( 1 \times 63 + 29 = 92 \\) cm or \\( 2 \times 63 + 29 = 1.55 \\) m). Doors opening into the stairwell must not obstruct the stair width. The 18-step rule is a 'should' regulation. For stairs intended to be prestigious the requirement to provide landings is mitigated."
+   },
+   {
+    "quote": "Stair width in public buildings is calculated according to the required evacuation time",
+    "page_id": "page_0132",
+    "book_page": "120",
+    "chapter": "Building components",
+    "context": "Various calculations and dimensional requirements for the construction of stairs appear in national building regulations and standards. In the UK, British Standards and the building regulations should be consulted (see Approved Document K). For workplaces, the regulations of the relevant health and safety body are to be observed. According to German standards, residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio, stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21 but legally essential stairs 1.00 m, 17/28, high-rise flats 1.25 m width. Stair width in public buildings is calculated according to the required evacuation time → p. 318 (Stadiums). Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps → 5, landing length = \\( n \\) times length of stride + 1 depth of tread (e.g. riser to tread 17/29 = \\( 1 \times 63 + 29 = 92 \\) cm or \\( 2 \times 63 + 29 = 1.55 \\) m). Doors opening into the stairwell must not obstruct the stair width. The 18-step rule is a 'should' regulation. For stairs intended to be prestigious the requirement to provide landings is mitigated."
+   }
+  ]
+ },
+ {
+  "kid": "K012",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "两户以下住宅的楼梯",
+  "summary": "按德国标准，不超过两户的住宅，楼梯须满足可用宽度至少 0.80 m、踏步比（踢面/踏面）17/28；（同段：非法定必要楼梯可为 0.50 m、21/21，其他法定必要楼梯 1.00 m、17/28，高层住宅 1.25 m）。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio",
+    "page_id": "page_0132",
+    "book_page": "120",
+    "chapter": "Building components",
+    "context": "Various calculations and dimensional requirements for the construction of stairs appear in national building regulations and standards. In the UK, British Standards and the building regulations should be consulted (see Approved Document K). For workplaces, the regulations of the relevant health and safety body are to be observed. According to German standards, residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio, stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21 but legally essential stairs 1.00 m, 17/28, high-rise flats 1.25 m width. Stair width in public buildings is calculated according to the required evacuation time → p. 318 (Stadiums). Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps → 5, landing length = \\( n \\) times length of stride + 1 depth of tread (e.g. riser to tread 17/29 = \\( 1 \times 63 + 29 = 92 \\) cm or \\( 2 \times 63 + 29 = 1.55 \\) m). Doors opening into the stairwell must not obstruct the stair width. The 18-step rule is a 'should' regulation. For stairs intended to be prestigious the requirement to provide landings is mitigated."
+   }
+  ]
+ },
+ {
+  "kid": "K013",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "室外楼梯与办公楼梯的取向",
+  "summary": "室外楼梯宜用低踏步（12×41 至 16×30 cm）；办公楼梯和疏散楼梯应便于快速通行。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "Stairs in offices or emergency stairs should, in contrast, make it possible to change level quickly.",
+    "page_id": "page_0133",
+    "book_page": "121",
+    "chapter": "Building components",
+    "context": "For determining the dimensions and form of stairs, their overall functional and design purpose is just as important as the relationships described above. Not just changing level is important, but how the level is changed. For outside stairs, low steps are preferable, with dimensions of 12 × 41 to 16 × 30 cm. Stairs in offices or emergency stairs should, in contrast, make it possible to change level quickly. All main staircases must be enclosed in a continuous stairwell, which is designed and arranged so that, including its access routes and exit to the open air, it can safely be used for escape. Exit width should be \\( \\leq \\) stair width."
+   },
+   {
+    "quote": "For outside stairs, low steps are preferable, with dimensions of 12 × 41 to 16 × 30 cm.",
+    "page_id": "page_0133",
+    "book_page": "121",
+    "chapter": "Building components",
+    "context": "For determining the dimensions and form of stairs, their overall functional and design purpose is just as important as the relationships described above. Not just changing level is important, but how the level is changed. For outside stairs, low steps are preferable, with dimensions of 12 × 41 to 16 × 30 cm. Stairs in offices or emergency stairs should, in contrast, make it possible to change level quickly. All main staircases must be enclosed in a continuous stairwell, which is designed and arranged so that, including its access routes and exit to the open air, it can safely be used for escape. Exit width should be \\( \\leq \\) stair width."
+   }
+  ]
+ },
+ {
+  "kid": "K014",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "螺旋楼梯",
+  "summary": "螺旋楼梯作为住宅内唯一的连接楼梯，直径 ≥ 190 cm、可用宽度 80 cm。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Spiral staircases are permissible from 190 cm in diameter as the sole connecting stairs inside houses with 80 cm usable walking width",
+    "page_id": "page_0136",
+    "book_page": "124",
+    "chapter": "Building components",
+    "context": "Entrance landings have an angle of at least 60° → 4. Starting the handrail between the first and second steps works more generously → 5 – 6. Spiral staircases are permissible from 190 cm in diameter as the sole connecting stairs inside houses with 80 cm usable walking width → 2 – 3. Uniform curving of winding steps can be produced by geometrical construction. In order to achieve a regular curve of the steps, the tolerances can be larger here."
+   }
+  ]
+ },
+ {
+  "kid": "K015",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "楼座、夹层、阳台的护栏高度",
+  "summary": "楼座、夹层、阳台及剧院楼座看台须设护栏（高 h），高差 ≥ 1 m 起强制：坠落高度 < 12 m 时 h = 0.90 m；坠落高度 > 12 m 时 h = 1.10 m；工作场所坠落高度 < 12 m 时 h = 1.00 m，且楼梯井宽至少 20 cm 时，坠落高度超过 12 m 也为 1.00 m（同一正文条目所述）。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Galleries, mezzanines, balconies and circle seating in theatres must have a protective guard rail (height h), compulsory from 1 m height difference:",
+    "page_id": "page_0134",
+    "book_page": "122",
+    "chapter": "Building components",
+    "context": "Galleries, mezzanines, balconies and circle seating in theatres must have a protective guard rail (height h), compulsory from 1 m height difference:"
+   },
+   {
+    "quote": "drop <12 m, h = 0.90 m",
+    "page_id": "page_0134",
+    "book_page": "122",
+    "chapter": "Building components",
+    "context": "drop <12 m, h = 0.90 m\ndrop <12 m, h = 1.00 m for workplaces and if the stairwell is at least 20 cm wide, also for over 12 m h."
+   },
+   {
+    "quote": "drop >12 m, h = 1.10 m",
+    "page_id": "page_0134",
+    "book_page": "122",
+    "chapter": "Building components",
+    "context": "drop >12 m, h = 1.10 m"
+   },
+   {
+    "quote": "drop <12 m, h = 1.00 m for workplaces",
+    "page_id": "page_0134",
+    "book_page": "122",
+    "chapter": "Building components",
+    "context": "drop <12 m, h = 0.90 m\ndrop <12 m, h = 1.00 m for workplaces and if the stairwell is at least 20 cm wide, also for over 12 m h."
+   }
+  ]
+ },
+ {
+  "kid": "K016",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "无障碍坡道",
+  "summary": "坡道坡度 ≤ 6%、净宽 ≥ 1.20 m、两侧设扶手；起点、终点及每 6 m 设长度 ≥ 1.50 m 的平台（坡道长于 6 m 须设中间平台）。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Ramps may not have a slope of more than 6%, must be at least 1.20 m wide and have a fixed handrail with a safe grip on both sides.",
+    "page_id": "page_0037",
+    "book_page": "25",
+    "chapter": "Basics",
+    "context": "(3) Buildings, according to (2), must be accessible through an entrance with a clear opening width of at least 0.90 m without steps. An adequate movement area must be available in front of doors. Ramps may not have a slope of more than 6%, must be at least 1.20 m wide and have a fixed handrail with a safe grip on both sides. A landing is to be provided at the start and end of the ramp and also an intermediate landing every 6 m. The landings must have a length of at least 1.50 m. Stairs must have handrails on both sides, which are to be continued past landings and window openings and past the last steps. The stairs must have solid risers. Corridors and entrance halls must be at least 1.50 m wide. One toilet must also be suitable and accessible for wheelchair users; this is to be indicated by a sign."
+   },
+   {
+    "quote": "A landing is to be provided at the start and end of the ramp and also an intermediate landing every 6 m. The landings must have a length of at least 1.50 m.",
+    "page_id": "page_0037",
+    "book_page": "25",
+    "chapter": "Basics",
+    "context": "(3) Buildings, according to (2), must be accessible through an entrance with a clear opening width of at least 0.90 m without steps. An adequate movement area must be available in front of doors. Ramps may not have a slope of more than 6%, must be at least 1.20 m wide and have a fixed handrail with a safe grip on both sides. A landing is to be provided at the start and end of the ramp and also an intermediate landing every 6 m. The landings must have a length of at least 1.50 m. Stairs must have handrails on both sides, which are to be continued past landings and window openings and past the last steps. The stairs must have solid risers. Corridors and entrance halls must be at least 1.50 m wide. One toilet must also be suitable and accessible for wheelchair users; this is to be indicated by a sign."
+   },
+   {
+    "quote": "If ramps are longer than 6 m, an intermediate landing of min. 1.50 m length is required.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "context": "Ramps\nMay have a maximum slope of 6% → 3. If ramps are longer than 6 m, an intermediate landing of min. 1.50 m length is required. The ramp and the intermediate landing are both to be provided with 10 cm high wheel kerbs and handrails (diameter 3–4.5 cm) at a height of 85 cm. The clear ramp width must be min. 1.20 m. Wheel kerbs and handrails must project 30 cm horizontally into the platform area. There must be no stairs down in the extension of the ramp."
+   },
+   {
+    "quote": "The clear ramp width must be min. 1.20 m.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "context": "Ramps\nMay have a maximum slope of 6% → 3. If ramps are longer than 6 m, an intermediate landing of min. 1.50 m length is required. The ramp and the intermediate landing are both to be provided with 10 cm high wheel kerbs and handrails (diameter 3–4.5 cm) at a height of 85 cm. The clear ramp width must be min. 1.20 m. Wheel kerbs and handrails must project 30 cm horizontally into the platform area. There must be no stairs down in the extension of the ramp."
+   }
+  ]
+ },
+ {
+  "kid": "K017",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "公共建筑楼梯两侧扶手",
+  "summary": "按 MBO §50，公众可达建筑的楼梯须两侧设扶手，扶手应在休息平台和窗洞处连续，并延伸过最后一级踏步。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "Stairs must have handrails on both sides, which are to be continued past landings and window openings and past the last steps.",
+    "page_id": "page_0037",
+    "book_page": "25",
+    "chapter": "Basics",
+    "context": "(3) Buildings, according to (2), must be accessible through an entrance with a clear opening width of at least 0.90 m without steps. An adequate movement area must be available in front of doors. Ramps may not have a slope of more than 6%, must be at least 1.20 m wide and have a fixed handrail with a safe grip on both sides. A landing is to be provided at the start and end of the ramp and also an intermediate landing every 6 m. The landings must have a length of at least 1.50 m. Stairs must have handrails on both sides, which are to be continued past landings and window openings and past the last steps. The stairs must have solid risers. Corridors and entrance halls must be at least 1.50 m wide. One toilet must also be suitable and accessible for wheelchair users; this is to be indicated by a sign."
+   }
+  ]
+ },
+ {
+  "kid": "K018",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "电梯候梯区",
+  "summary": "候梯（排队）空间不得占用楼梯；单台电梯前候梯区自井道门墙至对面墙的最小可用进深（沿轿厢进深方向量）应等于轿厢进深，最小可用面积应等于轿厢进深 × 井道宽度；无障碍电梯门前活动区不得与其他交通路线和活动区重叠。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "minimum usable depth between shaft door wall and opposing wall, measured in the direction of the depth of the car, should equal the car depth",
+    "page_id": "page_0142",
+    "book_page": "130",
+    "chapter": "Building components",
+    "context": "The waiting area (lobby) in front of the lift shaft must be laid out and designed so that:\n– lift users entering and leaving the lift do not obstruct each other more than necessary, even if carrying luggage\n– the largest items to be transported by the lift (e.g. prams, wheelchairs, stretchers, coffins, furniture) can be loaded and unloaded without risk of injury to people or damage to the building or the lift, and causing the least possible obstruction to other users.\nWaiting area in front of a single lift:\n– minimum usable depth between shaft door wall and opposing wall, measured in the direction of the depth of the car, should equal the car depth → 2.\n– minimum usable area should equal the product of lift car depth and shaft width.\nWaiting area in front of adjacent lifts:\n– minimum usable depth between shaft door wall and opposing wall, measured in the direction of the depth of the car, should equal the depth of the deepest car."
+   },
+   {
+    "quote": "This area must not overlap with other traffic routes and movement areas.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "context": "Lifts\nCars of lifts must have a min. clear width of 1.10 m and a clear depth of 1.40 m. The movement area in front of the doors must be as large as the floor area of the car, but min. 1.50 m wide and 1.50 m deep → 6. This area must not overlap with other traffic routes and movement areas."
+   },
+   {
+    "quote": "Provide sufficient space for waiting and queuing → p. 130 which must not infringe on stairs.",
+    "page_id": "page_0140",
+    "book_page": "128",
+    "chapter": "Building components",
+    "context": "For all buildings, lifts should normally be positioned at the source of traffic flow. Provide sufficient space for waiting and queuing → p. 130 which must not infringe on stairs. Carefully plan the connection to the traffic routes. There are two different drive systems for lifts:\n1. Traction sheave drive (for cable lifts) → ①\n2. Hydraulic lifts → ② – ③"
+   }
+  ]
+ },
+ {
+  "kid": "K019",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "非必要楼梯",
+  "summary": "按德国标准（书中在“不超过两户的住宅”一句中列出）：建筑法规不视为必要楼梯（不作为法定疏散路线）的楼梯，可用宽度（最小）0.50 m，踏步比 21/21；相比之下必要楼梯为 1.00 m、17/28。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21",
+    "page_id": "page_0132",
+    "book_page": "120",
+    "chapter": "Building components",
+    "context": "Various calculations and dimensional requirements for the construction of stairs appear in national building regulations and standards. In the UK, British Standards and the building regulations should be consulted (see Approved Document K). For workplaces, the regulations of the relevant health and safety body are to be observed. According to German standards, residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio, stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21 but legally essential stairs 1.00 m, 17/28, high-rise flats 1.25 m width. Stair width in public buildings is calculated according to the required evacuation time → p. 318 (Stadiums). Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps → 5, landing length = \\( n \\) times length of stride + 1 depth of tread (e.g. riser to tread 17/29 = \\( 1 \times 63 + 29 = 92 \\) cm or \\( 2 \times 63 + 29 = 1.55 \\) m). Doors opening into the stairwell must not obstruct the stair width. The 18-step rule is a 'should' regulation. For stairs intended to be prestigious the requirement to provide landings is mitigated."
+   }
+  ]
+ },
+ {
+  "kid": "K020",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "休息平台宽度不小于梯段宽度",
+  "summary": "楼梯休息平台宽度不小于楼梯宽度；（同一图注）层高 ≥ 2.75 m 的法定必要楼梯须设休息平台。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Landing width \\( \\geq \\) stair width.",
+    "page_id": "page_0133",
+    "book_page": "121",
+    "chapter": "Building components",
+    "context": "6 Stairs with landings cover the surface area of single flight stairs + the landing. Stairs with landings are required in legally essential stairways with a storey height of \\( \\geq 2.75 \\) m. Landing width \\( \\geq \\) stair width."
+   }
+  ]
+ },
+ {
+  "kid": "K021",
+  "topic": "门",
+  "title": "洞口尺寸 ≠ 净通行宽度",
+  "summary": "在门框构造设计中，须考虑不同的构造厚度，即门的结构洞口尺寸与净通行尺寸之间的差异（净通行尺寸小于结构洞口）。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "difference between structural opening and clear pass-through dimension",
+    "page_id": "page_0126",
+    "book_page": "114",
+    "chapter": "Building components",
+    "context": "Frame construction\nIn the specification of a classic frame construction, in addition to the consideration of the differing constructional thicknesses (difference between structural opening and clear pass-through dimension), the different variants of rebated frame (UK) or rebated door and frame (German) have to be taken into account, together with the location of the door in the wall. For plain doors in rebated frames → 10, the quality of construction is important, because inaccuracies in the frame or in hanging the door will immediately be clearly visible. The joint between frame and wall surface can only remain in order in the long term if a shadow joint is specified, because otherwise the transition from wall to door frame will become disarranged with the first redecoration at the latest. Architraves can only solve this problem until the first redecoration."
+   }
+  ]
+ },
+ {
+  "kid": "K022",
+  "topic": "门",
+  "title": "住宅门的常规宽度",
+  "summary": "住宅中单扇门的净开启宽度：房门约 80 cm，浴室/WC 门约 70 cm，户门 ≥ 90 cm，入户大门最大 115 cm。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "room doors      approx. 80 cm",
+    "page_id": "page_0125",
+    "book_page": "113",
+    "chapter": "Building components",
+    "context": "single-leaf doors\nroom doors      approx. 80 cm\nbath, WC        approx. 70 cm\nentrance doors\n    to flats      min. 90 cm\nfront doors      up to 115 cm"
+   },
+   {
+    "quote": "entrance doors\n    to flats      min. 90 cm\nfront doors      up to 115 cm",
+    "page_id": "page_0125",
+    "book_page": "113",
+    "chapter": "Building components",
+    "context": "single-leaf doors\nroom doors      approx. 80 cm\nbath, WC        approx. 70 cm\nentrance doors\n    to flats      min. 90 cm\nfront doors      up to 115 cm"
+   },
+   {
+    "quote": "bath, WC        approx. 70 cm",
+    "page_id": "page_0125",
+    "book_page": "113",
+    "chapter": "Building components",
+    "context": "single-leaf doors\nroom doors      approx. 80 cm\nbath, WC        approx. 70 cm\nentrance doors\n    to flats      min. 90 cm\nfront doors      up to 115 cm"
+   }
+  ]
+ },
+ {
+  "kid": "K023",
+  "topic": "门",
+  "title": "内门净高",
+  "summary": "内门净开启高度最小 2.10 m。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "clear opening height of internal doors\nminimum\t210 cm",
+    "page_id": "page_0125",
+    "book_page": "113",
+    "chapter": "Building components",
+    "context": "clear opening height of internal doors\nminimum\t210 cm\nbetter\t210-225 cm"
+   }
+  ]
+ },
+ {
+  "kid": "K024",
+  "topic": "门",
+  "title": "紧急出口的门型",
+  "summary": "紧急出口处不允许使用推拉门和旋转门，因为危险情况下它们可能堵塞出口；旋转门通行能力较低，高峰时门扇可折叠推到一侧（图示有带附加紧急出口的旋转门示例）。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Sliding doors and revolving doors are not permissible at emergency exits, which they can block in circumstances of danger.",
+    "page_id": "page_0125",
+    "book_page": "113",
+    "chapter": "Building components",
+    "context": "Sliding doors and revolving doors are not permissible at emergency exits, which they can block in circumstances of danger."
+   },
+   {
+    "quote": "Because revolving doors can cope with relatively little through traffic, the door leaves can be folded at peak times and pushed to the side.",
+    "page_id": "page_0022",
+    "book_page": "10",
+    "chapter": "Basics",
+    "context": "Revolving doors replace wind lobbies → 21 – 23 and offer an opening without draughts. Because revolving doors can cope with relatively little through traffic, the door leaves can be folded at peak times and pushed to the side."
+   },
+   {
+    "quote": "Revolving door with additional emergency exits",
+    "page_id": "page_0127",
+    "book_page": "115",
+    "chapter": "Building components",
+    "context": "6 Revolving door with additional emergency exits"
+   }
+  ]
+ },
+ {
+  "kid": "K025",
+  "topic": "门",
+  "title": "电梯入户的户门",
+  "summary": "按 MBO，经电梯到达的住户户门须有 90 cm 净开启宽度（供轮椅通行），此时门高宜 ≥ 2.10 m。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "front doors of flats which are accessed by lifts must have a clear opening width of 90 cm (for wheelchair access). The door height in this case should be at least 2.10 m.",
+    "page_id": "page_0158",
+    "book_page": "146",
+    "chapter": "Residential buildings",
+    "context": "According to the MBO, front doors of flats which are accessed by lifts must have a clear opening width of 90 cm (for wheelchair access). The door height in this case should be at least 2.10 m. Door thresholds are to be avoided. The entrance door must also comply with acoustic and fire protection requirements."
+   }
+  ]
+ },
+ {
+  "kid": "K026",
+  "topic": "无障碍",
+  "title": "无障碍门净宽",
+  "summary": "无障碍公共建筑中，门净通行宽度 ≥ 0.90 m；按 MBO §50，公众可达建筑须至少能经一个净开口宽度 ≥ 0.90 m 且无台阶的入口进入。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Clear passage width of doors \\( \\geq 0.90 \\) m",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "context": "Doors\nClear passage width of doors \\( \\geq 0.90 \\) m \\( \\rightarrow \\) \\( ① + ② \\). Doors to toilets, showers and changing rooms must open outward."
+   },
+   {
+    "quote": "must be accessible through an entrance with a clear opening width of at least 0.90 m without steps.",
+    "page_id": "page_0037",
+    "book_page": "25",
+    "chapter": "Basics",
+    "context": "(3) Buildings, according to (2), must be accessible through an entrance with a clear opening width of at least 0.90 m without steps. An adequate movement area must be available in front of doors. Ramps may not have a slope of more than 6%, must be at least 1.20 m wide and have a fixed handrail with a safe grip on both sides. A landing is to be provided at the start and end of the ramp and also an intermediate landing every 6 m. The landings must have a length of at least 1.50 m. Stairs must have handrails on both sides, which are to be continued past landings and window openings and past the last steps. The stairs must have solid risers. Corridors and entrance halls must be at least 1.50 m wide. One toilet must also be suitable and accessible for wheelchair users; this is to be indicated by a sign."
+   }
+  ]
+ },
+ {
+  "kid": "K027",
+  "topic": "无障碍",
+  "title": "无障碍：无台阶通达与公众可达建筑的适用范围",
+  "summary": "按无障碍原则设计的建筑，所有楼层须无台阶可达（即通过电梯或坡道）。另按 MBO §50，公众可达建筑面向公众的部分须能供残障人士、老人和带小孩的人无需他人帮助按用途进出使用，尤其适用于文化、教育、体育、休闲和医疗设施，办公、行政建筑和法院，商业和餐饮场所，停车场、车库和厕所。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "This requirement applies notably to cultural, educational, sport, leisure and health facilities, offices, administration buildings and courts, sales and catering establishments, parking, garages and toilets.",
+    "page_id": "page_0037",
+    "book_page": "25",
+    "chapter": "Basics",
+    "context": "(2) Buildings which are publicly accessible, must in their parts serving the general public be capable of being accessed and used, according to their purpose, by disabled people, old people and people with small children, without outside help. This requirement applies notably to cultural, educational, sport, leisure and health facilities, offices, administration buildings and courts, sales and catering establishments, parking, garages and toilets."
+   },
+   {
+    "quote": "All levels of buildings designed in accordance with the principles of accessibility must be accessible without steps, i.e. using a lift or a ramp.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "context": "Accessibility without steps\nAll levels of buildings designed in accordance with the principles of accessibility must be accessible without steps, i.e. using a lift or a ramp."
+   },
+   {
+    "quote": "This requirement applies notably to cultural, educational, sport, leisure and health facilities, offices, administration buildings and courts",
+    "page_id": "page_0037",
+    "book_page": "25",
+    "chapter": "Basics",
+    "context": "(2) Buildings which are publicly accessible, must in their parts serving the general public be capable of being accessed and used, according to their purpose, by disabled people, old people and people with small children, without outside help. This requirement applies notably to cultural, educational, sport, leisure and health facilities, offices, administration buildings and courts, sales and catering establishments, parking, garages and toilets."
+   }
+  ]
+ },
+ {
+  "kid": "K028",
+  "topic": "无障碍",
+  "title": "轮椅活动空间",
+  "summary": "轮椅转身：每个房间宜提供至少 1.50 m 深 × 1.50 m 宽的转身空间。对于公众可达建筑（第(2)条所指，如文化、教育、办公、餐饮等建筑），走廊和门厅宽度须 ≥ 1.50 m。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Corridors and entrance halls must be at least 1.50 m wide.",
+    "page_id": "page_0037",
+    "book_page": "25",
+    "chapter": "Basics",
+    "context": "(3) Buildings, according to (2), must be accessible through an entrance with a clear opening width of at least 0.90 m without steps. An adequate movement area must be available in front of doors. Ramps may not have a slope of more than 6%, must be at least 1.20 m wide and have a fixed handrail with a safe grip on both sides. A landing is to be provided at the start and end of the ramp and also an intermediate landing every 6 m. The landings must have a length of at least 1.50 m. Stairs must have handrails on both sides, which are to be continued past landings and window openings and past the last steps. The stairs must have solid risers. Corridors and entrance halls must be at least 1.50 m wide. One toilet must also be suitable and accessible for wheelchair users; this is to be indicated by a sign."
+   },
+   {
+    "quote": "A depth and width of at least 1.50 m should be provided in every room for turning.",
+    "page_id": "page_0033",
+    "book_page": "21",
+    "chapter": "Basics",
+    "context": "Movement areas\nAre those necessary for moving a wheelchair and are to be designed according to the minimum space requirement of a wheelchair user. The wheelchair → ① – ④ and the movement area for the person → ⑨ – ⑫ provide the modules for this. The dimensions of the movement area are 0.90–1.80 m and may overlap – except in front of lift doors. A depth and width of at least 1.50 m should be provided in every room for turning. (More information on movement areas is found on the following pages.)"
+   }
+  ]
+ },
+ {
+  "kid": "K029",
+  "topic": "无障碍",
+  "title": "无障碍卫生间",
+  "summary": "无障碍公共建筑中，所有卫生设施内须至少设一个供轮椅使用者使用的厕所（坐高宜为 48 cm）；厕所、淋浴间和更衣间的门须向外开。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Doors to toilets, showers and changing rooms must open outward.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "context": "Doors\nClear passage width of doors \\( \\geq 0.90 \\) m \\( \\rightarrow \\) \\( ① + ② \\). Doors to toilets, showers and changing rooms must open outward."
+   },
+   {
+    "quote": "At least one toilet must be provided for wheelchair users in all sanitary facilities.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "context": "Sanitary facilities\nAt least one toilet must be provided for wheelchair users in all sanitary facilities. The seat height should be 48 cm → 8."
+   }
+  ]
+ },
+ {
+  "kid": "K030",
+  "topic": "无障碍",
+  "title": "无障碍电梯",
+  "summary": "无障碍建筑中，电梯轿厢净宽须 ≥ 1.10 m、净深 ≥ 1.40 m；门前活动区须至少与轿厢地面面积相同，且不小于 1.50 m 宽 × 1.50 m 深，并不得与其他交通路线和活动区重叠。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Cars of lifts must have a min. clear width of 1.10 m and a clear depth of 1.40 m.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "context": "Lifts\nCars of lifts must have a min. clear width of 1.10 m and a clear depth of 1.40 m. The movement area in front of the doors must be as large as the floor area of the car, but min. 1.50 m wide and 1.50 m deep → 6. This area must not overlap with other traffic routes and movement areas."
+   },
+   {
+    "quote": "The movement area in front of the doors must be as large as the floor area of the car, but min. 1.50 m wide and 1.50 m deep",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "context": "Lifts\nCars of lifts must have a min. clear width of 1.10 m and a clear depth of 1.40 m. The movement area in front of the doors must be as large as the floor area of the car, but min. 1.50 m wide and 1.50 m deep → 6. This area must not overlap with other traffic routes and movement areas."
+   }
+  ]
+ },
+ {
+  "kid": "K031",
+  "topic": "无障碍",
+  "title": "轮椅停车位",
+  "summary": "无障碍设计中，停车场内轮椅使用者车辆的长边旁须留出深度至少 1.50 m 的活动区（同样适用于轮椅停放处前、治疗设施前）。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "min. 1.50 m deep ...\nin front of therapy facilities (e.g. bath, couch), in front of wheelchair parking places, next to the long side of the vehicle of a wheelchair user in car parks",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "context": "min. 1.50 m deep ...\nin front of therapy facilities (e.g. bath, couch), in front of wheelchair parking places, next to the long side of the vehicle of a wheelchair user in car parks → p. 23 ⑩."
+   }
+  ]
+ },
+ {
+  "kid": "K032",
+  "topic": "无障碍",
+  "title": "楼梯起止处活动区",
+  "summary": "无障碍公共建筑中，上下楼梯旁的活动区宽度至少 1.50 m，首级踏步的踏面不计入活动区。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The movement area next to the stairs going up and down must be min. 1.50 m wide; the tread of the first step is not to be included in the calculation of the movement area",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "context": "Stairs. The movement area next to the stairs going up and down must be min. 1.50 m wide; the tread of the first step is not to be included in the calculation of the movement area → 7."
+   }
+  ]
+ },
+ {
+  "kid": "K033",
+  "topic": "无障碍",
+  "title": "长走廊轮椅会车位",
+  "summary": "长于 15 m 的走廊和通道须设宽、深均 ≥ 1.80 m 的两轮椅会车位。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Corridors and routes longer than 15 m must have a passing place for two wheelchair users of at least 1.80 m width and depth.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "context": "Corridors and meeting areas\nCorridors and routes longer than 15 m must have a passing place for two wheelchair users of at least 1.80 m width and depth."
+   }
+  ]
+ },
+ {
+  "kid": "K034",
+  "topic": "无障碍",
+  "title": "多户住宅的无障碍楼层",
+  "summary": "超过两户的住宅，须有一层的住户无障碍可达，其起居室、卧室、一个厕所、一个浴室和厨房须可供轮椅使用。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "In buildings with more than two flats, the flats on one floor must be accessible.",
+    "page_id": "page_0037",
+    "book_page": "25",
+    "chapter": "Basics",
+    "context": "(1) In buildings with more than two flats, the flats on one floor must be accessible. In these flats, the living rooms and bedrooms, one toilet, one bathroom and the kitchen or kitchenette must be accessible with a wheelchair."
+   },
+   {
+    "quote": "In buildings with more than two flats, the flats on one floor must be accessible. In these flats, the living rooms and bedrooms, one toilet, one bathroom and the kitchen or kitchenette must be accessible with a wheelchair.",
+    "page_id": "page_0037",
+    "book_page": "25",
+    "chapter": "Basics",
+    "context": "(1) In buildings with more than two flats, the flats on one floor must be accessible. In these flats, the living rooms and bedrooms, one toilet, one bathroom and the kitchen or kitchenette must be accessible with a wheelchair."
+   }
+  ]
+ },
+ {
+  "kid": "K035",
+  "topic": "无障碍",
+  "title": "无障碍住宅卫浴",
+  "summary": "WC 一侧须留宽 ≥ 95 cm、深 ≥ 70 cm 的活动区，另一侧距墙或家具 ≥ 30 cm；浴室须设轮椅可用的淋浴，淋浴区及 WC、洗手台前须有 ≥ 1.50 × 1.50 m 活动区。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The movement area to the right or left of the WC must be at least 95 cm wide and 70 cm deep. From one side of the WC towards the wall, or furniture, there must be a distance of min. 30 cm",
+    "page_id": "page_0035",
+    "book_page": "23",
+    "chapter": "Basics",
+    "context": "Bathroom\nThe bathroom is to be provided with a wheelchair-accessible shower. The later installation of a bath should be possible near the shower. The movement area to the right or left of the WC must be at least 95 cm wide and 70 cm deep. From one side of the WC towards the wall, or furniture, there must be a distance of min. 30 cm → 2 – 4. No bathroom doors may open inwards."
+   },
+   {
+    "quote": "The bathroom is to be provided with a wheelchair-accessible shower.",
+    "page_id": "page_0035",
+    "book_page": "23",
+    "chapter": "Basics",
+    "context": "Bathroom\nThe bathroom is to be provided with a wheelchair-accessible shower. The later installation of a bath should be possible near the shower. The movement area to the right or left of the WC must be at least 95 cm wide and 70 cm deep. From one side of the WC towards the wall, or furniture, there must be a distance of min. 30 cm → 2 – 4. No bathroom doors may open inwards."
+   },
+   {
+    "quote": "min. 1.50 m wide and min. 1.50 m deep...\na turning place in every room (excepting small rooms, which the wheelchair user can use by moving backwards and forwards), the shower → ① + ④, in front of the WC and vanity unit",
+    "page_id": "page_0035",
+    "book_page": "23",
+    "chapter": "Basics",
+    "context": "min. 1.50 m wide and min. 1.50 m deep...\na turning place in every room (excepting small rooms, which the wheelchair user can use by moving backwards and forwards), the shower → ① + ④, in front of the WC and vanity unit → ② – ④, in an outside seating area, in front of lift shaft doors, at the start and end of a ramp and in front of the intake of a rubbish chute."
+   }
+  ]
+ },
+ {
+  "kid": "K036",
+  "topic": "无障碍",
+  "title": "轮椅住宅的起居室",
+  "summary": "含就餐区的起居室最小面积：1 人 22 m²、2–4 人 24 m²、5 人 26 m²、6 人 28 m²；1–2 人户最小房间宽度 3.75 m。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "For a living room with an eating area, the minimum floor area should be: in a flat for one person 22 m², for 2–4 people 24 m², for five people 26 m² and for six people 28 m²; minimum room width 3.75 m (1–2 person household).",
+    "page_id": "page_0036",
+    "book_page": "24",
+    "chapter": "Basics",
+    "context": "Living area\nAdequate freedom of movement for wheelchair users is important in living rooms. There should also be room for at least two further wheelchair users as visitors. For a living room with an eating area, the minimum floor area should be: in a flat for one person 22 m², for 2–4 people 24 m², for five people 26 m² and for six people 28 m²; minimum room width 3.75 m (1–2 person household)."
+   }
+  ]
+ },
+ {
+  "kid": "K037",
+  "topic": "无障碍",
+  "title": "无障碍住宅的户内活动区宽度",
+  "summary": "（无障碍住宅）以下活动区须至少 1.20 m 宽：轮椅使用者侧向接近的家具旁、非轮椅使用者床的进入侧、户内墙与墙之间、操作设备旁、坡道两侧护轮缘之间以及户内通道。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "min. 1.20 m wide…\nalong furniture which the wheelchair user approaches from the side, along the access side of a non-wheelchair user’s bed → 9, between walls within the dwelling",
+    "page_id": "page_0035",
+    "book_page": "23",
+    "chapter": "Basics",
+    "context": "min. 1.20 m wide…\nalong furniture which the wheelchair user approaches from the side, along the access side of a non-wheelchair user’s bed → 9, between walls within the dwelling, next to operated equipment → p. 22 9, between wheel kerbs of a ramp → p. 22 3 and on routes within a house."
+   }
+  ]
+ },
+ {
+  "kid": "K038",
+  "topic": "疏散与防火",
+  "title": "疏散距离",
+  "summary": "居室和地下室内任一点到必要楼梯或出口 ≤ 35 m。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Every location in inhabited rooms and basements must be \\( \\leq 35 \\) m from the stairwell of at least one legally essential stairway or exit.",
+    "page_id": "page_0133",
+    "book_page": "121",
+    "chapter": "Building components",
+    "context": "Every location in inhabited rooms and basements must be \\( \\leq 35 \\) m from the stairwell of at least one legally essential stairway or exit. If a number of stairways are necessary, then they should be arranged so that the escape route is as short as possible. Any openings from stairwells into cellars, uninhabited roof spaces, workshops, shops, storerooms, and similar must be fitted with self-closing doors with a fire resistance rating of 30 minutes."
+   }
+  ]
+ },
+ {
+  "kid": "K039",
+  "topic": "疏散与防火",
+  "title": "两条独立疏散路线",
+  "summary": "含至少一个居室的住宅或商业单元，每层须有至少两条通往室外的独立疏散路线；单元不在地面层时，第一条须经必要楼梯，第二条可经第二部必要楼梯或消防队救援设备可达的位置；经烟火无法侵入的安全楼梯间疏散时不需要第二疏散路线。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Residential or commercial units with at least one occupied room must have at least two independent escape routes leading to the open air on each storey.",
+    "page_id": "page_0523",
+    "book_page": "511",
+    "chapter": "Building services",
+    "context": "Escape routes\nResidential or commercial units with at least one occupied room must have at least two independent escape routes leading to the open air on each storey. (If the units are not at ground level, the first escape route must be via a legally essential staircase, if required in its own (legally essential) stairwell, and the second escape route via a second essential staircase or a single unified location which is accessible with the rescue equipment of the local fire brigade → 3. From every location in an occupied room, there must be within max. 35 m at least one exit into a legally essential stairwell or into the open air → 4. A second escape route is not required if escape is via a safety stairwell → 5, into which fire and smoke cannot penetrate due to the provision of 'fire balconies' or safety vestibules with forced ventilation → p. 246 High-rise buildings."
+   },
+   {
+    "quote": "the second escape route via a second essential staircase or a single unified location which is accessible with the rescue equipment of the local fire brigade",
+    "page_id": "page_0523",
+    "book_page": "511",
+    "chapter": "Building services",
+    "context": "Escape routes\nResidential or commercial units with at least one occupied room must have at least two independent escape routes leading to the open air on each storey. (If the units are not at ground level, the first escape route must be via a legally essential staircase, if required in its own (legally essential) stairwell, and the second escape route via a second essential staircase or a single unified location which is accessible with the rescue equipment of the local fire brigade → 3. From every location in an occupied room, there must be within max. 35 m at least one exit into a legally essential stairwell or into the open air → 4. A second escape route is not required if escape is via a safety stairwell → 5, into which fire and smoke cannot penetrate due to the provision of 'fire balconies' or safety vestibules with forced ventilation → p. 246 High-rise buildings."
+   }
+  ]
+ },
+ {
+  "kid": "K040",
+  "topic": "疏散与防火",
+  "title": "疏散窗",
+  "summary": "作为疏散路线的窗，净开口 ≥ 0.9 × 1.2 m，窗台高 ≤ 1.2 m。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "If the window serves as an escape route, it must have a clear opening of at least 0.9 × 1.2 m and a sill height of max. 1.2 m above floor level.",
+    "page_id": "page_0109",
+    "book_page": "97",
+    "chapter": "Building components",
+    "context": "The window, as an element built into the wall, has essential functions apart from just closing the opening. It controls the level of natural lighting, the supply and extraction of air to and from the room, and the view out for connection with the world. These functions can also be fulfilled by separate elements: overhead lights, ventilation flaps and shop windows, respectively.\nThe size and location of windows in rooms, in addition to the requirements under building regulations and the rules for daylight in interiors (see Daylight → pp. 488 ff.), are determined above all by architectural considerations. Their external impact has a decisive influence on the appearance of the façade. Important factors are: the location in the wall, with internal windows emphasising the wall depth and external windows allowing the wall to present as a surface; the proportions of width to height; the ratio of construction thickness to glass area (visible frame, casements and possibly glazing bar widths); and the relationship to other façade elements (which is often neglected when replacing windows).\nIn the interior, windows are responsible for light direction, which is essential for the architectural effect of a room. Most decisive is the location on plan, which may have to be supplemented by sun shading equipment or light directing glass. The type of opening determines the functional quality as a ventilation element. How far do the casements open into the room? Is the window sill still usable when the window is open? (Tilted windows are not sufficient for through ventilation! They ensure only the slow cooling of a room.) There may also be specific requirements for fire protection or for resistance against break-in or damage. Resistance classes → pp. 107, 118. If the window serves as an escape route, it must have a clear opening of at least 0.9 × 1.2 m and a sill height of max. 1.2 m above floor level.\nIn the Netherlands, regulations stipulate the sizes of windows in relation to the angle of incidence of the light.\n\nRefurbishment"
+   }
+  ]
+ },
+ {
+  "kid": "K041",
+  "topic": "疏散与防火",
+  "title": "出口宽度（按人数）",
+  "summary": "紧急出口宽度每 150 人 1.0 m（餐饮章节）。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Emergency exits 1.0 m wide per 150 people using them.",
+    "page_id": "page_0187",
+    "book_page": "175",
+    "chapter": "Accommodation",
+    "context": "Before any restaurant or other catering establishment is built, the organisational processes must be determined with the operator. The following have to be decided: what food will be on the menu, what quality and quantity will be on offer? Which service system will be used, whether à la carte with fixed or changing daily menus, plate or table service, self-service or mixed? For design purposes, it is important to know which target clientele is aimed for. The site itself will help to determine the most suitable type of restaurant. Appoint specialists in: kitchen equipment, electrical, heating, ventilation and sanitary design.\n\nThe main room in a restaurant is the dining room. Its furniture and fittings should be appropriate for the business. A number of additional tables or chairs should be available, so that table groupings are flexible. Provide special tables for regulars. Side rooms and conference rooms should always be flexibly furnished in order to permit variations. A food bar with fixed stools can be arranged for customers in a hurry. Larger dining rooms should be split into zones. Kitchen, side rooms, toilets and sanitary installations should be grouped around the dining room, also in the basement → 8.\n\nColumns in a dining room are best located in the centre of a group of tables or at the corners of the tables → 3. The ceiling heights of dining areas with a floor area ≤50 m² = 2.50 m, > 50 m² = 2.75 m and >100 m² ≥3.00 m; above or below galleries ≥2.50 m.\n\nEmergency exits 1.0 m wide per 150 people using them. Minimum clear width of aisles in restaurants 0.80 m, doors 0.90 m → 9.\n\nToilets in public houses, bars or restaurants: Stairs to toilets, wash, staff and storage rooms, usable width ≤1.10 m. Clear walk-through height ≤2.10 m measured vertically. Window area ≤1/10 of the floor area of a restaurant."
+   }
+  ]
+ },
+ {
+  "kid": "K042",
+  "topic": "疏散与防火",
+  "title": "防火分区与防火墙",
+  "summary": "按 MBO，较大建筑须用防火墙划分为不超过 40 m 的防火分区；防火墙须防火、受火时结构稳定并由不燃材料构成（F 90 A）。防火墙上开口原则上不允许，建筑内部的防火墙可例外允许开口，但须设自闭式防火门（T 90 门或闸门）。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "to sub-divide larger buildings into fire compartments of not more than 40 m.",
+    "page_id": "page_0525",
+    "book_page": "513",
+    "chapter": "Building services",
+    "context": "According to the MBO, fire compartment walls are to be constructed in the following locations: the external walls of buildings, when the wall is less than 2.50 m from the plot boundary; between terraced buildings on the same plot boundary; and to sub-divide larger buildings into fire compartments of not more than 40 m."
+   },
+   {
+    "quote": "Fire compartment walls must be fireproof, structurally stable when exposed to fire and consist of non-combustible materials (F 90A).",
+    "page_id": "page_0525",
+    "book_page": "513",
+    "chapter": "Building services",
+    "context": "Fire compartment walls must be fireproof, structurally stable when exposed to fire and consist of non-combustible materials (F 90A). They must normally extend continuously from the foundations to min. 30 cm above the roof (min. 50 cm for a soft roof covering and in industrial buildings) or be capped with a projecting slab → 6. For low buildings, they must continue to immediately under the roof covering. Cables and pipes which penetrate fire compartment walls must have a 90 min fire resistance class. Openings in fire compartment walls are generally impermissible. They can be allowed through fire compartment walls within buildings and then have to be provided with fireproof self-closing doors (T 90 door or gate) → p. 512 2."
+   },
+   {
+    "quote": "Openings in fire compartment walls are generally impermissible. They can be allowed through fire compartment walls within buildings and then have to be provided with fireproof self-closing doors (T 90 door or gate)",
+    "page_id": "page_0525",
+    "book_page": "513",
+    "chapter": "Building services",
+    "context": "Fire compartment walls must be fireproof, structurally stable when exposed to fire and consist of non-combustible materials (F 90A). They must normally extend continuously from the foundations to min. 30 cm above the roof (min. 50 cm for a soft roof covering and in industrial buildings) or be capped with a projecting slab → 6. For low buildings, they must continue to immediately under the roof covering. Cables and pipes which penetrate fire compartment walls must have a 90 min fire resistance class. Openings in fire compartment walls are generally impermissible. They can be allowed through fire compartment walls within buildings and then have to be provided with fireproof self-closing doors (T 90 door or gate) → p. 512 2."
+   }
+  ]
+ },
+ {
+  "kid": "K043",
+  "topic": "疏散与防火",
+  "title": "主楼梯须设在连续封闭的楼梯间",
+  "summary": "主楼梯须设在连续封闭的楼梯间内，连同其通道和通向室外的出口都须能安全用于疏散。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "All main staircases must be enclosed in a continuous stairwell, which is designed and arranged so that, including its access routes and exit to the open air, it can safely be used for escape.",
+    "page_id": "page_0133",
+    "book_page": "121",
+    "chapter": "Building components",
+    "context": "For determining the dimensions and form of stairs, their overall functional and design purpose is just as important as the relationships described above. Not just changing level is important, but how the level is changed. For outside stairs, low steps are preferable, with dimensions of 12 × 41 to 16 × 30 cm. Stairs in offices or emergency stairs should, in contrast, make it possible to change level quickly. All main staircases must be enclosed in a continuous stairwell, which is designed and arranged so that, including its access routes and exit to the open air, it can safely be used for escape. Exit width should be \\( \\leq \\) stair width."
+   }
+  ]
+ },
+ {
+  "kid": "K044",
+  "topic": "疏散与防火",
+  "title": "疏散走廊侧墙 F 30",
+  "summary": "作为疏散路线侧墙的走廊墙须为阻燃构造（F 30）；其上的采光开口是 G 级玻璃的典型应用（仅在无更高防火要求处允许），此时玻璃下沿须离地 ≥ 1.80 m。非承重分隔墙可做成不同品质的龙骨隔墙。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "A typical area of application for G-glazing is the openings for lighting installed in corridor walls, which have to be constructed fire-retarding (F 30) as the side walls of escape routes.",
+    "page_id": "page_0528",
+    "book_page": "516",
+    "chapter": "Building services",
+    "context": "Scope of application\nUnder building regulations, G-glazing may be installed only where there are no higher requirements for fire protection reasons. A typical area of application for G-glazing is the openings for lighting installed in corridor walls, which have to be constructed fire-retarding (F 30) as the side walls of escape routes. The lower edge of the glass must in this case be at least 1.80 m above floor level, so that in case of fire the corridor remains usable in the radiation shadow."
+   },
+   {
+    "quote": "Non-load-bearing separating walls can be constructed as stud partitions of various qualities",
+    "page_id": "page_0526",
+    "book_page": "514",
+    "chapter": "Building services",
+    "context": "Construction\nClassified materials for the construction of conventional massive load-bearing or non-load-bearing walls are shown in → 8. Steel columns and steel supporting beams are today normally fitted with box-shaped claddings of fire protection boards, whose thickness depends on the profile dimensions and the required fire resistance class → 1 – 3. There are also non-foaming coatings (to F 90) and composite constructions with concrete filling, if necessary with additional reinforcement (F 60). Non-load-bearing separating walls can be constructed as stud partitions of various qualities → 4 – 6."
+   }
+  ]
+ },
+ {
+  "kid": "K045",
+  "topic": "疏散与防火",
+  "title": "高层建筑的疏散走道",
+  "summary": "高层建筑疏散通道宽 ≥ 1.25 m，宜双向通往楼梯；房间任一点步行距离 ≤ 25 m；双向走廊 ≤ 40 m，每 20 m 设防烟自闭门；单向尽端走廊 ≤ 10 m（另有第二疏散路线时 ≤ 20 m）。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Escape routes are min. 1.25 m wide and should if possible lead in two directions, to each staircase. The maximum walking distance from each point of an occupied room may not exceed 25 m. Corridors with two escape directions may be max. 40 m long. After 20 m, a smoke-proof self-closing door must be installed. Branch corridors with only one escape direction may be max. 10 m long. If a second escape route (e.g. an escape balcony) is available, max. 20 m.",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "Escape routes\nEscape routes are min. 1.25 m wide and should if possible lead in two directions, to each staircase. The maximum walking distance from each point of an occupied room may not exceed 25 m. Corridors with two escape directions may be max. 40 m long. After 20 m, a smoke-proof self-closing door must be installed. Branch corridors with only one escape direction may be max. 10 m long. If a second escape route (e.g. an escape balcony) is available, max. 20 m."
+   }
+  ]
+ }
+]

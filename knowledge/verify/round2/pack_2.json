@@ -1,0 +1,1618 @@
+[
+ {
+  "kid": "K02",
+  "topic": "场地与体量",
+  "title": "私宅停车",
+  "summary": "私宅可减少停车面积；车棚比车库更经济，建筑物理上也更有利。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "A reduction in the parking area is possible for private houses.",
+    "page_id": "page_0178",
+    "book_page": "166",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Space requirement → 7 – 12. A reduction in the parking area is possible for private houses. The tendency of modern cars to get larger (including in height) should be taken into account."
+   },
+   {
+    "quote": "In addition to garages, roofed-over parking places (carports) represent a cheaper, more beneficial in terms of building physics",
+    "page_id": "page_0178",
+    "book_page": "166",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "In addition to garages, roofed-over parking places (carports) represent a cheaper, more beneficial in terms of building physics (no condensation in cold cars in the winter!) and space-saving possibility for protecting cars adequately from the weather (a close wall on the weather side is a good idea). A combination with enclosed storerooms (for bicycles etc.) is to be recommended → 11. Carports are particularly suitable for communal parking places → 12."
+   }
+  ]
+ },
+ {
+  "kid": "K05",
+  "topic": "场地与体量",
+  "title": "退距（Abstandsfläche）",
+  "summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；各州 LBO 规定不同。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入；退距须位于本地块内；檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。",
+  "priority": 3,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient.",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤.",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they: – take up altogether less than one third of the width of the outside wall – project by a max. 1.50 m in front of the outside wall – stay at least 2 m distant from the opposing plot boundary",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "Setback areas are the spaces between buildings and their plot boundaries.",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas).",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "Setback areas must be on the plot itself",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   },
+   {
+    "quote": "The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height",
+    "page_id": "page_0076",
+    "book_page": "64",
+    "chapter": "Design process",
+    "subheadings": [
+     "DESIGN AND CONSTRUCTION MANAGEMENT"
+    ],
+    "source": "body",
+    "context": "Setback areas are the spaces between buildings and their plot boundaries.\n1. Setback areas next to above-ground buildings have to be kept free in front of the external walls of buildings → ① – ②. This also applies to other facilities with effects similar to buildings, which are opposite buildings and plot boundaries. Setback areas are not required in front of external walls which are built on plot boundaries, if they may be or must be built on the boundary according to planning regulations → ②.\n2. Setback areas must be on the plot itself → ① – ②. They may also lie on public traffic, green and water areas, but only to their centre. Setback areas and spaces may wholly or partly extend onto other plots, if it is certain according to public law that they cannot be built on, though they may not be deducted from the other plot’s setback areas.\n3. Setback areas may not overlap unless:\n– the external walls are at an angle of more than 75° to each other → ③\n– they are external walls facing a garden courtyard in dwellings of building classes 1 and 2 → ④\n– buildings and other built facilities are permissible in the setback areas.\n4. The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤. The same applies to roof projections → ⑦.\n5. The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient. In some LBOs, there are further exceptions (e.g. narrow side privilege).\n6. Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary\n7. The following are permissible inside the setback area of a building and do not have their own setback areas (even if they are built on the plot boundary or on the building) → ⑨ – ⑩:\n– garages and buildings without occupied rooms or fireplaces with an average wall height of up to 3 m and a total length per plot boundary of 9 m → ⑨\n– solar energy systems independent of the building with a height of up to 3 m and a total length per plot boundary of 9 m\n– retaining walls and closed fencing in commercial and industrial areas, outside these areas with a height of up to 2 m → ⑩. The depth of setback areas opposite plot boundaries but not stop"
+   }
+  ]
+ },
+ {
+  "kid": "K08",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "最佳坡度与踏步比",
+  "summary": "最省力的是 30° 坡度、踏步比 17/29。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "the best use of 'climbing effort' is at a stair pitch of 30° and a ratio of riser (r) to tread (t) of 17/29.",
+    "page_id": "page_0133",
+    "book_page": "121",
+    "chapter": "Building components",
+    "subheadings": [
+     "STAIRS"
+    ],
+    "source": "body",
+    "context": "The experience of using stairs and access routes is very varied: from the creative possibilities of the most diverse residential stairs to an elaborate outside staircase, which one can stride up and down. Climbing stairs takes on average seven times the energy input as walking on the flat. From the physiological point of view, the best use of 'climbing effort' is at a stair pitch of 30° and a ratio of riser (r) to tread (t) of 17/29. The pitch is determined by the stride length of an adult (approx. 59–65 cm). In order to determine a suitable pitch with the lowest energy requirement, this formula applies: 2 r + t = 59–65 cm."
+   }
+  ]
+ },
+ {
+  "kid": "K11",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "必要楼梯宽度与踏步比",
+  "summary": "必要楼梯（法定疏散楼梯）宽 1.00 m、踏步比 17/28。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "legally essential stairs 1.00 m, 17/28",
+    "page_id": "page_0132",
+    "book_page": "120",
+    "chapter": "Building components",
+    "subheadings": [
+     "STAIRS"
+    ],
+    "source": "body",
+    "context": "Various calculations and dimensional requirements for the construction of stairs appear in national building regulations and standards. In the UK, British Standards and the building regulations should be consulted (see Approved Document K). For workplaces, the regulations of the relevant health and safety body are to be observed. According to German standards, residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio, stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21 but legally essential stairs 1.00 m, 17/28, high-rise flats 1.25 m width. Stair width in public buildings is calculated according to the required evacuation time → p. 318 (Stadiums). Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps → 5, landing length = \\( n \\) times length of stride + 1 depth of tread (e.g. riser to tread 17/29 = \\( 1 \times 63 + 29 = 92 \\) cm or \\( 2 \times 63 + 29 = 1.55 \\) m). Doors opening into the stairwell must not obstruct the stair width. The 18-step rule is a 'should' regulation. For stairs intended to be prestigious the requirement to provide landings is mitigated."
+   }
+  ]
+ },
+ {
+  "kid": "K14",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "螺旋楼梯",
+  "summary": "螺旋楼梯作为住宅内唯一的连接楼梯，直径 ≥ 190 cm、可用宽度 80 cm。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Spiral staircases are permissible from 190 cm in diameter as the sole connecting stairs inside houses with 80 cm usable walking width",
+    "page_id": "page_0136",
+    "book_page": "124",
+    "chapter": "Building components",
+    "subheadings": [
+     "Principles\nRegulations\nConstruction\n    Ramps\nSpiral stairs\nAccess and escape ladders\n    Escalators"
+    ],
+    "source": "body",
+    "context": "Entrance landings have an angle of at least 60° → 4. Starting the handrail between the first and second steps works more generously → 5 – 6. Spiral staircases are permissible from 190 cm in diameter as the sole connecting stairs inside houses with 80 cm usable walking width → 2 – 3. Uniform curving of winding steps can be produced by geometrical construction. In order to achieve a regular curve of the steps, the tolerances can be larger here."
+   }
+  ]
+ },
+ {
+  "kid": "K17",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "公共建筑楼梯两侧扶手",
+  "summary": "按 MBO §50，公众可达建筑的楼梯须两侧设扶手，扶手应在休息平台和窗洞处连续，并延伸过最后一级踏步。",
+  "priority": 1,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "Stairs must have handrails on both sides, which are to be continued past landings and window openings and past the last steps.",
+    "page_id": "page_0037",
+    "book_page": "25",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "(3) Buildings, according to (2), must be accessible through an entrance with a clear opening width of at least 0.90 m without steps. An adequate movement area must be available in front of doors. Ramps may not have a slope of more than 6%, must be at least 1.20 m wide and have a fixed handrail with a safe grip on both sides. A landing is to be provided at the start and end of the ramp and also an intermediate landing every 6 m. The landings must have a length of at least 1.50 m. Stairs must have handrails on both sides, which are to be continued past landings and window openings and past the last steps. The stairs must have solid risers. Corridors and entrance halls must be at least 1.50 m wide. One toilet must also be suitable and accessible for wheelchair users; this is to be indicated by a sign."
+   }
+  ]
+ },
+ {
+  "kid": "K20",
+  "topic": "楼梯、坡道、电梯与护栏",
+  "title": "休息平台宽度不小于梯段宽度",
+  "summary": "楼梯休息平台的宽度（沿行进方向的进深）应不小于梯段宽度。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Landing width \\( \\geq \\) stair width.",
+    "page_id": "page_0133",
+    "book_page": "121",
+    "chapter": "Building components",
+    "subheadings": [
+     "STAIRS"
+    ],
+    "source": "caption",
+    "context": "6 Stairs with landings cover the surface area of single flight stairs + the landing. Stairs with landings are required in legally essential stairways with a storey height of \\( \\geq 2.75 \\) m. Landing width \\( \\geq \\) stair width."
+   }
+  ]
+ },
+ {
+  "kid": "K23",
+  "topic": "门",
+  "title": "内门净高",
+  "summary": "内门净开启高度最小 2.10 m。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "clear opening height of internal doors minimum 210 cm",
+    "page_id": "page_0125",
+    "book_page": "113",
+    "chapter": "Building components",
+    "subheadings": [
+     "DOORS"
+    ],
+    "source": "body",
+    "context": "clear opening height of internal doors\nminimum\t210 cm\nbetter\t210-225 cm"
+   }
+  ]
+ },
+ {
+  "kid": "K26",
+  "topic": "无障碍",
+  "title": "无障碍门净宽",
+  "summary": "无障碍门净通行宽度 ≥ 0.90 m；无障碍入口净宽 ≥ 0.90 m 且无台阶。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Clear passage width of doors \\( \\geq 0.90 \\) m",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "Doors\nClear passage width of doors \\( \\geq 0.90 \\) m \\( \\rightarrow \\) \\( ① + ② \\). Doors to toilets, showers and changing rooms must open outward."
+   },
+   {
+    "quote": "must be accessible through an entrance with a clear opening width of at least 0.90 m without steps.",
+    "page_id": "page_0037",
+    "book_page": "25",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "(3) Buildings, according to (2), must be accessible through an entrance with a clear opening width of at least 0.90 m without steps. An adequate movement area must be available in front of doors. Ramps may not have a slope of more than 6%, must be at least 1.20 m wide and have a fixed handrail with a safe grip on both sides. A landing is to be provided at the start and end of the ramp and also an intermediate landing every 6 m. The landings must have a length of at least 1.50 m. Stairs must have handrails on both sides, which are to be continued past landings and window openings and past the last steps. The stairs must have solid risers. Corridors and entrance halls must be at least 1.50 m wide. One toilet must also be suitable and accessible for wheelchair users; this is to be indicated by a sign."
+   }
+  ]
+ },
+ {
+  "kid": "K29",
+  "topic": "无障碍",
+  "title": "无障碍卫生间",
+  "summary": "每处卫生设施至少一个轮椅厕位；厕所、淋浴、更衣间的门须向外开。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Doors to toilets, showers and changing rooms must open outward.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "Doors\nClear passage width of doors \\( \\geq 0.90 \\) m \\( \\rightarrow \\) \\( ① + ② \\). Doors to toilets, showers and changing rooms must open outward."
+   },
+   {
+    "quote": "At least one toilet must be provided for wheelchair users in all sanitary facilities.",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "Sanitary facilities\nAt least one toilet must be provided for wheelchair users in all sanitary facilities. The seat height should be 48 cm → 8."
+   }
+  ]
+ },
+ {
+  "kid": "K32",
+  "topic": "无障碍",
+  "title": "楼梯起止处活动区",
+  "summary": "楼梯上下端旁的活动区宽 ≥ 1.50 m，首级踏面不计入。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "The movement area next to the stairs going up and down must be min. 1.50 m wide; the tread of the first step is not to be included in the calculation of the movement area",
+    "page_id": "page_0034",
+    "book_page": "22",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "Stairs. The movement area next to the stairs going up and down must be min. 1.50 m wide; the tread of the first step is not to be included in the calculation of the movement area → 7."
+   }
+  ]
+ },
+ {
+  "kid": "K35",
+  "topic": "无障碍",
+  "title": "无障碍住宅卫浴",
+  "summary": "WC 一侧须留宽 ≥ 95 cm、深 ≥ 70 cm 的活动区，另一侧距墙或家具 ≥ 30 cm；浴室须设轮椅可用的淋浴，淋浴区及 WC、洗手台前须有 ≥ 1.50 × 1.50 m 活动区。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "The movement area to the right or left of the WC must be at least 95 cm wide and 70 cm deep. From one side of the WC towards the wall, or furniture, there must be a distance of min. 30 cm",
+    "page_id": "page_0035",
+    "book_page": "23",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "Bathroom\nThe bathroom is to be provided with a wheelchair-accessible shower. The later installation of a bath should be possible near the shower. The movement area to the right or left of the WC must be at least 95 cm wide and 70 cm deep. From one side of the WC towards the wall, or furniture, there must be a distance of min. 30 cm → 2 – 4. No bathroom doors may open inwards."
+   },
+   {
+    "quote": "The bathroom is to be provided with a wheelchair-accessible shower.",
+    "page_id": "page_0035",
+    "book_page": "23",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "Bathroom\nThe bathroom is to be provided with a wheelchair-accessible shower. The later installation of a bath should be possible near the shower. The movement area to the right or left of the WC must be at least 95 cm wide and 70 cm deep. From one side of the WC towards the wall, or furniture, there must be a distance of min. 30 cm → 2 – 4. No bathroom doors may open inwards."
+   },
+   {
+    "quote": "min. 1.50 m wide and min. 1.50 m deep... a turning place in every room (excepting small rooms, which the wheelchair user can use by moving backwards and forwards), the shower → ① + ④, in front of the WC and vanity unit",
+    "page_id": "page_0035",
+    "book_page": "23",
+    "chapter": "Basics",
+    "subheadings": [
+     "ACCESSIBLE BUILDING"
+    ],
+    "source": "body",
+    "context": "min. 1.50 m wide and min. 1.50 m deep...\na turning place in every room (excepting small rooms, which the wheelchair user can use by moving backwards and forwards), the shower → ① + ④, in front of the WC and vanity unit → ② – ④, in an outside seating area, in front of lift shaft doors, at the start and end of a ramp and in front of the intake of a rubbish chute."
+   }
+  ]
+ },
+ {
+  "kid": "K38",
+  "topic": "疏散与防火",
+  "title": "两条独立疏散路线",
+  "summary": "含至少一个居室的住宅或商业单元，每层须有至少两条通往室外的独立疏散路线；单元不在地面层时，第一条须经必要楼梯，第二条可经第二部必要楼梯或消防队救援设备可达的位置；经烟火无法侵入的安全楼梯间疏散时不需要第二疏散路线。",
+  "priority": 3,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "Residential or commercial units with at least one occupied room must have at least two independent escape routes leading to the open air on each storey.",
+    "page_id": "page_0523",
+    "book_page": "511",
+    "chapter": "Building services",
+    "subheadings": [
+     "FIRE PROTECTION"
+    ],
+    "source": "body",
+    "context": "Escape routes\nResidential or commercial units with at least one occupied room must have at least two independent escape routes leading to the open air on each storey. (If the units are not at ground level, the first escape route must be via a legally essential staircase, if required in its own (legally essential) stairwell, and the second escape route via a second essential staircase or a single unified location which is accessible with the rescue equipment of the local fire brigade → 3. From every location in an occupied room, there must be within max. 35 m at least one exit into a legally essential stairwell or into the open air → 4. A second escape route is not required if escape is via a safety stairwell → 5, into which fire and smoke cannot penetrate due to the provision of 'fire balconies' or safety vestibules with forced ventilation → p. 246 High-rise buildings."
+   },
+   {
+    "quote": "the second escape route via a second essential staircase or a single unified location which is accessible with the rescue equipment of the local fire brigade",
+    "page_id": "page_0523",
+    "book_page": "511",
+    "chapter": "Building services",
+    "subheadings": [
+     "FIRE PROTECTION"
+    ],
+    "source": "body",
+    "context": "Escape routes\nResidential or commercial units with at least one occupied room must have at least two independent escape routes leading to the open air on each storey. (If the units are not at ground level, the first escape route must be via a legally essential staircase, if required in its own (legally essential) stairwell, and the second escape route via a second essential staircase or a single unified location which is accessible with the rescue equipment of the local fire brigade → 3. From every location in an occupied room, there must be within max. 35 m at least one exit into a legally essential stairwell or into the open air → 4. A second escape route is not required if escape is via a safety stairwell → 5, into which fire and smoke cannot penetrate due to the provision of 'fire balconies' or safety vestibules with forced ventilation → p. 246 High-rise buildings."
+   }
+  ]
+ },
+ {
+  "kid": "K41",
+  "topic": "疏散与防火",
+  "title": "防火分区与防火墙",
+  "summary": "按 MBO，较大建筑须用防火墙划分为不超过 40 m 的防火分区；防火墙须防火、受火时结构稳定并由不燃材料构成（F 90 A）。防火墙上开口原则上不允许，建筑内部的防火墙可例外允许开口，但须设自闭式防火门（T 90 门或闸门）。",
+  "priority": 3,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "to sub-divide larger buildings into fire compartments of not more than 40 m.",
+    "page_id": "page_0525",
+    "book_page": "513",
+    "chapter": "Building services",
+    "subheadings": [
+     "FIRE PROTECTION"
+    ],
+    "source": "body",
+    "context": "According to the MBO, fire compartment walls are to be constructed in the following locations: the external walls of buildings, when the wall is less than 2.50 m from the plot boundary; between terraced buildings on the same plot boundary; and to sub-divide larger buildings into fire compartments of not more than 40 m."
+   },
+   {
+    "quote": "Fire compartment walls must be fireproof, structurally stable when exposed to fire and consist of non-combustible materials (F 90A).",
+    "page_id": "page_0525",
+    "book_page": "513",
+    "chapter": "Building services",
+    "subheadings": [
+     "FIRE PROTECTION"
+    ],
+    "source": "body",
+    "context": "Fire compartment walls must be fireproof, structurally stable when exposed to fire and consist of non-combustible materials (F 90A). They must normally extend continuously from the foundations to min. 30 cm above the roof (min. 50 cm for a soft roof covering and in industrial buildings) or be capped with a projecting slab → 6. For low buildings, they must continue to immediately under the roof covering. Cables and pipes which penetrate fire compartment walls must have a 90 min fire resistance class. Openings in fire compartment walls are generally impermissible. They can be allowed through fire compartment walls within buildings and then have to be provided with fireproof self-closing doors (T 90 door or gate) → p. 512 2."
+   },
+   {
+    "quote": "Openings in fire compartment walls are generally impermissible. They can be allowed through fire compartment walls within buildings and then have to be provided with fireproof self-closing doors (T 90 door or gate)",
+    "page_id": "page_0525",
+    "book_page": "513",
+    "chapter": "Building services",
+    "subheadings": [
+     "FIRE PROTECTION"
+    ],
+    "source": "body",
+    "context": "Fire compartment walls must be fireproof, structurally stable when exposed to fire and consist of non-combustible materials (F 90A). They must normally extend continuously from the foundations to min. 30 cm above the roof (min. 50 cm for a soft roof covering and in industrial buildings) or be capped with a projecting slab → 6. For low buildings, they must continue to immediately under the roof covering. Cables and pipes which penetrate fire compartment walls must have a 90 min fire resistance class. Openings in fire compartment walls are generally impermissible. They can be allowed through fire compartment walls within buildings and then have to be provided with fireproof self-closing doors (T 90 door or gate) → p. 512 2."
+   }
+  ]
+ },
+ {
+  "kid": "K44",
+  "topic": "疏散与防火",
+  "title": "高层建筑的疏散走道",
+  "summary": "高层建筑疏散通道宽 ≥ 1.25 m，宜双向通往楼梯；房间任一点步行距离 ≤ 25 m；双向走廊 ≤ 40 m，每 20 m 设防烟自闭门；单向尽端走廊 ≤ 10 m（另有第二疏散路线时 ≤ 20 m）。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Escape routes are min. 1.25 m wide and should if possible lead in two directions, to each staircase. The maximum walking distance from each point of an occupied room may not exceed 25 m. Corridors with two escape directions may be max. 40 m long. After 20 m, a smoke-proof self-closing door must be installed. Branch corridors with only one escape direction may be max. 10 m long. If a second escape route (e.g. an escape balcony) is available, max. 20 m.",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "HIGH-RISE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Escape routes\nEscape routes are min. 1.25 m wide and should if possible lead in two directions, to each staircase. The maximum walking distance from each point of an occupied room may not exceed 25 m. Corridors with two escape directions may be max. 40 m long. After 20 m, a smoke-proof self-closing door must be installed. Branch corridors with only one escape direction may be max. 10 m long. If a second escape route (e.g. an escape balcony) is available, max. 20 m."
+   }
+  ]
+ },
+ {
+  "kid": "K47",
+  "topic": "采光、日照、通风与窗",
+  "title": "工作间的窗",
+  "summary": "工作间（按工作场所指南）：所有对外视线窗的总宽度须至少为全部墙宽总和的 1/10；对外视线宜在视平线高度（窗台高 0.85–1.25 m）；高度超过 3.5 m 的工作间，窗玻璃面积须至少为外墙面积的 30%。工业建筑中窗面积的近似值：面积不超过 600 m² 的房间约为地面面积的 1/10，精细作业约 1/5。",
+  "priority": 3,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "1/10 of the floor area for rooms up to 600 m²",
+    "page_id": "page_0278",
+    "book_page": "266",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Approx. figures for window areas: 1/10 of the floor area for rooms up to 600 m² (Workplace Guidelines 7/1 → p. 263); for fine work, provide 1/5 of the floor area."
+   },
+   {
+    "quote": "The total width of all visual connections to the outside must be at least 1/10 of the total width of all walls, according to workplace guidelines",
+    "page_id": "page_0109",
+    "book_page": "97",
+    "chapter": "Building components",
+    "subheadings": [
+     "WINDOWS"
+    ],
+    "source": "body",
+    "context": "Workrooms\nThe required window area can be roughly worked out using the following rules. The total width of all visual connections to the outside must be at least 1/10 of the total width of all walls, according to workplace guidelines → 7. Possible visual connection to the outside should be at eye level (window sill heights of 0.85 –1.25 m) → p. 96 9 – 16. For workrooms more than 3.5 m high, the glass area of the window must be at least 30% of the outside wall area → 8. For rooms with dimensions corresponding to those of residential rooms, the minimum height of the glass area is 1.3 m.\nWith the increasing use of existing sources of energy, the optimisation of thermal losses and gains and the control of light through windows merit a separate design prepared by experts."
+   },
+   {
+    "quote": "Possible visual connection to the outside should be at eye level (window sill heights of 0.85 –1.25 m)",
+    "page_id": "page_0109",
+    "book_page": "97",
+    "chapter": "Building components",
+    "subheadings": [
+     "WINDOWS"
+    ],
+    "source": "body",
+    "context": "Workrooms\nThe required window area can be roughly worked out using the following rules. The total width of all visual connections to the outside must be at least 1/10 of the total width of all walls, according to workplace guidelines → 7. Possible visual connection to the outside should be at eye level (window sill heights of 0.85 –1.25 m) → p. 96 9 – 16. For workrooms more than 3.5 m high, the glass area of the window must be at least 30% of the outside wall area → 8. For rooms with dimensions corresponding to those of residential rooms, the minimum height of the glass area is 1.3 m.\nWith the increasing use of existing sources of energy, the optimisation of thermal losses and gains and the control of light through windows merit a separate design prepared by experts."
+   },
+   {
+    "quote": "For workrooms more than 3.5 m high, the glass area of the window must be at least 30% of the outside wall area",
+    "page_id": "page_0109",
+    "book_page": "97",
+    "chapter": "Building components",
+    "subheadings": [
+     "WINDOWS"
+    ],
+    "source": "body",
+    "context": "Workrooms\nThe required window area can be roughly worked out using the following rules. The total width of all visual connections to the outside must be at least 1/10 of the total width of all walls, according to workplace guidelines → 7. Possible visual connection to the outside should be at eye level (window sill heights of 0.85 –1.25 m) → p. 96 9 – 16. For workrooms more than 3.5 m high, the glass area of the window must be at least 30% of the outside wall area → 8. For rooms with dimensions corresponding to those of residential rooms, the minimum height of the glass area is 1.3 m.\nWith the increasing use of existing sources of energy, the optimisation of thermal losses and gains and the control of light through windows merit a separate design prepared by experts."
+   }
+  ]
+ },
+ {
+  "kid": "K50",
+  "topic": "采光、日照、通风与窗",
+  "title": "玻璃面最小高度 1.3 m",
+  "summary": "尺度相当于居室的工作间，玻璃面高度至少 1.3 m；住宅为优化能耗也可套用工作间的开窗标准。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "For rooms with dimensions corresponding to those of residential rooms, the minimum height of the glass area is 1.3 m.",
+    "page_id": "page_0109",
+    "book_page": "97",
+    "chapter": "Building components",
+    "subheadings": [
+     "WINDOWS"
+    ],
+    "source": "body",
+    "context": "Workrooms\nThe required window area can be roughly worked out using the following rules. The total width of all visual connections to the outside must be at least 1/10 of the total width of all walls, according to workplace guidelines → 7. Possible visual connection to the outside should be at eye level (window sill heights of 0.85 –1.25 m) → p. 96 9 – 16. For workrooms more than 3.5 m high, the glass area of the window must be at least 30% of the outside wall area → 8. For rooms with dimensions corresponding to those of residential rooms, the minimum height of the glass area is 1.3 m.\nWith the increasing use of existing sources of energy, the optimisation of thermal losses and gains and the control of light through windows merit a separate design prepared by experts."
+   },
+   {
+    "quote": "In order to optimise the energy balance, the criteria for workrooms can be applied.",
+    "page_id": "page_0109",
+    "book_page": "97",
+    "chapter": "Building components",
+    "subheadings": [
+     "WINDOWS"
+    ],
+    "source": "body",
+    "context": "Residential construction\nThe minimum requirement for structural window apertures in occupied rooms is specified in the state building regulations and is 1/8 or 1/10 of the plan area of the room. Further design constraints are the distance from buildings opposite (shadow formation) and the requirements of the energy saving regulation EnEV. In order to optimise the energy balance, the criteria for workrooms can be applied."
+   }
+  ]
+ },
+ {
+  "kid": "K53",
+  "topic": "采光、日照、通风与窗",
+  "title": "办公与工作建筑的朝向",
+  "summary": "朝向说法不一：据 Rosenauer，美国 90% 的办公楼采用东西向主轴，因为深入室内的早晚阳光造成干扰，而南向阳光较易用遮阳帘遮挡；据 Joedicke，南北向主轴可使所有房间获得日照，北向房间只适用于无走廊的布局。工业建筑中，单侧开窗的多层建筑宜朝东北，南北两侧开窗的宜东西向布置。",
+  "priority": 2,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "According to Rosenauer, 90% of all office buildings in the USA have a main axis E/W, because the deeply penetrating morning and evening sun is a disturbance.",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Building alignment\nCompass orientation is variously estimated. According to Rosenauer, 90% of all office buildings in the USA have a main axis E/W, because the deeply penetrating morning and evening sun is a disturbance. Sun from the south can be shaded more easily with sun blinds. According to Joedicke (→ refs), the main axis in the N/S alignment is to ensure sunlight through all rooms. North-facing rooms are acceptable only for layouts without a corridor."
+   },
+   {
+    "quote": "Sun from the south can be shaded more easily with sun blinds.",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Building alignment\nCompass orientation is variously estimated. According to Rosenauer, 90% of all office buildings in the USA have a main axis E/W, because the deeply penetrating morning and evening sun is a disturbance. Sun from the south can be shaded more easily with sun blinds. According to Joedicke (→ refs), the main axis in the N/S alignment is to ensure sunlight through all rooms. North-facing rooms are acceptable only for layouts without a corridor."
+   },
+   {
+    "quote": "Multi-storey buildings with windows on one side should face northeast, and, with windows on both sides facing north and south, they should be oriented east–west.",
+    "page_id": "page_0278",
+    "book_page": "266",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Lighting\nMulti-storey buildings with windows on one side should face northeast, and, with windows on both sides facing north and south, they should be oriented east–west. The summer sun thus only shines into the interior to a limited extent and is easy to shade with blinds (possibly continuously motorised sun awnings), but in winter the room is pleasantly sunlit (no disturbing shadows in the working area) → ④. The distance of the working area from the window should be twice as long as the clear window height → ②."
+   },
+   {
+    "quote": "According to Joedicke (→ refs), the main axis in the N/S alignment is to ensure sunlight through all rooms.",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Building alignment\nCompass orientation is variously estimated. According to Rosenauer, 90% of all office buildings in the USA have a main axis E/W, because the deeply penetrating morning and evening sun is a disturbance. Sun from the south can be shaded more easily with sun blinds. According to Joedicke (→ refs), the main axis in the N/S alignment is to ensure sunlight through all rooms. North-facing rooms are acceptable only for layouts without a corridor."
+   },
+   {
+    "quote": "North-facing rooms are acceptable only for layouts without a corridor.",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Building alignment\nCompass orientation is variously estimated. According to Rosenauer, 90% of all office buildings in the USA have a main axis E/W, because the deeply penetrating morning and evening sun is a disturbance. Sun from the south can be shaded more easily with sun blinds. According to Joedicke (→ refs), the main axis in the N/S alignment is to ensure sunlight through all rooms. North-facing rooms are acceptable only for layouts without a corridor."
+   }
+  ]
+ },
+ {
+  "kid": "K56",
+  "topic": "围护结构与保温",
+  "title": "单层外墙与附加保温层",
+  "summary": "单层外墙在建筑物理上没有问题，但由于保温要求高，只能用高保温材料（如加气砌块）配专用保温砂浆和抹灰砌筑；因此单层墙加附加保温层（外保温或内保温）是常见的替代做法。保温层外侧因受热积聚和基层抗剪强度低而有开裂风险，因此这里采用网格增强的矿物抹灰（或聚合物改性抹灰）。",
+  "priority": 3,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "Single-leaf external walls → ① – ② are unproblematic regarding building physics, but on account of the high thermal insulation requirements can only be built with materials with high thermal insulation value (e.g. aerated blocks) and special thermally insulated mortars and plasters.",
+    "page_id": "page_0087",
+    "book_page": "75",
+    "chapter": "Building components",
+    "subheadings": [
+     "WALLS"
+    ],
+    "source": "body",
+    "context": "External wall construction\nSingle-leaf external walls → ① – ② are unproblematic regarding building physics, but on account of the high thermal insulation requirements can only be built with materials with high thermal insulation value (e.g. aerated blocks) and special thermally insulated mortars and plasters. If the blocks used are susceptible to frost damage, they have to be rendered or protected in other ways. If the masonry is externally visible, then each course must consist of at least two rows of blocks of the same height with a continuous 20 mm thick longitudinal joint between them, and each course staggered and mortared without voids."
+   },
+   {
+    "quote": "Single-leaf walls with additional insulation layers → ③ – ⑥ (external, internal insulation → Building physics, p. 471 ff.) are therefore a common alternative.",
+    "page_id": "page_0087",
+    "book_page": "75",
+    "chapter": "Building components",
+    "subheadings": [
+     "WALLS"
+    ],
+    "source": "body",
+    "context": "Single-leaf walls with additional insulation layers → ③ – ⑥ (external, internal insulation → Building physics, p. 471 ff.) are therefore a common alternative."
+   },
+   {
+    "quote": "On the external side of the insulating layers, there is a risk of cracking due to heat build-up and substrate with poor shear strength, so mineral render reinforced with mesh is used here (or plastic modified render).",
+    "page_id": "page_0485",
+    "book_page": "473",
+    "chapter": "Building services",
+    "subheadings": [
+     "BUILDING PHYSICS"
+    ],
+    "source": "body",
+    "context": "On the external side of the insulating layers, there is a risk of cracking due to heat build-up and substrate with poor shear strength, so mineral render reinforced with mesh is used here (or plastic modified render)."
+   },
+   {
+    "quote": "are unproblematic regarding building physics, but on account of the high thermal insulation requirements can only be built with materials with high thermal insulation value (e.g. aerated blocks) and special thermally insulated mortars and plasters.",
+    "page_id": "page_0087",
+    "book_page": "75",
+    "chapter": "Building components",
+    "subheadings": [
+     "WALLS"
+    ],
+    "source": "body",
+    "context": "External wall construction\nSingle-leaf external walls → ① – ② are unproblematic regarding building physics, but on account of the high thermal insulation requirements can only be built with materials with high thermal insulation value (e.g. aerated blocks) and special thermally insulated mortars and plasters. If the blocks used are susceptible to frost damage, they have to be rendered or protected in other ways. If the masonry is externally visible, then each course must consist of at least two rows of blocks of the same height with a continuous 20 mm thick longitudinal joint between them, and each course staggered and mortared without voids."
+   }
+  ]
+ },
+ {
+  "kid": "K59",
+  "topic": "围护结构与保温",
+  "title": "背通风外挂层的空气间层",
+  "summary": "背通风可消除较不透汽外层的隔汽效应；板材类外挂层后的空气间层至少 20 mm，砖砌外层至少 40 mm。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "The rear ventilation of the skin removes the vapour barrier effect of the relatively vapour-sealed outer layers. The width of the air gap with panel-like external skin amounts to min. 20 mm, or for brickwork outer skin min. 40 mm.",
+    "page_id": "page_0485",
+    "book_page": "473",
+    "chapter": "Building services",
+    "subheadings": [
+     "BUILDING PHYSICS"
+    ],
+    "source": "body",
+    "context": "Construction with rear-ventilated outer skin → ⑤ – ⑥\nThe rear ventilation of the skin removes the vapour barrier effect of the relatively vapour-sealed outer layers. The width of the air gap with panel-like external skin amounts to min. 20 mm, or for brickwork outer skin min. 40 mm."
+   }
+  ]
+ },
+ {
+  "kid": "K62",
+  "topic": "围护结构与保温",
+  "title": "平屋面排水坡度",
+  "summary": "坡度不超过 5% 的屋面为平屋面；无坡平屋面只在例外情况下作为特殊构造；平屋面一般至少 2% 坡度，考虑平整度误差和挠度建议至少 5%（3°）。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Flat roofs are defined as roofs with a slope of up to 5%. Flat roofs without slope are possible as a special construction in exceptional cases. Flat roofs should generally have a minimum slope of 2%.",
+    "page_id": "page_0103",
+    "book_page": "91",
+    "chapter": "Building components",
+    "subheadings": [
+     "ROOFS"
+    ],
+    "source": "body",
+    "context": "Flat roofs are defined as roofs with a slope of up to 5%. Flat roofs without slope are possible as a special construction in exceptional cases. Flat roofs should generally have a minimum slope of 2%. On account of unavoidable flatness tolerances and deflection of the construction, however, it is recommended to construct flat roofs with a minimum slope of 5% (3°)."
+   },
+   {
+    "quote": "it is recommended to construct flat roofs with a minimum slope of 5% (3°).",
+    "page_id": "page_0103",
+    "book_page": "91",
+    "chapter": "Building components",
+    "subheadings": [
+     "ROOFS"
+    ],
+    "source": "body",
+    "context": "Flat roofs are defined as roofs with a slope of up to 5%. Flat roofs without slope are possible as a special construction in exceptional cases. Flat roofs should generally have a minimum slope of 2%. On account of unavoidable flatness tolerances and deflection of the construction, however, it is recommended to construct flat roofs with a minimum slope of 5% (3°)."
+   }
+  ]
+ },
+ {
+  "kid": "K65",
+  "topic": "围护结构与保温",
+  "title": "种植屋面的坡度",
+  "summary": "种植的坡屋面坡度不应超过 25°，种植平屋面坡度最大 2–3%。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "The pitch of gabled roofs should not exceed 25° and flat roofs should have a maximum slope of 2–3%.",
+    "page_id": "page_0106",
+    "book_page": "94",
+    "chapter": "Building components",
+    "subheadings": [
+     "ROOFS"
+    ],
+    "source": "body",
+    "context": "Slopes for roof planting\nThe pitch of gabled roofs should not exceed 25° and flat roofs should have a maximum slope of 2–3%."
+   }
+  ]
+ },
+ {
+  "kid": "K68",
+  "topic": "墙体与构造",
+  "title": "模数协调与标志尺寸",
+  "summary": "基本模数 M = 100 mm，扩大模数 3M = 300 mm、6M = 600 mm、12M = 1200 mm；构造（标志）尺寸由模数尺寸扣除或加上灰缝/面层厚度得到，如砖模数长 25 cm、灰缝 1 cm、标志尺寸 24 cm，现浇混凝土墙 25 cm。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "The units of the modular system are the basic module M = 100 mm and the multi-modules 3 M = 300 mm, 6 M = 600 mm and 12 M = 1200 mm.",
+    "page_id": "page_0047",
+    "book_page": "35",
+    "chapter": "Basics",
+    "subheadings": [
+     "DIMENSIONAL BASICS AND RELATIONSHIPS"
+    ],
+    "source": "body",
+    "context": "The units of the modular system are the basic module M = 100 mm and the multi-modules 3 M = 300 mm, 6 M = 600 mm and 12 M = 1200 mm. There are also standardised non-modular supplementary dimensions l = 25 mm, 50 mm and 75 mm for fitting elements or overlapping connections → 11. Combination rules can be used to fit building components of various sizes into a modular coordinate system."
+   },
+   {
+    "quote": "Structural dimensions or nominal dimensions (for construction types with joints and wall finishes) are derived from modular dimensions by deducting or adding the component for the joint or the finish thickness.",
+    "page_id": "page_0046",
+    "book_page": "34",
+    "chapter": "Basics",
+    "subheadings": [
+     "DIMENSIONAL BASICS AND RELATIONSHIPS"
+    ],
+    "source": "body",
+    "context": "Terms\nBuilding preferred numbers are those for modular construction dimensions and the individual, structural and finished dimensions derived from them.\nModular dimensions are only theoretical dimensions, but are the basis for the individual, structural and finished dimensions used in practice. Structural dimensions or nominal dimensions (for construction types with joints and wall finishes) are derived from modular dimensions by deducting or adding the component for the joint or the finish thickness. (Example: modular dimension for the length of a brick = 25 cm; thickness of the vertical joint = 1 cm; nominal dimension for the length of the brick = 24 cm; modular dimension for the thickness of poured concrete walls = nominal dimension = 25 cm).\nIndividual dimensions are dimensions (mostly small) for units of structure or finishing such as joint thicknesses, plaster thicknesses, door rebate sizes, wall projection sizes, tolerances.\nStructural dimensions are of the unfinished structure, such as masonry dimensions (without plaster thicknesses), structural slab thicknesses, sizes of unplastered door and window openings.\nFinished dimensions are for the finished building, such as clear sizes of plastered rooms and openings, storage space dimensions, floor-to-floor heights.\nNominal dimensions are the same as modular dimensions for building types without joints. For building types with joints, the nominal dimension is the modular dimension less the joint thicknesses.\nSmall dimensions are 2.5 cm and less. They can be selected from the sizes: 2.5 cm; 2 cm; 1.6 cm; 1.25 cm; 1 cm; 8 mm; 6.3 mm; 5 mm; 3.2 mm; 2.5 mm; 2 mm; 1.6 mm; 1.25 mm; 1 mm."
+   },
+   {
+    "quote": "Example: modular dimension for the length of a brick = 25 cm; thickness of the vertical joint = 1 cm; nominal dimension for the length of the brick = 24 cm; modular dimension for the thickness of poured concrete walls = nominal dimension = 25 cm",
+    "page_id": "page_0046",
+    "book_page": "34",
+    "chapter": "Basics",
+    "subheadings": [
+     "DIMENSIONAL BASICS AND RELATIONSHIPS"
+    ],
+    "source": "body",
+    "context": "Terms\nBuilding preferred numbers are those for modular construction dimensions and the individual, structural and finished dimensions derived from them.\nModular dimensions are only theoretical dimensions, but are the basis for the individual, structural and finished dimensions used in practice. Structural dimensions or nominal dimensions (for construction types with joints and wall finishes) are derived from modular dimensions by deducting or adding the component for the joint or the finish thickness. (Example: modular dimension for the length of a brick = 25 cm; thickness of the vertical joint = 1 cm; nominal dimension for the length of the brick = 24 cm; modular dimension for the thickness of poured concrete walls = nominal dimension = 25 cm).\nIndividual dimensions are dimensions (mostly small) for units of structure or finishing such as joint thicknesses, plaster thicknesses, door rebate sizes, wall projection sizes, tolerances.\nStructural dimensions are of the unfinished structure, such as masonry dimensions (without plaster thicknesses), structural slab thicknesses, sizes of unplastered door and window openings.\nFinished dimensions are for the finished building, such as clear sizes of plastered rooms and openings, storage space dimensions, floor-to-floor heights.\nNominal dimensions are the same as modular dimensions for building types without joints. For building types with joints, the nominal dimension is the modular dimension less the joint thicknesses.\nSmall dimensions are 2.5 cm and less. They can be selected from the sizes: 2.5 cm; 2 cm; 1.6 cm; 1.25 cm; 1 cm; 8 mm; 6.3 mm; 5 mm; 3.2 mm; 2.5 mm; 2 mm; 1.6 mm; 1.25 mm; 1 mm."
+   }
+  ]
+ },
+ {
+  "kid": "K71",
+  "topic": "墙体与构造",
+  "title": "住宅/商业单元之间的分隔墙",
+  "summary": "居住或商业单元之间（或单元与其他用途房间之间）分隔墙的耐火时间须与该层承重构件相当，并须一直砌到结构楼板（屋顶空间内到屋面覆层）。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "The fire resistance duration of separating walls between residential or commercial units (or units and rooms used otherwise) must correspond to the quality of the load-bearing components of the storey. These must extend to the structural slab (in roof spaces up to the roof cladding).",
+    "page_id": "page_0526",
+    "book_page": "514",
+    "chapter": "Building services",
+    "subheadings": [
+     "FIRE PROTECTION"
+    ],
+    "source": "body",
+    "context": "Separating walls\nThe fire resistance duration of separating walls between residential or commercial units (or units and rooms used otherwise) must correspond to the quality of the load-bearing components of the storey. These must extend to the structural slab (in roof spaces up to the roof cladding). Openings are limited to the size and number required for their use and must be closed by components which are at least fire-retarding, sealed and self-closing."
+   }
+  ]
+ },
+ {
+  "kid": "K74",
+  "topic": "居室标准与面积计算",
+  "title": "厨房作为居室",
+  "summary": "厨房作为居室时净高 ≥ 2.40 m，窗面积 ≥ 净地面面积的 1/8。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "As a habitable room, the kitchen must have a clear ceiling height of at least 2.40 m and a window area (structural dimensions) of at least 1/8 of the net floor area.",
+    "page_id": "page_0161",
+    "book_page": "149",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Kitchens and kitchenettes without windows are generally undesirable and only permissible if effective ventilation is guaranteed. As a habitable room, the kitchen must have a clear ceiling height of at least 2.40 m and a window area (structural dimensions) of at least 1/8 of the net floor area."
+   }
+  ]
+ },
+ {
+  "kid": "K77",
+  "topic": "居室标准与面积计算",
+  "title": "住宅面积的计入范围与净尺寸量法",
+  "summary": "（按 2003 年《住宅面积计算条例》，用于住房建设补贴法）住宅面积包括专属于该户的所有房间的地面面积；房间面积按构件之间的净空间确定，从构件饰面层表面量起，可在建成房间内实测，或按合适的施工图计算。",
+  "priority": 3,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "The area of a house or flat includes the floor area of all rooms which belong exclusively to the house",
+    "page_id": "page_0148",
+    "book_page": "136",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "BASICS"
+    ],
+    "source": "body",
+    "context": "Housing area regulation\nThe 'Regulation for the calculation of the housing area' of 25/11/2003 is used to work out the area of houses and flats for the purpose of the Law to Subsidise House Building. The area of a house or flat includes the floor area of all rooms which belong exclusively to the house or, in the case of a residential home the areas intended for the sole use of the owner → 2."
+   },
+   {
+    "quote": "The floor area of a room is determined from the clearance space between building components and starts from the face of the cladding of the building component",
+    "page_id": "page_0148",
+    "book_page": "136",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "BASICS"
+    ],
+    "source": "body",
+    "context": "The floor area of a room is determined from the clearance space between building components and starts from the face of the cladding of the building component → ③. The floor area is measured in the completed room, or can be calculated from a suitable construction drawing. Floor areas are calculated according to → ④."
+   }
+  ]
+ },
+ {
+  "kid": "K80",
+  "topic": "住宅·户型组织与入户",
+  "title": "阳台面积",
+  "summary": "3–4 人阳台约 7 m²，5–6 人约 9 m²。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "B = 9.0 m^2 balcony for 5–6 people",
+    "page_id": "page_0167",
+    "book_page": "155",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "caption",
+    "context": "A = 7.0 m^2 balcony for 3–4 people\nB = 9.0 m^2 balcony for 5–6 people"
+   },
+   {
+    "quote": "A = 7.0 m^2 balcony for 3–4 people",
+    "page_id": "page_0167",
+    "book_page": "155",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "caption",
+    "context": "A = 7.0 m^2 balcony for 3–4 people\nB = 9.0 m^2 balcony for 5–6 people"
+   }
+  ]
+ },
+ {
+  "kid": "K83",
+  "topic": "住宅·户型组织与入户",
+  "title": "设备噪声与安静房间",
+  "summary": "电梯、给排水管、燃气立管等噪声源不得设在起居室、卧室等需要安静的房间墙内；电梯应设独立井道，缝内填 3 cm 以上矿棉。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Noisy elements of services (water pipes, waste pipes, gas riser pipes, waste disposal units, lifts) may not be installed in the walls of rooms where quiet is required (living rooms, bedrooms).",
+    "page_id": "page_0492",
+    "book_page": "480",
+    "chapter": "Building services",
+    "subheadings": [
+     "BUILDING PHYSICS"
+    ],
+    "source": "body",
+    "context": "Sound from services\nSound from services can occur as plumbing fixture sound, pipework sound or filling/emptying sounds. The maximum permissible sound level from services in neighbouring residential units is 35 dB (A). Noisy elements of services (water pipes, waste pipes, gas riser pipes, waste disposal units, lifts) may not be installed in the walls of rooms where quiet is required (living rooms, bedrooms)."
+   },
+   {
+    "quote": "Lifts should be installed in separate shafts (joints filled with >3 cm mineral fibre)",
+    "page_id": "page_0493",
+    "book_page": "481",
+    "chapter": "Building services",
+    "subheadings": [
+     "BUILDING PHYSICS"
+    ],
+    "source": "body",
+    "context": "Lifts should be installed in separate shafts (joints filled with >3 cm mineral fibre) → 7; otherwise, the top of the shaft should be elastically supported → 8."
+   }
+  ]
+ },
+ {
+  "kid": "K86",
+  "topic": "住宅·户型组织与入户",
+  "title": "门厅直达厨房、WC 和楼梯",
+  "summary": "厨房、WC 和楼梯这几个最重要的公共部分应能从门厅直接到达。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "The most important communal areas like the kitchen, WC and staircase should be directly accessible from the entrance hall.",
+    "page_id": "page_0159",
+    "book_page": "147",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Entrance hall\nThe entrance hall should be enclosed where the entrance leads directly to the open air with an inner door (wind lobby function). It should also offer sufficient room for a lot of moving around → ④. This is where reception, greeting, taking off and putting on coats, and taking leave all take place, but also offers the first orientation for the visitor → ① – ③. Countless objects therefore have to be arranged practically yet tidily in this limited space → ⑤, ⑥. The most important communal areas like the kitchen, WC and staircase should be directly accessible from the entrance hall."
+   }
+  ]
+ },
+ {
+  "kid": "K89",
+  "topic": "住宅·户型组织与入户",
+  "title": "独立住宅每层通往户外",
+  "summary": "独立住宅（自住住宅的原型）从每一层都可直接通往其他私有或半公共的户外空间（如花园、露台、内院或屋顶花园）。",
+  "priority": 1,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "It has direct access from each storey to further private or semi-public open spaces (e.g. garden, terrace, inner courtyard or roof garden)",
+    "page_id": "page_0151",
+    "book_page": "139",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ACCESS"
+    ],
+    "source": "body",
+    "context": "Detached house and row access\nThe individually accessed, detached house standing on its own plot is the prototype for the 'owner-occupied' house. It has a prestigious level access from the road, which is reached through an area at the front ('front garden'). It has direct access from each storey to further private or semi-public open spaces (e.g. garden, terrace, inner courtyard or roof garden) → 2."
+   }
+  ]
+ },
+ {
+  "kid": "K92",
+  "topic": "住宅·户型组织与入户",
+  "title": "入户凹口尺寸",
+  "summary": "入户门前的凹口宽至少 1.25 m（最好 1.50 m）、深约 1.00 m，使两人能舒适且有遮蔽地在门前等候。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Entrance recesses should be at least 1.25 m (better 1.50 m) wide and approx. 1.00 m deep, so that two people can wait comfortably and protected in front of the door",
+    "page_id": "page_0158",
+    "book_page": "146",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Entrance recesses should be at least 1.25 m (better 1.50 m) wide and approx. 1.00 m deep, so that two people can wait comfortably and protected in front of the door → ④."
+   }
+  ]
+ },
+ {
+  "kid": "K95",
+  "topic": "住宅·厨房与就餐",
+  "title": "厨房面积与类型",
+  "summary": "带就餐区的厨房约 10 m² 起；L 形、连通客厅和走廊的布置约 14 m²。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Kitchens with dining areas can be planned from approx. 10 m².",
+    "page_id": "page_0162",
+    "book_page": "150",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Kitchen with dining area\nThe kitchen with dining area offers, in addition to the actual kitchen fittings, space for a table with chairs or benches, to be used as an additional dining area (breakfast area). The kitchen thus becomes a lived-in room, providing improved opportunities for conversation. Kitchens with dining areas can be planned from approx. 10 m². A good arrangement is an L shape with doors connecting to the living room and corridor: area approx. 14 m² → 8."
+   },
+   {
+    "quote": "A good arrangement is an L shape with doors connecting to the living room and corridor: area approx. 14 m²",
+    "page_id": "page_0162",
+    "book_page": "150",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Kitchen with dining area\nThe kitchen with dining area offers, in addition to the actual kitchen fittings, space for a table with chairs or benches, to be used as an additional dining area (breakfast area). The kitchen thus becomes a lived-in room, providing improved opportunities for conversation. Kitchens with dining areas can be planned from approx. 10 m². A good arrangement is an L shape with doors connecting to the living room and corridor: area approx. 14 m² → 8."
+   }
+  ]
+ },
+ {
+  "kid": "K98",
+  "topic": "住宅·厨房与就餐",
+  "title": "就餐区的朝向与连接",
+  "summary": "就餐区一般朝南或朝西，宜与厨房（或备餐间）直接相连，并尽可能通往阳台或露台。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Dining areas are normally oriented to the south or west.",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Spatial layout\nDining areas are normally oriented to the south or west. A direct connection to the kitchen (or pantry) is practical. It is good to provide for extension (with sliding partitions etc.) for special events. Dining areas should have access to the balcony or terrace if possible."
+   },
+   {
+    "quote": "A direct connection to the kitchen (or pantry) is practical.",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Spatial layout\nDining areas are normally oriented to the south or west. A direct connection to the kitchen (or pantry) is practical. It is good to provide for extension (with sliding partitions etc.) for special events. Dining areas should have access to the balcony or terrace if possible."
+   },
+   {
+    "quote": "Dining areas should have access to the balcony or terrace if possible.",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Spatial layout\nDining areas are normally oriented to the south or west. A direct connection to the kitchen (or pantry) is practical. It is good to provide for extension (with sliding partitions etc.) for special events. Dining areas should have access to the balcony or terrace if possible."
+   }
+  ]
+ },
+ {
+  "kid": "K101",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "卧室最小面积",
+  "summary": "父母房/双人卧室约 13 m²，单人卧室约 8 m²，宽敞的双人卧室 16.5 m²。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "bedrooms with minimal space of approx. 13 m² (as parents’ room or twin bedroom)",
+    "page_id": "page_0169",
+    "book_page": "157",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "→ ② – ③: bedrooms with minimal space of approx. 13 m² (as parents’ room or twin bedroom) and approx. 8 m² (single room). These would normally be aligned to east or southeast (parents) or south to west (children) and separated from the living room in another part of the home."
+   },
+   {
+    "quote": "approx. 8 m² (single room).",
+    "page_id": "page_0169",
+    "book_page": "157",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "→ ② – ③: bedrooms with minimal space of approx. 13 m² (as parents’ room or twin bedroom) and approx. 8 m² (single room). These would normally be aligned to east or southeast (parents) or south to west (children) and separated from the living room in another part of the home."
+   },
+   {
+    "quote": "a generous twin bedroom of 16.5 m²",
+    "page_id": "page_0169",
+    "book_page": "157",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "→ ④: the options for a generous twin bedroom of 16.5 m², which could be partitioned (for example, for children as they grow up)."
+   }
+  ]
+ },
+ {
+  "kid": "K104",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "洗衣间",
+  "summary": "洗衣/家务间宜设 1.20 m 宽的工作台用于处理衣物；最好朝东北、紧邻厨房或便于从厨房到达；独立住宅中应直通花园（用于晾晒衣物）。",
+  "priority": 1,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "These rooms are best placed to the northeast, next to or easily accessible from the kitchen",
+    "page_id": "page_0175",
+    "book_page": "163",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "These rooms are best placed to the northeast, next to or easily accessible from the kitchen → 4 – 14. In this way, tasks can be combined and carried out by one person. In detached houses, direct access should be provided to the garden (for drying laundry)."
+   },
+   {
+    "quote": "In detached houses, direct access should be provided to the garden (for drying laundry).",
+    "page_id": "page_0175",
+    "book_page": "163",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "These rooms are best placed to the northeast, next to or easily accessible from the kitchen → 4 – 14. In this way, tasks can be combined and carried out by one person. In detached houses, direct access should be provided to the garden (for drying laundry)."
+   },
+   {
+    "quote": "A worktop of 1.20 m width should be provided to deal with the washing.",
+    "page_id": "page_0175",
+    "book_page": "163",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "In the design of utility rooms, a comfortable and healthy arrangement of appliances is important: An ironing board used in the standing position requires a different height to one that is used seated → ① – ③. A fully adjustable ironing board is ideal. A worktop of 1.20 m width should be provided to deal with the washing. Good uniform lighting is required in the working area of the laundry/utility room (average light intensity ≈ 350 lx)."
+   }
+  ]
+ },
+ {
+  "kid": "K107",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "卫生间朝向、采光与通风",
+  "summary": "卫生间宜朝北，尽可能自然采光通风，否则按 DIN 18017-3 设置有效的机械通风；在进深较大的建筑中，户型中部可加宽为辅助功能区，人工照明（或经其他区域间接采光）的卫生间可布置于此。",
+  "priority": 2,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3).",
+    "page_id": "page_0172",
+    "book_page": "160",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "A bathroom is defined as an independent room with bath/shower and toilet and, according to building regulations, belongs to the minimum equipment of a flat or house. In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided. The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3). The bathroom is normally next to the bedroom → ⑤ – ⑥, ⑧ – ⑩, although it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft → ⑧ – ⑨."
+   },
+   {
+    "quote": "Bathrooms with artificial lighting (or lit indirectly from other areas of the flat), kitchens, cupboard and storage areas can be placed here",
+    "page_id": "page_0157",
+    "book_page": "145",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "FLOOR PLANS"
+    ],
+    "source": "body",
+    "context": "Central function zone → ③\nIn buildings of greater depth, the central area of the flat can be widened to form a zone of subsidiary space and the façades can be completely used for living areas. Bathrooms with artificial lighting (or lit indirectly from other areas of the flat), kitchens, cupboard and storage areas can be placed here, and appropriate passages and spaces provide the connection to the outside rooms."
+   }
+  ]
+ },
+ {
+  "kid": "K110",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "婴儿车与自行车公共储藏间",
+  "summary": "建筑法规要求建筑等级 3–5 的住宅设置方便到达的（公共）婴儿车、童车和自行车储藏间（其他住宅和独立住宅也宜设相应空间）；设计时可按每位住户（含儿童）至少一辆车估算；储藏间宜尽量设在街道层，可上锁，并配挂钩和自行车架。",
+  "priority": 2,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "for residential buildings in building classes 3–5, the building regulations require an easily accessible (communal) storeroom for prams, pushchairs and bicycles.",
+    "page_id": "page_0177",
+    "book_page": "165",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Communal storerooms\nIn addition to the storerooms or storage spaces in each flat, for residential buildings in building classes 3–5, the building regulations require an easily accessible (communal) storeroom for prams, pushchairs and bicycles. Corresponding areas should also be provided in other residential buildings and detached houses."
+   },
+   {
+    "quote": "Waste can be stored temporarily inside buildings with more than two flats or a usable area of 400 m² (building classes 3–5)",
+    "page_id": "page_0476",
+    "book_page": "464",
+    "chapter": "Agriculture",
+    "subheadings": [
+     "SUPPLY AND DISPOSAL"
+    ],
+    "source": "body",
+    "context": "Solid waste can be temporarily stored inside the building. Waste can be stored temporarily inside buildings with more than two flats or a usable area of 400 m² (building classes 3–5) only if the rubbish collection room complies with the following requirements:"
+   },
+   {
+    "quote": "it can be assumed that at least one vehicle per occupant (including children) has to be accommodated",
+    "page_id": "page_0177",
+    "book_page": "165",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "For the design of these rooms, it can be assumed that at least one vehicle per occupant (including children) has to be accommodated. In addition to bicycles, prams and pushchairs, it is also necessary to consider mopeds, tricycles, trailers etc. → ①."
+   },
+   {
+    "quote": "The rooms should if possible be located at street level, be lockable and equipped with hooks and bicycle stands to secure the stored vehicles.",
+    "page_id": "page_0177",
+    "book_page": "165",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "The rooms should if possible be located at street level, be lockable and equipped with hooks and bicycle stands to secure the stored vehicles. They can be laid out as storerooms inside the building (with access to the entrance) or as separate bicycle sheds → ② – ③. A sufficient number of additional bicycle stands should be provided in the open air, particularly if the storeroom has been situated in the cellar."
+   }
+  ]
+ },
+ {
+  "kid": "K113",
+  "topic": "办公",
+  "title": "工位尺寸",
+  "summary": "桌面工作面积宜不小于 120 × 80 cm（文件少、以屏幕工作为主的情况；专业人员至少 200 × 80 cm）；每个工位宜有不小于 1.5 m² 的自由活动面积。",
+  "priority": 1,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "There should be a free movement area of at least 1.5 m² at the workstation.",
+    "page_id": "page_0248",
+    "book_page": "236",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Workplace layout\nItems which are frequently used during the working day should be put in the preferred places where they are visible and reachable → ① – ③. There should be a free movement area of at least 1.5 m² at the workstation.\nFurniture: This should enable the correctly defined working posture – upper arm and elbow vertical at an angle of approx. 90° and thigh and lower leg vertical at an angle of 90° → ④. To achieve the correct posture for people of different heights, table and chair sizes must be adjustable. Two ergonomically equally valuable possibilities are:\nA: workstation type 1, desk at variable height\n    chair at variable height\n    60–78 cm\n    42–54 cm\nB: workstation type 2, type 3, desk of fixed height\n    chair of variable height\n    72 cm\n    42–50 cm\n    footstool of variable height\n    00–15 cm\nThere should be sufficient legroom → ⑥.\nThe desktop working area should be at least 120 × 80 cm (few documents, predominantly screen work; for specialist employees, at least 200 × 80 cm)\nEnvironment: All furniture in the immediate vicinity (desktop etc.) should have a coefficient of reflection of 20–50%.\nLighting intensity should be 300–500 lx, and lamps have limited glare, e.g. through recessed ceiling grid luminaires or 2-K lighting → p. 501–510. Light bands should be arranged parallel to the window. Matt surfaces in the room with recommended coefficients of reflection (approx: ceiling 70%, walls 50%, partitions 20–50%).\nThe view to the screen should be parallel to the window façade and to light bands, with the screen if possible in-between. Install computer workstations in windowless zones.\nRecommendations for climatic conditions and sound reduction should be complied with. The increased use of equipment in offices will more probably result in a cooling load rather than a heating load (→ p. 466).\n\nPsychology of the computer workstation"
+   },
+   {
+    "quote": "The desktop working area should be at least 120 × 80 cm (few documents, predominantly screen work; for specialist employees, at least 200 × 80 cm)",
+    "page_id": "page_0248",
+    "book_page": "236",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Workplace layout\nItems which are frequently used during the working day should be put in the preferred places where they are visible and reachable → ① – ③. There should be a free movement area of at least 1.5 m² at the workstation.\nFurniture: This should enable the correctly defined working posture – upper arm and elbow vertical at an angle of approx. 90° and thigh and lower leg vertical at an angle of 90° → ④. To achieve the correct posture for people of different heights, table and chair sizes must be adjustable. Two ergonomically equally valuable possibilities are:\nA: workstation type 1, desk at variable height\n    chair at variable height\n    60–78 cm\n    42–54 cm\nB: workstation type 2, type 3, desk of fixed height\n    chair of variable height\n    72 cm\n    42–50 cm\n    footstool of variable height\n    00–15 cm\nThere should be sufficient legroom → ⑥.\nThe desktop working area should be at least 120 × 80 cm (few documents, predominantly screen work; for specialist employees, at least 200 × 80 cm)\nEnvironment: All furniture in the immediate vicinity (desktop etc.) should have a coefficient of reflection of 20–50%.\nLighting intensity should be 300–500 lx, and lamps have limited glare, e.g. through recessed ceiling grid luminaires or 2-K lighting → p. 501–510. Light bands should be arranged parallel to the window. Matt surfaces in the room with recommended coefficients of reflection (approx: ceiling 70%, walls 50%, partitions 20–50%).\nThe view to the screen should be parallel to the window façade and to light bands, with the screen if possible in-between. Install computer workstations in windowless zones.\nRecommendations for climatic conditions and sound reduction should be complied with. The increased use of equipment in offices will more probably result in a cooling load rather than a heating load (→ p. 466).\n\nPsychology of the computer workstation"
+   }
+  ]
+ },
+ {
+  "kid": "K116",
+  "topic": "办公",
+  "title": "办公室类型",
+  "summary": "单间办公室适合独立或专注工作；组团办公约 4–16 个工位；100 个以上工位的大开间依赖人工照明和通风；提倡单间与组团混合。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "The experience with the open-plan layout led to the development of group offices with approx. 4–16 workstations",
+    "page_id": "page_0251",
+    "book_page": "239",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Group office: The experience with the open-plan layout led to the development of group offices with approx. 4–16 workstations; each office is used by a single team or department. This arrangement is preferred above all for creative, design or coordination and development activities with high internal communication needs.\n→ 2"
+   },
+   {
+    "quote": "The experience with the open-plan layout led to the development of group offices with approx. 4–16 workstations; each office is used by a single team or department.",
+    "page_id": "page_0251",
+    "book_page": "239",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Group office: The experience with the open-plan layout led to the development of group offices with approx. 4–16 workstations; each office is used by a single team or department. This arrangement is preferred above all for creative, design or coordination and development activities with high internal communication needs.\n→ 2"
+   },
+   {
+    "quote": "Large-scale office landscapes with 100 or more workstations are made possible by artificial lighting and ventilation",
+    "page_id": "page_0251",
+    "book_page": "239",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Open-plan office: A form of office developed in the 1960s and 1970s of the last century. Large-scale office landscapes with 100 or more workstations are made possible by artificial lighting and ventilation; they stand for free communication and openness. Economical cubic structures, however, have the disadvantage of high maintenance costs. This form is not very popular among users → 3."
+   },
+   {
+    "quote": "Single-room offices are suitable for independent or concentrated work, as a single-person room or for a few people in very small groups who need to exchange information constantly.",
+    "page_id": "page_0245",
+    "book_page": "233",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Single-room offices are suitable for independent or concentrated work, as a single-person room or for a few people in very small groups who need to exchange information constantly. This arrangement has been common in Germany since World War II and still has its justification when the requirements of the workplace correspond (→ Gruner, Jahr; Steidle, Kissler; or → new offices for the Federal Environment Office, Dessau, Sauerbruch, Hutton) or in newbuild high-rise offices, where the structure of the building can be so decisive that it leads to the very standardised character of spatial and organisational working practices."
+   },
+   {
+    "quote": "the requirement for a mixed provision of single and group rooms",
+    "page_id": "page_0244",
+    "book_page": "232",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "A more sensitive relationship to the direct working environment is closely linked to the predominant value orientation in the company. This is reflected in the attitude to the quality of the workplace (daylight, environmental context, energy consumption), and the activity (ecological viewpoints, material use, waste disposal). The workplace is an important place for social interaction among the users, which is increasing in relevance due to formalised work structures (IT, work organisation etc.). Increased mental and physical stress leads to a greater awareness of the working environment (sufficient space, some personal choice in furnishings, ventilation, lighting, sufficient protection from disruptions). 75% of daily work takes place at the 'close and extended workplace' → ②. Necessary work contacts and collectively used facilities are significant, thus the requirement for a mixed provision of single and group rooms, 'personal' and 'collective' workplaces → ③ – ④. In addition to the refurbishment of existing office space, new spatial concepts involving single and group rooms are starting to appear (Fuchs, Gottschalk, Henkel → refs)."
+   }
+  ]
+ },
+ {
+  "kid": "K119",
+  "topic": "办公",
+  "title": "工作场所厕所（劳动场所规定）",
+  "summary": "（工作场所）厕所距每个工位不超过 100 m，或最远不超过一层楼高（无自动扶梯时）；员工超过 5 人须分设男女厕所，且宜仅供员工使用；厕所由带洗手盆的前室（每 5 个 WC 至少 1 个洗手盆）和完全分隔、至少含一个 WC 的房间组成。",
+  "priority": 2,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "These are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height (if no escalator is available).",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilets\nThese are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height (if no escalator is available). Toilets should also be provided near social, readiness, washing and changing rooms → 1. If there are more than five employees, separate toilets must be provided for women and men and these should be available exclusively to employees. The number of necessary toilets depends on the number of employees → 10: the site and arrangement are shown → 3 – 11. Disability-friendly toilets are to be provided in accordance with regulations → p. 21 ff."
+   },
+   {
+    "quote": "at least one washbasin per five WCs",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilet facilities consist of a lobby with washbasins (at least one washbasin per five WCs) and a completely separate room with at least one WC (unless the facilities contain only one toilet and have no direct access to a work, social, changing, wash or sanitary room). Toilet cubicles must be lockable and, if light partitions (incompletely separated WC cubicles) are used, the partition should have a height of at least 1.90 m, and at the bottom a gap of 10–15 cm. Urinals must be placed so as not to be visible from the entrance. Toilet facilities should not contain more than 10 WC cubicles and 10 urinals. Further details of the requirements for toilets are contained in Workplace Guidelines 37/1. With natural ventilation, the minimum ventilation sections are: with window ventilation on one side 1700 cm²/WC, 1000 cm²/urinal; with through ventilation (ventilation shaft and opening window opposite) 1000 cm²/WC, 600 cm²/urinal. Ventilation equipment is to be designed for 30 m³/WC and 15 m³/urinal (altogether at least five air changes/h)."
+   },
+   {
+    "quote": "If there are more than five employees, separate toilets must be provided for women and men",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilets\nThese are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height (if no escalator is available). Toilets should also be provided near social, readiness, washing and changing rooms → 1. If there are more than five employees, separate toilets must be provided for women and men and these should be available exclusively to employees. The number of necessary toilets depends on the number of employees → 10: the site and arrangement are shown → 3 – 11. Disability-friendly toilets are to be provided in accordance with regulations → p. 21 ff."
+   },
+   {
+    "quote": "Toilet facilities consist of a lobby with washbasins (at least one washbasin per five WCs) and a completely separate room with at least one WC (unless the facilities contain only one toilet and have no direct access to a work, social, changing, wash or sanitary room).",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilet facilities consist of a lobby with washbasins (at least one washbasin per five WCs) and a completely separate room with at least one WC (unless the facilities contain only one toilet and have no direct access to a work, social, changing, wash or sanitary room). Toilet cubicles must be lockable and, if light partitions (incompletely separated WC cubicles) are used, the partition should have a height of at least 1.90 m, and at the bottom a gap of 10–15 cm. Urinals must be placed so as not to be visible from the entrance. Toilet facilities should not contain more than 10 WC cubicles and 10 urinals. Further details of the requirements for toilets are contained in Workplace Guidelines 37/1. With natural ventilation, the minimum ventilation sections are: with window ventilation on one side 1700 cm²/WC, 1000 cm²/urinal; with through ventilation (ventilation shaft and opening window opposite) 1000 cm²/WC, 600 cm²/urinal. Ventilation equipment is to be designed for 30 m³/WC and 15 m³/urinal (altogether at least five air changes/h)."
+   },
+   {
+    "quote": "If there are more than five employees, separate toilets must be provided for women and men and these should be available exclusively to employees.",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilets\nThese are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height (if no escalator is available). Toilets should also be provided near social, readiness, washing and changing rooms → 1. If there are more than five employees, separate toilets must be provided for women and men and these should be available exclusively to employees. The number of necessary toilets depends on the number of employees → 10: the site and arrangement are shown → 3 – 11. Disability-friendly toilets are to be provided in accordance with regulations → p. 21 ff."
+   },
+   {
+    "quote": "These are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilets\nThese are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height (if no escalator is available). Toilets should also be provided near social, readiness, washing and changing rooms → 1. If there are more than five employees, separate toilets must be provided for women and men and these should be available exclusively to employees. The number of necessary toilets depends on the number of employees → 10: the site and arrangement are shown → 3 – 11. Disability-friendly toilets are to be provided in accordance with regulations → p. 21 ff."
+   },
+   {
+    "quote": "Toilet facilities consist of a lobby with washbasins (at least one washbasin per five WCs) and a completely separate room with at least one WC",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilet facilities consist of a lobby with washbasins (at least one washbasin per five WCs) and a completely separate room with at least one WC (unless the facilities contain only one toilet and have no direct access to a work, social, changing, wash or sanitary room). Toilet cubicles must be lockable and, if light partitions (incompletely separated WC cubicles) are used, the partition should have a height of at least 1.90 m, and at the bottom a gap of 10–15 cm. Urinals must be placed so as not to be visible from the entrance. Toilet facilities should not contain more than 10 WC cubicles and 10 urinals. Further details of the requirements for toilets are contained in Workplace Guidelines 37/1. With natural ventilation, the minimum ventilation sections are: with window ventilation on one side 1700 cm²/WC, 1000 cm²/urinal; with through ventilation (ventilation shaft and opening window opposite) 1000 cm²/WC, 600 cm²/urinal. Ventilation equipment is to be designed for 30 m³/WC and 15 m³/urinal (altogether at least five air changes/h)."
+   }
+  ]
+ },
+ {
+  "kid": "K122",
+  "topic": "办公",
+  "title": "档案室",
+  "summary": "文件室须干燥，因此不宜设在阁楼和地下室；文件存放区净高 2.10 m（2 层普通办公 = 3 层文件存放）；档案室宜按 7.5–12.5 kN/m² 的较高楼面荷载设计（针对移动式密集架）。",
+  "priority": 1,
+  "revised_in_round1": true,
+  "evidence": [
+   {
+    "quote": "The rooms must be dry, so attic and cellar are inadvisable.",
+    "page_id": "page_0249",
+    "book_page": "237",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Filing\nDespite the application of new office technologies, the use of paper as the main information storage medium has increased. Until 1980, paper consumption doubled every four years. Computer-aided storage is increasingly used as information depository in office communication systems. Letters, texts and newspapers, which are described as uncoded information, will continue to be part of the paper volume.\nPurpose: Clearly arranged ordering and storage of files within short walking distance and efficient exploitation of the space. Space requirements for filing systems (according to Ladner → ①). Increasing depth of shelves also increases the distance to walk between them.\nL × W (filing furniture) = space for furniture\n+ ½ L × W + 0.5 m = passage space\n__________\ntotal space required = space for furniture + passage space\nDeep filing cabinets are more economical. The relationship between furniture floor space and passage space for a vertical filing system using large archive shelves (Velox system) and for a horizontal filing system is made clear in → ⑪. Furniture floor space needed with vertical storage is 5.2 m², passage space 4.6 m² (100:90). With horizontal storage, furniture floor space 3.2 m², passage space 3.6 m² (90:100, ratio inverted). A horizontal filing system offers less storage space and the high shelves are hard to organise. Vertical storage offers a personnel saving of over 40%. Suspended files make about 87% better use of wall area than files on shelves → ⑫. Files can be transported with a paternoster lift. Workstations should include sorting shelves, small desk, chairs on castors.\nThe filing system should be centrally located. A favourable window centre-line is 2.25–2.50 m, ceiling clearance height 2.10 m (2 storeys of normal office space = 3 storeys of filing). The rooms must be dry, so attic and cellar are inadvisable. Continuous table → ⑬ + ⑭ with suspended files and writing surfaces combines workstations effectively. Trolleys can be used as writing surfaces, or for card index boxes. Mobile filing systems (Soenneken Compaktus system) enable a space saving of 100–120%) by eliminating intermediate passages → ⑮ B Systems are not standardised and are adapted to the relevant requirements of filing systems, archives, libraries, stores. Take note of the higher loading per m² of floor area (→ Libraries, pp. 247 ff.). Movement of the filing system is manual or by a drive. The entire filing system or just parts of it can be closed with one hand."
+   },
+   {
+    "quote": "ceiling clearance height 2.10 m (2 storeys of normal office space = 3 storeys of filing)",
+    "page_id": "page_0249",
+    "book_page": "237",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Filing\nDespite the application of new office technologies, the use of paper as the main information storage medium has increased. Until 1980, paper consumption doubled every four years. Computer-aided storage is increasingly used as information depository in office communication systems. Letters, texts and newspapers, which are described as uncoded information, will continue to be part of the paper volume.\nPurpose: Clearly arranged ordering and storage of files within short walking distance and efficient exploitation of the space. Space requirements for filing systems (according to Ladner → ①). Increasing depth of shelves also increases the distance to walk between them.\nL × W (filing furniture) = space for furniture\n+ ½ L × W + 0.5 m = passage space\n__________\ntotal space required = space for furniture + passage space\nDeep filing cabinets are more economical. The relationship between furniture floor space and passage space for a vertical filing system using large archive shelves (Velox system) and for a horizontal filing system is made clear in → ⑪. Furniture floor space needed with vertical storage is 5.2 m², passage space 4.6 m² (100:90). With horizontal storage, furniture floor space 3.2 m², passage space 3.6 m² (90:100, ratio inverted). A horizontal filing system offers less storage space and the high shelves are hard to organise. Vertical storage offers a personnel saving of over 40%. Suspended files make about 87% better use of wall area than files on shelves → ⑫. Files can be transported with a paternoster lift. Workstations should include sorting shelves, small desk, chairs on castors.\nThe filing system should be centrally located. A favourable window centre-line is 2.25–2.50 m, ceiling clearance height 2.10 m (2 storeys of normal office space = 3 storeys of filing). The rooms must be dry, so attic and cellar are inadvisable. Continuous table → ⑬ + ⑭ with suspended files and writing surfaces combines workstations effectively. Trolleys can be used as writing surfaces, or for card index boxes. Mobile filing systems (Soenneken Compaktus system) enable a space saving of 100–120%) by eliminating intermediate passages → ⑮ B Systems are not standardised and are adapted to the relevant requirements of filing systems, archives, libraries, stores. Take note of the higher loading per m² of floor area (→ Libraries, pp. 247 ff.). Movement of the filing system is manual or by a drive. The entire filing system or just parts of it can be closed with one hand."
+   },
+   {
+    "quote": "Archive rooms should be designed for an increased floor loading of 7.5–12.5 kN/m² (for mobile units)",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Archive rooms\nFiles and written documents, which are seldom needed but have to be kept (statutory storage requirements), are stored here to take up as little space as possible (purely paper archives rapidly take up 10–20 m per workstation). For this reason, microfilming and some electronic archiving are worth looking into at an early stage. Archive rooms should be designed for an increased floor loading of 7.5–12.5 kN/m² (for mobile units) → Archives, p. 252."
+   }
+  ]
+ },
+ {
+  "kid": "K125",
+  "topic": "办公",
+  "title": "组团办公室到窗距离",
+  "summary": "组团办公室（小型开敞办公）适合需要持续交流的工作组，工位周边到窗的距离最大 7.5 m。",
+  "priority": 2,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Group rooms (smaller open-plan) are suitable for work groups with constant information exchange.",
+    "page_id": "page_0245",
+    "book_page": "233",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Group rooms (smaller open-plan) are suitable for work groups with constant information exchange. This form of office was an attempt to install room layouts with more scope for individual decisions (→ Changes at the workplace, p. 232 ), via the size of the workplace surroundings (max. 7.5 m to a window), and thus improve the working conditions of an open-plan arrangement (light, air, individuality), which were found to be inadequate with the increasing demands on office work. It is possible to do without full air conditioning in favour of back-up ventilation services, in addition to opening windows and using radiators."
+   },
+   {
+    "quote": "via the size of the workplace surroundings (max. 7.5 m to a window)",
+    "page_id": "page_0245",
+    "book_page": "233",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Group rooms (smaller open-plan) are suitable for work groups with constant information exchange. This form of office was an attempt to install room layouts with more scope for individual decisions (→ Changes at the workplace, p. 232 ), via the size of the workplace surroundings (max. 7.5 m to a window), and thus improve the working conditions of an open-plan arrangement (light, air, individuality), which were found to be inadequate with the increasing demands on office work. It is possible to do without full air conditioning in favour of back-up ventilation services, in addition to opening windows and using radiators."
+   }
+  ]
+ },
+ {
+  "kid": "K128",
+  "topic": "办公",
+  "title": "研讨室的规模与进深",
+  "summary": "高校研讨室常用规模为 20、40、50、60 座，每名学生约 1.90–2.00 m²；仅靠一面外墙自然通风时，房间进深不超过净高的 2.5 倍。",
+  "priority": 3,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Seminar rooms, usual sizes: 20, 40, 50, 60 seats; mobile double tables, width 1.20 m, depth 0.60 m, space required per student 1.90–2.00 m.",
+    "page_id": "page_0214",
+    "book_page": "202",
+    "chapter": "Education and research",
+    "subheadings": [
+     "UNIVERSITIES AND COLLEGES"
+    ],
+    "source": "body",
+    "context": "General tuition rooms\nSeminar rooms, usual sizes: 20, 40, 50, 60 seats; mobile double tables, width 1.20 m, depth 0.60 m, space required per student 1.90–2.00 m.\nVariable arrangement of the tables for tutorial and group work. If there is free ventilation from only one external wall, the depth of the room should not exceed 2.5 × clear ceiling height."
+   },
+   {
+    "quote": "If there is free ventilation from only one external wall, the depth of the room should not exceed 2.5 × clear ceiling height.",
+    "page_id": "page_0214",
+    "book_page": "202",
+    "chapter": "Education and research",
+    "subheadings": [
+     "UNIVERSITIES AND COLLEGES"
+    ],
+    "source": "body",
+    "context": "General tuition rooms\nSeminar rooms, usual sizes: 20, 40, 50, 60 seats; mobile double tables, width 1.20 m, depth 0.60 m, space required per student 1.90–2.00 m.\nVariable arrangement of the tables for tutorial and group work. If there is free ventilation from only one external wall, the depth of the room should not exceed 2.5 × clear ceiling height."
+   }
+  ]
+ },
+ {
+  "kid": "K131",
+  "topic": "酒店与餐饮",
+  "title": "汽车旅馆",
+  "summary": "汽车旅馆客房 4×4 至 5×5 m、带卫生间；多为单层分散布置；停车位尽量靠近客房。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Room sizes 4 × 4 m – 5 × 5 m, with bathroom and sometimes kitchenette",
+    "page_id": "page_0198",
+    "book_page": "186",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "MOTELS"
+    ],
+    "source": "body",
+    "context": "Room sizes 4 × 4 m – 5 × 5 m, with bathroom and sometimes kitchenette → ① – ⑥. Furnishing is cost-saving and simple (most of the guests stay only one night). Community rooms for guests, with desks and reading tables, radio, television; play area should be situated away from the guest rooms so as not to disturb sleepers."
+   },
+   {
+    "quote": "In contrast to city hotels, motels are mostly single-storey, widely spread facilities",
+    "page_id": "page_0198",
+    "book_page": "186",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "MOTELS"
+    ],
+    "source": "body",
+    "context": "Motels offer reasonably priced accommodation for travellers. They are located at the edge of towns in places easily reachable by motorway or arterial roads, near tourist attractions and holiday regions. It is beneficial to have restaurants, petrol stations and services for motorists in the immediate vicinity. In contrast to city hotels, motels are mostly single-storey, widely spread facilities → 7. The access road normally leads to the registration (short-term parking), then to a car park or carport as near to the room as possible. (Departure also via registration with check-out and return of key.)"
+   },
+   {
+    "quote": "The access road normally leads to the registration (short-term parking), then to a car park or carport as near to the room as possible.",
+    "page_id": "page_0198",
+    "book_page": "186",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "MOTELS"
+    ],
+    "source": "body",
+    "context": "Motels offer reasonably priced accommodation for travellers. They are located at the edge of towns in places easily reachable by motorway or arterial roads, near tourist attractions and holiday regions. It is beneficial to have restaurants, petrol stations and services for motorists in the immediate vicinity. In contrast to city hotels, motels are mostly single-storey, widely spread facilities → 7. The access road normally leads to the registration (short-term parking), then to a car park or carport as near to the room as possible. (Departure also via registration with check-out and return of key.)"
+   }
+  ]
+ },
+ {
+  "kid": "K134",
+  "topic": "酒店与餐饮",
+  "title": "餐厅与厨房、卫生间的组织",
+  "summary": "厨房、附属用房、厕所和卫生设施应围绕餐厅布置；餐厨的出餐台最好位于备餐区和餐厅之间。",
+  "priority": 1,
+  "revised_in_round1": false,
+  "evidence": [
+   {
+    "quote": "Kitchen, side rooms, toilets and sanitary installations should be grouped around the dining room",
+    "page_id": "page_0187",
+    "book_page": "175",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "CATERING"
+    ],
+    "source": "body",
+    "context": "Before any restaurant or other catering establishment is built, the organisational processes must be determined with the operator. The following have to be decided: what food will be on the menu, what quality and quantity will be on offer? Which service system will be used, whether à la carte with fixed or changing daily menus, plate or table service, self-service or mixed? For design purposes, it is important to know which target clientele is aimed for. The site itself will help to determine the most suitable type of restaurant. Appoint specialists in: kitchen equipment, electrical, heating, ventilation and sanitary design.\n\nThe main room in a restaurant is the dining room. Its furniture and fittings should be appropriate for the business. A number of additional tables or chairs should be available, so that table groupings are flexible. Provide special tables for regulars. Side rooms and conference rooms should always be flexibly furnished in order to permit variations. A food bar with fixed stools can be arranged for customers in a hurry. Larger dining rooms should be split into zones. Kitchen, side rooms, toilets and sanitary installations should be grouped around the dining room, also in the basement → 8.\n\nColumns in a dining room are best located in the centre of a group of tables or at the corners of the tables → 3. The ceiling heights of dining areas with a floor area ≤50 m² = 2.50 m, > 50 m² = 2.75 m and >100 m² ≥3.00 m; above or below galleries ≥2.50 m.\n\nEmergency exits 1.0 m wide per 150 people using them. Minimum clear width of aisles in restaurants 0.80 m, doors 0.90 m → 9.\n\nToilets in public houses, bars or restaurants: Stairs to toilets, wash, staff and storage rooms, usable width ≤1.10 m. Clear walk-through height ≤2.10 m measured vertically. Window area ≤1/10 of the floor area of a restaurant."
+   },
+   {
+    "quote": "Servery for restaurant kitchens with counter or self-service, ideally situated between the preparation area and the dining room.",
+    "page_id": "page_0192",
+    "book_page": "180",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "CATERING"
+    ],
+    "source": "body",
+    "context": "Hot kitchens, corresponding to their main functions – cooking and roasting – contain finishing zones and some or all of the following equipment: cooker (two to eight rings), increasingly mobile hotplates, extractor hood, water boiler, fast-cooking equipment, automatic cooker, steamer, automatic steamer and pressure cooker, combination device, water bath (bain-marie), baking and roasting oven, roast and grill plates, frying pans, staged roasting oven, chip pan, salamander, circulation machine (for frozen goods), microwave oven, continuous process automatic roaster and baker. Large automatic appliances are used only in very large kitchens. Storage and working surfaces should be located between appliances and at the end of the block. In addition to the fixed arrangement in the block, mobile appliances are increasingly being used, which can be adapted better to production changes and are easier to clean. → 1 – 5.\n\nCold kitchens should have a layout logically planned in parallel to the hot kitchen and be convenient for the (common) servery and bread area. The regular equipment is a day refrigerator under/over the cold table, various cutting and slicing machines (bread, cold cuts, meat, cheese), mixing machine, scales, cutting boards, salad table with lower cold cabinet, toaster or salamander, microwave oven and sufficient working and storage space → 6.\n\nServery for restaurant kitchens with counter or self-service, ideally situated between the preparation area and the dining room. There should be sufficient shelf space, a hot cabinet with heated plates and a cool zone for cold foods. Crockery shelves or upper fixings, cutlery container. In large businesses, also basket, plate and soup bowl dispensers.\n\nCrockery return: the difference between washing crockery and pots is considerable. With waiter service, the plates are brought back to their own area of the servery → 12 – 15. In addition to one or two sinks with drainers, storage space and shelves for pot washing, small kitchens naturally also require dishwashers in various sizes, feed types and operational types. Dishwashers under the worktop are usual, but also tunnel and rotary batch washers. Provide surfaces for the return (temporary storage, worktops, sorting, soaking) and space for the crockery → 12 – 14.\n\nStaff area: about 10–15% of the total space required in a kitchen facility should be allocated for offices and staff rooms. The kitchen staff will need changing rooms, washing facilities and toilets. For more than 10 employees, a rest/break room is necessary (workplace regulations). It is important that changing and social rooms are near the kitchen, to avoid staff having to cross unclean room areas or corridors. For changing rooms, > 6 m² floor area, 4–6 air changes per hour and privacy. Provide each employee with a well-ventilated, lockable cupboard. In large operations, even differentiate street and working clothes. Guidelines for the toilets: per unit (WC and washbasin) 5–6 m² and for the sh"
+   }
+  ]
+ }
+]

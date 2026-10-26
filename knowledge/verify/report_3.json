@@ -1,0 +1,348 @@
+[
+ {
+  "kid": "K89",
+  "title": "联排住宅进深 ≤12 m、面宽 4–8 m",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.144 'economic building depths of up to 12 m and widths between 4 and 8 m ... dark middle zone ... unavoidable'."
+ },
+ {
+  "kid": "K90",
+  "title": "入户凹口尺寸",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.146 'Entrance recesses should be at least 1.25 m (better 1.50 m) wide and approx. 1.00 m deep'."
+ },
+ {
+  "kid": "K91",
+  "title": "每户必备厨房与储藏间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.149 'every house or flat must have at least one kitchen or kitchenette'; p.162 'building regulations require ... sufficiently large storeroom'."
+ },
+ {
+  "kid": "K92",
+  "title": "厨房宽度与操作空间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.149 'movement area of 1.50 m (min. 1.20 m) is therefore required ... minimum kitchen width of 2.70 m (min 2.40 m)' with 60 cm units on each side (= two-row)."
+ },
+ {
+  "kid": "K93",
+  "title": "厨房面积与类型",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.150 'from approx. 10 m²' and 'A good arrangement is an L shape ... approx. 14 m²'."
+ },
+ {
+  "kid": "K94",
+  "title": "开放式厨房",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.150 'Open kitchens require good ventilation and extraction ...'."
+ },
+ {
+  "kid": "K95",
+  "title": "厨房位置",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.149 'location of the kitchen is ideally ... in the immediate vicinity of the entrance area (short distances for shopping, rubbish etc.)'."
+ },
+ {
+  "kid": "K96",
+  "title": "就餐区的朝向与连接",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.154 'normally oriented to the south or west'; 'direct connection ... is practical'; 'should have access to the balcony or terrace if possible'."
+ },
+ {
+  "kid": "K97",
+  "title": "餐桌尺寸与就餐人数",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.154 'at least 4 people'; 'approx. 60 × 40 cm'; '20 cm strip'; round table 'min. 0.90 m, though 1.10–1.25 m would be preferable'."
+ },
+ {
+  "kid": "K98",
+  "title": "储藏与食品间靠近厨房",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.162 'practical to locate a part of this storage area near the kitchen'; 'most practical when the larder is next to the kitchen'."
+ },
+ {
+  "kid": "K99",
+  "title": "卧室最小面积",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.157 'minimal space of approx. 13 m² (parents' room or twin bedroom) and approx. 8 m² (single room)'; '→④ generous twin bedroom of 16.5 m²'."
+ },
+ {
+  "kid": "K100",
+  "title": "卫生间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.160 bathroom definition + 'according to building regulations, belongs to the minimum equipment'; 'In larger houses ... separate rooms, or an additional WC'; 'normally next to the bedroom'."
+ },
+ {
+  "kid": "K101",
+  "title": "没有洗衣间时",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.161 'If there is no laundry room, the bathroom must be designed with space and connections for a washing machine, washer/dryer and laundry basket'."
+ },
+ {
+  "kid": "K102",
+  "title": "洗衣间",
+  "verdict": "needs_fix",
+  "issues": [
+   "Modality: source says the 1.20 m worktop 'should be provided'; summary '需' reads as a requirement — use '宜/应'.",
+   "Scope: these rules concern laundry/utility rooms in homes (washroom 'laundry/utility room'); fine but keep '洗衣/家务间'."
+  ],
+  "corrected_summary": "洗衣/家务间宜设 1.20 m 宽的工作台用于处理衣物；最好朝东北、紧邻厨房或便于从厨房到达；独立住宅中应直通花园（用于晾晒衣物）。",
+  "evidence_note": "p.163 'A worktop of 1.20 m width should be provided'; 'best placed to the northeast, next to or easily accessible from the kitchen'; 'In detached houses, direct access should be provided to the garden'."
+ },
+ {
+  "kid": "K103",
+  "title": "衣柜的位置与通风",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.159 'normally situated in the bedroom'; 'Walk-in wardrobes also require appropriate ventilation'."
+ },
+ {
+  "kid": "K104",
+  "title": "户内储藏空间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.162 '≥ 1 m² with a clear width of 75 cm'; 'In larger flats, 2% of the floor area should be provided'; 'Doors to storerooms should open outward for reasons of space'."
+ },
+ {
+  "kid": "K105",
+  "title": "卫生间朝向、采光与通风",
+  "verdict": "needs_fix",
+  "issues": [
+   "Condition dropped: placing artificially lit bathrooms in the central zone is stated only for 'buildings of greater depth' where the central area is widened into a subsidiary-space zone (p.145); summary generalises it to any flat plan."
+  ],
+  "corrected_summary": "卫生间宜朝北，尽可能自然采光通风，否则按 DIN 18017-3 设置有效的机械通风；在进深较大的建筑中，户型中部可加宽为辅助功能区，人工照明（或经其他区域间接采光）的卫生间可布置于此。",
+  "evidence_note": "p.160 'should be oriented to the north ... (otherwise provide effective mechanical ventilation according to DIN 18017-3)'; p.145 'In buildings of greater depth, the central area ... Bathrooms with artificial lighting ... can be placed here'."
+ },
+ {
+  "kid": "K106",
+  "title": "卫生间类型",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.161 'The basic bathroom categories are: (guest) WCs ... shower rooms ... bathrooms ... full bathrooms ...'."
+ },
+ {
+  "kid": "K107",
+  "title": "卫浴与厨房共用管井",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.160 'often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft'."
+ },
+ {
+  "kid": "K108",
+  "title": "婴儿车与自行车公共储藏间",
+  "verdict": "needs_fix",
+  "issues": [
+   "The gloss '如两户以上' is imported from a waste-storage passage in the Agriculture chapter (p.464), which reads 'more than two flats or a usable area of 400 m² (building classes 3–5)'; the gloss is incomplete (drops the 400 m² alternative) and not part of the storeroom passage. Remove it or quote fully.",
+   "Summary omits that the book also says corresponding areas should be provided in other residential buildings and detached houses (optional)."
+  ],
+  "corrected_summary": "建筑法规要求建筑等级 3–5 的住宅设置方便到达的（公共）婴儿车、童车和自行车储藏间（其他住宅和独立住宅也宜设相应空间）；设计时可按每位住户（含儿童）至少一辆车估算；储藏间宜尽量设在街道层，可上锁，并配挂钩和自行车架。",
+  "evidence_note": "p.165 'for residential buildings in building classes 3–5, the building regulations require an easily accessible (communal) storeroom...'; 'at least one vehicle per occupant'; 'if possible ... at street level, be lockable'."
+ },
+ {
+  "kid": "K109",
+  "title": "办公室净高",
+  "verdict": "needs_fix",
+  "issues": [
+   "The 3.00 m guideline for working rooms >100 m² comes from the Industry and trade chapter (p.266, industrial buildings), not from the office section — generalised to offices.",
+   "2.75 m is stated as 'according to Vst regulation' (and to allow later raised floors/suspended ceilings); the regulation source is dropped.",
+   "2.30 m for corridors and sanitary facilities is 'permitted' — fine, but should be kept as office-building context (p.243 two-row office buildings)."
+  ],
+  "corrected_title": "办公楼室内净高",
+  "corrected_summary": "办公楼（按 Vst 规定）室内净高 2.75 m（便于日后加设架空地板和较深吊顶）；以坐姿工作为主时可降低 25 cm，但净高不低于 2.50 m；走廊和卫生设施允许为 2.30 m。（另：工业与工商建筑一章给出面积大于 100 m² 的工作间净高参考值 3.00 m。）",
+  "evidence_note": "p.243 'Ceiling height 2.75 m according to Vst regulation ... min. 2.50 m clear. Corridors and sanitary facilities are permitted to be 2.30 m'; p.266 (Industry) 'guideline 3.00 m for working rooms larger than 100 m^2'."
+ },
+ {
+  "kid": "K110",
+  "title": "每工位总面积",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.238 'total space requirement per workstation varies between 23 and 45 m^2, depending on organisational and status requirements' (incl. 2.6 m² parking)."
+ },
+ {
+  "kid": "K111",
+  "title": "工位尺寸",
+  "verdict": "needs_fix",
+  "issues": [
+   "Condition dropped: 120 × 80 cm applies to 'few documents, predominantly screen work'; for specialist employees the book gives at least 200 × 80 cm.",
+   "Modality: both values are 'should' (宜/应)."
+  ],
+  "corrected_summary": "桌面工作面积宜不小于 120 × 80 cm（文件少、以屏幕工作为主的情况；专业人员至少 200 × 80 cm）；每个工位宜有不小于 1.5 m² 的自由活动面积。",
+  "evidence_note": "p.236 'The desktop working area should be at least 120 × 80 cm (few documents, predominantly screen work; for specialist employees, at least 200 × 80 cm)'; 'free movement area of at least 1.5 m²'."
+ },
+ {
+  "kid": "K112",
+  "title": "办公室进深、开间与模数",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.240 '1.50 m for single-room offices and 1.35 m for ... combi principle'; 'Workstation depth 2.20 m (80 cm desk, 1 m movement area, 40 cm shelf) ... 4.40 m clear room space' (with 10 cm walls); under 1.35 m module 'Room widths of 3.80 m (~18 m²) enable ... two computer workstations with a depth of 0.90 m'. Minor: 3.80 m width belongs to the 1.35 m module, 2.20/4.40 m to the 1.50 m module."
+ },
+ {
+  "kid": "K113",
+  "title": "建筑进深与采光深度",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.240 'usual depth of buildings with central corridors is 12–13 m'; p.241 'Daylight can mostly be exploited into a room depth of about 7.00 m'."
+ },
+ {
+  "kid": "K114",
+  "title": "办公室类型",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.233 single-room offices 'suitable for independent or concentrated work'; p.239 group offices 'approx. 4–16 workstations'; open plan '100 or more workstations are made possible by artificial lighting and ventilation'; p.232 'requirement for a mixed provision of single and group rooms'."
+ },
+ {
+  "kid": "K115",
+  "title": "会议区",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.238 'about 2.5 m^2 per seat (without subsidiary areas)'; subsidiary rooms 'about 1/3 of the conference area'; 'should be directly accessible from the entrance area'."
+ },
+ {
+  "kid": "K116",
+  "title": "办公卫生间与茶水间配置",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.238 'A good ratio is one toilet unit per 50–80 workstations. Space requirement ~0.6–0.8 m² per workstation'; 'For every approx. 50–100 workplaces, one ~10 m² kitchen'. Note: toilet ratio is a 'good ratio' (recommendation), not a rule; summary has no strong modal so acceptable."
+ },
+ {
+  "kid": "K117",
+  "title": "工作场所厕所（劳动场所规定）",
+  "verdict": "needs_fix",
+  "issues": [
+   "Condition dropped: the 'one storey height' limit applies 'if no escalator is available'.",
+   "Context is the Industry and trade chapter (workplaces generally), not specifically offices — acceptable under 'workplace regulations' title but the topic label 办公 is broader than source."
+  ],
+  "corrected_summary": "（工作场所）厕所距每个工位不超过 100 m，或最远不超过一层楼高（无自动扶梯时）；员工超过 5 人须分设男女厕所，且宜仅供员工使用；厕所由带洗手盆的前室（每 5 个 WC 至少 1 个洗手盆）和完全分隔、至少含一个 WC 的房间组成。",
+  "evidence_note": "p.270 'not more than 100 m or, at the farthest, one storey height (if no escalator is available)'; 'more than five employees, separate toilets must be provided'; 'lobby with washbasins (at least one washbasin per five WCs)'."
+ },
+ {
+  "kid": "K118",
+  "title": "厅室的每人容积",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.483 'Guideline values are 4 m³/person for speech and 10 m³/person for (concert) music. If the volume is too small, this allows too little reverberation.' (Building physics, not office-specific; topic label only)."
+ },
+ {
+  "kid": "K119",
+  "title": "保洁间与物业用房",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.238 'A cleaner's room should be provided on every floor ... ideally with water supply and bucket sink'; 'The caretaker should have a rest room, store and workshop in a central location'."
+ },
+ {
+  "kid": "K120",
+  "title": "档案室",
+  "verdict": "needs_fix",
+  "issues": [
+   "'密集架取高值' is an interpretation not in the text: the book gives 7.5–12.5 kN/m² '(for mobile units)' as an increased floor loading for archive rooms, without saying mobile units take the upper value.",
+   "'须设计' vs 'should be designed' — use 应/宜 for the loading."
+  ],
+  "corrected_summary": "文件室须干燥，因此不宜设在阁楼和地下室；文件存放区净高 2.10 m（2 层普通办公 = 3 层文件存放）；档案室宜按 7.5–12.5 kN/m² 的较高楼面荷载设计（针对移动式密集架）。",
+  "evidence_note": "p.237 'ceiling clearance height 2.10 m (2 storeys of normal office space = 3 storeys of filing). The rooms must be dry, so attic and cellar are inadvisable'; p.238 'Archive rooms should be designed for an increased floor loading of 7.5–12.5 kN/m² (for mobile units)'."
+ },
+ {
+  "kid": "K121",
+  "title": "办公楼入口区",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.238 'Connection between public and working areas. The important functions are lobby, access control, information, visitor registration and waiting zone ... first impression is decisive!'."
+ },
+ {
+  "kid": "K122",
+  "title": "员工餐厅位置",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.238 'Canteens or cafeterias ... Location near the reception and outside the access control allows outside visitors in'."
+ },
+ {
+  "kid": "K123",
+  "title": "组团办公室到窗距离",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.233 'Group rooms (smaller open-plan) are suitable for work groups with constant information exchange ... (max. 7.5 m to a window)'."
+ },
+ {
+  "kid": "K124",
+  "title": "小型使用单元内的走廊",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.241 'For combined use units of less than 400 m², the corridors are not subject to the requirements for escape routes'."
+ },
+ {
+  "kid": "K125",
+  "title": "员工休息室",
+  "verdict": "needs_fix",
+  "issues": [
+   "Scope generalised: the sentence is in the Catering chapter (p.180) under 'Staff area' of kitchen facilities ('The kitchen staff will need changing rooms ... For more than 10 employees, a rest/break room is necessary (workplace regulations)'). Summary and topic present it as a general office rule; keep the catering-kitchen context (citing workplace regulations)."
+  ],
+  "corrected_title": "餐饮厨房员工休息室",
+  "corrected_summary": "餐饮厨房的员工区中，员工超过 10 人时须设休息室（依据劳动场所规定）。",
+  "evidence_note": "p.180 Catering 'Staff area: ... The kitchen staff will need changing rooms, washing facilities and toilets. For more than 10 employees, a rest/break room is necessary (workplace regulations).'"
+ },
+ {
+  "kid": "K126",
+  "title": "研讨室的规模与进深",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.202 'Seminar rooms, usual sizes: 20, 40, 50, 60 seats ... space required per student 1.90–2.00 m' [source reads 'm', almost certainly m² OCR/translation artefact]; 'If there is free ventilation from only one external wall, the depth of the room should not exceed 2.5 × clear ceiling height'."
+ },
+ {
+  "kid": "K127",
+  "title": "高校教研人员办公室面积",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.202 'professor 20–24 m², scientific assistant 15 m², assistant 20 m², secretary 15 m² (double occupation 20 m²)'."
+ },
+ {
+  "kid": "K128",
+  "title": "酒店星级与客房面积",
+  "verdict": "needs_fix",
+  "issues": [
+   "The areas are DEHOGA minimum areas that apply to 75% of the hotel rooms (1–2 stars explicitly; 3–5 stars 'see above'); summary omits 'minimum' and the 75% qualifier.",
+   "1-star rooms are explicitly 'without bathroom' (washbasin in room); 2-star area includes bathroom and corridor — omitted.",
+   "Scope: classification of the German Hotel and Inn Association (DEHOGA), not an official German regulation — '德国酒店分级' acceptable but better name DEHOGA."
+  ],
+  "corrected_summary": "按德国酒店餐饮协会（DEHOGA）分级，单人间/双人间最小面积（适用于 75% 的客房）：1 星 8/12 m²（不含卫生间，房内设洗手盆）；2 星 12/16 m²（含卫生间和走道，70% 客房带卫生间）；3 星 14/18 m²（全部客房带卫生间）；4 星 16/22 m²；5 星 18/26 m²。",
+  "evidence_note": "p.172 '1 Star: single room 8 m², double room 12 m² (minimum area for 75% of the hotel rooms, without bathroom) ... 2 Stars ... (minimum area for 75% ..., including bathroom and corridor), bathroom in room (for 70%) ... 3 Stars ... bathroom in room (for all rooms)'."
+ },
+ {
+  "kid": "K129",
+  "title": "汽车旅馆",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.186 'Room sizes 4 × 4 m – 5 × 5 m, with bathroom'; 'mostly single-storey, widely spread facilities'; 'car park or carport as near to the room as possible'."
+ },
+ {
+  "kid": "K130",
+  "title": "餐厅",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.175 'Minimum clear width of aisles in restaurants 0.80 m, doors 0.90 m'; 'ceiling heights of dining areas ≤50 m² = 2.50 m, > 50 m² = 2.75 m and >100 m² ≥3.00 m'."
+ },
+ {
+  "kid": "K131",
+  "title": "酒店基本功能区",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.171 'The essential areas are: hotel lobby and reception as the central ... nerve centre, catering area in connection with the hotel lobby, administration, a staff area, guest room area, service area'; p.172 1 Star '... reception as a separate area'."
+ },
+ {
+  "kid": "K132",
+  "title": "餐厅与厨房、卫生间的组织",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.175 'Kitchen, side rooms, toilets and sanitary installations should be grouped around the dining room'; p.180 'Servery ... ideally situated between the preparation area and the dining room'."
+ }
+]

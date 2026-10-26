@@ -1,0 +1,1514 @@
+<title>Neufert QA Workbench</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: drafting-table workbench. Project rail on the left, the selected model's title block on top, redline review of QA below. */
+:root {
+  --paper: #f1f2ee;      /* drafting film */
+  --sheet: #fbfbf8;      /* card surface */
+  --ink: #1d2226;
+  --ink-2: #545d62;
+  --rule: #d3d7d2;
+  --rule-2: #e3e6e1;
+  --redline: #c22f3d;    /* review / edit accent */
+  --redline-bg: #fbe9ea;
+  --t1: #8a5a00;  --t1-bg: #f6ecd6;
+  --t2: #2f5378;  --t2-bg: #e3ebf3;
+  --ok: #2c7349;  --ok-bg: #e2f0e6;
+  --flag: #a8660b; --flag-bg: #faeed9;
+  --drop: #6d7478; --drop-bg: #e9ebea;
+  --shadow: 0 1px 0 rgba(29,34,38,.04), 0 1px 3px rgba(29,34,38,.06);
+  --f-display: "IBM Plex Sans Condensed", "PingFang SC", "Noto Sans SC", "Arial Narrow", sans-serif;
+  --f-body: "IBM Plex Sans", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --s-xs: 11.5px; --s-sm: 12.5px; --s-md: 14px; --s-lg: 17px; --s-xl: 22px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #14181a; --sheet: #1b2023; --ink: #e4e7e5; --ink-2: #9aa3a7; --rule: #323a3e; --rule-2: #272e31;
+  --redline: #f0646f; --redline-bg: #3a1e22;
+  --t1: #e2b35a; --t1-bg: #352a14; --t2: #8db6df; --t2-bg: #1b2a3a;
+  --ok: #7fc99a; --ok-bg: #173022; --flag: #e8ae55; --flag-bg: #3a2c14; --drop: #9aa1a4; --drop-bg: #262c2f;
+  --shadow: none; color-scheme: dark;
+} }
+:root[data-theme="dark"] {
+  --paper: #14181a; --sheet: #1b2023; --ink: #e4e7e5; --ink-2: #9aa3a7; --rule: #323a3e; --rule-2: #272e31;
+  --redline: #f0646f; --redline-bg: #3a1e22;
+  --t1: #e2b35a; --t1-bg: #352a14; --t2: #8db6df; --t2-bg: #1b2a3a;
+  --ok: #7fc99a; --ok-bg: #173022; --flag: #e8ae55; --flag-bg: #3a2c14; --drop: #9aa1a4; --drop-bg: #262c2f;
+  --shadow: none; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--f-body); font-size: var(--s-md); line-height: 1.55; }
+button, input, select, textarea { font: inherit; color: inherit; }
+a { color: var(--t2); }
+:focus-visible { outline: 2px solid var(--redline); outline-offset: 2px; }
+
+/* top bar */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper); border-bottom: 1px solid var(--rule);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; padding-block: 10px; padding-inline: 20px; }
+.brand { display: flex; align-items: baseline; gap: 10px; min-width: 0; }
+.brand h1 { font-family: var(--f-display); font-weight: 600; font-size: var(--s-lg); margin: 0; letter-spacing: .01em; }
+.brand span { color: var(--ink-2); font-size: var(--s-sm); }
+.tally { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: var(--s-sm); color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.tally b { color: var(--ink); font-weight: 600; }
+.bar-right { margin-left: auto; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.sync { font-size: var(--s-xs); padding: 2px 8px; border-radius: 99px; border: 1px solid var(--rule); color: var(--ink-2); white-space: nowrap; }
+.sync.live { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 40%, transparent); }
+.sync.ro { color: var(--flag); border-color: color-mix(in srgb, var(--flag) 40%, transparent); }
+.btn { border: 1px solid var(--rule); background: var(--sheet); border-radius: 6px; padding: 5px 12px; cursor: pointer; font-size: var(--s-sm); white-space: nowrap; }
+.btn:hover { border-color: var(--ink-2); }
+.btn.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.btn.red { color: var(--redline); border-color: color-mix(in srgb, var(--redline) 45%, transparent); }
+.btn:disabled { opacity: .45; cursor: default; }
+
+/* shell */
+.shell { display: grid; grid-template-columns: 272px minmax(0, 1fr); gap: 0; min-height: calc(100vh - 60px); }
+.rail { border-right: 1px solid var(--rule); padding-block: 14px; padding-inline: 12px; display: flex; flex-direction: column; gap: 4px; position: sticky; top: 58px; align-self: start; max-height: calc(100vh - 58px); overflow-y: auto; }
+.rail h2 { font-family: var(--f-display); font-size: var(--s-xs); text-transform: uppercase; letter-spacing: .08em; color: var(--ink-2); margin: 6px 8px 6px; font-weight: 600; }
+.pj { display: grid; grid-template-columns: 44px minmax(0,1fr); gap: 10px; align-items: center; padding: 7px 8px; border-radius: 8px; cursor: pointer; border: 1px solid transparent; background: none; text-align: left; width: 100%; }
+.pj:hover { background: var(--sheet); }
+.pj[aria-current="true"] { background: var(--sheet); border-color: var(--rule); box-shadow: var(--shadow); }
+.pj img { width: 44px; height: 44px; object-fit: cover; border-radius: 5px; background: var(--rule-2); }
+.pj .nm { font-size: var(--s-sm); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pj .sub { font-size: var(--s-xs); color: var(--ink-2); font-variant-numeric: tabular-nums; display: flex; gap: 8px; align-items: center; }
+.meter { height: 3px; background: var(--rule-2); border-radius: 2px; overflow: hidden; margin-top: 4px; }
+.meter i { display: block; height: 100%; background: var(--ok); }
+
+.main { padding-block: 22px 60px; padding-inline: 28px; display: flex; flex-direction: column; gap: 22px; min-width: 0; max-width: 1180px; }
+
+/* title block */
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; box-shadow: var(--shadow); }
+.dossier { display: grid; grid-template-columns: minmax(0, 1fr) 300px; }
+.dossier > .info { padding: 20px 22px; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.eyebrow { font-family: var(--f-display); font-size: var(--s-xs); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); font-weight: 600; }
+.pj-title { font-family: var(--f-mono); font-size: var(--s-xl); font-weight: 500; margin: 2px 0 0; word-break: break-all; }
+.pj-type { font-size: var(--s-lg); margin: 2px 0 0; text-wrap: balance; }
+.tb { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
+.tb > div { border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 7px 10px; min-width: 0; }
+.tb dt { font-family: var(--f-display); font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-2); font-weight: 600; }
+.tb dd { margin: 1px 0 0; font-size: var(--s-sm); overflow-wrap: anywhere; }
+.tb dd.mono { font-family: var(--f-mono); font-size: 12px; }
+.shot { border-left: 1px solid var(--rule); display: flex; flex-direction: column; min-width: 0; }
+.shot img { width: 100%; aspect-ratio: 9 / 10; object-fit: cover; border-top-right-radius: 10px; display: block; background: var(--rule-2); max-width: 100%; }
+.shot figcaption { font-size: var(--s-xs); color: var(--ink-2); padding: 6px 12px; border-top: 1px solid var(--rule); }
+.notes { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; max-width: 72ch; }
+.notes li { font-size: var(--s-md); }
+
+.duo { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 22px; }
+.panel { padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.panel h3 { margin: 0; font-family: var(--f-display); font-size: var(--s-md); font-weight: 600; }
+.levels { display: flex; flex-direction: column; }
+.lv { display: grid; grid-template-columns: 22px 78px minmax(0,1fr) 100px; align-items: center; gap: 8px; padding: 5px 0; border-bottom: 1px dashed var(--rule); font-variant-numeric: tabular-nums; }
+.lv:last-child { border-bottom: 0; }
+.lv svg { width: 14px; height: 12px; }
+.lv .el { font-family: var(--f-mono); font-size: 12.5px; }
+.lv .nm { font-size: var(--s-sm); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lv .dh { display: flex; align-items: center; gap: 6px; font-size: var(--s-xs); color: var(--ink-2); font-family: var(--f-mono); justify-content: flex-end; }
+.lv .dh i { display: inline-block; height: 6px; background: var(--t2); opacity: .55; border-radius: 1px; }
+.counts { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 2px 14px; }
+.counts div { display: flex; justify-content: space-between; gap: 8px; font-size: var(--s-sm); border-bottom: 1px solid var(--rule-2); padding: 3px 0; }
+.counts span { color: var(--ink-2); }
+.counts b { font-weight: 500; font-variant-numeric: tabular-nums; }
+.loc { display: flex; flex-direction: column; gap: 6px; font-size: var(--s-sm); }
+.loc .coord { font-family: var(--f-mono); font-size: 13px; }
+.warn { display: inline-flex; gap: 6px; align-items: baseline; font-size: var(--s-xs); padding: 3px 8px; border-radius: 5px; background: var(--flag-bg); color: var(--flag); align-self: flex-start; }
+.warn.site { background: var(--t2-bg); color: var(--t2); }
+.muted { color: var(--ink-2); }
+
+/* QA */
+.qa-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.qa-head h2 { margin: 0; font-family: var(--f-display); font-size: var(--s-lg); font-weight: 600; }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 7px; overflow: hidden; background: var(--sheet); }
+.seg button { border: 0; background: none; padding: 5px 12px; cursor: pointer; font-size: var(--s-sm); font-variant-numeric: tabular-nums; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.filters select, .filters input { border: 1px solid var(--rule); background: var(--sheet); border-radius: 6px; padding: 5px 8px; font-size: var(--s-sm); max-width: 100%; }
+.filters input { width: 200px; }
+.list { display: flex; flex-direction: column; gap: 10px; }
+.empty { padding: 28px; text-align: center; color: var(--ink-2); border: 1px dashed var(--rule); border-radius: 10px; }
+
+.qa { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0; position: relative; }
+.qa.edited { border-left: 3px solid var(--redline); }
+.qa.st-drop { opacity: .6; }
+.qa.st-drop .q { text-decoration: line-through; text-decoration-color: var(--drop); }
+.qa.is-editing { border-color: var(--redline); box-shadow: 0 0 0 3px var(--redline-bg); }
+.qa-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.qid { font-family: var(--f-mono); font-size: 12px; color: var(--ink-2); margin-right: 2px; }
+.chip { font-size: 11px; padding: 1px 7px; border-radius: 4px; background: var(--rule-2); color: var(--ink-2); white-space: nowrap; }
+.chip.t1 { background: var(--t1-bg); color: var(--t1); }
+.chip.t2 { background: var(--t2-bg); color: var(--t2); }
+.chip.ok { background: var(--ok-bg); color: var(--ok); }
+.chip.flag { background: var(--flag-bg); color: var(--flag); }
+.chip.drop { background: var(--drop-bg); color: var(--drop); }
+.chip.red { background: var(--redline-bg); color: var(--redline); }
+.chip.new { background: var(--ink); color: var(--paper); }
+.q { font-weight: 600; font-size: 15px; line-height: 1.45; max-width: 90ch; overflow-wrap: anywhere; }
+.a { white-space: pre-wrap; font-size: var(--s-sm); color: var(--ink); background: var(--paper); border-radius: 6px; padding: 8px 10px; overflow-wrap: anywhere; font-family: var(--f-mono); line-height: 1.5; }
+.a.clamp { max-height: 9.5em; overflow: hidden; position: relative; }
+.a.clamp::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2.5em; background: linear-gradient(to bottom, transparent, var(--paper)); }
+.more { align-self: flex-start; background: none; border: 0; padding: 0; color: var(--t2); cursor: pointer; font-size: var(--s-xs); }
+.note { font-size: var(--s-sm); border-left: 2px solid var(--flag); padding: 2px 0 2px 10px; color: var(--ink); white-space: pre-wrap; overflow-wrap: anywhere; }
+.orig { font-size: var(--s-xs); color: var(--ink-2); border: 1px dashed var(--rule); border-radius: 6px; padding: 8px 10px; display: flex; flex-direction: column; gap: 4px; }
+.orig del { color: var(--redline); text-decoration-color: var(--redline); white-space: pre-wrap; overflow-wrap: anywhere; }
+.acts { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.acts .who { margin-left: auto; font-size: var(--s-xs); color: var(--ink-2); }
+.act { border: 1px solid var(--rule); background: none; border-radius: 5px; padding: 2px 9px; font-size: var(--s-xs); cursor: pointer; }
+.act:hover { border-color: var(--ink-2); }
+.act[aria-pressed="true"].ok { background: var(--ok-bg); color: var(--ok); border-color: transparent; }
+.act[aria-pressed="true"].flag { background: var(--flag-bg); color: var(--flag); border-color: transparent; }
+.act[aria-pressed="true"].drop { background: var(--drop-bg); color: var(--drop); border-color: transparent; }
+
+.chip.qt { background: var(--redline-bg); color: var(--redline); }
+.hx { display: grid; gap: 10px; }
+.hx h4 { margin: 0 0 3px; font-family: var(--f-display); font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-2); font-weight: 600; }
+.hx ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 2px; font-size: var(--s-sm); }
+.hx li { overflow-wrap: anywhere; }
+.hidden-k { font-size: var(--s-sm); background: var(--t1-bg); color: var(--ink); border-radius: 6px; padding: 7px 10px; }
+.hidden-k b { color: var(--t1); font-weight: 600; margin-right: 6px; }
+.cite { border-left: 2px solid var(--t2); padding: 2px 0 2px 10px; font-size: var(--s-sm); }
+.cite q { font-style: italic; overflow-wrap: anywhere; white-space: pre-wrap; }
+.cite .src { display: block; font-size: var(--s-xs); color: var(--ink-2); font-family: var(--f-mono); margin-bottom: 1px; }
+.from { font-size: var(--s-sm); color: var(--ink-2); border-left: 2px solid var(--rule); padding: 1px 0 1px 10px; overflow-wrap: anywhere; }
+.from b { font-family: var(--f-mono); font-weight: 500; color: var(--ink); margin-right: 4px; }
+.chip.link { cursor: pointer; border: 0; font: inherit; font-size: 11px; background: var(--redline-bg); color: var(--redline); }
+.chip.sup { background: var(--t1-bg); color: var(--t1); }
+.qa.flash { box-shadow: 0 0 0 3px var(--redline-bg); }
+.intro { font-size: var(--s-sm); color: var(--ink-2); max-width: 80ch; margin: -8px 0 0; }
+.form { display: grid; gap: 10px; }
+.form label { display: flex; flex-direction: column; gap: 3px; font-size: var(--s-xs); color: var(--ink-2); font-family: var(--f-display); letter-spacing: .04em; text-transform: uppercase; font-weight: 600; }
+.form textarea, .form select, .form input { text-transform: none; letter-spacing: 0; font-family: var(--f-body); font-weight: 400; color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); padding: 7px 9px; font-size: var(--s-md); width: 100%; }
+.form textarea.mono { font-family: var(--f-mono); font-size: 12.5px; }
+.form .row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.form .btns { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.form .err { color: var(--redline); font-size: var(--s-sm); }
+
+.toast { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--paper); padding: 8px 14px; border-radius: 8px; font-size: var(--s-sm); z-index: 9; max-width: calc(100% - 32px); }
+
+@media (max-width: 980px) {
+  .dossier { grid-template-columns: 1fr; }
+  .shot { border-left: 0; border-top: 1px solid var(--rule); flex-direction: row; }
+  .shot img { width: 160px; aspect-ratio: 1; border-radius: 0 0 0 10px; }
+  .shot figcaption { border-top: 0; align-self: end; }
+  .duo { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .shell { grid-template-columns: minmax(0, 1fr); }
+  .rail { position: static; max-height: none; flex-direction: row; overflow-x: auto; border-right: 0; border-bottom: 1px solid var(--rule); padding-inline: 16px; }
+  .rail h2 { display: none; }
+  .pj { width: auto; min-width: 190px; }
+  .main { padding-inline: 16px; }
+  .bar { padding-inline: 16px; }
+  .form .row { grid-template-columns: 1fr; }
+  .filters input { width: 100%; }
+  .lv { grid-template-columns: 18px 70px minmax(0,1fr) 78px; }
+}
+
+/* pages: workbench / knowledge / results */
+.pages { margin-inline: 4px; }
+.page { padding-block: 22px 60px; padding-inline: 28px; display: flex; flex-direction: column; gap: 22px; max-width: 1180px; margin-inline: auto; min-width: 0; }
+.page[hidden], .shell[hidden] { display: none; }
+.page h2 { margin: 0; font-family: var(--f-display); font-size: var(--s-xl); font-weight: 600; }
+.page h3 { margin: 0 0 4px; font-family: var(--f-display); font-size: var(--s-lg); font-weight: 600; }
+.page .lede { margin: 0; max-width: 78ch; color: var(--ink-2); }
+.page .lede b { color: var(--ink); }
+.blk { padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.blk p { margin: 0; max-width: 78ch; color: var(--ink-2); font-size: var(--s-sm); }
+.scroll { overflow-x: auto; }
+table.rt { border-collapse: collapse; width: 100%; font-size: var(--s-sm); font-variant-numeric: tabular-nums; }
+table.rt th, table.rt td { text-align: right; padding: 6px 10px; border-bottom: 1px solid var(--rule-2); white-space: nowrap; }
+table.rt th { font-weight: 500; color: var(--ink-2); font-size: var(--s-xs); }
+table.rt th:first-child, table.rt td:first-child { text-align: left; }
+table.rt td.best { font-weight: 600; }
+:root { --c-mcq: #2a78d6; --c-open: #eb6834; --c-good: #0ca30c; --c-part: #fab219; --c-bad: #c3c2b7; --c-grid: #e1e0d9; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --c-mcq: #3987e5; --c-open: #d95926; --c-bad: #52514e; --c-grid: #2c2c2a; } }
+:root[data-theme="dark"] { --c-mcq: #3987e5; --c-open: #d95926; --c-bad: #52514e; --c-grid: #2c2c2a; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: var(--s-xs); color: var(--ink-2); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.bars { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 10px 12px; align-items: center; font-size: var(--s-sm); }
+.bars .nm { white-space: nowrap; }
+.bars .track { display: grid; gap: 2px; background: linear-gradient(to right, var(--c-grid) 1px, transparent 1px) 0 0 / 25% 100%; border-right: 1px solid var(--c-grid); }
+.bars .bar { height: 12px; border-radius: 0 4px 4px 0; position: relative; min-width: 2px; }
+.bars .bar span { position: absolute; left: 100%; top: 50%; transform: translateY(-50%); margin-left: 6px; font-size: var(--s-xs); color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.bars .track.pad { padding-right: 0; margin-right: 44px; }
+.stack { display: flex; gap: 2px; height: 16px; margin-right: 0; }
+.stack i { display: block; height: 100%; min-width: 2px; }
+.stack i:first-child { border-radius: 4px 0 0 4px; } .stack i:last-child { border-radius: 0 4px 4px 0; }
+.stack-row { display: grid; gap: 3px; }
+.stack-row small { color: var(--ink-2); font-size: var(--s-xs); font-variant-numeric: tabular-nums; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+.kpi { padding: 14px 16px; }
+.kpi b { display: block; font-family: var(--f-display); font-size: 28px; font-weight: 600; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.kpi span { font-size: var(--s-xs); color: var(--ink-2); }
+.hardlist { display: grid; gap: 6px; font-size: var(--s-sm); }
+.hardlist button { all: unset; cursor: pointer; display: grid; grid-template-columns: 46px minmax(0, 1fr); gap: 8px; padding: 6px 8px; border-radius: 6px; }
+.hardlist button:hover { background: var(--rule-2); }
+.hardlist button:focus-visible { outline: 2px solid var(--redline); }
+.hardlist .kid, .kcard .kid { font-family: var(--f-mono); font-size: var(--s-xs); color: var(--ink-2); }
+.hardlist small { color: var(--ink-2); display: block; }
+.kcard { scroll-margin-top: 110px; padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.kprog { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; font-size: var(--s-sm); color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.kprog b { color: var(--ink); font-weight: 600; }
+.kprog .meter { flex: 0 0 160px; height: 4px; background: var(--rule-2); border-radius: 2px; overflow: hidden; }
+.kprog .meter i { display: block; height: 100%; background: var(--ok); }
+.klab { border-top: 1px solid var(--rule-2); padding-top: 10px; }
+.klab .klq { font-size: var(--s-xs); color: var(--ink-2); }
+.klab .knote { flex: 1 1 200px; min-width: 120px; border: 1px solid var(--rule); background: var(--sheet); border-radius: 5px; padding: 2px 8px; font-size: var(--s-xs); }
+.klab .act:disabled, .klab .knote:disabled { opacity: .5; cursor: not-allowed; }
+.kcard.lab-in { border-left: 3px solid var(--ok); }
+.kcard.lab-unsure { border-left: 3px solid var(--flag); }
+.kcard.lab-out { border-left: 3px solid var(--drop); }
+.lvhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-top: 14px; padding-bottom: 6px; border-bottom: 2px solid var(--ink); }
+.lvhead h3 { margin: 0; font-size: var(--s-xl); }
+.lvhead span { color: var(--ink-2); font-size: var(--s-sm); }
+.lvhead .lvifc { flex-basis: 100%; font-family: var(--f-mono); font-size: var(--s-xs); }
+.ifcline { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.ifcline code { font-family: var(--f-mono); font-size: var(--s-xs); border: 1px solid var(--rule); border-radius: 4px; padding: 0 6px; }
+.tphead { font-family: var(--f-display); font-weight: 600; font-size: var(--s-md); color: var(--ink-2); margin-top: 6px; }
+.kcard .kt { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+.kcard .kt h3 { margin: 0; font-family: var(--f-display); font-size: var(--s-lg); font-weight: 600; }
+.kcard .sum { margin: 0; max-width: 82ch; }
+.kcard .cites { display: grid; gap: 6px; }
+.kcard .cite { border-left: 2px solid var(--rule); padding-left: 10px; font-size: var(--s-sm); min-width: 0; }
+.kcard .cite .src { display: block; font-family: var(--f-mono); font-size: var(--s-xs); color: var(--ink-2); }
+.kcard .cite q { white-space: pre-wrap; overflow-wrap: anywhere; quotes: none; }
+.kcard .probe { background: var(--rule-2); border-radius: 8px; padding: 10px 12px; display: grid; gap: 6px; font-size: var(--s-sm); min-width: 0; }
+.kcard .probe .pq { font-weight: 500; }
+.kcard .probe .pa b, .kcard h4 { font-family: var(--f-display); font-weight: 600; font-size: var(--s-xs); color: var(--ink-2); margin: 0 6px 0 0; text-transform: none; }
+.kcard ol.opts { margin: 0; padding-left: 22px; }
+.kcard ol.opts li.right { font-weight: 600; }
+.mres { display: grid; gap: 4px; }
+.mres .row { display: grid; grid-template-columns: 130px 150px minmax(0, 1fr); gap: 8px; align-items: start; font-size: var(--s-sm); padding-block: 3px; border-top: 1px solid var(--rule-2); }
+.mres .row > span:first-child { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mres details summary { cursor: pointer; list-style: none; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.mres details summary::-webkit-details-marker { display: none; }
+.mres details p { margin: 6px 0 4px; white-space: pre-wrap; overflow-wrap: anywhere; color: var(--ink-2); }
+.mres .wrong { color: var(--ink-2); font-size: var(--s-xs); overflow-wrap: anywhere; }
+.chip.part { background: var(--flag-bg); color: var(--flag); }
+.chip.bad { background: var(--redline-bg); color: var(--redline); }
+/* rules pilot */
+.rcard { scroll-margin-top: 110px; padding: 16px 18px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.rcard .kt { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+.rcard .kt h3 { margin: 0; font-family: var(--f-display); font-size: var(--s-lg); font-weight: 600; }
+.rcard h4 { font-family: var(--f-display); font-weight: 600; font-size: var(--s-xs); color: var(--ink-2); margin: 0; }
+.rcard .chip.must { background: var(--redline-bg); color: var(--redline); }
+.rcard .chip.should { background: var(--flag-bg); color: var(--flag); }
+.rcard .chip.typical, .rcard .chip.descriptive { background: var(--t2-bg); color: var(--t2); }
+.rule { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 6px 14px; font-size: var(--s-sm); align-items: start; }
+.rule > b { font-family: var(--f-display); font-weight: 600; font-size: var(--s-xs); color: var(--ink-2); padding-top: 2px; }
+.rule .arrow { grid-column: 1 / -1; display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 6px 14px; padding: 8px 10px; border-radius: 8px; background: var(--t1-bg); }
+.rule .arrow b { color: var(--t1); }
+.rule code, .inst code { font-family: var(--f-mono); font-size: var(--s-xs); border: 1px solid var(--rule); border-radius: 4px; padding: 0 5px; overflow-wrap: anywhere; }
+.rule .kv, .inst .kv { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 2px 10px; }
+.rule .kv span:first-child, .inst .kv span:first-child { font-family: var(--f-mono); font-size: var(--s-xs); color: var(--ink-2); }
+.rule .kv span:last-child, .inst .kv span:last-child { overflow-wrap: anywhere; }
+.rcard .cites { display: grid; gap: 6px; }
+.rcard .cite { border-left: 2px solid var(--rule); padding-left: 10px; font-size: var(--s-sm); min-width: 0; }
+.rcard .cite .src { display: block; font-family: var(--f-mono); font-size: var(--s-xs); color: var(--ink-2); }
+.rcard .cite q { white-space: pre-wrap; overflow-wrap: anywhere; quotes: none; }
+.rcard .note { font-size: var(--s-sm); color: var(--ink-2); max-width: 82ch; }
+.inst { background: var(--rule-2); border-radius: 8px; padding: 12px 14px; display: grid; gap: 8px; font-size: var(--s-sm); min-width: 0; }
+.inst .ih { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; }
+.inst .ih b { font-family: var(--f-display); font-weight: 600; }
+.inst .verdict { font-size: 11px; padding: 1px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap; }
+.inst .verdict.ok { background: var(--ok-bg); color: var(--ok); }
+.inst .verdict.bad { background: var(--redline-bg); color: var(--redline); }
+.inst .verdict.part { background: var(--flag-bg); color: var(--flag); }
+.inst .verdict.na { background: var(--drop-bg); color: var(--drop); }
+.chip.cnt { background: var(--line); font-family: var(--mono); font-size: 11px; }
+.chip.flag { background: var(--flag-bg); color: var(--flag); }
+.review { margin-top: 10px; padding: 8px 10px; border-radius: 8px; background: var(--flag-bg); }
+.review .rh { display: flex; gap: 10px; align-items: center; margin-bottom: 6px; }
+.review textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 13px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: inherit; resize: vertical; }
+.review select { font: inherit; font-size: 12px; }
+.ifl { margin: 0; padding-left: 18px; } .ifl li { margin: 2px 0; }
+.scen { margin: 10px 0 6px; padding: 10px 12px; border: 1px dashed var(--line); border-radius: 8px; }
+.scen .sh { font-weight: 600; margin-bottom: 6px; } .scen .sh .muted { font-weight: 400; font-size: 12px; }
+.scen .ct td, .scen .ct th { white-space: normal; vertical-align: top; }
+.scan .verdict, #d-list .verdict { font-size: 11px; padding: 1px 7px; border-radius: 4px; font-weight: 600; }
+#d-list .verdict.ok, .scan .verdict.ok { background: var(--ok-bg); color: var(--ok); } #d-list .verdict.bad, .scan .verdict.bad { background: var(--redline-bg); color: var(--redline); } .scan .verdict.part { background: var(--flag-bg); color: var(--flag); }
+.scan td, .scan th { white-space: nowrap; } .scan td:nth-child(2) { white-space: normal; min-width: 260px; }
+.sbar { display: inline-block; width: 70px; height: 7px; background: var(--line); border-radius: 4px; vertical-align: middle; margin-left: 4px; overflow: hidden; }
+.sbar i { display: block; height: 100%; } .sbar i.c { background: var(--muted); } .sbar i.f { background: var(--ok); }
+.rlink { font-family: var(--mono); font-weight: 600; text-decoration: none; }
+.inst .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 18px; }
+.inst .cols > div { min-width: 0; display: grid; gap: 4px; align-content: start; }
+.inst table.ct { border-collapse: collapse; font-size: var(--s-xs); }
+.inst table.ct th, .inst table.ct td { text-align: left; padding: 2px 8px 2px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.inst table.ct th { font-weight: 500; color: var(--ink-2); white-space: nowrap; }
+.inst .expl { max-width: 90ch; }
+.inst ul.ev { margin: 0; padding-left: 18px; font-family: var(--f-mono); font-size: var(--s-xs); color: var(--ink-2); }
+.inst ul.ev li { overflow-wrap: anywhere; }
+.rsum { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: var(--s-sm); color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.rsum b { color: var(--ink); font-weight: 600; }
+#r-repr pre { margin: 0; font-family: var(--f-mono); font-size: var(--s-xs); white-space: pre-wrap; overflow-wrap: anywhere; background: var(--rule-2); border-radius: 8px; padding: 10px 12px; }
+#r-repr ul { margin: 0; padding-left: 20px; font-size: var(--s-sm); color: var(--ink-2); max-width: 90ch; }
+#r-repr li { margin-bottom: 4px; }
+@media (max-width: 760px) { .rule, .rule .arrow { grid-template-columns: 1fr; gap: 2px 0; } }
+@media (max-width: 760px) {
+  .page { padding-inline: 16px; }
+  .mres .row { grid-template-columns: 1fr; gap: 2px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<header class="bar">
+  <div class="brand"><h1>Neufert QA Workbench</h1><span data-en="ifc-bench v2 · 9 IFC models">ifc-bench v2 · 9 个 IFC 模型</span></div>
+  <div class="seg pages" role="group" aria-label="页面" data-en-aria-label="Pages">
+    <button type="button" data-page="work" aria-pressed="true" data-en="QA workbench">QA 工作台</button>
+    <button type="button" data-page="kb" aria-pressed="false" data-en="Knowledge base">知识库</button>
+    <button type="button" data-page="rules" aria-pressed="false" data-en="Rules pilot">规则试点</button>
+    <button type="button" data-page="dec" aria-pressed="false" data-en="Design decisions">设计决策</button>
+    <button type="button" data-page="res" aria-pressed="false" data-en="Model results">模型结果</button>
+  </div>
+  <div class="tally" id="tally"></div>
+  <div class="bar-right">
+    <button class="btn" id="lang" type="button" aria-label="Switch language">EN</button>
+    <span class="sync" id="sync" data-en="Connecting…">连接中…</span>
+    <button class="btn" id="export" type="button" data-en="Export CSV">导出 CSV</button>
+  </div>
+</header>
+
+<div class="shell" id="page-work">
+  <nav class="rail" id="rail" aria-label="项目" data-en-aria-label="Projects"></nav>
+  <main class="main">
+    <section class="sheet dossier" id="dossier"></section>
+    <div class="duo">
+      <section class="sheet panel" id="levels"></section>
+      <section class="sheet panel" id="where"></section>
+    </div>
+    <section class="qa-head">
+      <h2>QA</h2>
+      <div class="seg" role="group" aria-label="范围" data-en-aria-label="Scope">
+        <button type="button" id="scope-neufert" aria-pressed="true" data-en="Neufert QA">Neufert 题</button>
+        <button type="button" id="scope-all" aria-pressed="false" data-en="All QA">全部题</button>
+        <button type="button" id="scope-hard" aria-pressed="false" data-en="Advanced">进阶题</button>
+      </div>
+      <div class="filters">
+        <select id="f-topic" aria-label="主题" data-en-aria-label="Topic"></select>
+        <select id="f-status" aria-label="状态" data-en-aria-label="Status">
+          <option value="" data-en="All statuses">全部状态</option><option value="none" data-en="Unreviewed">未审</option><option value="ok" data-en="Confirmed">已确认</option>
+          <option value="flag" data-en="Flagged">有问题</option><option value="drop" data-en="Dropped">剔除</option><option value="edited" data-en="Edited">改过的</option>
+        </select>
+        <input id="f-q" type="search" placeholder="搜索问题或答案" data-en-placeholder="Search questions or answers" aria-label="搜索" data-en-aria-label="Search">
+        <button class="btn red" type="button" id="add" data-en="+ New QA">+ 新增 QA</button>
+      </div>
+    </section>
+    <p class="intro" id="hard-intro" hidden data-en="Advanced questions hide the Neufert rule inside the question: the answerer has to know the rule and then find the matching data in the model. Each paired question corresponds to one original Neufert QA and asks about the same object; supplementary questions are not tied to one original and come last. Every question comes with model evidence, Neufert source text checked verbatim, and a rubric.">进阶题把 Neufert 规则藏在问题里：答题者要自己知道规则，再去模型里找对应数据。每道配对题对应一道 Neufert 原题，问同一个对象；补充题不挂在某道原题下，排在最后。每道题都附模型证据、逐字核对过的 Neufert 原文和评分要点。</p>
+    <div class="list" id="list"></div>
+  </main>
+</div>
+<main class="page" id="page-kb" hidden>
+  <h2 data-en="Knowledge base">知识库</h2>
+  <p class="lede" id="kb-lede"></p>
+  <div class="kprog" id="k-prog"></div>
+  <div class="filters">
+    <select id="k-lab" aria-label="范围标注" data-en-aria-label="Scope label"></select>
+    <select id="k-level" aria-label="层级" data-en-aria-label="Level"></select>
+    <select id="k-need" aria-label="需要的 IFC 数据" data-en-aria-label="IFC data needed"></select>
+    <select id="k-topic" aria-label="主题" data-en-aria-label="Topic"></select>
+    <select id="k-pri" aria-label="重要性" data-en-aria-label="Priority">
+      <option value="" data-en="All priorities">全部重要性</option><option value="3" data-en="★★★ highest">★★★ 最重要</option><option value="2">★★</option><option value="1">★</option>
+    </select>
+    <select id="k-res" aria-label="模型表现" data-en-aria-label="Model results">
+      <option value="" data-en="All results">全部表现</option><option value="mcq0" data-en="MCQ: every model wrong">选择题：所有模型都错</option>
+      <option value="open0" data-en="Open: no model fully correct">开放题：没有模型全对</option><option value="openall" data-en="Open: every model fully correct">开放题：所有模型全对</option>
+    </select>
+    <input id="k-q" type="search" placeholder="搜索知识点、原文或题目" data-en-placeholder="Search points, source text or questions" aria-label="搜索" data-en-aria-label="Search">
+  </div>
+  <div class="list" id="k-list" style="display:grid;gap:14px"></div>
+</main>
+<main class="page" id="page-rules" hidden>
+  <h2 data-en="Rules pilot: knowledge → rule → IFC instance">规则试点：知识 → 规则 → IFC 实例</h2>
+  <p class="lede" id="r-lede"></p>
+  <div class="filters">
+    <select id="r-level" aria-label="层级" data-en-aria-label="Level"></select>
+    <select id="r-model" aria-label="模型" data-en-aria-label="Model"></select>
+    <select id="r-verdict" aria-label="判定" data-en-aria-label="Verdict"></select>
+    <select id="r-conc" aria-label="context 具体程度" data-en-aria-label="Context concreteness"></select>
+    <select id="r-status" aria-label="状态" data-en-aria-label="Status"></select>
+    <span class="muted" id="r-rvcount"></span>
+    <button class="btn" id="r-rvexport" type="button" data-en="Export review JSON">导出评审 JSON</button>
+    <label class="btn" for="r-rvimport" data-en="Import">导入评审</label><input id="r-rvimport" type="file" accept="application/json" hidden>
+    <input id="r-q" type="search" placeholder="搜索规则、原文或实例" data-en-placeholder="Search rules, source text or instances" aria-label="搜索" data-en-aria-label="Search">
+  </div>
+  <section class="sheet blk" id="r-scan"></section>
+  <div class="list" id="r-list" style="display:grid;gap:14px"></div>
+  <section class="sheet blk" id="r-repr"></section>
+</main>
+<main class="page" id="page-dec" hidden>
+  <h2 data-en="Design decisions: the unit of the ground truth">设计决策：GT 的单位</h2>
+  <p class="lede" id="d-lede"></p>
+  <div class="list" id="d-list" style="display:grid;gap:14px"></div>
+</main>
+<main class="page" id="page-res" hidden></main>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const DATA = /*__DATA__*/null;
+// ---------- language (zh / en) ----------
+let lang = 'zh';
+try { const s = localStorage.getItem('nqa.lang'); if (s === 'en' || s === 'zh') lang = s; } catch (e) {}
+const L = (zh, en) => lang === 'en' ? en : zh;
+const EN = DATA.en || {};
+const D = s => (lang === 'en' && EN[s]) || s;                      // project descriptions
+const KT = k => (lang === 'en' && k.title_en) || k.title;          // knowledge point title / summary / topic
+const KS = k => (lang === 'en' && k.summary_en) || k.summary;
+const TP = t => (lang === 'en' && (DATA.topics_en || {})[t]) || t;
+const mk_TOPIC = () => ({
+  T1_escape_accessibility: L('疏散 / 无障碍', 'Escape / accessibility'), T1_occupancy_program_ratios: L('人数 / 面积比', 'Occupancy / area ratios'), T1_layout_typology: L('户型 / 布局', 'Layout / typology'),
+  T1_parking: L('停车', 'Parking'), T1_stair_spec_grid: L('楼梯规格 / 柱网', 'Stair spec / grid'),
+  T2_room_program: L('房间配置', 'Room programme'), T2_door_widths: L('门宽', 'Door widths'), T2_window_sizes: L('窗尺寸', 'Window sizes'), T2_ceiling_heights: L('室内净高', 'Ceiling heights'),
+  T2_storey_heights: L('层高', 'Storey heights'), T2_stairs_railings: L('楼梯 / 栏杆', 'Stairs / railings'), T2_furniture_in_room: L('房间家具', 'Furniture in rooms'), T2_space_use_by_function: L('功能面积分配', 'Space use by function')
+});
+const mk_CAT = () => ({ 1: L('1 直接检索', '1 Direct retrieval'), 2: L('2 计算聚合', '2 Computation / aggregation'), 3: L('3 几何/空间', '3 Geometry / spatial'), 4: L('4 信息不全', '4 Incomplete information') });
+const mk_TIER = () => ({ tier1: L('一层 · 需 Neufert 知识', 'Tier 1 · needs Neufert knowledge'), tier2: L('二层 · 尺寸可对照', 'Tier 2 · dimensions comparable') });
+const mk_STATUS = () => ({ ok: L('已确认', 'Confirmed'), flag: L('有问题', 'Flagged'), drop: L('剔除', 'Dropped') });
+const mk_COUNT_LABEL = () => ({ Space: L('房间', 'Spaces'), Wall: L('墙', 'Walls'), Door: L('门', 'Doors'), Window: L('窗', 'Windows'), Slab: L('楼板', 'Slabs'), Stair: L('楼梯', 'Stairs'), Railing: L('栏杆', 'Railings'), Column: L('柱', 'Columns'), Beam: L('梁', 'Beams'),
+  CurtainWall: L('幕墙', 'Curtain walls'), Roof: L('屋顶', 'Roofs'), Covering: L('面层', 'Coverings'), FurnishingElement: L('家具', 'Furniture'), SanitaryTerminal: L('洁具', 'Sanitary') });
+const EDIT_FIELDS = ['question', 'ground_truth', 'category', 'neufert_tier', 'neufert_topic'];
+
+const mk_QTYPE = () => ({ compliance: L('合规判断', 'Compliance'), diagnosis: L('诊断', 'Diagnosis'), derivation: L('推算', 'Derivation'), intent: L('设计意图', 'Design intent') });
+let TOPIC, CAT, TIER, STATUS, COUNT_LABEL, QTYPE;
+function setDicts() { TOPIC = mk_TOPIC(); CAT = mk_CAT(); TIER = mk_TIER(); STATUS = mk_STATUS(); COUNT_LABEL = mk_COUNT_LABEL(); QTYPE = mk_QTYPE(); }
+setDicts();
+const HARD_FIELDS = ['question', 'answer', 'hidden_knowledge', 'rubric', 'question_type'];
+const P = Object.fromEntries(DATA.projects.map(p => [p.id, p]));
+const ORIG = Object.fromEntries(DATA.qa.map(q => [q.id, q]));
+const HORIG = Object.fromEntries((DATA.hard || []).map(h => [h.hid, h]));
+const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+const state = { project: DATA.projects[0].id, scope: 'neufert', topic: '', status: '', q: '', editing: null, expanded: new Set(), showOrig: new Set() };
+let edits = {};            // docId -> body
+let db = null, user = null, canWrite = false, myId = null, names = {};
+
+function fromHash() { const h = decodeURIComponent(location.hash.slice(1)); if (P[h]) state.project = h; }
+fromHash();
+try { const s = localStorage.getItem('nqa.scope'); if (s === 'all' || s === 'neufert' || s === 'hard') state.scope = s; } catch (e) {}
+
+const docIdOf = id => typeof id === 'number' ? 'q' + id : id;
+
+// merged view of every QA (originals + edits + new)
+function merged() {
+  const out = [];
+  for (const o of DATA.qa) {
+    const e = edits['q' + o.id];
+    const m = { ...o, key: o.id, status: '', note: '', edited: false, isNew: false, by: null, at: null };
+    if (e) {
+      for (const f of EDIT_FIELDS) if (e[f] !== undefined) m[f] = e[f];
+      m.status = e.status || ''; m.note = e.note || ''; m.by = e.by || null; m.at = e.at || null;
+      m.edited = EDIT_FIELDS.some(f => e[f] !== undefined && e[f] !== o[f]);
+    }
+    out.push(m);
+  }
+  for (const [k, e] of Object.entries(edits)) {
+    if (!e.is_new) continue;
+    out.push({ id: null, key: k, project: e.project, question: e.question || '', ground_truth: e.ground_truth || '', category: e.category || 4,
+      split: '', neufert_tier: e.neufert_tier || '', neufert_topic: e.neufert_topic || '', status: e.status || '', note: e.note || '',
+      edited: true, isNew: true, by: e.by || null, at: e.at || null });
+  }
+  return out;
+}
+
+function mergedHard() {
+  return (DATA.hard || []).map(o => {
+    const e = edits['h-' + o.hid];
+    const m = { ...o, key: 'h-' + o.hid, hard: true, status: '', note: '', edited: false, isNew: false, by: null, at: null };
+    if (e) {
+      for (const f of HARD_FIELDS) if (e[f] !== undefined) m[f] = e[f];
+      m.status = e.status || ''; m.note = e.note || ''; m.by = e.by || null; m.at = e.at || null;
+      m.edited = HARD_FIELDS.some(f => e[f] !== undefined && !same(e[f], o[f]));
+    }
+    return m;
+  });
+}
+
+function tally(all, hall) {
+  const neu = all.filter(m => m.neufert_tier && m.status !== 'drop');
+  const reviewed = all.filter(m => m.neufert_tier && m.status).length + hall.filter(m => m.status).length;
+  const edited = all.filter(m => m.edited).length + hall.filter(m => m.edited).length;
+  const flagged = all.filter(m => m.status === 'flag').length + hall.filter(m => m.status === 'flag').length;
+  $('#tally').innerHTML = `<span>${L('Neufert 题', 'Neufert QA')} <b>${neu.length}</b></span><span>${L('进阶题', 'Advanced')} <b>${hall.filter(m => m.status !== 'drop').length}</b></span><span>${L('已审', 'Reviewed')} <b>${reviewed}</b></span><span>${L('改过', 'Edited')} <b>${edited}</b></span><span>${L('有问题', 'Flagged')} <b>${flagged}</b></span>`;
+}
+
+function renderRail(all) {
+  const html = [('<h2>' + L('模型', 'Models') + '</h2>')];
+  for (const p of DATA.projects) {
+    const mine = all.filter(m => m.project === p.id);
+    const neu = mine.filter(m => m.neufert_tier);
+    const done = neu.filter(m => m.status).length;
+    const nh = HALL.filter(m => m.project === p.id).length;
+    html.push(`<button class="pj" type="button" data-p="${p.id}" aria-current="${p.id === state.project}">
+      <img src="img/${p.id}.png" alt="" loading="lazy">
+      <span style="min-width:0"><div class="nm">${esc(p.id)}</div>
+      <div class="sub"><span>Neufert ${neu.length}</span><span>${L('全部', 'All')} ${mine.length}</span>${nh ? `<span>${L('进阶', 'Advanced')} ${nh}</span>` : ''}</div>
+      <div class="meter" title="${L('已审', 'Reviewed')} ${done}/${neu.length}"><i style="width:${neu.length ? done / neu.length * 100 : 0}%"></i></div></span></button>`);
+  }
+  $('#rail').innerHTML = html.join('');
+}
+
+function fmtCoord(v, pos, neg) { if (v == null) return '—'; return `${Math.abs(v).toFixed(4)}° ${v >= 0 ? pos : neg}`; }
+
+function renderDossier() {
+  const p = P[state.project];
+  $('#dossier').innerHTML = `
+    <div class="info">
+      <div><div class="eyebrow">${esc(D(p.source))}</div><h2 class="pj-title">${esc(p.id)}</h2><p class="pj-type">${esc(D(p.type))}</p></div>
+      <dl class="tb">
+        <div><dt>${L('用途', 'Use')}</dt><dd>${esc(p.usage)}</dd></div>
+        <div><dt>${L('作者', 'Author')}</dt><dd>${esc(p.author) || '—'}</dd></div>
+        <div><dt>${L('许可', 'Licence')}</dt><dd>${esc(p.license) || '—'}</dd></div>
+        <div><dt>${L('ECPPM 划分', 'ECPPM split')}</dt><dd>${p.ecppm}</dd></div>
+        <div><dt>Schema</dt><dd class="mono">${esc(p.schema)}</dd></div>
+        <div><dt>${L('单位', 'Unit')}</dt><dd class="mono">${esc((p.length_unit || '').toLowerCase())}</dd></div>
+        <div><dt>${L('文件', 'File')}</dt><dd class="mono">arc.ifc · ${p.size_mb} MB</dd></div>
+        <div><dt>IfcProject</dt><dd>${esc(p.project_name) || '—'}</dd></div>
+        <div><dt>IfcBuilding</dt><dd>${esc(p.building_name) || '—'}</dd></div>
+        <div style="grid-column: 1 / -1"><dt>${L('导出软件', 'Exported from')}</dt><dd class="mono">${esc(p.software)}</dd></div>
+      </dl>
+      <ul class="notes">${p.notes.map(n => `<li>${esc(D(n))}</li>`).join('')}</ul>
+      ${p.source_url ? `<div class="muted" style="font-size:var(--s-sm)">${L('来源：', 'Source: ')}<a href="${esc(p.source_url)}" target="_blank" rel="noopener">${esc(p.source_url.replace(/^https?:\/\//, '').slice(0, 70))}${p.source_url.length > 78 ? '…' : ''}</a></div>` : ''}
+    </div>
+    <figure class="shot" style="margin:0"><img src="img/${p.id}.png" alt="${esc(p.id)} ${L('模型截图', 'model snapshot')}"><figcaption>${L('ifc-bench 提供的 snapshot.png', 'snapshot.png from ifc-bench')}</figcaption></figure>`;
+
+  const st = p.storeys;
+  const deltas = st.map((s, i) => i < st.length - 1 ? st[i + 1][1] - s[1] : null);
+  const maxD = Math.max(...deltas.filter(d => d != null), 1);
+  const rows = [...st].map((s, i) => ({ name: s[0], el: s[1], d: deltas[i] })).reverse();
+  const tri = '<svg viewBox="0 0 14 12" aria-hidden="true"><path d="M1 1 H13 L7 11 Z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1 1 H13" stroke="currentColor" stroke-width="1.4"/></svg>';
+  const counts = Object.entries(p.counts).filter(([k, v]) => v > 0);
+  $('#levels').innerHTML = `
+    <h3>${L('楼层标高', 'Storey elevations')}</h3>
+    <div class="levels">${rows.map(r => `<div class="lv">${tri}<span class="el">${r.el >= 0 ? '+' : '−'}${Math.abs(r.el).toFixed(2)}</span><span class="nm" title="${esc(r.name)}">${esc(r.name)}</span>
+      <span class="dh">${r.d != null ? `<i style="width:${Math.max(4, r.d / maxD * 44)}px"></i>Δ ${r.d.toFixed(2)} m` : ''}</span></div>`).join('')}</div>
+    <p class="muted" style="margin:0;font-size:var(--s-xs)">${L('Δ 为到上一标高的距离（m），即层间高度，不是净高。', 'Δ is the distance to the previous level (m), i.e. the floor-to-floor height, not the clear height.')}</p>
+    <h3 style="margin-top:6px">${L('构件数量', 'Element counts')}</h3>
+    <div class="counts">${counts.map(([k, v]) => `<div><span>${COUNT_LABEL[k] || k}</span><b>${v}</b></div>`).join('')}</div>
+    <p class="muted" style="margin:0;font-size:var(--s-xs)">${p.spaces_with_area ? `${L('房间面积合计', 'Total room area')} ${p.space_area.toLocaleString()} ${L('m²（', 'm² (')}${p.spaces_with_area} ${L('个 IfcSpace 带面积数量）', 'IfcSpace with area quantities)')}` : L('IfcSpace 没有带面积数量', 'No IfcSpace carries area quantities')}</p>`;
+
+  const placeholder = p.loc === 'placeholder';
+  const osm = p.lat != null ? `https://www.openstreetmap.org/?mlat=${p.lat}&mlon=${p.lon}#map=15/${p.lat}/${p.lon}` : '';
+  $('#where').innerHTML = `
+    <h3>${L('位置', 'Location')}</h3>
+    <div class="loc">
+      <span class="warn ${placeholder ? '' : 'site'}">${placeholder ? L('模板默认值，不是真实位置', 'Template default, not a real location') : L('作者设定的场地，建筑本身是虚构的', 'Site set by the author; the building itself is fictional')}</span>
+      <div><span class="muted">${L('IfcSite 坐标', 'IfcSite coordinates')}</span><div class="coord">${fmtCoord(p.lat, 'N', 'S')}, ${fmtCoord(p.lon, 'E', 'W')}${p.elev ? ` ${L('· 海拔', '· elevation')} ${p.elev} m` : ''}</div></div>
+      <div><span class="muted">${L('地址（IfcBuilding / IfcSite）', 'Address (IfcBuilding / IfcSite)')}</span><div>${esc(p.address) || '—'}</div></div>
+      ${osm ? `<a href="${osm}" target="_blank" rel="noopener">${L('在 OpenStreetMap 上查看坐标', 'View coordinates on OpenStreetMap')}</a>` : ''}
+    </div>`;
+}
+
+function topicOptions() {
+  const sel = $('#f-topic'); const cur = state.topic;
+  sel.innerHTML = `<option value="">${L('全部主题', 'All topics')}</option><optgroup label="${L('一层', 'Tier 1')}">${Object.entries(TOPIC).filter(([k]) => k.startsWith('T1')).map(([k, v]) => `<option value="${k}">${v}</option>`).join('')}</optgroup>
+    <optgroup label="${L('二层', 'Tier 2')}">${Object.entries(TOPIC).filter(([k]) => k.startsWith('T2')).map(([k, v]) => `<option value="${k}">${v}</option>`).join('')}</optgroup>
+    <option value="__none">${L('未标 Neufert', 'Not tagged Neufert')}</option>`;
+  sel.value = cur;
+}
+
+function visible(all) {
+  const q = state.q.trim().toLowerCase();
+  return all.filter(m => m.project === state.project)
+    .filter(m => state.scope === 'all' || m.neufert_tier || (m.isNew && !m.neufert_tier))
+    .filter(m => !state.topic || (state.topic === '__none' ? !m.neufert_tier : m.neufert_topic === state.topic))
+    .filter(m => !state.status || (state.status === 'none' ? !m.status : state.status === 'edited' ? m.edited : m.status === state.status))
+    .filter(m => !q || (m.question + '\n' + m.ground_truth + '\n' + m.note).toLowerCase().includes(q))
+    .sort((a, b) => (a.isNew - b.isNew) || ((a.id ?? 0) - (b.id ?? 0)) || String(a.key).localeCompare(String(b.key)));
+}
+
+function chips(m) {
+  const c = [];
+  c.push(`<span class="qid">${m.isNew ? L('新增', 'New') : '#' + m.id}</span>`);
+  c.push(`<span class="chip">${CAT[m.category] || m.category}</span>`);
+  if (m.neufert_tier) c.push(`<span class="chip ${m.neufert_tier === 'tier1' ? 't1' : 't2'}">${m.neufert_tier === 'tier1' ? L('一层', 'Tier 1') : L('二层', 'Tier 2')} · ${esc(TOPIC[m.neufert_topic] || m.neufert_topic || L('未分主题', 'no topic'))}</span>`);
+  if (m.status) c.push(`<span class="chip ${m.status}">${STATUS[m.status]}</span>`);
+  if (m.isNew) c.push(('<span class="chip new">' + L('新增', 'New') + '</span>'));
+  else if (m.edited) c.push(('<span class="chip red">' + L('已修改', 'Edited') + '</span>'));
+  if (m.split) c.push(`<span class="chip" title="eval-split-hellin2026">split ${m.split}</span>`);
+  if (!m.isNew) for (const h of HALL.filter(h => h.pairing !== 'supplement' && h.derived_from.includes(m.id))) c.push(`<button type="button" class="chip link" data-act="goto-hard" data-h="${esc(h.key)}" title="${L('查看进阶版', 'View advanced version')}">${L('进阶版', 'Advanced')} ${esc(h.hid.replace(/^H-.*-/, 'H-'))}</button>`);
+  return c.join('');
+}
+
+function cardView(m) {
+  const k = String(m.key);
+  const long = m.ground_truth.split('\n').length > 7 || m.ground_truth.length > 520;
+  const open = state.expanded.has(k);
+  const o = m.isNew ? null : ORIG[m.id];
+  let orig = '';
+  if (m.edited && !m.isNew && state.showOrig.has(k)) {
+    const parts = [];
+    if (o.question !== m.question) parts.push(`<div><b>${L('原问题', 'Original question')}</b> <del>${esc(o.question)}</del></div>`);
+    if (o.ground_truth !== m.ground_truth) parts.push(`<div><b>${L('原答案', 'Original answer')}</b> <del>${esc(o.ground_truth)}</del></div>`);
+    if (o.category !== m.category) parts.push(`<div><b>${L('原类别', 'Original category')}</b> <del>${CAT[o.category]}</del></div>`);
+    if (o.neufert_tier !== m.neufert_tier || o.neufert_topic !== m.neufert_topic) parts.push(`<div><b>${L('原 Neufert 标签', 'Original Neufert tag')}</b> <del>${o.neufert_tier ? (o.neufert_tier === 'tier1' ? L('一层', 'Tier 1') : L('二层', 'Tier 2')) + ' · ' + (TOPIC[o.neufert_topic] || '') : L('无', 'none')}</del></div>`);
+    orig = `<div class="orig">${parts.join('')}</div>`;
+  }
+  const who = m.at ? `${m.by && names[m.by] ? esc(names[m.by]) + ' · ' : ''}${new Date(m.at).toLocaleString(L('zh-CN', 'en-GB'), { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}` : '';
+  const dis = canWrite ? '' : 'disabled';
+  return `<article class="qa ${m.edited ? 'edited' : ''} ${m.status ? 'st-' + m.status : ''}" id="card-${esc(k)}" data-k="${esc(k)}">
+    <div class="qa-meta">${chips(m)}</div>
+    <div class="q">${esc(m.question)}</div>
+    <div class="a ${long && !open ? 'clamp' : ''}">${esc(m.ground_truth) || ('<span class="muted">' + L('（空）', '(empty)') + '</span>')}</div>
+    ${long ? `<button class="more" type="button" data-act="more">${open ? L('收起', 'Collapse') : L('展开完整答案', 'Show full answer')}</button>` : ''}
+    ${m.note ? `<div class="note">${esc(m.note)}</div>` : ''}
+    ${orig}
+    <div class="acts">
+      <button class="act" type="button" data-act="edit" ${dis}>${L('编辑', 'Edit')}</button>
+      <button class="act ok" type="button" data-act="st-ok" aria-pressed="${m.status === 'ok'}" ${dis}>${L('✓ 确认', '✓ Confirm')}</button>
+      <button class="act flag" type="button" data-act="st-flag" aria-pressed="${m.status === 'flag'}" ${dis}>${L('有问题', 'Flagged')}</button>
+      <button class="act drop" type="button" data-act="st-drop" aria-pressed="${m.status === 'drop'}" ${dis}>${L('剔除', 'Dropped')}</button>
+      ${m.edited && !m.isNew ? `<button class="act" type="button" data-act="orig">${state.showOrig.has(k) ? L('隐藏原文', 'Hide original') : L('对比原文', 'Compare with original')}</button>` : ''}
+      <span class="who">${who}</span>
+    </div>
+  </article>`;
+}
+
+function cardEdit(m) {
+  const k = String(m.key);
+  const topicOpts = t => `<option value="">—</option>` + Object.entries(TOPIC).filter(([kk]) => !t || kk.startsWith(t === 'tier1' ? 'T1' : 'T2')).map(([kk, v]) => `<option value="${kk}" ${kk === m.neufert_topic ? 'selected' : ''}>${v}</option>`).join('');
+  return `<article class="qa is-editing" id="card-${esc(k)}" data-k="${esc(k)}">
+    <div class="qa-meta">${chips(m)}</div>
+    <form class="form" data-form="${esc(k)}">
+      <label>${L('问题', 'Question')}<textarea id="e-q-${esc(k)}" name="question" rows="2" required>${esc(m.question)}</textarea></label>
+      <label>${L('标准答案 ground truth', 'Ground truth')}<textarea id="e-a-${esc(k)}" class="mono" name="ground_truth" rows="${Math.min(16, Math.max(4, m.ground_truth.split('\n').length + 1))}">${esc(m.ground_truth)}</textarea></label>
+      <div class="row">
+        <label>${L('类别', 'Category')}<select id="e-c-${esc(k)}" name="category">${[1, 2, 3, 4].map(c => `<option value="${c}" ${c === m.category ? 'selected' : ''}>${CAT[c]}</option>`).join('')}</select></label>
+        <label>${L('Neufert 层级', 'Neufert tier')}<select id="e-t-${esc(k)}" name="neufert_tier"><option value="">${L('不是 Neufert 题', 'Not a Neufert QA')}</option>${Object.entries(TIER).map(([t, v]) => `<option value="${t}" ${t === m.neufert_tier ? 'selected' : ''}>${v}</option>`).join('')}</select></label>
+        <label>${L('主题', 'Topic')}<select id="e-p-${esc(k)}" name="neufert_topic">${topicOpts(m.neufert_tier)}</select></label>
+      </div>
+      <label>${L('备注（为什么改、依据哪条 Neufert 规则等）', 'Note (why it was changed, which Neufert rule, etc.)')}<textarea id="e-n-${esc(k)}" name="note" rows="2">${esc(m.note)}</textarea></label>
+      <div class="btns">
+        <button class="btn primary" type="submit">${L('保存', 'Save')}</button>
+        <button class="btn" type="button" data-act="cancel">${L('取消', 'Cancel')}</button>
+        ${m.edited && !m.isNew ? ('<button class="btn red" type="button" data-act="revert">' + L('恢复原文', 'Restore original') + '</button>') : ''}
+        ${m.isNew ? ('<button class="btn red" type="button" data-act="delete-new">' + L('删除这条', 'Delete this item') + '</button>') : ''}
+        <span class="err" data-err></span>
+      </div>
+    </form>
+  </article>`;
+}
+
+function hardChips(m) {
+  const c = [`<span class="qid">${esc(m.hid)}</span>`, `<span class="chip qt">${QTYPE[m.question_type] || esc(m.question_type)}</span>`,
+    m.pairing === 'supplement' ? `<span class="chip sup" title="${L('不挂在某一道原题下的补充题', 'Supplementary question not tied to one original question')}">${L('补充题', 'Supplement')}${m.derived_from.length ? (' ' + L('· 参考', '· see') + ' ') + m.derived_from.map(d => '#' + d).join(' ') : ''}</span>` : `<span class="chip">${L('配对', 'Paired with')} ${m.derived_from.map(d => '#' + d).join(' ')}</span>`];
+  if (m.status) c.push(`<span class="chip ${m.status}">${STATUS[m.status]}</span>`);
+  if (m.edited) c.push(('<span class="chip red">' + L('已修改', 'Edited') + '</span>'));
+  return c.join('');
+}
+function hardView(m) {
+  const k = m.key; const open = state.expanded.has(k); const o = HORIG[m.hid];
+  let orig = '';
+  if (m.edited && state.showOrig.has(k)) {
+    const parts = [];
+    if (o.question !== m.question) parts.push(`<div><b>${L('原问题', 'Original question')}</b> <del>${esc(o.question)}</del></div>`);
+    if (o.answer !== m.answer) parts.push(`<div><b>${L('原答案', 'Original answer')}</b> <del>${esc(o.answer)}</del></div>`);
+    if (o.hidden_knowledge !== m.hidden_knowledge) parts.push(`<div><b>${L('原隐藏知识', 'Original hidden knowledge')}</b> <del>${esc(o.hidden_knowledge)}</del></div>`);
+    if (!same(o.rubric, m.rubric)) parts.push(`<div><b>${L('原评分要点', 'Original rubric')}</b> <del>${esc(o.rubric.join(' | '))}</del></div>`);
+    if (o.question_type !== m.question_type) parts.push(`<div><b>${L('原题型', 'Original question type')}</b> <del>${QTYPE[o.question_type]}</del></div>`);
+    orig = `<div class="orig">${parts.join('')}</div>`;
+  }
+  const who = m.at ? `${m.by && names[m.by] ? esc(names[m.by]) + ' · ' : ''}${new Date(m.at).toLocaleString(L('zh-CN', 'en-GB'), { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}` : '';
+  const dis = canWrite ? '' : 'disabled';
+  const origQs = m.derived_from.map(d => ORIG[d]).filter(Boolean);
+  return `<article class="qa ${m.edited ? 'edited' : ''} ${m.status ? 'st-' + m.status : ''}" id="card-${esc(k)}" data-k="${esc(k)}">
+    <div class="qa-meta">${hardChips(m)}</div>
+    ${m.pairing !== 'supplement' ? origQs.map(q => `<div class="from"><b>${L('原题 #', 'Original #')}${q.id}</b>${esc(q.question)}</div>`).join('') : ''}
+    <div class="q">${esc(m.question)}</div>
+    <div class="a" style="font-family:var(--f-body);font-size:var(--s-md)">${esc(m.answer)}</div>
+    <div class="hidden-k"><b>${L('隐藏知识', 'Hidden knowledge')}</b>${esc(m.hidden_knowledge)}</div>
+    <button class="more" type="button" data-act="more">${open ? L('收起依据', 'Hide evidence') : L('展开模型证据、Neufert 原文和评分要点', 'Show model evidence, Neufert source text and rubric')}</button>
+    ${open ? `<div class="hx">
+      <div><h4>${L('模型证据', 'Model evidence')}</h4><ul>${m.evidence.map(e => `<li>${esc(e)}</li>`).join('')}</ul></div>
+      <div><h4>${L('Neufert 原文', 'Neufert source text')}</h4><div style="display:grid;gap:6px">${m.basis.map(b => `<div class="cite"><span class="src">p.${esc(b.book_page)} · ${esc(b.chapter)}${b.intent_id ? ' · ' + esc(b.intent_id) : ''}</span><q>${esc(b.quote)}</q></div>`).join('')}</div></div>
+      <div><h4>${L('评分要点', 'Rubric')}</h4><ul>${m.rubric.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>
+      ${origQs.length && m.pairing === 'supplement' ? `<div><h4>${L('参考原题', 'Related original questions')}</h4><ul>${origQs.map(q => `<li>#${q.id} ${esc(q.question)}</li>`).join('')}</ul></div>` : ''}
+    </div>` : ''}
+    ${m.note ? `<div class="note">${esc(m.note)}</div>` : ''}
+    ${orig}
+    <div class="acts">
+      <button class="act" type="button" data-act="edit" ${dis}>${L('编辑', 'Edit')}</button>
+      <button class="act ok" type="button" data-act="st-ok" aria-pressed="${m.status === 'ok'}" ${dis}>${L('✓ 确认', '✓ Confirm')}</button>
+      <button class="act flag" type="button" data-act="st-flag" aria-pressed="${m.status === 'flag'}" ${dis}>${L('有问题', 'Flagged')}</button>
+      <button class="act drop" type="button" data-act="st-drop" aria-pressed="${m.status === 'drop'}" ${dis}>${L('剔除', 'Dropped')}</button>
+      ${m.edited ? `<button class="act" type="button" data-act="orig">${state.showOrig.has(k) ? L('隐藏原文', 'Hide original') : L('对比原文', 'Compare with original')}</button>` : ''}
+      <span class="who">${who}</span>
+    </div>
+  </article>`;
+}
+function hardEdit(m) {
+  const k = m.key;
+  return `<article class="qa is-editing" id="card-${esc(k)}" data-k="${esc(k)}">
+    <div class="qa-meta">${hardChips(m)}</div>
+    <form class="form" data-form="${esc(k)}" data-kind="hard">
+      <label>${L('问题', 'Question')}<textarea id="h-q-${esc(k)}" name="question" rows="3" required>${esc(m.question)}</textarea></label>
+      <label>${L('标准答案', 'Reference answer')}<textarea id="h-a-${esc(k)}" name="answer" rows="6">${esc(m.answer)}</textarea></label>
+      <label>${L('隐藏知识（答题者需要自带的规则）', 'Hidden knowledge (the rule the answerer must bring)')}<textarea id="h-k-${esc(k)}" name="hidden_knowledge" rows="2">${esc(m.hidden_knowledge)}</textarea></label>
+      <label>${L('评分要点（每行一条）', 'Rubric (one per line)')}<textarea id="h-r-${esc(k)}" name="rubric" rows="4">${esc(m.rubric.join('\n'))}</textarea></label>
+      <div class="row">
+        <label>${L('题型', 'Question type')}<select id="h-t-${esc(k)}" name="question_type">${Object.entries(QTYPE).map(([t, v]) => `<option value="${t}" ${t === m.question_type ? 'selected' : ''}>${v}</option>`).join('')}</select></label>
+      </div>
+      <label>${L('备注', 'Note')}<textarea id="h-n-${esc(k)}" name="note" rows="2">${esc(m.note)}</textarea></label>
+      <div class="btns">
+        <button class="btn primary" type="submit">${L('保存', 'Save')}</button>
+        <button class="btn" type="button" data-act="cancel">${L('取消', 'Cancel')}</button>
+        ${m.edited ? ('<button class="btn red" type="button" data-act="revert">' + L('恢复原文', 'Restore original') + '</button>') : ''}
+        <span class="err" data-err></span>
+      </div>
+    </form>
+  </article>`;
+}
+function visibleHard() {
+  const q = state.q.trim().toLowerCase();
+  return HALL.filter(m => m.project === state.project)
+    .filter(m => !state.status || (state.status === 'none' ? !m.status : state.status === 'edited' ? m.edited : m.status === state.status))
+    .filter(m => !q || [m.question, m.answer, m.hidden_knowledge, m.note, ...m.evidence].join('\n').toLowerCase().includes(q))
+    .sort((a, b) => ((a.pairing === 'supplement') - (b.pairing === 'supplement')) || ((a.derived_from[0] ?? 1e9) - (b.derived_from[0] ?? 1e9)) || a.hid.localeCompare(b.hid));
+}
+
+let ALL = [], HALL = [];
+function renderList() {
+  const hardMode = state.scope === 'hard';
+  const vis = hardMode ? visibleHard() : visible(ALL);
+  const nNeu = ALL.filter(m => m.project === state.project && m.neufert_tier).length;
+  const nAll = ALL.filter(m => m.project === state.project).length;
+  const nHard = HALL.filter(m => m.project === state.project).length;
+  $('#scope-neufert').textContent = `${L('Neufert 题', 'Neufert QA')} ${nNeu}`;
+  $('#scope-all').textContent = `${L('全部题', 'All QA')} ${nAll}`;
+  $('#scope-hard').textContent = `${L('进阶题', 'Advanced')} ${nHard}`;
+  $('#scope-neufert').setAttribute('aria-pressed', state.scope === 'neufert');
+  $('#scope-all').setAttribute('aria-pressed', state.scope === 'all');
+  $('#scope-hard').setAttribute('aria-pressed', hardMode);
+  $('#f-topic').hidden = hardMode; $('#add').hidden = hardMode; $('#hard-intro').hidden = !hardMode;
+  $('#export').textContent = hardMode ? L('导出进阶题 CSV', 'Export advanced CSV') : L('导出 CSV', 'Export CSV');
+  const keep = state.editing ? document.getElementById('card-' + state.editing) : null;
+  const list = $('#list');
+  const frag = document.createElement('div');
+  const one = m => (state.editing === String(m.key) && keep && keep.classList.contains('is-editing')) ? `<i data-keep></i>`
+    : m.hard ? (state.editing === m.key ? hardEdit(m) : hardView(m)) : (state.editing === String(m.key) ? cardEdit(m) : cardView(m));
+  const emptyMsg = hardMode ? (nHard ? L('没有符合筛选条件的题。', 'No questions match the filters.') : L('这个模型还没有进阶题。', 'This model has no advanced questions yet.'))
+    : (state.scope === 'neufert' && !state.topic && !state.status && !state.q ? L('这个模型还没有 Neufert 题。切到“全部题”，把合适的题标成 Neufert 题，或者新增一条。', 'This model has no Neufert QA yet. Switch to “All QA” and tag suitable questions as Neufert QA, or add a new one.') : L('没有符合筛选条件的题。', 'No questions match the filters.'));
+  frag.innerHTML = vis.map(one).join('') || `<div class="empty">${emptyMsg}</div>`;
+  const slot = frag.querySelector('[data-keep]');
+  if (slot && keep) slot.replaceWith(keep);
+  list.replaceChildren(...frag.childNodes);
+}
+
+function renderAll() {
+  ALL = merged(); HALL = mergedHard();
+  tally(ALL, HALL); renderRail(ALL); renderList();
+}
+function selectProject(id) {
+  state.project = id; state.editing = null; state.topic = ''; $('#f-topic').value = '';
+  try { history.replaceState(null, '', '#' + id); } catch (e) { location.hash = id; }
+  renderDossier(); renderAll(); window.scrollTo({ top: 0 });
+}
+
+let toastT;
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2600); }
+
+// ---------- writes ----------
+function bodyFor(m, patch) {
+  if (m.hard) return { question: m.question, answer: m.answer, hidden_knowledge: m.hidden_knowledge, rubric: m.rubric, question_type: m.question_type,
+    status: m.status, note: m.note, ...patch, by: myId, at: Date.now() };
+  const b = { question: m.question, ground_truth: m.ground_truth, category: m.category, neufert_tier: m.neufert_tier, neufert_topic: m.neufert_topic,
+    status: m.status, note: m.note, ...patch, by: myId, at: Date.now() };
+  if (m.isNew) { b.is_new = true; b.project = m.project; }
+  return b;
+}
+function isPristine(m, b) {
+  if (m.isNew) return false;
+  if (m.hard) { const o = HORIG[m.hid]; return HARD_FIELDS.every(f => same(b[f], o[f])) && !b.status && !b.note; }
+  const o = ORIG[m.id];
+  return EDIT_FIELDS.every(f => b[f] === o[f]) && !b.status && !b.note;
+}
+const writing = new Set();
+async function write(m, patch) {
+  if (!db || !canWrite) { toast(L('当前是只读模式，改动无法保存', 'Read-only mode: changes cannot be saved')); return false; }
+  const k = String(m.key); const id = m.hard ? k : docIdOf(m.isNew ? k : m.id);
+  if (writing.has(id)) { toast(L('上一次保存还没完成，请稍等', 'The previous save is still in progress, please wait')); return false; }
+  writing.add(id);
+  const b = bodyFor(m, patch);
+  try {
+    const ref = db.collection('edits').doc(id);
+    if (isPristine(m, b)) await ref.delete(); else await ref.set(b);
+    return true;
+  } catch (e) {
+    if (e && e.code === 'invalid_argument') { canWrite = false; setSync(); toast(L('你对这个页面只有查看权限，改动没有保存', 'You only have view access to this page; the change was not saved')); }
+    else if (e && e.code === 'quota_exceeded') toast(L('数据库已满，改动没有保存', 'The database is full; the change was not saved'));
+    else toast(L('保存失败，请稍后再试', 'Save failed, please try again later'));
+    return false;
+  } finally { writing.delete(id); }
+}
+
+function findByKey(k) { return k.startsWith('h-') ? HALL.find(m => m.key === k) : ALL.find(m => String(m.key) === k); }
+
+$('#list').addEventListener('click', async ev => {
+  const btn = ev.target.closest('[data-act]'); if (!btn) return;
+  if (btn.dataset.act === 'goto-hard') {
+    state.scope = 'hard'; state.editing = null; try { localStorage.setItem('nqa.scope', 'hard'); } catch (e) {}
+    renderList(); const el = document.getElementById('card-' + btn.dataset.h);
+    if (el) { el.scrollIntoView({ block: 'center' }); el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 1600); }
+    return;
+  }
+  const card = btn.closest('.qa'); const k = card.dataset.k; const m = findByKey(k); if (!m) return;
+  const act = btn.dataset.act;
+  if (act === 'more') { state.expanded.has(k) ? state.expanded.delete(k) : state.expanded.add(k); renderList(); return; }
+  if (act === 'orig') { state.showOrig.has(k) ? state.showOrig.delete(k) : state.showOrig.add(k); renderList(); return; }
+  if (act === 'edit') { state.editing = k; renderList(); const ta = document.getElementById((m.hard ? 'h-q-' : 'e-q-') + k); ta && ta.focus(); return; }
+  if (act === 'cancel') {
+    state.editing = null;
+    if (m.isNew && m.question === '（新问题）' && !m.ground_truth && db) { try { await db.collection('edits').doc(k).delete(); } catch (e) {} }
+    renderList(); return;
+  }
+  if (act.startsWith('st-')) {
+    const s = act.slice(3); await write(m, { status: m.status === s ? '' : s }); return;
+  }
+  if (act === 'revert') {
+    let ok;
+    if (m.hard) { const o = HORIG[m.hid]; ok = await write(m, Object.fromEntries(HARD_FIELDS.map(f => [f, o[f]]))); }
+    else { const o = ORIG[m.id]; ok = await write(m, { question: o.question, ground_truth: o.ground_truth, category: o.category, neufert_tier: o.neufert_tier, neufert_topic: o.neufert_topic }); }
+    if (ok) { state.editing = null; toast(L('已恢复原文', 'Original restored')); renderList(); }
+    return;
+  }
+  if (act === 'delete-new') {
+    if (btn.dataset.confirm !== '1') { btn.dataset.confirm = '1'; btn.textContent = L('再点一次确认删除', 'Click again to confirm deletion'); return; }
+    try { await db.collection('edits').doc(k).delete(); state.editing = null; toast(L('已删除', 'Deleted')); } catch (e) { toast(L('删除失败，请稍后再试', 'Delete failed, please try again later')); }
+  }
+});
+$('#list').addEventListener('change', ev => {
+  if (ev.target.name !== 'neufert_tier') return;
+  const form = ev.target.form; const t = ev.target.value; const sel = form.elements.neufert_topic; const cur = sel.value;
+  sel.innerHTML = `<option value="">—</option>` + Object.entries(TOPIC).filter(([kk]) => !t || kk.startsWith(t === 'tier1' ? 'T1' : 'T2')).map(([kk, v]) => `<option value="${kk}">${v}</option>`).join('');
+  sel.value = t && cur.startsWith(t === 'tier1' ? 'T1' : 'T2') ? cur : '';
+  if (!t) sel.value = '';
+});
+$('#list').addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const form = ev.target; const k = form.dataset.form; const m = findByKey(k); if (!m) return;
+  const f = form.elements; const err = form.querySelector('[data-err]');
+  if (form.dataset.kind === 'hard') {
+    const hp = { question: f.question.value.trim(), answer: f.answer.value.trim(), hidden_knowledge: f.hidden_knowledge.value.trim(),
+      rubric: f.rubric.value.split('\n').map(s => s.trim()).filter(Boolean), question_type: f.question_type.value, note: f.note.value.trim() };
+    if (!hp.question) { err.textContent = L('问题不能为空', 'The question cannot be empty'); return; }
+    err.textContent = '';
+    if (await write(m, hp)) { state.editing = null; toast(L('已保存', 'Saved')); renderList(); }
+    return;
+  }
+  const patch = { question: f.question.value.trim(), ground_truth: f.ground_truth.value.replace(/\s+$/, ''), category: Number(f.category.value),
+    neufert_tier: f.neufert_tier.value, neufert_topic: f.neufert_tier.value ? f.neufert_topic.value : '', note: f.note.value.trim() };
+  if (!patch.question) { err.textContent = L('问题不能为空', 'The question cannot be empty'); return; }
+  if (patch.neufert_tier && !patch.neufert_topic) { err.textContent = L('标成 Neufert 题时请选一个主题', 'Choose a topic when tagging as Neufert QA'); return; }
+  err.textContent = '';
+  const ok = await write(m, patch);
+  if (ok) { state.editing = null; toast(m.isNew ? L('已保存新增的 QA', 'New QA saved') : L('已保存', 'Saved')); renderList(); }
+});
+
+$('#add').addEventListener('click', async () => {
+  if (!db || !canWrite) { toast(L('当前是只读模式，不能新增', 'Read-only mode: cannot add')); return; }
+  const k = 'n-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+  const draft = { is_new: true, project: state.project, question: '（新问题）', ground_truth: '', category: 4, neufert_tier: 'tier1', neufert_topic: '', status: '', note: '', by: myId, at: Date.now() };
+  try { await db.collection('edits').doc(k).set(draft); edits[k] = draft; state.editing = k; state.scope = 'neufert'; renderAll();
+    const ta = document.getElementById('e-q-' + k); ta && (ta.focus(), ta.select()); }
+  catch (e) { toast(L('新增失败，请稍后再试', 'Could not add, please try again later')); }
+});
+
+$('#rail').addEventListener('click', ev => { const b = ev.target.closest('.pj'); if (b) selectProject(b.dataset.p); });
+$('#scope-neufert').addEventListener('click', () => { state.scope = 'neufert'; try { localStorage.setItem('nqa.scope', 'neufert'); } catch (e) {} renderList(); });
+$('#scope-all').addEventListener('click', () => { state.scope = 'all'; try { localStorage.setItem('nqa.scope', 'all'); } catch (e) {} renderList(); });
+$('#scope-hard').addEventListener('click', () => { state.scope = 'hard'; state.editing = null; try { localStorage.setItem('nqa.scope', 'hard'); } catch (e) {} renderList(); });
+$('#f-topic').addEventListener('change', e => { state.topic = e.target.value; renderList(); });
+$('#f-status').addEventListener('change', e => { state.status = e.target.value; renderList(); });
+let qT; $('#f-q').addEventListener('input', e => { clearTimeout(qT); qT = setTimeout(() => { state.q = e.target.value; renderList(); }, 150); });
+window.addEventListener('hashchange', () => { const before = state.project; fromHash(); if (state.project !== before) selectProject(state.project); });
+
+// ---------- export ----------
+function csvCell(v) { const s = String(v ?? ''); return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; }
+$('#export').addEventListener('click', async () => {
+  let cols, rows, filename;
+  if (state.scope === 'hard') {
+    cols = ['hid', 'project', 'derived_from', 'question_type', 'question', 'answer', 'hidden_knowledge', 'evidence', 'neufert_basis', 'rubric', 'review_status', 'edited', 'note'];
+    rows = HALL.map(m => [m.hid, m.project, m.derived_from.join(';'), m.question_type, m.question, m.answer, m.hidden_knowledge, m.evidence.join(' | '),
+      m.basis.map(b => `p.${b.book_page}: "${b.quote}"`).join(' | '), m.rubric.join(' | '), m.status, m.edited ? 'yes' : '', m.note]);
+    filename = 'ifc_bench_neufert_hard_qa_reviewed.csv';
+  } else {
+    cols = ['id', 'project', 'ifc_model', 'question', 'ground_truth', 'category', 'split', 'neufert_tier', 'neufert_topic', 'review_status', 'edited', 'note'];
+    rows = ALL.map(m => [m.isNew ? m.key : m.id, m.project, 'arc', m.question, m.ground_truth, m.category, m.split, m.neufert_tier, m.neufert_topic,
+      m.status, m.isNew ? 'new' : (m.edited ? 'yes' : ''), m.note]);
+    filename = 'ifc_bench_neufert_reviewed.csv';
+  }
+  const text = '﻿' + [cols, ...rows].map(r => r.map(csvCell).join(',')).join('\r\n');
+  let dl = null; try { dl = await window.claude?.use?.('downloads'); } catch (e) {}
+  if (!dl) { toast(L('这个视图不支持下载', 'Downloads are not supported in this view')); return; }
+  try { await dl.save({ filename, data: text }); }
+  catch (e) { if (e && e.code === 'declined') return; toast(e && e.code === 'rate_limited' ? L('已有一个下载确认框，请先处理', 'A download prompt is already open; handle it first') : L('导出失败', 'Export failed')); }
+});
+
+// ---------- db ----------
+let syncKind;
+function setSync(kind) {
+  syncKind = kind;
+  const s = $('#sync');
+  if (kind === 'off') { s.className = 'sync ro'; s.textContent = L('离线 · 只读', 'Offline · read-only'); }
+  else if (!canWrite) { s.className = 'sync ro'; s.textContent = L('只读', 'Read-only'); }
+  else { s.className = 'sync live'; s.textContent = L('已同步', 'Synced'); }
+  document.querySelectorAll('#add').forEach(b => b.disabled = !canWrite);
+}
+async function resolveNames() {
+  if (!user) return;
+  const ids = [...new Set(Object.values(edits).map(e => e.by).filter(Boolean))];
+  if (!ids.length) return;
+  try { const ps = await user.profiles(ids); let changed = false;
+    for (const id of ids) { const n = ps[id]?.name || ''; if (names[id] !== n) { names[id] = n; changed = true; } }
+    if (changed && !state.editing) renderList(); } catch (e) {}
+}
+async function boot() {
+  topicOptions(); renderDossier(); renderAll(); setSync('off'); $('#sync').textContent = L('连接中…', 'Connecting…'); $('#sync').className = 'sync';
+  if (!window.claude?.use) { setSync('off'); return; }
+  try { [db, user] = await Promise.all([window.claude.use('db'), window.claude.use('user')]); } catch (e) { db = null; }
+  if (!db) { setSync('off'); return; }
+  try { myId = user ? await user.id() : null; } catch (e) {}
+  let w = null; try { w = user ? await user.can('data.write') : null; } catch (e) {}
+  canWrite = w !== false;
+  setSync();
+  db.collection('edits').limit(1000).onSnapshot(snap => {
+    const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); });
+    edits = next;
+    if (state.editing && !findByKeyIn(state.editing)) state.editing = null;
+    renderAll(); resolveNames();
+  }, e => { setSync('off'); toast(L('和数据库的连接断开了，刷新页面可以重连', 'Lost the database connection; refresh the page to reconnect')); });
+  syncKLabels();
+  db.collection('klabels').limit(500).onSnapshot(snap => {
+    const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); });
+    klabels = next; syncKLabels();
+    if (kstate.lab && kstate.page === 'kb' && !document.activeElement?.classList.contains('knote')) renderKB();
+  }, e => {});
+}
+function findByKeyIn(k) { return k.startsWith('n-') ? edits[k] : true; }
+// static HTML carries its English in data-en / data-en-<attr>
+function applyStatic() {
+  document.querySelectorAll('[data-en]').forEach(el => {
+    if (el.dataset.zh == null) el.dataset.zh = el.textContent;
+    el.textContent = lang === 'en' ? el.dataset.en : el.dataset.zh;
+  });
+  for (const a of ['aria-label', 'placeholder']) document.querySelectorAll(`[data-en-${a}]`).forEach(el => {
+    if (el.getAttribute('data-zh-' + a) == null) el.setAttribute('data-zh-' + a, el.getAttribute(a));
+    el.setAttribute(a, lang === 'en' ? el.getAttribute('data-en-' + a) : el.getAttribute('data-zh-' + a));
+  });
+  document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+  $('#lang').textContent = lang === 'en' ? '中文' : 'EN';
+}
+applyStatic();
+boot();
+
+/* ---------- knowledge base + model results (read-only pages) ---------- */
+const KN_ALL = DATA.knowledge || [], KN_ARCH = KN_ALL.filter(k => k.archived);
+const KN = KN_ALL.filter(k => !k.archived), RES = DATA.results || {}, MODELS = DATA.models || [];
+const OPEN_MODELS = MODELS.filter(([id]) => KN.some(k => RES[k.kid]?.[id]?.o));
+const LABEL = () => ({ correct: L('全对', 'Correct'), partially_correct: L('部分对', 'Partial'), incorrect: L('错', 'Wrong') });
+const LCLS = { correct: 'ok', partially_correct: 'part', incorrect: 'bad' };
+const LEVELS = (DATA.levels || []).map(l => [l.id, l.desc, l.ifc, l.bot, l.desc_en, l.ifc_en]);
+const NL = k => { const n = NEEDS[k]; return n ? L(n.label, n.label_en || n.label) : k; };
+const NEEDS = DATA.needs || {};
+const kstate = { lab: '', level: '', need: '', topic: '', pri: '', res: '', q: '', page: 'work' };
+const pct = (a, b) => b ? (a / b * 100).toFixed(1) + '%' : '—';
+const stars = n => '★'.repeat(n);
+const cell = (kid, m) => RES[kid]?.[m] || {};
+const mcq1 = (kid, m) => cell(kid, m).m?.[0];
+function kFlags(k) {
+  const ms = MODELS.map(([id]) => id).filter(id => cell(k.kid, id).m);
+  const os = OPEN_MODELS.map(([id]) => id).filter(id => cell(k.kid, id).o);
+  return { mcq0: ms.length && ms.every(id => !cell(k.kid, id).m[0]),
+    open0: os.length && os.every(id => cell(k.kid, id).o !== 'correct'), openall: os.length && os.every(id => cell(k.kid, id).o === 'correct') };
+}
+function kVisible() {
+  const q = kstate.q.trim().toLowerCase();
+  return (kstate.lab === 'archived' ? KN_ARCH : KN).filter(k => (!kstate.lab || kstate.lab === 'archived' || (kstate.lab === 'none' ? !klabels[k.kid]?.label : klabels[k.kid]?.label === kstate.lab)) && (!kstate.level || k.level === kstate.level) && (!kstate.need || (kstate.need === 'none0' ? (k.models && !k.models.length) : k.needs.includes(kstate.need))) && (!kstate.topic || k.topic === kstate.topic) && (!kstate.pri || String(k.priority) === kstate.pri)
+    && (!kstate.res || kFlags(k)[kstate.res])
+    && (!q || [k.kid, k.title, k.summary, k.title_en || '', k.summary_en || '', TP(k.topic), k.question, k.answer, ...k.basis.map(b => b.quote)].join('\n').toLowerCase().includes(q)));
+}
+// ---------- scope labels: is this knowledge point inside the study scope? (db collection "klabels", doc id = kid) ----------
+let klabels = {};
+const KLAB = () => ({ in: L('在范围内', 'In scope'), unsure: L('待定', 'Unsure'), out: L('不在范围', 'Out of scope') });
+const KLCLS = { in: 'ok', unsure: 'flag', out: 'drop' };
+const klabWhen = e => e && e.at ? new Date(e.at).toLocaleString(L('zh-CN', 'en-GB'), { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : '';
+function klabRow(k) {
+  const e = klabels[k.kid] || {}, lab = KLAB(), dis = db && canWrite ? '' : 'disabled';
+  return `<div class="acts klab" data-kid="${k.kid}"><span class="klq">${L('在我的范围内吗？', 'In my scope?')}</span>
+    ${Object.keys(lab).map(v => `<button class="act ${KLCLS[v]}" type="button" data-lab="${v}" aria-pressed="${e.label === v}" ${dis}>${lab[v]}</button>`).join('')}
+    <input class="knote" type="text" maxlength="300" placeholder="${L('备注（可选）', 'Note (optional)')}" aria-label="${L('备注', 'Note')}" value="${esc(e.note || '')}" ${dis}>
+    <span class="who">${klabWhen(e)}</span></div>`;
+}
+function renderKProg() {
+  const c = { in: 0, unsure: 0, out: 0 };
+  for (const k of KN) { const l = klabels[k.kid]?.label; if (l in c) c[l]++; }
+  const done = c.in + c.unsure + c.out, lab = KLAB();
+  $('#k-prog').innerHTML = `<span>${L('范围标注', 'Scope labels')} <b>${done}</b>/${KN.length}</span><span class="meter"><i style="width:${KN.length ? done / KN.length * 100 : 0}%"></i></span>
+    <span>${lab.in} <b>${c.in}</b></span><span>${lab.unsure} <b>${c.unsure}</b></span><span>${lab.out} <b>${c.out}</b></span>
+    ${KN_ARCH.length ? `<span>${L('已归档', 'Archived')} <b>${KN_ARCH.length}</b></span>` : ''}
+    <button class="btn" type="button" id="k-export">${L('导出标注 CSV', 'Export labels CSV')}</button>
+    ${db && canWrite ? '' : `<span>${L('当前只读，不能标注', 'Read-only: labelling is disabled')}</span>`}`;
+}
+// labels changed: update the rows in place so open answers and a note being typed are not disturbed
+function syncKLabels() {
+  document.querySelectorAll('#k-list .klab').forEach(row => {
+    const e = klabels[row.dataset.kid] || {}, off = !(db && canWrite);
+    row.querySelectorAll('[data-lab]').forEach(b => { b.setAttribute('aria-pressed', e.label === b.dataset.lab); b.disabled = off; });
+    const inp = row.querySelector('.knote'); inp.disabled = off;
+    if (document.activeElement !== inp) inp.value = e.note || '';
+    row.querySelector('.who').textContent = klabWhen(e);
+    const card = row.closest('.kcard'); card.classList.remove('lab-in', 'lab-unsure', 'lab-out'); if (e.label) card.classList.add('lab-' + e.label);
+  });
+  renderKProg();
+}
+const kwriting = new Set();
+async function writeKLabel(kid, patch) {
+  if (!db || !canWrite) { toast(L('当前是只读模式，改动无法保存', 'Read-only mode: changes cannot be saved')); return; }
+  if (kwriting.has(kid)) return;
+  kwriting.add(kid);
+  const cur = klabels[kid] || {};
+  const b = { label: cur.label || '', note: cur.note || '', ...patch, by: myId, at: Date.now() };
+  try {
+    const ref = db.collection('klabels').doc(kid);
+    if (!b.label && !b.note) { await ref.delete(); delete klabels[kid]; } else { await ref.set(b); klabels[kid] = b; }
+  } catch (e) {
+    if (e && e.code === 'invalid_argument') { canWrite = false; setSync(); toast(L('你对这个页面只有查看权限，改动没有保存', 'You only have view access to this page; the change was not saved')); }
+    else if (e && e.code === 'quota_exceeded') toast(L('数据库已满，改动没有保存', 'The database is full; the change was not saved'));
+    else toast(L('保存失败，请稍后再试', 'Save failed, please try again later'));
+  } finally { kwriting.delete(kid); syncKLabels(); }
+}
+
+function kCard(k) {
+  const rows = MODELS.map(([id, name]) => {
+    const c = cell(k.kid, id); if (!c.m && !c.o) return '';
+    const n = c.m ? c.m.length : 0, hit = c.m ? c.m.reduce((a, b) => a + b, 0) : 0;
+    const mc = c.m ? `<span class="chip ${c.m[0] ? 'ok' : 'bad'}">${L('选择题', 'MCQ')} ${c.m[0] ? '✓' : '✗'}${n > 1 ? ` · ${hit}/${n} ${L('轮', 'rounds')}` : ''}</span>` : '<span></span>';
+    const wrong = c.m && !c.m[0] && c.mc ? `<span class="wrong">${L('选了：', 'chose: ')}${esc(c.mc)}</span>` : '';
+    const op = c.o ? `<details><summary><span class="chip ${LCLS[c.o] || ''}">${L('开放题', 'Open')} ${LABEL()[c.o] || esc(c.o)}</span>${c.nr ? ('<span class="chip">' + L('待复核', 'Needs review') + '</span>') : ''}${wrong}<span class="wrong">${L('看回答', 'show answer')}</span></summary><p>${esc(c.a)}</p></details>`
+      : `<span>${wrong || ('<span class="wrong">' + L('只做选择题', 'MCQ only') + '</span>')}</span>`;
+    return `<div class="row"><span>${esc(name)}</span>${mc}${op}</div>`;
+  }).join('');
+  return `<article class="sheet kcard ${klabels[k.kid]?.label ? 'lab-' + klabels[k.kid].label : ''}" id="k-${k.kid}">
+    <div class="kt"><span class="kid">${k.kid}</span><h3>${esc(KT(k))}</h3>
+      ${k.archived ? `<span class="chip drop">${L('已归档', 'Archived')}</span>` : ''}<span class="chip new">${esc(k.level)}</span><span class="chip t1">${stars(k.priority)}</span><span class="chip">LOD ${esc(k.lod)}</span><span class="chip t2">${esc(TP(k.topic))}</span>
+      ${k.hard_qa.length ? `<span class="chip">${L('进阶题', 'Advanced')} ${k.hard_qa.length}</span>` : ''}</div>
+    <p class="sum">${esc(KS(k))}</p>
+    <div class="ifcline">${k.ifc.map(x => `<code>${esc(x)}</code>`).join('')}${k.needs.map(n => `<span class="chip" title="${esc(L(NEEDS[n]?.ifc || '', NEEDS[n]?.ifc_en || NEEDS[n]?.ifc || ''))}">${L('需要', 'Needs ')}${esc(NL(n))}</span>`).join('')}${
+      k.models ? `<span class="chip ${k.models.length ? '' : 'bad'}">${k.models.length ? `${k.models.length}/${DATA.projects.length}${L(' 个 IFC 模型有所需数据', ' IFC models have the data needed')}` : L(`${DATA.projects.length} 个 IFC 模型都缺所需数据`, `None of the ${DATA.projects.length} IFC models has the data needed`)}</span>` : ''}</div>
+    <div class="cites">${k.basis.map(b => `<div class="cite"><span class="src">Neufert p.${esc(b.book_page)}</span><q>${esc(b.quote)}</q></div>`).join('')}</div>
+    <div class="probe">
+      <div class="pq">${esc(k.question)}</div>
+      <div class="pa"><b>${L('答案', 'Answer')}</b>${esc(k.answer)}</div>
+      <details><summary class="wrong" style="cursor:pointer">${L('选择题选项和评分要点', 'MCQ options and rubric')}</summary>
+        <ol class="opts" type="A">${k.mcq.options.map((o, i) => `<li class="${i === k.mcq.correct ? 'right' : ''}">${esc(o)}${i === k.mcq.correct ? ' ✓' : ''}</li>`).join('')}</ol>
+        ${k.rubric.length ? `<ul style="margin:6px 0 0;padding-left:20px">${k.rubric.map(r => `<li>${esc(r)}</li>`).join('')}</ul>` : ''}
+      </details>
+    </div>
+    ${rows ? `<div class="mres">${rows}</div>` : ''}
+    ${klabRow(k)}
+  </article>`;
+}
+function renderKB() {
+  const vis = kVisible();
+  $('#kb-lede').innerHTML = L(
+    `<b>${KN.length}</b> 个知识点，按 BOT 的空间层次从粗到细分成 ${LEVELS.length} 级（${LEVELS.map(l => l[0]).join(' → ')}），每个都标了对应的 IFC 实体和检查时还需要的 IFC 数据。每个都带 Neufert 页码、逐字原文、一道检验题，以及 ${MODELS.length} 个模型在这道题上的表现。当前显示 <b>${vis.length}</b> 个。`,
+    `<b>${KN.length}</b> knowledge points, sorted coarse to fine into ${LEVELS.length} levels after the BOT spatial hierarchy (${LEVELS.map(l => l[0]).join(' → ')}). Each is tagged with its IFC entities and the extra IFC data needed to check it, and comes with the Neufert page, the verbatim source text, a probe question and the results of ${MODELS.length} models on that question. Showing <b>${vis.length}</b>.`);
+  renderKProg();
+  let lv = null, tp = null;
+  const withHeads = vis.map(k => {
+    let h = '';
+    if (k.level !== lv) { lv = k.level; tp = null; const d = LEVELS.find(l => l[0] === lv);
+      h += `<div class="lvhead"><h3>${esc(lv)}</h3><span>${esc(d ? L(d[1], d[4] || d[1]) : '')} · ${vis.filter(x => x.level === lv).length} ${L('个', '')}</span><span class="lvifc">${esc(d ? d[3] : '')} → ${esc(d ? L(d[2], d[5] || d[2]) : '')}</span></div>`; }
+    if (k.topic !== tp) { tp = k.topic; h += `<div class="tphead">${esc(TP(tp))} · ${vis.filter(x => x.topic === tp).length}</div>`; }
+    return h + kCard(k);
+  });
+  $('#k-list').innerHTML = withHeads.join('') || ('<div class="empty">' + L('没有符合筛选条件的知识点。', 'No knowledge points match the filters.') + '</div>');
+}
+function renderResults() {
+  const n = KN.filter(k => MODELS.some(([id]) => cell(k.kid, id).m)).length, pending = KN.length - n;   // points the models have answered
+  const stat = MODELS.map(([id, name]) => {
+    const ks = KN.filter(k => cell(k.kid, id).m);
+    const m1 = ks.filter(k => mcq1(k.kid, id)).length;
+    const rounds = Math.max(0, ...ks.map(k => cell(k.kid, id).m.length));
+    const mAll = ks.reduce((a, k) => a + cell(k.kid, id).m.reduce((x, y) => x + y, 0), 0), mN = ks.reduce((a, k) => a + cell(k.kid, id).m.length, 0);
+    const os = KN.filter(k => cell(k.kid, id).o);
+    const c = os.filter(k => cell(k.kid, id).o === 'correct').length, p = os.filter(k => cell(k.kid, id).o === 'partially_correct').length;
+    return { id, name, mcq: m1 / ks.length, rounds, mcqAll: mN ? mAll / mN : null, on: os.length, c, p, w: os.length - c - p,
+      open: os.length ? c / os.length : null, half: os.length ? (c + p / 2) / os.length : null };
+  });
+  const f = v => v == null ? '—' : (v * 100).toFixed(1) + '%';
+  const best = key => Math.max(...stat.map(s => s[key] ?? -1));
+  const bm = best('mcq'), bo = best('open'), bh = best('half');
+  const top = stat.find(s => s.mcq === bm), topO = stat.find(s => s.open === bo);
+  const flags = KN.map(k => [k, kFlags(k)]);
+  const mcq0 = flags.filter(([, fl]) => fl.mcq0).map(([k]) => k), open0 = flags.filter(([, fl]) => fl.open0).map(([k]) => k);
+  const pri = [3, 2, 1].map(p => { const ks = KN.filter(k => k.priority === p);
+    return { p, n: ks.length, cols: stat.map(s => ({ m: ks.filter(k => mcq1(k.kid, s.id)).length / ks.length,
+      o: s.on ? ks.filter(k => cell(k.kid, s.id).o === 'correct').length / ks.length : null })) }; });
+  const lev = LEVELS.map(([l]) => { const ks = KN.filter(k => k.level === l);
+    return { l, n: ks.length, cols: stat.map(s => ({ m: ks.length ? ks.filter(k => mcq1(k.kid, s.id)).length / ks.length : null,
+      o: s.on && ks.length ? ks.filter(k => cell(k.kid, s.id).o === 'correct').length / ks.length : null })) }; });
+  $('#page-res').innerHTML = `
+  <h2>${L('模型结果', 'Model results')}</h2>
+  <p class="lede">${L(
+    `${n} 道检验题，同一道题分别用<b>选择题</b>和<b>开放题</b>问 ${MODELS.length} 个模型（闭卷，不给资料）。选择题最高 <b>${f(bm)}</b>（${esc(top.name)}），但同样的题改成开放题，最好的模型也只有 <b>${f(bo)}</b> 完全答对（${esc(topO.name)}）。`,
+    `${n} probe questions, each put to ${MODELS.length} models both as a <b>multiple-choice question</b> and as an <b>open question</b> (closed book, no sources). The best multiple-choice score is <b>${f(bm)}</b> (${esc(top.name)}); asked as open questions, even the best model gets only <b>${f(bo)}</b> fully correct (${esc(topO.name)}).`)}</p>
+  ${pending ? `<p class="lede">${L(`另有 <b>${pending}</b> 个新增知识点还没有让模型作答，不计入下面的数字。`, `<b>${pending}</b> newly added knowledge points have not been put to the models yet and are not counted below.`)}</p>` : ''}
+  <div class="kpis">
+    <div class="sheet kpi"><b>${f(bm)}</b><span>${L('选择题最高 ·', 'Best MCQ ·')} ${esc(top.name)}</span></div>
+    <div class="sheet kpi"><b>${f(bo)}</b><span>${L('开放题完全答对最高 ·', 'Best open, fully correct ·')} ${esc(topO.name)}</span></div>
+    <div class="sheet kpi"><b>${mcq0.length}</b><span>${L('道选择题所有模型都错', 'MCQs missed by every model')}</span></div>
+    <div class="sheet kpi"><b>${open0.length}</b><span>${L('个知识点开放题没有模型全对', 'points with no fully correct open answer')}</span></div>
+  </div>
+  <section class="sheet blk">
+    <h3>${L('选择题 vs 开放题', 'MCQ vs open questions')}</h3>
+    <div class="legend"><span><i style="background:var(--c-mcq)"></i>${L('选择题正确率', 'MCQ accuracy')}</span><span><i style="background:var(--c-open)"></i>${L('开放题完全答对', 'Open, fully correct')}</span></div>
+    <div class="bars">${stat.map(s => `<span class="nm">${esc(s.name)}</span><div class="track pad">
+      <div class="bar" style="width:${s.mcq * 100}%;background:var(--c-mcq)" title="${esc(s.name)} ${L('选择题', 'MCQ')} ${f(s.mcq)}"><span>${f(s.mcq)}</span></div>
+      ${s.open == null ? '' : `<div class="bar" style="width:${s.open * 100}%;background:var(--c-open)" title="${esc(s.name)} ${L('开放题完全答对', 'Open, fully correct')} ${f(s.open)}"><span>${f(s.open)}</span></div>`}
+    </div>`).join('')}</div>
+    <p>${L('横轴 0–100%，竖线每 25%。JEV 是判别模型，只能做选择题。', 'Axis 0–100%, gridlines every 25%. JEV is a discriminative model and can only answer MCQs.')}</p>
+  </section>
+  <section class="sheet blk">
+    <h3>${L('开放题的判分分布', 'Open-question grades')}</h3>
+    <div class="legend"><span><i style="background:var(--c-good)"></i>${L('全对', 'Correct')}</span><span><i style="background:var(--c-part)"></i>${L('部分对', 'Partial')}</span><span><i style="background:var(--c-bad)"></i>${L('错', 'Wrong')}</span></div>
+    <div class="bars">${stat.filter(s => s.on).map(s => `<span class="nm">${esc(s.name)}</span><div class="stack-row">
+      <div class="stack"><i style="flex:${s.c};background:var(--c-good)" title="${L('全对', 'Correct')} ${s.c}"></i><i style="flex:${s.p};background:var(--c-part)" title="${L('部分对', 'Partial')} ${s.p}"></i><i style="flex:${s.w};background:var(--c-bad)" title="${L('错', 'Wrong')} ${s.w}"></i></div>
+      <small>${L('全对', 'Correct')} ${s.c} ${L('· 部分对', '· partial')} ${s.p} ${L('· 错', '· wrong')} ${s.w}</small></div>`).join('')}</div>
+    <p>${L('“部分对”多数是真的只答对一部分：给了一个范围而不是具体数值，多个数里错了一个，或者加了原文没有的说法。', 'Most “partial” grades are real partial misses: a range instead of the specific value, one of several values wrong, or a claim that is not in the source.')}</p>
+  </section>
+  <section class="sheet blk">
+    <h3>${L('全部数字', 'All numbers')}</h3>
+    <div class="scroll"><table class="rt"><thead><tr><th>${L('模型', 'Models')}</th><th>${L('选择题', 'MCQ')}</th><th>${L('选择题（打乱 3 轮均值）', 'MCQ (mean of 3 shuffled rounds)')}</th><th>${L('开放题全对', 'Open: correct')}</th><th>${L('部分对', 'Partial')}</th><th>${L('错', 'Wrong')}</th><th>${L('开放题（部分对算半分）', 'Open (partial = half credit)')}</th></tr></thead>
+    <tbody>${stat.map(s => `<tr><td>${esc(s.name)}</td><td class="${s.mcq === bm ? 'best' : ''}">${f(s.mcq)}</td><td>${s.rounds >= 3 ? f(s.mcqAll) : L('只跑了 1 轮', '1 round only')}</td>
+      <td class="${s.open === bo ? 'best' : ''}">${f(s.open)}</td><td>${s.on ? pct(s.p, s.on) : '—'}</td><td>${s.on ? pct(s.w, s.on) : '—'}</td><td class="${s.half === bh ? 'best' : ''}">${f(s.half)}</td></tr>`).join('')}</tbody></table></div>
+    <p>${L('每个模型每题答一次，单题影响约 0.8 个百分点。选择题打乱选项顺序重跑时，分数会上下浮动 1–2 个点。', 'Each model answered each question once; one item moves a score by about 0.8 points. Re-running MCQs with shuffled options moves scores by 1–2 points.')}</p>
+  </section>
+  <section class="sheet blk">
+    <h3>${L('按层级（从粗到细）', 'By level (coarse to fine)')}</h3>
+    <div class="scroll"><table class="rt"><thead><tr><th>${L('层级', 'Level')}</th>${stat.map(s => `<th>${esc(s.name)}</th>`).join('')}</tr></thead>
+    <tbody>${lev.map(r => `<tr><td>${esc(r.l)}${L('（', ' (')}${r.n} ${L('个）', ')')}</td>${r.cols.map(c => `<td>${f(c.m)} / ${f(c.o)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+    <p>${L('每格是“选择题正确率 / 开放题完全答对”。知识点少的层级单题影响大：Site & Building 只有', 'Each cell is “MCQ accuracy / open fully correct”. Levels with few points swing more per item: Site & Building has only')} ${lev[0] ? lev[0].n : 0} ${L('个，每题约', 'points, about')} ${lev[0] && lev[0].n ? (100 / lev[0].n).toFixed(0) : '—'} ${L('个百分点。', 'percentage points per item.')}</p>
+  </section>
+  <section class="sheet blk">
+    <h3>${L('按知识点重要性', 'By priority')}</h3>
+    <div class="scroll"><table class="rt"><thead><tr><th>${L('重要性', 'Priority')}</th>${stat.map(s => `<th>${esc(s.name)}</th>`).join('')}</tr></thead>
+    <tbody>${pri.map(r => `<tr><td>${stars(r.p)}${L('（', ' (')}${r.n} ${L('个）', ')')}</td>${r.cols.map(c => `<td>${f(c.m)} / ${f(c.o)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+    <p>${L('每格是“选择题正确率 / 开放题完全答对”。', 'Each cell is “MCQ accuracy / open fully correct”.')}</p>
+  </section>
+  <section class="sheet blk">
+    <h3>${L('所有模型选择题都错的知识点（同一轮选项顺序）', 'Points every model got wrong as MCQ (same option order)')}</h3>
+    <p>${L('这些题模型记住的数值和 Neufert 原文不一样。答案都已对照原文核实。点一条可以看原文和各模型的回答。', 'On these, what the models remember differs from the Neufert source. The answer keys were checked against the source. Click one to see the source text and each model’s answer.')}</p>
+    <div class="hardlist">${mcq0.map(k => `<button type="button" data-goto="${k.kid}"><span class="kid">${k.kid}</span><span>${esc(KT(k))}<small>${esc(k.answer)}</small></span></button>`).join('') || ('<span>' + L('没有。', 'None.') + '</span>')}</div>
+    <p><button class="btn" type="button" data-kres="open0">${L('看开放题没有模型全对的', 'Show the')} ${open0.length} ${L('个知识点', 'points with no fully correct open answer')}</button></p>
+  </section>
+  <section class="sheet blk">
+    <h3>${L('怎么判分的', 'How answers are graded')}</h3>
+    <p>${L('选择题按选项字母直接比对。开放题由 JEV 判分：它看不到标准答案，只看题目、Neufert 原文和模型的回答，判成全对、部分对或错。', 'MCQs are graded by comparing the option letter. Open answers are graded by JEV: it does not see the reference answer, only the question, the Neufert source text and the model’s answer, and labels the answer correct, partial or wrong.')}</p>
+    <p>${L('判分员在 1,464 条带标签的测试回答上验证过：标准答案 135/135 判全对；留出集上，应得满分的回答 99.4% 判全对，错误回答只有 0.3% 被误判成全对。', 'The judge was validated on 1,464 labelled test answers: 135/135 reference answers were graded correct; on the held-out set, 99.4% of answers that deserve full marks were graded correct and only 0.3% of wrong answers were mistakenly graded correct.')}</p>
+  </section>`;
+}
+function topicsKB() {
+  $('#k-level').innerHTML = ('<option value="">' + L('全部层级', 'All levels') + '</option>') + LEVELS.map(([l]) => `<option value="${esc(l)}">${esc(l)}${L('（', ' (')}${KN.filter(k => k.level === l).length}${L('）', ')')}</option>`).join('');
+  $('#k-need').innerHTML = ('<option value="">' + L('全部数据需求', 'All data needs') + '</option>') + Object.entries(NEEDS).map(([k, n]) => `<option value="${k}">${L('需要', 'Needs ')}${esc(NL(k))}${L('（', ' (')}${KN.filter(x => x.needs.includes(k)).length}${L('）', ')')}</option>`).join('') + `<option value="none0">${L('所有模型都缺数据（', 'No IFC model has the data (')}${KN.filter(x => x.models && !x.models.length).length}${L('）', ')')}</option>`;
+  $('#k-need').value = kstate.need;
+  $('#k-lab').innerHTML = `<option value="">${L('全部标注状态', 'All scope labels')}</option><option value="none">${L('未标注', 'Not labelled')}</option>` + Object.entries(KLAB()).map(([v, t]) => `<option value="${v}">${t}</option>`).join('') + (KN_ARCH.length ? `<option value="archived">${L('已归档', 'Archived')}${L('（', ' (')}${KN_ARCH.length}${L('）', ')')}</option>` : '');
+  $('#k-lab').value = kstate.lab;
+  const ts = [...new Set(KN.filter(k => !kstate.level || k.level === kstate.level).map(k => k.topic))];
+  $('#k-topic').innerHTML = ('<option value="">' + L('全部主题', 'All topics') + '</option>') + ts.map(t => `<option value="${esc(t)}">${esc(TP(t))}${L('（', ' (')}${KN.filter(k => k.topic === t).length}${L('）', ')')}</option>`).join('');
+}
+/* ---------- rules pilot: knowledge rewritten as context → requirement, with instances found in the IFC models ---------- */
+const RULES = DATA.rules || [], INST = DATA.instances || [];
+const rstate = { level: '', verdict: '', q: '', model: '', conc: '', status: 'active' };
+const RSTAT = (DATA.rstatus && DATA.rstatus.rules) || {};
+const SCEN = Object.fromEntries((DATA.scenarios || []).map(x => [x.rid, x]));
+const IFC_ = Object.fromEntries((DATA.if_concrete || []).map(x => [x.rid, x]));
+// per-rule review: {rid: {decision: keep|archive|modify|'', comment, at}} — kept in localStorage, exported as JSON for rules/apply_review.py
+let REVIEW = {}; try { REVIEW = JSON.parse(localStorage.getItem('nqa.review') || '{}'); } catch (e) { REVIEW = {}; }
+const REVIEW_BAKED = (DATA.review && DATA.review.rules) || {};   // reviews already imported into the repo
+const rv = rid => REVIEW[rid] || REVIEW_BAKED[rid] || { decision: '', comment: '' };
+const saveReview = () => { try { localStorage.setItem('nqa.review', JSON.stringify(REVIEW)); } catch (e) {} };
+const DECS = [['', L('— 未评审', '— not reviewed')], ['keep', L('保留', 'keep')], ['archive', L('归档', 'archive')], ['modify', L('要改', 'modify')]];
+const rstatus = r => (RSTAT[r.rid] && RSTAT[r.rid].status) || 'active';
+const CONC = { direct: L('直接：IFC 属性 / Pset 就有', 'direct: an IFC attribute or Pset'), derived: L('推导：抽取器从几何 / 关系算', 'derived: computed from geometry or relations'), external: L('外部：IFC 里没有，要靠 model card / 任务书', 'external: not in IFC, needs the model card or brief') };
+const rInst = r => INST.filter(i => i.rid === r.rid && (!rstate.model || i.model === rstate.model));
+const VCLS = v => v === 'pass' ? 'ok' : v === 'fail' ? 'bad' : v === 'not_applicable' ? 'na' : 'part';
+const VLBL = v => ({ pass: L('满足', 'pass'), fail: L('不满足', 'fail'), not_applicable: L('不触发', 'not applicable'), mixed: L('部分满足', 'mixed'), unknown: L('IFC 缺信息', 'unknown · IFC lacks data') })[v] || v.replace(/_/g, ' ');
+const VGROUP = v => v === 'pass' || v === 'fail' || v === 'not_applicable' ? v : 'mixed';
+const isObj = v => v && typeof v === 'object' && !Array.isArray(v);
+// generic renderer for the context_instance / derived / params objects: scalars, lists, objects and lists of objects
+function kv(v) {
+  if (v == null) return '—';
+  if (Array.isArray(v)) {
+    if (v.length && v.every(isObj)) { const cols = [...new Set(v.flatMap(o => Object.keys(o)))];
+      return `<table class="ct"><tr>${cols.map(c => `<th>${esc(c)}</th>`).join('')}</tr>${v.map(o => `<tr>${cols.map(c => `<td>${kv(o[c])}</td>`).join('')}</tr>`).join('')}</table>`; }
+    return esc(v.map(x => isObj(x) ? JSON.stringify(x) : String(x)).join(v.every(x => typeof x === 'number') ? ' – ' : '; '));
+  }
+  if (isObj(v)) return `<div class="kv">${Object.entries(v).map(([k, x]) => `<span>${esc(k)}</span><span>${kv(x)}</span>`).join('')}</div>`;
+  return esc(String(v));
+}
+function instCard(i) {
+  return `<div class="inst" id="i-${esc(i.iid)}">
+    <div class="ih"><span class="kid">${esc(i.iid)}</span><b>${esc(i.model)}</b><span class="verdict ${VCLS(i.verdict)}">${esc(VLBL(i.verdict))}</span>
+      <span class="chip">${L('条件', 'condition')} ${i.condition_met ? L('满足', 'met') : L('不满足', 'not met')}</span></div>
+    <div class="cols">
+      <div><h4>${L('context 在模型里是什么', 'The context in this model')}</h4>${kv(i.context_instance)}</div>
+      <div><h4>${L('推导值', 'Derived')}</h4>${kv(i.derived)}</div>
+    </div>
+    <div class="expl">${esc(i.explanation)}</div>
+    <details><summary class="wrong" style="cursor:pointer">${L('IFC 证据', 'IFC evidence')} · ${i.evidence.length}</summary><ul class="ev">${i.evidence.map(e => `<li>${esc(e)}</li>`).join('')}</ul></details>
+  </div>`;
+}
+function rCard(r) {
+  const ins = rInst(r), c = r.context || {};
+  const kids = (r.from || []).map(k => KN_ALL.some(x => x.kid === k) ? `<button class="chip link" type="button" data-kid="${esc(k)}">${esc(k)}</button>` : `<span class="chip">${esc(k)}</span>`).join('');
+  return `<article class="sheet rcard" id="r-${esc(r.rid)}">
+    <div class="kt"><span class="kid">${esc(r.rid)}</span><h3>${esc(r.title)}</h3><span class="chip new">${esc(r.level)}</span>
+      ${String(r.modality).split('/').map(m => `<span class="chip ${esc(m)}">${esc(m)}</span>`).join('')}${rstatus(r) === 'archived' ? `<span class="chip drop" title="${esc((RSTAT[r.rid] || {}).basis || '')}">${L('已归档', 'archived')}${(RSTAT[r.rid] || {}).flag ? ' · ' + L('待复核', 'review') : ''}</span>` : ''}${(x => x ? `<span class="chip cnt" title="${esc(L('我们的扫描：context 匹配的模型数 / 其中 IF 成立的模型数（共 370）', 'our scan: models where the context matches / where the IF holds (of 370)'))}">${L('我们', 'ours')} ${x.mine_context} · IF ${x.mine_fires}</span><span class="chip cnt" title="${esc(L('同事的扫描：该知识点适用的模型数 / 其中有判定的模型数', 'colleague sweep: models where the point applies / with a verdict'))}">${L('同事', 'theirs')} ${x.theirs_applicable == null ? '—' : x.theirs_applicable}${x.theirs_judged ? ' · ' + L('判', 'judged') + ' ' + x.theirs_judged : ''}</span>${x.flag && rstatus(r) !== 'archived' ? `<span class="chip flag" title="${esc(x.flag)}">${L('待复核', 'review')}</span>` : ''}` : '')(RSTAT[r.rid])}${c.concreteness ? `<span class="chip t2" title="${esc(CONC[c.concreteness] || '')}">context: ${esc(c.concreteness)}</span>` : ''}${r.chapter ? `<span class="chip">${esc(r.chapter)}</span>` : ''}<span class="chip">${L('来自', 'from')}</span>${kids}</div>
+    <div class="rule">
+      <b>entity</b><div><code>${esc(c.entity || '')}</code></div>
+      <b>match</b><div>${kv(c.match || {})}</div>
+      <b>derive</b><div>${kv(c.derive || r.derive || {})}</div>
+      ${c.grounding ? `<b>${L('落地', 'grounding')}</b><div title="${esc(L('match / IF 里的抽象概念在图上怎么读出来', 'how each abstract concept in match / IF is read off the graph'))}">${kv(c.grounding)}</div>` : ''}
+      <div class="arrow"><b>IF</b><div>${IFC_[r.rid] ? `<ol class="ifl">${(lang === 'en' ? IFC_[r.rid].if_en : IFC_[r.rid]['if']).map(x => `<li>${esc(x)}</li>`).join('')}</ol><div class="note">${L('原 IF', 'original IF')}: ${esc(r.condition)}</div>` : esc(r.condition)}</div><b>THEN</b><div>${esc(r.requirement)}${r.else ? `<div class="note">ELSE ${esc(r.else)}</div>` : ''}</div>
+        ${r.params && Object.keys(r.params).length ? `<b>params</b><div>${kv(r.params)}</div>` : ''}</div>
+      <b>${L('需要的 IFC', 'IFC needed')}</b><div>${(r.ifc_needed || []).map(x => `<code>${esc(x)}</code>`).join(' ')}</div>
+    </div>
+    <div class="cites">${r.basis.map(b => `<div class="cite"><span class="src">Neufert p.${esc(b.book_page)}</span><q>${esc(b.quote)}</q></div>`).join('')}</div>
+    ${r.notes ? `<div class="note">${esc(r.notes)}</div>` : ''}
+    ${ins.map(instCard).join('')}
+    ${(x => `<div class="review" data-rid="${esc(r.rid)}"><div class="rh"><b>${L('评审', 'Review')}</b><select class="rv-dec" aria-label="decision">${DECS.map(([v, t]) => `<option value="${v}"${x.decision === v ? ' selected' : ''}>${t}</option>`).join('')}</select><span class="muted rv-saved">${x.at ? L('已保存 ', 'saved ') + esc(x.at.slice(0, 16).replace('T', ' ')) : (REVIEW_BAKED[r.rid] ? L('已导入仓库', 'imported into repo') : '')}</span></div><textarea class="rv-txt" rows="2" placeholder="${L('写下你的意见：这条规则对不对、context 是否合理、该怎么改…', 'Your comment: is the rule right, is the context sensible, what to change…')}">${esc(x.comment || '')}</textarea></div>`)(rv(r.rid))}
+  </article>`;
+}
+function rVisible() {
+  const q = rstate.q.trim().toLowerCase();
+  const order = r => { const i = LEVELS.findIndex(l => l[0] === r.level); return (i < 0 ? 99 : i) * 1000 + Number((r.rid.match(/\d+/) || [0])[0]); };
+  return RULES.slice().sort((a, b) => order(a) - order(b)).filter(r => (!rstate.level || r.level === rstate.level)
+    && (!rstate.conc || (r.context && r.context.concreteness) === rstate.conc)
+    && (!rstate.status || rstatus(r) === rstate.status)
+    && (!rstate.verdict || (rstate.verdict === '__none' ? !rInst(r).length : rInst(r).some(i => VGROUP(i.verdict) === rstate.verdict)))
+    && (!q || [r.rid, r.title, r.requirement, r.condition, r.notes || '', ...r.basis.map(b => b.quote), ...rInst(r).map(i => i.explanation + ' ' + i.evidence.join(' '))].join('\n').toLowerCase().includes(q)));
+}
+function rFilters() {
+  const lv = [...new Set(RULES.map(r => r.level))];
+  $('#r-level').innerHTML = `<option value="">${L('全部层级', 'All levels')}</option>` + lv.map(l => `<option value="${esc(l)}">${esc(l)}${L('（', ' (')}${RULES.filter(r => r.level === l).length}${L('）', ')')}</option>`).join('');
+  $('#r-level').value = rstate.level;
+  const models = [...new Set(INST.map(i => i.model))];
+  $('#r-model').innerHTML = `<option value="">${L('全部模型', 'All models')}</option>` + models.map(m => `<option value="${esc(m)}">${esc(m)} (${INST.filter(i => i.model === m).length})</option>`).join('');
+  $('#r-model').value = rstate.model;
+  const pool = INST.filter(i => !rstate.model || i.model === rstate.model);
+  const vs = { pass: 0, fail: 0, mixed: 0, not_applicable: 0 }; for (const i of pool) vs[VGROUP(i.verdict)]++;
+  $('#r-verdict').innerHTML = `<option value="">${L('全部判定', 'All verdicts')}</option><option value="pass">${L('满足', 'pass')} (${vs.pass})</option><option value="fail">${L('不满足', 'fail')} (${vs.fail})</option><option value="mixed">${L('部分 / IFC 缺信息', 'mixed / unknown')} (${vs.mixed})</option><option value="not_applicable">${L('不触发', 'not applicable')} (${vs.not_applicable})</option>`;
+  $('#r-verdict').innerHTML += `<option value="__none">${L('还没映射到模型', 'not yet mapped')} (${RULES.filter(r => !rInst(r).length).length})</option>`;
+  $('#r-verdict').value = rstate.verdict;
+  const cc = { direct: 0, derived: 0, external: 0, none: 0 }; for (const r of RULES) cc[(r.context && r.context.concreteness) || 'none']++;
+  $('#r-conc').innerHTML = `<option value="">${L('context 具体程度：全部', 'Context: all')}</option>` + ['direct', 'derived', 'external'].map(k => `<option value="${k}">${esc(CONC[k])} (${cc[k]})</option>`).join('');
+  $('#r-conc').value = rstate.conc;
+  const na = RULES.filter(r => rstatus(r) === 'active').length, nr = RULES.length - na, thr = DATA.rstatus ? DATA.rstatus.threshold : '';
+  $('#r-status').innerHTML = `<option value="active">${L('在用', 'active')} (${na})</option><option value="archived">${L('已归档', 'archived')} (${nr})</option><option value="">${L('全部', 'all')} (${RULES.length})</option>`;
+  $('#r-status').value = rstate.status;
+  $('#r-status').title = DATA.rstatus ? L(`在用 = 两次扫描（我们的规则 × 同事的知识点）都在 ≥ ${thr} 个模型上出现；其余归档，不删除`, `active = both scans (our rules × the colleague's knowledge points) hit ≥ ${thr} models; the rest is archived, not deleted`) : '';
+}
+function renderDecisions() {
+  const DEC = DATA.decisions; if (!DEC) { $('#d-list').innerHTML = '<div class="empty">no decisions.json</div>'; return; }
+  const n = DEC.topics[0].coverage.n_models || 0;
+  const pct = x => n ? Math.round(100 * x / n) : 0;
+  const bar = (x, cls) => `<span class="sbar"><i class="${cls}" style="width:${pct(x)}%"></i></span>`;
+  const core = DEC.topics.filter(t => t.tier === 'core').length;
+  $('#d-lede').innerHTML = L(
+    `GT 的单位不是 103 条规则，而是学生做方案时真正会做的<b>决策</b>。这里只挑<b>“tricky”的那种</b>：早期设计一定会碰到的元素和场景，新手都会建模，但背后有一堆他们不知道的讲究——楼梯、疏散、进深采光、电梯、净高、卫生配置、走廊门宽、工位密度、户型、高层门槛。栏杆高度、门洞模数、墙体构造这类细节归到次要，计量口径单列。<b>${core}</b> 个核心主题各写了：新手会怎么做错、书里怎么讲究、哪些数值算“用了知识”的<b>信号</b>、哪些 pass 其实是软件<b>默认值</b>，以及在 <b>${n}</b> 个模型上的覆盖和每条规则的 pass / fail。`,
+    `The unit of the ground truth is not the 103 rules but the <b>decisions</b> a student actually makes. Only the <b>tricky</b> ones are kept here: early-design elements and situations every novice models, with rules behind them they do not know (stairs, escape routes, depth and daylight, lifts, clear height, sanitary provision, corridors and doors, workplace density, dwelling layout, the high-rise threshold). Railing heights, door modules and wall build-ups go to secondary; measurement conventions are listed apart. Each of the <b>${core}</b> core topics states what a novice gets wrong, what the book requires, which values are <b>signals</b> of applied knowledge, which passes are mere software <b>defaults</b>, plus coverage over <b>${n}</b> models and per-rule pass / fail.`);
+  const tierTitle = { core: L('核心：早期设计里讲究多的决策', 'Core: tricky early-design decisions'), secondary: L('次要：细节或信号弱', 'Secondary: detailing or weak signal'), convention: L('计量口径（不是设计决策）', 'Measurement conventions (not decisions)') };
+  let tier = null;
+  $('#d-list').innerHTML = DEC.topics.map(t => {
+    const c = t.coverage || {};
+    const st = t.rule_stats || {};
+    const chips = t.rules.map(r => { const x = st[r]; const arch = (RSTAT[r] || {}).status === 'archived'; return `<button class="chip link${arch ? ' drop' : ''}" type="button" data-rid="${esc(r)}" title="${esc(t.rule_titles[r] || '')}${arch ? ' · ' + L('已归档', 'archived') : ''}" style="${arch ? 'opacity:.55;text-decoration:line-through' : ''}">${esc(r)}${x ? ` <span class="muted">${x.pass}/${x.fail}</span>` : ''}</button>`; }).join('');
+    let h = '';
+    if (t.tier !== tier) { tier = t.tier; h = `<div class="lvhead"><h3>${esc(tierTitle[tier] || tier)}</h3><span>${DEC.topics.filter(x => x.tier === tier).length}</span></div>`; }
+    return h + `<article class="sheet rcard" id="d-${esc(t.did)}">
+      <div class="kt"><span class="kid">${esc(t.did)}</span><h3>${esc(L(t.title, t.title_en))}</h3>${t.levels.map(l => `<span class="chip new">${esc(l)}</span>`).join('')}<span class="chip">${t.rules.filter(r => (RSTAT[r] || {}).status !== 'archived').length} / ${t.rules.length} ${L('条规则在用', 'rules active')}</span></div>
+      <p class="expl" style="margin:6px 0 10px"><b>${L('要决定什么', 'The decision')}</b> ${esc(L(t.question, t.question_en))}</p>
+      ${t.why_tricky ? `<p class="expl" style="margin:0 0 10px"><b>${L('为什么 tricky', 'Why tricky')}</b> ${esc(L(t.why_tricky, t.why_tricky_en || t.why_tricky))}</p>` : ''}
+      <div class="rule">
+        <b>${L('规则 · pass/fail', 'rules · pass/fail')}</b><div>${chips}</div>
+        <b>${L('信号', 'signals')}</b><div>${t.signals.length ? `<ul class="ev">${t.signals.map(s => `<li>${esc(s)}</li>`).join('')}</ul>` : '—'}</div>
+        <b>${L('默认值陷阱', 'default traps')}</b><div>${t.defaults.length ? `<ul class="ev">${t.defaults.map(s => `<li>${esc(s)}</li>`).join('')}</ul>` : '—'}</div>
+        <b>${L('覆盖', 'coverage')}</b><div class="kv">
+          <span>${L('决策出现', 'occurs')}</span><span>${c.context || 0} ${bar(c.context || 0, 'c')}</span>
+          <span>${L('有判定', 'judged')}</span><span>${c.fires || 0} ${bar(c.fires || 0, 'f')}</span>
+          <span>pass / fail</span><span><span class="verdict ok">${c.any_pass || 0}</span> <span class="verdict bad">${c.any_fail || 0}</span> <span class="muted">${L('至少一条规则', 'at least one rule')}</span></span>
+          <span>${L('全部缺数据', 'only unknown')}</span><span>${c.only_unknown || 0}</span>
+        </div>
+      </div>
+      ${t.note ? `<div class="note">${esc(t.note)}</div>` : ''}
+    </article>`;
+  }).join('');
+}
+$('#d-list').addEventListener('click', e => {
+  const b = e.target.closest('[data-rid]'); if (!b) return;
+  Object.assign(rstate, { level: '', verdict: '', q: '', model: '', conc: '', status: '' });
+  showPage('rules');
+  const el = document.getElementById('r-' + b.dataset.rid); if (el) el.scrollIntoView({ block: 'start' });
+});
+function renderScan() {
+  const S = DATA.scan; const el = $('#r-scan');
+  if (!S) { el.hidden = true; return; }
+  el.hidden = false;
+  const visSet = new Set(rVisible().map(r => r.rid));
+  const m = S.meta, rows = S.rules.filter(r => visSet.has(r.rid)), n = m.n_models;
+  const pct = x => n ? Math.round(100 * x / n) : 0;
+  const bar = (x, cls) => `<span class="sbar"><i class="${cls}" style="width:${pct(x)}%"></i></span>`;
+  const usage = Object.entries(m.usage).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${esc(k)} ${v}`).join(' · ');
+  el.innerHTML = `<h3>${L(`规则 × ${n} 个模型：哪些规则用得最多`, `Rules × ${n} models: which rules apply most`)} <span class="muted" style="font-weight:400;font-size:13px">${L(`显示 ${rows.length} / ${S.rules.length} 条，跟随上面的筛选`, `showing ${rows.length} / ${S.rules.length}, follows the filters above`)}</span></h3>
+    <p>${L(`<code>rules/extract_graph.py</code> 把 <code>data/model_ifc4_0001-0370/</code> 里的每个 IFC 抽成图，<code>rules/match_rules.py</code> 再对每张图跑 103 条规则。每条规则记三件事：<b>context 匹配</b>（规则作用的实体和前提在这个模型里存在）、<b>IF 成立</b>（触发条件为真，规则真的“用上了”）、能机械核对的给 <b>判定</b>。建筑用途由房间名推断：${usage}；带几何的图 ${m.with_geom}；高层（> 22 m）${m.high_rise}。按“IF 成立”的模型数排序。`,
+    `<code>rules/extract_graph.py</code> turns every IFC in <code>data/model_ifc4_0001-0370/</code> into a graph and <code>rules/match_rules.py</code> runs the 103 rules on each. Per rule it records whether the <b>context matches</b> (the entities and preconditions exist in the model), whether the <b>IF holds</b> (the rule actually fires) and, where mechanically checkable, a <b>verdict</b>. Building usage is inferred from room names: ${usage}; graphs with geometry ${m.with_geom}; high-rise (> 22 m) ${m.high_rise}. Sorted by the number of models in which the IF holds.`)}</p>
+    <div style="overflow:auto"><table class="ct scan"><tr><th>#</th><th>${L('规则', 'rule')}</th><th>${L('层级', 'level')}</th><th>context</th><th>${L('IF 成立', 'IF holds')}</th><th>${L('判定 pass / fail / unknown', 'verdict pass / fail / unknown')}</th><th>${L('状态', 'status')}</th></tr>
+    ${rows.map((r, i) => `<tr><td>${i + 1}</td><td><a href="#r-${esc(r.rid)}" class="rlink" data-rid="${esc(r.rid)}">${esc(r.rid)}</a> ${esc(r.title)}${r.concreteness ? ` <span class="chip t2">${esc(r.concreteness)}</span>` : ''}</td><td>${esc(r.level)}</td>
+      <td>${r.context} ${bar(r.context, 'c')}</td><td><b>${r.fires}</b> ${bar(r.fires, 'f')}</td>
+      <td><span class="verdict ok">${r.pass}</span> <span class="verdict bad">${r.fail}</span> <span class="verdict part">${r.unknown + r.mixed}</span>${r.fires - r.pass - r.fail - r.unknown - r.mixed > 0 ? ` <span class="muted">${L('未核', 'not checked')} ${r.fires - r.pass - r.fail - r.unknown - r.mixed}</span>` : ''}</td><td>${(RSTAT[r.rid] || {}).status === 'archived' ? `<span class="chip drop">${L('已归档', 'archived')}</span>` : `<span class="chip ok">${L('在用', 'active')}</span>`}${RSTAT[r.rid] && RSTAT[r.rid].theirs_applicable != null ? ` <span class="muted" title="${L('同事扫描：该知识点适用的模型数', 'colleague sweep: models where the point applies')}">${L('同事', 'theirs')} ${RSTAT[r.rid].theirs_applicable}</span>` : ''}</td></tr>`).join('')}
+    </table></div>
+    <p class="note">${L('“未核”= IF 成立但 THEN 部分还没有机械化（如步行距离、朝向）。判定里的数值来自图：没有 Qto 时房间面积用包围盒近似（偏大），房间用途和建筑用途靠名字关键词，所以这张表是“规则在数据集上的覆盖面”，不是合规审查结果。',
+      '"not checked" = the IF holds but the THEN part is not mechanised yet (walking distance, orientation …). Numbers come from the graph: without Qto, room areas are bounding-box approximations (too large), room and building usage rely on name keywords, so read this as rule coverage over the dataset, not as a compliance audit.')}</p>`;
+}
+function renderRules() {
+  renderScan();
+  const vis = rVisible(), models = [...new Set(INST.map(i => i.model))], nk = new Set(RULES.flatMap(r => r.from || [])).size, nq = RULES.reduce((a, r) => a + r.basis.length, 0);
+  const nmap = m => RULES.filter(r => INST.some(i => i.rid === r.rid && i.model === m)).length;
+  $('#r-lede').innerHTML = L(
+    `把知识库里的知识点改写成 <b>context → 设计要求</b> 的规则：作用在哪类 IFC 实体上（entity）、进入规则的前提（match）、要从模型推导的变量（derive）、触发条件（IF）和参数化的要求（THEN）。<b>${RULES.length}</b> 条规则，由 <b>${nk}</b> 个知识点改写而来，<b>${nq}</b> 条原文全部与 Neufert 文本逐字核对。R48 起的规则多了两项：<b>grounding</b>——match / IF 里每个抽象概念（“必要楼梯”“疏散走廊”“一户”）在图上怎么读出来；<b>context 具体程度</b>——direct（IFC 属性就有）/ derived（抽取器从几何、关系算）/ external（IFC 没有，要靠 model card）。规则下面是它在各模型里的实例：${models.map(m => `<b>${esc(m)}</b>（${nmap(m)} 条）`).join('、')}——context 具体对应哪些实体、推导出的数值、判定和证据。当前显示 <b>${vis.length}</b> 条。`,
+    `Knowledge points rewritten as <b>context → requirement</b> rules: the IFC entity the rule acts on (entity), the preconditions (match), the variables derived from the model (derive), the trigger (IF) and the parameterised requirement (THEN). <b>${RULES.length}</b> rules from <b>${nk}</b> knowledge points; all <b>${nq}</b> quotes checked verbatim against the Neufert text. From R48 on each rule also carries <b>grounding</b> (how every abstract concept in match / IF, such as "essential stair" or "escape corridor", is read off the graph) and a <b>context concreteness</b>: direct (an IFC attribute), derived (computed by the extractor from geometry or relations) or external (not in IFC, needs the model card). Below each rule are its instances in ${models.map(m => `<b>${esc(m)}</b> (${nmap(m)} rules)`).join(', ')}: which entities the context maps to, the derived values, the verdict and the evidence. Showing <b>${vis.length}</b>.`);
+  rFilters(); rvCount();
+  let lv = null;
+  $('#r-list').innerHTML = vis.map(r => {
+    let h = '';
+    if (r.level !== lv) { lv = r.level; const d = LEVELS.find(l => l[0] === lv);
+      h = `<div class="lvhead"><h3>${esc(lv)}</h3><span>${esc(d ? L(d[1], d[4] || d[1]) : '')} · ${vis.filter(x => x.level === lv).length}</span></div>`; }
+    return h + rCard(r);
+  }).join('') || ('<div class="empty">' + L('没有符合筛选条件的规则。', 'No rules match the filters.') + '</div>');
+  $('#r-repr').innerHTML = L(`<h3>context 用什么表达？</h3>
+    <p>三个候选：原始 IFC、ifcJSON、图。试点的结论是<b>图作为规则匹配层，IFC 作为事实来源，中间一个固定的抽取器</b>；不用 ifcJSON。</p>
+    <ul>
+      <li><b>原始 IFC 的问题是密度和缺失，不是格式。</b>这个模型 13 MB 里 828 个 IfcMember + 453 个 IfcPlate 是幕墙杆件，和任何规则无关；而规则真正需要的关系（房间邻接、房间里有什么、哪面墙是外墙）要么没导出，要么要跑几何才有。模型里没有 IfcRelSpaceBoundary、IfcZone、IfcGrid，材料是没有厚度的 IfcMaterialConstituentSet。</li>
+      <li><b>ifcJSON 只是换了语法</b>，1:1 对应实体和 #123 引用，密度和缺失一个都没解决。</li>
+      <li><b>图合适，因为规则的 context 本身就是子图模式</b>：规则 = 模式 + 对绑定变量的条件，实例 = 一次匹配的绑定。知识库已经按 BOT 分层，BOT 本身就是图本体。</li>
+    </ul>
+    <pre>R06  (Railing)-[:IN_STOREY]->(Storey{elev}) , (Storey)-[:ABOVE]->(Storey{elev'})   → drop
+R09  (Space{function:office})-[:CONTAINS]->(Furniture{kind:desk})                      → n_ws
+R08  (Wall{external})-[:HAS_MATERIAL]->(Material{category})                            → has_insulation
+R10  (Space)-[:BOUNDED_BY]->(Wall|CurtainWall{external})                               → 采光面
+R04  (Stair)-[:AGGREGATES]->(StairFlight{n_riser}) , (Stair)-[:AGGREGATES]->(Slab{LANDING})</pre>
+    <ul>
+      <li><b>节点</b>只保留规则会碰到的实体类型，带 GlobalId、规则用到的少数属性和包围盒；幕墙杆件、面板、洞口不进图。</li>
+      <li><b>边</b>：IFC 现成的（containedIn, aggregates, hasMaterial, hasType）直接搬；IFC 没有但规则需要的（space CONTAINS furniture, space BOUNDED_BY wall, storey ABOVE storey）由抽取器从几何推导，标 <code>source: derived</code>。建筑用途等 IFC 没有的从 model_card 注入，标 <code>source: model_card</code>。</li>
+      <li><b>给 LLM 的输入</b>不是整张图，而是按规则 context 切出来的子图卡片，也就是上面每个实例里“context 在模型里是什么”那一栏——现在是手写的，下一步由抽取器自动生成。</li>
+      <li>附带好处：“哪些知识在哪些模型上可检查”变成“模式在图上有没有非空匹配”，可以自动算，取代知识库里手工维护的 models 字段。</li>
+      <li>保留意见：若最终要探测 LLM 能否直接读 BIM，原始 IFC 片段仍可作对照组——同一组实例分别喂子图卡片和 IFC 片段，比准确率。</li>
+    </ul>
+    <p><b>抽取器已经有了第一版</b>（<code>rules/extract_graph.py</code>）：节点 = 规则会碰到的实体（场地、建筑、楼层、房间、楼梯及梯段、门窗、墙、板、柱、电梯、家具、洁具、分区、轴网），带名称、相关 Pset / Qto、材料层和世界坐标包围盒；边 = IFC 现成的 containedIn / partOf / hasType / fillsOpeningIn（标 <code>source: ifc</code>）加几何推导的 space CONTAINS furniture、door OPENS-TO space、stair SERVES storey（标 <code>source: derived</code>）。在 ifc4_0204（16 MB，Revit 25 导出）上 81 秒得到 2270 个节点、6717 条边；上面 ifc4_0204 的每个实例都是从这张图读出来的，房间面积用网格体积 ÷ 高度算（这个导出没有 Qto）。</p>
+    <p>映射 0204 时暴露的 <b>context 落地问题</b>，也是规则表里 grounding 一栏要解决的：“疏散走廊”在这个模型里是一个 600 m² 的环形 Hall，不是细长房间；“工位”要数 Furniture_Desk；“电梯”是 17 个 IfcBuildingElementProxy 而不是 IfcTransportElement；“使用单元”“建筑用途”“地块边界”IFC 根本没有。所以每条规则现在都标了 context 是 direct / derived / external 的哪一种：external 的那部分（用途、人数、地块）要么从 model card 来，要么实例只能写 unknown。</p>
+    <p>下一步：把 grounding 写成可执行的图模式，让规则 × 图自动匹配出实例表（现在 0204 的 103 条实例仍是读图后手写的）；对 370 个模型批量跑抽取器，先按“哪些模式有非空匹配”筛出适合哪组规则的模型；再从实例生成 compliance / diagnosis / intent 三类题。完整说明见 <code>rules/PILOT.md</code>。</p>`,
+  `<h3>How should the context be represented?</h3>
+    <p>Three candidates: raw IFC, ifcJSON, a graph. The pilot's conclusion: <b>a graph as the rule-matching layer, IFC as the source of facts, and a fixed extractor in between</b>; not ifcJSON.</p>
+    <ul>
+      <li><b>Raw IFC fails on density and omissions, not on syntax.</b> Of this 13 MB model, 828 IfcMember + 453 IfcPlate are curtain-wall mullions and panels that no rule cares about, while the relations the rules do need (room adjacency, what is in a room, which wall is external) are either not exported or need geometry. The model has no IfcRelSpaceBoundary, IfcZone or IfcGrid, and its materials are IfcMaterialConstituentSets without thicknesses.</li>
+      <li><b>ifcJSON only changes the syntax</b>: 1:1 entities and #123 references, so neither the density nor the omissions are solved.</li>
+      <li><b>A graph fits because a rule's context already is a subgraph pattern</b>: rule = pattern + conditions on the bound variables, instance = one binding of the match. The knowledge base is already layered after BOT, which is itself a graph ontology.</li>
+    </ul>
+    <pre>R06  (Railing)-[:IN_STOREY]->(Storey{elev}) , (Storey)-[:ABOVE]->(Storey{elev'})   → drop
+R09  (Space{function:office})-[:CONTAINS]->(Furniture{kind:desk})                      → n_ws
+R08  (Wall{external})-[:HAS_MATERIAL]->(Material{category})                            → has_insulation
+R10  (Space)-[:BOUNDED_BY]->(Wall|CurtainWall{external})                               → daylight face
+R04  (Stair)-[:AGGREGATES]->(StairFlight{n_riser}) , (Stair)-[:AGGREGATES]->(Slab{LANDING})</pre>
+    <ul>
+      <li><b>Nodes</b>: only the entity types rules touch, each with its GlobalId, the few properties rules use, and a bounding box; mullions, panels and openings stay out.</li>
+      <li><b>Edges</b>: those IFC already has (containedIn, aggregates, hasMaterial, hasType) are copied; those rules need but IFC lacks (space CONTAINS furniture, space BOUNDED_BY wall, storey ABOVE storey) are derived from geometry by the extractor and tagged <code>source: derived</code>. Building-level facts IFC does not hold (usage, public access) come from the model card, tagged <code>source: model_card</code>.</li>
+      <li><b>What the LLM sees</b> is not the whole graph but a subgraph card cut out by the rule's context, i.e. the "context in this model" column of each instance above, hand-written for now and to be generated by the extractor next.</li>
+      <li>Side benefit: "which knowledge points can be checked on which models" becomes "does the pattern have a non-empty match on that graph", which can be computed instead of maintained by hand in the knowledge base's models field.</li>
+      <li>Caveat: if the goal is to probe whether an LLM can read BIM directly, raw IFC excerpts remain useful as a control: feed the same instances once as subgraph cards and once as IFC excerpts and compare accuracy.</li>
+    </ul>
+    <p><b>The extractor exists now</b> (<code>rules/extract_graph.py</code>): nodes = the entities rules touch (site, building, storeys, spaces, stairs and flights, doors, windows, walls, slabs, columns, lifts, furniture, sanitary terminals, zones, grids) with names, the relevant Psets / Qtos, material layers and a world-coordinate bounding box; edges = IFC's own containedIn / partOf / hasType / fillsOpeningIn (<code>source: ifc</code>) plus geometry-derived space CONTAINS furniture, door OPENS-TO space, stair SERVES storey (<code>source: derived</code>). On ifc4_0204 (16 MB, Revit 25 export) it yields 2270 nodes and 6717 edges in 81 s; every ifc4_0204 instance above was read off that graph, with room areas computed as mesh volume ÷ height because this export carries no Qto.</p>
+    <p>Mapping 0204 exposed the <b>grounding problem</b> the new grounding column addresses: the "escape corridor" here is a 600 m² ring-shaped Hall, not a narrow room; "workstations" have to be counted as Furniture_Desk; the "lifts" are 17 IfcBuildingElementProxy, not IfcTransportElement; "use unit", "building usage" and "plot boundary" are simply absent from IFC. Hence every rule now states whether its context is direct, derived or external: the external part (usage, headcount, plot) either comes from the model card or the instance has to say unknown.</p>
+    <p>Next: turn grounding into executable graph patterns so rules × graphs produce the instance table automatically (the 103 instances on 0204 are still written by hand after reading the graph); run the extractor over all 370 models and select, by which patterns have non-empty matches, which models suit which rule groups; then generate compliance / diagnosis / intent questions from the instances. Full write-up in <code>rules/PILOT.md</code>.</p>`);
+}
+$('#r-level').addEventListener('change', e => { rstate.level = e.target.value; renderRules(); });
+$('#r-verdict').addEventListener('change', e => { rstate.verdict = e.target.value; renderRules(); });
+$('#r-model').addEventListener('change', e => { rstate.model = e.target.value; renderRules(); });
+$('#r-conc').addEventListener('change', e => { rstate.conc = e.target.value; renderRules(); });
+$('#r-status').addEventListener('change', e => { rstate.status = e.target.value; renderRules(); });
+function rvCount() { const n = Object.values(REVIEW).filter(x => x.decision || (x.comment || '').trim()).length; $('#r-rvcount').textContent = L(`本机已评 ${n} 条`, `${n} reviewed here`); }
+$('#r-list').addEventListener('input', e => { const box = e.target.closest('.review'); if (!box) return; const rid = box.dataset.rid; const cur = REVIEW[rid] || { ...rv(rid) };
+  if (e.target.classList.contains('rv-txt')) cur.comment = e.target.value; if (e.target.classList.contains('rv-dec')) cur.decision = e.target.value;
+  cur.at = new Date().toISOString(); REVIEW[rid] = cur; saveReview(); box.querySelector('.rv-saved').textContent = L('已保存 ', 'saved ') + cur.at.slice(0, 16).replace('T', ' '); rvCount(); });
+$('#r-list').addEventListener('change', e => { if (e.target.classList.contains('rv-dec')) e.target.dispatchEvent(new Event('input', { bubbles: true })); });
+$('#r-rvexport').addEventListener('click', () => {
+  const out = { exported: new Date().toISOString(), n_rules: RULES.length, rules: {} };
+  for (const r of RULES) { const x = REVIEW[r.rid] || REVIEW_BAKED[r.rid]; if (x && (x.decision || (x.comment || '').trim())) out.rules[r.rid] = { title: r.title, status: rstatus(r), decision: x.decision || '', comment: x.comment || '', at: x.at || '' }; }
+  const blob = new Blob([JSON.stringify(out, null, 1)], { type: 'application/json' }); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `rules_review_${new Date().toISOString().slice(0, 10)}.json`; a.click(); });
+$('#r-rvimport').addEventListener('change', e => { const f = e.target.files[0]; if (!f) return; f.text().then(t => { try { const j = JSON.parse(t); for (const [rid, x] of Object.entries(j.rules || {})) REVIEW[rid] = { decision: x.decision || '', comment: x.comment || '', at: x.at || '' }; saveReview(); renderRules(); } catch (err) { alert('bad JSON'); } }); });
+$('#r-q').addEventListener('input', e => { rstate.q = e.target.value; renderRules(); });
+$('#r-list').addEventListener('click', e => {
+  const b = e.target.closest('[data-kid]'); if (!b) return;
+  Object.assign(kstate, { lab: '', level: '', need: '', topic: '', pri: '', q: '', res: '' });
+  $('#k-level').value = ''; topicsKB(); $('#k-topic').value = ''; $('#k-pri').value = ''; $('#k-q').value = ''; $('#k-res').value = ''; $('#k-lab').value = '';
+  showPage('kb');
+  const el = document.getElementById('k-' + b.dataset.kid); if (el) el.scrollIntoView({ block: 'start' });
+});
+function showPage(pg) {
+  kstate.page = pg;
+  for (const id of ['work', 'kb', 'rules', 'dec', 'res']) $('#page-' + id).hidden = id !== pg;
+  if (pg === 'dec') renderDecisions();
+  document.querySelectorAll('.pages button').forEach(b => b.setAttribute('aria-pressed', b.dataset.page === pg));
+  $('#tally').hidden = pg !== 'work'; $('#export').hidden = pg !== 'work'; $('#sync').hidden = pg !== 'work';
+  if (pg === 'kb') renderKB(); if (pg === 'rules') renderRules(); if (pg === 'res') renderResults();
+  try { localStorage.setItem('nqa.page', pg); } catch (e) {}
+}
+document.querySelector('.pages').addEventListener('click', e => { const b = e.target.closest('button[data-page]'); if (b) { showPage(b.dataset.page); window.scrollTo({ top: 0 }); } });
+$('#k-level').addEventListener('change', e => { kstate.level = e.target.value; kstate.topic = ''; topicsKB(); renderKB(); });
+$('#k-lab').addEventListener('change', e => { kstate.lab = e.target.value; renderKB(); });
+$('#k-list').addEventListener('click', e => {
+  const b = e.target.closest('[data-lab]'); if (!b) return;
+  const kid = b.closest('.klab').dataset.kid;
+  writeKLabel(kid, { label: klabels[kid]?.label === b.dataset.lab ? '' : b.dataset.lab });
+});
+$('#k-list').addEventListener('change', e => {
+  if (!e.target.classList.contains('knote')) return;
+  const kid = e.target.closest('.klab').dataset.kid, note = e.target.value.trim();
+  if (note !== (klabels[kid]?.note || '')) writeKLabel(kid, { note });
+});
+$('#k-list').addEventListener('keydown', e => { if (e.key === 'Enter' && e.target.classList.contains('knote')) e.target.blur(); });
+$('#k-prog').addEventListener('click', async e => {
+  if (!e.target.closest('#k-export')) return;
+  const cols = ['kid', 'level', 'topic', 'title', 'title_en', 'priority', 'lod', 'ifc', 'scope_label', 'note', 'archived'];
+  const rows = KN_ALL.map(k => [k.kid, k.level, k.topic, k.title, k.title_en || '', k.priority, k.lod, k.ifc.join(';'), klabels[k.kid]?.label || '', klabels[k.kid]?.note || '', k.archived ? 'yes' : '']);
+  const text = '\ufeff' + [cols, ...rows].map(r => r.map(csvCell).join(',')).join('\r\n');
+  let dl = null; try { dl = await window.claude?.use?.('downloads'); } catch (err) {}
+  if (!dl) { toast(L('这个视图不支持下载', 'Downloads are not supported in this view')); return; }
+  try { await dl.save({ filename: 'neufert_knowledge_scope_labels.csv', data: text }); }
+  catch (err) { if (err && err.code === 'declined') return; toast(err && err.code === 'rate_limited' ? L('已有一个下载确认框，请先处理', 'A download prompt is already open; handle it first') : L('导出失败', 'Export failed')); }
+});
+$('#k-need').addEventListener('change', e => { kstate.need = e.target.value; renderKB(); });
+$('#k-topic').addEventListener('change', e => { kstate.topic = e.target.value; renderKB(); });
+$('#k-pri').addEventListener('change', e => { kstate.pri = e.target.value; renderKB(); });
+$('#k-res').addEventListener('change', e => { kstate.res = e.target.value; renderKB(); });
+$('#k-q').addEventListener('input', e => { kstate.q = e.target.value; renderKB(); });
+$('#page-res').addEventListener('click', e => {
+  const g = e.target.closest('[data-goto]'), r = e.target.closest('[data-kres]');
+  if (!g && !r) return;
+  Object.assign(kstate, { lab: '', level: '', need: '', topic: '', pri: '', q: '', res: r ? r.dataset.kres : '' });
+  $('#k-level').value = ''; topicsKB(); $('#k-topic').value = ''; $('#k-pri').value = ''; $('#k-q').value = ''; $('#k-res').value = kstate.res;
+  showPage('kb');
+  if (g) { const el = document.getElementById('k-' + g.dataset.goto); if (el) el.scrollIntoView({ block: 'start' }); } else window.scrollTo({ top: 0 });
+});
+function setLang(l) {
+  lang = l; try { localStorage.setItem('nqa.lang', l); } catch (e) {}
+  applyStatic(); setDicts();
+  topicOptions(); $('#f-topic').value = state.topic;
+  topicsKB(); $('#k-level').value = kstate.level; $('#k-topic').value = kstate.topic;
+  renderDossier(); renderAll(); setSync(syncKind); showPage(kstate.page);
+}
+$('#lang').addEventListener('click', () => setLang(lang === 'en' ? 'zh' : 'en'));
+topicsKB();
+{ let pg = 'work'; try { pg = localStorage.getItem('nqa.page') || 'work'; } catch (e) {} if (pg !== 'work' && ['kb', 'rules', 'dec', 'res'].includes(pg)) showPage(pg); }
+</script>

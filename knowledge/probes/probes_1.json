@@ -1,0 +1,1273 @@
+[
+  {
+    "kid": "K001",
+    "title": "高层建筑",
+    "question": "According to the German high-rise building regulations: (a) above what height of the uppermost floor (on one side of the building, above ground level) does a building intended for long-term human occupation count as a high-rise building, and (b) what minimum walking width must each of the emergency stairs have in a high-rise building up to 60 m high?",
+    "answer": "(a) more than 22 m; (b) at least 1.25 m",
+    "accept": [
+      "> 22 m; ≥ 1.25 m",
+      "over 22 m and 1.25 m",
+      "22 m / 1.25 m",
+      "22 m; 125 cm"
+    ],
+    "mcq": {
+      "options": [
+        "> 22 m; 1.00 m",
+        "> 25 m; 1.50 m",
+        "> 22 m; 1.25 m",
+        "> 30 m; 1.25 m"
+      ],
+      "correct": 2
+    },
+    "rubric": [
+      "High-rise threshold: uppermost floor more than 22 m above ground on one side",
+      "Emergency stair walking width min. 1.25 m (high-rise up to 60 m, at least two stairs in separate fire compartments)"
+    ],
+    "basis": [
+      "High-rise buildings are those intended for long-term human occupation whose upper-most floor on one side of the building is more than 22 m above ground level.",
+      "High-rise buildings up to 60 m high: at least two emergency stairs must be available, which must be located opposite in two separate fire compartments. Their walking width must be at least 1.25 m."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K002",
+    "title": "私宅停车",
+    "question": "In German (DIN-based) planning guidance on parking for private houses, which form of car shelter (other than an enclosed garage) is described as cheaper, more beneficial in terms of building physics because it avoids condensation in cold cars in winter, and space-saving?",
+    "answer": "A carport (roofed-over open parking place)",
+    "accept": [
+      "carport",
+      "carports",
+      "roofed-over parking place",
+      "covered open parking space"
+    ],
+    "mcq": {
+      "options": [
+        "A heated single garage",
+        "An open carport",
+        "An underground garage",
+        "A mechanical parking stacker"
+      ],
+      "correct": 1
+    },
+    "rubric": [
+      "Names the carport / roofed-over parking place",
+      "Reason: cheaper, better building physics (no condensation in cold cars), space-saving"
+    ],
+    "basis": [
+      "In addition to garages, roofed-over parking places (carports) represent a cheaper, more beneficial in terms of building physics"
+    ],
+    "modality": "typical",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K003",
+    "title": "车位与通道尺寸",
+    "question": "For multi-storey car parks in Germany, what minimum parking space width do the Garage (multi-storey car park) Regulations require? (Give the regulatory minimum, not the FGSV recommendation.)",
+    "answer": "2.30 m",
+    "accept": [
+      "2.30 m",
+      "2.3 m",
+      "230 cm"
+    ],
+    "mcq": {
+      "options": [
+        "2.50 m",
+        "2.20 m",
+        "2.40 m",
+        "2.30 m"
+      ],
+      "correct": 3
+    },
+    "rubric": [
+      "Minimum width 2.30 m per Garage Regulations",
+      "Distinguishes from the FGSV recommendation of 2.50 m (if mentioned)"
+    ],
+    "basis": [
+      "The Garage (multi-storey car park) Regulations require a minimum width for parking spaces of 2.30 m."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K004",
+    "title": "体形系数 A/Ve",
+    "question": "Under the German Energy Saving Ordinance EnEV 2007 (envelope area process), the maximum permissible annual primary energy demand of a building is determined as a function of which building-geometry ratio?",
+    "answer": "The A/Ve ratio: heat-transmitting envelope area A divided by heated building volume Ve",
+    "accept": [
+      "A/Ve",
+      "A/V ratio",
+      "envelope area to heated volume",
+      "heat-transmitting surface area / heated volume"
+    ],
+    "mcq": {
+      "options": [
+        "Heat-transmitting envelope area to heated building volume (A/Ve)",
+        "Glazed façade area to total external wall area (window ratio)",
+        "Heated net floor area to gross building volume (NFA/V)",
+        "Built-up area to total plot area (plot coverage ratio)"
+      ],
+      "correct": 0
+    },
+    "rubric": [
+      "Ratio of heat-transmitting envelope area A to heated volume Ve (A/Ve)"
+    ],
+    "basis": [
+      "Depending on the ratio of heat-transmitting area A to heated building volumes V_e (A/V_e ratio), the maximum permissible annual primary energy demand will be determined according to EnEV 2007, according to the envelope area process."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K005",
+    "title": "退距（Abstandsfläche）",
+    "question": "According to the German model building regulations (MBO), what is the general rule for the required depth of the setback area (Abstandsfläche) in front of an external wall of height H, in general areas (i.e. not commercial or industrial areas)?",
+    "answer": "0.4 × H, but at least 3 m",
+    "accept": [
+      "0.4H, min. 3 m",
+      "0.4 H with a minimum of 3 m",
+      "40% of wall height, not less than 3 m"
+    ],
+    "mcq": {
+      "options": [
+        "0.2 × H, but at least 3 m",
+        "1.0 × H, but at least 2.5 m",
+        "0.5 × H, but at least 3 m",
+        "0.4 × H, but at least 3 m"
+      ],
+      "correct": 3
+    },
+    "rubric": [
+      "Factor 0.4 × H",
+      "Absolute minimum 3 m",
+      "(Optional) 0.2 × H applies only to commercial/industrial areas"
+    ],
+    "basis": [
+      "According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas)."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K006",
+    "title": "建筑密度与容积率",
+    "question": "Under the German land use regulation (measures of building use in planning law), the floor-area ratio (GFZ) is the permissible ratio of storey area to plot area. How is the storey area determined, and are balconies, loggias and terraces included?",
+    "answer": "External dimensions of all full storeys; balconies, loggias and terraces (and subsidiary areas, structures permissible in setback areas) are excluded",
+    "accept": [
+      "gross external area of all full floors excluding balconies, loggias and terraces",
+      "outer dimensions of full storeys, without balconies/loggias/terraces"
+    ],
+    "mcq": {
+      "options": [
+        "Net internal floor area of all storeys, including balconies and loggias",
+        "External dimensions of all full storeys, excluding balconies, loggias and terraces",
+        "External dimensions of all storeys including basements, balconies and terraces",
+        "Ground-floor footprint only, including garages and their access"
+      ],
+      "correct": 1
+    },
+    "rubric": [
+      "Storey area measured to external dimensions of all full floors",
+      "Balconies, loggias, terraces (and subsidiary areas) not counted"
+    ],
+    "basis": [
+      "the floor-area ratio (determines the permissible ratio of storey area (external dimensions of all full floors, without subsidiary areas..., balconies, loggias, terraces and structures which are permissible inside setback areas) to the plot area."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K007",
+    "title": "舒适步距公式",
+    "question": "In German (DIN-based) design practice: For a comfortable stair with the lowest energy requirement, a standard design rule combines riser height r and tread depth t, based on the stride length of an adult. Within what range should 2r + t lie?",
+    "answer": "59–65 cm",
+    "accept": [
+      "59-65 cm",
+      "between 59 and 65 cm",
+      "590–650 mm"
+    ],
+    "mcq": {
+      "options": [
+        "54–58 cm",
+        "66–72 cm",
+        "59–65 cm",
+        "45–50 cm"
+      ],
+      "correct": 2
+    },
+    "rubric": [
+      "2r + t = 59–65 cm (adult stride length)"
+    ],
+    "basis": [
+      "In order to determine a suitable pitch with the lowest energy requirement, this formula applies: 2 r + t = 59–65 cm."
+    ],
+    "modality": "should",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K008",
+    "title": "最佳坡度与踏步比",
+    "question": "In German (DIN-based) design practice: From a physiological point of view, at what stair pitch and what riser-to-tread ratio (r/t, in cm) is 'climbing effort' generally considered to be used best?",
+    "answer": "30° pitch, riser/tread 17/29",
+    "accept": [
+      "30 degrees and 17/29 cm",
+      "30°, 17 cm riser and 29 cm tread"
+    ],
+    "mcq": {
+      "options": [
+        "30°, 17/29",
+        "35°, 19/26",
+        "25°, 15/32",
+        "40°, 20/24"
+      ],
+      "correct": 0
+    },
+    "rubric": [
+      "Pitch 30°",
+      "Riser/tread 17/29 cm"
+    ],
+    "basis": [
+      "the best use of 'climbing effort' is at a stair pitch of 30° and a ratio of riser (r) to tread (t) of 17/29."
+    ],
+    "modality": "typical",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K009",
+    "title": "每段梯段步数",
+    "question": "Under German stair rules, what is the permitted range for the number of steps in one run (flight) of a legally essential stair (one required as a fire escape route)?",
+    "answer": "At least 3 and at most 18 steps per run (the 18-step limit is a 'should' rule)",
+    "accept": [
+      "3 to 18 steps",
+      "≥3 and ≤18 steps",
+      "3–18"
+    ],
+    "mcq": {
+      "options": [
+        "2 to 20 steps",
+        "3 to 15 steps",
+        "4 to 16 steps",
+        "3 to 18 steps"
+      ],
+      "correct": 3
+    },
+    "rubric": [
+      "Minimum 3 steps",
+      "Maximum 18 steps (a 'should' regulation)"
+    ],
+    "basis": [
+      "Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps",
+      "The 18-step rule is a 'should' regulation."
+    ],
+    "modality": "should",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K010",
+    "title": "休息平台",
+    "question": "Under German stair rules, from what storey height onwards must a legally essential stairway be provided with a landing (i.e. not be a single uninterrupted flight)?",
+    "answer": "Storey height ≥ 2.75 m",
+    "accept": [
+      "2.75 m",
+      "275 cm",
+      "storey heights of 2.75 m or more"
+    ],
+    "mcq": {
+      "options": [
+        "≥ 2.50 m",
+        "≥ 2.75 m",
+        "≥ 3.00 m",
+        "≥ 3.50 m"
+      ],
+      "correct": 1
+    },
+    "rubric": [
+      "Landing required at storey height ≥ 2.75 m for legally essential stairs"
+    ],
+    "basis": [
+      "Stairs with landings are required in legally essential stairways with a storey height of \\( \\geq 2.75 \\) m."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K011",
+    "title": "必要楼梯宽度与踏步比",
+    "question": "According to German standards, what minimum usable stair width and riser/tread ratio apply to legally essential stairs (fire escape routes) in residential buildings that are neither houses with at most two flats nor high-rise flats?",
+    "answer": "1.00 m usable width, riser/tread 17/28",
+    "accept": [
+      "1.0 m and 17/28",
+      "100 cm, 17/28"
+    ],
+    "mcq": {
+      "options": [
+        "0.80 m, 17/28",
+        "1.25 m, 17/29",
+        "0.90 m, 18/26",
+        "1.00 m, 17/28"
+      ],
+      "correct": 3
+    },
+    "rubric": [
+      "Usable width min. 1.00 m",
+      "Riser/tread 17/28"
+    ],
+    "basis": [
+      "legally essential stairs 1.00 m, 17/28"
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K012",
+    "title": "两户以下住宅的楼梯",
+    "question": "According to German standards, what minimum usable stair width and riser/tread ratio must stairs have in residential buildings with no more than two flats?",
+    "answer": "0.80 m usable width, riser/tread 17/28",
+    "accept": [
+      "0.8 m and 17/28",
+      "80 cm, 17/28"
+    ],
+    "mcq": {
+      "options": [
+        "0.80 m, 17/28",
+        "1.00 m, 17/28",
+        "0.50 m, 21/21",
+        "0.90 m, 17/29"
+      ],
+      "correct": 0
+    },
+    "rubric": [
+      "Usable width min. 0.80 m",
+      "Riser/tread 17/28"
+    ],
+    "basis": [
+      "residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio"
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K013",
+    "title": "室外楼梯与办公楼梯的取向",
+    "question": "In German (DIN-based) design practice: Low steps are generally recommended for outside stairs. What range of step dimensions (riser × tread) is considered preferable for outside stairs?",
+    "answer": "From 12 × 41 cm to 16 × 30 cm",
+    "accept": [
+      "12×41 to 16×30 cm",
+      "riser 12–16 cm with tread 41–30 cm"
+    ],
+    "mcq": {
+      "options": [
+        "15 × 35 cm to 17 × 29 cm",
+        "12 × 41 cm to 16 × 30 cm",
+        "10 × 45 cm to 14 × 38 cm",
+        "16 × 30 cm to 18 × 26 cm"
+      ],
+      "correct": 1
+    },
+    "rubric": [
+      "Range 12 × 41 cm to 16 × 30 cm (low steps preferable outdoors)"
+    ],
+    "basis": [
+      "For outside stairs, low steps are preferable, with dimensions of 12 × 41 to 16 × 30 cm."
+    ],
+    "modality": "should",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K014",
+    "title": "螺旋楼梯",
+    "question": "In German (DIN-based) stair design guidance, what minimum diameter must a spiral staircase have to be permissible as the sole connecting stair inside a house, and what usable walking width is associated with it?",
+    "answer": "Diameter from 190 cm, with 80 cm usable walking width",
+    "accept": [
+      "190 cm diameter, 80 cm width",
+      "1.90 m diameter and 0.80 m walking width"
+    ],
+    "mcq": {
+      "options": [
+        "140 cm, 60 cm",
+        "160 cm, 70 cm",
+        "190 cm, 80 cm",
+        "220 cm, 90 cm"
+      ],
+      "correct": 2
+    },
+    "rubric": [
+      "Diameter ≥ 190 cm",
+      "Usable walking width 80 cm"
+    ],
+    "basis": [
+      "Spiral staircases are permissible from 190 cm in diameter as the sole connecting stairs inside houses with 80 cm usable walking width"
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K015",
+    "title": "楼座、夹层、阳台的护栏高度",
+    "question": "Under German (DIN-based) building guidance, galleries, mezzanines and balconies must have a protective guard rail once the height difference reaches a certain value. For a non-workplace building, what guard rail height h is required (a) for a drop of less than 12 m and (b) for a drop of more than 12 m?",
+    "answer": "(a) 0.90 m; (b) 1.10 m",
+    "accept": [
+      "0.9 m / 1.1 m",
+      "90 cm and 110 cm"
+    ],
+    "mcq": {
+      "options": [
+        "0.90 m / 1.10 m",
+        "1.00 m / 1.20 m",
+        "0.80 m / 1.00 m",
+        "1.10 m / 1.30 m"
+      ],
+      "correct": 0
+    },
+    "rubric": [
+      "Drop < 12 m: h = 0.90 m",
+      "Drop > 12 m: h = 1.10 m",
+      "(Optional) workplaces: 1.00 m; compulsory from 1 m height difference"
+    ],
+    "basis": [
+      "drop <12 m, h = 0.90 m",
+      "drop >12 m, h = 1.10 m"
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K016",
+    "title": "无障碍坡道",
+    "question": "For barrier-free design under German regulations, what are (a) the maximum slope of a ramp, (b) its minimum clear width, and (c) the ramp length beyond which an intermediate landing is required?",
+    "answer": "(a) 6%; (b) 1.20 m; (c) 6 m",
+    "accept": [
+      "6 %, 1.2 m, 6 m",
+      "max 6%, min 120 cm wide, landing every 6 m"
+    ],
+    "mcq": {
+      "options": [
+        "8%; 1.20 m; 10 m",
+        "6%; 0.90 m; 10 m",
+        "5%; 1.50 m; 6 m",
+        "6%; 1.20 m; 6 m"
+      ],
+      "correct": 3
+    },
+    "rubric": [
+      "Max. slope 6%",
+      "Clear width min. 1.20 m",
+      "Intermediate landing (min. 1.50 m long) every 6 m / when longer than 6 m"
+    ],
+    "basis": [
+      "Ramps may not have a slope of more than 6%, must be at least 1.20 m wide and have a fixed handrail with a safe grip on both sides.",
+      "A landing is to be provided at the start and end of the ramp and also an intermediate landing every 6 m. The landings must have a length of at least 1.50 m.",
+      "If ramps are longer than 6 m, an intermediate landing of min. 1.50 m length is required."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K017",
+    "title": "公共建筑楼梯两侧扶手",
+    "question": "Under the German model building regulations (MBO) provisions for publicly accessible buildings, on how many sides must stairs have handrails, and how must the handrails run at landings, window openings and the last step?",
+    "answer": "On both sides, continued past landings and window openings and past the last steps",
+    "accept": [
+      "both sides, continuous past landings, windows and beyond the last step"
+    ],
+    "mcq": {
+      "options": [
+        "One side; continued past landings, window openings and the last steps",
+        "Both sides; interrupted at landings and window openings, ending at the last step",
+        "Both sides; continued past landings, window openings and the last steps",
+        "Both sides; interrupted at window openings, ending flush with the last step"
+      ],
+      "correct": 2
+    },
+    "rubric": [
+      "Handrails on both sides",
+      "Continued (not interrupted) past landings and window openings and beyond the last step"
+    ],
+    "basis": [
+      "Stairs must have handrails on both sides, which are to be continued past landings and window openings and past the last steps."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K018",
+    "title": "电梯候梯区",
+    "question": "According to German (DIN-based) lift planning guidance, what minimum usable depth should the waiting area in front of a single lift have, measured between the shaft door wall and the opposite wall in the direction of the car depth?",
+    "answer": "Equal to the lift car depth",
+    "accept": [
+      "the depth of the car",
+      "car depth"
+    ],
+    "mcq": {
+      "options": [
+        "Equal to the lift car width",
+        "Twice the lift car depth",
+        "Equal to the lift car depth",
+        "1.20 m regardless of car size"
+      ],
+      "correct": 2
+    },
+    "rubric": [
+      "Depth equal to car depth",
+      "(Optional) area = car depth × shaft width; waiting space must not infringe on stairs"
+    ],
+    "basis": [
+      "minimum usable depth between shaft door wall and opposing wall, measured in the direction of the depth of the car, should equal the car depth"
+    ],
+    "modality": "should",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K019",
+    "title": "非必要楼梯",
+    "question": "According to German standards, what minimum usable width and riser/tread ratio apply to stairs that building regulations do not deem legally essential (i.e. not fire escape routes)?",
+    "answer": "0.50 m usable width, riser/tread 21/21",
+    "accept": [
+      "0.5 m, 21/21",
+      "50 cm and 21/21"
+    ],
+    "mcq": {
+      "options": [
+        "0.50 m, 21/21",
+        "0.60 m, 20/23",
+        "0.80 m, 17/28",
+        "0.50 m, 19/25"
+      ],
+      "correct": 0
+    },
+    "rubric": [
+      "Width 0.50 m",
+      "Riser/tread 21/21"
+    ],
+    "basis": [
+      "stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21"
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K020",
+    "title": "休息平台宽度不小于梯段宽度",
+    "question": "In German stair design rules, how must the width of a stair landing relate to the stair (flight) width?",
+    "answer": "Landing width must be at least equal to the stair width (landing width ≥ stair width)",
+    "accept": [
+      "landing width ≥ stair width",
+      "not narrower than the stair",
+      "at least as wide as the flight"
+    ],
+    "mcq": {
+      "options": [
+        "At least 1.5 times the stair width",
+        "At least equal to the stair width",
+        "May be up to 20% narrower than the stair",
+        "At least the stair width plus 0.30 m"
+      ],
+      "correct": 1
+    },
+    "rubric": [
+      "Landing width ≥ stair width"
+    ],
+    "basis": [
+      "Landing width \\( \\geq \\) stair width."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K021",
+    "title": "洞口尺寸 ≠ 净通行宽度",
+    "question": "In German (DIN-based) design practice: When specifying a door in a classic frame construction, the differing constructional thicknesses must be taken into account. Which two door dimensions differ as a result, and which is smaller?",
+    "answer": "The structural (shell) opening and the clear pass-through dimension; the clear pass-through is smaller",
+    "accept": [
+      "structural opening vs clear passage width; the clear passage width is smaller",
+      "rough opening vs clear opening; clear opening is smaller"
+    ],
+    "mcq": {
+      "options": [
+        "Leaf width and leaf height; the height is smaller",
+        "Structural opening and clear pass-through dimension; the clear pass-through is smaller",
+        "Clear pass-through and structural opening; the structural opening is smaller",
+        "Frame depth and wall thickness; the wall is smaller"
+      ],
+      "correct": 1
+    },
+    "rubric": [
+      "Distinguishes structural opening from clear pass-through dimension",
+      "Clear pass-through is smaller than the structural opening"
+    ],
+    "basis": [
+      "difference between structural opening and clear pass-through dimension"
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K022",
+    "title": "住宅门的常规宽度",
+    "question": "In German (DIN-based) dwelling planning, what are the usual clear widths of single-leaf doors in dwellings for (a) room doors, (b) bathroom/WC doors and (c) entrance doors to flats?",
+    "answer": "(a) approx. 80 cm; (b) approx. 70 cm; (c) min. 90 cm",
+    "accept": [
+      "80 cm / 70 cm / 90 cm",
+      "0.80 m, 0.70 m, 0.90 m"
+    ],
+    "mcq": {
+      "options": [
+        "90 / 80 / 100 cm",
+        "75 / 65 / 85 cm",
+        "80 / 70 / 90 cm",
+        "70 / 60 / 80 cm"
+      ],
+      "correct": 2
+    },
+    "rubric": [
+      "Room doors ~80 cm",
+      "Bath/WC ~70 cm",
+      "Flat entrance doors min. 90 cm"
+    ],
+    "basis": [
+      "room doors      approx. 80 cm",
+      "entrance doors\n    to flats      min. 90 cm\nfront doors      up to 115 cm",
+      "bath, WC        approx. 70 cm"
+    ],
+    "modality": "typical",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K023",
+    "title": "内门净高",
+    "question": "In German (DIN-based) building planning, what is the minimum clear opening height of internal doors?",
+    "answer": "210 cm",
+    "accept": [
+      "2.10 m",
+      "2.1 m",
+      "2100 mm"
+    ],
+    "mcq": {
+      "options": [
+        "200 cm",
+        "195 cm",
+        "225 cm",
+        "210 cm"
+      ],
+      "correct": 3
+    },
+    "rubric": [
+      "Minimum clear opening height 210 cm (225 cm is a 'better' value, not the minimum)"
+    ],
+    "basis": [
+      "clear opening height of internal doors\nminimum\t210 cm"
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K024",
+    "title": "紧急出口的门型",
+    "question": "In German (DIN-based) design practice: Which two door types are not permissible at emergency exits because they can block the exit in circumstances of danger?",
+    "answer": "Sliding doors and revolving doors",
+    "accept": [
+      "revolving and sliding doors"
+    ],
+    "mcq": {
+      "options": [
+        "Sliding doors and revolving doors",
+        "Double-swing doors and outward-opening side-hung doors",
+        "Fire doors and smoke-control doors",
+        "Doors with panic hardware and glazed doors"
+      ],
+      "correct": 0
+    },
+    "rubric": [
+      "Sliding doors",
+      "Revolving doors"
+    ],
+    "basis": [
+      "Sliding doors and revolving doors are not permissible at emergency exits, which they can block in circumstances of danger."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K025",
+    "title": "电梯入户的户门",
+    "question": "According to the German model building regulations (MBO), what clear opening width must the front doors of flats that are accessed by lifts have (for wheelchair access)?",
+    "answer": "90 cm",
+    "accept": [
+      "0.90 m",
+      "0.9 m",
+      "900 mm"
+    ],
+    "mcq": {
+      "options": [
+        "80 cm",
+        "85 cm",
+        "100 cm",
+        "90 cm"
+      ],
+      "correct": 3
+    },
+    "rubric": [
+      "Clear opening width 90 cm",
+      "(Optional) door height should be at least 2.10 m"
+    ],
+    "basis": [
+      "front doors of flats which are accessed by lifts must have a clear opening width of 90 cm (for wheelchair access). The door height in this case should be at least 2.10 m."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K026",
+    "title": "无障碍门净宽",
+    "question": "In barrier-free (accessible) building design per German guidance, what is the minimum clear passage width of doors?",
+    "answer": "0.90 m",
+    "accept": [
+      "90 cm",
+      "≥ 0.9 m",
+      "900 mm"
+    ],
+    "mcq": {
+      "options": [
+        "0.90 m",
+        "0.80 m",
+        "1.00 m",
+        "0.85 m"
+      ],
+      "correct": 0
+    },
+    "rubric": [
+      "Clear passage width ≥ 0.90 m"
+    ],
+    "basis": [
+      "Clear passage width of doors \\( \\geq 0.90 \\) m",
+      "must be accessible through an entrance with a clear opening width of at least 0.90 m without steps."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K027",
+    "title": "无障碍：无台阶通达与公众可达建筑的适用范围",
+    "question": "For buildings designed in accordance with the principles of accessibility (barrier-free design per German guidance), how must the building's levels be reachable?",
+    "answer": "All levels must be accessible without steps, i.e. by lift or ramp",
+    "accept": [
+      "step-free access to every level via lift or ramp"
+    ],
+    "mcq": {
+      "options": [
+        "Only the entrance level needs step-free access",
+        "All levels must be accessible without steps (lift or ramp)",
+        "Upper levels may be reached by stairs with handrails on both sides",
+        "Upper levels must be reachable by a stair lift"
+      ],
+      "correct": 1
+    },
+    "rubric": [
+      "All levels",
+      "Without steps, via lift or ramp"
+    ],
+    "basis": [
+      "All levels of buildings designed in accordance with the principles of accessibility must be accessible without steps, i.e. using a lift or a ramp."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K028",
+    "title": "轮椅活动空间",
+    "question": "In barrier-free design per German guidance, what minimum turning space (depth × width) for a wheelchair should be provided in every room?",
+    "answer": "1.50 m × 1.50 m",
+    "accept": [
+      "1.5 × 1.5 m",
+      "150 × 150 cm"
+    ],
+    "mcq": {
+      "options": [
+        "1.20 m × 1.20 m",
+        "1.80 m × 1.80 m",
+        "1.50 m × 1.50 m",
+        "1.40 m × 1.70 m"
+      ],
+      "correct": 2
+    },
+    "rubric": [
+      "Turning area at least 1.50 m deep and 1.50 m wide"
+    ],
+    "basis": [
+      "A depth and width of at least 1.50 m should be provided in every room for turning."
+    ],
+    "modality": "should",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K029",
+    "title": "无障碍卫生间",
+    "question": "In barrier-free public buildings per German guidance, (a) how many wheelchair-accessible toilets must be provided in sanitary facilities, and (b) in which direction must doors to toilets, showers and changing rooms open?",
+    "answer": "(a) At least one wheelchair-accessible toilet in all sanitary facilities; (b) outward",
+    "accept": [
+      "at least one per sanitary facility; doors open outwards"
+    ],
+    "mcq": {
+      "options": [
+        "At least one in all sanitary facilities; doors open outward",
+        "At least one in all sanitary facilities; doors open inward",
+        "One per building; sliding doors only",
+        "Two in each sanitary facility; doors open outward"
+      ],
+      "correct": 0
+    },
+    "rubric": [
+      "At least one wheelchair toilet in all sanitary facilities",
+      "Doors to toilets, showers, changing rooms open outward"
+    ],
+    "basis": [
+      "Doors to toilets, showers and changing rooms must open outward.",
+      "At least one toilet must be provided for wheelchair users in all sanitary facilities."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K030",
+    "title": "无障碍电梯",
+    "question": "In barrier-free design per German guidance, what minimum clear internal dimensions (width × depth) must a lift car have?",
+    "answer": "1.10 m wide × 1.40 m deep",
+    "accept": [
+      "1.1 × 1.4 m",
+      "110 × 140 cm"
+    ],
+    "mcq": {
+      "options": [
+        "1.00 m × 1.25 m",
+        "0.90 m × 1.20 m",
+        "1.10 m × 2.10 m",
+        "1.10 m × 1.40 m"
+      ],
+      "correct": 3
+    },
+    "rubric": [
+      "Clear width min. 1.10 m",
+      "Clear depth min. 1.40 m",
+      "(Optional) movement area in front ≥ car floor area, min. 1.50 × 1.50 m"
+    ],
+    "basis": [
+      "Cars of lifts must have a min. clear width of 1.10 m and a clear depth of 1.40 m."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K031",
+    "title": "轮椅停车位",
+    "question": "In barrier-free design per German guidance, what minimum depth of movement area must be provided next to the long side of a wheelchair user's vehicle in a car park?",
+    "answer": "1.50 m",
+    "accept": [
+      "150 cm",
+      "1.5 m"
+    ],
+    "mcq": {
+      "options": [
+        "1.50 m",
+        "1.20 m",
+        "0.90 m",
+        "2.00 m"
+      ],
+      "correct": 0
+    },
+    "rubric": [
+      "Movement area min. 1.50 m deep beside the long side of the vehicle"
+    ],
+    "basis": [
+      "min. 1.50 m deep ...\nin front of therapy facilities (e.g. bath, couch), in front of wheelchair parking places, next to the long side of the vehicle of a wheelchair user in car parks"
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K032",
+    "title": "楼梯起止处活动区",
+    "question": "In barrier-free design per German guidance, what minimum width must the movement area next to the top and bottom of stairs have, and is the tread of the first step counted as part of it?",
+    "answer": "Min. 1.50 m wide; the tread of the first step is not included",
+    "accept": [
+      "1.5 m, first tread not counted"
+    ],
+    "mcq": {
+      "options": [
+        "1.20 m; first tread counted",
+        "1.50 m; first tread not counted",
+        "1.80 m; first tread not counted",
+        "1.50 m; first tread counted"
+      ],
+      "correct": 1
+    },
+    "rubric": [
+      "Width min. 1.50 m",
+      "First step tread excluded"
+    ],
+    "basis": [
+      "The movement area next to the stairs going up and down must be min. 1.50 m wide; the tread of the first step is not to be included in the calculation of the movement area"
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K033",
+    "title": "长走廊轮椅会车位",
+    "question": "In barrier-free design per German guidance, beyond what corridor length must a passing place for two wheelchair users be provided, and what minimum size (width and depth) must it have?",
+    "answer": "Corridors longer than 15 m; passing place at least 1.80 m × 1.80 m",
+    "accept": [
+      "over 15 m, 1.8 × 1.8 m"
+    ],
+    "mcq": {
+      "options": [
+        "> 20 m; 1.50 m × 1.50 m",
+        "> 15 m; 1.80 m × 1.80 m",
+        "> 10 m; 2.00 m × 2.00 m",
+        "> 15 m; 1.50 m × 1.50 m"
+      ],
+      "correct": 1
+    },
+    "rubric": [
+      "Threshold: corridor longer than 15 m",
+      "Passing place ≥ 1.80 m wide and deep"
+    ],
+    "basis": [
+      "Corridors and routes longer than 15 m must have a passing place for two wheelchair users of at least 1.80 m width and depth."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K034",
+    "title": "多户住宅的无障碍楼层",
+    "question": "Under the German model building regulations (MBO), what accessibility requirement applies to residential buildings with more than two flats?",
+    "answer": "The flats on one floor must be accessible (barrier-free); in them living rooms, bedrooms, one toilet, one bathroom and the kitchen must be wheelchair accessible",
+    "accept": [
+      "flats of one storey must be barrier-free accessible"
+    ],
+    "mcq": {
+      "options": [
+        "All flats on every floor must be accessible, with every room wheelchair-usable",
+        "At least 10% of the flats must be accessible, with every room wheelchair-usable",
+        "Flats on one floor must be accessible, with living rooms, bedrooms, a WC, a bathroom and the kitchen wheelchair-usable",
+        "Flats on one floor must have a step-free entrance, but no room inside need be wheelchair-usable"
+      ],
+      "correct": 2
+    },
+    "rubric": [
+      "Flats on one floor must be accessible",
+      "Living rooms, bedrooms, one toilet, one bathroom and kitchen wheelchair accessible"
+    ],
+    "basis": [
+      "In buildings with more than two flats, the flats on one floor must be accessible. In these flats, the living rooms and bedrooms, one toilet, one bathroom and the kitchen or kitchenette must be accessible with a wheelchair."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K035",
+    "title": "无障碍住宅卫浴",
+    "question": "In wheelchair-accessible dwellings per German guidance, what minimum movement area (width × depth) is required to one side of the WC, and what minimum distance is required from the other side of the WC to the wall or furniture?",
+    "answer": "95 cm wide × 70 cm deep on one side; min. 30 cm on the other side",
+    "accept": [
+      "95 × 70 cm and 30 cm",
+      "0.95 × 0.70 m, 0.30 m"
+    ],
+    "mcq": {
+      "options": [
+        "90 × 70 cm; 20 cm",
+        "120 × 70 cm; 30 cm",
+        "80 × 60 cm; 25 cm",
+        "95 × 70 cm; 30 cm"
+      ],
+      "correct": 3
+    },
+    "rubric": [
+      "Side movement area ≥ 95 cm wide, ≥ 70 cm deep",
+      "Other side ≥ 30 cm to wall/furniture"
+    ],
+    "basis": [
+      "The movement area to the right or left of the WC must be at least 95 cm wide and 70 cm deep. From one side of the WC towards the wall, or furniture, there must be a distance of min. 30 cm"
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K036",
+    "title": "轮椅住宅的起居室",
+    "question": "In wheelchair-accessible dwellings per German guidance, what should be the minimum floor area of a living room with an eating area in a flat for one person and in a flat for 2–4 people, and what minimum room width applies for a 1–2 person household?",
+    "answer": "22 m² (1 person); 24 m² (2–4 people); min. width 3.75 m",
+    "accept": [
+      "22 m², 24 m², 3.75 m"
+    ],
+    "mcq": {
+      "options": [
+        "20 m²; 24 m²; 3.50 m",
+        "22 m²; 24 m²; 3.75 m",
+        "24 m²; 26 m²; 4.00 m",
+        "18 m²; 22 m²; 3.60 m"
+      ],
+      "correct": 1
+    },
+    "rubric": [
+      "1 person: 22 m²",
+      "2–4 people: 24 m²",
+      "Min. width 3.75 m"
+    ],
+    "basis": [
+      "For a living room with an eating area, the minimum floor area should be: in a flat for one person 22 m², for 2–4 people 24 m², for five people 26 m² and for six people 28 m²; minimum room width 3.75 m (1–2 person household)."
+    ],
+    "modality": "should",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K037",
+    "title": "无障碍住宅的户内活动区宽度",
+    "question": "In wheelchair-accessible dwellings per German guidance, what minimum width must the movement area have between walls within the dwelling and along routes within the house?",
+    "answer": "1.20 m",
+    "accept": [
+      "120 cm",
+      "1.2 m"
+    ],
+    "mcq": {
+      "options": [
+        "0.90 m",
+        "1.50 m",
+        "1.20 m",
+        "1.00 m"
+      ],
+      "correct": 2
+    },
+    "rubric": [
+      "Min. 1.20 m wide"
+    ],
+    "basis": [
+      "min. 1.20 m wide…\nalong furniture which the wheelchair user approaches from the side, along the access side of a non-wheelchair user’s bed → 9, between walls within the dwelling"
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K038",
+    "title": "疏散距离",
+    "question": "Under the German building rules for normal (non-high-rise) buildings, what is the maximum distance from every location in inhabited rooms and basements to the stairwell of at least one legally essential stairway or to an exit?",
+    "answer": "35 m",
+    "accept": [
+      "≤ 35 m",
+      "max. 35 m"
+    ],
+    "mcq": {
+      "options": [
+        "35 m",
+        "25 m",
+        "40 m",
+        "50 m"
+      ],
+      "correct": 0
+    },
+    "rubric": [
+      "Max. 35 m to a legally essential stairwell or exit"
+    ],
+    "basis": [
+      "Every location in inhabited rooms and basements must be \\( \\leq 35 \\) m from the stairwell of at least one legally essential stairway or exit."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K039",
+    "title": "两条独立疏散路线",
+    "question": "Under German building regulations, how many independent escape routes to the open air must a residential or commercial unit with at least one occupied room have on each storey, and if the unit is not at ground level, what may the second escape route be?",
+    "answer": "At least two; the second may be a second essential staircase or a location reachable with the fire brigade's rescue equipment",
+    "accept": [
+      "two; second via fire brigade rescue equipment (e.g. ladder) or a second stair"
+    ],
+    "mcq": {
+      "options": [
+        "One; a second is required only for units more than 22 m above ground",
+        "At least two; the second via a second essential stair or a point reachable by fire brigade rescue equipment",
+        "At least two; both must run via separate legally essential staircases in their own stairwells",
+        "At least two; the second must be an external escape stair fixed to the façade"
+      ],
+      "correct": 1
+    },
+    "rubric": [
+      "At least two independent escape routes per storey",
+      "Second route: second essential stair or point reachable by fire brigade rescue equipment",
+      "(Optional) not required when escape is via a safety stairwell"
+    ],
+    "basis": [
+      "Residential or commercial units with at least one occupied room must have at least two independent escape routes leading to the open air on each storey.",
+      "the second escape route via a second essential staircase or a single unified location which is accessible with the rescue equipment of the local fire brigade"
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K040",
+    "title": "疏散窗",
+    "question": "Under German building regulations, if a window serves as an escape route, what minimum clear opening (width × height) must it have, and what maximum sill height above floor level?",
+    "answer": "Clear opening at least 0.9 × 1.2 m; sill height max. 1.2 m",
+    "accept": [
+      "0.90 × 1.20 m, sill ≤ 1.20 m",
+      "90 × 120 cm, sill max 120 cm"
+    ],
+    "mcq": {
+      "options": [
+        "0.6 × 0.9 m; 1.1 m",
+        "1.0 × 1.4 m; 1.0 m",
+        "0.9 × 1.2 m; 1.2 m",
+        "0.6 × 1.0 m; 1.2 m"
+      ],
+      "correct": 2
+    },
+    "rubric": [
+      "Clear opening ≥ 0.9 × 1.2 m",
+      "Sill height ≤ 1.2 m"
+    ],
+    "basis": [
+      "If the window serves as an escape route, it must have a clear opening of at least 0.9 × 1.2 m and a sill height of max. 1.2 m above floor level."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K041",
+    "title": "出口宽度（按人数）",
+    "question": "In German (DIN-based) design practice: In planning guidance for restaurants and catering establishments, emergency exits must be 1.0 m wide per how many people using them?",
+    "answer": "150 people",
+    "accept": [
+      "150",
+      "per 150 persons"
+    ],
+    "mcq": {
+      "options": [
+        "100 people",
+        "200 people",
+        "150 people",
+        "250 people"
+      ],
+      "correct": 2
+    },
+    "rubric": [
+      "1.0 m per 150 people"
+    ],
+    "basis": [
+      "Emergency exits 1.0 m wide per 150 people using them."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K042",
+    "title": "防火分区与防火墙",
+    "question": "Under the German model building regulations (MBO), into fire compartments of what maximum length must larger buildings be sub-divided by fire compartment walls, and what fire resistance classification must these walls have?",
+    "answer": "Max. 40 m; F 90-A (fire-resistant, non-combustible)",
+    "accept": [
+      "40 m and F90A",
+      "40 m, F 90 A"
+    ],
+    "mcq": {
+      "options": [
+        "40 m; F 30",
+        "60 m; F 90-B",
+        "30 m; F 120-A",
+        "40 m; F 90-A"
+      ],
+      "correct": 3
+    },
+    "rubric": [
+      "Fire compartments not more than 40 m",
+      "Walls F 90-A: fireproof, stable in fire, non-combustible"
+    ],
+    "basis": [
+      "to sub-divide larger buildings into fire compartments of not more than 40 m.",
+      "Fire compartment walls must be fireproof, structurally stable when exposed to fire and consist of non-combustible materials (F 90A)."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K043",
+    "title": "主楼梯须设在连续封闭的楼梯间",
+    "question": "Under German building regulations for stairs, how must all main staircases be enclosed?",
+    "answer": "In a continuous (enclosed) stairwell which, including its access routes and exit to the open air, can safely be used for escape",
+    "accept": [
+      "continuous enclosed stairwell usable for escape incl. access and exit to the open air"
+    ],
+    "mcq": {
+      "options": [
+        "In a stairwell enclosed only above the ground floor, opening freely into the entrance hall",
+        "In a continuous stairwell that, with its access routes and exit to the open air, can safely be used for escape",
+        "In a stairwell enclosed on the lowest storeys only, the upper flights may be open galleries",
+        "No enclosure is needed if the whole building is fitted with a sprinkler system"
+      ],
+      "correct": 1
+    },
+    "rubric": [
+      "Continuous enclosed stairwell",
+      "Including access routes and exit to the open air, safely usable for escape"
+    ],
+    "basis": [
+      "All main staircases must be enclosed in a continuous stairwell, which is designed and arranged so that, including its access routes and exit to the open air, it can safely be used for escape."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K044",
+    "title": "疏散走廊侧墙 F 30",
+    "question": "Under German building regulations, (a) what fire resistance class must corridor walls have when they are the side walls of escape routes, and (b) if lighting openings with G-glazing are installed in such walls, what minimum height above floor level must the lower edge of the glass be?",
+    "answer": "(a) F 30 (fire-retarding); (b) at least 1.80 m",
+    "accept": [
+      "F30 and 1.8 m",
+      "F 30, 180 cm"
+    ],
+    "mcq": {
+      "options": [
+        "F 30; 1.80 m",
+        "F 90; 1.80 m",
+        "F 30; 1.20 m",
+        "F 60; 1.50 m"
+      ],
+      "correct": 0
+    },
+    "rubric": [
+      "Corridor walls F 30 (fire-retarding)",
+      "G-glazing lower edge ≥ 1.80 m above floor"
+    ],
+    "basis": [
+      "A typical area of application for G-glazing is the openings for lighting installed in corridor walls, which have to be constructed fire-retarding (F 30) as the side walls of escape routes."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  },
+  {
+    "kid": "K045",
+    "title": "高层建筑的疏散走道",
+    "question": "For escape routes in high-rise buildings under German regulations, what are (a) the minimum width of escape routes, (b) the maximum walking distance from any point in an occupied room, and (c) the maximum length of a branch corridor with only one escape direction when no second escape route is available?",
+    "answer": "(a) 1.25 m; (b) 25 m; (c) 10 m",
+    "accept": [
+      "1.25 m / 25 m / 10 m"
+    ],
+    "mcq": {
+      "options": [
+        "1.20 m; 35 m; 15 m",
+        "1.25 m; 35 m; 20 m",
+        "1.50 m; 30 m; 10 m",
+        "1.25 m; 25 m; 10 m"
+      ],
+      "correct": 3
+    },
+    "rubric": [
+      "Escape route width min. 1.25 m",
+      "Max. walking distance 25 m",
+      "Dead-end corridor max. 10 m (20 m only with a second escape route)"
+    ],
+    "basis": [
+      "Escape routes are min. 1.25 m wide and should if possible lead in two directions, to each staircase. The maximum walking distance from each point of an occupied room may not exceed 25 m. Corridors with two escape directions may be max. 40 m long. After 20 m, a smoke-proof self-closing door must be installed. Branch corridors with only one escape direction may be max. 10 m long. If a second escape route (e.g. an escape balcony) is available, max. 20 m."
+    ],
+    "modality": "must",
+    "difficulty": "recall"
+  }
+]

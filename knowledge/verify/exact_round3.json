@@ -1,0 +1,3897 @@
+[
+ {
+  "page": "page_0173",
+  "quote": "If there is no laundry room, the bathroom must be designed with space and connections for a washing machine, washer/dryer and laundry basket.",
+  "status": "exact",
+  "source": [
+   "text",
+   1575
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-01",
+   "H-fzk_house-10",
+   "H-samuel_macalister_sample_house-09"
+  ]
+ },
+ {
+  "page": "page_0133",
+  "quote": "In order to determine a suitable pitch with the lowest energy requirement, this formula applies: 2 r + t = 59–65 cm.",
+  "status": "exact",
+  "source": [
+   "text",
+   1289
+  ],
+  "items": [
+   "H-4351-07",
+   "H-ac20-08",
+   "H-digital_hub-07",
+   "H-duplex-04",
+   "H-duplex-11",
+   "H-fantasy_hotel_1-02",
+   "H-fantasy_hotel_1-03",
+   "H-fantasy_office_building_1-01",
+   "H-fantasy_office_building_2-08",
+   "H-fantasy_office_building_2-11",
+   "H-fantasy_office_building_3-01",
+   "H-fantasy_residential_building_1-02",
+   "H-fzk_house-04",
+   "H-samuel_macalister_sample_house-01",
+   "H-samuel_macalister_sample_house-02"
+  ]
+ },
+ {
+  "page": "page_0133",
+  "quote": "Stairs with landings are required in legally essential stairways with a storey height of \\( \\geq 2.75 \\) m.",
+  "status": "exact",
+  "source": [
+   "caption",
+   1007
+  ],
+  "items": [
+   "H-4351-08",
+   "H-ac20-08",
+   "H-digital_hub-07",
+   "H-digital_hub-24",
+   "H-duplex-04",
+   "H-duplex-11",
+   "H-fantasy_hotel_1-02",
+   "H-fantasy_hotel_1-03",
+   "H-fantasy_office_building_1-01",
+   "H-fantasy_office_building_2-08",
+   "H-fantasy_office_building_3-01",
+   "H-fantasy_office_building_3-15",
+   "H-fantasy_residential_building_1-02",
+   "H-fzk_house-04",
+   "H-samuel_macalister_sample_house-01"
+  ]
+ },
+ {
+  "page": "page_0132",
+  "quote": "Length of runs on legally essential stairs is \\( \\geq 3 \\) steps up to \\( \\leq 18 \\) steps",
+  "status": "exact",
+  "source": [
+   "text",
+   1286
+  ],
+  "items": [
+   "H-4351-08",
+   "H-ac20-08",
+   "H-digital_hub-07",
+   "H-duplex-04",
+   "H-duplex-11",
+   "H-fantasy_hotel_1-02",
+   "H-fantasy_hotel_1-03",
+   "H-fantasy_office_building_1-01",
+   "H-fantasy_office_building_2-08",
+   "H-fantasy_office_building_3-01",
+   "H-fantasy_residential_building_1-02",
+   "H-fzk_house-04",
+   "H-samuel_macalister_sample_house-01",
+   "H-samuel_macalister_sample_house-02"
+  ]
+ },
+ {
+  "page": "page_0132",
+  "quote": "legally essential stairs 1.00 m, 17/28",
+  "status": "exact",
+  "source": [
+   "text",
+   1286
+  ],
+  "items": [
+   "H-4351-08",
+   "H-ac20-08",
+   "H-digital_hub-07",
+   "H-fantasy_hotel_1-03",
+   "H-fantasy_office_building_1-01",
+   "H-fantasy_office_building_2-08",
+   "H-fantasy_office_building_3-01",
+   "H-fantasy_residential_building_1-02"
+  ]
+ },
+ {
+  "page": "page_0134",
+  "quote": "Galleries, mezzanines, balconies and circle seating in theatres must have a protective guard rail (height h), compulsory from 1 m height difference:",
+  "status": "exact",
+  "source": [
+   "text",
+   1295
+  ],
+  "items": [
+   "H-4351-02",
+   "H-4351-06",
+   "H-duplex-09",
+   "H-duplex-13",
+   "H-fantasy_office_building_2-01",
+   "H-fantasy_residential_building_1-03",
+   "H-fzk_house-12",
+   "H-samuel_macalister_sample_house-07",
+   "H-samuel_macalister_sample_house-13"
+  ]
+ },
+ {
+  "page": "page_0134",
+  "quote": "drop <12 m, h = 0.90 m",
+  "status": "exact",
+  "source": [
+   "text",
+   1296
+  ],
+  "items": [
+   "H-4351-06",
+   "H-duplex-09",
+   "H-duplex-13",
+   "H-fantasy_office_building_2-01",
+   "H-fantasy_residential_building_1-03",
+   "H-fzk_house-12",
+   "H-samuel_macalister_sample_house-07",
+   "H-samuel_macalister_sample_house-13"
+  ]
+ },
+ {
+  "page": "page_0134",
+  "quote": "drop >12 m, h = 1.10 m",
+  "status": "exact",
+  "source": [
+   "text",
+   1300
+  ],
+  "items": [
+   "H-4351-02",
+   "H-duplex-13",
+   "H-fantasy_office_building_2-01",
+   "H-fantasy_residential_building_1-03",
+   "H-samuel_macalister_sample_house-13"
+  ]
+ },
+ {
+  "page": "page_0167",
+  "quote": "Balconies, loggias and terraces are a part of the living areas, for which they are normally calculated as 25–50%",
+  "status": "exact",
+  "source": [
+   "text",
+   1541
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-04",
+   "H-samuel_macalister_sample_house-11",
+   "H-samuel_macalister_sample_house-12"
+  ]
+ },
+ {
+  "page": "page_0167",
+  "quote": "B = 9.0 m^2 balcony for 5–6 people",
+  "status": "exact",
+  "source": [
+   "caption",
+   1307
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-04",
+   "H-samuel_macalister_sample_house-11",
+   "H-samuel_macalister_sample_house-12"
+  ]
+ },
+ {
+  "page": "page_0169",
+  "quote": "bedrooms with minimal space of approx. 13 m² (as parents’ room or twin bedroom)",
+  "status": "exact",
+  "source": [
+   "text",
+   1550
+  ],
+  "items": [
+   "H-duplex-10",
+   "H-fantasy_residential_building_1-05",
+   "H-samuel_macalister_sample_house-04"
+  ]
+ },
+ {
+  "page": "page_0169",
+  "quote": "approx. 8 m² (single room).",
+  "status": "exact",
+  "source": [
+   "text",
+   1550
+  ],
+  "items": [
+   "H-duplex-10",
+   "H-fantasy_residential_building_1-05",
+   "H-samuel_macalister_sample_house-04"
+  ]
+ },
+ {
+  "page": "page_0154",
+  "quote": "Lifts are required for residential buildings of more than five full floors",
+  "status": "exact",
+  "source": [
+   "text",
+   1455
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-06",
+   "H-fantasy_residential_building_1-21"
+  ]
+ },
+ {
+  "page": "page_0158",
+  "quote": "front doors of flats which are accessed by lifts must have a clear opening width of 90 cm (for wheelchair access). The door height in this case should be at least 2.10 m.",
+  "status": "exact",
+  "source": [
+   "text",
+   1487
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-06",
+   "H-fantasy_residential_building_1-17"
+  ]
+ },
+ {
+  "page": "page_0154",
+  "quote": "Two flats per floor is the most common access method, with balanced advantages of residential quality and value for money.",
+  "status": "exact",
+  "source": [
+   "text",
+   1457
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-06",
+   "H-fantasy_residential_building_1-21"
+  ]
+ },
+ {
+  "page": "page_0037",
+  "quote": "In buildings with more than two flats, the flats on one floor must be accessible.",
+  "status": "exact",
+  "source": [
+   "text",
+   573
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-07"
+  ]
+ },
+ {
+  "page": "page_0034",
+  "quote": "Clear passage width of doors \\( \\geq 0.90 \\) m",
+  "status": "exact",
+  "source": [
+   "text",
+   549
+  ],
+  "items": [
+   "H-4351-03",
+   "H-4351-04",
+   "H-ac20-03",
+   "H-digital_hub-03",
+   "H-duplex-03",
+   "H-duplex-08",
+   "H-fantasy_hotel_1-08",
+   "H-fantasy_office_building_1-09",
+   "H-fantasy_residential_building_1-07",
+   "H-fantasy_residential_building_1-17",
+   "H-fzk_house-07",
+   "H-samuel_macalister_sample_house-05",
+   "H-samuel_macalister_sample_house-06"
+  ]
+ },
+ {
+  "page": "page_0126",
+  "quote": "difference between structural opening and clear pass-through dimension",
+  "status": "exact",
+  "source": [
+   "text",
+   1246
+  ],
+  "items": [
+   "H-4351-03",
+   "H-ac20-03",
+   "H-digital_hub-04",
+   "H-duplex-02",
+   "H-fantasy_hotel_1-08",
+   "H-fantasy_office_building_3-08",
+   "H-fantasy_residential_building_1-07",
+   "H-fzk_house-05",
+   "H-samuel_macalister_sample_house-05",
+   "H-samuel_macalister_sample_house-06"
+  ]
+ },
+ {
+  "page": "page_0125",
+  "quote": "room doors approx. 80 cm",
+  "status": "ws_only",
+  "source": [
+   "text",
+   1238
+  ],
+  "items": [
+   "H-duplex-08",
+   "H-fantasy_residential_building_1-07",
+   "H-fzk_house-05",
+   "H-samuel_macalister_sample_house-05"
+  ]
+ },
+ {
+  "page": "page_0161",
+  "quote": "As a habitable room, the kitchen must have a clear ceiling height of at least 2.40 m and a window area (structural dimensions) of at least 1/8 of the net floor area.",
+  "status": "exact",
+  "source": [
+   "text",
+   1504
+  ],
+  "items": [
+   "H-duplex-01",
+   "H-duplex-14",
+   "H-fantasy_residential_building_1-08",
+   "H-fzk_house-01",
+   "H-fzk_house-08",
+   "H-samuel_macalister_sample_house-03"
+  ]
+ },
+ {
+  "page": "page_0179",
+  "quote": "minimum requirements for floor area (8 m^2), ceiling height (2.40 m), orientation, ventilation and lighting (window area 1/8 of the room area)",
+  "status": "exact",
+  "source": [
+   "text",
+   1609
+  ],
+  "items": [
+   "H-duplex-01",
+   "H-duplex-09",
+   "H-fantasy_hotel_1-04",
+   "H-fantasy_hotel_1-05",
+   "H-fzk_house-01",
+   "H-fzk_house-03",
+   "H-fzk_house-09",
+   "H-samuel_macalister_sample_house-03",
+   "H-samuel_macalister_sample_house-07"
+  ]
+ },
+ {
+  "page": "page_0125",
+  "quote": "entrance doors to flats min. 90 cm front doors up to 115 cm",
+  "status": "ws_only",
+  "source": [
+   "text",
+   1238
+  ],
+  "items": [
+   "H-duplex-02",
+   "H-fzk_house-06"
+  ]
+ },
+ {
+  "page": "page_0125",
+  "quote": "bath, WC approx. 70 cm",
+  "status": "ws_only",
+  "source": [
+   "text",
+   1238
+  ],
+  "items": [
+   "H-duplex-03",
+   "H-fantasy_hotel_1-08",
+   "H-fzk_house-05"
+  ]
+ },
+ {
+  "page": "page_0034",
+  "quote": "Doors to toilets, showers and changing rooms must open outward.",
+  "status": "exact",
+  "source": [
+   "text",
+   549
+  ],
+  "items": [
+   "H-duplex-03"
+  ]
+ },
+ {
+  "page": "page_0133",
+  "quote": "the best use of 'climbing effort' is at a stair pitch of 30° and a ratio of riser (r) to tread (t) of 17/29.",
+  "status": "exact",
+  "source": [
+   "text",
+   1289
+  ],
+  "items": [
+   "H-4351-07",
+   "H-duplex-04",
+   "H-fantasy_hotel_1-02",
+   "H-fzk_house-04",
+   "H-samuel_macalister_sample_house-02"
+  ]
+ },
+ {
+  "page": "page_0167",
+  "quote": "They generally have a spatial relationship to living and working areas and dining rooms",
+  "status": "exact",
+  "source": [
+   "text",
+   1540
+  ],
+  "items": [
+   "H-duplex-05",
+   "H-samuel_macalister_sample_house-11",
+   "H-samuel_macalister_sample_house-12"
+  ]
+ },
+ {
+  "page": "page_0125",
+  "quote": "Sliding doors and revolving doors are not permissible at emergency exits, which they can block in circumstances of danger.",
+  "status": "exact",
+  "source": [
+   "text",
+   1232
+  ],
+  "items": [
+   "H-4351-04",
+   "H-ac20-02",
+   "H-duplex-06",
+   "H-fantasy_office_building_3-08",
+   "H-fzk_house-06"
+  ]
+ },
+ {
+  "page": "page_0133",
+  "quote": "Every location in inhabited rooms and basements must be \\( \\leq 35 \\) m from the stairwell of at least one legally essential stairway or exit.",
+  "status": "exact",
+  "source": [
+   "text",
+   1291
+  ],
+  "items": [
+   "H-4351-05",
+   "H-duplex-07"
+  ]
+ },
+ {
+  "page": "page_0132",
+  "quote": "residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28 riser to tread ratio",
+  "status": "exact",
+  "source": [
+   "text",
+   1286
+  ],
+  "items": [
+   "H-duplex-08",
+   "H-duplex-11",
+   "H-samuel_macalister_sample_house-01"
+  ]
+ },
+ {
+  "page": "page_0037",
+  "quote": "Corridors and entrance halls must be at least 1.50 m wide.",
+  "status": "exact",
+  "source": [
+   "text",
+   572
+  ],
+  "items": [
+   "H-ac20-13",
+   "H-duplex-08",
+   "H-fantasy_office_building_3-10",
+   "H-fzk_house-18"
+  ]
+ },
+ {
+  "page": "page_0169",
+  "quote": "a generous twin bedroom of 16.5 m²",
+  "status": "exact",
+  "source": [
+   "text",
+   1558
+  ],
+  "items": [
+   "H-duplex-10",
+   "H-samuel_macalister_sample_house-04"
+  ]
+ },
+ {
+  "page": "page_0172",
+  "quote": "according to building regulations, belongs to the minimum equipment of a flat or house.",
+  "status": "exact",
+  "source": [
+   "text",
+   1572
+  ],
+  "items": [
+   "H-duplex-12",
+   "H-fzk_house-10",
+   "H-fzk_house-30",
+   "H-samuel_macalister_sample_house-10"
+  ]
+ },
+ {
+  "page": "page_0172",
+  "quote": "The bathroom is normally next to the bedroom",
+  "status": "exact",
+  "source": [
+   "text",
+   1572
+  ],
+  "items": [
+   "H-duplex-12",
+   "H-fzk_house-10",
+   "H-fzk_house-19",
+   "H-samuel_macalister_sample_house-10"
+  ]
+ },
+ {
+  "page": "page_0162",
+  "quote": "Open kitchens require good ventilation and extraction in order not to impair the living and dining room areas with cooking smells.",
+  "status": "exact",
+  "source": [
+   "text",
+   1513
+  ],
+  "items": [
+   "H-duplex-14",
+   "H-fzk_house-13",
+   "H-samuel_macalister_sample_house-08"
+  ]
+ },
+ {
+  "page": "page_0161",
+  "quote": "this results in a minimum kitchen width of 2.70 m (min 2.40 m)",
+  "status": "exact",
+  "source": [
+   "text",
+   1503
+  ],
+  "items": [
+   "H-duplex-15",
+   "H-fzk_house-13",
+   "H-samuel_macalister_sample_house-08"
+  ]
+ },
+ {
+  "page": "page_0161",
+  "quote": "A movement area of 1.50 m (min. 1.20 m) is therefore required between the stretches of worktop.",
+  "status": "exact",
+  "source": [
+   "text",
+   1503
+  ],
+  "items": [
+   "H-duplex-15",
+   "H-samuel_macalister_sample_house-08"
+  ]
+ },
+ {
+  "page": "page_0162",
+  "quote": "Kitchens with dining areas can be planned from approx. 10 m².",
+  "status": "exact",
+  "source": [
+   "text",
+   1512
+  ],
+  "items": [
+   "H-duplex-15",
+   "H-fzk_house-13",
+   "H-samuel_macalister_sample_house-08"
+  ]
+ },
+ {
+  "page": "page_0162",
+  "quote": "A good arrangement is an L shape with doors connecting to the living room and corridor: area approx. 14 m²",
+  "status": "exact",
+  "source": [
+   "text",
+   1512
+  ],
+  "items": [
+   "H-duplex-15",
+   "H-fzk_house-13"
+  ]
+ },
+ {
+  "page": "page_0278",
+  "quote": "guideline 3.00 m for working rooms larger than 100 m^2",
+  "status": "exact",
+  "source": [
+   "text",
+   2320
+  ],
+  "items": [
+   "H-4351-01"
+  ]
+ },
+ {
+  "page": "page_0255",
+  "quote": "Ceiling height 2.75 m according to Vst regulation",
+  "status": "exact",
+  "source": [
+   "text",
+   2148
+  ],
+  "items": [
+   "H-4351-01"
+  ]
+ },
+ {
+  "page": "page_0037",
+  "quote": "This requirement applies notably to cultural, educational, sport, leisure and health facilities, offices, administration buildings and courts, sales and catering establishments, parking, garages and toilets.",
+  "status": "exact",
+  "source": [
+   "text",
+   571
+  ],
+  "items": [
+   "H-4351-03",
+   "H-4351-04",
+   "H-4351-13",
+   "H-ac20-03",
+   "H-ac20-13",
+   "H-digital_hub-01",
+   "H-digital_hub-03",
+   "H-fantasy_office_building_3-10"
+  ]
+ },
+ {
+  "page": "page_0187",
+  "quote": "Emergency exits 1.0 m wide per 150 people using them.",
+  "status": "exact",
+  "source": [
+   "text",
+   1648
+  ],
+  "items": [
+   "H-4351-04"
+  ]
+ },
+ {
+  "page": "page_0523",
+  "quote": "Residential or commercial units with at least one occupied room must have at least two independent escape routes leading to the open air on each storey.",
+  "status": "exact",
+  "source": [
+   "text",
+   4066
+  ],
+  "items": [
+   "H-4351-05"
+  ]
+ },
+ {
+  "page": "page_0523",
+  "quote": "the second escape route via a second essential staircase or a single unified location which is accessible with the rescue equipment of the local fire brigade",
+  "status": "exact",
+  "source": [
+   "text",
+   4066
+  ],
+  "items": [
+   "H-4351-05"
+  ]
+ },
+ {
+  "page": "page_0134",
+  "quote": "drop <12 m, h = 1.00 m for workplaces",
+  "status": "exact",
+  "source": [
+   "text",
+   1296
+  ],
+  "items": [
+   "H-4351-06",
+   "H-fantasy_office_building_2-01"
+  ]
+ },
+ {
+  "page": "page_0133",
+  "quote": "Stairs in offices or emergency stairs should, in contrast, make it possible to change level quickly.",
+  "status": "exact",
+  "source": [
+   "text",
+   1290
+  ],
+  "items": [
+   "H-4351-07",
+   "H-ac20-08"
+  ]
+ },
+ {
+  "page": "page_0133",
+  "quote": "For outside stairs, low steps are preferable, with dimensions of 12 × 41 to 16 × 30 cm.",
+  "status": "exact",
+  "source": [
+   "text",
+   1290
+  ],
+  "items": [
+   "H-4351-07",
+   "H-ac20-08"
+  ]
+ },
+ {
+  "page": "page_0132",
+  "quote": "The 18-step rule is a 'should' regulation.",
+  "status": "exact",
+  "source": [
+   "text",
+   1286
+  ],
+  "items": [
+   "H-4351-08"
+  ]
+ },
+ {
+  "page": "page_0132",
+  "quote": "Stair width in public buildings is calculated according to the required evacuation time",
+  "status": "exact",
+  "source": [
+   "text",
+   1286
+  ],
+  "items": [
+   "H-4351-08",
+   "H-ac20-08",
+   "H-digital_hub-07",
+   "H-fantasy_hotel_1-03"
+  ]
+ },
+ {
+  "page": "page_0125",
+  "quote": "clear opening height of internal doors minimum 210 cm",
+  "status": "ws_only",
+  "source": [
+   "text",
+   1240
+  ],
+  "items": [
+   "H-4351-09",
+   "H-ac20-03",
+   "H-fzk_house-05",
+   "H-samuel_macalister_sample_house-06"
+  ]
+ },
+ {
+  "page": "page_0282",
+  "quote": "These are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height (if no escalator is available).",
+  "status": "exact",
+  "source": [
+   "text",
+   2355
+  ],
+  "items": [
+   "H-4351-10"
+  ]
+ },
+ {
+  "page": "page_0282",
+  "quote": "at least one washbasin per five WCs",
+  "status": "exact",
+  "source": [
+   "text",
+   2357
+  ],
+  "items": [
+   "H-4351-10"
+  ]
+ },
+ {
+  "page": "page_0282",
+  "quote": "If there are more than five employees, separate toilets must be provided for women and men",
+  "status": "exact",
+  "source": [
+   "text",
+   2355
+  ],
+  "items": [
+   "H-4351-10",
+   "H-fantasy_office_building_3-05"
+  ]
+ },
+ {
+  "page": "page_0034",
+  "quote": "Cars of lifts must have a min. clear width of 1.10 m and a clear depth of 1.40 m.",
+  "status": "exact",
+  "source": [
+   "text",
+   540
+  ],
+  "items": [
+   "H-4351-11",
+   "H-digital_hub-05",
+   "H-fantasy_office_building_3-09"
+  ]
+ },
+ {
+  "page": "page_0034",
+  "quote": "All levels of buildings designed in accordance with the principles of accessibility must be accessible without steps, i.e. using a lift or a ramp.",
+  "status": "exact",
+  "source": [
+   "text",
+   542
+  ],
+  "items": [
+   "H-4351-11",
+   "H-ac20-10",
+   "H-digital_hub-05",
+   "H-fantasy_office_building_1-06",
+   "H-fantasy_office_building_1-09"
+  ]
+ },
+ {
+  "page": "page_0278",
+  "quote": "1/10 of the floor area for rooms up to 600 m²",
+  "status": "exact",
+  "source": [
+   "text",
+   2321
+  ],
+  "items": [
+   "H-4351-12"
+  ]
+ },
+ {
+  "page": "page_0255",
+  "quote": "Ceiling height 2.75 m according to Vst regulation (enables the later installation of raised floor and deeper suspended ceilings).",
+  "status": "exact",
+  "source": [
+   "text",
+   2148
+  ],
+  "items": [
+   "H-ac20-01",
+   "H-ac20-07",
+   "H-digital_hub-02",
+   "H-fantasy_office_building_2-02",
+   "H-fantasy_office_building_3-02"
+  ]
+ },
+ {
+  "page": "page_0255",
+  "quote": "For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear.",
+  "status": "exact",
+  "source": [
+   "text",
+   2148
+  ],
+  "items": [
+   "H-ac20-01",
+   "H-ac20-07",
+   "H-fantasy_office_building_2-02"
+  ]
+ },
+ {
+  "page": "page_0022",
+  "quote": "Because revolving doors can cope with relatively little through traffic, the door leaves can be folded at peak times and pushed to the side.",
+  "status": "exact",
+  "source": [
+   "text",
+   173
+  ],
+  "items": [
+   "H-ac20-02"
+  ]
+ },
+ {
+  "page": "page_0127",
+  "quote": "Revolving door with additional emergency exits",
+  "status": "exact",
+  "source": [
+   "caption",
+   946
+  ],
+  "items": [
+   "H-ac20-02"
+  ]
+ },
+ {
+  "page": "page_0109",
+  "quote": "The total width of all visual connections to the outside must be at least 1/10 of the total width of all walls, according to workplace guidelines",
+  "status": "exact",
+  "source": [
+   "text",
+   1111
+  ],
+  "items": [
+   "H-ac20-04",
+   "H-fantasy_office_building_2-05"
+  ]
+ },
+ {
+  "page": "page_0109",
+  "quote": "Possible visual connection to the outside should be at eye level (window sill heights of 0.85 –1.25 m)",
+  "status": "exact",
+  "source": [
+   "text",
+   1111
+  ],
+  "items": [
+   "H-ac20-04",
+   "H-fantasy_office_building_2-05",
+   "H-fzk_house-15"
+  ]
+ },
+ {
+  "page": "page_0109",
+  "quote": "If the window serves as an escape route, it must have a clear opening of at least 0.9 × 1.2 m and a sill height of max. 1.2 m above floor level.",
+  "status": "exact",
+  "source": [
+   "text",
+   1108
+  ],
+  "items": [
+   "H-ac20-05",
+   "H-fantasy_hotel_1-04"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "A good ratio is one toilet unit per 50–80 workstations. Space requirement ~0.6–0.8 m² per workstation.",
+  "status": "exact",
+  "source": [
+   "text",
+   2108
+  ],
+  "items": [
+   "H-ac20-06",
+   "H-digital_hub-06",
+   "H-fantasy_office_building_1-08",
+   "H-fantasy_office_building_3-05"
+  ]
+ },
+ {
+  "page": "page_0255",
+  "quote": "Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs).",
+  "status": "exact",
+  "source": [
+   "text",
+   2148
+  ],
+  "items": [
+   "H-ac20-07"
+  ]
+ },
+ {
+  "page": "page_0252",
+  "quote": "The modular dimensions, which have proved successful in recent years, are 1.50 m for single-room offices and 1.35 m for office types based on the combi principle.",
+  "status": "exact",
+  "source": [
+   "text",
+   2129
+  ],
+  "items": [
+   "H-ac20-09"
+  ]
+ },
+ {
+  "page": "page_0252",
+  "quote": "This is the economical module dimension for single-room offices consisting mainly of double workstations.",
+  "status": "exact",
+  "source": [
+   "text",
+   2130
+  ],
+  "items": [
+   "H-ac20-09",
+   "H-fantasy_office_building_2-04"
+  ]
+ },
+ {
+  "page": "page_0252",
+  "quote": "Workstation depth 2.20 m (80 cm desk, 1 m movement area, 40 cm shelf behind). With 10 cm wall thickness, this gives 4.40 m clear room space.",
+  "status": "exact",
+  "source": [
+   "text",
+   2130
+  ],
+  "items": [
+   "H-ac20-09",
+   "H-fantasy_office_building_2-04"
+  ]
+ },
+ {
+  "page": "page_0252",
+  "quote": "The usual depth of buildings with central corridors is 12–13 m.",
+  "status": "exact",
+  "source": [
+   "text",
+   2130
+  ],
+  "items": [
+   "H-ac20-09"
+  ]
+ },
+ {
+  "page": "page_0253",
+  "quote": "Daylight can mostly be exploited into a room depth of about 7.00 m.",
+  "status": "exact",
+  "source": [
+   "text",
+   2135
+  ],
+  "items": [
+   "H-ac20-09",
+   "H-digital_hub-08",
+   "H-digital_hub-16",
+   "H-fantasy_office_building_1-03",
+   "H-fantasy_office_building_3-04"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "A conference area requires about 2.5 m^2 per seat (without subsidiary areas).",
+  "status": "exact",
+  "source": [
+   "text",
+   2103
+  ],
+  "items": [
+   "H-ac20-10",
+   "H-digital_hub-06",
+   "H-fantasy_office_building_1-05",
+   "H-fantasy_office_building_2-07",
+   "H-fantasy_office_building_3-07"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "Conference areas should be directly accessible from the entrance area.",
+  "status": "exact",
+  "source": [
+   "text",
+   2103
+  ],
+  "items": [
+   "H-ac20-10",
+   "H-fantasy_office_building_1-06"
+  ]
+ },
+ {
+  "page": "page_0404",
+  "quote": "The Garage (multi-storey car park) Regulations require a minimum width for parking spaces of 2.30 m.",
+  "status": "exact",
+  "source": [
+   "text",
+   3183
+  ],
+  "items": [
+   "H-digital_hub-01"
+  ]
+ },
+ {
+  "page": "page_0404",
+  "quote": "The Research Company for Roads and Traffic (FGSV), however, recommends a minimum width of 2.50 m for all publicly accessible parking spaces on account of the increasing size of cars.",
+  "status": "exact",
+  "source": [
+   "text",
+   3183
+  ],
+  "items": [
+   "H-digital_hub-01"
+  ]
+ },
+ {
+  "page": "page_0402",
+  "quote": "90° parking, access 5.50 m wide, parking space 2.50 m wide",
+  "status": "exact",
+  "source": [
+   "caption",
+   3206
+  ],
+  "items": [
+   "H-digital_hub-01",
+   "H-digital_hub-17",
+   "H-fantasy_hotel_1-09"
+  ]
+ },
+ {
+  "page": "page_0034",
+  "quote": "min. 1.50 m deep ... in front of therapy facilities (e.g. bath, couch), in front of wheelchair parking places, next to the long side of the vehicle of a wheelchair user in car parks",
+  "status": "ws_only",
+  "source": [
+   "text",
+   539
+  ],
+  "items": [
+   "H-digital_hub-01"
+  ]
+ },
+ {
+  "page": "page_0034",
+  "quote": "At least one toilet must be provided for wheelchair users in all sanitary facilities.",
+  "status": "exact",
+  "source": [
+   "text",
+   545
+  ],
+  "items": [
+   "H-digital_hub-03"
+  ]
+ },
+ {
+  "page": "page_0187",
+  "quote": "Minimum clear width of aisles in restaurants 0.80 m, doors 0.90 m",
+  "status": "exact",
+  "source": [
+   "text",
+   1648
+  ],
+  "items": [
+   "H-digital_hub-04"
+  ]
+ },
+ {
+  "page": "page_0187",
+  "quote": "The ceiling heights of dining areas with a floor area ≤50 m² = 2.50 m, > 50 m² = 2.75 m and >100 m² ≥3.00 m",
+  "status": "exact",
+  "source": [
+   "text",
+   1648
+  ],
+  "items": [
+   "H-digital_hub-04"
+  ]
+ },
+ {
+  "page": "page_0034",
+  "quote": "The movement area in front of the doors must be as large as the floor area of the car, but min. 1.50 m wide and 1.50 m deep",
+  "status": "exact",
+  "source": [
+   "text",
+   540
+  ],
+  "items": [
+   "H-digital_hub-05",
+   "H-digital_hub-11"
+  ]
+ },
+ {
+  "page": "page_0251",
+  "quote": "The experience with the open-plan layout led to the development of group offices with approx. 4–16 workstations",
+  "status": "exact",
+  "source": [
+   "text",
+   2121
+  ],
+  "items": [
+   "H-digital_hub-06",
+   "H-digital_hub-16"
+  ]
+ },
+ {
+  "page": "page_0132",
+  "quote": "landing length = \\( n \\) times length of stride + 1 depth of tread",
+  "status": "exact",
+  "source": [
+   "text",
+   1286
+  ],
+  "items": [
+   "H-digital_hub-07",
+   "H-digital_hub-24",
+   "H-fantasy_office_building_3-15"
+  ]
+ },
+ {
+  "page": "page_0198",
+  "quote": "Room sizes 4 × 4 m – 5 × 5 m, with bathroom and sometimes kitchenette",
+  "status": "exact",
+  "source": [
+   "text",
+   1711
+  ],
+  "items": [
+   "H-fantasy_hotel_1-01",
+   "H-fantasy_hotel_1-07"
+  ]
+ },
+ {
+  "page": "page_0198",
+  "quote": "In contrast to city hotels, motels are mostly single-storey, widely spread facilities",
+  "status": "exact",
+  "source": [
+   "text",
+   1712
+  ],
+  "items": [
+   "H-fantasy_hotel_1-01"
+  ]
+ },
+ {
+  "page": "page_0184",
+  "quote": "1 Star (Tourist): single room 8 m², double room 12 m² (minimum area for 75% of the hotel rooms, without bathroom), bed, wardrobe, seat, washbasin in the room",
+  "status": "exact",
+  "source": [
+   "text",
+   1631
+  ],
+  "items": [
+   "H-fantasy_hotel_1-06"
+  ]
+ },
+ {
+  "page": "page_0184",
+  "quote": "3 Stars (Comfort): as before, but single room 14 m², double room 18 m² (minimum area, see above), bathroom in room (for all rooms in the hotel)",
+  "status": "exact",
+  "source": [
+   "text",
+   1631
+  ],
+  "items": [
+   "H-fantasy_hotel_1-06",
+   "H-fantasy_hotel_1-07"
+  ]
+ },
+ {
+  "page": "page_0184",
+  "quote": "4 Stars (First Class): as before, but single room 16 m², double room 22 m² (minimum area, see above)",
+  "status": "exact",
+  "source": [
+   "text",
+   1631
+  ],
+  "items": [
+   "H-fantasy_hotel_1-06"
+  ]
+ },
+ {
+  "page": "page_0184",
+  "quote": "5 Stars (Luxury): as before, but single room 18 m², double room 26 m²",
+  "status": "exact",
+  "source": [
+   "text",
+   1631
+  ],
+  "items": [
+   "H-fantasy_hotel_1-06"
+  ]
+ },
+ {
+  "page": "page_0184",
+  "quote": "2 Stars (Standard): as before, but single room 12 m², double room 16 m² (minimum area for 75% of the hotel rooms, including bathroom and corridor), bathroom in room (for 70% of hotel rooms)",
+  "status": "exact",
+  "source": [
+   "text",
+   1631
+  ],
+  "items": [
+   "H-fantasy_hotel_1-07"
+  ]
+ },
+ {
+  "page": "page_0198",
+  "quote": "The access road normally leads to the registration (short-term parking), then to a car park or carport as near to the room as possible.",
+  "status": "exact",
+  "source": [
+   "text",
+   1712
+  ],
+  "items": [
+   "H-fantasy_hotel_1-09"
+  ]
+ },
+ {
+  "page": "page_0256",
+  "quote": "High-rise buildings are those intended for long-term human occupation whose upper-most floor on one side of the building is more than 22 m above ground level.",
+  "status": "exact",
+  "source": [
+   "text",
+   2151
+  ],
+  "items": [
+   "H-fantasy_office_building_1-02",
+   "H-fantasy_office_building_1-14",
+   "H-fantasy_office_building_3-02",
+   "H-fantasy_office_building_3-14"
+  ]
+ },
+ {
+  "page": "page_0258",
+  "quote": "High-rise buildings up to 60 m high: at least two emergency stairs must be available, which must be located opposite in two separate fire compartments. Their walking width must be at least 1.25 m.",
+  "status": "exact",
+  "source": [
+   "text",
+   2165
+  ],
+  "items": [
+   "H-fantasy_office_building_1-02"
+  ]
+ },
+ {
+  "page": "page_0251",
+  "quote": "The experience with the open-plan layout led to the development of group offices with approx. 4–16 workstations; each office is used by a single team or department.",
+  "status": "exact",
+  "source": [
+   "text",
+   2121
+  ],
+  "items": [
+   "H-fantasy_office_building_1-03",
+   "H-fantasy_office_building_3-03"
+  ]
+ },
+ {
+  "page": "page_0251",
+  "quote": "Large-scale office landscapes with 100 or more workstations are made possible by artificial lighting and ventilation",
+  "status": "exact",
+  "source": [
+   "text",
+   2120
+  ],
+  "items": [
+   "H-fantasy_office_building_1-03",
+   "H-fantasy_office_building_3-03"
+  ]
+ },
+ {
+  "page": "page_0248",
+  "quote": "There should be a free movement area of at least 1.5 m² at the workstation.",
+  "status": "exact",
+  "source": [
+   "text",
+   2097
+  ],
+  "items": [
+   "H-fantasy_office_building_1-04",
+   "H-fantasy_office_building_2-04",
+   "H-fantasy_office_building_3-04"
+  ]
+ },
+ {
+  "page": "page_0248",
+  "quote": "The desktop working area should be at least 120 × 80 cm (few documents, predominantly screen work; for specialist employees, at least 200 × 80 cm)",
+  "status": "exact",
+  "source": [
+   "text",
+   2097
+  ],
+  "items": [
+   "H-fantasy_office_building_1-04"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "store rooms and a pantry for catering (these subsidiary rooms require about 1/3 of the conference area)",
+  "status": "exact",
+  "source": [
+   "text",
+   2103
+  ],
+  "items": [
+   "H-fantasy_office_building_1-05"
+  ]
+ },
+ {
+  "page": "page_0282",
+  "quote": "Toilet facilities consist of a lobby with washbasins (at least one washbasin per five WCs) and a completely separate room with at least one WC (unless the facilities contain only one toilet and have no direct access to a work, social, changing, wash or sanitary room).",
+  "status": "exact",
+  "source": [
+   "text",
+   2357
+  ],
+  "items": [
+   "H-fantasy_office_building_1-07",
+   "H-fantasy_office_building_1-08"
+  ]
+ },
+ {
+  "page": "page_0282",
+  "quote": "If there are more than five employees, separate toilets must be provided for women and men and these should be available exclusively to employees.",
+  "status": "exact",
+  "source": [
+   "text",
+   2355
+  ],
+  "items": [
+   "H-fantasy_office_building_1-07"
+  ]
+ },
+ {
+  "page": "page_0282",
+  "quote": "These are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height",
+  "status": "exact",
+  "source": [
+   "text",
+   2355
+  ],
+  "items": [
+   "H-fantasy_office_building_1-07"
+  ]
+ },
+ {
+  "page": "page_0037",
+  "quote": "This requirement applies notably to cultural, educational, sport, leisure and health facilities, offices, administration buildings and courts",
+  "status": "exact",
+  "source": [
+   "text",
+   571
+  ],
+  "items": [
+   "H-fantasy_office_building_1-09"
+  ]
+ },
+ {
+  "page": "page_0255",
+  "quote": "Corridors and sanitary facilities are permitted to be 2.30 m high",
+  "status": "exact",
+  "source": [
+   "text",
+   2148
+  ],
+  "items": [
+   "H-fantasy_office_building_2-02",
+   "H-fantasy_office_building_3-02"
+  ]
+ },
+ {
+  "page": "page_0109",
+  "quote": "For workrooms more than 3.5 m high, the glass area of the window must be at least 30% of the outside wall area",
+  "status": "exact",
+  "source": [
+   "text",
+   1111
+  ],
+  "items": [
+   "H-fantasy_office_building_2-02"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "The total space requirement per workstation varies between 23 and 45 m^2, depending on organisational and status requirements.",
+  "status": "exact",
+  "source": [
+   "text",
+   2110
+  ],
+  "items": [
+   "H-fantasy_office_building_2-03"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "Tea kitchens should be as near to the workstations as possible and connected with communication zones. For every approx. 50–100 workplaces, one ~10 m² kitchen.",
+  "status": "exact",
+  "source": [
+   "text",
+   2107
+  ],
+  "items": [
+   "H-fantasy_office_building_2-06"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "A good ratio is one toilet unit per 50–80 workstations.",
+  "status": "exact",
+  "source": [
+   "text",
+   2108
+  ],
+  "items": [
+   "H-fantasy_office_building_2-06"
+  ]
+ },
+ {
+  "page": "page_0245",
+  "quote": "Single-room offices are suitable for independent or concentrated work, as a single-person room or for a few people in very small groups who need to exchange information constantly.",
+  "status": "exact",
+  "source": [
+   "text",
+   2080
+  ],
+  "items": [
+   "H-fantasy_office_building_3-03",
+   "H-fantasy_office_building_3-06"
+  ]
+ },
+ {
+  "page": "page_0244",
+  "quote": "the requirement for a mixed provision of single and group rooms",
+  "status": "exact",
+  "source": [
+   "text",
+   2078
+  ],
+  "items": [
+   "H-fantasy_office_building_3-03"
+  ]
+ },
+ {
+  "page": "page_0282",
+  "quote": "Toilet facilities consist of a lobby with washbasins (at least one washbasin per five WCs) and a completely separate room with at least one WC",
+  "status": "exact",
+  "source": [
+   "text",
+   2357
+  ],
+  "items": [
+   "H-fantasy_office_building_3-05"
+  ]
+ },
+ {
+  "page": "page_0252",
+  "quote": "Room widths of 3.80 m (~18 m^2 usable area) enable:",
+  "status": "exact",
+  "source": [
+   "text",
+   2128
+  ],
+  "items": [
+   "H-fantasy_office_building_3-06"
+  ]
+ },
+ {
+  "page": "page_0252",
+  "quote": "two computer workstations with a depth of 0.90 m, as recommended by accident insurance companies",
+  "status": "exact",
+  "source": [
+   "text",
+   2128
+  ],
+  "items": [
+   "H-fantasy_office_building_3-06"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "For every approx. 50–100 workplaces, one ~10 m² kitchen.",
+  "status": "exact",
+  "source": [
+   "text",
+   2107
+  ],
+  "items": [
+   "H-fantasy_office_building_3-07"
+  ]
+ },
+ {
+  "page": "page_0037",
+  "quote": "must be accessible through an entrance with a clear opening width of at least 0.90 m without steps.",
+  "status": "exact",
+  "source": [
+   "text",
+   572
+  ],
+  "items": [
+   "H-fantasy_office_building_3-08"
+  ]
+ },
+ {
+  "page": "page_0075",
+  "quote": "Floor areas are included in the calculation either completely (for rooms and parts of rooms with a clear ceiling height of at least 2 m), or a half (for rooms and parts of rooms with a clear ceiling height of at least 1 m and less than 2 m)",
+  "status": "exact",
+  "source": [
+   "text",
+   899
+  ],
+  "items": [
+   "H-fzk_house-02",
+   "H-fzk_house-11"
+  ]
+ },
+ {
+  "page": "page_0136",
+  "quote": "Spiral staircases are permissible from 190 cm in diameter as the sole connecting stairs inside houses with 80 cm usable walking width",
+  "status": "exact",
+  "source": [
+   "text",
+   1311
+  ],
+  "items": [
+   "H-fzk_house-04"
+  ]
+ },
+ {
+  "page": "page_0033",
+  "quote": "A depth and width of at least 1.50 m should be provided in every room for turning.",
+  "status": "exact",
+  "source": [
+   "text",
+   532
+  ],
+  "items": [
+   "H-fzk_house-07"
+  ]
+ },
+ {
+  "page": "page_0035",
+  "quote": "min. 1.20 m wide… along furniture which the wheelchair user approaches from the side, along the access side of a non-wheelchair user’s bed → 9, between walls within the dwelling",
+  "status": "ws_only",
+  "source": [
+   "text",
+   555
+  ],
+  "items": [
+   "H-fzk_house-07"
+  ]
+ },
+ {
+  "page": "page_0507",
+  "quote": "The minimum window width as a percentage, before finishings, should not be less than 65% of the room width.",
+  "status": "exact",
+  "source": [
+   "caption",
+   4124
+  ],
+  "items": [
+   "H-digital_hub-10",
+   "H-fantasy_hotel_1-10",
+   "H-fantasy_office_building_2-10",
+   "H-fzk_house-08"
+  ]
+ },
+ {
+  "page": "page_0075",
+  "quote": "but not subsidiary rooms (cellars, garages etc:), offices and rooms which do not comply with the building regulations",
+  "status": "exact",
+  "source": [
+   "text",
+   899
+  ],
+  "items": [
+   "H-fzk_house-11"
+  ]
+ },
+ {
+  "page": "page_0161",
+  "quote": "in the immediate vicinity of the entrance area (short distances for shopping, rubbish etc.)",
+  "status": "exact",
+  "source": [
+   "text",
+   1502
+  ],
+  "items": [
+   "H-fzk_house-13"
+  ]
+ },
+ {
+  "page": "page_0175",
+  "quote": "These rooms are best placed to the northeast, next to or easily accessible from the kitchen",
+  "status": "exact",
+  "source": [
+   "text",
+   1589
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-14",
+   "H-samuel_macalister_sample_house-09"
+  ]
+ },
+ {
+  "page": "page_0175",
+  "quote": "In detached houses, direct access should be provided to the garden (for drying laundry).",
+  "status": "exact",
+  "source": [
+   "text",
+   1589
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-09"
+  ]
+ },
+ {
+  "page": "page_0175",
+  "quote": "A worktop of 1.20 m width should be provided to deal with the washing.",
+  "status": "exact",
+  "source": [
+   "text",
+   1587
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-09"
+  ]
+ },
+ {
+  "page": "page_0172",
+  "quote": "A bathroom is defined as an independent room with bath/shower and toilet",
+  "status": "exact",
+  "source": [
+   "text",
+   1572
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-15",
+   "H-samuel_macalister_sample_house-10"
+  ]
+ },
+ {
+  "page": "page_0172",
+  "quote": "In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided.",
+  "status": "exact",
+  "source": [
+   "text",
+   1572
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-10"
+  ]
+ },
+ {
+  "page": "page_0167",
+  "quote": "with more than one open area, this can also include bedrooms, kitchens etc.",
+  "status": "exact",
+  "source": [
+   "text",
+   1540
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-12"
+  ]
+ },
+ {
+  "page": "page_0167",
+  "quote": "A = 7.0 m^2 balcony for 3–4 people",
+  "status": "exact",
+  "source": [
+   "caption",
+   1307
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-12"
+  ]
+ },
+ {
+  "page": "page_0412",
+  "quote": "Parking space size (2.50 × 5.00 m = 12.50 m²)",
+  "status": "exact",
+  "source": [
+   "text",
+   3224
+  ],
+  "items": [
+   "H-digital_hub-17",
+   "H-samuel_macalister_sample_house-14"
+  ]
+ },
+ {
+  "page": "page_0178",
+  "quote": "A reduction in the parking area is possible for private houses.",
+  "status": "exact",
+  "source": [
+   "text",
+   1603
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-14"
+  ]
+ },
+ {
+  "page": "page_0178",
+  "quote": "In addition to garages, roofed-over parking places (carports) represent a cheaper, more beneficial in terms of building physics",
+  "status": "exact",
+  "source": [
+   "text",
+   1601
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-14"
+  ]
+ },
+ {
+  "page": "page_0161",
+  "quote": "The location of the kitchen is ideally on the northeast or northwest",
+  "status": "exact",
+  "source": [
+   "text",
+   1502
+  ],
+  "items": [
+   "H-fzk_house-14"
+  ]
+ },
+ {
+  "page": "page_0169",
+  "quote": "These would normally be aligned to east or southeast (parents) or south to west (children) and separated from the living room in another part of the home.",
+  "status": "exact",
+  "source": [
+   "text",
+   1550
+  ],
+  "items": [
+   "H-duplex-18",
+   "H-fantasy_residential_building_1-11",
+   "H-fzk_house-14",
+   "H-fzk_house-19"
+  ]
+ },
+ {
+  "page": "page_0166",
+  "quote": "Dining areas are normally oriented to the south or west.",
+  "status": "exact",
+  "source": [
+   "text",
+   1533
+  ],
+  "items": [
+   "H-duplex-18",
+   "H-fantasy_residential_building_1-12",
+   "H-fzk_house-14"
+  ]
+ },
+ {
+  "page": "page_0172",
+  "quote": "The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3).",
+  "status": "exact",
+  "source": [
+   "text",
+   1572
+  ],
+  "items": [
+   "H-duplex-16",
+   "H-duplex-21",
+   "H-fantasy_residential_building_1-09",
+   "H-fzk_house-14",
+   "H-fzk_house-19"
+  ]
+ },
+ {
+  "page": "page_0109",
+  "quote": "For rooms with dimensions corresponding to those of residential rooms, the minimum height of the glass area is 1.3 m.",
+  "status": "exact",
+  "source": [
+   "text",
+   1111
+  ],
+  "items": [
+   "H-fantasy_hotel_1-10",
+   "H-fzk_house-15"
+  ]
+ },
+ {
+  "page": "page_0109",
+  "quote": "In order to optimise the energy balance, the criteria for workrooms can be applied.",
+  "status": "exact",
+  "source": [
+   "text",
+   1110
+  ],
+  "items": [
+   "H-fantasy_hotel_1-10",
+   "H-fzk_house-15"
+  ]
+ },
+ {
+  "page": "page_0486",
+  "quote": "Depending on the ratio of heat-transmitting area A to heated building volumes V_e (A/V_e ratio), the maximum permissible annual primary energy demand will be determined according to EnEV 2007, according to the envelope area process.",
+  "status": "exact",
+  "source": [
+   "text",
+   3734
+  ],
+  "items": [
+   "H-fzk_house-16"
+  ]
+ },
+ {
+  "page": "page_0161",
+  "quote": "Kitchens and kitchenettes without windows are generally undesirable and only permissible if effective ventilation is guaranteed.",
+  "status": "exact",
+  "source": [
+   "text",
+   1504
+  ],
+  "items": [
+   "H-duplex-16"
+  ]
+ },
+ {
+  "page": "page_0490",
+  "quote": "for this reason, party walls between flats or houses should always weigh at least 400 kg/m².",
+  "status": "exact",
+  "source": [
+   "text",
+   3776
+  ],
+  "items": [
+   "H-duplex-17"
+  ]
+ },
+ {
+  "page": "page_0491",
+  "quote": "The mass per unit area of the individual layers with plaster must be at least 150 kg/m^2, and the thickness of the separating joint must be at least 30 mm. With a thickness of the separating joint (layer spacing) of more than 50 mm, the mass of each skin can be 100 kg/m^2. The joint cavity is to be filled with gapless full-surface fibre insulating boards",
+  "status": "exact",
+  "source": [
+   "text",
+   3786
+  ],
+  "items": [
+   "H-duplex-17"
+  ]
+ },
+ {
+  "page": "page_0492",
+  "quote": "Noisy elements of services (water pipes, waste pipes, gas riser pipes, waste disposal units, lifts) may not be installed in the walls of rooms where quiet is required (living rooms, bedrooms).",
+  "status": "exact",
+  "source": [
+   "text",
+   3790
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-10"
+  ]
+ },
+ {
+  "page": "page_0493",
+  "quote": "Lifts should be installed in separate shafts (joints filled with >3 cm mineral fibre)",
+  "status": "exact",
+  "source": [
+   "text",
+   3810
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-10"
+  ]
+ },
+ {
+  "page": "page_0253",
+  "quote": "According to Rosenauer, 90% of all office buildings in the USA have a main axis E/W, because the deeply penetrating morning and evening sun is a disturbance.",
+  "status": "exact",
+  "source": [
+   "text",
+   2134
+  ],
+  "items": [
+   "H-ac20-11",
+   "H-fantasy_office_building_2-09"
+  ]
+ },
+ {
+  "page": "page_0253",
+  "quote": "Sun from the south can be shaded more easily with sun blinds.",
+  "status": "exact",
+  "source": [
+   "text",
+   2134
+  ],
+  "items": [
+   "H-ac20-11"
+  ]
+ },
+ {
+  "page": "page_0278",
+  "quote": "Multi-storey buildings with windows on one side should face northeast, and, with windows on both sides facing north and south, they should be oriented east–west.",
+  "status": "exact",
+  "source": [
+   "text",
+   2316
+  ],
+  "items": [
+   "H-ac20-11"
+  ]
+ },
+ {
+  "page": "page_0253",
+  "quote": "According to Joedicke (→ refs), the main axis in the N/S alignment is to ensure sunlight through all rooms.",
+  "status": "exact",
+  "source": [
+   "text",
+   2134
+  ],
+  "items": [
+   "H-ac20-11",
+   "H-fantasy_office_building_2-09"
+  ]
+ },
+ {
+  "page": "page_0253",
+  "quote": "North-facing rooms are acceptable only for layouts without a corridor.",
+  "status": "exact",
+  "source": [
+   "text",
+   2134
+  ],
+  "items": [
+   "H-ac20-11"
+  ]
+ },
+ {
+  "page": "page_0512",
+  "quote": "On north sides, direct sunshine can only be expected in the mornings in June and July and simple internal systems are sufficient. If the alignment is largely west or east, movable systems should shade the low sun.",
+  "status": "exact",
+  "source": [
+   "text",
+   3973
+  ],
+  "items": [
+   "H-ac20-11",
+   "H-fantasy_office_building_2-09"
+  ]
+ },
+ {
+  "page": "page_0512",
+  "quote": "South windows need effective shading above all in the early year and autumn, with low sun. In the high summer, slight roof overhangs are sufficient to avoid direct sunshine.",
+  "status": "exact",
+  "source": [
+   "text",
+   3969
+  ],
+  "items": [
+   "H-ac20-11",
+   "H-digital_hub-09"
+  ]
+ },
+ {
+  "page": "page_0495",
+  "quote": "Guideline values are 4 m³/person for speech and 10 m³/person for (concert) music. If the volume is too small, this allows too little reverberation.",
+  "status": "exact",
+  "source": [
+   "text",
+   3831
+  ],
+  "items": [
+   "H-ac20-12"
+  ]
+ },
+ {
+  "page": "page_0278",
+  "quote": "The distance of the working area from the window should be twice as long as the clear window height",
+  "status": "exact",
+  "source": [
+   "text",
+   2316
+  ],
+  "items": [
+   "H-digital_hub-08"
+  ]
+ },
+ {
+  "page": "page_0512",
+  "quote": "Projection A = tan shadow angle",
+  "status": "exact",
+  "source": [
+   "text",
+   3972
+  ],
+  "items": [
+   "H-digital_hub-09"
+  ]
+ },
+ {
+  "page": "page_0512",
+  "quote": "but min. projection A = (tan shadow angle",
+  "status": "exact",
+  "source": [
+   "text",
+   3972
+  ],
+  "items": [
+   "H-digital_hub-09"
+  ]
+ },
+ {
+  "page": "page_0512",
+  "quote": "21 June (summer solstice), midday \\( \\alpha' = 63^\\circ, \\alpha = 27^\\circ \\); 1 May and 31 July, midday \\( \\alpha' = 50^\\circ, \\alpha = 40^\\circ \\); 21 March and 21 September (equinoxes) midday \\( \\alpha' = 40^\\circ, \\alpha = 50^\\circ \\).",
+  "status": "exact",
+  "source": [
+   "text",
+   3972
+  ],
+  "items": [
+   "H-digital_hub-09"
+  ]
+ },
+ {
+  "page": "page_0157",
+  "quote": "the separation of areas inside the apartment into two 'room groups': the living areas (living room, kitchen and dining area) and the sleeping area (bedrooms and bathrooms)",
+  "status": "exact",
+  "source": [
+   "text",
+   1483
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-11"
+  ]
+ },
+ {
+  "page": "page_0157",
+  "quote": "All rooms can be accessed and used separately.",
+  "status": "exact",
+  "source": [
+   "text",
+   1479
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-11"
+  ]
+ },
+ {
+  "page": "page_0166",
+  "quote": "A direct connection to the kitchen (or pantry) is practical.",
+  "status": "exact",
+  "source": [
+   "text",
+   1533
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-12"
+  ]
+ },
+ {
+  "page": "page_0166",
+  "quote": "Dining areas should have access to the balcony or terrace if possible.",
+  "status": "exact",
+  "source": [
+   "text",
+   1533
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-12"
+  ]
+ },
+ {
+  "page": "page_0166",
+  "quote": "It should always offer space for at least 4 people.",
+  "status": "exact",
+  "source": [
+   "text",
+   1534
+  ],
+  "items": [
+   "H-fantasy_hotel_1-11",
+   "H-fantasy_residential_building_1-12",
+   "H-samuel_macalister_sample_house-15"
+  ]
+ },
+ {
+  "page": "page_0166",
+  "quote": "In order to be able to eat comfortably, a person needs a table area of approx. 60 × 40 cm",
+  "status": "exact",
+  "source": [
+   "text",
+   1532
+  ],
+  "items": [
+   "H-fantasy_hotel_1-11",
+   "H-samuel_macalister_sample_house-15"
+  ]
+ },
+ {
+  "page": "page_0166",
+  "quote": "The centre of the table should have a 20 cm strip for plates, pots and bowls.",
+  "status": "exact",
+  "source": [
+   "text",
+   1532
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-15"
+  ]
+ },
+ {
+  "page": "page_0166",
+  "quote": "A comfortable round dining table has a diameter of min. 0.90 m, though 1.10–1.25 m would be preferable.",
+  "status": "exact",
+  "source": [
+   "text",
+   1539
+  ],
+  "items": [
+   "H-fantasy_hotel_1-11"
+  ]
+ },
+ {
+  "page": "page_0159",
+  "quote": "The most important communal areas like the kitchen, WC and staircase should be directly accessible from the entrance hall.",
+  "status": "exact",
+  "source": [
+   "text",
+   1494
+  ],
+  "items": [
+   "H-duplex-19",
+   "H-fantasy_residential_building_1-13"
+  ]
+ },
+ {
+  "page": "page_0158",
+  "quote": "if the entrance is into a stair shaft, then this can provide wind protection",
+  "status": "exact",
+  "source": [
+   "text",
+   1491
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-13"
+  ]
+ },
+ {
+  "page": "page_0171",
+  "quote": "They serve to store (larger) items of clothing, linen, shoes and suitcases, and are normally situated in the bedroom.",
+  "status": "exact",
+  "source": [
+   "text",
+   1570
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-13"
+  ]
+ },
+ {
+  "page": "page_0171",
+  "quote": "Walk-in wardrobes also require appropriate ventilation",
+  "status": "exact",
+  "source": [
+   "text",
+   1567
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-13"
+  ]
+ },
+ {
+  "page": "page_0159",
+  "quote": "The entrance hall should be enclosed where the entrance leads directly to the open air with an inner door (wind lobby function).",
+  "status": "exact",
+  "source": [
+   "text",
+   1494
+  ],
+  "items": [
+   "H-fzk_house-17"
+  ]
+ },
+ {
+  "page": "page_0158",
+  "quote": "If weather conditions are unfavourable, a lobby is also recommended to prevent wind blowing through",
+  "status": "exact",
+  "source": [
+   "text",
+   1491
+  ],
+  "items": [
+   "H-fzk_house-17"
+  ]
+ },
+ {
+  "page": "page_0160",
+  "quote": "The examples assume a minimum corridor width of 1 m, which allows two people to pass.",
+  "status": "exact",
+  "source": [
+   "text",
+   1497
+  ],
+  "items": [
+   "H-fzk_house-18"
+  ]
+ },
+ {
+  "page": "page_0160",
+  "quote": "This width does not, however, permit the siting of cupboards, which would be better built-in",
+  "status": "exact",
+  "source": [
+   "text",
+   1497
+  ],
+  "items": [
+   "H-fzk_house-18"
+  ]
+ },
+ {
+  "page": "page_0174",
+  "quote": "storage space should therefore be provided within a flat of \\( \\geq 1 \\ \\mathrm{m}^2 \\) with a clear width of 75 cm",
+  "status": "exact",
+  "source": [
+   "text",
+   1584
+  ],
+  "items": [
+   "H-duplex-20",
+   "H-samuel_macalister_sample_house-16"
+  ]
+ },
+ {
+  "page": "page_0174",
+  "quote": "In larger flats, 2% of the floor area should be provided as storage space (split into many small areas is also acceptable).",
+  "status": "exact",
+  "source": [
+   "text",
+   1584
+  ],
+  "items": [
+   "H-duplex-20",
+   "H-samuel_macalister_sample_house-16"
+  ]
+ },
+ {
+  "page": "page_0174",
+  "quote": "It is practical to locate a part of this storage area near the kitchen.",
+  "status": "exact",
+  "source": [
+   "text",
+   1584
+  ],
+  "items": [
+   "H-duplex-20",
+   "H-fantasy_residential_building_1-14"
+  ]
+ },
+ {
+  "page": "page_0174",
+  "quote": "Doors to storerooms should open outward for reasons of space.",
+  "status": "exact",
+  "source": [
+   "text",
+   1581
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-16"
+  ]
+ },
+ {
+  "page": "page_0174",
+  "quote": "It is most practical when the larder is next to the kitchen.",
+  "status": "exact",
+  "source": [
+   "text",
+   1582
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-14"
+  ]
+ },
+ {
+  "page": "page_0157",
+  "quote": "Bathrooms with artificial lighting (or lit indirectly from other areas of the flat), kitchens, cupboard and storage areas can be placed here",
+  "status": "exact",
+  "source": [
+   "text",
+   1482
+  ],
+  "items": [
+   "H-duplex-21"
+  ]
+ },
+ {
+  "page": "page_0173",
+  "quote": "The basic bathroom categories are: (guest) WCs with WC and washbasin → 3 - 4, shower rooms with shower and basin → 5 - 6, bathrooms with bath, washbasin and WC → 7 - 8, full bathrooms with bath, shower, washbasin and WC → 10.",
+  "status": "exact",
+  "source": [
+   "text",
+   1578
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-15"
+  ]
+ },
+ {
+  "page": "page_0172",
+  "quote": "it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft",
+  "status": "exact",
+  "source": [
+   "text",
+   1572
+  ],
+  "items": [
+   "H-duplex-22"
+  ]
+ },
+ {
+  "page": "page_0177",
+  "quote": "for residential buildings in building classes 3–5, the building regulations require an easily accessible (communal) storeroom for prams, pushchairs and bicycles.",
+  "status": "exact",
+  "source": [
+   "text",
+   1595
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-16"
+  ]
+ },
+ {
+  "page": "page_0476",
+  "quote": "Waste can be stored temporarily inside buildings with more than two flats or a usable area of 400 m² (building classes 3–5)",
+  "status": "exact",
+  "source": [
+   "text",
+   3630
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-16"
+  ]
+ },
+ {
+  "page": "page_0177",
+  "quote": "it can be assumed that at least one vehicle per occupant (including children) has to be accommodated",
+  "status": "exact",
+  "source": [
+   "text",
+   1598
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-16"
+  ]
+ },
+ {
+  "page": "page_0177",
+  "quote": "The rooms should if possible be located at street level, be lockable and equipped with hooks and bicycle stands to secure the stored vehicles.",
+  "status": "exact",
+  "source": [
+   "text",
+   1597
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-16"
+  ]
+ },
+ {
+  "page": "page_0151",
+  "quote": "It has direct access from each storey to further private or semi-public open spaces (e.g. garden, terrace, inner courtyard or roof garden)",
+  "status": "exact",
+  "source": [
+   "text",
+   1437
+  ],
+  "items": [
+   "H-fzk_house-20"
+  ]
+ },
+ {
+  "page": "page_0037",
+  "quote": "Ramps may not have a slope of more than 6%, must be at least 1.20 m wide and have a fixed handrail with a safe grip on both sides.",
+  "status": "exact",
+  "source": [
+   "text",
+   572
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-17"
+  ]
+ },
+ {
+  "page": "page_0037",
+  "quote": "A landing is to be provided at the start and end of the ramp and also an intermediate landing every 6 m. The landings must have a length of at least 1.50 m.",
+  "status": "exact",
+  "source": [
+   "text",
+   572
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-17"
+  ]
+ },
+ {
+  "page": "page_0034",
+  "quote": "If ramps are longer than 6 m, an intermediate landing of min. 1.50 m length is required.",
+  "status": "exact",
+  "source": [
+   "text",
+   536
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-17"
+  ]
+ },
+ {
+  "page": "page_0034",
+  "quote": "The clear ramp width must be min. 1.20 m.",
+  "status": "exact",
+  "source": [
+   "text",
+   536
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-17"
+  ]
+ },
+ {
+  "page": "page_0037",
+  "quote": "Stairs must have handrails on both sides, which are to be continued past landings and window openings and past the last steps.",
+  "status": "exact",
+  "source": [
+   "text",
+   572
+  ],
+  "items": [
+   "H-4351-13"
+  ]
+ },
+ {
+  "page": "page_0034",
+  "quote": "The movement area next to the stairs going up and down must be min. 1.50 m wide; the tread of the first step is not to be included in the calculation of the movement area",
+  "status": "exact",
+  "source": [
+   "text",
+   543
+  ],
+  "items": [
+   "H-digital_hub-11"
+  ]
+ },
+ {
+  "page": "page_0142",
+  "quote": "minimum usable depth between shaft door wall and opposing wall, measured in the direction of the depth of the car, should equal the car depth",
+  "status": "exact",
+  "source": [
+   "text",
+   1348
+  ],
+  "items": [
+   "H-digital_hub-11",
+   "H-fantasy_office_building_3-09"
+  ]
+ },
+ {
+  "page": "page_0034",
+  "quote": "This area must not overlap with other traffic routes and movement areas.",
+  "status": "exact",
+  "source": [
+   "text",
+   540
+  ],
+  "items": [
+   "H-digital_hub-11",
+   "H-fantasy_office_building_3-09"
+  ]
+ },
+ {
+  "page": "page_0140",
+  "quote": "Provide sufficient space for waiting and queuing → p. 130 which must not infringe on stairs.",
+  "status": "exact",
+  "source": [
+   "text",
+   1335
+  ],
+  "items": [
+   "H-fantasy_office_building_3-09"
+  ]
+ },
+ {
+  "page": "page_0034",
+  "quote": "Corridors and routes longer than 15 m must have a passing place for two wheelchair users of at least 1.80 m width and depth.",
+  "status": "exact",
+  "source": [
+   "text",
+   547
+  ],
+  "items": [
+   "H-ac20-13",
+   "H-fantasy_office_building_3-10"
+  ]
+ },
+ {
+  "page": "page_0525",
+  "quote": "to sub-divide larger buildings into fire compartments of not more than 40 m.",
+  "status": "exact",
+  "source": [
+   "text",
+   4080
+  ],
+  "items": [
+   "H-ac20-14",
+   "H-digital_hub-12"
+  ]
+ },
+ {
+  "page": "page_0525",
+  "quote": "Fire compartment walls must be fireproof, structurally stable when exposed to fire and consist of non-combustible materials (F 90A).",
+  "status": "exact",
+  "source": [
+   "text",
+   4081
+  ],
+  "items": [
+   "H-ac20-14",
+   "H-digital_hub-12"
+  ]
+ },
+ {
+  "page": "page_0525",
+  "quote": "Openings in fire compartment walls are generally impermissible. They can be allowed through fire compartment walls within buildings and then have to be provided with fireproof self-closing doors (T 90 door or gate)",
+  "status": "exact",
+  "source": [
+   "text",
+   4081
+  ],
+  "items": [
+   "H-ac20-14",
+   "H-digital_hub-12"
+  ]
+ },
+ {
+  "page": "page_0037",
+  "quote": "In buildings with more than two flats, the flats on one floor must be accessible. In these flats, the living rooms and bedrooms, one toilet, one bathroom and the kitchen or kitchenette must be accessible with a wheelchair.",
+  "status": "exact",
+  "source": [
+   "text",
+   573
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-17"
+  ]
+ },
+ {
+  "page": "page_0035",
+  "quote": "The movement area to the right or left of the WC must be at least 95 cm wide and 70 cm deep. From one side of the WC towards the wall, or furniture, there must be a distance of min. 30 cm",
+  "status": "exact",
+  "source": [
+   "text",
+   552
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-17"
+  ]
+ },
+ {
+  "page": "page_0035",
+  "quote": "The bathroom is to be provided with a wheelchair-accessible shower.",
+  "status": "exact",
+  "source": [
+   "text",
+   552
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-17"
+  ]
+ },
+ {
+  "page": "page_0035",
+  "quote": "min. 1.50 m wide and min. 1.50 m deep... a turning place in every room (excepting small rooms, which the wheelchair user can use by moving backwards and forwards), the shower → ① + ④, in front of the WC and vanity unit",
+  "status": "ws_only",
+  "source": [
+   "text",
+   559
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-17"
+  ]
+ },
+ {
+  "page": "page_0132",
+  "quote": "stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21",
+  "status": "exact",
+  "source": [
+   "text",
+   1286
+  ],
+  "items": [
+   "H-fantasy_office_building_2-11"
+  ]
+ },
+ {
+  "page": "page_0133",
+  "quote": "All main staircases must be enclosed in a continuous stairwell, which is designed and arranged so that, including its access routes and exit to the open air, it can safely be used for escape.",
+  "status": "exact",
+  "source": [
+   "text",
+   1290
+  ],
+  "items": [
+   "H-digital_hub-13",
+   "H-fantasy_hotel_1-12"
+  ]
+ },
+ {
+  "page": "page_0036",
+  "quote": "For a living room with an eating area, the minimum floor area should be: in a flat for one person 22 m², for 2–4 people 24 m², for five people 26 m² and for six people 28 m²; minimum room width 3.75 m (1–2 person household).",
+  "status": "exact",
+  "source": [
+   "text",
+   564
+  ],
+  "items": [
+   "H-fzk_house-21"
+  ]
+ },
+ {
+  "page": "page_0047",
+  "quote": "The units of the modular system are the basic module M = 100 mm and the multi-modules 3 M = 300 mm, 6 M = 600 mm and 12 M = 1200 mm.",
+  "status": "exact",
+  "source": [
+   "text",
+   632
+  ],
+  "items": [
+   "H-fzk_house-22"
+  ]
+ },
+ {
+  "page": "page_0046",
+  "quote": "Structural dimensions or nominal dimensions (for construction types with joints and wall finishes) are derived from modular dimensions by deducting or adding the component for the joint or the finish thickness.",
+  "status": "exact",
+  "source": [
+   "text",
+   628
+  ],
+  "items": [
+   "H-fzk_house-22"
+  ]
+ },
+ {
+  "page": "page_0046",
+  "quote": "Example: modular dimension for the length of a brick = 25 cm; thickness of the vertical joint = 1 cm; nominal dimension for the length of the brick = 24 cm; modular dimension for the thickness of poured concrete walls = nominal dimension = 25 cm",
+  "status": "exact",
+  "source": [
+   "text",
+   628
+  ],
+  "items": [
+   "H-fzk_house-22"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "A cleaner’s room should be provided on every floor, as a store for cleaning equipment and ideally with water supply and bucket sink.",
+  "status": "exact",
+  "source": [
+   "text",
+   2104
+  ],
+  "items": [
+   "H-ac20-15",
+   "H-digital_hub-14"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "The caretaker should have a rest room, store and workshop in a central location.",
+  "status": "exact",
+  "source": [
+   "text",
+   2104
+  ],
+  "items": [
+   "H-ac20-15"
+  ]
+ },
+ {
+  "page": "page_0249",
+  "quote": "The rooms must be dry, so attic and cellar are inadvisable.",
+  "status": "exact",
+  "source": [
+   "text",
+   2100
+  ],
+  "items": [
+   "H-ac20-16"
+  ]
+ },
+ {
+  "page": "page_0249",
+  "quote": "ceiling clearance height 2.10 m (2 storeys of normal office space = 3 storeys of filing)",
+  "status": "exact",
+  "source": [
+   "text",
+   2100
+  ],
+  "items": [
+   "H-ac20-16"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "Archive rooms should be designed for an increased floor loading of 7.5–12.5 kN/m² (for mobile units)",
+  "status": "exact",
+  "source": [
+   "text",
+   2109
+  ],
+  "items": [
+   "H-ac20-16"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "Connection between public and working areas. The important functions are lobby, access control, information, visitor registration and waiting zone.",
+  "status": "exact",
+  "source": [
+   "text",
+   2111
+  ],
+  "items": [
+   "H-fantasy_office_building_1-10"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "Important area for the company’s corporate identity – the first impression is decisive!",
+  "status": "exact",
+  "source": [
+   "text",
+   2111
+  ],
+  "items": [
+   "H-fantasy_office_building_1-10"
+  ]
+ },
+ {
+  "page": "page_0250",
+  "quote": "Location near the reception and outside the access control allows outside visitors in.",
+  "status": "exact",
+  "source": [
+   "text",
+   2107
+  ],
+  "items": [
+   "H-digital_hub-15"
+  ]
+ },
+ {
+  "page": "page_0187",
+  "quote": "Kitchen, side rooms, toilets and sanitary installations should be grouped around the dining room",
+  "status": "exact",
+  "source": [
+   "text",
+   1648
+  ],
+  "items": [
+   "H-digital_hub-15"
+  ]
+ },
+ {
+  "page": "page_0192",
+  "quote": "Servery for restaurant kitchens with counter or self-service, ideally situated between the preparation area and the dining room.",
+  "status": "exact",
+  "source": [
+   "text",
+   1682
+  ],
+  "items": [
+   "H-digital_hub-15"
+  ]
+ },
+ {
+  "page": "page_0245",
+  "quote": "Group rooms (smaller open-plan) are suitable for work groups with constant information exchange.",
+  "status": "exact",
+  "source": [
+   "text",
+   2082
+  ],
+  "items": [
+   "H-digital_hub-16"
+  ]
+ },
+ {
+  "page": "page_0245",
+  "quote": "via the size of the workplace surroundings (max. 7.5 m to a window)",
+  "status": "exact",
+  "source": [
+   "text",
+   2082
+  ],
+  "items": [
+   "H-digital_hub-16"
+  ]
+ },
+ {
+  "page": "page_0253",
+  "quote": "For combined use units of less than 400 m², the corridors are not subject to the requirements for escape routes.",
+  "status": "exact",
+  "source": [
+   "text",
+   2136
+  ],
+  "items": [
+   "H-fantasy_office_building_3-11"
+  ]
+ },
+ {
+  "page": "page_0183",
+  "quote": "The essential areas are: hotel lobby and reception as the central, well-arranged and prestigious nerve centre between the various parts of the operation, catering area in connection with the hotel lobby",
+  "status": "exact",
+  "source": [
+   "text",
+   1626
+  ],
+  "items": [
+   "H-fantasy_hotel_1-13"
+  ]
+ },
+ {
+  "page": "page_0184",
+  "quote": "reception as a separate area",
+  "status": "exact",
+  "source": [
+   "text",
+   1631
+  ],
+  "items": [
+   "H-fantasy_hotel_1-13"
+  ]
+ },
+ {
+  "page": "page_0087",
+  "quote": "Cavity walls consist of an inner load-bearing wall and an outer non-load-bearing weather protection facing (minimum thickness 90 mm). They can be built with an air gap, with air gap and thermal insulation, with cavity-filling insulation and with intermediate plaster layer",
+  "status": "exact",
+  "source": [
+   "text",
+   968
+  ],
+  "items": [
+   "H-4351-14",
+   "H-duplex-23"
+  ]
+ },
+ {
+  "page": "page_0087",
+  "quote": "The width of the air gap should be min. 40 mm (max. 150 mm).",
+  "status": "exact",
+  "source": [
+   "text",
+   968
+  ],
+  "items": [
+   "H-4351-14",
+   "H-duplex-23"
+  ]
+ },
+ {
+  "page": "page_0485",
+  "quote": "The rear ventilation of the skin removes the vapour barrier effect of the relatively vapour-sealed outer layers. The width of the air gap with panel-like external skin amounts to min. 20 mm, or for brickwork outer skin min. 40 mm.",
+  "status": "exact",
+  "source": [
+   "text",
+   3719
+  ],
+  "items": [
+   "H-4351-14",
+   "H-digital_hub-18",
+   "H-duplex-23"
+  ]
+ },
+ {
+  "page": "page_0087",
+  "quote": "Single-leaf external walls → ① – ② are unproblematic regarding building physics, but on account of the high thermal insulation requirements can only be built with materials with high thermal insulation value (e.g. aerated blocks) and special thermally insulated mortars and plasters.",
+  "status": "exact",
+  "source": [
+   "text",
+   967
+  ],
+  "items": [
+   "H-fzk_house-23"
+  ]
+ },
+ {
+  "page": "page_0483",
+  "quote": "Thermal resistance R, unit m^2K/W [m^2hK/kcal] is a property of a layer: R = d/λ (d = layer thickness in m).",
+  "status": "exact",
+  "source": [
+   "text",
+   3691
+  ],
+  "items": [
+   "H-fzk_house-23",
+   "H-fzk_house-24"
+  ]
+ },
+ {
+  "page": "page_0483",
+  "quote": "Overall resistance 1/U, unit m^2K/W [m^2hK/kcal], is the sum of the resistances of a building element to the transmission of heat (thermal resistances and surface resistances): 1/U = R_{si} + R + R_{se}",
+  "status": "exact",
+  "source": [
+   "text",
+   3695
+  ],
+  "items": [
+   "H-fzk_house-23",
+   "H-fzk_house-24"
+  ]
+ },
+ {
+  "page": "page_0484",
+  "quote": "The surface air film cannot exceed a certain proportion X of the overall resistance 1/U",
+  "status": "exact",
+  "source": [
+   "text",
+   3713
+  ],
+  "items": [
+   "H-fzk_house-24"
+  ]
+ },
+ {
+  "page": "page_0090",
+  "quote": "Solid concrete walls can be used as external walls only with an additional thermal insulation layer. This can be as an external thermal insulation system → ① or as a multi-leaf construction (analogous to p. 75) with core insulation and possibly back-ventilation.",
+  "status": "exact",
+  "source": [
+   "text",
+   989
+  ],
+  "items": [
+   "H-digital_hub-19",
+   "H-fantasy_office_building_1-11",
+   "H-fantasy_residential_building_1-18"
+  ]
+ },
+ {
+  "page": "page_0090",
+  "quote": "Two-layer reinforced concrete walls → ① with core insulation are used particularly as large-format external wall elements.",
+  "status": "exact",
+  "source": [
+   "text",
+   989
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-18"
+  ]
+ },
+ {
+  "page": "page_0087",
+  "quote": "Single-leaf walls with additional insulation layers → ③ – ⑥ (external, internal insulation → Building physics, p. 471 ff.) are therefore a common alternative.",
+  "status": "exact",
+  "source": [
+   "text",
+   972
+  ],
+  "items": [
+   "H-digital_hub-18",
+   "H-fantasy_office_building_1-11"
+  ]
+ },
+ {
+  "page": "page_0485",
+  "quote": "On the external side of the insulating layers, there is a risk of cracking due to heat build-up and substrate with poor shear strength, so mineral render reinforced with mesh is used here (or plastic modified render).",
+  "status": "exact",
+  "source": [
+   "text",
+   3722
+  ],
+  "items": [
+   "H-fantasy_office_building_1-11"
+  ]
+ },
+ {
+  "page": "page_0485",
+  "quote": "Thermal bridges are parts of building elements with low thermal insulation compared with surrounding areas.",
+  "status": "exact",
+  "source": [
+   "text",
+   3723
+  ],
+  "items": [
+   "H-digital_hub-19"
+  ]
+ },
+ {
+  "page": "page_0486",
+  "quote": "Good thermal insulation includes not only highly insulated building components, but also the appropriate connections between the building elements.",
+  "status": "exact",
+  "source": [
+   "text",
+   3738
+  ],
+  "items": [
+   "H-digital_hub-19"
+  ]
+ },
+ {
+  "page": "page_0486",
+  "quote": "Thus it should be borne in mind that this thermal bridging effect can have considerably worse consequences with highly insulated elements than with building elements with less thermal insulation.",
+  "status": "exact",
+  "source": [
+   "text",
+   3738
+  ],
+  "items": [
+   "H-digital_hub-19"
+  ]
+ },
+ {
+  "page": "page_0103",
+  "quote": "Flat roofs are defined as roofs with a slope of up to 5%. Flat roofs without slope are possible as a special construction in exceptional cases. Flat roofs should generally have a minimum slope of 2%.",
+  "status": "exact",
+  "source": [
+   "text",
+   1068
+  ],
+  "items": [
+   "H-duplex-24",
+   "H-fantasy_office_building_2-12",
+   "H-fantasy_office_building_3-12",
+   "H-samuel_macalister_sample_house-18"
+  ]
+ },
+ {
+  "page": "page_0103",
+  "quote": "it is recommended to construct flat roofs with a minimum slope of 5% (3°).",
+  "status": "exact",
+  "source": [
+   "text",
+   1068
+  ],
+  "items": [
+   "H-fantasy_office_building_3-12",
+   "H-samuel_macalister_sample_house-18"
+  ]
+ },
+ {
+  "page": "page_0104",
+  "quote": "Non-ventilated, single-layer construction ('warm roof'), in which the load-bearing structure, vapour barrier, thermal insulation and waterproofing (including intermediate layers) form a composite element.",
+  "status": "exact",
+  "source": [
+   "text",
+   1082
+  ],
+  "items": [
+   "H-duplex-24",
+   "H-fantasy_office_building_3-12",
+   "H-samuel_macalister_sample_house-18"
+  ]
+ },
+ {
+  "page": "page_0104",
+  "quote": "or an 'upside-down roof' → 8 (waterproofing and vapour barrier are applied as one layer directly onto the load-bearing construction and the closed-cell insulation is loosely laid on top and secured with a gravel layer)",
+  "status": "exact",
+  "source": [
+   "text",
+   1081
+  ],
+  "items": [
+   "H-fantasy_office_building_2-12"
+  ]
+ },
+ {
+  "page": "page_0106",
+  "quote": "The pitch of gabled roofs should not exceed 25° and flat roofs should have a maximum slope of 2–3%.",
+  "status": "exact",
+  "source": [
+   "text",
+   1098
+  ],
+  "items": [
+   "H-duplex-24",
+   "H-fantasy_office_building_2-12"
+  ]
+ },
+ {
+  "page": "page_0485",
+  "quote": "More recent building ('warm roof', 'warm façade') features an external vapour barrier layer (e.g. waterproofing) and, on account of this, an additional internal vapour barrier.",
+  "status": "exact",
+  "source": [
+   "text",
+   3721
+  ],
+  "items": [
+   "H-duplex-24"
+  ]
+ },
+ {
+  "page": "page_0484",
+  "quote": "If there is a vapour barrier on the outside, then the entire vapour pressure gradient occurs there and the result is condensation → 8; if this is to be avoided, then a vapour barrier must be installed on the warm side",
+  "status": "exact",
+  "source": [
+   "text",
+   3707
+  ],
+  "items": [
+   "H-duplex-24",
+   "H-samuel_macalister_sample_house-18"
+  ]
+ },
+ {
+  "page": "page_0102",
+  "quote": "The vapour barrier is under the thermal insulation to prevent condensation inside the roof construction.",
+  "status": "exact",
+  "source": [
+   "text",
+   1061
+  ],
+  "items": [
+   "H-fantasy_office_building_2-13",
+   "H-samuel_macalister_sample_house-18"
+  ]
+ },
+ {
+  "page": "page_0102",
+  "quote": "Thermal insulation is generally in the form of mineral wool roll material and is installed between and under the rafters or as prefabricated insulation elements, sometimes with interlocking, vapour barrier on the room side and battens fixed to the rafters",
+  "status": "exact",
+  "source": [
+   "text",
+   1056
+  ],
+  "items": [
+   "H-fzk_house-25"
+  ]
+ },
+ {
+  "page": "page_0102",
+  "quote": "Ventilated roofs require additional rafter depth and work properly only with a correctly installed vapour barrier and functioning roof ventilation. Therefore the building industry commonly prefers unventilated roof construction.",
+  "status": "exact",
+  "source": [
+   "text",
+   1059
+  ],
+  "items": [
+   "H-fantasy_office_building_2-13",
+   "H-fzk_house-25"
+  ]
+ },
+ {
+  "page": "page_0102",
+  "quote": "ventilated roof construction has an additional ventilation gap between underlay and thermal insulation, to remove spray and condensate.",
+  "status": "exact",
+  "source": [
+   "text",
+   1057
+  ],
+  "items": [
+   "H-fantasy_office_building_2-13"
+  ]
+ },
+ {
+  "page": "page_0476",
+  "quote": "buildings with more than two flats or a usable area of 400 m² (building classes 3–5)",
+  "status": "exact",
+  "source": [
+   "text",
+   3630
+  ],
+  "items": [
+   "H-ac20-17",
+   "H-duplex-25",
+   "H-fantasy_residential_building_1-19",
+   "H-samuel_macalister_sample_house-19"
+  ]
+ },
+ {
+  "page": "page_0526",
+  "quote": "Load-bearing and bracing walls and columns must be constructed fireproof in buildings of class 5, highly fire-retarding in buildings of class 4 and fire-retarding in buildings of classes 1 and 2",
+  "status": "exact",
+  "source": [
+   "text",
+   4086
+  ],
+  "items": [
+   "H-duplex-25",
+   "H-samuel_macalister_sample_house-19"
+  ]
+ },
+ {
+  "page": "page_0526",
+  "quote": "This does not apply to the uppermost storeys of roof spaces without occupied rooms above them and balconies.",
+  "status": "exact",
+  "source": [
+   "text",
+   4086
+  ],
+  "items": [
+   "H-duplex-25"
+  ]
+ },
+ {
+  "page": "page_0526",
+  "quote": "The fire resistance duration of separating walls between residential or commercial units (or units and rooms used otherwise) must correspond to the quality of the load-bearing components of the storey. These must extend to the structural slab (in roof spaces up to the roof cladding).",
+  "status": "exact",
+  "source": [
+   "text",
+   4087
+  ],
+  "items": [
+   "H-duplex-25",
+   "H-fantasy_residential_building_1-19"
+  ]
+ },
+ {
+  "page": "page_0526",
+  "quote": "Non-load-bearing external walls and non-load-bearing parts of load-bearing external walls are (except for buildings of building classes 1–3) to be constructed of non-combustible (at least fire-retarding) materials.",
+  "status": "exact",
+  "source": [
+   "text",
+   4084
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-19"
+  ]
+ },
+ {
+  "page": "page_0526",
+  "quote": "External wall claddings, including insulation and support construction, have to be made of flame-resistant materials.",
+  "status": "exact",
+  "source": [
+   "text",
+   4084
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-19"
+  ]
+ },
+ {
+  "page": "page_0526",
+  "quote": "For buildings of classes 1 and 2, external wall claddings of normally flammable materials are permissible, if the spread of fire to neighbouring buildings is effectively prevented.",
+  "status": "exact",
+  "source": [
+   "text",
+   4084
+  ],
+  "items": [
+   "H-samuel_macalister_sample_house-19"
+  ]
+ },
+ {
+  "page": "page_0526",
+  "quote": "In cellars, they have to be constructed fireproof and, in buildings of classes 1 and 2, fire-retarding.",
+  "status": "exact",
+  "source": [
+   "text",
+   4086
+  ],
+  "items": [
+   "H-ac20-17"
+  ]
+ },
+ {
+  "page": "page_0527",
+  "quote": "Ceilings must be fireproof, or at least fire-retarding, and slabs over cellars must be fireproof.",
+  "status": "exact",
+  "source": [
+   "text",
+   4093
+  ],
+  "items": [
+   "H-ac20-17"
+  ]
+ },
+ {
+  "page": "page_0527",
+  "quote": "Exceptions apply for buildings of classes 1 and 2, slabs and ceilings above roof spaces, and balconies, slabs and ceilings within residential dwellings.",
+  "status": "exact",
+  "source": [
+   "text",
+   4097
+  ],
+  "items": [
+   "H-ac20-17"
+  ]
+ },
+ {
+  "page": "page_0527",
+  "quote": "Solid slabs (e.g. reinforced concrete slabs → ①, hollow pot floors) have sufficient fire resistance under certain conditions without additional protection measures.",
+  "status": "exact",
+  "source": [
+   "text",
+   4094
+  ],
+  "items": [
+   "H-ac20-17"
+  ]
+ },
+ {
+  "page": "page_0087",
+  "quote": "are unproblematic regarding building physics, but on account of the high thermal insulation requirements can only be built with materials with high thermal insulation value (e.g. aerated blocks) and special thermally insulated mortars and plasters.",
+  "status": "exact",
+  "source": [
+   "text",
+   967
+  ],
+  "items": [
+   "H-ac20-18",
+   "H-digital_hub-20",
+   "H-fzk_house-26"
+  ]
+ },
+ {
+  "page": "page_0090",
+  "quote": "Solid concrete walls can be used as external walls only with an additional thermal insulation layer.",
+  "status": "exact",
+  "source": [
+   "text",
+   989
+  ],
+  "items": [
+   "H-digital_hub-20"
+  ]
+ },
+ {
+  "page": "page_0528",
+  "quote": "A typical area of application for G-glazing is the openings for lighting installed in corridor walls, which have to be constructed fire-retarding (F 30) as the side walls of escape routes.",
+  "status": "exact",
+  "source": [
+   "text",
+   4111
+  ],
+  "items": [
+   "H-fantasy_office_building_3-13"
+  ]
+ },
+ {
+  "page": "page_0526",
+  "quote": "Non-load-bearing separating walls can be constructed as stud partitions of various qualities",
+  "status": "exact",
+  "source": [
+   "text",
+   4085
+  ],
+  "items": [
+   "H-fantasy_office_building_3-13"
+  ]
+ },
+ {
+  "page": "page_0148",
+  "quote": "The area of a house or flat includes the floor area of all rooms which belong exclusively to the house",
+  "status": "exact",
+  "source": [
+   "text",
+   1405
+  ],
+  "items": [
+   "H-duplex-26",
+   "H-fzk_house-27"
+  ]
+ },
+ {
+  "page": "page_0148",
+  "quote": "The floor area of a room is determined from the clearance space between building components and starts from the face of the cladding of the building component",
+  "status": "exact",
+  "source": [
+   "text",
+   1406
+  ],
+  "items": [
+   "H-duplex-26",
+   "H-fzk_house-27"
+  ]
+ },
+ {
+  "page": "page_0075",
+  "quote": "Floor areas are included in the calculation either completely (for rooms and parts of rooms with a clear ceiling height of at least 2 m)",
+  "status": "exact",
+  "source": [
+   "text",
+   899
+  ],
+  "items": [
+   "H-duplex-26"
+  ]
+ },
+ {
+  "page": "page_0075",
+  "quote": "The gross floor area is the sum of the plan area of all levels (without usable roof areas), measured between the external dimensions of the surrounding building elements at floor height.",
+  "status": "exact",
+  "source": [
+   "text",
+   902
+  ],
+  "items": [
+   "H-fzk_house-28"
+  ]
+ },
+ {
+  "page": "page_0075",
+  "quote": "The constructional floor area is the sum of the plan area of all surrounding building elements (walls, columns, pillars, chimneys, non-accessible shafts, door openings, niches, apertures) measured between the external dimensions at floor height.",
+  "status": "exact",
+  "source": [
+   "text",
+   902
+  ],
+  "items": [
+   "H-fzk_house-28"
+  ]
+ },
+ {
+  "page": "page_0075",
+  "quote": "The net floor area is the usable floor area between the building elements (without door and window openings, cut-outs and niches) measured at floor level.",
+  "status": "exact",
+  "source": [
+   "text",
+   902
+  ],
+  "items": [
+   "H-fzk_house-28"
+  ]
+ },
+ {
+  "page": "page_0076",
+  "quote": "The depth of setback areas differs in the various state building regulations (LBO)). According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas). In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient.",
+  "status": "exact",
+  "source": [
+   "text",
+   903
+  ],
+  "items": [
+   "H-fantasy_office_building_1-12",
+   "H-fantasy_residential_building_1-20",
+   "H-fzk_house-29"
+  ]
+ },
+ {
+  "page": "page_0076",
+  "quote": "The depth of the setback area is measured according to wall height → ④ – ⑥. This is measured at right angles to the wall. Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering → ④. The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height → ⑤.",
+  "status": "exact",
+  "source": [
+   "text",
+   903
+  ],
+  "items": [
+   "H-fantasy_office_building_1-12",
+   "H-fantasy_residential_building_1-20",
+   "H-fzk_house-29"
+  ]
+ },
+ {
+  "page": "page_0076",
+  "quote": "Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they: – take up altogether less than one third of the width of the outside wall – project by a max. 1.50 m in front of the outside wall – stay at least 2 m distant from the opposing plot boundary",
+  "status": "ws_only",
+  "source": [
+   "text",
+   903
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-20",
+   "H-fzk_house-29"
+  ]
+ },
+ {
+  "page": "page_0076",
+  "quote": "They may also lie on public traffic, green and water areas, but only to their centre.",
+  "status": "exact",
+  "source": [
+   "text",
+   903
+  ],
+  "items": [
+   "H-fantasy_office_building_1-13",
+   "H-fzk_house-29"
+  ]
+ },
+ {
+  "page": "page_0075",
+  "quote": "the plot coverage ratio determines the permissible ratio of built area on the plot (plan area of building including garages, parking places and their access, subsidiary areas... and underground facilities beneath the plot)",
+  "status": "exact",
+  "source": [
+   "text",
+   898
+  ],
+  "items": [
+   "H-ac20-20",
+   "H-fzk_house-29"
+  ]
+ },
+ {
+  "page": "page_0075",
+  "quote": "the floor-area ratio (determines the permissible ratio of storey area (external dimensions of all full floors, without subsidiary areas..., balconies, loggias, terraces and structures which are permissible inside setback areas) to the plot area.",
+  "status": "exact",
+  "source": [
+   "text",
+   898
+  ],
+  "items": [
+   "H-ac20-20",
+   "H-fzk_house-29"
+  ]
+ },
+ {
+  "page": "page_0154",
+  "quote": "There is access to only one flat on each floor. This is relatively uneconomic due to the high proportion of the total floor area taken up for access, but can often give the feeling of living in a 'stacked terrace'. The flats are also marketed as town villas. There is a general limitation to four floors without a lift.",
+  "status": "exact",
+  "source": [
+   "text",
+   1456
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-21"
+  ]
+ },
+ {
+  "page": "page_0154",
+  "quote": "Three flats per floor offers a favourable combination of residential quality and value for money.",
+  "status": "exact",
+  "source": [
+   "text",
+   1454
+  ],
+  "items": [
+   "H-fantasy_residential_building_1-21"
+  ]
+ },
+ {
+  "page": "page_0156",
+  "quote": "Building in a row restricts the possibilities for direct lighting to two façades so that, with economic building depths of up to 12 m and widths between 4 and 8 m, the existence of a badly lit or dark middle zone containing the stairs, subsidiary rooms and often also the dining area becomes unavoidable.",
+  "status": "exact",
+  "source": [
+   "text",
+   1470
+  ],
+  "items": [
+   "H-duplex-27"
+  ]
+ },
+ {
+  "page": "page_0158",
+  "quote": "Entrance recesses should be at least 1.25 m (better 1.50 m) wide and approx. 1.00 m deep, so that two people can wait comfortably and protected in front of the door",
+  "status": "exact",
+  "source": [
+   "text",
+   1489
+  ],
+  "items": [
+   "H-duplex-28"
+  ]
+ },
+ {
+  "page": "page_0161",
+  "quote": "According to the building regulations, every house or flat must have at least one kitchen or kitchenette for cooking.",
+  "status": "exact",
+  "source": [
+   "text",
+   1506
+  ],
+  "items": [
+   "H-fzk_house-30"
+  ]
+ },
+ {
+  "page": "page_0174",
+  "quote": "The building regulations require that every flat or house be provided with a sufficiently large storeroom.",
+  "status": "exact",
+  "source": [
+   "text",
+   1583
+  ],
+  "items": [
+   "H-fzk_house-30"
+  ]
+ },
+ {
+  "page": "page_0076",
+  "quote": "Setback areas are the spaces between buildings and their plot boundaries.",
+  "status": "exact",
+  "source": [
+   "text",
+   903
+  ],
+  "items": [
+   "H-fantasy_office_building_1-13"
+  ]
+ },
+ {
+  "page": "page_0076",
+  "quote": "According to the model building regulations (MBO), it is 0.4 × H, but at least 3 m (0.2 × H, min. 3 m for commercial and industrial areas).",
+  "status": "exact",
+  "source": [
+   "text",
+   903
+  ],
+  "items": [
+   "H-ac20-19",
+   "H-fantasy_office_building_1-13"
+  ]
+ },
+ {
+  "page": "page_0076",
+  "quote": "In front of the outside walls of building classes 1 and 2 with not more than three overground storeys, 3 m depth is also sufficient.",
+  "status": "exact",
+  "source": [
+   "text",
+   903
+  ],
+  "items": [
+   "H-fantasy_office_building_1-13"
+  ]
+ },
+ {
+  "page": "page_0076",
+  "quote": "Wall height means the dimension from ground level to upper extent of the wall or to the intersection of the wall with the roof covering",
+  "status": "exact",
+  "source": [
+   "text",
+   903
+  ],
+  "items": [
+   "H-ac20-19",
+   "H-fantasy_office_building_1-13"
+  ]
+ },
+ {
+  "page": "page_0076",
+  "quote": "Setback areas must be on the plot itself",
+  "status": "exact",
+  "source": [
+   "text",
+   903
+  ],
+  "items": [
+   "H-fantasy_office_building_1-13"
+  ]
+ },
+ {
+  "page": "page_0076",
+  "quote": "The height of roofs with a pitch of ≤70° is included to one third, ≥70° fully with the wall height",
+  "status": "exact",
+  "source": [
+   "text",
+   903
+  ],
+  "items": [
+   "H-ac20-19"
+  ]
+ },
+ {
+  "page": "page_0075",
+  "quote": "The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.).",
+  "status": "exact",
+  "source": [
+   "text",
+   902
+  ],
+  "items": [
+   "H-digital_hub-21"
+  ]
+ },
+ {
+  "page": "page_0075",
+  "quote": "The following do not belong to the letting area: stairs, lifts, emergency exits, escape balconies, services rooms, shafts, protection rooms, areas of columns, pillars and separate walls, areas with a clear ceiling height of 1.50 m or less.",
+  "status": "exact",
+  "source": [
+   "text",
+   900
+  ],
+  "items": [
+   "H-digital_hub-21"
+  ]
+ },
+ {
+  "page": "page_0075",
+  "quote": "2. Areas with communal right of use, individually listed as: rooms for communal use (WCs/bathrooms, staff rooms, etc.) and communal traffic areas (entrance halls, corridors, etc.).",
+  "status": "exact",
+  "source": [
+   "text",
+   900
+  ],
+  "items": [
+   "H-digital_hub-21"
+  ]
+ },
+ {
+  "page": "page_0258",
+  "quote": "Escape routes are min. 1.25 m wide and should if possible lead in two directions, to each staircase. The maximum walking distance from each point of an occupied room may not exceed 25 m. Corridors with two escape directions may be max. 40 m long. After 20 m, a smoke-proof self-closing door must be installed. Branch corridors with only one escape direction may be max. 10 m long. If a second escape route (e.g. an escape balcony) is available, max. 20 m.",
+  "status": "exact",
+  "source": [
+   "text",
+   2163
+  ],
+  "items": [
+   "H-fantasy_office_building_3-14"
+  ]
+ },
+ {
+  "page": "page_0258",
+  "quote": "In order to avoid fire spreading from one storey to the one above, there must be W 90 A fire-resistant parapets at least 1 m high (fire spreading height).",
+  "status": "exact",
+  "source": [
+   "text",
+   2162
+  ],
+  "items": [
+   "H-fantasy_office_building_1-14"
+  ]
+ },
+ {
+  "page": "page_0258",
+  "quote": "Alternatively, a W 90 A horizontal building element projecting at least 1.5 m from the façade can be provided.",
+  "status": "exact",
+  "source": [
+   "text",
+   2162
+  ],
+  "items": [
+   "H-fantasy_office_building_1-14"
+  ]
+ },
+ {
+  "page": "page_0258",
+  "quote": "All-glass façades (also double façades) are permitted only with special approvals if particular protection measures (area sprinklers, mist extinguishing systems) can prevent the spread of fire to the next storey",
+  "status": "exact",
+  "source": [
+   "text",
+   2162
+  ],
+  "items": [
+   "H-fantasy_office_building_1-14"
+  ]
+ },
+ {
+  "page": "page_0529",
+  "quote": "Closures between stairways and corridors legally essential as escape routes and also for the division of legally essential corridors more than 30 m long must be self-closing and smoke-proof",
+  "status": "exact",
+  "source": [
+   "text",
+   4127
+  ],
+  "items": [
+   "H-ac20-21"
+  ]
+ },
+ {
+  "page": "page_0192",
+  "quote": "For more than 10 employees, a rest/break room is necessary (workplace regulations).",
+  "status": "exact",
+  "source": [
+   "text",
+   1682
+  ],
+  "items": [
+   "H-ac20-22",
+   "H-digital_hub-22"
+  ]
+ },
+ {
+  "page": "page_0214",
+  "quote": "Seminar rooms, usual sizes: 20, 40, 50, 60 seats; mobile double tables, width 1.20 m, depth 0.60 m, space required per student 1.90–2.00 m.",
+  "status": "exact",
+  "source": [
+   "text",
+   1800
+  ],
+  "items": [
+   "H-ac20-23",
+   "H-digital_hub-23"
+  ]
+ },
+ {
+  "page": "page_0214",
+  "quote": "If there is free ventilation from only one external wall, the depth of the room should not exceed 2.5 × clear ceiling height.",
+  "status": "exact",
+  "source": [
+   "text",
+   1800
+  ],
+  "items": [
+   "H-ac20-23",
+   "H-digital_hub-23"
+  ]
+ },
+ {
+  "page": "page_0214",
+  "quote": "professor 20–24 m² scientific assistant 15 m² assistant 20 m² secretary 15 m² (double occupation 20 m²)",
+  "status": "ws_only",
+  "source": [
+   "text",
+   1802
+  ],
+  "items": [
+   "H-ac20-24"
+  ]
+ },
+ {
+  "page": "page_0133",
+  "quote": "Landing width \\( \\geq \\) stair width.",
+  "status": "exact",
+  "source": [
+   "caption",
+   1007
+  ],
+  "items": [
+   "H-digital_hub-24",
+   "H-fantasy_office_building_3-15"
+  ]
+ },
+ {
+  "page": "page_0075",
+  "quote": "The net built volume is the net floor area multiplied by the relevant clear ceiling height.",
+  "status": "exact",
+  "source": [
+   "text",
+   902
+  ],
+  "items": [
+   "H-digital_hub-25"
+  ]
+ },
+ {
+  "page": "page_0075",
+  "quote": "The gross built volume is the sum of the floor areas of all levels multiplied by the relevant height (measured between top of floor covering and top of floor covering of the next level",
+  "status": "exact",
+  "source": [
+   "text",
+   902
+  ],
+  "items": [
+   "H-digital_hub-25"
+  ]
+ }
+]

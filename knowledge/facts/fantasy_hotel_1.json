@@ -1,0 +1,2020 @@
+{
+ "project": "fantasy_hotel_1",
+ "schema": "IFC4",
+ "length_unit_scale": 1.0,
+ "storeys": [
+  [
+   "GROUND FLOOR",
+   0.0
+  ],
+  [
+   "FIRST FLOOR",
+   4.9
+  ],
+  [
+   "L3",
+   9.8
+  ],
+  [
+   "Mumti",
+   11.8
+  ]
+ ],
+ "spaces": [
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeMC",
+   "name": "100",
+   "longname": "LIVING ROOM",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.26,
+    2.53,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeMB",
+   "name": "101",
+   "longname": "LIVING ROOM",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.4,
+    2.53,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeMM",
+   "name": "102",
+   "longname": "KITCHEN",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.36,
+    2.53,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeML",
+   "name": "103",
+   "longname": "LIVING ROOM",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.3,
+    2.53,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeMG",
+   "name": "104",
+   "longname": "Room Name",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.36,
+    2.53,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeMV",
+   "name": "105",
+   "longname": "Room Name",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.3,
+    2.53,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeMQ",
+   "name": "106",
+   "longname": "MASTER BEDROOM",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.73,
+    6.66,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeMZ",
+   "name": "107",
+   "longname": "MASTER BEDROOM",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.73,
+    6.0,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeMk",
+   "name": "108",
+   "longname": "BATHROOM",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.86,
+    2.8,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeMj",
+   "name": "109",
+   "longname": "BATHROOM",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.76,
+    2.8,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeMe",
+   "name": "110",
+   "longname": "MASTER BEDROOM",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.73,
+    6.2,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeMt",
+   "name": "111",
+   "longname": "STAIRCASE",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.84,
+    3.9,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeM_",
+   "name": "112",
+   "longname": "MASTER BEDROOM",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.73,
+    6.66,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeMz",
+   "name": "113",
+   "longname": "STAIRCASE",
+   "storey": "GROUND FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.84,
+    3.9,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeGp",
+   "name": "114",
+   "longname": "LIVING ROOM",
+   "storey": "FIRST FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.71,
+    2.7,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeG$",
+   "name": "115",
+   "longname": "LIVING ROOM",
+   "storey": "FIRST FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.85,
+    2.7,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeGw",
+   "name": "116",
+   "longname": "BATH",
+   "storey": "FIRST FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.7,
+    2.7,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeGv",
+   "name": "117",
+   "longname": "WASH BASIN",
+   "storey": "FIRST FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.2,
+    2.7,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeJ4",
+   "name": "118",
+   "longname": "MASTER BEDROOM",
+   "storey": "FIRST FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.73,
+    6.84,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeJ3",
+   "name": "119",
+   "longname": "STAIRCASE",
+   "storey": "FIRST FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.84,
+    3.9,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeI0",
+   "name": "120",
+   "longname": "MASTER BEDROOM",
+   "storey": "FIRST FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.73,
+    7.65,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeIF",
+   "name": "121",
+   "longname": "MASTER BEDROOM",
+   "storey": "FIRST FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.73,
+    7.45,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeD5",
+   "name": "123",
+   "longname": "MASTER BEDROOM",
+   "storey": "FIRST FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.73,
+    6.66,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeD0",
+   "name": "124",
+   "longname": "LIVING ROOM",
+   "storey": "FIRST FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.0,
+    2.53,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeDF",
+   "name": "125",
+   "longname": "LIVING ROOM",
+   "storey": "FIRST FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.85,
+    2.53,
+    3.05
+   ]
+  },
+  {
+   "gid": "0MyMB1s_P4Zh6OoNQiQeDA",
+   "name": "126",
+   "longname": "LIVING ROOM",
+   "storey": "FIRST FLOOR",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.71,
+    2.53,
+    3.05
+   ]
+  }
+ ],
+ "doors": [
+  {
+   "gid": "3qzZvSoWj5DvkOKdRuHw3J",
+   "name": "M_Door-Passage-Single-Flush:900 x 2400mm:1597571",
+   "type": "M_Door-Passage-Single-Flush:900 x 2400mm",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.5,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "LIVING ROOM"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3qzZvSoWj5DvkOKdRuHw53",
+   "name": "M_Door-Passage-Single-Flush:900 x 2400mm:1597715",
+   "type": "M_Door-Passage-Single-Flush:900 x 2400mm",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.5,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "LIVING ROOM"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3qzZvSoWj5DvkOKdRuHw4M",
+   "name": "M_Door-Passage-Single-Flush:900 x 2400mm:1597766",
+   "type": "M_Door-Passage-Single-Flush:900 x 2400mm",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.5,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "KITCHEN"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3qzZvSoWj5DvkOKdRuHw9I",
+   "name": "M_Door-Passage-Single-Flush:900 x 2400mm:1597954",
+   "type": "M_Door-Passage-Single-Flush:900 x 2400mm",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.5,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "LIVING ROOM"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3qzZvSoWj5DvkOKdRuHw8A",
+   "name": "M_Door-Passage-Single-Flush:900 x 2400mm:1598042",
+   "type": "M_Door-Passage-Single-Flush:900 x 2400mm",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.5,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "KITCHEN"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3qzZvSoWj5DvkOKdRuHwAI",
+   "name": "M_Door-Passage-Single-Flush:900 x 2400mm:1598146",
+   "type": "M_Door-Passage-Single-Flush:900 x 2400mm",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.5,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "LIVING ROOM"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1ISY0",
+   "name": "M_Door-Passage-Single-Flush:900 x 2400mm:1598276",
+   "type": "M_Door-Passage-Single-Flush:900 x 2400mm",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.5,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "Room Name"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1ISYw",
+   "name": "M_Door-Passage-Single-Flush:900 x 2400mm:1598334",
+   "type": "M_Door-Passage-Single-Flush:900 x 2400mm",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.5,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "Room Name"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1IItn",
+   "name": "Doors_IntAys_1:1210x2110mm-Sgl_Swing:1607221",
+   "type": "Doors_IntAys_1:1210x2110mm-Sgl_Swing",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.21,
+   "height": 2.11,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "MASTER BEDROOM"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1IIsZ",
+   "name": "Doors_IntAys_1:1210x2110mm-Sgl_Swing:1607271",
+   "type": "Doors_IntAys_1:1210x2110mm-Sgl_Swing",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.21,
+   "height": 2.11,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "MASTER BEDROOM"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1IIrg",
+   "name": "Doors_IntAys_1:1210x2110mm-Sgl_Swing:1607342",
+   "type": "Doors_IntAys_1:1210x2110mm-Sgl_Swing",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.21,
+   "height": 2.11,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "MASTER BEDROOM"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1IIq_",
+   "name": "Doors_IntAys_1:1210x2110mm-Sgl_Swing:1607418",
+   "type": "Doors_IntAys_1:1210x2110mm-Sgl_Swing",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.21,
+   "height": 2.11,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "MASTER BEDROOM"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8mA",
+   "name": "Doors_IntAys_1:1210x2110mm-Sgl_Swing:1630236",
+   "type": "Doors_IntAys_1:1210x2110mm-Sgl_Swing",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.21,
+   "height": 2.11,
+   "storey": "FIRST FLOOR",
+   "spaces": [
+    "MASTER BEDROOM"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8mB",
+   "name": "Doors_IntAys_1:1210x2110mm-Sgl_Swing:1630237",
+   "type": "Doors_IntAys_1:1210x2110mm-Sgl_Swing",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.21,
+   "height": 2.11,
+   "storey": "FIRST FLOOR",
+   "spaces": [
+    "MASTER BEDROOM"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8m8",
+   "name": "Doors_IntAys_1:1210x2110mm-Sgl_Swing:1630238",
+   "type": "Doors_IntAys_1:1210x2110mm-Sgl_Swing",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.21,
+   "height": 2.11,
+   "storey": "FIRST FLOOR",
+   "spaces": [
+    "MASTER BEDROOM"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8m9",
+   "name": "Doors_IntAys_1:1210x2110mm-Sgl_Swing:1630239",
+   "type": "Doors_IntAys_1:1210x2110mm-Sgl_Swing",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.21,
+   "height": 2.11,
+   "storey": "FIRST FLOOR",
+   "spaces": [
+    "MASTER BEDROOM"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2XzRV2Q$r8JeZZJICY2XaF",
+   "name": "M_Door-Passage-Single-Flush:900 x 2200mm:1712416",
+   "type": "M_Door-Passage-Single-Flush:900 x 2200mm",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.3,
+   "storey": "FIRST FLOOR",
+   "spaces": [
+    "LIVING ROOM"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2XzRV2Q$r8JeZZJICY2Xcz",
+   "name": "M_Door-Passage-Single-Flush:900 x 2200mm:1712530",
+   "type": "M_Door-Passage-Single-Flush:900 x 2200mm",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.3,
+   "storey": "FIRST FLOOR",
+   "spaces": [
+    "LIVING ROOM"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2XzRV2Q$r8JeZZJICY2XeC",
+   "name": "M_Door-Passage-Single-Vision_Lite:750 x 2000mm:1712675",
+   "type": "M_Door-Passage-Single-Vision_Lite:750 x 2000mm",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.85,
+   "height": 2.1,
+   "storey": "FIRST FLOOR",
+   "spaces": [
+    "WASH BASIN"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "03qNjz0hL0M8XHELG1IaLY",
+   "name": "M_Door-Passage-Single-Flush:900 x 2200mm:1715003",
+   "type": "M_Door-Passage-Single-Flush:900 x 2200mm",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.3,
+   "storey": "FIRST FLOOR",
+   "spaces": [
+    "LIVING ROOM"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "03qNjz0hL0M8XHELG1IaNu",
+   "name": "M_Door-Passage-Single-Flush:900 x 2200mm:1715105",
+   "type": "M_Door-Passage-Single-Flush:900 x 2200mm",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.3,
+   "storey": "FIRST FLOOR",
+   "spaces": [
+    "LIVING ROOM"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "03qNjz0hL0M8XHELG1Ia84",
+   "name": "M_Door-Passage-Single-Flush:900 x 2200mm:1715293",
+   "type": "M_Door-Passage-Single-Flush:900 x 2200mm",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.3,
+   "storey": "FIRST FLOOR",
+   "spaces": [
+    "LIVING ROOM"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3eEaxf5vn7$AIHeY5ZsgVE",
+   "name": "M_Door-Interior-Single-1_Panel-Wood:300 x 2000mm:1792745",
+   "type": "M_Door-Interior-Single-1_Panel-Wood:300 x 2000mm",
+   "op": "SWING_FIXED_LEFT",
+   "width": 0.35,
+   "height": 2.025,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "BATHROOM",
+    "MASTER BEDROOM"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3eEaxf5vn7$AIHeY5ZsgOC",
+   "name": "M_Door-Interior-Single-1_Panel-Wood:300 x 2000mm:1792811",
+   "type": "M_Door-Interior-Single-1_Panel-Wood:300 x 2000mm",
+   "op": "SWING_FIXED_RIGHT",
+   "width": 0.35,
+   "height": 2.025,
+   "storey": "GROUND FLOOR",
+   "spaces": [
+    "BATHROOM",
+    "MASTER BEDROOM"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3eEaxf5vn7$AIHeY5ZsgPL",
+   "name": "M_Door-Interior-Single-1_Panel-Wood:300 x 2000mm:1792882",
+   "type": "M_Door-Interior-Single-1_Panel-Wood:300 x 2000mm",
+   "op": "SWING_FIXED_LEFT",
+   "width": 0.35,
+   "height": 2.025,
+   "storey": "FIRST FLOOR",
+   "spaces": [
+    "BATH",
+    "WASH BASIN"
+   ],
+   "fire": null,
+   "external": false
+  }
+ ],
+ "windows": [
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1IIn9",
+   "name": "M_Window-Fixed:600 x 900mm:1607565",
+   "type": "M_Window-Fixed:600 x 900mm",
+   "width": 0.6,
+   "height": 0.9,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 0.9,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1IIFJ",
+   "name": "M_Window-Fixed:600 x 900mm:1607703",
+   "type": "M_Window-Fixed:600 x 900mm",
+   "width": 0.6,
+   "height": 0.9,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 0.9,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1IIDV",
+   "name": "M_Window-Fixed:600 x 900mm:1607835",
+   "type": "M_Window-Fixed:600 x 900mm",
+   "width": 0.6,
+   "height": 0.9,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 0.9,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1IICK",
+   "name": "M_Window-Fixed:600 x 900mm:1607888",
+   "type": "M_Window-Fixed:600 x 900mm",
+   "width": 0.6,
+   "height": 0.9,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 0.9,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1IIA1",
+   "name": "M_Window-Fixed:600 x 900mm:1608005",
+   "type": "M_Window-Fixed:600 x 900mm",
+   "width": 0.6,
+   "height": 0.9,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 0.9,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1IIAq",
+   "name": "M_Window-Fixed:600 x 900mm:1608048",
+   "type": "M_Window-Fixed:600 x 900mm",
+   "width": 0.6,
+   "height": 0.9,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 0.9,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1II8I",
+   "name": "M_Window-Fixed:600 x 900mm:1608150",
+   "type": "M_Window-Fixed:600 x 900mm",
+   "width": 0.6,
+   "height": 0.9,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 0.9,
+   "spaces": [
+    "KITCHEN"
+   ]
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1II7b",
+   "name": "M_Window-Fixed:600 x 900mm:1608225",
+   "type": "M_Window-Fixed:600 x 900mm",
+   "width": 0.6,
+   "height": 0.9,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 0.9,
+   "spaces": [
+    "KITCHEN"
+   ]
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1II6g",
+   "name": "M_Window-Fixed:600 x 900mm:1608302",
+   "type": "M_Window-Fixed:600 x 900mm",
+   "width": 0.6,
+   "height": 0.9,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 0.9,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3PJfudJ6zCyA1aY2I1II5f",
+   "name": "M_Window-Fixed:600 x 900mm:1608365",
+   "type": "M_Window-Fixed:600 x 900mm",
+   "width": 0.6,
+   "height": 0.9,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 0.9,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8oi",
+   "name": "Window-Awning-Triple-Horizontal:60\" x 24\":1630394",
+   "type": "Window-Awning-Triple-Horizontal:60\" x 24\"",
+   "width": 1.524,
+   "height": 0.61,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.914,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8pM",
+   "name": "Window-Awning-Triple-Horizontal:60\" x 24\":1630400",
+   "type": "Window-Awning-Triple-Horizontal:60\" x 24\"",
+   "width": 1.524,
+   "height": 0.61,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.914,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8pG",
+   "name": "Window-Awning-Triple-Horizontal:60\" x 24\":1630406",
+   "type": "Window-Awning-Triple-Horizontal:60\" x 24\"",
+   "width": 1.524,
+   "height": 0.61,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.914,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8pQ",
+   "name": "Window-Awning-Triple-Horizontal:60\" x 24\":1630412",
+   "type": "Window-Awning-Triple-Horizontal:60\" x 24\"",
+   "width": 1.524,
+   "height": 0.61,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.914,
+   "spaces": [
+    "STAIRCASE"
+   ]
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8p4",
+   "name": "Window-Awning-Triple-Horizontal:60\" x 24\":1630418",
+   "type": "Window-Awning-Triple-Horizontal:60\" x 24\"",
+   "width": 1.524,
+   "height": 0.61,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.914,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8pE",
+   "name": "Window-Awning-Triple-Horizontal:60\" x 24\":1630424",
+   "type": "Window-Awning-Triple-Horizontal:60\" x 24\"",
+   "width": 1.524,
+   "height": 0.61,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.914,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8p8",
+   "name": "Window-Awning-Triple-Horizontal:60\" x 24\":1630430",
+   "type": "Window-Awning-Triple-Horizontal:60\" x 24\"",
+   "width": 1.524,
+   "height": 0.61,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.914,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8po",
+   "name": "Window-Awning-Triple-Horizontal:60\" x 24\":1630436",
+   "type": "Window-Awning-Triple-Horizontal:60\" x 24\"",
+   "width": 1.524,
+   "height": 0.61,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.914,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8py",
+   "name": "Window-Awning-Triple-Horizontal:60\" x 24\":1630442",
+   "type": "Window-Awning-Triple-Horizontal:60\" x 24\"",
+   "width": 1.524,
+   "height": 0.61,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.914,
+   "spaces": []
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8pc",
+   "name": "Window-Awning-Triple-Horizontal:60\" x 24\":1630448",
+   "type": "Window-Awning-Triple-Horizontal:60\" x 24\"",
+   "width": 1.524,
+   "height": 0.61,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.914,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8pW",
+   "name": "Window-Awning-Triple-Horizontal:60\" x 24\":1630454",
+   "type": "Window-Awning-Triple-Horizontal:60\" x 24\"",
+   "width": 1.524,
+   "height": 0.61,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.914,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "2tz9M1P3L4G8bcWE8yL8ph",
+   "name": "Window-Awning-Triple-Horizontal:60\" x 24\":1630461",
+   "type": "Window-Awning-Triple-Horizontal:60\" x 24\"",
+   "width": 1.524,
+   "height": 0.61,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.914,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4C9S",
+   "name": "Windows_Sgl_Plain:910x910mm:1717072",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.92,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4CGZ",
+   "name": "Windows_Sgl_Plain:910x910mm:1717551",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.96,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4CJJ",
+   "name": "Windows_Sgl_Plain:910x910mm:1717727",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.92,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4CSP",
+   "name": "Windows_Sgl_Plain:910x910mm:1717781",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.92,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4CVD",
+   "name": "Windows_Sgl_Plain:910x910mm:1717953",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.927,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4Cbd",
+   "name": "Windows_Sgl_Plain:910x910mm:1718379",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4CdR",
+   "name": "Windows_Sgl_Plain:910x910mm:1718487",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4CZV",
+   "name": "Windows_Sgl_Plain:910x910mm:1718739",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4CjF",
+   "name": "Windows_Sgl_Plain:910x910mm:1718851",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4Cjv",
+   "name": "Windows_Sgl_Plain:910x910mm:1718901",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4ClR",
+   "name": "Windows_Sgl_Plain:910x910mm:1718999",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4CeR",
+   "name": "Windows_Sgl_Plain:910x910mm:1719063",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "STAIRCASE"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4CfH",
+   "name": "Windows_Sgl_Plain:910x910mm:1719133",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "STAIRCASE"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4ChP",
+   "name": "Windows_Sgl_Plain:910x910mm:1719253",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4CqZ",
+   "name": "Windows_Sgl_Plain:910x910mm:1719343",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4Cr$",
+   "name": "Windows_Sgl_Plain:910x910mm:1719411",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4CtB",
+   "name": "Windows_Sgl_Plain:910x910mm:1719495",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4Ctt",
+   "name": "Windows_Sgl_Plain:910x910mm:1719547",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "BATHROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4Cp7",
+   "name": "Windows_Sgl_Plain:910x910mm:1719755",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4CyH",
+   "name": "Windows_Sgl_Plain:910x910mm:1719837",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4CzJ",
+   "name": "Windows_Sgl_Plain:910x910mm:1719903",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4C_z",
+   "name": "Windows_Sgl_Plain:910x910mm:1719985",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4Cv9",
+   "name": "Windows_Sgl_Plain:910x910mm:1720133",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "STAIRCASE"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4Cwx",
+   "name": "Windows_Sgl_Plain:910x910mm:1720247",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "STAIRCASE"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4B6j",
+   "name": "Windows_Sgl_Plain:910x910mm:1720481",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4B7Z",
+   "name": "Windows_Sgl_Plain:910x910mm:1720559",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4B0n",
+   "name": "Windows_Sgl_Plain:910x910mm:1720637",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4B2f",
+   "name": "Windows_Sgl_Plain:910x910mm:1720741",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4B3b",
+   "name": "Windows_Sgl_Plain:910x910mm:1720809",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BCf",
+   "name": "Windows_Sgl_Plain:910x910mm:1720869",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "MASTER BEDROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BEe",
+   "name": "Windows_Sgl_Plain:910x910mm:1720996",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "Room Name"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BFg",
+   "name": "Windows_Sgl_Plain:910x910mm:1721062",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "Room Name"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4B8a",
+   "name": "Windows_Sgl_Plain:910x910mm:1721128",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "Room Name"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BKy",
+   "name": "Windows_Sgl_Plain:910x910mm:1721392",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "Room Name"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BLa",
+   "name": "Windows_Sgl_Plain:910x910mm:1721448",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "Room Name"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BM0",
+   "name": "Windows_Sgl_Plain:910x910mm:1721484",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "GROUND FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "Room Name"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BPX",
+   "name": "Windows_Sgl_Plain:910x910mm:1722221",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "BATH"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BbN",
+   "name": "Windows_Sgl_Plain:910x910mm:1722459",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "WASH BASIN"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BWp",
+   "name": "Windows_Sgl_Plain:910x910mm:1722687",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BYb",
+   "name": "Windows_Sgl_Plain:910x910mm:1722793",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.8,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4Bi3",
+   "name": "Windows_Sgl_Plain:910x910mm:1722895",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.8,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BkF",
+   "name": "Windows_Sgl_Plain:910x910mm:1723011",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.8,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BlV",
+   "name": "Windows_Sgl_Plain:910x910mm:1723091",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.8,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4Be5",
+   "name": "Windows_Sgl_Plain:910x910mm:1723145",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.8,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BgH",
+   "name": "Windows_Sgl_Plain:910x910mm:1723293",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.8,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4Bht",
+   "name": "Windows_Sgl_Plain:910x910mm:1723387",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.8,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4Bqx",
+   "name": "Windows_Sgl_Plain:910x910mm:1723447",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 0.8,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4Brp",
+   "name": "Windows_Sgl_Plain:910x910mm:1723519",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4BtL",
+   "name": "Windows_Sgl_Plain:910x910mm:1723609",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4Byj",
+   "name": "Windows_Sgl_Plain:910x910mm:1723937",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "LIVING ROOM"
+   ]
+  },
+  {
+   "gid": "3fgrIy5C52Nh3glL4d4B_F",
+   "name": "Windows_Sgl_Plain:910x910mm:1724035",
+   "type": "Windows_Sgl_Plain:910x910mm",
+   "width": 0.91,
+   "height": 0.91,
+   "storey": "FIRST FLOOR",
+   "sill_approx": 1.2,
+   "spaces": [
+    "BATH"
+   ]
+  }
+ ],
+ "stairs": [
+  {
+   "gid": "0DifYtlg10swZflWnc7esI",
+   "cls": "IfcStair",
+   "name": "Assembled Stair:Stair:1644242",
+   "predefined": "NOTDEFINED",
+   "storey": "GROUND FLOOR",
+   "n_riser": 18.0,
+   "riser": 0.272,
+   "tread": 0.275,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 18.0,
+    "Pset_StairCommon.NumberOfTreads": 17.0,
+    "Pset_StairCommon.RiserHeight": 0.272,
+    "Pset_StairCommon.TreadLength": 0.275,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.275,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.275,
+    "Pset_StairFlightCommon.NumberOfRiser": 18.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.272,
+    "Pset_StairFlightCommon.TreadLength": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.275
+   }
+  },
+  {
+   "gid": "2CgMXAOQj1NgiRh5toLXna",
+   "cls": "IfcStair",
+   "name": "Assembled Stair:Stair:1646359",
+   "predefined": "NOTDEFINED",
+   "storey": "GROUND FLOOR",
+   "n_riser": 18.0,
+   "riser": 0.272,
+   "tread": 0.275,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 18.0,
+    "Pset_StairCommon.NumberOfTreads": 17.0,
+    "Pset_StairCommon.RiserHeight": 0.272,
+    "Pset_StairCommon.TreadLength": 0.275,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.275,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.275,
+    "Pset_StairFlightCommon.NumberOfRiser": 18.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.272,
+    "Pset_StairFlightCommon.TreadLength": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.275
+   }
+  },
+  {
+   "gid": "1VYp8AjIz46Bgwp_bPrmki",
+   "cls": "IfcStair",
+   "name": "Assembled Stair:Stair:1751844",
+   "predefined": "NOTDEFINED",
+   "storey": "FIRST FLOOR",
+   "n_riser": 18.0,
+   "riser": 0.272,
+   "tread": 0.275,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 18.0,
+    "Pset_StairCommon.NumberOfTreads": 17.0,
+    "Pset_StairCommon.RiserHeight": 0.272,
+    "Pset_StairCommon.TreadLength": 0.275,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.275,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.275,
+    "Pset_StairFlightCommon.NumberOfRiser": 18.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.272,
+    "Pset_StairFlightCommon.TreadLength": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.275
+   }
+  },
+  {
+   "gid": "2W4pPgncj2Yfmo3SWoJRDl",
+   "cls": "IfcStair",
+   "name": "Assembled Stair:Stair:1752399",
+   "predefined": "NOTDEFINED",
+   "storey": "FIRST FLOOR",
+   "n_riser": 18.0,
+   "riser": 0.272,
+   "tread": 0.275,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 18.0,
+    "Pset_StairCommon.NumberOfTreads": 17.0,
+    "Pset_StairCommon.RiserHeight": 0.272,
+    "Pset_StairCommon.TreadLength": 0.275,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.275,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.275,
+    "Pset_StairFlightCommon.NumberOfRiser": 18.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.272,
+    "Pset_StairFlightCommon.TreadLength": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.275
+   }
+  },
+  {
+   "gid": "2CgMXAOQj1NgiRh5toLXvJ",
+   "cls": "IfcStairFlight",
+   "name": "Assembled Stair:Stair:1644242 Run 1",
+   "predefined": "WINDER",
+   "storey": "GROUND FLOOR",
+   "n_riser": 18.0,
+   "riser": 0.272,
+   "tread": 0.275,
+   "props": {
+    "Pset_StairFlightCommon.NumberOfRiser": 18.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.272,
+    "Pset_StairFlightCommon.TreadLength": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.275
+   }
+  },
+  {
+   "gid": "2CgMXAOQj1NgiRh5toLXnh",
+   "cls": "IfcStairFlight",
+   "name": "Assembled Stair:Stair:1646359 Run 1",
+   "predefined": "WINDER",
+   "storey": "GROUND FLOOR",
+   "n_riser": 18.0,
+   "riser": 0.272,
+   "tread": 0.275,
+   "props": {
+    "Pset_StairFlightCommon.NumberOfRiser": 18.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.272,
+    "Pset_StairFlightCommon.TreadLength": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.275
+   }
+  },
+  {
+   "gid": "1VYp8AjIz46Bgwp_bPrmkz",
+   "cls": "IfcStairFlight",
+   "name": "Assembled Stair:Stair:1751844 Run 1",
+   "predefined": "WINDER",
+   "storey": "FIRST FLOOR",
+   "n_riser": 18.0,
+   "riser": 0.272,
+   "tread": 0.275,
+   "props": {
+    "Pset_StairFlightCommon.NumberOfRiser": 18.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.272,
+    "Pset_StairFlightCommon.TreadLength": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.275
+   }
+  },
+  {
+   "gid": "2W4pPgncj2Yfmo3SWoJR1X",
+   "cls": "IfcStairFlight",
+   "name": "Assembled Stair:Stair:1752399 Run 1",
+   "predefined": "WINDER",
+   "storey": "FIRST FLOOR",
+   "n_riser": 18.0,
+   "riser": 0.272,
+   "tread": 0.275,
+   "props": {
+    "Pset_StairFlightCommon.NumberOfRiser": 18.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 17.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.272,
+    "Pset_StairFlightCommon.TreadLength": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.275,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.275
+   }
+  }
+ ],
+ "railings": [
+  {
+   "name": "Support - Steel Bar:800mm Picket:1630126",
+   "type": "Support - Steel Bar:800mm Picket",
+   "storey": "GROUND FLOOR",
+   "height": null
+  },
+  {
+   "name": "Railing:Handrail - Rectangular:1646139",
+   "type": "Railing:Handrail - Rectangular",
+   "storey": "GROUND FLOOR",
+   "height": 0.9
+  },
+  {
+   "name": "Railing:Handrail - Rectangular:1646143",
+   "type": "Railing:Handrail - Rectangular",
+   "storey": "GROUND FLOOR",
+   "height": 0.9
+  },
+  {
+   "name": "Railing:Handrail - Rectangular:1646370",
+   "type": "Railing:Handrail - Rectangular",
+   "storey": "GROUND FLOOR",
+   "height": 0.9
+  },
+  {
+   "name": "Railing:Handrail - Rectangular:1646374",
+   "type": "Railing:Handrail - Rectangular",
+   "storey": "GROUND FLOOR",
+   "height": 0.9
+  },
+  {
+   "name": "Railing:900mm Pipe:1653439",
+   "type": "Railing:900mm Pipe",
+   "storey": "FIRST FLOOR",
+   "height": 0.9
+  },
+  {
+   "name": "Railing:Glass Panel - Bottom Fill:1751984",
+   "type": "Railing:Glass Panel - Bottom Fill",
+   "storey": "FIRST FLOOR",
+   "height": 0.9
+  },
+  {
+   "name": "Railing:Glass Panel - Bottom Fill:1751988",
+   "type": "Railing:Glass Panel - Bottom Fill",
+   "storey": "FIRST FLOOR",
+   "height": 0.9
+  },
+  {
+   "name": "Railing:Glass Panel - Bottom Fill:1752736",
+   "type": "Railing:Glass Panel - Bottom Fill",
+   "storey": "FIRST FLOOR",
+   "height": 0.9
+  },
+  {
+   "name": "Railing:Glass Panel - Bottom Fill:1752740",
+   "type": "Railing:Glass Panel - Bottom Fill",
+   "storey": "FIRST FLOOR",
+   "height": 0.9
+  },
+  {
+   "name": "Railing:Glass Panel - Bottom Fill:1754649",
+   "type": "Railing:Glass Panel - Bottom Fill",
+   "storey": "L3",
+   "height": 0.9
+  }
+ ],
+ "furniture": [
+  {
+   "where": "FIRST FLOOR",
+   "item": "M_Bench-Locker Room",
+   "n": 3
+  },
+  {
+   "where": "KITCHEN",
+   "item": "M_Chair-Breuer",
+   "n": 4
+  },
+  {
+   "where": "KITCHEN",
+   "item": "M_Furniture_System-Hardware-Bracket",
+   "n": 2
+  },
+  {
+   "where": "KITCHEN",
+   "item": "M_Furniture_System-Storage-Cabinet-Overhead-Flip_Up",
+   "n": 1
+  },
+  {
+   "where": "KITCHEN",
+   "item": "M_Furniture_System-Work_Surface-Rectangular-with_Bracket",
+   "n": 1
+  },
+  {
+   "where": "KITCHEN",
+   "item": "M_TV - Flat Screen",
+   "n": 1
+  },
+  {
+   "where": "KITCHEN",
+   "item": "M_Table-Dining Round w Chairs",
+   "n": 1
+  },
+  {
+   "where": "LIVING ROOM",
+   "item": "Bed-Box",
+   "n": 7
+  },
+  {
+   "where": "LIVING ROOM",
+   "item": "Furniture_Cabinet_File_Lateral_3-Drawer",
+   "n": 7
+  },
+  {
+   "where": "LIVING ROOM",
+   "item": "Furniture_Cabinet_Storage",
+   "n": 2
+  },
+  {
+   "where": "LIVING ROOM",
+   "item": "Furniture_Couch_Viper",
+   "n": 4
+  },
+  {
+   "where": "LIVING ROOM",
+   "item": "Furniture_Sofa_2",
+   "n": 3
+  },
+  {
+   "where": "LIVING ROOM",
+   "item": "M_Bed-Shaker",
+   "n": 1
+  },
+  {
+   "where": "LIVING ROOM",
+   "item": "M_Table-Coffee",
+   "n": 1
+  },
+  {
+   "where": "MASTER BEDROOM",
+   "item": "Bed-Box",
+   "n": 16
+  },
+  {
+   "where": "MASTER BEDROOM",
+   "item": "Furniture_Cabinet_File_Lateral_3-Drawer",
+   "n": 11
+  },
+  {
+   "where": "MASTER BEDROOM",
+   "item": "Furniture_Cabinet_Storage",
+   "n": 4
+  },
+  {
+   "where": "MASTER BEDROOM",
+   "item": "Furniture_Couch_Viper",
+   "n": 4
+  },
+  {
+   "where": "MASTER BEDROOM",
+   "item": "Furniture_Sofa_2",
+   "n": 4
+  },
+  {
+   "where": "MASTER BEDROOM",
+   "item": "M_Table-Coffee",
+   "n": 4
+  },
+  {
+   "where": "MASTER BEDROOM",
+   "item": "M_Table-Dining Oval",
+   "n": 4
+  },
+  {
+   "where": "Room Name",
+   "item": "Bed-Box",
+   "n": 2
+  },
+  {
+   "where": "Room Name",
+   "item": "Furniture_Cabinet_File_Lateral_3-Drawer",
+   "n": 2
+  },
+  {
+   "where": "Room Name",
+   "item": "Furniture_Cabinet_Storage",
+   "n": 2
+  },
+  {
+   "where": "Room Name",
+   "item": "Furniture_Sofa_2",
+   "n": 2
+  }
+ ],
+ "other_counts": {
+  "IfcCurtainWall": 23,
+  "IfcColumn": 39,
+  "IfcBeam": 117,
+  "IfcSlab": 49,
+  "IfcRoof": 0,
+  "IfcTransportElement": 0,
+  "IfcRelSpaceBoundary": 0
+ }
+}

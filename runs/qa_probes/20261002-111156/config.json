@@ -1,0 +1,16 @@
+{
+  "models": "sonnet,luna,gemini,jev",
+  "formats": "mcq",
+  "limit": null,
+  "kids": "",
+  "shuffle_seed": 3,
+  "workers": 10,
+  "no_judge": false,
+  "probes": "/Users/zihandeng/Desktop/1_Projects/4_bim_intent/ifc_bench_neufert/hard_qa/knowledge_probes.jsonl",
+  "model_ids": {
+    "sonnet": "claude-sonnet-5-5",
+    "luna": "gpt-6-luna",
+    "gemini": "gemini-3.8-flash",
+    "jev": "jev-latest"
+  }
+}

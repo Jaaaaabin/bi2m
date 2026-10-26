@@ -1,0 +1,49 @@
+id,question,ground_truth,ifc_model,project,category,split,neufert_tier,neufert_topic
+334,"What is the total number of guest rooms in the building, and how are they distributed by floor?","Total Guest Rooms: 20
+
+   Distribution by Floor:
+   - FIRST FLOOR: 9 guest rooms
+   - GROUND FLOOR: 11 guest rooms
+
+Note: Based on the building's function as a motel, rooms with various names have been grouped and categorized as 'Guest Room'.",arc,fantasy_hotel_1,2,train,tier2,T2_room_program
+335,What are the elevations for each level?,"Level Elevations:
+   - GROUND FLOOR: 0.00m
+   - FIRST FLOOR: 4.90m
+   - L3: 9.80m
+   - Mumti: 11.80m",arc,fantasy_hotel_1,2,train,tier2,T2_storey_heights
+338,"What are the distinct window sizes present, along with how many windows exist for each size?","Distinct Window Sizes (Total: 73 windows):
+   - 910mm x 910mm: 51 windows (69.9%)
+   - 1524mm x 610mm: 12 windows (16.4%)
+   - 600mm x 900mm: 10 windows (13.7%)",arc,fantasy_hotel_1,2,train,tier2,T2_window_sizes
+340,What are the different window widths used in the building and how many windows use each width?,"There are 3 different windows types with different widths in this building:
+   1. 1524mm (1.52m) - used in 12 windows
+   2. 910mm (0.91m) - used in 51 windows
+   3. 600mm (0.60m) - used in 10 windows",arc,fantasy_hotel_1,2,test,tier2,T2_window_sizes
+350,What furniture can be found in room 112?,"Room 112: MASTER BEDROOM
+   Total furniture items: 8
+
+   Furniture List:
+   - Bed-Box:Double 53"" x 74"" (2 items)
+   - Furniture_Sofa_2:2100x830x380mm
+   - Furniture_Cabinet_File_Lateral_3-Drawer:760 x 500 x 915mm (3 items)
+   - Furniture_Cabinet_Storage:1200x550x2100mm
+   - M_Table-Dining Oval:0915 x 1830mm",arc,fantasy_hotel_1,1,train,tier2,T2_furniture_in_room
+352,What are the bathroom spaces on each floor?,"Ground Floor Bathrooms:
+   - 108: BATHROOM
+   - 109: BATHROOM
+
+First Floor Bathrooms:
+   - 116: BATH
+   - 117: WASH BASIN",arc,fantasy_hotel_1,2,test,tier2,T2_room_program
+365,"What is the total number of staircases, and what is the width of each staircase?","Total Staircases: 4
+
+   Staircase Details:
+   - Assembled Stair:Stair:1644242
+     Width: Not specified in properties
+   - Assembled Stair:Stair:1646359
+     Width: Not specified in properties
+   - Assembled Stair:Stair:1751844
+     Width: Not specified in properties
+   - Assembled Stair:Stair:1752399
+     Width: Not specified in properties",arc,fantasy_hotel_1,2,train,tier2,T2_stairs_railings
+368,What parking-related elements or areas are defined in the model?,"No spaces with parking-related functions or dedicated parking elements were found in the model. However, an exterior space in front of the building, with an area of approximately 518 sq m, appears to serve as a parking area.",arc,fantasy_hotel_1,4,test,tier1,T1_parking

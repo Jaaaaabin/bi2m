@@ -1,0 +1,388 @@
+[
+ {
+  "kid": "K01",
+  "title": "高层建筑",
+  "verdict": "needs_fix",
+  "issues": [
+   "楼梯要求原文限定为'高度 ≤ 60 m 的高层建筑'，摘要未保留此条件",
+   "遗漏'相对布置(opposite)'及可用一部安全楼梯代替的例外"
+  ],
+  "corrected_summary": "高层建筑指供人长期停留、最高楼层在建筑一侧高出地面 > 22 m 的建筑；高度 ≤ 60 m 的高层须至少设两部相对布置、位于两个不同防火分区的疏散楼梯，其通行宽度须 ≥ 1.25 m（例外情况下可批准仅设一部安全楼梯）。",
+  "evidence_note": "p.244 定义句；p.246 'High-rise buildings up to 60 m high: at least two emergency stairs must be ...'"
+ },
+ {
+  "kid": "K02",
+  "title": "私宅停车",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.166 'A reduction in the parking area is possible for private houses' + carport sentence (cheaper, building physics, space-saving)"
+ },
+ {
+  "kid": "K03",
+  "title": "车位与通道尺寸",
+  "verdict": "needs_fix",
+  "issues": [
+   "2.50 × 5.00 m = 12.50 m² 出自加油站章节'State regulations control: Parking space size'，摘要写成通用车位尺寸，丢失语境",
+   "'90° 停车通道宽 5.50 m' 来自图注示例（配 2.50 m 车位），应标为示例而非通用要求",
+   "车库条例 2.30 m 是针对多层停车库(Garage Regulations)的语境，可保留"
+  ],
+  "corrected_summary": "多层停车库：车库条例要求车位最小宽度 2.30 m，FGSV 因车辆变大建议所有公众可达车位最小宽度 2.50 m；图示示例：90° 停车、通道宽 5.50 m、车位宽 2.50 m；加油站相关州规定中车位尺寸为 2.50 × 5.00 m = 12.50 m²。",
+  "evidence_note": "p.392 Garage Regulations/FGSV 句；p.390 图注；p.400 加油站'State regulations control: 1. Parking space size'"
+ },
+ {
+  "kid": "K04",
+  "title": "体形系数 A/Ve",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.474 'Depending on the ratio ... A/V_e ... maximum permissible annual primary energy demand ... EnEV 2007'"
+ },
+ {
+  "kid": "K05",
+  "title": "退距（Abstandsfläche）",
+  "verdict": "needs_fix",
+  "issues": [
+   "'外墙突出构件按规定计入'与原文相反：原文为檐口、挑檐等突出构件在满足条件（占墙宽 < 1/3、外挑 ≤ 1.50 m、距对面地界 ≥ 2 m）时不计入退距",
+   "0.4 H 是 MBO 的规定、各州 LBO 不同，'一般为'不准确；0.2 H 适用于商业区和工业区，摘要漏掉工业区",
+   "屋面坡度 > 70° 时全高计入未写；1、2 类建筑且地上不超过三层时 3 m 即可也未写"
+  ],
+  "corrected_summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；各州 LBO 规定不同。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入；退距须位于本地块内；檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。",
+  "evidence_note": "p.64 第 2、4、5、6 条；第 6 条明确 'are not considered in the measurement of setback areas'"
+ },
+ {
+  "kid": "K06",
+  "title": "建筑密度与容积率",
+  "verdict": "needs_fix",
+  "issues": [
+   "建筑密度的'built area'在原文中包括建筑平面面积及车库、停车位及其通道、附属面积和地块下方的地下设施，摘要简写为'建筑基底面积'缩小了范围",
+   "'控制开发强度'为附加解释，原文仅说土地利用条例规定的规划法建设用途度量参数（可允许比例）"
+  ],
+  "corrected_summary": "土地利用条例规定的规划法建设用途度量参数：建筑密度（plot coverage ratio）为可允许的建成面积占地块面积之比，建成面积包括建筑平面面积及车库、停车位及其通道、附属面积和地块下方的地下设施；容积率（floor-area ratio）为可允许的楼层面积（所有完整楼层外轮廓尺寸，不含附属面积、阳台、凉廊、露台及允许建在退距内的构筑物）与地块面积之比。",
+  "evidence_note": "p.63 'Measures of building use' 段"
+ },
+ {
+  "kid": "K07",
+  "title": "舒适步距公式",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.121 'this formula applies: 2 r + t = 59–65 cm'；步距约 59–65 cm"
+ },
+ {
+  "kid": "K08",
+  "title": "最佳坡度与踏步比",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.121 'From the physiological point of view, the best use of climbing effort is at ... 30° ... 17/29'"
+ },
+ {
+  "kid": "K09",
+  "title": "每段梯段步数",
+  "verdict": "supported",
+  "issues": [
+   "（可选）原文语境为'According to German standards'"
+  ],
+  "evidence_note": "p.120 '≥ 3 steps up to ≤ 18 steps' 及 'The 18-step rule is a should regulation'"
+ },
+ {
+  "kid": "K10",
+  "title": "休息平台",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.121 'Stairs with landings are required in legally essential stairways with a storey height of ≥ 2.75 m'；p.120 landing length 公式"
+ },
+ {
+  "kid": "K11",
+  "title": "必要楼梯宽度与踏步比",
+  "verdict": "supported",
+  "issues": [
+   "（可选）原文为'According to German standards'，可注明"
+  ],
+  "evidence_note": "p.120 'legally essential stairs 1.00 m, 17/28'"
+ },
+ {
+  "kid": "K12",
+  "title": "两户以下住宅的楼梯",
+  "verdict": "supported",
+  "issues": [
+   "（可选）原文为'According to German standards'，可注明"
+  ],
+  "evidence_note": "p.120 'residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28'"
+ },
+ {
+  "kid": "K13",
+  "title": "室外楼梯与办公楼梯的取向",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.121 'For outside stairs, low steps are preferable, 12 × 41 to 16 × 30 cm. Stairs in offices or emergency stairs should ... change level quickly'"
+ },
+ {
+  "kid": "K14",
+  "title": "螺旋楼梯",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.124 'Spiral staircases are permissible from 190 cm in diameter as the sole connecting stairs inside houses with 80 cm usable walking width'"
+ },
+ {
+  "kid": "K15",
+  "title": "护栏高度",
+  "verdict": "needs_fix",
+  "issues": [
+   "适用对象原文限定为楼座、夹层、阳台和剧院楼座看台（galleries, mezzanines, balconies, circle seating），摘要泛化为任何高差 ≥ 1 m 处",
+   "工作场所 1.00 m 的条件是坠落高度 < 12 m；原文另有'楼梯井宽 ≥ 20 cm 时 > 12 m 也为 1.00 m'（图注文字有乱码，含义不完全清楚），摘要丢失条件"
+  ],
+  "corrected_title": "楼座、夹层、阳台的护栏高度",
+  "corrected_summary": "楼座、夹层、阳台及剧院楼座看台须设护栏，高差 ≥ 1 m 起强制：坠落高度 < 12 m 时 h = 0.90 m；坠落高度 > 12 m 时 h = 1.10 m；工作场所坠落高度 < 12 m 时 h = 1.00 m（图注另称楼梯井宽 ≥ 20 cm 时 > 12 m 亦为 1.00 m）。",
+  "evidence_note": "p.122 'Galleries, mezzanines, balconies and circle seating in theatres must have a protective guard rail ... compulsory from 1 m height difference' + 图注"
+ },
+ {
+  "kid": "K16",
+  "title": "无障碍坡道",
+  "verdict": "supported",
+  "issues": [
+   "（可选）p.25 的条文出自 MBO §50，适用于公众可达建筑"
+  ],
+  "evidence_note": "p.25 第(3)条坡道句 + p.22 'Ramps' 段（6%、1.20 m、6 m 设 1.50 m 平台）"
+ },
+ {
+  "kid": "K17",
+  "title": "公共建筑楼梯两侧扶手",
+  "verdict": "needs_fix",
+  "issues": [
+   "原文为'past the last steps'，摘要'延伸过首末踏步'增加了'首'",
+   "适用范围为 MBO §50 中的公众可达建筑（面向公众部分），'公共建筑'可接受但宜写准确"
+  ],
+  "corrected_summary": "按 MBO §50，公众可达建筑的楼梯须两侧设扶手，扶手应在休息平台和窗洞处连续，并延伸过最后一级踏步。",
+  "evidence_note": "p.25 第(3)条 'Stairs must have handrails on both sides, which are to be continued past landings and window openings and past the last steps'"
+ },
+ {
+  "kid": "K18",
+  "title": "电梯候梯区",
+  "verdict": "supported",
+  "issues": [
+   "（细节）原文为'最小可用进深应等于轿厢进深'"
+  ],
+  "evidence_note": "p.128 'must not infringe on stairs'；p.130 单台电梯候梯区进深；p.22 'must not overlap with other traffic routes'"
+ },
+ {
+  "kid": "K19",
+  "title": "非必要楼梯",
+  "verdict": "needs_fix",
+  "issues": [
+   "原文只给出'21/21'踏步比，摘要解读为'踏步高 ≤ 21 cm、踏面宽 ≥ 21 cm'，≤/≥ 方向为添加内容",
+   "原文语境为'According to German standards'"
+  ],
+  "corrected_summary": "按德国标准，建筑法规不视为必要楼梯（不作为法定疏散路线）的楼梯：可用宽度 0.50 m，踏步比 21/21。",
+  "evidence_note": "p.120 'stairs not deemed by building regulations to be legally essential (as fire escape routes) 0.50 m, 21/21'"
+ },
+ {
+  "kid": "K20",
+  "title": "洞口尺寸 ≠ 净通行宽度",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.114 'differing constructional thicknesses (difference between structural opening and clear pass-through dimension)'"
+ },
+ {
+  "kid": "K21",
+  "title": "住宅门的常规宽度",
+  "verdict": "needs_fix",
+  "issues": [
+   "'front doors up to 115 cm' 是'最多/可达 115 cm'，摘要写成'最宽约 115 cm'加了'约'",
+   "原文为住宅中单扇门的净开启宽度，可注明"
+  ],
+  "corrected_summary": "住宅中单扇门的净开启宽度：房门约 80 cm，浴室/WC 门约 70 cm，户门 ≥ 90 cm，入户大门最大 115 cm。",
+  "evidence_note": "p.113 'In residential buildings, the clear opening width of doors is:' + 'single-leaf doors' 表"
+ },
+ {
+  "kid": "K22",
+  "title": "内门净高",
+  "verdict": "supported",
+  "issues": [
+   "（可选）原文另注'更好为 210–225 cm'"
+  ],
+  "evidence_note": "p.113 'clear opening height of internal doors minimum 210 cm, better 210-225 cm'"
+ },
+ {
+  "kid": "K23",
+  "title": "紧急出口的门型",
+  "verdict": "needs_fix",
+  "issues": [
+   "'旋转门需另设紧急出口'仅依据图注'Revolving door with additional emergency exits'，图注只是示例，原文没有要求"
+  ],
+  "corrected_summary": "紧急出口处不允许使用推拉门和旋转门，因为危险情况下它们可能堵塞出口；旋转门通行能力较低，高峰时门扇可折叠推到一侧（图示有带附加紧急出口的旋转门示例）。",
+  "evidence_note": "p.113 'Sliding doors and revolving doors are not permissible at emergency exits'；p.115 仅为图注"
+ },
+ {
+  "kid": "K24",
+  "title": "电梯入户的户门",
+  "verdict": "needs_fix",
+  "issues": [
+   "门高原文为'should be at least 2.10 m'（宜），摘要写成与 90 cm 同等的硬性要求",
+   "原文注明依据 MBO"
+  ],
+  "corrected_summary": "按 MBO，经电梯到达的住户户门须有 90 cm 净开启宽度（供轮椅通行），此时门高宜 ≥ 2.10 m。",
+  "evidence_note": "p.146 'According to the MBO, ... must have a clear opening width of 90 cm ... The door height in this case should be at least 2.10 m'"
+ },
+ {
+  "kid": "K25",
+  "title": "无障碍门净宽",
+  "verdict": "supported",
+  "issues": [
+   "（可选）入口条款出自 MBO §50 公众可达建筑"
+  ],
+  "evidence_note": "p.22 'Clear passage width of doors ≥ 0.90 m'；p.25 入口无台阶净宽 ≥ 0.90 m"
+ },
+ {
+  "kid": "K26",
+  "title": "无障碍的适用范围与无台阶通达",
+  "verdict": "needs_fix",
+  "issues": [
+   "适用建筑清单（文化、教育、体育、休闲、医疗、办公、行政、法院、商业、餐饮、停车、车库、厕所）在 p.25 指的是第(2)条'公众可达建筑须可供残障人士等无需他人帮助进出使用'，并非 p.22'各层无台阶可达'这一要求，摘要把两者混在一起",
+   "清单遗漏体育、休闲、行政、法院、商业、车库"
+  ],
+  "corrected_title": "无障碍：无台阶通达与公众可达建筑的适用范围",
+  "corrected_summary": "按无障碍原则设计的建筑，所有楼层须无台阶可达（即通过电梯或坡道）。另按 MBO §50，公众可达建筑面向公众的部分须能供残障人士、老人和带小孩的人无需他人帮助按用途进出使用，尤其适用于文化、教育、体育、休闲和医疗设施，办公、行政建筑和法院，商业和餐饮场所，停车场、车库和厕所。",
+  "evidence_note": "p.22 'Accessibility without steps'；p.25 第(2)条"
+ },
+ {
+  "kid": "K27",
+  "title": "轮椅活动空间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.21 'A depth and width of at least 1.50 m should be provided in every room for turning'；p.25/p.22 走廊 ≥ 1.50 m"
+ },
+ {
+  "kid": "K28",
+  "title": "无障碍卫生间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.22 'Doors to toilets, showers and changing rooms must open outward'；'At least one toilet must be provided for wheelchair users in all sanitary facilities'"
+ },
+ {
+  "kid": "K29",
+  "title": "无障碍电梯",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.22 'Lifts' 段"
+ },
+ {
+  "kid": "K30",
+  "title": "轮椅停车位",
+  "verdict": "supported",
+  "issues": [
+   "（可选）原文给出数值：该活动区进深 ≥ 1.50 m，可补入"
+  ],
+  "evidence_note": "p.22 'min. 1.50 m deep ... next to the long side of the vehicle of a wheelchair user in car parks'"
+ },
+ {
+  "kid": "K31",
+  "title": "楼梯起止处活动区",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.22 'Stairs. The movement area next to the stairs ... min. 1.50 m wide; the tread of the first step is not to be included'"
+ },
+ {
+  "kid": "K32",
+  "title": "长走廊轮椅会车位",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.22 'Corridors and routes longer than 15 m must have a passing place ... 1.80 m'"
+ },
+ {
+  "kid": "K33",
+  "title": "多户住宅的无障碍楼层",
+  "verdict": "supported",
+  "issues": [
+   "（可选）条文出自 MBO §50"
+  ],
+  "evidence_note": "p.25 第(1)条"
+ },
+ {
+  "kid": "K34",
+  "title": "无障碍住宅卫浴",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.23 'Bathroom' 段及 'min. 1.50 m wide and min. 1.50 m deep' 清单"
+ },
+ {
+  "kid": "K35",
+  "title": "轮椅住宅的起居室",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.24 'Living area' 段（should be 22/24/26/28 m²，宽 3.75 m）"
+ },
+ {
+  "kid": "K36",
+  "title": "疏散距离",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.121 'Every location in inhabited rooms and basements must be ≤ 35 m from the stairwell ...'"
+ },
+ {
+  "kid": "K37",
+  "title": "两条独立疏散路线",
+  "verdict": "needs_fix",
+  "issues": [
+   "原文主体为'住宅或商业单元'，且需通往室外",
+   "第二疏散路线的说明以'单元不在地面层时'为条件，摘要未保留",
+   "遗漏'经安全楼梯间疏散时不需要第二疏散路线'的例外"
+  ],
+  "corrected_summary": "含至少一个居室的住宅或商业单元，每层须有至少两条通往室外的独立疏散路线；单元不在地面层时，第一条须经必要楼梯，第二条可经第二部必要楼梯或消防队救援设备可达的位置；经烟火无法侵入的安全楼梯间疏散时不需要第二疏散路线。",
+  "evidence_note": "p.511 'Escape routes' 段"
+ },
+ {
+  "kid": "K38",
+  "title": "疏散窗",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.97 'If the window serves as an escape route, it must have a clear opening of at least 0.9 × 1.2 m and a sill height of max. 1.2 m'"
+ },
+ {
+  "kid": "K39",
+  "title": "出口宽度（按人数）",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.175 'Emergency exits 1.0 m wide per 150 people using them'（餐饮章节）"
+ },
+ {
+  "kid": "K40",
+  "title": "防火分区与防火墙",
+  "verdict": "needs_fix",
+  "issues": [
+   "原文：防火墙上开口'原则上不允许'，仅在建筑内部的防火墙上可例外允许，此时须设 T 90 自闭防火门；摘要'只能设自闭式防火门'丢失'原则上不允许/仅限建筑内部'",
+   "40 m 划分出自 MBO；'长度'为解读，原文只说'not more than 40 m'"
+  ],
+  "corrected_summary": "按 MBO，较大建筑须用防火墙划分为不超过 40 m 的防火分区；防火墙须防火、受火时结构稳定并由不燃材料构成（F 90 A）。防火墙上开口原则上不允许，建筑内部的防火墙可例外允许开口，但须设自闭式防火门（T 90 门或闸门）。",
+  "evidence_note": "p.513 MBO 防火墙位置句；'Openings in fire compartment walls are generally impermissible. They can be allowed ... within buildings ...'"
+ },
+ {
+  "kid": "K41",
+  "title": "主楼梯须设在连续封闭的楼梯间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.121 'All main staircases must be enclosed in a continuous stairwell ...'"
+ },
+ {
+  "kid": "K42",
+  "title": "疏散走廊侧墙 F 30",
+  "verdict": "needs_fix",
+  "issues": [
+   "'轻钢/木龙骨'为添加内容，原文仅说'stud partitions of various qualities'",
+   "G 级玻璃原文为'典型应用'，且有条件：仅在无更高防火要求处可用，玻璃下沿须 ≥ 1.80 m；摘要遗漏该数值条件"
+  ],
+  "corrected_summary": "作为疏散路线侧墙的走廊墙须为阻燃构造（F 30）；其上的采光开口是 G 级玻璃的典型应用（仅在无更高防火要求处允许），此时玻璃下沿须离地 ≥ 1.80 m。非承重分隔墙可做成不同品质的龙骨隔墙。",
+  "evidence_note": "p.516 'Scope of application' 段；p.514 'Non-load-bearing separating walls can be constructed as stud partitions of various qualities'"
+ },
+ {
+  "kid": "K43",
+  "title": "高层建筑的疏散走道",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.246 'Escape routes' 段"
+ },
+ {
+  "kid": "K44",
+  "title": "高层建筑立面的层间防火",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.246 'Façade' 段"
+ }
+]

@@ -1,0 +1,354 @@
+[
+ {
+  "kid": "K03",
+  "title": "车位与通道尺寸",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p392 Garage Regs 2.30 m vs FGSV recommends 2.50 m; p390 caption 90°/5.50/2.50; p400 petrol-station state regs 2.50×5.00 m — all match."
+ },
+ {
+  "kid": "K06",
+  "title": "建筑密度与容积率",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p63 land use regulation: plot coverage ratio / floor-area ratio definitions rendered faithfully."
+ },
+ {
+  "kid": "K09",
+  "title": "每段梯段步数",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p120: legally essential stairs ≥3 to ≤18 steps; 18-step rule is a 'should' regulation."
+ },
+ {
+  "kid": "K12",
+  "title": "两户以下住宅的楼梯",
+  "verdict": "needs_fix",
+  "issues": [
+   "来源明确为“According to German standards … must have”，摘要未保留“按德国标准”这一出处，也未写出“须”的强制语气",
+   "同句中还区分了非必要楼梯（0.50 m、21/21），摘要未说明 0.80 m/17/28 是该类住宅的必要（作为疏散）楼梯的要求，适用范围略含糊"
+  ],
+  "corrected_summary": "按德国标准，不超过两户的住宅，楼梯须满足可用宽度至少 0.80 m、踏步比（踢面/踏面）17/28；（同段：非法定必要楼梯可为 0.50 m、21/21，其他法定必要楼梯 1.00 m、17/28，高层住宅 1.25 m）。",
+  "evidence_note": "p120 STAIRS: 'According to German standards, residential buildings with no more than two flats must have a usable stair width min. 0.80 m, 17/28'."
+ },
+ {
+  "kid": "K15",
+  "title": "楼座、夹层、阳台的护栏高度",
+  "verdict": "needs_fix",
+  "issues": [
+   "摘要称“图注另称楼梯井宽 ≥ 20 cm 时 > 12 m 亦为 1.00 m”，但该句来自正文（page_0134_text_002，source=body），并非图注——出处标注错误（第一轮修订引入）",
+   "其余数值（≥1 m 起强制；<12 m 0.90 m；>12 m 1.10 m；工作场所 <12 m 1.00 m）与原文一致"
+  ],
+  "corrected_summary": "楼座、夹层、阳台及剧院楼座看台须设护栏（高 h），高差 ≥ 1 m 起强制：坠落高度 < 12 m 时 h = 0.90 m；坠落高度 > 12 m 时 h = 1.10 m；工作场所坠落高度 < 12 m 时 h = 1.00 m，且楼梯井宽至少 20 cm 时，坠落高度超过 12 m 也为 1.00 m（同一正文条目所述）。",
+  "evidence_note": "p122 body text_001/002/006; the 20 cm stairwell clause is body text, not a caption."
+ },
+ {
+  "kid": "K18",
+  "title": "电梯候梯区",
+  "verdict": "needs_fix",
+  "issues": [
+   "原文是“minimum usable depth … should equal the car depth”，即最小可用进深应等于轿厢进深；摘要写成“候梯区进深应等于轿厢进深”，丢失“最小/至少”的含义，易被理解为恰好等于",
+   "同段还规定单台电梯候梯区最小可用面积应等于轿厢进深×井道宽度，可补充（非必须）"
+  ],
+  "corrected_summary": "候梯（排队）空间不得占用楼梯；单台电梯前候梯区自井道门墙至对面墙的最小可用进深（沿轿厢进深方向量）应等于轿厢进深，最小可用面积应等于轿厢进深 × 井道宽度；无障碍电梯门前活动区不得与其他交通路线和活动区重叠。",
+  "evidence_note": "p128 'must not infringe on stairs'; p130 'minimum usable depth … should equal the car depth'; p22 accessible lifts 'must not overlap'."
+ },
+ {
+  "kid": "K21",
+  "title": "洞口尺寸 ≠ 净通行宽度",
+  "verdict": "needs_fix",
+  "issues": [
+   "原文只说结构洞口与净通行尺寸之间存在差异（因构造厚度不同），摘要另加“/外形尺寸”，原文未提外形尺寸",
+   "“扣除门框等构造厚度”是对“consideration of the differing constructional thicknesses”的合理意译，但应限定于门框构造（frame construction）的语境"
+  ],
+  "corrected_summary": "在门框构造设计中，须考虑不同的构造厚度，即门的结构洞口尺寸与净通行尺寸之间的差异（净通行尺寸小于结构洞口）。",
+  "evidence_note": "p114 DOORS 'Frame construction': '(difference between structural opening and clear pass-through dimension)'."
+ },
+ {
+  "kid": "K24",
+  "title": "紧急出口的门型",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p113 not permissible at emergency exits; p10 revolving doors low throughput, leaves foldable at peak times; p115 caption — all faithful."
+ },
+ {
+  "kid": "K27",
+  "title": "无障碍：无台阶通达与公众可达建筑的适用范围",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p22 step-free access 'must'; p25 (2) publicly accessible buildings, heading confirms § 50 MBO; building-type list matches."
+ },
+ {
+  "kid": "K30",
+  "title": "无障碍电梯",
+  "verdict": "needs_fix",
+  "issues": [
+   "遗漏关键条件：门前活动区须“至少与轿厢地面面积一样大”，1.50 × 1.50 m 只是下限",
+   "未说明出处为无障碍建筑章节（标题已含“无障碍”，可接受）"
+  ],
+  "corrected_summary": "无障碍建筑中，电梯轿厢净宽须 ≥ 1.10 m、净深 ≥ 1.40 m；门前活动区须至少与轿厢地面面积相同，且不小于 1.50 m 宽 × 1.50 m 深，并不得与其他交通路线和活动区重叠。",
+  "evidence_note": "p22 ACCESSIBLE BUILDING 'as large as the floor area of the car, but min. 1.50 m wide and 1.50 m deep'."
+ },
+ {
+  "kid": "K33",
+  "title": "长走廊轮椅会车位",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p22 accessible building: corridors >15 m must have 1.80 × 1.80 m passing place."
+ },
+ {
+  "kid": "K36",
+  "title": "轮椅住宅的起居室",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p24 accessible building, living area for wheelchair users: 22/24/26/28 m², width 3.75 m (1–2 persons), 'should'."
+ },
+ {
+  "kid": "K39",
+  "title": "疏散窗",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p97 WINDOWS: escape window must have clear opening ≥0.9 × 1.2 m and sill ≤1.2 m."
+ },
+ {
+  "kid": "K42",
+  "title": "主楼梯须设在连续封闭的楼梯间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p121 STAIRS: all main staircases must be in a continuous enclosed stairwell incl. access routes and exit."
+ },
+ {
+  "kid": "K45",
+  "title": "高层建筑立面的层间防火",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p246 HIGH-RISE BUILDINGS façade: W 90 A parapet ≥1 m or ≥1.5 m projection; all-glass only with special approval + sprinklers/mist."
+ },
+ {
+  "kid": "K48",
+  "title": "厨房朝向",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p149 kitchen 'ideally on the northeast or northwest'."
+ },
+ {
+  "kid": "K51",
+  "title": "视野：窗宽不小于房间宽 65%",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p495 caption + body 'View out' (DIN 5034): window width ≥65% of room width, before finishings."
+ },
+ {
+  "kid": "K54",
+  "title": "按朝向选择遮阳",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p500 DAYLIGHT systems by orientation — faithful."
+ },
+ {
+  "kid": "K57",
+  "title": "夹心墙（双叶墙）的外叶与空气层",
+  "verdict": "supported",
+  "issues": [
+   "小瑕疵：空气层 40–150 mm 原文为“should”，摘要未写“宜/应”，但未夸大"
+  ],
+  "evidence_note": "p75 WALLS: outer leaf min. 90 mm; air gap should be min. 40 mm (max. 150 mm)."
+ },
+ {
+  "kid": "K60",
+  "title": "热阻与传热系数计算",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p471/472 R = d/λ, 1/U = Rsi + R + Rse, surface film cannot exceed proportion X."
+ },
+ {
+  "kid": "K63",
+  "title": "平屋面构造：暖屋面与倒置屋面",
+  "verdict": "supported",
+  "issues": [
+   "小瑕疵：倒置屋面“压重固定”原文为“secured with a gravel layer”（砾石层压住），意思一致"
+  ],
+  "evidence_note": "p92 Flat Roofs: warm roof composite; upside-down roof description."
+ },
+ {
+  "kid": "K66",
+  "title": "坡屋面保温位置与通风构造",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p90 Pitched Roofs: insulation between/under rafters, ventilated vs unventilated, industry prefers unventilated."
+ },
+ {
+  "kid": "K69",
+  "title": "建筑等级与承重墙耐火",
+  "verdict": "needs_fix",
+  "issues": [
+   "遗漏原文紧随的例外与补充条件：该要求不适用于其上无居室的屋顶空间最上层及阳台；地下室中承重墙柱须为防火构造（等级 1、2 为阻燃）",
+   "数值/等级对应（5 防火、4 高度阻燃、1 和 2 阻燃）与原文一致；建筑等级 3–5 的括注说明忠实"
+  ],
+  "corrected_summary": "（书中在垃圾间规定处以括号注明）住宅超过两套或使用面积达 400 m² 的建筑属于建筑等级 3–5。承重及支撑墙、柱在等级 5 的建筑中须为防火（耐火）构造，等级 4 须为高度阻燃，等级 1 和 2 须为阻燃；此规定不适用于其上方无居室的屋顶空间最上层及阳台；在地下室中须为防火构造，等级 1 和 2 的建筑为阻燃。",
+  "evidence_note": "p464 waste-room parenthesis; p514 FIRE PROTECTION text_003 incl. roof-space/balcony exception and cellar rule."
+ },
+ {
+  "kid": "K72",
+  "title": "外墙及外墙饰面的燃烧性能",
+  "verdict": "needs_fix",
+  "issues": [
+   "遗漏原文的一般规定：外墙饰面（含保温层和支撑构造）须用难燃（flame-resistant）材料；等级 1、2 可用普通可燃材料只是该规定的例外",
+   "“（如木材）”为原文所无的添加"
+  ],
+  "corrected_summary": "非承重外墙及承重外墙的非承重部分（建筑等级 1–3 除外）须用不燃（至少阻燃）材料建造；外墙饰面（含保温层及支撑构造）须用难燃材料；等级 1、2 的建筑如能有效防止火势蔓延至相邻建筑，允许外墙饰面采用普通可燃材料。",
+  "evidence_note": "p514 FIRE PROTECTION text_001."
+ },
+ {
+  "kid": "K75",
+  "title": "居住面积计算",
+  "verdict": "supported",
+  "issues": [
+   "小瑕疵：未说明出处为住房面积条例（Housing area regulations，住房促进法），也未提阳台、凉廊、露台按 1/4 计入；不影响所述内容的正确性"
+  ],
+  "evidence_note": "p63: full ≥2 m, half 1–<2 m; excludes cellars, garages, offices, non-compliant rooms."
+ },
+ {
+  "kid": "K78",
+  "title": "DIN 277 面积分类与可出租面积",
+  "verdict": "supported",
+  "issues": [
+   "小瑕疵：GIF 不计入可出租面积的清单仅列部分（另有疏散阳台、防护室、柱/墙面积、净高 ≤1.50 m 的面积），宜加“等”"
+  ],
+  "evidence_note": "p63 DIN 277 definitions and GIF letting-area exclusions — consistent."
+ },
+ {
+  "kid": "K81",
+  "title": "户外空间的连接",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p155 open areas generally related to living/working/dining; with more than one, bedrooms, kitchens."
+ },
+ {
+  "kid": "K84",
+  "title": "分组式平面与中廊式平面",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p145 grouped room plan (early 20th c.) two room groups; central corridor plan (late 19th c.), rooms accessible separately."
+ },
+ {
+  "kid": "K87",
+  "title": "防风门斗",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p146/147 entrance hall should be enclosed with inner door; lobby recommended; stair shaft gives wind protection."
+ },
+ {
+  "kid": "K90",
+  "title": "一梯一户限四层（无电梯）；一梯三户",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p142 ACCESS: one flat per floor uneconomic, general limit four floors without lift; three flats favourable."
+ },
+ {
+  "kid": "K93",
+  "title": "每户必备厨房与储藏间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p149 and p162: building regulations require kitchen/kitchenette and sufficiently large storeroom."
+ },
+ {
+  "kid": "K96",
+  "title": "开放式厨房",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p150 open kitchens require good ventilation and extraction."
+ },
+ {
+  "kid": "K99",
+  "title": "餐桌尺寸与就餐人数",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p154: ≥4 people; approx. 60 × 40 cm; 20 cm centre strip; round table min. 0.90 m, preferably 1.10–1.25 m."
+ },
+ {
+  "kid": "K102",
+  "title": "卫生间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p160 bathroom definition, minimum equipment per building regs; larger houses separate WC; normally next to bedroom."
+ },
+ {
+  "kid": "K105",
+  "title": "衣柜的位置与通风",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p159 wardrobes normally in bedroom; walk-in wardrobes need ventilation."
+ },
+ {
+  "kid": "K108",
+  "title": "卫生间类型",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p161 four bathroom categories match."
+ },
+ {
+  "kid": "K111",
+  "title": "办公楼室内净高",
+  "verdict": "supported",
+  "issues": [
+   "工业章节 3.00 m 原文为“guideline … for working rooms larger than 100 m²”的房间高度参考值，摘要已明确标注来源章节与“参考值”，可接受"
+  ],
+  "evidence_note": "p243 Vst 2.75 m, −25 cm min. 2.50 m clear, corridors/sanitary 2.30 m permitted; p266 guideline 3.00 m."
+ },
+ {
+  "kid": "K114",
+  "title": "办公室进深、开间与模数",
+  "verdict": "needs_fix",
+  "issues": [
+   "4.40 m 净深的来历缺失：原文是 1.50 m 模数下以双工位为主的单间办公室，工位进深 2.20 m，加 10 cm 墙厚得 4.40 m 净房间尺寸，摘要直接写“房间净深 4.40 m”未交代双工位与墙厚条件",
+   "开间 3.80 m（约 18 m² 使用面积）出自“1.35 m 模数”（组合办公）一节，摘要未说明该归属；两个 0.90 m 进深的电脑工位是事故保险机构建议值，亦未提及"
+  ],
+  "corrected_summary": "1.50 m 模数是以双工位为主的单间办公室的经济模数：工位进深 2.20 m（桌 80 cm + 活动区 1 m + 后柜 40 cm），计 10 cm 墙厚得 4.40 m 净房间尺寸。近年行之有效的模数为单间办公室 1.50 m、组合办公 1.35 m；在 1.35 m 模数下，3.80 m 开间（约 18 m² 使用面积）可布置两个进深 0.90 m 的电脑工位（事故保险机构建议值）等多种工位。",
+  "evidence_note": "p240 OFFICE BUILDING 'Modular dimension 1.50 m' and 'Modular dimension 1.35 m' paragraphs."
+ },
+ {
+  "kid": "K117",
+  "title": "会议区",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p238 conference ~2.5 m²/seat, subsidiary ~1/3, should be directly accessible from entrance."
+ },
+ {
+  "kid": "K120",
+  "title": "厅室的每人容积",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p483 acoustics guideline 4 m³/person speech, 10 m³/person music."
+ },
+ {
+  "kid": "K123",
+  "title": "办公楼入口区",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p238 entrance area functions and corporate identity."
+ },
+ {
+  "kid": "K126",
+  "title": "小型使用单元内的走廊",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p241 combined use units <400 m²: corridors not subject to escape-route requirements."
+ },
+ {
+  "kid": "K129",
+  "title": "高校教研人员办公室面积",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p202 offices for scientific personnel: 20–24 / 15 / 20 / 15 (20 double) m²."
+ },
+ {
+  "kid": "K132",
+  "title": "餐厅",
+  "verdict": "supported",
+  "issues": [
+   "小瑕疵：省略了楼座上/下方净高 ≥ 2.50 m 及紧急出口每 150 人 1.0 m 宽，不影响所述数值"
+  ],
+  "evidence_note": "p175 CATERING: aisles 0.80 m, doors 0.90 m; ceiling heights ≤50 2.50, >50 2.75, >100 ≥3.00."
+ }
+]

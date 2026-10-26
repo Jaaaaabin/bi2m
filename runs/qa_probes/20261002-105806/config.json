@@ -1,0 +1,13 @@
+{
+  "models": "luna",
+  "formats": "open",
+  "limit": null,
+  "kids": "K44,K73",
+  "shuffle_seed": null,
+  "workers": 6,
+  "no_judge": false,
+  "probes": "/Users/zihandeng/Desktop/1_Projects/4_bim_intent/ifc_bench_neufert/hard_qa/knowledge_probes.jsonl",
+  "model_ids": {
+    "luna": "gpt-6-luna"
+  }
+}

@@ -1,0 +1,589 @@
+[
+ {
+  "kid": "K131",
+  "topic": "办公",
+  "title": "装修网格与立面网格一致",
+  "summary": "装修（隔墙）网格与立面网格必须一致，隔墙才能接到窗上；结构网格可以与装修网格错开，这样减少隔墙与柱的连接问题，但有柱的房间会损失面积。因各类构件寿命不同，应选用可适应调整的模数。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "The fitting out and façade grids must be the same in order to enable the partitions to connect to the windows.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "context": "Grid module spacings define possible room sizes through the resulting spacing of columns and façades. The fitting out and façade grids must be the same in order to enable the partitions to connect to the windows. The structural grid can be offset against the fitting out grid. This reduces the problem of connecting the partitions to columns, but loses space in the rooms, which contain columns. Because of the different lifecycles of the building elements, an adaptable module dimension should be chosen. The modular dimensions, which have proved successful in recent years, are 1.50 m for single-room offices and 1.35 m for office types based on the combi principle."
+   },
+   {
+    "quote": "The structural grid can be offset against the fitting out grid. This reduces the problem of connecting the partitions to columns, but loses space in the rooms, which contain columns.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "context": "Grid module spacings define possible room sizes through the resulting spacing of columns and façades. The fitting out and façade grids must be the same in order to enable the partitions to connect to the windows. The structural grid can be offset against the fitting out grid. This reduces the problem of connecting the partitions to columns, but loses space in the rooms, which contain columns. Because of the different lifecycles of the building elements, an adaptable module dimension should be chosen. The modular dimensions, which have proved successful in recent years, are 1.50 m for single-room offices and 1.35 m for office types based on the combi principle."
+   },
+   {
+    "quote": "Because of the different lifecycles of the building elements, an adaptable module dimension should be chosen.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "context": "Grid module spacings define possible room sizes through the resulting spacing of columns and façades. The fitting out and façade grids must be the same in order to enable the partitions to connect to the windows. The structural grid can be offset against the fitting out grid. This reduces the problem of connecting the partitions to columns, but loses space in the rooms, which contain columns. Because of the different lifecycles of the building elements, an adaptable module dimension should be chosen. The modular dimensions, which have proved successful in recent years, are 1.50 m for single-room offices and 1.35 m for office types based on the combi principle."
+   }
+  ]
+ },
+ {
+  "kid": "K132",
+  "topic": "办公",
+  "title": "网格模数与建筑进深的搭配",
+  "summary": "网格 1.35 m、建筑进深 13.40 m 是组合式办公的经济形式，但用于单间办公时房间过深、比例差；网格 1.50 m、建筑进深 12.50 m 对单间办公或组合式办公都经济，但公共区较窄，靠窗工位比前者少 10%。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Grid module 1.35 m, building depth 13.40 m, an economical form of building for combi-offices, but for single offices this produces deep and badly proportioned rooms.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "context": "Grid module 1.35 m, building depth 13.40 m, an economical form of building for combi-offices, but for single offices this produces deep and badly proportioned rooms."
+   },
+   {
+    "quote": "Grid module 1.50 m, building depth 12.50 m, an economical form of building for single offices or for combi-offices; this provides a narrow communal zone and 10% fewer workstations at the window than with ②.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "context": "Grid module 1.50 m, building depth 12.50 m, an economical form of building for single offices or for combi-offices; this provides a narrow communal zone and 10% fewer workstations at the window than with ②."
+   }
+  ]
+ },
+ {
+  "kid": "K133",
+  "topic": "办公",
+  "title": "单排、双排与三排布局",
+  "summary": "单排布局不经济、不生态，只有办公室很深时才可接受；双排布局是行政办公楼至今最常用的形式，单间和小办公室都能有自然采光；三排布局（中部设大的服务核心区）通常只对高层建筑合适，其中部可用采光井自然采光。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Single-row layouts are unecological, and only acceptable with deep office rooms (daylight?)",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "context": "Building concepts\nSingle-row layouts are unecological, and only acceptable with deep office rooms (daylight?)\n→ ① - ②."
+   },
+   {
+    "quote": "Two-row layouts have mostly been used for administration buildings until now; single rooms and small offices are possible with daylight",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "context": "Two-row layouts have mostly been used for administration buildings until now; single rooms and small offices are possible with daylight → 4. The supply cores are situated in well-lit zones. The transitional form, three-row, is produced by offsetting the two-row layout in the supply area → 5."
+   },
+   {
+    "quote": "A large supply zone at the centre of the building is normally practical only for high-rise buildings (greater proportion of vertical transport).",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "context": "Three-row layouts (typical of office high-rise) → 3 + 6\nA large supply zone at the centre of the building is normally practical only for high-rise buildings (greater proportion of vertical transport). Daylight can mostly be exploited into a room depth of about 7.00 m. New daylight systems for the deflection and transport of light (prisms, reflectors → p. 499), exploit the available daylight still better. Lightwells can illuminate the centre of three-row buildings naturally → 6."
+   },
+   {
+    "quote": "Lightwells can illuminate the centre of three-row buildings naturally",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "context": "Three-row layouts (typical of office high-rise) → 3 + 6\nA large supply zone at the centre of the building is normally practical only for high-rise buildings (greater proportion of vertical transport). Daylight can mostly be exploited into a room depth of about 7.00 m. New daylight systems for the deflection and transport of light (prisms, reflectors → p. 499), exploit the available daylight still better. Lightwells can illuminate the centre of three-row buildings naturally → 6."
+   }
+  ]
+ },
+ {
+  "kid": "K134",
+  "topic": "办公",
+  "title": "楼梯间的间距（30 m / 60 m）",
+  "summary": "按 MBO 2002，使用房间内任一点到楼梯的距离须 ≤ 35 m；实践中由此得出楼梯间距建筑端部约 30 m、楼梯间彼此间距约 60 m（须注意各州 LBO 的不同规定）。卫生间、楼梯间、电梯井等固定点按建筑法规规定的最大间距布置。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "According to MBO 2002, every point in an occupied room must be \\( \\leq 35 \\) m from a staircase.",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "context": "According to MBO 2002, every point in an occupied room must be \\( \\leq 35 \\) m from a staircase. This in practice leads to a spacing of the staircases from the end of the building of 30 m and from each other of 60 m \\( \\rightarrow \\) 1 – 18. Take note of deviating stipulations in the current LBO!"
+   },
+   {
+    "quote": "This in practice leads to a spacing of the staircases from the end of the building of 30 m and from each other of 60 m",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "context": "According to MBO 2002, every point in an occupied room must be \\( \\leq 35 \\) m from a staircase. This in practice leads to a spacing of the staircases from the end of the building of 30 m and from each other of 60 m \\( \\rightarrow \\) 1 – 18. Take note of deviating stipulations in the current LBO!"
+   },
+   {
+    "quote": "Fixed points are sanitary facilities, stairwells, lift shafts etc., situated at maximum spacings defined in the building regulations",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "context": "Access systems\nFixed points are sanitary facilities, stairwells, lift shafts etc., situated at maximum spacings defined in the building regulations → 8 – 12. The arrangement of these determines urban development’s building structure → 7 – 16. For combined use units of less than 400 m², the corridors are not subject to the requirements for escape routes."
+   }
+  ]
+ },
+ {
+  "kid": "K135",
+  "topic": "办公",
+  "title": "组合式办公（combi-office）",
+  "summary": "组合式办公：很小的单间办公室用玻璃隔墙与较深的联系区分开，共用设施设在联系区内；每人有一个专注工作的独立工位，中部共用区促进交流。特别适合工作地点可随日程变化的独立、高素质工作。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Combi-office: Very small single offices are separated by glass walls from the deep connection zone, in which communally used infrastructure is located.",
+    "page_id": "page_0251",
+    "book_page": "239",
+    "chapter": "Administration and offices",
+    "context": "Room systems\nCombi-office: Very small single offices are separated by glass walls from the deep connection zone, in which communally used infrastructure is located. The combi-office was developed in the 1980s as an attempt to combine the advantages of single-room and open-plan offices. Each employee is provided with an individual workstation for concentrated work and a jointly used room in the central zone, with its glass partitions, encourage communication → 10."
+   },
+   {
+    "quote": "It is particularly suitable for independent, highly qualified work where the workplace can change with the daily programme.",
+    "page_id": "page_0246",
+    "book_page": "234",
+    "chapter": "Administration and offices",
+    "context": "The continuing progress of information technology is resulting in new job descriptions for employees. The requirements for office space are also changing and often require the refurbishment of existing office buildings. An additional factor of equal importance is that the open-plan configuration has been found to be inadequate (→ Changes at the workplace, p. 232).\nThe means used for this reorganisation are rebuilding, provision of daylight from inner courtyards, straightforward plan layouts, creation of workplaces of equal rank with regard to light, air and sound reduction, or the use of office furnishing systems, which can increasingly undertake the function of building services like cabling, sockets etc., and also of partitions.\nThe combi-office principle attempts to provide a suitable room concept for the specific requirements of an office organisation. This entails a room arrangement that is flexible where required, enables group work, provides individual rooms for concentrated work and a temporarily usable collective layout for particular communal activities. It is particularly suitable for independent, highly qualified work where the workplace can change with the daily programme.\n'Hot desk offices' or 'business clubs' are not spatial layouts but denote a particularly flexible organisation of work without fixed personal workplaces. Particular value is placed on variable room use possibilities and differentiated room qualities. For combi-groups and open-plan offices, efficiency is not achieved through rebuilding of rooms but via the business organisation and a flexible 'club' atmosphere conducive to wellbeing.\nIn new buildings, this experience leads to more value being placed on reversibility, in order to be able to react better to the ever-shorter innovation cycles of office technology. This leads to buildings which can be divided into user units of varying sizes without great inconvenience (rented offices) → 3 – 4, or even permit a combination of production and administration (start-up centres) → 3. The changed values regarding the workplace, plus high energy prices, are leading to new architectural forms with building elements intended to provide temperature regulation and natural ventilation (conservatories, halls, double façades).\n\nKey\n  • Column"
+   }
+  ]
+ },
+ {
+  "kid": "K136",
+  "topic": "办公",
+  "title": "单间办公：疏散通道内不得放家具",
+  "summary": "单间办公：单人间和双人间沿一条多为人工照明的走廊成排布置；因疏散通道内不允许放置家具，共用设施只能占用使用房间里昂贵的靠窗面积。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Single and double rooms are arranged in rows along a mostly artificially lit corridor.",
+    "page_id": "page_0251",
+    "book_page": "239",
+    "chapter": "Administration and offices",
+    "context": "Room types\nSingle-room offices: Single and double rooms are arranged in rows along a mostly artificially lit corridor. Jointly used infrastructure occupies expensive window space in occupied rooms, because no furniture is allowed in escape routes. The most economical occupation, by two or three people, disturbs concentrated work. Single rooms hinder internal communication. This is still the most common form of office layout → ①."
+   },
+   {
+    "quote": "Jointly used infrastructure occupies expensive window space in occupied rooms, because no furniture is allowed in escape routes.",
+    "page_id": "page_0251",
+    "book_page": "239",
+    "chapter": "Administration and offices",
+    "context": "Room types\nSingle-room offices: Single and double rooms are arranged in rows along a mostly artificially lit corridor. Jointly used infrastructure occupies expensive window space in occupied rooms, because no furniture is allowed in escape routes. The most economical occupation, by two or three people, disturbs concentrated work. Single rooms hinder internal communication. This is still the most common form of office layout → ①."
+   }
+  ]
+ },
+ {
+  "kid": "K137",
+  "topic": "办公",
+  "title": "大空间办公的进深",
+  "summary": "大空间（开敞）办公适合主要从事协同工作的大群体和专注度要求低的常规工作；其 20–30 m 的大进深导致建筑设备成本高，改造适应性有限。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "are suitable for large groups of employees who are predominantly engaged in shared work and for routine activities with a low concentration threshold.",
+    "page_id": "page_0245",
+    "book_page": "233",
+    "chapter": "Administration and offices",
+    "context": "Forms of office organisation\nOpen-plan offices (Mies van der Rohe: '... clearly laid-out, undivided, only structured...' → refs) are suitable for large groups of employees who are predominantly engaged in shared work and for routine activities with a low concentration threshold. This is increasingly the exception rather than the rule today. The concept appeared in the 1960s with arguments like transparency and manageability of work processes, development of community feeling, and a rationally organised multifunctional area. IT machines were in separate rooms and not available in offices. The extensive room depths of 20–30 m resulted in high costs for building services, which is of limited suitability for the conversion of buildings, and the potential flexibility has its limits in the light of today's demands (opening windows, control of lighting, air conditioning and electricity supply) (Henkel → refs). The open-plan office is attested by sociologists to be afflicted with a character of compulsion (social controls, dependence on technical equipment, optical and acoustic disturbance), and therefore led to a negative reaction among its occupants."
+   },
+   {
+    "quote": "The extensive room depths of 20–30 m resulted in high costs for building services",
+    "page_id": "page_0245",
+    "book_page": "233",
+    "chapter": "Administration and offices",
+    "context": "Forms of office organisation\nOpen-plan offices (Mies van der Rohe: '... clearly laid-out, undivided, only structured...' → refs) are suitable for large groups of employees who are predominantly engaged in shared work and for routine activities with a low concentration threshold. This is increasingly the exception rather than the rule today. The concept appeared in the 1960s with arguments like transparency and manageability of work processes, development of community feeling, and a rationally organised multifunctional area. IT machines were in separate rooms and not available in offices. The extensive room depths of 20–30 m resulted in high costs for building services, which is of limited suitability for the conversion of buildings, and the potential flexibility has its limits in the light of today's demands (opening windows, control of lighting, air conditioning and electricity supply) (Henkel → refs). The open-plan office is attested by sociologists to be afflicted with a character of compulsion (social controls, dependence on technical equipment, optical and acoustic disturbance), and therefore led to a negative reaction among its occupants."
+   }
+  ]
+ },
+ {
+  "kid": "K138",
+  "topic": "办公",
+  "title": "非固定工位办公的面积节省",
+  "summary": "非固定工位（hot desk / business club）办公：员工的个人区域只限于一个可移动的桌柜单元；结合远程办公或外勤比例高时，比固定工位办公可节省 20–50%。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "The personal area of the employee is limited to a mobile desk/cupboard unit.",
+    "page_id": "page_0251",
+    "book_page": "239",
+    "chapter": "Administration and offices",
+    "context": "'Hot desk' office, 'business club': Certain functions are assigned to workstations. The users choose the suitable working location for the current activity (non-territorial offices). The personal area of the employee is limited to a mobile desk/cupboard unit. This type of office is only made possible by new forms of business organisation and technical equipment like mobile phones and laptops. Combined with teleworking or with a high proportion of travelling representatives, savings of 20–50% are possible compared with personalised offices → p. 234 → ①."
+   },
+   {
+    "quote": "Combined with teleworking or with a high proportion of travelling representatives, savings of 20–50% are possible compared with personalised offices",
+    "page_id": "page_0251",
+    "book_page": "239",
+    "chapter": "Administration and offices",
+    "context": "'Hot desk' office, 'business club': Certain functions are assigned to workstations. The users choose the suitable working location for the current activity (non-territorial offices). The personal area of the employee is limited to a mobile desk/cupboard unit. This type of office is only made possible by new forms of business organisation and technical equipment like mobile phones and laptops. Combined with teleworking or with a high proportion of travelling representatives, savings of 20–50% are possible compared with personalised offices → p. 234 → ①."
+   }
+  ]
+ },
+ {
+  "kid": "K139",
+  "topic": "办公",
+  "title": "可逆办公楼（出租办公）",
+  "summary": "可逆办公（Revibüro）其实不是一种办公室类型，而是一种建筑形式；适应性越高设备成本越高，办公室大小和组织上须接受折中；主要适合出租给尚未确定的租户。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "The cost of equipment rises with increasing adaptability and compromises have to be accepted concerning office sizes and organisation.",
+    "page_id": "page_0251",
+    "book_page": "239",
+    "chapter": "Administration and offices",
+    "context": "Reversible office (Revibüro): This is actually not a type of office but rather a form of building which hosts functions of different office companies at more or less expense. The cost of equipment rises with increasing adaptability and compromises have to be accepted concerning office sizes and organisation. This type of building is mainly suitable for offices for renting to tenants who are not yet known → pp. 234, 235."
+   },
+   {
+    "quote": "This type of building is mainly suitable for offices for renting to tenants who are not yet known",
+    "page_id": "page_0251",
+    "book_page": "239",
+    "chapter": "Administration and offices",
+    "context": "Reversible office (Revibüro): This is actually not a type of office but rather a form of building which hosts functions of different office companies at more or less expense. The cost of equipment rises with increasing adaptability and compromises have to be accepted concerning office sizes and organisation. This type of building is mainly suitable for offices for renting to tenants who are not yet known → pp. 234, 235."
+   }
+  ]
+ },
+ {
+  "kid": "K140",
+  "topic": "办公",
+  "title": "工位面积的构成",
+  "summary": "标准不再规定工位的固定尺寸，而要求有足够的工作面积和活动面积。面积分为：工作面（桌面）、搁置面（家具的平面面积）、家具功能面（门和抽屉开启所需）、工位活动面、交通与通行面；各类面积在不影响功能时可以重叠。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The standard no longer prescribes fixed dimensions for workplaces, but requires sufficient working and movement areas for changing positions at work and for the individually adaptable placing of work equipment.",
+    "page_id": "page_0247",
+    "book_page": "235",
+    "chapter": "Administration and offices",
+    "context": "Furniture areas\nThe standard no longer prescribes fixed dimensions for workplaces, but requires sufficient working and movement areas for changing positions at work and for the individually adaptable placing of work equipment."
+   },
+   {
+    "quote": "– work area: table\n– shelf area: plan area of the furniture\n– furniture function area: space required for doors and drawers\n– movement area at the workstation\n– traffic and through-passages",
+    "page_id": "page_0247",
+    "book_page": "235",
+    "chapter": "Administration and offices",
+    "context": "The areas are:\n– work area: table\n– shelf area: plan area of the furniture\n– furniture function area: space required for doors and drawers\n– movement area at the workstation\n– traffic and through-passages"
+   },
+   {
+    "quote": "The assignments of various areas are differentiated by the standard; however, they can overlap if this results in no limitation of the function.",
+    "page_id": "page_0247",
+    "book_page": "235",
+    "chapter": "Administration and offices",
+    "context": "The assignments of various areas are differentiated by the standard; however, they can overlap if this results in no limitation of the function."
+   }
+  ]
+ },
+ {
+  "kid": "K141",
+  "topic": "办公",
+  "title": "每工位面积指标（直接工位与交通面积）",
+  "summary": "每个工位的平均毛面积指标：直接工位面积 11–15 m²（平均 13 m²），附加面积（洽谈、存放）1.5–4.2 m²（平均 2.5 m²），交通面积 2.2–6.0 m²（平均 4.5 m²）。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Workstation | Immediate workstation | 11–15 | 13 | 15.5",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "context": "Area (m²) | Range | Average | Total\nWorkstation | Immediate workstation | 11–15 | 13 | 15.5\n | Additional area (consulting, storage) | 1.5–4.2 | 2.5 | \nSubsidiary areas | Sanitary facilities | 0.6–0.8 | 0.7 | \n | Conference/training | 0.3–1.0 | 0.6 | \n | Archive | 0.4–1.0 | 0.6 | \n | Stores | 0.4–1.5 | 0.6 | \n | Canteen, cafeteria, tea kitchen | 0.6–1.6 | 1.1 | 9.0\n | Entrance area | 0.2–0.7 | 0.4 | \n | Supply and disposal | 0.5–1.5 | 1.0 | \n | Post room | 0.3–0.5 | 0.4 | \n | Server room | 0.5–1.5 | 1.0 | \n | Garage parking | 0–13 | 2.6 | \nBuilding | Construction area | 1.9–3.8 | 3.0 | 10.5\n | Building services | 2.4–4.6 | 3.0 | \n | Traffic area | 2.2–6.0 | 4.5 | "
+   },
+   {
+    "quote": "Additional area (consulting, storage) | 1.5–4.2 | 2.5",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "context": "Area (m²) | Range | Average | Total\nWorkstation | Immediate workstation | 11–15 | 13 | 15.5\n | Additional area (consulting, storage) | 1.5–4.2 | 2.5 | \nSubsidiary areas | Sanitary facilities | 0.6–0.8 | 0.7 | \n | Conference/training | 0.3–1.0 | 0.6 | \n | Archive | 0.4–1.0 | 0.6 | \n | Stores | 0.4–1.5 | 0.6 | \n | Canteen, cafeteria, tea kitchen | 0.6–1.6 | 1.1 | 9.0\n | Entrance area | 0.2–0.7 | 0.4 | \n | Supply and disposal | 0.5–1.5 | 1.0 | \n | Post room | 0.3–0.5 | 0.4 | \n | Server room | 0.5–1.5 | 1.0 | \n | Garage parking | 0–13 | 2.6 | \nBuilding | Construction area | 1.9–3.8 | 3.0 | 10.5\n | Building services | 2.4–4.6 | 3.0 | \n | Traffic area | 2.2–6.0 | 4.5 | "
+   },
+   {
+    "quote": "Traffic area | 2.2–6.0 | 4.5",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "context": "Area (m²) | Range | Average | Total\nWorkstation | Immediate workstation | 11–15 | 13 | 15.5\n | Additional area (consulting, storage) | 1.5–4.2 | 2.5 | \nSubsidiary areas | Sanitary facilities | 0.6–0.8 | 0.7 | \n | Conference/training | 0.3–1.0 | 0.6 | \n | Archive | 0.4–1.0 | 0.6 | \n | Stores | 0.4–1.5 | 0.6 | \n | Canteen, cafeteria, tea kitchen | 0.6–1.6 | 1.1 | 9.0\n | Entrance area | 0.2–0.7 | 0.4 | \n | Supply and disposal | 0.5–1.5 | 1.0 | \n | Post room | 0.3–0.5 | 0.4 | \n | Server room | 0.5–1.5 | 1.0 | \n | Garage parking | 0–13 | 2.6 | \nBuilding | Construction area | 1.9–3.8 | 3.0 | 10.5\n | Building services | 2.4–4.6 | 3.0 | \n | Traffic area | 2.2–6.0 | 4.5 | "
+   }
+  ]
+ },
+ {
+  "kid": "K142",
+  "topic": "办公",
+  "title": "屏幕工位与窗的关系",
+  "summary": "屏幕工位的视线方向应与窗立面及灯带平行，屏幕尽量位于两者之间。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The view to the screen should be parallel to the window façade and to light bands, with the screen if possible in-between.",
+    "page_id": "page_0248",
+    "book_page": "236",
+    "chapter": "Administration and offices",
+    "context": "Workplace layout\nItems which are frequently used during the working day should be put in the preferred places where they are visible and reachable → ① – ③. There should be a free movement area of at least 1.5 m² at the workstation.\nFurniture: This should enable the correctly defined working posture – upper arm and elbow vertical at an angle of approx. 90° and thigh and lower leg vertical at an angle of 90° → ④. To achieve the correct posture for people of different heights, table and chair sizes must be adjustable. Two ergonomically equally valuable possibilities are:\nA: workstation type 1, desk at variable height\n    chair at variable height\n    60–78 cm\n    42–54 cm\nB: workstation type 2, type 3, desk of fixed height\n    chair of variable height\n    72 cm\n    42–50 cm\n    footstool of variable height\n    00–15 cm\nThere should be sufficient legroom → ⑥.\nThe desktop working area should be at least 120 × 80 cm (few documents, predominantly screen work; for specialist employees, at least 200 × 80 cm)\nEnvironment: All furniture in the immediate vicinity (desktop etc.) should have a coefficient of reflection of 20–50%.\nLighting intensity should be 300–500 lx, and lamps have limited glare, e.g. through recessed ceiling grid luminaires or 2-K lighting → p. 501–510. Light bands should be arranged parallel to the window. Matt surfaces in the room with recommended coefficients of reflection (approx: ceiling 70%, walls 50%, partitions 20–50%).\nThe view to the screen should be parallel to the window façade and to light bands, with the screen if possible in-between. Install computer workstations in windowless zones.\nRecommendations for climatic conditions and sound reduction should be complied with. The increased use of equipment in offices will more probably result in a cooling load rather than a heating load (→ p. 466).\n\nPsychology of the computer workstation"
+   }
+  ]
+ },
+ {
+  "kid": "K143",
+  "topic": "办公",
+  "title": "档案存放的面积与位置",
+  "summary": "档案系统所需面积 = 家具面积 + 通道面积，其中家具面积 = 长 × 宽，通道面积 = ½ 长 × 宽 + 0.5 m；档案系统应设在中心位置；密集架（移动式档案系统）取消中间通道，可节省 100–120% 的空间。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "L × W (filing furniture) = space for furniture\n+ ½ L × W + 0.5 m = passage space",
+    "page_id": "page_0249",
+    "book_page": "237",
+    "chapter": "Administration and offices",
+    "context": "Filing\nDespite the application of new office technologies, the use of paper as the main information storage medium has increased. Until 1980, paper consumption doubled every four years. Computer-aided storage is increasingly used as information depository in office communication systems. Letters, texts and newspapers, which are described as uncoded information, will continue to be part of the paper volume.\nPurpose: Clearly arranged ordering and storage of files within short walking distance and efficient exploitation of the space. Space requirements for filing systems (according to Ladner → ①). Increasing depth of shelves also increases the distance to walk between them.\nL × W (filing furniture) = space for furniture\n+ ½ L × W + 0.5 m = passage space\n__________\ntotal space required = space for furniture + passage space\nDeep filing cabinets are more economical. The relationship between furniture floor space and passage space for a vertical filing system using large archive shelves (Velox system) and for a horizontal filing system is made clear in → ⑪. Furniture floor space needed with vertical storage is 5.2 m², passage space 4.6 m² (100:90). With horizontal storage, furniture floor space 3.2 m², passage space 3.6 m² (90:100, ratio inverted). A horizontal filing system offers less storage space and the high shelves are hard to organise. Vertical storage offers a personnel saving of over 40%. Suspended files make about 87% better use of wall area than files on shelves → ⑫. Files can be transported with a paternoster lift. Workstations should include sorting shelves, small desk, chairs on castors.\nThe filing system should be centrally located. A favourable window centre-line is 2.25–2.50 m, ceiling clearance height 2.10 m (2 storeys of normal office space = 3 storeys of filing). The rooms must be dry, so attic and cellar are inadvisable. Continuous table → ⑬ + ⑭ with suspended files and writing surfaces combines workstations effectively. Trolleys can be used as writing surfaces, or for card index boxes. Mobile filing systems (Soenneken Compaktus system) enable a space saving of 100–120%) by eliminating intermediate passages → ⑮ B Systems are not standardised and are adapted to the relevant requirements of filing systems, archives, libraries, stores. Take note of the higher loading per m² of floor area (→ Libraries, pp. 247 ff.). Movement of the filing system is manual or by a drive. The entire filing system or just parts of it can be closed with one hand."
+   },
+   {
+    "quote": "The filing system should be centrally located.",
+    "page_id": "page_0249",
+    "book_page": "237",
+    "chapter": "Administration and offices",
+    "context": "Filing\nDespite the application of new office technologies, the use of paper as the main information storage medium has increased. Until 1980, paper consumption doubled every four years. Computer-aided storage is increasingly used as information depository in office communication systems. Letters, texts and newspapers, which are described as uncoded information, will continue to be part of the paper volume.\nPurpose: Clearly arranged ordering and storage of files within short walking distance and efficient exploitation of the space. Space requirements for filing systems (according to Ladner → ①). Increasing depth of shelves also increases the distance to walk between them.\nL × W (filing furniture) = space for furniture\n+ ½ L × W + 0.5 m = passage space\n__________\ntotal space required = space for furniture + passage space\nDeep filing cabinets are more economical. The relationship between furniture floor space and passage space for a vertical filing system using large archive shelves (Velox system) and for a horizontal filing system is made clear in → ⑪. Furniture floor space needed with vertical storage is 5.2 m², passage space 4.6 m² (100:90). With horizontal storage, furniture floor space 3.2 m², passage space 3.6 m² (90:100, ratio inverted). A horizontal filing system offers less storage space and the high shelves are hard to organise. Vertical storage offers a personnel saving of over 40%. Suspended files make about 87% better use of wall area than files on shelves → ⑫. Files can be transported with a paternoster lift. Workstations should include sorting shelves, small desk, chairs on castors.\nThe filing system should be centrally located. A favourable window centre-line is 2.25–2.50 m, ceiling clearance height 2.10 m (2 storeys of normal office space = 3 storeys of filing). The rooms must be dry, so attic and cellar are inadvisable. Continuous table → ⑬ + ⑭ with suspended files and writing surfaces combines workstations effectively. Trolleys can be used as writing surfaces, or for card index boxes. Mobile filing systems (Soenneken Compaktus system) enable a space saving of 100–120%) by eliminating intermediate passages → ⑮ B Systems are not standardised and are adapted to the relevant requirements of filing systems, archives, libraries, stores. Take note of the higher loading per m² of floor area (→ Libraries, pp. 247 ff.). Movement of the filing system is manual or by a drive. The entire filing system or just parts of it can be closed with one hand."
+   },
+   {
+    "quote": "enable a space saving of 100–120%) by eliminating intermediate passages",
+    "page_id": "page_0249",
+    "book_page": "237",
+    "chapter": "Administration and offices",
+    "context": "Filing\nDespite the application of new office technologies, the use of paper as the main information storage medium has increased. Until 1980, paper consumption doubled every four years. Computer-aided storage is increasingly used as information depository in office communication systems. Letters, texts and newspapers, which are described as uncoded information, will continue to be part of the paper volume.\nPurpose: Clearly arranged ordering and storage of files within short walking distance and efficient exploitation of the space. Space requirements for filing systems (according to Ladner → ①). Increasing depth of shelves also increases the distance to walk between them.\nL × W (filing furniture) = space for furniture\n+ ½ L × W + 0.5 m = passage space\n__________\ntotal space required = space for furniture + passage space\nDeep filing cabinets are more economical. The relationship between furniture floor space and passage space for a vertical filing system using large archive shelves (Velox system) and for a horizontal filing system is made clear in → ⑪. Furniture floor space needed with vertical storage is 5.2 m², passage space 4.6 m² (100:90). With horizontal storage, furniture floor space 3.2 m², passage space 3.6 m² (90:100, ratio inverted). A horizontal filing system offers less storage space and the high shelves are hard to organise. Vertical storage offers a personnel saving of over 40%. Suspended files make about 87% better use of wall area than files on shelves → ⑫. Files can be transported with a paternoster lift. Workstations should include sorting shelves, small desk, chairs on castors.\nThe filing system should be centrally located. A favourable window centre-line is 2.25–2.50 m, ceiling clearance height 2.10 m (2 storeys of normal office space = 3 storeys of filing). The rooms must be dry, so attic and cellar are inadvisable. Continuous table → ⑬ + ⑭ with suspended files and writing surfaces combines workstations effectively. Trolleys can be used as writing surfaces, or for card index boxes. Mobile filing systems (Soenneken Compaktus system) enable a space saving of 100–120%) by eliminating intermediate passages → ⑮ B Systems are not standardised and are adapted to the relevant requirements of filing systems, archives, libraries, stores. Take note of the higher loading per m² of floor area (→ Libraries, pp. 247 ff.). Movement of the filing system is manual or by a drive. The entire filing system or just parts of it can be closed with one hand."
+   }
+  ]
+ },
+ {
+  "kid": "K144",
+  "topic": "办公",
+  "title": "收发室",
+  "summary": "收发室负责全部进出邮件和货物的分发；工作位（打包台、分拣台）应足够大，以便高峰时快速分发；面积需求约每工位 0.3–0.5 m²。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "Work positions (packing and sorting tables) should be sufficiently large so that distribution can be rapid at peak times.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "context": "Post room\nUndertakes the distribution of all incoming and outgoing post and goods. Work positions (packing and sorting tables) should be sufficiently large so that distribution can be rapid at peak times. Space requirement – 0.3-0.5 m² per work position."
+   },
+   {
+    "quote": "Space requirement – 0.3-0.5 m² per work position.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "context": "Post room\nUndertakes the distribution of all incoming and outgoing post and goods. Work positions (packing and sorting tables) should be sufficiently large so that distribution can be rapid at peak times. Space requirement – 0.3-0.5 m² per work position."
+   }
+  ]
+ },
+ {
+  "kid": "K145",
+  "topic": "办公",
+  "title": "数据中心与服务器机房",
+  "summary": "数据中心或服务器机房因安装量大，应设 70 cm 高的架空地板并设空调；门禁尤其重要；备份系统应尽量与数据中心分开，设在有防火保护的区域。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "These rooms should have a 70 cm raised floor on account of the large amount of installation, and should be air-conditioned.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "context": "IT technology\nEarly planning of network technology is important. This will determine whether data centres or server rooms with or without constantly manned workstations are necessary and whether these should be placed centrally or decentralised in the building. These rooms should have a 70 cm raised floor on account of the large amount of installation, and should be air-conditioned. Access control is particularly important. Back-up systems should if possible be separated from the data centre in fire-protected areas."
+   },
+   {
+    "quote": "Back-up systems should if possible be separated from the data centre in fire-protected areas.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "context": "IT technology\nEarly planning of network technology is important. This will determine whether data centres or server rooms with or without constantly manned workstations are necessary and whether these should be placed centrally or decentralised in the building. These rooms should have a 70 cm raised floor on account of the large amount of installation, and should be air-conditioned. Access control is particularly important. Back-up systems should if possible be separated from the data centre in fire-protected areas."
+   }
+  ]
+ },
+ {
+  "kid": "K146",
+  "topic": "办公",
+  "title": "全空调对建筑体积的影响",
+  "summary": "全空调建筑的总建筑体积和总建造成本是无空调建筑的 1.3–1.5 倍。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The gross built volume and the total construction costs for air-conditioned buildings are 1.3–1.5 times higher than for buildings without air conditioning",
+    "page_id": "page_0254",
+    "book_page": "242",
+    "chapter": "Administration and offices",
+    "context": "Fully air-conditioned rooms\nThe gross built volume and the total construction costs for air-conditioned buildings are 1.3–1.5 times higher than for buildings without air conditioning → ①."
+   }
+  ]
+ },
+ {
+  "kid": "K147",
+  "topic": "办公",
+  "title": "立面竖梃与隔墙的连接",
+  "summary": "位于模数网格上的立面竖向型材应有足够宽度以连接隔墙；更好的做法是沿立面设置隔声型材；须注意窗的开启扇。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Vertical profiles in the façade, which lie on the modular grid, should be wide enough to connect a partition.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "context": "Façade\nVertical profiles in the façade, which lie on the modular grid, should be wide enough to connect a partition. A better solution is with sound-insulated profiles running along the façade. Take care with the opening lights of the windows."
+   },
+   {
+    "quote": "A better solution is with sound-insulated profiles running along the façade.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "context": "Façade\nVertical profiles in the façade, which lie on the modular grid, should be wide enough to connect a partition. A better solution is with sound-insulated profiles running along the façade. Take care with the opening lights of the windows."
+   }
+  ]
+ },
+ {
+  "kid": "K148",
+  "topic": "办公",
+  "title": "轻质隔墙的隔声与上下延续",
+  "summary": "轻质隔墙的节点要特别注意隔声；采用架空地板和吊顶时，要么让隔墙在竖向上延续，要么这些构件本身须具备隔声性能。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The junctions of light partitions demand particular attention to noise reduction.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "context": "Partitions\nThe junctions of light partitions demand particular attention to noise reduction. When glass partitions are specified, the required degree of sound proofing should be discussed with the user!"
+   },
+   {
+    "quote": "With raised access floors and suspended ceilings, either vertical continuation of any possible partitions is to be provided or these elements are to be sound-insulating in themselves",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "context": "Ceiling and floor\nScreed bonded to the slab is good for sound insulation → 5, D with integrated cable ducts, because airborne sound is transmitted only to a slight degree.\nWith raised access floors and suspended ceilings, either vertical continuation of any possible partitions is to be provided or these elements are to be sound-insulating in themselves → 5 B + C"
+   }
+  ]
+ },
+ {
+  "kid": "K149",
+  "topic": "高层建筑",
+  "title": "消防电梯（高度超过 30 m）",
+  "summary": "高度超过 30 m 的高层建筑须至少设一部位于独立井道内的消防电梯，从它出发在 50 m 半径内须能到达使用房间的每一点；须设带消火栓的前室，其大小应能把担架运进电梯；通道须至少为 T 30 阻火。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "In high-rise buildings more than 30 m high, there must be at least one fire service lift in its own shaft, from where every point of an occupied room can be reached within a radius of 50 m.",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "Fire service lift\nIn high-rise buildings more than 30 m high, there must be at least one fire service lift in its own shaft, from where every point of an occupied room can be reached within a radius of 50 m. It must have an anteroom with a hydrant, which is large enough to enable the transport of stretchers to the lift. Access routes must be at least T 30 fire-retarding."
+   },
+   {
+    "quote": "It must have an anteroom with a hydrant, which is large enough to enable the transport of stretchers to the lift. Access routes must be at least T 30 fire-retarding.",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "Fire service lift\nIn high-rise buildings more than 30 m high, there must be at least one fire service lift in its own shaft, from where every point of an occupied room can be reached within a radius of 50 m. It must have an anteroom with a hydrant, which is large enough to enable the transport of stretchers to the lift. Access routes must be at least T 30 fire-retarding."
+   }
+  ]
+ },
+ {
+  "kid": "K150",
+  "topic": "高层建筑",
+  "title": "高层疏散楼梯的梯井、排烟与出口",
+  "summary": "高层建筑疏散楼梯的梯井须至少 0.80 m 宽（避免在楼梯上铺设水带）；最高处须设排烟口（楼面面积的 5%，但不小于 1 m²）；出口须直通室外，或经过无火灾荷载的门厅。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The wellhole must be min. 0.80 m wide in order to avoid having to lay hoses on the stairs.",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "Stairs\nHigh-rise buildings up to 60 m high: at least two emergency stairs must be available, which must be located opposite in two separate fire compartments. Their walking width must be at least 1.25 m. The wellhole must be min. 0.80 m wide in order to avoid having to lay hoses on the stairs. Smoke outlets must be provided at their highest point (5% of the floor area but min. 1 m^2). The exit must be directly into the open air or through a lobby without any fire load. In exceptional cases, one staircase can be approved for high-rise buildings up to 60 m in height, if it is a safety staircase. Requirements for the location of stairs → 2 – 5."
+   },
+   {
+    "quote": "Smoke outlets must be provided at their highest point (5% of the floor area but min. 1 m^2).",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "Stairs\nHigh-rise buildings up to 60 m high: at least two emergency stairs must be available, which must be located opposite in two separate fire compartments. Their walking width must be at least 1.25 m. The wellhole must be min. 0.80 m wide in order to avoid having to lay hoses on the stairs. Smoke outlets must be provided at their highest point (5% of the floor area but min. 1 m^2). The exit must be directly into the open air or through a lobby without any fire load. In exceptional cases, one staircase can be approved for high-rise buildings up to 60 m in height, if it is a safety staircase. Requirements for the location of stairs → 2 – 5."
+   },
+   {
+    "quote": "The exit must be directly into the open air or through a lobby without any fire load.",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "Stairs\nHigh-rise buildings up to 60 m high: at least two emergency stairs must be available, which must be located opposite in two separate fire compartments. Their walking width must be at least 1.25 m. The wellhole must be min. 0.80 m wide in order to avoid having to lay hoses on the stairs. Smoke outlets must be provided at their highest point (5% of the floor area but min. 1 m^2). The exit must be directly into the open air or through a lobby without any fire load. In exceptional cases, one staircase can be approved for high-rise buildings up to 60 m in height, if it is a safety staircase. Requirements for the location of stairs → 2 – 5."
+   }
+  ]
+ },
+ {
+  "kid": "K151",
+  "topic": "高层建筑",
+  "title": "高层电梯分组",
+  "summary": "约 25 层以下通常设一组电梯，所有电梯服务所有楼层；需要超过 6 部电梯时应分成两组。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Up to about 25 storeys, it is usual to provide one group of lifts with all lifts serving all floors. If more than 6 lifts are necessary, they should be divided into two groups.",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "Lifts\nUp to about 25 storeys, it is usual to provide one group of lifts with all lifts serving all floors. If more than 6 lifts are necessary, they should be divided into two groups."
+   }
+  ]
+ },
+ {
+  "kid": "K152",
+  "topic": "高层建筑",
+  "title": "高层建筑的分级",
+  "summary": "高层建筑按距消防车停放面的高度分级：I 级 22–30 m，适用高层建筑规定；II 级 30–60 m，至少 1 部消防电梯；III 级 60–200 m，结构重要构件须为 F 120，并可要求多部消防电梯；IV 级 200 m 以上，审批机关可提出进一步要求。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "I | 22–30 m | high-rise regulations apply",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "High-rise group | Height above fire service parking area | Special requirements\nI | 22–30 m | high-rise regulations apply\nII | 30–60 m | at least 1 fire service lift\nIII | 60–200 m | elements of structural significance must be F 120 and many fire service lifts can be required\nIV | over 200 m | the approval authority can place further requirements"
+   },
+   {
+    "quote": "II | 30–60 m | at least 1 fire service lift",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "High-rise group | Height above fire service parking area | Special requirements\nI | 22–30 m | high-rise regulations apply\nII | 30–60 m | at least 1 fire service lift\nIII | 60–200 m | elements of structural significance must be F 120 and many fire service lifts can be required\nIV | over 200 m | the approval authority can place further requirements"
+   },
+   {
+    "quote": "III | 60–200 m | elements of structural significance must be F 120 and many fire service lifts can be required",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "High-rise group | Height above fire service parking area | Special requirements\nI | 22–30 m | high-rise regulations apply\nII | 30–60 m | at least 1 fire service lift\nIII | 60–200 m | elements of structural significance must be F 120 and many fire service lifts can be required\nIV | over 200 m | the approval authority can place further requirements"
+   },
+   {
+    "quote": "IV | over 200 m | the approval authority can place further requirements",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "High-rise group | Height above fire service parking area | Special requirements\nI | 22–30 m | high-rise regulations apply\nII | 30–60 m | at least 1 fire service lift\nIII | 60–200 m | elements of structural significance must be F 120 and many fire service lifts can be required\nIV | over 200 m | the approval authority can place further requirements"
+   }
+  ]
+ },
+ {
+  "kid": "K153",
+  "topic": "高层建筑",
+  "title": "高层建筑的用途限制",
+  "summary": "在德国，按现行法规高层建筑不得用作学校、医院或养老院。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "In Germany, use as schools, hospitals or homes for elderly people is ruled out by the applicable regulations.",
+    "page_id": "page_0256",
+    "book_page": "244",
+    "chapter": "Administration and offices",
+    "context": "Because high-rise buildings in Europe are mainly built as prestige projects, these are often company headquarters / office buildings with additional uses like hotels or apartments. In Germany, use as schools, hospitals or homes for elderly people is ruled out by the applicable regulations."
+   }
+  ]
+ },
+ {
+  "kid": "K154",
+  "topic": "高层建筑",
+  "title": "高层外窗的清洁",
+  "summary": "不能从室内安全清洁的窗面，须由受过训练的人员使用合适的设备从室外清洁。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "Window areas which cannot be cleaned safely from inside, must be cleaned from the outside by trained personnel using suitable apparatus",
+    "page_id": "page_0258",
+    "book_page": "246",
+    "chapter": "Administration and offices",
+    "context": "Window areas which cannot be cleaned safely from inside, must be cleaned from the outside by trained personnel using suitable apparatus → p. 101."
+   }
+  ]
+ }
+]

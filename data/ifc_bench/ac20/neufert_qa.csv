@@ -1,0 +1,37 @@
+id,question,ground_truth,ifc_model,project,category,split,neufert_tier,neufert_topic
+54,What are the heights of each level?,"Building Level Information:
+   - Keller:
+     Elevation: -3.0 m
+     Height: 3.0 m
+
+   - Erdgeschoss:
+     Elevation: 0
+     Height: 3.0 m
+
+   - 1. Obergeschoss:
+     Elevation: 3.0 m
+     Height: 3.0 m
+
+   - 2. Obergeschoss:
+     Elevation: 6.0 m
+     Height: 3.0 m
+
+   - Dachgeschoss:
+     Elevation: 9.0 m
+     Height: 3.0 m",arc,ac20,1,train,tier2,T2_storey_heights
+57,Which two doors have the greatest widths in the building?,"The two doors with the greatest widths in the building are:
+
+1. ""Tür-019"" - Width: 2.0 m
+2. ""Tür-018"" - Width: 1.8 m",arc,ac20,2,train,tier2,T2_door_widths
+58,What is the narrowest door width used here?,"Smallest Door Width:
+   1.0 m - IFC Tür - Eine Öñffnunsgrichtung",arc,ac20,2,test,tier2,T2_door_widths
+60,What is the widest window in the building?,"Largest Window Width:
+   1.0 m - IFC Fenster - ein Panel",arc,ac20,2,test,tier2,T2_window_sizes
+61,What is the narrowest window width used in this building?,"Smallest Window Width:
+   0.9 m - IFC Fenster - ein Panel",arc,ac20,2,test,tier2,T2_window_sizes
+77,How many toilets exist on the ground floor?,"Toilet/WC spaces on ground floor (Erdgeschoss): 2
+
+   Ground floor toilet spaces:
+   - 113: WC Damen (12.4 sq m)
+   - 112: WC Herren (12.4 sq m)",arc,ac20,2,train,tier2,T2_room_program
+81,Which rooms have the tallest ceilings?,All rooms have a ceiling height of 2.70 m.,arc,ac20,2,test,tier2,T2_ceiling_heights

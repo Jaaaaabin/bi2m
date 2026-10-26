@@ -1,0 +1,596 @@
+{
+ "rules": {
+  "R48": {
+   "title": "容积率与建筑密度的计量口径",
+   "status": "active",
+   "decision": "keep",
+   "comment": "行吧 但是不是有点太简单\n",
+   "at": "2026-10-23T10:47:05.362Z"
+  },
+  "R49": {
+   "title": "DIN 277 面积分类与可出租面积",
+   "status": "active",
+   "decision": "keep",
+   "comment": "这个算是semantic enrichment了吧",
+   "at": "2026-10-23T10:49:20.884Z"
+  },
+  "R50": {
+   "title": "DIN 277 建筑体积的量法",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T10:49:54.517Z"
+  },
+  "R51": {
+   "title": "联排住宅的进深与面宽",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T10:50:08.090Z"
+  },
+  "R54": {
+   "title": "不超过两户的住宅楼梯",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:06:26.665Z"
+  },
+  "R55": {
+   "title": "螺旋楼梯作为户内唯一楼梯",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:07:08.017Z"
+  },
+  "R56": {
+   "title": "非法定必要楼梯的最小尺寸",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:07:32.286Z"
+  },
+  "R57": {
+   "title": "无障碍建筑楼梯起止处的活动区",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:08:25.307Z"
+  },
+  "R58": {
+   "title": "住宅超过五个完整楼层须设电梯",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:11:29.160Z"
+  },
+  "R59": {
+   "title": "一梯一户无电梯时限四层",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:11:37.834Z"
+  },
+  "R63": {
+   "title": "超过两户的住宅须有一层无障碍",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:18:44.493Z"
+  },
+  "R65": {
+   "title": "长疏散走廊分段与楼梯间门",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:19:40.184Z"
+  },
+  "R66": {
+   "title": "住宅居住面积的计算方法",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:19:47.796Z"
+  },
+  "R67": {
+   "title": "户内分组：起居区与睡眠区",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:19:52.408Z"
+  },
+  "R68": {
+   "title": "每套住宅的最低配置：厨房、储藏间、卫生间",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:19:57.123Z"
+  },
+  "R69": {
+   "title": "户内储藏空间",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:20:10.632Z"
+  },
+  "R70": {
+   "title": "组合式办公（combi-office）的组织",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:20:19.032Z"
+  },
+  "R71": {
+   "title": "轮椅转身空间与无障碍走廊宽度",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:28:55.135Z"
+  },
+  "R72": {
+   "title": "长走廊的轮椅会车位",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:29:03.852Z"
+  },
+  "R75": {
+   "title": "无障碍住宅的户内活动区宽度 1.20 m",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:29:10.576Z"
+  },
+  "R76": {
+   "title": "居室的最低要求",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:29:15.956Z"
+  },
+  "R77": {
+   "title": "阳台面积与户外空间的连接",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:29:26.506Z"
+  },
+  "R78": {
+   "title": "门厅直达厨房、WC 和楼梯",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:29:36.649Z"
+  },
+  "R79": {
+   "title": "户内走道宽度",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:30:04.463Z"
+  },
+  "R80": {
+   "title": "独立住宅每层直通户外",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:30:09.149Z"
+  },
+  "R81": {
+   "title": "入户凹口尺寸",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:36:49.624Z"
+  },
+  "R82": {
+   "title": "卫生间类型的判定",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:30:22.727Z"
+  },
+  "R83": {
+   "title": "厅室的每人容积（声学）",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:38:00.900Z"
+  },
+  "R84": {
+   "title": "餐饮厨房员工超过 10 人须设休息室",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:38:12.875Z"
+  },
+  "R85": {
+   "title": "研讨室的规模与进深",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:38:23.918Z"
+  },
+  "R87": {
+   "title": "单间办公的走廊是疏散通道，不得放家具",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:38:57.401Z"
+  },
+  "R89": {
+   "title": "屏幕工位的视线方向",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:39:09.290Z"
+  },
+  "R91": {
+   "title": "住宅门的净开启宽度",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:46:16.912Z"
+  },
+  "R93": {
+   "title": "作为疏散路线的窗",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:46:28.346Z"
+  },
+  "R95": {
+   "title": "单层外墙：高保温材料或附加保温层",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:47:10.334Z"
+  },
+  "R96": {
+   "title": "夹心墙的外叶与空气层",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:47:15.072Z"
+  },
+  "R98": {
+   "title": "热阻与传热系数的计算",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:47:24.711Z"
+  },
+  "R99": {
+   "title": "种植屋面的坡度",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:47:43.950Z"
+  },
+  "R100": {
+   "title": "坡屋面保温的位置与通风构造",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:48:13.750Z"
+  },
+  "R101": {
+   "title": "分户墙的面密度",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:48:30.478Z"
+  },
+  "R102": {
+   "title": "模数协调与标志尺寸",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:49:33.433Z"
+  },
+  "R13": {
+   "title": "退距深度按墙高计算",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T07:49:55.524Z"
+  },
+  "R14": {
+   "title": "办公楼朝向与北向房间",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T07:53:05.193Z"
+  },
+  "R15": {
+   "title": "单排、双排、三排平面与建筑类型",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T07:56:01.352Z"
+  },
+  "R16": {
+   "title": "网格模数：装修网格 = 立面网格，1.50 / 1.35 m",
+   "status": "active",
+   "decision": "archive",
+   "comment": "这个太细节了",
+   "at": "2026-10-23T08:03:45.684Z"
+  },
+  "R17": {
+   "title": "中廊式办公楼的建筑进深",
+   "status": "active",
+   "decision": "archive",
+   "comment": "这个也太细节了 感觉不是很好判断",
+   "at": "2026-10-23T08:04:08.749Z"
+  },
+  "R18": {
+   "title": "每工位的附属面积与总面积",
+   "status": "active",
+   "decision": "keep",
+   "comment": "对 这个我感觉ok。 按我的理解这个是不是就是给的是每个房间用途的参考面积？ 如果是的话， 是不是可以拆成更细的规则 比如说一般什么区域涉及多大之类的",
+   "at": "2026-10-23T10:23:11.378Z"
+  },
+  "R19": {
+   "title": "防火分区 ≤ 40 m 与防火墙",
+   "status": "active",
+   "decision": "archive",
+   "comment": "这个我觉得需要pending一下 到时候再看",
+   "at": "2026-10-23T10:41:22.573Z"
+  },
+  "R20": {
+   "title": "建筑等级决定承重构件与楼板的耐火要求",
+   "status": "active",
+   "decision": "archive",
+   "comment": "这个也pending一下 我感觉太细节了 有点不好说 ",
+   "at": "2026-10-23T10:44:43.224Z"
+  },
+  "R21": {
+   "title": "外墙、外墙饰面与屋面覆盖的燃烧性能",
+   "status": "active",
+   "decision": "keep",
+   "comment": "这个挺好的 但是是不是基本所有的默认值都是满足的？",
+   "at": "2026-10-23T10:45:48.640Z"
+  },
+  "R22": {
+   "title": "每层每个使用单元两条独立疏散路线",
+   "status": "active",
+   "decision": "archive",
+   "comment": "这个pending一下 太细节了",
+   "at": "2026-10-23T10:58:45.929Z"
+  },
+  "R23": {
+   "title": "疏散距离按建筑类型：办公 ≤ 35 m，楼梯间距 30 / 60 m",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:00:06.189Z"
+  },
+  "R24": {
+   "title": "必要楼梯：封闭楼梯间、出口宽度、楼梯间开门",
+   "status": "active",
+   "decision": "keep",
+   "comment": "我哦觉得最后一段可以不要 那个30min 自闭门可以不要了",
+   "at": "2026-10-23T11:02:48.930Z"
+  },
+  "R25": {
+   "title": "必要楼梯的尺寸限值（非住宅）",
+   "status": "active",
+   "decision": "keep",
+   "comment": "这个是不是有点和r03有点重？ 区别是什么？",
+   "at": "2026-10-23T11:03:55.108Z",
+   "note_maintainer": "2026-10-23 user: keep separate from R03"
+  },
+  "R26": {
+   "title": "办公与疏散楼梯应便于快速通行；气派楼梯的平台豁免",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:04:20.424Z"
+  },
+  "R27": {
+   "title": "无台阶通达所有楼层（公众可达建筑）",
+   "status": "active",
+   "decision": "archive",
+   "comment": "这个需要pending一下。",
+   "at": "2026-10-23T11:05:57.905Z"
+  },
+  "R30": {
+   "title": "使用单元 ≥ 400 m² 时走廊为必要走廊：侧墙 F 30",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:14:30.614Z"
+  },
+  "R31": {
+   "title": "单元之间的分隔墙",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:15:34.077Z"
+  },
+  "R32": {
+   "title": "工作场所厕所的布置细则",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:16:22.811Z"
+  },
+  "R33": {
+   "title": "茶水间：每 50–100 工位一间 ~10 m²",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:16:39.149Z"
+  },
+  "R34": {
+   "title": "每层保洁间；中央垃圾房与物业用房",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:18:02.465Z"
+  },
+  "R35": {
+   "title": "入口区及其相邻关系：会议区、餐厅、轮椅停放",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:18:38.571Z"
+  },
+  "R36": {
+   "title": "组团办公 4–16 工位、距窗 ≤ 7.5 m；大开间依赖人工照明",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:25:44.549Z"
+  },
+  "R37": {
+   "title": "工位的桌面与活动面积",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:26:31.247Z"
+  },
+  "R38": {
+   "title": "工作间的窗面积",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:27:56.949Z"
+  },
+  "R39": {
+   "title": "窗与工作区：视野宽度与进深",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:28:23.732Z"
+  },
+  "R42": {
+   "title": "门洞模数与净宽折减",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:43:27.174Z"
+  },
+  "R43": {
+   "title": "紧急出口的门型与宽度",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:43:59.857Z"
+  },
+  "R44": {
+   "title": "采暖房间外窗至少双层/中空玻璃",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:44:40.548Z"
+  },
+  "R45": {
+   "title": "平屋面坡度与隔汽层位置",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:45:08.234Z"
+  },
+  "R46": {
+   "title": "隔墙与吊顶/架空地板、立面竖梃的连接",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T11:45:37.582Z"
+  },
+  "R47": {
+   "title": "办公楼楼板跨度与荷载",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:45:45.426Z"
+  },
+  "R01": {
+   "title": "高层建筑判定",
+   "status": "active",
+   "decision": "archive",
+   "comment": "",
+   "at": "2026-10-23T07:48:46.733Z"
+  },
+  "R02": {
+   "title": "办公楼室内净高",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:20:24.281Z"
+  },
+  "R03": {
+   "title": "踏步比与步距公式",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T10:50:52.687Z",
+   "note_maintainer": "2026-10-23 user: keep R03 and R25 as two rules (comfort formula vs legal limits), do not merge"
+  },
+  "R04": {
+   "title": "必要楼梯的梯段步数与休息平台",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T10:51:14.826Z"
+  },
+  "R05": {
+   "title": "必要楼梯的宽度与两侧扶手",
+   "status": "active",
+   "decision": "keep",
+   "comment": "扶手这个太细节了我感觉， 其他的可以保留要不扶手这个删掉。",
+   "at": "2026-10-23T10:57:12.531Z"
+  },
+  "R06": {
+   "title": "护栏高度按坠落高度分档",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T10:57:40.540Z"
+  },
+  "R07": {
+   "title": "门的净高与无障碍净宽",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:40:54.776Z"
+  },
+  "R08": {
+   "title": "混凝土外墙必须附加保温层",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:41:04.495Z"
+  },
+  "R09": {
+   "title": "每工位面积指标",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:21:05.421Z"
+  },
+  "R10": {
+   "title": "自然采光进深",
+   "status": "active",
+   "decision": "keep",
+   "comment": "R10 的 THEN 改成\"工作房间从采光面起的进深不宜超过约 7 m；更深的部分无法靠天光\"，并把进深改为按窗所在墙的法线量；无窗的问题只留给 R38。你同意我就改，顺便重跑扫描。",
+   "at": "2026-10-23T11:24:36.607Z"
+  },
+  "R11": {
+   "title": "工作场所厕所配置",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:12:41.415Z"
+  },
+  "R12": {
+   "title": "会议区每座面积",
+   "status": "active",
+   "decision": "keep",
+   "comment": "",
+   "at": "2026-10-23T11:25:03.053Z"
+  }
+ },
+ "imported": "2026-10-23T11:51:08.442Z",
+ "source": "rules_review_2026-10-23.json"
+}

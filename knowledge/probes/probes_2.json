@@ -1,0 +1,1278 @@
+[
+ {
+  "kid": "K046",
+  "title": "高层建筑立面的层间防火",
+  "question": "Under German fire-protection requirements for high-rise building façades, a W 90 A fire-resistant parapet (the 'fire spreading height') is used to stop fire spreading from one storey to the next. What minimum height must this parapet have?",
+  "answer": "1 m",
+  "accept": [
+   "1 m",
+   "1.0 m",
+   "1 metre",
+   "100 cm",
+   "1000 mm"
+  ],
+  "mcq": {
+   "options": [
+    "0.8 m",
+    "1.5 m",
+    "1 m",
+    "1.2 m"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Minimum parapet height 1 m (W 90 A)",
+   "May mention alternative: W 90 A horizontal projection of at least 1.5 m"
+  ],
+  "basis": [
+   "In order to avoid fire spreading from one storey to the one above, there must be W 90 A fire-resistant parapets at least 1 m high (fire spreading height).",
+   "Alternatively, a W 90 A horizontal building element projecting at least 1.5 m from the façade can be provided."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K047",
+  "title": "长疏散走廊分段与楼梯间的封闭",
+  "question": "Under German building regulations (general rule, not the high-rise guideline), legally essential escape-route corridors longer than what length must be divided by self-closing, smoke-proof closures?",
+  "answer": "30 m",
+  "accept": [
+   "30 m",
+   "30 metres",
+   "more than 30 m"
+  ],
+  "mcq": {
+   "options": [
+    "30 m",
+    "15 m",
+    "50 m",
+    "60 m"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Threshold length 30 m",
+   "Divisions (and stairway–corridor closures) must be self-closing and smoke-proof"
+  ],
+  "basis": [
+   "Closures between stairways and corridors legally essential as escape routes and also for the division of legally essential corridors more than 30 m long must be self-closing and smoke-proof"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K048",
+  "title": "工作间的窗",
+  "question": "According to the German workplace guidelines, the total width of all visual connections to the outside (windows) in a workroom must be at least what fraction of the total width of all its walls?",
+  "answer": "1/10",
+  "accept": [
+   "1/10",
+   "one tenth",
+   "10%",
+   "10 %"
+  ],
+  "mcq": {
+   "options": [
+    "1/8",
+    "1/5",
+    "1/6",
+    "1/10"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Total window (visual connection) width at least 1/10 of total wall width"
+  ],
+  "basis": [
+   "The total width of all visual connections to the outside must be at least 1/10 of the total width of all walls, according to workplace guidelines"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K049",
+  "title": "厨房朝向",
+  "question": "In German (DIN-based) design practice: In dwelling design, which compass orientation should the kitchen ideally have?",
+  "answer": "Northeast or northwest",
+  "accept": [
+   "northeast or northwest",
+   "NE or NW",
+   "north-east or north-west"
+  ],
+  "mcq": {
+   "options": [
+    "South or southwest",
+    "Northeast or northwest",
+    "East or southeast",
+    "West or southwest"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Ideal kitchen orientation is northeast or northwest"
+  ],
+  "basis": [
+   "The location of the kitchen is ideally on the northeast or northwest"
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K050",
+  "title": "无窗厨房",
+  "question": "In German (DIN-based) design practice: In residential design, under what condition are kitchens and kitchenettes without windows permissible?",
+  "answer": "Only if effective ventilation is guaranteed (they are generally undesirable)",
+  "accept": [
+   "only with guaranteed effective ventilation",
+   "if effective (mechanical) ventilation is ensured"
+  ],
+  "mcq": {
+   "options": [
+    "Never; every kitchen must have a window",
+    "Only if effective ventilation is guaranteed",
+    "Always, provided artificial lighting is installed",
+    "Only in single-person apartments"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Windowless kitchens are generally undesirable",
+   "Permissible only with guaranteed effective ventilation"
+  ],
+  "basis": [
+   "Kitchens and kitchenettes without windows are generally undesirable and only permissible if effective ventilation is guaranteed."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K051",
+  "title": "玻璃面最小高度 1.3 m",
+  "question": "In German (DIN-based) design practice: For workrooms whose dimensions correspond to those of residential rooms, what is the minimum height of the glass area of the windows?",
+  "answer": "1.3 m",
+  "accept": [
+   "1.3 m",
+   "1.30 m",
+   "130 cm",
+   "1300 mm"
+  ],
+  "mcq": {
+   "options": [
+    "1.0 m",
+    "1.25 m",
+    "1.5 m",
+    "1.3 m"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Minimum glass-area height 1.3 m"
+  ],
+  "basis": [
+   "For rooms with dimensions corresponding to those of residential rooms, the minimum height of the glass area is 1.3 m."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K052",
+  "title": "视野：窗宽不小于房间宽 65%",
+  "question": "In German (DIN-based) design practice: To ensure an adequate view out, the window width (structural opening, before finishings) should not be less than what percentage of the room width?",
+  "answer": "65%",
+  "accept": [
+   "65%",
+   "65 %",
+   "0.65 of the room width"
+  ],
+  "mcq": {
+   "options": [
+    "65%",
+    "50%",
+    "80%",
+    "40%"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Window width at least 65% of room width (measured before finishings)"
+  ],
+  "basis": [
+   "The minimum window width as a percentage, before finishings, should not be less than 65% of the room width."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K053",
+  "title": "工作区距窗约为 2 倍窗净高",
+  "question": "In German (DIN-based) design practice: In side-lit industrial/work buildings, the distance of the working area from the window should be what multiple of the clear window height?",
+  "answer": "Twice the clear window height",
+  "accept": [
+   "2 times",
+   "twice",
+   "2x",
+   "2 × clear window height"
+  ],
+  "mcq": {
+   "options": [
+    "Equal to the clear window height",
+    "1.5 times",
+    "Twice",
+    "3 times"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Working area distance = 2 × clear window height"
+  ],
+  "basis": [
+   "The distance of the working area from the window should be twice as long as the clear window height"
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K054",
+  "title": "办公与工作建筑的朝向",
+  "question": "According to Rosenauer, most office buildings in the USA are given which main-axis orientation, and for what reason?",
+  "answer": "East–west main axis, because the deeply penetrating low morning and evening sun is a disturbance (south sun is easily shaded with blinds)",
+  "accept": [
+   "E/W main axis, against the low morning/evening sun",
+   "east-west axis because morning/evening sun is disturbing"
+  ],
+  "mcq": {
+   "options": [
+    "North–south main axis, so that sunlight reaches all rooms",
+    "Northeast-facing, to avoid summer sun in the working area",
+    "East–west main axis, to maximise winter solar gains through south façades",
+    "East–west main axis, because low morning and evening sun is disturbing"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Main axis E/W (about 90% of US office buildings)",
+   "Reason: deeply penetrating morning/evening sun is disturbing; south sun is easier to shade with blinds"
+  ],
+  "basis": [
+   "According to Rosenauer, 90% of all office buildings in the USA have a main axis E/W, because the deeply penetrating morning and evening sun is a disturbance.",
+   "Sun from the south can be shaded more easily with sun blinds."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K055",
+  "title": "按朝向选择遮阳",
+  "question": "In German (DIN-based) design practice: When selecting sun-shading by compass direction, what kind of shading system should be used for windows facing largely east or west?",
+  "answer": "Movable (adjustable) shading systems that shade the low sun",
+  "accept": [
+   "movable shading",
+   "adjustable external shading for low sun"
+  ],
+  "mcq": {
+   "options": [
+    "Simple internal systems are sufficient",
+    "Movable systems to shade the low sun",
+    "A slight fixed roof overhang is sufficient",
+    "No shading is required"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Movable/adjustable systems",
+   "Purpose: shading the low (morning/evening) sun"
+  ],
+  "basis": [
+   "On north sides, direct sunshine can only be expected in the mornings in June and July and simple internal systems are sufficient. If the alignment is largely west or east, movable systems should shade the low sun."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K056",
+  "title": "遮阳挑檐的出挑计算",
+  "question": "In German (DIN-based) design practice: For a fixed horizontal sun-shading projection above a window, which formula gives the projection A in terms of the shadow angle α and the window height H (and the minimum projection when wall thickness D is taken into account)?",
+  "answer": "A = tan α × H; minimum A = (tan α × H) − D",
+  "accept": [
+   "A = H·tan α, min. A = H·tan α − D"
+  ],
+  "mcq": {
+   "options": [
+    "A = tan α × H; minimum A = (tan α × H) − D",
+    "A = H / tan α; minimum A = H / tan α − D",
+    "A = sin α × H; minimum A = sin α × H + D",
+    "A = tan α × H + D; minimum A = tan α × H"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "A = tan(shadow angle α) × window height H",
+   "Minimum projection subtracts wall thickness D"
+  ],
+  "basis": [
+   "Projection A = tan shadow angle",
+   "but min. projection A = (tan shadow angle"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K057",
+  "title": "单层外墙与附加保温层",
+  "question": "In German (DIN-based) design practice: Single-leaf external masonry walls without an additional insulation layer must meet high thermal insulation requirements. What materials does this restrict their construction to?",
+  "answer": "Materials with high thermal insulation value (e.g. aerated blocks) laid with special thermally insulating mortars and plasters",
+  "accept": [
+   "highly insulating blocks such as aerated concrete with insulating mortar and plaster"
+  ],
+  "mcq": {
+   "options": [
+    "Dense solid clay bricks with standard mortar and lime plaster",
+    "Calcium-silicate blocks with cement render",
+    "Highly insulating blocks (e.g. aerated blocks) with special thermally insulating mortar and plaster",
+    "Any masonry unit, provided a mesh-reinforced render is applied"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "High-insulation-value units (e.g. aerated blocks)",
+   "Special thermally insulated mortars and plasters",
+   "Hence single-leaf walls with added insulation layers are a common alternative"
+  ],
+  "basis": [
+   "Single-leaf external walls → ① – ② are unproblematic regarding building physics, but on account of the high thermal insulation requirements can only be built with materials with high thermal insulation value (e.g. aerated blocks) and special thermally insulated mortars and plasters.",
+   "Single-leaf walls with additional insulation layers → ③ – ⑥ (external, internal insulation → Building physics, p. 471 ff.) are therefore a common alternative."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K058",
+  "title": "夹心墙（双叶墙）的外叶与空气层",
+  "question": "In German masonry construction, for a two-leaf cavity wall with a non-load-bearing outer weather-protection leaf, what is the minimum thickness of the outer leaf, and what are the minimum and maximum widths of the air gap?",
+  "answer": "Outer leaf min. 90 mm; air gap min. 40 mm, max. 150 mm",
+  "accept": [
+   "90 mm; 40–150 mm",
+   "9 cm; 4–15 cm"
+  ],
+  "mcq": {
+   "options": [
+    "150 mm; 40–90 mm",
+    "90 mm; 40–150 mm",
+    "90 mm; 20–40 mm",
+    "40 mm; 90–150 mm"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Outer leaf minimum 90 mm",
+   "Air gap minimum 40 mm",
+   "Air gap maximum 150 mm"
+  ],
+  "basis": [
+   "Cavity walls consist of an inner load-bearing wall and an outer non-load-bearing weather protection facing (minimum thickness 90 mm). They can be built with an air gap, with air gap and thermal insulation, with cavity-filling insulation and with intermediate plaster layer",
+   "The width of the air gap should be min. 40 mm (max. 150 mm)."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K059",
+  "title": "混凝土外墙必须附加保温",
+  "question": "In German (DIN-based) design practice: Can a solid concrete wall be used as an external wall without an additional thermal insulation layer?",
+  "answer": "No; only with an additional thermal insulation layer (external insulation system, or multi-leaf construction with core insulation)",
+  "accept": [
+   "no",
+   "only with additional insulation"
+  ],
+  "mcq": {
+   "options": [
+    "Yes, if the wall is at least 30 cm thick",
+    "Yes, if it is pre-cast",
+    "Only in building classes 1 and 2",
+    "No, only with an additional thermal insulation layer"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Answer is no: additional insulation is required",
+   "Options: external thermal insulation system or multi-leaf construction with core insulation"
+  ],
+  "basis": [
+   "Solid concrete walls can be used as external walls only with an additional thermal insulation layer.",
+   "Solid concrete walls can be used as external walls only with an additional thermal insulation layer. This can be as an external thermal insulation system → ① or as a multi-leaf construction (analogous to p. 75) with core insulation and possibly back-ventilation."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K060",
+  "title": "背通风外挂层的空气间层",
+  "question": "In German (DIN-based) design practice: In external walls with a rear-ventilated outer skin, what minimum air-gap width is required behind a panel-like outer skin, and behind a brickwork outer skin?",
+  "answer": "Panel-like skin: min. 20 mm; brickwork skin: min. 40 mm",
+  "accept": [
+   "20 mm and 40 mm",
+   "2 cm / 4 cm"
+  ],
+  "mcq": {
+   "options": [
+    "Panel: 40 mm; brickwork: 20 mm",
+    "Panel: 10 mm; brickwork: 40 mm",
+    "Panel: 20 mm; brickwork: 40 mm",
+    "Panel: 40 mm; brickwork: 60 mm"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Panel-like skin: at least 20 mm",
+   "Brickwork skin: at least 40 mm"
+  ],
+  "basis": [
+   "The rear ventilation of the skin removes the vapour barrier effect of the relatively vapour-sealed outer layers. The width of the air gap with panel-like external skin amounts to min. 20 mm, or for brickwork outer skin min. 40 mm."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K061",
+  "title": "热阻与传热系数计算",
+  "question": "In German (DIN-based) design practice: How is the thermal resistance R of a single building layer calculated, and how is the overall resistance 1/U of a building element composed?",
+  "answer": "R = d/λ (d = layer thickness in m); 1/U = R_si + R + R_se",
+  "accept": [
+   "R = d/lambda; 1/U = Rsi + R + Rse"
+  ],
+  "mcq": {
+   "options": [
+    "R = d/λ; 1/U = R_si + R + R_se",
+    "R = d·λ; U = R_si + R + R_se",
+    "R = λ/d; 1/U = R_si + R + R_se",
+    "R = d/λ; 1/U = R − R_si − R_se"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "R = d/λ with d in metres",
+   "1/U is the sum of internal surface resistance, layer resistances and external surface resistance"
+  ],
+  "basis": [
+   "Thermal resistance R, unit m^2K/W [m^2hK/kcal] is a property of a layer: R = d/λ (d = layer thickness in m).",
+   "Overall resistance 1/U, unit m^2K/W [m^2hK/kcal], is the sum of the resistances of a building element to the transmission of heat (thermal resistances and surface resistances): 1/U = R_{si} + R + R_{se}"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K062",
+  "title": "热桥与构件连接",
+  "question": "In German (DIN-based) design practice: Compared with a poorly insulated building envelope, how severe are the consequences of a thermal bridge in a highly insulated envelope?",
+  "answer": "Considerably worse",
+  "accept": [
+   "more severe",
+   "considerably more severe"
+  ],
+  "mcq": {
+   "options": [
+    "Less severe, because overall heat loss is lower",
+    "About the same; insulation level is irrelevant",
+    "Considerably worse",
+    "Negligible once U-values are low enough"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Effects are considerably worse with highly insulated elements",
+   "Thermal bridge = area of low insulation relative to surroundings; connections between elements matter"
+  ],
+  "basis": [
+   "Thus it should be borne in mind that this thermal bridging effect can have considerably worse consequences with highly insulated elements than with building elements with less thermal insulation.",
+   "Thermal bridges are parts of building elements with low thermal insulation compared with surrounding areas."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K063",
+  "title": "平屋面排水坡度",
+  "question": "In German (DIN-based) design practice: What minimum slope should a flat roof generally have, and what minimum slope is recommended to allow for unavoidable flatness tolerances and deflection?",
+  "answer": "Generally min. 2%; recommended min. 5% (3°)",
+  "accept": [
+   "2% and 5%",
+   "2 % / 5 % (3°)"
+  ],
+  "mcq": {
+   "options": [
+    "2% / 5% (3°)",
+    "2% / 3% (1.7°)",
+    "3% / 8% (5°)",
+    "1% / 2%"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "General minimum 2%",
+   "Recommended minimum 5% (approx. 3°)"
+  ],
+  "basis": [
+   "Flat roofs are defined as roofs with a slope of up to 5%. Flat roofs without slope are possible as a special construction in exceptional cases. Flat roofs should generally have a minimum slope of 2%.",
+   "it is recommended to construct flat roofs with a minimum slope of 5% (3°)."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K064",
+  "title": "平屋面构造：暖屋面与倒置屋面",
+  "question": "In German (DIN-based) design practice: In an 'upside-down' (inverted) flat roof, how are the waterproofing, vapour barrier and insulation arranged?",
+  "answer": "Waterproofing and vapour barrier as one layer directly on the load-bearing structure; closed-cell insulation laid loosely on top and secured with gravel",
+  "accept": [
+   "insulation above the waterproofing, ballasted with gravel"
+  ],
+  "mcq": {
+   "options": [
+    "Vapour barrier on the structure, insulation above, waterproofing on top of the insulation",
+    "Ventilated cavity between two insulation layers, waterproofing on top",
+    "Insulation on the underside of the slab, waterproofing on top of the slab",
+    "Waterproofing/vapour barrier as one layer on the structure, closed-cell insulation loose on top, gravel"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Combined waterproofing/vapour barrier directly on structure",
+   "Closed-cell insulation on top, loosely laid, ballasted with gravel"
+  ],
+  "basis": [
+   "or an 'upside-down roof' → 8 (waterproofing and vapour barrier are applied as one layer directly onto the load-bearing construction and the closed-cell insulation is loosely laid on top and secured with a gravel layer)"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K065",
+  "title": "隔汽层设在暖侧",
+  "question": "In German (DIN-based) design practice: To avoid condensation within a building element, on which side must the vapour barrier be installed?",
+  "answer": "On the warm (interior) side",
+  "accept": [
+   "warm side",
+   "inside",
+   "room side"
+  ],
+  "mcq": {
+   "options": [
+    "On the cold (exterior) side",
+    "On the warm (interior) side",
+    "In the ventilated cavity outside the insulation",
+    "In the middle of the insulation layer"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Vapour barrier on the warm side",
+   "A vapour barrier on the outside causes condensation because the whole vapour pressure gradient occurs there"
+  ],
+  "basis": [
+   "If there is a vapour barrier on the outside, then the entire vapour pressure gradient occurs there and the result is condensation → 8; if this is to be avoided, then a vapour barrier must be installed on the warm side"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K066",
+  "title": "种植屋面的坡度",
+  "question": "In German (DIN-based) design practice: For roofs with planting (green roofs), what maximum pitch should a gabled roof have, and what maximum slope should a planted flat roof have?",
+  "answer": "Gabled roof max. 25°; flat roof max. 2–3%",
+  "accept": [
+   "25° and 2–3%"
+  ],
+  "mcq": {
+   "options": [
+    "15°; 1–2%",
+    "25°; 2–3%",
+    "10°; 5–8%",
+    "25°; 5%"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Gabled planted roof ≤ 25°",
+   "Planted flat roof slope max. 2–3%"
+  ],
+  "basis": [
+   "The pitch of gabled roofs should not exceed 25° and flat roofs should have a maximum slope of 2–3%."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K067",
+  "title": "坡屋面保温位置与通风构造",
+  "question": "In German (DIN-based) design practice: Why does the building industry commonly prefer unventilated over ventilated insulated pitched-roof construction?",
+  "answer": "Ventilated roofs need additional rafter depth and only work properly with a correctly installed vapour barrier and functioning roof ventilation",
+  "accept": [
+   "Ventilated roofs need additional rafter depth and only work properly with a correctly installed vapour barrier and functioning roof ventilation"
+  ],
+  "mcq": {
+   "options": [
+    "Unventilated roofs allow insulation only above the rafters",
+    "Unventilated roofs need no vapour barrier",
+    "Ventilated roofs are not permitted under the energy saving regulation",
+    "Ventilated roofs need deeper rafters and depend on a correct vapour barrier and airflow"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Extra rafter depth required",
+   "Depends on correctly installed vapour barrier and working ventilation"
+  ],
+  "basis": [
+   "Ventilated roofs require additional rafter depth and work properly only with a correctly installed vapour barrier and functioning roof ventilation. Therefore the building industry commonly prefers unventilated roof construction."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K068",
+  "title": "分户墙隔声",
+  "question": "In German (DIN-based) design practice: For sound insulation, party walls between flats or houses should always have a mass per unit area of at least how much?",
+  "answer": "400 kg/m²",
+  "accept": [
+   "400 kg/m2",
+   "400 kg/m^2"
+  ],
+  "mcq": {
+   "options": [
+    "400 kg/m²",
+    "250 kg/m²",
+    "500 kg/m²",
+    "150 kg/m²"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "At least 400 kg/m²",
+   "Reason: flanking/secondary-path transmission"
+  ],
+  "basis": [
+   "for this reason, party walls between flats or houses should always weigh at least 400 kg/m²."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K069",
+  "title": "模数协调与标志尺寸",
+  "question": "In the modular coordination system for building dimensions (DIN 18000, metric modular system), what is the basic module M, and which multi-modules are defined?",
+  "answer": "M = 100 mm; multi-modules 3M, 6M and 12M",
+  "accept": [
+   "M = 100 mm; 3M = 300 mm, 6M = 600 mm, 12M = 1200 mm",
+   "10 cm; 3M/6M/12M"
+  ],
+  "mcq": {
+   "options": [
+    "M = 100 mm; 4M, 8M, 16M",
+    "M = 100 mm; 2M, 5M, 10M",
+    "M = 100 mm; 3M, 6M, 12M",
+    "M = 200 mm; 3M, 6M, 12M"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Basic module 100 mm",
+   "Multi-modules 3M (300 mm), 6M (600 mm), 12M (1200 mm)"
+  ],
+  "basis": [
+   "The units of the modular system are the basic module M = 100 mm and the multi-modules 3 M = 300 mm, 6 M = 600 mm and 12 M = 1200 mm."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K070",
+  "title": "建筑等级与承重墙耐火",
+  "question": "Under the German model building code building classes, what fire-resistance quality must load-bearing and bracing walls and columns (above ground) have in building class 5, in class 4, and in classes 1–2?",
+  "answer": "Class 5: fireproof (fire-resistant); class 4: highly fire-retarding; classes 1–2: fire-retarding",
+  "accept": [
+   "feuerbeständig / hochfeuerhemmend / feuerhemmend"
+  ],
+  "mcq": {
+   "options": [
+    "Class 5: highly fire-retarding; class 4: fire-retarding; classes 1–2: no requirement",
+    "Class 5: fire-retarding; class 4: highly fire-retarding; classes 1–2: fireproof",
+    "Class 5: fireproof; class 4: fireproof; classes 1–2: highly fire-retarding",
+    "Class 5: fireproof; class 4: highly fire-retarding; classes 1–2: fire-retarding"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Class 5 fireproof",
+   "Class 4 highly fire-retarding",
+   "Classes 1–2 fire-retarding"
+  ],
+  "basis": [
+   "Load-bearing and bracing walls and columns must be constructed fireproof in buildings of class 5, highly fire-retarding in buildings of class 4 and fire-retarding in buildings of classes 1 and 2"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K071",
+  "title": "地下室墙体与楼板耐火",
+  "question": "Under German building regulations, what fire-resistance quality must load-bearing and bracing walls and columns in cellars (basements) have, and what relaxation applies to building classes 1 and 2?",
+  "answer": "Fireproof; in building classes 1 and 2 fire-retarding",
+  "accept": [
+   "fire-resistant, or fire-retarding in classes 1–2"
+  ],
+  "mcq": {
+   "options": [
+    "Fire-retarding in all building classes",
+    "Fireproof; fire-retarding in building classes 1 and 2",
+    "Fireproof in all building classes without exception",
+    "Highly fire-retarding; no requirement in classes 1 and 2"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Cellars: fireproof",
+   "Classes 1 and 2: fire-retarding",
+   "(Slabs over cellars must be fireproof)"
+  ],
+  "basis": [
+   "In cellars, they have to be constructed fireproof and, in buildings of classes 1 and 2, fire-retarding.",
+   "Ceilings must be fireproof, or at least fire-retarding, and slabs over cellars must be fireproof."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K072",
+  "title": "住宅/商业单元之间的分隔墙",
+  "question": "In German (DIN-based) design practice: For separating walls between residential or commercial units, what fire resistance duration is required and how far up must the walls extend?",
+  "answer": "Fire resistance corresponding to the load-bearing components of that storey; extending up to the structural slab (in roof spaces up to the roof cladding)",
+  "accept": [
+   "Fire resistance corresponding to the load-bearing components of that storey; extending up to the structural slab (in roof spaces up to the roof cladding)"
+  ],
+  "mcq": {
+   "options": [
+    "Fire resistance equal to the storey's load-bearing components; up to the structural slab (in roof spaces to the roof cladding)",
+    "Always 30 minutes; up to the suspended ceiling",
+    "Always 90 minutes; up to the underside of the roof insulation",
+    "Fire resistance equal to the storey's load-bearing components; up to the suspended ceiling"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Fire resistance matches that of the storey's load-bearing components",
+   "Must extend to the structural slab; in roof spaces to the roof cladding"
+  ],
+  "basis": [
+   "The fire resistance duration of separating walls between residential or commercial units (or units and rooms used otherwise) must correspond to the quality of the load-bearing components of the storey. These must extend to the structural slab (in roof spaces up to the roof cladding)."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K073",
+  "title": "外墙及外墙饰面的燃烧性能",
+  "question": "Under German building regulations, for buildings other than those of building classes 1 and 2 (and below high-rise level), what minimum fire behaviour must the materials of external wall claddings, including insulation and support construction, have?",
+  "answer": "Flame-resistant (schwer entflammbar)",
+  "accept": [
+   "flame-resistant",
+   "hardly flammable",
+   "schwerentflammbar"
+  ],
+  "mcq": {
+   "options": [
+    "Normally flammable",
+    "Easily flammable if rendered",
+    "Flame-resistant",
+    "Any material if sprinklered"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Flame-resistant materials (incl. insulation and substructure)",
+   "Exception: classes 1 and 2 may use normally flammable materials if fire spread to neighbours is prevented"
+  ],
+  "basis": [
+   "External wall claddings, including insulation and support construction, have to be made of flame-resistant materials.",
+   "For buildings of classes 1 and 2, external wall claddings of normally flammable materials are permissible, if the spread of fire to neighbouring buildings is effectively prevented."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K074",
+  "title": "居室最低要求",
+  "question": "Under German building regulations, what are the minimum floor area, minimum ceiling height, and minimum window area (relative to room area) of a residential (habitable) room?",
+  "answer": "8 m²; 2.40 m; window area 1/8 of room area",
+  "accept": [
+   "8 m2, 2.4 m, 1/8"
+  ],
+  "mcq": {
+   "options": [
+    "10 m²; 2.50 m; 1/6",
+    "8 m²; 2.40 m; 1/8",
+    "8 m²; 2.20 m; 1/12",
+    "6 m²; 2.40 m; 1/8"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Floor area 8 m²",
+   "Ceiling height 2.40 m",
+   "Window area 1/8 of room area"
+  ],
+  "basis": [
+   "minimum requirements for floor area (8 m^2), ceiling height (2.40 m), orientation, ventilation and lighting (window area 1/8 of the room area)"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K075",
+  "title": "厨房作为居室",
+  "question": "Under German building regulations, when a kitchen is a habitable room, what minimum clear ceiling height and what minimum window area (structural dimensions, relative to the net floor area) must it have?",
+  "answer": "2.40 m; 1/8 of the net floor area",
+  "accept": [
+   "2.4 m and 1/8",
+   "240 cm; 12.5%"
+  ],
+  "mcq": {
+   "options": [
+    "2.20 m; 1/12",
+    "2.50 m; 1/8",
+    "2.40 m; 1/12",
+    "2.40 m; 1/8"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Clear height at least 2.40 m",
+   "Window area at least 1/8 of net floor area"
+  ],
+  "basis": [
+   "As a habitable room, the kitchen must have a clear ceiling height of at least 2.40 m and a window area (structural dimensions) of at least 1/8 of the net floor area."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K076",
+  "title": "居住面积计算",
+  "question": "Under the German housing area regulation for calculating residential living area, which clear-ceiling-height thresholds decide whether a floor area is counted in full or by half?",
+  "answer": "Clear height ≥ 2 m: counted in full; ≥ 1 m and < 2 m: counted by half",
+  "accept": [
+   "full from 2 m, half between 1 m and 2 m"
+  ],
+  "mcq": {
+   "options": [
+    "Full from 2.30 m; half between 1.50 m and 2.30 m",
+    "Full from 2.40 m; half between 1.50 m and 2.40 m",
+    "Full from 2 m; half between 1 m and 2 m",
+    "Full from 2 m; half between 1.50 m and 2 m"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "≥ 2 m counted completely",
+   "≥ 1 m and < 2 m counted half",
+   "(Balconies etc. a quarter; cellars, garages, offices excluded)"
+  ],
+  "basis": [
+   "Floor areas are included in the calculation either completely (for rooms and parts of rooms with a clear ceiling height of at least 2 m), or a half (for rooms and parts of rooms with a clear ceiling height of at least 1 m and less than 2 m)"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K077",
+  "title": "阳台计入居住面积",
+  "question": "In German housing area calculation, balconies, loggias and terraces are normally counted toward living area at what proportion of their area?",
+  "answer": "25–50%",
+  "accept": [
+   "25-50%",
+   "a quarter to a half",
+   "1/4 to 1/2"
+  ],
+  "mcq": {
+   "options": [
+    "25–50%",
+    "0% (not counted)",
+    "100%",
+    "50–75%"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Counted at 25–50% of their area"
+  ],
+  "basis": [
+   "Balconies, loggias and terraces are a part of the living areas, for which they are normally calculated as 25–50%"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K078",
+  "title": "住宅面积的计入范围与净尺寸量法",
+  "question": "Under the German housing area regulation (2003), from which reference surface is a room's floor area measured?",
+  "answer": "Clear dimensions between building components, measured from the face of the components' cladding (finished surface)",
+  "accept": [
+   "from the finished face of the cladding"
+  ],
+  "mcq": {
+   "options": [
+    "From the wall centre lines",
+    "From the unfinished structural faces of the walls",
+    "Clear dimensions from the face of the building components' cladding",
+    "From the external faces of the enclosing walls"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Clear space between building components",
+   "Measured from the face of the cladding (finishes)"
+  ],
+  "basis": [
+   "The floor area of a room is determined from the clearance space between building components and starts from the face of the cladding of the building component"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K079",
+  "title": "DIN 277 面积分类与可出租面积",
+  "question": "According to DIN 277, the net floor area is the sum of which three area categories?",
+  "answer": "Usable area, technical function area and traffic (circulation) area",
+  "accept": [
+   "usable + technical function + circulation area"
+  ],
+  "mcq": {
+   "options": [
+    "Usable area, technical function area and traffic area",
+    "Usable area, constructional area and traffic area",
+    "Gross area, constructional area and usable area",
+    "Letting area, communal area and traffic area"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Usable area",
+   "Technical function area",
+   "Traffic/circulation area"
+  ],
+  "basis": [
+   "The net floor area is the sum of the usable area (area which serves the building’s intended purpose), the technical function area (rooms for building services, such as utility connection room, accessible shafts, etc.) and the traffic area (e.g. stairwells, corridors, lift shafts, escape balconies etc.)."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K080",
+  "title": "DIN 277 建筑体积（总体积与净体积）",
+  "question": "According to DIN 277, the gross built volume is the sum of the floor areas of all levels multiplied by the relevant height. Between which surfaces is that height measured?",
+  "answer": "From the top of the floor covering to the top of the floor covering of the next level",
+  "accept": [
+   "finished floor to finished floor"
+  ],
+  "mcq": {
+   "options": [
+    "From the top of the floor covering to the underside of the ceiling",
+    "From the top of the structural slab to the underside of the suspended ceiling",
+    "From the underside of one structural slab to the underside of the next",
+    "From the top of the floor covering to the top of the floor covering of the next level"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Top of floor covering to top of floor covering of next level",
+   "(Net built volume = net floor area × clear ceiling height)"
+  ],
+  "basis": [
+   "The gross built volume is the sum of the floor areas of all levels multiplied by the relevant height (measured between top of floor covering and top of floor covering of the next level"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K081",
+  "title": "阳台面积",
+  "question": "In German (DIN-based) design practice: In housing design, approximately what balcony area is appropriate for a household of 5–6 people?",
+  "answer": "9 m²",
+  "accept": [
+   "9 m2",
+   "9.0 m²",
+   "approx. 9 m^2"
+  ],
+  "mcq": {
+   "options": [
+    "5 m²",
+    "9 m²",
+    "7 m²",
+    "12 m²"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "About 9 m² for 5–6 people (vs. 7 m² for 3–4 people)"
+  ],
+  "basis": [
+   "B = 9.0 m^2 balcony for 5–6 people",
+   "A = 7.0 m^2 balcony for 3–4 people"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K082",
+  "title": "户外空间的连接",
+  "question": "In German (DIN-based) design practice: With which rooms of a dwelling should open-air areas (balconies, loggias, terraces) generally have a spatial relationship?",
+  "answer": "Living and working areas and dining rooms (with several open areas, also bedrooms, kitchens etc.)",
+  "accept": [
+   "living room, work area and dining room"
+  ],
+  "mcq": {
+   "options": [
+    "Bathrooms and utility rooms",
+    "Living and working areas and dining rooms",
+    "Entrance hall and staircase",
+    "Bedrooms only"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Living, working and dining areas",
+   "With more than one open area, also bedrooms/kitchens"
+  ],
+  "basis": [
+   "They generally have a spatial relationship to living and working areas and dining rooms",
+   "with more than one open area, this can also include bedrooms, kitchens etc."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K083",
+  "title": "电梯与每层户数",
+  "question": "Under German building regulations, residential buildings with more than how many full floors require lifts?",
+  "answer": "More than five full floors",
+  "accept": [
+   "5",
+   "five",
+   "more than 5 full storeys"
+  ],
+  "mcq": {
+   "options": [
+    "More than three",
+    "More than four",
+    "More than six",
+    "More than five"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Threshold: more than five full floors"
+  ],
+  "basis": [
+   "Lifts are required for residential buildings of more than five full floors"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K084",
+  "title": "设备噪声与安静房间",
+  "question": "In German (DIN-based) design practice: For sound protection in dwellings, noisy service elements (water and waste pipes, gas risers, waste disposal units, lifts) may not be installed in the walls of which rooms?",
+  "answer": "Rooms where quiet is required, e.g. living rooms and bedrooms",
+  "accept": [
+   "living rooms and bedrooms",
+   "quiet rooms"
+  ],
+  "mcq": {
+   "options": [
+    "Living rooms and bedrooms",
+    "Kitchens and bathrooms",
+    "Staircases and corridors",
+    "Storage rooms and cellars"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Living rooms and bedrooms (rooms needing quiet)",
+   "Lifts in separate shafts with >3 cm mineral fibre joints"
+  ],
+  "basis": [
+   "Noisy elements of services (water pipes, waste pipes, gas riser pipes, waste disposal units, lifts) may not be installed in the walls of rooms where quiet is required (living rooms, bedrooms).",
+   "Lifts should be installed in separate shafts (joints filled with >3 cm mineral fibre)"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K085",
+  "title": "分组式平面与中廊式平面",
+  "question": "In German (DIN-based) design practice: In the grouped room floor plan for apartments (developed in the early 20th century), into which two room groups is the dwelling divided, and which rooms belong to each?",
+  "answer": "Living area (living room, kitchen, dining) and sleeping area (bedrooms, bathrooms)",
+  "accept": [
+   "Living area (living room, kitchen, dining) and sleeping area (bedrooms, bathrooms)"
+  ],
+  "mcq": {
+   "options": [
+    "Day area (living room, bedrooms) and service area (kitchen, bathrooms)",
+    "Living area (living room, dining, bathrooms) and sleeping area (bedrooms, kitchen)",
+    "Living area (living room, kitchen, dining) and sleeping area (bedrooms, bathrooms)",
+    "Public area (entrance, living) and private area (all other rooms) along a central corridor"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Living group: living room, kitchen, dining",
+   "Sleeping group: bedrooms, bathrooms"
+  ],
+  "basis": [
+   "the separation of areas inside the apartment into two 'room groups': the living areas (living room, kitchen and dining area) and the sleeping area (bedrooms and bathrooms)"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K086",
+  "title": "卧室朝向与位置",
+  "question": "In German (DIN-based) design practice: In dwelling design, to which compass directions are parents' bedrooms and children's bedrooms normally oriented?",
+  "answer": "Parents: east or southeast; children: south to west",
+  "accept": [
+   "parents E/SE, children S–W"
+  ],
+  "mcq": {
+   "options": [
+    "Parents: north; children: east",
+    "Parents: south to west; children: east or southeast",
+    "Parents: west; children: north to east",
+    "Parents: east or southeast; children: south to west"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Parents' bedroom east/southeast",
+   "Children's rooms south to west",
+   "Bedrooms separated from the living room"
+  ],
+  "basis": [
+   "These would normally be aligned to east or southeast (parents) or south to west (children) and separated from the living room in another part of the home."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K087",
+  "title": "门厅直达厨房、WC 和楼梯",
+  "question": "In German (DIN-based) design practice: In a house, which of the most important communal areas should be directly accessible from the entrance hall?",
+  "answer": "Kitchen, WC and staircase",
+  "accept": [
+   "kitchen, toilet and stairs"
+  ],
+  "mcq": {
+   "options": [
+    "Living room, bedroom and bathroom",
+    "Kitchen, WC and staircase",
+    "Dining room, study and terrace",
+    "Bathroom, utility room and cellar"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Kitchen",
+   "WC",
+   "Staircase"
+  ],
+  "basis": [
+   "The most important communal areas like the kitchen, WC and staircase should be directly accessible from the entrance hall."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K088",
+  "title": "防风门斗",
+  "question": "In German (DIN-based) design practice: When should the entrance hall of a dwelling be enclosed with an inner door to act as a wind lobby, and in which case is this unnecessary?",
+  "answer": "When the entrance leads directly to the open air; not needed when the entrance is from a stair shaft, which itself provides wind protection",
+  "accept": [
+   "When the entrance leads directly to the open air; not needed when the entrance is from a stair shaft, which itself provides wind protection"
+  ],
+  "mcq": {
+   "options": [
+    "When the entrance leads directly to the open air; a stair shaft entrance already gives wind protection",
+    "Always, regardless of the entrance type or local weather conditions",
+    "Only in residential buildings of more than five storeys with lifts",
+    "Only when the entrance faces the prevailing wind from the south"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Inner door/lobby where entrance opens directly to the open air (esp. unfavourable weather)",
+   "A stair shaft can provide the wind protection instead"
+  ],
+  "basis": [
+   "The entrance hall should be enclosed where the entrance leads directly to the open air with an inner door (wind lobby function).",
+   "if the entrance is into a stair shaft, then this can provide wind protection"
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K089",
+  "title": "户内走道宽度",
+  "question": "In German (DIN-based) planning examples of corridor layouts inside a dwelling, what minimum corridor width is assumed, one that allows two people to pass?",
+  "answer": "1 m",
+  "accept": [
+   "1 m",
+   "1.0 m",
+   "100 cm",
+   "1.00 m"
+  ],
+  "mcq": {
+   "options": [
+    "0.70 m",
+    "0.80 m",
+    "1.00 m",
+    "1.50 m"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Minimum 1 m",
+   "Too narrow for cupboards, which should be built-in"
+  ],
+  "basis": [
+   "The examples assume a minimum corridor width of 1 m, which allows two people to pass.",
+   "This width does not, however, permit the siting of cupboards, which would be better built-in"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K090",
+  "title": "独立住宅每层通往户外",
+  "question": "In German (DIN-based) design practice: A detached, owner-occupied house on its own plot typically has direct access to private or semi-public open spaces (garden, terrace, courtyard, roof garden) from which storeys?",
+  "answer": "From each storey",
+  "accept": [
+   "every storey",
+   "all floors"
+  ],
+  "mcq": {
+   "options": [
+    "Only from the ground floor",
+    "From each storey",
+    "From the ground floor and the top floor",
+    "Only from the main living level"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Direct access from every storey"
+  ],
+  "basis": [
+   "It has direct access from each storey to further private or semi-public open spaces (e.g. garden, terrace, inner courtyard or roof garden)"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ }
+]

@@ -1,0 +1,108 @@
+[
+ {
+  "topic": "居室标准与面积计算",
+  "title": "住宅面积的计入范围与净尺寸量法",
+  "summary": "住宅面积只计本户专用房间的地面面积；房间面积按构件之间的净空间、从构件饰面层表面量起（在建成房间内实测或按合适的施工图计算），不能用量到墙中线或结构面的面积。",
+  "prefixes": [
+   "The area of a house or flat includes the floor area of all rooms",
+   "The floor area of a room is determined from the clear"
+  ],
+  "lod": "200–300",
+  "priority": 3,
+  "decision": "面积核算"
+ },
+ {
+  "topic": "居室标准与面积计算",
+  "title": "DIN 277 面积分类与可出租面积",
+  "summary": "毛面积按外轮廓计算，结构面积是墙柱所占面积，净面积是构件之间的面积，再分为使用、技术和交通面积；可出租面积（GIF）不含楼梯、电梯、紧急出口、设备间和管井。",
+  "prefixes": [
+   "The gross floor area is the sum of the plan area",
+   "The constructional floor area is the sum",
+   "The net floor area is the usable floor area",
+   "The net floor area is the sum of the usable area",
+   "The following do not belong to the letting area",
+   "2. Areas with communal right of use"
+  ],
+  "lod": "200",
+  "priority": 3,
+  "decision": "面积核算"
+ },
+ {
+  "topic": "场地与体量",
+  "title": "退距（Abstandsfläche）",
+  "summary": "退距深度一般为 0.4 H、商业区 0.2 H，且不小于 3 m；H 量到墙与屋面交线，坡度 ≤ 70° 的屋面按 1/3 计入；退距须在本地块内，外墙突出构件按规定计入。",
+  "prefixes": [
+   "The depth of setback areas differs",
+   "The depth of the setback area is measured according to wall height",
+   "Building elements projecting from the outside wall",
+   "Setback areas are the spaces between",
+   "Setback areas must be on the plot itself",
+   "According to the model building regulations (MBO), it is 0.4",
+   "Wall height means the dimension from ground level",
+   "The height of roofs with a pitch of",
+   "They may also lie on public traffic, green and water areas",
+   "In front of the outside walls of building classes 1 and 2 with not more than three"
+  ],
+  "lod": "100–200",
+  "priority": 3,
+  "decision": "体量"
+ },
+ {
+  "topic": "场地与体量",
+  "title": "建筑密度与容积率",
+  "summary": "建筑密度 = 建筑基底面积 ÷ 地块面积，容积率 = 完整楼层的楼层面积之和 ÷ 地块面积，二者是控制开发强度的法定参数。",
+  "prefixes": [
+   "the plot coverage ratio determines the permissible ratio",
+   "the floor-area ratio (determines",
+   "the plot coverage ratio determines"
+  ],
+  "lod": "100–200",
+  "priority": 2,
+  "decision": ""
+ },
+ {
+  "topic": "住宅·户型组织与入户",
+  "title": "一梯一户限四层（无电梯）；一梯三户",
+  "summary": "一梯一户交通面积占比高、较不经济（“叠摞的联排”/城市别墅），不设电梯时一般限四层；一梯三户兼顾居住品质与经济性。",
+  "prefixes": [
+   "There is access to only one flat on each floor",
+   "Three flats per floor offers"
+  ],
+  "lod": "100–200",
+  "priority": 3,
+  "decision": "交通核"
+ },
+ {
+  "topic": "住宅·户型组织与入户",
+  "title": "联排住宅进深 ≤12 m、面宽 4–8 m",
+  "summary": "联排住宅只能从两个立面直接采光，经济进深不超过 12 m、面宽 4–8 m，中部不可避免地形成布置楼梯、辅助房间（常含就餐区）的暗区。",
+  "prefixes": [
+   "Building in a row restricts the possibilities"
+  ],
+  "lod": "100–200",
+  "priority": 3,
+  "decision": "平面进深"
+ },
+ {
+  "topic": "住宅·户型组织与入户",
+  "title": "入户凹口尺寸",
+  "summary": "入户门前的凹口宽至少 1.25 m（最好 1.50 m）、深约 1.00 m，使两人能舒适且有遮蔽地在门前等候。",
+  "prefixes": [
+   "Entrance recesses should be at least 1.25 m"
+  ],
+  "lod": "200–300",
+  "priority": 2
+ },
+ {
+  "topic": "住宅·户型组织与入户",
+  "title": "每户必备厨房与储藏间",
+  "summary": "按建筑法规，每套住宅（独户住宅或公寓）至少要有一个厨房或小厨房，并须配备足够大的储藏间。",
+  "prefixes": [
+   "According to the building regulations, every house or flat must have",
+   "The building regulations require that every flat or house"
+  ],
+  "lod": "200",
+  "priority": 3,
+  "decision": "户型布局"
+ }
+]

@@ -1,0 +1,1052 @@
+id,question,ground_truth,ifc_model,project,category,neufert_tier,neufert_topic
+105,"What is the estimated distance from treatment room 1E12 to the nearest emergency exit, including the path taken for this estimation?","The information is not directly available in the BIM model and cannot be exactly calculated.
+
+However, the distance from treatment room 1E12 to the nearest emergency exit is estimated to be around 20 to 22 meters, following the path from 1E12 through 1E33, 1DC6, 1EC1, and finally to 1EC4.",arc,dental_clinic,4,tier1,T1_escape_accessibility
+106,"What is the estimated distance from treatment room 1E23 to the nearest emergency exit, including the path taken?","The information is not directly available in the BIM model and cannot be exactly calculated.
+
+However, the distance from treatment room 1E23 to the nearest emergency exit is estimated to be around 6 to 9 meters, following the path from 1E23 through 1EC1 to 1EC4.",arc,dental_clinic,4,tier1,T1_escape_accessibility
+101,What are the estimated capacities for each waiting area in the building?,"The information is not directly available in the BIM model and cannot be exactly calculated.
+
+However, assuming an occupancy rate between 0.9 and 1.5 sqm per person, the estimated capacities are:
+- Central Waiting Area: approximately 125 to 200 people.
+- Dental Waiting Area: approximately 30 to 50 people.",arc,dental_clinic,4,tier1,T1_occupancy_program_ratios
+102,"What is the total estimated storage space available in the building, and can you provide a breakdown by storage type?","The information is not directly available in the BIM model and cannot be exactly calculated.
+
+However, the area of available storage space is estimated to be around 450 sqm. This includes 34 different storage areas, consisting of:
+- General storage rooms
+- Soiled storage rooms
+- Hazardous material storage spaces
+- Utility storage areas",arc,dental_clinic,4,tier1,T1_occupancy_program_ratios
+103,What is the ratio of clinical to non-clinical space?,"The information is not directly available in the BIM model and cannot be exactly calculated.
+
+However, the ratio of clinical to non-clinical space, based on usable area (excluding corridors, waiting areas, and offices), is estimated to be around 0.22.",arc,dental_clinic,4,tier1,T1_occupancy_program_ratios
+130,What is the ratio of UFA to GFA?,"The UFA-to-GFA ratio cannot be calculated from the referenced structural IFC model. It contains no IfcSpace entities and no stored UFA, GFA, usable-area, or gross-floor-area totals, so a numeric ratio would require external assumptions not present in the model.",str,dental_clinic,4,tier1,T1_occupancy_program_ratios
+978,"Could you provide a breakdown of the circulation space and usable space areas, including their measurements and the ratio between them?","Space ratio estimation:
+- Usable Space: 305.8 sq m (91.9%)
+- Circulation Space: 26.9 sq m (8.1%)
+- Ratio: 1 to 11.4",arc,wbdg_office,3,tier1,T1_occupancy_program_ratios
+634,What is the ratio of net to gross floor area?,"Net/gross floor-area ratio: 87.3% (3,675.9023 m² total calculated space area ÷ 4,210.4280 m² IfcBuilding gross floor area).",arc,molio,2,tier1,T1_occupancy_program_ratios
+478,What is the typical room configuration found in the residential units?,"Unit Configuration Analysis:
+- All residential units seem to follow the same linear plan configuration.
+
+Typical unit configuration:
+- Wardrobe
+- Toilet
+- Kitchen and Dining room
+- Living room
+- Bedroom
+- Office
+- Bathroom",arc,fantasy_residential_building_1,3,tier1,T1_layout_typology
+477,How many residential units are in this building?,"Residential Units are not explicitly defined in the model. However, it can be implied that 6 units are present in total, 2 units on each level.",arc,fantasy_residential_building_1,4,tier1,T1_layout_typology
+813,What is the general composition and layout of level 12?,"Level 12 is a typical upper-level residential floor with 4 individual apartment units.
+
+Note: This model lacks detailed space definitions. Only simplified representations for residential units are available within each building storey.",arc,sixty5,4,tier1,T1_layout_typology
+812,What is the general composition and description of Level 1 in the building?,"Level 1 represents a typical residential floor with 10 individual apartment units.
+
+Note: This model lacks detailed space definitions. Only simplified representations for residential units are available within each building storey.",arc,sixty5,4,tier1,T1_layout_typology
+811,"What space distribution information is available for this building, including building type, number of residential units, and floor organization?","Space Distribution by Function:
+- Building Type: Residential high-rise apartment complex
+- Residential Units: 110 units
+- Each defined space in the model represents an individual apartment/residential space
+- Total floors with units: 16 floors
+
+Note: This model lacks detailed space definitions. Only simplified representations for residential units are available within each building storey.",arc,sixty5,4,tier1,T1_layout_typology
+144,What are the dimensions and parking capacity of the lot?,The gross area of the parking lot is 637.33 sq m. It has 26 available parking spaces.,arc,digital_hub,2,tier1,T1_parking
+712,What is the size of the parking area?,"This information is not available directly from the BIM model. However, through manual measurement, I estimate the parking area to be approximately 85 m².",arc,samuel_macalister_sample_house,3,tier1,T1_parking
+368,What parking-related elements or areas are defined in the model?,"No spaces with parking-related functions or dedicated parking elements were found in the model. However, an exterior space in front of the building, with an area of approximately 518 sq m, appears to serve as a parking area.",arc,fantasy_hotel_1,4,tier1,T1_parking
+1025,"What are the characteristics of the structural grid system, including its pattern and number of intersections?",Grid System is regular grid with 40 unique grid intersections.,str,wbdg_office,3,tier1,T1_stair_spec_grid
+783,What is the layout of the structural grid?,Structural information is not available in this model.,arc,schependomlaan,4,tier1,T1_stair_spec_grid
+57,Which two doors have the greatest widths in the building?,"The two doors with the greatest widths in the building are:
+
+1. ""Tür-019"" - Width: 2.0 m
+2. ""Tür-018"" - Width: 1.8 m",arc,ac20,2,tier2,T2_door_widths
+58,What is the narrowest door width used here?,"Smallest Door Width:
+   1.0 m - IFC Tür - Eine Öñffnunsgrichtung",arc,ac20,2,tier2,T2_door_widths
+98,What is the width of the main entrance door?,The width of the main entrance door is 1.8 m.,arc,dental_clinic,1,tier2,T2_door_widths
+162,"What is the building's average door width, including maximum and minimum?","Average door width: 1.00 m
+    Maximum door width: 1.64 m
+    Minimum door width: 0.80 m
+    Doors with width data: 62/64",arc,digital_hub,2,tier2,T2_door_widths
+163,Which door has the largest width in the building?,Largest door width: 1.64 m,arc,digital_hub,2,tier2,T2_door_widths
+480,Which door model has the largest width?,"Largest Door Width:
+   - Door type: ASSA_ABLOY_SemiTransparent_NonHosted:Semi Transparent non hosted
+   - Width: 5.63m",arc,fantasy_residential_building_1,2,tier2,T2_door_widths
+515,"What door types are present in the building, how many of each type, and what are their dimensions?","Total Doors: 5
+
+   Door Types and Quantities:
+   - IFC TÖºr - Eine Öñffnunsgrichtung: 3 doors
+   - EingangstÖºr: 1 doors
+   - SchiebetÖºr_3-teilig: 1 door
+
+   Individual Door Details:
+   - Terrassentuer: SchiebetÖºr_3-teilig (2010mm x 2375mm)
+   - Haustuer: EingangstÖºr (1010mm x 2010mm)
+   - Innentuer-1: IFC TÖºr - Eine Öñffnunsgrichtung (885mm x 2010mm)
+   - Innentuer-2: IFC TÖºr - Eine Öñffnunsgrichtung (885mm x 2010mm)
+   - Innentuer-3: IFC TÖºr - Eine Öñffnunsgrichtung (885mm x 2010mm)",arc,fzk_house,2,tier2,T2_door_widths
+516,Which three doors have the greatest widths in the building?,"Three Largest Door Widths:
+   1. 2010mm - Terrassentuer (SchiebetÖºr_3-teilig)
+   2. 1010mm - Haustuer (EingangstÖºr)
+   3. 885mm - Innentuer-1 (IFC TÖºr - Eine Öñffnunsgrichtung)",arc,fzk_house,2,tier2,T2_door_widths
+517,"What is the narrowest door width used in the building, and which doors have this width?","the Shortest Door Width is 885mm, which is used in:
+   1.  Innentuer-1 (IFC TÖºr - Eine Öñffnunsgrichtung)
+   2. Innentuer-2 (IFC TÖºr - Eine Öñffnunsgrichtung)
+   3. Innentuer-3 (IFC TÖºr - Eine Öñffnunsgrichtung)",arc,fzk_house,2,tier2,T2_door_widths
+567,Could you please provide the names and widths of the five largest types of door (by width) used in the building? Could you also provide the average door width and the range of door widths?,"Top 5 Largest Door Widths:
+   1. 3500 mm - Port
+   2. 3425 mm - D Door Revolving 10
+   3. 3000 mm - StÖ•ldÖ∏r100
+   4. 2500 mm - Port
+   5. 2124 mm - YtterdÖ∏r 203
+
+   Door Width Statistics:
+   - Width range: 790 - 3500 mm
+   - Average width: 1167 mm",arc,hitos,2,tier2,T2_door_widths
+620,What is the widest door used in the building?,The widest door is the Revolving Door 25 in Rum nr. S01. IfcDoor.OverallWidth is 2.95529 m; its stored nominal size is 2.96 m × 2.40 m.,arc,molio,2,tier2,T2_door_widths
+675,"What is the statistical breakdown of door widths in the building, including the average width, the range of widths, and the distribution of the most common widths?","Average Door Width: 1263 mm (1.26 m)
+   - Width range: 800 - 1890 mm
+   - Most common widths:
+     800 mm: 7 doors (43.8%)
+     1450 mm: 5 doors (31.2%)
+     1890 mm: 3 doors (18.8%)
+     1750 mm: 1 doors (6.2%)",arc,samuel_macalister_sample_house,2,tier2,T2_door_widths
+676,"What is the largest door width in the building, and which doors have this width?","Largest Door Width: 1890 mm (1.89 m)
+
+Doors with largest width:
+- Pocket_Slider_Door_5851: 3 door(s)",arc,samuel_macalister_sample_house,2,tier2,T2_door_widths
+749,What is the average width of doors in the building?,"Average Door Width: 1.150 m
+Width range: 0.725 - 2.86 m",arc,schependomlaan,2,tier2,T2_door_widths
+750,Which door has the largest width in the building?,"Largest Door Width: 2.86 m
+   Door Type: merk E4-R",arc,schependomlaan,2,tier2,T2_door_widths
+816,"What is the largest door width used in the building, and what type of door has this width?","Largest Door Width: 3216 mm
+   Door Type: merk-bi-al-06",arc,sixty5,2,tier2,T2_door_widths
+817,What is the smallest door width used in the building?,"Smallest Door Width: 759 mm
+   Door Type: 74_Door_DD_douchedeur",arc,sixty5,2,tier2,T2_door_widths
+970,What is the average door width in the building?,The average door width is 0.96 m.,arc,wbdg_office,2,tier2,T2_door_widths
+971,What is the largest door width in the building?,The largest door width is 1.83 m.,arc,wbdg_office,2,tier2,T2_door_widths
+60,What is the widest window in the building?,"Largest Window Width:
+   1.0 m - IFC Fenster - ein Panel",arc,ac20,2,tier2,T2_window_sizes
+61,What is the narrowest window width used in this building?,"Smallest Window Width:
+   0.9 m - IFC Fenster - ein Panel",arc,ac20,2,tier2,T2_window_sizes
+119,What are the dimensions of the window with guid 0otfaO0qPDAhynjJ6DmgH8?,The window with GUID 0otfaO0qPDAhynjJ6DmgH8 has a height of 1.735 m and a width of 1.0 m.,arc,dental_clinic,1,tier2,T2_window_sizes
+338,"What are the distinct window sizes present, along with how many windows exist for each size?","Distinct Window Sizes (Total: 73 windows):
+   - 910mm x 910mm: 51 windows (69.9%)
+   - 1524mm x 610mm: 12 windows (16.4%)
+   - 600mm x 900mm: 10 windows (13.7%)",arc,fantasy_hotel_1,2,tier2,T2_window_sizes
+340,What are the different window widths used in the building and how many windows use each width?,"There are 3 different windows types with different widths in this building:
+   1. 1524mm (1.52m) - used in 12 windows
+   2. 910mm (0.91m) - used in 51 windows
+   3. 600mm (0.60m) - used in 10 windows",arc,fantasy_hotel_1,2,tier2,T2_window_sizes
+519,"What is the maximum window width used in this building, and which windows have this width?","the Largest Window Width is 2000mm, which is used in:
+   1. EG-Fenster-1 (IFC Fenster - zwei Panele - Vertikal)
+   2. EG-Fenster-2 (IFC Fenster - zwei Panele - Vertikal)
+   3. EG-Fenster-3 (IFC Fenster - zwei Panele - Vertikal)
+   4. EG-Fenster-4 (IFC Fenster - zwei Panele - Vertikal)
+   5. EG-Fenster-5 (IFC Fenster - zwei Panele - Vertikal)
+   6. EG-Fenster-6 (IFC Fenster - zwei Panele - Vertikal)
+   7. EG-Fenster-7 (IFC Fenster - zwei Panele - Vertikal)
+   8. EG-Fenster-8 (IFC Fenster - zwei Panele - Vertikal)
+   9. EG-Fenster-9 (IFC Fenster - zwei Panele - Vertikal)",arc,fzk_house,2,tier2,T2_window_sizes
+520,"What is the minimum window width used in the building, and which windows have this width?","the Shortest Window Width is 1000mm, which is used in:
+   1. OG-Fenster-2 (Rundfenster 13)
+   2. OG-Fenster-1 (Rundfenster 13)",arc,fzk_house,2,tier2,T2_window_sizes
+569,What are the top 5 largest window widths used in the building?,"Top 5 Largest Window Widths:
+   1. 2030 mm - DV09T
+   2. 1990 mm - DV14T
+   3. 1990 mm - DV14T
+   4. 1990 mm - DV15T
+   5. 1990 mm - DV15T
+
+   Window Width Statistics:
+   - Width range: 490 - 2030 mm
+   - Average width: 1765 mm",arc,hitos,2,tier2,T2_window_sizes
+622,What is the largest window width used in this building?,The widest window is a Window 25 in Rum nr. S01. IfcWindow.OverallWidth is 3.972 m; its stored nominal size is 3.97 m × 0.61 m.,arc,molio,2,tier2,T2_window_sizes
+678,"What is the maximum window width in this building, and how many windows have this width?","Largest Window Width: 1500 mm (1.50 m)
+
+Windows with largest width:
+- Single Window:Standard: 15 window(s)",arc,samuel_macalister_sample_house,2,tier2,T2_window_sizes
+752,What is the widest window used in this building?,"Largest Window Width: 1.715 m
+Window Type: merk G",arc,schependomlaan,2,tier2,T2_window_sizes
+819,"What is the largest window width used in the building, and which window type has this width?","Largest Window Width: 5070 mm
+Window Type: Merk-bi-al-07",arc,sixty5,2,tier2,T2_window_sizes
+820,"What is the smallest window width used in the building, and which window type has this dimension?","Smallest Window Width: 200 mm
+   Window Type: 32_DD_inspectieluik Gyproc",arc,sixty5,2,tier2,T2_window_sizes
+915,"Could you provide a breakdown of all windows in the building by type and size, including the quantity and percentage distribution for each size variation?","Total Windows: 80
+
+Window Types with Size Variations:
+   Type: IFC Fenster - ein Panel: 80 windows total
+   - 0.75m × 0.62m: 10 windows (12%)
+   - 0.75m × 0.98m: 10 windows (12%)
+   - 1.00m × 0.62m: 10 windows (12%)
+   - 1.01m × 1.75m: 20 windows (25%)
+   - 1.22m × 1.00m: 20 windows (25%)
+   - 1.22m × 1.48m: 10 windows (12%)",arc,smiley_west,2,tier2,T2_window_sizes
+81,Which rooms have the tallest ceilings?,All rooms have a ceiling height of 2.70 m.,arc,ac20,2,tier2,T2_ceiling_heights
+96,What is the ceiling height in treatment room 2A12?,The ceiling height in treatment room 2A12 is 2.80 m.,arc,dental_clinic,1,tier2,T2_ceiling_heights
+104,What is the average room height for the interaction stations?,The average room height for the interaction stations is 2.8 m.,arc,dental_clinic,2,tier2,T2_ceiling_heights
+152,What are the heights of the ceilings?,"Ceiling Heights by Level:
+    - B01_OKRD: 3.22 m
+    - E00_OKRD: 3.90 m
+    - E01_OKRD: 3.65 m",arc,digital_hub,1,tier2,T2_ceiling_heights
+168,Which spaces have the tallest ceiling heights?,"Spaces by Ceiling Height (Top 10):
+    - Aufzug Ost (400): 10.77 m
+    - Aufzug West (300): 10.77 m
+    - Schacht West 1 (301): 7.77 m
+    - Schacht West 2 (302): 7.77 m
+    - Schacht Ost 2 (402): 7.77 m
+    - Schacht Ost 1 (401): 7.77 m
+    - Flur - OG (2-1): 4.40 m
+    - Treppenhaus West - EG (1-19): 3.90 m
+    - Treppenhaus Ost - EG (1-17): 3.90 m
+    - Eingangsbereich / Flur (1-1): 3.75 m",arc,digital_hub,2,tier2,T2_ceiling_heights
+511,"What are all the rooms on the ground level, including their areas and ceiling heights?","Ground Level (Erdgeschoss): 6 spaces
+   Total Ground Floor Area: 98.8 sq m
+
+   Ground Level Room Layout:
+   - Room 5: Wohnen (25.2 sq m, 2.5m height)
+   - Room 4: Schlafzimmer (21.4 sq m, 2.5m height)
+   - Room 6: KÖºche (16.3 sq m, 2.5m height)
+   - Room 2: Buero (12.6 sq m, 2.5m height)
+   - Room 3: Bad (12.1 sq m, 2.5m height)
+   - Room 1: Flur (11.2 sq m, 2.5m height)",arc,fzk_house,1,tier2,T2_ceiling_heights
+512,"What are all the rooms in the attic level, including their areas and ceiling heights?","Attic Level (Dachgeschoss): 1 spaces
+   Total Attic Floor Area: 74.5 sq m
+
+   Attic Level Room Layout:
+   - Room 7: Galerie (74.5 sq m, 4.0m height)",arc,fzk_house,1,tier2,T2_ceiling_heights
+540,"Which rooms have the highest ceiling heights, and what is that height value?","Highest Ceiling Height: 4.00 m
+
+   Rooms with highest ceiling height (4.00 m):
+   - Room 7: Galerie
+     Level: Dachgeschoss, Area: 74.5 sq m
+
+   All Rooms Ranked by Ceiling Height:
+   1. Room 7 (Galerie): 4.00 m (Dachgeschoss)
+   2. Room 4 (Schlafzimmer): 2.50 m (Erdgeschoss)
+   3. Room 3 (Bad): 2.50 m (Erdgeschoss)
+   4. Room 2 (Buero): 2.50 m (Erdgeschoss)
+   5. Room 5 (Wohnen): 2.50 m (Erdgeschoss)
+   6. Room 1 (Flur): 2.50 m (Erdgeschoss)
+   7. Room 6 (KÖºche): 2.50 m (Erdgeschoss)",arc,fzk_house,2,tier2,T2_ceiling_heights
+589,What are the top 5 rooms with the highest ceiling heights?,"Rooms with highest ceiling height:
+    1. 99.01.015 (Glassgata)
+       Height: 14.48 m, Level: u.etg
+    2. 99.01.002 (Korridor)
+       Height: 10.77 m, Level: u.etg
+    3. 80.029 (Sluse)
+       Height: 6.32 m, Level: 3.etg
+    4. 06.04.001 (Bro 1)
+       Height: 4.54 m, Level: u.etg
+    5. 70.001 (Bruttoareal kjeller)
+       Height: 4.00 m, Level: kjeller",arc,hitos,2,tier2,T2_ceiling_heights
+590,What are the top 5 rooms with the lowest ceiling heights?,"Rooms with lowest ceiling height:
+   1. 04.013 (Varemottak)
+      Height: 2.40 m, Level: u.etg
+   2. 04.008 (Frys)
+      Height: 2.40 m, Level: u.etg
+   3. 04.014 (KjÖ∏kken, avfall)
+      Height: 2.40 m, Level: u.etg
+   4. 04.007 (KjÖ∏l)
+      Height: 2.40 m, Level: u.etg
+   5. 04.009 (Meieri)
+      Height: 2.40 m, Level: u.etg",arc,hitos,2,tier2,T2_ceiling_heights
+646,Which rooms have the tallest ceilings?,"Rooms with the greatest stored zone heights:
+- 6.644 m:
+  - Rum nr. S12 (Auditorium, Grundplan)
+- 3.704 m:
+  - Rum nr. 508.1 (Skakt, 5. Sal)
+- 3.500 m:
+  - Rum nr. 109.1 (Skakt, 1. Sal)
+  - Rum nr. 208.1 (Skakt, 2. Sal)
+  - Rum nr. 308.1 (Skakt, 3. Sal)
+  - Rum nr. 408.1 (Skakt, 4. Sal)
+  - Rum nr. S07.1 (Skakt, Grundplan)
+  - Rum nr. K04.1 (Skakt, Kælder)",arc,molio,2,tier2,T2_ceiling_heights
+673,What ceiling height information is available in this model?,"Space-specific ceiling height information is not available in this model.
+
+Available Information:
+- The model contains building level elevations
+- Individual space heights are not included
+- Based on building design, spaces on level 2 may have higher ceilings",arc,samuel_macalister_sample_house,4,tier2,T2_ceiling_heights
+772,Which spaces have the tallest ceilings?,Space/room information is not available in this building model.,arc,schependomlaan,4,tier2,T2_ceiling_heights
+54,What are the heights of each level?,"Building Level Information:
+   - Keller:
+     Elevation: -3.0 m
+     Height: 3.0 m
+
+   - Erdgeschoss:
+     Elevation: 0
+     Height: 3.0 m
+
+   - 1. Obergeschoss:
+     Elevation: 3.0 m
+     Height: 3.0 m
+
+   - 2. Obergeschoss:
+     Elevation: 6.0 m
+     Height: 3.0 m
+
+   - Dachgeschoss:
+     Elevation: 9.0 m
+     Height: 3.0 m",arc,ac20,1,tier2,T2_storey_heights
+117,How many toilet rooms are there on the second floor?,There are 8 toilet rooms on the second floor.,arc,dental_clinic,2,tier2,T2_storey_heights
+335,What are the elevations for each level?,"Level Elevations:
+   - GROUND FLOOR: 0.00m
+   - FIRST FLOOR: 4.90m
+   - L3: 9.80m
+   - Mumti: 11.80m",arc,fantasy_hotel_1,2,tier2,T2_storey_heights
+378,What are the heights of the building levels?,"Building Level Heights:
+   - EG: Elevation 0.000 m
+   - OG1: Elevation 4.800 m
+   - OG2: Elevation 9.600 m
+   - OG3: Elevation 14.400 m
+   - OG4: Elevation 19.200 m",arc,fantasy_office_building_1,2,tier2,T2_storey_heights
+410,What are the heights of the building levels?,"Building Level Heights:
+
+   3rd Floor:
+   - Elevation: 11.10 m
+
+   4th Floor:
+   - Elevation: 14.80 m
+
+   5th Floor:
+   - Elevation: 18.50 m
+
+   Note: Ground/1st/2nd/3rd floors are all modeled under '3rd Floor' storey.
+   The 5th Floor (Elevation: 18.50 m) is used for roof modeling.",arc,fantasy_office_building_2,2,tier2,T2_storey_heights
+444,What are the elevations of the building levels?,"Building Level Elevations:
+   - EG: 0.00 m above ground
+   - OG1: 3.70 m above ground
+   - OK OG2: 7.40 m above ground
+   - OK OG3: 11.10 m above ground
+   - OK OG4: 14.80 m above ground
+   - OK OG5: 18.50 m above ground",arc,fantasy_office_building_3,2,tier2,T2_storey_heights
+476,What are the heights of the building levels?,"Building Level Heights:
+
+   Level Elevations:
+   - Ground Floor: 0.00m above ground
+   - First Floor: 3.40m above ground
+   - Second Floor: 6.80m above ground
+   - Roof: 10.20m above ground",arc,fantasy_residential_building_1,1,tier2,T2_storey_heights
+513,"What are the elevation, floor height, and floor-to-floor height for each level?","Building Level Heights:
+
+   Erdgeschoss:
+   - Elevation: 0.00 m
+   - Floor Height: 2.70 m
+   - Gross Floor Area: 119.8 sq m
+
+   Dachgeschoss:
+   - Elevation: 2.70 m
+   - Floor Height: 2.00 m
+   - Gross Floor Area: 121.7 sq m
+
+   Floor-to-Floor Heights:
+   - Erdgeschoss to Dachgeschoss: 2.70 m",arc,fzk_house,1,tier2,T2_storey_heights
+564,What are the elevation and floor-to-floor heights for each level?,"Building Level Elevations:
+   - kjeller: 20.3 m elevation
+   - u.etg: 24.3 m elevation
+     Floor-to-floor height from kjeller: 4.0 m
+   - 1.etg: 28.3 m elevation
+     Floor-to-floor height from u.etg: 4.0 m
+   - 2.etg: 32.3 m elevation
+     Floor-to-floor height from 1.etg: 4.0 m
+   - 3.etg: 36.3 m elevation
+     Floor-to-floor height from 2.etg: 4.0 m",arc,hitos,1,tier2,T2_storey_heights
+635,What are the heights of the individual levels?,"Building Level Heights:
+   - Kælder: 3.50m
+   - Grundplan: 3.50m
+   - 1. Sal: 3.50m
+   - 2. Sal: 3.50m
+   - 3. Sal: 3.50m
+   - 4. Sal: 3.50m
+   - 5. Sal: 3.14m
+   - 6. sal: 3.00m",arc,molio,1,tier2,T2_storey_heights
+670,"What are the elevations of all building levels, including any additional height information such as floor-to-floor measurements and level connections?","Building Level Information:
+   - Foundation:
+     Elevation: -0.80 m
+
+   - Level 1 Living Rm.:
+     Elevation: -0.55 m
+
+   - Level 1:
+     Elevation: 0 m
+
+   - Level 2:
+     Elevation: 3.00 m
+
+   - Roof Line:
+     Elevation: 6.00 m
+     Floor-to-floor from Level 2: 3.00 m
+
+   Notes:
+   - 'Level 1' and 'Level 1 Living Rm.' are connected (same level)
+   - 'Ceiling' and 'Level 2' are connected (same level)",arc,samuel_macalister_sample_house,2,tier2,T2_storey_heights
+764,What are the heights of the building levels?,"The IFC spatial hierarchy defines only one IfcBuildingStorey: Storey-1 at elevation 0 mm. Because no additional storeys are defined, floor-to-floor level heights cannot be calculated from the model's storey hierarchy.",arc,schependomlaan,3,tier2,T2_storey_heights
+831,"Could you provide a detailed breakdown of all building levels, including their elevation heights and floor-to-floor heights?","Building Level Elevations and Heights:
+
+Foundation and Floors:
+- -1 Foundation (fundering): -1.0m elevation
+
+- 00 Ground Floor (begane grond): 0.0m elevation
+  Floor-to-floor height: 4.5m
+
+- 01 First Floor (eerste verdieping): 4.5m elevation
+  Floor-to-floor height: 3.2m
+
+- 02 Second Floor (tweede verdieping): 7.7m elevation
+  Floor-to-floor height: 3.2m
+
+- 03 Third Floor (derde verdieping): 10.9m elevation
+  Floor-to-floor height: 3.2m
+
+- 04 Fourth Floor (vierde verdieping): 14.1m elevation
+  Floor-to-floor height: 3.2m
+
+- 05 Fifth Floor (vijfde verdieping): 17.3m elevation
+  Floor-to-floor height: 3.2m
+
+- 06 Sixth Floor (zesde verdieping): 20.5m elevation
+  Floor-to-floor height: 3.2m
+
+- 07 Seventh Floor (zevende verdieping): 23.7m elevation
+  Floor-to-floor height: 3.2m
+
+- 08 Eighth Floor (achtste verdieping): 26.9m elevation
+  Floor-to-floor height: 3.2m
+
+- 09 Ninth Floor (negende verdieping): 30.1m elevation
+  Floor-to-floor height: 3.2m
+
+- 10 Tenth Floor (tiende verdieping): 33.3m elevation
+  Floor-to-floor height: 3.2m
+
+- 11 Eleventh Floor (elfde verdieping): 36.5m elevation
+  Floor-to-floor height: 3.2m
+
+- 12 Twelfth Floor (twaalfde verdieping): 39.7m elevation
+  Floor-to-floor height: 3.2m
+
+- 13 Thirteenth Floor (dertiende verdieping): 42.9m elevation
+  Floor-to-floor height: 3.2m
+
+- 14 Fourteenth Floor (veertiende verdieping): 46.1m elevation
+  Floor-to-floor height: 3.2m
+
+- 15 Fifteenth Floor (vijftiende verdieping): 49.3m elevation
+  Floor-to-floor height: 3.2m
+
+- 16 Sixteenth Floor (zestiende verdieping): 52.5m elevation
+  Floor-to-floor height: 3.2m
+
+- 17 Roof (dak): 55.7m elevation
+
+Final building height above ground: 57m",arc,sixty5,2,tier2,T2_storey_heights
+922,What are the heights of the individual levels?,"Level Heights found:
+   - 1.OG: 2.53 m
+   - 2.OG: 5.23 m
+   - Dach: 7.93 m
+   - EG: -0.25 m
+   - KG: -2.81 m",arc,smiley_west,2,tier2,T2_storey_heights
+959,What are the floor-to-floor heights for each level transition?,"The floor-to-floor height between levels is:
+- Level 1 to level 2: 4.26 m
+- Level 2 to Roof: 3.66 m",arc,wbdg_office,2,tier2,T2_storey_heights
+365,"What is the total number of staircases, and what is the width of each staircase?","Total Staircases: 4
+
+   Staircase Details:
+   - Assembled Stair:Stair:1644242
+     Width: Not specified in properties
+   - Assembled Stair:Stair:1646359
+     Width: Not specified in properties
+   - Assembled Stair:Stair:1751844
+     Width: Not specified in properties
+   - Assembled Stair:Stair:1752399
+     Width: Not specified in properties",arc,fantasy_hotel_1,2,tier2,T2_stairs_railings
+701,"Could you provide a comprehensive breakdown of the stairs in the building, including the total count, specific stair types with their quantities, construction types, and any related circulation elements?","Total Stairs: 3
+
+Stair Types:
+- Precast Stair:Stair:513254: 1 stair(s)
+- Assembled Stair:Stair:665557: 1 stair(s)
+- Precast Stair:Stair:725045: 1 stair(s)
+
+Stair Construction Types:
+- Precast Concrete: 2 stair(s)
+- Assembled/Prefabricated: 1 stair(s)
+
+Related Circulation Elements:
+- Railings: 10 elements
+- Stair landings: 1 element",arc,samuel_macalister_sample_house,2,tier2,T2_stairs_railings
+972,"Which types of stairs are installed, including stair and flight counts?","Total Stairs: 2
+Total Stair Flights: 4
+Stair Types:
+- Stair",arc,wbdg_office,2,tier2,T2_stairs_railings
+704,"Could you provide a comprehensive breakdown of all railings in the building, including their types, heights, and installation contexts?","Total Railings: 10
+
+   Railing Types:
+   - Railing: 10 railing(s)
+
+   Railing Heights:
+   - 1100 mm: 10 railing(s)
+
+   Railing Installation Context:
+   - Associated with stairs: 3 stair elements",arc,samuel_macalister_sample_house,2,tier2,T2_stairs_railings
+77,How many toilets exist on the ground floor?,"Toilet/WC spaces on ground floor (Erdgeschoss): 2
+
+   Ground floor toilet spaces:
+   - 113: WC Damen (12.4 sq m)
+   - 112: WC Herren (12.4 sq m)",arc,ac20,2,tier2,T2_room_program
+95,How many X-RAY rooms are there in total?,There is 1 X-ray room (room 2A12).,arc,dental_clinic,2,tier2,T2_room_program
+100,What is the total area of the sterilization rooms?,"The total area of the sterilization rooms is 25.4 sqm.
+
+Included rooms:
+- 2C12 'DIPC CLEAN'
+- 2C10 'DIPC DECON'",arc,dental_clinic,2,tier2,T2_room_program
+116,What is the estimated area of office space in the building in square meters?,"The information is not directly available in the BIM model and cannot be exactly calculated, as the office spaces are not clearly identified.
+
+However, the area of office space in the building can be estimated at around 675 square meters. This includes 38 spaces that are explicitly labeled as 'Office' in their function description.",arc,dental_clinic,3,tier2,T2_room_program
+122,What is the size of the tech office on the second floor?,The tech office on the second floor (room 2D18) has an area of 84.8 sqm.,arc,dental_clinic,3,tier2,T2_room_program
+334,"What is the total number of guest rooms in the building, and how are they distributed by floor?","Total Guest Rooms: 20
+
+   Distribution by Floor:
+   - FIRST FLOOR: 9 guest rooms
+   - GROUND FLOOR: 11 guest rooms
+
+Note: Based on the building's function as a motel, rooms with various names have been grouped and categorized as 'Guest Room'.",arc,fantasy_hotel_1,2,tier2,T2_room_program
+352,What are the bathroom spaces on each floor?,"Ground Floor Bathrooms:
+   - 108: BATHROOM
+   - 109: BATHROOM
+
+First Floor Bathrooms:
+   - 116: BATH
+   - 117: WASH BASIN",arc,fantasy_hotel_1,2,tier2,T2_room_program
+379,"Could you provide a breakdown of working spaces by floor, including the count and details of each space?","Working Spaces by Floor:
+   Total working spaces in building: 14
+
+   EG: 2 working spaces
+   - Space 6: Working Space - 34.91 sq m
+   - Space 28: Working Space - 34.91 sq m
+
+   OG1: 2 working spaces
+   - Space 10: Working Space - 53.52 sq m
+   - Space 13: Working Space - 53.52 sq m
+
+   OG2: 4 working spaces
+   - Space 14: Working Space - 103.83 sq m
+   - Space 17: Working Space - 53.52 sq m
+   - Space 19: Working Space - 103.83 sq m
+   - Space 22: Working Space - 53.52 sq m
+
+   OG3: 4 working spaces
+   - Space 31: Working Space - 103.83 sq m
+   - Space 32: Working Space - 103.83 sq m
+   - Space 37: Working Space - 53.52 sq m
+   - Space 40: Working Space - 53.52 sq m
+
+   OG4: 2 working spaces
+   - Space 41: Working Space - 53.52 sq m
+   - Space 44: Working Space - 53.52 sq m",arc,fantasy_office_building_1,2,tier2,T2_room_program
+394,"How many meeting rooms are available, and where are they?","Meeting Room Count:
+   Total meeting rooms: 2
+
+   2 meeting rooms are located on OG1: Space 8 and Space 9. Both are adjacent to Working Space 10, positioned at its two opposite ends.",arc,fantasy_office_building_1,2,tier2,T2_room_program
+395,"How many restrooms are there on each floor, along with their areas?","Restroom Count by Floor:
+   Total restrooms: 24
+
+   EG: 8 restrooms
+   - Space 2: WC - 4.87 sq m
+   - Space 3: WC - 3.53 sq m
+   - Space 4: WC - 3.53 sq m
+   - Space 7: WC - 2.63 sq m
+   - Space 25: WC - 4.87 sq m
+   - Space 26: WC - 3.53 sq m
+   - Space 27: WC - 3.53 sq m
+   - Space 30: WC - 2.63 sq m
+
+   OG1: 2 restrooms
+   - Space 11: WC - 2.63 sq m
+   - Space 12: WC - 2.63 sq m
+
+   OG2: 6 restrooms
+   - Space 15: WC - 3.53 sq m
+   - Space 16: WC - 3.53 sq m
+   - Space 18: WC - 2.63 sq m
+   - Space 20: WC - 3.53 sq m
+   - Space 21: WC - 3.53 sq m
+   - Space 23: WC - 2.63 sq m
+
+   OG3: 6 restrooms
+   - Space 33: WC - 3.53 sq m
+   - Space 34: WC - 3.53 sq m
+   - Space 35: WC - 3.53 sq m
+   - Space 36: WC - 3.53 sq m
+   - Space 38: WC - 2.63 sq m
+   - Space 39: WC - 2.63 sq m
+
+   OG4: 2 restrooms
+   - Space 42: WC - 2.63 sq m
+   - Space 43: WC - 2.63 sq m",arc,fantasy_office_building_1,2,tier2,T2_room_program
+413,"What is the distribution of offices by floor, including their individual areas?","Office Distribution by Floor:
+   Total offices identified: 13
+
+   Note: Space definitions are limited in this model.
+
+   Groundfloor:
+     • Office 1: 14.63 sq m
+     • Office 2: 14.62 sq m
+     • Office 3: 14.62 sq m
+     • Office 4: 14.93 sq m
+
+   1st Floor:
+     • Office 5: 14.62 sq m
+     • Office 6: 14.62 sq m
+     • Office 7: 14.93 sq m
+
+   2nd Floor:
+     • Office 8: 14.62 sq m
+     • Office 9: 14.62 sq m
+     • Office 10: 14.93 sq m
+
+   3rd Floor:
+     • Office 11: 14.62 sq m
+     • Office 12: 14.62 sq m
+     • Office 13: 14.93 sq m",arc,fantasy_office_building_2,2,tier2,T2_room_program
+447,"What types of office spaces are available in this building, and could you provide a breakdown of their quantities?","Office Space Types:
+   Total office spaces: 31
+
+   Office types breakdown:
+   - Open-plan offices: 6
+     • Open-plan office 1 (EG): 54.57 sq m
+     • Open-plan office 2 (OK OG2): 56.60 sq m
+     • Open-plan office 2 (OK OG3): 56.67 sq m
+     • Open-plan office 1 (OG1): 54.57 sq m
+     • Open-plan office 1 (OK OG2): 54.57 sq m
+     • Open-plan office 1 (OK OG3): 54.57 sq m
+
+   - Small office spaces: 5
+     • Small office space (EG): 27.28 sq m
+     • Small office space (OG1): 27.28 sq m
+     • Small office space (OK OG2): 27.28 sq m
+     • Small office space (OK OG3): 27.28 sq m
+     • Small office space (OK OG4): 27.28 sq m
+
+   - Individual offices: 20
+     • Individual office 1 (EG): 10.96 sq m
+     • Individual office 2 (EG): 11.08 sq m
+     • Individual office 3 (EG): 11.26 sq m
+     • Individual office 4 (EG): 11.04 sq m
+     • Individual office 1 (OG1): 10.96 sq m
+     • Individual office 2 (OG1): 11.08 sq m
+     • Individual office 3 (OG1): 11.26 sq m
+     • Individual office 4 (OG1): 11.04 sq m
+     • Individual office 1 (OK OG2): 10.96 sq m
+     • Individual office 2 (OK OG2): 11.08 sq m
+     • Individual office 3 (OK OG2): 11.26 sq m
+     • Individual office 4 (OK OG2): 11.04 sq m
+     • Individual office 1 (OK OG3): 10.96 sq m
+     • Individual office 2 (OK OG3): 11.08 sq m
+     • Individual office 3 (OK OG3): 11.26 sq m
+     • Individual office 4 (OK OG3): 11.04 sq m
+     • Individual office 1 (OK OG4): 10.96 sq m
+     • Individual office 2 (OK OG4): 11.08 sq m
+     • Individual office 3 (OK OG4): 11.26 sq m
+     • Individual office 4 (OK OG4): 11.04 sq m",arc,fantasy_office_building_3,2,tier2,T2_room_program
+450,"What restroom spaces are on the second floor, along with their areas?","Restrooms on OK OG2:
+   - Total restroom spaces: 2
+   - Total restroom area: 17.11 sq m
+
+   Restroom spaces:
+   - Toilet men: 8.34 sq m
+   - Toilet women: 8.77 sq m",arc,fantasy_office_building_3,2,tier2,T2_room_program
+451,"How many individual office rooms are available on each floor, including their total areas?","Individual Office Rooms by Floor:
+   (Excludes open-plan and small office spaces)
+
+   EG:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   OG1:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   OK OG2:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   OK OG3:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   OK OG4:
+   - Individual office rooms: 4
+   - Total area: 44.34 sq m
+
+   Total individual office rooms in building: 20",arc,fantasy_office_building_3,2,tier2,T2_room_program
+495,"How many Laundry/Utility Rooms are present in the building, and what is the area of each room?","Laundry/Utility Rooms Found:
+   - Total count: 4
+
+   Room details:
+   - Utility room (Space 10, Ground Floor): 9.42 sq m
+   - Utility room (Space 19, Ground Floor): 9.42 sq m
+   - Utility room (Space 27, First Floor): 9.42 sq m
+   - Utility room (Space 35, First Floor): 9.42 sq m",arc,fantasy_residential_building_1,3,tier2,T2_room_program
+497,"How many bathrooms are there in total, and how are they distributed across the floors?","Bathroom Count:
+   - Total bathrooms/toilets: 12
+
+   Distribution by floor:
+   - Ground Floor: 4 bathroom(s)
+     • Space 4: Toilet (4.33 sq m)
+     • Space 9: Bathroom (13.37 sq m)
+     • Space 13: Toilet (4.33 sq m)
+     • Space 18: Bathroom (13.37 sq m)
+
+   - First Floor: 4 bathroom(s)
+     • Space 21: Toilet (4.34 sq m)
+     • Space 26: Bathroom (13.37 sq m)
+     • Space 29: Toilet (4.34 sq m)
+     • Space 34: Bathroom (13.37 sq m)
+
+   - Second Floor: 4 bathroom(s)
+     • Space 37: Toilet (4.34 sq m)
+     • Space 42: Bathroom (13.37 sq m)
+     • Space 44: Toilet (4.34 sq m)
+     • Space 49: Bathroom (13.37 sq m)",arc,fantasy_residential_building_1,2,tier2,T2_room_program
+498,How many balconies are there on each floor? And what are their areas?,"Balconies by Floor:
+
+   First Floor:
+   - Number of balconies: 2
+   - Total balcony area: 177.46 sq m
+   - Individual balconies:
+     • Space 50: 88.74 sq m
+     • Space 51: 88.72 sq m
+
+   Second Floor:
+   - Number of balconies: 6
+   - Total balcony area: 251.08 sq m
+   - Individual balconies:
+     • Space 52: 88.92 sq m
+     • Space 53: 13.75 sq m
+     • Space 54: 13.86 sq m
+     • Space 55: 89.85 sq m
+     • Space 56: 23.71 sq m
+     • Space 57: 20.99 sq m",arc,fantasy_residential_building_1,3,tier2,T2_room_program
+536,How many toilets are located on the ground floor?,"Toilet/Bathroom spaces on ground floor: 1
+
+   Ground floor toilet/bathroom spaces:
+   - Room 3: Bad (12.1 sq m)",arc,fzk_house,2,tier2,T2_room_program
+585,How many toilets are there on the ground floor?,"Toilet/WC spaces on ground floor (u.etg): 12
+
+   Ground floor toilet spaces:
+   - 01.026: RWC
+     Area: 5.5 sq m
+   - 01.014: WC
+     Area: 2.0 sq m
+   - 01.015: WC
+     Area: 2.0 sq m
+   - 04.019: WC
+     Area: 2.2 sq m
+   - 04.020: WC/Dusj
+     Area: 2.2 sq m
+   - 01.018: WC
+     Area: 1.5 sq m
+   - 01.020: WC
+     Area: 1.2 sq m
+   - 01.019: WC
+     Area: 1.2 sq m
+   - 01.021: WC
+     Area: 1.2 sq m
+   - 01.011: WC
+     Area: 1.2 sq m
+   - 01.016: WC
+     Area: 1.2 sq m
+   - 01.017: WC
+     Area: 1.2 sq m",arc,hitos,2,tier2,T2_room_program
+641,How many toilets are on the ground floor?,There are 3 toilets on the Ground Floor.,arc,molio,2,tier2,T2_room_program
+642,How many toilets are on the fifth floor?,There are 3 toilets on the Fifth Floor.,arc,molio,2,tier2,T2_room_program
+697,"How many bathrooms are there, and where are they located?","Bathroom Locations (by level):
+- Level 1: 1 bathroom
+  * Room 103: Bath
+- Level 2: 3 bathrooms
+  * Room 207: Master Bath
+  * Room 203: Bath
+  * Room 205: Bath",arc,samuel_macalister_sample_house,2,tier2,T2_room_program
+698,What is the size of the living room terrace?,The terrace area of the living room is 17.7 sq m.,arc,samuel_macalister_sample_house,3,tier2,T2_room_program
+699,What is the size of the master bedroom terrace?,The terrace area of the master bedroom is 9 sq m.,arc,samuel_macalister_sample_house,3,tier2,T2_room_program
+350,What furniture can be found in room 112?,"Room 112: MASTER BEDROOM
+   Total furniture items: 8
+
+   Furniture List:
+   - Bed-Box:Double 53"" x 74"" (2 items)
+   - Furniture_Sofa_2:2100x830x380mm
+   - Furniture_Cabinet_File_Lateral_3-Drawer:760 x 500 x 915mm (3 items)
+   - Furniture_Cabinet_Storage:1200x550x2100mm
+   - M_Table-Dining Oval:0915 x 1830mm",arc,fantasy_hotel_1,1,tier2,T2_furniture_in_room
+381,"What furniture items are available in working space 28, and how many of each type are there?","Furniture in Working Space 28:
+   Total items: 7
+
+   Furniture used:
+   - Schreibtisch-Kombination-02 mit PC:Typ1: 7 items",arc,fantasy_office_building_1,2,tier2,T2_furniture_in_room
+415,What furniture is available in office 13?,"Office 13 Furniture:
+   - Schreibtisch-Kombination-01:Typ1:2589494
+   - Regal-01:1500 x 600 x 2500:2589498",arc,fantasy_office_building_2,1,tier2,T2_furniture_in_room
+449,What furniture is available in Open-plan office on the ground floor?,"Open-plan office: Open-plan office 1
+   - Total furniture items: 8
+
+   Furniture breakdown:
+   - Schreibtisch-Kombination-01:Typ1: 8 item(s)",arc,fantasy_office_building_3,2,tier2,T2_furniture_in_room
+494,"What furniture items are in space 5 (kitchen) on the ground floor, and what is the basic information about this space?","Space 5 Information:
+   - Name: Kitchen and Dining room
+   - Area: 38.45 sq m
+
+   Kitchen furniture identified:
+   - Küchenzeile-02 Kombination:Küchenzeile: 4 items
+   - Küchenzeile-05 Kombination:Typ1: 4 items
+   - Küchenzeile-01 Generisch:Typ1: 4 items",arc,fantasy_residential_building_1,2,tier2,T2_furniture_in_room
+583,What furniture can be found in the staff room on the third floor?,"Furniture found in the staff room:
+   - Cab Wall 1D 10 (3 items)
+   - Cab Base 1D 10 (2 items)
+   - Cab Base-MultiDrawer 10 (1 item)
+   - Refrigerator 10 (1 item)",arc,hitos,1,tier2,T2_furniture_in_room
+639,Which furniture items are in the kitchen on the ground floor?,"Rum nr. S06 (Køkken) on Grundplan contains 7 IfcFurnishingElement items:
+- Base Cabinet Block 25: 5
+- Cabinet Base Double Door 21: 1
+- Cooktop + Oven Built-in 25: 1
+It also contains 1 Refrigerator 25 modeled separately as an IfcDistributionControlElement.",arc,molio,1,tier2,T2_furniture_in_room
+694,"What furniture and appliances are available in the kitchen on level 1, including quantities of each item?","Kitchen Spaces on Level 1:
+   - 101: Kitchen & Dining
+
+   Kitchen Furniture Available:
+   - Bar Chair: 6 item(s)
+   - 4500_Kitchen Island_DW: 1 item(s)
+   - 4500_Kitchen Island: 1 item(s)
+   - Seat - Single with Island: 1 item(s)
+
+   Kitchen Appliances Available:
+   - Miele Built-in Microwave M 8260-2:Miele Microwave M 8260-2:696998
+   - Miele Built-in Rangehood DA 2210:Rangehood DA-2210:679009
+   - Miele Built-under Dishwasher G 4101 U CS:Miele Built-under Dishwasher G 4101 U CS:694796
+   - Miele Induction Cooktop KM 6350 LPT:Miele Induction Cooktop 6350 LPT:680539
+   - Miele MasterCool KF 1911 Vi:Miele Fridge/Freezer KF 1911 Vi:684791
+   - Miele Oven H 5681 BP:Miele Oven H 5681 BP:686184",arc,samuel_macalister_sample_house,1,tier2,T2_furniture_in_room
+695,Which appliances are available in the laundry room?,"Laundry Spaces found:
+   - 104: Laundry
+
+Laundry Appliances Available:
+   - Miele Tumble Dryer T 7944 C (ID: 677695)
+   - Miele Washing Machine W 5820 WPS (ID: 674370)",arc,samuel_macalister_sample_house,1,tier2,T2_furniture_in_room
+602,What sanitary furniture are in room 01.014?,"Room 01.014 found:
+   - Function: WC
+   - Area: 2.0 sq m
+   - Level: u.etg
+
+   Available sanitary equipment:
+     - Shower (1 item)
+     - Toilet (1 item)
+     - Basin (1 item)",arc,hitos,1,tier2,T2_furniture_in_room
+659,Which sanitary furniture is present in room 110?,"Sanitary Equipment in Room 110:
+   - WC 25
+   - Basin 25",arc,molio,1,tier2,T2_furniture_in_room
+169,"How is the building's space utilized by function, with area distribution?","Space Utilization by Function:
+    - Other: 1105.1 sq m (38.9%)
+    - Circulation: 909.2 sq m (32.0%)
+    - Office: 594.8 sq m (20.9%)
+    - Restroom: 93.6 sq m (3.3%)
+    - Conference/Meeting: 86.4 sq m (3.0%)
+    - Storage: 53.0 sq m (1.9%)",arc,digital_hub,3,tier2,T2_space_use_by_function
+541,"How is the building's space allocated by function, with areas and percentages for each?","Building Space Utilization Analysis:
+   Total Building Area: 173.3 sq m
+   Total Functions: 7
+
+   Space Utilization by Function:
+
+   Galerie:
+   - Total Area: 74.5 sq m
+   - Number of Spaces: 1
+
+   Wohnen:
+   - Total Area: 25.2 sq m
+   - Number of Spaces: 1
+
+   Schlafzimmer:
+   - Total Area: 21.4 sq m
+   - Number of Spaces: 1
+
+   KÖºche:
+   - Total Area: 16.3 sq m
+   - Number of Spaces: 1
+
+   Buero:
+   - Total Area: 12.6 sq m
+   - Number of Spaces: 1
+
+   Bad:
+   - Total Area: 12.1 sq m
+   - Number of Spaces: 1
+
+   Flur:
+   - Total Area: 11.2 sq m
+   - Number of Spaces: 1
+
+   Functional Category Summary:
+   - Residential/Living: 137.4 sq m (79.3%)
+   - Service/Circulation: 23.3 sq m (13.4%)
+   - Work/Office: 12.6 sq m (7.3%)",arc,fzk_house,2,tier2,T2_space_use_by_function
+591,"What is the building's space utilization by function, with areas and percentages?","Building Space Utilization Analysis:
+   Total Functions: 109
+
+   Space Utilization by Function (Top 15):
+   - Bruttoareal uetg:
+     Total Area: 1624.2 sq m (19.1% of building)
+     Spaces: 1
+   - Bruttoareal 1etg:
+     Total Area: 1438.7 sq m (16.9% of building)
+     Spaces: 2, Average: 719.4 sq m
+   - Korridor:
+     Total Area: 536.6 sq m (6.3% of building)
+     Spaces: 9, Average: 59.6 sq m
+   - Boksamling, tidsskr. osv (in...:
+     Total Area: 467.7 sq m (5.5% of building)
+     Spaces: 1
+   - Andel kantine AFI:
+     Total Area: 247.0 sq m (2.9% of building)
+     Spaces: 1
+   - Bruttoareal 2etg:
+     Total Area: 240.5 sq m (2.8% of building)
+     Spaces: 1
+   - Glassgata:
+     Total Area: 229.1 sq m (2.7% of building)
+     Spaces: 1
+   - Bruttoareal kjeller:
+     Total Area: 226.3 sq m (2.7% of building)
+     Spaces: 1
+   - Vent.rom:
+     Total Area: 191.9 sq m (2.3% of building)
+     Spaces: 3, Average: 64.0 sq m
+   - Auditorium:
+     Total Area: 187.0 sq m (2.2% of building)
+     Spaces: 1
+   - PC-areal (indre/ytre sone):
+     Total Area: 159.2 sq m (1.9% of building)
+     Spaces: 1
+   - Bro 1:
+     Total Area: 150.1 sq m (1.8% of building)
+     Spaces: 1
+   - Kont.ing.:
+     Total Area: 130.2 sq m (1.5% of building)
+     Spaces: 16, Average: 8.1 sq m
+   - Gangbro:
+     Total Area: 123.5 sq m (1.5% of building)
+     Spaces: 4, Average: 30.9 sq m
+   - KjÖ∏kken:
+     Total Area: 121.9 sq m (1.4% of building)
+     Spaces: 1
+
+   Functional Category Summary:
+   - Office/Administrative: 361.2 sq m (4.3%)
+   - Service/Circulation: 626.3 sq m (7.4%)
+   - Meeting/Collaboration: 119.5 sq m (1.4%)
+   - Other functions: 7384.3 sq m (87.0%)",arc,hitos,2,tier2,T2_space_use_by_function
+647,"How is the building's space allocated by function, with areas and percentages?","Space utilization by function (117 spaces; percentages use the 3,675.9 m² total calculated space area):
+- Gang: 7 spaces, 1324.9 m² (36.0%)
+- Kontor: 32 spaces, 901.1 m² (24.5%)
+- Møderum: 4 spaces, 270.0 m² (7.3%)
+- Depot: 6 spaces, 209.5 m² (5.7%)
+- Auditorium: 2 spaces, 138.6 m² (3.8%)
+- Lounge: 5 spaces, 138.3 m² (3.8%)
+- Toilet: 21 spaces, 97.0 m² (2.6%)
+- Teknikrum: 8 spaces, 95.9 m² (2.6%)
+- Udstillingsrum: 1 spaces, 72.5 m² (2.0%)
+- Møde: 3 spaces, 68.6 m² (1.9%)
+- Fællesteknikrum: 1 spaces, 65.5 m² (1.8%)
+- Køle og varmecentral: 1 spaces, 42.3 m² (1.2%)
+- Kantine: 1 spaces, 39.4 m² (1.1%)
+- Omklædning - Herre: 1 spaces, 23.7 m² (0.6%)
+- Tekøkken: 5 spaces, 22.4 m² (0.6%)
+- Omklædning - Dame: 1 spaces, 21.9 m² (0.6%)
+- Køkken: 1 spaces, 19.5 m² (0.5%)
+- Venterum: 1 spaces, 19.5 m² (0.5%)
+- Skakt: 8 spaces, 17.6 m² (0.5%)
+- Affald: 1 spaces, 17.6 m² (0.5%)
+- IT-server rum: 1 spaces, 15.3 m² (0.4%)
+- Reception: 1 spaces, 12.5 m² (0.3%)
+- Printer: 1 spaces, 9.3 m² (0.3%)
+- Bad - Dame: 1 spaces, 8.7 m² (0.2%)
+- Bad - Herre: 1 spaces, 8.7 m² (0.2%)
+- Elevortor teknik: 1 spaces, 8.7 m² (0.2%)
+- Elevator: 1 spaces, 6.9 m² (0.2%)",arc,molio,2,tier2,T2_space_use_by_function
+671,"How is the building's space utilized by function, with areas and percentages?","Building Space Utilization Analysis:
+   - Total Functions: 11
+   - Total Spaces: 14
+
+   Functional Category Summary:
+   - Bedroom Spaces: 3 spaces
+   - Bathroom Spaces: 4 spaces
+   - Kitchen/Dining Spaces: 1 space
+
+   Functions with Area Data:
+   - Kitchen & Dining: 73.0 sq m (26.2% of measured)
+     Spaces: 1
+   - Living: 70.3 sq m (25.2% of measured)
+     Spaces: 1
+   - Entry Hall: 30.7 sq m (11.0% of measured)
+     Spaces: 1
+   - Bedroom: 27.6 sq m (9.9% of measured)
+     Spaces: 2, Average: 13.8 sq m
+   - Master Bedroom: 27.0 sq m (9.7% of measured)
+     Spaces: 1
+   - Hall: 23.8 sq m (8.5% of measured)
+     Spaces: 1
+   - Bath: 10.7 sq m (3.8% of measured)
+     Spaces: 3, Average: 3.6 sq m
+   - Master Bath: 7.1 sq m (2.6% of measured)
+     Spaces: 1
+   - Laundry: 5.3 sq m (1.9% of measured)
+     Spaces: 1
+   - Mech.: 2.1 sq m (0.7% of measured)
+     Spaces: 1
+   - Linen: 1.4 sq m (0.5% of measured)
+     Spaces: 1",arc,samuel_macalister_sample_house,2,tier2,T2_space_use_by_function
+773,"How is the building's space allocated by function, with areas and percentages?",Space/room information is not available in this building model.,arc,schependomlaan,4,tier2,T2_space_use_by_function
+975,"Could you provide a breakdown of the building's space utilization by function, including both the area in square meters and percentage for each category?","Space Utilization by Function:
+- Office: 145.5 sq m (43.7%)
+- Other: 130.1 sq m (39.1%)
+- Circulation: 26.9 sq m (8.1%)
+- Conference/Meeting: 22.3 sq m (6.7%)
+- Storage: 7.9 sq m (2.4%)",arc,wbdg_office,3,tier2,T2_space_use_by_function
+947,"What is the space breakdown of the building by function, showing area percentages and room counts?","Building Space Layout:
+- Primary Function (offices): 65.0% - 33 rooms
+- Support Systems: 11.0% - 13 rooms
+- Amenities: 17.0% - 17 rooms
+- Circulation: 9.0% - 15 rooms
+- Storage: 8.0% - 13 rooms
+- Other: 9.0% - 9 rooms
+
+Total Building Area: 3616 sq m (100 spaces across 2 levels)",arc,wbdg_office,3,tier2,T2_space_use_by_function
+948,"What is the space breakdown of Level 1 by function, showing area percentages and room counts?","Level 1 contains 60 spaces in 17 function categories. Grouping by PSet_Revit_Other.Category Description and summing GSA Space Areas.GSA BIM Area gives:
+
+- Open Office Space: 31.26% - 4 rooms - 562.89 sq m
+- Office: 10.85% - 7 rooms - 195.43 sq m
+- Corridor: 8.92% - 3 rooms - 160.68 sq m
+- Administrative Spaces: 7.80% - 9 rooms - 140.55 sq m
+- Conference Room: 7.49% - 4 rooms - 134.94 sq m
+- Telecommunications Room: 7.31% - 6 rooms - 131.71 sq m
+- Mechanical Room: 6.60% - 2 rooms - 118.88 sq m
+- Meeting Spaces: 5.22% - 7 rooms - 94.09 sq m
+- Entry Vestibule: 3.38% - 5 rooms - 60.87 sq m
+- Bathroom: 3.00% - 3 rooms - 54.08 sq m
+- Stairway: 1.97% - 2 rooms - 35.56 sq m
+- Electrical Room: 1.66% - 1 room - 29.97 sq m
+- Break Room: 1.56% - 1 room - 28.04 sq m
+- Storage Room: 1.52% - 3 rooms - 27.39 sq m
+- Healing Spaces: 0.77% - 1 room - 13.89 sq m
+- Elevator Shaft: 0.33% - 1 room - 5.95 sq m
+- Recycling Storage Space: 0.33% - 1 room - 5.92 sq m
+
+Total Level 1 area: 1800.85 sq m. The unrounded percentages sum to 100%; the independently rounded values shown above sum to 99.97%.",arc,wbdg_office,3,tier2,T2_space_use_by_function
+949,"What is the space breakdown of Level 2 by function, showing area percentages and room counts?","Level 2 Space Layout:
+- Primary Function (offices): 70.0% - 12 rooms
+- Amenities: 22.5% - 9 rooms
+- Storage: 17.5% - 7 rooms
+- Circulation: 12.5% - 5 rooms
+- Support Systems: 10.0% - 4 rooms
+- Other: 7.5% - 3 rooms
+
+Total Level 2 Area: 1808 sq m (40 spaces)",arc,wbdg_office,2,tier2,T2_space_use_by_function

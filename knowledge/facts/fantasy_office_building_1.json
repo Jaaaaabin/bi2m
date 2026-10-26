@@ -1,0 +1,2432 @@
+{
+ "project": "fantasy_office_building_1",
+ "schema": "IFC4",
+ "length_unit_scale": 1.0,
+ "storeys": [
+  [
+   "EG",
+   0.0
+  ],
+  [
+   "OG1",
+   4.8
+  ],
+  [
+   "OG2",
+   9.6
+  ],
+  [
+   "OG3",
+   14.4
+  ],
+  [
+   "OG4",
+   19.2
+  ]
+ ],
+ "spaces": [
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox78",
+   "name": "1",
+   "longname": "Lobby",
+   "storey": "EG",
+   "area": 98.29,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.58,
+    31.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox70",
+   "name": "2",
+   "longname": "WC",
+   "storey": "EG",
+   "area": 4.871,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    3.28,
+    2.75
+   ]
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox7V",
+   "name": "3",
+   "longname": "WC",
+   "storey": "EG",
+   "area": 3.527,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    2.38,
+    2.75
+   ]
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox7Q",
+   "name": "4",
+   "longname": "WC",
+   "storey": "EG",
+   "area": 3.527,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    2.37,
+    2.75
+   ]
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox7L",
+   "name": "5",
+   "longname": "Lobby",
+   "storey": "EG",
+   "area": 18.092,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    4.66,
+    4.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox7G",
+   "name": "6",
+   "longname": "Working Space",
+   "storey": "EG",
+   "area": 34.914,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    9.38,
+    4.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox6l",
+   "name": "7",
+   "longname": "WC",
+   "storey": "EG",
+   "area": 2.626,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    2.02,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRMe",
+   "name": "8",
+   "longname": "Meeting Room",
+   "storey": "OG1",
+   "area": 16.338,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.58,
+    4.57,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRMm",
+   "name": "9",
+   "longname": "Meeting Room",
+   "storey": "OG1",
+   "area": 16.338,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.58,
+    4.57,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRM$",
+   "name": "10",
+   "longname": "Working Space",
+   "storey": "OG1",
+   "area": 53.52,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    13.26,
+    4.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRMw",
+   "name": "11",
+   "longname": "WC",
+   "storey": "OG1",
+   "area": 2.626,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    2.02,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRMv",
+   "name": "12",
+   "longname": "WC",
+   "storey": "OG1",
+   "area": 2.626,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    2.02,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRM4",
+   "name": "13",
+   "longname": "Working Space",
+   "storey": "OG1",
+   "area": 53.52,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    13.26,
+    4.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRMH",
+   "name": "14",
+   "longname": "Working Space",
+   "storey": "OG2",
+   "area": 103.83,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.58,
+    31.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRMT",
+   "name": "15",
+   "longname": "WC",
+   "storey": "OG2",
+   "area": 3.527,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    2.38,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRMO",
+   "name": "16",
+   "longname": "WC",
+   "storey": "OG2",
+   "area": 3.527,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    2.37,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRNd",
+   "name": "17",
+   "longname": "Working Space",
+   "storey": "OG2",
+   "area": 53.52,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    13.26,
+    4.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRNY",
+   "name": "18",
+   "longname": "WC",
+   "storey": "OG2",
+   "area": 2.626,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    2.02,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRNX",
+   "name": "19",
+   "longname": "Working Space",
+   "storey": "OG2",
+   "area": 103.83,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.58,
+    31.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRNi",
+   "name": "20",
+   "longname": "WC",
+   "storey": "OG2",
+   "area": 3.527,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    2.37,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRNh",
+   "name": "21",
+   "longname": "WC",
+   "storey": "OG2",
+   "area": 3.527,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    2.38,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRNs",
+   "name": "22",
+   "longname": "Working Space",
+   "storey": "OG2",
+   "area": 53.52,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    13.26,
+    4.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRNr",
+   "name": "23",
+   "longname": "WC",
+   "storey": "OG2",
+   "area": 2.626,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    2.02,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRgN",
+   "name": "24",
+   "longname": "Lobby",
+   "storey": "EG",
+   "area": 98.29,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.58,
+    31.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRgI",
+   "name": "25",
+   "longname": "WC",
+   "storey": "EG",
+   "area": 4.871,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    3.28,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRgH",
+   "name": "26",
+   "longname": "WC",
+   "storey": "EG",
+   "area": 3.527,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    2.38,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRgS",
+   "name": "27",
+   "longname": "WC",
+   "storey": "EG",
+   "area": 3.527,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    2.37,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRhs",
+   "name": "28",
+   "longname": "Working Space",
+   "storey": "EG",
+   "area": 34.914,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    9.38,
+    4.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRhr",
+   "name": "29",
+   "longname": "Lobby",
+   "storey": "EG",
+   "area": 18.092,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    4.66,
+    4.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRhm",
+   "name": "30",
+   "longname": "WC",
+   "storey": "EG",
+   "area": 2.626,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    2.02,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzReR",
+   "name": "31",
+   "longname": "Working Space",
+   "storey": "OG3",
+   "area": 103.83,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.58,
+    31.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRfd",
+   "name": "32",
+   "longname": "Working Space",
+   "storey": "OG3",
+   "area": 103.83,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.58,
+    31.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRfY",
+   "name": "33",
+   "longname": "WC",
+   "storey": "OG3",
+   "area": 3.527,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    2.38,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRfX",
+   "name": "34",
+   "longname": "WC",
+   "storey": "OG3",
+   "area": 3.527,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    2.37,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRfi",
+   "name": "35",
+   "longname": "WC",
+   "storey": "OG3",
+   "area": 3.527,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    2.37,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRfh",
+   "name": "36",
+   "longname": "WC",
+   "storey": "OG3",
+   "area": 3.527,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.49,
+    2.38,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRfs",
+   "name": "37",
+   "longname": "Working Space",
+   "storey": "OG3",
+   "area": 53.52,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    13.26,
+    4.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRfr",
+   "name": "38",
+   "longname": "WC",
+   "storey": "OG3",
+   "area": 2.626,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    2.02,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRfm",
+   "name": "39",
+   "longname": "WC",
+   "storey": "OG3",
+   "area": 2.626,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    2.02,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRf$",
+   "name": "40",
+   "longname": "Working Space",
+   "storey": "OG3",
+   "area": 53.52,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    13.26,
+    4.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRf6",
+   "name": "41",
+   "longname": "Working Space",
+   "storey": "OG4",
+   "area": 53.52,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    13.26,
+    4.26,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRf7",
+   "name": "42",
+   "longname": "WC",
+   "storey": "OG4",
+   "area": 2.626,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    2.02,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRf4",
+   "name": "43",
+   "longname": "WC",
+   "storey": "OG4",
+   "area": 2.626,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    2.02,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRf5",
+   "name": "44",
+   "longname": "Working Space",
+   "storey": "OG4",
+   "area": 53.52,
+   "area_src": "BIM.fundamentals.Area",
+   "height": 2.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    13.26,
+    4.26,
+    2.75
+   ]
+  }
+ ],
+ "doors": [
+  {
+   "gid": "2S7nIm7pvBthAHaPVMoDmb",
+   "name": "TU Fassade - 1-flg-Drehflügel:GG - Türe 10 mm:459612",
+   "type": "TU Fassade - 1-flg-Drehflügel:GG - Türe 10 mm",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 2.34,
+   "height": 4.74,
+   "storey": "EG",
+   "spaces": [
+    "Lobby"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2S7nIm7pvBthAHaPVMoDmd",
+   "name": "TU Fassade - 1-flg-Drehflügel:GG - Türe 10 mm:459614",
+   "type": "TU Fassade - 1-flg-Drehflügel:GG - Türe 10 mm",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 2.34,
+   "height": 4.74,
+   "storey": "EG",
+   "spaces": [
+    "Lobby"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3SOX5dZHP7dwnUJhhNe8vQ",
+   "name": "Drehflügel 2-flg - Variabel:Drehflügel 2-flg - Variabel:491083",
+   "type": "Drehflügel 2-flg - Variabel:Drehflügel 2-flg - Variabel",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.5,
+   "height": 2.8,
+   "storey": "EG",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3SOX5dZHP7dwnUJhhNe7ri",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:494973",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "EG",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3SOX5dZHP7dwnUJhhNe6pj",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:498940",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "EG",
+   "spaces": [
+    "Lobby",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMA9nU",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:513025",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "EG",
+   "spaces": [
+    "Lobby",
+    "WC"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMA9sZ",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:513532",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "EG",
+   "spaces": [
+    "Lobby",
+    "WC"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMA9u4",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:513627",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "EG",
+   "spaces": [
+    "Lobby",
+    "WC"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMA9IC",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:515283",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG1",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "37dJdSzd98YfHGn6im$tKD",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:523925",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG1",
+   "spaces": [
+    "Meeting Room"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ow$6",
+   "name": "TU Fassade - 1-flg-Drehflügel:GG - Türe 10 mm:526888",
+   "type": "TU Fassade - 1-flg-Drehflügel:GG - Türe 10 mm",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 2.34,
+   "height": 4.74,
+   "storey": "EG",
+   "spaces": [
+    "Lobby"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ow$4",
+   "name": "TU Fassade - 1-flg-Drehflügel:GG - Türe 10 mm:526890",
+   "type": "TU Fassade - 1-flg-Drehflügel:GG - Türe 10 mm",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 2.34,
+   "height": 4.74,
+   "storey": "EG",
+   "spaces": [
+    "Lobby"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwdX",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:527375",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "EG",
+   "spaces": [
+    "Lobby",
+    "WC"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owdz",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:527379",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "EG",
+   "spaces": [
+    "Lobby",
+    "WC"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owdv",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:527383",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "EG",
+   "spaces": [
+    "Lobby",
+    "WC"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwYf",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:527687",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG1",
+   "spaces": [
+    "Meeting Room"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owj_",
+   "name": "Drehflügel 2-flg - Variabel:Drehflügel 2-flg - Variabel:528016",
+   "type": "Drehflügel 2-flg - Variabel:Drehflügel 2-flg - Variabel",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.5,
+   "height": 2.8,
+   "storey": "EG",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwjR",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:528053",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "EG",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwjL",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:528059",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "EG",
+   "spaces": [
+    "Lobby",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owic",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:528072",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG1",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox6R",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:529525",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG2",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox6L",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:529531",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG3",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox5k",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:529536",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG4",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox5r",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:529563",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG2",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox5E",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:529568",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG3",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox5B",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:529573",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG4",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox4y",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:529618",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG2",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Ox4w",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:529620",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG2",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRMN",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:529713",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG2",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRML",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:529715",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG2",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRhP",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:531071",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG3",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRed",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:531073",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG3",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzReq",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:531090",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG3",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0II2RZUufDBOPLitolzRer",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:531091",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.26,
+   "storey": "OG3",
+   "spaces": [
+    "WC",
+    "Working Space"
+   ],
+   "fire": null,
+   "external": false
+  }
+ ],
+ "windows": [
+  {
+   "gid": "3SOX5dZHP7dwnUJhhNe6rh",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:499066",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "EG",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3SOX5dZHP7dwnUJhhNe6ve",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:499321",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "EG",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3SOX5dZHP7dwnUJhhNe3Pc",
+   "name": "Fenster 1-flg - mit Anschlag:1.01 x 1.80:509559",
+   "type": "Fenster 1-flg - mit Anschlag:1.01 x 1.80",
+   "width": 1.01,
+   "height": 1.81,
+   "storey": "EG",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMA9HU",
+   "name": "Fenster 1-flg - mit Anschlag:1.01 x 1.80:515073",
+   "type": "Fenster 1-flg - mit Anschlag:1.01 x 1.80",
+   "width": 1.01,
+   "height": 1.81,
+   "storey": "EG",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMA9I8",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:515287",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG1",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMA9I7",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:515288",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG1",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMA9Iz",
+   "name": "Fenster 1-flg - mit Anschlag:1.01 x 1.80:515298",
+   "type": "Fenster 1-flg - mit Anschlag:1.01 x 1.80",
+   "width": 1.01,
+   "height": 1.81,
+   "storey": "OG1",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAhp",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:516780",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG3",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAho",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:516781",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG3",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAhn",
+   "name": "Fenster 1-flg - mit Anschlag:1.01 x 1.80:516782",
+   "type": "Fenster 1-flg - mit Anschlag:1.01 x 1.80",
+   "width": 1.01,
+   "height": 1.81,
+   "storey": "OG3",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAgt",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:516840",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG4",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAgs",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:516841",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG4",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAgr",
+   "name": "Fenster 1-flg - mit Anschlag:1.01 x 1.80:516842",
+   "type": "Fenster 1-flg - mit Anschlag:1.01 x 1.80",
+   "width": 1.01,
+   "height": 1.81,
+   "storey": "OG4",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAiq",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:516971",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG2",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAip",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:516972",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG2",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAio",
+   "name": "Fenster 1-flg - mit Anschlag:1.01 x 1.80:516973",
+   "type": "Fenster 1-flg - mit Anschlag:1.01 x 1.80",
+   "width": 1.01,
+   "height": 1.81,
+   "storey": "OG2",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAmi",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:517235",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "EG",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAoS",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:517315",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG1",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAoO",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:517319",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG2",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAoK",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:517323",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG3",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMAAoG",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:517327",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG4",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owdr",
+   "name": "Fenster 1-flg - mit Anschlag:1.01 x 1.80:527387",
+   "type": "Fenster 1-flg - mit Anschlag:1.01 x 1.80",
+   "width": 1.01,
+   "height": 1.81,
+   "storey": "EG",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwjI",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528060",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "EG",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwjJ",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528061",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "EG",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owih",
+   "name": "Fenster 1-flg - mit Anschlag:1.01 x 1.80:528069",
+   "type": "Fenster 1-flg - mit Anschlag:1.01 x 1.80",
+   "width": 1.01,
+   "height": 1.81,
+   "storey": "EG",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwiY",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528076",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG1",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwiZ",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528077",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG1",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owix",
+   "name": "Fenster 1-flg - mit Anschlag:1.01 x 1.80:528085",
+   "type": "Fenster 1-flg - mit Anschlag:1.01 x 1.80",
+   "width": 1.01,
+   "height": 1.81,
+   "storey": "OG1",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owgk",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528192",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG3",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owgl",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528193",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG3",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owgi",
+   "name": "Fenster 1-flg - mit Anschlag:1.01 x 1.80:528194",
+   "type": "Fenster 1-flg - mit Anschlag:1.01 x 1.80",
+   "width": 1.01,
+   "height": 1.81,
+   "storey": "OG3",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwgM",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528248",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG4",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwgN",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528249",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG4",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwgK",
+   "name": "Fenster 1-flg - mit Anschlag:1.01 x 1.80:528250",
+   "type": "Fenster 1-flg - mit Anschlag:1.01 x 1.80",
+   "width": 1.01,
+   "height": 1.81,
+   "storey": "OG4",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwfU",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528304",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG2",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwfV",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528305",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG2",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwfS",
+   "name": "Fenster 1-flg - mit Anschlag:1.01 x 1.80:528306",
+   "type": "Fenster 1-flg - mit Anschlag:1.01 x 1.80",
+   "width": 1.01,
+   "height": 1.81,
+   "storey": "OG2",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owe6",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528360",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "EG",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owe7",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528361",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG1",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owe4",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528362",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG2",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owe5",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528363",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG3",
+   "sill_approx": 1.0,
+   "spaces": []
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owe2",
+   "name": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel:528364",
+   "type": "Fenster 2-flg - Variabel:Fenster 2-flg - Variabel",
+   "width": 2.5,
+   "height": 1.8,
+   "storey": "OG4",
+   "sill_approx": 1.0,
+   "spaces": []
+  }
+ ],
+ "stairs": [
+  {
+   "gid": "0sHz$Q4_TDUxOoi4rM5aJm",
+   "cls": "IfcStair",
+   "name": "Ortbetontreppe:Treppe:484754",
+   "predefined": "STRAIGHT_RUN_STAIR",
+   "storey": "EG",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.235,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "21_ODlrCb62O2Ec4M21M8$",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:487526",
+   "predefined": "STRAIGHT_RUN_STAIR",
+   "storey": "OG1",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.2,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2
+   }
+  },
+  {
+   "gid": "3SOX5dZHP7dwnUJhhNe7XY",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:493683",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "EG",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.235,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "3SOX5dZHP7dwnUJhhNe7nU",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:494671",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "OG1",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.235,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMA9kB",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:512980",
+   "predefined": "STRAIGHT_RUN_STAIR",
+   "storey": "OG2",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.2,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2
+   }
+  },
+  {
+   "gid": "3XE9QcHwLFg9UVUHzCKTrH",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:518755",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "OG2",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.235,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "3XE9QcHwLFg9UVUHzCKTr6",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:518772",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "OG3",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.235,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwxW",
+   "cls": "IfcStair",
+   "name": "Ortbetontreppe:Treppe:527118",
+   "predefined": "STRAIGHT_RUN_STAIR",
+   "storey": "EG",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.235,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwxV",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:527153",
+   "predefined": "STRAIGHT_RUN_STAIR",
+   "storey": "OG1",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.2,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwuS",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:527346",
+   "predefined": "STRAIGHT_RUN_STAIR",
+   "storey": "OG2",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.2,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owjz",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:528019",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "EG",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.235,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwjB",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:528037",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "OG1",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.235,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owe3",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:528365",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "OG2",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.235,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OweI",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:528380",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "OG3",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 24.0,
+    "Pset_StairCommon.NumberOfTreads": 23.0,
+    "Pset_StairCommon.RiserHeight": 0.2,
+    "Pset_StairCommon.TreadLength": 0.235,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "0sHz$Q4_TDUxOoi4rM5aTl",
+   "cls": "IfcStairFlight",
+   "name": "Ortbetontreppe:Treppe:484754 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "EG",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "21_ODlrCb62O2Ec4M21MDy",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:487526 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "OG1",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.2,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2
+   }
+  },
+  {
+   "gid": "3SOX5dZHP7dwnUJhhNe7dk",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:493683 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "EG",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "3SOX5dZHP7dwnUJhhNe7n1",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:494671 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "OG1",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "3xCOwMZ_r0HfXOhUmMA9kA",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:512980 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "OG2",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.2,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2
+   }
+  },
+  {
+   "gid": "3XE9QcHwLFg9UVUHzCKTrM",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:518755 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "OG2",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "3XE9QcHwLFg9UVUHzCKTr7",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:518772 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "OG3",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwxX",
+   "cls": "IfcStairFlight",
+   "name": "Ortbetontreppe:Treppe:527118 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "EG",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwxS",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:527153 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "OG1",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.2,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OwuT",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:527346 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "OG2",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.2,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owjw",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:528019 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "EG",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owj8",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:528037 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "OG1",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$Owe0",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:528365 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "OG2",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  },
+  {
+   "gid": "0N9CSx_ib7HQ7izEW$OweJ",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:528380 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "OG3",
+   "n_riser": 24.0,
+   "riser": 0.2,
+   "tread": 0.235,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.235,
+    "Pset_StairFlightCommon.NumberOfRiser": 24.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 23.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.235,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.235
+   }
+  }
+ ],
+ "railings": [
+  {
+   "name": "Geländer:Holzhandlauf:485115",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:485119",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:487792",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG1",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:487796",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG1",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:494219",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:494223",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:494676",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG1",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:494680",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG1",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:512985",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG2",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:512989",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG2",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:518760",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG2",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:518764",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG2",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:518777",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG3",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:518781",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG3",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:527121",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:527125",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:527158",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG1",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:527162",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG1",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:527351",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG2",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:527355",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG2",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:528024",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:528028",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:528042",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG1",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:528046",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG1",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:528370",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG2",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:528374",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG2",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:528385",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG3",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:528389",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG3",
+   "height": 1.219
+  }
+ ],
+ "furniture": [
+  {
+   "where": "Lobby",
+   "item": "Drehstuhl-01",
+   "n": 4
+  },
+  {
+   "where": "Lobby",
+   "item": "Hocker-06",
+   "n": 8
+  },
+  {
+   "where": "Lobby",
+   "item": "Sofa-02",
+   "n": 8
+  },
+  {
+   "where": "Lobby",
+   "item": "Sofa-08",
+   "n": 2
+  },
+  {
+   "where": "Lobby",
+   "item": "Tisch-02",
+   "n": 4
+  },
+  {
+   "where": "Lobby",
+   "item": "Tisch-04",
+   "n": 2
+  },
+  {
+   "where": "Lobby",
+   "item": "Tisch_Empfang",
+   "n": 4
+  },
+  {
+   "where": "Lobby, Working Space",
+   "item": "Schreibtisch-Kombination-02 mit PC",
+   "n": 2
+  },
+  {
+   "where": "Meeting Room",
+   "item": "Tisch-Stuhl-Kombination-08 Konferenz",
+   "n": 2
+  },
+  {
+   "where": "Working Space",
+   "item": "Schreibtisch-Kombination-02 mit PC",
+   "n": 28
+  }
+ ],
+ "other_counts": {
+  "IfcCurtainWall": 38,
+  "IfcColumn": 34,
+  "IfcBeam": 8,
+  "IfcSlab": 18,
+  "IfcRoof": 4,
+  "IfcTransportElement": 0,
+  "IfcRelSpaceBoundary": 0
+ }
+}

@@ -1,0 +1,1253 @@
+[
+ {
+  "kid": "K091",
+  "title": "一梯一户限四层（无电梯）；一梯三户",
+  "question": "In German (DIN-based) design practice: Among the access types for multi-storey apartment buildings, the type with access to only one flat on each floor (sometimes marketed as 'town villas') is generally limited to how many floors when no lift is provided?",
+  "answer": "4 floors",
+  "accept": [
+   "four floors",
+   "4 storeys",
+   "four storeys",
+   "4"
+  ],
+  "mcq": {
+   "options": [
+    "3 floors",
+    "5 floors",
+    "4 floors",
+    "6 floors"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "States a limit of four floors",
+   "Ties the limit to the absence of a lift"
+  ],
+  "basis": [
+   "There is access to only one flat on each floor. This is relatively uneconomic due to the high proportion of the total floor area taken up for access, but can often give the feeling of living in a 'stacked terrace'. The flats are also marketed as town villas. There is a general limitation to four floors without a lift."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K092",
+  "title": "联排住宅进深 ≤12 m、面宽 4–8 m",
+  "question": "In German (DIN-based) design practice: Terraced (row) houses can receive direct daylight only from two façades. What economic building depth (maximum) and what range of house widths typically apply to row houses, which make a badly lit middle zone (stairs, subsidiary rooms) unavoidable?",
+  "answer": "Depth up to 12 m; width 4–8 m",
+  "accept": [
+   "≤12 m deep, 4 to 8 m wide",
+   "max. 12 m depth, 4-8 m width"
+  ],
+  "mcq": {
+   "options": [
+    "Depth up to 10 m; width 5–7 m",
+    "Depth up to 12 m; width 4–8 m",
+    "Depth up to 15 m; width 6–10 m",
+    "Depth up to 12 m; width 8–12 m"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Economic depth up to 12 m",
+   "Width between 4 and 8 m"
+  ],
+  "basis": [
+   "Building in a row restricts the possibilities for direct lighting to two façades so that, with economic building depths of up to 12 m and widths between 4 and 8 m, the existence of a badly lit or dark middle zone containing the stairs, subsidiary rooms and often also the dining area becomes unavoidable."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K093",
+  "title": "入户凹口尺寸",
+  "question": "In German (DIN-based) design practice: How large should the entrance recess in front of a house or flat door be (minimum width, preferred width, approximate depth) so that two people can wait comfortably and sheltered in front of the door?",
+  "answer": "At least 1.25 m wide (better 1.50 m), approx. 1.00 m deep",
+  "accept": [
+   "min. 125 cm wide, preferably 150 cm, about 100 cm deep",
+   "1.25 m (1.50 m) x 1.00 m"
+  ],
+  "mcq": {
+   "options": [
+    "At least 1.00 m wide (better 1.25 m), approx. 0.80 m deep",
+    "At least 1.50 m wide (better 2.00 m), approx. 1.50 m deep",
+    "At least 0.90 m wide (better 1.20 m), approx. 1.00 m deep",
+    "At least 1.25 m wide (better 1.50 m), approx. 1.00 m deep"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Minimum width 1.25 m",
+   "Preferred width 1.50 m",
+   "Depth approx. 1.00 m"
+  ],
+  "basis": [
+   "Entrance recesses should be at least 1.25 m (better 1.50 m) wide and approx. 1.00 m deep, so that two people can wait comfortably and protected in front of the door"
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K094",
+  "title": "每户必备厨房与储藏间",
+  "question": "According to the German building regulations, apart from the bathroom, which two rooms belong to the mandatory provision of every house or flat?",
+  "answer": "At least one kitchen (or kitchenette) and a sufficiently large storeroom",
+  "accept": [
+   "kitchen/kitchenette and storeroom",
+   "a kitchen or kitchenette plus an adequately sized storage room"
+  ],
+  "mcq": {
+   "options": [
+    "A kitchen or kitchenette, and a sufficiently large storeroom",
+    "A kitchen, and a separate dining room of adequate size",
+    "A storeroom, and a separate laundry/utility room",
+    "A kitchenette, and a separate guest WC with washbasin"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "At least one kitchen or kitchenette",
+   "A sufficiently large storeroom"
+  ],
+  "basis": [
+   "According to the building regulations, every house or flat must have at least one kitchen or kitchenette for cooking.",
+   "The building regulations require that every flat or house be provided with a sufficiently large storeroom."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K095",
+  "title": "厨房宽度与操作空间",
+  "question": "In German (DIN-based) design practice: In a dwelling kitchen with worktop runs along two opposite sides (units about 60 cm deep on each side), what movement area between the worktop runs is required (normal and minimum), and what minimum kitchen width (normal and absolute minimum) results?",
+  "answer": "Movement area 1.50 m (min. 1.20 m); kitchen width 2.70 m (min. 2.40 m)",
+  "accept": [
+   "150 cm (120 cm) between worktops; 270 cm (240 cm) width"
+  ],
+  "mcq": {
+   "options": [
+    "Movement area 1.20 m (min. 0.90 m); kitchen width 2.40 m (min. 2.10 m)",
+    "Movement area 1.50 m (min. 1.20 m); kitchen width 3.00 m (min. 2.70 m)",
+    "Movement area 1.50 m (min. 1.20 m); kitchen width 2.70 m (min. 2.40 m)",
+    "Movement area 1.00 m (min. 0.80 m); kitchen width 2.20 m (min. 2.00 m)"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Movement area 1.50 m, min. 1.20 m",
+   "Kitchen width 2.70 m, min. 2.40 m"
+  ],
+  "basis": [
+   "A movement area of 1.50 m (min. 1.20 m) is therefore required between the stretches of worktop.",
+   "this results in a minimum kitchen width of 2.70 m (min 2.40 m)"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K096",
+  "title": "厨房面积与类型",
+  "question": "In German (DIN-based) design practice: From approximately what floor area can a kitchen with a dining area (eat-in kitchen) in a dwelling be planned?",
+  "answer": "approx. 10 m²",
+  "accept": [
+   "10 m2",
+   "about 10 square metres"
+  ],
+  "mcq": {
+   "options": [
+    "approx. 6 m²",
+    "approx. 8 m²",
+    "approx. 14 m²",
+    "approx. 10 m²"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "States approx. 10 m² as the lower limit"
+  ],
+  "basis": [
+   "Kitchens with dining areas can be planned from approx. 10 m²."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K097",
+  "title": "开放式厨房",
+  "question": "In German (DIN-based) design practice: What building-services provision do open kitchens (kitchens open to the living/dining space of a dwelling) require, and for what reason?",
+  "answer": "Good ventilation and extraction, so cooking smells do not impair the living and dining areas",
+  "accept": [
+   "good ventilation and an extractor, so cooking smells stay out of the living/dining area",
+   "effective air extraction/ventilation against cooking smells"
+  ],
+  "mcq": {
+   "options": [
+    "Good ventilation and extraction, to keep cooking smells out of living and dining areas",
+    "A fire-resistant separating wall, to protect the living and dining areas from fire",
+    "A separate window of its own, so the kitchen work area is lit independently",
+    "A floor drain and washable surfaces, so the kitchen area can be wet-cleaned"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Good ventilation and extraction",
+   "Purpose: avoid cooking smells in living/dining areas"
+  ],
+  "basis": [
+   "Open kitchens require good ventilation and extraction in order not to impair the living and dining room areas with cooking smells."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K098",
+  "title": "厨房位置",
+  "question": "In German (DIN-based) design practice: Apart from good links to the garden and the cellar, in the immediate vicinity of which area of a house or flat should the kitchen ideally be located?",
+  "answer": "The entrance area",
+  "accept": [
+   "near the entrance",
+   "next to the front entrance/hall"
+  ],
+  "mcq": {
+   "options": [
+    "The bedroom zone",
+    "The entrance area",
+    "The south-facing living room",
+    "The staircase to the upper floor"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Kitchen in immediate vicinity of the entrance area"
+  ],
+  "basis": [
+   "in the immediate vicinity of the entrance area (short distances for shopping, rubbish etc.)"
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K099",
+  "title": "就餐区的朝向与连接",
+  "question": "In German (DIN-based) design practice: In residential planning, toward which compass orientations are dining areas in dwellings normally oriented?",
+  "answer": "South or west",
+  "accept": [
+   "south/west",
+   "S or W"
+  ],
+  "mcq": {
+   "options": [
+    "North or east",
+    "East or southeast",
+    "South or west",
+    "Northeast or northwest"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "South or west orientation"
+  ],
+  "basis": [
+   "Dining areas are normally oriented to the south or west."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K100",
+  "title": "餐桌尺寸与就餐人数",
+  "question": "In German (DIN-based) design practice: Approximately what table area does one person need in order to eat comfortably (width × depth of the place setting)?",
+  "answer": "approx. 60 × 40 cm",
+  "accept": [
+   "60 x 40 cm",
+   "0.60 × 0.40 m",
+   "60 cm wide by 40 cm deep"
+  ],
+  "mcq": {
+   "options": [
+    "approx. 50 × 30 cm",
+    "approx. 60 × 40 cm",
+    "approx. 70 × 50 cm",
+    "approx. 80 × 60 cm"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "60 cm width per person",
+   "40 cm depth per person"
+  ],
+  "basis": [
+   "In order to be able to eat comfortably, a person needs a table area of approx. 60 × 40 cm"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K101",
+  "title": "储藏与食品间靠近厨房",
+  "question": "In German (DIN-based) design practice: When designing a house or flat with a larder (pantry) for food and drink supplies, where is the larder most practically located?",
+  "answer": "Next to the kitchen",
+  "accept": [
+   "adjacent to the kitchen",
+   "directly beside the kitchen"
+  ],
+  "mcq": {
+   "options": [
+    "In the cellar",
+    "Next to the dining room",
+    "Under the stairs",
+    "Next to the kitchen"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Larder adjacent to the kitchen"
+  ],
+  "basis": [
+   "It is most practical when the larder is next to the kitchen."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K102",
+  "title": "卧室最小面积",
+  "question": "In German (DIN-based) design practice: What are the approximate minimal floor areas of bedrooms in a dwelling: (a) a parents' room / twin bedroom and (b) a single bedroom?",
+  "answer": "approx. 13 m² (parents'/twin) and approx. 8 m² (single)",
+  "accept": [
+   "13 m2 and 8 m2"
+  ],
+  "mcq": {
+   "options": [
+    "approx. 16.5 m² and approx. 8 m²",
+    "approx. 12 m² and approx. 6 m²",
+    "approx. 13 m² and approx. 8 m²",
+    "approx. 14 m² and approx. 10 m²"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Twin/parents' bedroom approx. 13 m²",
+   "Single bedroom approx. 8 m²"
+  ],
+  "basis": [
+   "bedrooms with minimal space of approx. 13 m² (as parents’ room or twin bedroom)",
+   "approx. 8 m² (single room)."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K103",
+  "title": "卫生间",
+  "question": "Under German building regulations, a bathroom belongs to the minimum equipment of every flat or house. How is such a 'bathroom' defined?",
+  "answer": "An independent room with bath or shower and toilet",
+  "accept": [
+   "separate room containing a bath/shower and a WC"
+  ],
+  "mcq": {
+   "options": [
+    "An independent room with bath or shower and toilet",
+    "A room with WC and washbasin only",
+    "A room with bath, shower, washbasin and WC",
+    "A shower and washbasin in a niche of the bedroom"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Independent (separate) room",
+   "Contains bath or shower",
+   "Contains a toilet"
+  ],
+  "basis": [
+   "A bathroom is defined as an independent room with bath/shower and toilet",
+   "according to building regulations, belongs to the minimum equipment of a flat or house."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K104",
+  "title": "没有洗衣间时",
+  "question": "In German (DIN-based) design practice: If a dwelling has no laundry room, what must the bathroom be designed to accommodate?",
+  "answer": "Space and connections for a washing machine, washer/dryer and laundry basket",
+  "accept": [
+   "room and hook-ups for washing machine and dryer plus laundry basket"
+  ],
+  "mcq": {
+   "options": [
+    "A floor drain and a second washbasin for hand-washing laundry",
+    "Space and connections for a washing machine, washer/dryer and laundry basket",
+    "A drying rack above the bathtub and a heated towel rail",
+    "A separate shower tray for soaking and hand-washing laundry"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Space and connections (water/drain/power) for washing machine",
+   "Washer/dryer and laundry basket also accommodated"
+  ],
+  "basis": [
+   "If there is no laundry room, the bathroom must be designed with space and connections for a washing machine, washer/dryer and laundry basket."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K105",
+  "title": "洗衣间",
+  "question": "In German (DIN-based) design practice: In a domestic laundry/utility room, what width of worktop should be provided for dealing with the washing?",
+  "answer": "1.20 m",
+  "accept": [
+   "120 cm",
+   "1.2 m"
+  ],
+  "mcq": {
+   "options": [
+    "0.60 m",
+    "0.90 m",
+    "1.50 m",
+    "1.20 m"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Worktop width 1.20 m"
+  ],
+  "basis": [
+   "A worktop of 1.20 m width should be provided to deal with the washing."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K106",
+  "title": "衣柜的位置与通风",
+  "question": "In German (DIN-based) design practice: In residential planning, in which room are wardrobes and linen cupboards normally situated in a dwelling, and what provision does a walk-in wardrobe additionally require?",
+  "answer": "In the bedroom; walk-in wardrobes require appropriate ventilation",
+  "accept": [
+   "bedroom; ventilation"
+  ],
+  "mcq": {
+   "options": [
+    "In the corridor; a window for daylight",
+    "In the bedroom; appropriate ventilation",
+    "In the bedroom; a floor drain",
+    "In the entrance hall; heating to living-room temperature"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Normally situated in the bedroom",
+   "Walk-in wardrobe needs appropriate ventilation"
+  ],
+  "basis": [
+   "They serve to store (larger) items of clothing, linen, shoes and suitcases, and are normally situated in the bedroom.",
+   "Walk-in wardrobes also require appropriate ventilation"
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K107",
+  "title": "户内储藏空间",
+  "question": "In German (DIN-based) housing planning guidance, in addition to cellar and attic storage, what storage space should be provided within a flat: minimum area, minimum clear width, and the share of floor area for larger flats?",
+  "answer": "≥ 1 m² with 75 cm clear width; in larger flats 2% of the floor area",
+  "accept": [
+   "at least 1 m2, 0.75 m clear width, 2 % of floor area"
+  ],
+  "mcq": {
+   "options": [
+    "≥ 2 m² with 60 cm clear width; 1% of floor area",
+    "≥ 1.5 m² with 90 cm clear width; 2% of floor area",
+    "≥ 1 m² with 60 cm clear width; 5% of floor area",
+    "≥ 1 m² with 75 cm clear width; 2% of floor area"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "At least 1 m²",
+   "Clear width 75 cm",
+   "2% of floor area in larger flats"
+  ],
+  "basis": [
+   "storage space should therefore be provided within a flat of \\( \\geq 1 \\ \\mathrm{m}^2 \\) with a clear width of 75 cm",
+   "In larger flats, 2% of the floor area should be provided as storage space (split into many small areas is also acceptable)."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K108",
+  "title": "卫生间朝向、采光与通风",
+  "question": "To which compass orientation should a bathroom in a dwelling be oriented, and if natural ventilation and lighting are not possible, according to which German standard must effective mechanical ventilation be provided?",
+  "answer": "North; DIN 18017-3",
+  "accept": [
+   "northward; DIN 18017 part 3"
+  ],
+  "mcq": {
+   "options": [
+    "South; DIN 18017-3",
+    "North; DIN 4109",
+    "North; DIN 18017-3",
+    "East; DIN 18040-2"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Oriented to the north",
+   "Mechanical ventilation according to DIN 18017-3"
+  ],
+  "basis": [
+   "The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3)."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K109",
+  "title": "卫生间类型",
+  "question": "In German (DIN-based) design practice: Residential bathrooms are commonly divided into four basic categories: (guest) WC, shower room, bathroom and full bathroom. Which fittings does a 'full bathroom' contain?",
+  "answer": "Bath, shower, washbasin and WC",
+  "accept": [
+   "bathtub + shower + basin + toilet"
+  ],
+  "mcq": {
+   "options": [
+    "Bath, washbasin and WC",
+    "Bath, shower, washbasin and WC",
+    "Shower, washbasin and WC",
+    "Bath, shower, two washbasins, WC and bidet"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Includes both bath and shower",
+   "Includes washbasin and WC"
+  ],
+  "basis": [
+   "The basic bathroom categories are: (guest) WCs with WC and washbasin → 3 - 4, shower rooms with shower and basin → 5 - 6, bathrooms with bath, washbasin and WC → 7 - 8, full bathrooms with bath, shower, washbasin and WC → 10."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K110",
+  "title": "卫浴与厨房共用管井",
+  "question": "In German (DIN-based) design practice: For technical reasons, the bathroom (or WC) of a dwelling is often conveniently placed on a common installation shaft together with which other room?",
+  "answer": "The kitchen",
+  "accept": [
+   "kitchen"
+  ],
+  "mcq": {
+   "options": [
+    "The kitchen",
+    "The living room",
+    "The bedroom",
+    "The storeroom"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Kitchen shares the installation shaft with bath/WC"
+  ],
+  "basis": [
+   "it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K111",
+  "title": "婴儿车与自行车公共储藏间",
+  "question": "According to the German building regulations, for residential buildings of which building classes is an easily accessible communal storeroom for prams, pushchairs and bicycles required, and how many vehicles should be assumed when designing it?",
+  "answer": "Building classes 3–5; at least one vehicle per occupant (including children)",
+  "accept": [
+   "classes 3 to 5; ≥1 vehicle per resident incl. children"
+  ],
+  "mcq": {
+   "options": [
+    "Building classes 1–5; at least one vehicle per dwelling",
+    "Building classes 4–5; at least one vehicle per two occupants",
+    "Building classes 3–5; at least one vehicle per dwelling",
+    "Building classes 3–5; at least one vehicle per occupant"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Required for building classes 3–5",
+   "Design for at least one vehicle per occupant, children included"
+  ],
+  "basis": [
+   "for residential buildings in building classes 3–5, the building regulations require an easily accessible (communal) storeroom for prams, pushchairs and bicycles.",
+   "it can be assumed that at least one vehicle per occupant (including children) has to be accommodated"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K112",
+  "title": "办公楼室内净高",
+  "question": "For office buildings, under the German Vst workplace regulation on room heights: what ceiling height is given for office rooms, what minimum clear height remains if the height is reduced for predominantly sedentary activities, and what height is permitted for corridors and sanitary facilities?",
+  "answer": "2.75 m; min. 2.50 m clear; 2.30 m",
+  "accept": [
+   "275 cm / 250 cm / 230 cm"
+  ],
+  "mcq": {
+   "options": [
+    "2.75 m; min. 2.50 m; 2.30 m",
+    "3.00 m; min. 2.75 m; 2.50 m",
+    "2.50 m; min. 2.40 m; 2.20 m",
+    "2.75 m; min. 2.50 m; 2.10 m"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Office ceiling height 2.75 m",
+   "Reduction (by 25 cm) to min. 2.50 m clear for sedentary work",
+   "Corridors and sanitary facilities 2.30 m"
+  ],
+  "basis": [
+   "Ceiling height 2.75 m according to Vst regulation",
+   "For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear.",
+   "Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs)."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K113",
+  "title": "每工位总面积",
+  "question": "In German (DIN-based) design practice: Within what range does the total space requirement per office workstation (including subsidiary and additional areas) typically vary, depending on organisational and status requirements?",
+  "answer": "23–45 m² per workstation",
+  "accept": [
+   "23 to 45 m2"
+  ],
+  "mcq": {
+   "options": [
+    "8–12 m²",
+    "12–20 m²",
+    "23–45 m²",
+    "50–70 m²"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Range 23–45 m² per workstation"
+  ],
+  "basis": [
+   "The total space requirement per workstation varies between 23 and 45 m^2, depending on organisational and status requirements."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K114",
+  "title": "工位尺寸",
+  "question": "In German (DIN-based) design practice: For an office workstation with few documents and predominantly screen work, what is the guideline minimum desktop working area and the minimum free movement area at the workstation?",
+  "answer": "Desktop at least 120 × 80 cm; free movement area at least 1.5 m²",
+  "accept": [
+   "1.20 x 0.80 m desk; 1.5 m2 movement area"
+  ],
+  "mcq": {
+   "options": [
+    "Desktop 120 × 80 cm; movement area 1.5 m²",
+    "Desktop 160 × 80 cm; movement area 1.0 m²",
+    "Desktop 200 × 80 cm; movement area 1.5 m²",
+    "Desktop 120 × 60 cm; movement area 2.0 m²"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Desktop min. 120 × 80 cm",
+   "Free movement area min. 1.5 m²"
+  ],
+  "basis": [
+   "The desktop working area should be at least 120 × 80 cm (few documents, predominantly screen work; for specialist employees, at least 200 × 80 cm)",
+   "There should be a free movement area of at least 1.5 m² at the workstation."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K115",
+  "title": "办公室进深、开间与模数",
+  "question": "In German (DIN-based) design practice: In office planning, which grid module dimensions have proved successful in recent years for (a) single-room offices and (b) office types based on the combi principle?",
+  "answer": "1.50 m for single-room offices; 1.35 m for combi-offices",
+  "accept": [
+   "150 cm / 135 cm"
+  ],
+  "mcq": {
+   "options": [
+    "1.35 m single-room; 1.50 m combi",
+    "1.50 m single-room; 1.35 m combi",
+    "1.20 m single-room; 1.25 m combi",
+    "1.875 m single-room; 1.50 m combi"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "1.50 m for single-room offices",
+   "1.35 m for combi-offices"
+  ],
+  "basis": [
+   "The modular dimensions, which have proved successful in recent years, are 1.50 m for single-room offices and 1.35 m for office types based on the combi principle."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K116",
+  "title": "建筑进深与采光深度",
+  "question": "In German (DIN-based) design practice: What is the usual building depth of office buildings with central corridors, and to about what room depth can daylight mostly be exploited?",
+  "answer": "12–13 m building depth; daylight to about 7.00 m room depth",
+  "accept": [
+   "12 to 13 m; approx. 7 m"
+  ],
+  "mcq": {
+   "options": [
+    "15–18 m; about 7.50 m",
+    "10–11 m; about 5.00 m",
+    "12–13 m; about 10.00 m",
+    "12–13 m; about 7.00 m"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Central-corridor building depth 12–13 m",
+   "Daylight usable to about 7.00 m room depth"
+  ],
+  "basis": [
+   "The usual depth of buildings with central corridors is 12–13 m.",
+   "Daylight can mostly be exploited into a room depth of about 7.00 m."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K117",
+  "title": "办公室类型",
+  "question": "In German (DIN-based) design practice: Approximately how many workstations does a group office have, and how many workstations characterise the large-scale open-plan office landscapes made possible by artificial lighting and ventilation?",
+  "answer": "Group office approx. 4–16 workstations; open-plan 100 or more",
+  "accept": [
+   "4-16; ≥100"
+  ],
+  "mcq": {
+   "options": [
+    "Group office 2–6; open-plan 50 or more",
+    "Group office 10–30; open-plan 200 or more",
+    "Group office 4–16; open-plan 100 or more",
+    "Group office 4–16; open-plan 50 or more"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Group office approx. 4–16 workstations",
+   "Open-plan 100 or more workstations"
+  ],
+  "basis": [
+   "The experience with the open-plan layout led to the development of group offices with approx. 4–16 workstations",
+   "Large-scale office landscapes with 100 or more workstations are made possible by artificial lighting and ventilation"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K118",
+  "title": "会议区",
+  "question": "In German (DIN-based) design practice: In an office building, about how much floor area does a conference area require per seat (excluding subsidiary areas), and what proportion of the conference area do the subsidiary rooms (store rooms, catering pantry) require?",
+  "answer": "About 2.5 m² per seat; subsidiary rooms about 1/3 of the conference area",
+  "accept": [
+   "2.5 m2/seat; one third"
+  ],
+  "mcq": {
+   "options": [
+    "About 1.5 m² per seat; about 1/4",
+    "About 2.5 m² per seat; about 1/3",
+    "About 5.0 m² per seat; about 1/5",
+    "About 4.0 m² per seat; about 1/2"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "About 2.5 m² per seat",
+   "Subsidiary rooms about one third of the conference area"
+  ],
+  "basis": [
+   "A conference area requires about 2.5 m^2 per seat (without subsidiary areas).",
+   "store rooms and a pantry for catering (these subsidiary rooms require about 1/3 of the conference area)"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K119",
+  "title": "办公卫生间与茶水间配置",
+  "question": "In German (DIN-based) design practice: For office buildings, what ratio of toilet units to workstations is considered good, and how large a tea kitchen should be provided per how many workplaces?",
+  "answer": "One toilet unit per 50–80 workstations; one ~10 m² tea kitchen per approx. 50–100 workplaces",
+  "accept": [
+   "1 WC unit / 50-80 workstations; 10 m2 kitchen / 50-100 workplaces"
+  ],
+  "mcq": {
+   "options": [
+    "1 toilet unit per 20–30; one 6 m² kitchen per 30–50",
+    "1 toilet unit per 50–80; one 20 m² kitchen per 200",
+    "1 toilet unit per 100–150; one 10 m² kitchen per 50–100",
+    "1 toilet unit per 50–80; one 10 m² kitchen per 50–100"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "One toilet unit per 50–80 workstations",
+   "Tea kitchen ~10 m²",
+   "One per approx. 50–100 workplaces"
+  ],
+  "basis": [
+   "A good ratio is one toilet unit per 50–80 workstations.",
+   "For every approx. 50–100 workplaces, one ~10 m² kitchen."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K120",
+  "title": "工作场所厕所（劳动场所规定）",
+  "question": "Under the German Workplace Regulations: (a) what is the maximum distance from each workstation to the toilets, (b) above how many employees must separate toilets for women and men be provided, and (c) what is the minimum number of washbasins in the toilet lobby relative to WCs?",
+  "answer": "(a) not more than 100 m (or one storey height); (b) more than 5 employees; (c) at least one washbasin per 5 WCs",
+  "accept": [
+   "100 m; >5; 1 per 5 WCs"
+  ],
+  "mcq": {
+   "options": [
+    "50 m; more than 10; 1 per 3 WCs",
+    "100 m; more than 10; 1 per 5 WCs",
+    "100 m; more than 5; 1 per 5 WCs",
+    "150 m; more than 5; 1 per 10 WCs"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Max. 100 m (or one storey without escalator)",
+   "Separate sexes above 5 employees",
+   "At least 1 washbasin per 5 WCs"
+  ],
+  "basis": [
+   "These are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height (if no escalator is available).",
+   "If there are more than five employees, separate toilets must be provided for women and men",
+   "at least one washbasin per five WCs"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K121",
+  "title": "厅室的每人容积",
+  "question": "In German (DIN-based) design practice: For good room acoustics, what are the guideline room volumes per person for rooms used for speech and for (concert) music?",
+  "answer": "4 m³/person for speech; 10 m³/person for music",
+  "accept": [
+   "4 and 10 cubic metres per person"
+  ],
+  "mcq": {
+   "options": [
+    "4 m³ for speech; 10 m³ for music",
+    "2 m³ for speech; 5 m³ for music",
+    "6 m³ for speech; 12 m³ for music",
+    "10 m³ for speech; 4 m³ for music"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Speech 4 m³/person",
+   "Concert music 10 m³/person"
+  ],
+  "basis": [
+   "Guideline values are 4 m³/person for speech and 10 m³/person for (concert) music. If the volume is too small, this allows too little reverberation."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K122",
+  "title": "保洁间与物业用房",
+  "question": "In German (DIN-based) design practice: In an office building, how frequently should cleaner's rooms be provided, and with what fittings ideally?",
+  "answer": "One on every floor, ideally with water supply and bucket sink",
+  "accept": [
+   "a cleaner's room per storey with water and sink"
+  ],
+  "mcq": {
+   "options": [
+    "One central cleaner's room per building, with a washing machine",
+    "One on every second floor, with a floor drain",
+    "One on every floor, ideally with water supply and bucket sink",
+    "One per 1000 m² of floor area, without water supply"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Cleaner's room on every floor",
+   "Ideally with water supply and bucket sink"
+  ],
+  "basis": [
+   "A cleaner’s room should be provided on every floor, as a store for cleaning equipment and ideally with water supply and bucket sink."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K123",
+  "title": "档案室",
+  "question": "In German (DIN-based) design practice: For office filing (records) rooms, what is the guideline ceiling clearance height for filing areas (such that two storeys of normal office space equal three storeys of filing), and what increased floor loading should archive rooms with mobile shelving units be designed for?",
+  "answer": "Clearance height 2.10 m; floor loading 7.5–12.5 kN/m²",
+  "accept": [
+   "2.1 m; 7.5 to 12.5 kN/m2"
+  ],
+  "mcq": {
+   "options": [
+    "2.25–2.50 m; 5.0 kN/m²",
+    "2.10 m; 7.5–12.5 kN/m²",
+    "2.10 m; 5.0 kN/m²",
+    "2.40 m; 15–20 kN/m²"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Ceiling clearance 2.10 m",
+   "Archive floor load 7.5–12.5 kN/m²"
+  ],
+  "basis": [
+   "ceiling clearance height 2.10 m (2 storeys of normal office space = 3 storeys of filing)",
+   "Archive rooms should be designed for an increased floor loading of 7.5–12.5 kN/m² (for mobile units)"
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K124",
+  "title": "办公楼入口区",
+  "question": "In German (DIN-based) design practice: Which main functions does the entrance area of an office building (the connection between public and working areas) typically contain?",
+  "answer": "Lobby, access control, information, visitor registration and waiting zone",
+  "accept": [
+   "foyer, security/access control, information desk, visitor registration, waiting area"
+  ],
+  "mcq": {
+   "options": [
+    "Lobby, access control, information, visitor registration and waiting zone",
+    "Lobby, canteen, mail room, archive and central copy room",
+    "Reception, conference rooms, tea kitchen, cloakroom and toilets",
+    "Lobby, open-plan workstations, copy room, archive and mail room"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Lobby and access control",
+   "Information and visitor registration",
+   "Waiting zone"
+  ],
+  "basis": [
+   "Connection between public and working areas. The important functions are lobby, access control, information, visitor registration and waiting zone."
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K125",
+  "title": "员工餐厅位置",
+  "question": "In German (DIN-based) design practice: Where should a canteen or cafeteria in an office building be located so that outside visitors can also use it?",
+  "answer": "Near the reception and outside the access control",
+  "accept": [
+   "close to reception, before the security barrier"
+  ],
+  "mcq": {
+   "options": [
+    "On the top floor, inside the access-controlled zone",
+    "Near the reception and outside the access control",
+    "In the basement next to the delivery yard",
+    "At the centre of the office floors, inside the access control"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Near the reception",
+   "Outside the access control"
+  ],
+  "basis": [
+   "Location near the reception and outside the access control allows outside visitors in."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K126",
+  "title": "组团办公室到窗距离",
+  "question": "In German (DIN-based) design practice: Group rooms (smaller open-plan offices for work groups with constant information exchange) limit the size of the workplace surroundings. What is the guideline maximum distance from a workplace to a window for them?",
+  "answer": "max. 7.5 m",
+  "accept": [
+   "7.5 m",
+   "7.50 m",
+   "750 cm"
+  ],
+  "mcq": {
+   "options": [
+    "6.0 m",
+    "7.5 m",
+    "10.0 m",
+    "12.5 m"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Maximum 7.5 m to a window"
+  ],
+  "basis": [
+   "via the size of the workplace surroundings (max. 7.5 m to a window)"
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K127",
+  "title": "小型使用单元内的走廊",
+  "question": "Under German building regulations for office access systems: below what floor area of a combined use unit are the corridors inside it not subject to the requirements for escape routes?",
+  "answer": "400 m²",
+  "accept": [
+   "400 m2",
+   "less than 400 square metres"
+  ],
+  "mcq": {
+   "options": [
+    "200 m²",
+    "400 m²",
+    "600 m²",
+    "1000 m²"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Threshold of 400 m² (units smaller than this)"
+  ],
+  "basis": [
+   "For combined use units of less than 400 m², the corridors are not subject to the requirements for escape routes."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K128",
+  "title": "餐饮厨房员工休息室",
+  "question": "For the staff area of a commercial (catering) kitchen, above what number of employees do the workplace regulations require a rest/break room?",
+  "answer": "More than 10 employees",
+  "accept": [
+   "over 10",
+   "10"
+  ],
+  "mcq": {
+   "options": [
+    "More than 5 employees",
+    "More than 20 employees",
+    "More than 10 employees",
+    "More than 50 employees"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Rest/break room required with more than 10 employees"
+  ],
+  "basis": [
+   "For more than 10 employees, a rest/break room is necessary (workplace regulations)."
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K129",
+  "title": "研讨室的规模与进深",
+  "question": "In German (DIN-based) design practice: For university seminar rooms, what is the guideline floor area per student, and if the room has free ventilation from only one external wall, what is the maximum room depth?",
+  "answer": "1.90–2.00 m² per student; depth not exceeding 2.5 × clear ceiling height",
+  "accept": [
+   "1.9-2.0 m2/student; ≤2.5 times the clear height"
+  ],
+  "mcq": {
+   "options": [
+    "1.20–1.50 m² per student; depth ≤ 2.5 × clear height",
+    "1.90–2.00 m² per student; depth ≤ 2.5 × clear height",
+    "1.90–2.00 m² per student; depth ≤ 3.5 × clear height",
+    "2.50–3.00 m² per student; depth ≤ 2.0 × clear height"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "1.90–2.00 m² per student",
+   "Depth max. 2.5 × clear ceiling height with single-sided ventilation"
+  ],
+  "basis": [
+   "Seminar rooms, usual sizes: 20, 40, 50, 60 seats; mobile double tables, width 1.20 m, depth 0.60 m, space required per student 1.90–2.00 m.",
+   "If there is free ventilation from only one external wall, the depth of the room should not exceed 2.5 × clear ceiling height."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K130",
+  "title": "高校教研人员办公室面积",
+  "question": "In German (DIN-based) design practice: In university planning, what are the guideline office floor areas for scientific personnel: (a) a professor and (b) a scientific assistant?",
+  "answer": "Professor 20–24 m²; scientific assistant 15 m²",
+  "accept": [
+   "20-24 m2 and 15 m2"
+  ],
+  "mcq": {
+   "options": [
+    "Professor 15 m²; scientific assistant 20–24 m²",
+    "Professor 30–36 m²; scientific assistant 20 m²",
+    "Professor 12–15 m²; scientific assistant 10 m²",
+    "Professor 20–24 m²; scientific assistant 15 m²"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "Professor 20–24 m²",
+   "Scientific assistant 15 m²"
+  ],
+  "basis": [
+   "professor 20–24 m²\nscientific assistant 15 m²\nassistant 20 m²\nsecretary 15 m² (double occupation 20 m²)"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K131",
+  "title": "酒店星级与客房面积",
+  "question": "Under the classification system of the German Hotel and Inn Association (DEHOGA), what are the minimum room areas (applying to 75% of hotel rooms) for a single room and a double room in a 3-star (Comfort) hotel?",
+  "answer": "Single room 14 m², double room 18 m²",
+  "accept": [
+   "14 m2 / 18 m2"
+  ],
+  "mcq": {
+   "options": [
+    "Single 12 m², double 16 m²",
+    "Single 16 m², double 22 m²",
+    "Single 14 m², double 18 m²",
+    "Single 18 m², double 26 m²"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Single room 14 m²",
+   "Double room 18 m²"
+  ],
+  "basis": [
+   "3 Stars (Comfort): as before, but single room 14 m², double room 18 m² (minimum area, see above), bathroom in room (for all rooms in the hotel)"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K132",
+  "title": "汽车旅馆",
+  "question": "In German (DIN-based) design practice: What is the typical range of guest room sizes (with bathroom) for motels?",
+  "answer": "4 × 4 m to 5 × 5 m",
+  "accept": [
+   "4x4 m – 5x5 m",
+   "16–25 m² (4 × 4 to 5 × 5 m)"
+  ],
+  "mcq": {
+   "options": [
+    "3 × 3 m to 4 × 4 m",
+    "4 × 4 m to 5 × 5 m",
+    "5 × 5 m to 6 × 6 m",
+    "3.5 × 5 m to 4 × 6 m"
+   ],
+   "correct": 1
+  },
+  "rubric": [
+   "Room sizes 4 × 4 m to 5 × 5 m"
+  ],
+  "basis": [
+   "Room sizes 4 × 4 m – 5 × 5 m, with bathroom and sometimes kitchenette"
+  ],
+  "modality": "typical",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K133",
+  "title": "餐厅",
+  "question": "In German (DIN-based) design practice: What are the guideline ceiling heights for restaurant dining areas with a floor area of (a) up to 50 m², (b) more than 50 m², and (c) more than 100 m²?",
+  "answer": "(a) 2.50 m; (b) 2.75 m; (c) at least 3.00 m",
+  "accept": [
+   "2.50 / 2.75 / ≥3.00 m"
+  ],
+  "mcq": {
+   "options": [
+    "2.40 m; 2.50 m; 2.75 m",
+    "2.50 m; 3.00 m; 3.50 m",
+    "2.75 m; 3.00 m; 3.25 m",
+    "2.50 m; 2.75 m; 3.00 m"
+   ],
+   "correct": 3
+  },
+  "rubric": [
+   "≤50 m²: 2.50 m",
+   "> 50 m²: 2.75 m",
+   "> 100 m²: ≥ 3.00 m"
+  ],
+  "basis": [
+   "The ceiling heights of dining areas with a floor area ≤50 m² = 2.50 m, > 50 m² = 2.75 m and >100 m² ≥3.00 m"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K134",
+  "title": "酒店基本功能区",
+  "question": "One area is described as the central, prestigious 'nerve centre' between the various parts of a hotel's operation. Which area is this, and from which DEHOGA star category onward is reception required as a separate area?",
+  "answer": "The hotel lobby and reception; already from 1 star (Tourist), i.e. in all categories",
+  "accept": [
+   "lobby/reception; from 1 star",
+   "lobby and reception; all categories incl. 1-star"
+  ],
+  "mcq": {
+   "options": [
+    "The catering area; from 1 star",
+    "The lobby and reception; from 2 stars",
+    "The lobby and reception; from 1 star",
+    "The lobby and reception; from 4 stars"
+   ],
+   "correct": 2
+  },
+  "rubric": [
+   "Lobby and reception is the nerve centre",
+   "Reception as a separate area is required already at 1 star (all categories)"
+  ],
+  "basis": [
+   "The essential areas are: hotel lobby and reception as the central, well-arranged and prestigious nerve centre between the various parts of the operation, catering area in connection with the hotel lobby",
+   "reception as a separate area",
+   "1 Star (Tourist): single room 8 m²"
+  ],
+  "modality": "must",
+  "difficulty": "recall"
+ },
+ {
+  "kid": "K135",
+  "title": "餐厅与厨房、卫生间的组织",
+  "question": "In German (DIN-based) design practice: In a restaurant, where should the kitchen servery (counter or self-service) ideally be situated?",
+  "answer": "Between the preparation area (kitchen) and the dining room",
+  "accept": [
+   "between kitchen and dining room"
+  ],
+  "mcq": {
+   "options": [
+    "Between the preparation area and the dining room",
+    "At the restaurant entrance, next to the cloakroom",
+    "Between the store rooms and the preparation area",
+    "In the basement, connected by dumb waiter"
+   ],
+   "correct": 0
+  },
+  "rubric": [
+   "Servery between preparation area and dining room"
+  ],
+  "basis": [
+   "Servery for restaurant kitchens with counter or self-service, ideally situated between the preparation area and the dining room."
+  ],
+  "modality": "should",
+  "difficulty": "recall"
+ }
+]

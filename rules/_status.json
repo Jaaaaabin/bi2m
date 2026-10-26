@@ -1,0 +1,1038 @@
+{
+ "threshold": 80,
+ "criterion": "max(mine_context, theirs_applicable) >= threshold; one-sided ones flagged for manual review",
+ "n_models": 370,
+ "source_theirs": "neufert_applicability_2026-10-20_by_applicable.json",
+ "rules": {
+  "R01": {
+   "status": "archived",
+   "mine_fires": 1,
+   "mine_context": 370,
+   "theirs_applicable": 1,
+   "theirs_judged": 0,
+   "basis": "mine context=370 (IF holds in 1), theirs applicable=1 (K K01); review: archive",
+   "flag": "review (one-sided): my context matches in 370 models, the colleague sweep finds it in only 1",
+   "core": true
+  },
+  "R02": {
+   "status": "active",
+   "mine_fires": 220,
+   "mine_context": 220,
+   "theirs_applicable": 335,
+   "theirs_judged": 335,
+   "basis": "mine context=220 (IF holds in 220), theirs applicable=335 (K K112)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R03": {
+   "status": "active",
+   "mine_fires": 347,
+   "mine_context": 364,
+   "theirs_applicable": 354,
+   "theirs_judged": 347,
+   "basis": "mine context=364 (IF holds in 347), theirs applicable=354 (K K07,K08)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R04": {
+   "status": "active",
+   "mine_fires": 332,
+   "mine_context": 364,
+   "theirs_applicable": 354,
+   "theirs_judged": 347,
+   "basis": "mine context=364 (IF holds in 332), theirs applicable=354 (K K09,K10,K20)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R05": {
+   "status": "active",
+   "mine_fires": 364,
+   "mine_context": 364,
+   "theirs_applicable": 354,
+   "theirs_judged": 354,
+   "basis": "mine context=364 (IF holds in 364), theirs applicable=354 (K K11)",
+   "flag": "review decision: keep — 扶手这个太细节了我感觉， 其他的可以保留要不扶手这个删掉。",
+   "core": true
+  },
+  "R06": {
+   "status": "active",
+   "mine_fires": 337,
+   "mine_context": 337,
+   "theirs_applicable": 337,
+   "theirs_judged": 322,
+   "basis": "mine context=337 (IF holds in 337), theirs applicable=337 (K K15)",
+   "flag": "review decision: keep",
+   "core": false
+  },
+  "R07": {
+   "status": "active",
+   "mine_fires": 369,
+   "mine_context": 369,
+   "theirs_applicable": 340,
+   "theirs_judged": 340,
+   "basis": "mine context=369 (IF holds in 369), theirs applicable=340 (K K23,K26)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R08": {
+   "status": "active",
+   "mine_fires": 200,
+   "mine_context": 200,
+   "theirs_applicable": 353,
+   "theirs_judged": 0,
+   "basis": "mine context=200 (IF holds in 200), theirs applicable=353 (K K59)",
+   "flag": "review decision: keep",
+   "core": false
+  },
+  "R09": {
+   "status": "active",
+   "mine_fires": 130,
+   "mine_context": 177,
+   "theirs_applicable": 225,
+   "theirs_judged": 156,
+   "basis": "mine context=177 (IF holds in 130), theirs applicable=225 (K K141,K113)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R10": {
+   "status": "active",
+   "mine_fires": 238,
+   "mine_context": 238,
+   "theirs_applicable": 221,
+   "theirs_judged": 0,
+   "basis": "mine context=238 (IF holds in 238), theirs applicable=221 (K K116)",
+   "flag": "review decision: keep — R10 的 THEN 改成\"工作房间从采光面起的进深不宜超过约 7 m；更深的部分无法靠天光\"，并把进深改为按窗所在墙的法线量；无窗的问题只留给 R38。你同意",
+   "core": true
+  },
+  "R11": {
+   "status": "active",
+   "mine_fires": 167,
+   "mine_context": 238,
+   "theirs_applicable": 260,
+   "theirs_judged": 154,
+   "basis": "mine context=238 (IF holds in 167), theirs applicable=260 (K K120,K119)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R12": {
+   "status": "active",
+   "mine_fires": 190,
+   "mine_context": 190,
+   "theirs_applicable": 201,
+   "theirs_judged": 0,
+   "basis": "mine context=190 (IF holds in 190), theirs applicable=201 (K K118)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R13": {
+   "status": "archived",
+   "mine_fires": 349,
+   "mine_context": 349,
+   "theirs_applicable": 0,
+   "theirs_judged": 0,
+   "basis": "mine context=349 (IF holds in 349), theirs applicable=0 (K K05); review: archive",
+   "flag": "review (one-sided): my context matches in 349 models, the colleague sweep finds it in only 0",
+   "core": false
+  },
+  "R14": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 238,
+   "theirs_applicable": null,
+   "theirs_judged": null,
+   "basis": "no K in the colleague scan; mine context=238; review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R15": {
+   "status": "archived",
+   "mine_fires": 234,
+   "mine_context": 234,
+   "theirs_applicable": 221,
+   "theirs_judged": 0,
+   "basis": "mine context=234 (IF holds in 234), theirs applicable=221 (K K133); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R16": {
+   "status": "archived",
+   "mine_fires": 238,
+   "mine_context": 238,
+   "theirs_applicable": 265,
+   "theirs_judged": 0,
+   "basis": "mine context=238 (IF holds in 238), theirs applicable=265 (K K131,K132,K115); review: archive",
+   "flag": "review decision: archive — 这个太细节了",
+   "core": true
+  },
+  "R17": {
+   "status": "archived",
+   "mine_fires": 172,
+   "mine_context": 172,
+   "theirs_applicable": 265,
+   "theirs_judged": 0,
+   "basis": "mine context=172 (IF holds in 172), theirs applicable=265 (K K116,K132); review: archive",
+   "flag": "review decision: archive — 这个也太细节了 感觉不是很好判断",
+   "core": true
+  },
+  "R18": {
+   "status": "active",
+   "mine_fires": 177,
+   "mine_context": 177,
+   "theirs_applicable": 225,
+   "theirs_judged": 156,
+   "basis": "mine context=177 (IF holds in 177), theirs applicable=225 (K K141,K113)",
+   "flag": "review decision: keep — 对 这个我感觉ok。 按我的理解这个是不是就是给的是每个房间用途的参考面积？ 如果是的话， 是不是可以拆成更细的规则 比如说一般什么区域涉及多大之类的",
+   "core": true
+  },
+  "R19": {
+   "status": "archived",
+   "mine_fires": 206,
+   "mine_context": 370,
+   "theirs_applicable": 14,
+   "theirs_judged": 0,
+   "basis": "mine context=370 (IF holds in 206), theirs applicable=14 (K K42); review: archive",
+   "flag": "review (one-sided): my context matches in 370 models, the colleague sweep finds it in only 14",
+   "core": true
+  },
+  "R20": {
+   "status": "archived",
+   "mine_fires": 369,
+   "mine_context": 369,
+   "theirs_applicable": 358,
+   "theirs_judged": 0,
+   "basis": "mine context=369 (IF holds in 369), theirs applicable=358 (K K70); review: archive",
+   "flag": "review decision: archive — 这个也pending一下 我感觉太细节了 有点不好说 ",
+   "core": true
+  },
+  "R21": {
+   "status": "active",
+   "mine_fires": 349,
+   "mine_context": 349,
+   "theirs_applicable": 353,
+   "theirs_judged": 0,
+   "basis": "mine context=349 (IF holds in 349), theirs applicable=353 (K K73)",
+   "flag": "review decision: keep — 这个挺好的 但是是不是基本所有的默认值都是满足的？",
+   "core": true
+  },
+  "R22": {
+   "status": "archived",
+   "mine_fires": 366,
+   "mine_context": 366,
+   "theirs_applicable": 92,
+   "theirs_judged": 0,
+   "basis": "mine context=366 (IF holds in 366), theirs applicable=92 (K K39); review: archive",
+   "flag": "review decision: archive — 这个pending一下 太细节了",
+   "core": true
+  },
+  "R23": {
+   "status": "active",
+   "mine_fires": 229,
+   "mine_context": 229,
+   "theirs_applicable": 321,
+   "theirs_judged": 253,
+   "basis": "mine context=229 (IF holds in 229), theirs applicable=321 (K K38,K134)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R24": {
+   "status": "active",
+   "mine_fires": 360,
+   "mine_context": 360,
+   "theirs_applicable": 152,
+   "theirs_judged": 0,
+   "basis": "mine context=360 (IF holds in 360), theirs applicable=152 (K K43)",
+   "flag": "review decision: keep — 我哦觉得最后一段可以不要 那个30min 自闭门可以不要了",
+   "core": true
+  },
+  "R25": {
+   "status": "active",
+   "mine_fires": 267,
+   "mine_context": 267,
+   "theirs_applicable": 354,
+   "theirs_judged": 354,
+   "basis": "mine context=267 (IF holds in 267), theirs applicable=354 (K K11,K09)",
+   "flag": "review decision: keep — 这个是不是有点和r03有点重？ 区别是什么？",
+   "core": true
+  },
+  "R26": {
+   "status": "archived",
+   "mine_fires": 232,
+   "mine_context": 232,
+   "theirs_applicable": 341,
+   "theirs_judged": 7,
+   "basis": "mine context=232 (IF holds in 232), theirs applicable=341 (K K13,K10); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R27": {
+   "status": "archived",
+   "mine_fires": 256,
+   "mine_context": 256,
+   "theirs_applicable": 0,
+   "theirs_judged": 0,
+   "basis": "mine context=256 (IF holds in 256), theirs applicable=0 (K K27); review: archive",
+   "flag": "review (one-sided): my context matches in 256 models, the colleague sweep finds it in only 0",
+   "core": true
+  },
+  "R28": {
+   "status": "archived",
+   "mine_fires": 77,
+   "mine_context": 77,
+   "theirs_applicable": 73,
+   "theirs_judged": 0,
+   "basis": "mine context=77 (IF holds in 77), theirs applicable=73 (K K30,K18)",
+   "flag": "",
+   "core": true
+  },
+  "R29": {
+   "status": "archived",
+   "mine_fires": 7,
+   "mine_context": 7,
+   "theirs_applicable": 7,
+   "theirs_judged": 0,
+   "basis": "mine context=7 (IF holds in 7), theirs applicable=7 (K K16)",
+   "flag": "",
+   "core": true
+  },
+  "R30": {
+   "status": "active",
+   "mine_fires": 157,
+   "mine_context": 310,
+   "theirs_applicable": 275,
+   "theirs_judged": 0,
+   "basis": "mine context=310 (IF holds in 157), theirs applicable=275 (K K127,K44)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R31": {
+   "status": "archived",
+   "mine_fires": 1,
+   "mine_context": 1,
+   "theirs_applicable": 80,
+   "theirs_judged": 0,
+   "basis": "mine context=1 (IF holds in 1), theirs applicable=80 (K K72); review: archive",
+   "flag": "review (one-sided): the colleague sweep finds it in 80 models, my context matches in only 1",
+   "core": true
+  },
+  "R32": {
+   "status": "archived",
+   "mine_fires": 189,
+   "mine_context": 189,
+   "theirs_applicable": 260,
+   "theirs_judged": 118,
+   "basis": "mine context=189 (IF holds in 189), theirs applicable=260 (K K120,K29); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R33": {
+   "status": "active",
+   "mine_fires": 63,
+   "mine_context": 238,
+   "theirs_applicable": 225,
+   "theirs_judged": 154,
+   "basis": "mine context=238 (IF holds in 63), theirs applicable=225 (K K119)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R34": {
+   "status": "active",
+   "mine_fires": 238,
+   "mine_context": 238,
+   "theirs_applicable": 225,
+   "theirs_judged": 225,
+   "basis": "mine context=238 (IF holds in 238), theirs applicable=225 (K K122)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R35": {
+   "status": "archived",
+   "mine_fires": 238,
+   "mine_context": 238,
+   "theirs_applicable": 221,
+   "theirs_judged": 0,
+   "basis": "mine context=238 (IF holds in 238), theirs applicable=221 (K K124,K118,K125); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R36": {
+   "status": "active",
+   "mine_fires": 80,
+   "mine_context": 80,
+   "theirs_applicable": 221,
+   "theirs_judged": 0,
+   "basis": "mine context=80 (IF holds in 80), theirs applicable=221 (K K117,K126)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R37": {
+   "status": "archived",
+   "mine_fires": 233,
+   "mine_context": 233,
+   "theirs_applicable": 149,
+   "theirs_judged": 0,
+   "basis": "mine context=233 (IF holds in 233), theirs applicable=149 (K K114,K140); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R38": {
+   "status": "archived",
+   "mine_fires": 235,
+   "mine_context": 259,
+   "theirs_applicable": 221,
+   "theirs_judged": 0,
+   "basis": "mine context=259 (IF holds in 235), theirs applicable=221 (K K48); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R39": {
+   "status": "active",
+   "mine_fires": 207,
+   "mine_context": 207,
+   "theirs_applicable": 316,
+   "theirs_judged": 0,
+   "basis": "mine context=207 (IF holds in 207), theirs applicable=316 (K K52,K53,K116)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R40": {
+   "status": "archived",
+   "mine_fires": 6,
+   "mine_context": 6,
+   "theirs_applicable": 7,
+   "theirs_judged": 7,
+   "basis": "mine context=6 (IF holds in 6), theirs applicable=7 (K K123,K143)",
+   "flag": "",
+   "core": true
+  },
+  "R41": {
+   "status": "archived",
+   "mine_fires": 20,
+   "mine_context": 20,
+   "theirs_applicable": 17,
+   "theirs_judged": 0,
+   "basis": "mine context=20 (IF holds in 20), theirs applicable=17 (K K145)",
+   "flag": "",
+   "core": true
+  },
+  "R42": {
+   "status": "active",
+   "mine_fires": 369,
+   "mine_context": 369,
+   "theirs_applicable": 340,
+   "theirs_judged": 340,
+   "basis": "mine context=369 (IF holds in 369), theirs applicable=340 (K K26,K23)",
+   "flag": "review decision: keep",
+   "core": false
+  },
+  "R43": {
+   "status": "active",
+   "mine_fires": 315,
+   "mine_context": 315,
+   "theirs_applicable": 319,
+   "theirs_judged": 319,
+   "basis": "mine context=315 (IF holds in 315), theirs applicable=319 (K K24,K41)",
+   "flag": "review decision: keep",
+   "core": false
+  },
+  "R44": {
+   "status": "active",
+   "mine_fires": 341,
+   "mine_context": 341,
+   "theirs_applicable": null,
+   "theirs_judged": null,
+   "basis": "no K in the colleague scan; mine context=341",
+   "flag": "review decision: keep",
+   "core": false
+  },
+  "R45": {
+   "status": "active",
+   "mine_fires": 288,
+   "mine_context": 288,
+   "theirs_applicable": 364,
+   "theirs_judged": 93,
+   "basis": "mine context=288 (IF holds in 288), theirs applicable=364 (K K63,K65)",
+   "flag": "review decision: keep",
+   "core": false
+  },
+  "R46": {
+   "status": "archived",
+   "mine_fires": 287,
+   "mine_context": 287,
+   "theirs_applicable": 345,
+   "theirs_judged": 0,
+   "basis": "mine context=287 (IF holds in 287), theirs applicable=345 (K K148,K147); review: archive",
+   "flag": "review decision: archive",
+   "core": false
+  },
+  "R47": {
+   "status": "active",
+   "mine_fires": 237,
+   "mine_context": 237,
+   "theirs_applicable": null,
+   "theirs_judged": null,
+   "basis": "no K in the colleague scan; mine context=237",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R48": {
+   "status": "active",
+   "mine_fires": 370,
+   "mine_context": 370,
+   "theirs_applicable": 0,
+   "theirs_judged": 0,
+   "basis": "mine context=370 (IF holds in 370), theirs applicable=0 (K K06)",
+   "flag": "review (one-sided): my context matches in 370 models, the colleague sweep finds it in only 0",
+   "core": false
+  },
+  "R49": {
+   "status": "active",
+   "mine_fires": 370,
+   "mine_context": 370,
+   "theirs_applicable": 0,
+   "theirs_judged": 0,
+   "basis": "mine context=370 (IF holds in 370), theirs applicable=0 (K K79)",
+   "flag": "review (one-sided): my context matches in 370 models, the colleague sweep finds it in only 0",
+   "core": false
+  },
+  "R50": {
+   "status": "active",
+   "mine_fires": 366,
+   "mine_context": 366,
+   "theirs_applicable": 0,
+   "theirs_judged": 0,
+   "basis": "mine context=366 (IF holds in 366), theirs applicable=0 (K K80)",
+   "flag": "review (one-sided): my context matches in 366 models, the colleague sweep finds it in only 0",
+   "core": false
+  },
+  "R51": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 97,
+   "theirs_applicable": 0,
+   "theirs_judged": 0,
+   "basis": "mine context=97 (IF holds in 0), theirs applicable=0 (K K92); review: archive",
+   "flag": "review (one-sided): my context matches in 97 models, the colleague sweep finds it in only 0",
+   "core": true
+  },
+  "R52": {
+   "status": "archived",
+   "mine_fires": 1,
+   "mine_context": 1,
+   "theirs_applicable": 1,
+   "theirs_judged": 0,
+   "basis": "mine context=1 (IF holds in 1), theirs applicable=1 (K K152)",
+   "flag": "",
+   "core": true
+  },
+  "R53": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 1,
+   "theirs_applicable": 1,
+   "theirs_judged": 0,
+   "basis": "mine context=1 (IF holds in 0), theirs applicable=1 (K K153)",
+   "flag": "",
+   "core": true
+  },
+  "R54": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 94,
+   "theirs_applicable": 20,
+   "theirs_judged": 0,
+   "basis": "mine context=94 (IF holds in 0), theirs applicable=20 (K K12); review: archive",
+   "flag": "review (one-sided): my context matches in 94 models, the colleague sweep finds it in only 20",
+   "core": true
+  },
+  "R55": {
+   "status": "active",
+   "mine_fires": 64,
+   "mine_context": 64,
+   "theirs_applicable": 20,
+   "theirs_judged": 0,
+   "basis": "mine context=64 (IF holds in 64), theirs applicable=20 (K K14); forced active by user: spiral stair as sole stair (64 / 20): user decision 2026-10-23 — core topic T01",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R56": {
+   "status": "active",
+   "mine_fires": 0,
+   "mine_context": 364,
+   "theirs_applicable": 354,
+   "theirs_judged": 354,
+   "basis": "mine context=364 (IF holds in 0), theirs applicable=354 (K K19)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R57": {
+   "status": "active",
+   "mine_fires": 250,
+   "mine_context": 250,
+   "theirs_applicable": 0,
+   "theirs_judged": 0,
+   "basis": "mine context=250 (IF holds in 250), theirs applicable=0 (K K32)",
+   "flag": "review (one-sided): my context matches in 250 models, the colleague sweep finds it in only 0",
+   "core": true
+  },
+  "R58": {
+   "status": "active",
+   "mine_fires": 44,
+   "mine_context": 97,
+   "theirs_applicable": 92,
+   "theirs_judged": 1,
+   "basis": "mine context=97 (IF holds in 44), theirs applicable=92 (K K83)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R59": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 72,
+   "theirs_applicable": 92,
+   "theirs_judged": 41,
+   "basis": "mine context=72 (IF holds in 0), theirs applicable=92 (K K91); review: archive",
+   "flag": "review (one-sided): the colleague sweep finds it in 92 models, my context matches in only 72",
+   "core": true
+  },
+  "R60": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 0,
+   "theirs_applicable": 0,
+   "theirs_judged": 0,
+   "basis": "mine context=0 (IF holds in 0), theirs applicable=0 (K K149)",
+   "flag": "",
+   "core": true
+  },
+  "R61": {
+   "status": "archived",
+   "mine_fires": 1,
+   "mine_context": 1,
+   "theirs_applicable": 1,
+   "theirs_judged": 0,
+   "basis": "mine context=1 (IF holds in 1), theirs applicable=1 (K K150)",
+   "flag": "",
+   "core": true
+  },
+  "R62": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 0,
+   "theirs_applicable": 1,
+   "theirs_judged": 0,
+   "basis": "mine context=0 (IF holds in 0), theirs applicable=1 (K K151)",
+   "flag": "",
+   "core": true
+  },
+  "R63": {
+   "status": "archived",
+   "mine_fires": 9,
+   "mine_context": 97,
+   "theirs_applicable": 72,
+   "theirs_judged": 0,
+   "basis": "mine context=97 (IF holds in 9), theirs applicable=72 (K K34); review: archive",
+   "flag": "review (one-sided): my context matches in 97 models, the colleague sweep finds it in only 72",
+   "core": true
+  },
+  "R64": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 0,
+   "theirs_applicable": 1,
+   "theirs_judged": 0,
+   "basis": "mine context=0 (IF holds in 0), theirs applicable=1 (K K45)",
+   "flag": "",
+   "core": true
+  },
+  "R65": {
+   "status": "active",
+   "mine_fires": 136,
+   "mine_context": 311,
+   "theirs_applicable": 275,
+   "theirs_judged": 0,
+   "basis": "mine context=311 (IF holds in 136), theirs applicable=275 (K K47)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R66": {
+   "status": "archived",
+   "mine_fires": 97,
+   "mine_context": 97,
+   "theirs_applicable": 92,
+   "theirs_judged": 0,
+   "basis": "mine context=97 (IF holds in 97), theirs applicable=92 (K K76,K77,K78); review: archive",
+   "flag": "review decision: archive",
+   "core": false
+  },
+  "R67": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 97,
+   "theirs_applicable": 92,
+   "theirs_judged": 0,
+   "basis": "mine context=97 (IF holds in 0), theirs applicable=92 (K K85); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R68": {
+   "status": "archived",
+   "mine_fires": 97,
+   "mine_context": 97,
+   "theirs_applicable": 92,
+   "theirs_judged": 92,
+   "basis": "mine context=97 (IF holds in 97), theirs applicable=92 (K K94,K103); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R69": {
+   "status": "archived",
+   "mine_fires": 97,
+   "mine_context": 97,
+   "theirs_applicable": 92,
+   "theirs_judged": 0,
+   "basis": "mine context=97 (IF holds in 97), theirs applicable=92 (K K107); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R70": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 10,
+   "theirs_applicable": 221,
+   "theirs_judged": 0,
+   "basis": "mine context=10 (IF holds in 0), theirs applicable=221 (K K135); review: archive",
+   "flag": "review (one-sided): the colleague sweep finds it in 221 models, my context matches in only 10",
+   "core": true
+  },
+  "R71": {
+   "status": "active",
+   "mine_fires": 256,
+   "mine_context": 256,
+   "theirs_applicable": 0,
+   "theirs_judged": 0,
+   "basis": "mine context=256 (IF holds in 256), theirs applicable=0 (K K28)",
+   "flag": "review (one-sided): my context matches in 256 models, the colleague sweep finds it in only 0",
+   "core": true
+  },
+  "R72": {
+   "status": "active",
+   "mine_fires": 150,
+   "mine_context": 182,
+   "theirs_applicable": 0,
+   "theirs_judged": 0,
+   "basis": "mine context=182 (IF holds in 150), theirs applicable=0 (K K33)",
+   "flag": "review (one-sided): my context matches in 182 models, the colleague sweep finds it in only 0",
+   "core": true
+  },
+  "R73": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 74,
+   "theirs_applicable": 50,
+   "theirs_judged": 0,
+   "basis": "mine context=74 (IF holds in 0), theirs applicable=50 (K K35)",
+   "flag": "",
+   "core": true
+  },
+  "R74": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 72,
+   "theirs_applicable": 64,
+   "theirs_judged": 0,
+   "basis": "mine context=72 (IF holds in 0), theirs applicable=64 (K K36)",
+   "flag": "",
+   "core": true
+  },
+  "R75": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 91,
+   "theirs_applicable": 92,
+   "theirs_judged": 0,
+   "basis": "mine context=91 (IF holds in 0), theirs applicable=92 (K K37); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R76": {
+   "status": "archived",
+   "mine_fires": 81,
+   "mine_context": 81,
+   "theirs_applicable": 326,
+   "theirs_judged": 326,
+   "basis": "mine context=81 (IF holds in 81), theirs applicable=326 (K K74); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R77": {
+   "status": "archived",
+   "mine_fires": 15,
+   "mine_context": 15,
+   "theirs_applicable": 92,
+   "theirs_judged": 8,
+   "basis": "mine context=15 (IF holds in 15), theirs applicable=92 (K K81,K82); review: archive",
+   "flag": "review (one-sided): the colleague sweep finds it in 92 models, my context matches in only 15",
+   "core": true
+  },
+  "R78": {
+   "status": "archived",
+   "mine_fires": 55,
+   "mine_context": 55,
+   "theirs_applicable": 69,
+   "theirs_judged": 62,
+   "basis": "mine context=55 (IF holds in 55), theirs applicable=69 (K K87); forced active by user: hall → kitchen / WC / stair adjacency (55 / 69): user decision 2026-10-23 — core topic T10; review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R79": {
+   "status": "archived",
+   "mine_fires": 70,
+   "mine_context": 70,
+   "theirs_applicable": 29,
+   "theirs_judged": 0,
+   "basis": "mine context=70 (IF holds in 70), theirs applicable=29 (K K89); forced active by user: internal corridor width 1.00 (70 / 29): user decision 2026-10-23 — core topic T10; review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R80": {
+   "status": "archived",
+   "mine_fires": 97,
+   "mine_context": 97,
+   "theirs_applicable": 40,
+   "theirs_judged": 18,
+   "basis": "mine context=97 (IF holds in 97), theirs applicable=40 (K K90); review: archive",
+   "flag": "review (one-sided): my context matches in 97 models, the colleague sweep finds it in only 40",
+   "core": true
+  },
+  "R81": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 80,
+   "theirs_applicable": 69,
+   "theirs_judged": 0,
+   "basis": "mine context=80 (IF holds in 0), theirs applicable=69 (K K93); review: archive",
+   "flag": "review (one-sided): my context matches in 80 models, the colleague sweep finds it in only 69",
+   "core": true
+  },
+  "R82": {
+   "status": "archived",
+   "mine_fires": 267,
+   "mine_context": 267,
+   "theirs_applicable": 274,
+   "theirs_judged": 0,
+   "basis": "mine context=267 (IF holds in 267), theirs applicable=274 (K K109); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R83": {
+   "status": "active",
+   "mine_fires": 201,
+   "mine_context": 201,
+   "theirs_applicable": 10,
+   "theirs_judged": 0,
+   "basis": "mine context=201 (IF holds in 201), theirs applicable=10 (K K121)",
+   "flag": "review (one-sided): my context matches in 201 models, the colleague sweep finds it in only 10",
+   "core": true
+  },
+  "R84": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 24,
+   "theirs_applicable": 182,
+   "theirs_judged": 0,
+   "basis": "mine context=24 (IF holds in 0), theirs applicable=182 (K K128); review: archive",
+   "flag": "review (one-sided): the colleague sweep finds it in 182 models, my context matches in only 24",
+   "core": true
+  },
+  "R85": {
+   "status": "archived",
+   "mine_fires": 10,
+   "mine_context": 10,
+   "theirs_applicable": 201,
+   "theirs_judged": 157,
+   "basis": "mine context=10 (IF holds in 10), theirs applicable=201 (K K129); review: archive",
+   "flag": "review (one-sided): the colleague sweep finds it in 201 models, my context matches in only 10",
+   "core": true
+  },
+  "R86": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 6,
+   "theirs_applicable": 10,
+   "theirs_judged": 0,
+   "basis": "mine context=6 (IF holds in 0), theirs applicable=10 (K K130)",
+   "flag": "",
+   "core": true
+  },
+  "R87": {
+   "status": "active",
+   "mine_fires": 218,
+   "mine_context": 218,
+   "theirs_applicable": 291,
+   "theirs_judged": 0,
+   "basis": "mine context=218 (IF holds in 218), theirs applicable=291 (K K136)",
+   "flag": "review decision: keep",
+   "core": true
+  },
+  "R88": {
+   "status": "archived",
+   "mine_fires": 36,
+   "mine_context": 36,
+   "theirs_applicable": 29,
+   "theirs_judged": 24,
+   "basis": "mine context=36 (IF holds in 36), theirs applicable=29 (K K137)",
+   "flag": "",
+   "core": true
+  },
+  "R89": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 226,
+   "theirs_applicable": 149,
+   "theirs_judged": 0,
+   "basis": "mine context=226 (IF holds in 0), theirs applicable=149 (K K142); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R90": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 0,
+   "theirs_applicable": 0,
+   "theirs_judged": 0,
+   "basis": "mine context=0 (IF holds in 0), theirs applicable=0 (K K144)",
+   "flag": "",
+   "core": true
+  },
+  "R91": {
+   "status": "archived",
+   "mine_fires": 97,
+   "mine_context": 97,
+   "theirs_applicable": 69,
+   "theirs_judged": 0,
+   "basis": "mine context=97 (IF holds in 97), theirs applicable=69 (K K22); review: archive",
+   "flag": "review (one-sided): my context matches in 97 models, the colleague sweep finds it in only 69",
+   "core": true
+  },
+  "R92": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 25,
+   "theirs_applicable": 24,
+   "theirs_judged": 24,
+   "basis": "mine context=25 (IF holds in 0), theirs applicable=24 (K K25)",
+   "flag": "",
+   "core": true
+  },
+  "R93": {
+   "status": "archived",
+   "mine_fires": 12,
+   "mine_context": 337,
+   "theirs_applicable": 75,
+   "theirs_judged": 0,
+   "basis": "mine context=337 (IF holds in 12), theirs applicable=75 (K K40); review: archive",
+   "flag": "review (one-sided): my context matches in 337 models, the colleague sweep finds it in only 75",
+   "core": true
+  },
+  "R94": {
+   "status": "archived",
+   "mine_fires": 1,
+   "mine_context": 1,
+   "theirs_applicable": 1,
+   "theirs_judged": 0,
+   "basis": "mine context=1 (IF holds in 1), theirs applicable=1 (K K46)",
+   "flag": "",
+   "core": true
+  },
+  "R95": {
+   "status": "active",
+   "mine_fires": 64,
+   "mine_context": 64,
+   "theirs_applicable": 353,
+   "theirs_judged": 0,
+   "basis": "mine context=64 (IF holds in 64), theirs applicable=353 (K K57)",
+   "flag": "review (one-sided): the colleague sweep finds it in 353 models, my context matches in only 64",
+   "core": false
+  },
+  "R96": {
+   "status": "active",
+   "mine_fires": 33,
+   "mine_context": 33,
+   "theirs_applicable": 353,
+   "theirs_judged": 0,
+   "basis": "mine context=33 (IF holds in 33), theirs applicable=353 (K K58)",
+   "flag": "review (one-sided): the colleague sweep finds it in 353 models, my context matches in only 33",
+   "core": false
+  },
+  "R97": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 0,
+   "theirs_applicable": 1,
+   "theirs_judged": 0,
+   "basis": "mine context=0 (IF holds in 0), theirs applicable=1 (K K60)",
+   "flag": "",
+   "core": false
+  },
+  "R98": {
+   "status": "archived",
+   "mine_fires": 349,
+   "mine_context": 349,
+   "theirs_applicable": 364,
+   "theirs_judged": 0,
+   "basis": "mine context=349 (IF holds in 349), theirs applicable=364 (K K61); review: archive",
+   "flag": "review decision: archive",
+   "core": false
+  },
+  "R99": {
+   "status": "archived",
+   "mine_fires": 15,
+   "mine_context": 15,
+   "theirs_applicable": 268,
+   "theirs_judged": 0,
+   "basis": "mine context=15 (IF holds in 15), theirs applicable=268 (K K66); review: archive",
+   "flag": "review (one-sided): the colleague sweep finds it in 268 models, my context matches in only 15",
+   "core": false
+  },
+  "R100": {
+   "status": "archived",
+   "mine_fires": 119,
+   "mine_context": 119,
+   "theirs_applicable": 201,
+   "theirs_judged": 0,
+   "basis": "mine context=119 (IF holds in 119), theirs applicable=201 (K K67); review: archive",
+   "flag": "review decision: archive",
+   "core": false
+  },
+  "R101": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 0,
+   "theirs_applicable": 80,
+   "theirs_judged": 0,
+   "basis": "mine context=0 (IF holds in 0), theirs applicable=80 (K K68); review: archive",
+   "flag": "review (one-sided): the colleague sweep finds it in 80 models, my context matches in only 0",
+   "core": false
+  },
+  "R102": {
+   "status": "archived",
+   "mine_fires": 370,
+   "mine_context": 370,
+   "theirs_applicable": 265,
+   "theirs_judged": 0,
+   "basis": "mine context=370 (IF holds in 370), theirs applicable=265 (K K69); review: archive",
+   "flag": "review decision: archive",
+   "core": true
+  },
+  "R103": {
+   "status": "archived",
+   "mine_fires": 0,
+   "mine_context": 1,
+   "theirs_applicable": 1,
+   "theirs_judged": 0,
+   "basis": "mine context=1 (IF holds in 0), theirs applicable=1 (K K154)",
+   "flag": "",
+   "core": true
+  }
+ }
+}

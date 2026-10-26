@@ -1,0 +1,12 @@
+[
+  {"topic": "楼梯、坡道、电梯与护栏",
+   "title": "休息平台宽度不小于梯段宽度",
+   "summary": "楼梯休息平台的宽度（沿行进方向的进深）应不小于梯段宽度。",
+   "prefixes": ["Landing width"],
+   "lod": "300", "priority": 3, "decision": "交通核"},
+  {"topic": "居室标准与面积计算",
+   "title": "DIN 277 建筑体积（总体积与净体积）",
+   "summary": "按 DIN 277，总建筑体积为各层楼面面积乘以相应高度（自本层地面面层顶量至上层地面面层顶），净建筑体积为净面积乘以相应的室内净高。",
+   "prefixes": ["The gross built volume is", "The net built volume is"],
+   "lod": "200", "priority": 2}
+]

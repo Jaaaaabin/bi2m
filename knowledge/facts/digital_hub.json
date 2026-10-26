@@ -1,0 +1,2832 @@
+{
+ "project": "digital_hub",
+ "schema": "IFC4",
+ "length_unit_scale": 1.0,
+ "storeys": [
+  [
+   "B01_OKRD",
+   -3.37
+  ],
+  [
+   "E00_OKRD",
+   -0.15
+  ],
+  [
+   "E01_OKRD",
+   3.75
+  ]
+ ],
+ "spaces": [
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQr",
+   "name": "1-19",
+   "longname": "Treppenhaus West - EG",
+   "storey": "E00_OKRD",
+   "area": 19.621,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.9,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    5.35,
+    3.9
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQo",
+   "name": "301",
+   "longname": "Schacht West 1",
+   "storey": "E00_OKRD",
+   "area": 3.991,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 7.77,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.55,
+    2.58,
+    7.77
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQm",
+   "name": "302",
+   "longname": "Schacht West 2",
+   "storey": "E00_OKRD",
+   "area": 4.5,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 7.77,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.75,
+    1.2,
+    7.77
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQn",
+   "name": "1-20",
+   "longname": "Fluchtflur West",
+   "storey": "E00_OKRD",
+   "area": 7.931,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    1.17,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQE",
+   "name": "1-17",
+   "longname": "Treppenhaus Ost - EG",
+   "storey": "E00_OKRD",
+   "area": 19.621,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.9,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    5.35,
+    3.9
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQF",
+   "name": "402",
+   "longname": "Schacht Ost 2",
+   "storey": "E00_OKRD",
+   "area": 4.5,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 7.77,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.75,
+    1.2,
+    7.77
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQC",
+   "name": "400",
+   "longname": "Aufzug Ost",
+   "storey": "E00_OKRD",
+   "area": 5.15,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 10.77,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    2.0,
+    2.58,
+    10.77
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQD",
+   "name": "401",
+   "longname": "Schacht Ost 1",
+   "storey": "E00_OKRD",
+   "area": 3.991,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 7.77,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.55,
+    2.58,
+    7.77
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQA",
+   "name": "1-18",
+   "longname": "Fluchtflur Ost",
+   "storey": "E00_OKRD",
+   "area": 7.931,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    1.18,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQB",
+   "name": "1-4",
+   "longname": "Gruppenbüro 1",
+   "storey": "E00_OKRD",
+   "area": 36.907,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.8,
+    5.43,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQ8",
+   "name": "1-5",
+   "longname": "Gruppenbüro 2",
+   "storey": "E00_OKRD",
+   "area": 37.178,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.85,
+    5.43,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQ9",
+   "name": "1-6",
+   "longname": "Gruppenbüro 3",
+   "storey": "E00_OKRD",
+   "area": 37.178,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.85,
+    5.43,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQ6",
+   "name": "1-7",
+   "longname": "Open Workspace EG",
+   "storey": "E00_OKRD",
+   "area": 113.163,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    20.85,
+    5.43,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQ7",
+   "name": "1-8",
+   "longname": "Gruppenbüro 4",
+   "storey": "E00_OKRD",
+   "area": 37.178,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.85,
+    5.43,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQ4",
+   "name": "1-10",
+   "longname": "Gruppenbüro 6",
+   "storey": "E00_OKRD",
+   "area": 36.907,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.8,
+    5.43,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQ5",
+   "name": "1-9",
+   "longname": "Gruppenbüro 5",
+   "storey": "E00_OKRD",
+   "area": 37.178,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.85,
+    5.43,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQ2",
+   "name": "1-11",
+   "longname": "VR/AR LAB",
+   "storey": "E00_OKRD",
+   "area": 74.081,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    10.98,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQ3",
+   "name": "1-12",
+   "longname": "Veranstaltungsraum",
+   "storey": "E00_OKRD",
+   "area": 76.485,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    13.9,
+    5.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQ0",
+   "name": "1-2",
+   "longname": "Cafeteria",
+   "storey": "E00_OKRD",
+   "area": 114.452,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    20.8,
+    5.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQ1",
+   "name": "1-3",
+   "longname": "Küche",
+   "storey": "E00_OKRD",
+   "area": 35.927,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    5.32,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQU",
+   "name": "1-1",
+   "longname": "Eingangsbereich / Flur",
+   "storey": "E00_OKRD",
+   "area": 383.608,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.75,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    62.75,
+    13.9,
+    3.75
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQV",
+   "name": "1-15",
+   "longname": "WC Damen West - EG",
+   "storey": "E00_OKRD",
+   "area": 14.201,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    5.43,
+    2.7,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQS",
+   "name": "1-16",
+   "longname": "WC Herren West - EG",
+   "storey": "E00_OKRD",
+   "area": 13.021,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    5.43,
+    2.45,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQT",
+   "name": "14",
+   "longname": "WC Herren Ost - EG",
+   "storey": "E00_OKRD",
+   "area": 12.959,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    5.4,
+    2.45,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DCde23Rb8uBrhrJgjcLQQ",
+   "name": "13",
+   "longname": "WC Damen Ost - EG",
+   "storey": "E00_OKRD",
+   "area": 14.134,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    5.4,
+    2.7,
+    3.5
+   ]
+  },
+  {
+   "gid": "1aFRCtje92oh3_jKdNxTMP",
+   "name": "0-12",
+   "longname": "Treppenhaus West - UG",
+   "storey": "B01_OKRD",
+   "area": 19.79,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.22,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    5.38,
+    3.22
+   ]
+  },
+  {
+   "gid": "1aFRCtje92oh3_jKdNxTMQ",
+   "name": "0-10",
+   "longname": "RLT-Raum",
+   "storey": "B01_OKRD",
+   "area": 206.371,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.0,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    42.75,
+    5.38,
+    3.0
+   ]
+  },
+  {
+   "gid": "1aFRCtje92oh3_jKdNxTMR",
+   "name": "0-11",
+   "longname": "Treppenhaus Ost - UG",
+   "storey": "B01_OKRD",
+   "area": 19.79,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.22,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    5.38,
+    3.22
+   ]
+  },
+  {
+   "gid": "1aFRCtje92oh3_jKdNxTMS",
+   "name": "0-3",
+   "longname": "Hausanschluss",
+   "storey": "B01_OKRD",
+   "area": 26.494,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.0,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    3.93,
+    2.9
+   ]
+  },
+  {
+   "gid": "1aFRCtje92oh3_jKdNxTMT",
+   "name": "0-4",
+   "longname": "Wasser-/Gasverteilung",
+   "storey": "B01_OKRD",
+   "area": 26.494,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.0,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    3.93,
+    3.0
+   ]
+  },
+  {
+   "gid": "1aFRCtje92oh3_jKdNxTMU",
+   "name": "0-5",
+   "longname": "Heizzentrale",
+   "storey": "B01_OKRD",
+   "area": 53.969,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.0,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    13.75,
+    3.93,
+    3.0
+   ]
+  },
+  {
+   "gid": "1aFRCtje92oh3_jKdNxTMV",
+   "name": "0-6",
+   "longname": "NSHV",
+   "storey": "B01_OKRD",
+   "area": 26.494,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.0,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    3.93,
+    3.0
+   ]
+  },
+  {
+   "gid": "1aFRCtje92oh3_jKdNxTM0",
+   "name": "0-8",
+   "longname": "Lager2",
+   "storey": "B01_OKRD",
+   "area": 26.494,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.0,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    3.93,
+    3.0
+   ]
+  },
+  {
+   "gid": "1aFRCtje92oh3_jKdNxTM1",
+   "name": "0-7",
+   "longname": "Lager 1",
+   "storey": "B01_OKRD",
+   "area": 26.494,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.0,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    3.93,
+    3.0
+   ]
+  },
+  {
+   "gid": "1aFRCtje92oh3_jKdNxTM2",
+   "name": "0-2",
+   "longname": "Putzmittel",
+   "storey": "B01_OKRD",
+   "area": 10.335,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.0,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.98,
+    2.6,
+    3.0
+   ]
+  },
+  {
+   "gid": "1aFRCtje92oh3_jKdNxTM3",
+   "name": "0-1",
+   "longname": "Flur - UG",
+   "storey": "B01_OKRD",
+   "area": 105.04,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.0,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    40.4,
+    2.6,
+    3.0
+   ]
+  },
+  {
+   "gid": "1aFRCtje92oh3_jKdNxTM4",
+   "name": "0-9",
+   "longname": "BMZ",
+   "storey": "B01_OKRD",
+   "area": 10.335,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.0,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.98,
+    2.6,
+    3.0
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7Wjo",
+   "name": "2-26",
+   "longname": "Treppenhaus Ost - OG",
+   "storey": "E01_OKRD",
+   "area": 19.621,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    5.35,
+    3.65
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7Wjk",
+   "name": "2-24",
+   "longname": "WC Herren Ost - OG",
+   "storey": "E01_OKRD",
+   "area": 9.812,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    5.4,
+    2.05,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7Wjj",
+   "name": "2-23",
+   "longname": "WC Damen Ost - OG",
+   "storey": "E01_OKRD",
+   "area": 9.812,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    5.4,
+    2.05,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7Wji",
+   "name": "2-2",
+   "longname": "Konferenzraum 2",
+   "storey": "E01_OKRD",
+   "area": 21.317,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    5.4,
+    3.95,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7Wjh",
+   "name": "2-20",
+   "longname": "Gruppenbüro 16",
+   "storey": "E01_OKRD",
+   "area": 37.417,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.8,
+    5.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7Wjg",
+   "name": "2-19",
+   "longname": "Gruppenbüro 15",
+   "storey": "E01_OKRD",
+   "area": 37.692,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.85,
+    5.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7Wjf",
+   "name": "2-18",
+   "longname": "Gruppenbüro 14",
+   "storey": "E01_OKRD",
+   "area": 37.692,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.85,
+    5.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7Wje",
+   "name": "2-17",
+   "longname": "Seminarraum Groß - teilbar",
+   "storey": "E01_OKRD",
+   "area": 76.21,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    13.85,
+    5.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7Wjd",
+   "name": "2-16",
+   "longname": "Seminarraum",
+   "storey": "E01_OKRD",
+   "area": 37.692,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.85,
+    5.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7Wjc",
+   "name": "2-13",
+   "longname": "Gruppenbüro 12",
+   "storey": "E01_OKRD",
+   "area": 37.479,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.81,
+    5.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7Wjb",
+   "name": "2-14",
+   "longname": "Gruppenbüro 13",
+   "storey": "E01_OKRD",
+   "area": 37.63,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.84,
+    5.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7Wja",
+   "name": "2-10",
+   "longname": "Gruppenbüro 11",
+   "storey": "E01_OKRD",
+   "area": 36.72,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.8,
+    5.4,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjZ",
+   "name": "2-9",
+   "longname": "Gruppenbüro 10",
+   "storey": "E01_OKRD",
+   "area": 36.99,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.85,
+    5.4,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjY",
+   "name": "2-8",
+   "longname": "Gruppenbüro 9",
+   "storey": "E01_OKRD",
+   "area": 36.99,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.85,
+    5.4,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjX",
+   "name": "2-7",
+   "longname": "Open Workspace 2",
+   "storey": "E01_OKRD",
+   "area": 112.59,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    20.85,
+    5.4,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjW",
+   "name": "2-3",
+   "longname": "Konferenzraum 1",
+   "storey": "E01_OKRD",
+   "area": 21.87,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    5.4,
+    4.05,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjV",
+   "name": "2-5",
+   "longname": "Gruppenbüro 8",
+   "storey": "E01_OKRD",
+   "area": 36.99,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.85,
+    5.4,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjU",
+   "name": "2-4",
+   "longname": "Gruppenbüro 7",
+   "storey": "E01_OKRD",
+   "area": 36.72,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.8,
+    5.4,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjT",
+   "name": "2-12",
+   "longname": "Konferenzraum 4",
+   "storey": "E01_OKRD",
+   "area": 21.317,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    5.4,
+    3.95,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjS",
+   "name": "2-11",
+   "longname": "Konferenzraum 3",
+   "storey": "E01_OKRD",
+   "area": 21.87,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    5.4,
+    4.05,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjR",
+   "name": "2-6",
+   "longname": "Offene Lounge 1",
+   "storey": "E01_OKRD",
+   "area": 38.018,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.85,
+    5.55,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjQ",
+   "name": "2-1",
+   "longname": "Flur - OG",
+   "storey": "E01_OKRD",
+   "area": 286.653,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 4.4,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    51.65,
+    8.15,
+    4.4
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjP",
+   "name": "2-15",
+   "longname": "Offene Lounge 2",
+   "storey": "E01_OKRD",
+   "area": 38.72,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.85,
+    5.65,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjO",
+   "name": "2-25",
+   "longname": "Treppenhaus West - OG",
+   "storey": "E01_OKRD",
+   "area": 19.621,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    6.75,
+    5.35,
+    3.65
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjK",
+   "name": "2-21",
+   "longname": "WC Damen West - OG",
+   "storey": "E01_OKRD",
+   "area": 9.812,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    5.4,
+    2.05,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WjJ",
+   "name": "2-22",
+   "longname": "WC Herren West OG",
+   "storey": "E01_OKRD",
+   "area": 9.821,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.65,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    5.4,
+    2.05,
+    3.5
+   ]
+  },
+  {
+   "gid": "3DbdJyICv8GP1HEYzu7WlY",
+   "name": "300",
+   "longname": "Aufzug West",
+   "storey": "E00_OKRD",
+   "area": 5.15,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 10.77,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    2.0,
+    2.58,
+    10.77
+   ]
+  }
+ ],
+ "doors": [
+  {
+   "gid": "0YVU7tDBX86u6UVVsSmdwk",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250:2421088",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 2.27,
+   "height": 0.95,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0YVU7tDBX86u6UVVsSmdwl",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250:2421089",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.95,
+   "height": 2.27,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Treppenhaus West - EG"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0YVU7tDBX86u6UVVsSmdsz",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250:2421363",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.95,
+   "height": 2.27,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Fluchtflur West"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3LF03GdXv2GhSTK1xTZzXE",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250:2423930",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 2.27,
+   "height": 0.95,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3LF03GdXv2GhSTK1xTZzXF",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250:2423931",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.95,
+   "height": 2.27,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Treppenhaus Ost - EG"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3LF03GdXv2GhSTK1xTZzYt",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250:2423939",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.95,
+   "height": 2.27,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Fluchtflur Ost"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFLAS$",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250:2426178",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 2.27,
+   "height": 0.95,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFLASv",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250:2426180",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - ML - 1010 x 2250",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 2.27,
+   "height": 0.95,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFLBtR",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2432934",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "B01_OKRD",
+   "spaces": [
+    "Flur - UG",
+    "RLT-Raum",
+    "Treppenhaus West - UG"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFLBtN",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2432938",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "B01_OKRD",
+   "spaces": [
+    "Flur - UG",
+    "RLT-Raum",
+    "Treppenhaus Ost - UG"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFLBss",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2432971",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "B01_OKRD",
+   "spaces": [
+    "Flur - UG",
+    "RLT-Raum"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFL8Do",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2433295",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "B01_OKRD",
+   "spaces": [
+    "Flur - UG",
+    "RLT-Raum"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFL8OS",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2434145",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "B01_OKRD",
+   "spaces": [
+    "Flur - UG",
+    "Wasser-/Gasverteilung"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFL8Tj",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2434320",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "B01_OKRD",
+   "spaces": [
+    "Flur - UG",
+    "Heizzentrale"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFL8TR",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2434342",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "B01_OKRD",
+   "spaces": [
+    "Flur - UG",
+    "NSHV"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFL8Ua",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2434521",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "B01_OKRD",
+   "spaces": [
+    "Flur - UG",
+    "Lager2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFL8U8",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2434549",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "B01_OKRD",
+   "spaces": [
+    "Flur - UG",
+    "Hausanschluss"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFL8H6",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2434619",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "B01_OKRD",
+   "spaces": [
+    "Flur - UG",
+    "RLT-Raum"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFL8Z2",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2435775",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "B01_OKRD",
+   "spaces": [
+    "Flur - UG",
+    "Putzmittel"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3LJODRGPbDdfXHXShFL8bJ",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2435886",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "B01_OKRD",
+   "spaces": [
+    "BMZ",
+    "Flur - UG"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3A8hY1UoD7JhnLeZeDyU3l",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2439813",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "B01_OKRD",
+   "spaces": [
+    "Flur - UG",
+    "Lager 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHOvk",
+   "name": "TU Fassade - 1-flg-Drehflügel:GG - Türe 10 mm:2543322",
+   "type": "TU Fassade - 1-flg-Drehflügel:GG - Türe 10 mm",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.985,
+   "height": 1.985,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHO$q",
+   "name": "TU Fassade - 1-flg-Drehflügel:GG - Türe 10 mm:2543424",
+   "type": "TU Fassade - 1-flg-Drehflügel:GG - Türe 10 mm",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.985,
+   "height": 1.985,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFYf$",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2549490",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Gruppenbüro 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFYku",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2549557",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Gruppenbüro 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFYlU",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2549587",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Gruppenbüro 3"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFYlo",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2549631",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Open Workspace EG"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFYJv",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2549876",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Open Workspace EG"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFYNK",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2550105",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Gruppenbüro 4"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFYK6",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2550155",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Gruppenbüro 5"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFYLQ",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2550231",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Gruppenbüro 6"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFYQ4",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2550281",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "VR/AR LAB"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFYRK",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2550361",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Veranstaltungsraum"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFYOs",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2550459",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Veranstaltungsraum"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFYPu",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2550517",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "Küche"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFYV5",
+   "name": "TU DF 2 - Rahmenstock flächenbündig:ML - 1635 x 2135:2550600",
+   "type": "TU DF 2 - Rahmenstock flächenbündig:ML - 1635 x 2135",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.635,
+   "height": 2.135,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Cafeteria",
+    "Eingangsbereich / Flur",
+    "Küche"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFZdK",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553177",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Konferenzraum 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFZdo",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553215",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Konferenzraum 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFZay",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553265",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Gruppenbüro 16"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFZbq",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553337",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Gruppenbüro 15"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFZgm",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553405",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Gruppenbüro 7"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFZhc",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553451",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Gruppenbüro 8"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFZeI",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553503",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Gruppenbüro 14"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFZf8",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553541",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Seminarraum Groß - teilbar"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFZkk",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553635",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Seminarraum Groß - teilbar"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "03fYK2KZb9bQXMSPptFZlI",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553695",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Open Workspace 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1oTOc$LbLC8Ob8HP$$4qvE",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553817",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Open Workspace 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1oTOc$LbLC8Ob8HP$$4q6s",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553889",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Gruppenbüro 9"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1oTOc$LbLC8Ob8HP$$4q7Q",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553933",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Gruppenbüro 10"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1oTOc$LbLC8Ob8HP$$4q7y",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2553963",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Gruppenbüro 11"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1oTOc$LbLC8Ob8HP$$4q2x",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2554156",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Seminarraum"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1oTOc$LbLC8Ob8HP$$4q33",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2554196",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Gruppenbüro 13"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1oTOc$LbLC8Ob8HP$$4q0L",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2554242",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Gruppenbüro 12"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1oTOc$LbLC8Ob8HP$$4q0n",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2554278",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Konferenzraum 3"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1oTOc$LbLC8Ob8HP$$4q13",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000:2554324",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.045,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "Konferenzraum 4"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "279opIq2rEtREtELGBVxHq",
+   "name": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000:2699597",
+   "type": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.87,
+   "height": 2.035,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "WC Damen West - EG"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "279opIq2rEtREtELGBVxHB",
+   "name": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000:2699634",
+   "type": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.87,
+   "height": 2.035,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "WC Herren West - EG"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "279opIq2rEtREtELGBVxTT",
+   "name": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000:2699876",
+   "type": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.87,
+   "height": 2.035,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "WC Herren Ost - EG"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "279opIq2rEtREtELGBVxUT",
+   "name": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000:2699940",
+   "type": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.87,
+   "height": 2.035,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Eingangsbereich / Flur",
+    "WC Damen Ost - EG"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "279opIq2rEtREtELGBVxCY",
+   "name": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000:2700827",
+   "type": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.87,
+   "height": 2.035,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "WC Damen West - OG"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "279opIq2rEtREtELGBVxDe",
+   "name": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000:2700881",
+   "type": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.87,
+   "height": 2.035,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "WC Herren West OG"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "279opIq2rEtREtELGBVxB4",
+   "name": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000:2701309",
+   "type": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.87,
+   "height": 2.035,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "WC Damen Ost - OG"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "279opIq2rEtREtELGBVxqA",
+   "name": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000:2701363",
+   "type": "TU DF 1 - Stahl-Eckzarge Falztüre:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.87,
+   "height": 2.035,
+   "storey": "E01_OKRD",
+   "spaces": [
+    "Flur - OG",
+    "WC Herren Ost - OG"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "11eI7IJI9EJgsn80j11Erx",
+   "name": "TU DF 2 - Rahmenstock flächenbündig:ML - 1635 x 2135:2749010",
+   "type": "TU DF 2 - Rahmenstock flächenbündig:ML - 1635 x 2135",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.635,
+   "height": 2.135,
+   "storey": "E00_OKRD",
+   "spaces": [
+    "Cafeteria",
+    "Eingangsbereich / Flur"
+   ],
+   "fire": null,
+   "external": false
+  }
+ ],
+ "windows": [
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$W$",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2529359",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$eR",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2529899",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$jj",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530077",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$iF",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530175",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$kR",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530283",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$mb",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530389",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$pz",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530445",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$pD",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530493",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$rx",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530571",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$xv",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530953",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$xw",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530954",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$xx",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530955",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$xy",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530956",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$xz",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530957",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$x_",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530958",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$x$",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530959",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$xW",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530960",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYaw$xX",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2530961",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "03iwAedpj2TfaeVhYawzF9",
+   "name": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500:2536377",
+   "type": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500",
+   "width": 4.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP24",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543664",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Eingangsbereich / Flur"
+   ]
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP25",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543665",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Eingangsbereich / Flur"
+   ]
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP26",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543666",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Eingangsbereich / Flur"
+   ]
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP20",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543668",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Eingangsbereich / Flur"
+   ]
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP21",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543669",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Eingangsbereich / Flur"
+   ]
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP22",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543670",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Eingangsbereich / Flur"
+   ]
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP23",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543671",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Eingangsbereich / Flur"
+   ]
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP2C",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543672",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Eingangsbereich / Flur"
+   ]
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP2D",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543673",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP2E",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543674",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP2F",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543675",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP28",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543676",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP29",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543677",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP2B",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543679",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP3q",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543680",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "0ehNcYPbH3JQicvZQLHP3r",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2543681",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "3uAcb5cYn8nfPdN0Qi4UXK",
+   "name": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500:2544252",
+   "type": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500",
+   "width": 4.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "3uAcb5cYn8nfPdN0Qi4UXN",
+   "name": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500:2544255",
+   "type": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500",
+   "width": 4.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "2SuVTs9uP8QBCl2uI1XcyB",
+   "name": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500:2545646",
+   "type": "FE 3 tlg - DK-Fix im Rahmen-DK-2:6000 x 1500",
+   "width": 6.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "3m8kFc6d50JBEsXmSlgQZG",
+   "name": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500:2608692",
+   "type": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500",
+   "width": 4.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "3m8kFc6d50JBEsXmSlfXeP",
+   "name": "FE 1 tlg - DrehKipp:2000 x 1500:2653437",
+   "type": "FE 1 tlg - DrehKipp:2000 x 1500",
+   "width": 2.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Konferenzraum 2"
+   ]
+  },
+  {
+   "gid": "0mm00kOGjAr9AVy6ECzdYH",
+   "name": "FE 1 tlg - DrehKipp:2000 x 1500:2660375",
+   "type": "FE 1 tlg - DrehKipp:2000 x 1500",
+   "width": 2.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Konferenzraum 1"
+   ]
+  },
+  {
+   "gid": "0mm00kOGjAr9AVy6ECzdaX",
+   "name": "FE 1 tlg - DrehKipp:2000 x 1500:2660775",
+   "type": "FE 1 tlg - DrehKipp:2000 x 1500",
+   "width": 2.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Konferenzraum 3"
+   ]
+  },
+  {
+   "gid": "0mm00kOGjAr9AVy6ECzdak",
+   "name": "FE 1 tlg - DrehKipp:2000 x 1500:2660776",
+   "type": "FE 1 tlg - DrehKipp:2000 x 1500",
+   "width": 2.0,
+   "height": 2.35,
+   "storey": "E01_OKRD",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Konferenzraum 4"
+   ]
+  },
+  {
+   "gid": "31rFkzebXDyfK2TXREFCTE",
+   "name": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500:2679447",
+   "type": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500",
+   "width": 4.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "31rFkzebXDyfK2TXREFCT1",
+   "name": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500:2679448",
+   "type": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500",
+   "width": 4.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "31rFkzebXDyfK2TXREFCT0",
+   "name": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500:2679449",
+   "type": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500",
+   "width": 4.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  },
+  {
+   "gid": "31rFkzebXDyfK2TXREFCT3",
+   "name": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500:2679450",
+   "type": "FE 2 tlg - DK Fix mit Pfosten - 2:4000 x 1500",
+   "width": 4.0,
+   "height": 2.35,
+   "storey": "E00_OKRD",
+   "sill_approx": 0.95,
+   "spaces": []
+  }
+ ],
+ "stairs": [
+  {
+   "gid": "0YVU7tDBX86u6UVVsSmdx$",
+   "cls": "IfcStair",
+   "name": "Fertigbetontreppe:Treppe:2421041",
+   "predefined": "HALF_TURN_STAIR",
+   "storey": "B01_OKRD",
+   "n_riser": 18.0,
+   "riser": 0.179,
+   "tread": 0.277,
+   "props": {
+    "Endverbindung.Ausklinkung Verlängerung": 0.12,
+    "Pset_StairCommon.NumberOfRiser": 18.0,
+    "Pset_StairCommon.NumberOfTreads": 18.0,
+    "Pset_StairCommon.RiserHeight": 0.179,
+    "Pset_StairCommon.TreadLength": 0.277,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.277,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.277,
+    "Pset_StairFlightCommon.NumberOfRiser": 18.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 18.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.179,
+    "Pset_StairFlightCommon.TreadLength": 0.277,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.277,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.277
+   }
+  },
+  {
+   "gid": "0YVU7tDBX86u6UVVsSmdwD",
+   "cls": "IfcStair",
+   "name": "Fertigbetontreppe:Treppe:2421059",
+   "predefined": "HALF_TURN_STAIR",
+   "storey": "E00_OKRD",
+   "n_riser": 22.0,
+   "riser": 0.177,
+   "tread": 0.27,
+   "props": {
+    "Endverbindung.Ausklinkung Verlängerung": 0.12,
+    "Pset_StairCommon.NumberOfRiser": 22.0,
+    "Pset_StairCommon.NumberOfTreads": 22.0,
+    "Pset_StairCommon.RiserHeight": 0.177,
+    "Pset_StairCommon.TreadLength": 0.27,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 22.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 22.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.177,
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3LF03GdXv2GhSTK1xTZzXx",
+   "cls": "IfcStair",
+   "name": "Fertigbetontreppe:Treppe:2423887",
+   "predefined": "HALF_TURN_STAIR",
+   "storey": "B01_OKRD",
+   "n_riser": 18.0,
+   "riser": 0.179,
+   "tread": 0.277,
+   "props": {
+    "Endverbindung.Ausklinkung Verlängerung": 0.12,
+    "Pset_StairCommon.NumberOfRiser": 18.0,
+    "Pset_StairCommon.NumberOfTreads": 18.0,
+    "Pset_StairCommon.RiserHeight": 0.179,
+    "Pset_StairCommon.TreadLength": 0.277,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.277,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.277,
+    "Pset_StairFlightCommon.NumberOfRiser": 18.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 18.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.179,
+    "Pset_StairFlightCommon.TreadLength": 0.277,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.277,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.277
+   }
+  },
+  {
+   "gid": "3LF03GdXv2GhSTK1xTZzXh",
+   "cls": "IfcStair",
+   "name": "Fertigbetontreppe:Treppe:2423903",
+   "predefined": "HALF_TURN_STAIR",
+   "storey": "E00_OKRD",
+   "n_riser": 22.0,
+   "riser": 0.177,
+   "tread": 0.27,
+   "props": {
+    "Endverbindung.Ausklinkung Verlängerung": 0.12,
+    "Pset_StairCommon.NumberOfRiser": 22.0,
+    "Pset_StairCommon.NumberOfTreads": 22.0,
+    "Pset_StairCommon.RiserHeight": 0.177,
+    "Pset_StairCommon.TreadLength": 0.27,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 22.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 22.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.177,
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3LF03GdXv2GhSTK1xTZzjL",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:2424673",
+   "predefined": "HALF_TURN_STAIR",
+   "storey": "E00_OKRD",
+   "n_riser": 22.0,
+   "riser": 0.177,
+   "tread": 0.28,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 22.0,
+    "Pset_StairCommon.NumberOfTreads": 22.0,
+    "Pset_StairCommon.RiserHeight": 0.177,
+    "Pset_StairCommon.TreadLength": 0.28,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.28,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.28,
+    "Pset_StairFlightCommon.NumberOfRiser": 22.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 22.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.177,
+    "Pset_StairFlightCommon.TreadLength": 0.28,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.28,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.28
+   }
+  },
+  {
+   "gid": "0YVU7tDBX86u6UVVsSmdxy",
+   "cls": "IfcStairFlight",
+   "name": "Fertigbetontreppe:Treppe:2421041 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "B01_OKRD",
+   "n_riser": 9.0,
+   "riser": 0.305,
+   "tread": 0.305,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.305,
+    "Pset_StairFlightCommon.TreadLength": 0.305,
+    "Pset_StairFlightCommon.NumberOfRiser": 9.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 9.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.277,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.277
+   }
+  },
+  {
+   "gid": "0YVU7tDBX86u6UVVsSmdxt",
+   "cls": "IfcStairFlight",
+   "name": "Fertigbetontreppe:Treppe:2421041 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "B01_OKRD",
+   "n_riser": 9.0,
+   "riser": 0.305,
+   "tread": 0.305,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.305,
+    "Pset_StairFlightCommon.TreadLength": 0.305,
+    "Pset_StairFlightCommon.NumberOfRiser": 9.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 9.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.277,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.277
+   }
+  },
+  {
+   "gid": "0YVU7tDBX86u6UVVsSmdwA",
+   "cls": "IfcStairFlight",
+   "name": "Fertigbetontreppe:Treppe:2421059 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "E00_OKRD",
+   "n_riser": 11.0,
+   "riser": 0.305,
+   "tread": 0.305,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.305,
+    "Pset_StairFlightCommon.TreadLength": 0.305,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "0YVU7tDBX86u6UVVsSmdw5",
+   "cls": "IfcStairFlight",
+   "name": "Fertigbetontreppe:Treppe:2421059 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "E00_OKRD",
+   "n_riser": 11.0,
+   "riser": 0.305,
+   "tread": 0.305,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.305,
+    "Pset_StairFlightCommon.TreadLength": 0.305,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3LF03GdXv2GhSTK1xTZzXa",
+   "cls": "IfcStairFlight",
+   "name": "Fertigbetontreppe:Treppe:2423887 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "B01_OKRD",
+   "n_riser": 9.0,
+   "riser": 0.305,
+   "tread": 0.305,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.305,
+    "Pset_StairFlightCommon.TreadLength": 0.305,
+    "Pset_StairFlightCommon.NumberOfRiser": 9.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 9.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.277,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.277
+   }
+  },
+  {
+   "gid": "3LF03GdXv2GhSTK1xTZzXZ",
+   "cls": "IfcStairFlight",
+   "name": "Fertigbetontreppe:Treppe:2423887 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "B01_OKRD",
+   "n_riser": 9.0,
+   "riser": 0.305,
+   "tread": 0.305,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.305,
+    "Pset_StairFlightCommon.TreadLength": 0.305,
+    "Pset_StairFlightCommon.NumberOfRiser": 9.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 9.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.277,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.277
+   }
+  },
+  {
+   "gid": "3LF03GdXv2GhSTK1xTZzXK",
+   "cls": "IfcStairFlight",
+   "name": "Fertigbetontreppe:Treppe:2423903 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "E00_OKRD",
+   "n_riser": 11.0,
+   "riser": 0.305,
+   "tread": 0.305,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.305,
+    "Pset_StairFlightCommon.TreadLength": 0.305,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3LF03GdXv2GhSTK1xTZzXJ",
+   "cls": "IfcStairFlight",
+   "name": "Fertigbetontreppe:Treppe:2423903 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "E00_OKRD",
+   "n_riser": 11.0,
+   "riser": 0.305,
+   "tread": 0.305,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.305,
+    "Pset_StairFlightCommon.TreadLength": 0.305,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3LF03GdXv2GhSTK1xTZzjM",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:2424673 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "E00_OKRD",
+   "n_riser": 11.0,
+   "riser": 0.177,
+   "tread": 0.305,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.305,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.177,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.28,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.28
+   }
+  },
+  {
+   "gid": "3LF03GdXv2GhSTK1xTZzjT",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:2424673 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "E00_OKRD",
+   "n_riser": 11.0,
+   "riser": 0.177,
+   "tread": 0.305,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.305,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.177,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.28,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.28
+   }
+  }
+ ],
+ "railings": [
+  {
+   "name": "Geländer:Vertikale Stäbe mit Handlauf:2418060",
+   "type": null,
+   "storey": "E01_OKRD",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Vertikale Stäbe mit Handlauf:2418173",
+   "type": null,
+   "storey": "E01_OKRD",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Vertikale Stäbe:2421044",
+   "type": null,
+   "storey": "B01_OKRD",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Vertikale Stäbe:2421062",
+   "type": null,
+   "storey": "E00_OKRD",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Vertikale Stäbe:2423890",
+   "type": null,
+   "storey": "B01_OKRD",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Vertikale Stäbe:2423906",
+   "type": null,
+   "storey": "E00_OKRD",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Vertikale Stäbe mit Handlauf:2424676",
+   "type": null,
+   "storey": "E00_OKRD",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Vertikale Stäbe mit Handlauf:2424801",
+   "type": null,
+   "storey": "E01_OKRD",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Vertikale Stäbe mit Handlauf:2424861",
+   "type": null,
+   "storey": "E01_OKRD",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Vertikale Stäbe mit Handlauf:2425608",
+   "type": null,
+   "storey": "E00_OKRD",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Vertikale Stäbe mit Handlauf:2427136",
+   "type": null,
+   "storey": "E01_OKRD",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Vertikale Stäbe mit Handlauf:2427143",
+   "type": null,
+   "storey": "E01_OKRD",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Vertikale Stäbe mit Handlauf:2427156",
+   "type": null,
+   "storey": "E01_OKRD",
+   "height": 1.219
+  }
+ ],
+ "furniture": [],
+ "other_counts": {
+  "IfcCurtainWall": 1,
+  "IfcColumn": 62,
+  "IfcBeam": 14,
+  "IfcSlab": 23,
+  "IfcRoof": 3,
+  "IfcTransportElement": 0,
+  "IfcRelSpaceBoundary": 0
+ }
+}

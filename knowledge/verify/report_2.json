@@ -1,0 +1,359 @@
+[
+ {
+  "kid": "K45",
+  "title": "长疏散走廊分段与楼梯间的封闭",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.517: closures between stairways and escape corridors and divisions of essential corridors >30 m must be self-closing and smoke-proof."
+ },
+ {
+  "kid": "K46",
+  "title": "工作间的窗",
+  "verdict": "needs_fix",
+  "issues": [
+   "p.266 gives 1/10 of floor area (rooms up to 600 m²) as 'Approx. figures for window areas' in the industry chapter; summary states it as a firm value without 约, and omits the 1/5 for fine work.",
+   "Sill height 0.85–1.25 m is a 'should' (eye level) recommendation."
+  ],
+  "corrected_summary": "工作间（按工作场所指南）：所有对外视线窗的总宽度须至少为全部墙宽总和的 1/10；对外视线宜在视平线高度（窗台高 0.85–1.25 m）；高度超过 3.5 m 的工作间，窗玻璃面积须至少为外墙面积的 30%。工业建筑中窗面积的近似值：面积不超过 600 m² 的房间约为地面面积的 1/10，精细作业约 1/5。",
+  "evidence_note": "p.97 Workrooms paragraph (must 1/10 wall width; should sill 0.85–1.25 m; must 30% for >3.5 m); p.266 'Approx. figures for window areas: 1/10 ... up to 600 m²; fine work 1/5'."
+ },
+ {
+  "kid": "K47",
+  "title": "厨房朝向",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.149: 'location of the kitchen is ideally on the northeast or northwest'."
+ },
+ {
+  "kid": "K48",
+  "title": "无窗厨房",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.149: windowless kitchens/kitchenettes generally undesirable, only permissible with guaranteed effective ventilation."
+ },
+ {
+  "kid": "K49",
+  "title": "玻璃面最小高度 1.3 m",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.97 Workrooms: min. glass height 1.3 m for rooms with residential-room dimensions; Residential construction: workroom criteria can be applied to optimise energy balance."
+ },
+ {
+  "kid": "K50",
+  "title": "视野：窗宽不小于房间宽 65%",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.495 caption: min. window width before finishings should not be less than 65% of room width; text section 'View out and visual connections' backs the view purpose."
+ },
+ {
+  "kid": "K51",
+  "title": "工作区距窗不超过 2 倍窗净高",
+  "verdict": "needs_fix",
+  "issues": [
+   "Title says '不超过 2 倍' (a maximum), but the text only says the distance 'should be twice as long as the clear window height'; no upper-limit wording.",
+   "Scope is the industry chapter (side-lit workrooms) - summary is fine on this."
+  ],
+  "corrected_title": "工作区距窗约为 2 倍窗净高",
+  "corrected_summary": "（工业建筑）侧窗采光时，工作区到窗的距离宜为窗净高的 2 倍。",
+  "evidence_note": "p.266 Lighting: 'The distance of the working area from the window should be twice as long as the clear window height'."
+ },
+ {
+  "kid": "K52",
+  "title": "办公与工作建筑的朝向",
+  "verdict": "needs_fix",
+  "issues": [
+   "'多数办公楼采用东西向主轴' generalises: the source says, according to Rosenauer, 90% of office buildings in the USA have an E/W main axis.",
+   "Joedicke's N/S view is attributed in the source; the two-side-windows rule comes from the industry chapter (p.266), which also says one-side-window buildings should face northeast - omitted."
+  ],
+  "corrected_summary": "朝向说法不一：据 Rosenauer，美国 90% 的办公楼采用东西向主轴，因为深入室内的早晚阳光造成干扰，而南向阳光较易用遮阳帘遮挡；据 Joedicke，南北向主轴可使所有房间获得日照，北向房间只适用于无走廊的布局。工业建筑中，单侧开窗的多层建筑宜朝东北，南北两侧开窗的宜东西向布置。",
+  "evidence_note": "p.241 'Building alignment' (Rosenauer USA 90%, Joedicke N/S); p.266 Lighting (multi-storey industrial buildings)."
+ },
+ {
+  "kid": "K53",
+  "title": "按朝向选择遮阳",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.500 Systems: north - June/July mornings, simple internal systems; west/east - movable systems; south - shading in early year/autumn, slight overhangs in high summer."
+ },
+ {
+  "kid": "K54",
+  "title": "遮阳挑檐的出挑计算",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.500: A = tan α × H; min. A = tan α × H − D; caption 'south wall less than 50° northern latitude (London)' with 27°/40°/50° shadow angles."
+ },
+ {
+  "kid": "K55",
+  "title": "单层外墙与附加保温层",
+  "verdict": "needs_fix",
+  "issues": [
+   "'须用网格增强的矿物抹灰' overstates modality: the source is descriptive ('so mineral render reinforced with mesh is used here (or plastic modified render)')."
+  ],
+  "corrected_summary": "单层外墙在建筑物理上没有问题，但由于保温要求高，只能用高保温材料（如加气砌块）配专用保温砂浆和抹灰砌筑；因此单层墙加附加保温层（外保温或内保温）是常见的替代做法。保温层外侧因受热积聚和基层抗剪强度低而有开裂风险，因此这里采用网格增强的矿物抹灰（或聚合物改性抹灰）。",
+  "evidence_note": "p.75 External wall construction; p.473 'so mineral render reinforced with mesh is used here'."
+ },
+ {
+  "kid": "K56",
+  "title": "夹心墙（双叶墙）的外叶与空气层",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.75: outer facing min. 90 mm, four variants; air gap should be min. 40 mm (max. 150 mm)."
+ },
+ {
+  "kid": "K57",
+  "title": "混凝土外墙必须附加保温",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.78: solid concrete walls usable as external walls only with additional insulation; two-layer RC walls with core insulation used particularly as large-format elements."
+ },
+ {
+  "kid": "K58",
+  "title": "背通风外挂层的空气间层",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.473: rear ventilation removes vapour-barrier effect; air gap min. 20 mm (panel skin) / 40 mm (brickwork)."
+ },
+ {
+  "kid": "K59",
+  "title": "热阻与传热系数计算",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.471 R = d/λ, 1/U = Rsi + R + Rse; p.472 surface air film cannot exceed a certain proportion X of 1/U."
+ },
+ {
+  "kid": "K60",
+  "title": "热桥与构件连接",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.473 definition of thermal bridges; p.474 appropriate connections and worse consequences with highly insulated elements."
+ },
+ {
+  "kid": "K61",
+  "title": "平屋面排水坡度",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.91: flat roof ≤5%; no-slope only as special construction; should generally min. 2%; recommended min. 5% (3°)."
+ },
+ {
+  "kid": "K62",
+  "title": "平屋面构造：暖屋面与倒置屋面",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.92: warm roof composite element; upside-down roof - waterproofing+vapour barrier on structure, closed-cell insulation loosely laid, secured with gravel layer (压重 = gravel)."
+ },
+ {
+  "kid": "K63",
+  "title": "隔汽层设在暖侧",
+  "verdict": "needs_fix",
+  "issues": [
+   "'须另设内侧隔汽层' overstates: p.473 only describes that more recent warm roofs/façades 'feature' an external vapour-barrier layer and on account of this an additional internal vapour barrier.",
+   "The 'must be installed on the warm side' part is correctly conditional ('if this is to be avoided')."
+  ],
+  "corrected_summary": "若隔汽层在外侧（冷侧），整个水蒸气压力梯度都发生在那里，会产生冷凝；要避免冷凝，须在暖侧设置隔汽层。较新的构造（暖屋面、暖立面）外侧有隔汽层（如防水层），因此另设内侧隔汽层。坡屋面中隔汽层位于保温层下方，以防屋面构造内部冷凝。",
+  "evidence_note": "p.472 'Vapour barrier at the correct location'; p.473 'features ... an additional internal vapour barrier'; p.90 vapour barrier under insulation."
+ },
+ {
+  "kid": "K64",
+  "title": "种植屋面的坡度",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.94 'Slopes for roof planting': gabled roofs should not exceed 25°, flat roofs max. 2–3%."
+ },
+ {
+  "kid": "K65",
+  "title": "坡屋面保温位置与通风构造",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.90: mineral wool between/under rafters, vapour barrier room side; ventilated roofs extra gap, need more rafter depth, industry prefers unventilated."
+ },
+ {
+  "kid": "K66",
+  "title": "分户墙隔声",
+  "verdict": "needs_fix",
+  "issues": [
+   "The 150 kg/m² / 30 mm / 50 mm / 100 kg/m² rules are given for a two-skin party wall with a separating joint over the entire depth of the houses (i.e. between houses, e.g. terraced houses); summary generalises to all '双叶分户墙'.",
+   "400 kg/m² is a 'should always' statement for party walls between flats or houses - acceptable."
+  ],
+  "corrected_summary": "住宅之间或户与户之间的分户墙宜始终达到至少 400 kg/m² 的面密度。对于贯通整栋房屋进深设分隔缝的（房屋之间的）双叶分户墙：每叶（含抹灰）面密度须至少 150 kg/m²，分隔缝至少 30 mm；缝宽大于 50 mm 时每叶可为 100 kg/m²；缝腔内须满铺无缝的纤维隔声板。",
+  "evidence_note": "p.478 'party walls between flats or houses should always weigh at least 400 kg/m²'; p.479 Party walls: 'two-skin party wall with a separating joint over the entire depth of the houses'."
+ },
+ {
+  "kid": "K67",
+  "title": "模数协调与标志尺寸",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.35 M/3M/6M/12M; p.34 Terms with the 25/1/24 cm brick and 25 cm concrete wall example."
+ },
+ {
+  "kid": "K68",
+  "title": "建筑等级与承重墙耐火",
+  "verdict": "needs_fix",
+  "issues": [
+   "'(如 F 30)' is not in the quoted passages; F 30 = fire-retarding appears only elsewhere (p.516, corridor walls).",
+   "The class 3–5 = '>2 flats or 400 m² usable area' equivalence comes from a parenthetical in the rubbish-storage rule (p.464), not a class definition; present it as the book's gloss."
+  ],
+  "corrected_summary": "（书中在垃圾间规定处以括号注明）住宅超过两套或使用面积达 400 m² 的建筑属于建筑等级 3–5。承重及支撑墙、柱在等级 5 的建筑中须为防火（耐火）构造，等级 4 须为高度阻燃，等级 1 和 2 须为阻燃。",
+  "evidence_note": "p.464 parenthetical '(building classes 3–5)'; p.514 'must be constructed fireproof in class 5, highly fire-retarding in class 4 and fire-retarding in classes 1 and 2'."
+ },
+ {
+  "kid": "K69",
+  "title": "地下室墙体与楼板耐火",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.514 'In cellars ... fireproof and, in classes 1 and 2, fire-retarding'; p.515 ceilings fireproof or at least fire-retarding, slabs over cellars fireproof; solid slabs sufficient under certain conditions."
+ },
+ {
+  "kid": "K70",
+  "title": "住宅/商业单元之间的分隔墙",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.514 Separating walls: fire resistance corresponds to load-bearing components of the storey; extend to structural slab (roof cladding in roof spaces)."
+ },
+ {
+  "kid": "K71",
+  "title": "外墙及外墙饰面的燃烧性能",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.514: non-load-bearing external walls non-combustible (at least fire-retarding) except classes 1–3; classes 1–2 normally flammable claddings permissible if fire spread prevented."
+ },
+ {
+  "kid": "K72",
+  "title": "居室最低要求",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.167: general requirements of building regulations for residential rooms - 8 m², 2.40 m, window area 1/8 of room area (cited in student residences page)."
+ },
+ {
+  "kid": "K73",
+  "title": "厨房作为居室",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.149: as a habitable room the kitchen must have ≥2.40 m clear height and window area ≥1/8 of net floor area."
+ },
+ {
+  "kid": "K74",
+  "title": "居住面积计算",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.63 Housing area regulations: full ≥2 m, half 1–2 m; cellars, garages, offices excluded (summary omits quarter for balconies but adds nothing)."
+ },
+ {
+  "kid": "K75",
+  "title": "阳台计入居住面积",
+  "verdict": "needs_fix",
+  "issues": [
+   "Source says balconies etc. are 'normally calculated as 25–50%'; summary drops 'normally' (一般)."
+  ],
+  "corrected_summary": "阳台、凉廊和露台属于居住面积的一部分，一般按其面积的 25–50% 计入。",
+  "evidence_note": "p.155 Open-air areas: 'normally calculated as 25–50%'."
+ },
+ {
+  "kid": "K76",
+  "title": "住宅面积的计入范围与净尺寸量法",
+  "verdict": "needs_fix",
+  "issues": [
+   "'不能用量到墙中线或结构面的面积' is not in the source; it is an added inference.",
+   "Scope: the regulation (25/11/2003) is used for the Law to Subsidise House Building; for residential homes, areas for sole use of the owner."
+  ],
+  "corrected_summary": "（按 2003 年《住宅面积计算条例》，用于住房建设补贴法）住宅面积包括专属于该户的所有房间的地面面积；房间面积按构件之间的净空间确定，从构件饰面层表面量起，可在建成房间内实测，或按合适的施工图计算。",
+  "evidence_note": "p.136 Housing area regulation paragraph and 'determined from the clearance space ... starts from the face of the cladding'."
+ },
+ {
+  "kid": "K77",
+  "title": "DIN 277 面积分类与可出租面积",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.63: DIN 277 named on page; gross/constructional/net definitions and net = usable + technical + traffic; GIF letting area exclusions."
+ },
+ {
+  "kid": "K78",
+  "title": "阳台面积",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.155 caption: A = 7.0 m² balcony for 3–4 people, B = 9.0 m² for 5–6 (figure examples; '约' acceptable)."
+ },
+ {
+  "kid": "K79",
+  "title": "户外空间的连接",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.155: generally related to living/working/dining; with more than one open area also bedrooms, kitchens."
+ },
+ {
+  "kid": "K80",
+  "title": "电梯与每层户数",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.142: lifts required for residential buildings of more than five full floors; two flats per floor most common."
+ },
+ {
+  "kid": "K81",
+  "title": "设备噪声与安静房间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.480 noisy services may not be installed in walls of quiet rooms; p.481 lifts should be in separate shafts (joints >3 cm mineral fibre)."
+ },
+ {
+  "kid": "K82",
+  "title": "分组式平面与房间独立可达",
+  "verdict": "needs_fix",
+  "issues": [
+   "'好的平面应使每个房间都能独立进入和使用' is a normative generalisation; the source sentence 'All rooms can be accessed and used separately' describes the central corridor plan (late 19th-c. apartment blocks), not the grouped room plan and not a general rule."
+  ],
+  "corrected_title": "分组式平面与中廊式平面",
+  "corrected_summary": "分组式平面（20 世纪初出现）将户内分为两个房间组：起居区（起居室、厨房和就餐区）和睡眠区（卧室和卫生间）。中廊式平面（19 世纪末城市公寓的典型平面）沿两侧立面布置房间，所有房间都可独立进入和使用。",
+  "evidence_note": "p.145 Grouped room floor plan and Central corridor plan paragraphs."
+ },
+ {
+  "kid": "K83",
+  "title": "卧室朝向与位置",
+  "verdict": "needs_fix",
+  "issues": [
+   "Modality: source says bedrooms 'would normally be aligned' east/southeast (parents) or south to west (children); summary uses 宜/应 (recommendation) instead of 一般 (typical).",
+   "Omits the context of minimal bedroom sizes (approx. 13 m² / 8 m²) - optional."
+  ],
+  "corrected_summary": "卧室（父母房/双人卧室约 13 m²，单人房约 8 m²）一般朝东或东南（父母）、朝南至西（儿童），并与起居室分处住宅的不同部分。",
+  "evidence_note": "p.157: 'These would normally be aligned to east or southeast (parents) or south to west (children) and separated from the living room'."
+ },
+ {
+  "kid": "K84",
+  "title": "门厅直达厨房、WC 和楼梯",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.147 Entrance hall: kitchen, WC and staircase should be directly accessible from the entrance hall."
+ },
+ {
+  "kid": "K85",
+  "title": "防风门斗",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.147 inner door where entrance leads to open air; p.146 lobby recommended in unfavourable weather; stair shaft can provide wind protection."
+ },
+ {
+  "kid": "K86",
+  "title": "户内走道宽度",
+  "verdict": "needs_fix",
+  "issues": [
+   "The 1 m is an assumption of the book's examples ('The examples assume a minimum corridor width of 1 m'), not a stated minimum requirement; summary presents it as a general minimum."
+  ],
+  "corrected_summary": "书中示例假定户内走道最小宽度为 1 m，可供两人错身；但这一宽度放不下柜子，柜子最好做成嵌入式。",
+  "evidence_note": "p.148 Corridor widths: 'The examples assume a minimum corridor width of 1 m...'."
+ },
+ {
+  "kid": "K87",
+  "title": "独立住宅每层通往户外",
+  "verdict": "needs_fix",
+  "issues": [
+   "Modality overstated: the source describes the prototype detached house ('It has direct access from each storey...'); summary turns it into a requirement (都应能)."
+  ],
+  "corrected_summary": "独立住宅（自住住宅的原型）从每一层都可直接通往其他私有或半公共的户外空间（如花园、露台、内院或屋顶花园）。",
+  "evidence_note": "p.139 Detached house and row access: descriptive 'It has direct access from each storey...'."
+ },
+ {
+  "kid": "K88",
+  "title": "一梯一户限四层（无电梯）；一梯三户",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p.142: one flat per floor uneconomic, 'stacked terrace', town villas, general limitation to four floors without lift; three flats per floor favourable combination."
+ }
+]

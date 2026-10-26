@@ -1,0 +1,105 @@
+[
+ {
+  "topic": "围护结构与保温",
+  "title": "单层外墙与附加保温层",
+  "summary": "在现行高保温要求下，单层外墙只能用高保温材料（如加气砌块）配保温砂浆和抹灰砌筑；否则采用单层墙加外保温或内保温；外保温层外侧有开裂风险，须用网格增强的矿物抹灰（或聚合物改性抹灰）。",
+  "prefixes": [
+   "Single-leaf external walls → ① – ② are unproblematic",
+   "Single-leaf walls with additional insulation layers",
+   "On the external side of the insulating layers, there is a risk of cracking",
+   "are unproblematic regarding building physics"
+  ]
+ },
+ {
+  "topic": "围护结构与保温",
+  "title": "夹心墙（双叶墙）的外叶与空气层",
+  "summary": "夹心墙由内侧承重叶墙和外侧非承重防护面层组成，外叶最小厚 90 mm，可做空气层、空气层加保温、满填保温或中间抹灰层；空气层宽度至少 40 mm、最多 150 mm。",
+  "prefixes": [
+   "Cavity walls consist of an inner load-bearing wall",
+   "The width of the air gap should be min. 40 mm"
+  ]
+ },
+ {
+  "topic": "围护结构与保温",
+  "title": "混凝土外墙必须附加保温",
+  "summary": "实心混凝土墙只有加设附加保温层才能用作外墙：外保温系统，或带夹心保温（可加背通风）的多叶构造；带夹心保温的双层钢筋混凝土墙常用作大尺寸外墙构件。",
+  "prefixes": [
+   "Solid concrete walls can be used as external walls only with an additional thermal insulation layer",
+   "Two-layer reinforced concrete walls → ① with core insulation"
+  ]
+ },
+ {
+  "topic": "围护结构与保温",
+  "title": "背通风外挂层的空气间层",
+  "summary": "背通风可消除较不透汽外层的隔汽效应；板材类外挂层后的空气间层至少 20 mm，砖砌外层至少 40 mm。",
+  "prefixes": [
+   "The rear ventilation of the skin removes the vapour barrier effect"
+  ]
+ },
+ {
+  "topic": "围护结构与保温",
+  "title": "热阻与传热系数计算",
+  "summary": "单层热阻 R = d/λ（d 以 m 计）；总热阻 1/U = R_si + R + R_se，U 为其倒数；表面空气层热阻只能占 1/U 的有限比例。",
+  "prefixes": [
+   "Thermal resistance R, unit m^2K/W",
+   "Overall resistance 1/U, unit m^2K/W",
+   "The surface air film cannot exceed a certain proportion X"
+  ]
+ },
+ {
+  "topic": "围护结构与保温",
+  "title": "热桥与构件连接",
+  "summary": "热桥是保温明显低于周围的构件部位；良好保温不仅要求高保温构件，还要求构件之间连接得当；围护结构保温越好，热桥后果越严重。",
+  "prefixes": [
+   "Thermal bridges are parts of building elements with low thermal insulation",
+   "Good thermal insulation includes not only highly insulated building components",
+   "Thus it should be borne in mind that this thermal bridging effect"
+  ]
+ },
+ {
+  "topic": "围护结构与保温",
+  "title": "平屋面排水坡度",
+  "summary": "坡度不超过 5% 的屋面为平屋面；无坡平屋面只在例外情况下作为特殊构造；平屋面一般至少 2% 坡度，考虑平整度误差和挠度建议至少 5%（3°）。",
+  "prefixes": [
+   "Flat roofs are defined as roofs with a slope of up to 5%",
+   "it is recommended to construct flat roofs with a minimum slope of 5%"
+  ]
+ },
+ {
+  "topic": "围护结构与保温",
+  "title": "平屋面构造：暖屋面与倒置屋面",
+  "summary": "非通风单层（暖）屋面中承重结构、隔汽层、保温层和防水层构成整体；倒置屋面将防水兼隔汽层直接铺在结构上，闭孔保温板松铺其上并压重固定。",
+  "prefixes": [
+   "Non-ventilated, single-layer construction ('warm roof')",
+   "or an 'upside-down roof' → 8"
+  ]
+ },
+ {
+  "topic": "围护结构与保温",
+  "title": "隔汽层设在暖侧",
+  "summary": "隔汽层若在冷侧会在构件内产生冷凝，须设在暖侧；外侧有不透汽层（如防水层）的暖屋面/暖立面须另设内侧隔汽层；屋面隔汽层位于保温层下方（室内侧）。",
+  "prefixes": [
+   "If there is a vapour barrier on the outside",
+   "More recent building ('warm roof', 'warm façade')",
+   "The vapour barrier is under the thermal insulation"
+  ]
+ },
+ {
+  "topic": "围护结构与保温",
+  "title": "种植屋面的坡度",
+  "summary": "种植的坡屋面坡度不应超过 25°，种植平屋面坡度最大 2–3%。",
+  "prefixes": [
+   "The pitch of gabled roofs should not exceed 25°"
+  ]
+ },
+ {
+  "topic": "围护结构与保温",
+  "title": "坡屋面保温位置与通风构造",
+  "summary": "坡屋面保温一般为矿棉卷材，铺在椽间和椽下，室内侧设隔汽层；通风屋面在挂瓦下垫层与保温之间另有通风层，需更大椽高且只有在隔汽层和通风都可靠时才有效，因此业内多采用非通风构造。",
+  "prefixes": [
+   "Thermal insulation is generally in the form of mineral wool roll material",
+   "ventilated roof construction has an additional ventilation gap",
+   "Ventilated roofs require additional rafter depth"
+  ]
+ }
+]

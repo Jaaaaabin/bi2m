@@ -1,0 +1,2403 @@
+id,question,ground_truth,ifc_model,project,category,detail_topic,gt_says_missing
+65,Which materials are used to construct the walls and their usage across wall types?,"Total Wall Materials Identified: 1
+
+   Wall Materials and Usage:
+   - Kalksandstein: 121 walls (100.0%)
+     Kalksandstein 2774059904 300: 8 walls
+     Kalksandstein 2816491304 200: 54 walls
+     Kalksandstein 2816491304 300: 59 walls",arc,ac20,2,B_construction_materials_layers,False
+66,What materials are applied in the outer walls and their distribution across wall types?,"Exterior Wall Materials:
+   - Kalksandstein: 54 walls (100.0%)
+     Kalksandstein 2816491304 300: 46 walls
+     Kalksandstein 2774059904 300: 8 walls",arc,ac20,2,B_construction_materials_layers,False
+67,What materials are found in the internal walls and their distribution across wall types?,"Interior Wall Materials:
+   - Kalksandstein: 67 walls (100.0%)
+     Kalksandstein 2816491304 300: 13 walls
+     Kalksandstein 2816491304 200: 54 walls",arc,ac20,2,B_construction_materials_layers,False
+68,What are the thicknesses of the various wall types?,"Wall Thicknesses by Type:
+   - 200mm: 54 walls (44.6%)
+   - 300mm: 67 walls (55.4%)
+
+   Wall Type Breakdown:
+   - Kalksandstein 2816491304 300: 300mm (59 walls)
+   - Kalksandstein 2816491304 200: 200mm (54 walls)
+   - Kalksandstein 2774059904 300: 300mm (8 walls)",arc,ac20,2,B_construction_materials_layers,False
+69,How many of the walls are load-bearing compared with non-load-bearing?,Load-bearing classification data is not available in this model.,arc,ac20,4,D_structural,True
+74,Which ceiling materials are used in the building?,"Ceiling Elements Found: 21
+   - Roof slabs (potential ceilings): 21
+   - Ceiling coverings: 0
+
+   Ceiling Materials:
+   - Aluminium 131198",arc,ac20,1,B_construction_materials_layers,False
+82,Which types of doors include fire rating details?,No door types have fire rating information in this model.,arc,ac20,4,A_fire_safety_compliance,False
+83,Which windows have fire rating information?,No window types have fire rating information in this model.,arc,ac20,4,A_fire_safety_compliance,False
+87,What are the sizes of the columns?,"Column Dimensions by Type:
+   - Stahlbeton 2747937872 D200: Öò200mm (circular column) (2 columns)
+
+   Column Shape Distribution:
+   - Circular columns: 2",arc,ac20,1,D_structural,False
+88,Which slab types are present with quantities and thicknesses?,"Slab Type Overview:
+   - Floor slabs: 5
+   - Roof slabs: 21
+   - Total slabs: 26
+
+   FLOOR Slabs:
+   - Decke-002: 3 slab(s)
+     Thickness: 300 mm
+
+   - Decke-001: 2 slab(s)
+     Thickness: 300 mm
+
+   ROOF Slabs:
+   - Dach-001: 21 slab(s)
+     Thickness range: 375 - 394 mm
+     Average thickness: 380 mm
+     Total area: 688.8 sq m
+     Total volume: 261.93 cu m
+
+   Overall Slab Thickness Statistics:
+   - Total slabs with thickness data: 26
+   - Thickness range: 300 - 394 mm
+   - Average thickness: 365 mm",arc,ac20,2,B_construction_materials_layers,False
+93,What is the thickness of the insulation of the external walls?,The external wall insulation is 42 mm thick.,arc,dental_clinic,1,B_construction_materials_layers,False
+94,What information is available about the insulation used in the external walls?,The insulation material is not explicitly defined in the BIM model. It is identified as an 'Insulated Panel' with a thickness of 42 mm.,arc,dental_clinic,4,B_construction_materials_layers,False
+105,"What is the estimated distance from treatment room 1E12 to the nearest emergency exit, including the path taken for this estimation?","The information is not directly available in the BIM model and cannot be exactly calculated.
+
+However, the distance from treatment room 1E12 to the nearest emergency exit is estimated to be around 20 to 22 meters, following the path from 1E12 through 1E33, 1DC6, 1EC1, and finally to 1EC4.",arc,dental_clinic,4,A_fire_safety_compliance,True
+106,"What is the estimated distance from treatment room 1E23 to the nearest emergency exit, including the path taken?","The information is not directly available in the BIM model and cannot be exactly calculated.
+
+However, the distance from treatment room 1E23 to the nearest emergency exit is estimated to be around 6 to 9 meters, following the path from 1E23 through 1EC1 to 1EC4.",arc,dental_clinic,4,A_fire_safety_compliance,True
+108,Are there any reinforced areas for heavy medical equipment?,There are no clearly identifiable reinforced areas for heavy medical equipment; the structural elements appear to be consistent throughout the building.,arc,dental_clinic,4,D_structural,False
+109,What type of flooring is used in the sterilization room?,This information is not available in the BIM model.,arc,dental_clinic,4,B_construction_materials_layers,True
+110,What is the wall finishing material in treatment room 1D34?,The wall finishing material in treatment room 1D34 is plasterboard.,arc,dental_clinic,1,B_construction_materials_layers,False
+111,What type of ceiling system is installed in office areas?,The office areas are equipped with an acoustic ceiling tile (ACT) system featuring 600 mm x 600 mm grid panels.,arc,dental_clinic,1,B_construction_materials_layers,False
+112,"What is the total square meters of specialty flooring needed for the Labs, and could you provide a breakdown by individual laboratory space?","The information is not directly available in the BIM model and cannot be exactly calculated, as the labs are not clearly identified.
+
+However, the specialty flooring required for the labs can be estimated at around 106 square meters. This includes 4 spaces identified as laboratories:
+- 1B04: 53.59 m¬² (Laboratory function)
+- 2C17: 30.56 m¬² (Laboratory)
+- 2C16: 11.16 m¬² (Laboratory function)
+- 1D12: 10.21 m¬² (Laboratory)",arc,dental_clinic,4,B_construction_materials_layers,True
+113,"What is the sound transmission class (STC) rating between treatment rooms? If this information is not directly available in the BIM model, what are the typical STC ratings for similar partition wall constructions?","The information is not directly available in the BIM model and cannot be exactly calculated, as the BIM model does not provide a direct measurement of the sound transmission class (STC) rating between treatment rooms. 
+
+However, typical partition walls consisting of two 16-mm plasterboard panels and a 92-mm metal stud usually achieve an STC of 38 to 40 dB assuming the cavity is not filled with acoustic material.",arc,dental_clinic,4,C_building_physics_sustainability,True
+114,Are the interior walls load bearing?,"No, the interior walls are not load bearing.",arc,dental_clinic,2,D_structural,False
+115,Can you determine whether the windows are single or double glazed based on the available BIM model data?,"The information is not directly available in the BIM model and cannot be exactly calculated, as the BIM model does not directly specify whether the windows are single or double glazed.
+
+However, based on a 19 mm inset depth, they appear to be double glazed.",arc,dental_clinic,4,B_construction_materials_layers,True
+126,What is the expected lifespan of the roofing material?,"The explicit lifespan of the roofing material is not specified in the BIM model. However, it is known that the roofing material is an EPDM (Ethylene Propylene Diene Monomer) membrane, typically lasting 25 to 30 years with proper maintenance.",str,dental_clinic,4,C_building_physics_sustainability,True
+131,What is the fire rating of the walls between treatment rooms?,This information is not available in the BIM model.,str,dental_clinic,4,A_fire_safety_compliance,True
+132,"Could you provide a breakdown of all steel column types in the structural model, including their dimensions?","The structural model contains two types of steel wide flange columns with the following dimensions:
+
+**W150X22.5 Columns:**
+- Depth: 152 mm
+- Width: 152 mm
+- Web thickness: 5.8 mm
+- Flange thickness: 6.6 mm
+
+**W250X67 Columns:**
+- Depth: 257 mm
+- Width: 204 mm
+- Web thickness: 8.9 mm
+- Flange thickness: 15.7 mm
+
+The W250X67 columns are the larger main structural columns, while the W150X22.5 columns are smaller secondary columns. These dimensions are from the PSet_Revit_Type_Dimensions property set in the IFC model.",str,dental_clinic,1,D_structural,False
+133,What is the structural concept of the building?,The structural concept of the building is a steel frame with concrete slabs.,str,dental_clinic,4,D_structural,False
+134,What are the foundations made of?,The foundations are made of cast-in-place reinforced concrete.,str,dental_clinic,1,B_construction_materials_layers,False
+153,Which materials are used for the walls?,"Wall Materials by Type:
+
+   Basiswand:Leichtbetonmauerwerk 250:
+     - Leichtbeton - Mauerwerk
+
+   Basiswand:STB 200:
+     - Ortbeton - bewehrt
+
+   Basiswand:STB 250:
+     - Ortbeton - bewehrt
+
+   Basiswand:STB 300:
+     - Ortbeton - bewehrt Verputzt
+
+   Basiswand:WD hart 200:
+     - DÖ§mmung - hart
+
+   Basiswand:GK 100 - Doppelbeplankt:
+     - Trockenbau - Gipsplatte
+     - DÖ§mmung - weich
+
+   Basiswand:GK 75 - Toilettentrennwand:
+     - Trockenbau - Gipsplatte
+     - DÖ§mmung - weich
+
+   Basiswand:GK VS - SanitÖ§r:
+     - Trockenbau - Gipsplatte
+     - DÖ§mmung - weich
+   
+   Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt  (MW12BF):
+     - Trockenbau - Rigips Die Blaue RFI
+     - Default Wall
+   
+   Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt - SanitÖ§r:
+     - Trockenbau - Rigips Die Blaue RFI
+     - Steinwolle (Rockwool Fixrock033 VS)
+     - Luftschicht
+   
+   Basiswand:WD 200 + Luft 40 + Bekleidung 12:
+     - Faserzementplatte (Equitone - natura)
+     - Luftschicht
+     - Steinwolle (Rockwool Fixrock033 VS)",arc,digital_hub,1,B_construction_materials_layers,False
+154,What materials are used on the building's exterior walls?,"Exterior Wall Materials by Type:
+
+   Basiswand:STB 200:
+     - Ortbeton - bewehrt
+
+   Basiswand:STB 250:
+     - Ortbeton - bewehrt
+
+   Basiswand:WD hart 200:
+     - DÖ§mmung - hart
+
+   Basiswand:Leichtbetonmauerwerk 250:
+     - Leichtbeton - Mauerwerk
+
+   Basiswand:STB 300:
+     - Ortbeton - bewehrt Verputzt
+
+   Basiswand:WD 200 + Luft 40 + Bekleidung 12:
+     - Faserzementplatte (Equitone - natura)
+     - Luftschicht
+     - Steinwolle (Rockwool Fixrock033 VS)",arc,digital_hub,1,B_construction_materials_layers,False
+155,Which materials are used in the interior walls?,"Interior Wall Materials by Type:
+
+   Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt  (MW12BF):
+     - Trockenbau - Rigips Die Blaue RFI
+     - Default Wall
+
+   Basiswand:GK 75 - Toilettentrennwand:
+     - Trockenbau - Gipsplatte
+     - DÖ§mmung - weich
+
+   Basiswand:GK 100 - Doppelbeplankt:
+     - Trockenbau - Gipsplatte
+     - DÖ§mmung - weich
+
+   Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt - SanitÖ§r:
+     - Trockenbau - Rigips Die Blaue RFI
+     - Steinwolle (Rockwool Fixrock033 VS)
+     - Luftschicht
+
+   Basiswand:GK VS - SanitÖ§r:
+     - Trockenbau - Gipsplatte
+     - DÖ§mmung - weich",arc,digital_hub,1,B_construction_materials_layers,False
+156,"Which materials are applied in the ceilings, including element counts?","Ceiling Systems: 38 elements
+    Ceiling Types:
+    - Deckensystem: 38 elements",arc,digital_hub,2,B_construction_materials_layers,False
+157,What thicknesses do the different wall types have?,"Wall Thickness by Type:
+   - Basiswand:GK 100 - Doppelbeplankt: 0.100 m (100 mm)
+   - Basiswand:GK 75 - Toilettentrennwand: 0.075 m (75 mm)
+   - Basiswand:GK VS - SanitÖ§r: 0.065 m (65 mm)
+   - Basiswand:Leichtbetonmauerwerk 250: 0.250 m (250 mm)
+   - Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt  (MW12BF): 0.150 m (150 mm)
+   - Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt - SanitÖ§r: 0.400 m (400 mm)
+   - Basiswand:STB 200: 0.200 m (200 mm)
+   - Basiswand:STB 250: 0.250 m (250 mm)
+   - Basiswand:STB 300: 0.300 m (300 mm)
+   - Basiswand:WD 200 + Luft 40 + Bekleidung 12: 0.252 m (252 mm)
+   - Basiswand:WD hart 200: 0.200 m (200 mm)",arc,digital_hub,1,B_construction_materials_layers,False
+158,How many walls are load-bearing compared with non-load-bearing?,"Wall Load-Bearing Classification:
+    - Load-bearing walls: 0 (0.0%)
+    - Non-load-bearing walls: 178 (100.0%)
+    - Total classified: 178 of 178 walls",arc,digital_hub,2,D_structural,False
+170,Is fire rating information available for doors in this model?,Fire rating information for doors not available in this model,arc,digital_hub,4,A_fire_safety_compliance,True
+171,Is fire rating data available for windows in this model?,Fire rating information for windows not available in this model,arc,digital_hub,4,A_fire_safety_compliance,True
+172,"What is the structural system applied in this building, including element counts?","Structural System: Reinforced Concrete Frame Construction
+
+   Structural Elements:
+   - Beams: 14 elements
+   - Columns: 62 elements
+   - Slabs: 23 elements
+   - Members: 80 elements
+   - Roof Elements: 3 elements
+   - Plates: 25 elements
+
+   Total Structural Elements: 207",arc,digital_hub,2,D_structural,False
+176,What are the spans and sizes of the beams?,"Information not available in BIM model
+   Beam span and sizing information requires structural analysis data",arc,digital_hub,4,D_structural,True
+177,Which foundation system is used?,"Information not available in BIM model
+   Foundation system details not included in architecture file",arc,digital_hub,4,D_structural,True
+178,"Could you provide a breakdown of all slab types in the building with their quantities and percentages, and include any available thickness information?","Total Slabs: 23
+
+Slab Types Distribution:
+- Geschossdecke:FB 150 leer: 6 slabs (26.1%)
+- Massivtreppenpodest:Podest 180: 4 slabs (17.4%)
+- Sohle:Sohle 1 mm: 3 slabs (13.0%)
+- Geschossdecke:STB 250: 2 slabs (8.7%)
+- Geschossdecke:STB 220: 2 slabs (8.7%)
+- Geschossdecke:WD 200 hart: 2 slabs (8.7%)
+- Bodenplatte:STB 300: 1 slab (4.3%)
+- Podest (nicht massiv):Podest (nicht massiv): 1 slab (4.3%)
+- Geschossdecke:FB 100 leer: 1 slab (4.3%)
+- Geschossdecke:STB 200 + WD 200: 1 slab (4.3%)
+
+Available Thickness Information:
+- Geschossdecke:STB 250:2396591: 250mm thickness",arc,digital_hub,2,B_construction_materials_layers,False
+179,"What type of structural system is used in the building, and how is the structural grid determined?","Based on the structural elements available in the model, the structural system is most probably flat slab structures with reinforced concrete columns and slabs. Therefore, the structural grid can be derived based on the placement of columns.",arc,digital_hub,3,D_structural,False
+180,"What are the load-bearing structural elements in the building, including their quantities, and what is the typical load path for vertical loads?","Load Bearing Elements:
+- Load bearing beams: 14/14
+- Load bearing columns: 62/62
+- Total load bearing elements: 76
+
+Load Path:
+Typical reinforced concrete frame load path:
+Vertical loads transfer: Slabs → Beams → Columns → Foundations",arc,digital_hub,4,D_structural,False
+182,"What are the dimensions of the columns, with distribution by size?","Column Dimensions:
+- 250 x 400 mm: 32 columns (51.6%)
+- STB StÖºtze - rechteckig:STB 250 x 250: 30 columns (48.4%)",arc,digital_hub,2,D_structural,False
+185,"Could you provide a comprehensive assessment of the building's structural system efficiency, including the system type, element ratios, building characteristics, and overall efficiency rating?","Structural efficiency should be determined through detailed structural analysis. However, based on the data available in this model, the efficiency of the structural system can be summarized as follows:
+    
+    System Type: Reinforced Concrete Frame
+    - Efficient for mid-rise construction
+    - Good for office/commercial building use
+    
+    Element Ratios:
+    - Beam to total ratio: 14.1%
+    - Column to total ratio: 62.6%
+    - Slab to total ratio: 23.2%
+    
+    Building Characteristics:
+    - 3-story structure with systematic layout
+    - Regular structural grid (inferred from column distribution)
+    - Integrated MEP coordination
+    
+    Efficiency Rating: Good structural system for building type and use",arc,digital_hub,4,D_structural,False
+192,"What electrical loads are present in the building, broken down by equipment type?","Electrical distribution equipment not found in MEP files.
+This information would typically be in a dedicated electrical IFC file.
+
+However, electrical loads are present from:
+- Water heaters: 16 units (instantaneous type)
+- Heat pump equipment: 1 units
+- Circulation pumps: 5 units
+- Ventilation fans: 2 units",arc,digital_hub,4,E_MEP_technical_specs,True
+193,Are electrical distribution equipment capacities available?,Electrical panel capacities not available in the BIM model. This model appears to be an architectural model.,arc,digital_hub,4,E_MEP_technical_specs,True
+194,What are the electrical loads by system type?,"Electrical Loads by System Type:
+   - Hot Water System: 48.0 kW
+     * 16 instantaneous water heaters at 3 kW each
+   - Heat Pump System: 15.0 kW (estimated)
+     * 1 heat pump unit
+   - Circulation Pumps: 3.8 kW (estimated)
+     * 5 heating circulation pumps
+   - Ventilation Fans: 4.0 kW (estimated)
+     * 2 AHU fans
+   
+   Total Estimated MEP Load: 70.8 kW
+   Note: Actual loads may vary based on equipment specifications",arc,digital_hub,2,E_MEP_technical_specs,False
+195,What are the voltage levels used in the electrical system?,"Specific voltage levels not available in MEP files.
+    Standard German building voltages likely used:
+    - 230V single-phase for small equipment
+    - 400V three-phase for larger mechanical equipment
+    - Low voltage control systems for building automation",arc,digital_hub,4,E_MEP_technical_specs,True
+197,What is the total energy efficiency rating of the building?,No explicit total energy efficiency rating is available in the models.,arc,digital_hub,4,C_building_physics_sustainability,False
+198,What maintenance requirements exist for MEP systems?,No explicit maintenance requirements are available in the models.,arc,digital_hub,4,E_MEP_technical_specs,False
+210,What is the total heating capacity of all radiators?,Heating capacity information not available in this model,heating,digital_hub,4,E_MEP_technical_specs,True
+222,"Could you provide a comprehensive breakdown of the electrical load for water heaters, including the total load, average per unit, number of units with load data, and the load distribution by building level?","Total Water Heater Load: 48.0 kW
+Average per Unit: 3000 W
+Water heaters with load data: 16/16
+
+Electrical Load by Building Level:
+- Ebene: E00_OKFB: 30.0 kW (62.5%)
+- Ebene: E01_OKFB: 18.0 kW (37.5%)",plumbing,digital_hub,2,E_MEP_technical_specs,False
+236,"What is the total cross-sectional area of ductwork in the building, including the average per duct, the count of ducts with area data, and a breakdown of the area by building level?","Total Duct Cross-Sectional Area: 1133.891 sq m
+Average per Duct: 1.906 sq m
+Ducts with area data: 595/595
+
+Duct Area by Building Level:
+- B01_OKFB: 347.279 sq m (30.6%)
+- E00_OKFB: 1.520 sq m (0.1%)
+- E01_OKFB: 0.219 sq m (0.0%)
+- E01_UKAHD: 352.868 sq m (31.1%)
+- E02_OKRD: 66.185 sq m (5.8%)
+- E02_UKAHD: 326.962 sq m (28.8%)
+- E02_UKRD: 38.858 sq m (3.4%)",ventilation,digital_hub,3,E_MEP_technical_specs,False
+343,What materials are used in each wall type?,Detailed material layer information for walls is not available in this model.,arc,fantasy_hotel_1,4,B_construction_materials_layers,True
+344,What are specific thickness values for each wall type?,"Wall Thicknesses:
+   - Basic Wall:Generic - 200mm: 20cm
+   - Basic Wall:Generic - 100mm:  10cm
+   - Basic Wall:Generic - 100mm Brick: 10cm",arc,fantasy_hotel_1,2,B_construction_materials_layers,False
+345,What percentage of walls are load-bearing vs non-load-bearing?,"Load-Bearing Analysis (Total: 53 walls):
+   - Load-bearing walls: 25 (47.2%)
+   - Non-load-bearing walls: 28 (52.8%)",arc,fantasy_hotel_1,2,D_structural,False
+348,What materials are used in the ceilings?,No ceiling coverings or ceiling-specific elements with material assignments are defined.,arc,fantasy_hotel_1,2,B_construction_materials_layers,False
+354,Which door types have fire rating information?,No door types in this building have fire rating information defined.,arc,fantasy_hotel_1,4,A_fire_safety_compliance,False
+355,Which window types have fire rating information?,No window types in this building have fire rating information defined.,arc,fantasy_hotel_1,4,A_fire_safety_compliance,False
+359,What are the column dimensions?,"Column Dimensions:
+- M_Concrete-Rectangular-Column: 200mm x 200mm (Square)",arc,fantasy_hotel_1,2,D_structural,False
+360,"Could you provide a breakdown of all slab types in the project, including their quantities and thicknesses?","Slab Types and Thicknesses (Total: 49 slabs):
+   - Floor:Road center line: 30 slabs, thickness not specified
+   - Floor:grass 1m: 6 slabs, 1000mm thick
+   - Floor:slab 200 mm 2: 3 slabs, 200mm thick
+   - Floor:tile 1m 2: 2 slabs, 1000mm thick
+   - Floor:Generic 300mm: 1 slabs, 300mm thick
+   - Floor:Generic 200 mm: 1 slabs, 200mm thick
+   - Floor:conc 200 mm: 1 slabs, 200mm thick
+   - Floor:10cm asphalt: 1 slabs, 100mm thick
+   - Floor:10cm asphalt 2: 1 slabs, 100mm thick
+   - Floor:concrete floor 80cm: 1 slabs, 800mm thick
+   - Floor:concrete floor 1m 2: 1 slabs, 1000mm thick
+   - Floor:side walk inner: 1 slabs, thickness not specified",arc,fantasy_hotel_1,2,B_construction_materials_layers,True
+367,"What materials are used for floor finishes, and what is the total area covered by each material type?",No floor or floor covering elements with material assignments and area calculations are defined.,arc,fantasy_hotel_1,4,B_construction_materials_layers,False
+387,"What materials are used in each wall type, along with their layer thicknesses?","Wall Material Layers and Thicknesses:
+
+   Basiswand:STB 25.0 WD 12.0:
+   - Total thickness: 370 mm
+      Layers:
+      - StB - Ortbeton, thickness: 25 cm
+      - Wärmedämmung - Hart, thickness: 12 cm
+
+   Basiswand:STB 20.0 WD 12.0:
+   - Total thickness: 370 mm
+      Layers:
+      - StB - Ortbeton, thickness: 20 cm
+      - Wärmedämmung - Hart, thickness: 12 cm
+      - MW - Gipskarton, thickness: 5 cm
+
+   Basiswand:GK 10.0:
+   - Total thickness: 100 mm
+      Layers:
+      - MW - Gipskarton, thickness: 1.25 cm
+      - Wärmedämmung - Hart, thickness: 7.5 cm
+      - MW - Gipskarton, thickness: 1.25 cm
+
+   Basiswand:GK 12.5:
+   - Total thickness: 125 mm
+      Layers:
+      - MW - Gipskarton, thickness: 2.5 cm
+      - Wärmedämmung - Hart, thickness: 7.5 cm
+      - MW - Gipskarton, thickness: 2.5 cm
+
+   Basiswand:STB 25.0:
+   - Total thickness: 250 mm
+      Layers:
+      - StB - Ortbeton, thickness: 25 cm",arc,fantasy_office_building_1,1,B_construction_materials_layers,False
+388,What are the thicknesses of the different wall types?,"Wall Type Thicknesses:
+   - Basiswand:STB 25.0 WD 12.0: 370 mm
+   - Basiswand:STB 20.0 WD 12.0: 370 mm
+   - Basiswand:GK 10.0: 100 mm
+   - Basiswand:GK 12.5: 125 mm
+   - Basiswand:STB 25.0: 250 mm",arc,fantasy_office_building_1,2,B_construction_materials_layers,False
+389,What proportion of walls are load-bearing?,"Load-Bearing Wall Analysis:
+   - Load-bearing walls: 14
+   - Non-load-bearing walls: 50
+   - Load-bearing percentage: 21.9%",arc,fantasy_office_building_1,2,D_structural,False
+393,Which materials are used in the ceilings?,Ceiling material information is not available in this model.,arc,fantasy_office_building_1,4,B_construction_materials_layers,True
+396,"Can you provide an analysis of the building's structural system, including the likely structural type, a breakdown of structural components with their quantities, and the materials used?","Structural System Assessment:
+The structural system is not directly understandable from the data stored in the model, but a likely option for the primary structural system could be a Frame structure.
+
+Structural Components:
+- Columns: 34
+- Beams: 8
+- Floor slabs: 18
+
+Structural Material:
+Reinforced concrete (StB - Stahlbeton)",arc,fantasy_office_building_1,4,D_structural,False
+397,What are the slab types and their thicknesses?,"Slab Types and Thicknesses:
+   Total slabs: 18
+
+   Slab types:
+   - Geschossdecke:STB 20.0, insul, parquet: 12 slabs, total thickness: 41 cm
+   - Geschossdecke:STB 20.0 groundfloor: 4 slabs, total thickness: 48 cm
+   - Geschossdecke:STB 20.0, insul, concrete: 2 slabs, total thickness: 32 cm",arc,fantasy_office_building_1,2,B_construction_materials_layers,False
+399,Is fire rating information available for doors in this model?,Fire rating information for doors is not available in this model.,arc,fantasy_office_building_1,4,A_fire_safety_compliance,True
+400,Is fire rating information available for windows in this model?,Fire rating information for windows is not available in this model.,arc,fantasy_office_building_1,4,A_fire_safety_compliance,True
+421,What materials are used for each wall type?,"Materials by Wall Type:
+
+- Basic Wall:STB 250:
+  - Ortbeton - bewehrt Verputzt
+
+- Basic Wall:GK 125:
+  - Material information not available
+
+- Basic Wall:KS 175:
+  - Mauerwerk - Kalksandstein
+
+- Basic Wall:KS 115:
+  - Mauerwerk - Kalksandstein",arc,fantasy_office_building_2,1,B_construction_materials_layers,True
+422,What are the thicknesses of the different wall types?,"Wall Thicknesses by Type:
+
+   Basic Wall:STB 250:
+   - Thickness: 250 mm
+
+   Basic Wall:GK 125:
+   - Thickness: 125 mm
+
+   Basic Wall:KS 175:
+   - Thickness: 175 mm
+
+   Basic Wall:KS 115:
+   - Thickness: 115 mm",arc,fantasy_office_building_2,2,B_construction_materials_layers,False
+423,"What is the proportion of load-bearing walls in the building, including the total number of walls, the count of load-bearing walls, and the breakdown of load-bearing wall types?","Load-Bearing Wall ratio:
+
+   - Total walls: 105
+   - Load-bearing walls: 54
+   - Proportion of load-bearing walls: 51.4%
+
+   Load-bearing wall types:
+   - Basic Wall:STB 250: 54 wall(s)",arc,fantasy_office_building_2,2,D_structural,False
+427,Which materials are used in the ceilings?,No dedicated ceiling elements or material assignments found.,arc,fantasy_office_building_2,4,B_construction_materials_layers,False
+429,What are the slab types and their thicknesses?,"Slab Types and Thicknesses:
+   Total slabs: 13
+
+   Slab types:
+     Non-Monolithic Landing:Podest (nicht massiv): 8 slab(s)
+     - Thickness: 4 cm
+
+     Floor:STB 200: 5 slab(s)
+     - Thickness: 20 cm",arc,fantasy_office_building_2,2,B_construction_materials_layers,False
+431,Which door types include fire rating information?,"Door types with fire rating:
+   - TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2800 - EI 30
+     Fire rating: EI 30",arc,fantasy_office_building_2,2,A_fire_safety_compliance,False
+432,Is fire rating information available for windows in this model?,Fire rating information is not available for windows in this model.,arc,fantasy_office_building_2,4,A_fire_safety_compliance,True
+434,Identify all roof types in the building and specify the construction material layers and area information for each roof type.,"Total roof elements: 3
+
+Roof types:
+
+Basic Roof:Flachdachaufbau begrünt 320: (1 element)
+- Area: 239.26 sq m
+- Material layers:
+   - Dachdeckung - Begrünung
+   - Dachdeckung - Flies
+   - Dämmung - hart
+   - Dachdeckung - Bitumenbahn
+
+Basic Roof:Ziegeldach 360: (2 elements)
+- Area for each roof slab: 90.16 sq m
+- Material layers:
+   - Dachdeckung - Ziegeldach
+   - Luftschicht
+   - Dachdeckung - Holz
+   - Dämmung - weich
+   - Luftschicht
+   - Dachdeckung - Holz",arc,fantasy_office_building_2,3,B_construction_materials_layers,False
+457,What materials are used in each wall type?,"Wall Type Materials, by layer:
+
+   - Basiswand:STB 30.0:
+      -  StB - Ortbeton
+
+   - Basiswand:STB 25.0:
+      -  StB - Ortbeton
+
+   - Basiswand:STB 20.0:
+      -  StB - Ortbeton
+
+   - Basiswand:GK 25.0:
+      -  MW - Gipskarton
+      -  Wärmedämmung - Hart (3 layers)
+      -  MW - Gipskarton
+
+   - Basiswand:GK 12.5:
+      -  MW - Gipskarton
+      -  Wärmedämmung - Hart
+      -  MW - Gipskarton
+
+   - Basiswand:MW 11.5:
+      -  MW - Ziegel, verputzt",arc,fantasy_office_building_3,1,B_construction_materials_layers,False
+458,What are the thicknesses of the different wall types?,"Wall Thicknesses by Type:
+   - Basiswand:STB 30.0: 30.0 cm
+   - Basiswand:STB 25.0: 25.0 cm
+   - Basiswand:STB 20.0: 20.0 cm
+   - Basiswand:MW 11.5: 11.5 cm
+   - Basiswand:GK 25.0: 25.0 cm
+   - Basiswand:GK 12.5: 12.5 cm",arc,fantasy_office_building_3,2,B_construction_materials_layers,False
+459,"What proportion of walls are load-bearing, including the total count and breakdown of load-bearing walls by type?","Load-Bearing Wall Analysis:
+   - Total walls: 223
+   - Load-bearing walls: 98 (43.9%)
+   - Non-load-bearing walls: 125 (56.1%)
+
+   Load-bearing wall types:
+   - Basiswand:STB 30.0: 58 wall(s)
+   - Basiswand:STB 25.0: 30 wall(s)
+   - Basiswand:STB 20.0: 10 wall(s)",arc,fantasy_office_building_3,2,D_structural,False
+463,Which materials are used in the ceilings?,Ceiling material information is not available in this model. No IfcCovering elements with ceiling type found.,arc,fantasy_office_building_3,4,B_construction_materials_layers,True
+465,"What are the slab types, their thicknesses, and quantities, grouped by category?","Slab Types and Thicknesses:
+   Total slabs: 17
+
+   Slab types:
+   - Basisdach:Titanzink - Eindeckung: 4 slab(s), Thickness: Not available
+   - Massivtreppenpodest:100 mm Stärke: 4 slab(s), Thickness: 100 mm (0.100 m)
+   - Massivtreppenpodest:100 mm Stärke (1): 4 slab(s), Thickness: 100 mm (0.100 m)
+   - Geschossdecke:STB 25.0: 2 slab(s), Thickness: 250 mm (0.250 m)
+   - Geschossdecke:STB 35.0: 1 slab(s), Thickness: 350 mm (0.350 m)
+   - Bodenplatte:STB 50cm: 1 slab(s), Thickness: 500 mm (0.500 m)
+   - Geschossdecke:STB 30.0: 1 slab(s), Thickness: 300 mm (0.300 m)
+
+   Slabs by category:
+   - Floor slabs: 4
+   - Roof slabs: 4
+   - Landing slabs: 8
+   - Base slabs: 1",arc,fantasy_office_building_3,2,B_construction_materials_layers,True
+467,Is fire rating information available for any door types in this model?,Fire rating information for doors is not available in this model. No fire rating properties found in door specifications.,arc,fantasy_office_building_3,4,A_fire_safety_compliance,True
+468,Is fire rating information available for windows in this model?,Fire rating information for windows is not available in this model. No fire rating properties found in window specifications.,arc,fantasy_office_building_3,4,A_fire_safety_compliance,True
+485,Which materials is used in the exterior walls?,"The materials used for the exterior walls are:
+- StB - Sichtbeton (1) (which could be translated to exposed concrete)",arc,fantasy_residential_building_1,1,B_construction_materials_layers,False
+486,Which materials are used in the interior walls?,"Interior Wall Materials:
+
+   Based on interior wall type analysis:
+   - Concrete (Sichtbeton)
+   - Drywall with insulation (MW system)
+   - Gypsum board partition (GK system)",arc,fantasy_residential_building_1,2,B_construction_materials_layers,False
+487,What are the thicknesses of the different wall types?,"Wall Thicknesses:
+   - Basiswand:STB 15.0 - Sichtbeton: 150mm
+   - Basiswand:STB 30.0 - Sichtbeton 1: 300mm
+   - Basiswand:MW 15cm 2: 150mm
+   - Basiswand:GK 15 2: 150mm",arc,fantasy_residential_building_1,2,B_construction_materials_layers,False
+488,"Could you provide a breakdown of the walls by load-bearing status, including the counts and the proportion of load-bearing walls?","Load-Bearing Wall Analysis:
+   - Load-bearing walls: 48
+   - Non-load-bearing walls: 56
+   - Proportion load-bearing: 46.2%",arc,fantasy_residential_building_1,2,D_structural,False
+492,Which materials are used in the ceilings?,"Ceiling material information is not available in this model.
+
+Available ceiling information:
+- The model contains 2 covering elements
+- Material data for ceilings is not specified in the model",arc,fantasy_residential_building_1,4,B_construction_materials_layers,True
+500,"What are the possible structural systems of this building, given the available model data?","The structural system is not directly understandable from the data stored in the model. The primary system could be:
+- Frame structure
+- Load-bearing wall system",arc,fantasy_residential_building_1,4,D_structural,False
+501,"What are the slab types in the building, their quantities, and available thickness information?","Slab Types and Thicknesses:
+   - Total slabs: 25
+
+   Slab types:
+   - Basisdach:Titanzink - Eindeckung [ROOF]: 8 slab(s)
+   - Fundament:60 x 60 x 1.20 [BASESLAB]: 7 slab(s) - Thickness: 600mm
+   - Fundament:1.00 x 1.00 x 1.20 [BASESLAB]: 7 slab(s) - Thickness: 10mm
+   - Geschossdecke:STB 20.0 [FLOOR]: 2 slab(s) - Thickness: 200mm
+   - Bodenplatte:STB 50cm [BASESLAB]: 1 slab(s) - Thickness: 500mm",arc,fantasy_residential_building_1,2,B_construction_materials_layers,False
+503,Is fire rating information available for doors in this model?,Fire rating information for doors is not available in this model.,arc,fantasy_residential_building_1,4,A_fire_safety_compliance,True
+504,Which window types include fire rating information?,Fire rating information for windows is not available in this model.,arc,fantasy_residential_building_1,4,A_fire_safety_compliance,True
+506,"What type of roof is used in this building, what materials is it made of, and what is the breakdown of roof slabs?","The roof is a hipped roof, made out of a wooden structure covered by Titanium zinc coverings.
+
+Roof slabs:
+- Basisdach:Titanzink - Eindeckung [ROOF]: 8",arc,fantasy_residential_building_1,2,B_construction_materials_layers,False
+522,"Which walls form the exterior envelope, and what are their properties including thickness and total length?","Exterior Walls: 8 walls
+
+   Exterior Wall Types:
+   - Leichtbeton 102890359 300
+
+   Exterior Wall Properties:
+   - Thickness: 300mm
+   - Material: Leichtbeton 102890359
+   - Total Length: 85.60 m",arc,fzk_house,2,B_construction_materials_layers,False
+523,"Which walls are used on the interior partitions, and what are their properties including thickness and total length?","Interior Walls: 5 walls
+
+   Interior Wall Types:
+   - Leichtbeton 102890359 240
+
+   Interior Wall Properties:
+   - Thickness: 240mm
+   - Material: Leichtbeton 102890359
+   - Total Length: 24.06 m",arc,fzk_house,2,B_construction_materials_layers,False
+524,Which materials are used to construct the walls?,"Wall Materials Used: 1 unique materials
+
+   Leichtbeton 102890359:
+   - Used in: Leichtbeton 102890359 240, Leichtbeton 102890359 300",arc,fzk_house,1,B_construction_materials_layers,False
+525,What materials are used for the exterior walls?,"Exterior Wall Materials:
+   - Leichtbeton 102890359",arc,fzk_house,1,B_construction_materials_layers,False
+526,What materials are specified for the interior walls?,"Interior Wall Materials:
+   - Leichtbeton 102890359",arc,fzk_house,1,B_construction_materials_layers,False
+527,What are the thicknesses of the various wall types?,"Wall Thicknesses by Type:
+   - Leichtbeton 102890359 240: 240mm
+   - Leichtbeton 102890359 300: 300mm",arc,fzk_house,1,B_construction_materials_layers,False
+528,What percentage of walls are load-bearing versus non-load-bearing?,"Load-bearing classification fields exist but are not populated.
+All walls have 'Tragende Funktion' property set to 'Nicht definiert' (Not defined).",arc,fzk_house,4,D_structural,True
+533,Which materials are used for the ceilings?,"Ceiling Material Analysis:
+   - Floor slabs (ceiling from below): 1 elements
+   - Covering elements: 0 elements
+
+   Ceiling Materials:
+   - Solid 397409098",arc,fzk_house,1,B_construction_materials_layers,False
+542,Which door types include fire rating data?,No door types have fire rating information in this model.,arc,fzk_house,4,A_fire_safety_compliance,False
+543,Which window types include fire rating information?,No window types have fire rating information in this model.,arc,fzk_house,4,A_fire_safety_compliance,False
+547,"What slab types are used, how many of each, and what are their thicknesses?","Slab Analysis: 4 total slabs
+
+   Slab Classification:
+   - FLOOR Slabs: 1
+   - ROOF Slabs: 2
+   - BASESLAB Slabs: 1
+
+   FLOOR Slab Details:
+   - Slab-033 (Level: Dachgeschoss)
+     Thickness: 200mm
+     Area: 115.6 sq m
+     Volume: 23.13 cu m
+     Materials: Solid 397409098
+
+   ROOF Slab Details:
+   - Dach-1 (Level: Dachgeschoss)
+     Thickness: 200mm
+     Area: 82.6 sq m
+     Volume: 16.51 cu m
+     Materials: Solid 397409098
+   - Dach-2 (Level: Dachgeschoss)
+     Thickness: 200mm
+     Area: 82.6 sq m
+     Volume: 16.51 cu m
+     Materials: Solid 397409098
+
+   BASESLAB Slab Details:
+   - Bodenplatte (Level: Erdgeschoss)
+     Thickness: 200mm
+     Area: 120.0 sq m
+     Volume: 24.00 cu m
+     Materials: Stahlbeton 65690",arc,fzk_house,2,B_construction_materials_layers,False
+573,What materials are used in the walls?,"Total Unique Materials: 17
+   Wall Types with Material Data: 39
+
+   Complete Wall Type Material Compositions:
+   Betongvegg 200:
+     - Betong bÖ¶rende: 201mm
+
+   AV02T:
+     - Gips: 13mm
+     - StÖ•lbindv.: 100mm
+     Total thickness: 113mm
+
+   AV03T:
+     - Gips: 13mm
+     - StÖ•lbindv.: 100mm
+     Total thickness: 113mm
+
+   AV52T:
+     - Gips: 11mm
+     - Bindingsverk: 122mm
+     - SlÖ∏yfer: 25mm
+     - Platekledning: 10mm
+     - StÖ•lbindv.: 99mm
+     - Krysslekting: 30mm
+     - Gips protect: 13mm
+     - Isolasjon : 50mm
+     - cut stone: 150mm
+     - Puss: 15mm
+     - Kryssfiner: 15mm
+     Total thickness: 540mm
+
+   AV50T:
+     - Gips: 11mm
+     - Bindingsverk: 148mm
+     - Isolasjon : 50mm
+     - cut stone: 150mm
+     - Puss: 15mm
+     - Kryssfiner: 15mm
+     Total thickness: 389mm
+
+   AV51T:
+     - Bindingsverk: 50mm
+     - Gips: 9mm
+     - Isolasjon : 50mm
+     - cut stone: 150mm
+     - Puss: 15mm
+     Total thickness: 274mm
+
+   AV04T:
+     - Gips: 13mm
+     - StÖ•lbindv.: 120mm
+     Total thickness: 133mm
+
+   AV07T:
+     - Gips protect: 15mm
+     - StÖ•lbindv.: 70mm
+     Total thickness: 85mm
+
+   AV57T:
+     - Gips: 11mm
+     - Bindingsverk: 148mm
+     - StÖ•lbindv.: 150mm
+     Total thickness: 309mm
+
+   AV01T:
+     - Gips: 13mm
+     - StÖ•lbindv.: 100mm
+     Total thickness: 113mm
+
+   AV14T:
+     - Glass: 100mm
+
+   AV55T:
+     - StÖ•lbindv.: 150mm
+     - cut stone: 150mm
+     - Puss: 15mm
+     Total thickness: 315mm
+
+   AV15T:
+     - Glass: 100mm
+
+   SkjÖ∏rt:
+     - Gips: 13mm
+     - StÖ•lbindv.: 100mm
+     Total thickness: 113mm
+
+   AV13T:
+     - Puss: 10mm
+     - Lettklinker: 150mm
+     Total thickness: 160mm
+
+   AV60T:
+     - Kryssfiner: 15mm
+     - Bindingsverk: 56mm
+     Total thickness: 71mm
+
+   AV19T:
+     - Bindingsverk: 148mm
+     - Gips: 13mm
+     Total thickness: 161mm
+
+   AV16T:
+     - Gips: 13mm
+     - StÖ•lbindv.: 178mm
+     Total thickness: 191mm
+
+   Rekkverk:
+     - air space: 60mm
+
+   AV54T:
+     - cut stone: 150mm
+     - Puss: 15mm
+     Total thickness: 165mm
+
+   AV53T:
+     - Gips: 11mm
+     - Bindingsverk: 134mm
+     - Isolasjon : 50mm
+     - cut stone: 150mm
+     Total thickness: 345mm
+
+   Betongvegg 250:
+     - Betong bÖ¶rende: 200mm
+
+   AV11aT:
+     - StÖ•lbindv.: 15mm
+     - Gips: 13mm
+     - Krysslekting: 30mm
+     - Gips protect: 13mm
+     Total thickness: 71mm
+
+   AV56T:
+     - Gips: 11mm
+     - Bindingsverk: 148mm
+     - SlÖ∏yfer: 25mm
+     - Platekledning: 10mm
+     Total thickness: 194mm
+
+   Utlekting trapp:
+     - Bindingsverk: 148mm
+     - Gips: 13mm
+     Total thickness: 161mm
+
+   Gesims_AV52T:
+     - Kryssfiner: 15mm
+     - Bindingsverk: 148mm
+     - Gips: 9mm
+     - Isolasjon : 50mm
+     - cut stone: 150mm
+     - Puss: 15mm
+     Total thickness: 387mm
+
+   AV18T:
+     - Gips: 13mm
+     - StÖ•lbindv.: 170mm
+     Total thickness: 183mm
+
+   AV06T:
+     - Gips: 13mm
+     - StÖ•lbindv.: 170mm
+     Total thickness: 183mm
+
+   AV11T:
+     - Gips: 13mm
+     - StÖ•lbindv.: 100mm
+     - Krysslekting: 30mm
+     - Gips protect: 13mm
+     Total thickness: 156mm
+
+   AV17T:
+     - Gips: 13mm
+     - Leca: 13mm
+     - StÖ•lbindv.: 100mm
+     - air space: 50mm
+     Total thickness: 176mm
+
+   AV05T:
+     - Gips: 13mm
+     - Leca: 13mm
+     - StÖ•lbindv.: 100mm
+     - Spalte: 20mm
+     Total thickness: 146mm
+
+   AV12T:
+     - Gips: 13mm
+     - StÖ•lbindv.: 100mm
+     Total thickness: 113mm
+
+   AV10T:
+     - Puss: 10mm
+     - Lettklinker: 150mm
+     Total thickness: 160mm
+
+   Utlekting:
+     - air space: 10mm
+     - Bindingsverk: 100mm
+     - Gips: 13mm
+     Total thickness: 123mm
+
+   Utlekting aud.:
+     - Bindingsverk: 148mm
+     - Gips: 13mm
+     Total thickness: 161mm
+
+   AV58T:
+     - StÖ•lbindv.: 150mm
+
+   AV11bT:
+     - Gips: 13mm
+     - StÖ•lbindv.: 85mm
+     Total thickness: 98mm
+
+   AV08T:
+     - Gips: 13mm
+     - StÖ•lbindv.: 100mm
+     Total thickness: 113mm
+
+   SkrÖ•vegg aud.:
+     - Gips: 11mm
+     - Bindingsverk: 148mm
+     - SlÖ∏yfer: 25mm
+     - Platekledning: 10mm
+     Total thickness: 194mm",arc,hitos,1,B_construction_materials_layers,False
+574,What materials are used in the exterior walls?,"Total Unique Materials in Exterior Walls: 10
+   Exterior Wall Types with Material Data: 17
+
+   Exterior Wall Type Material Compositions:
+
+   AV52T:
+     - Gips: 11mm
+     - Bindingsverk: 120mm
+     - Sløyfer: 25mm
+     - Platekledning: 10mm
+     - Isolasjon : 50mm
+     - cut stone: 150mm
+     - Puss: 15mm
+     - Stålbindv.: 150mm
+     Total thickness: 531mm
+
+   AV50T:
+     - Gips: 11mm
+     - Bindingsverk: 148mm
+     - Isolasjon : 50mm
+     - cut stone: 150mm
+     - Puss: 15mm
+     Total thickness: 374mm
+
+   AV51T:
+     - Bindingsverk: 50mm
+     - Gips: 9mm
+     - Isolasjon : 50mm
+     - cut stone: 150mm
+     - Puss: 15mm
+     Total thickness: 274mm
+
+   AV55T:
+     - Stålbindv.: 150mm
+     - cut stone: 150mm
+     - Puss: 15mm
+     Total thickness: 315mm
+
+   AV57T:
+     - Gips: 11mm
+     - Bindingsverk: 148mm
+     - Stålbindv.: 150mm
+     Total thickness: 309mm
+
+   AV60T:
+     - Kryssfiner: 15mm
+     - Bindingsverk: 56mm
+     Total thickness: 71mm
+
+   AV19T:
+     - Bindingsverk: 148mm
+     - Gips: 13mm
+     Total thickness: 161mm
+
+   AV13T:
+     - Puss: 10mm
+     - Lettklinker: 150mm
+     Total thickness: 160mm
+
+   AV16T:
+     - Gips: 13mm
+     - Stålbindv.: 178mm
+     Total thickness: 191mm
+
+   AV54T:
+     - cut stone: 150mm
+     - Puss: 15mm
+     Total thickness: 165mm
+
+   AV56T:
+     - Gips: 11mm
+     - Bindingsverk: 148mm
+     - Sløyfer: 25mm
+     - Platekledning: 10mm
+     Total thickness: 194mm
+
+   Utlekting trapp:
+     - Bindingsverk: 148mm
+     - Gips: 13mm
+     Total thickness: 161mm
+
+   AV53T:
+     - Gips: 11mm
+     - Bindingsverk: 148mm
+     Total thickness: 159mm
+
+   Skråvegg aud.:
+     - Gips: 11mm
+     - Bindingsverk: 148mm
+     - Sløyfer: 25mm
+     - Platekledning: 10mm
+     Total thickness: 194mm
+
+   AV01T:
+     - Gips: 13mm
+     - Stålbindv.: 100mm
+     Total thickness: 113mm
+
+   AV04T:
+     - Gips: 13mm
+     - Stålbindv.: 120mm
+     Total thickness: 133mm
+
+   AV58T:
+     - Stålbindv.: 150mm
+     Total thickness: 150mm",arc,hitos,1,B_construction_materials_layers,False
+575,What materials are used in the interior walls?,"Total Unique Materials in Interior Walls: 15
+   Interior Wall Types with Material Data: 30
+
+   Interior Wall Type Material Compositions:
+
+   Betongvegg 200:
+     - Betong bærende: 201mm
+     Total thickness: 201mm
+
+   AV02T:
+     - Gips: 13mm
+     - Stålbindv.: 100mm
+     Total thickness: 113mm
+
+   AV03T:
+     - Gips: 13mm
+     - Stålbindv.: 100mm
+     Total thickness: 113mm
+
+   AV04T:
+     - Gips: 13mm
+     - Stålbindv.: 120mm
+     Total thickness: 133mm
+
+   AV07T:
+     - Gips protect: 15mm
+     - Stålbindv.: 70mm
+     Total thickness: 85mm
+
+   AV01T:
+     - Gips: 13mm
+     - Stålbindv.: 100mm
+     Total thickness: 113mm
+
+   AV14T:
+     - Glass: 100mm
+     Total thickness: 100mm
+
+   AV15T:
+     - Glass: 100mm
+     Total thickness: 100mm
+
+   AV57T:
+     - Gips: 11mm
+     - Bindingsverk: 148mm
+     - Stålbindv.: 150mm
+     Total thickness: 309mm
+
+   Skjørt:
+     - Gips: 13mm
+     - Stålbindv.: 100mm
+     Total thickness: 113mm
+
+   AV52T:
+     - Stålbindv.: 69mm
+     - Gips: 10mm
+     - Krysslekting: 30mm
+     - Gips protect: 13mm
+     - Kryssfiner: 15mm
+     - Bindingsverk: 148mm
+     - Isolasjon : 50mm
+     - cut stone: 150mm
+     - Puss: 15mm
+     Total thickness: 500mm
+
+   Rekkverk:
+     - air space: 60mm
+     Total thickness: 60mm
+
+   AV51T:
+     - Bindingsverk: 50mm
+     - Gips: 9mm
+     - Isolasjon : 50mm
+     - cut stone: 150mm
+     - Puss: 15mm
+     Total thickness: 274mm
+
+   Betongvegg 250:
+     - Betong bærende: 200mm
+     Total thickness: 200mm
+
+   AV11aT:
+     - Stålbindv.: 15mm
+     - Gips: 13mm
+     - Krysslekting: 30mm
+     - Gips protect: 13mm
+     Total thickness: 71mm
+
+   AV50T:
+     - Gips: 11mm
+     - Bindingsverk: 148mm
+     - Isolasjon : 50mm
+     - cut stone: 150mm
+     - Puss: 15mm
+     - Kryssfiner: 15mm
+     Total thickness: 389mm
+
+   Gesims_AV52T:
+     - Kryssfiner: 15mm
+     - Bindingsverk: 148mm
+     - Gips: 9mm
+     - Isolasjon : 50mm
+     - cut stone: 150mm
+     - Puss: 15mm
+     Total thickness: 387mm
+
+   AV18T:
+     - Gips: 13mm
+     - Stålbindv.: 170mm
+     Total thickness: 183mm
+
+   AV06T:
+     - Gips: 13mm
+     - Stålbindv.: 170mm
+     Total thickness: 183mm
+
+   AV11T:
+     - Gips: 13mm
+     - Stålbindv.: 100mm
+     - Krysslekting: 30mm
+     - Gips protect: 13mm
+     Total thickness: 156mm
+
+   AV13T:
+     - Puss: 10mm
+     - Lettklinker: 150mm
+     Total thickness: 160mm
+
+   AV53T:
+     - Gips: 11mm
+     - Bindingsverk: 115mm
+     - Isolasjon : 50mm
+     - cut stone: 150mm
+     Total thickness: 326mm
+
+   AV17T:
+     - Gips: 13mm
+     - Leca: 13mm
+     - Stålbindv.: 100mm
+     - air space: 50mm
+     Total thickness: 176mm
+
+   AV05T:
+     - Gips: 13mm
+     - Leca: 13mm
+     - Stålbindv.: 100mm
+     - Spalte: 20mm
+     Total thickness: 146mm
+
+   AV12T:
+     - Gips: 13mm
+     - Stålbindv.: 100mm
+     Total thickness: 113mm
+
+   AV10T:
+     - Puss: 10mm
+     - Lettklinker: 150mm
+     Total thickness: 160mm
+
+   Utlekting:
+     - air space: 10mm
+     - Bindingsverk: 100mm
+     - Gips: 13mm
+     Total thickness: 123mm
+
+   Utlekting aud.:
+     - Bindingsverk: 148mm
+     - Gips: 13mm
+     Total thickness: 161mm
+
+   AV11bT:
+     - Gips: 13mm
+     - Stålbindv.: 85mm
+     Total thickness: 98mm
+
+   AV08T:
+     - Gips: 13mm
+     - Stålbindv.: 100mm
+     Total thickness: 113mm",arc,hitos,1,B_construction_materials_layers,False
+576,What is the thickness range and specific thickness values for each wall type?,"Wall Thickness Overview:
+   - Thickness range: 60 - 387 mm
+
+   Unique Wall Thicknesses by Type:
+   - Betongvegg 200: 200mm, 220mm (139 walls)
+   - AV02T: 139mm (111 walls)
+   - AV03T: 152mm (81 walls)
+   - AV52T: 71mm, 150mm, 205mm, 274mm, 387mm (77 walls)
+   - AV50T: 385mm, 387mm (56 walls)
+   - AV51T: 259mm, 274mm (55 walls)
+   - AV04T: 172mm (42 walls)
+   - AV07T: 100mm (32 walls)
+   - AV57T: 150mm, 170mm (31 walls)
+   - AV01T: 126mm (27 walls)
+   - AV14T: 100mm (26 walls)
+   - AV55T: 150mm, 165mm (24 walls)
+   - AV15T: 100mm (18 walls)
+   - Skjørt: 126mm (13 walls)
+   - AV13T: 170mm (12 walls)
+   - AV60T: 71mm (10 walls)
+   - AV19T: 161mm (9 walls)
+   - AV16T: 191mm (8 walls)
+   - Rekkverk: 60mm (8 walls)
+   - AV54T: 165mm (7 walls)
+   - AV53T: 170mm, 259mm, 370mm (7 walls)
+   - Betongvegg 250: 200mm (7 walls)
+   - AV11aT: 71mm (6 walls)
+   - AV56T: 205mm (6 walls)
+   - Utlekting trapp: 161mm (5 walls)
+   - Gesims_AV52T: 387mm (5 walls)
+   - AV18T: 196mm (4 walls)
+   - AV06T: 222mm (4 walls)
+   - AV11T: 182mm (4 walls)
+   - AV17T: 315mm (2 walls)
+   - AV05T: 272mm (2 walls)
+   - Skråvegg aud.: 205mm (1 walls)
+   - AV12T: 126mm (1 walls)
+   - AV10T: 160mm (1 walls)
+   - Utlekting: 136mm (1 walls)
+   - Utlekting aud.: 161mm (1 walls)
+   - AV58T: 150mm (1 walls)
+   - AV11bT: 111mm (1 walls)
+   - AV08T: 113mm (1 walls)",arc,hitos,1,B_construction_materials_layers,False
+577,What percentage of walls are load-bearing vs non-load-bearing?,Load-bearing classification data is not available in this model.,arc,hitos,4,D_structural,True
+581,What materials are used in the ceilings?,"Total Ceiling Slabs Found: 277
+
+   Ceiling Type Material Compositions:
+
+   Dekke-01:
+     - Betong bÖ¶rende: 269mm
+     - PÖ•stÖ∏p: 20mm
+     - Betong, lett: 250mm
+     Total thickness: 539mm
+
+   Dekke-02:
+     - Betong bÖ¶rende: 265mm
+
+   Dekke-03:
+     - Betong bÖ¶rende: 250mm
+
+   Gipshimling:
+     - air space: 126mm
+     - Isolasjon : 100mm
+     - Gips: 13mm
+     - Himlingsplater: 50mm
+     Total thickness: 289mm
+
+   Grupper.himling:
+     - Himlingsplater: 50mm
+
+   HImling_EH01T:
+     - Himlingsplater: 50mm
+
+   HImling_EH04T:
+     - Himlingsplater: 50mm
+
+   Himling_EH01T:
+     - Himlingsplater: 50mm
+
+   Himling_EH02T:
+     - Himlingsplater: 50mm
+
+   Himling_EH03T:
+     - Himlingsplater: 50mm
+
+   Himling_EH04T:
+     - Himlingsplater: 50mm
+
+   Himling_EH05T:
+     - Himlingsplater: 50mm
+
+   Himling_EH12T:
+     - Himlingsplater: 50mm
+
+   Kontorhimling:
+     - Himlingsplater: 50mm
+
+   Korridorhimling:
+     - Himlingsplater: 50mm
+
+   Kurslab.himling:
+     - Himlingsplater: 50mm
+
+   Lesesalhimling:
+     - Himlingsplater: 50mm
+
+   MÖ∏teromhimling:
+     - Himlingsplater: 50mm
+
+   Tak v/inngang:
+     - Betong, lett: 250mm
+
+   Taktekking_papp:
+     - Papp: 2mm
+
+   Trapphimling:
+     - Himlingsplater: 50mm
+
+   glassgÖ•.himling:
+     - Himlingsplater: 50mm
+
+   sosials.himling:
+     - Himlingsplater: 50mm",arc,hitos,1,B_construction_materials_layers,False
+592,Which door types have fire rating information?,No door types have fire rating information in this model.,arc,hitos,4,A_fire_safety_compliance,False
+593,Which window types have fire rating information?,No window types have fire rating information in this model.,arc,hitos,4,A_fire_safety_compliance,False
+597,"Could you provide a breakdown of each column type, including the number of elements and their respective dimensions?","Column Dimensions by Type:
+
+   BS-skive: 6 column(s)
+     - 1000Öó200mm
+
+   BS-skive ARK: 1 column(s)
+     - 1000Öó200mm
+
+   BS02: 38 column(s)
+     - Öò200mm (R=100mm) (8 columns)
+     - Öò350mm (R=175mm) (30 columns)
+
+   BS04: 142 column(s)
+     - 430Öó350mm (2 columns)
+     - Öò350mm (R=175mm) (3 columns)
+     - 100Öó150mm (9 columns)
+     - 430Öó430mm (2 columns)
+     - 100Öó100mm (6 columns)
+     - 350Öó350mm (110 columns)
+     - 350Öó150mm (4 columns)
+     - Öò200mm (R=100mm) (6 columns)
+
+   BS04 ARK: 8 column(s)
+     - 350Öó350mm
+
+   Column Shape Distribution:
+   - Rectangular columns: 148
+   - Circular columns: 47",arc,hitos,2,D_structural,False
+598,What are the slab types and thicknesses?,"Slab Types:
+   - Floor slabs: 285
+   - Roof slabs: 78
+
+   Floor Slab Types and Thicknesses:
+   - Auditoriumtrapp: 208mm, 417mm (avg: 312mm, 2 slabs)
+   - Baldakin: 250mm (1 slab)
+   - Dekke-01: 208mm, 208mm, 208mm, 208mm, 208mm, 208mm, 208mm, 208mm, 208mm, 208mm, 208mm, 250mm, 250mm, 250mm, 265mm, 265mm, 265mm, 265mm, 281mm, 285mm, 285mm, 285mm, 285mm, 285mm, 285mm, 285mm, 285mm, 285mm, 285mm, 285mm, 285mm, 285mm, 417mm, 417mm, 417mm, 417mm, 417mm, 417mm, 417mm, 417mm (avg: 275mm, 51 slabs)
+   - Dekke-02: 265mm (1 slab)
+   - Dekke-03: 250mm, 250mm (avg: 250mm, 2 slabs)
+   - Gipshimling: 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 126mm, 126mm (avg: 54mm, 39 slabs)
+   - Grupper.himling: 50mm, 50mm, 50mm, 50mm (avg: 50mm, 14 slabs)
+   - Gulv pÖ• grunn: 120mm, 120mm, 120mm, 120mm, 120mm, 120mm, 120mm (avg: 120mm, 8 slabs)
+   - HImling_EH01T: 50mm (1 slab)
+   - HImling_EH04T: 50mm (1 slab)
+   - Himling_EH01T: 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm (avg: 50mm, 14 slabs)
+   - Himling_EH02T: 50mm, 50mm (avg: 50mm, 2 slabs)
+   - Himling_EH03T: 50mm, 50mm (avg: 50mm, 2 slabs)
+   - Himling_EH04T: 50mm (1 slab)
+   - Himling_EH05T: 50mm, 50mm (avg: 50mm, 2 slabs)
+   - Himling_EH12T: 50mm, 50mm (avg: 50mm, 4 slabs)
+   - Hulldekke ARK: 265mm, 265mm (avg: 265mm, 2 slabs)
+   - Kontorhimling: 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm (avg: 50mm, 61 slabs)
+   - Kontorhimlinh: 50mm (1 slab)
+   - Korridorhimling: 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm (avg: 50mm, 25 slabs)
+   - Kurslab.himling: 50mm (1 slab)
+   - Lesesalhimling: 50mm (1 slab)
+   - MÖ∏teromhimling: 50mm, 50mm, 50mm (avg: 50mm, 3 slabs)
+   - Tak v/inngang: 250mm (1 slab)
+   - Terrassedekke: 300mm (1 slab)
+   - Trapphimling: 50mm, 50mm, 50mm (avg: 50mm, 9 slabs)
+   - Unnamed Slab: 50mm, 50mm, 148mm, 148mm, 148mm, 148mm, 148mm, 148mm, 200mm, 250mm, 265mm, 285mm, 300mm (avg: 176mm, 13 slabs)
+   - glassgÖ•.himling: 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm (avg: 50mm, 21 slabs)
+   - sosials.himling: 50mm (1 slab)
+
+   Roof Slab Types and Thicknesses:
+   - Gesimsdetalj: 18mm (1 slab)
+   - Taktekking_papp: 2mm, 2mm, 2mm, 2mm, 2mm, 2mm, 2mm, 2mm, 2mm, 2mm, 2mm, 2mm (avg: 2mm, 20 slabs)
+   - Unnamed Slab: 18mm, 18mm, 18mm, 18mm, 18mm, 18mm, 18mm, 18mm, 18mm, 18mm, 18mm, 19mm, 19mm, 19mm, 19mm, 19mm, 19mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 50mm, 220mm, 225mm, 226mm, 226mm, 226mm, 226mm, 226mm, 226mm, 226mm, 279mm, 279mm, 279mm, 279mm (avg: 110mm, 57 slabs)",arc,hitos,2,B_construction_materials_layers,False
+626,Which materials are used for the walls?,"The 189 walls use 11 distinct assigned materials:
+- Beton - Armeret Bærende
+- Beton - Insitu Udfyldning
+- Beton - Letbeton Bærende
+- Beton - Letbeton Bærende Tagetage
+- Gipsplade
+- Isolering - Mineraluld Blød
+- Luft - Indvendig
+- Luft - Udvendig
+- Membran
+- Mursten - Beklædning Grå
+- Træ - Beklædning
+The two Partition Panel 25 walls have no assigned material in the IFC.",arc,molio,1,B_construction_materials_layers,False
+627,What materials are used in the exterior walls?,"Exterior Wall Materials:
+   - Beton - Armeret Bærende
+   - Beton - Insitu Udfyldning
+   - Gipsplade
+   - Isolering - Mineraluld Blød
+   - Luft - Indvendig
+   - Luft - Udvendig
+   - Membran
+   - Mursten - Beklædning Grå
+   - Træ - Beklædning",arc,molio,1,B_construction_materials_layers,False
+628,What materials are used in the interior walls?,"Interior Wall Materials:
+   - Beton - Armeret Bærende
+   - Beton - Letbeton Bærende
+   - Beton - Letbeton Bærende Tagetage
+   - Gipsplade
+   - Isolering - Mineraluld Blød",arc,molio,1,B_construction_materials_layers,False
+629,What are the thicknesses of the different wall types?,"Wall Thicknesses by Type:
+
+   Beton - Insitu Udfyldning:
+   - 588mm (4 walls)
+
+   _DK  Væg beton, 200 mm:
+   - 200mm (14 walls)
+
+   _DK  Væg letbeton, 100 mm:
+   - 100mm (52 walls)
+
+   _DK  Væg beton, 150:
+   - 150mm (23 walls)
+
+   _DK  Ydervæg, tegl/Beton, 588, 108/180:
+   - 588mm (24 walls)
+
+   _DK  Væg gips, stålskelet, 30dB/BS30/2 lag 95 mm:
+   - 95mm (60 walls)
+
+   _DK  Væg gips, stålskelet, 52dB/BS60/4 lag 145 mm:
+   - 145mm (1 walls)
+
+   _DK  Ydervæg, let, 488:
+   - 388mm (4 walls)
+
+   _DK  Væg letbeton Tag, 100 mm:
+   - 100mm (3 walls)
+
+   _DK  Ydervæg, beklædning/beton, 396:
+   - 376mm (2 walls)
+
+   Partition Panel 25:
+   - No thickness value is provided (2 walls)",arc,molio,1,B_construction_materials_layers,False
+630,What percentage of walls are load-bearing versus non-load-bearing?,"Wall Structural Function Distribution:
+   - Load-Bearing Walls: 126 (66.7%)
+   - Non-Load-Bearing Walls: 61 (32.3%)
+   - Undefined Function: 2 (1.1%)",arc,molio,2,D_structural,False
+637,Which materials are used in the ceilings?,"No explicit ceiling elements or ceiling material assignments are present: the four IfcCovering elements are NOTDEFINED flashings, not CEILING coverings. The model contains 53 IfcSlab elements, but treating their floor/slab materials as ceiling materials would be an assumption.",arc,molio,1,B_construction_materials_layers,False
+648,Which door types include fire rating information?,No fire rating information found for doors in this model,arc,molio,4,A_fire_safety_compliance,True
+649,Which window types have fire rating data?,No fire rating information found for windows in this model,arc,molio,4,A_fire_safety_compliance,True
+653,What are the column dimensions?,"All 14 columns use the assigned type GENERISK - STRUKTUREL 300 x 300, with a 0.30 m × 0.30 m cross-section.",arc,molio,1,D_structural,False
+654,Which slab types are used and what are their thicknesses?,"Total Slabs: 53
+
+   Slab Types and Thicknesses:
+   - _DK  Dæk terræn, grus/iso/trægulv  510 mm:
+     • 510mm thick: 1 slabs
+   - _DK  Dæk terræn, grus/iso/afret 510 mm:
+     • 510mm thick: 2 slabs
+   - GENERISK - STRUKTUREL:
+     • 50mm thick: 37 slabs
+   - _DK  Dæk beton/iso/afret/flise, 356:
+     • 356mm thick: 6 slabs
+   - _DK  Dæk beton/strøer/træ, 356:
+     • 356mm thick: 6 slabs
+   - _DK Tag fladt beton flise:
+     • 540mm thick: 1 slabs",arc,molio,2,B_construction_materials_layers,False
+682,"Could you provide a detailed breakdown of all wall materials used in the building, organized by wall type with their layer composition and thicknesses?","Wall Materials Used in Building:
+   - Total unique materials: 13
+
+   Wall Materials per Type:
+   - Basic Wall:Interior - Partition: 120mm
+     Materials (3 layers):
+       1. Finishes - Interior - Gypsum Wall Board - 10mm
+       2. Wood - Stud Layer - 100mm
+       3. Finishes - Interior - Gypsum Wall Board - 10mm
+
+   - Basic Wall:Retaining - 300mm Concrete: 300mm
+     Materials (1 layer):
+       1. Concrete - Cast In Situ - 300mm
+
+   - Basic Wall:Wall - Timber Clad: 202mm
+     Materials (6 layers):
+       1. Finishes - Exterior - Timber Cladding - 22mm
+       2. Wood - Stud Layer - 25mm
+       3. Structure - Timber Insulated Panel - OSB - 15mm
+       4. Structure - Timber Insulated Panel - Insulation - 112mm
+       5. Structure - Timber Insulated Panel - OSB - 15mm
+       6. Finishes - Interior - Plasterboard - 13mm
+
+   - Basic Wall:CL_W1:
+     Materials (1 layer):
+       1. CL Concrete_ panels
+
+   - Basic Wall:SIP 202mm Wall - conc clad: 202mm
+     Materials (6 layers):
+       1. Concrete, Sand/Cement Screed - 22mm
+       2. Wood - Stud Layer - 25mm
+       3. Structure - Timber Insulated Panel - OSB - 15mm
+       4. Structure - Timber Insulated Panel - Insulation - 112mm
+       5. Structure - Timber Insulated Panel - OSB - 15mm
+       6. Finishes - Interior - Plasterboard - 13mm
+
+   - Basic Wall:Interior - 165 Partition (1-hr): 165mm
+     Materials (3 layers):
+       1. Finishes - Interior - Gypsum Wall Board - 13mm
+       2. Wood - Stud Layer - 140mm
+       3. Finishes - Interior - Gypsum Wall Board - 13mm
+
+   - Basic Wall:Cavity wall_sliders: 280mm
+     Materials (6 layers):
+       1. Finishes - Exterior - Timber Cladding - 10mm
+       2. Metal Stud Layer - 20mm
+       3. Air - 220mm
+       4. Metal Stud Layer - 20mm
+       5. Finishes - Exterior - Timber Cladding - 10mm
+
+   - Basic Wall:Foundation - 300mm Concrete: 300mm
+     Materials (1 layer):
+       1. Concrete - Cast In Situ - 300mm",arc,samuel_macalister_sample_house,2,B_construction_materials_layers,False
+683,"Could you provide a detailed breakdown of the materials used in each exterior wall type, including their layer composition and thicknesses?","Exterior Wall Materials per Type:
+
+- Basic Wall:Retaining - 300mm Concrete: 300mm
+  Materials (1 layers):
+    1. Concrete - Cast In Situ - 300mm
+
+- Basic Wall:Wall - Timber Clad: 202mm
+  Materials (6 layers):
+    1. Finishes - Exterior - Timber Cladding - 22mm
+    2. Wood - Stud Layer - 25mm
+    3. Structure - Timber Insulated Panel - OSB - 15mm
+    4. Structure - Timber Insulated Panel - Insulation - 112mm
+    5. Structure - Timber Insulated Panel - OSB - 15mm
+    6. Finishes - Interior - Plasterboard - 13mm
+
+- Basic Wall:CL_W1:
+  Materials (1 layers):
+    1. CL Concrete_ panels
+
+- Basic Wall:SIP 202mm Wall - conc clad: 202mm
+  Materials (6 layers):
+    1. Concrete, Sand/Cement Screed - 22mm
+    2. Wood - Stud Layer - 25mm
+    3. Structure - Timber Insulated Panel - OSB - 15mm
+    4. Structure - Timber Insulated Panel - Insulation - 112mm
+    5. Structure - Timber Insulated Panel - OSB - 15mm
+    6. Finishes - Interior - Plasterboard - 13mm
+
+- Basic Wall:Cavity wall_sliders: 280mm
+  Materials (6 layers):
+    1. Finishes - Exterior - Timber Cladding - 10mm
+    2. Metal Stud Layer - 20mm
+    3. Air - 220mm
+    4. Metal Stud Layer - 20mm
+    5. Finishes - Exterior - Timber Cladding - 10mm
+
+- Basic Wall:Foundation - 300mm Concrete: 300mm
+  Materials (1 layers):
+    1. Concrete - Cast In Situ - 300mm",arc,samuel_macalister_sample_house,1,B_construction_materials_layers,False
+684,"Could you provide a detailed breakdown of the materials used in each type of interior wall, including the layer composition and thicknesses?","Interior Wall Materials by Type:
+
+- Basic Wall:Interior - Partition: 120mm
+  Materials (3 layers):
+    1. Finishes - Interior - Gypsum Wall Board - 10mm
+    2. Wood - Stud Layer - 100mm
+    3. Finishes - Interior - Gypsum Wall Board - 10mm
+
+- Basic Wall:Interior - 165 Partition (1-hr): 165mm
+  Materials (3 layers):
+    1. Finishes - Interior - Gypsum Wall Board - 13mm
+    2. Wood - Stud Layer - 140mm
+    3. Finishes - Interior - Gypsum Wall Board - 13mm",arc,samuel_macalister_sample_house,1,B_construction_materials_layers,False
+685,"Could you provide a detailed breakdown of wall thicknesses by type, including the quantity of each wall type and overall thickness statistics?","Wall Thicknesses by Type:
+- Basic Wall:SIP 202mm Wall - conc clad: 202 mm (4 walls)
+- Basic Wall:Wall - Timber Clad: 202 mm (7 walls)
+- Basic Wall:Cavity wall_sliders: 280 mm (2 walls)
+- Basic Wall:Interior - 165 Partition (1-hr): 165 mm (3 walls)
+- Basic Wall:Interior - Partition: 120 mm (15 walls)
+- Basic Wall:Foundation - 300mm Concrete: 300 mm (1 wall)
+- Basic Wall:Retaining - 300mm Concrete: 300 mm (10 walls)
+
+Thickness Statistics:
+- Total walls with thickness data: 42
+- Thickness range: 120 - 300 mm",arc,samuel_macalister_sample_house,2,B_construction_materials_layers,False
+686,"Could you provide a comprehensive breakdown of wall classifications in the building, including the counts and proportions of load-bearing, non-load-bearing, and unspecified walls, along with the specific types of load-bearing walls?","Load-Bearing Wall Analysis:
+- Total walls: 48
+- Walls with load-bearing classification: 11
+
+Load-Bearing Classification Breakdown:
+- Load-bearing walls: 11 (11.8%)
+- Non-load-bearing walls: 0 (48.6%)
+- Unspecified walls: 37 (39.5%)
+
+Load-Bearing Wall Types:
+- Basic Wall:Retaining - 300mm Concrete
+- Basic Wall:CL_W1
+- Basic Wall:Foundation - 300mm Concrete",arc,samuel_macalister_sample_house,2,D_structural,False
+692,"What materials are used in each ceiling type, including their specifications and layer details?","Ceiling Materials Found:
+
+- Compound Ceiling: 3000 x 3000mm Grid
+  Materials (3 layers):
+    1. Default - 35mm
+    2. Finishes - Interior - Plasterboard - 15mm
+
+- Basic Ceiling: Generic
+  No Materials Listed",arc,samuel_macalister_sample_house,1,B_construction_materials_layers,False
+702,What is the thermal transmittance of the exterior walls of the master bedroom?,"The thermal transmittance of the exterior walls of the master bedroom is 47.55, with no units specified.",arc,samuel_macalister_sample_house,1,C_building_physics_sustainability,False
+705,Which door types include fire rating information?,No fire rating information available for doors in this model.,arc,samuel_macalister_sample_house,4,A_fire_safety_compliance,True
+706,Is fire rating information available for any window types in this model?,No fire rating information available for windows in this model.,arc,samuel_macalister_sample_house,4,A_fire_safety_compliance,True
+707,What is the structural system of this building?,"Structural System Type suggestions based on available model:
+   - Foundation: Deep pile foundation system
+   - Superstructure: Column and slab system (flat slab or post-tensioned)",arc,samuel_macalister_sample_house,4,D_structural,False
+710,"Could you provide a breakdown of column dimensions by type, including the quantities of each column type in the building?","Column Dimensions Analysis:
+- M_Concrete-Round-Column with Drop Caps:M_1000: 1 column(s)
+  Type: Circular
+  Diameter: 1000 mm
+- M_L-Anglel-Column:L127X127X9.5: 2 column(s)
+  Type: L-Angle
+  Dimensions: 127×127×9.5 mm",arc,samuel_macalister_sample_house,2,D_structural,False
+711,"Could you provide a detailed breakdown of the roof materials in the building, including the different roof types, their quantities, and the materials used in each layer?","Roof identified: 2
+
+Roof Types:
+- Basic Roof:SG Metal Panels roof: 1 roof(s)
+  Type: Sloped Roof
+  Materials (1 layers):
+    1. Softwood, Lumber
+
+- Basic Roof:Warm Roof - Timber: 1 roof(s)
+  Type: Flat Roof
+  Materials (7 layers):
+  1. Roofing - Asphalt - 20 mm
+  2. Roofing - Felt
+  3. Insulation / Thermal Barriers - Rigid insulation - 50 mm
+  4. Vapour / Moisture Barriers - Vapour Retarder
+  5. Wood - Sheathing - Chipboard - 18 mm
+  6. Wood - Firring - 50 mm
+  7. Structure - Timber Joist/Rafter Layer - 200 mm
+
+Roof Construction Summary:
+- Total unique materials: 8
+- Structural materials: Wood - Sheathing - Chipboard, Structure - Timber Joist/Rafter Layer
+- Insulation materials: Insulation / Thermal Barriers - Rigid insulation
+- Weather protection: Vapour / Moisture Barriers - Vapour Retarder, Roofing - Asphalt, Roofing - Felt
+- Finish materials: Wood - Firring, Softwood, Lumber
+
+Roof System Type:
+- Timber frame roof construction
+- Warm roof system (insulation above structure)",arc,samuel_macalister_sample_house,2,B_construction_materials_layers,False
+716,Could you provide me with a list of the specifications for the solar panels used in the building?,"Solar panel specifications:
+- Model: SunModule SW 245 Silver Mono
+- Manufacturer: SolarWorld
+- Installation angle: 10°",arc,samuel_macalister_sample_house,2,E_MEP_technical_specs,False
+720,"What underfloor heating system is installed, including its quantity and technical specifications?","Underfloor Heating System Installation:
+   - HcsFlexPipeInPipe System: 12 segments
+   
+   Characteristics:
+   - 17mm outer diameter with 2mm wall thickness",mep,samuel_macalister_sample_house,2,E_MEP_technical_specs,False
+729,"Could you provide a detailed breakdown of the heating systems in the building, including quantities of each component type and their technical specifications?","Heating and Cooling Systems Installation:
+
+Central Heating System:
+- Space Heaters: 30 units
+  * Radiators and heating devices
+  * Individual zone climate control
+- Boiler Systems: 3 units
+  * Central heat generation
+  * Building heating distribution
+
+Underfloor Heating System:
+- HcsFlexPipeInPipe: 12 heating circuits
+  * PE-Xa pipe radiant heating
+
+Climate Control Integration:
+- Temperature monitoring: 7 sensors
+- Flow control: 4 control valves
+
+Heating Distribution Strategy:
+- Dual heating approach: radiative and convective
+- Zone-based temperature control
+- Integration with renewable energy (solar)
+
+Total Heating Components: 45",mep,samuel_macalister_sample_house,2,E_MEP_technical_specs,False
+732,Could you provide the specifications of the flexible circular duct system installed in the building?,"Flexible Circular Duct System:
+
+    System Specifications:
+    - Duct Type: Flexible Circular Duct DIN 24146 d 160
+    - Segment Count: 59 segments
+    - Diameter: 160mm (6.3 inches)
+    - Standard: DIN 24146 compliance
+    
+    - Services 43 air terminals
+    - Part of comprehensive ventilation system",mep,samuel_macalister_sample_house,2,E_MEP_technical_specs,False
+756,What materials are used in the walls?,"Wall Materials by Wall Type:
+
+   HSB-element:
+   - IFC_HSB_155_wandelement_Rc=3,67
+   - IFC_HSB_155_wandelement_ongeisoleerd_multiplex
+
+   balkonopstand
+   - Brick
+
+   binnenblad
+   - Sandstone
+
+   binnenwand
+   - Sandstone
+
+   binnenwanden
+   - Concrete
+
+   buitenblad
+   - Brick
+   - Concrete
+
+   dakisolatie
+   - Insulation
+
+   knieschot
+   - IFC_knieschot_ongeisoleerd
+   - IFC_knieschot_geisoleerd_Rc=4,00
+
+   kozijn
+   - IFC_kozijn_90x114
+
+   liftwand
+   - Sandstone
+
+   metalstudwand
+   - IFC_HSB_70mm
+   - Concrete
+
+   opgaand werk
+   - Sandstone
+
+   separatiewand
+   - Concrete
+   - IFC_gipsblokken_70mm
+   - IFC_HSB_70mm
+
+   spouwisolatie
+   - Insulation
+
+   zijwang dakk
+   - IFC_dakkapel_zijwang
+
+   zinkwerk
+   - Material data not available",arc,schependomlaan,1,B_construction_materials_layers,False
+757,Which materials are applied in the exterior walls?,"Exterior Wall Materials by Wall Type:
+
+   HSB-element
+   - IFC_HSB_155_wandelement_Rc=3,67
+   - IFC_HSB_155_wandelement_ongeisoleerd_multiplex
+
+   balkonopstand
+   - Brick
+
+   binnenblad
+   - Sandstone
+
+   buitenblad
+   - Brick
+   - Concrete
+
+   dakisolatie
+   - Insulation
+
+   knieschot
+   - IFC_knieschot_geisoleerd_Rc=4,00
+
+   kozijn
+   - IFC_kozijn_90x114
+
+   liftwand
+   - Sandstone
+
+   opgaand werk
+   - Sandstone
+
+   spouwisolatie
+   - Insulation
+
+   zijwang dakk
+   - IFC_dakkapel_zijwang
+
+   zinkwerk
+   - Material data not available",arc,schependomlaan,1,B_construction_materials_layers,True
+758,Which materials are applied in the interior walls?,"Interior Wall Materials by Wall Type:
+
+   binnenwand
+   - Sandstone
+
+   binnenwanden
+   - Concrete
+
+   knieschot
+   - IFC_knieschot_ongeisoleerd
+
+   liftwand
+   - Sandstone
+
+   metalstudwand
+   - IFC_HSB_70mm
+   - Concrete
+
+   separatiewand
+   - Concrete
+   - IFC_gipsblokken_70mm
+   - IFC_HSB_70mm",arc,schependomlaan,1,B_construction_materials_layers,False
+759,What are the thicknesses of the different wall types?,"Wall Thicknesses by Wall Type:
+
+   HSB-element
+   - Thickness data not available
+
+   balkonopstand
+   - 100mm
+
+   binnenblad
+   -  175mm, 214mm
+
+   binnenwand
+   - 100mm, 120mm, 214mm, 300mm
+
+   binnenwanden
+   -  70mm
+
+   buitenblad
+   - 100mm
+
+   dakisolatie
+   -  190mm
+
+   knieschot
+   - Thickness data not available
+
+   kozijn
+   - Thickness data not available
+
+   liftwand
+   -  100mm, 214mm
+
+   metalstudwand
+   -  100mm, 70mm
+
+   opgaand werk
+   -  100mm
+
+   separatiewand
+   -  100mm, 70mm
+
+   spouwisolatie
+   -  74mm
+
+   zijwang dakk
+   - Thickness data not available
+
+   zinkwerk
+   - Thickness data not available",arc,schependomlaan,1,B_construction_materials_layers,True
+760,What proportion of walls are load-bearing versus non-load-bearing?,"Wall Structural Classification:
+   - Load-bearing: 0 walls (0.0%)
+   - Non-load-bearing: 880 walls (100.0%)
+
+All 880 IfcWall and IfcWallStandardCase objects store [Pset_WallCommon]LoadBearing as false.",arc,schependomlaan,2,D_structural,False
+766,Which materials are used in the ceilings?,No ceiling-specific coverings identified in the model.,arc,schependomlaan,4,B_construction_materials_layers,False
+774,Which door types include fire rating information?,"Door Types with Fire Rating:
+   - merk H: 30 minuten brandwerend
+   - merk A3sp: 30 minuten brandwerend en zelfsluitend
+   - merk A3: 30 minuten brandwerend en zelfsluitend
+   - merk A4: 30 minuten brandwerend en zelfsluitend
+   - merk A: Zelfsluitend
+   Total doors with fire rating: 5/104",arc,schependomlaan,1,A_fire_safety_compliance,False
+775,Which window types include fire rating information?,No window fire rating information available.,arc,schependomlaan,4,A_fire_safety_compliance,False
+776,What is the structural system of this building?,"Structural System Assessment:
+   The structural system is not definitively determinable from this IFC model,
+   however there are some indication of a load-bearing wall system.",arc,schependomlaan,4,D_structural,False
+781,What are the dimensions of the columns?,Column dimension information is not available in the current property set.,arc,schependomlaan,4,D_structural,True
+782,Which slab types are used and what are their thicknesses?,"Total Slabs: 279
+   Slab Types and Thicknesses:
+
+   dak dakkapel: 8 slabs
+     • 173mm: 7 slabs
+     • 140mm: 1 slabs
+
+   dakaftimmering: 2 slabs
+     • 18mm: 2 slabs
+
+   dakelement: 2 slabs
+     • 18mm: 1 slabs
+
+   dakisolatie: 4 slabs
+     • 110mm: 3 slabs
+     • 206mm: 1 slabs
+
+   dakvloer: 9 slabs
+     • 60mm: 8 slabs
+     • 220mm: 1 slabs
+
+   dekvloer: 78 slabs
+     • 90mm: 78 slabs
+
+   gootconstructie: 12 slabs
+     • 100mm: 12 slabs
+
+   liftputvloer: 1 slabs
+     • 300mm: 1 slabs
+
+   lifttop: 1 slabs
+     • 200mm: 1 slabs
+
+   plafond: 4 slabs
+     • 110mm: 2 slabs
+     • 50mm: 2 slabs
+
+   plat dak: 6 slabs
+     • 171mm: 6 slabs
+
+   prefab balkon: 3 slabs
+   - Thickness data not available
+
+   schoonloopmat: 1 slabs
+     • 8mm: 1 slabs
+
+   sporenkap: 44 slabs
+     • 206mm: 20 slabs
+     • 195mm: 17 slabs
+     • 131mm: 4 slabs
+     • 100mm: 3 slabs
+
+   spouwisolatie: 2 slabs
+     • 190mm: 2 slabs
+
+   vloer_V0: 51 slabs
+     • 333mm: 46 slabs
+     • 335mm: 5 slabs
+
+   vloerstort V0: 1 slabs
+     • 345mm: 1 slabs
+
+   vloertegels: 1 slabs
+     • 10mm: 1 slabs
+
+   vloerveld: 49 slabs
+     • 60mm: 44 slabs
+     • 290mm: 3 slabs
+     • 200mm: 2 slabs",arc,schependomlaan,2,B_construction_materials_layers,False
+783,What is the layout of the structural grid?,Structural information is not available in this model.,arc,schependomlaan,4,D_structural,True
+824,"Could you provide a comprehensive breakdown of all wall materials used in the building, including the total count of unique materials, a complete list of all materials, and the material composition for each wall type?","Total Unique Wall Materials: 21
+
+Wall Materials Used:
+- DD Aluminium kozijnen
+- DD Gipsplaat
+- DD HSB wand invulling 100 zonder iso
+- DD Hout - Multiplex
+- DD Isolatie geluid werend
+- DD Naaldhout
+- DD Steen - Kalkzandsteen
+- DD Ytong G4
+- DD Ytong G5
+- DD dakbedekking
+- DD gasbeton
+- DD glas douchwand
+- DD inbouw reservoir
+- DD isolatie H
+- DD loggia afwerking
+- DD prefabbeton gevel
+- DD prefabbeton randen
+- DD steun wand tbv kozijnen
+- DD terras afwerking
+- Glas
+- Lucht binnenwandafwerking + C-profiel 75_DD
+
+Wall Type Material Compositions:
+- 22_Wall_DD-ytong G5/800: DD Ytong G5
+- 21_Wall_DD-spouwisolatie: DD isolatie H
+- 21_Wall_DD-kalkzandsteen dik 120mm: DD Aluminium kozijnen, DD Steen - Kalkzandsteen
+- 21_Wall_DD-spouwisolatie: DD isolatie H
+- 22-Wall_DD-mst voorzetwand gang: DD Gipsplaat, Lucht binnenwandafwerking + C-profiel 75_DD
+- 22_Wall_DD-kalkzandsteen: DD Steen - Kalkzandsteen
+- Unnamed Wall: DD prefabbeton gevel
+- 41_Wall_DD-wandafwerking loggia: DD loggia afwerking
+- 31-dd-wand tbv buitenkozijnen: DD Aluminium kozijnen
+- 74_Wall_DD-douchewand: DD glas douchwand",arc,sixty5,2,B_construction_materials_layers,False
+825,What materials are used in the exterior walls?,"Exterior Wall Materials:
+   - DD Aluminium kozijnen
+   - DD Gipsplaat
+   - DD Hout - Multiplex
+   - DD Naaldhout
+   - DD dakbedekking
+   - DD gasbeton
+   - DD isolatie H
+   - DD loggia afwerking
+   - DD prefabbeton gevel
+   - DD prefabbeton randen
+   - DD terras afwerking",arc,sixty5,2,B_construction_materials_layers,False
+826,What materials are used in the interior walls?,"Interior Wall Materials:
+   - DD Aluminium kozijnen
+   - DD Gipsplaat
+   - DD HSB wand invulling 100 zonder iso
+   - DD Hout - Multiplex
+   - DD Isolatie  geluid werend
+   - DD Naaldhout
+   - DD Steen - Kalkzandsteen
+   - DD Ytong G4
+   - DD Ytong G5
+   - DD glas douchwand
+   - DD inbouw reservoir
+   - DD isolatie H
+   - DD steun wand tbv kozijnen
+   - Glas
+   - Lucht binnenwandafwerking + C-profiel 75_DD",arc,sixty5,2,B_construction_materials_layers,False
+827,Could you provide a list of all wall types used in the project and their corresponding thickness measurements?,"Based on the IFC model analysis, here is the list of all 51 wall types used in the project and their thickness measurements (in millimeters):
+
+Wall Type Name | Thickness (mm)
+DD Aluminium kozijnen 10 | 10.0
+DD Gipsplaat 10 | 10.0
+DD Hout - Multiplex | Thickness not found in model quantities
+DD Hout - Multiplex 15 | 15.0
+DD MS/ 100mm/voorzetwand 100 | 100.0
+DD MS/iso MS150 150 | 150.0
+DD Naaldhout 255 | 255.0
+DD Naaldhout 70 | 70.0
+DD Steen - Kalkzandsteen 100 | 100.0
+DD Steen - Kalkzandsteen 120 | 120.0
+DD Steen - Kalkzandsteen 150 | 150.0
+DD Ytong G4 150mm dik 150 | 150.0
+DD Ytong G5 | Thickness not found in model quantities
+DD Ytong G5 100 | 100.0
+DD dakbedekking | Thickness not found in model quantities
+DD gasbeton 120 | 120.0
+DD glas douchwand 10 | 10.0
+DD inbouw reservoir 10 | 10.0
+DD isolatie H 100 | 100.0
+DD isolatie H 145 | 145.0
+DD isolatie H 150 | 150.0
+DD isolatie H 50 | 50.0
+DD isolatie H 60 | 60.0
+DD isolatie H 70 | 70.0
+DD isolatie H 90 | 90.0
+DD isolatie dik 100mm  100 | 100.0
+DD isolatie dik 120mm  120 | 120.0
+DD isolatie dik 145mm 145 | 145.0
+DD isolatie dik 150mm 150 | 150.0
+DD isolatie dik 160mm   160 | 160.0
+DD loggia afwerking 10 | 10.0
+DD loggia afwerking 18 | 18.0
+DD prefabbeton gevel | Thickness not found in model quantities
+DD prefabbeton randen 130 | 130.0
+DD steun wand tbv kozijnen 10 | 10.0
+DD terras afwerking 10 | 10.0
+DD_Gyproc  2x12,5 25 | 25.0
+DD_Gyproc  voorzetwand 100mm 100 | 100.0
+DD_Gyproc GF 100/1.75.1 100 | 100.0
+DD_Gyproc GF 105 | 105.0
+DD_Gyproc GF 180 75-75.2 AA 180 | 180.0
+DD_Gyproc GF 205 2.75-75.2 AA 205 | 205.0
+DD_Gyproc GF 220 2.75-75.2 AA  220 | 220.0
+DD_Gyproc GF 70/1.45.1 70 | 70.0
+DD_Gyproc GF 70/1.45.1.A 70 | 70.0
+DD_Gyproc GF 87.5/75.1 88 | 87.5
+DD_Gyproc GF 87.5/75.1.A 100 | 100.0
+DD_HSB wand 100 100 | 100.0
+Glas 25 | 25.0
+REKJE balkon rand (1e verd ) 261 x 270 | 261.34
+REKJE balkon rand (7e verd) 261 x 87 | 261.34",arc,sixty5,2,B_construction_materials_layers,True
+828,"Could you provide a breakdown of all walls by load-bearing classification, including counts and percentages for load-bearing, non-load-bearing, and unclassified walls?","Wall Load-Bearing Classification:
+   - Load-bearing walls: 2 (0.0%)
+   - Non-load-bearing walls: 7424 (100.0%)
+   - Unclassified walls: 0 (0.0%)
+   - Total walls: 7426
+
+Note: Nearly all walls inside the architecture ifc file are non-load-bearing. The load-bearing walls are modelled in the structural file.",arc,sixty5,2,D_structural,False
+833,What materials are used in the ceilings?,"Ceiling Materials:
+   - DD Aluminium
+   - DD Gipsplaat
+   - DD Isolatie  geluid werend
+   - DD isolatie H
+   - DD plafond geluid werend 
+   - Gipsplaat",arc,sixty5,2,B_construction_materials_layers,False
+837,"Which door types have fire rating information, and how many doors of each type are there?","Total doors with fire rating information: 153 out of 1049 total doors
+
+Door Types with Fire Rating:
+- merk-bI- DALOC S23: 30 minuten brandwerend (53 doors)
+- merk-bI- DALOC S23SP: 30 minuten brandwerend (52 doors)
+- merk-bi-al-04: 20 (16 doors)
+- Merk AL25: 30 minuten brandwerend en zelfsluitend (1 doors)
+- Merk AL26: 30 minuten brandwerend en zelfsluitend (1 doors)
+- merk-bi-al-05: 30 minuten brandwerend en zelfsluitend (1 doors)
+- merk-bi-al-06: Zelfsluitend (1 doors)
+- merk-bi-al-01: Zelfsluitend (13 doors)
+- merk-bi-al-02: 30 minuten brandwerend en zelfsluitend (15 doors)",arc,sixty5,2,A_fire_safety_compliance,False
+838,Which window types have fire rating information?,"Windows with fire rating information: 17/850
+
+   Window Types with Fire Rating:
+   - Merk-AL22: Zelfsluitend (1 windows)
+   - Merk-AL20: 30 minuten brandwerend (16 windows)",arc,sixty5,2,A_fire_safety_compliance,False
+868,"What electrical load information is available for water heaters, including any typical specifications?","Note: Electrical load specifications not available in plumbing IFC file.
+Estimated range: Typical residential boilers 3-6 kW per unit",plumbing,sixty5,4,E_MEP_technical_specs,True
+880,"What are the different wall thicknesses used in the structural walls, and how many walls have each thickness?","Structural Wall Thicknesses:
+   - 510mm: 1 wall
+   - 500mm: 1 wall
+   - 400mm: 2 wall
+   - 300mm: 14 walls
+   - 250mm: 133 walls
+   - 225mm: 132 walls
+   - 200mm: 16 walls",str,sixty5,2,B_construction_materials_layers,False
+883,"What is the total length of steel beams used in this building, broken down by each beam type?","Steel Beam Quantity Analysis:
+   Total steel beam length: 390.02 meters
+
+   Steel Beam Types by Length:
+   - 28_SF_AT_balk HE:balk HE_gen_HEA400: 131.28 m (33.7%)
+   - 28_SF_AT_balk HE:balk HE_gen_HEA320_gerberen_togen: 65.64 m (16.8%)
+   - 28_SF_AT_balk hoeklijn_gen:balk_gen_L200x200x20: 52.60 m (13.5%)
+   - 28_SF_AT_balk hoeklijn:balk_gen_L150x150x12: 38.24 m (9.8%)
+   - 28_SF_AT_balk koker_gen:balk_gen_K120x120x8: 35.24 m (9.0%)
+   - 28_SF_AT_balk UNP_gen:balk UNP_gen_280: 18.00 m (4.6%)
+   - 300_28_AT_balk_Z_profiel:Z-staal_H=220: 13.93 m (3.6%)
+   - 28_SF_AT_balk UNP_gen:balk UNP_gen_280 (S355): 10.94 m (2.8%)
+   - 300_28_AT_balk_Z_profiel:Z-staal_H=240: 9.00 m (2.3%)
+   - 28_SF_AT_balk koker:balk_gen_K120x120x6: 7.14 m (1.8%)
+   - 28_SF_AT_balk koker_gen:balk_gen_K200x120x8: 7.06 m (1.8%)
+   - 28_SF_AT_balk koker_gen:balk_gen_K50x50x5: 0.96 m (0.2%)
+
+   Steel Distribution by Profile:
+   - HE400: 131.28 m (33.7%)
+   - HE320: 65.64 m (16.8%)",str,sixty5,2,D_structural,False
+884,"What foundation system is used in this building, and what are the quantities of its components?","Foundation System Overview:
+- Type: Deep foundation system
+- Components:
+  - Piles: 146
+  - Footings: 106",str,sixty5,2,D_structural,False
+901,"What insulation types are used in the ventilation system, showing coverage distribution?","Insulation Systems in Ventilation:
+   Total Insulation Coverings: 86
+
+   Specific Insulation Types:
+   - Duct Insulation:Default: 64 coverings (74.4%)
+   - Pipe Insulation:Default: 18 coverings (20.9%)
+   - Duct Lining:Default: 4 coverings (4.7%)",ventilation,sixty5,2,E_MEP_technical_specs,False
+917,"What are the load-bearing wall types, their quantities, and material compositions?","Total Load-Bearing Walls: 181
+
+   Load-Bearing Wall Types:
+   - Beton-Wärmeschutz 250: 65 walls (36%)
+     Materials:
+       • Isolierung, hart 275646950 (0.100m)
+       • Beton, tragend 268571148 (0.150m)
+   - Kalksandstein 268899148 200: 46 walls (25%)
+     Materials:
+       • Kalksandstein 268899148 (0.200m)
+   - Stahlbeton 2816491304 200: 40 walls (22%)
+     Materials:
+       • Stahlbeton 2816491304 (0.200m)
+   - Kalksandstein 268899148 175: 30 walls (17%)
+     Materials:
+       • Kalksandstein 268899148 (0.200m)",arc,smiley_west,2,B_construction_materials_layers,False
+918,"What are the non-load-bearing wall types, their quantities, and material compositions?","Total Non-Load-Bearing Walls: 100
+
+   Non-Load-Bearing Wall Types:
+   - Gips 275646950 100: 70 walls (70%)
+     Materials:
+       • Gips 275646950 (0.100m)
+   - Kalksandstein 268899148 200: 18 walls (18%)
+     Materials:
+       • Kalksandstein 268899148 (0.200m)
+   - Holzrahmen_Wand 11: 11 walls (11%)
+     Materials: No material data available
+   - Beton-Wärmeschutz 250: 1 walls (1%)
+     Materials:
+       • Isolierung, hart 275646950 (0.100m)
+       • Beton, tragend 268571148 (0.150m)",arc,smiley_west,2,B_construction_materials_layers,False
+923,"Which materials are used for the walls, organized by wall type?","Wall Materials by Wall Type:
+
+   Beton-WÖ§rmeschutz 250:
+   - Isolierung, hart 275646950 (0.100m)
+   - Beton, tragend 268571148 (0.150m)
+
+   Gips 275646950 100:
+   - Gips 275646950 (0.100m)
+
+   Holzrahmen_Wand 11:
+   - Holz
+
+   Kalksandstein 268899148 175:
+   - Kalksandstein 268899148 (0.200m)
+
+   Kalksandstein 268899148 200:
+   - Kalksandstein 268899148 (0.200m)
+
+   Stahlbeton 2816491304 200:
+   - Stahlbeton 2816491304 (0.200m)",arc,smiley_west,1,B_construction_materials_layers,False
+930,"What materials are used in the slabs, organized by slab type?","Slab Materials by Type:
+
+   Aluminium 587913947 98:
+   - Aluminium 587913947 0.0978148
+
+   Stahlbeton 2784800804 120:
+   - Stahlbeton 2784800804 0.12
+
+   Stahlbeton 2784800804 180:
+   - Stahlbeton 2784800804 0.18
+
+   Stahlbeton 2784800804 250:
+   - Stahlbeton 2784800804 0.25",arc,smiley_west,1,B_construction_materials_layers,False
+932,"Could you provide a breakdown of roof materials by type, including the quantities for each material?","Roof Materials by Type:
+
+   Aluminium 587913947 200:
+   - Aluminium 587913947 0.2",arc,smiley_west,2,B_construction_materials_layers,False
+934,What is the structural system of the building?,"Structural System information is not explicitly available within the model. Based on available information, the structural system appears to be based on load-bearing wall construction.",arc,smiley_west,4,D_structural,False
+944,What information is available in the BIM model about the fire protection systems in place?,Information not available in the BIM model.,arc,smiley_west,4,A_fire_safety_compliance,True
+945,What is the building's electrical load?,Information not available in the BIM model.,arc,smiley_west,4,E_MEP_technical_specs,True
+946,What are the specified ventilation requirements?,Information not available in the BIM model.,arc,smiley_west,4,C_building_physics_sustainability,True
+960,"Could you provide a detailed breakdown of the material compositions for each wall type in the building, including the thickness of each material layer?","Wall Material Compositions:
+
+Basic Wall:Exterior - Brick on Mtl. Stud:
+  - Masonry - Brick: 0.090 m
+  - Misc. Air Layers - Air Space: 0.025 m
+  - Wood - Sheathing - plywood: 0.019 m
+  - Metal - Stud Layer: 0.152 m
+  - Plasterboard: 0.016 m
+
+Basic Wall:Exterior - Insul Panel on Mtl. Stud:
+  - Insulation - Insulated Panel: 0.042 m
+  - Metal - Firring: 0.038 m
+  - Wood - Sheathing - plywood: 0.019 m
+  - Metal - Stud Layer: 0.152 m
+  - Plasterboard: 0.016 m
+
+Basic Wall:Interior - Toilet Partition (25mm):
+  - Laminate - Ivory, Matte: 0.025 m
+
+Basic Wall:Interior - Furring (38 mm Stud):
+  - Metal - Stud Layer: 0.038 m
+  - Plasterboard: 0.016 m
+
+Basic Wall:Interior - Partition (92mm Stud):
+  - Plasterboard: 0.016 m
+  - Metal - Stud Layer: 0.092 m
+  - Plasterboard: 0.016 m
+
+Basic Wall:Interior - Rated 1-HR (92mm Stud):
+  - Type-X Plasterboard: 0.016 m
+  - Metal - Stud Layer: 0.092 m
+  - Type-X Plasterboard: 0.016 m
+
+Basic Wall:Interior - Plumbing (152mm Stud):
+  - Plasterboard: 0.016 m
+  - Metal - Stud Layer: 0.152 m
+  - Plasterboard: 0.016 m",arc,wbdg_office,1,B_construction_materials_layers,False
+961,"Could you provide a detailed breakdown of the exterior wall compositions by wall type, including all material layers and their thicknesses?","Exterior Wall Material Compositions:
+
+Basic Wall:Exterior - Brick on Mtl. Stud:
+  - Masonry - Brick: 0.090 m
+  - Misc. Air Layers - Air Space: 0.025 m
+  - Wood - Sheathing - plywood: 0.019 m
+  - Metal - Stud Layer: 0.152 m
+  - Plasterboard: 0.016 m
+
+Basic Wall:Exterior - Insul Panel on Mtl. Stud:
+  - Insulation - Insulated Panel: 0.042 m
+  - Metal - Firring: 0.038 m
+  - Wood - Sheathing - plywood: 0.019 m
+  - Metal - Stud Layer: 0.152 m
+  - Plasterboard: 0.016 m",arc,wbdg_office,1,B_construction_materials_layers,False
+962,"Could you provide a detailed breakdown of the material compositions for each type of interior wall in the building, including layer thicknesses?","Interior Wall Material Compositions:
+
+Basic Wall:Interior - Toilet Partition (25mm):
+  - Laminate - Ivory, Matte: 0.025 m
+
+Basic Wall:Interior - Furring (38 mm Stud):
+  - Metal - Stud Layer: 0.038 m
+  - Plasterboard: 0.016 m
+
+Basic Wall:Interior - Partition (92mm Stud):
+  - Plasterboard: 0.016 m
+  - Metal - Stud Layer: 0.092 m
+  - Plasterboard: 0.016 m
+
+Basic Wall:Interior - Rated 1-HR (92mm Stud):
+  - Type-X Plasterboard: 0.016 m
+  - Metal - Stud Layer: 0.092 m
+  - Type-X Plasterboard: 0.016 m
+
+Basic Wall:Interior - Plumbing (152mm Stud):
+  - Plasterboard: 0.016 m
+  - Metal - Stud Layer: 0.152 m
+  - Plasterboard: 0.016 m",arc,wbdg_office,1,B_construction_materials_layers,False
+963,"What are the different types of compound ceilings used, and what are their material compositions with layer thicknesses?","Ceiling Material Compositions:
+
+Compound Ceiling: Gypsum Board:
+  - Metal - Stud Layer: 0.045 m
+  - Plasterboard: 0.012 m
+
+Compound Ceiling: ACT 600 x 600mm Grid:
+  - Default: 0.036 m
+  - Ceiling Tile 600 x 600: 0.016 m",arc,wbdg_office,2,B_construction_materials_layers,False
+964,What are the thicknesses of the different wall types?,"Wall Thicknesses by Type:
+Basic Wall:Interior - Toilet Partition (25mm): Total = 0.025 m
+Basic Wall:Interior - Furring (38 mm Stud): Total = 0.054 m
+Basic Wall:Interior - Partition (92mm Stud): Total = 0.124 m
+Basic Wall:Interior - Rated 1-HR (92mm Stud): Total = 0.124 m
+Basic Wall:Interior - Plumbing (152mm Stud): Total = 0.184 m
+Basic Wall:Exterior - Brick on Mtl. Stud: Total = 0.302 m
+Basic Wall:Exterior - Insul Panel on Mtl. Stud: Total = 0.267 m",arc,wbdg_office,1,B_construction_materials_layers,False
+976,Which door types include fire rating information?,No door types found with fire rating information.,arc,wbdg_office,2,A_fire_safety_compliance,False
+977,Which window types include fire rating information?,No window types found with fire rating information.,arc,wbdg_office,2,A_fire_safety_compliance,False
+995,"What are the counts and specifications for water storage devices, water heating equipment, and hot water system components installed in the building?","Water Storage and Heating Systems:
+
+Water Storage Devices: 0
+
+Water Heating Equipment: 2
+- M_Screw Chiller - Air Cooled - 281-1231 kW:633-703 kW:633-703 kW:639187
+  Type: 633-703 kW
+- M_Screw Chiller - Air Cooled - 281-1231 kW:633-703 kW:633-703 kW:639187
+  Type: 633-703 kW
+
+Hot Water System Components: 518",mep,wbdg_office,2,E_MEP_technical_specs,False
+996,"How many water heaters are in this building, and what are their specifications?","Water Heaters Found: 1
+
+- Name: M_Water Heater:380 L:380 L:708479
+- Type: 380 L
+- Electrical Load: 48.4 kW",mep,wbdg_office,2,E_MEP_technical_specs,False
+998,"Which cooling systems are installed, with unit specifications?","Cooling Systems Installed:
+    
+    Central Cooling Plant: 1 chiller unit(s)
+    
+    Chiller 1:
+    - Name: M_Screw Chiller - Air Cooled - 281-1231 kW:633-703 kW:633-703 kW:639187
+    - Type: 633-703 kW
+    - Cooling Capacity: 2858 kW (9750 tons)
+    - Chilled Water Flow: 0.39 L/s
+    - Pressure Drop: 10570 Pa",mep,wbdg_office,2,E_MEP_technical_specs,False
+1000,"Could you provide a breakdown of the HVAC equipment capacities by equipment type, including cooling and air moving equipment?","HVAC Equipment Capacities:
+
+Cooling Equipment:
+- Chiller: 2858 kW cooling capacity
+
+Air Moving Equipment (fans):
+- 400 mm: 66.74472 L/s airflow
+- 300 mm: 66.74472 L/s airflow
+- 63300000 J: 390.050494 L/s return airflow, 29.629005 L/s supply airflow
+- 991-1905 LPS: 99.163584 L/s airflow
+- 350 mm: 66.74472 L/s airflow",mep,wbdg_office,2,E_MEP_technical_specs,False
+1001,"What are the airflow rates for the HVAC terminals, including totals and averages?","HVAC Terminal Airflow Rates:
+    
+    Total Terminals with Flow Data: 490
+    Total Building Airflow: 4066.5 L/s (14639 m¬≥/h)
+    
+    Supply Air Terminals: 252
+    Total Supply Airflow: 2091.3 L/s (7529 m¬≥/h)
+    Average Supply Terminal: 8.3 L/s
+    
+    Return Air Terminals: 238
+    Total Return Airflow: 1975.1 L/s (7111 m¬≥/h)
+    Average Return Terminal: 8.3 L/s",mep,wbdg_office,2,E_MEP_technical_specs,False
+1011,"What voltage levels are used in the electrical system, with load distribution?","Electrical System Voltage Levels:
+    
+    - 120 V: 1740 loads (98.8%)
+    - 208 V: 22 loads (1.2%)",mep,wbdg_office,2,E_MEP_technical_specs,False
+1013,"Could you provide a breakdown of the apparent electrical loads for each type of lighting fixture, along with the total apparent load?","Lighting Fixture Apparent Electrical Loads:
+- M_Plain Recessed Lighting Fixture:600x1200 - 120: 96 VA
+- M_Plain Recessed Lighting Fixture:600x600 - 120: 62 VA
+- M_Pendant Light - Linear - 2400mm: 150 VA
+- M_Pendant Light - Linear - 1200mm: 64 VA
+
+Total Apparent Load: 30.7 kVA",mep,wbdg_office,2,E_MEP_technical_specs,False
+1016,"What fire protection system is installed in the building, and can you provide a complete breakdown of its components by type, sprinkler head type, and level?","Fire Protection System Installed:
+- Fire Sprinkler System: 3,600 components
+
+Component Breakdown by Type:
+- Fitting: 1,626 components
+- Segment: 1,390 components
+- Terminal: 584 components
+
+Sprinkler Head Types:
+- 15 mm Pendent: 584 units
+
+Component Breakdown by Level:
+- Level 1: 724 components
+- Level 2: 666 components
+
+Total Fire Protection Components: 3,600",mep,wbdg_office,2,A_fire_safety_compliance,False
+1018,"What is the structural system of the building, and could you provide a breakdown of all structural elements with their quantities?","Structural System: Steel Frame Construction
+Structural Elements:
+- Beams: 356 elements
+- Columns: 80 elements
+- Slabs: 6 elements
+- Foundation Walls: 8 elements
+- Footings: 45 elements
+- Roof Elements: 3 elements",str,wbdg_office,2,D_structural,False
+1022,What are the beam spans (average and maximum) and what are the quantities of each beam size type?,"Beam Spans:
+- Average span: 6.8 m
+- Maximum span: 11.7m
+Beam Sizes:
+- 14K1: 182 beams
+- W460X60: 121 beams
+- 12K3: 45 beams
+- W360X44: 8 beams",str,wbdg_office,2,D_structural,False
+1023,"What foundation system is used in the building, and could you provide a breakdown of the foundation elements and their quantities, as well as the specific foundation types used?","Foundation System: Concrete Footings and Foundation Walls
+
+Foundation Elements used:
+- Strip Footings: 45 elements
+- Foundation Walls: 8 elements
+
+Foundation Types used:
+- M_Footing-Rectangular: 2000 x 2000 x 300mm: 40 footings
+- Wall Foundation: Bearing Footing - 900 x 300: 4 footings
+- M_Footing-Rectangular: 3300 x 3740 x 300mm: 1 footings",str,wbdg_office,2,D_structural,False
+1025,"What are the characteristics of the structural grid system, including its pattern and number of intersections?",Grid System is regular grid with 40 unique grid intersections.,str,wbdg_office,3,D_structural,False
+1026,"What is the total length and volume of steel used in beams, organized by major beam type (flange or joist) and their size?","Steel Beam Inventory:
+   Total Beams: 356
+   Total Steel Length: 2881.40 m
+   Total Steel Volume: 9.875 cu m
+
+   K-Series Bar Joist-Rod Web: 227 beams
+   - 14K1: 182 beams
+     Length: 1646.29 m
+     Volume: 2.321 cu m
+   - 12K3: 45 beams
+     Length: 228.49 m
+     Volume: 0.314 cu m
+   K-Series Subtotal:
+   - Total Length: 1874.78 m
+   - Total Volume: 2.635 cu m
+
+   W-Wide Flange: 129 beams
+   - W460X60: 121 beams
+     Length: 962.23 m
+     Volume: 7 cu m
+   - W360X44: 8 beams
+     Length: 44.39 m
+     Volume: 0.239 cu m
+   W-Wide Flange Subtotal:
+   - Total Length: 1006.62 m
+   - Total Volume: 7.240 cu m",str,wbdg_office,2,D_structural,False
+1027,Which elements carry structural loads and what are the load paths?,"Load bearing elements identified in the structural model:
+- Load bearing floor slabs: 2
+- Load bearing beams: 356
+- Load bearing columns: 80
+Suggested load path: Vertical loads transfer from slabs -> beams -> columns -> foundations",str,wbdg_office,3,D_structural,False

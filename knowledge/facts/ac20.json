@@ -1,0 +1,5420 @@
+{
+ "project": "ac20",
+ "schema": "IFC4",
+ "length_unit_scale": 1.0,
+ "storeys": [
+  [
+   "Keller",
+   -3.0
+  ],
+  [
+   "Erdgeschoss",
+   0.0
+  ],
+  [
+   "1. Obergeschoss",
+   3.0
+  ],
+  [
+   "2. Obergeschoss",
+   6.0
+  ],
+  [
+   "Dachgeschoss",
+   9.0
+  ]
+ ],
+ "spaces": [
+  {
+   "gid": "3UEb2iq7D2tOgbX6Mufs$X",
+   "name": "001",
+   "longname": "Besprechungsraum I",
+   "storey": "Keller",
+   "area": 23.901,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "2xcLNHPon6VO6wB_n0EQLF",
+   "name": "002",
+   "longname": "Besprechungsraum II",
+   "storey": "Keller",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "2Hh$tXimL1_Aogi9jn1cZ4",
+   "name": "003",
+   "longname": "Technikraum I",
+   "storey": "Keller",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "2sVpKMTdb3u8IUv50wOLpo",
+   "name": "004",
+   "longname": "Technikraum II",
+   "storey": "Keller",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0V74RtuUH1zQt_CcawQbBc",
+   "name": "005",
+   "longname": "Technikraum III",
+   "storey": "Keller",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0dXE$xLxz8MwbtYoTqJPiO",
+   "name": "006",
+   "longname": "Seminarraum",
+   "storey": "Keller",
+   "area": 128.273,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    11.6,
+    11.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "2G3Zgh3YLFBxViczryC8tv",
+   "name": "007",
+   "longname": "Technikraum IV",
+   "storey": "Keller",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1pG7ErnqL79fYOSoJhY$mD",
+   "name": "008",
+   "longname": "WC Herren",
+   "storey": "Keller",
+   "area": 12.377,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.9,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "2NO$Il8fr1n8x3zsU1IoYc",
+   "name": "010",
+   "longname": "Labor K1",
+   "storey": "Keller",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3vTaz$m4D7Mw20Cj4ZCMEW",
+   "name": "011",
+   "longname": "Labor K2",
+   "storey": "Keller",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "29dtO28k16G9baf14UO37j",
+   "name": "012",
+   "longname": "Labor K3",
+   "storey": "Keller",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3YOWN6kp53UhVDk7gccfjD",
+   "name": "013",
+   "longname": "Labor K4",
+   "storey": "Keller",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "25NDKbpWH5r94ho13fJMeb",
+   "name": "014",
+   "longname": "Labor K5",
+   "storey": "Keller",
+   "area": 11.097,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3cjnMny5DF0g1J6kKZWO4Y",
+   "name": "015",
+   "longname": "Flur Keller West",
+   "storey": "Keller",
+   "area": 34.338,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    17.7,
+    2.0,
+    2.7
+   ]
+  },
+  {
+   "gid": "2Zmi8kumn3P9N9wBPT48lG",
+   "name": "017",
+   "longname": "Flur Keller Ost",
+   "storey": "Keller",
+   "area": 11.446,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.9,
+    2.0,
+    2.7
+   ]
+  },
+  {
+   "gid": "3Gz7u_d1P7IA35Wmtg48Rc",
+   "name": "016",
+   "longname": "Flur Keller Treppe",
+   "storey": "Keller",
+   "area": 45.571,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.4,
+    8.7,
+    2.7
+   ]
+  },
+  {
+   "gid": "1nsRm1QQb1xwWpzzFR7Ax3",
+   "name": "009",
+   "longname": "WC Damen",
+   "storey": "Keller",
+   "area": 12.377,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.9,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3EN96kdYDB2OOGjNLp8e86",
+   "name": "101",
+   "longname": "Buero Meier",
+   "storey": "Erdgeschoss",
+   "area": 11.097,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1_Evy7T$DCiwLgTMLHCRoe",
+   "name": "102",
+   "longname": "Labor I",
+   "storey": "Erdgeschoss",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3eQ_MQ5er5UeRXq4xxAoKl",
+   "name": "103",
+   "longname": "Labor II",
+   "storey": "Erdgeschoss",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3KaloR8018sAKZVwuYVbSu",
+   "name": "116",
+   "longname": "Flur EG West",
+   "storey": "Erdgeschoss",
+   "area": 34.338,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    17.7,
+    2.0,
+    2.7
+   ]
+  },
+  {
+   "gid": "03hhkFXKT4RPFNu5rDrZPL",
+   "name": "115",
+   "longname": "Buero Obermeier",
+   "storey": "Erdgeschoss",
+   "area": 23.901,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1oKaKV7Wz8IOJ10cA1PGWP",
+   "name": "113",
+   "longname": "WC Damen",
+   "storey": "Erdgeschoss",
+   "area": 12.377,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.9,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3j5r$vfHT3JfqUfpdRoXnP",
+   "name": "112",
+   "longname": "WC Herren",
+   "storey": "Erdgeschoss",
+   "area": 12.377,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.9,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3t8qjHTuTAigDlC1x7D16b",
+   "name": "111",
+   "longname": "Buero Maier",
+   "storey": "Erdgeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1DxredyET5bf_85HZe8$FO",
+   "name": "105",
+   "longname": "Buero Studenten I",
+   "storey": "Erdgeschoss",
+   "area": 37.985,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    8.9,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "2ED0MLfrf17BXIsuJYCs7R",
+   "name": "110",
+   "longname": "Buero Meyer",
+   "storey": "Erdgeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1loQAAB191MA5YmsaMJHkI",
+   "name": "109",
+   "longname": "Buero Mayer",
+   "storey": "Erdgeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3Xu6SpY4vC89stuKlMWE2n",
+   "name": "108",
+   "longname": "Buero Meyr",
+   "storey": "Erdgeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3yAAZZ86j388XApaG$h1X6",
+   "name": "107",
+   "longname": "Buero Mayr",
+   "storey": "Erdgeschoss",
+   "area": 11.097,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3$FatfHY1Cg9apAMwbKPN8",
+   "name": "106",
+   "longname": "Buero Studenten II",
+   "storey": "Erdgeschoss",
+   "area": 36.705,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    8.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0_TtqXcOrDbeTXyb5q0Uxb",
+   "name": "118",
+   "longname": "Flur EG Ost",
+   "storey": "Erdgeschoss",
+   "area": 34.338,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    17.7,
+    2.0,
+    2.7
+   ]
+  },
+  {
+   "gid": "25QUQJ9jHAFengkpc9N7GR",
+   "name": "104",
+   "longname": "Buero Hausmeister",
+   "storey": "Erdgeschoss",
+   "area": 12.377,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.9,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0jhU4VZ6XCxee3pjfx5VMh",
+   "name": "114",
+   "longname": "Buero Studenten III",
+   "storey": "Erdgeschoss",
+   "area": 37.558,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    8.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1RP4kkhTDFJuLugWfrM_1s",
+   "name": "117",
+   "longname": "Flur EG Eingang",
+   "storey": "Erdgeschoss",
+   "area": 80.665,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.4,
+    15.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "25CC32yK130ALlKsnej9JW",
+   "name": "220",
+   "longname": "Flur 1.OG West",
+   "storey": "1. Obergeschoss",
+   "area": 34.338,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    17.7,
+    2.0,
+    2.7
+   ]
+  },
+  {
+   "gid": "37pP75EaP1axQNg3rWc_WT",
+   "name": "214",
+   "longname": "WC Damen",
+   "storey": "1. Obergeschoss",
+   "area": 12.377,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.9,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0f6kjO4cnBngLgZgtaoBTE",
+   "name": "213",
+   "longname": "WC Herren",
+   "storey": "1. Obergeschoss",
+   "area": 12.377,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.9,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3XJSZHVdLFTQTPYNfhA6a2",
+   "name": "222",
+   "longname": "Flur 1.OG Ost",
+   "storey": "1. Obergeschoss",
+   "area": 34.338,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    17.7,
+    2.0,
+    2.7
+   ]
+  },
+  {
+   "gid": "1AW8GAtUnEYB9XPWOUYKK5",
+   "name": "211",
+   "longname": "Buero Schmidt",
+   "storey": "1. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0uPiF9LkPAqeB8f54Uy3_C",
+   "name": "221",
+   "longname": "Flur 1.OG Treppe",
+   "storey": "1. Obergeschoss",
+   "area": 45.571,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.4,
+    8.7,
+    2.7
+   ]
+  },
+  {
+   "gid": "24vVAUYDH2SetutQQsZBMv",
+   "name": "207",
+   "longname": "Buero IL",
+   "storey": "1. Obergeschoss",
+   "area": 36.705,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    8.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "2goaA6RR92B9xducYbaQVU",
+   "name": "206",
+   "longname": "Buero IL Sekr.",
+   "storey": "1. Obergeschoss",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0i4GPkF$j1$P1_N4yoKfHm",
+   "name": "210",
+   "longname": "Buero Schmid",
+   "storey": "1. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "2Yd3UbuHLF0P7Q5pq$wqrF",
+   "name": "219",
+   "longname": "Buero Mueller I",
+   "storey": "1. Obergeschoss",
+   "area": 11.097,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1GtYUXG753_h6i4vKAf46v",
+   "name": "218",
+   "longname": "Buero Mueller II",
+   "storey": "1. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0VWZeARNT8IAUcPL5OoYiA",
+   "name": "217",
+   "longname": "Buero MuellerIII",
+   "storey": "1. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3kV3mGMIX3BvUw5dL_lJVg",
+   "name": "215",
+   "longname": "Buero Mueller V",
+   "storey": "1. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1yZQvqj15Ab8eMXDuz85Dy",
+   "name": "204",
+   "longname": "Buero Oberschmitt",
+   "storey": "1. Obergeschoss",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0uC7OD3$5F7v$zL3aaoEig",
+   "name": "201",
+   "longname": "Buero Obermueller",
+   "storey": "1. Obergeschoss",
+   "area": 23.901,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "2E2TaOnqD0chpbuH8tXCpW",
+   "name": "208",
+   "longname": "Buero Schmied II",
+   "storey": "1. Obergeschoss",
+   "area": 11.097,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3shuyF_Yb7yu2P$QLB2s8G",
+   "name": "202",
+   "longname": "Buero Mueller VI + VII",
+   "storey": "1. Obergeschoss",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0UiHARbFzF1RT4g_GKem_B",
+   "name": "203",
+   "longname": "Buero Mueller VIII + IX",
+   "storey": "1. Obergeschoss",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1LVv$xQpj6k8KE6pcNlDDU",
+   "name": "209",
+   "longname": "Buero Schmied I",
+   "storey": "1. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1a3ixYyUn0QO4HWUYKN$4p",
+   "name": "212",
+   "longname": "Buero Schmitt I",
+   "storey": "1. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3iSzpa9d93jhTDB7hG0QBW",
+   "name": "205",
+   "longname": "Buero Schmitt II",
+   "storey": "1. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0K6ICBa1zCjvUnsy8qMIRC",
+   "name": "216",
+   "longname": "Buero Mueller IV",
+   "storey": "1. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3M3dydUxH2hR7Uvg9QNhS$",
+   "name": "313",
+   "longname": "WC Herren",
+   "storey": "2. Obergeschoss",
+   "area": 12.377,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.9,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "2lebmw3XD9w9PIIn4HKbwh",
+   "name": "302",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "09m2tgyfr9UfikvrKFMkeD",
+   "name": "303",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0dc6ovxJLDww6sjSpu_cfN",
+   "name": "304",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0U5AcnRYX7aw$OIZXqMUaR",
+   "name": "305",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1jJ7opRcX6uevup8Hnq0$2",
+   "name": "318",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "30oDtenHrAwuYDgWTayiN$",
+   "name": "317",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3$PC9MkEH1Ex24UD3VHyzP",
+   "name": "316",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0Veunyhgf7QxfJXezc1Ydu",
+   "name": "315",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1vWhxAiTL1RR3r4R3eC2Vv",
+   "name": "306",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 24.754,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3uvYP4OyH5ufyPIMbZD86h",
+   "name": "307",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 23.901,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0oB0YIgnPE49CsBpGIdxOR",
+   "name": "312",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3jurQKaejCqgtlRMQvYO$h",
+   "name": "311",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1I4mvNGj58VPS4IqdvGDOQ",
+   "name": "310",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3BlfjPTqH1qeG63Yox0pCX",
+   "name": "309",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 11.95,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.8,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "1qHIiTcLf7zwz3pTXujZ3t",
+   "name": "308",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 11.097,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "0jh6L39QvEQu8mVKX3j43f",
+   "name": "314",
+   "longname": "WC Damen",
+   "storey": "2. Obergeschoss",
+   "area": 12.377,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.9,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3zaEFaiGrF1ftyFPQrOe_i",
+   "name": "301",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 23.901,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3i9iiZlcT5eQkuRPP$TrLS",
+   "name": "319",
+   "longname": "Buero",
+   "storey": "2. Obergeschoss",
+   "area": 11.097,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    2.6,
+    4.4,
+    2.7
+   ]
+  },
+  {
+   "gid": "3gYFdGsxTBa9PFlMvRAaiF",
+   "name": "320",
+   "longname": "Flur 2.OG West",
+   "storey": "2. Obergeschoss",
+   "area": 34.338,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    17.7,
+    2.0,
+    2.7
+   ]
+  },
+  {
+   "gid": "2mSYEw1YLDvhMYvUr3eREJ",
+   "name": "321",
+   "longname": "Flur 2.OG Treppe",
+   "storey": "2. Obergeschoss",
+   "area": 45.571,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.4,
+    8.7,
+    2.7
+   ]
+  },
+  {
+   "gid": "3CXBDjcSTES8AedjLKSfJe",
+   "name": "322",
+   "longname": "Flur 2.OG Ost",
+   "storey": "2. Obergeschoss",
+   "area": 34.338,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    17.7,
+    2.0,
+    2.7
+   ]
+  },
+  {
+   "gid": "3txvJd9V1BPhyU$48F$mnF",
+   "name": "403",
+   "longname": "Dachboden-2",
+   "storey": "Dachgeschoss",
+   "area": 71.078,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    17.7,
+    11.4,
+    1.64
+   ]
+  },
+  {
+   "gid": "0jbV$RErb7o9P7rp7ALEd$",
+   "name": "402",
+   "longname": "Dachboden-1",
+   "storey": "Dachgeschoss",
+   "area": 71.078,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    17.7,
+    11.4,
+    1.64
+   ]
+  },
+  {
+   "gid": "2_rG4oliv3CxmStpGPieup",
+   "name": "401",
+   "longname": "Flur 3.OG Treppe",
+   "storey": "Dachgeschoss",
+   "area": 60.209,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.7,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    5.4,
+    13.4,
+    2.67
+   ]
+  }
+ ],
+ "doors": [
+  {
+   "gid": "3qloCPnZDEQBom1ZjBlwJP",
+   "name": "Tür-014",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller West",
+    "WC Damen"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0_flqizUv5_A_EGt7DzP3T",
+   "name": "Tür-015",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller West",
+    "Labor K1"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "17n0YjYkvEshOmsrIPLGOb",
+   "name": "Tür-016",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller West",
+    "Labor K4"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "31Gx3VvgP1fvwL2I0a9YtY",
+   "name": "Tür-016",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller West",
+    "Labor K3"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0Xbk1qGZnCY9arQDkkuJ8L",
+   "name": "Tür-016",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller West",
+    "Labor K2"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "3NTkL25Pb8Y8HEKKJUt_B_",
+   "name": "Tür-016",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller West",
+    "Labor K5"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1nDSxVMDT3hh2Ql2HEz6Lg",
+   "name": "Tür-002",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Besprechungsraum I",
+    "Flur Keller West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2MHPtmLzv5OhZf$6Z1Y75J",
+   "name": "Tür-004",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Besprechungsraum II",
+    "Flur Keller West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "29qQ5ECrL6nQEhooPP__BH",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller West",
+    "Technikraum I"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "3rmqVs9ZL3qgw1cva2u9Fv",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller Treppe",
+    "Technikraum II"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1lf5dxZ1LE_xJj$eJu8Rhu",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller Ost",
+    "Technikraum III"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2$tv64Cn5DZx8YisuS365o",
+   "name": "Tür-012",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller Ost",
+    "Technikraum IV"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "123VQUHCn26ei6whtqvtKu",
+   "name": "Tür-013",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller Ost",
+    "WC Herren"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0Ti0dr3tHAq8uzw2luJtyI",
+   "name": "Tür-018",
+   "type": "IFC Doppeltür - Zwei Öffnungsrichtungen",
+   "op": "DOUBLE_DOOR_DOUBLE_SWING",
+   "width": 1.8,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller Ost",
+    "Seminarraum"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2pe3RqZ0j8ogoAvp7iGUAH",
+   "name": "Tür-017",
+   "type": "IFC Doppeltür - Zwei Öffnungsrichtungen",
+   "op": "DOUBLE_DOOR_DOUBLE_SWING",
+   "width": 1.8,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller Treppe",
+    "Flur Keller West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "3sXEZFiePFsxi_o7909$c3",
+   "name": "Tür-018",
+   "type": "IFC Doppeltür - Zwei Öffnungsrichtungen",
+   "op": "DOUBLE_DOOR_DOUBLE_SWING",
+   "width": 1.8,
+   "height": 2.1,
+   "storey": "Keller",
+   "spaces": [
+    "Flur Keller Ost",
+    "Flur Keller Treppe"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "18PQUIFELEARLM4c0brquf",
+   "name": "Tür-019",
+   "type": "IFC Tür - Drehtür",
+   "op": "REVOLVING",
+   "width": 2.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Flur EG Eingang"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2d24khq3H2EhLI7osiekrD",
+   "name": "Tür-002",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Buero Meier",
+    "Flur EG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0nixpH$hD2$xLwip3vL96O",
+   "name": "Tür-003",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Flur EG West",
+    "Labor I"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2SfY7UTIz1E82rEMOUSWux",
+   "name": "Tür-004",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Flur EG West",
+    "Labor II"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2FYBB$DerEng8G$eISvGgZ",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Buero Hausmeister",
+    "Flur EG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1njbY3IMb4IedX5fLGTCRc",
+   "name": "Tür-014",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Flur EG West",
+    "WC Damen"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0YIVuBlyXF3PI_fXw2b_vJ",
+   "name": "Tür-015",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Buero Studenten III",
+    "Flur EG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2pX0sc7rf06usjFMq1TsGs",
+   "name": "Tür-016",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Buero Obermeier",
+    "Flur EG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0p1Mt3h7nDeQ1Q4N9eEl9H",
+   "name": "Tür-008",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Buero Mayr",
+    "Flur EG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "3nS8Xe8c5BpfdWxU$cBkvz",
+   "name": "Tür-009",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Buero Meyr",
+    "Flur EG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "3QI0Za4AD7g9EDuOxKtL4z",
+   "name": "Tür-010",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Buero Mayer",
+    "Flur EG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "20nncC0vDDp9h64AX6XevC",
+   "name": "Tür-011",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Buero Meyer",
+    "Flur EG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "3c7FFURCHAIuL_Uqfwogkh",
+   "name": "Tür-012",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Buero Maier",
+    "Flur EG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2ZDRA4lYXAawe3WLk$RpXy",
+   "name": "Tür-013",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Flur EG Ost",
+    "WC Herren"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1FCKjvOWnEAv7x1dg2f7BI",
+   "name": "Tür-006",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Buero Studenten I",
+    "Flur EG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2k6vBG3yn9hRJUYx$GK5vo",
+   "name": "Tür-007",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Buero Studenten II",
+    "Flur EG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1_hrYGMATEmeNbEHgfoKxd",
+   "name": "Tür-017",
+   "type": "IFC Doppeltür - Eine Öffnungsrichtung",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.8,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Flur EG Eingang",
+    "Flur EG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "31UFds84f5oAxxal4G6S8P",
+   "name": "Tür-018",
+   "type": "IFC Doppeltür - Eine Öffnungsrichtung",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.8,
+   "height": 2.1,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Flur EG Eingang",
+    "Flur EG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "17HzXMa29CgeqdGTriCwwh",
+   "name": "Tür-014",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Flur 1.OG West",
+    "WC Damen"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "37NUOXsmX3z9p4Kk0VJikq",
+   "name": "Tür-015",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Mueller V",
+    "Flur 1.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2VGdy0IID6LxPfFQdDE_rz",
+   "name": "Tür-016",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Mueller II",
+    "Flur 1.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "36$lV978n70fzaOS1aGkQb",
+   "name": "Tür-016",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero MuellerIII",
+    "Flur 1.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2ezLa6k3r22f7kZrwjKNLO",
+   "name": "Tür-016",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Mueller IV",
+    "Flur 1.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2dmNSROS54DQzD5NyEFXm$",
+   "name": "Tür-016",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Mueller I",
+    "Flur 1.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2sSHD6n39BZQnSaHjLYpnc",
+   "name": "Tür-008",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Schmied II",
+    "Flur 1.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "3ZJxNn9Nz6HQakewV2F393",
+   "name": "Tür-009",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Schmied I",
+    "Flur 1.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2tu8_KoLfDpho5M9F1jtqL",
+   "name": "Tür-010",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Schmid",
+    "Flur 1.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "00RjztLorCQgcGEHv7fY3g",
+   "name": "Tür-011",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Schmidt",
+    "Flur 1.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "35jd8lu1fDJAuZoKl4ldDk",
+   "name": "Tür-012",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Schmitt I",
+    "Flur 1.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "32UdM49pfAMxiX5WyXhCuy",
+   "name": "Tür-013",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Flur 1.OG Ost",
+    "WC Herren"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0vTIWG60z84eKitb_eWAIR",
+   "name": "Tür-002",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Obermueller",
+    "Flur 1.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "3qz8vRMKXCHubRHdl$maGl",
+   "name": "Tür-004",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Mueller VI + VII",
+    "Flur 1.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "08uaDJHLH3FAZ6Hg9FwzkG",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Mueller VIII + IX",
+    "Flur 1.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0aFvTq1m96zgWbjq4TXV_5",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Oberschmitt",
+    "Flur 1.OG Treppe"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1d9QvK4Qv1Iem3fiUhniQB",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero IL Sekr.",
+    "Flur 1.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1BWbpTElb4dAcW2J6oyRrZ",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero IL",
+    "Flur 1.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1gw9pvArXFYfZkbYdrwJwh",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero Schmitt II",
+    "Flur 1.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0JdG5rMQr10RkgztM3HqwA",
+   "name": "Tür-019",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Buero IL",
+    "Buero IL Sekr."
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1p4YfqvYLCyfRRiNruiahD",
+   "name": "Tür-017",
+   "type": "IFC Doppeltür - Eine Öffnungsrichtung",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.8,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Flur 1.OG Treppe",
+    "Flur 1.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1MlsdMSb17ygNfEs7N22qC",
+   "name": "Tür-018",
+   "type": "IFC Doppeltür - Eine Öffnungsrichtung",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.8,
+   "height": 2.1,
+   "storey": "1. Obergeschoss",
+   "spaces": [
+    "Flur 1.OG Ost",
+    "Flur 1.OG Treppe"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2GIKSl4yvD7wO8pi7zg$sQ",
+   "name": "Tür-014",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Flur 2.OG West",
+    "WC Damen"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "3UcRuggsrAXPWkQpXc3dLn",
+   "name": "Tür-015",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "3KiAVCT1D1t8Xn0nRB8nld",
+   "name": "Tuer-016",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2ijDjejvTCZvZnfGVKFht6",
+   "name": "Tür-016",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0WVkDf7jjAGhdceJ18iI2g",
+   "name": "Tür-016",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2VJpmvlMLEvOKD0Mb9hAiw",
+   "name": "Tuer-016",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1ufhCZbhH2Ifud2RWdYCPS",
+   "name": "Tür-008",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "3mQi89EHb4rOWufyKZfZhB",
+   "name": "Tür-009",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "24UZuOfCf3JhP_9U8SWMuK",
+   "name": "Tür-010",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "3uYK2H0E52Qhz8bK3APcca",
+   "name": "Tür-011",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0CFMpIkEzADxWz$xDSGgek",
+   "name": "Tür-012",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2wCVZFSRnBZ8YJ5Ri$bwG7",
+   "name": "Tür-013",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Flur 2.OG Ost",
+    "WC Herren"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1EjnchXi9Esx$bY6vHG2RD",
+   "name": "Tür-002",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0o6iTaAHzAQ9cd4xHGAaOG",
+   "name": "Tür-004",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1uDQb3wH95JQTlYH_Y617r",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2rfNFYnCT2WAXMkqZ5PiDc",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG Treppe"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2$R4rUG1nFkBAylN9aGNhb",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2h5A513TXAAhxsa3$Armxt",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0HthpQNkzAiuSXm9HWsQaw",
+   "name": "Tür-005",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Buero",
+    "Flur 2.OG Ost"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "3XIgDIN6vBjxvjdvI7ngjF",
+   "name": "Tür-017",
+   "type": "IFC Doppeltür - Eine Öffnungsrichtung",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.8,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Flur 2.OG Treppe",
+    "Flur 2.OG West"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2N6esOMjP29AvhRLQ1Jz3$",
+   "name": "Tür-018",
+   "type": "IFC Doppeltür - Eine Öffnungsrichtung",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.8,
+   "height": 2.1,
+   "storey": "2. Obergeschoss",
+   "spaces": [
+    "Flur 2.OG Ost",
+    "Flur 2.OG Treppe"
+   ],
+   "fire": null,
+   "external": null
+  }
+ ],
+ "windows": [
+  {
+   "gid": "3xvQAmf45C8PC3qSvtvqlg",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor K5"
+   ]
+  },
+  {
+   "gid": "3fHoF9ddLDNg7p4qo0Wq7v",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor K4"
+   ]
+  },
+  {
+   "gid": "2R1TAx1CP0iABwkslb$Gv_",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor K4"
+   ]
+  },
+  {
+   "gid": "2Luo2PAnn99uT1hjBk4Vyq",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor K3"
+   ]
+  },
+  {
+   "gid": "0ha9$dzvr5hfHL2tup2bF9",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor K3"
+   ]
+  },
+  {
+   "gid": "0M5DbO6eLEYAljcKYr52lj",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor K2"
+   ]
+  },
+  {
+   "gid": "3LhgbZxOfBS96L3z1ugkAf",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor K2"
+   ]
+  },
+  {
+   "gid": "2vt0LWwZ1B$wvl1xJ$rRYX",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor K1"
+   ]
+  },
+  {
+   "gid": "24$uaJIhH2ouGJkH7Wd6Cg",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor K1"
+   ]
+  },
+  {
+   "gid": "1_UD$NAdH5j8VQ4M152ONb",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Damen"
+   ]
+  },
+  {
+   "gid": "3CiCcmHpP2K84bQMGsx3y3",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Damen"
+   ]
+  },
+  {
+   "gid": "3ZiHV_RFL3shDKRIJ1fjqB",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor K5"
+   ]
+  },
+  {
+   "gid": "37DmcwHRH46vMkO0bCgirD",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Herren"
+   ]
+  },
+  {
+   "gid": "15lQJrYf9A4xrsK9Ca$fEc",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Technikraum IV"
+   ]
+  },
+  {
+   "gid": "2KWGkABzf5YuhLq7$mydKO",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Technikraum IV"
+   ]
+  },
+  {
+   "gid": "1OeButDUzCWPGfp3wmTIEe",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "0DyvKRpqrDchZau$PoLIcs",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "1OV17CuXX2yOi2aX$NydU3",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "3I0_zAKh53_PRDghNrS9dg",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "1xVAErrPn9h9PZS4j$g3G8",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "350CUI1c1F0QSJPiZz1wP5",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "0U9x4f675CxAXlkJBnOQjW",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "3DDIxElIvCmOW6piyS2d1Q",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Herren"
+   ]
+  },
+  {
+   "gid": "3NpTHgn_j3zx2eDS5wHeXw",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "1pje_D_or3NPRN0K90aQGI",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Besprechungsraum I"
+   ]
+  },
+  {
+   "gid": "0l4dSq$O1EhPrwBM112bpI",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Besprechungsraum I"
+   ]
+  },
+  {
+   "gid": "0DL0We4nPFyAVGrKFIo$_Q",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Besprechungsraum I"
+   ]
+  },
+  {
+   "gid": "1cHXMbICn1WhQfo8g2ZwtI",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Besprechungsraum II"
+   ]
+  },
+  {
+   "gid": "3pwwIpoc57hgvawYgQG32b",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Besprechungsraum II"
+   ]
+  },
+  {
+   "gid": "2XgPE753r1of9qIx7CUdRU",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Besprechungsraum II"
+   ]
+  },
+  {
+   "gid": "0UvsYD1LfBsx91MU4B1EY1",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Besprechungsraum II"
+   ]
+  },
+  {
+   "gid": "3lUU1BV1T9OeboWPSlTSt6",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Technikraum I"
+   ]
+  },
+  {
+   "gid": "1ouI6iS8H4iveeYlQVR6wM",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Technikraum I"
+   ]
+  },
+  {
+   "gid": "3YVQQ7t1vFE8ej$paGzJX9",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Technikraum III"
+   ]
+  },
+  {
+   "gid": "27_DcwcBj4pR51s85xqpTA",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "0OmtQ6_NzE188dQC34v0g6",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "3QEUKhewj50vykoqwkHQYg",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "2r5uaVzi56I8umPPBXAgku",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "3hnGLaSkH3SvHIeUtURa3P",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "2HUtvXxkDFoO6CX6ZGSxv2",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "1Wa4Z7NrXAHwCBRQNj0Cft",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "2UkFRzvxv6r8FK6VLY_xj2",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Technikraum III"
+   ]
+  },
+  {
+   "gid": "0tmT0uM9X7qPqvsQL$Vnrv",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Besprechungsraum I"
+   ]
+  },
+  {
+   "gid": "3ddBeFeQz9QvQv9xPTOCTk",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Keller",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Seminarraum"
+   ]
+  },
+  {
+   "gid": "1$wm4f6k99XRQrMNEvL_1P",
+   "name": "Fenster-009",
+   "type": "IFC Fenster - ein Panel",
+   "width": 0.9,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Flur EG West"
+   ]
+  },
+  {
+   "gid": "0HtsZ3YcbDMwJN3vvrSgK9",
+   "name": "Fenster-008",
+   "type": "IFC Fenster - ein Panel",
+   "width": 0.9,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Flur EG Ost"
+   ]
+  },
+  {
+   "gid": "3_CZje0qzFFfsJdg65CoF_",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Meier"
+   ]
+  },
+  {
+   "gid": "2fB1Cm3Gn6SRIusC52HTGe",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor I"
+   ]
+  },
+  {
+   "gid": "23NwekTZP52g8Rswy$C86L",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor I"
+   ]
+  },
+  {
+   "gid": "0ChVXF3Lj3cv66fcKII9ok",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor I"
+   ]
+  },
+  {
+   "gid": "38g7R7wXv17gWe71J1QVvg",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor I"
+   ]
+  },
+  {
+   "gid": "3cfqOXb3f3Ow95PuTGA8ge",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor II"
+   ]
+  },
+  {
+   "gid": "3c$Xo8yh56dgtfpqOlOZSt",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor II"
+   ]
+  },
+  {
+   "gid": "0MhDBT4Xn35BdD0XgN2Zqz",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor II"
+   ]
+  },
+  {
+   "gid": "2SkcgVRZT55eBv9ib8QmcA",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Labor II"
+   ]
+  },
+  {
+   "gid": "1Irg_U9z1CFgCoHXTaJ73y",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Hausmeister"
+   ]
+  },
+  {
+   "gid": "1fPWXlbezBARmrmO_Y9jDU",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Hausmeister"
+   ]
+  },
+  {
+   "gid": "0CGHrXiHv4HBY05$ose5V2",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Meier"
+   ]
+  },
+  {
+   "gid": "0KqFIy5jL1Mgh2ggQ4WLch",
+   "name": "Fenster-012",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 2.0,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.1,
+   "spaces": [
+    "Flur EG Eingang"
+   ]
+  },
+  {
+   "gid": "2UjUodKnf77PmcAVpITSgL",
+   "name": "Fenster-013",
+   "type": "IFC Fenster - ein Panel",
+   "width": 0.9,
+   "height": 2.0,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.1,
+   "spaces": [
+    "Flur EG Eingang"
+   ]
+  },
+  {
+   "gid": "12QSop5nvChgTKqP9gJXTR",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Obermeier"
+   ]
+  },
+  {
+   "gid": "2zcvnUe5n40gqSh$BlyVaH",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Obermeier"
+   ]
+  },
+  {
+   "gid": "0WJMcpbbzA2e6$Z5dpYikp",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Obermeier"
+   ]
+  },
+  {
+   "gid": "1KKnvDZrr6qPZi0fbRfk_i",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten III"
+   ]
+  },
+  {
+   "gid": "3cjmnELbT4ZgU434Wpw8$2",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten III"
+   ]
+  },
+  {
+   "gid": "0pPpDUymrBF8Wc$W7Gv4T$",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten III"
+   ]
+  },
+  {
+   "gid": "27$3O5O5r4zP4FJdp1zwdN",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten III"
+   ]
+  },
+  {
+   "gid": "31WZqUkqr2U9UpIQCAkHVB",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten III"
+   ]
+  },
+  {
+   "gid": "3HyKYtosrEC96fPRcfU8a1",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten III"
+   ]
+  },
+  {
+   "gid": "1vevu6ekH25hciBayNqSbV",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Damen"
+   ]
+  },
+  {
+   "gid": "2tqQAKnbb9Puqr69a3n37D",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Damen"
+   ]
+  },
+  {
+   "gid": "0td876Op155QAh5MHPRO05",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Obermeier"
+   ]
+  },
+  {
+   "gid": "3g8MS5YmX0Zx4Mf2deNLEd",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Herren"
+   ]
+  },
+  {
+   "gid": "2BKSigZcT9LPO64JjoTNF4",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Maier"
+   ]
+  },
+  {
+   "gid": "2PhD4lAaLA3PMKnfhSTJ9q",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Maier"
+   ]
+  },
+  {
+   "gid": "0$6TgsobP9PPnqNXqQeskc",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Meyer"
+   ]
+  },
+  {
+   "gid": "3HAt_XvHb13AE8gYn28I5g",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Meyer"
+   ]
+  },
+  {
+   "gid": "2hnpR8mzTAn9yDg7byDsCY",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mayer"
+   ]
+  },
+  {
+   "gid": "0S8yN4GYfAcee_3jT9azuZ",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mayer"
+   ]
+  },
+  {
+   "gid": "1s2ucU7sz6WPNdY1u8lvSQ",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Meyr"
+   ]
+  },
+  {
+   "gid": "2lwCvFBUz95BAyapPUrPcM",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Meyr"
+   ]
+  },
+  {
+   "gid": "3cBLzORtrFxwCaZldEUxGm",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mayr"
+   ]
+  },
+  {
+   "gid": "1fN0dUKvfE4x8uHeMcb2A4",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Herren"
+   ]
+  },
+  {
+   "gid": "2C1mTF6lD8mgYJqKrvvqbc",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mayr"
+   ]
+  },
+  {
+   "gid": "08EvXe7d51ZhzVtSteieto",
+   "name": "Fenster-003",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten II"
+   ]
+  },
+  {
+   "gid": "1t4Zdb3Vv8mQLPoMeqevrn",
+   "name": "Fenster-003",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten II"
+   ]
+  },
+  {
+   "gid": "2agthUitrEmRxrqwwPaejP",
+   "name": "Fenster-003",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten II"
+   ]
+  },
+  {
+   "gid": "3o$pVJjC5EqBVH2ZRwJMcp",
+   "name": "Fenster-003",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten II"
+   ]
+  },
+  {
+   "gid": "3hUHz9q29098WsMJ20lZFe",
+   "name": "Fenster-003",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten II"
+   ]
+  },
+  {
+   "gid": "0uUUWyhx96pOZ1f$3c_du9",
+   "name": "Fenster-003",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten I"
+   ]
+  },
+  {
+   "gid": "3qlaFAAcPAeh1wBxQgEJ1O",
+   "name": "Fenster-003",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten I"
+   ]
+  },
+  {
+   "gid": "000vZ5hTfBgR1R0ytKrVZS",
+   "name": "Fenster-003",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten I"
+   ]
+  },
+  {
+   "gid": "1VhUd1CGD2g8UutVlYLkue",
+   "name": "Fenster-003",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten I"
+   ]
+  },
+  {
+   "gid": "1tD8H76Wj8rwVBPPIEaOBk",
+   "name": "Fenster-003",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten I"
+   ]
+  },
+  {
+   "gid": "28jtanJLnD68zXO6BYmgve",
+   "name": "Fenster-003",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten I"
+   ]
+  },
+  {
+   "gid": "2wH9GIWt94mgMKOirAU7CY",
+   "name": "Fenster-003",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Studenten II"
+   ]
+  },
+  {
+   "gid": "2S05fJwurB0AsobKzEqBs1",
+   "name": "Fenster-015",
+   "type": "IFC Fenster - ein Panel",
+   "width": 0.9,
+   "height": 2.0,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.1,
+   "spaces": [
+    "Flur EG Eingang"
+   ]
+  },
+  {
+   "gid": "12ErTRo_9EmBI9cF9PJCvF",
+   "name": "Fenster-015",
+   "type": "IFC Fenster - ein Panel",
+   "width": 0.9,
+   "height": 2.0,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.1,
+   "spaces": [
+    "Flur EG Eingang"
+   ]
+  },
+  {
+   "gid": "03SJ_6GzL72BUsuqP6BUv3",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller I"
+   ]
+  },
+  {
+   "gid": "2FhF5ftpfAoR5u9P0zRDN2",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller II"
+   ]
+  },
+  {
+   "gid": "3zXYrOG$5AIAmg3jOwc8e1",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller II"
+   ]
+  },
+  {
+   "gid": "1CC7dXY6v5nAdc$PmuzWuu",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero MuellerIII"
+   ]
+  },
+  {
+   "gid": "1pPdANFrDBBhYWYhTHEEHn",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero MuellerIII"
+   ]
+  },
+  {
+   "gid": "2636AictfCaBavk86H6D4D",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller IV"
+   ]
+  },
+  {
+   "gid": "2vthESqkPCtexTHr1MwOxj",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller IV"
+   ]
+  },
+  {
+   "gid": "3f8gKg5kT30h_8UXOmLt72",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller V"
+   ]
+  },
+  {
+   "gid": "22eq1cKyX4ORpHxEO$xo4v",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller V"
+   ]
+  },
+  {
+   "gid": "2CnQ7ixwv8A9Jwtk_6wiBp",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Damen"
+   ]
+  },
+  {
+   "gid": "3yGeEHOp97MPf7P0QPdQGT",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Damen"
+   ]
+  },
+  {
+   "gid": "34z_sfy5r7MxZO_XK2tdyk",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller I"
+   ]
+  },
+  {
+   "gid": "09nsmlIP1Av8Gqo7k1gGXA",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Herren"
+   ]
+  },
+  {
+   "gid": "1woJxRP9rBzA0NGvvq6Jbs",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Schmitt I"
+   ]
+  },
+  {
+   "gid": "14lr70JTX5Zw5AEQUrJRI6",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Schmitt I"
+   ]
+  },
+  {
+   "gid": "3TaVJS_WrFjvF4FNvIpjkU",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Schmidt"
+   ]
+  },
+  {
+   "gid": "2TM3hOfDLEKgLHIoi2G2eE",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Schmidt"
+   ]
+  },
+  {
+   "gid": "31vL2xKtv6b8xITngnOCX4",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Schmid"
+   ]
+  },
+  {
+   "gid": "1_H_m5RiH9X8BR$Fz7YY7j",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Schmid"
+   ]
+  },
+  {
+   "gid": "30S9Awv3LEe8VCVTEwi68n",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Schmied I"
+   ]
+  },
+  {
+   "gid": "2iLTU_LYz3NA91FzuoqriL",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Schmied I"
+   ]
+  },
+  {
+   "gid": "2q$7ICGvL3zvLmzSLHMQRS",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Schmied II"
+   ]
+  },
+  {
+   "gid": "3jPBVBqyH6RgTDfklWLj5B",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Herren"
+   ]
+  },
+  {
+   "gid": "0vzBs_8_n40xRpBtuEXQlk",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Schmied II"
+   ]
+  },
+  {
+   "gid": "2kyp5olOX6YxfL8$tctAgH",
+   "name": "Fenster-007",
+   "type": "IFC Fenster - ein Panel",
+   "width": 0.9,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Flur 1.OG Ost"
+   ]
+  },
+  {
+   "gid": "1II2wI2iz2xugPBtxLqfRA",
+   "name": "Fenster-006",
+   "type": "IFC Fenster - ein Panel",
+   "width": 0.9,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Flur 1.OG West"
+   ]
+  },
+  {
+   "gid": "2PyPcf7HvDGQxPopRGPDKI",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Obermueller"
+   ]
+  },
+  {
+   "gid": "07j7ld5m1AKfwXwsD8BKk6",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Obermueller"
+   ]
+  },
+  {
+   "gid": "2c8tkvv0f3bx0r2cE2KbR4",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Obermueller"
+   ]
+  },
+  {
+   "gid": "14tRml$oP0Rhmg9zCpGzdf",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller VI + VII"
+   ]
+  },
+  {
+   "gid": "0AlQO9vJD8yQs$jjO$RhN4",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller VI + VII"
+   ]
+  },
+  {
+   "gid": "2muLeR9tf5FfEKGfOAn8sb",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller VI + VII"
+   ]
+  },
+  {
+   "gid": "0L1ke1dG93fxxhtLVwOTsT",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller VI + VII"
+   ]
+  },
+  {
+   "gid": "3LxPgFi8zB9O2dL$OVvll8",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller VIII + IX"
+   ]
+  },
+  {
+   "gid": "3ZvIiAd7b8tvll14FCaSxA",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller VIII + IX"
+   ]
+  },
+  {
+   "gid": "1pEJsF8kH4BQ$w9DVNUS8V",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller VIII + IX"
+   ]
+  },
+  {
+   "gid": "1bxtpaVk912hlBqFs8DpVp",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Mueller VIII + IX"
+   ]
+  },
+  {
+   "gid": "2JMzFDlyLC_vpXgeQ4GDNH",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Oberschmitt"
+   ]
+  },
+  {
+   "gid": "0NwAXV3355GR00was0Pjhg",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Oberschmitt"
+   ]
+  },
+  {
+   "gid": "2LkcdSrN1BN9bjMXtrVXB5",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Oberschmitt"
+   ]
+  },
+  {
+   "gid": "3panYjerbCSQl08K8o34mj",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Oberschmitt"
+   ]
+  },
+  {
+   "gid": "3fUog30lP6pwOTrTR2sk8d",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Schmitt II"
+   ]
+  },
+  {
+   "gid": "1mxN55cZPF6hKlsvawmd2i",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Schmitt II"
+   ]
+  },
+  {
+   "gid": "3UZtqiBsz5uvWB4kZmuS1Q",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero IL Sekr."
+   ]
+  },
+  {
+   "gid": "0JtLRXJlvE_wC5_4sLnvdj",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero IL Sekr."
+   ]
+  },
+  {
+   "gid": "2S3C3uY4L3E8GfjjcpTjpF",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero IL Sekr."
+   ]
+  },
+  {
+   "gid": "3jVh8jSJrDvA6MPkB86x3V",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero IL Sekr."
+   ]
+  },
+  {
+   "gid": "39pRQ$7l15fOjHNjfl3enL",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero IL"
+   ]
+  },
+  {
+   "gid": "1z0qMKUIT5IxhyyHbF4ocp",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero IL"
+   ]
+  },
+  {
+   "gid": "1mUlkaN4jFkfHh1zNVHhGj",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero IL"
+   ]
+  },
+  {
+   "gid": "1OLRx1anXAohtkhV733dGP",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero IL"
+   ]
+  },
+  {
+   "gid": "3k8ejU_PjCWBuPFpm1k2lH",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero IL"
+   ]
+  },
+  {
+   "gid": "2sPrxFKUnDQBesnyFyTX7C",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero IL"
+   ]
+  },
+  {
+   "gid": "0m$kvDvUr77f4o9JMw6ppP",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "1. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero Obermueller"
+   ]
+  },
+  {
+   "gid": "1K9shFYpvAiODk_sr0FdfC",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "1xD7nIclXAbe0AcpTv8C3w",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "2gtoeoCt9CBhiwfjH_Yl8E",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "0LmvL42xf8o8gvekhf5kDW",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "33rbr8lHzC9wyGLDUf1$oL",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "3yl6250Yj7yBi59RVKlXKu",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "0dAxB0XKHC$QriSRAuBxf6",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "0PyP8DIl91dB01H5Na4r6n",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "2LrttlMCD93gsPHs8eydhh",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "3RZiJ6qDzALv1rgqlu1sqF",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Damen"
+   ]
+  },
+  {
+   "gid": "2_X97mjPr6SfXHvLlAWVeK",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Damen"
+   ]
+  },
+  {
+   "gid": "18w4XWKEz1fPVH$dCZCDq2",
+   "name": "Fenster-004",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "2ne1IcZdrDPRb$8OCHUml1",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Herren"
+   ]
+  },
+  {
+   "gid": "2JLDJqS39FHgmOzoWdVdP_",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "06IfVSEn91UgGayOp3O7IE",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "31Q_5FuqX07QgicqF9UALl",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "2C5lQ3NhPCegfTg9Z1ac7G",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "1oYD_Z9ybB_h3cLF0sBrlO",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "3wtmcFknrEIBf$$ZaZkjsa",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "1lUbm8UC9BRhi6_rj8flXo",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "3u9W_RePLF$fFnvEZnhAA3",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "1UJnRoYuXDo8ukuFR0M0uj",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "2zTK8GIWP5CPRPLmzfTLA_",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "WC Herren"
+   ]
+  },
+  {
+   "gid": "0BEDAo9y13gQ0v5BiWlobp",
+   "name": "Fenster-005",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "2Q31NM555AyhJre_5CK6sQ",
+   "name": "Fenster-007",
+   "type": "IFC Fenster - ein Panel",
+   "width": 0.9,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Flur 2.OG Ost"
+   ]
+  },
+  {
+   "gid": "2hwuUNMpz9AAsYWleNcUZN",
+   "name": "Fenster-006",
+   "type": "IFC Fenster - ein Panel",
+   "width": 0.9,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Flur 2.OG West"
+   ]
+  },
+  {
+   "gid": "1gxRBxWbf8oRRUychif_cc",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "00UNrXETv7oftJb4TQUHq4",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "14E0a5PTb3iemHibLOvZOK",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "28pY$eTgz34vpE27jGTytk",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "2dUUX5v1j6ofLpFT0PekPV",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "2wzUmDh8LD9BcIe4cEFuli",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "3XWJoOAe95r84KuBtu9JdR",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "16PPPa8vv5HuPkSmln13OV",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "1xlLX8Zrj9wAZCni6ROM5N",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "0J1SwSeib5NelMocEXw8uQ",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "1lclf89IDDS8I01Hi8Sb8Z",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "0QgcTUhxfBlRUTxmdrocfw",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "0r2Ds1$6P2DwQ4MwKwJura",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "3f7Fz2Ssb9qBEvcT1P5nR5",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "13abvHCs97gOGS1VyTZ36D",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "3FhKOKIeb8QOyMFfTkmffU",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "22mYo$ZgTCP90ywROIM98L",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "0yxjkv3wvEtQPAWliouV$u",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "0lSCVI_pz9aRsLneS8b7BY",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "2MQJI38fb4kxSZGQpeIRXv",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "1$pDx4kq9D$Qv87vSmRHF1",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "2eQ15rBnD9bQnYtYvsSlv$",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "0i6DZZR0v0YxdGB37YLlHt",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "1U75ejClv3dQdMZ31HFglJ",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "0qcoNAafTDehoCiz4cM6tx",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "3cTqMaSBr3wfxDe7CbRYyh",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "2FZD1g3DX6Lf1xKxpeANT$",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "1OQ6lS92bEv8IU1oObylOf",
+   "name": "Fenster-002",
+   "type": "IFC Fenster - ein Panel",
+   "width": 1.0,
+   "height": 1.5,
+   "storey": "2. Obergeschoss",
+   "sill_approx": 0.9,
+   "spaces": [
+    "Buero"
+   ]
+  }
+ ],
+ "stairs": [
+  {
+   "gid": "0o_5lbt6jCpRs3V3FoLyNr",
+   "cls": "IfcStair",
+   "name": "Treppe-KG",
+   "predefined": "None",
+   "storey": "Keller",
+   "n_riser": null,
+   "riser": null,
+   "tread": null,
+   "props": {
+    "AC_Pset_Institute-1.Einfache/mittelmässige Modifizierung bei (iScaleChangeSM)": 999.0,
+    "AC_Pset_Institute-1.Einfache/mittelmässige Modifizierung bei (gs_ScaleChangeSM)": 100.0,
+    "AC_Pset_Institute-1.Mittelmässige/detaillierte Modifizierung bei (iScaleChangeMD)": 999.0,
+    "AC_Pset_Institute-1.Mittelmässige/detaillierte Modifizierung bei (gs_ScaleChangeMD)": 50.0,
+    "AC_Pset_Institute-1.Nummerierung zeigen (gs_show_numbering)": true,
+    "AC_Pset_Institute-1.Text (gs_riserun_text)": true,
+    "AC_Pset_Institute-1.Schriftgröße (mm) (gs_riserun_text_size)": 1.0,
+    "AC_Pset_Institute-1.Schriftgröße (Punkt) (gs_riserun_text_size_pt)": 2.83,
+    "AC_Pset_Institute-1.Handlauf im Grundriss zeigen": true,
+    "AC_Pset_Institute-1.Wangen im Grundriss zeigen": true,
+    "AC_Pset_Institute-1.Linientyp unter Ursprungsgeschoss": 4.0,
+    "AC_Pset_Institute-1.Nummerierung zeigen (gs_story_shownum)": true,
+    "AC_Equantity_Institute-1.- (gs_ArrowWidth)": 0.4,
+    "AC_Equantity_Institute-1.- (gs_BegSymbWidth)": 0.2
+   }
+  },
+  {
+   "gid": "1Kl5_Wzb98HOSGZ8eaBX2f",
+   "cls": "IfcStair",
+   "name": "Treppe-EG",
+   "predefined": "None",
+   "storey": "Erdgeschoss",
+   "n_riser": null,
+   "riser": null,
+   "tread": null,
+   "props": {
+    "AC_Pset_Institute-1.Einfache/mittelmässige Modifizierung bei (iScaleChangeSM)": 999.0,
+    "AC_Pset_Institute-1.Einfache/mittelmässige Modifizierung bei (gs_ScaleChangeSM)": 100.0,
+    "AC_Pset_Institute-1.Mittelmässige/detaillierte Modifizierung bei (iScaleChangeMD)": 999.0,
+    "AC_Pset_Institute-1.Mittelmässige/detaillierte Modifizierung bei (gs_ScaleChangeMD)": 50.0,
+    "AC_Pset_Institute-1.Nummerierung zeigen (gs_show_numbering)": true,
+    "AC_Pset_Institute-1.Text (gs_riserun_text)": true,
+    "AC_Pset_Institute-1.Schriftgröße (mm) (gs_riserun_text_size)": 1.0,
+    "AC_Pset_Institute-1.Schriftgröße (Punkt) (gs_riserun_text_size_pt)": 2.83,
+    "AC_Pset_Institute-1.Handlauf im Grundriss zeigen": true,
+    "AC_Pset_Institute-1.Wangen im Grundriss zeigen": true,
+    "AC_Pset_Institute-1.Linientyp unter Ursprungsgeschoss": 4.0,
+    "AC_Pset_Institute-1.Nummerierung zeigen (gs_story_shownum)": true,
+    "AC_Equantity_Institute-1.- (gs_ArrowWidth)": 0.4,
+    "AC_Equantity_Institute-1.- (gs_BegSymbWidth)": 0.2
+   }
+  },
+  {
+   "gid": "3Zb0LaH4z9HPmaVjAzVngL",
+   "cls": "IfcStair",
+   "name": "Treppe-1-OG",
+   "predefined": "None",
+   "storey": "1. Obergeschoss",
+   "n_riser": null,
+   "riser": null,
+   "tread": null,
+   "props": {
+    "AC_Pset_Institute-1.Einfache/mittelmässige Modifizierung bei (iScaleChangeSM)": 999.0,
+    "AC_Pset_Institute-1.Einfache/mittelmässige Modifizierung bei (gs_ScaleChangeSM)": 100.0,
+    "AC_Pset_Institute-1.Mittelmässige/detaillierte Modifizierung bei (iScaleChangeMD)": 999.0,
+    "AC_Pset_Institute-1.Mittelmässige/detaillierte Modifizierung bei (gs_ScaleChangeMD)": 50.0,
+    "AC_Pset_Institute-1.Nummerierung zeigen (gs_show_numbering)": true,
+    "AC_Pset_Institute-1.Text (gs_riserun_text)": true,
+    "AC_Pset_Institute-1.Schriftgröße (mm) (gs_riserun_text_size)": 1.0,
+    "AC_Pset_Institute-1.Schriftgröße (Punkt) (gs_riserun_text_size_pt)": 2.83,
+    "AC_Pset_Institute-1.Handlauf im Grundriss zeigen": true,
+    "AC_Pset_Institute-1.Wangen im Grundriss zeigen": true,
+    "AC_Pset_Institute-1.Linientyp unter Ursprungsgeschoss": 4.0,
+    "AC_Pset_Institute-1.Nummerierung zeigen (gs_story_shownum)": true,
+    "AC_Equantity_Institute-1.- (gs_ArrowWidth)": 0.4,
+    "AC_Equantity_Institute-1.- (gs_BegSymbWidth)": 0.2
+   }
+  },
+  {
+   "gid": "0xQhptVzf44Qzhs9jMEILa",
+   "cls": "IfcStair",
+   "name": "Treppe-2-OG",
+   "predefined": "None",
+   "storey": "2. Obergeschoss",
+   "n_riser": null,
+   "riser": null,
+   "tread": null,
+   "props": {
+    "AC_Pset_Institute-1.Einfache/mittelmässige Modifizierung bei (iScaleChangeSM)": 999.0,
+    "AC_Pset_Institute-1.Einfache/mittelmässige Modifizierung bei (gs_ScaleChangeSM)": 100.0,
+    "AC_Pset_Institute-1.Mittelmässige/detaillierte Modifizierung bei (iScaleChangeMD)": 999.0,
+    "AC_Pset_Institute-1.Mittelmässige/detaillierte Modifizierung bei (gs_ScaleChangeMD)": 50.0,
+    "AC_Pset_Institute-1.Nummerierung zeigen (gs_show_numbering)": true,
+    "AC_Pset_Institute-1.Text (gs_riserun_text)": true,
+    "AC_Pset_Institute-1.Schriftgröße (mm) (gs_riserun_text_size)": 1.0,
+    "AC_Pset_Institute-1.Schriftgröße (Punkt) (gs_riserun_text_size_pt)": 2.83,
+    "AC_Pset_Institute-1.Handlauf im Grundriss zeigen": true,
+    "AC_Pset_Institute-1.Wangen im Grundriss zeigen": true,
+    "AC_Pset_Institute-1.Linientyp unter Ursprungsgeschoss": 4.0,
+    "AC_Pset_Institute-1.Nummerierung zeigen (gs_story_shownum)": true,
+    "AC_Equantity_Institute-1.- (gs_ArrowWidth)": 0.4,
+    "AC_Equantity_Institute-1.- (gs_BegSymbWidth)": 0.2
+   }
+  }
+ ],
+ "railings": [
+  {
+   "name": "Gelaender-1-1",
+   "type": "Gelaender-1",
+   "storey": "Erdgeschoss",
+   "height": null
+  },
+  {
+   "name": "Gelaender-1-2",
+   "type": "Gelaender-1",
+   "storey": "Erdgeschoss",
+   "height": null
+  },
+  {
+   "name": "Gelaender-1-3",
+   "type": "Gelaender-1",
+   "storey": "Erdgeschoss",
+   "height": null
+  },
+  {
+   "name": "Gelaender-2-1",
+   "type": "Gelaender-1",
+   "storey": "1. Obergeschoss",
+   "height": null
+  },
+  {
+   "name": "Gelaender-2-2",
+   "type": "Gelaender-1",
+   "storey": "1. Obergeschoss",
+   "height": null
+  },
+  {
+   "name": "Gelaender-2-3",
+   "type": "Gelaender-1",
+   "storey": "1. Obergeschoss",
+   "height": null
+  },
+  {
+   "name": "Gelaender-3-1",
+   "type": "Gelaender-1",
+   "storey": "2. Obergeschoss",
+   "height": null
+  },
+  {
+   "name": "Gelaender-3-3",
+   "type": "Gelaender-1",
+   "storey": "2. Obergeschoss",
+   "height": null
+  },
+  {
+   "name": "Gelaender-3-2",
+   "type": "Gelaender-1",
+   "storey": "2. Obergeschoss",
+   "height": null
+  },
+  {
+   "name": "Gelaender-4-1",
+   "type": "Gelaender-1",
+   "storey": "Dachgeschoss",
+   "height": null
+  },
+  {
+   "name": "Gelaender-4-2",
+   "type": "Gelaender-1",
+   "storey": "Dachgeschoss",
+   "height": null
+  },
+  {
+   "name": "Gelaender-4-3",
+   "type": "Gelaender-1",
+   "storey": "Dachgeschoss",
+   "height": null
+  }
+ ],
+ "furniture": [
+  {
+   "where": "Besprechungsraum I",
+   "item": "Kubus-Einrichtung-1",
+   "n": 6
+  },
+  {
+   "where": "Besprechungsraum I",
+   "item": "Kubus-Einrichtung-2",
+   "n": 16
+  },
+  {
+   "where": "Besprechungsraum II",
+   "item": "Kubus-Einrichtung-1",
+   "n": 6
+  },
+  {
+   "where": "Besprechungsraum II",
+   "item": "Kubus-Einrichtung-2",
+   "n": 16
+  },
+  {
+   "where": "Buero",
+   "item": "Kubus-Einrichtung-1",
+   "n": 26
+  },
+  {
+   "where": "Buero",
+   "item": "Kubus-Einrichtung-2",
+   "n": 25
+  },
+  {
+   "where": "Buero Hausmeister",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Hausmeister",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero IL",
+   "item": "Kubus-Einrichtung-1",
+   "n": 2
+  },
+  {
+   "where": "Buero IL",
+   "item": "Kubus-Einrichtung-2",
+   "n": 5
+  },
+  {
+   "where": "Buero IL Sekr.",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero IL Sekr.",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Maier",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Maier",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Mayer",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Mayer",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Mayr",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Mayr",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Meier",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Meier",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Meyer",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Meyer",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Meyr",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Meyr",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Mueller I",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Mueller I",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Mueller II",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Mueller II",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Mueller IV",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Mueller IV",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Mueller V",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Mueller V",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Mueller VI + VII",
+   "item": "Kubus-Einrichtung-1",
+   "n": 3
+  },
+  {
+   "where": "Buero Mueller VI + VII",
+   "item": "Kubus-Einrichtung-2",
+   "n": 3
+  },
+  {
+   "where": "Buero Mueller VIII + IX",
+   "item": "Kubus-Einrichtung-1",
+   "n": 2
+  },
+  {
+   "where": "Buero Mueller VIII + IX",
+   "item": "Kubus-Einrichtung-2",
+   "n": 2
+  },
+  {
+   "where": "Buero MuellerIII",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero MuellerIII",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Obermeier",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Obermeier",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Obermueller",
+   "item": "Kubus-Einrichtung-1",
+   "n": 2
+  },
+  {
+   "where": "Buero Obermueller",
+   "item": "Kubus-Einrichtung-2",
+   "n": 4
+  },
+  {
+   "where": "Buero Oberschmitt",
+   "item": "Kubus-Einrichtung-1",
+   "n": 2
+  },
+  {
+   "where": "Buero Oberschmitt",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Schmid",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Schmid",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Schmidt",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Schmidt",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Schmied I",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Schmied I",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Schmied II",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Schmied II",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Schmitt I",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Schmitt I",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Schmitt II",
+   "item": "Kubus-Einrichtung-1",
+   "n": 1
+  },
+  {
+   "where": "Buero Schmitt II",
+   "item": "Kubus-Einrichtung-2",
+   "n": 1
+  },
+  {
+   "where": "Buero Studenten I",
+   "item": "Kubus-Einrichtung-1",
+   "n": 6
+  },
+  {
+   "where": "Buero Studenten I",
+   "item": "Kubus-Einrichtung-2",
+   "n": 6
+  },
+  {
+   "where": "Buero Studenten II",
+   "item": "Kubus-Einrichtung-1",
+   "n": 6
+  },
+  {
+   "where": "Buero Studenten II",
+   "item": "Kubus-Einrichtung-2",
+   "n": 6
+  },
+  {
+   "where": "Buero Studenten III",
+   "item": "Kubus-Einrichtung-1",
+   "n": 10
+  },
+  {
+   "where": "Buero Studenten III",
+   "item": "Kubus-Einrichtung-2",
+   "n": 5
+  },
+  {
+   "where": "Labor I",
+   "item": "Kubus-Einrichtung-1",
+   "n": 7
+  },
+  {
+   "where": "Labor I",
+   "item": "Kubus-Einrichtung-2",
+   "n": 3
+  },
+  {
+   "where": "Labor II",
+   "item": "Kubus-Einrichtung-1",
+   "n": 9
+  },
+  {
+   "where": "Labor II",
+   "item": "Kubus-Einrichtung-2",
+   "n": 2
+  },
+  {
+   "where": "Seminarraum",
+   "item": "Kubus-Einrichtung-1",
+   "n": 10
+  },
+  {
+   "where": "Seminarraum",
+   "item": "Kubus-Einrichtung-2",
+   "n": 22
+  }
+ ],
+ "other_counts": {
+  "IfcCurtainWall": 0,
+  "IfcColumn": 2,
+  "IfcBeam": 0,
+  "IfcSlab": 26,
+  "IfcRoof": 0,
+  "IfcTransportElement": 0,
+  "IfcRelSpaceBoundary": 1000
+ }
+}

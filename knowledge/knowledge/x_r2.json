@@ -1,0 +1,13 @@
+[
+ {
+  "topic": "无障碍",
+  "title": "无障碍住宅的户内活动区宽度",
+  "summary": "（无障碍住宅）以下活动区须至少 1.20 m 宽：轮椅使用者侧向接近的家具旁、非轮椅使用者床的进入侧、户内墙与墙之间、操作设备旁、坡道两侧护轮缘之间以及户内通道。",
+  "prefixes": [
+   "min. 1.20 m wide…\nalong furniture which the wheelchair user approaches"
+  ],
+  "lod": "200",
+  "priority": 2,
+  "decision": ""
+ }
+]

@@ -1,0 +1,5207 @@
+{
+ "project": "fantasy_office_building_3",
+ "schema": "IFC4",
+ "length_unit_scale": 1.0,
+ "storeys": [
+  [
+   "EG",
+   0.0
+  ],
+  [
+   "OG1",
+   3.7
+  ],
+  [
+   "OK OG2",
+   7.4
+  ],
+  [
+   "OK OG3",
+   11.1
+  ],
+  [
+   "OK OG4",
+   14.8
+  ],
+  [
+   "OK OG5",
+   18.5
+  ]
+ ],
+ "spaces": [
+  {
+   "gid": "0XZBZ40dnC_B6M08_nHlhR",
+   "name": "003",
+   "longname": "Staircase core (west)",
+   "storey": "EG",
+   "area": 13.87,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.59,
+    5.36,
+    2.75
+   ]
+  },
+  {
+   "gid": "0XZBZ40dnC_B6M08_nHlhP",
+   "name": "004",
+   "longname": "Elevater shaft 1",
+   "storey": "EG",
+   "area": 2.21,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.7,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "0XZBZ40dnC_B6M08_nHlhV",
+   "name": "005",
+   "longname": "Kitchen",
+   "storey": "EG",
+   "area": 27.28,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.4,
+    6.2,
+    2.75
+   ]
+  },
+  {
+   "gid": "0XZBZ40dnC_B6M08_nHlhT",
+   "name": "006",
+   "longname": "Meeting room 1",
+   "storey": "EG",
+   "area": 15.16,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.43,
+    3.42,
+    2.75
+   ]
+  },
+  {
+   "gid": "0XZBZ40dnC_B6M08_nHlhJ",
+   "name": "007",
+   "longname": "Meeting room 2",
+   "storey": "EG",
+   "area": 15.16,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.43,
+    3.43,
+    2.75
+   ]
+  },
+  {
+   "gid": "0XZBZ40dnC_B6M08_nHlhH",
+   "name": "008",
+   "longname": "Open-plan office 1",
+   "storey": "EG",
+   "area": 54.57,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    16.05,
+    3.4,
+    2.75
+   ]
+  },
+  {
+   "gid": "0XZBZ40dnC_B6M08_nHlhN",
+   "name": "009",
+   "longname": "Small office space",
+   "storey": "EG",
+   "area": 27.28,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.4,
+    6.2,
+    2.75
+   ]
+  },
+  {
+   "gid": "0XZBZ40dnC_B6M08_nHlhL",
+   "name": "010",
+   "longname": "Toilet women",
+   "storey": "EG",
+   "area": 8.77,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    5.61,
+    2.75
+   ]
+  },
+  {
+   "gid": "0XZBZ40dnC_B6M08_nHlhB",
+   "name": "011",
+   "longname": "Staircase core (east)",
+   "storey": "EG",
+   "area": 14.43,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.64,
+    5.47,
+    2.75
+   ]
+  },
+  {
+   "gid": "0XZBZ40dnC_B6M08_nHlh9",
+   "name": "012",
+   "longname": "Elevator shaft 2",
+   "storey": "EG",
+   "area": 2.21,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.7,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "0XZBZ40dnC_B6M08_nHlds",
+   "name": "013",
+   "longname": "Loby",
+   "storey": "EG",
+   "area": 57.22,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    16.3,
+    3.55,
+    2.75
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HB9I",
+   "name": "014",
+   "longname": "Individual office 1",
+   "storey": "EG",
+   "area": 10.96,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    4.08,
+    2.75
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HB9L",
+   "name": "015",
+   "longname": "Individual office 2",
+   "storey": "EG",
+   "area": 11.08,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    4.12,
+    2.75
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HB9O",
+   "name": "016",
+   "longname": "Individual office 3",
+   "storey": "EG",
+   "area": 11.26,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.76,
+    4.08,
+    2.75
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HB9R",
+   "name": "017",
+   "longname": "Individual office 4",
+   "storey": "EG",
+   "area": 11.04,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.76,
+    3.99,
+    2.75
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HB9U",
+   "name": "018",
+   "longname": "Corridor east",
+   "storey": "EG",
+   "area": 32.68,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.66,
+    21.28,
+    2.75
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HB8X",
+   "name": "019",
+   "longname": "Corridor west",
+   "storey": "EG",
+   "area": 34.07,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.73,
+    21.28,
+    2.75
+   ]
+  },
+  {
+   "gid": "2d0$qdw8968fd02Xa7l2Td",
+   "name": "020",
+   "longname": "Toilet men",
+   "storey": "EG",
+   "area": 8.76,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.77,
+    5.6,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8uF",
+   "name": "104",
+   "longname": "Elevater shaft 1",
+   "storey": "OG1",
+   "area": 2.21,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.7,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8uo",
+   "name": "103",
+   "longname": "Staircase core (west)",
+   "storey": "OG1",
+   "area": 13.87,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.59,
+    5.36,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8uv",
+   "name": "203",
+   "longname": "Staircase core (west)",
+   "storey": "OK OG2",
+   "area": 13.87,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.59,
+    5.36,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8uX",
+   "name": "303",
+   "longname": "Staircase core (west)",
+   "storey": "OK OG3",
+   "area": 13.87,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.59,
+    5.36,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8uf",
+   "name": "403",
+   "longname": "Staircase core (west)",
+   "storey": "OK OG4",
+   "area": 13.87,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.59,
+    5.36,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8xT",
+   "name": "204",
+   "longname": "Elevater shaft 1",
+   "storey": "OK OG2",
+   "area": 2.21,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.7,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8x4",
+   "name": "304",
+   "longname": "Elevater shaft 1",
+   "storey": "OK OG3",
+   "area": 2.21,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.7,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8x3",
+   "name": "404",
+   "longname": "Elevater shaft 1",
+   "storey": "OK OG4",
+   "area": 2.21,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.7,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8xB",
+   "name": "119",
+   "longname": "Corridor west",
+   "storey": "OG1",
+   "area": 33.54,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.58,
+    21.28,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8xp",
+   "name": "219",
+   "longname": "Corridor west",
+   "storey": "OK OG2",
+   "area": 33.54,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.58,
+    21.28,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8xw",
+   "name": "319",
+   "longname": "Corridor west",
+   "storey": "OK OG3",
+   "area": 33.54,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.58,
+    21.28,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8wH",
+   "name": "419",
+   "longname": "Corridor west",
+   "storey": "OK OG4",
+   "area": 33.54,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.58,
+    21.28,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8wB",
+   "name": "120",
+   "longname": "Toilet men",
+   "storey": "OG1",
+   "area": 8.34,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.62,
+    5.6,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8wo",
+   "name": "220",
+   "longname": "Toilet men",
+   "storey": "OK OG2",
+   "area": 8.34,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.62,
+    5.6,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8zH",
+   "name": "320",
+   "longname": "Toilet men",
+   "storey": "OK OG3",
+   "area": 8.34,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.62,
+    5.6,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8zO",
+   "name": "420",
+   "longname": "Toilet men",
+   "storey": "OK OG4",
+   "area": 8.34,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.62,
+    5.6,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8z1",
+   "name": "115",
+   "longname": "Individual office 2",
+   "storey": "OG1",
+   "area": 11.08,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    4.12,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8zm",
+   "name": "215",
+   "longname": "Individual office 2",
+   "storey": "OK OG2",
+   "area": 11.08,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    4.12,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8zd",
+   "name": "315",
+   "longname": "Individual office 2",
+   "storey": "OK OG3",
+   "area": 11.08,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    4.12,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8zk",
+   "name": "415",
+   "longname": "Individual office 2",
+   "storey": "OK OG4",
+   "area": 11.08,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    4.12,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8yG",
+   "name": "213",
+   "longname": "Open-plan office 2",
+   "storey": "OK OG2",
+   "area": 56.6,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    16.0,
+    3.55,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8yP",
+   "name": "313",
+   "longname": "Open-plan office 2",
+   "storey": "OK OG3",
+   "area": 56.67,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    16.0,
+    3.55,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8yB",
+   "name": "114",
+   "longname": "Individual office 1",
+   "storey": "OG1",
+   "area": 10.96,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    4.08,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8yY",
+   "name": "214",
+   "longname": "Individual office 1",
+   "storey": "OK OG2",
+   "area": 10.96,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    4.08,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8yf",
+   "name": "314",
+   "longname": "Individual office 1",
+   "storey": "OK OG3",
+   "area": 10.96,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    4.08,
+    2.75
+   ]
+  },
+  {
+   "gid": "2RgN9iw5TFkQtC3SojS8$G",
+   "name": "414",
+   "longname": "Individual office 1",
+   "storey": "OK OG4",
+   "area": 10.96,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    4.08,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVL_",
+   "name": "105",
+   "longname": "Kitchen",
+   "storey": "OG1",
+   "area": 27.28,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.4,
+    6.2,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVQ7",
+   "name": "205",
+   "longname": "Kitchen",
+   "storey": "OK OG2",
+   "area": 27.28,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.4,
+    6.2,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVQC",
+   "name": "305",
+   "longname": "Kitchen",
+   "storey": "OK OG3",
+   "area": 27.28,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.4,
+    6.2,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVQL",
+   "name": "405",
+   "longname": "Kitchen",
+   "storey": "OK OG4",
+   "area": 27.28,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.4,
+    6.2,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVQT",
+   "name": "106",
+   "longname": "Meeting room 1",
+   "storey": "OG1",
+   "area": 15.16,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.43,
+    3.42,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVQb",
+   "name": "206",
+   "longname": "Meeting room 1",
+   "storey": "OK OG2",
+   "area": 15.16,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.43,
+    3.42,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVQY",
+   "name": "306",
+   "longname": "Meeting room 1",
+   "storey": "OK OG3",
+   "area": 15.16,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.43,
+    3.42,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVQh",
+   "name": "406",
+   "longname": "Meeting room 1",
+   "storey": "OK OG4",
+   "area": 15.07,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.4,
+    3.43,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVQz",
+   "name": "108",
+   "longname": "Open-plan office 1",
+   "storey": "OG1",
+   "area": 54.57,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    16.05,
+    3.4,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVQw",
+   "name": "208",
+   "longname": "Open-plan office 1",
+   "storey": "OK OG2",
+   "area": 54.57,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    16.05,
+    3.4,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVR3",
+   "name": "308",
+   "longname": "Open-plan office 1",
+   "storey": "OK OG3",
+   "area": 54.57,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    16.05,
+    3.4,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVRN",
+   "name": "107",
+   "longname": "Meeting room 2",
+   "storey": "OG1",
+   "area": 15.16,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.43,
+    3.43,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVRS",
+   "name": "207",
+   "longname": "Meeting room 2",
+   "storey": "OK OG2",
+   "area": 15.16,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.43,
+    3.43,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVRb",
+   "name": "307",
+   "longname": "Meeting room 2",
+   "storey": "OK OG3",
+   "area": 15.16,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.43,
+    3.43,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVRY",
+   "name": "407",
+   "longname": "Meeting room 2",
+   "storey": "OK OG4",
+   "area": 15.07,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.4,
+    3.43,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVRo",
+   "name": "109",
+   "longname": "Small office space",
+   "storey": "OG1",
+   "area": 27.28,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.4,
+    6.2,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVRx",
+   "name": "209",
+   "longname": "Small office space",
+   "storey": "OK OG2",
+   "area": 27.28,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.4,
+    6.2,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVO0",
+   "name": "309",
+   "longname": "Small office space",
+   "storey": "OK OG3",
+   "area": 27.28,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.4,
+    6.2,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVO8",
+   "name": "409",
+   "longname": "Small office space",
+   "storey": "OK OG4",
+   "area": 27.28,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    4.4,
+    6.2,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVU8",
+   "name": "116",
+   "longname": "Individual office 3",
+   "storey": "OG1",
+   "area": 11.26,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.76,
+    4.08,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVUZ",
+   "name": "216",
+   "longname": "Individual office 3",
+   "storey": "OK OG2",
+   "area": 11.26,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.76,
+    4.08,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVUh",
+   "name": "316",
+   "longname": "Individual office 3",
+   "storey": "OK OG3",
+   "area": 11.26,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.76,
+    4.08,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVUm",
+   "name": "416",
+   "longname": "Individual office 3",
+   "storey": "OK OG4",
+   "area": 11.26,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.76,
+    4.08,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVUu",
+   "name": "117",
+   "longname": "Individual office 4",
+   "storey": "OG1",
+   "area": 11.04,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.76,
+    3.99,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVV1",
+   "name": "217",
+   "longname": "Individual office 4",
+   "storey": "OK OG2",
+   "area": 11.04,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.76,
+    3.99,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVVE",
+   "name": "317",
+   "longname": "Individual office 4",
+   "storey": "OK OG3",
+   "area": 11.04,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.76,
+    3.99,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVVN",
+   "name": "417",
+   "longname": "Individual office 4",
+   "storey": "OK OG4",
+   "area": 11.04,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.76,
+    3.99,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVVl",
+   "name": "110",
+   "longname": "Toilet women",
+   "storey": "OG1",
+   "area": 8.77,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    5.61,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVVv",
+   "name": "210",
+   "longname": "Toilet women",
+   "storey": "OK OG2",
+   "area": 8.77,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    5.61,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVS6",
+   "name": "310",
+   "longname": "Toilet women",
+   "storey": "OK OG3",
+   "area": 8.77,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    5.61,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVSF",
+   "name": "410",
+   "longname": "Toilet women",
+   "storey": "OK OG4",
+   "area": 8.77,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.69,
+    5.61,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVSN",
+   "name": "118",
+   "longname": "Corridor east",
+   "storey": "OG1",
+   "area": 32.14,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.51,
+    21.28,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVSS",
+   "name": "218",
+   "longname": "Corridor east",
+   "storey": "OK OG2",
+   "area": 32.14,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.51,
+    21.28,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVSb",
+   "name": "318",
+   "longname": "Corridor east",
+   "storey": "OK OG3",
+   "area": 32.14,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.51,
+    21.28,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVSY",
+   "name": "418",
+   "longname": "Corridor east",
+   "storey": "OK OG4",
+   "area": 32.14,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.51,
+    21.28,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVSg",
+   "name": "111",
+   "longname": "Staircase core (east)",
+   "storey": "OG1",
+   "area": 14.43,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.64,
+    5.47,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVSp",
+   "name": "211",
+   "longname": "Staircase core (east)",
+   "storey": "OK OG2",
+   "area": 14.43,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.64,
+    5.47,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVSu",
+   "name": "311",
+   "longname": "Staircase core (east)",
+   "storey": "OK OG3",
+   "area": 14.43,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.64,
+    5.47,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVT1",
+   "name": "411",
+   "longname": "Staircase core (east)",
+   "storey": "OK OG4",
+   "area": 14.43,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.64,
+    5.47,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVTB",
+   "name": "112",
+   "longname": "Elevator shaft 2",
+   "storey": "OG1",
+   "area": 2.21,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.7,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVTG",
+   "name": "212",
+   "longname": "Elevator shaft 2",
+   "storey": "OK OG2",
+   "area": 2.21,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.7,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVTP",
+   "name": "312",
+   "longname": "Elevator shaft 2",
+   "storey": "OK OG3",
+   "area": 2.21,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.7,
+    1.3,
+    2.75
+   ]
+  },
+  {
+   "gid": "27tfsEonv9r9iMdKO8kVTc",
+   "name": "412",
+   "longname": "Elevator shaft 2",
+   "storey": "OK OG4",
+   "area": 2.21,
+   "area_src": "PSet_Room.Area",
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    1.7,
+    1.3,
+    2.75
+   ]
+  }
+ ],
+ "doors": [
+  {
+   "gid": "1TmgNGSQ5B5uLPoToTxf3l",
+   "name": "TU DF 1 - Rahmenstock Falztüre:ML - 885X2135 - EI 30:553930",
+   "type": "TU DF 1 - Rahmenstock Falztüre:ML - 885X2135 - EI 30",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.315,
+   "storey": "EG",
+   "spaces": [
+    "Corridor west",
+    "Toilet men"
+   ],
+   "fire": "EI 30",
+   "external": false
+  },
+  {
+   "gid": "2e9YpFRGjC8BLgJScKnkr0",
+   "name": "TU DF 1 - Rahmenstock Falztüre:DL - 800 x 2000:637356",
+   "type": "TU DF 1 - Rahmenstock Falztüre:DL - 800 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "EG",
+   "spaces": [
+    "Corridor east",
+    "Toilet women"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2e9YpFRGjC8BLgJScKnfqs",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:641498",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "EG",
+   "spaces": [
+    "Kitchen"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2e9YpFRGjC8BLgJScKnf$A",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:641830",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "EG",
+   "spaces": [
+    "Open-plan office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2e9YpFRGjC8BLgJScKnfyS",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:642032",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "EG",
+   "spaces": [
+    "Open-plan office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2e9YpFRGjC8BLgJScKnfYH",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:642173",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "EG",
+   "spaces": [
+    "Small office space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2e9YpFRGjC8BLgJScKnfdW",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:642316",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "EG",
+   "spaces": [
+    "Small office space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2e9YpFRGjC8BLgJScKnfcC",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:642400",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "EG",
+   "spaces": [
+    "Kitchen"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2e9YpFRGjC8BLgJScKnhhG",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175:650812",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.05,
+   "height": 2.43,
+   "storey": "EG",
+   "spaces": [
+    "Corridor east",
+    "Staircase core (east)"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2e9YpFRGjC8BLgJScKnhlS",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175:651056",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.05,
+   "height": 2.43,
+   "storey": "EG",
+   "spaces": [
+    "Corridor west",
+    "Staircase core (west)"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0Zhmn78ej9mg$w7n1qQ1U_",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175:654324",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.05,
+   "height": 2.43,
+   "storey": "EG",
+   "spaces": [
+    "Corridor east"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0Zhmn78ej9mg$w7n1qQ108",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175:654402",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.05,
+   "height": 2.43,
+   "storey": "EG",
+   "spaces": [
+    "Corridor west"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HBHF",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:657711",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "EG",
+   "spaces": [
+    "Corridor west",
+    "Individual office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HBGU",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:657790",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "EG",
+   "spaces": [
+    "Corridor east",
+    "Individual office 3"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HBTW",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:657920",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "EG",
+   "spaces": [
+    "Corridor west",
+    "Individual office 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HBS2",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:658018",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "EG",
+   "spaces": [
+    "Corridor east",
+    "Individual office 4"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOM",
+   "name": "TU DF 1 - Rahmenstock Falztüre:ML - 885X2135 - EI 30:662390",
+   "type": "TU DF 1 - Rahmenstock Falztüre:ML - 885X2135 - EI 30",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.315,
+   "storey": "OG1",
+   "spaces": [
+    "Corridor west",
+    "Toilet men"
+   ],
+   "fire": "EI 30",
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAQw",
+   "name": "TU DF 1 - Rahmenstock Falztüre:DL - 800 x 2000:662490",
+   "type": "TU DF 1 - Rahmenstock Falztüre:DL - 800 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "OG1",
+   "spaces": [
+    "Corridor east",
+    "Toilet women"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA55",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:662565",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OG1",
+   "spaces": [
+    "Kitchen"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA56",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:662566",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OG1",
+   "spaces": [
+    "Open-plan office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA57",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:662567",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OG1",
+   "spaces": [
+    "Open-plan office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA58",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:662568",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OG1",
+   "spaces": [
+    "Small office space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA59",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:662569",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OG1",
+   "spaces": [
+    "Small office space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA5A",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:662570",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OG1",
+   "spaces": [
+    "Kitchen"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA5B",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175:662571",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.05,
+   "height": 2.43,
+   "storey": "OG1",
+   "spaces": [
+    "Corridor east",
+    "Staircase core (east)"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA5C",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175:662572",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.05,
+   "height": 2.43,
+   "storey": "OG1",
+   "spaces": [
+    "Corridor west",
+    "Staircase core (west)"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA5O",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:662584",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OG1",
+   "spaces": [
+    "Corridor west",
+    "Individual office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA5P",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:662585",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OG1",
+   "spaces": [
+    "Corridor east",
+    "Individual office 3"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA5Q",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:662586",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OG1",
+   "spaces": [
+    "Corridor west",
+    "Individual office 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA5R",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:662587",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OG1",
+   "spaces": [
+    "Corridor east",
+    "Individual office 4"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWef",
+   "name": "TU DF 1 - Rahmenstock Falztüre:ML - 885X2135 - EI 30:667495",
+   "type": "TU DF 1 - Rahmenstock Falztüre:ML - 885X2135 - EI 30",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.315,
+   "storey": "OK OG2",
+   "spaces": [
+    "Corridor west",
+    "Toilet men"
+   ],
+   "fire": "EI 30",
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWhh",
+   "name": "TU DF 1 - Rahmenstock Falztüre:DL - 800 x 2000:667557",
+   "type": "TU DF 1 - Rahmenstock Falztüre:DL - 800 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "OK OG2",
+   "spaces": [
+    "Corridor east",
+    "Toilet women"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWgQ",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:667604",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG2",
+   "spaces": [
+    "Kitchen"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWgR",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:667605",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG2",
+   "spaces": [
+    "Open-plan office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWgO",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:667606",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG2",
+   "spaces": [
+    "Open-plan office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWgP",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:667607",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG2",
+   "spaces": [
+    "Small office space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWgM",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:667608",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG2",
+   "spaces": [
+    "Small office space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWgN",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:667609",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG2",
+   "spaces": [
+    "Kitchen"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWgK",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175:667610",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.05,
+   "height": 2.43,
+   "storey": "OK OG2",
+   "spaces": [
+    "Corridor east",
+    "Staircase core (east)"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWgL",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175:667611",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.05,
+   "height": 2.43,
+   "storey": "OK OG2",
+   "spaces": [
+    "Corridor west",
+    "Staircase core (west)"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWgh",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:667621",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OK OG2",
+   "spaces": [
+    "Corridor west",
+    "Individual office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWge",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:667622",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OK OG2",
+   "spaces": [
+    "Corridor east",
+    "Individual office 3"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWgf",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:667623",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OK OG2",
+   "spaces": [
+    "Corridor west",
+    "Individual office 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWgc",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:667624",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OK OG2",
+   "spaces": [
+    "Corridor east",
+    "Individual office 4"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXN3",
+   "name": "TU DF 1 - Rahmenstock Falztüre:ML - 885X2135 - EI 30:667789",
+   "type": "TU DF 1 - Rahmenstock Falztüre:ML - 885X2135 - EI 30",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.315,
+   "storey": "OK OG3",
+   "spaces": [
+    "Corridor west",
+    "Toilet men"
+   ],
+   "fire": "EI 30",
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXM5",
+   "name": "TU DF 1 - Rahmenstock Falztüre:DL - 800 x 2000:667851",
+   "type": "TU DF 1 - Rahmenstock Falztüre:DL - 800 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "OK OG3",
+   "spaces": [
+    "Corridor east",
+    "Toilet women"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXMq",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:667898",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG3",
+   "spaces": [
+    "Kitchen"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXMr",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:667899",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG3",
+   "spaces": [
+    "Open-plan office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXMo",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:667900",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG3",
+   "spaces": [
+    "Open-plan office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXMp",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:667901",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG3",
+   "spaces": [
+    "Small office space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXMm",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:667902",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG3",
+   "spaces": [
+    "Small office space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXMn",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:667903",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG3",
+   "spaces": [
+    "Kitchen"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXHE",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175:667904",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.05,
+   "height": 2.43,
+   "storey": "OK OG3",
+   "spaces": [
+    "Corridor east",
+    "Staircase core (east)"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXHF",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175:667905",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.05,
+   "height": 2.43,
+   "storey": "OK OG3",
+   "spaces": [
+    "Corridor west",
+    "Staircase core (west)"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXH5",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:667915",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OK OG3",
+   "spaces": [
+    "Corridor west",
+    "Individual office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXH2",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:667916",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OK OG3",
+   "spaces": [
+    "Corridor east",
+    "Individual office 3"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXH3",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:667917",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OK OG3",
+   "spaces": [
+    "Corridor west",
+    "Individual office 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXH0",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:667918",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OK OG3",
+   "spaces": [
+    "Corridor east",
+    "Individual office 4"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXJz",
+   "name": "TU DF 1 - Rahmenstock Falztüre:ML - 885X2135 - EI 30:668083",
+   "type": "TU DF 1 - Rahmenstock Falztüre:ML - 885X2135 - EI 30",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.315,
+   "storey": "OK OG4",
+   "spaces": [
+    "Corridor west",
+    "Toilet men"
+   ],
+   "fire": "EI 30",
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXI$",
+   "name": "TU DF 1 - Rahmenstock Falztüre:DL - 800 x 2000:668145",
+   "type": "TU DF 1 - Rahmenstock Falztüre:DL - 800 x 2000",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "OK OG4",
+   "spaces": [
+    "Corridor east",
+    "Toilet women"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXTk",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:668192",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG4",
+   "spaces": [
+    "Kitchen"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXTj",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:668195",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG4",
+   "spaces": [
+    "Small office space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXTg",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:668196",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG4",
+   "spaces": [
+    "Small office space"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXTh",
+   "name": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26:668197",
+   "type": "Drehflügel 1-flg - Stahlzarge:88.5 x 2.26",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.36,
+   "storey": "OK OG4",
+   "spaces": [
+    "Kitchen"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXTe",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175:668198",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.05,
+   "height": 2.43,
+   "storey": "OK OG4",
+   "spaces": [
+    "Corridor east",
+    "Staircase core (east)"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXTf",
+   "name": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175:668199",
+   "type": "TU DF 1 - Fluchttüre Endausgang:EN 179 - DL - 900 x 2175",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.05,
+   "height": 2.43,
+   "storey": "OK OG4",
+   "spaces": [
+    "Corridor west",
+    "Staircase core (west)"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXT$",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:668209",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OK OG4",
+   "spaces": [
+    "Corridor west",
+    "Individual office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXTy",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:668210",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OK OG4",
+   "spaces": [
+    "Corridor east",
+    "Individual office 3"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXTz",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:668211",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OK OG4",
+   "spaces": [
+    "Corridor west",
+    "Individual office 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXTw",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:668212",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.0,
+   "height": 2.36,
+   "storey": "OK OG4",
+   "spaces": [
+    "Corridor east",
+    "Individual office 4"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuX2P",
+   "name": "TU Karussell:ML - 2010 x 2250:669143",
+   "type": "TU Karussell:ML - 2010 x 2250",
+   "op": "REVOLVING",
+   "width": 2.475,
+   "height": 2.43,
+   "storey": "EG",
+   "spaces": [
+    "Loby"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0F1DnNClL98xQRdcAEra0b",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:681880",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.2,
+   "height": 2.36,
+   "storey": "OK OG2",
+   "spaces": [
+    "Open-plan office 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0F1DnNClL98xQRdcAEra02",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:681919",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.2,
+   "height": 2.36,
+   "storey": "OK OG2",
+   "spaces": [
+    "Open-plan office 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0F1DnNClL98xQRdcAEraxh",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:682326",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.2,
+   "height": 2.36,
+   "storey": "OK OG3",
+   "spaces": [
+    "Open-plan office 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0F1DnNClL98xQRdcAErauO",
+   "name": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel:682405",
+   "type": "Drehflügel 1-flg - Variabel:Drehflügel 1-flg - Variabel",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.2,
+   "height": 2.36,
+   "storey": "OK OG3",
+   "spaces": [
+    "Open-plan office 2"
+   ],
+   "fire": null,
+   "external": false
+  }
+ ],
+ "windows": [
+  {
+   "gid": "1pBSddZqb2G8Sq4lqrKbmW",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:496754",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "1pBSddZqb2G8Sq4lqrKdFK",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:506758",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "1pBSddZqb2G8Sq4lqrKdQD",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:507615",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "1pBSddZqb2G8Sq4lqrKWWR",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:507977",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "1pBSddZqb2G8Sq4lqrKWbZ",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:508209",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "1pBSddZqb2G8Sq4lqrKWd3",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:508305",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "1pBSddZqb2G8Sq4lqrKWnX",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:508979",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 2"
+   ]
+  },
+  {
+   "gid": "1pBSddZqb2G8Sq4lqrKWu3",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:509521",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 4"
+   ]
+  },
+  {
+   "gid": "1pBSddZqb2G8Sq4lqrKWxH",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:509571",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Toilet women"
+   ]
+  },
+  {
+   "gid": "1pBSddZqb2G8Sq4lqrKWzh",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:509753",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 1"
+   ]
+  },
+  {
+   "gid": "1pBSddZqb2G8Sq4lqrKW$n",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:509859",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 3"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$DHf",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:512003",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 1"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$DN9",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:512419",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 2"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$DPZ",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:512521",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$DPP",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:512563",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$DRh",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:512641",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$DQX",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:512715",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$D3s",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:513180",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 1"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$Dz6",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:514860",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$D$W",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:514954",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$D_W",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:515018",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$DXI",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:515128",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$DaX",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:515403",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Small office space"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$DaL",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:515455",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Loby"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$Dd3",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:515497",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Loby"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$Dfn",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:515611",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Loby"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$De3",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:515689",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Loby"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$DgP",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:515827",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 2"
+   ]
+  },
+  {
+   "gid": "22sU6knMb4fRb7GsbI$Djn",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:515867",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Small office space"
+   ]
+  },
+  {
+   "gid": "1TmgNGSQ5B5uLPoToTxb42",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:569895",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Toilet men"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAPT",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662333",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAPU",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662334",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAPV",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662335",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOW",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662336",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOX",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662337",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOY",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662338",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOZ",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662339",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 2"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOa",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662340",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 4"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOb",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:662341",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Toilet women"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOc",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662342",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 1"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOd",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662343",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 3"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOi",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662348",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 1"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOj",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662349",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 2"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOk",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662350",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOl",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662351",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOm",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662352",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOn",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662353",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOo",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662354",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 1"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOp",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662355",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOq",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662356",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOr",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662357",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOs",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662358",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOt",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662359",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Kitchen"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOu",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662360",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Small office space"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOv",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662361",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": []
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOw",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662362",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": []
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOx",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662363",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": []
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOy",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662364",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": []
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAOz",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662365",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 2"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HAO_",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:662366",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Small office space"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HARe",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:662408",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Toilet men"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA7C",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:662700",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7HA6y",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:662748",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7H9q1",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:663649",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "31Jmzg6N54ZQqCBfl7H9sX",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:663745",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWfW",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667438",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWfX",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667439",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWf_",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667440",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWf$",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667441",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWfy",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667442",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWfz",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667443",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWfw",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667444",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWfx",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667445",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 4"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWfu",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:667446",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Toilet women"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWfv",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667447",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWfs",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667448",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 3"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWfp",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667453",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWfm",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667454",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWfn",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667455",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWeE",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667456",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWeF",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667457",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWeC",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667458",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWeD",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667459",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWeA",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667460",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWeB",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667461",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWe8",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667462",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWe9",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667463",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWe6",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667464",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Kitchen"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWe7",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667465",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Small office space"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWe4",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667466",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWe5",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667467",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWe2",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667468",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWe3",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667469",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWe0",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667470",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWe1",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667471",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Small office space"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWet",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:667513",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Toilet men"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWgZ",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:667629",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuWgW",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:667630",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKQ",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667732",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKR",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667733",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKO",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667734",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKP",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667735",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKM",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667736",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKN",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667737",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKK",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667738",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKL",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667739",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 4"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKI",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:667740",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Toilet women"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKJ",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667741",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKG",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667742",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 3"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKj",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667747",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKg",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667748",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKh",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667749",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKe",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667750",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKf",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667751",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKc",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667752",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKd",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667753",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKa",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667754",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKb",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667755",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKY",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667756",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKZ",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667757",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKW",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667758",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Kitchen"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKX",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667759",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Small office space"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXK_",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667760",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXK$",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667761",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKy",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667762",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKz",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667763",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Open-plan office 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKw",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667764",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXKx",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:667765",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Small office space"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXNH",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:667807",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Toilet men"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXHT",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:667923",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXHQ",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:667924",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXGq",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668026",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXGr",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668027",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXGo",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668028",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXGp",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668029",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXGm",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668030",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXGn",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668031",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXJE",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668032",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXJF",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668033",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 4"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXJC",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:668034",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Toilet women"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXJD",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668035",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXJA",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668036",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Individual office 3"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXJ7",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668041",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXJQ",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668052",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Kitchen"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXJR",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668053",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Small office space"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXJK",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668058",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXJL",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668059",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Small office space"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXIB",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:668101",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Toilet men"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXTt",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:668217",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXTq",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000:668218",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1100 x 3000",
+   "width": 1.1,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXS4",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668234",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor west"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXS5",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:668235",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Corridor east"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXck",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:670944",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXXM",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:671000",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 2"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXWY",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:671084",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 1"
+   ]
+  },
+  {
+   "gid": "2rKnuImKDBFhDP_XTXuXjU",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:671248",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Meeting room 2"
+   ]
+  },
+  {
+   "gid": "2e6qd952zBGAsBt5sH2E8l",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000:673170",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000",
+   "width": 1.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Staircase core (east)"
+   ]
+  },
+  {
+   "gid": "2e6qd952zBGAsBt5sH2E46",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000:673467",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000",
+   "width": 1.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Staircase core (west)"
+   ]
+  },
+  {
+   "gid": "2e6qd952zBGAsBt5sH2E1S",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000:673761",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000",
+   "width": 1.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Staircase core (east)"
+   ]
+  },
+  {
+   "gid": "2e6qd952zBGAsBt5sH2E1V",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000:673762",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000",
+   "width": 1.0,
+   "height": 3.2,
+   "storey": "OG1",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Staircase core (west)"
+   ]
+  },
+  {
+   "gid": "2e6qd952zBGAsBt5sH2E1B",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000:673782",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000",
+   "width": 1.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Staircase core (east)"
+   ]
+  },
+  {
+   "gid": "2e6qd952zBGAsBt5sH2E1A",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000:673783",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000",
+   "width": 1.0,
+   "height": 3.2,
+   "storey": "OK OG2",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Staircase core (west)"
+   ]
+  },
+  {
+   "gid": "2e6qd952zBGAsBt5sH2E_s",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000:673803",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000",
+   "width": 1.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Staircase core (east)"
+   ]
+  },
+  {
+   "gid": "2e6qd952zBGAsBt5sH2E_n",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000:673804",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000",
+   "width": 1.0,
+   "height": 3.2,
+   "storey": "OK OG3",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Staircase core (west)"
+   ]
+  },
+  {
+   "gid": "2e6qd952zBGAsBt5sH2E_T",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000:673824",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000",
+   "width": 1.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Staircase core (east)"
+   ]
+  },
+  {
+   "gid": "2e6qd952zBGAsBt5sH2E_S",
+   "name": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000:673825",
+   "type": "FE TÜR 1 tlg - Fix im Rahmen:1000 x 3000",
+   "width": 1.0,
+   "height": 3.2,
+   "storey": "OK OG4",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Staircase core (west)"
+   ]
+  },
+  {
+   "gid": "21ZXCvP4n0Zu6kxIabZbKa",
+   "name": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000:694813",
+   "type": "FE TÜR 2 tlg - Fix im Rahmen:2000 x 3000",
+   "width": 2.0,
+   "height": 3.2,
+   "storey": "EG",
+   "sill_approx": -0.2,
+   "spaces": [
+    "Kitchen"
+   ]
+  }
+ ],
+ "stairs": [
+  {
+   "gid": "3xSk0LgvD4W95QoeT91rzW",
+   "cls": "IfcStair",
+   "name": "Betonfertigteil-Treppe:Treppe:686890",
+   "predefined": "HALF_TURN_STAIR",
+   "storey": "EG",
+   "n_riser": 21.0,
+   "riser": 0.176,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 21.0,
+    "Pset_StairCommon.NumberOfTreads": 21.0,
+    "Pset_StairCommon.RiserHeight": 0.176,
+    "Pset_StairCommon.TreadLength": 0.27,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 21.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 21.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91raN",
+   "cls": "IfcStair",
+   "name": "Betonfertigteil-Treppe:Treppe:687453",
+   "predefined": "HALF_TURN_STAIR",
+   "storey": "OG1",
+   "n_riser": 21.0,
+   "riser": 0.176,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 21.0,
+    "Pset_StairCommon.NumberOfTreads": 21.0,
+    "Pset_StairCommon.RiserHeight": 0.176,
+    "Pset_StairCommon.TreadLength": 0.27,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 21.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 21.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91ray",
+   "cls": "IfcStair",
+   "name": "Betonfertigteil-Treppe:Treppe:687478",
+   "predefined": "HALF_TURN_STAIR",
+   "storey": "OK OG2",
+   "n_riser": 21.0,
+   "riser": 0.176,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 21.0,
+    "Pset_StairCommon.NumberOfTreads": 21.0,
+    "Pset_StairCommon.RiserHeight": 0.176,
+    "Pset_StairCommon.TreadLength": 0.27,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 21.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 21.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91rd5",
+   "cls": "IfcStair",
+   "name": "Betonfertigteil-Treppe:Treppe:687503",
+   "predefined": "HALF_TURN_STAIR",
+   "storey": "OK OG3",
+   "n_riser": 21.0,
+   "riser": 0.176,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 21.0,
+    "Pset_StairCommon.NumberOfTreads": 21.0,
+    "Pset_StairCommon.RiserHeight": 0.176,
+    "Pset_StairCommon.TreadLength": 0.27,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 21.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 21.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91rk8",
+   "cls": "IfcStair",
+   "name": "Ortbetontreppe:Treppe:688066",
+   "predefined": "HALF_TURN_STAIR",
+   "storey": "EG",
+   "n_riser": 21.0,
+   "riser": 0.176,
+   "tread": 0.283,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 21.0,
+    "Pset_StairCommon.NumberOfTreads": 21.0,
+    "Pset_StairCommon.RiserHeight": 0.176,
+    "Pset_StairCommon.TreadLength": 0.283,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.283,
+    "Pset_StairFlightCommon.NumberOfRiser": 21.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 21.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.283
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91wNl",
+   "cls": "IfcStair",
+   "name": "Ortbetontreppe:Treppe:688549",
+   "predefined": "HALF_TURN_STAIR",
+   "storey": "OG1",
+   "n_riser": 21.0,
+   "riser": 0.176,
+   "tread": 0.283,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 21.0,
+    "Pset_StairCommon.NumberOfTreads": 21.0,
+    "Pset_StairCommon.RiserHeight": 0.176,
+    "Pset_StairCommon.TreadLength": 0.283,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.283,
+    "Pset_StairFlightCommon.NumberOfRiser": 21.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 21.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.283
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91wNq",
+   "cls": "IfcStair",
+   "name": "Ortbetontreppe:Treppe:688574",
+   "predefined": "HALF_TURN_STAIR",
+   "storey": "OK OG2",
+   "n_riser": 21.0,
+   "riser": 0.176,
+   "tread": 0.283,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 21.0,
+    "Pset_StairCommon.NumberOfTreads": 21.0,
+    "Pset_StairCommon.RiserHeight": 0.176,
+    "Pset_StairCommon.TreadLength": 0.283,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.283,
+    "Pset_StairFlightCommon.NumberOfRiser": 21.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 21.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.283
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91wMT",
+   "cls": "IfcStair",
+   "name": "Ortbetontreppe:Treppe:688599",
+   "predefined": "HALF_TURN_STAIR",
+   "storey": "OK OG3",
+   "n_riser": 21.0,
+   "riser": 0.176,
+   "tread": 0.283,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 21.0,
+    "Pset_StairCommon.NumberOfTreads": 21.0,
+    "Pset_StairCommon.RiserHeight": 0.176,
+    "Pset_StairCommon.TreadLength": 0.283,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.283,
+    "Pset_StairFlightCommon.NumberOfRiser": 21.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 21.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.283
+   }
+  },
+  {
+   "gid": "21ZXCvP4n0Zu6kxIabZbIZ",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:695194",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "EG",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2
+   }
+  },
+  {
+   "gid": "21ZXCvP4n0Zu6kxIabZbCU",
+   "cls": "IfcStair",
+   "name": "Zusammengebaute Treppe:Treppe:695335",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "EG",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91r$U",
+   "cls": "IfcStairFlight",
+   "name": "Betonfertigteil-Treppe:Treppe:686890 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "EG",
+   "n_riser": 11.0,
+   "riser": 0.176,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91r_Y",
+   "cls": "IfcStairFlight",
+   "name": "Betonfertigteil-Treppe:Treppe:686890 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "EG",
+   "n_riser": 10.0,
+   "riser": 0.176,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91raK",
+   "cls": "IfcStairFlight",
+   "name": "Betonfertigteil-Treppe:Treppe:687453 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "OG1",
+   "n_riser": 11.0,
+   "riser": 0.176,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91rag",
+   "cls": "IfcStairFlight",
+   "name": "Betonfertigteil-Treppe:Treppe:687453 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "OG1",
+   "n_riser": 10.0,
+   "riser": 0.176,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91raz",
+   "cls": "IfcStairFlight",
+   "name": "Betonfertigteil-Treppe:Treppe:687478 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "OK OG2",
+   "n_riser": 11.0,
+   "riser": 0.176,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91rap",
+   "cls": "IfcStairFlight",
+   "name": "Betonfertigteil-Treppe:Treppe:687478 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "OK OG2",
+   "n_riser": 10.0,
+   "riser": 0.176,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91rdQ",
+   "cls": "IfcStairFlight",
+   "name": "Betonfertigteil-Treppe:Treppe:687503 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "OK OG3",
+   "n_riser": 11.0,
+   "riser": 0.176,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91rdO",
+   "cls": "IfcStairFlight",
+   "name": "Betonfertigteil-Treppe:Treppe:687503 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "OK OG3",
+   "n_riser": 10.0,
+   "riser": 0.176,
+   "tread": 0.27,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.27,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.27,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.27
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91wGx",
+   "cls": "IfcStairFlight",
+   "name": "Ortbetontreppe:Treppe:688066 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "EG",
+   "n_riser": 11.0,
+   "riser": 0.176,
+   "tread": 0.283,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.283,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.283
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91wKE",
+   "cls": "IfcStairFlight",
+   "name": "Ortbetontreppe:Treppe:688066 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "EG",
+   "n_riser": 10.0,
+   "riser": 0.176,
+   "tread": 0.283,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.283,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.283
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91wNi",
+   "cls": "IfcStairFlight",
+   "name": "Ortbetontreppe:Treppe:688549 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "OG1",
+   "n_riser": 11.0,
+   "riser": 0.176,
+   "tread": 0.283,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.283,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.283
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91wNY",
+   "cls": "IfcStairFlight",
+   "name": "Ortbetontreppe:Treppe:688549 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "OG1",
+   "n_riser": 10.0,
+   "riser": 0.176,
+   "tread": 0.283,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.283,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.283
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91wNr",
+   "cls": "IfcStairFlight",
+   "name": "Ortbetontreppe:Treppe:688574 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "OK OG2",
+   "n_riser": 11.0,
+   "riser": 0.176,
+   "tread": 0.283,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.283,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.283
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91wMB",
+   "cls": "IfcStairFlight",
+   "name": "Ortbetontreppe:Treppe:688574 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "OK OG2",
+   "n_riser": 10.0,
+   "riser": 0.176,
+   "tread": 0.283,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.283,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.283
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91wMI",
+   "cls": "IfcStairFlight",
+   "name": "Ortbetontreppe:Treppe:688599 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "OK OG3",
+   "n_riser": 11.0,
+   "riser": 0.176,
+   "tread": 0.283,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.283,
+    "Pset_StairFlightCommon.NumberOfRiser": 11.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 11.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.283
+   }
+  },
+  {
+   "gid": "3xSk0LgvD4W95QoeT91wMG",
+   "cls": "IfcStairFlight",
+   "name": "Ortbetontreppe:Treppe:688599 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "OK OG3",
+   "n_riser": 10.0,
+   "riser": 0.176,
+   "tread": 0.283,
+   "props": {
+    "Pset_StairFlightCommon.RiserHeight": 0.176,
+    "Pset_StairFlightCommon.TreadLength": 0.283,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.283,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.283
+   }
+  },
+  {
+   "gid": "21ZXCvP4n0Zu6kxIabZbJ9",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:695194 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "EG",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2
+   }
+  },
+  {
+   "gid": "21ZXCvP4n0Zu6kxIabZbFQ",
+   "cls": "IfcStairFlight",
+   "name": "Zusammengebaute Treppe:Treppe:695335 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "EG",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2
+   }
+  }
+ ],
+ "railings": [
+  {
+   "name": "Geländer:Holzhandlauf:687105",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:687109",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:687460",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG1",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:687464",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG1",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:687485",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OK OG2",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:687489",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OK OG2",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:687510",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OK OG3",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:687514",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OK OG3",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:688476",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:688480",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:688556",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG1",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:688560",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OG1",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:688581",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OK OG2",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:688585",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OK OG2",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:688606",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OK OG3",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:688610",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "OK OG3",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:695325",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:695329",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:695568",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  },
+  {
+   "name": "Geländer:Holzhandlauf:695572",
+   "type": "Geländer:Holzhandlauf",
+   "storey": "EG",
+   "height": 1.219
+  }
+ ],
+ "furniture": [
+  {
+   "where": "Individual office 1",
+   "item": "Schreibtisch-Kombination-02 mit PC",
+   "n": 5
+  },
+  {
+   "where": "Individual office 2",
+   "item": "Schreibtisch-Kombination-02 mit PC",
+   "n": 5
+  },
+  {
+   "where": "Individual office 3",
+   "item": "Schreibtisch-Kombination-02 mit PC",
+   "n": 5
+  },
+  {
+   "where": "Individual office 4",
+   "item": "Schreibtisch-Kombination-02 mit PC",
+   "n": 5
+  },
+  {
+   "where": "Kitchen",
+   "item": "Küchenzeile-02 Kombination",
+   "n": 5
+  },
+  {
+   "where": "Kitchen",
+   "item": "Tisch-Bank-Kombination-07 variabel ohne Rücklehnen",
+   "n": 10
+  },
+  {
+   "where": "Loby",
+   "item": "Hocker-02",
+   "n": 2
+  },
+  {
+   "where": "Loby",
+   "item": "Sofa-07",
+   "n": 2
+  },
+  {
+   "where": "Loby",
+   "item": "Sofa-11",
+   "n": 1
+  },
+  {
+   "where": "Loby",
+   "item": "Tisch-19",
+   "n": 2
+  },
+  {
+   "where": "Loby",
+   "item": "Tisch-21 Couch",
+   "n": 1
+  },
+  {
+   "where": "Meeting room 1",
+   "item": "Tisch-Stuhl-Kombination-08 Konferenz",
+   "n": 5
+  },
+  {
+   "where": "Meeting room 2",
+   "item": "Tisch-Stuhl-Kombination-08 Konferenz",
+   "n": 5
+  },
+  {
+   "where": "Open-plan office 1",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 32
+  },
+  {
+   "where": "Open-plan office 2",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 12
+  },
+  {
+   "where": "Small office space",
+   "item": "Schreibtisch-Kombination-02 mit PC",
+   "n": 15
+  }
+ ],
+ "other_counts": {
+  "IfcCurtainWall": 5,
+  "IfcColumn": 20,
+  "IfcBeam": 60,
+  "IfcSlab": 17,
+  "IfcRoof": 4,
+  "IfcTransportElement": 0,
+  "IfcRelSpaceBoundary": 0
+ }
+}

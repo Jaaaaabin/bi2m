@@ -1,0 +1,284 @@
+id,question,ground_truth,ifc_model,project,category,split
+404,What is the project information and location for this building?,"Note: The data stored for project information and building name are incomplete. However, the building design and furniture indicates an office building.
+
+Project Information:
+   - Project Name: 2018_01
+
+   Site Information:
+   - Site Name: Default
+   - Latitude: 48°8'15""
+   - Longitude: 11°34'47""
+   - Location: Munich, Bavaria, Germany",arc,fantasy_office_building_2,1,train
+405,Which software and modeling standards were applied?,"Software and Standards:
+   - Modeling Software: Autodesk Revit 2025 (ENU)
+   - Software Version: 2025
+   - IFC Schema: IFC4",arc,fantasy_office_building_2,1,train
+406,"What is the space breakdown by level, with individual room areas?","Space Breakdown by Level:
+   Total Spaces: 27
+   Total Space Area: 716.06 sq m
+
+   Note: Ground/1st/2nd/3rd floors are all modeled under '3rd Floor' storey.
+   Note: The model has limited space definitions. 4th floor do not have any defined spaces.
+
+   Groundfloor:
+   - Number of spaces: 10
+   - Total area: 229.95 sq m
+   - Individual spaces:
+     • 1 (Office 1): 14.63 sq m
+     • 2 (Office 2): 14.62 sq m
+     • 3 (Office 3): 14.62 sq m
+     • 4 (Office 4): 14.93 sq m
+     • 5 (Common Room 2): 33.77 sq m
+     • 6 (Common Room 1): 33.77 sq m
+     • 7 (WC 1): 16.98 sq m
+     • 8 (WC 2): 16.98 sq m
+     • 9 (Entrance Hall): 53.58 sq m
+     • 27 (Gallery): 16.06 sq m
+
+   1st Floor:
+   - Number of spaces: 7
+   - Total area: 262.65 sq m
+   - Individual spaces:
+     • 10 (Big Meeting Room): 59.87 sq m
+     • 11 (Office 5): 14.62 sq m
+     • 12 (Office 6): 14.62 sq m
+     • 13 (Office 7): 14.93 sq m
+     • 14 (Common Room 4): 33.77 sq m
+     • 15 (Common Room 3): 33.77 sq m
+     • 16 (Gallery Balcony): 91.05 sq m
+
+   2nd Floor:
+   - Number of spaces: 5
+   - Total area: 111.72 sq m
+   - Individual spaces:
+     • 17 (Office 8): 14.62 sq m
+     • 18 (Office 9): 14.62 sq m
+     • 19 (Office 10): 14.93 sq m
+     • 20 (Common Room 5): 33.77 sq m
+     • 21 (Common Room 6): 33.77 sq m
+
+   3rd Floor:
+   - Number of spaces: 5
+   - Total area: 111.72 sq m
+   - Individual spaces:
+     • 22 (Office 11): 14.62 sq m
+     • 23 (Office 12): 14.62 sq m
+     • 24 (Office 13): 14.93 sq m
+     • 25 (Common Room 8): 33.77 sq m
+     • 26 (Common Room 7): 33.77 sq m",arc,fantasy_office_building_2,3,test
+407,What is the total gross floor area of the building?,The gross floor area for all floors is approximately 350 sq m.,arc,fantasy_office_building_2,3,train
+408,"What are all the spaces on ground floor, with their areas?","Note: Due to modeling structure, ground floor is part of the '3rd Floor' storey.
+
+Individual spaces intended for ground floor:
+- 1 (Office 1): 14.63 sq m
+- 2 (Office 2): 14.62 sq m
+- 3 (Office 3): 14.62 sq m
+- 4 (Office 4): 14.93 sq m
+- 5 (Common Room 2): 33.77 sq m
+- 6 (Common Room 1): 33.77 sq m
+- 7 (WC 1): 16.98 sq m
+- 8 (WC 2): 16.98 sq m
+- 9 (Entrance Hall): 53.58 sq m
+- 27 (Gallery): 16.06 sq m",arc,fantasy_office_building_2,3,train
+409,"What are all the spaces on level 4, with their areas?",No spaces are defined for the 4th Floor in the model.,arc,fantasy_office_building_2,3,test
+410,What are the heights of the building levels?,"Building Level Heights:
+
+   3rd Floor:
+   - Elevation: 11.10 m
+
+   4th Floor:
+   - Elevation: 14.80 m
+
+   5th Floor:
+   - Elevation: 18.50 m
+
+   Note: Ground/1st/2nd/3rd floors are all modeled under '3rd Floor' storey.
+   The 5th Floor (Elevation: 18.50 m) is used for roof modeling.",arc,fantasy_office_building_2,2,test
+411,"What types of vertical circulation elements are present in the building (stairs, elevators, ramps, escalators), and how many of each type exist?","Vertical circulation occurs through 4 staircase assemblies located in different parts of the building. No elevators, ramps, or escalators are present.
+
+   Stair types:
+     • Cast-In-Place Stair:Massiv - Stufen Naturstein - 1 Stockwerkstrennlinie, STRAIGHT
+     • Cast-In-Place Stair:Massiv - Stufen Naturstein - 1 Stockwerkstrennlinie, SPIRAL (2 staricase assemblies)
+     • Assembled Stair:Wangen Stahl - Stufen Holz - 1 Stockwerkstrennlinie",arc,fantasy_office_building_2,2,test
+412,"What types of railings are used in the building, and how many of each type are there?","Railing Types:
+   Total railings: 33
+
+   Railing types:
+   - Railing:Vertikale Stäbe: 28 railing(s)
+   - Railing:Vertikale Stäbe mit Handlauf: 5 railing(s)",arc,fantasy_office_building_2,2,train
+413,"What is the distribution of offices by floor, including their individual areas?","Office Distribution by Floor:
+   Total offices identified: 13
+
+   Note: Space definitions are limited in this model.
+
+   Groundfloor:
+     • Office 1: 14.63 sq m
+     • Office 2: 14.62 sq m
+     • Office 3: 14.62 sq m
+     • Office 4: 14.93 sq m
+
+   1st Floor:
+     • Office 5: 14.62 sq m
+     • Office 6: 14.62 sq m
+     • Office 7: 14.93 sq m
+
+   2nd Floor:
+     • Office 8: 14.62 sq m
+     • Office 9: 14.62 sq m
+     • Office 10: 14.93 sq m
+
+   3rd Floor:
+     • Office 11: 14.62 sq m
+     • Office 12: 14.62 sq m
+     • Office 13: 14.93 sq m",arc,fantasy_office_building_2,2,test
+414,"Could you provide a breakdown of the furniture inventory in the building, showing the quantities of each furniture type?","Furniture Inventory:
+   Total furniture items: 71
+
+   Furniture by type:
+   - Tisch-Sofa-Kombination-02:4 Sessel und 1 Tisch: 17 item(s)
+   - Bank-01:1480 x 400_ohne_Lehnen: 16 item(s)
+   - Schreibtisch-Kombination-01:Typ1: 13 item(s)
+   - Regal-01:1500 x 600 x 2500: 13 item(s)
+   - Küchenzeile-02 Kombination:Küchenzeile: 10 item(s)
+   - Tisch-Stuhl-Kombination-08 Konferenz:2000 x 1000 x 750 - 16 Stühle: 2 item(s)",arc,fantasy_office_building_2,2,test
+415,What furniture is available in office 13?,"Office 13 Furniture:
+   - Schreibtisch-Kombination-01:Typ1:2589494
+   - Regal-01:1500 x 600 x 2500:2589498",arc,fantasy_office_building_2,1,train
+416,"Which door types are installed in the building, with their quantities?","Door Types in Building:
+   Total doors: 57
+
+   Door types and quantities:
+   - TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000: 27 door(s)
+     Dimensions: 89 cm × 205 cm
+   - TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001: 16 door(s)
+     Dimensions: 109 cm × 205 cm
+   - TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885: 13 door(s)
+     Dimensions: 288 cm × 214 cm
+   - TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2800 - EI 30: 1 door(s)
+     Dimensions: 280 cm × 205 cm",arc,fantasy_office_building_2,2,train
+417,"Which window types are present in this building, including their sizing and quantities?","Window Types in Building:
+   Total windows: 46
+
+   Window types with sizing and quantities:
+   - FE 2 tlg - waagrecht geteilt:1100 x 1850: 26 window(s)
+     Size: 110 cm × 185 cm
+     
+   - FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250: 20 window(s)
+     Size: 200 cm × 225 cm",arc,fantasy_office_building_2,2,test
+418,"What types of walls are used in the building, with their quantities?","Wall Types in Building:
+   Total walls: 105
+
+   Wall types and quantities:
+   - Basic Wall:STB 250: 54 wall(s)
+   - Basic Wall:KS 115: 24 wall(s)
+   - Basic Wall:GK 125: 17 wall(s)
+   - Basic Wall:KS 175: 10 wall(s)",arc,fantasy_office_building_2,2,train
+419,"Which wall types are used on the exterior of the building, including their quantities?","Exterior wall types:
+   - Basic Wall:STB 250: 54 wall(s)",arc,fantasy_office_building_2,2,train
+420,"Which wall types are used for interior, with their counts?","Interior Wall Types:
+   Total interior walls: 51
+
+   Interior wall types:
+   - Basic Wall:KS 115: 24 wall(s)
+   - Basic Wall:GK 125: 17 wall(s)
+   - Basic Wall:KS 175: 10 wall(s)",arc,fantasy_office_building_2,2,train
+421,What materials are used for each wall type?,"Materials by Wall Type:
+
+- Basic Wall:STB 250:
+  - Ortbeton - bewehrt Verputzt
+
+- Basic Wall:GK 125:
+  - Material information not available
+
+- Basic Wall:KS 175:
+  - Mauerwerk - Kalksandstein
+
+- Basic Wall:KS 115:
+  - Mauerwerk - Kalksandstein",arc,fantasy_office_building_2,1,test
+422,What are the thicknesses of the different wall types?,"Wall Thicknesses by Type:
+
+   Basic Wall:STB 250:
+   - Thickness: 250 mm
+
+   Basic Wall:GK 125:
+   - Thickness: 125 mm
+
+   Basic Wall:KS 175:
+   - Thickness: 175 mm
+
+   Basic Wall:KS 115:
+   - Thickness: 115 mm",arc,fantasy_office_building_2,2,test
+423,"What is the proportion of load-bearing walls in the building, including the total number of walls, the count of load-bearing walls, and the breakdown of load-bearing wall types?","Load-Bearing Wall ratio:
+
+   - Total walls: 105
+   - Load-bearing walls: 54
+   - Proportion of load-bearing walls: 51.4%
+
+   Load-bearing wall types:
+   - Basic Wall:STB 250: 54 wall(s)",arc,fantasy_office_building_2,2,test
+424,What is the total length of exterior walls?,Total length of exterior walls is 767.40 m.,arc,fantasy_office_building_2,2,train
+425,What is the building's footprint area?,Building Footprint Area is 360 sq m.,arc,fantasy_office_building_2,3,train
+426,Which types of curtain walls are installed?,"Curtain Wall Types:
+   Total curtain walls: 9
+
+   Curtain wall types:
+   - Curtain Wall:Alufassade 1000 x 2100 - Standardprofile: 9 element(s)",arc,fantasy_office_building_2,2,train
+427,Which materials are used in the ceilings?,No dedicated ceiling elements or material assignments found.,arc,fantasy_office_building_2,4,train
+428,"What MEP components are used in this model, grouped by the MEP system they belong to?","MEP Components by System:
+   Total MEP components: 40
+
+   Plumbing - Sanitary Fixtures:
+   - Total components: 20
+   - Component types:
+     • WC 03:WC
+
+   Plumbing - Washbasins:
+   - Total components: 20
+   - Component types:
+     • Waschbecken m. Griffen barrierefrei:600 x 450: 10
+     • Waschbecken 05:Tischbreite 1200: 10",arc,fantasy_office_building_2,2,train
+429,What are the slab types and their thicknesses?,"Slab Types and Thicknesses:
+   Total slabs: 13
+
+   Slab types:
+     Non-Monolithic Landing:Podest (nicht massiv): 8 slab(s)
+     - Thickness: 4 cm
+
+     Floor:STB 200: 5 slab(s)
+     - Thickness: 20 cm",arc,fantasy_office_building_2,2,train
+430,What is the combined total volume of all the floor slabs ?,The total volume of all floor slabs combined is 346.41 cubic meters.,arc,fantasy_office_building_2,3,test
+431,Which door types include fire rating information?,"Door types with fire rating:
+   - TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2800 - EI 30
+     Fire rating: EI 30",arc,fantasy_office_building_2,2,train
+432,Is fire rating information available for windows in this model?,Fire rating information is not available for windows in this model.,arc,fantasy_office_building_2,4,train
+433,"Which column types are present in this building, and how many of each type are there?","Column Types in Building:
+   Total columns: 44
+
+   Column types:
+   - STB Stütze - rund:STB ø200: 26 column(s)
+     Circular column, diameter: 200 mm
+   - STB Stütze - rechteckig:STB 200 x 200: 12 column(s)
+     Rectangular column, dimensions: 200 mm × 200 mm
+   - STB Stütze - rund:STB ø250: 6 column(s)
+     Circular column, diameter: 250 mm",arc,fantasy_office_building_2,2,test
+434,Identify all roof types in the building and specify the construction material layers and area information for each roof type.,"Total roof elements: 3
+
+Roof types:
+
+Basic Roof:Flachdachaufbau begrünt 320: (1 element)
+- Area: 239.26 sq m
+- Material layers:
+   - Dachdeckung - Begrünung
+   - Dachdeckung - Flies
+   - Dämmung - hart
+   - Dachdeckung - Bitumenbahn
+
+Basic Roof:Ziegeldach 360: (2 elements)
+- Area for each roof slab: 90.16 sq m
+- Material layers:
+   - Dachdeckung - Ziegeldach
+   - Luftschicht
+   - Dachdeckung - Holz
+   - Dämmung - weich
+   - Luftschicht
+   - Dachdeckung - Holz",arc,fantasy_office_building_2,3,test

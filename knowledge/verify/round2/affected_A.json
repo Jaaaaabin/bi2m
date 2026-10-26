@@ -1,0 +1,455 @@
+[
+ {
+  "hid": "H-fantasy_residential_building_1-02",
+  "project": "fantasy_residential_building_1",
+  "file": "build_hard_qa.py",
+  "question_start": "Each stairwell climbs a 3.40 m storey in a single 17-riser run with 20 cm risers and 27 cm treads, and no landing is modelled. Judged as the",
+  "points": [
+   {
+    "title": "必要楼梯宽度与踏步比",
+    "current_summary": "按德国标准（住宅建筑），法定必要楼梯（作为疏散路线）的可用梯宽至少 1.00 m、踏步比 17/28；对比：不超过两户的住宅楼梯可用宽度至少 0.80 m（17/28），非必要楼梯 0.50 m（21/21），高层住宅 1.25 m。",
+    "issues": [
+     "Drops the source framing 'according to German standards' and that the value is a minimum usable stair width.",
+     "Context is residential buildings: the same sentence gives ≤2-flat houses min. 0.80 m (17/28), non-essential stairs 0.50 m (21/21), high-rise flats 1.25 m; summary states 1.00 m without this residential/German-standard context."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_residential_building_1-03",
+  "project": "fantasy_residential_building_1",
+  "file": "build_hard_qa.py",
+  "question_start": "Every railing in the model, including the balcony guards on the second floor, is 1.219 m high. What minimum guard height would apply to thes",
+  "points": [
+   {
+    "title": "楼座、夹层、阳台的护栏高度",
+    "current_summary": "楼座、夹层、阳台及剧院楼座看台须设护栏（高 h），高差 ≥ 1 m 起强制：坠落高度 < 12 m 时 h = 0.90 m；坠落高度 > 12 m 时 h = 1.10 m；工作场所坠落高度 < 12 m 时 h = 1.00 m，且楼梯井宽至少 20 cm 时，坠落高度超过 12 m 也为 1.00 m（同一正文条目所述）。",
+    "issues": [
+     "摘要称“图注另称楼梯井宽 ≥ 20 cm 时 > 12 m 亦为 1.00 m”，但该句来自正文（page_0134_text_002，source=body），并非图注——出处标注错误（第一轮修订引入）",
+     "其余数值（≥1 m 起强制；<12 m 0.90 m；>12 m 1.10 m；工作场所 <12 m 1.00 m）与原文一致"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_residential_building_1-07",
+  "project": "fantasy_residential_building_1",
+  "file": "build_hard_qa.py",
+  "question_start": "The most common hinged interior door in the model is listed with a width of 0.885 m. Would these doors pass a barrier-free check, and why is",
+  "points": [
+   {
+    "title": "无障碍门净宽",
+    "current_summary": "无障碍公共建筑中，门净通行宽度 ≥ 0.90 m；按 MBO §50，公众可达建筑须至少能经一个净开口宽度 ≥ 0.90 m 且无台阶的入口进入。",
+    "issues": [
+     "Scope lost: the ≥0.90 m door width is from the 'Accessible Public Buildings' section (p22), and the step-free entrance ≥0.90 m is MBO §50 (3) for publicly accessible buildings per (2); summary presents both as generic accessible-design rules."
+    ]
+   },
+   {
+    "title": "洞口尺寸 ≠ 净通行宽度",
+    "current_summary": "在门框构造设计中，须考虑不同的构造厚度，即门的结构洞口尺寸与净通行尺寸之间的差异（净通行尺寸小于结构洞口）。",
+    "issues": [
+     "原文只说结构洞口与净通行尺寸之间存在差异（因构造厚度不同），摘要另加“/外形尺寸”，原文未提外形尺寸",
+     "“扣除门框等构造厚度”是对“consideration of the differing constructional thicknesses”的合理意译，但应限定于门框构造（frame construction）的语境"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-duplex-02",
+  "project": "duplex",
+  "file": "build_hard_qa.py",
+  "question_start": "The unit entrance doors are 1.25 m wide, wider than any other door in the model. Which door category are they, and how does 1.25 m compare w",
+  "points": [
+   {
+    "title": "洞口尺寸 ≠ 净通行宽度",
+    "current_summary": "在门框构造设计中，须考虑不同的构造厚度，即门的结构洞口尺寸与净通行尺寸之间的差异（净通行尺寸小于结构洞口）。",
+    "issues": [
+     "原文只说结构洞口与净通行尺寸之间存在差异（因构造厚度不同），摘要另加“/外形尺寸”，原文未提外形尺寸",
+     "“扣除门框等构造厚度”是对“consideration of the differing constructional thicknesses”的合理意译，但应限定于门框构造（frame construction）的语境"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-duplex-03",
+  "project": "duplex",
+  "file": "build_hard_qa.py",
+  "question_start": "A wheelchair user visits unit A. Can they get into the ground-floor bathroom? Name the dimension that decides it.",
+  "points": [
+   {
+    "title": "无障碍卫生间",
+    "current_summary": "无障碍公共建筑中，所有卫生设施内须至少设一个供轮椅使用者使用的厕所（坐高宜为 48 cm）；厕所、淋浴间和更衣间的门须向外开。",
+    "issues": [
+     "Scope lost: both rules come from the 'Accessible Public Buildings' section of p22; summary omits the public-building scope. Also 'per sanitary facility' wording is fine."
+    ]
+   },
+   {
+    "title": "无障碍门净宽",
+    "current_summary": "无障碍公共建筑中，门净通行宽度 ≥ 0.90 m；按 MBO §50，公众可达建筑须至少能经一个净开口宽度 ≥ 0.90 m 且无台阶的入口进入。",
+    "issues": [
+     "Scope lost: the ≥0.90 m door width is from the 'Accessible Public Buildings' section (p22), and the step-free entrance ≥0.90 m is MBO §50 (3) for publicly accessible buildings per (2); summary presents both as generic accessible-design rules."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-duplex-08",
+  "project": "duplex",
+  "file": "build_hard_qa.py",
+  "question_start": "The original answer infers escape routes are at least 864 mm wide from the hallway doors. On the way from an upstairs bedroom to the front d",
+  "points": [
+   {
+    "title": "两户以下住宅的楼梯",
+    "current_summary": "按德国标准，不超过两户的住宅，楼梯须满足可用宽度至少 0.80 m、踏步比（踢面/踏面）17/28；（同段：非法定必要楼梯可为 0.50 m、21/21，其他法定必要楼梯 1.00 m、17/28，高层住宅 1.25 m）。",
+    "issues": [
+     "来源明确为“According to German standards … must have”，摘要未保留“按德国标准”这一出处，也未写出“须”的强制语气",
+     "同句中还区分了非必要楼梯（0.50 m、21/21），摘要未说明 0.80 m/17/28 是该类住宅的必要（作为疏散）楼梯的要求，适用范围略含糊"
+    ]
+   },
+   {
+    "title": "无障碍门净宽",
+    "current_summary": "无障碍公共建筑中，门净通行宽度 ≥ 0.90 m；按 MBO §50，公众可达建筑须至少能经一个净开口宽度 ≥ 0.90 m 且无台阶的入口进入。",
+    "issues": [
+     "Scope lost: the ≥0.90 m door width is from the 'Accessible Public Buildings' section (p22), and the step-free entrance ≥0.90 m is MBO §50 (3) for publicly accessible buildings per (2); summary presents both as generic accessible-design rules."
+    ]
+   },
+   {
+    "title": "轮椅活动空间",
+    "current_summary": "轮椅转身：每个房间宜提供至少 1.50 m 深 × 1.50 m 宽的转身空间。对于公众可达建筑（第(2)条所指，如文化、教育、办公、餐饮等建筑），走廊和门厅宽度须 ≥ 1.50 m。",
+    "issues": [
+     "Corridor/entrance-hall ≥1.50 m (a \"must\") comes from clause (3), which applies only to publicly accessible buildings per (2); summary presents it as a general rule with no scope or modality."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-duplex-09",
+  "project": "duplex",
+  "file": "build_hard_qa.py",
+  "question_start": "The upstairs bedrooms have a 2.80 × 2.41 m window whose sill sits about 0.10 m above the floor. Do the bedrooms get enough window area for h",
+  "points": [
+   {
+    "title": "楼座、夹层、阳台的护栏高度",
+    "current_summary": "楼座、夹层、阳台及剧院楼座看台须设护栏（高 h），高差 ≥ 1 m 起强制：坠落高度 < 12 m 时 h = 0.90 m；坠落高度 > 12 m 时 h = 1.10 m；工作场所坠落高度 < 12 m 时 h = 1.00 m，且楼梯井宽至少 20 cm 时，坠落高度超过 12 m 也为 1.00 m（同一正文条目所述）。",
+    "issues": [
+     "摘要称“图注另称楼梯井宽 ≥ 20 cm 时 > 12 m 亦为 1.00 m”，但该句来自正文（page_0134_text_002，source=body），并非图注——出处标注错误（第一轮修订引入）",
+     "其余数值（≥1 m 起强制；<12 m 0.90 m；>12 m 1.10 m；工作场所 <12 m 1.00 m）与原文一致"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-duplex-11",
+  "project": "duplex",
+  "file": "build_hard_qa.py",
+  "question_start": "Which set of Neufert stair requirements applies to the stairs in this building, and do the stairs meet them?",
+  "points": [
+   {
+    "title": "两户以下住宅的楼梯",
+    "current_summary": "按德国标准，不超过两户的住宅，楼梯须满足可用宽度至少 0.80 m、踏步比（踢面/踏面）17/28；（同段：非法定必要楼梯可为 0.50 m、21/21，其他法定必要楼梯 1.00 m、17/28，高层住宅 1.25 m）。",
+    "issues": [
+     "来源明确为“According to German standards … must have”，摘要未保留“按德国标准”这一出处，也未写出“须”的强制语气",
+     "同句中还区分了非必要楼梯（0.50 m、21/21），摘要未说明 0.80 m/17/28 是该类住宅的必要（作为疏散）楼梯的要求，适用范围略含糊"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-duplex-13",
+  "project": "duplex",
+  "file": "build_hard_qa.py",
+  "question_start": "Each stair in this model has two railings, one 0.90 m and one 1.10 m high. Which one is the fall-protection guard, what minimum height does ",
+  "points": [
+   {
+    "title": "楼座、夹层、阳台的护栏高度",
+    "current_summary": "楼座、夹层、阳台及剧院楼座看台须设护栏（高 h），高差 ≥ 1 m 起强制：坠落高度 < 12 m 时 h = 0.90 m；坠落高度 > 12 m 时 h = 1.10 m；工作场所坠落高度 < 12 m 时 h = 1.00 m，且楼梯井宽至少 20 cm 时，坠落高度超过 12 m 也为 1.00 m（同一正文条目所述）。",
+    "issues": [
+     "摘要称“图注另称楼梯井宽 ≥ 20 cm 时 > 12 m 亦为 1.00 m”，但该句来自正文（page_0134_text_002，source=body），并非图注——出处标注错误（第一轮修订引入）",
+     "其余数值（≥1 m 起强制；<12 m 0.90 m；>12 m 1.10 m；工作场所 <12 m 1.00 m）与原文一致"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-4351-02",
+  "project": "4351",
+  "file": "items/4351.py",
+  "question_start": "The last \"storey\" interval in the level list, 04 Roof → 05 TO Parapet, is 0.91 m. What does this interval represent, and would it be an adeq",
+  "points": [
+   {
+    "title": "楼座、夹层、阳台的护栏高度",
+    "current_summary": "楼座、夹层、阳台及剧院楼座看台须设护栏（高 h），高差 ≥ 1 m 起强制：坠落高度 < 12 m 时 h = 0.90 m；坠落高度 > 12 m 时 h = 1.10 m；工作场所坠落高度 < 12 m 时 h = 1.00 m，且楼梯井宽至少 20 cm 时，坠落高度超过 12 m 也为 1.00 m（同一正文条目所述）。",
+    "issues": [
+     "摘要称“图注另称楼梯井宽 ≥ 20 cm 时 > 12 m 亦为 1.00 m”，但该句来自正文（page_0134_text_002，source=body），并非图注——出处标注错误（第一轮修订引入）",
+     "其余数值（≥1 m 起强制；<12 m 0.90 m；>12 m 1.10 m；工作场所 <12 m 1.00 m）与原文一致"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-4351-03",
+  "project": "4351",
+  "file": "items/4351.py",
+  "question_start": "The average door width in this building is 0.99 m, which looks comfortably above the 0.90 m needed for barrier-free doors. Is that a sound c",
+  "points": [
+   {
+    "title": "无障碍门净宽",
+    "current_summary": "无障碍公共建筑中，门净通行宽度 ≥ 0.90 m；按 MBO §50，公众可达建筑须至少能经一个净开口宽度 ≥ 0.90 m 且无台阶的入口进入。",
+    "issues": [
+     "Scope lost: the ≥0.90 m door width is from the 'Accessible Public Buildings' section (p22), and the step-free entrance ≥0.90 m is MBO §50 (3) for publicly accessible buildings per (2); summary presents both as generic accessible-design rules."
+    ]
+   },
+   {
+    "title": "洞口尺寸 ≠ 净通行宽度",
+    "current_summary": "在门框构造设计中，须考虑不同的构造厚度，即门的结构洞口尺寸与净通行尺寸之间的差异（净通行尺寸小于结构洞口）。",
+    "issues": [
+     "原文只说结构洞口与净通行尺寸之间存在差异（因构造厚度不同），摘要另加“/外形尺寸”，原文未提外形尺寸",
+     "“扣除门框等构造厚度”是对“consideration of the differing constructional thicknesses”的合理意译，但应限定于门框构造（frame construction）的语境"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-4351-04",
+  "project": "4351",
+  "file": "items/4351.py",
+  "question_start": "The widest door, 1.73 m, is the double door in the south wall of the ground-floor hall (space 4, 279.7 m²). Suppose the hall were used as a ",
+  "points": [
+   {
+    "title": "无障碍门净宽",
+    "current_summary": "无障碍公共建筑中，门净通行宽度 ≥ 0.90 m；按 MBO §50，公众可达建筑须至少能经一个净开口宽度 ≥ 0.90 m 且无台阶的入口进入。",
+    "issues": [
+     "Scope lost: the ≥0.90 m door width is from the 'Accessible Public Buildings' section (p22), and the step-free entrance ≥0.90 m is MBO §50 (3) for publicly accessible buildings per (2); summary presents both as generic accessible-design rules."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-4351-06",
+  "project": "4351",
+  "file": "items/4351.py",
+  "question_start": "Space 5, the second-floor office with the workstation cubicles, has direct access through two doors to the large roof terrace over the singl",
+  "points": [
+   {
+    "title": "楼座、夹层、阳台的护栏高度",
+    "current_summary": "楼座、夹层、阳台及剧院楼座看台须设护栏（高 h），高差 ≥ 1 m 起强制：坠落高度 < 12 m 时 h = 0.90 m；坠落高度 > 12 m 时 h = 1.10 m；工作场所坠落高度 < 12 m 时 h = 1.00 m，且楼梯井宽至少 20 cm 时，坠落高度超过 12 m 也为 1.00 m（同一正文条目所述）。",
+    "issues": [
+     "摘要称“图注另称楼梯井宽 ≥ 20 cm 时 > 12 m 亦为 1.00 m”，但该句来自正文（page_0134_text_002，source=body），并非图注——出处标注错误（第一轮修订引入）",
+     "其余数值（≥1 m 起强制；<12 m 0.90 m；>12 m 1.10 m；工作场所 <12 m 1.00 m）与原文一致"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-4351-08",
+  "project": "4351",
+  "file": "items/4351.py",
+  "question_start": "Beyond riser and tread, look at how each of the three stairs climbs its storey: number of risers per flight, landings and width. Which stair",
+  "points": [
+   {
+    "title": "必要楼梯宽度与踏步比",
+    "current_summary": "按德国标准（住宅建筑），法定必要楼梯（作为疏散路线）的可用梯宽至少 1.00 m、踏步比 17/28；对比：不超过两户的住宅楼梯可用宽度至少 0.80 m（17/28），非必要楼梯 0.50 m（21/21），高层住宅 1.25 m。",
+    "issues": [
+     "Drops the source framing 'according to German standards' and that the value is a minimum usable stair width.",
+     "Context is residential buildings: the same sentence gives ≤2-flat houses min. 0.80 m (17/28), non-essential stairs 0.50 m (21/21), high-rise flats 1.25 m; summary states 1.00 m without this residential/German-standard context."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-4351-11",
+  "project": "4351",
+  "file": "items/4351.py",
+  "question_start": "The building has one traction lift (\"Elevator_Cab-Traction_Reed\"); its cab occupies about 1.72 × 1.30 m in plan, and its landing doors face ",
+  "points": [
+   {
+    "title": "无障碍电梯",
+    "current_summary": "无障碍建筑中，电梯轿厢净宽须 ≥ 1.10 m、净深 ≥ 1.40 m；门前活动区须至少与轿厢地面面积相同，且不小于 1.50 m 宽 × 1.50 m 深，并不得与其他交通路线和活动区重叠。",
+    "issues": [
+     "遗漏关键条件：门前活动区须“至少与轿厢地面面积一样大”，1.50 × 1.50 m 只是下限",
+     "未说明出处为无障碍建筑章节（标题已含“无障碍”，可接受）"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-ac20-03",
+  "project": "ac20",
+  "file": "items/ac20.py",
+  "question_start": "The narrowest door in the building is the 1.00 m single-leaf type used for every office, lab and WC. Would a wheelchair user fit through the",
+  "points": [
+   {
+    "title": "无障碍门净宽",
+    "current_summary": "无障碍公共建筑中，门净通行宽度 ≥ 0.90 m；按 MBO §50，公众可达建筑须至少能经一个净开口宽度 ≥ 0.90 m 且无台阶的入口进入。",
+    "issues": [
+     "Scope lost: the ≥0.90 m door width is from the 'Accessible Public Buildings' section (p22), and the step-free entrance ≥0.90 m is MBO §50 (3) for publicly accessible buildings per (2); summary presents both as generic accessible-design rules."
+    ]
+   },
+   {
+    "title": "洞口尺寸 ≠ 净通行宽度",
+    "current_summary": "在门框构造设计中，须考虑不同的构造厚度，即门的结构洞口尺寸与净通行尺寸之间的差异（净通行尺寸小于结构洞口）。",
+    "issues": [
+     "原文只说结构洞口与净通行尺寸之间存在差异（因构造厚度不同），摘要另加“/外形尺寸”，原文未提外形尺寸",
+     "“扣除门框等构造厚度”是对“consideration of the differing constructional thicknesses”的合理意译，但应限定于门框构造（frame construction）的语境"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-ac20-08",
+  "project": "ac20",
+  "file": "items/ac20.py",
+  "question_start": "The central stair climbs each 3.00 m storey in three flights around two quarter landings, with 22 risers of about 13.6 cm and treads of abou",
+  "points": [
+   {
+    "title": "必要楼梯宽度与踏步比",
+    "current_summary": "按德国标准（住宅建筑），法定必要楼梯（作为疏散路线）的可用梯宽至少 1.00 m、踏步比 17/28；对比：不超过两户的住宅楼梯可用宽度至少 0.80 m（17/28），非必要楼梯 0.50 m（21/21），高层住宅 1.25 m。",
+    "issues": [
+     "Drops the source framing 'according to German standards' and that the value is a minimum usable stair width.",
+     "Context is residential buildings: the same sentence gives ≤2-flat houses min. 0.80 m (17/28), non-essential stairs 0.50 m (21/21), high-rise flats 1.25 m; summary states 1.00 m without this residential/German-standard context."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-ac20-09",
+  "project": "ac20",
+  "file": "items/ac20.py",
+  "question_start": "The cellular offices on the upper floors are 4.40 m deep and either 2.80 m or 5.80 m wide between 20 cm partitions, on both sides of a 2.0 m",
+  "points": [
+   {
+    "title": "办公室进深、开间与模数",
+    "current_summary": "1.50 m 模数是以双工位为主的单间办公室的经济模数：工位进深 2.20 m（桌 80 cm + 活动区 1 m + 后柜 40 cm），计 10 cm 墙厚得 4.40 m 净房间尺寸。近年行之有效的模数为单间办公室 1.50 m、组合办公 1.35 m；在 1.35 m 模数下，3.80 m 开间（约 18 m² 使用面积）可布置两个进深 0.90 m 的电脑工位（事故保险机构建议值）等多种工位。",
+    "issues": [
+     "4.40 m 净深的来历缺失：原文是 1.50 m 模数下以双工位为主的单间办公室，工位进深 2.20 m，加 10 cm 墙厚得 4.40 m 净房间尺寸，摘要直接写“房间净深 4.40 m”未交代双工位与墙厚条件",
+     "开间 3.80 m（约 18 m² 使用面积）出自“1.35 m 模数”（组合办公）一节，摘要未说明该归属；两个 0.90 m 进深的电脑工位是事故保险机构建议值，亦未提及"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-digital_hub-01",
+  "project": "digital_hub",
+  "file": "items/digital_hub.py",
+  "question_start": "The parking lot holds 26 bays (Revit family \"Parkplatz - 01 90: 2500 x 5000\") in two facing rows of 13, with about 9.55 m of driving aisle b",
+  "points": [
+   {
+    "title": "轮椅停车位",
+    "current_summary": "无障碍设计中，停车场内轮椅使用者车辆的长边旁须留出深度至少 1.50 m 的活动区（同样适用于轮椅停放处前、治疗设施前）。",
+    "issues": [
+     "Omits the key value: the movement area is \"min. 1.50 m deep\".",
+     "Summary is too vague to be checkable."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-digital_hub-03",
+  "project": "digital_hub",
+  "file": "items/digital_hub.py",
+  "question_start": "The door schedule gives an average door width of 1.00 m, ranging from 0.80 m to 1.64 m. Which doors define the 0.80 m minimum, and what does",
+  "points": [
+   {
+    "title": "无障碍卫生间",
+    "current_summary": "无障碍公共建筑中，所有卫生设施内须至少设一个供轮椅使用者使用的厕所（坐高宜为 48 cm）；厕所、淋浴间和更衣间的门须向外开。",
+    "issues": [
+     "Scope lost: both rules come from the 'Accessible Public Buildings' section of p22; summary omits the public-building scope. Also 'per sanitary facility' wording is fine."
+    ]
+   },
+   {
+    "title": "无障碍门净宽",
+    "current_summary": "无障碍公共建筑中，门净通行宽度 ≥ 0.90 m；按 MBO §50，公众可达建筑须至少能经一个净开口宽度 ≥ 0.90 m 且无台阶的入口进入。",
+    "issues": [
+     "Scope lost: the ≥0.90 m door width is from the 'Accessible Public Buildings' section (p22), and the step-free entrance ≥0.90 m is MBO §50 (3) for publicly accessible buildings per (2); summary presents both as generic accessible-design rules."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-digital_hub-04",
+  "project": "digital_hub",
+  "file": "items/digital_hub.py",
+  "question_start": "A naive query of IfcDoor.OverallWidth reports 2.27 m as the widest door, while the original answer gives 1.64 m. Which is right, which door ",
+  "points": [
+   {
+    "title": "洞口尺寸 ≠ 净通行宽度",
+    "current_summary": "在门框构造设计中，须考虑不同的构造厚度，即门的结构洞口尺寸与净通行尺寸之间的差异（净通行尺寸小于结构洞口）。",
+    "issues": [
+     "原文只说结构洞口与净通行尺寸之间存在差异（因构造厚度不同），摘要另加“/外形尺寸”，原文未提外形尺寸",
+     "“扣除门框等构造厚度”是对“consideration of the differing constructional thicknesses”的合理意译，但应限定于门框构造（frame construction）的语境"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-digital_hub-05",
+  "project": "digital_hub",
+  "file": "items/digital_hub.py",
+  "question_start": "The two \"spaces\" with the tallest ceiling height are Aufzug Ost and Aufzug West at 10.77 m. What are they really, and is their footprint big",
+  "points": [
+   {
+    "title": "无障碍电梯",
+    "current_summary": "无障碍建筑中，电梯轿厢净宽须 ≥ 1.10 m、净深 ≥ 1.40 m；门前活动区须至少与轿厢地面面积相同，且不小于 1.50 m 宽 × 1.50 m 深，并不得与其他交通路线和活动区重叠。",
+    "issues": [
+     "遗漏关键条件：门前活动区须“至少与轿厢地面面积一样大”，1.50 × 1.50 m 只是下限",
+     "未说明出处为无障碍建筑章节（标题已含“无障碍”，可接受）"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-digital_hub-07",
+  "project": "digital_hub",
+  "file": "items/digital_hub.py",
+  "question_start": "The two stairwell stairs climb 3.90 m from E00 to E01 in 22 risers of 17.7 cm with 27 cm treads, split into two runs of 11 around a 1.24 m d",
+  "points": [
+   {
+    "title": "必要楼梯宽度与踏步比",
+    "current_summary": "按德国标准（住宅建筑），法定必要楼梯（作为疏散路线）的可用梯宽至少 1.00 m、踏步比 17/28；对比：不超过两户的住宅楼梯可用宽度至少 0.80 m（17/28），非必要楼梯 0.50 m（21/21），高层住宅 1.25 m。",
+    "issues": [
+     "Drops the source framing 'according to German standards' and that the value is a minimum usable stair width.",
+     "Context is residential buildings: the same sentence gives ≤2-flat houses min. 0.80 m (17/28), non-essential stairs 0.50 m (21/21), high-rise flats 1.25 m; summary states 1.00 m without this residential/German-standard context."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_hotel_1-03",
+  "project": "fantasy_hotel_1",
+  "file": "items/fantasy_hotel_1.py",
+  "question_start": "The four stairs have no width property. Measure what you can from the model and judge whether they would pass as the building's legally esse",
+  "points": [
+   {
+    "title": "必要楼梯宽度与踏步比",
+    "current_summary": "按德国标准（住宅建筑），法定必要楼梯（作为疏散路线）的可用梯宽至少 1.00 m、踏步比 17/28；对比：不超过两户的住宅楼梯可用宽度至少 0.80 m（17/28），非必要楼梯 0.50 m（21/21），高层住宅 1.25 m。",
+    "issues": [
+     "Drops the source framing 'according to German standards' and that the value is a minimum usable stair width.",
+     "Context is residential buildings: the same sentence gives ≤2-flat houses min. 0.80 m (17/28), non-essential stairs 0.50 m (21/21), high-rise flats 1.25 m; summary states 1.00 m without this residential/German-standard context."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_hotel_1-08",
+  "project": "fantasy_hotel_1",
+  "file": "items/fantasy_hotel_1.py",
+  "question_start": "Bathrooms 108 and 109 are each entered from a master bedroom, and BATH 116 from WASH BASIN 117, through doors of type \"M_Door-Interior-Singl",
+  "points": [
+   {
+    "title": "无障碍门净宽",
+    "current_summary": "无障碍公共建筑中，门净通行宽度 ≥ 0.90 m；按 MBO §50，公众可达建筑须至少能经一个净开口宽度 ≥ 0.90 m 且无台阶的入口进入。",
+    "issues": [
+     "Scope lost: the ≥0.90 m door width is from the 'Accessible Public Buildings' section (p22), and the step-free entrance ≥0.90 m is MBO §50 (3) for publicly accessible buildings per (2); summary presents both as generic accessible-design rules."
+    ]
+   },
+   {
+    "title": "洞口尺寸 ≠ 净通行宽度",
+    "current_summary": "在门框构造设计中，须考虑不同的构造厚度，即门的结构洞口尺寸与净通行尺寸之间的差异（净通行尺寸小于结构洞口）。",
+    "issues": [
+     "原文只说结构洞口与净通行尺寸之间存在差异（因构造厚度不同），摘要另加“/外形尺寸”，原文未提外形尺寸",
+     "“扣除门框等构造厚度”是对“consideration of the differing constructional thicknesses”的合理意译，但应限定于门框构造（frame construction）的语境"
+    ]
+   }
+  ]
+ }
+]

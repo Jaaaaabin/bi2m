@@ -1,0 +1,84 @@
+[
+ {
+  "page": "page_0125",
+  "old": "room doors approx. 80 cm",
+  "new": "room doors      approx. 80 cm",
+  "items": [
+   "H-duplex-08",
+   "H-fantasy_residential_building_1-07",
+   "H-fzk_house-05",
+   "H-samuel_macalister_sample_house-05"
+  ]
+ },
+ {
+  "page": "page_0125",
+  "old": "entrance doors to flats min. 90 cm front doors up to 115 cm",
+  "new": "entrance doors\n    to flats      min. 90 cm\nfront doors      up to 115 cm",
+  "items": [
+   "H-duplex-02",
+   "H-fzk_house-06"
+  ]
+ },
+ {
+  "page": "page_0125",
+  "old": "bath, WC approx. 70 cm",
+  "new": "bath, WC        approx. 70 cm",
+  "items": [
+   "H-duplex-03",
+   "H-fantasy_hotel_1-08",
+   "H-fzk_house-05"
+  ]
+ },
+ {
+  "page": "page_0125",
+  "old": "clear opening height of internal doors minimum 210 cm",
+  "new": "clear opening height of internal doors\nminimum\t210 cm",
+  "items": [
+   "H-4351-09",
+   "H-ac20-03",
+   "H-fzk_house-05",
+   "H-samuel_macalister_sample_house-06"
+  ]
+ },
+ {
+  "page": "page_0034",
+  "old": "min. 1.50 m deep ... in front of therapy facilities (e.g. bath, couch), in front of wheelchair parking places, next to the long side of the vehicle of a wheelchair user in car parks",
+  "new": "min. 1.50 m deep ...\nin front of therapy facilities (e.g. bath, couch), in front of wheelchair parking places, next to the long side of the vehicle of a wheelchair user in car parks",
+  "items": [
+   "H-digital_hub-01"
+  ]
+ },
+ {
+  "page": "page_0035",
+  "old": "min. 1.20 m wide… along furniture which the wheelchair user approaches from the side, along the access side of a non-wheelchair user’s bed → 9, between walls within the dwelling",
+  "new": "min. 1.20 m wide…\nalong furniture which the wheelchair user approaches from the side, along the access side of a non-wheelchair user’s bed → 9, between walls within the dwelling",
+  "items": [
+   "H-fzk_house-07"
+  ]
+ },
+ {
+  "page": "page_0035",
+  "old": "min. 1.50 m wide and min. 1.50 m deep... a turning place in every room (excepting small rooms, which the wheelchair user can use by moving backwards and forwards), the shower → ① + ④, in front of the WC and vanity unit",
+  "new": "min. 1.50 m wide and min. 1.50 m deep...\na turning place in every room (excepting small rooms, which the wheelchair user can use by moving backwards and forwards), the shower → ① + ④, in front of the WC and vanity unit",
+  "items": [
+   "H-fantasy_residential_building_1-17"
+  ]
+ },
+ {
+  "page": "page_0076",
+  "old": "Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they: – take up altogether less than one third of the width of the outside wall – project by a max. 1.50 m in front of the outside wall – stay at least 2 m distant from the opposing plot boundary",
+  "new": "Building elements projecting from the outside wall (cornices, roof overhang) are not considered in the measurement of setback areas → ⑧. Projections remain unconsidered if they:\n– take up altogether less than one third of the width of the outside wall\n– project by a max. 1.50 m in front of the outside wall\n– stay at least 2 m distant from the opposing plot boundary",
+  "items": [
+   "H-fantasy_residential_building_1-20",
+   "H-fzk_house-29"
+  ]
+ },
+ {
+  "page": "page_0214",
+  "old": "professor 20–24 m² scientific assistant 15 m² assistant 20 m² secretary 15 m² (double occupation 20 m²)",
+  "new": "professor 20–24 m²\nscientific assistant 15 m²\nassistant 20 m²\nsecretary 15 m² (double occupation 20 m²)",
+  "items": [
+   "H-ac20-24"
+  ]
+ }
+]

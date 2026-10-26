@@ -1,0 +1,335 @@
+[
+ {
+  "kid": "K01",
+  "title": "高层建筑",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p244/p246 high-rise: >22 m definition; ≤60 m: two opposite stairs in separate fire compartments, width ≥1.25 m, exceptional single safety staircase — all matched."
+ },
+ {
+  "kid": "K04",
+  "title": "体形系数 A/Ve",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p474: A/Ve ratio determines max. permissible annual primary energy demand per EnEV 2007 (envelope area process)."
+ },
+ {
+  "kid": "K07",
+  "title": "舒适步距公式",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p121: \"this formula applies: 2r + t = 59–65 cm\" based on adult stride length."
+ },
+ {
+  "kid": "K10",
+  "title": "休息平台",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p121 caption: landings required in legally essential stairways with storey height ≥2.75 m; p120: landing length = n×stride + 1 tread."
+ },
+ {
+  "kid": "K13",
+  "title": "室外楼梯与办公楼梯的取向",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p121: outside stairs low steps preferable 12×41 to 16×30 cm; office/emergency stairs should allow quick level change."
+ },
+ {
+  "kid": "K16",
+  "title": "无障碍坡道",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p25 (3) and p22: slope ≤6%, width ≥1.20 m, handrails both sides, landings at start/end and every 6 m, ≥1.50 m long."
+ },
+ {
+  "kid": "K19",
+  "title": "非必要楼梯",
+  "verdict": "needs_fix",
+  "issues": [
+   "Source lists this value inside the clause \"residential buildings with no more than two flats must have …\"; summary drops that context.",
+   "Width is a minimum value in context (min. 0.80 m … 0.50 m); summary gives bare \"0.50 m\"."
+  ],
+  "corrected_summary": "按德国标准（书中在“不超过两户的住宅”一句中列出）：建筑法规不视为必要楼梯（不作为法定疏散路线）的楼梯，可用宽度（最小）0.50 m，踏步比 21/21；相比之下必要楼梯为 1.00 m、17/28。",
+  "evidence_note": "p120: \"residential buildings with no more than two flats must have … stairs not deemed … legally essential … 0.50 m, 21/21\"."
+ },
+ {
+  "kid": "K22",
+  "title": "住宅门的常规宽度",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p113: \"In residential buildings, the clear opening width of doors is\" single-leaf: room ~80, bath/WC ~70, flat entrance min. 90, front doors up to 115 cm."
+ },
+ {
+  "kid": "K25",
+  "title": "电梯入户的户门",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p146: per MBO, lift-accessed flat front doors must have 90 cm clear width; door height should be ≥2.10 m."
+ },
+ {
+  "kid": "K28",
+  "title": "轮椅活动空间",
+  "verdict": "needs_fix",
+  "issues": [
+   "Corridor/entrance-hall ≥1.50 m (a \"must\") comes from clause (3), which applies only to publicly accessible buildings per (2); summary presents it as a general rule with no scope or modality."
+  ],
+  "corrected_summary": "轮椅转身：每个房间宜提供至少 1.50 m 深 × 1.50 m 宽的转身空间。对于公众可达建筑（第(2)条所指，如文化、教育、办公、餐饮等建筑），走廊和门厅宽度须 ≥ 1.50 m。",
+  "evidence_note": "p21: turning space ≥1.50 m \"should\"; p25 (3) \"Buildings, according to (2) [publicly accessible] … Corridors and entrance halls must be at least 1.50 m wide\"."
+ },
+ {
+  "kid": "K31",
+  "title": "轮椅停车位",
+  "verdict": "needs_fix",
+  "issues": [
+   "Omits the key value: the movement area is \"min. 1.50 m deep\".",
+   "Summary is too vague to be checkable."
+  ],
+  "corrected_summary": "无障碍设计中，停车场内轮椅使用者车辆的长边旁须留出深度至少 1.50 m 的活动区（同样适用于轮椅停放处前、治疗设施前）。",
+  "evidence_note": "p22: \"min. 1.50 m deep … next to the long side of the vehicle of a wheelchair user in car parks\"."
+ },
+ {
+  "kid": "K34",
+  "title": "多户住宅的无障碍楼层",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p25 (1): >2 flats → flats on one floor accessible; living rooms, bedrooms, one WC, one bathroom, kitchen/kitchenette wheelchair accessible."
+ },
+ {
+  "kid": "K37",
+  "title": "疏散距离",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p121: every location in inhabited rooms and basements must be ≤35 m from stairwell of a legally essential stairway or exit."
+ },
+ {
+  "kid": "K40",
+  "title": "出口宽度（按人数）",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p175 Catering: \"Emergency exits 1.0 m wide per 150 people using them.\""
+ },
+ {
+  "kid": "K43",
+  "title": "疏散走廊侧墙 F 30",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p516: G-glazing typical in F 30 escape-corridor walls, only where no higher requirements, glass lower edge ≥1.80 m; p514 stud partitions."
+ },
+ {
+  "kid": "K46",
+  "title": "长疏散走廊分段与楼梯间的封闭",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p517: closures between stairways and escape corridors and divisions of corridors >30 m must be self-closing and smoke-proof."
+ },
+ {
+  "kid": "K49",
+  "title": "无窗厨房",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p149: windowless kitchens generally undesirable, only permissible with effective ventilation guaranteed."
+ },
+ {
+  "kid": "K52",
+  "title": "工作区距窗约为 2 倍窗净高",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p266 Industry: working-area distance from window should be twice clear window height (title \"约\" is a slight softening, acceptable)."
+ },
+ {
+  "kid": "K55",
+  "title": "遮阳挑檐的出挑计算",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p500: A = tanα×H, min. A = tanα×H − D; south wall <50° N (London): 27°/40°/50° shadow angles at stated dates."
+ },
+ {
+  "kid": "K58",
+  "title": "混凝土外墙必须附加保温",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p78: solid concrete external walls only with additional insulation (ETICS or multi-leaf with core insulation); two-layer RC walls as large-format elements."
+ },
+ {
+  "kid": "K61",
+  "title": "热桥与构件连接",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p473/474: thermal bridge definition; good insulation needs proper connections; consequences worse with highly insulated elements."
+ },
+ {
+  "kid": "K64",
+  "title": "隔汽层设在暖侧",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p472/473/90: vapour barrier outside → condensation; must be on warm side; warm roof/façade external + internal barrier; roof (rafter construction) barrier under insulation."
+ },
+ {
+  "kid": "K67",
+  "title": "分户墙隔声",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p478: party walls should always ≥400 kg/m²; p479: two-skin party wall ≥150 kg/m² per skin, joint ≥30 mm, >50 mm → 100 kg/m², gapless fibre boards."
+ },
+ {
+  "kid": "K70",
+  "title": "地下室墙体与楼板耐火",
+  "verdict": "needs_fix",
+  "issues": [
+   "Ceiling requirement on p515 is followed by stated exceptions (buildings of classes 1 and 2, ceilings above roof spaces, slabs within dwellings; further exceptions possible for classes 1–3); summary states it unconditionally.",
+   "\"they\" in the cellar sentence covers load-bearing and bracing walls and columns, not only load-bearing walls (minor)."
+  ],
+  "corrected_summary": "地下室中的承重及支撑墙体和柱须为防火构造，等级 1、2 的建筑可为阻燃构造；楼板须为防火或至少阻燃，地下室顶板须为防火（等级 1、2 建筑、屋顶空间上方的楼板及住宅户内楼板等有例外）。钢筋混凝土板、空心砌块楼板等实心楼板在一定条件下无需附加防护即有足够耐火能力。",
+  "evidence_note": "p514: \"In cellars, they have to be constructed fireproof and, in buildings of classes 1 and 2, fire-retarding\"; p515: ceilings rule + \"Exceptions apply for buildings of classes 1 and 2 …\"."
+ },
+ {
+  "kid": "K73",
+  "title": "居室最低要求",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p167 (Student residences): general building-regulation minimum requirements for residential rooms: 8 m², 2.40 m ceiling height, window area 1/8 of room area."
+ },
+ {
+  "kid": "K76",
+  "title": "阳台计入居住面积",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p155: balconies, loggias, terraces normally calculated as 25–50% of living area."
+ },
+ {
+  "kid": "K79",
+  "title": "DIN 277 建筑体积（总体积与净体积）",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p63: DIN 277 gross built volume (floor areas × height top of floor covering to next) and net built volume (net floor area × clear height)."
+ },
+ {
+  "kid": "K82",
+  "title": "电梯与每层户数",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p142: lifts required for residential buildings > five full floors; two flats per floor most common access method."
+ },
+ {
+  "kid": "K85",
+  "title": "卧室朝向与位置",
+  "verdict": "needs_fix",
+  "issues": [
+   "Source gives \"minimal space of approx. 13 m² … approx. 8 m²\"; summary drops \"minimal/最小\", turning a minimum into a typical size."
+  ],
+  "corrected_summary": "卧室最小面积约 13 m²（父母房或双人卧室）和约 8 m²（单人房）；卧室一般朝东或东南（父母）、朝南至西（儿童），并与起居室分处住宅的不同部分。",
+  "evidence_note": "p157: \"bedrooms with minimal space of approx. 13 m² … approx. 8 m² … normally aligned to east or southeast (parents) or south to west (children)\"."
+ },
+ {
+  "kid": "K88",
+  "title": "户内走道宽度",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p148: examples assume min. corridor width 1 m allowing two people to pass; does not permit cupboards, better built-in."
+ },
+ {
+  "kid": "K91",
+  "title": "联排住宅进深 ≤12 m、面宽 4–8 m",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p144: row houses lit from two façades; economic depths up to 12 m, widths 4–8 m → unavoidable badly lit/dark middle zone."
+ },
+ {
+  "kid": "K94",
+  "title": "厨房宽度与操作空间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p149: movement area 1.50 m (min. 1.20 m) between worktops; with 60 cm units each side → min. kitchen width 2.70 m (min. 2.40 m)."
+ },
+ {
+  "kid": "K97",
+  "title": "厨房位置",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p149: kitchen ideally in immediate vicinity of entrance area (short distances for shopping, rubbish)."
+ },
+ {
+  "kid": "K100",
+  "title": "储藏与食品间靠近厨房",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p162: part of storage near kitchen practical; larder most practical next to kitchen."
+ },
+ {
+  "kid": "K103",
+  "title": "没有洗衣间时",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p161: without laundry room, bathroom must have space and connections for washing machine, washer/dryer, laundry basket."
+ },
+ {
+  "kid": "K106",
+  "title": "户内储藏空间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p162: storage ≥1 m² with 75 cm clear width; larger flats 2% of floor area; storeroom doors should open outward."
+ },
+ {
+  "kid": "K109",
+  "title": "卫浴与厨房共用管井",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p160: often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on common installation shaft."
+ },
+ {
+  "kid": "K112",
+  "title": "每工位总面积",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p238: total space per workstation 23–45 m² depending on organisational and status requirements."
+ },
+ {
+  "kid": "K115",
+  "title": "建筑进深与采光深度",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p240: central-corridor buildings usually 12–13 m deep; p241: daylight mostly exploitable to ~7.00 m room depth."
+ },
+ {
+  "kid": "K118",
+  "title": "办公卫生间与茶水间配置",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p238: one toilet unit per 50–80 workstations (~0.6–0.8 m²/workstation); one ~10 m² tea kitchen per ~50–100 workplaces, near workstations."
+ },
+ {
+  "kid": "K121",
+  "title": "保洁间与物业用房",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p238: cleaner's room should be on every floor (store, ideally water + bucket sink); caretaker rest room/store/workshop central."
+ },
+ {
+  "kid": "K124",
+  "title": "员工餐厅位置",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p238: canteen location near reception and outside access control allows outside visitors in (source is descriptive; \"宜\" is a mild but acceptable reading)."
+ },
+ {
+  "kid": "K127",
+  "title": "餐饮厨房员工休息室",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p180 Catering kitchen staff area: >10 employees → rest/break room necessary (workplace regulations)."
+ },
+ {
+  "kid": "K130",
+  "title": "酒店星级与客房面积",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p172 DEHOGA: 1★ 8/12 m² without bath, washbasin; 2★ 12/16 incl. bath+corridor, bath 70%; 3★ 14/18 all with bath; 4★ 16/22; 5★ 18/26; minimum for 75% of rooms."
+ },
+ {
+  "kid": "K133",
+  "title": "酒店基本功能区",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p171: essential areas lobby/reception, catering connected to lobby, administration, staff, guest rooms, service; p172: 1★ reception as separate area."
+ }
+]

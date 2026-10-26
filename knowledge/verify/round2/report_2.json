@@ -1,0 +1,355 @@
+[
+ {
+  "kid": "K02",
+  "title": "私宅停车",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p166 body: parking reduction possible for private houses; carports cheaper, better in building physics (no condensation) and space-saving."
+ },
+ {
+  "kid": "K05",
+  "title": "退距（Abstandsfläche）",
+  "verdict": "needs_fix",
+  "issues": [
+   "Omits the MBO exception in the same item 5: in front of outside walls of building classes 1 and 2 with ≤3 overground storeys, 3 m depth is sufficient (also 'some LBOs have further exceptions').",
+   "'退距须位于本地块内' omits that setback areas may also lie on public traffic/green/water areas up to their centre, or extend onto other plots secured by public law."
+  ],
+  "corrected_summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；建筑等级 1 和 2、地上不超过三层的建筑外墙前，3 m 深度即足够；各州 LBO 规定不同并有其他例外。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，垂直于墙面测量；坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入。退距须位于本地块内（也可延伸至公共交通、绿地或水域的中线，或延伸至依公法确定不可建造的其他地块）。檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。",
+  "evidence_note": "p64 body items 2, 4, 5, 6 (Design process, setback areas per MBO)."
+ },
+ {
+  "kid": "K08",
+  "title": "最佳坡度与踏步比",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p121 body: physiologically best use of climbing effort at 30° pitch and r/t 17/29."
+ },
+ {
+  "kid": "K11",
+  "title": "必要楼梯宽度与踏步比",
+  "verdict": "needs_fix",
+  "issues": [
+   "Drops the source framing 'according to German standards' and that the value is a minimum usable stair width.",
+   "Context is residential buildings: the same sentence gives ≤2-flat houses min. 0.80 m (17/28), non-essential stairs 0.50 m (21/21), high-rise flats 1.25 m; summary states 1.00 m without this residential/German-standard context."
+  ],
+  "corrected_summary": "按德国标准（住宅建筑），法定必要楼梯（作为疏散路线）的可用梯宽至少 1.00 m、踏步比 17/28；对比：不超过两户的住宅楼梯可用宽度至少 0.80 m（17/28），非必要楼梯 0.50 m（21/21），高层住宅 1.25 m。",
+  "evidence_note": "p120 body: 'According to German standards, residential buildings ... legally essential stairs 1.00 m, 17/28, high-rise flats 1.25 m'."
+ },
+ {
+  "kid": "K14",
+  "title": "螺旋楼梯",
+  "verdict": "supported",
+  "issues": [
+   "Minor: source says 'permissible' (允许); summary reads as a plain statement but conditions are intact."
+  ],
+  "evidence_note": "p124 body: spiral stairs permissible from 190 cm diameter as sole connecting stair inside houses with 80 cm usable width."
+ },
+ {
+  "kid": "K17",
+  "title": "公共建筑楼梯两侧扶手",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p25 body (3) under '§ 50 of MBO': buildings per (2) = publicly accessible buildings; stairs must have handrails on both sides continued past landings, window openings and last steps."
+ },
+ {
+  "kid": "K20",
+  "title": "休息平台宽度不小于梯段宽度",
+  "verdict": "needs_fix",
+  "issues": [
+   "Parenthetical '（沿行进方向的进深）' is an interpretation not in the source caption, which only says 'Landing width ≥ stair width'.",
+   "Omits caption context: stairs with landings are required in legally essential stairways with storey height ≥ 2.75 m."
+  ],
+  "corrected_summary": "楼梯休息平台宽度不小于楼梯宽度；（同一图注）层高 ≥ 2.75 m 的法定必要楼梯须设休息平台。",
+  "evidence_note": "p121 caption 6: 'Stairs with landings are required in legally essential stairways with a storey height of ≥ 2.75 m. Landing width ≥ stair width.'"
+ },
+ {
+  "kid": "K23",
+  "title": "内门净高",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p113 body table: clear opening height of internal doors minimum 210 cm (better 210–225 cm)."
+ },
+ {
+  "kid": "K26",
+  "title": "无障碍门净宽",
+  "verdict": "needs_fix",
+  "issues": [
+   "Scope lost: the ≥0.90 m door width is from the 'Accessible Public Buildings' section (p22), and the step-free entrance ≥0.90 m is MBO §50 (3) for publicly accessible buildings per (2); summary presents both as generic accessible-design rules."
+  ],
+  "corrected_summary": "无障碍公共建筑中，门净通行宽度 ≥ 0.90 m；按 MBO §50，公众可达建筑须至少能经一个净开口宽度 ≥ 0.90 m 且无台阶的入口进入。",
+  "evidence_note": "p22 'Accessible Public Buildings' Doors; p25 MBO §50 (3) referring to publicly accessible buildings (2)."
+ },
+ {
+  "kid": "K29",
+  "title": "无障碍卫生间",
+  "verdict": "needs_fix",
+  "issues": [
+   "Scope lost: both rules come from the 'Accessible Public Buildings' section of p22; summary omits the public-building scope. Also 'per sanitary facility' wording is fine."
+  ],
+  "corrected_summary": "无障碍公共建筑中，所有卫生设施内须至少设一个供轮椅使用者使用的厕所（坐高宜为 48 cm）；厕所、淋浴间和更衣间的门须向外开。",
+  "evidence_note": "p22 'Accessible Public Buildings': Sanitary facilities and Doors paragraphs."
+ },
+ {
+  "kid": "K32",
+  "title": "楼梯起止处活动区",
+  "verdict": "needs_fix",
+  "issues": [
+   "Scope lost: rule is from 'Accessible Public Buildings' (p22); summary is unscoped. (Accessible housing p23 has a similar rule but excludes the uppermost step's tread.)"
+  ],
+  "corrected_summary": "无障碍公共建筑中，上下楼梯旁的活动区宽度至少 1.50 m，首级踏步的踏面不计入活动区。",
+  "evidence_note": "p22 'Accessible Public Buildings' Stairs paragraph."
+ },
+ {
+  "kid": "K35",
+  "title": "无障碍住宅卫浴",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p23 'Accessible Housing' Bathroom + movement areas 1.50×1.50 m (shower, in front of WC and vanity unit)."
+ },
+ {
+  "kid": "K38",
+  "title": "两条独立疏散路线",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p511 body Escape routes: two independent routes; non-ground-level units via essential staircase + second staircase or fire-brigade-reachable point; not required with safety stairwell."
+ },
+ {
+  "kid": "K41",
+  "title": "防火分区与防火墙",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p513 body: MBO fire compartment walls subdividing larger buildings ≤40 m; F 90A; openings generally impermissible, allowed within buildings with T 90 self-closing doors."
+ },
+ {
+  "kid": "K44",
+  "title": "高层建筑的疏散走道",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p246 body High-rise buildings, Escape routes: all values and modalities (should/must/may) match."
+ },
+ {
+  "kid": "K47",
+  "title": "工作间的窗",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p97 body Workrooms (workplace guidelines 1/10 width, sill 0.85–1.25 m should, >3.5 m high ≥30%) and p266 Industry approx. figures 1/10 (≤600 m²), 1/5 fine work."
+ },
+ {
+  "kid": "K50",
+  "title": "玻璃面最小高度 1.3 m",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p97 body: rooms with residential-room dimensions min. glass height 1.3 m; residential: criteria for workrooms can be applied to optimise energy balance."
+ },
+ {
+  "kid": "K53",
+  "title": "办公与工作建筑的朝向",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p241 body Building alignment (Rosenauer / Joedicke, attributed) and p266 Industry Lighting orientation (should)."
+ },
+ {
+  "kid": "K56",
+  "title": "单层外墙与附加保温层",
+  "verdict": "supported",
+  "issues": [
+   "Minor: the p473 render sentence is a general statement about the external side of insulation layers (relevant to external insulation), not specifically tied to the p75 alternative; summary wording keeps it generic, acceptable."
+  ],
+  "evidence_note": "p75 body single-leaf walls; p473 body render on external side of insulating layers."
+ },
+ {
+  "kid": "K59",
+  "title": "背通风外挂层的空气间层",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p473 body rear-ventilated outer skin: air gap min. 20 mm panel, min. 40 mm brickwork."
+ },
+ {
+  "kid": "K62",
+  "title": "平屋面排水坡度",
+  "verdict": "supported",
+  "issues": [
+   "Minor: 'should generally' rendered as 一般至少 (modality slightly softened but acceptable)."
+  ],
+  "evidence_note": "p91 body: flat roof ≤5%; zero slope only exceptional special construction; should generally min. 2%; recommended min. 5% (3°)."
+ },
+ {
+  "kid": "K65",
+  "title": "种植屋面的坡度",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p94 body 'Slopes for roof planting': gabled ≤25° (should not exceed), flat max 2–3%."
+ },
+ {
+  "kid": "K68",
+  "title": "模数协调与标志尺寸",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p35/p34 body: M=100 mm, 3M/6M/12M; nominal dims derived by deducting/adding joint or finish; brick 25/1/24 cm, poured concrete wall 25 cm."
+ },
+ {
+  "kid": "K71",
+  "title": "住宅/商业单元之间的分隔墙",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p514 body Separating walls: fire resistance as load-bearing components of the storey; extend to structural slab (roof cladding in roof spaces)."
+ },
+ {
+  "kid": "K74",
+  "title": "厨房作为居室",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p149 body: kitchen as habitable room clear height ≥2.40 m, window area (structural dimensions) ≥1/8 net floor area."
+ },
+ {
+  "kid": "K77",
+  "title": "住宅面积的计入范围与净尺寸量法",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p136 body: Housing Area Regulation 25/11/2003 for Law to Subsidise House Building; area includes exclusive rooms; measured from face of cladding, in completed room or from drawing."
+ },
+ {
+  "kid": "K80",
+  "title": "阳台面积",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p155 caption: A = 7.0 m² for 3–4 people, B = 9.0 m² for 5–6 people (figure examples; '约' acceptable)."
+ },
+ {
+  "kid": "K83",
+  "title": "设备噪声与安静房间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p480 body (may not be installed in walls of quiet rooms) and p481 body (lifts should be in separate shafts, joints >3 cm mineral fibre)."
+ },
+ {
+  "kid": "K86",
+  "title": "门厅直达厨房、WC 和楼梯",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p147 body Entrance hall: kitchen, WC and staircase should be directly accessible."
+ },
+ {
+  "kid": "K89",
+  "title": "独立住宅每层通往户外",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p139 body: detached house as prototype of owner-occupied house has direct access from each storey to open spaces."
+ },
+ {
+  "kid": "K92",
+  "title": "入户凹口尺寸",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p146 body: entrance recesses should be ≥1.25 m (better 1.50 m) wide, approx. 1.00 m deep, for two people waiting."
+ },
+ {
+  "kid": "K95",
+  "title": "厨房面积与类型",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p150 body: kitchen with dining area from approx. 10 m²; good L arrangement with doors to living room and corridor approx. 14 m²."
+ },
+ {
+  "kid": "K98",
+  "title": "就餐区的朝向与连接",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p154 body: normally S or W; direct connection to kitchen/pantry practical; access to balcony/terrace if possible."
+ },
+ {
+  "kid": "K101",
+  "title": "卧室最小面积",
+  "verdict": "supported",
+  "issues": [
+   "Minor: title says 最小面积 while 16.5 m² is a 'generous' option; summary labels it correctly."
+  ],
+  "evidence_note": "p157 body: approx. 13 m² parents/twin, approx. 8 m² single (minimal space), generous twin 16.5 m²."
+ },
+ {
+  "kid": "K104",
+  "title": "洗衣间",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p163 body Laundry/utility rooms: worktop 1.20 m should; best NE next to/accessible from kitchen; detached houses direct garden access should."
+ },
+ {
+  "kid": "K107",
+  "title": "卫生间朝向、采光与通风",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p160 body (bathroom should face north, natural ventilation/lighting else DIN 18017-3) and p145 body central function zone in deep buildings."
+ },
+ {
+  "kid": "K110",
+  "title": "婴儿车与自行车公共储藏间",
+  "verdict": "supported",
+  "issues": [
+   "p464 evidence (waste storage in Agriculture chapter) is irrelevant to the summary but harmless."
+  ],
+  "evidence_note": "p165 body: building classes 3–5 require communal storeroom; others should; ≥1 vehicle per occupant incl. children; street level, lockable, hooks and stands (should)."
+ },
+ {
+  "kid": "K113",
+  "title": "工位尺寸",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p236 body: desktop ≥120×80 cm (few documents, screen work; specialists ≥200×80 cm) should; free movement area ≥1.5 m² should."
+ },
+ {
+  "kid": "K116",
+  "title": "办公室类型",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p233/p239/p232 body: single-room offices for concentrated work; group offices approx. 4–16; open-plan ≥100 made possible by artificial light/ventilation; requirement for mixed provision."
+ },
+ {
+  "kid": "K119",
+  "title": "工作场所厕所（劳动场所规定）",
+  "verdict": "supported",
+  "issues": [
+   "Minor omission: exception for facilities with only one toilet without direct access to work rooms; not essential."
+  ],
+  "evidence_note": "p270 body (Industry, workplace toilets): 100 m / one storey; >5 employees separate sexes (must) and exclusive to employees (should); lobby with ≥1 washbasin per 5 WCs."
+ },
+ {
+  "kid": "K122",
+  "title": "档案室",
+  "verdict": "needs_fix",
+  "issues": [
+   "2.10 m ceiling clearance is given as a 'favourable' value (alongside favourable window centre-line 2.25–2.50 m), not a fixed requirement; summary states it as a plain fixed value."
+  ],
+  "corrected_summary": "文件室须干燥，因此阁楼和地下室不宜；文件区宜采用净高约 2.10 m（2 层普通办公 = 3 层文件存放；有利的窗中线高度为 2.25–2.50 m）；档案室宜按 7.5–12.5 kN/m² 的较高楼面荷载设计（针对移动式密集架）。",
+  "evidence_note": "p237 body: 'A favourable window centre-line is 2.25–2.50 m, ceiling clearance height 2.10 m (2 storeys ... = 3 storeys of filing). The rooms must be dry...'; p238 archive rooms 7.5–12.5 kN/m²."
+ },
+ {
+  "kid": "K125",
+  "title": "组团办公室到窗距离",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p233 body: group rooms for work groups with constant exchange; max. 7.5 m to a window."
+ },
+ {
+  "kid": "K128",
+  "title": "研讨室的规模与进深",
+  "verdict": "supported",
+  "issues": [
+   "Source prints '1.90–2.00 m' (unit evidently m²); 'should not exceed' rendered as 不超过 — modality slightly firmer but acceptable."
+  ],
+  "evidence_note": "p202 body Universities: seminar sizes 20/40/50/60; 1.90–2.00 per student; one-side ventilation depth ≤2.5× clear height (should)."
+ },
+ {
+  "kid": "K131",
+  "title": "汽车旅馆",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p186 body Motels: rooms 4×4–5×5 m with bathroom (sometimes kitchenette); mostly single-storey spread; parking as near room as possible."
+ },
+ {
+  "kid": "K134",
+  "title": "餐厅与厨房、卫生间的组织",
+  "verdict": "supported",
+  "issues": [],
+  "evidence_note": "p175 body (kitchen, side rooms, toilets grouped around dining room, also in basement) and p180 body (servery ideally between preparation and dining room)."
+ }
+]

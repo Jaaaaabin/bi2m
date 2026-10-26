@@ -1,0 +1,123 @@
+K,title,their_status,their_applicable,their_judged,my_rules,my_context,my_fires
+K61,Thermal resistance and U-value calculation,deferred,364,0,R98,349,349
+K65,Vapour barrier on the warm side,deferred,364,0,R45,288,288
+K70,Building classes and load-bearing wall fire resistance,deferred,358,0,R20,369,369
+K11,Essential stair width and riser/tread ratio,widened,354,354,"R05,R25",364,364
+K19,Non-essential stairs,bound,354,354,R56,364,0
+K07,Step-length (comfort) formula,bound,354,347,R03,364,347
+K09,Number of steps per run,widened,354,347,"R04,R25",364,357
+K08,Optimum pitch and riser/tread ratio,bound,354,303,R03,364,347
+K57,Single-leaf external walls and additional insulation,deferred,353,0,R95,64,64
+K58,Cavity walls: outer leaf and air gap,deferred,353,0,R96,33,33
+K59,Concrete external walls need additional insulation,deferred,353,0,R08,200,200
+K73,Combustibility of external walls and claddings,deferred,353,0,R21,349,349
+K147,Façade mullions and partition connections,deferred,345,0,R46,287,287
+K23,Clear height of internal doors,partial,345,340,"R07,R42",369,369
+K40,Escape windows,partial,342,0,R93,337,12
+K10,Landings,deferred,341,0,"R04,R26",364,356
+K15,"Railing heights for galleries, mezzanines, balconies",widened,337,322,R06,337,337
+K112,Clear ceiling height in offices,bound,335,335,R02,220,220
+K74,Minimum requirements for habitable rooms,bound,326,326,R76,81,81
+K24,Door types at emergency exits,widened,325,319,R43,315,315
+K17,Handrails on both sides (public buildings),deferred,322,0,R05,364,364
+K38,Escape distance,bound,321,253,R23,229,229
+K134,Staircase spacing (30 m / 60 m),partial,321,76,R23,229,229
+K52,Window width for view out,deferred,316,0,R39,207,207
+K136,Single-room offices: no furniture in escape routes,deferred,291,0,R87,218,218
+K90,Detached house: open-space access per storey,widened,287,18,R80,97,97
+K44,F 30 side walls of escape corridors,deferred,275,0,R30,310,157
+K47,Subdividing long corridors; stairway closures,deferred,275,0,R65,311,136
+K109,Bathroom types,deferred,274,0,R82,267,267
+K63,Drainage slope of flat roofs,bound,268,93,R45,288,288
+K66,Slope of green roofs,deferred,268,0,R99,15,15
+K69,Modular coordination and nominal dimensions,deferred,265,0,R102,370,370
+K131,Fit-out grid equals façade grid,deferred,265,0,R16,238,238
+K132,Grid module and building depth,deferred,265,0,"R16,R17",238,238
+K120,Workplace toilets (workplace regulations),partial,260,118,"R11,R32",252,234
+K122,Cleaner's room and caretaker's rooms,widened,225,225,R34,238,238
+K113,Total area per workstation,widened,225,156,"R09,R18",177,177
+K141,Area per workstation (immediate and traffic),widened,225,156,"R09,R18",177,177
+K119,Office toilets and tea kitchens,partial,225,154,"R11,R33",238,167
+K48,Windows in workrooms,deferred,221,0,R38,259,235
+K115,"Office depth, room width and module",deferred,221,0,R16,238,238
+K116,Building depth and daylight depth,deferred,221,0,"R10,R17,R39",260,260
+K117,Office types,deferred,221,0,R36,80,80
+K124,Office entrance area,deferred,221,0,R35,238,238
+K133,"Single-, two- and three-row layouts",deferred,221,0,R15,234,234
+K135,Combi-office,deferred,221,0,R70,10,0
+K129,Seminar room size and depth,widened,201,157,R85,10,10
+K67,Pitched roof insulation and ventilation,deferred,201,0,R100,119,119
+K118,Conference area,deferred,201,0,"R12,R35",253,253
+K128,Staff rest room in catering kitchens,deferred,182,0,R84,24,0
+K20,Landing width ≥ stair width,deferred,153,0,R04,364,332
+K43,Main stairs in a continuous stairwell,deferred,152,0,R24,360,360
+K114,Workstation dimensions,deferred,149,0,R37,233,233
+K126,Group room distance to window,deferred,149,0,R36,80,80
+K140,Components of workstation area,deferred,149,0,R37,233,233
+K142,Screen workstations and windows,deferred,149,0,R89,226,0
+K91,One or three flats per floor,widened,96,41,R59,72,0
+K94,Mandatory kitchen and storeroom per dwelling,widened,92,92,R68,97,97
+K103,Bathroom,widened,92,92,R68,97,97
+K82,Connections to open spaces,widened,92,8,R77,15,15
+K83,Lifts and flats per floor,widened,92,1,R58,97,44
+K37,Movement area widths in barrier-free dwellings,deferred,92,0,R75,91,0
+K39,Two independent escape routes,deferred,92,0,R22,366,366
+K76,Calculating the living area,deferred,92,0,R66,97,97
+K78,Living area: scope and clear measurement,deferred,92,0,R66,97,97
+K85,Grouped plan and central corridor plan,deferred,92,0,R67,97,0
+K107,Storage space within the flat,deferred,92,0,R69,97,97
+K87,"Kitchen, WC and stairs off hall",widened,90,62,R78,55,55
+K68,Sound insulation of party walls,deferred,80,0,R101,0,0
+K72,Separating walls between residential/commercial units,deferred,80,0,R31,1,1
+K30,Barrier-free lifts,deferred,73,0,R28,77,77
+K34,Accessible floor in multi-flat buildings,deferred,72,0,R63,97,9
+K18,Lift waiting area,deferred,70,0,R28,77,77
+K22,Usual door widths in housing,deferred,69,0,R91,97,97
+K93,Entrance recess dimensions,deferred,69,0,R81,80,0
+K36,Living room in wheelchair users' dwellings,deferred,64,0,R74,72,0
+K35,Barrier-free bathrooms in dwellings,deferred,50,0,R73,74,0
+K41,Exit width by number of people,deferred,49,0,R43,315,315
+K125,Staff restaurant location,deferred,46,0,R35,238,238
+K148,Light partitions: sound insulation and continuation,deferred,31,0,R46,287,287
+K137,Depth of open-plan offices,bound,29,24,R88,36,36
+K89,Corridor width within the dwelling,deferred,29,0,R79,70,70
+K25,Flat front doors accessed by lift,widened,24,24,R92,25,0
+K12,Stairs for up to two flats,deferred,20,0,R54,94,0
+K14,Spiral staircases,deferred,20,0,R55,64,64
+K145,Data centres and server rooms,deferred,17,0,R41,20,20
+K13,Outside stairs and office stairs,bound,16,7,R26,232,232
+K42,Fire compartments and fire compartment walls,deferred,14,0,R19,370,206
+K121,Volume per person in halls,deferred,10,0,R83,201,201
+K130,Offices for university academic staff,deferred,10,0,R86,6,0
+K77,Balconies in the living area,deferred,8,0,R66,97,97
+K81,Balcony area,deferred,8,0,R77,15,15
+K123,Filing and archive rooms,partial,7,7,R40,6,6
+K16,Barrier-free ramps,deferred,7,0,R29,7,7
+K143,Filing: space and location,deferred,7,0,R40,6,6
+K53,Working area distance from window,deferred,2,0,R39,207,207
+K01,High-rise buildings,deferred,1,0,R01,370,1
+K45,Escape corridors in high-rise buildings,deferred,1,0,R64,0,0
+K46,Storey-to-storey fire protection of high-rise façades,deferred,1,0,R94,1,1
+K60,Air gap behind rear-ventilated skins,deferred,1,0,R97,0,0
+K150,"High-rise emergency stairs: wellhole, smoke outlet, exit",deferred,1,0,R61,1,1
+K151,Lift groups in high-rise buildings,deferred,1,0,R62,0,0
+K152,High-rise building groups,deferred,1,0,R52,1,1
+K153,Use restrictions for high-rise buildings,deferred,1,0,R53,1,0
+K154,Cleaning of high-rise windows,deferred,1,0,R103,1,0
+K05,Setback areas (Abstandsfläche),deferred,0,0,R13,349,349
+K06,Plot coverage ratio and floor-area ratio,deferred,0,0,R48,370,370
+K26,Clear width of barrier-free doors,deferred,0,0,"R07,R42",369,369
+K27,Step-free access and public-building scope,deferred,0,0,R27,256,256
+K28,Wheelchair movement space,deferred,0,0,R71,256,256
+K29,Barrier-free toilets,deferred,0,0,R32,189,189
+K32,Movement area beside stairs,deferred,0,0,R57,250,250
+K33,Wheelchair passing places in long corridors,deferred,0,0,R72,182,150
+K79,DIN 277 area categories and lettable area,deferred,0,0,R49,370,370
+K80,DIN 277 gross and net built volume,deferred,0,0,R50,366,366
+K92,Terraced house depth and width,deferred,0,0,R51,97,0
+K127,Corridors within small use units,deferred,0,0,R30,310,157
+K138,Space saving of hot-desk offices,deferred,0,0,,,
+K139,Reversible office buildings (for letting),deferred,0,0,,,
+K144,Post room,deferred,0,0,R90,0,0
+K146,Effect of full air conditioning on building volume,deferred,0,0,,,
+K149,Fire service lift (above 30 m),deferred,0,0,R60,0,0

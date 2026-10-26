@@ -1,0 +1,11 @@
+{
+  "luna/open": {
+    "n": 2,
+    "accuracy": 1.0,
+    "labels": {
+      "correct": 2
+    },
+    "needs_review": 0,
+    "median_latency_s": 12.91
+  }
+}

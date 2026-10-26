@@ -1,0 +1,1097 @@
+id,question,ground_truth,ifc_model,project,category,split
+136,What type of building is this and where is it situated?,"Building Information:
+   - Project Name: 2018_01
+   - Building Name: DigitalHub
+   - Site/Location: DH Liegenschaft
+   
+   Building Type Analysis:
+   - Office building
+   - 3-story structure with mixed-use spaces",arc,digital_hub,1,test
+137,"What is the building's total floor area, number of levels, total spaces, and program breakdown by floor?","Building Scale:
+   - Total Floor Area: 2842.1 sq m
+   - Number of Levels: 3 storeys
+   - Total Spaces: 64 spaces
+   - Building Classification: Mid-rise office building
+   
+   Building Program:
+   - Level B01_OKRD: Technical/basement level
+   - Level E00_OKRD: Ground floor - public/commercial spaces
+   - Level E01_OKRD: Upper floor - office/workspace areas",arc,digital_hub,2,train
+138,Which software tools and modeling standards were applied?,"Modeling Standards:
+   - IFC Schema: IFC4
+   - File Format: Industry Foundation Classes (IFC)
+   
+   File Description:
+   - ViewDefinition [ReferenceView_V1.2]
+   - ExchangeRequirement [Architecture]
+   
+   Originating Application:
+   - Software: 20190108_1515(x64) - Exporter 19.5.0.0 - Alternative BenutzeroberflÖ§che 19.5.0.0",arc,digital_hub,1,test
+139,"What is the complete space breakdown for all building levels, listing room names and areas?","B01_OKRD:
+   - RLT-Raum (0-10): 206.4 sq m
+   - Flur - UG (0-1): 105.0 sq m
+   - Heizzentrale (0-5): 54.0 sq m
+   - Lager2 (0-8): 26.5 sq m
+   - NSHV (0-6): 26.5 sq m
+   - Lager 1 (0-7): 26.5 sq m
+   - Wasser-/Gasverteilung (0-4): 26.5 sq m
+   - Hausanschluss (0-3): 26.5 sq m
+   - Treppenhaus Ost - UG (0-11): 19.8 sq m
+   - Treppenhaus West - UG (0-12): 19.8 sq m
+   - Putzmittel (0-2): 10.3 sq m
+   - BMZ (0-9): 10.3 sq m
+   Total B01_OKRD Area: 558.1 sq m
+
+   E00_OKRD:
+   - Eingangsbereich / Flur (1-1): 383.6 sq m
+   - Cafeteria (1-2): 114.5 sq m
+   - Open Workspace EG (1-7): 113.2 sq m
+   - Veranstaltungsraum (1-12): 76.5 sq m
+   - VR/AR LAB (1-11): 74.1 sq m
+   - GruppenbÖºro 5 (1-9): 37.2 sq m
+   - GruppenbÖºro 2 (1-5): 37.2 sq m
+   - GruppenbÖºro 3 (1-6): 37.2 sq m
+   - GruppenbÖºro 4 (1-8): 37.2 sq m
+   - GruppenbÖºro 6 (1-10): 36.9 sq m
+   - GruppenbÖºro 1 (1-4): 36.9 sq m
+   - KÖºche (1-3): 35.9 sq m
+   - Treppenhaus West - EG (1-19): 19.6 sq m
+   - Treppenhaus Ost - EG (1-17): 19.6 sq m
+   - WC Damen West - EG (1-15): 14.2 sq m
+   - WC Damen Ost - EG (13): 14.1 sq m
+   - WC Herren West - EG (1-16): 13.0 sq m
+   - WC Herren Ost - EG (14): 13.0 sq m
+   - Fluchtflur West (1-20): 7.9 sq m
+   - Fluchtflur Ost (1-18): 7.9 sq m
+   - Aufzug West (300): 5.2 sq m
+   - Aufzug Ost (400): 5.2 sq m
+   - Schacht West 2 (302): 4.5 sq m
+   - Schacht Ost 2 (402): 4.5 sq m
+   - Schacht Ost 1 (401): 4.0 sq m
+   - Schacht West 1 (301): 4.0 sq m
+   Total E00_OKRD Area: 1156.9 sq m
+
+   E01_OKRD:
+   - Flur - OG (2-1): 286.7 sq m
+   - Open Workspace 2 (2-7): 112.6 sq m
+   - Seminarraum GroÖü - teilbar (2-17): 76.2 sq m
+   - Offene Lounge 2 (2-15): 38.7 sq m
+   - Offene Lounge 1 (2-6): 38.0 sq m
+   - Seminarraum (2-16): 37.7 sq m
+   - GruppenbÖºro 15 (2-19): 37.7 sq m
+   - GruppenbÖºro 14 (2-18): 37.7 sq m
+   - GruppenbÖºro 13 (2-14): 37.6 sq m
+   - GruppenbÖºro 12 (2-13): 37.5 sq m
+   - GruppenbÖºro 16 (2-20): 37.4 sq m
+   - GruppenbÖºro 9 (2-8): 37.0 sq m
+   - GruppenbÖºro 10 (2-9): 37.0 sq m
+   - GruppenbÖºro 8 (2-5): 37.0 sq m
+   - GruppenbÖºro 11 (2-10): 36.7 sq m
+   - GruppenbÖºro 7 (2-4): 36.7 sq m
+   - Konferenzraum 3 (2-11): 21.9 sq m
+   - Konferenzraum 1 (2-3): 21.9 sq m
+   - Konferenzraum 4 (2-12): 21.3 sq m
+   - Konferenzraum 2 (2-2): 21.3 sq m
+   - Treppenhaus Ost - OG (2-26): 19.6 sq m
+   - Treppenhaus West - OG (2-25): 19.6 sq m
+   - WC Herren West OG (2-22): 9.8 sq m
+   - WC Damen Ost - OG (2-23): 9.8 sq m
+   - WC Damen West - OG (2-21): 9.8 sq m
+   - WC Herren Ost - OG (2-24): 9.8 sq m
+   Total E01_OKRD Area: 1127.1 sq m
+
+   TOTAL BUILDING AREA: 2842.1 sq m",arc,digital_hub,1,train
+140,"What spaces are on Level B01_OKRD, with their room names and areas?","B01_OKRD (Basement Level):
+   - RLT-Raum (0-10): 206.4 sq m
+   - Flur - UG (0-1): 105.0 sq m
+   - Heizzentrale (0-5): 54.0 sq m
+   - Lager2 (0-8): 26.5 sq m
+   - NSHV (0-6): 26.5 sq m
+   - Lager 1 (0-7): 26.5 sq m
+   - Wasser-/Gasverteilung (0-4): 26.5 sq m
+   - Hausanschluss (0-3): 26.5 sq m
+   - Treppenhaus Ost - UG (0-11): 19.8 sq m
+   - Treppenhaus West - UG (0-12): 19.8 sq m
+   - Putzmittel (0-2): 10.3 sq m
+   - BMZ (0-9): 10.3 sq m
+   Total B01_OKRD Area: 558.1 sq m",arc,digital_hub,1,train
+141,"What spaces are on Level E00_OKRD, with their room names and areas?","E00_OKRD (Ground Level):
+   - Eingangsbereich / Flur (1-1): 383.6 sq m
+   - Cafeteria (1-2): 114.5 sq m
+   - Open Workspace EG (1-7): 113.2 sq m
+   - Veranstaltungsraum (1-12): 76.5 sq m
+   - VR/AR LAB (1-11): 74.1 sq m
+   - GruppenbÖºro 5 (1-9): 37.2 sq m
+   - GruppenbÖºro 2 (1-5): 37.2 sq m
+   - GruppenbÖºro 3 (1-6): 37.2 sq m
+   - GruppenbÖºro 4 (1-8): 37.2 sq m
+   - GruppenbÖºro 6 (1-10): 36.9 sq m
+   - GruppenbÖºro 1 (1-4): 36.9 sq m
+   - KÖºche (1-3): 35.9 sq m
+   - Treppenhaus West - EG (1-19): 19.6 sq m
+   - Treppenhaus Ost - EG (1-17): 19.6 sq m
+   - WC Damen West - EG (1-15): 14.2 sq m
+   - WC Damen Ost - EG (13): 14.1 sq m
+   - WC Herren West - EG (1-16): 13.0 sq m
+   - WC Herren Ost - EG (14): 13.0 sq m
+   - Fluchtflur West (1-20): 7.9 sq m
+   - Fluchtflur Ost (1-18): 7.9 sq m
+   - Aufzug West (300): 5.2 sq m
+   - Aufzug Ost (400): 5.2 sq m
+   - Schacht West 2 (302): 4.5 sq m
+   - Schacht Ost 2 (402): 4.5 sq m
+   - Schacht Ost 1 (401): 4.0 sq m
+   - Schacht West 1 (301): 4.0 sq m
+   Total E00_OKRD Area: 1156.9 sq m",arc,digital_hub,1,train
+142,"What spaces are on Level E01_OKRD, with their room names and areas?","E01_OKRD (First Level):
+   - Flur - OG (2-1): 286.7 sq m
+   - Open Workspace 2 (2-7): 112.6 sq m
+   - Seminarraum GroÖü - teilbar (2-17): 76.2 sq m
+   - Offene Lounge 2 (2-15): 38.7 sq m
+   - Offene Lounge 1 (2-6): 38.0 sq m
+   - Seminarraum (2-16): 37.7 sq m
+   - GruppenbÖºro 15 (2-19): 37.7 sq m
+   - GruppenbÖºro 14 (2-18): 37.7 sq m
+   - GruppenbÖºro 13 (2-14): 37.6 sq m
+   - GruppenbÖºro 12 (2-13): 37.5 sq m
+   - GruppenbÖºro 16 (2-20): 37.4 sq m
+   - GruppenbÖºro 9 (2-8): 37.0 sq m
+   - GruppenbÖºro 10 (2-9): 37.0 sq m
+   - GruppenbÖºro 8 (2-5): 37.0 sq m
+   - GruppenbÖºro 11 (2-10): 36.7 sq m
+   - GruppenbÖºro 7 (2-4): 36.7 sq m
+   - Konferenzraum 3 (2-11): 21.9 sq m
+   - Konferenzraum 1 (2-3): 21.9 sq m
+   - Konferenzraum 4 (2-12): 21.3 sq m
+   - Konferenzraum 2 (2-2): 21.3 sq m
+   - Treppenhaus Ost - OG (2-26): 19.6 sq m
+   - Treppenhaus West - OG (2-25): 19.6 sq m
+   - WC Herren West OG (2-22): 9.8 sq m
+   - WC Damen Ost - OG (2-23): 9.8 sq m
+   - WC Damen West - OG (2-21): 9.8 sq m
+   - WC Herren Ost - OG (2-24): 9.8 sq m
+   Total E01_OKRD Area: 1127.1 sq m",arc,digital_hub,1,test
+143,Which room in the building is the largest?,"Largest Room: Eingangsbereich / Flur (1-1)
+   Area: 383.6 sq m
+   Level: E00_OKRD",arc,digital_hub,1,test
+144,What are the dimensions and parking capacity of the lot?,The gross area of the parking lot is 637.33 sq m. It has 26 available parking spaces.,arc,digital_hub,2,test
+145,"Which installations or equipment are found in the parking lot, with their quantities?","Installed in the parking lot are:
+   - E-Ladestation - 03: Typ1: 13 stations
+   - Anfahrschutz Rohr: 1000 x 700: 26 elements",arc,digital_hub,2,train
+146,"Which doors are installed in this building, showing distribution by type?","Total Doors: 64
+
+   Door Types:
+   - TU DF 1 - Rahmenstock flÖ§chenbÖºndig: 44 doors (69%)
+   - TU DF 1 - FluchttÖºre Endausgang: 8 doors (12%)
+   - TU DF 1 - Stahl-Eckzarge FalztÖºre: 8 doors (12%)
+   - TU Fassade - 1-flg-DrehflÖºgel: 2 doors (3%)
+   - TU DF 2 - Rahmenstock flÖ§chenbÖºndig: 2 doors (3%)",arc,digital_hub,2,train
+147,"Which types of windows are present in the building, with quantity distribution?","Total Windows: 47
+
+   Window Types:
+   - FE 3 tlg - DK-Fix im Rahmen-DK-2: 35 windows (74%)
+   - FE 2 tlg - DK Fix mit Pfosten - 2: 8 windows (17%)
+   - FE 1 tlg - DrehKipp: 4 windows (9%)",arc,digital_hub,2,test
+148,"What wall types are used in the building, along with their quantities?","Total Walls: 178
+
+   Wall Types:
+   - Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt  (MW12BF): 46 walls (25.8%)
+   - Basiswand:STB 200: 45 walls (25.3%)
+   - Basiswand:STB 250: 25 walls (14.0%)
+   - Basiswand:GK 75 - Toilettentrennwand: 16 walls (9.0%)
+   - Basiswand:WD hart 200: 12 walls (6.7%)
+   - Basiswand:Leichtbetonmauerwerk 250: 10 walls (5.6%)
+   - Basiswand:GK 100 - Doppelbeplankt: 8 walls (4.5%)
+   - Basiswand:STB 300: 4 walls (2.2%)
+   - Basiswand:WD 200 + Luft 40 + Bekleidung 12: 4 walls (2.2%)
+   - Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt - SanitÖ§r: 4 walls (2.2%)
+   - Basiswand:GK VS - SanitÖ§r: 4 walls (2.2%)",arc,digital_hub,2,train
+149,"Which walls are used for the exterior of the building, with type distribution?","Total Exterior Walls: 100
+
+   Exterior Wall Types:
+   - Basiswand:STB 200: 45 walls (45.0%)
+   - Basiswand:STB 250: 25 walls (25.0%)
+   - Basiswand:WD hart 200: 12 walls (12.0%)
+   - Basiswand:Leichtbetonmauerwerk 250: 10 walls (10.0%)
+   - Basiswand:STB 300: 4 walls (4.0%)
+   - Basiswand:WD 200 + Luft 40 + Bekleidung 12: 4 walls (4.0%)",arc,digital_hub,2,train
+150,"What walls are used on the interior side of the building, showing quantity breakdown?","Total Interior Walls: 78
+
+   Interior Wall Types:
+   - Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt  (MW12BF): 46 walls (59.0%)
+   - Basiswand:GK 75 - Toilettentrennwand: 16 walls (20.5%)
+   - Basiswand:GK 100 - Doppelbeplankt: 8 walls (10.3%)
+   - Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt - SanitÖ§r: 4 walls (5.1%)
+   - Basiswand:GK VS - SanitÖ§r: 4 walls (5.1%)",arc,digital_hub,2,train
+151,"What is the building's total gross floor area, with breakdown by level?","Total Gross Floor Area: 2842.1 sq m
+
+    Area by Level:
+    - B01_OKRD: 558.1 sq m (19.6%)
+    - E00_OKRD: 1156.9 sq m (40.7%)
+    - E01_OKRD: 1127.1 sq m (39.7%)",arc,digital_hub,2,train
+152,What are the heights of the ceilings?,"Ceiling Heights by Level:
+    - B01_OKRD: 3.22 m
+    - E00_OKRD: 3.90 m
+    - E01_OKRD: 3.65 m",arc,digital_hub,1,test
+153,Which materials are used for the walls?,"Wall Materials by Type:
+
+   Basiswand:Leichtbetonmauerwerk 250:
+     - Leichtbeton - Mauerwerk
+
+   Basiswand:STB 200:
+     - Ortbeton - bewehrt
+
+   Basiswand:STB 250:
+     - Ortbeton - bewehrt
+
+   Basiswand:STB 300:
+     - Ortbeton - bewehrt Verputzt
+
+   Basiswand:WD hart 200:
+     - DÖ§mmung - hart
+
+   Basiswand:GK 100 - Doppelbeplankt:
+     - Trockenbau - Gipsplatte
+     - DÖ§mmung - weich
+
+   Basiswand:GK 75 - Toilettentrennwand:
+     - Trockenbau - Gipsplatte
+     - DÖ§mmung - weich
+
+   Basiswand:GK VS - SanitÖ§r:
+     - Trockenbau - Gipsplatte
+     - DÖ§mmung - weich
+   
+   Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt  (MW12BF):
+     - Trockenbau - Rigips Die Blaue RFI
+     - Default Wall
+   
+   Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt - SanitÖ§r:
+     - Trockenbau - Rigips Die Blaue RFI
+     - Steinwolle (Rockwool Fixrock033 VS)
+     - Luftschicht
+   
+   Basiswand:WD 200 + Luft 40 + Bekleidung 12:
+     - Faserzementplatte (Equitone - natura)
+     - Luftschicht
+     - Steinwolle (Rockwool Fixrock033 VS)",arc,digital_hub,1,test
+154,What materials are used on the building's exterior walls?,"Exterior Wall Materials by Type:
+
+   Basiswand:STB 200:
+     - Ortbeton - bewehrt
+
+   Basiswand:STB 250:
+     - Ortbeton - bewehrt
+
+   Basiswand:WD hart 200:
+     - DÖ§mmung - hart
+
+   Basiswand:Leichtbetonmauerwerk 250:
+     - Leichtbeton - Mauerwerk
+
+   Basiswand:STB 300:
+     - Ortbeton - bewehrt Verputzt
+
+   Basiswand:WD 200 + Luft 40 + Bekleidung 12:
+     - Faserzementplatte (Equitone - natura)
+     - Luftschicht
+     - Steinwolle (Rockwool Fixrock033 VS)",arc,digital_hub,1,train
+155,Which materials are used in the interior walls?,"Interior Wall Materials by Type:
+
+   Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt  (MW12BF):
+     - Trockenbau - Rigips Die Blaue RFI
+     - Default Wall
+
+   Basiswand:GK 75 - Toilettentrennwand:
+     - Trockenbau - Gipsplatte
+     - DÖ§mmung - weich
+
+   Basiswand:GK 100 - Doppelbeplankt:
+     - Trockenbau - Gipsplatte
+     - DÖ§mmung - weich
+
+   Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt - SanitÖ§r:
+     - Trockenbau - Rigips Die Blaue RFI
+     - Steinwolle (Rockwool Fixrock033 VS)
+     - Luftschicht
+
+   Basiswand:GK VS - SanitÖ§r:
+     - Trockenbau - Gipsplatte
+     - DÖ§mmung - weich",arc,digital_hub,1,train
+156,"Which materials are applied in the ceilings, including element counts?","Ceiling Systems: 38 elements
+    Ceiling Types:
+    - Deckensystem: 38 elements",arc,digital_hub,2,train
+157,What thicknesses do the different wall types have?,"Wall Thickness by Type:
+   - Basiswand:GK 100 - Doppelbeplankt: 0.100 m (100 mm)
+   - Basiswand:GK 75 - Toilettentrennwand: 0.075 m (75 mm)
+   - Basiswand:GK VS - SanitÖ§r: 0.065 m (65 mm)
+   - Basiswand:Leichtbetonmauerwerk 250: 0.250 m (250 mm)
+   - Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt  (MW12BF): 0.150 m (150 mm)
+   - Basiswand:Metall-EinfachstÖ§nderwand 2-lagig beplankt - SanitÖ§r: 0.400 m (400 mm)
+   - Basiswand:STB 200: 0.200 m (200 mm)
+   - Basiswand:STB 250: 0.250 m (250 mm)
+   - Basiswand:STB 300: 0.300 m (300 mm)
+   - Basiswand:WD 200 + Luft 40 + Bekleidung 12: 0.252 m (252 mm)
+   - Basiswand:WD hart 200: 0.200 m (200 mm)",arc,digital_hub,1,test
+158,How many walls are load-bearing compared with non-load-bearing?,"Wall Load-Bearing Classification:
+    - Load-bearing walls: 0 (0.0%)
+    - Non-load-bearing walls: 178 (100.0%)
+    - Total classified: 178 of 178 walls",arc,digital_hub,2,train
+159,What is the total combined length of the exterior and interior walls?,"Wall Lengths:
+   - Total Exterior Walls: 1416.18 m
+   - Total Interior Walls: 508.91 m
+   - Total All Walls: 1925.09 m
+
+   Distribution:
+   - Exterior: 73.6%
+   - Interior: 26.4%",arc,digital_hub,2,test
+160,Which furniture items are located in the building?,No furniture found in this building model,arc,digital_hub,1,test
+161,What is the facade's total surface area?,"Using the IFC's explicit exterior-wall classification, the 100 IfcWall objects where Pset_WallCommon.IsExternal is true have a stored gross side area of 4,565.49 sq m. The separate IfcCurtainWall named Fassade:Standard:2542860 has no stored area quantity, so its decomposed members are represented by a 6.0 m by 3.0 m elevation bounding-box estimate of 18.0 sq m. Including that estimate gives a total gross vertical facade area of 4,583.49 sq m; the 18.0 sq m term is not a meshed surface-area measurement.",arc,digital_hub,3,train
+162,"What is the building's average door width, including maximum and minimum?","Average door width: 1.00 m
+    Maximum door width: 1.64 m
+    Minimum door width: 0.80 m
+    Doors with width data: 62/64",arc,digital_hub,2,test
+163,Which door has the largest width in the building?,Largest door width: 1.64 m,arc,digital_hub,2,train
+164,"What kinds of stairs are used here, with quantities by type?","Total Stairs: 5
+    Total Stair Flights: 10
+    Stair Types:
+    - Fertigbetontreppe: 4 stairs
+    - Zusammengebaute Treppe: 1 stairs",arc,digital_hub,2,test
+165,"Which floor slab types are present, and how many of each?","Floor Slabs: 14
+    Floor Slab Types:
+    - Geschossdecke: 14 slabs",arc,digital_hub,2,train
+166,"Which coverings are applied throughout the building, with element counts?","Total Coverings: 38
+    Covering Types:
+    - Deckensystem: 38 elements",arc,digital_hub,2,test
+167,"Which types of railings are installed, including element counts?","Total Railings: 13
+    Railing Types:
+    - GelÖ§nder: 13 elements",arc,digital_hub,2,test
+168,Which spaces have the tallest ceiling heights?,"Spaces by Ceiling Height (Top 10):
+    - Aufzug Ost (400): 10.77 m
+    - Aufzug West (300): 10.77 m
+    - Schacht West 1 (301): 7.77 m
+    - Schacht West 2 (302): 7.77 m
+    - Schacht Ost 2 (402): 7.77 m
+    - Schacht Ost 1 (401): 7.77 m
+    - Flur - OG (2-1): 4.40 m
+    - Treppenhaus West - EG (1-19): 3.90 m
+    - Treppenhaus Ost - EG (1-17): 3.90 m
+    - Eingangsbereich / Flur (1-1): 3.75 m",arc,digital_hub,2,test
+169,"How is the building's space utilized by function, with area distribution?","Space Utilization by Function:
+    - Other: 1105.1 sq m (38.9%)
+    - Circulation: 909.2 sq m (32.0%)
+    - Office: 594.8 sq m (20.9%)
+    - Restroom: 93.6 sq m (3.3%)
+    - Conference/Meeting: 86.4 sq m (3.0%)
+    - Storage: 53.0 sq m (1.9%)",arc,digital_hub,3,test
+170,Is fire rating information available for doors in this model?,Fire rating information for doors not available in this model,arc,digital_hub,4,test
+171,Is fire rating data available for windows in this model?,Fire rating information for windows not available in this model,arc,digital_hub,4,test
+172,"What is the structural system applied in this building, including element counts?","Structural System: Reinforced Concrete Frame Construction
+
+   Structural Elements:
+   - Beams: 14 elements
+   - Columns: 62 elements
+   - Slabs: 23 elements
+   - Members: 80 elements
+   - Roof Elements: 3 elements
+   - Plates: 25 elements
+
+   Total Structural Elements: 207",arc,digital_hub,2,train
+173,"Which beam types are present in the building, with quantities?","Total Beams: 14
+   
+   Beam Types:
+   - STB TrÖ§ger - rechteckig:STB 250 x 500: 14 beams (100.0%)",arc,digital_hub,2,train
+174,"Which columns are used in the building, showing distribution by type?","Total Columns: 62
+
+   Column Types:
+   - STB StÖºtze - rechteckig:STB 250 x 400: 32 columns (51.6%)
+   - STB StÖºtze - rechteckig:STB 250 x 250: 30 columns (48.4%)",arc,digital_hub,2,train
+175,What materials are used for the structural system?,"Structural Materials Used:
+   - Leichtbeton - Mauerwerk
+   - Metall - Edelstahl gebÖºrstet
+   - Metall - Edelstahl satiniert
+   - Metall - Zink
+   - Ortbeton - bewehrt
+   - Ortbeton - bewehrt Verputzt",arc,digital_hub,1,train
+176,What are the spans and sizes of the beams?,"Information not available in BIM model
+   Beam span and sizing information requires structural analysis data",arc,digital_hub,4,test
+177,Which foundation system is used?,"Information not available in BIM model
+   Foundation system details not included in architecture file",arc,digital_hub,4,train
+178,"Could you provide a breakdown of all slab types in the building with their quantities and percentages, and include any available thickness information?","Total Slabs: 23
+
+Slab Types Distribution:
+- Geschossdecke:FB 150 leer: 6 slabs (26.1%)
+- Massivtreppenpodest:Podest 180: 4 slabs (17.4%)
+- Sohle:Sohle 1 mm: 3 slabs (13.0%)
+- Geschossdecke:STB 250: 2 slabs (8.7%)
+- Geschossdecke:STB 220: 2 slabs (8.7%)
+- Geschossdecke:WD 200 hart: 2 slabs (8.7%)
+- Bodenplatte:STB 300: 1 slab (4.3%)
+- Podest (nicht massiv):Podest (nicht massiv): 1 slab (4.3%)
+- Geschossdecke:FB 100 leer: 1 slab (4.3%)
+- Geschossdecke:STB 200 + WD 200: 1 slab (4.3%)
+
+Available Thickness Information:
+- Geschossdecke:STB 250:2396591: 250mm thickness",arc,digital_hub,2,train
+179,"What type of structural system is used in the building, and how is the structural grid determined?","Based on the structural elements available in the model, the structural system is most probably flat slab structures with reinforced concrete columns and slabs. Therefore, the structural grid can be derived based on the placement of columns.",arc,digital_hub,3,train
+180,"What are the load-bearing structural elements in the building, including their quantities, and what is the typical load path for vertical loads?","Load Bearing Elements:
+- Load bearing beams: 14/14
+- Load bearing columns: 62/62
+- Total load bearing elements: 76
+
+Load Path:
+Typical reinforced concrete frame load path:
+Vertical loads transfer: Slabs → Beams → Columns → Foundations",arc,digital_hub,4,train
+181,"What is the total concrete volume used structurally, with breakdown by element type?","Total Structural Concrete Volume: 1641.47 cu m
+    Elements with volume data: 94
+    
+    Volume by Element Type:
+    - Beams: 10.76 cu m
+    - Columns: 18.52 cu m
+    - Slabs: 1612.18 cu m",arc,digital_hub,2,train
+182,"What are the dimensions of the columns, with distribution by size?","Column Dimensions:
+- 250 x 400 mm: 32 columns (51.6%)
+- STB StÖºtze - rechteckig:STB 250 x 250: 30 columns (48.4%)",arc,digital_hub,2,test
+183,"Which types of structural members are present, showing quantity breakdown?","Total Members: 80
+    
+    Member Types:
+    - Rechteckiger Pfosten:60 x 120: 54 members (67.5%)
+    - Rechteckiger Pfosten:Standard 100-30-25: 14 members (17.5%)
+    - Stair Stringer: 8 members (10.0%)
+    - Rechteckiger Pfosten:Standard L 100-30-25: 2 members (2.5%)
+    - Rechteckiger Pfosten:Standard R 100-30-25: 2 members (2.5%)",arc,digital_hub,2,test
+184,"Which roof structural components are used, with type distribution?","Total Roof Elements: 3
+    
+    Roof Element Types:
+    - Roof Glazing System: 2 elements (66.7%)
+    - Basisdach:Flachdachaufbau begrÖºnt 320: 1 elements (33.3%)",arc,digital_hub,2,test
+185,"Could you provide a comprehensive assessment of the building's structural system efficiency, including the system type, element ratios, building characteristics, and overall efficiency rating?","Structural efficiency should be determined through detailed structural analysis. However, based on the data available in this model, the efficiency of the structural system can be summarized as follows:
+    
+    System Type: Reinforced Concrete Frame
+    - Efficient for mid-rise construction
+    - Good for office/commercial building use
+    
+    Element Ratios:
+    - Beam to total ratio: 14.1%
+    - Column to total ratio: 62.6%
+    - Slab to total ratio: 23.2%
+    
+    Building Characteristics:
+    - 3-story structure with systematic layout
+    - Regular structural grid (inferred from column distribution)
+    - Integrated MEP coordination
+    
+    Efficiency Rating: Good structural system for building type and use",arc,digital_hub,4,train
+186,"Could you provide a detailed breakdown of all MEP systems present in this building, including their components and a quantitative summary of systems by category?","MEP Systems Present:
+
+Heating System:
+- Heat pump-based heating with radiators
+- Copper piping distribution network
+- Temperature sensors and circulation pumps
+
+Plumbing System:
+- Hot water distribution (16 zones)
+- Cold water supply
+- Wastewater collection
+- Rainwater drainage
+
+Ventilation System:
+- Supply air (Zuluft)
+- Exhaust air (Abluft)
+- Discharge air (Fortluft)
+- Outside air intake (AuÖüenluft)
+
+Quantitative Summary:
+Total MEP Systems: 65
+- Heating systems: 42
+- Plumbing systems: 19
+- Ventilation systems: 4",arc,digital_hub,2,train
+187,How many MEP components are there by system type?,"Total MEP Components: 4112
+   
+   Components by System Type:
+   - Heating: 1795 components
+     * Radiators: 63
+     * Pipe segments: 914
+     * Pipe fittings: 743
+     * Valves: 65
+     * Pumps: 5
+     * Tanks: 2
+     * Sensors: 2
+     * Heat pump equipment: 1
+   - Plumbing: 1010 components
+     * Sanitary terminals: 72
+     * Water heaters: 16
+     * Pipe segments: 504
+     * Pipe fittings: 411
+     * Valves: 3
+     * Waste terminals: 2
+     * Filters: 1
+   - Ventilation: 1307 components
+     * Air terminals: 148
+     * Duct segments: 595
+     * Duct fittings: 538
+     * Dampers: 18
+     * Fans: 2
+     * Coils: 2
+     * Filters: 2
+     * Heat recovery: 1",arc,digital_hub,2,train
+188,"What is the overall distribution of MEP terminals in the building, including total counts, average per space, and breakdown by type?","MEP Terminal Distribution:
+   - Total terminals: 283
+   - Total spaces: 64 (from architecture)
+   - Average terminals per space: 4.4
+   
+   Terminal Types:
+   - Heating terminals (radiators): 63
+   - Plumbing terminals (fixtures): 72
+   - Ventilation terminals (diffusers): 148",arc,digital_hub,2,test
+189,"Could you provide a breakdown of the MEP systems serving Level B01_OKRD, including the number of major components for each system type, along with the primary functions of this level?","B01_OKRD (Basement Level) MEP Systems:
+   - Heating system: 0 major components
+   - Plumbing system: 0 major components
+   - Ventilation system: 0 major components
+   
+   Primary Functions:
+   - Technical equipment rooms
+   - Main utility distribution
+   - Heat pump and mechanical equipment",arc,digital_hub,2,train
+190,"Could you provide a breakdown of the MEP systems serving Level E00_OKRD, including component counts for each system type, along with the primary functions of this level?","E00_OKRD (Ground Level) MEP Systems:
+   - Heating system: 0 major components
+   - Plumbing system: 0 major components
+   - Ventilation system: 0 major components
+   
+   Primary Functions:
+   - Occupied spaces conditioning
+   - Public restroom facilities
+   - Main air handling equipment",arc,digital_hub,2,train
+191,"What MEP systems serve Level E01_OKRD, and what are their primary functions?","E01_OKRD (First Level) MEP Systems:
+   - Heating system: 0 major components
+   - Plumbing system: 0 major components
+   - Ventilation system: 0 major components
+   
+   Primary Functions:
+   - Office space conditioning
+   - Individual room controls
+   - Zone-specific air distribution",arc,digital_hub,1,test
+192,"What electrical loads are present in the building, broken down by equipment type?","Electrical distribution equipment not found in MEP files.
+This information would typically be in a dedicated electrical IFC file.
+
+However, electrical loads are present from:
+- Water heaters: 16 units (instantaneous type)
+- Heat pump equipment: 1 units
+- Circulation pumps: 5 units
+- Ventilation fans: 2 units",arc,digital_hub,4,train
+193,Are electrical distribution equipment capacities available?,Electrical panel capacities not available in the BIM model. This model appears to be an architectural model.,arc,digital_hub,4,train
+194,What are the electrical loads by system type?,"Electrical Loads by System Type:
+   - Hot Water System: 48.0 kW
+     * 16 instantaneous water heaters at 3 kW each
+   - Heat Pump System: 15.0 kW (estimated)
+     * 1 heat pump unit
+   - Circulation Pumps: 3.8 kW (estimated)
+     * 5 heating circulation pumps
+   - Ventilation Fans: 4.0 kW (estimated)
+     * 2 AHU fans
+   
+   Total Estimated MEP Load: 70.8 kW
+   Note: Actual loads may vary based on equipment specifications",arc,digital_hub,2,train
+195,What are the voltage levels used in the electrical system?,"Specific voltage levels not available in MEP files.
+    Standard German building voltages likely used:
+    - 230V single-phase for small equipment
+    - 400V three-phase for larger mechanical equipment
+    - Low voltage control systems for building automation",arc,digital_hub,4,test
+196,What lighting systems are installed?,Lighting systems not found in model files.,arc,digital_hub,4,train
+197,What is the total energy efficiency rating of the building?,No explicit total energy efficiency rating is available in the models.,arc,digital_hub,4,test
+198,What maintenance requirements exist for MEP systems?,No explicit maintenance requirements are available in the models.,arc,digital_hub,4,test
+199,"What is the total length of pipes and ducts in the building, broken down by type (heating pipes, plumbing pipes, and ventilation ducts)?","Total Distribution System Lengths:
+- Heating pipes: 1207377.1 m (914 segments)
+- Plumbing pipes: 301106.0 m (504 segments)
+- Ventilation ducts: 88788.6 m (595 segments)
+
+Total MEP Distribution: 1597271.7 m
+Total Distribution Components: 2013",arc,digital_hub,2,train
+200,Which component types comprise the heating system and how many of each?,"Heating System Components:
+   - Pipe Segments (914)
+   - Pipe Fittings (743)
+   - Valves (65)
+   - Space Heaters/Radiators (63)
+   - Pumps (5)
+   - Tanks (2)
+   - Temperature Sensors (2)
+   - Unitary Equipment (1)
+
+   Total Heating Components: 1795",heating,digital_hub,2,train
+201,"What is the total length of pipe used in the heating system, and how is this distributed by building level?","Total Pipe Length: 1207377.10 m
+
+   Pipe Length by Building Level:
+   - Unknown Level: 1207377.10 m (100.0%)",heating,digital_hub,2,train
+202,Which pipe types are used in this building with quantities?,"Pipe Types Used:
+   - Copper (Unknown Diameter): 914 segments, 1207377.10 m total length",heating,digital_hub,2,train
+203,"Which pipe fitting types are used in this building including the number of each, and how are they distributed across the different building levels?","Pipe Fitting Types:
+   - Elbow Fitting: 582 fittings (78.3%)
+   - Tee Fitting: 108 fittings (14.5%)
+   - Transition Fitting: 44 fittings (5.9%)
+   - Rundrohr-Verteiler 5-fach: 4 fittings (0.5%)
+   - Rundrohr-Verteiler 5-fach_rÖºcklauf: 4 fittings (0.5%)
+   - Verteiler - DN 35-200 - liNear Neutrale Bauteile #no5n2n3#: 1 fittings (0.1%)
+
+   Pipe Fittings by Building Level:
+   Ebene: B01_OKFB: 86 fittings
+     - Elbow Fitting: 73
+     - Tee Fitting: 10
+     - Transition Fitting: 2
+     - Verteiler - DN 35-200 - liNear Neutrale Bauteile #no5n2n3#: 1
+   Ebene: E00_OKFB: 80 fittings
+     - Elbow Fitting: 65
+     - Transition Fitting: 15
+   Ebene: E00_OKRD: 210 fittings
+     - Elbow Fitting: 161
+     - Tee Fitting: 46
+     - Transition Fitting: 3
+   Ebene: E00_UKRD: 24 fittings
+     - Elbow Fitting: 20
+     - Rundrohr-Verteiler 5-fach: 2
+     - Rundrohr-Verteiler 5-fach_rÖºcklauf: 2
+   Ebene: E01_OKFB: 92 fittings
+     - Elbow Fitting: 68
+     - Transition Fitting: 24
+   Ebene: E01_OKRD: 231 fittings
+     - Elbow Fitting: 179
+     - Tee Fitting: 52
+   Ebene: E01_UKRD: 20 fittings
+     - Elbow Fitting: 16
+     - Rundrohr-Verteiler 5-fach: 2
+     - Rundrohr-Verteiler 5-fach_rÖºcklauf: 2",heating,digital_hub,2,train
+204,"What are the different types of valves used in this building, how many of each type are there, and how are they distributed across the building levels?","Valve Types and Quantities:
+   - Kugelhahn DN 10 - 50 - Gewinde: 32 valves (49.2%)
+   - Shut-off Valve: 11 valves (16.9%)
+   - Absperrklappe Hebel - Flansch: 11 valves (16.9%)
+   - RÖºckschlagklappe allgemein - Flansch: 5 valves (7.7%)
+   - 3-Wege-Ventil - DN 15 - 50: 4 valves (6.2%)
+   - Cap Valve: 1 valves (1.5%)
+   - RÖºckschlagklappe - Flansch: 1 valves (1.5%)
+
+   Valves by Building Level:
+   Ebene: B01_OKFB: 25 valves
+     - 3-Wege-Ventil - DN 15 - 50: 4
+     - Absperrklappe Hebel - Flansch: 11
+     - Cap Valve: 1
+     - RÖºckschlagklappe - Flansch: 1
+     - RÖºckschlagklappe allgemein - Flansch: 5
+     - Shut-off Valve: 3
+   Ebene: E00_OKRD: 20 valves
+     - Kugelhahn DN 10 - 50 - Gewinde: 16
+     - Shut-off Valve: 4
+   Ebene: E01_OKRD: 20 valves
+     - Kugelhahn DN 10 - 50 - Gewinde: 16
+     - Shut-off Valve: 4",heating,digital_hub,2,test
+205,"Which heating sensor types are used in this building with their quantities, and how are they distributed by building level?","Heating Sensor Types:
+- Temperature Sensor: 2 sensors (100.0%)
+
+Sensors by Building Level:
+- Ebene: B01_OKFB: 2 sensors
+  - Temperature Sensor: 2",heating,digital_hub,2,test
+206,"What are the radiator types used in this building with their counts, and how are they distributed by building level?","Radiator Types:
+- Panel Radiator: 63 radiators (100.0%)
+
+Radiators by Building Level:
+- Ebene: E00_OKFB: 29 radiators
+  - Panel Radiator: 29
+- Ebene: E01_OKFB: 34 radiators
+  - Panel Radiator: 34",heating,digital_hub,2,test
+207,"What are the different types of pumps used in this building, their quantities and percentages, and how are they distributed by building level?","Pump Types:
+- Inline Pump: 4 pumps (80.0%)
+- Double Pump: 1 pump (20.0%)
+
+Pumps by Building Level:
+Ebene: B01_OKFB: 5 pumps
+- Double Pump: 1
+- Inline Pump: 4",heating,digital_hub,2,train
+208,"What are the types of tanks used in this building, their quantities, and how are they distributed by building level?","Tank Types:
+- Water Heater Storage Tank: 1 tank (50.0%)
+- Expansion Tank: 1 tank (50.0%)
+
+Tanks by Building Level:
+- Ebene: B01_OKFB: 2 tanks
+  - Expansion Tank: 1
+  - Water Heater Storage Tank: 1",heating,digital_hub,2,train
+209,"Which unitary equipment types are used in this building, including the number of each type and their distribution by building level?","Unitary Equipment Types:
+    - Heat Pump Water Heater: 1 unit (100.0%)
+    
+Unitary Equipment by Building Level:
+    Ebene: B01_OKFB: 1 unit
+      - Heat Pump Water Heater: 1",heating,digital_hub,2,test
+210,What is the total heating capacity of all radiators?,Heating capacity information not available in this model,heating,digital_hub,4,test
+211,"What heating systems are present in this building, and what is the count of systems by category?","Heating Systems: 42 systems
+
+System Categories:
+- Transport Systems: 38 systems
+- Heat Pump Systems: 2 systems
+- Heat Exchange Systems: 2 systems",heating,digital_hub,2,train
+212,What component types comprise the plumbing system and their respective counts?,"Plumbing System Components:
+   - Pipe Segments (504)
+   - Pipe Fittings (411)
+   - Sanitary Terminals (72)
+   - Instantaneous Water Heaters (16)
+   - Valves (3)
+   - Waste Terminals (2)
+   - Water Filters (1)
+   - Flow Meters (1)
+
+   Total Plumbing Components: 1010",plumbing,digital_hub,2,train
+213,"What is the total length of pipe used in the plumbing system, and how is this distributed by building level?","Total Pipe Length: 301106.02 m
+
+   Pipe Length by Building Level:
+   - Unknown Level: 301106.02 m (100.0%)",plumbing,digital_hub,2,train
+214,What pipe types are used in this building and their respective counts?,"Pipe Types Used:
+   - Edelstahl - Pressfitting: 294 segments, 115774.34 m total length
+   - Kupfer - Pressfittings: 2 segments, 63.00 m total length
+   - Wastewater HT Pipe: 208 segments, 185268.67 m total length",plumbing,digital_hub,2,train
+215,"What pipe fitting types are used in this building, their respective counts, and how are they distributed across each building level?","Pipe Fitting Types - Overall Summary:
+- Bogen Edelstahl - Press: 166 fittings (40.4%)
+- HT Elbow Fitting: 103 fittings (25.1%)
+- T-StÖºck Edelstahl - Press: 53 fittings (12.9%)
+- HT Tee Fitting: 52 fittings (12.7%)
+- Öúbergang Edelstahl - Press: 22 fittings (5.4%)
+- Enddeckel HT: 10 fittings (2.4%)
+- HT Transition Fitting: 5 fittings (1.2%)
+
+Pipe Fittings by Building Level:
+Ebene: B01_OKFB (14 fittings total):
+- Bogen Edelstahl - Press: 8
+- HT Elbow Fitting: 4
+- HT Tee Fitting: 1
+- T-StÖºck Edelstahl - Press: 1
+
+Ebene: B01_UKRD (12 fittings total):
+- Bogen Edelstahl - Press: 12
+
+Ebene: E00_OKFB (228 fittings total):
+- Bogen Edelstahl - Press: 80
+- Enddeckel HT: 6
+- HT Elbow Fitting: 61
+- HT Tee Fitting: 33
+- HT Transition Fitting: 5
+- T-StÖºck Edelstahl - Press: 29
+- Öúbergang Edelstahl - Press: 14
+
+Ebene: E00_UKRD (13 fittings total):
+- Bogen Edelstahl - Press: 5
+- HT Elbow Fitting: 3
+- T-StÖºck Edelstahl - Press: 5
+
+Ebene: E01_OKFB (140 fittings total):
+- Bogen Edelstahl - Press: 61
+- Enddeckel HT: 4
+- HT Elbow Fitting: 31
+- HT Tee Fitting: 18
+- T-StÖºck Edelstahl - Press: 18
+- Öúbergang Edelstahl - Press: 8
+
+Ebene: E01_UKRD (4 fittings total):
+- HT Elbow Fitting: 4",plumbing,digital_hub,2,test
+216,"What valve types are used in this building, their respective counts, and how are they distributed by building level?","Valve Types:
+   - Backflow Preventer: 1 valve (33.3%)
+   - Angle Seat Valve: 1 valve (33.3%)
+   - Pressure Reducing Valve: 1 valve (33.3%)
+
+   Valves by Building Level:
+   Ebene: B01_OKFB: 3 valves
+     - Angle Seat Valve: 1
+     - Backflow Preventer: 1
+     - Pressure Reducing Valve: 1",plumbing,digital_hub,2,test
+217,"What sanitary terminal types are used in this building with their respective counts and percentages, and how are they distributed across each building level?","Sanitary Terminal Types Summary:
+- Wall-Hung Toilet: 34 terminals (47.2%)
+- WC UP-SpÖºlkasten BetÖ§tigung vorne: 16 terminals (22.2%)
+- Washbasin: 12 terminals (16.7%)
+- Urinal: 6 terminals (8.3%)
+- Sink: 4 terminals (5.6%)
+
+Sanitary Terminals by Building Level:
+Ebene: E00_OKFB (46 terminals total):
+- Sink: 2
+- Urinal: 6
+- WC UP-SpÖºlkasten BetÖ§tigung vorne: 8
+- Wall-Hung Toilet: 22
+- Washbasin: 8
+
+Ebene: E01_OKFB (26 terminals total):
+- Sink: 2
+- WC UP-SpÖºlkasten BetÖ§tigung vorne: 8
+- Wall-Hung Toilet: 12
+- Washbasin: 4",plumbing,digital_hub,2,test
+218,"What water heater types are used in this building, their respective counts, and how are they distributed by building level?","Water Heater Types:
+   - Instantaneous Water Heater (3 kW): 16 units (100.0%)
+
+   Water Heaters by Building Level:
+   Ebene: E00_OKFB: 10 units
+     - Instantaneous Water Heater (3 kW): 10
+   Ebene: E01_OKFB: 6 units
+     - Instantaneous Water Heater (3 kW): 6",plumbing,digital_hub,2,test
+219,"What waste terminal types are used in this building, their respective counts, and how are they distributed by building level?","Waste Terminal Types:
+   - Roof Drain (DN 70): 2 terminals (100.0%)
+
+Waste Terminals by Building Level:
+   Ebene: E02_OKDach: 2 terminals
+     - Roof Drain (DN 70): 2",plumbing,digital_hub,2,test
+220,"What filter types are used in this building, their respective counts, and how are they distributed by building level?","Filter Types:
+- Backwash Filter (DN 25): 1 filters (100.0%)
+
+Filters by Building Level:
+- Ebene: B01_OKFB: 1 filters
+  - Backwash Filter (DN 25): 1",plumbing,digital_hub,2,test
+221,"What plumbing systems are present in this building, including their counts by system type and system category?","Plumbing Systems: 19 systems
+
+System Types:
+- Hot Water Distribution (PWH): 16 systems
+- Cold Water Distribution (PWC): 1 systems
+- Wastewater Collection: 1 systems
+- Rainwater Collection: 1 systems
+
+System Categories:
+- Hot Water Distribution: 16 zones
+- Cold Water Supply: 1 system
+- Wastewater Collection: 1 system
+- Rainwater Drainage: 1 system",plumbing,digital_hub,2,test
+222,"Could you provide a comprehensive breakdown of the electrical load for water heaters, including the total load, average per unit, number of units with load data, and the load distribution by building level?","Total Water Heater Load: 48.0 kW
+Average per Unit: 3000 W
+Water heaters with load data: 16/16
+
+Electrical Load by Building Level:
+- Ebene: E00_OKFB: 30.0 kW (62.5%)
+- Ebene: E01_OKFB: 18.0 kW (37.5%)",plumbing,digital_hub,2,train
+223,"What plumbing fixture data is available for the building, organized by storey level?","Plumbing fixture distribution by space type is not available in this model, however, plumbing fixtures data for each building storey are available:
+
+- Total sanitary terminals: 72
+- Total water heaters: 16
+- Average terminals per level: 24.0
+- Average water heaters per level: 5.3
+
+Note: Detailed space-by-space fixture analysis requires coordination with architecture file space definitions",plumbing,digital_hub,2,test
+224,How many plumbing fixtures serve each building storey?,"Plumbing Fixtures by Building Storey:
+    Ebene: E00_OKFB: 56 fixtures (62.2%)
+      - Sanitary terminals: 46
+      - Water heaters: 10
+    Ebene: E01_OKFB: 32 fixtures (35.6%)
+      - Sanitary terminals: 26
+      - Water heaters: 6
+    Ebene: E02_OKDach: 2 fixtures (2.2%)
+      - Sanitary terminals: 0
+      - Water heaters: 0
+      - Waste terminals: 2
+    
+    Total Fixtures: 90",plumbing,digital_hub,2,test
+225,What component types comprise the ventilation system and their respective counts?,"Ventilation System Components:
+   - Duct Segments (595)
+   - Duct Fittings (538)
+   - Air Terminals (148)
+   - Dampers (18)
+   - Fans (2)
+   - Coils (2)
+   - Air Filters (2)
+   - Duct Silencers (2)
+   - Heat Recovery Units (1)
+   - Humidifiers (1)
+   - Interceptors (1)
+
+   Total Ventilation Components: 1310",ventilation,digital_hub,2,test
+226,What is the total length of ductwork used in the ventilation system and the breakdown by building level?,"Total Ductwork Length: 88788.58 m
+
+   Ductwork Length by Building Level:
+   - B01_OKFB: 7597.95 m (8.6%)
+   - E00_OKFB: 1508.64 m (1.7%)
+   - E01_OKFB: 567.50 m (0.6%)
+   - E01_UKAHD: 43329.37 m (48.8%)
+   - E02_OKRD: 157.33 m (0.2%)
+   - E02_UKAHD: 35613.20 m (40.1%)
+   - E02_UKRD: 14.59 m (0.0%)",ventilation,digital_hub,2,test
+227,What duct types are used in this building and their respective counts?,"Duct Types Used:
+   - Rectangular Duct 150/150 (Exhaust Air): 83 segments, 11673.71 m total length
+   - Rectangular Duct 150/150 (Supply Air): 56 segments, 19301.76 m total length
+   - Rectangular Duct 150/400 (Exhaust Air): 1 segments, 225.20 m total length
+   - Rectangular Duct 175/175 (Exhaust Air): 3 segments, 458.31 m total length
+   - Rectangular Duct 175/175 (Supply Air): 3 segments, 992.02 m total length
+   - Rectangular Duct 200/200 (Exhaust Air): 14 segments, 3804.13 m total length
+   - Rectangular Duct 200/200 (Supply Air): 44 segments, 5333.03 m total length
+   - Rectangular Duct 200/250 (Exhaust Air): 1 segments, 70.20 m total length
+   - Rectangular Duct 200/350 (Exhaust Air): 1 segments, 60.20 m total length
+   - Rectangular Duct 225/225 (Exhaust Air): 6 segments, 579.91 m total length
+   - Rectangular Duct 225/225 (Supply Air): 3 segments, 16.70 m total length
+   - Rectangular Duct 250/250 (Exhaust Air): 6 segments, 1486.40 m total length
+   - Rectangular Duct 250/250 (Supply Air): 13 segments, 2501.43 m total length
+   - Rectangular Duct 250/400 (Exhaust Air): 1 segments, 47.50 m total length
+   - Rectangular Duct 275/275 (Exhaust Air): 9 segments, 898.06 m total length
+   - Rectangular Duct 275/275 (Supply Air): 10 segments, 956.92 m total length
+   - Rectangular Duct 300/300 (Exhaust Air): 7 segments, 1542.83 m total length
+   - Rectangular Duct 300/300 (Supply Air): 6 segments, 1645.66 m total length
+   - Rectangular Duct 300/400 (Exhaust Air): 2 segments, 409.15 m total length
+   - Rectangular Duct 325/325 (Exhaust Air): 5 segments, 1551.99 m total length
+   - Rectangular Duct 325/325 (Supply Air): 3 segments, 11.71 m total length
+   - Rectangular Duct 350/350 (Exhaust Air): 7 segments, 909.07 m total length
+   - Rectangular Duct 350/350 (Supply Air): 4 segments, 95.16 m total length
+   - Rectangular Duct 375/350 (Exhaust Air): 3 segments, 6.66 m total length
+   - Rectangular Duct 375/350 (Supply Air): 2 segments, 4.85 m total length
+   - Rectangular Duct 400/350 (Exhaust Air): 4 segments, 1284.44 m total length
+   - Rectangular Duct 400/350 (Supply Air): 4 segments, 14.08 m total length
+   - Rectangular Duct 425/350 (Exhaust Air): 3 segments, 914.82 m total length
+   - Rectangular Duct 450/350 (Exhaust Air): 1 segments, 3.56 m total length
+   - Rectangular Duct 450/350 (Supply Air): 1 segments, 6.53 m total length
+   - Rectangular Duct 475/350 (Exhaust Air): 7 segments, 1238.20 m total length
+   - Rectangular Duct 475/350 (Supply Air): 6 segments, 2406.42 m total length
+   - Rectangular Duct 500/250 (Exhaust Air): 2 segments, 1292.45 m total length
+   - Rectangular Duct 500/350 (Exhaust Air): 2 segments, 72.44 m total length
+   - Rectangular Duct 500/350 (Supply Air): 7 segments, 576.33 m total length
+   - Rectangular Duct 525/350 (Exhaust Air): 1 segments, 4.81 m total length
+   - Rectangular Duct 525/350 (Supply Air): 8 segments, 709.73 m total length
+   - Rectangular Duct 525/400 (Supply Air): 3 segments, 344.49 m total length
+   - Rectangular Duct 550/350 (Exhaust Air): 6 segments, 1192.92 m total length
+   - Rectangular Duct 550/350 (Supply Air): 3 segments, 553.90 m total length
+   - Rectangular Duct 550/400 (Supply Air): 2 segments, 92.52 m total length
+   - Rectangular Duct 575/350 (Exhaust Air): 3 segments, 476.31 m total length
+   - Rectangular Duct 600/350 (Supply Air): 4 segments, 1086.48 m total length
+   - Rectangular Duct 600/400 (Exhaust Air): 4 segments, 1282.48 m total length
+   - Rectangular Duct 625/350 (Supply Air): 5 segments, 453.61 m total length
+   - Rectangular Duct 625/400 (Exhaust Air): 2 segments, 8.31 m total length
+   - Rectangular Duct 650/350 (Exhaust Air): 3 segments, 586.50 m total length
+   - Rectangular Duct 650/350 (Supply Air): 1 segments, 4.32 m total length
+   - Rectangular Duct 650/650 (Exhaust Air): 4 segments, 466.54 m total length
+   - Rectangular Duct 650/650 (Supply Air): 4 segments, 1367.01 m total length
+   - Rectangular Duct 675/400 (Exhaust Air): 1 segments, 3.24 m total length
+   - Rectangular Duct 700/400 (Exhaust Air): 3 segments, 626.04 m total length
+   - Rectangular Duct 700/400 (Supply Air): 1 segments, 110.31 m total length
+   - Rectangular Duct 700/700 (Exhaust Air): 4 segments, 275.84 m total length
+   - Rectangular Duct 700/700 (Supply Air): 3 segments, 100.98 m total length
+   - Rectangular Duct 850/850 (Discharge Air): 7 segments, 1211.42 m total length
+   - Rectangular Duct 850/850 (Exhaust Air): 5 segments, 1307.69 m total length
+   - Rectangular Duct 850/850 (Outside Air): 7 segments, 877.54 m total length
+   - Rectangular Duct 850/850 (Supply Air): 5 segments, 1038.66 m total length
+   - Rectangular Duct 945/945 (Discharge Air): 1 segments, 56.09 m total length
+   - Rectangular Duct 945/945 (Exhaust Air): 6 segments, 492.37 m total length
+   - Rectangular Duct 945/945 (Outside Air): 2 segments, 127.50 m total length
+   - Rectangular Duct 945/945 (Supply Air): 7 segments, 448.25 m total length
+   - Rectangular Duct Ö∏123 (Exhaust Air): 75 segments, 2238.91 m total length
+   - Rectangular Duct Ö∏123 (Supply Air): 67 segments, 2542.93 m total length
+   - Rectangular Duct Ö∏140 (Exhaust Air): 1 segments, 130.00 m total length
+   - Rectangular Duct Ö∏150 (Supply Air): 1 segments, 357.00 m total length
+   - Rectangular Duct Ö∏160 (Supply Air): 16 segments, 5822.08 m total length",ventilation,digital_hub,2,train
+228,"What duct fitting types are used in this building with their respective counts, and how are these fittings distributed across each building level?","Duct Fitting Types:
+   - Rectangular Transition: 291 fittings (54.1%)
+   - Kanalteilstutzen rechteck SU: 88 fittings (16.4%)
+   - Rectangular Elbow: 83 fittings (15.4%)
+   - Rectangular Tee: 39 fittings (7.2%)
+   - Sattelstutzen rund: 18 fittings (3.3%)
+   - Öúbergang rund kurz: 14 fittings (2.6%)
+   - Bogen rund: 5 fittings (0.9%)
+
+   Duct Fittings by Building Level:
+   B01_OKRD: 36 fittings
+     - Rectangular Elbow: 25
+     - Rectangular Tee: 2
+     - Rectangular Transition: 9
+   E00_OKRD: 14 fittings
+     - Rectangular Transition: 6
+     - Sattelstutzen rund: 2
+     - Öúbergang rund kurz: 6
+   E01_OKRD: 488 fittings
+     - Bogen rund: 5
+     - Kanalteilstutzen rechteck SU: 88
+     - Rectangular Elbow: 58
+     - Rectangular Tee: 37
+     - Rectangular Transition: 276
+     - Sattelstutzen rund: 16
+     - Öúbergang rund kurz: 8",ventilation,digital_hub,2,test
+229,"What air terminal types are used in this building with their respective counts, and how are they distributed by building level?","Air Terminal Types:
+- Slot Diffuser (Exhaust Air): 74 terminals (50.0%)
+- Slot Diffuser (Supply Air): 68 terminals (45.9%)
+- Drallauslass Zuluft seitlich: 3 terminals (2.0%)
+- Rectangular Deflector Hood (Discharge): 1 terminals (0.7%)
+- Rectangular Deflector Hood (Outside Air): 1 terminals (0.7%)
+- Luftauslass_Kueche: 1 terminals (0.7%)
+
+Air Terminals by Building Level:
+E00_OKRD: 35 terminals
+- Slot Diffuser (Supply Air): 35
+
+E01_OKRD: 113 terminals
+- Air Outlet: 1
+- Rectangular Deflector Hood (Discharge): 1
+- Rectangular Deflector Hood (Outside Air): 1
+- Slot Diffuser (Exhaust Air): 74
+- Slot Diffuser (Supply Air): 33
+- Swirl Air Terminal: 3",ventilation,digital_hub,2,test
+230,"What damper types are used in this building, their respective counts, and how are they distributed across building levels?","Damper Types and Counts:
+- Fire Damper: 13 dampers (72.2%)
+- Relief Damper (AHU Chamber): 5 dampers (27.8%)
+
+Distribution by Building Level:
+B01_OKRD: 7 dampers
+  - Fire Damper: 2
+  - Relief Damper (AHU Chamber): 5
+E01_OKRD: 11 dampers
+  - Fire Damper: 11",ventilation,digital_hub,2,train
+231,"What fan types are used in this building, their respective counts, and how are they distributed by building level?","Based on the ventilation IFC model, here are the fan types, their counts, and distribution by building level:
+
+Fan Types and Counts
+
+There are 2 fan types with a total of 2 fan instances in the building:
+
+1. RLT-Gerät Ventilatorkammer:Ventilatorkammer 1.0 Zuluft
+   - Count: 1 instance
+   - Instance name: RLT-Gerät Ventilatorkammer:Ventilatorkammer 1.0 Zuluft:7601047
+
+2. RLT-Gerät Ventilatorkammer:Ventilatorkammer 1.0
+   - Count: 1 instance
+   - Instance name: RLT-Gerät Ventilatorkammer:Ventilatorkammer 1.0:7636194
+
+Distribution by Building Level
+
+All fans are located on a single building storey:
+
+- B01_OKRD: 2 fans
+  - RLT-Gerät Ventilatorkammer:Ventilatorkammer 1.0 Zuluft: 1
+  - RLT-Gerät Ventilatorkammer:Ventilatorkammer 1.0: 1",ventilation,digital_hub,2,test
+232,"What are the types of coils used in this building, their respective counts, and how are they distributed by building level?","Coil Types:
+   - Water Heating Coil: 1 coils (50.0%)
+   - Water Cooling Coil: 1 coils (50.0%)
+
+Coils by Building Level:
+   B01_OKRD: 2 coils
+     - Water Cooling Coil: 1
+     - Water Heating Coil: 1",ventilation,digital_hub,2,train
+233,"What filter types are used in this building, their respective counts, and how are they distributed by building level?","Filter Types:
+   - F7 Air Particle Filter: 2 filters (100.0%)
+
+   Filters by Building Level:
+   B01_OKRD: 2 filters
+     - F7 Air Particle Filter: 2",ventilation,digital_hub,2,train
+234,"What heat recovery unit types are used in this building, their respective counts, and how are they distributed by building level?","Heat Recovery Unit Types:
+- Rotary Heat Recovery Wheel: 1 unit (100.0%)
+
+Heat Recovery Units by Building Level:
+B01_OKRD: 1 unit
+- Rotary Heat Recovery Wheel: 1",ventilation,digital_hub,2,test
+235,What ventilation systems are present in this building and their counts by system type?,"Ventilation Systems: 4 systems
+    System Types:
+    - Discharge Air (Fortluft): 1 system
+    - Supply Air (Zuluft): 1 system
+    - Exhaust Air (Abluft): 1 system
+    - V_Aussenluft: 1 system
+    
+    System Functions:
+    - Discharge Air: Treated exhaust air discharge to outside
+    - Supply Air: Fresh air supply to occupied spaces
+    - Exhaust Air: Contaminated air removal from spaces",ventilation,digital_hub,2,test
+236,"What is the total cross-sectional area of ductwork in the building, including the average per duct, the count of ducts with area data, and a breakdown of the area by building level?","Total Duct Cross-Sectional Area: 1133.891 sq m
+Average per Duct: 1.906 sq m
+Ducts with area data: 595/595
+
+Duct Area by Building Level:
+- B01_OKFB: 347.279 sq m (30.6%)
+- E00_OKFB: 1.520 sq m (0.1%)
+- E01_OKFB: 0.219 sq m (0.0%)
+- E01_UKAHD: 352.868 sq m (31.1%)
+- E02_OKRD: 66.185 sq m (5.8%)
+- E02_UKAHD: 326.962 sq m (28.8%)
+- E02_UKRD: 38.858 sq m (3.4%)",ventilation,digital_hub,3,test
+237,How many air terminals serve each building storey?,"Air Terminals by Building Storey:
+   - E00_OKRD: 35 terminals (23.6%)
+   - E01_OKRD: 113 terminals (76.4%)
+
+   Total Air Terminals: 148",ventilation,digital_hub,2,train

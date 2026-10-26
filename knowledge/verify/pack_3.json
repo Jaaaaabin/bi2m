@@ -1,0 +1,1586 @@
+[
+ {
+  "kid": "K89",
+  "topic": "住宅·户型组织与入户",
+  "title": "联排住宅进深 ≤12 m、面宽 4–8 m",
+  "summary": "联排住宅只能从两个立面直接采光，经济进深不超过 12 m、面宽 4–8 m，中部不可避免地形成布置楼梯、辅助房间（常含就餐区）的暗区。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Building in a row restricts the possibilities for direct lighting to two façades so that, with economic building depths of up to 12 m and widths between 4 and 8 m, the existence of a badly lit or dark middle zone containing the stairs, subsidiary rooms and often also the dining area becomes unavoidable.",
+    "page_id": "page_0156",
+    "book_page": "144",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "FLOOR PLANS"
+    ],
+    "source": "body",
+    "context": "Building in a row restricts the possibilities for direct lighting to two façades so that, with economic building depths of up to 12 m and widths between 4 and 8 m, the existence of a badly lit or dark middle zone containing the stairs, subsidiary rooms and often also the dining area becomes unavoidable. This can be countered with intruding communal areas receiving daylight from both façades, which enables the different qualities of the two sides of the house (environment, compass point etc.) to be experienced together."
+   }
+  ]
+ },
+ {
+  "kid": "K90",
+  "topic": "住宅·户型组织与入户",
+  "title": "入户凹口尺寸",
+  "summary": "入户门前的凹口宽至少 1.25 m（最好 1.50 m）、深约 1.00 m，使两人能舒适且有遮蔽地在门前等候。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Entrance recesses should be at least 1.25 m (better 1.50 m) wide and approx. 1.00 m deep, so that two people can wait comfortably and protected in front of the door",
+    "page_id": "page_0158",
+    "book_page": "146",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Entrance recesses should be at least 1.25 m (better 1.50 m) wide and approx. 1.00 m deep, so that two people can wait comfortably and protected in front of the door → ④."
+   }
+  ]
+ },
+ {
+  "kid": "K91",
+  "topic": "住宅·户型组织与入户",
+  "title": "每户必备厨房与储藏间",
+  "summary": "按建筑法规，每套住宅（独户住宅或公寓）至少要有一个厨房或小厨房，并须配备足够大的储藏间。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "According to the building regulations, every house or flat must have at least one kitchen or kitchenette for cooking.",
+    "page_id": "page_0161",
+    "book_page": "149",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "The kitchen is a workplace inside the home and at the same time an important living room and meeting point for the occupants and their guests, with various relationships to other areas of the house. According to the building regulations, every house or flat must have at least one kitchen or kitchenette for cooking."
+   },
+   {
+    "quote": "The building regulations require that every flat or house be provided with a sufficiently large storeroom.",
+    "page_id": "page_0174",
+    "book_page": "162",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Storerooms\nStorerooms are used for keeping and storing cleaning equipment, tools, cleaning agents, shopping baskets, and bulky items like bags, suitcases, washing baskets and stepladders. Sufficiently large storerooms, particularly in flats, make a considerable contribution to comfort. The building regulations require that every flat or house be provided with a sufficiently large storeroom."
+   }
+  ]
+ },
+ {
+  "kid": "K92",
+  "topic": "住宅·厨房与就餐",
+  "title": "厨房宽度与操作空间",
+  "summary": "双排厨房最小宽 2.70 m（绝对最小 2.40 m）；两排台面间活动区 1.50 m（最小 1.20 m）。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "this results in a minimum kitchen width of 2.70 m (min 2.40 m)",
+    "page_id": "page_0161",
+    "book_page": "149",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "The planning of a kitchen should make possible a flowing work sequence with sufficient space for movement, while avoiding unnecessarily long distances. A movement area of 1.50 m (min. 1.20 m) is therefore required between the stretches of worktop. With most kitchen units having a depth of 60 cm on each side of the movement area, this results in a minimum kitchen width of 2.70 m (min 2.40 m) (plus approx. 6 cm spacing up to the wall)."
+   },
+   {
+    "quote": "A movement area of 1.50 m (min. 1.20 m) is therefore required between the stretches of worktop.",
+    "page_id": "page_0161",
+    "book_page": "149",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "The planning of a kitchen should make possible a flowing work sequence with sufficient space for movement, while avoiding unnecessarily long distances. A movement area of 1.50 m (min. 1.20 m) is therefore required between the stretches of worktop. With most kitchen units having a depth of 60 cm on each side of the movement area, this results in a minimum kitchen width of 2.70 m (min 2.40 m) (plus approx. 6 cm spacing up to the wall)."
+   }
+  ]
+ },
+ {
+  "kid": "K93",
+  "topic": "住宅·厨房与就餐",
+  "title": "厨房面积与类型",
+  "summary": "带就餐区的厨房约 10 m² 起；L 形、连通客厅和走廊的布置约 14 m²。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Kitchens with dining areas can be planned from approx. 10 m².",
+    "page_id": "page_0162",
+    "book_page": "150",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Kitchen with dining area\nThe kitchen with dining area offers, in addition to the actual kitchen fittings, space for a table with chairs or benches, to be used as an additional dining area (breakfast area). The kitchen thus becomes a lived-in room, providing improved opportunities for conversation. Kitchens with dining areas can be planned from approx. 10 m². A good arrangement is an L shape with doors connecting to the living room and corridor: area approx. 14 m² → 8."
+   },
+   {
+    "quote": "A good arrangement is an L shape with doors connecting to the living room and corridor: area approx. 14 m²",
+    "page_id": "page_0162",
+    "book_page": "150",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Kitchen with dining area\nThe kitchen with dining area offers, in addition to the actual kitchen fittings, space for a table with chairs or benches, to be used as an additional dining area (breakfast area). The kitchen thus becomes a lived-in room, providing improved opportunities for conversation. Kitchens with dining areas can be planned from approx. 10 m². A good arrangement is an L shape with doors connecting to the living room and corridor: area approx. 14 m² → 8."
+   }
+  ]
+ },
+ {
+  "kid": "K94",
+  "topic": "住宅·厨房与就餐",
+  "title": "开放式厨房",
+  "summary": "开放式厨房需良好通风和排烟，以免油烟影响起居和就餐区。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "Open kitchens require good ventilation and extraction in order not to impair the living and dining room areas with cooking smells.",
+    "page_id": "page_0162",
+    "book_page": "150",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Modern kitchen designs are moving away from the fitted kitchen. The kitchen area is seen as an ensemble of independent objects developed in each case from formal and functional conditions, which are grouped like pieces of furniture in an (ideally generous) residential room. Open kitchens require good ventilation and extraction in order not to impair the living and dining room areas with cooking smells. In many cases, a mobile divider is to be recommended, for example using a curtain → 9."
+   }
+  ]
+ },
+ {
+  "kid": "K95",
+  "topic": "住宅·厨房与就餐",
+  "title": "厨房位置",
+  "summary": "厨房宜紧邻入口区（购物、倒垃圾路线短）。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "in the immediate vicinity of the entrance area (short distances for shopping, rubbish etc.)",
+    "page_id": "page_0161",
+    "book_page": "149",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Location\nThe location of the kitchen is ideally on the northeast or northwest, in the immediate vicinity of the entrance area (short distances for shopping, rubbish etc.), to the (vegetable) garden and the cellar. There should be sensible internal room relationships with the dining room, utility room and larder. It should ideally be possible to see the front door, children’s play area and terrace from the kitchen → ④."
+   }
+  ]
+ },
+ {
+  "kid": "K96",
+  "topic": "住宅·厨房与就餐",
+  "title": "就餐区的朝向与连接",
+  "summary": "就餐区一般朝南或朝西，宜与厨房（或备餐间）直接相连，并尽可能通往阳台或露台。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Dining areas are normally oriented to the south or west.",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Spatial layout\nDining areas are normally oriented to the south or west. A direct connection to the kitchen (or pantry) is practical. It is good to provide for extension (with sliding partitions etc.) for special events. Dining areas should have access to the balcony or terrace if possible."
+   },
+   {
+    "quote": "A direct connection to the kitchen (or pantry) is practical.",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Spatial layout\nDining areas are normally oriented to the south or west. A direct connection to the kitchen (or pantry) is practical. It is good to provide for extension (with sliding partitions etc.) for special events. Dining areas should have access to the balcony or terrace if possible."
+   },
+   {
+    "quote": "Dining areas should have access to the balcony or terrace if possible.",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Spatial layout\nDining areas are normally oriented to the south or west. A direct connection to the kitchen (or pantry) is practical. It is good to provide for extension (with sliding partitions etc.) for special events. Dining areas should have access to the balcony or terrace if possible."
+   }
+  ]
+ },
+ {
+  "kid": "K97",
+  "topic": "住宅·厨房与就餐",
+  "title": "餐桌尺寸与就餐人数",
+  "summary": "每人约需 60 × 40 cm 桌面，桌子中间另留 20 cm 放餐具；就餐区至少容纳 4 人；圆餐桌直径至少 0.90 m，最好 1.10–1.25 m。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "It should always offer space for at least 4 people.",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Minimum requirements\nThe dining area should be laid out to accommodate the anticipated size of the household. It should always offer space for at least 4 people."
+   },
+   {
+    "quote": "In order to be able to eat comfortably, a person needs a table area of approx. 60 × 40 cm",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Equipment and space requirements\nIn order to be able to eat comfortably, a person needs a table area of approx. 60 × 40 cm → ①. This results in sufficient distance from a neighbour and room for a complete place setting. The centre of the table should have a 20 cm strip for plates, pots and bowls."
+   },
+   {
+    "quote": "The centre of the table should have a 20 cm strip for plates, pots and bowls.",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Equipment and space requirements\nIn order to be able to eat comfortably, a person needs a table area of approx. 60 × 40 cm → ①. This results in sufficient distance from a neighbour and room for a complete place setting. The centre of the table should have a 20 cm strip for plates, pots and bowls."
+   },
+   {
+    "quote": "A comfortable round dining table has a diameter of min. 0.90 m, though 1.10–1.25 m would be preferable.",
+    "page_id": "page_0166",
+    "book_page": "154",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "A comfortable round dining table has a diameter of min. 0.90 m, though 1.10–1.25 m would be preferable."
+   }
+  ]
+ },
+ {
+  "kid": "K98",
+  "topic": "住宅·厨房与就餐",
+  "title": "储藏与食品间靠近厨房",
+  "summary": "部分储藏空间宜设在厨房附近，食品储藏间（larder）最好紧邻厨房。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "It is practical to locate a part of this storage area near the kitchen.",
+    "page_id": "page_0174",
+    "book_page": "162",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "In addition to cellar and attic areas in a property, storage space should therefore be provided within a flat of \\( \\geq 1 \\ \\mathrm{m}^2 \\) with a clear width of 75 cm. In larger flats, 2% of the floor area should be provided as storage space (split into many small areas is also acceptable). It is practical to locate a part of this storage area near the kitchen."
+   },
+   {
+    "quote": "It is most practical when the larder is next to the kitchen.",
+    "page_id": "page_0174",
+    "book_page": "162",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Larder, pantry\nWhen designing a flat or house, a larder (or pantry) should be installed in addition to the general provision of storage space, despite the additional space required, with shelves to the ceiling. This is for the storage of supplies of food and drink, as well as fresh foodstuffs which keep relatively well; space can thus be saved space in the refrigerator. Basic layouts of larders → ⑤. It is most practical when the larder is next to the kitchen. It should be cool, ventilated and protected from direct sunlight → ⑥ – ⑬. If required, a socket for a freezer should be provided, and possibly also a wine cooler."
+   }
+  ]
+ },
+ {
+  "kid": "K99",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "卧室最小面积",
+  "summary": "父母房/双人卧室约 13 m²，单人卧室约 8 m²，宽敞的双人卧室 16.5 m²。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "bedrooms with minimal space of approx. 13 m² (as parents’ room or twin bedroom)",
+    "page_id": "page_0169",
+    "book_page": "157",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "→ ② – ③: bedrooms with minimal space of approx. 13 m² (as parents’ room or twin bedroom) and approx. 8 m² (single room). These would normally be aligned to east or southeast (parents) or south to west (children) and separated from the living room in another part of the home."
+   },
+   {
+    "quote": "approx. 8 m² (single room).",
+    "page_id": "page_0169",
+    "book_page": "157",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "→ ② – ③: bedrooms with minimal space of approx. 13 m² (as parents’ room or twin bedroom) and approx. 8 m² (single room). These would normally be aligned to east or southeast (parents) or south to west (children) and separated from the living room in another part of the home."
+   },
+   {
+    "quote": "a generous twin bedroom of 16.5 m²",
+    "page_id": "page_0169",
+    "book_page": "157",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "→ ④: the options for a generous twin bedroom of 16.5 m², which could be partitioned (for example, for children as they grow up)."
+   }
+  ]
+ },
+ {
+  "kid": "K100",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "卫生间",
+  "summary": "每户至少一个卫生间（含浴缸/淋浴和厕所的独立房间）；大户型宜浴厕分设或加客用 WC；卫生间通常紧邻卧室。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "according to building regulations, belongs to the minimum equipment of a flat or house.",
+    "page_id": "page_0172",
+    "book_page": "160",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "A bathroom is defined as an independent room with bath/shower and toilet and, according to building regulations, belongs to the minimum equipment of a flat or house. In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided. The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3). The bathroom is normally next to the bedroom → ⑤ – ⑥, ⑧ – ⑩, although it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft → ⑧ – ⑨."
+   },
+   {
+    "quote": "The bathroom is normally next to the bedroom",
+    "page_id": "page_0172",
+    "book_page": "160",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "A bathroom is defined as an independent room with bath/shower and toilet and, according to building regulations, belongs to the minimum equipment of a flat or house. In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided. The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3). The bathroom is normally next to the bedroom → ⑤ – ⑥, ⑧ – ⑩, although it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft → ⑧ – ⑨."
+   },
+   {
+    "quote": "A bathroom is defined as an independent room with bath/shower and toilet",
+    "page_id": "page_0172",
+    "book_page": "160",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "A bathroom is defined as an independent room with bath/shower and toilet and, according to building regulations, belongs to the minimum equipment of a flat or house. In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided. The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3). The bathroom is normally next to the bedroom → ⑤ – ⑥, ⑧ – ⑩, although it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft → ⑧ – ⑨."
+   },
+   {
+    "quote": "In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided.",
+    "page_id": "page_0172",
+    "book_page": "160",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "A bathroom is defined as an independent room with bath/shower and toilet and, according to building regulations, belongs to the minimum equipment of a flat or house. In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided. The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3). The bathroom is normally next to the bedroom → ⑤ – ⑥, ⑧ – ⑩, although it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft → ⑧ – ⑨."
+   }
+  ]
+ },
+ {
+  "kid": "K101",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "没有洗衣间时",
+  "summary": "没有洗衣间时，卫生间须预留洗衣机、烘干机和洗衣篮的位置与接口。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "If there is no laundry room, the bathroom must be designed with space and connections for a washing machine, washer/dryer and laundry basket.",
+    "page_id": "page_0173",
+    "book_page": "161",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Because of the high humidity and resulting condensation, the surfaces must be easy to clean. Wall and ceiling plaster should be able to absorb and release enough moisture. Floor coverings should be sufficiently slip-resistant. If there is no laundry room, the bathroom must be designed with space and connections for a washing machine, washer/dryer and laundry basket."
+   }
+  ]
+ },
+ {
+  "kid": "K102",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "洗衣间",
+  "summary": "洗衣间需 1.20 m 宽的工作台；最好朝东北、紧邻或便于通往厨房；独立住宅应直通花园晾晒。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "These rooms are best placed to the northeast, next to or easily accessible from the kitchen",
+    "page_id": "page_0175",
+    "book_page": "163",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "These rooms are best placed to the northeast, next to or easily accessible from the kitchen → 4 – 14. In this way, tasks can be combined and carried out by one person. In detached houses, direct access should be provided to the garden (for drying laundry)."
+   },
+   {
+    "quote": "In detached houses, direct access should be provided to the garden (for drying laundry).",
+    "page_id": "page_0175",
+    "book_page": "163",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "These rooms are best placed to the northeast, next to or easily accessible from the kitchen → 4 – 14. In this way, tasks can be combined and carried out by one person. In detached houses, direct access should be provided to the garden (for drying laundry)."
+   },
+   {
+    "quote": "A worktop of 1.20 m width should be provided to deal with the washing.",
+    "page_id": "page_0175",
+    "book_page": "163",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "In the design of utility rooms, a comfortable and healthy arrangement of appliances is important: An ironing board used in the standing position requires a different height to one that is used seated → ① – ③. A fully adjustable ironing board is ideal. A worktop of 1.20 m width should be provided to deal with the washing. Good uniform lighting is required in the working area of the laundry/utility room (average light intensity ≈ 350 lx)."
+   }
+  ]
+ },
+ {
+  "kid": "K103",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "衣柜的位置与通风",
+  "summary": "衣柜用于存放衣物、床品、鞋和箱子，通常设在卧室；步入式衣帽间需要适当通风。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "They serve to store (larger) items of clothing, linen, shoes and suitcases, and are normally situated in the bedroom.",
+    "page_id": "page_0171",
+    "book_page": "159",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Details and fitting out\nWardrobes and linen cupboards are an essential part of fitting out a home. They serve to store (larger) items of clothing, linen, shoes and suitcases, and are normally situated in the bedroom."
+   },
+   {
+    "quote": "Walk-in wardrobes also require appropriate ventilation",
+    "page_id": "page_0171",
+    "book_page": "159",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "When wardrobes are sited along external walls, care should be taken that the thermal insulation is adequate and that ventilation is provided. Walk-in wardrobes also require appropriate ventilation → 4."
+   }
+  ]
+ },
+ {
+  "kid": "K104",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "户内储藏空间",
+  "summary": "户内储藏空间至少 1 m²、净宽 75 cm；较大住宅按建筑面积的 2% 设置（可分散成多处）；储藏间门宜外开以节省空间。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "storage space should therefore be provided within a flat of \\( \\geq 1 \\ \\mathrm{m}^2 \\) with a clear width of 75 cm",
+    "page_id": "page_0174",
+    "book_page": "162",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "In addition to cellar and attic areas in a property, storage space should therefore be provided within a flat of \\( \\geq 1 \\ \\mathrm{m}^2 \\) with a clear width of 75 cm. In larger flats, 2% of the floor area should be provided as storage space (split into many small areas is also acceptable). It is practical to locate a part of this storage area near the kitchen."
+   },
+   {
+    "quote": "In larger flats, 2% of the floor area should be provided as storage space (split into many small areas is also acceptable).",
+    "page_id": "page_0174",
+    "book_page": "162",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "In addition to cellar and attic areas in a property, storage space should therefore be provided within a flat of \\( \\geq 1 \\ \\mathrm{m}^2 \\) with a clear width of 75 cm. In larger flats, 2% of the floor area should be provided as storage space (split into many small areas is also acceptable). It is practical to locate a part of this storage area near the kitchen."
+   },
+   {
+    "quote": "Doors to storerooms should open outward for reasons of space.",
+    "page_id": "page_0174",
+    "book_page": "162",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Storage rooms can be in the form of niches (for built-in cupboards) or box rooms → ① – ④. Doors to storerooms should open outward for reasons of space. The light inside the room should be operated by a contact switch by the door. Good ventilation should be provided."
+   }
+  ]
+ },
+ {
+  "kid": "K105",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "卫生间朝向、采光与通风",
+  "summary": "卫生间宜朝北，尽量自然采光通风，否则须按 DIN 18017-3 设有效机械通风；靠人工照明的卫生间可布置在户型中部区域。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3).",
+    "page_id": "page_0172",
+    "book_page": "160",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "A bathroom is defined as an independent room with bath/shower and toilet and, according to building regulations, belongs to the minimum equipment of a flat or house. In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided. The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3). The bathroom is normally next to the bedroom → ⑤ – ⑥, ⑧ – ⑩, although it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft → ⑧ – ⑨."
+   },
+   {
+    "quote": "Bathrooms with artificial lighting (or lit indirectly from other areas of the flat), kitchens, cupboard and storage areas can be placed here",
+    "page_id": "page_0157",
+    "book_page": "145",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "FLOOR PLANS"
+    ],
+    "source": "body",
+    "context": "Central function zone → ③\nIn buildings of greater depth, the central area of the flat can be widened to form a zone of subsidiary space and the façades can be completely used for living areas. Bathrooms with artificial lighting (or lit indirectly from other areas of the flat), kitchens, cupboard and storage areas can be placed here, and appropriate passages and spaces provide the connection to the outside rooms."
+   }
+  ]
+ },
+ {
+  "kid": "K106",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "卫生间类型",
+  "summary": "卫生间分四类：（客用）WC＝WC＋洗手盆；淋浴间＝淋浴＋洗手盆；浴室＝浴缸＋洗手盆＋WC；完整浴室＝浴缸＋淋浴＋洗手盆＋WC。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "The basic bathroom categories are: (guest) WCs with WC and washbasin → 3 - 4, shower rooms with shower and basin → 5 - 6, bathrooms with bath, washbasin and WC → 7 - 8, full bathrooms with bath, shower, washbasin and WC → 10.",
+    "page_id": "page_0173",
+    "book_page": "161",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "The basic bathroom categories are: (guest) WCs with WC and washbasin → 3 - 4, shower rooms with shower and basin → 5 - 6, bathrooms with bath, washbasin and WC → 7 - 8, full bathrooms with bath, shower, washbasin and WC → 10."
+   }
+  ]
+ },
+ {
+  "kid": "K107",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "卫浴与厨房共用管井",
+  "summary": "出于技术原因，浴室与厨房（或 WC 与厨房）常布置在同一设备管井上。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft",
+    "page_id": "page_0172",
+    "book_page": "160",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "A bathroom is defined as an independent room with bath/shower and toilet and, according to building regulations, belongs to the minimum equipment of a flat or house. In larger houses, bath and WC should be in separate rooms, or an additional WC (guest WC) should be provided. The bathroom should be oriented to the north, and if possible have natural ventilation and lighting (otherwise provide effective mechanical ventilation according to DIN 18017-3). The bathroom is normally next to the bedroom → ⑤ – ⑥, ⑧ – ⑩, although it is also often convenient for technical reasons to place bath and kitchen (or WC and kitchen) on a common installation shaft → ⑧ – ⑨."
+   }
+  ]
+ },
+ {
+  "kid": "K108",
+  "topic": "住宅·卧室、卫浴与储藏",
+  "title": "婴儿车与自行车公共储藏间",
+  "summary": "建筑等级 3–5 的住宅（如两户以上）须设方便到达的婴儿车、自行车公共储藏间，按每位住户（含儿童）至少一辆车计，宜设在首层并可上锁。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "for residential buildings in building classes 3–5, the building regulations require an easily accessible (communal) storeroom for prams, pushchairs and bicycles.",
+    "page_id": "page_0177",
+    "book_page": "165",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "Communal storerooms\nIn addition to the storerooms or storage spaces in each flat, for residential buildings in building classes 3–5, the building regulations require an easily accessible (communal) storeroom for prams, pushchairs and bicycles. Corresponding areas should also be provided in other residential buildings and detached houses."
+   },
+   {
+    "quote": "Waste can be stored temporarily inside buildings with more than two flats or a usable area of 400 m² (building classes 3–5)",
+    "page_id": "page_0476",
+    "book_page": "464",
+    "chapter": "Agriculture",
+    "subheadings": [
+     "SUPPLY AND DISPOSAL"
+    ],
+    "source": "body",
+    "context": "Solid waste can be temporarily stored inside the building. Waste can be stored temporarily inside buildings with more than two flats or a usable area of 400 m² (building classes 3–5) only if the rubbish collection room complies with the following requirements:"
+   },
+   {
+    "quote": "it can be assumed that at least one vehicle per occupant (including children) has to be accommodated",
+    "page_id": "page_0177",
+    "book_page": "165",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "For the design of these rooms, it can be assumed that at least one vehicle per occupant (including children) has to be accommodated. In addition to bicycles, prams and pushchairs, it is also necessary to consider mopeds, tricycles, trailers etc. → ①."
+   },
+   {
+    "quote": "The rooms should if possible be located at street level, be lockable and equipped with hooks and bicycle stands to secure the stored vehicles.",
+    "page_id": "page_0177",
+    "book_page": "165",
+    "chapter": "Residential buildings",
+    "subheadings": [
+     "ROOMS"
+    ],
+    "source": "body",
+    "context": "The rooms should if possible be located at street level, be lockable and equipped with hooks and bicycle stands to secure the stored vehicles. They can be laid out as storerooms inside the building (with access to the entrance) or as separate bicycle sheds → ② – ③. A sufficient number of additional bicycle stands should be provided in the open air, particularly if the storeroom has been situated in the cellar."
+   }
+  ]
+ },
+ {
+  "kid": "K109",
+  "topic": "办公",
+  "title": "办公室净高",
+  "summary": "办公室净高 2.75 m；以坐姿工作为主时可降 25 cm，但最低 2.50 m；走廊和卫生间允许 2.30 m；> 100 m² 的工作间建议 3.00 m。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "guideline 3.00 m for working rooms larger than 100 m^2",
+    "page_id": "page_0278",
+    "book_page": "266",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Construction, spans, room heights\nRoom heights should be determined depending on building depth and working room height (guideline 3.00 m for working rooms larger than 100 m^2)."
+   },
+   {
+    "quote": "Ceiling height 2.75 m according to Vst regulation",
+    "page_id": "page_0255",
+    "book_page": "243",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Structure – influence of construction on the layout of offices → ① – ④. Construction proposals for the cross-sections of two-row office buildings with the following loading assumptions: normal 5 KN/m², additional 2 KN/m² for screed (8 cm for floor duct and supply connections).\nCeiling height 2.75 m according to Vst regulation (enables the later installation of raised floor and deeper suspended ceilings). For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear. Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs). According to Kahl (→ refs), the cost-effectiveness of a structure is less dependent on the optimisation of the individual components (e.g. pre-cast elements), and much more on their integration into a functional building. Differentiation between longitudinal and transverse spanning systems → ① – ④.\nConstructive scope for decision-making via the example of a reinforced concrete slab with 6.50 m span. Criteria: almost identical costs; higher weight has influence on costs for load transfer and foundations; thicker slab has advantages through greater stiffness under differing loading (box-outs, spreader beams, point loads, various spans, various floor constructions).\nRibbed slabs: Only economical over longer spans (less self-weight, higher labour costs for formwork). Cutting through the ribs is not possible, due to lack of space. Supporting beams have the same soffit level.\nSlab beams (double T or Pi-slabs): These are structurally advantageous for long spans. Installation should run parallel to the web; crossing runs should be carried out in the corridor → ① – ④. The façade plane can lie behind, between or in front of the structural plane. Greatest variability with separation of construction and external envelope. Layout of columns, front face of façade, back face of façade, in front or behind, have no influence on the compartmentalisation of the façade or the division arrangement (grid, corner detail).\nInternal columns → p. 240 ④ A–D: If the slab cantilevers with a cantilever of c = 1/5 L–1/3 L, the span is economical. Bracing through walls acting as deep beams, storey frames and the provision of solid access cores and end-fixed side zones.\nBuilding the walls: Solid partition walls can replace columns and supporting beams, or can be considered as deep beams to"
+   },
+   {
+    "quote": "Ceiling height 2.75 m according to Vst regulation (enables the later installation of raised floor and deeper suspended ceilings).",
+    "page_id": "page_0255",
+    "book_page": "243",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Structure – influence of construction on the layout of offices → ① – ④. Construction proposals for the cross-sections of two-row office buildings with the following loading assumptions: normal 5 KN/m², additional 2 KN/m² for screed (8 cm for floor duct and supply connections).\nCeiling height 2.75 m according to Vst regulation (enables the later installation of raised floor and deeper suspended ceilings). For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear. Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs). According to Kahl (→ refs), the cost-effectiveness of a structure is less dependent on the optimisation of the individual components (e.g. pre-cast elements), and much more on their integration into a functional building. Differentiation between longitudinal and transverse spanning systems → ① – ④.\nConstructive scope for decision-making via the example of a reinforced concrete slab with 6.50 m span. Criteria: almost identical costs; higher weight has influence on costs for load transfer and foundations; thicker slab has advantages through greater stiffness under differing loading (box-outs, spreader beams, point loads, various spans, various floor constructions).\nRibbed slabs: Only economical over longer spans (less self-weight, higher labour costs for formwork). Cutting through the ribs is not possible, due to lack of space. Supporting beams have the same soffit level.\nSlab beams (double T or Pi-slabs): These are structurally advantageous for long spans. Installation should run parallel to the web; crossing runs should be carried out in the corridor → ① – ④. The façade plane can lie behind, between or in front of the structural plane. Greatest variability with separation of construction and external envelope. Layout of columns, front face of façade, back face of façade, in front or behind, have no influence on the compartmentalisation of the façade or the division arrangement (grid, corner detail).\nInternal columns → p. 240 ④ A–D: If the slab cantilevers with a cantilever of c = 1/5 L–1/3 L, the span is economical. Bracing through walls acting as deep beams, storey frames and the provision of solid access cores and end-fixed side zones.\nBuilding the walls: Solid partition walls can replace columns and supporting beams, or can be considered as deep beams to"
+   },
+   {
+    "quote": "For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear.",
+    "page_id": "page_0255",
+    "book_page": "243",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Structure – influence of construction on the layout of offices → ① – ④. Construction proposals for the cross-sections of two-row office buildings with the following loading assumptions: normal 5 KN/m², additional 2 KN/m² for screed (8 cm for floor duct and supply connections).\nCeiling height 2.75 m according to Vst regulation (enables the later installation of raised floor and deeper suspended ceilings). For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear. Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs). According to Kahl (→ refs), the cost-effectiveness of a structure is less dependent on the optimisation of the individual components (e.g. pre-cast elements), and much more on their integration into a functional building. Differentiation between longitudinal and transverse spanning systems → ① – ④.\nConstructive scope for decision-making via the example of a reinforced concrete slab with 6.50 m span. Criteria: almost identical costs; higher weight has influence on costs for load transfer and foundations; thicker slab has advantages through greater stiffness under differing loading (box-outs, spreader beams, point loads, various spans, various floor constructions).\nRibbed slabs: Only economical over longer spans (less self-weight, higher labour costs for formwork). Cutting through the ribs is not possible, due to lack of space. Supporting beams have the same soffit level.\nSlab beams (double T or Pi-slabs): These are structurally advantageous for long spans. Installation should run parallel to the web; crossing runs should be carried out in the corridor → ① – ④. The façade plane can lie behind, between or in front of the structural plane. Greatest variability with separation of construction and external envelope. Layout of columns, front face of façade, back face of façade, in front or behind, have no influence on the compartmentalisation of the façade or the division arrangement (grid, corner detail).\nInternal columns → p. 240 ④ A–D: If the slab cantilevers with a cantilever of c = 1/5 L–1/3 L, the span is economical. Bracing through walls acting as deep beams, storey frames and the provision of solid access cores and end-fixed side zones.\nBuilding the walls: Solid partition walls can replace columns and supporting beams, or can be considered as deep beams to"
+   },
+   {
+    "quote": "Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs).",
+    "page_id": "page_0255",
+    "book_page": "243",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Structure – influence of construction on the layout of offices → ① – ④. Construction proposals for the cross-sections of two-row office buildings with the following loading assumptions: normal 5 KN/m², additional 2 KN/m² for screed (8 cm for floor duct and supply connections).\nCeiling height 2.75 m according to Vst regulation (enables the later installation of raised floor and deeper suspended ceilings). For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear. Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs). According to Kahl (→ refs), the cost-effectiveness of a structure is less dependent on the optimisation of the individual components (e.g. pre-cast elements), and much more on their integration into a functional building. Differentiation between longitudinal and transverse spanning systems → ① – ④.\nConstructive scope for decision-making via the example of a reinforced concrete slab with 6.50 m span. Criteria: almost identical costs; higher weight has influence on costs for load transfer and foundations; thicker slab has advantages through greater stiffness under differing loading (box-outs, spreader beams, point loads, various spans, various floor constructions).\nRibbed slabs: Only economical over longer spans (less self-weight, higher labour costs for formwork). Cutting through the ribs is not possible, due to lack of space. Supporting beams have the same soffit level.\nSlab beams (double T or Pi-slabs): These are structurally advantageous for long spans. Installation should run parallel to the web; crossing runs should be carried out in the corridor → ① – ④. The façade plane can lie behind, between or in front of the structural plane. Greatest variability with separation of construction and external envelope. Layout of columns, front face of façade, back face of façade, in front or behind, have no influence on the compartmentalisation of the façade or the division arrangement (grid, corner detail).\nInternal columns → p. 240 ④ A–D: If the slab cantilevers with a cantilever of c = 1/5 L–1/3 L, the span is economical. Bracing through walls acting as deep beams, storey frames and the provision of solid access cores and end-fixed side zones.\nBuilding the walls: Solid partition walls can replace columns and supporting beams, or can be considered as deep beams to"
+   },
+   {
+    "quote": "Corridors and sanitary facilities are permitted to be 2.30 m high",
+    "page_id": "page_0255",
+    "book_page": "243",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Structure – influence of construction on the layout of offices → ① – ④. Construction proposals for the cross-sections of two-row office buildings with the following loading assumptions: normal 5 KN/m², additional 2 KN/m² for screed (8 cm for floor duct and supply connections).\nCeiling height 2.75 m according to Vst regulation (enables the later installation of raised floor and deeper suspended ceilings). For predominantly sedentary activities, the reduction of the ceiling height by 25 cm is possible, but min. 2.50 m clear. Corridors and sanitary facilities are permitted to be 2.30 m high (this can be exploited for installation runs). According to Kahl (→ refs), the cost-effectiveness of a structure is less dependent on the optimisation of the individual components (e.g. pre-cast elements), and much more on their integration into a functional building. Differentiation between longitudinal and transverse spanning systems → ① – ④.\nConstructive scope for decision-making via the example of a reinforced concrete slab with 6.50 m span. Criteria: almost identical costs; higher weight has influence on costs for load transfer and foundations; thicker slab has advantages through greater stiffness under differing loading (box-outs, spreader beams, point loads, various spans, various floor constructions).\nRibbed slabs: Only economical over longer spans (less self-weight, higher labour costs for formwork). Cutting through the ribs is not possible, due to lack of space. Supporting beams have the same soffit level.\nSlab beams (double T or Pi-slabs): These are structurally advantageous for long spans. Installation should run parallel to the web; crossing runs should be carried out in the corridor → ① – ④. The façade plane can lie behind, between or in front of the structural plane. Greatest variability with separation of construction and external envelope. Layout of columns, front face of façade, back face of façade, in front or behind, have no influence on the compartmentalisation of the façade or the division arrangement (grid, corner detail).\nInternal columns → p. 240 ④ A–D: If the slab cantilevers with a cantilever of c = 1/5 L–1/3 L, the span is economical. Bracing through walls acting as deep beams, storey frames and the provision of solid access cores and end-fixed side zones.\nBuilding the walls: Solid partition walls can replace columns and supporting beams, or can be considered as deep beams to"
+   }
+  ]
+ },
+ {
+  "kid": "K110",
+  "topic": "办公",
+  "title": "每工位总面积",
+  "summary": "每个工位的总面积需求 23–45 m²，视组织和职级而定。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "The total space requirement per workstation varies between 23 and 45 m^2, depending on organisational and status requirements.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Subsidiary and additional areas\nThe total space requirement per workstation varies between 23 and 45 m^2, depending on organisational and status requirements. This includes 2.6 m^2 car parking area in the basement, which is not included in the floor to space ratio. The tendency has been increasing since the 1970s."
+   }
+  ]
+ },
+ {
+  "kid": "K111",
+  "topic": "办公",
+  "title": "工位尺寸",
+  "summary": "桌面 ≥ 120 × 80 cm；每个工位 ≥ 1.5 m² 的自由活动区。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "There should be a free movement area of at least 1.5 m² at the workstation.",
+    "page_id": "page_0248",
+    "book_page": "236",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Workplace layout\nItems which are frequently used during the working day should be put in the preferred places where they are visible and reachable → ① – ③. There should be a free movement area of at least 1.5 m² at the workstation.\nFurniture: This should enable the correctly defined working posture – upper arm and elbow vertical at an angle of approx. 90° and thigh and lower leg vertical at an angle of 90° → ④. To achieve the correct posture for people of different heights, table and chair sizes must be adjustable. Two ergonomically equally valuable possibilities are:\nA: workstation type 1, desk at variable height\n    chair at variable height\n    60–78 cm\n    42–54 cm\nB: workstation type 2, type 3, desk of fixed height\n    chair of variable height\n    72 cm\n    42–50 cm\n    footstool of variable height\n    00–15 cm\nThere should be sufficient legroom → ⑥.\nThe desktop working area should be at least 120 × 80 cm (few documents, predominantly screen work; for specialist employees, at least 200 × 80 cm)\nEnvironment: All furniture in the immediate vicinity (desktop etc.) should have a coefficient of reflection of 20–50%.\nLighting intensity should be 300–500 lx, and lamps have limited glare, e.g. through recessed ceiling grid luminaires or 2-K lighting → p. 501–510. Light bands should be arranged parallel to the window. Matt surfaces in the room with recommended coefficients of reflection (approx: ceiling 70%, walls 50%, partitions 20–50%).\nThe view to the screen should be parallel to the window façade and to light bands, with the screen if possible in-between. Install computer workstations in windowless zones.\nRecommendations for climatic conditions and sound reduction should be complied with. The increased use of equipment in offices will more probably result in a cooling load rather than a heating load (→ p. 466).\n\nPsychology of the computer workstation"
+   },
+   {
+    "quote": "The desktop working area should be at least 120 × 80 cm",
+    "page_id": "page_0248",
+    "book_page": "236",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Workplace layout\nItems which are frequently used during the working day should be put in the preferred places where they are visible and reachable → ① – ③. There should be a free movement area of at least 1.5 m² at the workstation.\nFurniture: This should enable the correctly defined working posture – upper arm and elbow vertical at an angle of approx. 90° and thigh and lower leg vertical at an angle of 90° → ④. To achieve the correct posture for people of different heights, table and chair sizes must be adjustable. Two ergonomically equally valuable possibilities are:\nA: workstation type 1, desk at variable height\n    chair at variable height\n    60–78 cm\n    42–54 cm\nB: workstation type 2, type 3, desk of fixed height\n    chair of variable height\n    72 cm\n    42–50 cm\n    footstool of variable height\n    00–15 cm\nThere should be sufficient legroom → ⑥.\nThe desktop working area should be at least 120 × 80 cm (few documents, predominantly screen work; for specialist employees, at least 200 × 80 cm)\nEnvironment: All furniture in the immediate vicinity (desktop etc.) should have a coefficient of reflection of 20–50%.\nLighting intensity should be 300–500 lx, and lamps have limited glare, e.g. through recessed ceiling grid luminaires or 2-K lighting → p. 501–510. Light bands should be arranged parallel to the window. Matt surfaces in the room with recommended coefficients of reflection (approx: ceiling 70%, walls 50%, partitions 20–50%).\nThe view to the screen should be parallel to the window façade and to light bands, with the screen if possible in-between. Install computer workstations in windowless zones.\nRecommendations for climatic conditions and sound reduction should be complied with. The increased use of equipment in offices will more probably result in a cooling load rather than a heating load (→ p. 466).\n\nPsychology of the computer workstation"
+   }
+  ]
+ },
+ {
+  "kid": "K112",
+  "topic": "办公",
+  "title": "办公室进深、开间与模数",
+  "summary": "工位进深 2.20 m（桌 80 + 活动 100 + 后柜 40），房间净深 4.40 m；单间办公室模数 1.50 m、组合办公 1.35 m；开间 3.80 m（约 18 m²）可放两个进深 0.90 m 的电脑工位。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "The modular dimensions, which have proved successful in recent years, are 1.50 m for single-room offices and 1.35 m for office types based on the combi principle.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDING"
+    ],
+    "source": "body",
+    "context": "Grid module spacings define possible room sizes through the resulting spacing of columns and façades. The fitting out and façade grids must be the same in order to enable the partitions to connect to the windows. The structural grid can be offset against the fitting out grid. This reduces the problem of connecting the partitions to columns, but loses space in the rooms, which contain columns. Because of the different lifecycles of the building elements, an adaptable module dimension should be chosen. The modular dimensions, which have proved successful in recent years, are 1.50 m for single-room offices and 1.35 m for office types based on the combi principle."
+   },
+   {
+    "quote": "Workstation depth 2.20 m (80 cm desk, 1 m movement area, 40 cm shelf behind). With 10 cm wall thickness, this gives 4.40 m clear room space.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDING"
+    ],
+    "source": "body",
+    "context": "Modular dimension 1.50 m\nThis is the economical module dimension for single-room offices consisting mainly of double workstations. Workstation depth 2.20 m (80 cm desk, 1 m movement area, 40 cm shelf behind). With 10 cm wall thickness, this gives 4.40 m clear room space.\nThe usual depth of buildings with central corridors is 12–13 m. This dimension is only of limited practicality for combi-offices."
+   },
+   {
+    "quote": "This is the economical module dimension for single-room offices consisting mainly of double workstations.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDING"
+    ],
+    "source": "body",
+    "context": "Modular dimension 1.50 m\nThis is the economical module dimension for single-room offices consisting mainly of double workstations. Workstation depth 2.20 m (80 cm desk, 1 m movement area, 40 cm shelf behind). With 10 cm wall thickness, this gives 4.40 m clear room space.\nThe usual depth of buildings with central corridors is 12–13 m. This dimension is only of limited practicality for combi-offices."
+   },
+   {
+    "quote": "Room widths of 3.80 m (~18 m^2 usable area) enable:",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDING"
+    ],
+    "source": "body",
+    "context": "Modular dimension 1.35 m\nRoom widths of 3.80 m (~18 m^2 usable area) enable:\n– additional filing storage; two computer workstations with a depth of 0.90 m, as recommended by accident insurance companies; one drawing board or drawing machine and one desk; one desk and meeting table for four people. All usual office workstations are possible, offering high flexibility of use without moving the partitions."
+   },
+   {
+    "quote": "two computer workstations with a depth of 0.90 m, as recommended by accident insurance companies",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDING"
+    ],
+    "source": "body",
+    "context": "Modular dimension 1.35 m\nRoom widths of 3.80 m (~18 m^2 usable area) enable:\n– additional filing storage; two computer workstations with a depth of 0.90 m, as recommended by accident insurance companies; one drawing board or drawing machine and one desk; one desk and meeting table for four people. All usual office workstations are possible, offering high flexibility of use without moving the partitions."
+   }
+  ]
+ },
+ {
+  "kid": "K113",
+  "topic": "办公",
+  "title": "建筑进深与采光深度",
+  "summary": "中廊式办公楼通常进深 12–13 m；自然采光大约能利用到 7.00 m 的房间进深。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "The usual depth of buildings with central corridors is 12–13 m.",
+    "page_id": "page_0252",
+    "book_page": "240",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDING"
+    ],
+    "source": "body",
+    "context": "Modular dimension 1.50 m\nThis is the economical module dimension for single-room offices consisting mainly of double workstations. Workstation depth 2.20 m (80 cm desk, 1 m movement area, 40 cm shelf behind). With 10 cm wall thickness, this gives 4.40 m clear room space.\nThe usual depth of buildings with central corridors is 12–13 m. This dimension is only of limited practicality for combi-offices."
+   },
+   {
+    "quote": "Daylight can mostly be exploited into a room depth of about 7.00 m.",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Three-row layouts (typical of office high-rise) → 3 + 6\nA large supply zone at the centre of the building is normally practical only for high-rise buildings (greater proportion of vertical transport). Daylight can mostly be exploited into a room depth of about 7.00 m. New daylight systems for the deflection and transport of light (prisms, reflectors → p. 499), exploit the available daylight still better. Lightwells can illuminate the centre of three-row buildings naturally → 6."
+   }
+  ]
+ },
+ {
+  "kid": "K114",
+  "topic": "办公",
+  "title": "办公室类型",
+  "summary": "单间办公室适合独立或专注工作；组团办公约 4–16 个工位；100 个以上工位的大开间依赖人工照明和通风；提倡单间与组团混合。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The experience with the open-plan layout led to the development of group offices with approx. 4–16 workstations",
+    "page_id": "page_0251",
+    "book_page": "239",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Group office: The experience with the open-plan layout led to the development of group offices with approx. 4–16 workstations; each office is used by a single team or department. This arrangement is preferred above all for creative, design or coordination and development activities with high internal communication needs.\n→ 2"
+   },
+   {
+    "quote": "The experience with the open-plan layout led to the development of group offices with approx. 4–16 workstations; each office is used by a single team or department.",
+    "page_id": "page_0251",
+    "book_page": "239",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Group office: The experience with the open-plan layout led to the development of group offices with approx. 4–16 workstations; each office is used by a single team or department. This arrangement is preferred above all for creative, design or coordination and development activities with high internal communication needs.\n→ 2"
+   },
+   {
+    "quote": "Large-scale office landscapes with 100 or more workstations are made possible by artificial lighting and ventilation",
+    "page_id": "page_0251",
+    "book_page": "239",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Open-plan office: A form of office developed in the 1960s and 1970s of the last century. Large-scale office landscapes with 100 or more workstations are made possible by artificial lighting and ventilation; they stand for free communication and openness. Economical cubic structures, however, have the disadvantage of high maintenance costs. This form is not very popular among users → 3."
+   },
+   {
+    "quote": "Single-room offices are suitable for independent or concentrated work, as a single-person room or for a few people in very small groups who need to exchange information constantly.",
+    "page_id": "page_0245",
+    "book_page": "233",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Single-room offices are suitable for independent or concentrated work, as a single-person room or for a few people in very small groups who need to exchange information constantly. This arrangement has been common in Germany since World War II and still has its justification when the requirements of the workplace correspond (→ Gruner, Jahr; Steidle, Kissler; or → new offices for the Federal Environment Office, Dessau, Sauerbruch, Hutton) or in newbuild high-rise offices, where the structure of the building can be so decisive that it leads to the very standardised character of spatial and organisational working practices."
+   },
+   {
+    "quote": "the requirement for a mixed provision of single and group rooms",
+    "page_id": "page_0244",
+    "book_page": "232",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "A more sensitive relationship to the direct working environment is closely linked to the predominant value orientation in the company. This is reflected in the attitude to the quality of the workplace (daylight, environmental context, energy consumption), and the activity (ecological viewpoints, material use, waste disposal). The workplace is an important place for social interaction among the users, which is increasing in relevance due to formalised work structures (IT, work organisation etc.). Increased mental and physical stress leads to a greater awareness of the working environment (sufficient space, some personal choice in furnishings, ventilation, lighting, sufficient protection from disruptions). 75% of daily work takes place at the 'close and extended workplace' → ②. Necessary work contacts and collectively used facilities are significant, thus the requirement for a mixed provision of single and group rooms, 'personal' and 'collective' workplaces → ③ – ④. In addition to the refurbishment of existing office space, new spatial concepts involving single and group rooms are starting to appear (Fuchs, Gottschalk, Henkel → refs)."
+   }
+  ]
+ },
+ {
+  "kid": "K115",
+  "topic": "办公",
+  "title": "会议区",
+  "summary": "会议区每座约 2.5 m²（不含附属空间），储藏和备餐等附属空间约为会议面积的 1/3；会议区应从入口区直达。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "A conference area requires about 2.5 m^2 per seat (without subsidiary areas).",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Conferences, training\nConference areas should be directly accessible from the entrance area. Provide sliding partitions (which can divide large rooms), tables, seating, presentation media, and also store rooms and a pantry for catering (these subsidiary rooms require about 1/3 of the conference area). Good noise reduction is important. A conference area requires about 2.5 m^2 per seat (without subsidiary areas). Space requirement ~ 0.3–1.0 m^2 per workstation."
+   },
+   {
+    "quote": "Conference areas should be directly accessible from the entrance area.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Conferences, training\nConference areas should be directly accessible from the entrance area. Provide sliding partitions (which can divide large rooms), tables, seating, presentation media, and also store rooms and a pantry for catering (these subsidiary rooms require about 1/3 of the conference area). Good noise reduction is important. A conference area requires about 2.5 m^2 per seat (without subsidiary areas). Space requirement ~ 0.3–1.0 m^2 per workstation."
+   },
+   {
+    "quote": "store rooms and a pantry for catering (these subsidiary rooms require about 1/3 of the conference area)",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Conferences, training\nConference areas should be directly accessible from the entrance area. Provide sliding partitions (which can divide large rooms), tables, seating, presentation media, and also store rooms and a pantry for catering (these subsidiary rooms require about 1/3 of the conference area). Good noise reduction is important. A conference area requires about 2.5 m^2 per seat (without subsidiary areas). Space requirement ~ 0.3–1.0 m^2 per workstation."
+   }
+  ]
+ },
+ {
+  "kid": "K116",
+  "topic": "办公",
+  "title": "办公卫生间与茶水间配置",
+  "summary": "每 50–80 个工位一个厕所单元，每工位约 0.6–0.8 m²；每 50–100 个工位一个约 10 m² 的茶水间，并尽量靠近工位。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "A good ratio is one toilet unit per 50–80 workstations. Space requirement ~0.6–0.8 m² per workstation.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Toilets\nSanitary facilities are to be provided in accordance with the Workplace Regulations (→ p. 270) and separation between the anteroom with washbasins and the actual toilets is important. A good ratio is one toilet unit per 50–80 workstations. Space requirement ~0.6–0.8 m² per workstation."
+   },
+   {
+    "quote": "Tea kitchens should be as near to the workstations as possible and connected with communication zones. For every approx. 50–100 workplaces, one ~10 m² kitchen.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Social areas\nCanteens or cafeterias (→ Catering, p. 174 ff.) are mostly operated as units by outside companies. Location near the reception and outside the access control allows outside visitors in.\nTea kitchens should be as near to the workstations as possible and connected with communication zones. For every approx. 50–100 workplaces, one ~10 m² kitchen."
+   },
+   {
+    "quote": "A good ratio is one toilet unit per 50–80 workstations.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Toilets\nSanitary facilities are to be provided in accordance with the Workplace Regulations (→ p. 270) and separation between the anteroom with washbasins and the actual toilets is important. A good ratio is one toilet unit per 50–80 workstations. Space requirement ~0.6–0.8 m² per workstation."
+   },
+   {
+    "quote": "For every approx. 50–100 workplaces, one ~10 m² kitchen.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Social areas\nCanteens or cafeterias (→ Catering, p. 174 ff.) are mostly operated as units by outside companies. Location near the reception and outside the access control allows outside visitors in.\nTea kitchens should be as near to the workstations as possible and connected with communication zones. For every approx. 50–100 workplaces, one ~10 m² kitchen."
+   }
+  ]
+ },
+ {
+  "kid": "K117",
+  "topic": "办公",
+  "title": "工作场所厕所（劳动场所规定）",
+  "summary": "员工超过 5 人须分设男女厕所；距每个工位 ≤ 100 m 或不超过一层；厕所由带洗手盆的前室（每 5 个 WC 至少 1 个洗手盆）和独立的 WC 间组成。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "These are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height (if no escalator is available).",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilets\nThese are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height (if no escalator is available). Toilets should also be provided near social, readiness, washing and changing rooms → 1. If there are more than five employees, separate toilets must be provided for women and men and these should be available exclusively to employees. The number of necessary toilets depends on the number of employees → 10: the site and arrangement are shown → 3 – 11. Disability-friendly toilets are to be provided in accordance with regulations → p. 21 ff."
+   },
+   {
+    "quote": "at least one washbasin per five WCs",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilet facilities consist of a lobby with washbasins (at least one washbasin per five WCs) and a completely separate room with at least one WC (unless the facilities contain only one toilet and have no direct access to a work, social, changing, wash or sanitary room). Toilet cubicles must be lockable and, if light partitions (incompletely separated WC cubicles) are used, the partition should have a height of at least 1.90 m, and at the bottom a gap of 10–15 cm. Urinals must be placed so as not to be visible from the entrance. Toilet facilities should not contain more than 10 WC cubicles and 10 urinals. Further details of the requirements for toilets are contained in Workplace Guidelines 37/1. With natural ventilation, the minimum ventilation sections are: with window ventilation on one side 1700 cm²/WC, 1000 cm²/urinal; with through ventilation (ventilation shaft and opening window opposite) 1000 cm²/WC, 600 cm²/urinal. Ventilation equipment is to be designed for 30 m³/WC and 15 m³/urinal (altogether at least five air changes/h)."
+   },
+   {
+    "quote": "If there are more than five employees, separate toilets must be provided for women and men",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilets\nThese are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height (if no escalator is available). Toilets should also be provided near social, readiness, washing and changing rooms → 1. If there are more than five employees, separate toilets must be provided for women and men and these should be available exclusively to employees. The number of necessary toilets depends on the number of employees → 10: the site and arrangement are shown → 3 – 11. Disability-friendly toilets are to be provided in accordance with regulations → p. 21 ff."
+   },
+   {
+    "quote": "Toilet facilities consist of a lobby with washbasins (at least one washbasin per five WCs) and a completely separate room with at least one WC (unless the facilities contain only one toilet and have no direct access to a work, social, changing, wash or sanitary room).",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilet facilities consist of a lobby with washbasins (at least one washbasin per five WCs) and a completely separate room with at least one WC (unless the facilities contain only one toilet and have no direct access to a work, social, changing, wash or sanitary room). Toilet cubicles must be lockable and, if light partitions (incompletely separated WC cubicles) are used, the partition should have a height of at least 1.90 m, and at the bottom a gap of 10–15 cm. Urinals must be placed so as not to be visible from the entrance. Toilet facilities should not contain more than 10 WC cubicles and 10 urinals. Further details of the requirements for toilets are contained in Workplace Guidelines 37/1. With natural ventilation, the minimum ventilation sections are: with window ventilation on one side 1700 cm²/WC, 1000 cm²/urinal; with through ventilation (ventilation shaft and opening window opposite) 1000 cm²/WC, 600 cm²/urinal. Ventilation equipment is to be designed for 30 m³/WC and 15 m³/urinal (altogether at least five air changes/h)."
+   },
+   {
+    "quote": "If there are more than five employees, separate toilets must be provided for women and men and these should be available exclusively to employees.",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilets\nThese are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height (if no escalator is available). Toilets should also be provided near social, readiness, washing and changing rooms → 1. If there are more than five employees, separate toilets must be provided for women and men and these should be available exclusively to employees. The number of necessary toilets depends on the number of employees → 10: the site and arrangement are shown → 3 – 11. Disability-friendly toilets are to be provided in accordance with regulations → p. 21 ff."
+   },
+   {
+    "quote": "These are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilets\nThese are to be provided at a distance from each workstation of not more than 100 m or, at the farthest, one storey height (if no escalator is available). Toilets should also be provided near social, readiness, washing and changing rooms → 1. If there are more than five employees, separate toilets must be provided for women and men and these should be available exclusively to employees. The number of necessary toilets depends on the number of employees → 10: the site and arrangement are shown → 3 – 11. Disability-friendly toilets are to be provided in accordance with regulations → p. 21 ff."
+   },
+   {
+    "quote": "Toilet facilities consist of a lobby with washbasins (at least one washbasin per five WCs) and a completely separate room with at least one WC",
+    "page_id": "page_0282",
+    "book_page": "270",
+    "chapter": "Industry and trade",
+    "subheadings": [
+     "INDUSTRY"
+    ],
+    "source": "body",
+    "context": "Toilet facilities consist of a lobby with washbasins (at least one washbasin per five WCs) and a completely separate room with at least one WC (unless the facilities contain only one toilet and have no direct access to a work, social, changing, wash or sanitary room). Toilet cubicles must be lockable and, if light partitions (incompletely separated WC cubicles) are used, the partition should have a height of at least 1.90 m, and at the bottom a gap of 10–15 cm. Urinals must be placed so as not to be visible from the entrance. Toilet facilities should not contain more than 10 WC cubicles and 10 urinals. Further details of the requirements for toilets are contained in Workplace Guidelines 37/1. With natural ventilation, the minimum ventilation sections are: with window ventilation on one side 1700 cm²/WC, 1000 cm²/urinal; with through ventilation (ventilation shaft and opening window opposite) 1000 cm²/WC, 600 cm²/urinal. Ventilation equipment is to be designed for 30 m³/WC and 15 m³/urinal (altogether at least five air changes/h)."
+   }
+  ]
+ },
+ {
+  "kid": "K118",
+  "topic": "办公",
+  "title": "厅室的每人容积",
+  "summary": "声学所需容积的参考值：讲话 4 m³/人，（音乐会）音乐 10 m³/人；容积过小则混响不足。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "Guideline values are 4 m³/person for speech and 10 m³/person for (concert) music. If the volume is too small, this allows too little reverberation.",
+    "page_id": "page_0495",
+    "book_page": "483",
+    "chapter": "Building services",
+    "subheadings": [
+     "BUILDING PHYSICS"
+    ],
+    "source": "body",
+    "context": "The volume required for good sound depends on the purpose of the room (→ p. 482 6). Guideline values are 4 m³/person for speech and 10 m³/person for (concert) music. If the volume is too small, this allows too little reverberation."
+   }
+  ]
+ },
+ {
+  "kid": "K119",
+  "topic": "办公",
+  "title": "保洁间与物业用房",
+  "summary": "办公楼每层应设一间保洁间（存放清洁设备，最好有给水和拖把池）；物业管理员需要位于中心位置的休息室、储藏室和工作间。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "A cleaner’s room should be provided on every floor, as a store for cleaning equipment and ideally with water supply and bucket sink.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Cleaning services\nA cleaner’s room should be provided on every floor, as a store for cleaning equipment and ideally with water supply and bucket sink. A central waste room, possibly enclosed waste collection rooms with separate collection containers and shredders. The caretaker should have a rest room, store and workshop in a central location."
+   },
+   {
+    "quote": "The caretaker should have a rest room, store and workshop in a central location.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Cleaning services\nA cleaner’s room should be provided on every floor, as a store for cleaning equipment and ideally with water supply and bucket sink. A central waste room, possibly enclosed waste collection rooms with separate collection containers and shredders. The caretaker should have a rest room, store and workshop in a central location."
+   }
+  ]
+ },
+ {
+  "kid": "K120",
+  "topic": "办公",
+  "title": "档案室",
+  "summary": "档案/文件室须干燥，不宜设在阁楼和地下室；文件存放层净高约 2.10 m（2 个办公层 = 3 个文件层）；档案室楼面荷载按 7.5–12.5 kN/m² 设计（密集架取高值）。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "The rooms must be dry, so attic and cellar are inadvisable.",
+    "page_id": "page_0249",
+    "book_page": "237",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Filing\nDespite the application of new office technologies, the use of paper as the main information storage medium has increased. Until 1980, paper consumption doubled every four years. Computer-aided storage is increasingly used as information depository in office communication systems. Letters, texts and newspapers, which are described as uncoded information, will continue to be part of the paper volume.\nPurpose: Clearly arranged ordering and storage of files within short walking distance and efficient exploitation of the space. Space requirements for filing systems (according to Ladner → ①). Increasing depth of shelves also increases the distance to walk between them.\nL × W (filing furniture) = space for furniture\n+ ½ L × W + 0.5 m = passage space\n__________\ntotal space required = space for furniture + passage space\nDeep filing cabinets are more economical. The relationship between furniture floor space and passage space for a vertical filing system using large archive shelves (Velox system) and for a horizontal filing system is made clear in → ⑪. Furniture floor space needed with vertical storage is 5.2 m², passage space 4.6 m² (100:90). With horizontal storage, furniture floor space 3.2 m², passage space 3.6 m² (90:100, ratio inverted). A horizontal filing system offers less storage space and the high shelves are hard to organise. Vertical storage offers a personnel saving of over 40%. Suspended files make about 87% better use of wall area than files on shelves → ⑫. Files can be transported with a paternoster lift. Workstations should include sorting shelves, small desk, chairs on castors.\nThe filing system should be centrally located. A favourable window centre-line is 2.25–2.50 m, ceiling clearance height 2.10 m (2 storeys of normal office space = 3 storeys of filing). The rooms must be dry, so attic and cellar are inadvisable. Continuous table → ⑬ + ⑭ with suspended files and writing surfaces combines workstations effectively. Trolleys can be used as writing surfaces, or for card index boxes. Mobile filing systems (Soenneken Compaktus system) enable a space saving of 100–120%) by eliminating intermediate passages → ⑮ B Systems are not standardised and are adapted to the relevant requirements of filing systems, archives, libraries, stores. Take note of the higher loading per m² of floor area (→ Libraries, pp. 247 ff.). Movement of the filing system is manual or by a drive. The entire filing system or just parts of it can be closed with one hand."
+   },
+   {
+    "quote": "ceiling clearance height 2.10 m (2 storeys of normal office space = 3 storeys of filing)",
+    "page_id": "page_0249",
+    "book_page": "237",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Filing\nDespite the application of new office technologies, the use of paper as the main information storage medium has increased. Until 1980, paper consumption doubled every four years. Computer-aided storage is increasingly used as information depository in office communication systems. Letters, texts and newspapers, which are described as uncoded information, will continue to be part of the paper volume.\nPurpose: Clearly arranged ordering and storage of files within short walking distance and efficient exploitation of the space. Space requirements for filing systems (according to Ladner → ①). Increasing depth of shelves also increases the distance to walk between them.\nL × W (filing furniture) = space for furniture\n+ ½ L × W + 0.5 m = passage space\n__________\ntotal space required = space for furniture + passage space\nDeep filing cabinets are more economical. The relationship between furniture floor space and passage space for a vertical filing system using large archive shelves (Velox system) and for a horizontal filing system is made clear in → ⑪. Furniture floor space needed with vertical storage is 5.2 m², passage space 4.6 m² (100:90). With horizontal storage, furniture floor space 3.2 m², passage space 3.6 m² (90:100, ratio inverted). A horizontal filing system offers less storage space and the high shelves are hard to organise. Vertical storage offers a personnel saving of over 40%. Suspended files make about 87% better use of wall area than files on shelves → ⑫. Files can be transported with a paternoster lift. Workstations should include sorting shelves, small desk, chairs on castors.\nThe filing system should be centrally located. A favourable window centre-line is 2.25–2.50 m, ceiling clearance height 2.10 m (2 storeys of normal office space = 3 storeys of filing). The rooms must be dry, so attic and cellar are inadvisable. Continuous table → ⑬ + ⑭ with suspended files and writing surfaces combines workstations effectively. Trolleys can be used as writing surfaces, or for card index boxes. Mobile filing systems (Soenneken Compaktus system) enable a space saving of 100–120%) by eliminating intermediate passages → ⑮ B Systems are not standardised and are adapted to the relevant requirements of filing systems, archives, libraries, stores. Take note of the higher loading per m² of floor area (→ Libraries, pp. 247 ff.). Movement of the filing system is manual or by a drive. The entire filing system or just parts of it can be closed with one hand."
+   },
+   {
+    "quote": "Archive rooms should be designed for an increased floor loading of 7.5–12.5 kN/m² (for mobile units)",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Archive rooms\nFiles and written documents, which are seldom needed but have to be kept (statutory storage requirements), are stored here to take up as little space as possible (purely paper archives rapidly take up 10–20 m per workstation). For this reason, microfilming and some electronic archiving are worth looking into at an early stage. Archive rooms should be designed for an increased floor loading of 7.5–12.5 kN/m² (for mobile units) → Archives, p. 252."
+   }
+  ]
+ },
+ {
+  "kid": "K121",
+  "topic": "办公",
+  "title": "办公楼入口区",
+  "summary": "入口区连接公共区与工作区，主要功能为门厅、门禁、问询、访客登记和等候区，是企业形象的第一印象。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "Connection between public and working areas. The important functions are lobby, access control, information, visitor registration and waiting zone.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Entrance area\nConnection between public and working areas. The important functions are lobby, access control, information, visitor registration and waiting zone. Important area for the company’s corporate identity – the first impression is decisive!"
+   },
+   {
+    "quote": "Important area for the company’s corporate identity – the first impression is decisive!",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Entrance area\nConnection between public and working areas. The important functions are lobby, access control, information, visitor registration and waiting zone. Important area for the company’s corporate identity – the first impression is decisive!"
+   }
+  ]
+ },
+ {
+  "kid": "K122",
+  "topic": "办公",
+  "title": "员工餐厅位置",
+  "summary": "办公楼食堂/自助餐厅宜靠近接待处并位于门禁之外，以便外来访客使用。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "Location near the reception and outside the access control allows outside visitors in.",
+    "page_id": "page_0250",
+    "book_page": "238",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Social areas\nCanteens or cafeterias (→ Catering, p. 174 ff.) are mostly operated as units by outside companies. Location near the reception and outside the access control allows outside visitors in.\nTea kitchens should be as near to the workstations as possible and connected with communication zones. For every approx. 50–100 workplaces, one ~10 m² kitchen."
+   }
+  ]
+ },
+ {
+  "kid": "K123",
+  "topic": "办公",
+  "title": "组团办公室到窗距离",
+  "summary": "组团办公室（小型开敞办公）适合需要持续交流的工作组，工位周边到窗的距离最大 7.5 m。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Group rooms (smaller open-plan) are suitable for work groups with constant information exchange.",
+    "page_id": "page_0245",
+    "book_page": "233",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Group rooms (smaller open-plan) are suitable for work groups with constant information exchange. This form of office was an attempt to install room layouts with more scope for individual decisions (→ Changes at the workplace, p. 232 ), via the size of the workplace surroundings (max. 7.5 m to a window), and thus improve the working conditions of an open-plan arrangement (light, air, individuality), which were found to be inadequate with the increasing demands on office work. It is possible to do without full air conditioning in favour of back-up ventilation services, in addition to opening windows and using radiators."
+   },
+   {
+    "quote": "via the size of the workplace surroundings (max. 7.5 m to a window)",
+    "page_id": "page_0245",
+    "book_page": "233",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Group rooms (smaller open-plan) are suitable for work groups with constant information exchange. This form of office was an attempt to install room layouts with more scope for individual decisions (→ Changes at the workplace, p. 232 ), via the size of the workplace surroundings (max. 7.5 m to a window), and thus improve the working conditions of an open-plan arrangement (light, air, individuality), which were found to be inadequate with the increasing demands on office work. It is possible to do without full air conditioning in favour of back-up ventilation services, in addition to opening windows and using radiators."
+   }
+  ]
+ },
+ {
+  "kid": "K124",
+  "topic": "办公",
+  "title": "小型使用单元内的走廊",
+  "summary": "组合使用单元面积小于 400 m² 时，其内部走廊不受疏散通道要求的约束。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "For combined use units of less than 400 m², the corridors are not subject to the requirements for escape routes.",
+    "page_id": "page_0253",
+    "book_page": "241",
+    "chapter": "Administration and offices",
+    "subheadings": [
+     "OFFICE BUILDINGS"
+    ],
+    "source": "body",
+    "context": "Access systems\nFixed points are sanitary facilities, stairwells, lift shafts etc., situated at maximum spacings defined in the building regulations → 8 – 12. The arrangement of these determines urban development’s building structure → 7 – 16. For combined use units of less than 400 m², the corridors are not subject to the requirements for escape routes."
+   }
+  ]
+ },
+ {
+  "kid": "K125",
+  "topic": "办公",
+  "title": "员工休息室",
+  "summary": "按劳动场所规定，员工超过 10 人时须设休息室。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "For more than 10 employees, a rest/break room is necessary (workplace regulations).",
+    "page_id": "page_0192",
+    "book_page": "180",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "CATERING"
+    ],
+    "source": "body",
+    "context": "Hot kitchens, corresponding to their main functions – cooking and roasting – contain finishing zones and some or all of the following equipment: cooker (two to eight rings), increasingly mobile hotplates, extractor hood, water boiler, fast-cooking equipment, automatic cooker, steamer, automatic steamer and pressure cooker, combination device, water bath (bain-marie), baking and roasting oven, roast and grill plates, frying pans, staged roasting oven, chip pan, salamander, circulation machine (for frozen goods), microwave oven, continuous process automatic roaster and baker. Large automatic appliances are used only in very large kitchens. Storage and working surfaces should be located between appliances and at the end of the block. In addition to the fixed arrangement in the block, mobile appliances are increasingly being used, which can be adapted better to production changes and are easier to clean. → 1 – 5.\n\nCold kitchens should have a layout logically planned in parallel to the hot kitchen and be convenient for the (common) servery and bread area. The regular equipment is a day refrigerator under/over the cold table, various cutting and slicing machines (bread, cold cuts, meat, cheese), mixing machine, scales, cutting boards, salad table with lower cold cabinet, toaster or salamander, microwave oven and sufficient working and storage space → 6.\n\nServery for restaurant kitchens with counter or self-service, ideally situated between the preparation area and the dining room. There should be sufficient shelf space, a hot cabinet with heated plates and a cool zone for cold foods. Crockery shelves or upper fixings, cutlery container. In large businesses, also basket, plate and soup bowl dispensers.\n\nCrockery return: the difference between washing crockery and pots is considerable. With waiter service, the plates are brought back to their own area of the servery → 12 – 15. In addition to one or two sinks with drainers, storage space and shelves for pot washing, small kitchens naturally also require dishwashers in various sizes, feed types and operational types. Dishwashers under the worktop are usual, but also tunnel and rotary batch washers. Provide surfaces for the return (temporary storage, worktops, sorting, soaking) and space for the crockery → 12 – 14.\n\nStaff area: about 10–15% of the total space required in a kitchen facility should be allocated for offices and staff rooms. The kitchen staff will need changing rooms, washing facilities and toilets. For "
+   }
+  ]
+ },
+ {
+  "kid": "K126",
+  "topic": "办公",
+  "title": "研讨室的规模与进深",
+  "summary": "高校研讨室常用规模为 20、40、50、60 座，每名学生约 1.90–2.00 m²；仅靠一面外墙自然通风时，房间进深不超过净高的 2.5 倍。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "Seminar rooms, usual sizes: 20, 40, 50, 60 seats; mobile double tables, width 1.20 m, depth 0.60 m, space required per student 1.90–2.00 m.",
+    "page_id": "page_0214",
+    "book_page": "202",
+    "chapter": "Education and research",
+    "subheadings": [
+     "UNIVERSITIES AND COLLEGES"
+    ],
+    "source": "body",
+    "context": "General tuition rooms\nSeminar rooms, usual sizes: 20, 40, 50, 60 seats; mobile double tables, width 1.20 m, depth 0.60 m, space required per student 1.90–2.00 m.\nVariable arrangement of the tables for tutorial and group work. If there is free ventilation from only one external wall, the depth of the room should not exceed 2.5 × clear ceiling height."
+   },
+   {
+    "quote": "If there is free ventilation from only one external wall, the depth of the room should not exceed 2.5 × clear ceiling height.",
+    "page_id": "page_0214",
+    "book_page": "202",
+    "chapter": "Education and research",
+    "subheadings": [
+     "UNIVERSITIES AND COLLEGES"
+    ],
+    "source": "body",
+    "context": "General tuition rooms\nSeminar rooms, usual sizes: 20, 40, 50, 60 seats; mobile double tables, width 1.20 m, depth 0.60 m, space required per student 1.90–2.00 m.\nVariable arrangement of the tables for tutorial and group work. If there is free ventilation from only one external wall, the depth of the room should not exceed 2.5 × clear ceiling height."
+   }
+  ]
+ },
+ {
+  "kid": "K127",
+  "topic": "办公",
+  "title": "高校教研人员办公室面积",
+  "summary": "高校教研人员办公室面积参考值：教授 20–24 m²，科研助理 15 m²，助理 20 m²，秘书 15 m²（两人合用 20 m²）。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "professor 20–24 m² scientific assistant 15 m² assistant 20 m² secretary 15 m² (double occupation 20 m²)",
+    "page_id": "page_0214",
+    "book_page": "202",
+    "chapter": "Education and research",
+    "subheadings": [
+     "UNIVERSITIES AND COLLEGES"
+    ],
+    "source": "body",
+    "context": "Offices for scientific personnel → ⑤\nprofessor 20–24 m²\nscientific assistant 15 m²\nassistant 20 m²\nsecretary 15 m² (double occupation 20 m²)"
+   }
+  ]
+ },
+ {
+  "kid": "K128",
+  "topic": "酒店与餐饮",
+  "title": "酒店星级与客房面积",
+  "summary": "德国酒店分级：1 星单/双人间 8/12 m²（带洗手盆），2 星 12/16 m²（70% 客房带卫生间），3 星 14/18 m²（全部带卫生间），4 星 16/22 m²，5 星 18/26 m²。",
+  "priority": 3,
+  "evidence": [
+   {
+    "quote": "1 Star (Tourist): single room 8 m², double room 12 m² (minimum area for 75% of the hotel rooms, without bathroom), bed, wardrobe, seat, washbasin in the room",
+    "page_id": "page_0184",
+    "book_page": "172",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "HOTELS"
+    ],
+    "source": "body",
+    "context": "According to the classification system of the German Hotel and Inn Association (DEHOGA), there are five categories, essentially determined by the room’s size and features:\n1 Star (Tourist): single room 8 m², double room 12 m² (minimum area for 75% of the hotel rooms, without bathroom), bed, wardrobe, seat, washbasin in the room, reception as a separate area\n2 Stars (Standard): as before, but single room 12 m², double room 16 m² (minimum area for 75% of the hotel rooms, including bathroom and corridor), bathroom in room (for 70% of hotel rooms), seat per bed, colour television (in 70% of the hotel rooms)\n3 Stars (Comfort): as before, but single room 14 m², double room 18 m² (minimum area, see above), bathroom in room (for all rooms in the hotel), telephone, reception area with seating for group, independent reception\n4 Stars (First Class): as before, but single room 16 m², double room 22 m² (minimum area, see above), minibar, armchair/couch with coffee table, lobby with seating and drinks service\n5 Stars (Luxury): as before, but single room 18 m², double room 26 m², (minimum size, see above), 2% of the hotel rooms as suites (at least two), each with an armchair/sofa per bed, additional washbasin in double rooms and suites, additional colour television in suites, reception lobby."
+   },
+   {
+    "quote": "3 Stars (Comfort): as before, but single room 14 m², double room 18 m² (minimum area, see above), bathroom in room (for all rooms in the hotel)",
+    "page_id": "page_0184",
+    "book_page": "172",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "HOTELS"
+    ],
+    "source": "body",
+    "context": "According to the classification system of the German Hotel and Inn Association (DEHOGA), there are five categories, essentially determined by the room’s size and features:\n1 Star (Tourist): single room 8 m², double room 12 m² (minimum area for 75% of the hotel rooms, without bathroom), bed, wardrobe, seat, washbasin in the room, reception as a separate area\n2 Stars (Standard): as before, but single room 12 m², double room 16 m² (minimum area for 75% of the hotel rooms, including bathroom and corridor), bathroom in room (for 70% of hotel rooms), seat per bed, colour television (in 70% of the hotel rooms)\n3 Stars (Comfort): as before, but single room 14 m², double room 18 m² (minimum area, see above), bathroom in room (for all rooms in the hotel), telephone, reception area with seating for group, independent reception\n4 Stars (First Class): as before, but single room 16 m², double room 22 m² (minimum area, see above), minibar, armchair/couch with coffee table, lobby with seating and drinks service\n5 Stars (Luxury): as before, but single room 18 m², double room 26 m², (minimum size, see above), 2% of the hotel rooms as suites (at least two), each with an armchair/sofa per bed, additional washbasin in double rooms and suites, additional colour television in suites, reception lobby."
+   },
+   {
+    "quote": "4 Stars (First Class): as before, but single room 16 m², double room 22 m² (minimum area, see above)",
+    "page_id": "page_0184",
+    "book_page": "172",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "HOTELS"
+    ],
+    "source": "body",
+    "context": "According to the classification system of the German Hotel and Inn Association (DEHOGA), there are five categories, essentially determined by the room’s size and features:\n1 Star (Tourist): single room 8 m², double room 12 m² (minimum area for 75% of the hotel rooms, without bathroom), bed, wardrobe, seat, washbasin in the room, reception as a separate area\n2 Stars (Standard): as before, but single room 12 m², double room 16 m² (minimum area for 75% of the hotel rooms, including bathroom and corridor), bathroom in room (for 70% of hotel rooms), seat per bed, colour television (in 70% of the hotel rooms)\n3 Stars (Comfort): as before, but single room 14 m², double room 18 m² (minimum area, see above), bathroom in room (for all rooms in the hotel), telephone, reception area with seating for group, independent reception\n4 Stars (First Class): as before, but single room 16 m², double room 22 m² (minimum area, see above), minibar, armchair/couch with coffee table, lobby with seating and drinks service\n5 Stars (Luxury): as before, but single room 18 m², double room 26 m², (minimum size, see above), 2% of the hotel rooms as suites (at least two), each with an armchair/sofa per bed, additional washbasin in double rooms and suites, additional colour television in suites, reception lobby."
+   },
+   {
+    "quote": "5 Stars (Luxury): as before, but single room 18 m², double room 26 m²",
+    "page_id": "page_0184",
+    "book_page": "172",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "HOTELS"
+    ],
+    "source": "body",
+    "context": "According to the classification system of the German Hotel and Inn Association (DEHOGA), there are five categories, essentially determined by the room’s size and features:\n1 Star (Tourist): single room 8 m², double room 12 m² (minimum area for 75% of the hotel rooms, without bathroom), bed, wardrobe, seat, washbasin in the room, reception as a separate area\n2 Stars (Standard): as before, but single room 12 m², double room 16 m² (minimum area for 75% of the hotel rooms, including bathroom and corridor), bathroom in room (for 70% of hotel rooms), seat per bed, colour television (in 70% of the hotel rooms)\n3 Stars (Comfort): as before, but single room 14 m², double room 18 m² (minimum area, see above), bathroom in room (for all rooms in the hotel), telephone, reception area with seating for group, independent reception\n4 Stars (First Class): as before, but single room 16 m², double room 22 m² (minimum area, see above), minibar, armchair/couch with coffee table, lobby with seating and drinks service\n5 Stars (Luxury): as before, but single room 18 m², double room 26 m², (minimum size, see above), 2% of the hotel rooms as suites (at least two), each with an armchair/sofa per bed, additional washbasin in double rooms and suites, additional colour television in suites, reception lobby."
+   },
+   {
+    "quote": "2 Stars (Standard): as before, but single room 12 m², double room 16 m² (minimum area for 75% of the hotel rooms, including bathroom and corridor), bathroom in room (for 70% of hotel rooms)",
+    "page_id": "page_0184",
+    "book_page": "172",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "HOTELS"
+    ],
+    "source": "body",
+    "context": "According to the classification system of the German Hotel and Inn Association (DEHOGA), there are five categories, essentially determined by the room’s size and features:\n1 Star (Tourist): single room 8 m², double room 12 m² (minimum area for 75% of the hotel rooms, without bathroom), bed, wardrobe, seat, washbasin in the room, reception as a separate area\n2 Stars (Standard): as before, but single room 12 m², double room 16 m² (minimum area for 75% of the hotel rooms, including bathroom and corridor), bathroom in room (for 70% of hotel rooms), seat per bed, colour television (in 70% of the hotel rooms)\n3 Stars (Comfort): as before, but single room 14 m², double room 18 m² (minimum area, see above), bathroom in room (for all rooms in the hotel), telephone, reception area with seating for group, independent reception\n4 Stars (First Class): as before, but single room 16 m², double room 22 m² (minimum area, see above), minibar, armchair/couch with coffee table, lobby with seating and drinks service\n5 Stars (Luxury): as before, but single room 18 m², double room 26 m², (minimum size, see above), 2% of the hotel rooms as suites (at least two), each with an armchair/sofa per bed, additional washbasin in double rooms and suites, additional colour television in suites, reception lobby."
+   }
+  ]
+ },
+ {
+  "kid": "K129",
+  "topic": "酒店与餐饮",
+  "title": "汽车旅馆",
+  "summary": "汽车旅馆客房 4×4 至 5×5 m、带卫生间；多为单层分散布置；停车位尽量靠近客房。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "Room sizes 4 × 4 m – 5 × 5 m, with bathroom and sometimes kitchenette",
+    "page_id": "page_0198",
+    "book_page": "186",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "MOTELS"
+    ],
+    "source": "body",
+    "context": "Room sizes 4 × 4 m – 5 × 5 m, with bathroom and sometimes kitchenette → ① – ⑥. Furnishing is cost-saving and simple (most of the guests stay only one night). Community rooms for guests, with desks and reading tables, radio, television; play area should be situated away from the guest rooms so as not to disturb sleepers."
+   },
+   {
+    "quote": "In contrast to city hotels, motels are mostly single-storey, widely spread facilities",
+    "page_id": "page_0198",
+    "book_page": "186",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "MOTELS"
+    ],
+    "source": "body",
+    "context": "Motels offer reasonably priced accommodation for travellers. They are located at the edge of towns in places easily reachable by motorway or arterial roads, near tourist attractions and holiday regions. It is beneficial to have restaurants, petrol stations and services for motorists in the immediate vicinity. In contrast to city hotels, motels are mostly single-storey, widely spread facilities → 7. The access road normally leads to the registration (short-term parking), then to a car park or carport as near to the room as possible. (Departure also via registration with check-out and return of key.)"
+   },
+   {
+    "quote": "The access road normally leads to the registration (short-term parking), then to a car park or carport as near to the room as possible.",
+    "page_id": "page_0198",
+    "book_page": "186",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "MOTELS"
+    ],
+    "source": "body",
+    "context": "Motels offer reasonably priced accommodation for travellers. They are located at the edge of towns in places easily reachable by motorway or arterial roads, near tourist attractions and holiday regions. It is beneficial to have restaurants, petrol stations and services for motorists in the immediate vicinity. In contrast to city hotels, motels are mostly single-storey, widely spread facilities → 7. The access road normally leads to the registration (short-term parking), then to a car park or carport as near to the room as possible. (Departure also via registration with check-out and return of key.)"
+   }
+  ]
+ },
+ {
+  "kid": "K130",
+  "topic": "酒店与餐饮",
+  "title": "餐厅",
+  "summary": "餐厅通道净宽 ≥ 0.80 m、门 0.90 m；就餐区净高：≤ 50 m² 为 2.50 m，> 50 m² 为 2.75 m，> 100 m² ≥ 3.00 m。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "Minimum clear width of aisles in restaurants 0.80 m, doors 0.90 m",
+    "page_id": "page_0187",
+    "book_page": "175",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "CATERING"
+    ],
+    "source": "body",
+    "context": "Before any restaurant or other catering establishment is built, the organisational processes must be determined with the operator. The following have to be decided: what food will be on the menu, what quality and quantity will be on offer? Which service system will be used, whether à la carte with fixed or changing daily menus, plate or table service, self-service or mixed? For design purposes, it is important to know which target clientele is aimed for. The site itself will help to determine the most suitable type of restaurant. Appoint specialists in: kitchen equipment, electrical, heating, ventilation and sanitary design.\n\nThe main room in a restaurant is the dining room. Its furniture and fittings should be appropriate for the business. A number of additional tables or chairs should be available, so that table groupings are flexible. Provide special tables for regulars. Side rooms and conference rooms should always be flexibly furnished in order to permit variations. A food bar with fixed stools can be arranged for customers in a hurry. Larger dining rooms should be split into zones. Kitchen, side rooms, toilets and sanitary installations should be grouped around the dining room, also in the basement → 8.\n\nColumns in a dining room are best located in the centre of a group of tables or at the corners of the tables → 3. The ceiling heights of dining areas with a floor area ≤50 m² = 2.50 m, > 50 m² = 2.75 m and >100 m² ≥3.00 m; above or below galleries ≥2.50 m.\n\nEmergency exits 1.0 m wide per 150 people using them. Minimum clear width of aisles in restaurants 0.80 m, doors 0.90 m → 9.\n\nToilets in public houses, bars or restaurants: Stairs to toilets, wash, staff and storage rooms, usable width ≤1.10 m. Clear walk-through height ≤2.10 m measured vertically. Window area ≤1/10 of the floor area of a restaurant."
+   },
+   {
+    "quote": "The ceiling heights of dining areas with a floor area ≤50 m² = 2.50 m, > 50 m² = 2.75 m and >100 m² ≥3.00 m",
+    "page_id": "page_0187",
+    "book_page": "175",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "CATERING"
+    ],
+    "source": "body",
+    "context": "Before any restaurant or other catering establishment is built, the organisational processes must be determined with the operator. The following have to be decided: what food will be on the menu, what quality and quantity will be on offer? Which service system will be used, whether à la carte with fixed or changing daily menus, plate or table service, self-service or mixed? For design purposes, it is important to know which target clientele is aimed for. The site itself will help to determine the most suitable type of restaurant. Appoint specialists in: kitchen equipment, electrical, heating, ventilation and sanitary design.\n\nThe main room in a restaurant is the dining room. Its furniture and fittings should be appropriate for the business. A number of additional tables or chairs should be available, so that table groupings are flexible. Provide special tables for regulars. Side rooms and conference rooms should always be flexibly furnished in order to permit variations. A food bar with fixed stools can be arranged for customers in a hurry. Larger dining rooms should be split into zones. Kitchen, side rooms, toilets and sanitary installations should be grouped around the dining room, also in the basement → 8.\n\nColumns in a dining room are best located in the centre of a group of tables or at the corners of the tables → 3. The ceiling heights of dining areas with a floor area ≤50 m² = 2.50 m, > 50 m² = 2.75 m and >100 m² ≥3.00 m; above or below galleries ≥2.50 m.\n\nEmergency exits 1.0 m wide per 150 people using them. Minimum clear width of aisles in restaurants 0.80 m, doors 0.90 m → 9.\n\nToilets in public houses, bars or restaurants: Stairs to toilets, wash, staff and storage rooms, usable width ≤1.10 m. Clear walk-through height ≤2.10 m measured vertically. Window area ≤1/10 of the floor area of a restaurant."
+   }
+  ]
+ },
+ {
+  "kid": "K131",
+  "topic": "酒店与餐饮",
+  "title": "酒店基本功能区",
+  "summary": "酒店必备：作为中枢的大堂与接待、与大堂相连的餐饮区、行政、员工区、客房区和后勤服务区；即使一星级也须设独立的接待区。",
+  "priority": 2,
+  "evidence": [
+   {
+    "quote": "The essential areas are: hotel lobby and reception as the central, well-arranged and prestigious nerve centre between the various parts of the operation, catering area in connection with the hotel lobby",
+    "page_id": "page_0183",
+    "book_page": "171",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "HOTELS"
+    ],
+    "source": "body",
+    "context": "The essential areas are: hotel lobby and reception as the central, well-arranged and prestigious nerve centre between the various parts of the operation, catering area in connection with the hotel lobby (extent of the services depend on the hotel category), administration, a staff area, which is separately accessed and partly in direct connection with other areas of the hotel, guest room area with differentiated rooms and individual access areas arranged under the aspects of category, orientation and noise screening, service area with kitchens, store and associated rooms. The percentages of hotels’ surface areas required for the various functions are shown in → ④."
+   },
+   {
+    "quote": "reception as a separate area",
+    "page_id": "page_0184",
+    "book_page": "172",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "HOTELS"
+    ],
+    "source": "body",
+    "context": "According to the classification system of the German Hotel and Inn Association (DEHOGA), there are five categories, essentially determined by the room’s size and features:\n1 Star (Tourist): single room 8 m², double room 12 m² (minimum area for 75% of the hotel rooms, without bathroom), bed, wardrobe, seat, washbasin in the room, reception as a separate area\n2 Stars (Standard): as before, but single room 12 m², double room 16 m² (minimum area for 75% of the hotel rooms, including bathroom and corridor), bathroom in room (for 70% of hotel rooms), seat per bed, colour television (in 70% of the hotel rooms)\n3 Stars (Comfort): as before, but single room 14 m², double room 18 m² (minimum area, see above), bathroom in room (for all rooms in the hotel), telephone, reception area with seating for group, independent reception\n4 Stars (First Class): as before, but single room 16 m², double room 22 m² (minimum area, see above), minibar, armchair/couch with coffee table, lobby with seating and drinks service\n5 Stars (Luxury): as before, but single room 18 m², double room 26 m², (minimum size, see above), 2% of the hotel rooms as suites (at least two), each with an armchair/sofa per bed, additional washbasin in double rooms and suites, additional colour television in suites, reception lobby."
+   }
+  ]
+ },
+ {
+  "kid": "K132",
+  "topic": "酒店与餐饮",
+  "title": "餐厅与厨房、卫生间的组织",
+  "summary": "厨房、附属用房、厕所和卫生设施应围绕餐厅布置；餐厨的出餐台最好位于备餐区和餐厅之间。",
+  "priority": 1,
+  "evidence": [
+   {
+    "quote": "Kitchen, side rooms, toilets and sanitary installations should be grouped around the dining room",
+    "page_id": "page_0187",
+    "book_page": "175",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "CATERING"
+    ],
+    "source": "body",
+    "context": "Before any restaurant or other catering establishment is built, the organisational processes must be determined with the operator. The following have to be decided: what food will be on the menu, what quality and quantity will be on offer? Which service system will be used, whether à la carte with fixed or changing daily menus, plate or table service, self-service or mixed? For design purposes, it is important to know which target clientele is aimed for. The site itself will help to determine the most suitable type of restaurant. Appoint specialists in: kitchen equipment, electrical, heating, ventilation and sanitary design.\n\nThe main room in a restaurant is the dining room. Its furniture and fittings should be appropriate for the business. A number of additional tables or chairs should be available, so that table groupings are flexible. Provide special tables for regulars. Side rooms and conference rooms should always be flexibly furnished in order to permit variations. A food bar with fixed stools can be arranged for customers in a hurry. Larger dining rooms should be split into zones. Kitchen, side rooms, toilets and sanitary installations should be grouped around the dining room, also in the basement → 8.\n\nColumns in a dining room are best located in the centre of a group of tables or at the corners of the tables → 3. The ceiling heights of dining areas with a floor area ≤50 m² = 2.50 m, > 50 m² = 2.75 m and >100 m² ≥3.00 m; above or below galleries ≥2.50 m.\n\nEmergency exits 1.0 m wide per 150 people using them. Minimum clear width of aisles in restaurants 0.80 m, doors 0.90 m → 9.\n\nToilets in public houses, bars or restaurants: Stairs to toilets, wash, staff and storage rooms, usable width ≤1.10 m. Clear walk-through height ≤2.10 m measured vertically. Window area ≤1/10 of the floor area of a restaurant."
+   },
+   {
+    "quote": "Servery for restaurant kitchens with counter or self-service, ideally situated between the preparation area and the dining room.",
+    "page_id": "page_0192",
+    "book_page": "180",
+    "chapter": "Accommodation",
+    "subheadings": [
+     "CATERING"
+    ],
+    "source": "body",
+    "context": "Hot kitchens, corresponding to their main functions – cooking and roasting – contain finishing zones and some or all of the following equipment: cooker (two to eight rings), increasingly mobile hotplates, extractor hood, water boiler, fast-cooking equipment, automatic cooker, steamer, automatic steamer and pressure cooker, combination device, water bath (bain-marie), baking and roasting oven, roast and grill plates, frying pans, staged roasting oven, chip pan, salamander, circulation machine (for frozen goods), microwave oven, continuous process automatic roaster and baker. Large automatic appliances are used only in very large kitchens. Storage and working surfaces should be located between appliances and at the end of the block. In addition to the fixed arrangement in the block, mobile appliances are increasingly being used, which can be adapted better to production changes and are easier to clean. → 1 – 5.\n\nCold kitchens should have a layout logically planned in parallel to the hot kitchen and be convenient for the (common) servery and bread area. The regular equipment is a day refrigerator under/over the cold table, various cutting and slicing machines (bread, cold cuts, meat, cheese), mixing machine, scales, cutting boards, salad table with lower cold cabinet, toaster or salamander, microwave oven and sufficient working and storage space → 6.\n\nServery for restaurant kitchens with counter or self-service, ideally situated between the preparation area and the dining room. There should be sufficient shelf space, a hot cabinet with heated plates and a cool zone for cold foods. Crockery shelves or upper fixings, cutlery container. In large businesses, also basket, plate and soup bowl dispensers.\n\nCrockery return: the difference between washing crockery and pots is considerable. With waiter service, the plates are brought back to their own area of the servery → 12 – 15. In addition to one or two sinks with drainers, storage space and shelves for pot washing, small kitchens naturally also require dishwashers in various sizes, feed types and operational types. Dishwashers under the worktop are usual, but also tunnel and rotary batch washers. Provide surfaces for the return (temporary storage, worktops, sorting, soaking) and space for the crockery → 12 – 14.\n\nStaff area: about 10–15% of the total space required in a kitchen facility should be allocated for offices and staff rooms. The kitchen staff will need changing rooms, washing facilities and toilets. For "
+   }
+  ]
+ }
+]

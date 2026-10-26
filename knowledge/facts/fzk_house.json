@@ -1,0 +1,383 @@
+{
+ "project": "fzk_house",
+ "schema": "IFC4",
+ "length_unit_scale": 1.0,
+ "storeys": [
+  [
+   "Erdgeschoss",
+   0.0
+  ],
+  [
+   "Dachgeschoss",
+   2.7
+  ]
+ ],
+ "spaces": [
+  {
+   "gid": "347jFE2yX7IhCEIALmupEH",
+   "name": "4",
+   "longname": "Schlafzimmer",
+   "storey": "Erdgeschoss",
+   "area": 21.41,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.5,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    4.05,
+    5.45,
+    2.5
+   ]
+  },
+  {
+   "gid": "0e_hbkIQ5DMQlIJ$2V3j_m",
+   "name": "3",
+   "longname": "Bad",
+   "storey": "Erdgeschoss",
+   "area": 12.128,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.5,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    3.37,
+    3.71,
+    2.5
+   ]
+  },
+  {
+   "gid": "2RSCzLOBz4FAK$_wE8VckM",
+   "name": "2",
+   "longname": "Buero",
+   "storey": "Erdgeschoss",
+   "area": 12.595,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.5,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    3.5,
+    3.71,
+    2.5
+   ]
+  },
+  {
+   "gid": "0Lt8gR_E9ESeGH5uY_g9e9",
+   "name": "5",
+   "longname": "Wohnen",
+   "storey": "Erdgeschoss",
+   "area": 25.209,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.5,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    7.0,
+    3.71,
+    2.5
+   ]
+  },
+  {
+   "gid": "3$f2p7VyLB7eox67SA_zKE",
+   "name": "1",
+   "longname": "Flur",
+   "storey": "Erdgeschoss",
+   "area": 11.185,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.5,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    7.11,
+    1.74,
+    2.5
+   ]
+  },
+  {
+   "gid": "17JZcMFrf5tOftUTidA0d3",
+   "name": "6",
+   "longname": "Küche",
+   "storey": "Erdgeschoss",
+   "area": 16.305,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 2.5,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    4.4,
+    3.71,
+    2.5
+   ]
+  },
+  {
+   "gid": "2dQFggKBb1fOc1CqZDIDlx",
+   "name": "7",
+   "longname": "Galerie",
+   "storey": "Dachgeschoss",
+   "area": 74.509,
+   "area_src": "BaseQuantities.NetFloorArea",
+   "height": 4.0,
+   "height_src": "BaseQuantities.FinishCeilingHeight",
+   "bbox_xyz": [
+    11.4,
+    9.4,
+    3.39
+   ]
+  }
+ ],
+ "doors": [
+  {
+   "gid": "1Oms875aH3Wg$9l65H2ZGw",
+   "name": "Innentuer-1",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.885,
+   "height": 2.01,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Flur",
+    "Schlafzimmer"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "0pGAjlJMP3ifYPATVF5xAR",
+   "name": "Innentuer-2",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.01,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Bad",
+    "Flur"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2qiPPF3FrF8OIqfrKiSUqm",
+   "name": "Innentuer-3",
+   "type": "IFC Tür - Eine Öffnunsgrichtung",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.885,
+   "height": 2.01,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Buero",
+    "Flur"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "2jTRqchjf7oB0yhQ6462T0",
+   "name": "Haustuer",
+   "type": "Eingangstür",
+   "op": "NOTDEFINED",
+   "width": 1.01,
+   "height": 2.01,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Flur"
+   ],
+   "fire": null,
+   "external": null
+  },
+  {
+   "gid": "1M$gxUrX1Fiwe3P64ww7U5",
+   "name": "Terrassentuer",
+   "type": "Schiebetür_3-teilig",
+   "op": "DOUBLE_DOOR_SLIDING",
+   "width": 2.01,
+   "height": 2.375,
+   "storey": "Erdgeschoss",
+   "spaces": [
+    "Wohnen"
+   ],
+   "fire": null,
+   "external": null
+  }
+ ],
+ "windows": [
+  {
+   "gid": "1srAI$R4T8ihLXSNHmUSET",
+   "name": "EG-Fenster-6",
+   "type": "IFC Fenster - zwei Panele - Vertikal",
+   "width": 2.0,
+   "height": 1.2,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "0B1RwEzzP3CfME5NR$Vqh5",
+   "name": "EG-Fenster-7",
+   "type": "IFC Fenster - zwei Panele - Vertikal",
+   "width": 2.0,
+   "height": 1.2,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Küche"
+   ]
+  },
+  {
+   "gid": "25nJxEpYf8LRDJNkMUVO0m",
+   "name": "EG-Fenster-4",
+   "type": "IFC Fenster - zwei Panele - Vertikal",
+   "width": 2.0,
+   "height": 1.2,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.95,
+   "spaces": [
+    "Küche"
+   ]
+  },
+  {
+   "gid": "3BFcylCsX74PQAoRAe5fNv",
+   "name": "EG-Fenster-5",
+   "type": "IFC Fenster - zwei Panele - Vertikal",
+   "width": 2.0,
+   "height": 1.2,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Wohnen"
+   ]
+  },
+  {
+   "gid": "13aSY79zb8fP4HApEJ0z_e",
+   "name": "EG-Fenster-8",
+   "type": "IFC Fenster - zwei Panele - Vertikal",
+   "width": 2.0,
+   "height": 1.2,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Schlafzimmer"
+   ]
+  },
+  {
+   "gid": "2EQh_jhP1B_A_AMuSJc5E0",
+   "name": "EG-Fenster-9",
+   "type": "IFC Fenster - zwei Panele - Vertikal",
+   "width": 2.0,
+   "height": 1.2,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Wohnen"
+   ]
+  },
+  {
+   "gid": "1TAI4ouKX4Xx4lBDZIu5qM",
+   "name": "EG-Fenster-1",
+   "type": "IFC Fenster - zwei Panele - Vertikal",
+   "width": 2.0,
+   "height": 1.2,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Buero"
+   ]
+  },
+  {
+   "gid": "2Q9w7oRXP249jBobEMVqlZ",
+   "name": "EG-Fenster-2",
+   "type": "IFC Fenster - zwei Panele - Vertikal",
+   "width": 2.0,
+   "height": 1.2,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Bad"
+   ]
+  },
+  {
+   "gid": "1DiYqhfzH9xxuJdVHwXCNa",
+   "name": "EG-Fenster-3",
+   "type": "IFC Fenster - zwei Panele - Vertikal",
+   "width": 2.0,
+   "height": 1.2,
+   "storey": "Erdgeschoss",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Schlafzimmer"
+   ]
+  },
+  {
+   "gid": "1zOBw0Gej5Wf0QAJfHnOc0",
+   "name": "OG-Fenster-2",
+   "type": "Rundfenster 13",
+   "width": 1.0,
+   "height": 1.0,
+   "storey": "Dachgeschoss",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Galerie"
+   ]
+  },
+  {
+   "gid": "2ACmFFQhT1Ouf0x4YRUh9m",
+   "name": "OG-Fenster-1",
+   "type": "Rundfenster 13",
+   "width": 1.0,
+   "height": 1.0,
+   "storey": "Dachgeschoss",
+   "sill_approx": 0.8,
+   "spaces": [
+    "Galerie"
+   ]
+  }
+ ],
+ "stairs": [
+  {
+   "gid": "38a9vdh9bF5Qg28GWyHhlr",
+   "cls": "IfcStair",
+   "name": "Wendeltreppe",
+   "predefined": "None",
+   "storey": "Erdgeschoss",
+   "n_riser": null,
+   "riser": null,
+   "tread": null,
+   "props": {
+    "AC_Pset_Treppe_FZK-Haus.Einfache/mittelmässige Modifizierung bei (iScaleChangeSM)": 999.0,
+    "AC_Pset_Treppe_FZK-Haus.Einfache/mittelmässige Modifizierung bei (gs_ScaleChangeSM)": 100.0,
+    "AC_Pset_Treppe_FZK-Haus.Mittelmässige/detaillierte Modifizierung bei (iScaleChangeMD)": 999.0,
+    "AC_Pset_Treppe_FZK-Haus.Mittelmässige/detaillierte Modifizierung bei (gs_ScaleChangeMD)": 50.0,
+    "AC_Pset_Treppe_FZK-Haus.Nummerierung zeigen (gs_show_numbering)": true,
+    "AC_Pset_Treppe_FZK-Haus.Text (gs_riserun_text)": true,
+    "AC_Pset_Treppe_FZK-Haus.Schriftgröße (mm) (gs_riserun_text_size)": 1.0,
+    "AC_Pset_Treppe_FZK-Haus.Schriftgröße (Punkt) (gs_riserun_text_size_pt)": 2.83,
+    "AC_Pset_Treppe_FZK-Haus.Handlauf im Grundriss zeigen": true,
+    "AC_Pset_Treppe_FZK-Haus.Wangen im Grundriss zeigen": true,
+    "AC_Pset_Treppe_FZK-Haus.Linientyp unter Ursprungsgeschoss": 4.0,
+    "AC_Pset_Treppe_FZK-Haus.Nummerierung zeigen (gs_story_shownum)": true,
+    "AC_Equantity_Treppe_FZK-Haus.- (gs_ArrowWidth)": 0.4,
+    "AC_Equantity_Treppe_FZK-Haus.- (gs_BegSymbWidth)": 0.2
+   }
+  }
+ ],
+ "railings": [
+  {
+   "name": "",
+   "type": "Geländer_horizontal 13",
+   "storey": "Dachgeschoss",
+   "height": 1.0
+  },
+  {
+   "name": "",
+   "type": "Geländer_horizontal 13",
+   "storey": "Dachgeschoss",
+   "height": 1.0
+  }
+ ],
+ "furniture": [],
+ "other_counts": {
+  "IfcCurtainWall": 0,
+  "IfcColumn": 0,
+  "IfcBeam": 4,
+  "IfcSlab": 4,
+  "IfcRoof": 0,
+  "IfcTransportElement": 0,
+  "IfcRelSpaceBoundary": 81
+ }
+}

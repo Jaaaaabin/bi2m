@@ -1,0 +1,79 @@
+id,question,ground_truth,ifc_model,project,category,split,neufert_tier,neufert_topic
+476,What are the heights of the building levels?,"Building Level Heights:
+
+   Level Elevations:
+   - Ground Floor: 0.00m above ground
+   - First Floor: 3.40m above ground
+   - Second Floor: 6.80m above ground
+   - Roof: 10.20m above ground",arc,fantasy_residential_building_1,1,train,tier2,T2_storey_heights
+477,How many residential units are in this building?,"Residential Units are not explicitly defined in the model. However, it can be implied that 6 units are present in total, 2 units on each level.",arc,fantasy_residential_building_1,4,train,tier1,T1_layout_typology
+478,What is the typical room configuration found in the residential units?,"Unit Configuration Analysis:
+- All residential units seem to follow the same linear plan configuration.
+
+Typical unit configuration:
+- Wardrobe
+- Toilet
+- Kitchen and Dining room
+- Living room
+- Bedroom
+- Office
+- Bathroom",arc,fantasy_residential_building_1,3,train,tier1,T1_layout_typology
+480,Which door model has the largest width?,"Largest Door Width:
+   - Door type: ASSA_ABLOY_SemiTransparent_NonHosted:Semi Transparent non hosted
+   - Width: 5.63m",arc,fantasy_residential_building_1,2,test,tier2,T2_door_widths
+494,"What furniture items are in space 5 (kitchen) on the ground floor, and what is the basic information about this space?","Space 5 Information:
+   - Name: Kitchen and Dining room
+   - Area: 38.45 sq m
+
+   Kitchen furniture identified:
+   - Küchenzeile-02 Kombination:Küchenzeile: 4 items
+   - Küchenzeile-05 Kombination:Typ1: 4 items
+   - Küchenzeile-01 Generisch:Typ1: 4 items",arc,fantasy_residential_building_1,2,train,tier2,T2_furniture_in_room
+495,"How many Laundry/Utility Rooms are present in the building, and what is the area of each room?","Laundry/Utility Rooms Found:
+   - Total count: 4
+
+   Room details:
+   - Utility room (Space 10, Ground Floor): 9.42 sq m
+   - Utility room (Space 19, Ground Floor): 9.42 sq m
+   - Utility room (Space 27, First Floor): 9.42 sq m
+   - Utility room (Space 35, First Floor): 9.42 sq m",arc,fantasy_residential_building_1,3,train,tier2,T2_room_program
+497,"How many bathrooms are there in total, and how are they distributed across the floors?","Bathroom Count:
+   - Total bathrooms/toilets: 12
+
+   Distribution by floor:
+   - Ground Floor: 4 bathroom(s)
+     • Space 4: Toilet (4.33 sq m)
+     • Space 9: Bathroom (13.37 sq m)
+     • Space 13: Toilet (4.33 sq m)
+     • Space 18: Bathroom (13.37 sq m)
+
+   - First Floor: 4 bathroom(s)
+     • Space 21: Toilet (4.34 sq m)
+     • Space 26: Bathroom (13.37 sq m)
+     • Space 29: Toilet (4.34 sq m)
+     • Space 34: Bathroom (13.37 sq m)
+
+   - Second Floor: 4 bathroom(s)
+     • Space 37: Toilet (4.34 sq m)
+     • Space 42: Bathroom (13.37 sq m)
+     • Space 44: Toilet (4.34 sq m)
+     • Space 49: Bathroom (13.37 sq m)",arc,fantasy_residential_building_1,2,train,tier2,T2_room_program
+498,How many balconies are there on each floor? And what are their areas?,"Balconies by Floor:
+
+   First Floor:
+   - Number of balconies: 2
+   - Total balcony area: 177.46 sq m
+   - Individual balconies:
+     • Space 50: 88.74 sq m
+     • Space 51: 88.72 sq m
+
+   Second Floor:
+   - Number of balconies: 6
+   - Total balcony area: 251.08 sq m
+   - Individual balconies:
+     • Space 52: 88.92 sq m
+     • Space 53: 13.75 sq m
+     • Space 54: 13.86 sq m
+     • Space 55: 89.85 sq m
+     • Space 56: 23.71 sq m
+     • Space 57: 20.99 sq m",arc,fantasy_residential_building_1,3,test,tier2,T2_room_program

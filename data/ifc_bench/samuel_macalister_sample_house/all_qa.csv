@@ -1,0 +1,912 @@
+id,question,ground_truth,ifc_model,project,category,split
+665,What is the project information and location for this building?,"Building Information:
+   - Project Name: Sample House
+   - Building Name: Samuel Macalister sample house design
+   - Site/Location: Boston",arc,samuel_macalister_sample_house,1,test
+666,What modeling standards were applied in this BIM model?,"Modeling Standards:
+   - IFC Schema: IFC4
+   - Preprocessor Version: The EXPRESS Data Manager Version 5.01.0100.02.64mod : 6 Jun 2012
+   - Time Stamp: 2013-12-16T11:31:19",arc,samuel_macalister_sample_house,1,test
+667,What is the space breakdown by level and by function type in the building?,"Building Spatial Layout Overview:
+   - Total Building Levels defined in model: 6 storeys
+   - Total Spaces: 14 spaces
+   - Total Floor Area: 279.0 sq m (partial data)
+
+   Space Distribution by Level:
+   - Level 2: 8 spaces
+     Area: 101.7 sq m
+   - Level 1: 6 spaces
+     Area: 177.2 sq m
+
+   Space Functions Distribution:
+   - Bath: 3 spaces (21.4%)
+   - Bedroom: 2 spaces (14.3%)
+   - Master Bedroom: 1 spaces (7.1%)
+   - Master Bath: 1 spaces (7.1%)
+   - Entry Hall: 1 spaces (7.1%)
+   - Kitchen & Dining: 1 spaces (7.1%)
+   - Laundry: 1 spaces (7.1%)
+   - Hall: 1 spaces (7.1%)
+   - Living: 1 spaces (7.1%)
+   - Mech.: 1 spaces (7.1%)
+   - Linen: 1 spaces (7.1%)",arc,samuel_macalister_sample_house,2,train
+668,"What are all the spaces on level 1, with their areas?","Level 1 Spatial Layout: 6 spaces
+   Total Area: 177.2 sq m
+
+   Level 1 Spaces by Function:
+   - Bath (1 spaces):
+     * 103: 2.7 sq m
+   - Hall (1 spaces):
+     * 105: 23.8 sq m
+   - Kitchen & Dining (1 spaces):
+     * 101: 73.0 sq m
+   - Laundry (1 spaces):
+     * 104: 5.3 sq m
+   - Living (1 spaces):
+     * 106: 70.3 sq m
+   - Mech. (1 spaces):
+     * 102: 2.1 sq m",arc,samuel_macalister_sample_house,3,test
+669,"What are all the spaces on level 2, with their areas?","Level 2 Spatial Layout: 8 spaces
+   Total Area: 101.7 sq m
+
+   Level 2 Spaces by Function:
+   - Bath (2 spaces):
+     * 203: 4.0 sq m
+     * 205: 4.0 sq m
+   - Bedroom (2 spaces):
+     * 202: 13.7 sq m
+     * 204: 13.9 sq m
+   - Entry Hall (1 spaces):
+     * 201: 30.7 sq m
+   - Linen (1 spaces):
+     * 208: 1.4 sq m
+   - Master Bath (1 spaces):
+     * 207: 7.1 sq m
+   - Master Bedroom (1 spaces):
+     * 206: 27.0 sq m",arc,samuel_macalister_sample_house,3,train
+670,"What are the elevations of all building levels, including any additional height information such as floor-to-floor measurements and level connections?","Building Level Information:
+   - Foundation:
+     Elevation: -0.80 m
+
+   - Level 1 Living Rm.:
+     Elevation: -0.55 m
+
+   - Level 1:
+     Elevation: 0 m
+
+   - Level 2:
+     Elevation: 3.00 m
+
+   - Roof Line:
+     Elevation: 6.00 m
+     Floor-to-floor from Level 2: 3.00 m
+
+   Notes:
+   - 'Level 1' and 'Level 1 Living Rm.' are connected (same level)
+   - 'Ceiling' and 'Level 2' are connected (same level)",arc,samuel_macalister_sample_house,2,test
+671,"How is the building's space utilized by function, with areas and percentages?","Building Space Utilization Analysis:
+   - Total Functions: 11
+   - Total Spaces: 14
+
+   Functional Category Summary:
+   - Bedroom Spaces: 3 spaces
+   - Bathroom Spaces: 4 spaces
+   - Kitchen/Dining Spaces: 1 space
+
+   Functions with Area Data:
+   - Kitchen & Dining: 73.0 sq m (26.2% of measured)
+     Spaces: 1
+   - Living: 70.3 sq m (25.2% of measured)
+     Spaces: 1
+   - Entry Hall: 30.7 sq m (11.0% of measured)
+     Spaces: 1
+   - Bedroom: 27.6 sq m (9.9% of measured)
+     Spaces: 2, Average: 13.8 sq m
+   - Master Bedroom: 27.0 sq m (9.7% of measured)
+     Spaces: 1
+   - Hall: 23.8 sq m (8.5% of measured)
+     Spaces: 1
+   - Bath: 10.7 sq m (3.8% of measured)
+     Spaces: 3, Average: 3.6 sq m
+   - Master Bath: 7.1 sq m (2.6% of measured)
+     Spaces: 1
+   - Laundry: 5.3 sq m (1.9% of measured)
+     Spaces: 1
+   - Mech.: 2.1 sq m (0.7% of measured)
+     Spaces: 1
+   - Linen: 1.4 sq m (0.5% of measured)
+     Spaces: 1",arc,samuel_macalister_sample_house,2,train
+672,Which room in the building is the largest?,"Largest Room: 101
+   Function: Kitchen & Dining
+   Area: 73.0 sq m
+   Level: Level 1",arc,samuel_macalister_sample_house,3,test
+673,What ceiling height information is available in this model?,"Space-specific ceiling height information is not available in this model.
+
+Available Information:
+- The model contains building level elevations
+- Individual space heights are not included
+- Based on building design, spaces on level 2 may have higher ceilings",arc,samuel_macalister_sample_house,4,test
+674,"Which door types are installed in the building, with their quantities?","Total Doors: 13
+
+   Door Types and Quantities:
+   - Single-Flush:800 x 2100: 7 door(s)
+   - Entrance door:Entrance door: 2 door(s)
+   - Pocket_Slider_Door_5851: 3 door(s)
+   - M_Double-Flush: 1 door(s)",arc,samuel_macalister_sample_house,2,train
+675,"What is the statistical breakdown of door widths in the building, including the average width, the range of widths, and the distribution of the most common widths?","Average Door Width: 1263 mm (1.26 m)
+   - Width range: 800 - 1890 mm
+   - Most common widths:
+     800 mm: 7 doors (43.8%)
+     1450 mm: 5 doors (31.2%)
+     1890 mm: 3 doors (18.8%)
+     1750 mm: 1 doors (6.2%)",arc,samuel_macalister_sample_house,2,test
+676,"What is the largest door width in the building, and which doors have this width?","Largest Door Width: 1890 mm (1.89 m)
+
+Doors with largest width:
+- Pocket_Slider_Door_5851: 3 door(s)",arc,samuel_macalister_sample_house,2,test
+677,"Which window types are present in this building, including their quantities?","Total Windows: 17
+
+   Window Types and Quantities:
+   - Single Window: 15 window(s)
+   - M_Skylight: 2 window(s)",arc,samuel_macalister_sample_house,2,train
+678,"What is the maximum window width in this building, and how many windows have this width?","Largest Window Width: 1500 mm (1.50 m)
+
+Windows with largest width:
+- Single Window:Standard: 15 window(s)",arc,samuel_macalister_sample_house,2,test
+679,"What types of walls are used in the building, with their quantities?","Total Walls: 48
+
+   Wall Types and Quantities:
+   - Basic Wall:Interior - Partition: 15 walls (31.2%) - 120mm
+     Materials (3 layers):
+       1. Finishes - Interior - Gypsum Wall Board - 10mm
+       2. Wood - Stud Layer - 100mm
+       3. Finishes - Interior - Gypsum Wall Board - 10mm
+
+   - Basic Wall:Retaining - 300mm Concrete: 10 walls (20.8%) - 300mm
+     Materials (1 layers):
+       1. Concrete - Cast In Situ - 300mm
+
+   - Basic Wall:Wall - Timber Clad: 7 walls (14.6%) - 202mm
+     Materials (6 layers):
+       1. Finishes - Exterior - Timber Cladding - 22mm
+       2. Wood - Stud Layer - 25mm
+       3. Structure - Timber Insulated Panel - OSB - 15mm
+       4. Structure - Timber Insulated Panel - Insulation - 112mm
+       5. Structure - Timber Insulated Panel - OSB - 15mm
+       6. Finishes - Interior - Plasterboard - 13mm
+
+   - Basic Wall:CL_W1: 6 walls (12.5%)
+     Materials (1 layers):
+       1. CL Concrete_ panels
+
+   - Basic Wall:SIP 202mm Wall - conc clad: 4 walls (8.3%) - 202mm
+     Materials (6 layers):
+       1. Concrete, Sand/Cement Screed - 22mm
+       2. Wood - Stud Layer - 25mm
+       3. Structure - Timber Insulated Panel - OSB - 15mm
+       4. Structure - Timber Insulated Panel - Insulation - 112mm
+       5. Structure - Timber Insulated Panel - OSB - 15mm
+       6. Finishes - Interior - Plasterboard - 13mm
+
+   - Basic Wall:Interior - 165 Partition (1-hr): 3 walls (6.2%) - 165mm
+     Materials (3 layers):
+       1. Finishes - Interior - Gypsum Wall Board - 13mm
+       2. Wood - Stud Layer - 140mm
+       3. Finishes - Interior - Gypsum Wall Board - 13mm
+
+   - Basic Wall:Cavity wall_sliders: 2 walls (4.2%) - 280mm
+
+   - Basic Wall:Foundation - 300mm Concrete: 1 wall (2.1%) - 300mm",arc,samuel_macalister_sample_house,2,test
+680,"Which wall types are used on the exterior of the building, including their quantities?","Total Exterior Walls: 30
+
+Exterior Wall Types:
+- Basic Wall:Retaining - 300mm Concrete: 10 walls (20.8%) - 300mm
+  Materials (1 layers):
+    1. Concrete - Cast In Situ - 300mm
+
+- Basic Wall:Wall - Timber Clad: 7 walls (14.6%) - 202mm
+  Materials (6 layers):
+    1. Finishes - Exterior - Timber Cladding - 22mm
+    2. Wood - Stud Layer - 25mm
+    3. Structure - Timber Insulated Panel - OSB - 15mm
+    4. Structure - Timber Insulated Panel - Insulation - 112mm
+    5. Structure - Timber Insulated Panel - OSB - 15mm
+    6. Finishes - Interior - Plasterboard - 13mm
+
+- Basic Wall:CL_W1: 6 walls (12.5%)
+  Materials (1 layers):
+    1. CL Concrete_ panels
+
+- Basic Wall:SIP 202mm Wall - conc clad: 4 walls (8.3%) - 202mm
+  Materials (6 layers):
+    1. Concrete, Sand/Cement Screed - 22mm
+    2. Wood - Stud Layer - 25mm
+    3. Structure - Timber Insulated Panel - OSB - 15mm
+    4. Structure - Timber Insulated Panel - Insulation - 112mm
+    5. Structure - Timber Insulated Panel - OSB - 15mm
+    6. Finishes - Interior - Plasterboard - 13mm
+
+- Basic Wall:Cavity wall_sliders: 2 walls (4.2%) - 280mm
+
+- Basic Wall:Foundation - 300mm Concrete: 1 wall (2.1%) - 300mm",arc,samuel_macalister_sample_house,2,train
+681,"Which wall types are used for interior partitions, with their quantities?","Total Interior Walls: 18
+   Interior Wall Types:
+
+   - Basic Wall:Interior - Partition: 15 walls - 120mm
+     Materials (3 layers):
+       1. Finishes - Interior - Gypsum Wall Board - 10mm
+       2. Wood - Stud Layer - 100mm
+       3. Finishes - Interior - Gypsum Wall Board - 10mm
+
+   - Basic Wall:Interior - 165 Partition (1-hr): 3 walls - 165mm
+     Materials (3 layers):
+       1. Finishes - Interior - Gypsum Wall Board - 13mm
+       2. Wood - Stud Layer - 140mm
+       3. Finishes - Interior - Gypsum Wall Board - 13mm",arc,samuel_macalister_sample_house,2,train
+682,"Could you provide a detailed breakdown of all wall materials used in the building, organized by wall type with their layer composition and thicknesses?","Wall Materials Used in Building:
+   - Total unique materials: 13
+
+   Wall Materials per Type:
+   - Basic Wall:Interior - Partition: 120mm
+     Materials (3 layers):
+       1. Finishes - Interior - Gypsum Wall Board - 10mm
+       2. Wood - Stud Layer - 100mm
+       3. Finishes - Interior - Gypsum Wall Board - 10mm
+
+   - Basic Wall:Retaining - 300mm Concrete: 300mm
+     Materials (1 layer):
+       1. Concrete - Cast In Situ - 300mm
+
+   - Basic Wall:Wall - Timber Clad: 202mm
+     Materials (6 layers):
+       1. Finishes - Exterior - Timber Cladding - 22mm
+       2. Wood - Stud Layer - 25mm
+       3. Structure - Timber Insulated Panel - OSB - 15mm
+       4. Structure - Timber Insulated Panel - Insulation - 112mm
+       5. Structure - Timber Insulated Panel - OSB - 15mm
+       6. Finishes - Interior - Plasterboard - 13mm
+
+   - Basic Wall:CL_W1:
+     Materials (1 layer):
+       1. CL Concrete_ panels
+
+   - Basic Wall:SIP 202mm Wall - conc clad: 202mm
+     Materials (6 layers):
+       1. Concrete, Sand/Cement Screed - 22mm
+       2. Wood - Stud Layer - 25mm
+       3. Structure - Timber Insulated Panel - OSB - 15mm
+       4. Structure - Timber Insulated Panel - Insulation - 112mm
+       5. Structure - Timber Insulated Panel - OSB - 15mm
+       6. Finishes - Interior - Plasterboard - 13mm
+
+   - Basic Wall:Interior - 165 Partition (1-hr): 165mm
+     Materials (3 layers):
+       1. Finishes - Interior - Gypsum Wall Board - 13mm
+       2. Wood - Stud Layer - 140mm
+       3. Finishes - Interior - Gypsum Wall Board - 13mm
+
+   - Basic Wall:Cavity wall_sliders: 280mm
+     Materials (6 layers):
+       1. Finishes - Exterior - Timber Cladding - 10mm
+       2. Metal Stud Layer - 20mm
+       3. Air - 220mm
+       4. Metal Stud Layer - 20mm
+       5. Finishes - Exterior - Timber Cladding - 10mm
+
+   - Basic Wall:Foundation - 300mm Concrete: 300mm
+     Materials (1 layer):
+       1. Concrete - Cast In Situ - 300mm",arc,samuel_macalister_sample_house,2,train
+683,"Could you provide a detailed breakdown of the materials used in each exterior wall type, including their layer composition and thicknesses?","Exterior Wall Materials per Type:
+
+- Basic Wall:Retaining - 300mm Concrete: 300mm
+  Materials (1 layers):
+    1. Concrete - Cast In Situ - 300mm
+
+- Basic Wall:Wall - Timber Clad: 202mm
+  Materials (6 layers):
+    1. Finishes - Exterior - Timber Cladding - 22mm
+    2. Wood - Stud Layer - 25mm
+    3. Structure - Timber Insulated Panel - OSB - 15mm
+    4. Structure - Timber Insulated Panel - Insulation - 112mm
+    5. Structure - Timber Insulated Panel - OSB - 15mm
+    6. Finishes - Interior - Plasterboard - 13mm
+
+- Basic Wall:CL_W1:
+  Materials (1 layers):
+    1. CL Concrete_ panels
+
+- Basic Wall:SIP 202mm Wall - conc clad: 202mm
+  Materials (6 layers):
+    1. Concrete, Sand/Cement Screed - 22mm
+    2. Wood - Stud Layer - 25mm
+    3. Structure - Timber Insulated Panel - OSB - 15mm
+    4. Structure - Timber Insulated Panel - Insulation - 112mm
+    5. Structure - Timber Insulated Panel - OSB - 15mm
+    6. Finishes - Interior - Plasterboard - 13mm
+
+- Basic Wall:Cavity wall_sliders: 280mm
+  Materials (6 layers):
+    1. Finishes - Exterior - Timber Cladding - 10mm
+    2. Metal Stud Layer - 20mm
+    3. Air - 220mm
+    4. Metal Stud Layer - 20mm
+    5. Finishes - Exterior - Timber Cladding - 10mm
+
+- Basic Wall:Foundation - 300mm Concrete: 300mm
+  Materials (1 layers):
+    1. Concrete - Cast In Situ - 300mm",arc,samuel_macalister_sample_house,1,train
+684,"Could you provide a detailed breakdown of the materials used in each type of interior wall, including the layer composition and thicknesses?","Interior Wall Materials by Type:
+
+- Basic Wall:Interior - Partition: 120mm
+  Materials (3 layers):
+    1. Finishes - Interior - Gypsum Wall Board - 10mm
+    2. Wood - Stud Layer - 100mm
+    3. Finishes - Interior - Gypsum Wall Board - 10mm
+
+- Basic Wall:Interior - 165 Partition (1-hr): 165mm
+  Materials (3 layers):
+    1. Finishes - Interior - Gypsum Wall Board - 13mm
+    2. Wood - Stud Layer - 140mm
+    3. Finishes - Interior - Gypsum Wall Board - 13mm",arc,samuel_macalister_sample_house,1,train
+685,"Could you provide a detailed breakdown of wall thicknesses by type, including the quantity of each wall type and overall thickness statistics?","Wall Thicknesses by Type:
+- Basic Wall:SIP 202mm Wall - conc clad: 202 mm (4 walls)
+- Basic Wall:Wall - Timber Clad: 202 mm (7 walls)
+- Basic Wall:Cavity wall_sliders: 280 mm (2 walls)
+- Basic Wall:Interior - 165 Partition (1-hr): 165 mm (3 walls)
+- Basic Wall:Interior - Partition: 120 mm (15 walls)
+- Basic Wall:Foundation - 300mm Concrete: 300 mm (1 wall)
+- Basic Wall:Retaining - 300mm Concrete: 300 mm (10 walls)
+
+Thickness Statistics:
+- Total walls with thickness data: 42
+- Thickness range: 120 - 300 mm",arc,samuel_macalister_sample_house,2,train
+686,"Could you provide a comprehensive breakdown of wall classifications in the building, including the counts and proportions of load-bearing, non-load-bearing, and unspecified walls, along with the specific types of load-bearing walls?","Load-Bearing Wall Analysis:
+- Total walls: 48
+- Walls with load-bearing classification: 11
+
+Load-Bearing Classification Breakdown:
+- Load-bearing walls: 11 (11.8%)
+- Non-load-bearing walls: 0 (48.6%)
+- Unspecified walls: 37 (39.5%)
+
+Load-Bearing Wall Types:
+- Basic Wall:Retaining - 300mm Concrete
+- Basic Wall:CL_W1
+- Basic Wall:Foundation - 300mm Concrete",arc,samuel_macalister_sample_house,2,test
+687,Is wall length information available for exterior and interior walls in this model?,Wall length information is not available in this model.,arc,samuel_macalister_sample_house,4,test
+688,What is the building's footprint area?,"This information is not available in the model, but the approximate total footprint area of the building is 515 sq m.",arc,samuel_macalister_sample_house,4,test
+689,Which footing types are used?,"Total Footings: 22
+
+   Footing Types:
+   - M_Pile Cap-600 Pile:600 x 600 x 900mm: 11 footing(s)
+   - M_Pile-Steel Pipe:600mm Diameter: 11 footing(s)",arc,samuel_macalister_sample_house,1,test
+690,"Could you provide a comprehensive breakdown of the curtain walls installed in the building, including the total count, types with their quantities, and key characteristics?","Total Curtain Walls: 9
+
+   Curtain Wall Types:
+   - Curtain Wall: 9 curtain wall(s)
+
+   Curtain Wall Characteristics:
+   - Provides glazed facade elements
+   - Integrated with building envelope
+   - May include operable elements (doors/windows)",arc,samuel_macalister_sample_house,2,test
+691,"Could you provide a breakdown of all coverings applied inside the building, including the total count, types with their quantities, and functions with their quantities?","Total Coverings: 3
+
+Covering Types:
+- Basic Ceiling:Generic: 1 covering(s)
+- Compound Ceiling:3000 x 3000mm Grid: 2 covering(s)
+
+Covering Functions:
+- CEILING: 3 covering(s)",arc,samuel_macalister_sample_house,2,test
+692,"What materials are used in each ceiling type, including their specifications and layer details?","Ceiling Materials Found:
+
+- Compound Ceiling: 3000 x 3000mm Grid
+  Materials (3 layers):
+    1. Default - 35mm
+    2. Finishes - Interior - Plasterboard - 15mm
+
+- Basic Ceiling: Generic
+  No Materials Listed",arc,samuel_macalister_sample_house,1,train
+693,"Could you provide a comprehensive breakdown of all furniture in the building, including total counts, IFC classifications, specific furniture types with their quantities, and functional categories?","Total Furniture Elements: 35
+   - IfcFurnishingElement: 35
+   - IfcFurniture: 32
+
+   Furniture Types (grouped):
+   - Dining Chair (3): 8 item(s)
+   - Sofa - Ottoman: 7 item(s)
+   - Bar Chair: 6 item(s)
+   - Seating - Artemis - Lounge chair: 2 item(s)
+   - Side Table 2 (2): 2 item(s)
+   - Table-Dining 01 (M): 2 item(s)
+   - 4500_Kitchen Island_DW: 1 item(s)
+   - 4500_Kitchen Island: 1 item(s)
+   - Seat - Single with Island: 1 item(s)
+   - Cabinet 1: 1 item(s)
+   - M_TV - Flat Screen: 1 item(s)
+   - wardrobe1: 1 item(s)
+   - wardrobe2: 1 item(s)
+   - hood enclosure: 1 item(s)
+
+   Furniture Categories:
+   - Seating: 17 items (48.6%)
+   - Soft Seating: 7 items (20.0%)
+   - Tables & Desks: 4 items (11.4%)
+   - Storage: 3 items (8.6%)
+   - Kitchen Furniture: 2 items (5.7%)
+   - Electronics: 1 items (2.9%)
+   - Other Furniture: 1 items (2.9%)",arc,samuel_macalister_sample_house,2,test
+694,"What furniture and appliances are available in the kitchen on level 1, including quantities of each item?","Kitchen Spaces on Level 1:
+   - 101: Kitchen & Dining
+
+   Kitchen Furniture Available:
+   - Bar Chair: 6 item(s)
+   - 4500_Kitchen Island_DW: 1 item(s)
+   - 4500_Kitchen Island: 1 item(s)
+   - Seat - Single with Island: 1 item(s)
+
+   Kitchen Appliances Available:
+   - Miele Built-in Microwave M 8260-2:Miele Microwave M 8260-2:696998
+   - Miele Built-in Rangehood DA 2210:Rangehood DA-2210:679009
+   - Miele Built-under Dishwasher G 4101 U CS:Miele Built-under Dishwasher G 4101 U CS:694796
+   - Miele Induction Cooktop KM 6350 LPT:Miele Induction Cooktop 6350 LPT:680539
+   - Miele MasterCool KF 1911 Vi:Miele Fridge/Freezer KF 1911 Vi:684791
+   - Miele Oven H 5681 BP:Miele Oven H 5681 BP:686184",arc,samuel_macalister_sample_house,1,train
+695,Which appliances are available in the laundry room?,"Laundry Spaces found:
+   - 104: Laundry
+
+Laundry Appliances Available:
+   - Miele Tumble Dryer T 7944 C (ID: 677695)
+   - Miele Washing Machine W 5820 WPS (ID: 674370)",arc,samuel_macalister_sample_house,1,train
+696,"Could you provide a comprehensive breakdown of all sanitary equipment in the building, including counts by category, quantities by equipment type, detailed equipment models, and the bathroom spaces where they are located?","Sanitary Equipment Summary:
+
+Sanitary Terminal Elements: 0
+Sanitary Equipment from Building Elements: 10
+
+Equipment Types and Quantities:
+- Toilets: 4 item(s)
+- Lavatories/Basins: 4 item(s)
+- Sinks: 1 item(s)
+- Bathtubs: 1 item(s)
+
+Detailed Equipment Models:
+- Bathtub-TOTO-Nexus-FBF794S:01 Cotton
+- Lavatory-TOTO-Luminist_Rectangle_Vessel_LLT151:Standard
+- Sink-Offset-Kohler-Vault-3823_4:Steel-Stainless-NA
+- Walvit_Hung Bowl_604118 W:Walvit
+
+Bathroom Spaces:
+- 207: Master Bath
+- 203: Bath
+- 205: Bath
+- 103: Bath",arc,samuel_macalister_sample_house,2,test
+697,"How many bathrooms are there, and where are they located?","Bathroom Locations (by level):
+- Level 1: 1 bathroom
+  * Room 103: Bath
+- Level 2: 3 bathrooms
+  * Room 207: Master Bath
+  * Room 203: Bath
+  * Room 205: Bath",arc,samuel_macalister_sample_house,2,test
+698,What is the size of the living room terrace?,The terrace area of the living room is 17.7 sq m.,arc,samuel_macalister_sample_house,3,train
+699,What is the size of the master bedroom terrace?,The terrace area of the master bedroom is 9 sq m.,arc,samuel_macalister_sample_house,3,test
+700,What is the total area of curtain walls in the Dining area on the lower floor?,The total area of curtain walls that are used in the Dining area on level 1 is approximately 80 sq m.,arc,samuel_macalister_sample_house,3,test
+701,"Could you provide a comprehensive breakdown of the stairs in the building, including the total count, specific stair types with their quantities, construction types, and any related circulation elements?","Total Stairs: 3
+
+Stair Types:
+- Precast Stair:Stair:513254: 1 stair(s)
+- Assembled Stair:Stair:665557: 1 stair(s)
+- Precast Stair:Stair:725045: 1 stair(s)
+
+Stair Construction Types:
+- Precast Concrete: 2 stair(s)
+- Assembled/Prefabricated: 1 stair(s)
+
+Related Circulation Elements:
+- Railings: 10 elements
+- Stair landings: 1 element",arc,samuel_macalister_sample_house,2,test
+702,What is the thermal transmittance of the exterior walls of the master bedroom?,"The thermal transmittance of the exterior walls of the master bedroom is 47.55, with no units specified.",arc,samuel_macalister_sample_house,1,test
+703,What is the total volume of all floor slabs combined?,Slab volume data is not available in the model properties.,arc,samuel_macalister_sample_house,4,test
+704,"Could you provide a comprehensive breakdown of all railings in the building, including their types, heights, and installation contexts?","Total Railings: 10
+
+   Railing Types:
+   - Railing: 10 railing(s)
+
+   Railing Heights:
+   - 1100 mm: 10 railing(s)
+
+   Railing Installation Context:
+   - Associated with stairs: 3 stair elements",arc,samuel_macalister_sample_house,2,train
+705,Which door types include fire rating information?,No fire rating information available for doors in this model.,arc,samuel_macalister_sample_house,4,test
+706,Is fire rating information available for any window types in this model?,No fire rating information available for windows in this model.,arc,samuel_macalister_sample_house,4,train
+707,What is the structural system of this building?,"Structural System Type suggestions based on available model:
+   - Foundation: Deep pile foundation system
+   - Superstructure: Column and slab system (flat slab or post-tensioned)",arc,samuel_macalister_sample_house,4,test
+708,Which types of beams are used in the building?,No beam elements found in this building model.,arc,samuel_macalister_sample_house,1,train
+709,"Could you provide a comprehensive breakdown of all columns in this building, including their types, quantities, characteristics, and materials summary?","Total Columns: 3
+
+Column Types:
+- M_Concrete-Round-Column with Drop Caps:M_1000: 1 column(s)
+- M_L-Anglel-Column:L127X127X9.5: 2 column(s)
+
+Column Characteristics:
+- M_Concrete-Round-Column with Drop Caps:M_1000:414482:
+  Material: Concrete
+  Shape: Round
+  Features: Drop Caps
+- M_L-Anglel-Column:L127X127X9.5:
+  Material: Steel
+  Shape: L-Angle
+
+Column Materials Summary:
+- Steel: 2 column(s)
+- Concrete: 1 column(s)",arc,samuel_macalister_sample_house,2,test
+710,"Could you provide a breakdown of column dimensions by type, including the quantities of each column type in the building?","Column Dimensions Analysis:
+- M_Concrete-Round-Column with Drop Caps:M_1000: 1 column(s)
+  Type: Circular
+  Diameter: 1000 mm
+- M_L-Anglel-Column:L127X127X9.5: 2 column(s)
+  Type: L-Angle
+  Dimensions: 127×127×9.5 mm",arc,samuel_macalister_sample_house,2,train
+711,"Could you provide a detailed breakdown of the roof materials in the building, including the different roof types, their quantities, and the materials used in each layer?","Roof identified: 2
+
+Roof Types:
+- Basic Roof:SG Metal Panels roof: 1 roof(s)
+  Type: Sloped Roof
+  Materials (1 layers):
+    1. Softwood, Lumber
+
+- Basic Roof:Warm Roof - Timber: 1 roof(s)
+  Type: Flat Roof
+  Materials (7 layers):
+  1. Roofing - Asphalt - 20 mm
+  2. Roofing - Felt
+  3. Insulation / Thermal Barriers - Rigid insulation - 50 mm
+  4. Vapour / Moisture Barriers - Vapour Retarder
+  5. Wood - Sheathing - Chipboard - 18 mm
+  6. Wood - Firring - 50 mm
+  7. Structure - Timber Joist/Rafter Layer - 200 mm
+
+Roof Construction Summary:
+- Total unique materials: 8
+- Structural materials: Wood - Sheathing - Chipboard, Structure - Timber Joist/Rafter Layer
+- Insulation materials: Insulation / Thermal Barriers - Rigid insulation
+- Weather protection: Vapour / Moisture Barriers - Vapour Retarder, Roofing - Asphalt, Roofing - Felt
+- Finish materials: Wood - Firring, Softwood, Lumber
+
+Roof System Type:
+- Timber frame roof construction
+- Warm roof system (insulation above structure)",arc,samuel_macalister_sample_house,2,test
+712,What is the size of the parking area?,"This information is not available directly from the BIM model. However, through manual measurement, I estimate the parking area to be approximately 85 m².",arc,samuel_macalister_sample_house,3,train
+713,"What types of light fixtures are installed in the building, and how many of each type?","Light Fixture types:
+   - Trck_BswySystms_Cooper_RSA_Profile Series_AR111 Closed Back Integral Xfmr: 8 items
+   - SH_Lighting-Pendant-Litecontrol-Mod66-8_Foot_09:P-D-66N28T8: 2 items",arc,samuel_macalister_sample_house,2,train
+714,Which types of renewable energy systems are used in this house?,"Renewable energy sources that are present in the model:
+   - M_Wind Power Generator: 3 items
+   - Photovoltaic-Panel-SolarWorld-SunModule-(235-240): 12 items
+
+Note: All of the above-mentioned elements are modeled as Building Element Proxies rather than as electrical elements.",arc,samuel_macalister_sample_house,2,train
+715,"How tall are the wind turbines, and what spacing is maintained between them?",All wind power generators are 9 m high and installed 3 m apart from each other.,arc,samuel_macalister_sample_house,3,test
+716,Could you provide me with a list of the specifications for the solar panels used in the building?,"Solar panel specifications:
+- Model: SunModule SW 245 Silver Mono
+- Manufacturer: SolarWorld
+- Installation angle: 10°",arc,samuel_macalister_sample_house,2,test
+717,What MEP systems are present in this building?,"MEP Systems Present:
+   - Plumbing and Drainage System
+     * Water supply distribution network
+     * Wastewater collection (HT sewer pipes)
+     * Sanitary fixtures and terminals
+   - Underfloor Heating System
+     * HcsFlexPipeInPipe technology
+     * PE-Xa pipe distribution network
+     * Integrated floor heating zones
+   - Electrical Power and Distribution
+     * Main and sub-distribution infrastructure
+     * Comprehensive lighting systems
+     * Power outlets and circuit protection
+   - Solar Power Generation
+     * Rooftop solar panel installation
+     * Solar mounting and support systems
+   - Ventilation System
+     * Supply and exhaust ductwork
+     * Flexible circular duct distribution
+     * Air terminals and flow control
+   - Central Heating
+     * Space heating equipment
+     * Boiler systems and controls
+
+   Total MEP Components: 2916",mep,samuel_macalister_sample_house,2,test
+718,How many MEP components are there by system type?,"Total MEP Components: 2290
+
+   Components by System Type:
+   - Plumbing and Drainage: 1503 components
+     * Pipe segments: 818 (10 different types)
+     * Pipe fittings: 644 (including bends, tees, transitions)
+     * Sanitary terminals: 30 (3 fixture categories)
+     * Control valves: 4
+     * Monitoring sensors: 7
+   - Underfloor Heating System: 12 components
+     * HcsFlexPipeInPipe segments: 12
+   - Electrical Power: 191 components
+     * Distribution boards: 3
+     * Light fixtures: 69
+     * Power outlets: 48
+     * Protective devices: 22
+     * Cable management: 27 segments, 21 fittings
+   - Solar Power Generation: 80 components
+     * Solar panels: 40
+     * Mounting systems: 40
+   - Ventilation: 468 components
+     * Rigid duct segments: 207
+     * Flexible circular ducts: 59 segments
+     * Duct fittings: 155
+     * Air terminals: 43
+   - Central Heating: 33 components
+     * Space heaters: 30
+     * Boiler systems: 3",mep,samuel_macalister_sample_house,2,train
+719,"What different types of pipes are used in this building, with their quantities?","Pipe Types Used in Building (818 total segments):
+   
+   Standard Plumbing Pipes:
+   - SS091209003: 514 segments (62.8%)
+   - SS091209006: 66 segments (8.1%)
+   - SS091209005: 47 segments (5.7%)
+   - SS091209004: 47 segments (5.7%)
+   
+   Drainage and Sewer Pipes:
+   - HT12/0619 (DN 100): 64 segments (7.8%)
+   - HT12/0319: 31 segments (3.8%)
+   
+   Specialty Distribution:
+   - SS091209007: 25 segments (3.1%)
+   - SS091209009: 12 segments (1.5%)
+   - SS091209013: 8 segments (1.0%)
+   - SS091209008: 4 segments (0.5%)
+   
+   Total Pipe Length: 842.64 m
+   Average Segment Length: 1.03 m",mep,samuel_macalister_sample_house,2,test
+720,"What underfloor heating system is installed, including its quantity and technical specifications?","Underfloor Heating System Installation:
+   - HcsFlexPipeInPipe System: 12 segments
+   
+   Characteristics:
+   - 17mm outer diameter with 2mm wall thickness",mep,samuel_macalister_sample_house,2,train
+721,"Could you provide a comprehensive breakdown of pipe fittings in this building, including the types, quantities, and distribution by building level?","Pipe Fitting Analysis (644 total fittings):
+
+   Primary Fitting Categories:
+   - Bends: 78 fittings (12.1%)
+   - Tees: 20 fittings (3.1%)
+   - Transitions: 6 fittings (0.9%)
+   
+   Specialized Fittings:
+   - Water meters: 1 fitting
+   - Complex specialty fittings: 539 units
+   
+   Distribution by Building Level:
+   - 00. Begane grond: 347 fittings (53.9%)
+   - 01. verdieping: 210 fittings (32.6%)
+   - 02. verdieping: 79 fittings (12.3%)
+   - Foundation/Roof: 8 fittings (1.2%)",mep,samuel_macalister_sample_house,2,train
+722,"What different types of sanitary terminals are used in this building, along with their counts and spatial distribution by floor?","Sanitary Terminal Installation (30 total terminals):
+   
+   Terminal Categories:
+   - Concealed Cistern/Frame/Accessory: 10 units (33.3%)
+   - Toilet/Urinal: 10 units (33.3%)
+   - Basin/Sink/Bidet: 10 units (33.3%)
+   
+   Spatial Distribution:
+   - 00. Begane grond (Ground Floor): 15 terminals (50%)
+   - 01. verdieping (First Floor): 15 terminals (50%)",mep,samuel_macalister_sample_house,2,test
+723,"Could you provide a detailed breakdown of the ventilation system components installed, including quantities for each type and category?","Ventilation System Components:
+   
+   Ductwork Distribution:
+   - Rigid Duct Segments: 207
+   - Flexible Circular Ducts: 59 segments
+     * Flexible Circular Duct DIN 24146 d 160
+     * 160mm diameter flexible connections
+   - Duct Fittings: 155
+   
+   Air Distribution Terminals:
+   - Air Terminals: 43
+     * Supply and return air points
+   - Flow Control Dampers: 4
+   
+   Total Ventilation Components: 468",mep,samuel_macalister_sample_house,2,test
+724,"Could you provide a detailed breakdown of all electrical infrastructure components installed in the building, including quantities for each category and subcategory?","Electrical Distribution Infrastructure:
+
+Power Distribution:
+- Distribution Boards: 3
+  * MB01: Main Distribution Board 1
+  * Data board 1: IT/Communication systems
+  * SB 02: Sub Distribution Board 02
+- Protective Devices: 22
+  * Circuit breakers and protection
+  * Overcurrent protection systems
+- Switching Devices: 1
+
+Power Distribution Network:
+- Power Outlets: 48
+- Cable Management System: 27 segments
+  * Cable carrier ladder systems
+- Cable Fittings: 21
+
+Lighting Systems:
+- Light Fixtures: 69
+
+Total Electrical Components: 190",mep,samuel_macalister_sample_house,2,test
+725,"Could you provide a detailed breakdown of the solar power generation system installation, including the quantities of each component?","Solar Power Generation Installation:
+
+Solar Panel Array:
+- Solar Devices: 40 panels
+  * Technology: FastPlanning (FP) solar panel technology
+
+Mounting Infrastructure:
+- Solar Mounting Systems: 40 units",mep,samuel_macalister_sample_house,2,test
+726,"Could you provide a comprehensive analysis of the plumbing system's pipe length, including the total length, distribution by building level, and system statistics?","Total Plumbing Pipe Length: 842.64 m
+
+Pipe Length Distribution by Building Level:
+- -01. Fundering: 31.14 m (3.7%)
+- 00. Begane grond: 355.38 m (42.2%)
+- 01. verdieping: 238.80 m (28.3%)
+- 02. verdieping: 209.74 m (24.9%)
+- 03. Dak: 7.58 m (0.9%)
+
+Piping System Analysis:
+- Total pipe segments: 818
+- Average segment length: 1.03 m
+- Primary distribution: Ground floor (42.2% of total)",mep,samuel_macalister_sample_house,2,train
+727,"Could you provide a detailed breakdown of the cable management infrastructure installed, including the quantities of cable carrier components and their integration with electrical systems?","Cable Management Infrastructure:
+    
+    Cable Carrier System:
+    - Cable Carrier Segments: 27
+      * Ladder-type cable carriers (26 segments)
+    - Cable Carrier Fittings: 21
+    
+    Integration with Electrical Systems:
+    - Supports 69 lighting circuits
+    - Services 48 power outlets
+    - Connection to 3 distribution boards
+    
+    Total Cable Management Components: 48",mep,samuel_macalister_sample_house,2,train
+728,"Could you provide a breakdown of flow segments by system type, including the quantities for each MEP system?","Flow Segments by System Type:
+
+Ventilation Flow Segments:
+- GT-20130816-001: 68 segments
+- SS8305160: 59 segments
+  * Flexible Circular Duct DIN 24146 d 160
+- SS8310125: 43 segments
+
+Cable and Infrastructure:
+- QL-030916-003: 26 segments (Ladder systems)
+
+Floor Heating System:
+- SS-261113163908: 12 segments
+  * HcsFlexPipeInPipe technology
+  * PE-Xa pipe underfloor heating
+
+Additional Specialized Systems:
+- SS8310250: 16 segments
+- SS8310315: 10 segments
+- SS8310160: 8 segments
+- SS8310140: 6 segments
+- SS8310200: 2 segments
+
+Summary:
+- Total Flow Segments: 1075
+- System Diversity: 20 different flow segment types
+- Specialized Applications: Heating, ventilation, electrical support",mep,samuel_macalister_sample_house,2,train
+729,"Could you provide a detailed breakdown of the heating systems in the building, including quantities of each component type and their technical specifications?","Heating and Cooling Systems Installation:
+
+Central Heating System:
+- Space Heaters: 30 units
+  * Radiators and heating devices
+  * Individual zone climate control
+- Boiler Systems: 3 units
+  * Central heat generation
+  * Building heating distribution
+
+Underfloor Heating System:
+- HcsFlexPipeInPipe: 12 heating circuits
+  * PE-Xa pipe radiant heating
+
+Climate Control Integration:
+- Temperature monitoring: 7 sensors
+- Flow control: 4 control valves
+
+Heating Distribution Strategy:
+- Dual heating approach: radiative and convective
+- Zone-based temperature control
+- Integration with renewable energy (solar)
+
+Total Heating Components: 45",mep,samuel_macalister_sample_house,2,test
+730,"Could you provide a detailed breakdown of the MEP systems on the ground floor, categorized by system type with specific component quantities and percentages?","Ground Floor (00. Begane grond) MEP Systems:
+
+    Plumbing Systems:
+    - Pipe network: 355.38m (42.2% of total building)
+    - Pipe fittings: 347 units (53.9% of all fittings)
+    - Sanitary terminals: 15 units (50% of building total)
+    
+    Electrical Systems:
+    - Light fixtures: 37 units (53.6% of building total)
+    - Power outlets: 24 units (50% of building total)
+    - Main distribution boards: 3 units
+    
+    Ventilation Systems:
+    - Air terminals: 34 units (majority of building total)
+    
+    Space Conditioning:
+    - Space heaters: 20 units",mep,samuel_macalister_sample_house,2,test
+731,"Could you provide a comprehensive analysis of the bends and elbows used in the piping system, including their types, quantities, distribution by system, installation locations, and bend-to-pipe ratios?","Piping Bend and Elbow Analysis:
+
+Primary Bend Types:
+- Standard Bends: 78 units (12.1% of all fittings)
+  * 90-degree direction changes
+  * Various radius configurations
+
+Distribution by Piping System:
+- Water supply bends: Majority for SS091209003 pipes
+- Drainage system bends: HT12/0619 sewer pipe routing
+
+Installation Strategy:
+- Ground floor: 53.9% of bend installations
+- First floor: 32.6% of bend installations
+
+Bend-to-Pipe Ratio: 0.095 bends per pipe segment",mep,samuel_macalister_sample_house,2,test
+732,Could you provide the specifications of the flexible circular duct system installed in the building?,"Flexible Circular Duct System:
+
+    System Specifications:
+    - Duct Type: Flexible Circular Duct DIN 24146 d 160
+    - Segment Count: 59 segments
+    - Diameter: 160mm (6.3 inches)
+    - Standard: DIN 24146 compliance
+    
+    - Services 43 air terminals
+    - Part of comprehensive ventilation system",mep,samuel_macalister_sample_house,2,train
+733,"What plumbing infrastructure components are installed on the foundation level, including their quantities?","Foundation Level (-01. Fundering) MEP Systems:
+
+    Plumbing Infrastructure:
+    - Pipe network: 31.14m (3.7% of total)
+    - Pipe fittings: 4 units",mep,samuel_macalister_sample_house,2,test
+734,What are the different types of valves installed and how many units of each type are there?,"Valve and Control System Installation:
+
+Valve Distribution:
+- Control Valves: 4 units
+- Standard valve installations: 2 units
+- Specialized control valves: 2 units",mep,samuel_macalister_sample_house,2,test
+735,What specialty equipment manifolds are installed?,"Specialty Equipment Manifold Systems:
+    
+    Distribution Chamber Equipment:
+    - Manifolds: 1 unit
+    - Type: DIH51-06d distribution manifold
+    - Function: Multi-zone distribution control
+    - Connection to 12 HcsFlexPipeInPipe circuits",mep,samuel_macalister_sample_house,1,train
+736,What unitary equipment systems are installed?,"Unitary Equipment Installation:
+    
+    Specialized Equipment:
+    - Unitary Equipment Units: 2
+    - AH-20111213-041: Ventilation equipment
+    - AH-240913151652: Plumbing equipment",mep,samuel_macalister_sample_house,2,test
+737,"Could you provide a breakdown of the building element proxy systems used for MEP support, including the quantities for each category?","Building Element Proxy MEP Support Systems:
+
+Solar System Support:
+- SolarMountingSystems: 40 units
+
+Other Proxy Elements: 9 units
+* Specialized MEP support structures
+* Custom installation hardware",mep,samuel_macalister_sample_house,2,test
+738,What is the building's MEP system summary?,"MEP system summary:
+
+Water Distribution Capacity:
+- Piping network: 842.64m total length
+- Service terminals: 30 fixtures
+- Distribution efficiency: 0.8 fittings per segment
+- Primary distribution: SS091209003 system (514 segments)
+
+Heating System Capacity:
+- Central heating: 30 space heaters + 3 boilers
+- Underfloor heating: 12 zones (HcsFlexPipeInPipe)
+
+Electrical System Capacity:
+- Distribution infrastructure: 3 boards
+- Solar generation: 40 panels
+- Power distribution: 48 outlets, 69 fixtures
+- Cable management: 27 segments
+
+Ventilation System Capacity:
+- Ductwork distribution: 207 rigid + 59 flexible
+- Air terminals: 43 units",mep,samuel_macalister_sample_house,2,train

@@ -1,0 +1,108 @@
+[
+ {
+  "topic": "采光与日照",
+  "title": "厨房朝向",
+  "summary": "厨房最好朝东北或西北。",
+  "prefixes": [
+   "The location of the kitchen is ideally on the northeast"
+  ]
+ },
+ {
+  "topic": "通风",
+  "title": "无窗厨房",
+  "summary": "无窗厨房（含小厨房）一般不可取，只有在保证有效通风时才允许。",
+  "prefixes": [
+   "Kitchens and kitchenettes without windows"
+  ]
+ },
+ {
+  "topic": "窗",
+  "title": "玻璃面最小高度 1.3 m",
+  "summary": "尺度相当于居室的工作间，玻璃面高度至少 1.3 m；住宅为优化能耗也可套用工作间的开窗标准。",
+  "prefixes": [
+   "For rooms with dimensions corresponding",
+   "In order to optimise the energy balance"
+  ]
+ },
+ {
+  "topic": "窗",
+  "title": "视野：窗宽不小于房间宽 65%",
+  "summary": "为保证向外的视野，窗宽（按毛洞口尺寸）不应小于房间宽度的 65%。",
+  "prefixes": [
+   "The minimum window width as a percentage"
+  ]
+ },
+ {
+  "topic": "采光与日照",
+  "title": "工作区距窗不超过 2 倍窗净高",
+  "summary": "侧窗采光的工作间，工作区到窗的距离约为窗净高的 2 倍。",
+  "prefixes": [
+   "The distance of the working area from the window"
+  ]
+ },
+ {
+  "topic": "采光与日照",
+  "title": "办公与工作建筑的朝向",
+  "summary": "多数办公楼采用东西向主轴（早晚低角度阳光干扰工作，南向阳光易用遮阳帘控制）；南北两侧开窗的多层建筑宜东西向布置；另一观点主张南北向主轴使所有房间得到日照，北向房间只适用于无走廊的布局。",
+  "prefixes": [
+   "According to Rosenauer",
+   "Sun from the south can be shaded",
+   "Multi-storey buildings with windows on one side",
+   "According to Joedicke",
+   "North-facing rooms are acceptable"
+  ]
+ },
+ {
+  "topic": "采光与日照",
+  "title": "按朝向选择遮阳",
+  "summary": "北向只有六七月清晨有直射阳光，简单的室内遮阳即可；东、西向应用可调遮阳挡低角度阳光；南向窗主要在早春和秋季低太阳时需要有效遮阳，盛夏小挑檐即可。",
+  "prefixes": [
+   "On north sides, direct sunshine",
+   "South windows need effective shading"
+  ]
+ },
+ {
+  "topic": "采光与日照",
+  "title": "遮阳挑檐的出挑计算",
+  "summary": "出挑长度 A = tan(遮阳角 α) × 窗高 H，最少可减去墙厚 D；北纬 50° 以下南墙正午的遮阳角：6 月 21 日 27°，5 月 1 日/7 月 31 日 40°，春分秋分 50°。",
+  "prefixes": [
+   "Projection A = tan shadow angle",
+   "but min. projection A",
+   "21 June (summer solstice)"
+  ]
+ },
+ {
+  "topic": "建筑物理",
+  "title": "体形系数 A/Ve",
+  "summary": "按 EnEV 2007，建筑允许的年一次能源需求由传热外围护面积 A 与采暖体积 Ve 之比（A/Ve）确定。",
+  "prefixes": [
+   "Depending on the ratio of heat-transmitting area"
+  ]
+ },
+ {
+  "topic": "建筑物理",
+  "title": "分户墙隔声",
+  "summary": "分户墙面密度至少 400 kg/m²；双叶分户墙每叶（含抹灰）至少 150 kg/m²、分隔缝至少 30 mm，缝宽大于 50 mm 时每叶可降到 100 kg/m²，缝内须满填纤维隔声板。",
+  "prefixes": [
+   "for this reason, party walls between flats",
+   "The mass per unit area of the individual layers"
+  ]
+ },
+ {
+  "topic": "建筑物理",
+  "title": "厅室的每人容积",
+  "summary": "声学所需容积的参考值：讲话 4 m³/人，（音乐会）音乐 10 m³/人；容积过小则混响不足。",
+  "prefixes": [
+   "Guideline values are 4 m³/person"
+  ]
+ },
+ {
+  "topic": "建筑物理",
+  "title": "设备噪声与安静房间",
+  "summary": "电梯、给排水管、燃气立管等噪声源不得设在起居室、卧室等需要安静的房间墙内；电梯应设独立井道，缝内填 3 cm 以上矿棉。",
+  "prefixes": [
+   "Noisy elements of services",
+   "Lifts should be installed in separate shafts"
+  ]
+ }
+]

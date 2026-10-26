@@ -1,0 +1,400 @@
+[
+ {
+  "hid": "H-fzk_house-14",
+  "project": "fzk_house",
+  "file": "items/x_g1.py",
+  "question_start": "The model's true north is not project +Y: the context's TrueNorth is (0.766, 0.643) in plan coordinates. Using the window positions, which c",
+  "points": [
+   {
+    "title": "卧室朝向与位置",
+    "current_summary": "卧室最小面积约 13 m²（父母房或双人卧室）和约 8 m²（单人房）；卧室一般朝东或东南（父母）、朝南至西（儿童），并与起居室分处住宅的不同部分。",
+    "issues": [
+     "Source gives \"minimal space of approx. 13 m² … approx. 8 m²\"; summary drops \"minimal/最小\", turning a minimum into a typical size."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_residential_building_1-11",
+  "project": "fantasy_residential_building_1",
+  "file": "items/x_g2.py",
+  "question_start": "In the ground-floor flat entered from Stairwell 1, trace how a resident gets from the front door to the bathroom and to the office. Does the",
+  "points": [
+   {
+    "title": "卧室朝向与位置",
+    "current_summary": "卧室最小面积约 13 m²（父母房或双人卧室）和约 8 m²（单人房）；卧室一般朝东或东南（父母）、朝南至西（儿童），并与起居室分处住宅的不同部分。",
+    "issues": [
+     "Source gives \"minimal space of approx. 13 m² … approx. 8 m²\"; summary drops \"minimal/最小\", turning a minimum into a typical size."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-duplex-18",
+  "project": "duplex",
+  "file": "items/x_g2.py",
+  "question_start": "Take the model's true north (+Y) at face value. The two dwellings are rotated copies of each other. Compare which way unit A and unit B face",
+  "points": [
+   {
+    "title": "卧室朝向与位置",
+    "current_summary": "卧室最小面积约 13 m²（父母房或双人卧室）和约 8 m²（单人房）；卧室一般朝东或东南（父母）、朝南至西（儿童），并与起居室分处住宅的不同部分。",
+    "issues": [
+     "Source gives \"minimal space of approx. 13 m² … approx. 8 m²\"; summary drops \"minimal/最小\", turning a minimum into a typical size."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fzk_house-18",
+  "project": "fzk_house",
+  "file": "items/x_g2.py",
+  "question_start": "The Flur is the only corridor on the ground floor. What clear width does it have between the front door and the opening to the kitchen, how ",
+  "points": [
+   {
+    "title": "轮椅活动空间",
+    "current_summary": "轮椅转身：每个房间宜提供至少 1.50 m 深 × 1.50 m 宽的转身空间。对于公众可达建筑（第(2)条所指，如文化、教育、办公、餐饮等建筑），走廊和门厅宽度须 ≥ 1.50 m。",
+    "issues": [
+     "Corridor/entrance-hall ≥1.50 m (a \"must\") comes from clause (3), which applies only to publicly accessible buildings per (2); summary presents it as a general rule with no scope or modality."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fzk_house-19",
+  "project": "fzk_house",
+  "file": "items/x_g2.py",
+  "question_start": "Using the model's true-north direction, which way do the windows of the bathroom (Bad) and the bedroom (Schlafzimmer) face? Do they follow N",
+  "points": [
+   {
+    "title": "卧室朝向与位置",
+    "current_summary": "卧室最小面积约 13 m²（父母房或双人卧室）和约 8 m²（单人房）；卧室一般朝东或东南（父母）、朝南至西（儿童），并与起居室分处住宅的不同部分。",
+    "issues": [
+     "Source gives \"minimal space of approx. 13 m² … approx. 8 m²\"; summary drops \"minimal/最小\", turning a minimum into a typical size."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-digital_hub-11",
+  "project": "digital_hub",
+  "file": "items/x_g3.py",
+  "question_start": "At the north end of Treppenhaus West on E00, one floor strip serves several things at once: the bottom of the stair, the landing of lift Auf",
+  "points": [
+   {
+    "title": "无障碍电梯",
+    "current_summary": "无障碍建筑中，电梯轿厢净宽须 ≥ 1.10 m、净深 ≥ 1.40 m；门前活动区须至少与轿厢地面面积相同，且不小于 1.50 m 宽 × 1.50 m 深，并不得与其他交通路线和活动区重叠。",
+    "issues": [
+     "遗漏关键条件：门前活动区须“至少与轿厢地面面积一样大”，1.50 × 1.50 m 只是下限",
+     "未说明出处为无障碍建筑章节（标题已含“无障碍”，可接受）"
+    ]
+   },
+   {
+    "title": "楼梯起止处活动区",
+    "current_summary": "无障碍公共建筑中，上下楼梯旁的活动区宽度至少 1.50 m，首级踏步的踏面不计入活动区。",
+    "issues": [
+     "Scope lost: rule is from 'Accessible Public Buildings' (p22); summary is unscoped. (Accessible housing p23 has a similar rule but excludes the uppermost step's tread.)"
+    ]
+   },
+   {
+    "title": "电梯候梯区",
+    "current_summary": "候梯（排队）空间不得占用楼梯；单台电梯前候梯区自井道门墙至对面墙的最小可用进深（沿轿厢进深方向量）应等于轿厢进深，最小可用面积应等于轿厢进深 × 井道宽度；无障碍电梯门前活动区不得与其他交通路线和活动区重叠。",
+    "issues": [
+     "原文是“minimum usable depth … should equal the car depth”，即最小可用进深应等于轿厢进深；摘要写成“候梯区进深应等于轿厢进深”，丢失“最小/至少”的含义，易被理解为恰好等于",
+     "同段还规定单台电梯候梯区最小可用面积应等于轿厢进深×井道宽度，可补充（非必须）"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_office_building_3-09",
+  "project": "fantasy_office_building_3",
+  "file": "items/x_g3.py",
+  "question_start": "Each staircase core has a lift shaft next to it (e.g. space 004 \"Elevater shaft 1\", 1.70 × 1.30 m, on every floor). Where do people wait for",
+  "points": [
+   {
+    "title": "无障碍电梯",
+    "current_summary": "无障碍建筑中，电梯轿厢净宽须 ≥ 1.10 m、净深 ≥ 1.40 m；门前活动区须至少与轿厢地面面积相同，且不小于 1.50 m 宽 × 1.50 m 深，并不得与其他交通路线和活动区重叠。",
+    "issues": [
+     "遗漏关键条件：门前活动区须“至少与轿厢地面面积一样大”，1.50 × 1.50 m 只是下限",
+     "未说明出处为无障碍建筑章节（标题已含“无障碍”，可接受）"
+    ]
+   },
+   {
+    "title": "电梯候梯区",
+    "current_summary": "候梯（排队）空间不得占用楼梯；单台电梯前候梯区自井道门墙至对面墙的最小可用进深（沿轿厢进深方向量）应等于轿厢进深，最小可用面积应等于轿厢进深 × 井道宽度；无障碍电梯门前活动区不得与其他交通路线和活动区重叠。",
+    "issues": [
+     "原文是“minimum usable depth … should equal the car depth”，即最小可用进深应等于轿厢进深；摘要写成“候梯区进深应等于轿厢进深”，丢失“最小/至少”的含义，易被理解为恰好等于",
+     "同段还规定单台电梯候梯区最小可用面积应等于轿厢进深×井道宽度，可补充（非必须）"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_office_building_3-10",
+  "project": "fantasy_office_building_3",
+  "file": "items/x_g3.py",
+  "question_start": "On every floor, Corridor west and Corridor east are 21.28 m long and straight; on the upper floors they are about 1.58 m and 1.51 m wide (1.",
+  "points": [
+   {
+    "title": "轮椅活动空间",
+    "current_summary": "轮椅转身：每个房间宜提供至少 1.50 m 深 × 1.50 m 宽的转身空间。对于公众可达建筑（第(2)条所指，如文化、教育、办公、餐饮等建筑），走廊和门厅宽度须 ≥ 1.50 m。",
+    "issues": [
+     "Corridor/entrance-hall ≥1.50 m (a \"must\") comes from clause (3), which applies only to publicly accessible buildings per (2); summary presents it as a general rule with no scope or modality."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-ac20-13",
+  "project": "ac20",
+  "file": "items/x_g3.py",
+  "question_start": "On each floor the offices are reached from Flur West and Flur Ost, two straight corridors of 17.7 m that meet the central stair hall through",
+  "points": [
+   {
+    "title": "轮椅活动空间",
+    "current_summary": "轮椅转身：每个房间宜提供至少 1.50 m 深 × 1.50 m 宽的转身空间。对于公众可达建筑（第(2)条所指，如文化、教育、办公、餐饮等建筑），走廊和门厅宽度须 ≥ 1.50 m。",
+    "issues": [
+     "Corridor/entrance-hall ≥1.50 m (a \"must\") comes from clause (3), which applies only to publicly accessible buildings per (2); summary presents it as a general rule with no scope or modality."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_residential_building_1-17",
+  "project": "fantasy_residential_building_1",
+  "file": "items/x_g3.py",
+  "question_start": "The building has six flats, two per floor, reached by stairs and by a lift whose landing doors are \"TU SF 2 - Lift Zentral: DL - 705 x 2100\"",
+  "points": [
+   {
+    "title": "无障碍门净宽",
+    "current_summary": "无障碍公共建筑中，门净通行宽度 ≥ 0.90 m；按 MBO §50，公众可达建筑须至少能经一个净开口宽度 ≥ 0.90 m 且无台阶的入口进入。",
+    "issues": [
+     "Scope lost: the ≥0.90 m door width is from the 'Accessible Public Buildings' section (p22), and the step-free entrance ≥0.90 m is MBO §50 (3) for publicly accessible buildings per (2); summary presents both as generic accessible-design rules."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_office_building_2-11",
+  "project": "fantasy_office_building_2",
+  "file": "items/x_g3.py",
+  "question_start": "Besides the two-run assembled stairs, the model contains four straight and eight spiral cast-in-place stairs, each climbing 3.70 m in one ru",
+  "points": [
+   {
+    "title": "非必要楼梯",
+    "current_summary": "按德国标准（书中在“不超过两户的住宅”一句中列出）：建筑法规不视为必要楼梯（不作为法定疏散路线）的楼梯，可用宽度（最小）0.50 m，踏步比 21/21；相比之下必要楼梯为 1.00 m、17/28。",
+    "issues": [
+     "Source lists this value inside the clause \"residential buildings with no more than two flats must have …\"; summary drops that context.",
+     "Width is a minimum value in context (min. 0.80 m … 0.50 m); summary gives bare \"0.50 m\"."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-ac20-16",
+  "project": "ac20",
+  "file": "items/x_g4.py",
+  "question_start": "The institute has no archive room. Someone proposes to store the paper files in the two attic rooms Dachboden-1 and Dachboden-2 (each about ",
+  "points": [
+   {
+    "title": "档案室",
+    "current_summary": "文件室须干燥，因此阁楼和地下室不宜；文件区宜采用净高约 2.10 m（2 层普通办公 = 3 层文件存放；有利的窗中线高度为 2.25–2.50 m）；档案室宜按 7.5–12.5 kN/m² 的较高楼面荷载设计（针对移动式密集架）。",
+    "issues": [
+     "2.10 m ceiling clearance is given as a 'favourable' value (alongside favourable window centre-line 2.25–2.50 m), not a fixed requirement; summary states it as a plain fixed value."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-duplex-25",
+  "project": "duplex",
+  "file": "items/x_g6.py",
+  "question_start": "The duplex contains two dwellings (spaces A1xx/A2xx and B1xx/B2xx) on two storeys. The dwellings interlock: on Level 1 they are divided by \"",
+  "points": [
+   {
+    "title": "建筑等级与承重墙耐火",
+    "current_summary": "（书中在垃圾间规定处以括号注明）住宅超过两套或使用面积达 400 m² 的建筑属于建筑等级 3–5。承重及支撑墙、柱在等级 5 的建筑中须为防火（耐火）构造，等级 4 须为高度阻燃，等级 1 和 2 须为阻燃；此规定不适用于其上方无居室的屋顶空间最上层及阳台；在地下室中须为防火构造，等级 1 和 2 的建筑为阻燃。",
+    "issues": [
+     "遗漏原文紧随的例外与补充条件：该要求不适用于其上无居室的屋顶空间最上层及阳台；地下室中承重墙柱须为防火构造（等级 1、2 为阻燃）",
+     "数值/等级对应（5 防火、4 高度阻燃、1 和 2 阻燃）与原文一致；建筑等级 3–5 的括注说明忠实"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_residential_building_1-19",
+  "project": "fantasy_residential_building_1",
+  "file": "items/x_g6.py",
+  "question_start": "Each upper floor of this building holds two flats, one in the west wing and one in the east wing. The only room-to-room contact between them",
+  "points": [
+   {
+    "title": "建筑等级与承重墙耐火",
+    "current_summary": "（书中在垃圾间规定处以括号注明）住宅超过两套或使用面积达 400 m² 的建筑属于建筑等级 3–5。承重及支撑墙、柱在等级 5 的建筑中须为防火（耐火）构造，等级 4 须为高度阻燃，等级 1 和 2 须为阻燃；此规定不适用于其上方无居室的屋顶空间最上层及阳台；在地下室中须为防火构造，等级 1 和 2 的建筑为阻燃。",
+    "issues": [
+     "遗漏原文紧随的例外与补充条件：该要求不适用于其上无居室的屋顶空间最上层及阳台；地下室中承重墙柱须为防火构造（等级 1、2 为阻燃）",
+     "数值/等级对应（5 防火、4 高度阻燃、1 和 2 阻燃）与原文一致；建筑等级 3–5 的括注说明忠实"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-samuel_macalister_sample_house-19",
+  "project": "samuel_macalister_sample_house",
+  "file": "items/x_g6.py",
+  "question_start": "This single-family house combines cast concrete walls (\"CL_W1\", \"Retaining - 300mm Concrete\") with timber construction: structural timber in",
+  "points": [
+   {
+    "title": "外墙及外墙饰面的燃烧性能",
+    "current_summary": "非承重外墙及承重外墙的非承重部分（建筑等级 1–3 除外）须用不燃（至少阻燃）材料建造；外墙饰面（含保温层及支撑构造）须用难燃材料；等级 1、2 的建筑如能有效防止火势蔓延至相邻建筑，允许外墙饰面采用普通可燃材料。",
+    "issues": [
+     "遗漏原文的一般规定：外墙饰面（含保温层和支撑构造）须用难燃（flame-resistant）材料；等级 1、2 可用普通可燃材料只是该规定的例外",
+     "“（如木材）”为原文所无的添加"
+    ]
+   },
+   {
+    "title": "建筑等级与承重墙耐火",
+    "current_summary": "（书中在垃圾间规定处以括号注明）住宅超过两套或使用面积达 400 m² 的建筑属于建筑等级 3–5。承重及支撑墙、柱在等级 5 的建筑中须为防火（耐火）构造，等级 4 须为高度阻燃，等级 1 和 2 须为阻燃；此规定不适用于其上方无居室的屋顶空间最上层及阳台；在地下室中须为防火构造，等级 1 和 2 的建筑为阻燃。",
+    "issues": [
+     "遗漏原文紧随的例外与补充条件：该要求不适用于其上无居室的屋顶空间最上层及阳台；地下室中承重墙柱须为防火构造（等级 1、2 为阻燃）",
+     "数值/等级对应（5 防火、4 高度阻燃、1 和 2 阻燃）与原文一致；建筑等级 3–5 的括注说明忠实"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-ac20-17",
+  "project": "ac20",
+  "file": "items/x_g6.py",
+  "question_start": "This office building has a full basement (\"Keller\", −3.00 m) under four storeys. The basement walls are 300 mm and 200 mm Kalksandstein (cal",
+  "points": [
+   {
+    "title": "地下室墙体与楼板耐火",
+    "current_summary": "地下室中的承重及支撑墙体和柱须为防火构造，等级 1、2 的建筑可为阻燃构造；楼板须为防火或至少阻燃，地下室顶板须为防火（等级 1、2 建筑、屋顶空间上方的楼板及住宅户内楼板等有例外）。钢筋混凝土板、空心砌块楼板等实心楼板在一定条件下无需附加防护即有足够耐火能力。",
+    "issues": [
+     "Ceiling requirement on p515 is followed by stated exceptions (buildings of classes 1 and 2, ceilings above roof spaces, slabs within dwellings; further exceptions possible for classes 1–3); summary states it unconditionally.",
+     "\"they\" in the cellar sentence covers load-bearing and bracing walls and columns, not only load-bearing walls (minor)."
+    ]
+   },
+   {
+    "title": "建筑等级与承重墙耐火",
+    "current_summary": "（书中在垃圾间规定处以括号注明）住宅超过两套或使用面积达 400 m² 的建筑属于建筑等级 3–5。承重及支撑墙、柱在等级 5 的建筑中须为防火（耐火）构造，等级 4 须为高度阻燃，等级 1 和 2 须为阻燃；此规定不适用于其上方无居室的屋顶空间最上层及阳台；在地下室中须为防火构造，等级 1 和 2 的建筑为阻燃。",
+    "issues": [
+     "遗漏原文紧随的例外与补充条件：该要求不适用于其上无居室的屋顶空间最上层及阳台；地下室中承重墙柱须为防火构造（等级 1、2 为阻燃）",
+     "数值/等级对应（5 防火、4 高度阻燃、1 和 2 阻燃）与原文一致；建筑等级 3–5 的括注说明忠实"
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fzk_house-29",
+  "project": "fzk_house",
+  "file": "items/x_g7.py",
+  "question_start": "Treat the modelled terrain \"Gelaende\" (≈18 × 16 m, extending 3.0 m beyond the house on every side) as the plot. How deep a setback area must",
+  "points": [
+   {
+    "title": "退距（Abstandsfläche）",
+    "current_summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；建筑等级 1 和 2、地上不超过三层的建筑外墙前，3 m 深度即足够；各州 LBO 规定不同并有其他例外。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，垂直于墙面测量；坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入。退距须位于本地块内（也可延伸至公共交通、绿地或水域的中线，或延伸至依公法确定不可建造的其他地块）。檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。",
+    "issues": [
+     "Omits the MBO exception in the same item 5: in front of outside walls of building classes 1 and 2 with ≤3 overground storeys, 3 m depth is sufficient (also 'some LBOs have further exceptions').",
+     "'退距须位于本地块内' omits that setback areas may also lie on public traffic/green/water areas up to their centre, or extend onto other plots secured by public law."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_residential_building_1-20",
+  "project": "fantasy_residential_building_1",
+  "file": "items/x_g7.py",
+  "question_start": "The two wings of the apartment building have hipped roofs. Their outer walls rise to +10.72 m and the roof covering reaches its ridge at +12",
+  "points": [
+   {
+    "title": "退距（Abstandsfläche）",
+    "current_summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；建筑等级 1 和 2、地上不超过三层的建筑外墙前，3 m 深度即足够；各州 LBO 规定不同并有其他例外。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，垂直于墙面测量；坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入。退距须位于本地块内（也可延伸至公共交通、绿地或水域的中线，或延伸至依公法确定不可建造的其他地块）。檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。",
+    "issues": [
+     "Omits the MBO exception in the same item 5: in front of outside walls of building classes 1 and 2 with ≤3 overground storeys, 3 m depth is sufficient (also 'some LBOs have further exceptions').",
+     "'退距须位于本地块内' omits that setback areas may also lie on public traffic/green/water areas up to their centre, or extend onto other plots secured by public law."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_office_building_1-12",
+  "project": "fantasy_office_building_1",
+  "file": "items/x_g7.py",
+  "question_start": "The office building has flat roofs. Its long west and east façades (x = −12.01 and +9.99 m) end in a parapet at +19.80 m. On the two 22 m wi",
+  "points": [
+   {
+    "title": "退距（Abstandsfläche）",
+    "current_summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；建筑等级 1 和 2、地上不超过三层的建筑外墙前，3 m 深度即足够；各州 LBO 规定不同并有其他例外。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，垂直于墙面测量；坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入。退距须位于本地块内（也可延伸至公共交通、绿地或水域的中线，或延伸至依公法确定不可建造的其他地块）。檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。",
+    "issues": [
+     "Omits the MBO exception in the same item 5: in front of outside walls of building classes 1 and 2 with ≤3 overground storeys, 3 m depth is sufficient (also 'some LBOs have further exceptions').",
+     "'退距须位于本地块内' omits that setback areas may also lie on public traffic/green/water areas up to their centre, or extend onto other plots secured by public law."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_office_building_1-13",
+  "project": "fantasy_office_building_1",
+  "file": "items/x_g8.py",
+  "question_start": "Fantasy office building 1 has flat roofs at two heights. The long east and west wings (outer curtain walls at x ≈ +10.0 m and x ≈ −12.05 m) ",
+  "points": [
+   {
+    "title": "退距（Abstandsfläche）",
+    "current_summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；建筑等级 1 和 2、地上不超过三层的建筑外墙前，3 m 深度即足够；各州 LBO 规定不同并有其他例外。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，垂直于墙面测量；坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入。退距须位于本地块内（也可延伸至公共交通、绿地或水域的中线，或延伸至依公法确定不可建造的其他地块）。檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。",
+    "issues": [
+     "Omits the MBO exception in the same item 5: in front of outside walls of building classes 1 and 2 with ≤3 overground storeys, 3 m depth is sufficient (also 'some LBOs have further exceptions').",
+     "'退距须位于本地块内' omits that setback areas may also lie on public traffic/green/water areas up to their centre, or extend onto other plots secured by public law."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-ac20-19",
+  "project": "ac20",
+  "file": "items/x_g8.py",
+  "question_start": "In ac20 the ground surface is modelled by the site object \"Gelaende 0815\" (top at −0.15 m, extending x −8…50 m and y −11…27 m). Treat its ou",
+  "points": [
+   {
+    "title": "退距（Abstandsfläche）",
+    "current_summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；建筑等级 1 和 2、地上不超过三层的建筑外墙前，3 m 深度即足够；各州 LBO 规定不同并有其他例外。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，垂直于墙面测量；坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入。退距须位于本地块内（也可延伸至公共交通、绿地或水域的中线，或延伸至依公法确定不可建造的其他地块）。檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。",
+    "issues": [
+     "Omits the MBO exception in the same item 5: in front of outside walls of building classes 1 and 2 with ≤3 overground storeys, 3 m depth is sufficient (also 'some LBOs have further exceptions').",
+     "'退距须位于本地块内' omits that setback areas may also lie on public traffic/green/water areas up to their centre, or extend onto other plots secured by public law."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-digital_hub-24",
+  "project": "digital_hub",
+  "file": "items/x_g9.py",
+  "question_start": "The two precast half-turn stairs on the ground floor of the DigitalHub (Fertigbetontreppe:Treppe:2421059 in the west stairwell and :2423903 ",
+  "points": [
+   {
+    "title": "休息平台宽度不小于梯段宽度",
+    "current_summary": "楼梯休息平台宽度不小于楼梯宽度；（同一图注）层高 ≥ 2.75 m 的法定必要楼梯须设休息平台。",
+    "issues": [
+     "Parenthetical '（沿行进方向的进深）' is an interpretation not in the source caption, which only says 'Landing width ≥ stair width'.",
+     "Omits caption context: stairs with landings are required in legally essential stairways with storey height ≥ 2.75 m."
+    ]
+   }
+  ]
+ },
+ {
+  "hid": "H-fantasy_office_building_3-15",
+  "project": "fantasy_office_building_3",
+  "file": "items/x_g9.py",
+  "question_start": "Both stair cores of fantasy_office_building_3 contain half-turn stairs with one intermediate landing per storey (west: Betonfertigteil-Trepp",
+  "points": [
+   {
+    "title": "休息平台宽度不小于梯段宽度",
+    "current_summary": "楼梯休息平台宽度不小于楼梯宽度；（同一图注）层高 ≥ 2.75 m 的法定必要楼梯须设休息平台。",
+    "issues": [
+     "Parenthetical '（沿行进方向的进深）' is an interpretation not in the source caption, which only says 'Landing width ≥ stair width'.",
+     "Omits caption context: stairs with landings are required in legally essential stairways with storey height ≥ 2.75 m."
+    ]
+   }
+  ]
+ }
+]

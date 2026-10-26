@@ -1,0 +1,800 @@
+[
+ {
+  "hid": "H-fzk_house-14",
+  "project": "fzk_house",
+  "points": [
+   {
+    "title": "卧室朝向与位置",
+    "issues": [
+     "Modality: source says bedrooms 'would normally be aligned' east/southeast (parents) or south to west (children); summary uses 宜/应 (recommendation) instead of 一般 (typical).",
+     "Omits the context of minimal bedroom sizes (approx. 13 m² / 8 m²) - optional."
+    ],
+    "corrected_summary": "卧室（父母房/双人卧室约 13 m²，单人房约 8 m²）一般朝东或东南（父母）、朝南至西（儿童），并与起居室分处住宅的不同部分。"
+   },
+   {
+    "title": "卫生间朝向、采光与通风",
+    "issues": [
+     "Condition dropped: placing artificially lit bathrooms in the central zone is stated only for 'buildings of greater depth' where the central area is widened into a subsidiary-space zone (p.145); summary generalises it to any flat plan."
+    ],
+    "corrected_summary": "卫生间宜朝北，尽可能自然采光通风，否则按 DIN 18017-3 设置有效的机械通风；在进深较大的建筑中，户型中部可加宽为辅助功能区，人工照明（或经其他区域间接采光）的卫生间可布置于此。"
+   }
+  ],
+  "file": "items/x_g1.py",
+  "question_start": "The model's true north is not project +Y: the context's TrueNorth is (0.766, 0.643) in plan coordinates. Using the windo"
+ },
+ {
+  "hid": "H-fzk_house-15",
+  "project": "fzk_house",
+  "points": [
+   {
+    "title": "工作间的窗",
+    "issues": [
+     "p.266 gives 1/10 of floor area (rooms up to 600 m²) as 'Approx. figures for window areas' in the industry chapter; summary states it as a firm value without 约, and omits the 1/5 for fine work.",
+     "Sill height 0.85–1.25 m is a 'should' (eye level) recommendation."
+    ],
+    "corrected_summary": "工作间（按工作场所指南）：所有对外视线窗的总宽度须至少为全部墙宽总和的 1/10；对外视线宜在视平线高度（窗台高 0.85–1.25 m）；高度超过 3.5 m 的工作间，窗玻璃面积须至少为外墙面积的 30%。工业建筑中窗面积的近似值：面积不超过 600 m² 的房间约为地面面积的 1/10，精细作业约 1/5。"
+   }
+  ],
+  "file": "items/x_g1.py",
+  "question_start": "The home office \"Buero\" (12.6 m²) is lit by two \"IFC Fenster - zwei Panele - Vertikal\" windows, structural opening 2.00 "
+ },
+ {
+  "hid": "H-duplex-16",
+  "project": "duplex",
+  "points": [
+   {
+    "title": "卫生间朝向、采光与通风",
+    "issues": [
+     "Condition dropped: placing artificially lit bathrooms in the central zone is stated only for 'buildings of greater depth' where the central area is widened into a subsidiary-space zone (p.145); summary generalises it to any flat plan."
+    ],
+    "corrected_summary": "卫生间宜朝北，尽可能自然采光通风，否则按 DIN 18017-3 设置有效的机械通风；在进深较大的建筑中，户型中部可加宽为辅助功能区，人工照明（或经其他区域间接采光）的卫生间可布置于此。"
+   }
+  ],
+  "file": "items/x_g1.py",
+  "question_start": "In each unit of the duplex, which rooms have a window that can actually be opened, and what does that mean for the kitch"
+ },
+ {
+  "hid": "H-duplex-17",
+  "project": "duplex",
+  "points": [
+   {
+    "title": "分户墙隔声",
+    "issues": [
+     "The 150 kg/m² / 30 mm / 50 mm / 100 kg/m² rules are given for a two-skin party wall with a separating joint over the entire depth of the houses (i.e. between houses, e.g. terraced houses); summary generalises to all '双叶分户墙'.",
+     "400 kg/m² is a 'should always' statement for party walls between flats or houses - acceptable."
+    ],
+    "corrected_summary": "住宅之间或户与户之间的分户墙宜始终达到至少 400 kg/m² 的面密度。对于贯通整栋房屋进深设分隔缝的（房屋之间的）双叶分户墙：每叶（含抹灰）面密度须至少 150 kg/m²，分隔缝至少 30 mm；缝宽大于 50 mm 时每叶可为 100 kg/m²；缝腔内须满铺无缝的纤维隔声板。"
+   }
+  ],
+  "file": "items/x_g1.py",
+  "question_start": "The two dwellings are separated by \"Basic Wall: Party Wall - CMU Residential Unit Dimising Wall\", 0.55 m thick, running "
+ },
+ {
+  "hid": "H-fantasy_residential_building_1-09",
+  "project": "fantasy_residential_building_1",
+  "points": [
+   {
+    "title": "卫生间朝向、采光与通风",
+    "issues": [
+     "Condition dropped: placing artificially lit bathrooms in the central zone is stated only for 'buildings of greater depth' where the central area is widened into a subsidiary-space zone (p.145); summary generalises it to any flat plan."
+    ],
+    "corrected_summary": "卫生间宜朝北，尽可能自然采光通风，否则按 DIN 18017-3 设置有效的机械通风；在进深较大的建筑中，户型中部可加宽为辅助功能区，人工照明（或经其他区域间接采光）的卫生间可布置于此。"
+   }
+  ],
+  "file": "items/x_g1.py",
+  "question_start": "Each flat has a bathroom (13.37 m², walk-in shower and basins) at one end and a separate toilet (4.33 m², wall-hung WC a"
+ },
+ {
+  "hid": "H-ac20-11",
+  "project": "ac20",
+  "points": [
+   {
+    "title": "办公与工作建筑的朝向",
+    "issues": [
+     "'多数办公楼采用东西向主轴' generalises: the source says, according to Rosenauer, 90% of office buildings in the USA have an E/W main axis.",
+     "Joedicke's N/S view is attributed in the source; the two-side-windows rule comes from the industry chapter (p.266), which also says one-side-window buildings should face northeast - omitted."
+    ],
+    "corrected_summary": "朝向说法不一：据 Rosenauer，美国 90% 的办公楼采用东西向主轴，因为深入室内的早晚阳光造成干扰，而南向阳光较易用遮阳帘遮挡；据 Joedicke，南北向主轴可使所有房间获得日照，北向房间只适用于无走廊的布局。工业建筑中，单侧开窗的多层建筑宜朝东北，南北两侧开窗的宜东西向布置。"
+   }
+  ],
+  "file": "items/x_g1.py",
+  "question_start": "This office building (true north = project +Y) is a slab about 42 m long and 12 m deep with a central corridor; 198 of i"
+ },
+ {
+  "hid": "H-fantasy_office_building_2-09",
+  "project": "fantasy_office_building_2",
+  "points": [
+   {
+    "title": "办公与工作建筑的朝向",
+    "issues": [
+     "'多数办公楼采用东西向主轴' generalises: the source says, according to Rosenauer, 90% of office buildings in the USA have an E/W main axis.",
+     "Joedicke's N/S view is attributed in the source; the two-side-windows rule comes from the industry chapter (p.266), which also says one-side-window buildings should face northeast - omitted."
+    ],
+    "corrected_summary": "朝向说法不一：据 Rosenauer，美国 90% 的办公楼采用东西向主轴，因为深入室内的早晚阳光造成干扰，而南向阳光较易用遮阳帘遮挡；据 Joedicke，南北向主轴可使所有房间获得日照，北向房间只适用于无走廊的布局。工业建筑中，单侧开窗的多层建筑宜朝东北，南北两侧开窗的宜东西向布置。"
+   }
+  ],
+  "file": "items/x_g1.py",
+  "question_start": "All thirteen offices (Office 1–13, about 3.0 m deep) have their two \"FE 2 tlg - waagrecht geteilt 1100 x 1850\" windows i"
+ },
+ {
+  "hid": "H-digital_hub-08",
+  "project": "digital_hub",
+  "points": [
+   {
+    "title": "工作区距窗不超过 2 倍窗净高",
+    "issues": [
+     "Title says '不超过 2 倍' (a maximum), but the text only says the distance 'should be twice as long as the clear window height'; no upper-limit wording.",
+     "Scope is the industry chapter (side-lit workrooms) - summary is fine on this."
+    ],
+    "corrected_summary": "（工业建筑）侧窗采光时，工作区到窗的距离宜为窗净高的 2 倍。"
+   }
+  ],
+  "file": "items/x_g1.py",
+  "question_start": "Gruppenbüro 8 on E01 (37.0 m², 6.85 m wide, 5.40 m deep) is lit only by one north-facing \"FE 3 tlg - DK-Fix im Rahmen-DK"
+ },
+ {
+  "hid": "H-fantasy_residential_building_1-11",
+  "project": "fantasy_residential_building_1",
+  "points": [
+   {
+    "title": "分组式平面与房间独立可达",
+    "issues": [
+     "'好的平面应使每个房间都能独立进入和使用' is a normative generalisation; the source sentence 'All rooms can be accessed and used separately' describes the central corridor plan (late 19th-c. apartment blocks), not the grouped room plan and not a general rule."
+    ],
+    "corrected_summary": "分组式平面（20 世纪初出现）将户内分为两个房间组：起居区（起居室、厨房和就餐区）和睡眠区（卧室和卫生间）。中廊式平面（19 世纪末城市公寓的典型平面）沿两侧立面布置房间，所有房间都可独立进入和使用。"
+   },
+   {
+    "title": "卧室朝向与位置",
+    "issues": [
+     "Modality: source says bedrooms 'would normally be aligned' east/southeast (parents) or south to west (children); summary uses 宜/应 (recommendation) instead of 一般 (typical).",
+     "Omits the context of minimal bedroom sizes (approx. 13 m² / 8 m²) - optional."
+    ],
+    "corrected_summary": "卧室（父母房/双人卧室约 13 m²，单人房约 8 m²）一般朝东或东南（父母）、朝南至西（儿童），并与起居室分处住宅的不同部分。"
+   }
+  ],
+  "file": "items/x_g2.py",
+  "question_start": "In the ground-floor flat entered from Stairwell 1, trace how a resident gets from the front door to the bathroom and to "
+ },
+ {
+  "hid": "H-duplex-18",
+  "project": "duplex",
+  "points": [
+   {
+    "title": "卧室朝向与位置",
+    "issues": [
+     "Modality: source says bedrooms 'would normally be aligned' east/southeast (parents) or south to west (children); summary uses 宜/应 (recommendation) instead of 一般 (typical).",
+     "Omits the context of minimal bedroom sizes (approx. 13 m² / 8 m²) - optional."
+    ],
+    "corrected_summary": "卧室（父母房/双人卧室约 13 m²，单人房约 8 m²）一般朝东或东南（父母）、朝南至西（儿童），并与起居室分处住宅的不同部分。"
+   }
+  ],
+  "file": "items/x_g2.py",
+  "question_start": "Take the model's true north (+Y) at face value. The two dwellings are rotated copies of each other. Compare which way un"
+ },
+ {
+  "hid": "H-fzk_house-18",
+  "project": "fzk_house",
+  "points": [
+   {
+    "title": "户内走道宽度",
+    "issues": [
+     "The 1 m is an assumption of the book's examples ('The examples assume a minimum corridor width of 1 m'), not a stated minimum requirement; summary presents it as a general minimum."
+    ],
+    "corrected_summary": "书中示例假定户内走道最小宽度为 1 m，可供两人错身；但这一宽度放不下柜子，柜子最好做成嵌入式。"
+   }
+  ],
+  "file": "items/x_g2.py",
+  "question_start": "The Flur is the only corridor on the ground floor. What clear width does it have between the front door and the opening "
+ },
+ {
+  "hid": "H-fantasy_residential_building_1-14",
+  "project": "fantasy_residential_building_1",
+  "points": [
+   {
+    "title": "洗衣间",
+    "issues": [
+     "Modality: source says the 1.20 m worktop 'should be provided'; summary '需' reads as a requirement — use '宜/应'.",
+     "Scope: these rules concern laundry/utility rooms in homes (washroom 'laundry/utility room'); fine but keep '洗衣/家务间'."
+    ],
+    "corrected_summary": "洗衣/家务间宜设 1.20 m 宽的工作台用于处理衣物；最好朝东北、紧邻厨房或便于从厨房到达；独立住宅中应直通花园（用于晾晒衣物）。"
+   }
+  ],
+  "file": "items/x_g2.py",
+  "question_start": "In the ground-floor flats the 9.42 m² utility rooms (spaces 10 and 19, with tall shelf units and a high window) are the "
+ },
+ {
+  "hid": "H-duplex-21",
+  "project": "duplex",
+  "points": [
+   {
+    "title": "卫生间朝向、采光与通风",
+    "issues": [
+     "Condition dropped: placing artificially lit bathrooms in the central zone is stated only for 'buildings of greater depth' where the central area is widened into a subsidiary-space zone (p.145); summary generalises it to any flat plan."
+    ],
+    "corrected_summary": "卫生间宜朝北，尽可能自然采光通风，否则按 DIN 18017-3 设置有效的机械通风；在进深较大的建筑中，户型中部可加宽为辅助功能区，人工照明（或经其他区域间接采光）的卫生间可布置于此。"
+   }
+  ],
+  "file": "items/x_g2.py",
+  "question_start": "Do the four bathrooms of the duplex get natural light and ventilation? If not, what does that require, and where in the "
+ },
+ {
+  "hid": "H-fzk_house-19",
+  "project": "fzk_house",
+  "points": [
+   {
+    "title": "卧室朝向与位置",
+    "issues": [
+     "Modality: source says bedrooms 'would normally be aligned' east/southeast (parents) or south to west (children); summary uses 宜/应 (recommendation) instead of 一般 (typical).",
+     "Omits the context of minimal bedroom sizes (approx. 13 m² / 8 m²) - optional."
+    ],
+    "corrected_summary": "卧室（父母房/双人卧室约 13 m²，单人房约 8 m²）一般朝东或东南（父母）、朝南至西（儿童），并与起居室分处住宅的不同部分。"
+   },
+   {
+    "title": "卫生间朝向、采光与通风",
+    "issues": [
+     "Condition dropped: placing artificially lit bathrooms in the central zone is stated only for 'buildings of greater depth' where the central area is widened into a subsidiary-space zone (p.145); summary generalises it to any flat plan."
+    ],
+    "corrected_summary": "卫生间宜朝北，尽可能自然采光通风，否则按 DIN 18017-3 设置有效的机械通风；在进深较大的建筑中，户型中部可加宽为辅助功能区，人工照明（或经其他区域间接采光）的卫生间可布置于此。"
+   }
+  ],
+  "file": "items/x_g2.py",
+  "question_start": "Using the model's true-north direction, which way do the windows of the bathroom (Bad) and the bedroom (Schlafzimmer) fa"
+ },
+ {
+  "hid": "H-fantasy_residential_building_1-16",
+  "project": "fantasy_residential_building_1",
+  "points": [
+   {
+    "title": "婴儿车与自行车公共储藏间",
+    "issues": [
+     "The gloss '如两户以上' is imported from a waste-storage passage in the Agriculture chapter (p.464), which reads 'more than two flats or a usable area of 400 m² (building classes 3–5)'; the gloss is incomplete (drops the 400 m² alternative) and not part of the storeroom passage. Remove it or quote fully.",
+     "Summary omits that the book also says corresponding areas should be provided in other residential buildings and detached houses (optional)."
+    ],
+    "corrected_summary": "建筑法规要求建筑等级 3–5 的住宅设置方便到达的（公共）婴儿车、童车和自行车储藏间（其他住宅和独立住宅也宜设相应空间）；设计时可按每位住户（含儿童）至少一辆车估算；储藏间宜尽量设在街道层，可上锁，并配挂钩和自行车架。"
+   }
+  ],
+  "file": "items/x_g2.py",
+  "question_start": "The building has six flats on three storeys, and besides the flats its ground floor offers only a lobby and two stairwel"
+ },
+ {
+  "hid": "H-fzk_house-20",
+  "project": "fzk_house",
+  "points": [
+   {
+    "title": "独立住宅每层通往户外",
+    "issues": [
+     "Modality overstated: the source describes the prototype detached house ('It has direct access from each storey...'); summary turns it into a requirement (都应能)."
+    ],
+    "corrected_summary": "独立住宅（自住住宅的原型）从每一层都可直接通往其他私有或半公共的户外空间（如花园、露台、内院或屋顶花园）。"
+   }
+  ],
+  "file": "items/x_g2.py",
+  "question_start": "The FZK house is a detached single-family house. From which storeys can the occupants step directly outside into a garde"
+ },
+ {
+  "hid": "H-4351-13",
+  "project": "4351",
+  "points": [
+   {
+    "title": "公共建筑楼梯两侧扶手",
+    "issues": [
+     "原文为'past the last steps'，摘要'延伸过首末踏步'增加了'首'",
+     "适用范围为 MBO §50 中的公众可达建筑（面向公众部分），'公共建筑'可接受但宜写准确"
+    ],
+    "corrected_summary": "按 MBO §50，公众可达建筑的楼梯须两侧设扶手，扶手应在休息平台和窗洞处连续，并延伸过最后一级踏步。"
+   },
+   {
+    "title": "无障碍的适用范围与无台阶通达",
+    "issues": [
+     "适用建筑清单（文化、教育、体育、休闲、医疗、办公、行政、法院、商业、餐饮、停车、车库、厕所）在 p.25 指的是第(2)条'公众可达建筑须可供残障人士等无需他人帮助进出使用'，并非 p.22'各层无台阶可达'这一要求，摘要把两者混在一起",
+     "清单遗漏体育、休闲、行政、法院、商业、车库"
+    ],
+    "corrected_summary": "按无障碍原则设计的建筑，所有楼层须无台阶可达（即通过电梯或坡道）。另按 MBO §50，公众可达建筑面向公众的部分须能供残障人士、老人和带小孩的人无需他人帮助按用途进出使用，尤其适用于文化、教育、体育、休闲和医疗设施，办公、行政建筑和法院，商业和餐饮场所，停车场、车库和厕所。"
+   }
+  ],
+  "file": "items/x_g3.py",
+  "question_start": "Compare the handrails of the building's three stairs: the internal stairs 144942 (01→02) and 159510 (02→03), and the ext"
+ },
+ {
+  "hid": "H-ac20-14",
+  "project": "ac20",
+  "points": [
+   {
+    "title": "防火分区与防火墙",
+    "issues": [
+     "原文：防火墙上开口'原则上不允许'，仅在建筑内部的防火墙上可例外允许，此时须设 T 90 自闭防火门；摘要'只能设自闭式防火门'丢失'原则上不允许/仅限建筑内部'",
+     "40 m 划分出自 MBO；'长度'为解读，原文只说'not more than 40 m'"
+    ],
+    "corrected_summary": "按 MBO，较大建筑须用防火墙划分为不超过 40 m 的防火分区；防火墙须防火、受火时结构稳定并由不燃材料构成（F 90 A）。防火墙上开口原则上不允许，建筑内部的防火墙可例外允许开口，但须设自闭式防火门（T 90 门或闸门）。"
+   }
+  ],
+  "file": "items/x_g3.py",
+  "question_start": "The institute is a single block 42.0 m long (floor slabs 42.0 × 14–18 m). On every floor the west corridor, the central "
+ },
+ {
+  "hid": "H-digital_hub-12",
+  "project": "digital_hub",
+  "points": [
+   {
+    "title": "防火分区与防火墙",
+    "issues": [
+     "原文：防火墙上开口'原则上不允许'，仅在建筑内部的防火墙上可例外允许，此时须设 T 90 自闭防火门；摘要'只能设自闭式防火门'丢失'原则上不允许/仅限建筑内部'",
+     "40 m 划分出自 MBO；'长度'为解读，原文只说'not more than 40 m'"
+    ],
+    "corrected_summary": "按 MBO，较大建筑须用防火墙划分为不超过 40 m 的防火分区；防火墙须防火、受火时结构稳定并由不燃材料构成（F 90 A）。防火墙上开口原则上不允许，建筑内部的防火墙可例外允许开口，但须设自闭式防火门（T 90 门或闸门）。"
+   }
+  ],
+  "file": "items/x_g3.py",
+  "question_start": "DigitalHub is one block of about 63.3 × 19.9 m (floor slabs x ≈ 6.9…70.1 m) with a stairwell at each end (Treppenhaus We"
+ },
+ {
+  "hid": "H-fantasy_office_building_2-11",
+  "project": "fantasy_office_building_2",
+  "points": [
+   {
+    "title": "非必要楼梯",
+    "issues": [
+     "原文只给出'21/21'踏步比，摘要解读为'踏步高 ≤ 21 cm、踏面宽 ≥ 21 cm'，≤/≥ 方向为添加内容",
+     "原文语境为'According to German standards'"
+    ],
+    "corrected_summary": "按德国标准，建筑法规不视为必要楼梯（不作为法定疏散路线）的楼梯：可用宽度 0.50 m，踏步比 21/21。"
+   }
+  ],
+  "file": "items/x_g3.py",
+  "question_start": "Besides the two-run assembled stairs, the model contains four straight and eight spiral cast-in-place stairs, each climb"
+ },
+ {
+  "hid": "H-ac20-16",
+  "project": "ac20",
+  "points": [
+   {
+    "title": "档案室",
+    "issues": [
+     "'密集架取高值' is an interpretation not in the text: the book gives 7.5–12.5 kN/m² '(for mobile units)' as an increased floor loading for archive rooms, without saying mobile units take the upper value.",
+     "'须设计' vs 'should be designed' — use 应/宜 for the loading."
+    ],
+    "corrected_summary": "文件室须干燥，因此不宜设在阁楼和地下室；文件存放区净高 2.10 m（2 层普通办公 = 3 层文件存放）；档案室宜按 7.5–12.5 kN/m² 的较高楼面荷载设计（针对移动式密集架）。"
+   }
+  ],
+  "file": "items/x_g4.py",
+  "question_start": "The institute has no archive room. Someone proposes to store the paper files in the two attic rooms Dachboden-1 and Dach"
+ },
+ {
+  "hid": "H-digital_hub-17",
+  "project": "digital_hub",
+  "points": [
+   {
+    "title": "车位与通道尺寸",
+    "issues": [
+     "2.50 × 5.00 m = 12.50 m² 出自加油站章节'State regulations control: Parking space size'，摘要写成通用车位尺寸，丢失语境",
+     "'90° 停车通道宽 5.50 m' 来自图注示例（配 2.50 m 车位），应标为示例而非通用要求",
+     "车库条例 2.30 m 是针对多层停车库(Garage Regulations)的语境，可保留"
+    ],
+    "corrected_summary": "多层停车库：车库条例要求车位最小宽度 2.30 m，FGSV 因车辆变大建议所有公众可达车位最小宽度 2.50 m；图示示例：90° 停车、通道宽 5.50 m、车位宽 2.50 m；加油站相关州规定中车位尺寸为 2.50 × 5.00 m = 12.50 m²。"
+   }
+  ],
+  "file": "items/x_g4.py",
+  "question_start": "Each of the 26 bays (2.50 × 5.00 m, two facing rows, 9.55 m aisle between them) has a bow-shaped \"Anfahrschutz Rohr:1000"
+ },
+ {
+  "hid": "H-fzk_house-23",
+  "project": "fzk_house",
+  "points": [
+   {
+    "title": "单层外墙与附加保温层",
+    "issues": [
+     "'须用网格增强的矿物抹灰' overstates modality: the source is descriptive ('so mineral render reinforced with mesh is used here (or plastic modified render)')."
+    ],
+    "corrected_summary": "单层外墙在建筑物理上没有问题，但由于保温要求高，只能用高保温材料（如加气砌块）配专用保温砂浆和抹灰砌筑；因此单层墙加附加保温层（外保温或内保温）是常见的替代做法。保温层外侧因受热积聚和基层抗剪强度低而有开裂风险，因此这里采用网格增强的矿物抹灰（或聚合物改性抹灰）。"
+   }
+  ],
+  "file": "items/x_g5.py",
+  "question_start": "The eight external walls of the house are a single 300 mm layer of \"Leichtbeton 102890359\" (lightweight concrete), no se"
+ },
+ {
+  "hid": "H-fantasy_office_building_1-11",
+  "project": "fantasy_office_building_1",
+  "points": [
+   {
+    "title": "单层外墙与附加保温层",
+    "issues": [
+     "'须用网格增强的矿物抹灰' overstates modality: the source is descriptive ('so mineral render reinforced with mesh is used here (or plastic modified render)')."
+    ],
+    "corrected_summary": "单层外墙在建筑物理上没有问题，但由于保温要求高，只能用高保温材料（如加气砌块）配专用保温砂浆和抹灰砌筑；因此单层墙加附加保温层（外保温或内保温）是常见的替代做法。保温层外侧因受热积聚和基层抗剪强度低而有开裂风险，因此这里采用网格增强的矿物抹灰（或聚合物改性抹灰）。"
+   }
+  ],
+  "file": "items/x_g5.py",
+  "question_start": "The office building's solid external walls are \"STB 25.0 WD 12.0\" and \"STB 20.0 WD 12.0\". Read their layer order from th"
+ },
+ {
+  "hid": "H-digital_hub-18",
+  "project": "digital_hub",
+  "points": [
+   {
+    "title": "单层外墙与附加保温层",
+    "issues": [
+     "'须用网格增强的矿物抹灰' overstates modality: the source is descriptive ('so mineral render reinforced with mesh is used here (or plastic modified render)')."
+    ],
+    "corrected_summary": "单层外墙在建筑物理上没有问题，但由于保温要求高，只能用高保温材料（如加气砌块）配专用保温砂浆和抹灰砌筑；因此单层墙加附加保温层（外保温或内保温）是常见的替代做法。保温层外侧因受热积聚和基层抗剪强度低而有开裂风险，因此这里采用网格增强的矿物抹灰（或聚合物改性抹灰）。"
+   }
+  ],
+  "file": "items/x_g5.py",
+  "question_start": "The building's façade is modelled as an inner leaf \"Leichtbetonmauerwerk 250\" plus a separate outer wall element \"WD 200"
+ },
+ {
+  "hid": "H-duplex-24",
+  "project": "duplex",
+  "points": [
+   {
+    "title": "隔汽层设在暖侧",
+    "issues": [
+     "'须另设内侧隔汽层' overstates: p.473 only describes that more recent warm roofs/façades 'feature' an external vapour-barrier layer and on account of this an additional internal vapour barrier.",
+     "The 'must be installed on the warm side' part is correctly conditional ('if this is to be avoided')."
+    ],
+    "corrected_summary": "若隔汽层在外侧（冷侧），整个水蒸气压力梯度都发生在那里，会产生冷凝；要避免冷凝，须在暖侧设置隔汽层。较新的构造（暖屋面、暖立面）外侧有隔汽层（如防水层），因此另设内侧隔汽层。坡屋面中隔汽层位于保温层下方，以防屋面构造内部冷凝。"
+   }
+  ],
+  "file": "items/x_g5.py",
+  "question_start": "The duplex's roof is \"Basic Roof:Live Roof over Wood Joist Flat Roof\". Read its layers (top to bottom) and its geometry."
+ },
+ {
+  "hid": "H-samuel_macalister_sample_house-18",
+  "project": "samuel_macalister_sample_house",
+  "points": [
+   {
+    "title": "隔汽层设在暖侧",
+    "issues": [
+     "'须另设内侧隔汽层' overstates: p.473 only describes that more recent warm roofs/façades 'feature' an external vapour-barrier layer and on account of this an additional internal vapour barrier.",
+     "The 'must be installed on the warm side' part is correctly conditional ('if this is to be avoided')."
+    ],
+    "corrected_summary": "若隔汽层在外侧（冷侧），整个水蒸气压力梯度都发生在那里，会产生冷凝；要避免冷凝，须在暖侧设置隔汽层。较新的构造（暖屋面、暖立面）外侧有隔汽层（如防水层），因此另设内侧隔汽层。坡屋面中隔汽层位于保温层下方，以防屋面构造内部冷凝。"
+   }
+  ],
+  "file": "items/x_g5.py",
+  "question_start": "The flat roof over part of the house is \"Basic Roof:Warm Roof - Timber\", modelled with PitchAngle 0. Check its layer seq"
+ },
+ {
+  "hid": "H-fantasy_office_building_2-13",
+  "project": "fantasy_office_building_2",
+  "points": [
+   {
+    "title": "隔汽层设在暖侧",
+    "issues": [
+     "'须另设内侧隔汽层' overstates: p.473 only describes that more recent warm roofs/façades 'feature' an external vapour-barrier layer and on account of this an additional internal vapour barrier.",
+     "The 'must be installed on the warm side' part is correctly conditional ('if this is to be avoided')."
+    ],
+    "corrected_summary": "若隔汽层在外侧（冷侧），整个水蒸气压力梯度都发生在那里，会产生冷凝；要避免冷凝，须在暖侧设置隔汽层。较新的构造（暖屋面、暖立面）外侧有隔汽层（如防水层），因此另设内侧隔汽层。坡屋面中隔汽层位于保温层下方，以防屋面构造内部冷凝。"
+   }
+  ],
+  "file": "items/x_g5.py",
+  "question_start": "The two 12° pitched roof areas are \"Basic Roof:Ziegeldach 360\" (U 0.110 W/m²K). Their constituents, outside to inside, a"
+ },
+ {
+  "hid": "H-duplex-25",
+  "project": "duplex",
+  "points": [
+   {
+    "title": "建筑等级与承重墙耐火",
+    "issues": [
+     "'(如 F 30)' is not in the quoted passages; F 30 = fire-retarding appears only elsewhere (p.516, corridor walls).",
+     "The class 3–5 = '>2 flats or 400 m² usable area' equivalence comes from a parenthetical in the rubbish-storage rule (p.464), not a class definition; present it as the book's gloss."
+    ],
+    "corrected_summary": "（书中在垃圾间规定处以括号注明）住宅超过两套或使用面积达 400 m² 的建筑属于建筑等级 3–5。承重及支撑墙、柱在等级 5 的建筑中须为防火（耐火）构造，等级 4 须为高度阻燃，等级 1 和 2 须为阻燃。"
+   }
+  ],
+  "file": "items/x_g6.py",
+  "question_start": "The duplex contains two dwellings (spaces A1xx/A2xx and B1xx/B2xx) on two storeys. The dwellings interlock: on Level 1 t"
+ },
+ {
+  "hid": "H-fantasy_residential_building_1-19",
+  "project": "fantasy_residential_building_1",
+  "points": [
+   {
+    "title": "建筑等级与承重墙耐火",
+    "issues": [
+     "'(如 F 30)' is not in the quoted passages; F 30 = fire-retarding appears only elsewhere (p.516, corridor walls).",
+     "The class 3–5 = '>2 flats or 400 m² usable area' equivalence comes from a parenthetical in the rubbish-storage rule (p.464), not a class definition; present it as the book's gloss."
+    ],
+    "corrected_summary": "（书中在垃圾间规定处以括号注明）住宅超过两套或使用面积达 400 m² 的建筑属于建筑等级 3–5。承重及支撑墙、柱在等级 5 的建筑中须为防火（耐火）构造，等级 4 须为高度阻燃，等级 1 和 2 须为阻燃。"
+   }
+  ],
+  "file": "items/x_g6.py",
+  "question_start": "Each upper floor of this building holds two flats, one in the west wing and one in the east wing. The only room-to-room "
+ },
+ {
+  "hid": "H-samuel_macalister_sample_house-19",
+  "project": "samuel_macalister_sample_house",
+  "points": [
+   {
+    "title": "建筑等级与承重墙耐火",
+    "issues": [
+     "'(如 F 30)' is not in the quoted passages; F 30 = fire-retarding appears only elsewhere (p.516, corridor walls).",
+     "The class 3–5 = '>2 flats or 400 m² usable area' equivalence comes from a parenthetical in the rubbish-storage rule (p.464), not a class definition; present it as the book's gloss."
+    ],
+    "corrected_summary": "（书中在垃圾间规定处以括号注明）住宅超过两套或使用面积达 400 m² 的建筑属于建筑等级 3–5。承重及支撑墙、柱在等级 5 的建筑中须为防火（耐火）构造，等级 4 须为高度阻燃，等级 1 和 2 须为阻燃。"
+   }
+  ],
+  "file": "items/x_g6.py",
+  "question_start": "This single-family house combines cast concrete walls (\"CL_W1\", \"Retaining - 300mm Concrete\") with timber construction: "
+ },
+ {
+  "hid": "H-ac20-17",
+  "project": "ac20",
+  "points": [
+   {
+    "title": "建筑等级与承重墙耐火",
+    "issues": [
+     "'(如 F 30)' is not in the quoted passages; F 30 = fire-retarding appears only elsewhere (p.516, corridor walls).",
+     "The class 3–5 = '>2 flats or 400 m² usable area' equivalence comes from a parenthetical in the rubbish-storage rule (p.464), not a class definition; present it as the book's gloss."
+    ],
+    "corrected_summary": "（书中在垃圾间规定处以括号注明）住宅超过两套或使用面积达 400 m² 的建筑属于建筑等级 3–5。承重及支撑墙、柱在等级 5 的建筑中须为防火（耐火）构造，等级 4 须为高度阻燃，等级 1 和 2 须为阻燃。"
+   }
+  ],
+  "file": "items/x_g6.py",
+  "question_start": "This office building has a full basement (\"Keller\", −3.00 m) under four storeys. The basement walls are 300 mm and 200 m"
+ },
+ {
+  "hid": "H-ac20-18",
+  "project": "ac20",
+  "points": [
+   {
+    "title": "单层外墙与附加保温层",
+    "issues": [
+     "'须用网格增强的矿物抹灰' overstates modality: the source is descriptive ('so mineral render reinforced with mesh is used here (or plastic modified render)')."
+    ],
+    "corrected_summary": "单层外墙在建筑物理上没有问题，但由于保温要求高，只能用高保温材料（如加气砌块）配专用保温砂浆和抹灰砌筑；因此单层墙加附加保温层（外保温或内保温）是常见的替代做法。保温层外侧因受热积聚和基层抗剪强度低而有开裂风险，因此这里采用网格增强的矿物抹灰（或聚合物改性抹灰）。"
+   }
+  ],
+  "file": "items/x_g6.py",
+  "question_start": "The external walls of this office building (\"Kalksandstein … 300\", 54 walls) are modelled as one 300 mm layer of calcium"
+ },
+ {
+  "hid": "H-fzk_house-26",
+  "project": "fzk_house",
+  "points": [
+   {
+    "title": "单层外墙与附加保温层",
+    "issues": [
+     "'须用网格增强的矿物抹灰' overstates modality: the source is descriptive ('so mineral render reinforced with mesh is used here (or plastic modified render)')."
+    ],
+    "corrected_summary": "单层外墙在建筑物理上没有问题，但由于保温要求高，只能用高保温材料（如加气砌块）配专用保温砂浆和抹灰砌筑；因此单层墙加附加保温层（外保温或内保温）是常见的替代做法。保温层外侧因受热积聚和基层抗剪强度低而有开裂风险，因此这里采用网格增强的矿物抹灰（或聚合物改性抹灰）。"
+   }
+  ],
+  "file": "items/x_g6.py",
+  "question_start": "The FZK house's external walls are \"Leichtbeton … 300\" and its internal walls \"Leichtbeton … 240\", each a single homogen"
+ },
+ {
+  "hid": "H-digital_hub-20",
+  "project": "digital_hub",
+  "points": [
+   {
+    "title": "单层外墙与附加保温层",
+    "issues": [
+     "'须用网格增强的矿物抹灰' overstates modality: the source is descriptive ('so mineral render reinforced with mesh is used here (or plastic modified render)')."
+    ],
+    "corrected_summary": "单层外墙在建筑物理上没有问题，但由于保温要求高，只能用高保温材料（如加气砌块）配专用保温砂浆和抹灰砌筑；因此单层墙加附加保温层（外保温或内保温）是常见的替代做法。保温层外侧因受热积聚和基层抗剪强度低而有开裂风险，因此这里采用网格增强的矿物抹灰（或聚合物改性抹灰）。"
+   }
+  ],
+  "file": "items/x_g6.py",
+  "question_start": "Around the building, the model places separate wall elements just outside the structural walls: \"WD 200 + Luft 40 + Bekl"
+ },
+ {
+  "hid": "H-fantasy_office_building_3-13",
+  "project": "fantasy_office_building_3",
+  "points": [
+   {
+    "title": "疏散走廊侧墙 F 30",
+    "issues": [
+     "'轻钢/木龙骨'为添加内容，原文仅说'stud partitions of various qualities'",
+     "G 级玻璃原文为'典型应用'，且有条件：仅在无更高防火要求处可用，玻璃下沿须 ≥ 1.80 m；摘要遗漏该数值条件"
+    ],
+    "corrected_summary": "作为疏散路线侧墙的走廊墙须为阻燃构造（F 30）；其上的采光开口是 G 级玻璃的典型应用（仅在无更高防火要求处允许），此时玻璃下沿须离地 ≥ 1.80 m。非承重分隔墙可做成不同品质的龙骨隔墙。"
+   }
+  ],
+  "file": "items/x_g6.py",
+  "question_start": "On OG1, \"Corridor west\" (≈1.58 m wide, ≈21.3 m long) leads from the individual offices and WCs to the \"Staircase core (w"
+ },
+ {
+  "hid": "H-duplex-26",
+  "project": "duplex",
+  "points": [
+   {
+    "title": "住宅面积的计入范围与净尺寸量法",
+    "issues": [
+     "'不能用量到墙中线或结构面的面积' is not in the source; it is an added inference.",
+     "Scope: the regulation (25/11/2003) is used for the Law to Subsidise House Building; for residential homes, areas for sole use of the owner."
+    ],
+    "corrected_summary": "（按 2003 年《住宅面积计算条例》，用于住房建设补贴法）住宅面积包括专属于该户的所有房间的地面面积；房间面积按构件之间的净空间确定，从构件饰面层表面量起，可在建成房间内实测，或按合适的施工图计算。"
+   }
+  ],
+  "file": "items/x_g7.py",
+  "question_start": "The ten spaces of dwelling A (A101–A105, A201–A205) carry \"Area\" / \"GSA BIM Area\" values that add up to 138.2 m². Can th"
+ },
+ {
+  "hid": "H-fzk_house-27",
+  "project": "fzk_house",
+  "points": [
+   {
+    "title": "住宅面积的计入范围与净尺寸量法",
+    "issues": [
+     "'不能用量到墙中线或结构面的面积' is not in the source; it is an added inference.",
+     "Scope: the regulation (25/11/2003) is used for the Law to Subsidise House Building; for residential homes, areas for sole use of the owner."
+    ],
+    "corrected_summary": "（按 2003 年《住宅面积计算条例》，用于住房建设补贴法）住宅面积包括专属于该户的所有房间的地面面积；房间面积按构件之间的净空间确定，从构件饰面层表面量起，可在建成房间内实测，或按合适的施工图计算。"
+   }
+  ],
+  "file": "items/x_g7.py",
+  "question_start": "For the six ground-floor rooms, the model gives both a GrossFloorArea and a NetFloorArea (e.g. Wohnen 25.99 / 25.21 m², "
+ },
+ {
+  "hid": "H-fzk_house-29",
+  "project": "fzk_house",
+  "points": [
+   {
+    "title": "建筑密度与容积率",
+    "issues": [
+     "建筑密度的'built area'在原文中包括建筑平面面积及车库、停车位及其通道、附属面积和地块下方的地下设施，摘要简写为'建筑基底面积'缩小了范围",
+     "'控制开发强度'为附加解释，原文仅说土地利用条例规定的规划法建设用途度量参数（可允许比例）"
+    ],
+    "corrected_summary": "土地利用条例规定的规划法建设用途度量参数：建筑密度（plot coverage ratio）为可允许的建成面积占地块面积之比，建成面积包括建筑平面面积及车库、停车位及其通道、附属面积和地块下方的地下设施；容积率（floor-area ratio）为可允许的楼层面积（所有完整楼层外轮廓尺寸，不含附属面积、阳台、凉廊、露台及允许建在退距内的构筑物）与地块面积之比。"
+   },
+   {
+    "title": "退距（Abstandsfläche）",
+    "issues": [
+     "'外墙突出构件按规定计入'与原文相反：原文为檐口、挑檐等突出构件在满足条件（占墙宽 < 1/3、外挑 ≤ 1.50 m、距对面地界 ≥ 2 m）时不计入退距",
+     "0.4 H 是 MBO 的规定、各州 LBO 不同，'一般为'不准确；0.2 H 适用于商业区和工业区，摘要漏掉工业区",
+     "屋面坡度 > 70° 时全高计入未写；1、2 类建筑且地上不超过三层时 3 m 即可也未写"
+    ],
+    "corrected_summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；各州 LBO 规定不同。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入；退距须位于本地块内；檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。"
+   }
+  ],
+  "file": "items/x_g7.py",
+  "question_start": "Treat the modelled terrain \"Gelaende\" (≈18 × 16 m, extending 3.0 m beyond the house on every side) as the plot. How deep"
+ },
+ {
+  "hid": "H-fantasy_residential_building_1-20",
+  "project": "fantasy_residential_building_1",
+  "points": [
+   {
+    "title": "退距（Abstandsfläche）",
+    "issues": [
+     "'外墙突出构件按规定计入'与原文相反：原文为檐口、挑檐等突出构件在满足条件（占墙宽 < 1/3、外挑 ≤ 1.50 m、距对面地界 ≥ 2 m）时不计入退距",
+     "0.4 H 是 MBO 的规定、各州 LBO 不同，'一般为'不准确；0.2 H 适用于商业区和工业区，摘要漏掉工业区",
+     "屋面坡度 > 70° 时全高计入未写；1、2 类建筑且地上不超过三层时 3 m 即可也未写"
+    ],
+    "corrected_summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；各州 LBO 规定不同。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入；退距须位于本地块内；檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。"
+   }
+  ],
+  "file": "items/x_g7.py",
+  "question_start": "The two wings of the apartment building have hipped roofs. Their outer walls rise to +10.72 m and the roof covering reac"
+ },
+ {
+  "hid": "H-fantasy_office_building_1-12",
+  "project": "fantasy_office_building_1",
+  "points": [
+   {
+    "title": "退距（Abstandsfläche）",
+    "issues": [
+     "'外墙突出构件按规定计入'与原文相反：原文为檐口、挑檐等突出构件在满足条件（占墙宽 < 1/3、外挑 ≤ 1.50 m、距对面地界 ≥ 2 m）时不计入退距",
+     "0.4 H 是 MBO 的规定、各州 LBO 不同，'一般为'不准确；0.2 H 适用于商业区和工业区，摘要漏掉工业区",
+     "屋面坡度 > 70° 时全高计入未写；1、2 类建筑且地上不超过三层时 3 m 即可也未写"
+    ],
+    "corrected_summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；各州 LBO 规定不同。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入；退距须位于本地块内；檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。"
+   }
+  ],
+  "file": "items/x_g7.py",
+  "question_start": "The office building has flat roofs. Its long west and east façades (x = −12.01 and +9.99 m) end in a parapet at +19.80 m"
+ },
+ {
+  "hid": "H-fantasy_office_building_1-13",
+  "project": "fantasy_office_building_1",
+  "points": [
+   {
+    "title": "退距（Abstandsfläche）",
+    "issues": [
+     "'外墙突出构件按规定计入'与原文相反：原文为檐口、挑檐等突出构件在满足条件（占墙宽 < 1/3、外挑 ≤ 1.50 m、距对面地界 ≥ 2 m）时不计入退距",
+     "0.4 H 是 MBO 的规定、各州 LBO 不同，'一般为'不准确；0.2 H 适用于商业区和工业区，摘要漏掉工业区",
+     "屋面坡度 > 70° 时全高计入未写；1、2 类建筑且地上不超过三层时 3 m 即可也未写"
+    ],
+    "corrected_summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；各州 LBO 规定不同。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入；退距须位于本地块内；檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。"
+   }
+  ],
+  "file": "items/x_g8.py",
+  "question_start": "Fantasy office building 1 has flat roofs at two heights. The long east and west wings (outer curtain walls at x ≈ +10.0 "
+ },
+ {
+  "hid": "H-ac20-19",
+  "project": "ac20",
+  "points": [
+   {
+    "title": "退距（Abstandsfläche）",
+    "issues": [
+     "'外墙突出构件按规定计入'与原文相反：原文为檐口、挑檐等突出构件在满足条件（占墙宽 < 1/3、外挑 ≤ 1.50 m、距对面地界 ≥ 2 m）时不计入退距",
+     "0.4 H 是 MBO 的规定、各州 LBO 不同，'一般为'不准确；0.2 H 适用于商业区和工业区，摘要漏掉工业区",
+     "屋面坡度 > 70° 时全高计入未写；1、2 类建筑且地上不超过三层时 3 m 即可也未写"
+    ],
+    "corrected_summary": "按示范建筑条例（MBO），退距深度为 0.4 H 且不小于 3 m（商业区和工业区为 0.2 H，不小于 3 m）；各州 LBO 规定不同。墙高 H 自地面量至墙顶或墙与屋面覆盖层交线，坡度 ≤ 70° 的屋面高度按 1/3 计入、≥ 70° 全部计入；退距须位于本地块内；檐口、挑檐等外墙突出构件若占墙宽合计 < 1/3、外挑 ≤ 1.50 m 且距对面地界 ≥ 2 m，则不计入退距。"
+   }
+  ],
+  "file": "items/x_g8.py",
+  "question_start": "In ac20 the ground surface is modelled by the site object \"Gelaende 0815\" (top at −0.15 m, extending x −8…50 m and y −11"
+ },
+ {
+  "hid": "H-ac20-20",
+  "project": "ac20",
+  "points": [
+   {
+    "title": "建筑密度与容积率",
+    "issues": [
+     "建筑密度的'built area'在原文中包括建筑平面面积及车库、停车位及其通道、附属面积和地块下方的地下设施，摘要简写为'建筑基底面积'缩小了范围",
+     "'控制开发强度'为附加解释，原文仅说土地利用条例规定的规划法建设用途度量参数（可允许比例）"
+    ],
+    "corrected_summary": "土地利用条例规定的规划法建设用途度量参数：建筑密度（plot coverage ratio）为可允许的建成面积占地块面积之比，建成面积包括建筑平面面积及车库、停车位及其通道、附属面积和地块下方的地下设施；容积率（floor-area ratio）为可允许的楼层面积（所有完整楼层外轮廓尺寸，不含附属面积、阳台、凉廊、露台及允许建在退距内的构筑物）与地块面积之比。"
+   }
+  ],
+  "file": "items/x_g8.py",
+  "question_start": "Take the extent of the ac20 site object \"Gelaende 0815\" (x −8…50 m, y −11…27 m) as the plot. Work out the plot coverage "
+ },
+ {
+  "hid": "H-fantasy_office_building_3-14",
+  "project": "fantasy_office_building_3",
+  "points": [
+   {
+    "title": "高层建筑",
+    "issues": [
+     "楼梯要求原文限定为'高度 ≤ 60 m 的高层建筑'，摘要未保留此条件",
+     "遗漏'相对布置(opposite)'及可用一部安全楼梯代替的例外"
+    ],
+    "corrected_summary": "高层建筑指供人长期停留、最高楼层在建筑一侧高出地面 > 22 m 的建筑；高度 ≤ 60 m 的高层须至少设两部相对布置、位于两个不同防火分区的疏散楼梯，其通行宽度须 ≥ 1.25 m（例外情况下可批准仅设一部安全楼梯）。"
+   }
+  ],
+  "file": "items/x_g8.py",
+  "question_start": "Fantasy office building 3 has occupied floors EG to OK OG4 (top floor at 14.80 m, storey height 3.70 m). Two stair cores"
+ },
+ {
+  "hid": "H-fantasy_office_building_1-14",
+  "project": "fantasy_office_building_1",
+  "points": [
+   {
+    "title": "高层建筑",
+    "issues": [
+     "楼梯要求原文限定为'高度 ≤ 60 m 的高层建筑'，摘要未保留此条件",
+     "遗漏'相对布置(opposite)'及可用一部安全楼梯代替的例外"
+    ],
+    "corrected_summary": "高层建筑指供人长期停留、最高楼层在建筑一侧高出地面 > 22 m 的建筑；高度 ≤ 60 m 的高层须至少设两部相对布置、位于两个不同防火分区的疏散楼梯，其通行宽度须 ≥ 1.25 m（例外情况下可批准仅设一部安全楼梯）。"
+   }
+  ],
+  "file": "items/x_g8.py",
+  "question_start": "The top floor of fantasy office building 1 (OG4) is at 19.20 m. If a sixth storey (OG5 at 24.00 m) were added on the two"
+ },
+ {
+  "hid": "H-ac20-22",
+  "project": "ac20",
+  "points": [
+   {
+    "title": "员工休息室",
+    "issues": [
+     "Scope generalised: the sentence is in the Catering chapter (p.180) under 'Staff area' of kitchen facilities ('The kitchen staff will need changing rooms ... For more than 10 employees, a rest/break room is necessary (workplace regulations)'). Summary and topic present it as a general office rule; keep the catering-kitchen context (citing workplace regulations)."
+    ],
+    "corrected_summary": "餐饮厨房的员工区中，员工超过 10 人时须设休息室（依据劳动场所规定）。"
+   }
+  ],
+  "file": "items/x_g8.py",
+  "question_start": "ac20 is an institute building. It has single and shared offices, student offices and laboratories on three floors, plus "
+ },
+ {
+  "hid": "H-digital_hub-22",
+  "project": "digital_hub",
+  "points": [
+   {
+    "title": "员工休息室",
+    "issues": [
+     "Scope generalised: the sentence is in the Catering chapter (p.180) under 'Staff area' of kitchen facilities ('The kitchen staff will need changing rooms ... For more than 10 employees, a rest/break room is necessary (workplace regulations)'). Summary and topic present it as a general office rule; keep the catering-kitchen context (citing workplace regulations)."
+    ],
+    "corrected_summary": "餐饮厨房的员工区中，员工超过 10 人时须设休息室（依据劳动场所规定）。"
+   }
+  ],
+  "file": "items/x_g8.py",
+  "question_start": "The Digital Hub houses 16 \"Gruppenbüro\" rooms of about 37 m² each, two open workspaces of about 113 m² and a VR/AR lab. "
+ }
+]

@@ -1,0 +1,67 @@
+[
+ {
+  "topic": "疏散与防火",
+  "title": "高层建筑的疏散走道",
+  "summary": "高层建筑疏散通道宽 ≥ 1.25 m，宜双向通往楼梯；房间任一点步行距离 ≤ 25 m；双向走廊 ≤ 40 m，每 20 m 设防烟自闭门；单向尽端走廊 ≤ 10 m（另有第二疏散路线时 ≤ 20 m）。",
+  "prefixes": [
+   "Escape routes are min. 1.25 m wide"
+  ],
+  "lod": "200",
+  "priority": 3,
+  "decision": "疏散"
+ },
+ {
+  "topic": "疏散与防火",
+  "title": "高层建筑立面的层间防火",
+  "summary": "高层建筑每层须有高 ≥ 1 m 的 W 90 A 防火窗槛墙，或外挑 ≥ 1.5 m 的 W 90 A 水平构件；全玻璃（含双层）幕墙须特别审批并采用喷淋等措施防止火势窜层。",
+  "prefixes": [
+   "In order to avoid fire spreading from one storey",
+   "Alternatively, a W 90 A horizontal building element",
+   "All-glass façades (also double façades)"
+  ],
+  "lod": "200–300",
+  "priority": 2
+ },
+ {
+  "topic": "疏散与防火",
+  "title": "长疏散走廊分段与楼梯间的封闭",
+  "summary": "长度超过 30 m 的必要疏散走廊须用自闭、防烟的门分段；楼梯与作为疏散路线的走廊之间的门也须自闭、防烟。",
+  "prefixes": [
+   "Closures between stairways and corridors legally essential"
+  ],
+  "lod": "200–300",
+  "priority": 2
+ },
+ {
+  "topic": "办公",
+  "title": "员工休息室",
+  "summary": "按劳动场所规定，员工超过 10 人时须设休息室。",
+  "prefixes": [
+   "For more than 10 employees, a rest/break room"
+  ],
+  "lod": "200",
+  "priority": 2
+ },
+ {
+  "topic": "办公",
+  "title": "研讨室的规模与进深",
+  "summary": "高校研讨室常用规模为 20、40、50、60 座，每名学生约 1.90–2.00 m²；仅靠一面外墙自然通风时，房间进深不超过净高的 2.5 倍。",
+  "prefixes": [
+   "Seminar rooms, usual sizes",
+   "If there is free ventilation from only one external wall"
+  ],
+  "lod": "200",
+  "priority": 3,
+  "decision": "房间尺寸"
+ },
+ {
+  "topic": "办公",
+  "title": "高校教研人员办公室面积",
+  "summary": "高校教研人员办公室面积参考值：教授 20–24 m²，科研助理 15 m²，助理 20 m²，秘书 15 m²（两人合用 20 m²）。",
+  "prefixes": [
+   "professor 20–24 m²"
+  ],
+  "lod": "200",
+  "priority": 2
+ }
+]

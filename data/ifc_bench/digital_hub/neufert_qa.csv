@@ -1,0 +1,29 @@
+id,question,ground_truth,ifc_model,project,category,split,neufert_tier,neufert_topic
+144,What are the dimensions and parking capacity of the lot?,The gross area of the parking lot is 637.33 sq m. It has 26 available parking spaces.,arc,digital_hub,2,test,tier1,T1_parking
+152,What are the heights of the ceilings?,"Ceiling Heights by Level:
+    - B01_OKRD: 3.22 m
+    - E00_OKRD: 3.90 m
+    - E01_OKRD: 3.65 m",arc,digital_hub,1,test,tier2,T2_ceiling_heights
+162,"What is the building's average door width, including maximum and minimum?","Average door width: 1.00 m
+    Maximum door width: 1.64 m
+    Minimum door width: 0.80 m
+    Doors with width data: 62/64",arc,digital_hub,2,test,tier2,T2_door_widths
+163,Which door has the largest width in the building?,Largest door width: 1.64 m,arc,digital_hub,2,train,tier2,T2_door_widths
+168,Which spaces have the tallest ceiling heights?,"Spaces by Ceiling Height (Top 10):
+    - Aufzug Ost (400): 10.77 m
+    - Aufzug West (300): 10.77 m
+    - Schacht West 1 (301): 7.77 m
+    - Schacht West 2 (302): 7.77 m
+    - Schacht Ost 2 (402): 7.77 m
+    - Schacht Ost 1 (401): 7.77 m
+    - Flur - OG (2-1): 4.40 m
+    - Treppenhaus West - EG (1-19): 3.90 m
+    - Treppenhaus Ost - EG (1-17): 3.90 m
+    - Eingangsbereich / Flur (1-1): 3.75 m",arc,digital_hub,2,test,tier2,T2_ceiling_heights
+169,"How is the building's space utilized by function, with area distribution?","Space Utilization by Function:
+    - Other: 1105.1 sq m (38.9%)
+    - Circulation: 909.2 sq m (32.0%)
+    - Office: 594.8 sq m (20.9%)
+    - Restroom: 93.6 sq m (3.3%)
+    - Conference/Meeting: 86.4 sq m (3.0%)
+    - Storage: 53.0 sq m (1.9%)",arc,digital_hub,3,test,tier2,T2_space_use_by_function

@@ -1,0 +1,3303 @@
+{
+ "project": "fantasy_office_building_2",
+ "schema": "IFC4",
+ "length_unit_scale": 1.0,
+ "storeys": [
+  [
+   "3rd Floor",
+   11.1
+  ],
+  [
+   "4th Floor",
+   14.8
+  ],
+  [
+   "5th Floor",
+   18.5
+  ]
+ ],
+ "spaces": [
+  {
+   "gid": "1QIaKYlmj5M8nldkqeS3Wz",
+   "name": "1",
+   "longname": "Office 1",
+   "storey": null,
+   "area": 14.625,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.0,
+    4.88,
+    3.5
+   ]
+  },
+  {
+   "gid": "1QIaKYlmj5M8nldkqeS3Ww",
+   "name": "2",
+   "longname": "Office 2",
+   "storey": null,
+   "area": 14.625,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.0,
+    4.88,
+    3.5
+   ]
+  },
+  {
+   "gid": "1QIaKYlmj5M8nldkqeS3Wt",
+   "name": "3",
+   "longname": "Office 3",
+   "storey": null,
+   "area": 14.625,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.0,
+    4.88,
+    3.5
+   ]
+  },
+  {
+   "gid": "1QIaKYlmj5M8nldkqeS3Wq",
+   "name": "4",
+   "longname": "Office 4",
+   "storey": null,
+   "area": 14.925,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.0,
+    4.98,
+    3.5
+   ]
+  },
+  {
+   "gid": "1QIaKYlmj5M8nldkqeS3Wn",
+   "name": "5",
+   "longname": "Common Room 2",
+   "storey": null,
+   "area": 33.775,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    9.65,
+    3.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "1QIaKYlmj5M8nldkqeS3WE",
+   "name": "6",
+   "longname": "Common Room 1",
+   "storey": null,
+   "area": 33.775,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    9.65,
+    3.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "1QIaKYlmj5M8nldkqeS3WB",
+   "name": "7",
+   "longname": "WC 1",
+   "storey": null,
+   "area": 16.978,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    4.93,
+    3.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "1QIaKYlmj5M8nldkqeS3W8",
+   "name": "8",
+   "longname": "WC 2",
+   "storey": null,
+   "area": 16.978,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    4.92,
+    3.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "1QIaKYlmj5M8nldkqeS3Z_",
+   "name": "9",
+   "longname": "Entrance Hall",
+   "storey": null,
+   "area": 53.585,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    4.5,
+    15.4,
+    3.5
+   ]
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvfY_",
+   "name": "10",
+   "longname": "Big Meeting Room",
+   "storey": null,
+   "area": 59.874,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    15.0,
+    4.0,
+    3.5
+   ]
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvf_f",
+   "name": "11",
+   "longname": "Office 5",
+   "storey": null,
+   "area": 14.625,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.0,
+    4.88,
+    3.5
+   ]
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvf_a",
+   "name": "12",
+   "longname": "Office 6",
+   "storey": null,
+   "area": 14.625,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.0,
+    4.88,
+    3.5
+   ]
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvf_d",
+   "name": "13",
+   "longname": "Office 7",
+   "storey": null,
+   "area": 14.925,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.0,
+    4.98,
+    3.5
+   ]
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvf_Y",
+   "name": "14",
+   "longname": "Common Room 4",
+   "storey": null,
+   "area": 33.775,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    9.65,
+    3.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvf_z",
+   "name": "15",
+   "longname": "Common Room 3",
+   "storey": null,
+   "area": 33.775,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    9.65,
+    3.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvf9Y",
+   "name": "16",
+   "longname": "Gallery Balcony",
+   "storey": null,
+   "area": 91.053,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    4.5,
+    35.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "1R_yUA_T1FjvEL3YlI1fmA",
+   "name": "17",
+   "longname": "Office 8",
+   "storey": null,
+   "area": 14.625,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.0,
+    4.88,
+    3.5
+   ]
+  },
+  {
+   "gid": "1R_yUA_T1FjvEL3YlI1fmE",
+   "name": "18",
+   "longname": "Office 9",
+   "storey": null,
+   "area": 14.625,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.0,
+    4.88,
+    3.5
+   ]
+  },
+  {
+   "gid": "1R_yUA_T1FjvEL3YlI1fnn",
+   "name": "19",
+   "longname": "Office 10",
+   "storey": null,
+   "area": 14.925,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.0,
+    4.98,
+    3.5
+   ]
+  },
+  {
+   "gid": "1R_yUA_T1FjvEL3YlI1fnq",
+   "name": "20",
+   "longname": "Common Room 5",
+   "storey": null,
+   "area": 33.775,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    9.65,
+    3.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "1R_yUA_T1FjvEL3YlI1fnt",
+   "name": "21",
+   "longname": "Common Room 6",
+   "storey": null,
+   "area": 33.775,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    9.65,
+    3.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "1R_yUA_T1FjvEL3YlI1fn_",
+   "name": "22",
+   "longname": "Office 11",
+   "storey": "3rd Floor",
+   "area": 14.625,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.0,
+    4.88,
+    3.5
+   ]
+  },
+  {
+   "gid": "1R_yUA_T1FjvEL3YlI1fnY",
+   "name": "23",
+   "longname": "Office 12",
+   "storey": "3rd Floor",
+   "area": 14.625,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.0,
+    4.88,
+    3.5
+   ]
+  },
+  {
+   "gid": "1R_yUA_T1FjvEL3YlI1fnb",
+   "name": "24",
+   "longname": "Office 13",
+   "storey": "3rd Floor",
+   "area": 14.925,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    3.0,
+    4.98,
+    3.5
+   ]
+  },
+  {
+   "gid": "1R_yUA_T1FjvEL3YlI1fne",
+   "name": "25",
+   "longname": "Common Room 8",
+   "storey": "3rd Floor",
+   "area": 33.775,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    9.65,
+    3.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "1R_yUA_T1FjvEL3YlI1fnh",
+   "name": "26",
+   "longname": "Common Room 7",
+   "storey": "3rd Floor",
+   "area": 33.775,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 3.5,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    9.65,
+    3.5,
+    3.5
+   ]
+  },
+  {
+   "gid": "0xPzTnyqP9Cvv$boMJ5TFh",
+   "name": "27",
+   "longname": "Gallery",
+   "storey": null,
+   "area": 16.064,
+   "area_src": "Qto_SpaceBaseQuantities.NetFloorArea",
+   "height": 7.2,
+   "height_src": "Qto_SpaceBaseQuantities.Height",
+   "bbox_xyz": [
+    1.34,
+    12.0,
+    7.2
+   ]
+  }
+ ],
+ "doors": [
+  {
+   "gid": "0GcgtZmYP67vXxQb6KyLp$",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885:2526730",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.885,
+   "height": 2.315,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0GcgtZmYP67vXxQb6KyLpC",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2800 - EI 30:2526777",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2800 - EI 30",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.8,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Entrance Hall"
+   ],
+   "fire": "EI 30",
+   "external": true
+  },
+  {
+   "gid": "0GcgtZmYP67vXxQb6KyLoE",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885:2526843",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.885,
+   "height": 2.315,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueu7",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885:2529779",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.885,
+   "height": 2.315,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 3"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueu0",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885:2529780",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.885,
+   "height": 2.315,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Big Meeting Room"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueu1",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885:2529781",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.885,
+   "height": 2.315,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 4"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZques1",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885:2529909",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.885,
+   "height": 2.315,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 6"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZques2",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885:2529910",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.885,
+   "height": 2.315,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZques3",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885:2529911",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.885,
+   "height": 2.315,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 5"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueqZ",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885:2530007",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.885,
+   "height": 2.315,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 8"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueqi",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885:2530008",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.885,
+   "height": 2.315,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueqj",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885:2530009",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.885,
+   "height": 2.315,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 7"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZquepD",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885:2530105",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.885,
+   "height": 2.315,
+   "storey": "4th Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1LU0VAQc15juVfNB_NPcSc",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2557329",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Office 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1LU0VAQc15juVfNB_NPcT$",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2557384",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Office 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1LU0VAQc15juVfNB_NPcIb",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2557458",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Office 3"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1LU0VAQc15juVfNB_NPcI9",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2557502",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Office 4"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "354F$ys6nC9uPf6ISRive2",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2569248",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 1",
+    "WC 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "354F$ys6nC9uPf6ISRiviW",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2569474",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "WC 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "354F$ys6nC9uPf6ISRiviJ",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2569521",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "WC 1"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "354F$ys6nC9uPf6ISRi_pp",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2573009",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 2",
+    "WC 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "354F$ys6nC9uPf6ISRi_pn",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2573011",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "WC 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "354F$ys6nC9uPf6ISRi_ps",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2573012",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "WC 2"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tF23",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2582998",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 3"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tF2C",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2583001",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tF2F",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2583002",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tF2r",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2583008",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 4"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tF2t",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2583010",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tF2s",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2583011",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFDR",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2583054",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 6"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFD4",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2583057",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFD7",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2583058",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFDD",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2583064",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 5"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFDF",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2583066",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFDE",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2583067",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFCJ",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2583110",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 8"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFCS",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2583113",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFCV",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2583114",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFC5",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2583120",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Common Room 7"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFC7",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2583122",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFC6",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2583123",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFCh",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2583166",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "4th Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFFK",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2583169",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "4th Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFFN",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2583170",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "4th Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFFT",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2583176",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "4th Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFFV",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2583178",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "4th Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFFU",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001:2583179",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 1000 x 2001",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 1.09,
+   "height": 2.225,
+   "storey": "4th Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1ShjT4WB13Uw9ASipZ2PRk",
+   "name": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885:2585248",
+   "type": "TU DF 2 - Rahmenstock mit 2 Glasseitenteilen:DL - 1600 x 2000 - MB - 2885",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 2.885,
+   "height": 2.315,
+   "storey": "4th Floor",
+   "spaces": [],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvfb3",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2589455",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Gallery Balcony",
+    "Office 5"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvfbS",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2589456",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Gallery Balcony",
+    "Office 6"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvfbT",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2589457",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Gallery Balcony",
+    "Office 7"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvfbJ",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2589471",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Office 8"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvfbi",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2589472",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Office 9"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvfbj",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2589473",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Office 10"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvfbZ",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2589487",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Office 11"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvfby",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2589488",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Office 12"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "3zLgZj6qn7ZfXBVD2gvfbz",
+   "name": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000:2589489",
+   "type": "TU DF 1 - Rahmenstock flächenbündig:DL - 800 x 2000",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.89,
+   "height": 2.225,
+   "storey": "3rd Floor",
+   "spaces": [
+    "Office 13"
+   ],
+   "fire": null,
+   "external": false
+  }
+ ],
+ "windows": [
+  {
+   "gid": "0GcgtZmYP67vXxQb6KyQ4k",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2520027",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -10.7,
+   "spaces": [
+    "Office 1"
+   ]
+  },
+  {
+   "gid": "0GcgtZmYP67vXxQb6KyQRy",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2520073",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -10.7,
+   "spaces": [
+    "Office 1"
+   ]
+  },
+  {
+   "gid": "0GcgtZmYP67vXxQb6KyQRQ",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2520111",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -10.7,
+   "spaces": [
+    "Office 2"
+   ]
+  },
+  {
+   "gid": "0GcgtZmYP67vXxQb6KyQPe",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2520221",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -10.7,
+   "spaces": [
+    "Office 2"
+   ]
+  },
+  {
+   "gid": "0GcgtZmYP67vXxQb6KyQOc",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2520275",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -10.7,
+   "spaces": [
+    "Office 3"
+   ]
+  },
+  {
+   "gid": "0GcgtZmYP67vXxQb6KyQOC",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2520313",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -10.7,
+   "spaces": [
+    "Office 3"
+   ]
+  },
+  {
+   "gid": "0GcgtZmYP67vXxQb6KyQVY",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2520343",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -10.7,
+   "spaces": [
+    "Office 4"
+   ]
+  },
+  {
+   "gid": "0GcgtZmYP67vXxQb6KyQUM",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2520419",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -10.7,
+   "spaces": [
+    "Office 4"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueue",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529756",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -7.0,
+   "spaces": [
+    "Gallery Balcony",
+    "Office 5"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueuf",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529757",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -7.0,
+   "spaces": [
+    "Gallery Balcony",
+    "Office 5"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueug",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529758",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -7.0,
+   "spaces": [
+    "Gallery Balcony",
+    "Office 6"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueuh",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529759",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -7.0,
+   "spaces": [
+    "Gallery Balcony",
+    "Office 6"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueuK",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529760",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -7.0,
+   "spaces": [
+    "Gallery Balcony",
+    "Office 7"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueuL",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529761",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -7.0,
+   "spaces": [
+    "Gallery Balcony",
+    "Office 7"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZquesM",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529890",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -3.3,
+   "spaces": [
+    "Office 8"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZquesN",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529891",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -3.3,
+   "spaces": [
+    "Office 8"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZquesG",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529892",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -3.3,
+   "spaces": [
+    "Office 9"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZquesH",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529893",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -3.3,
+   "spaces": [
+    "Office 9"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZquesI",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529894",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -3.3,
+   "spaces": [
+    "Office 10"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZquesJ",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529895",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": -3.3,
+   "spaces": [
+    "Office 10"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueqm",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529988",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": 0.4,
+   "spaces": [
+    "Office 11"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueqn",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529989",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": 0.4,
+   "spaces": [
+    "Office 11"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueqo",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529990",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": 0.4,
+   "spaces": [
+    "Office 12"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueqp",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529991",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": 0.4,
+   "spaces": [
+    "Office 12"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueqy",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529992",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": 0.4,
+   "spaces": [
+    "Office 13"
+   ]
+  },
+  {
+   "gid": "0MHrdAmTX4nBC1_XZqueqz",
+   "name": "FE 2 tlg - waagrecht geteilt:1100 x 1850:2529993",
+   "type": "FE 2 tlg - waagrecht geteilt:1100 x 1850",
+   "width": 1.1,
+   "height": 2.25,
+   "storey": "3rd Floor",
+   "sill_approx": 0.4,
+   "spaces": [
+    "Office 13"
+   ]
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFmx",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2581870",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -11.3,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFpo",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2581927",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -11.3,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tF6T",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2582728",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -11.3,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tF0p",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2582886",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -11.3,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tF2_",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583019",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -7.6,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tF2v",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583020",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -7.6,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tF2w",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583023",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -7.6,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tF2b",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583024",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -7.6,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFDs",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583075",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -3.9,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFDn",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583076",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -3.9,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFDo",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583079",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -3.9,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFDz",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583080",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -3.9,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFCE",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583131",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -0.2,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFC9",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583132",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -0.2,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFCA",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583135",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -0.2,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFCr",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583136",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "3rd Floor",
+   "sill_approx": -0.2,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFF6",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583187",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "4th Floor",
+   "sill_approx": -0.2,
+   "spaces": []
+  },
+  {
+   "gid": "34TC9wANr0tv7keb_5tFF1",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2583188",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "4th Floor",
+   "sill_approx": -0.2,
+   "spaces": []
+  },
+  {
+   "gid": "1ShjT4WB13Uw9ASipZ2PRl",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2585249",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "4th Floor",
+   "sill_approx": -0.2,
+   "spaces": []
+  },
+  {
+   "gid": "1ShjT4WB13Uw9ASipZ2PRi",
+   "name": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250:2585250",
+   "type": "FE TÜR 2 tlg - DrehKipp mit Stulp:2000 x 2250",
+   "width": 2.0,
+   "height": 2.45,
+   "storey": "4th Floor",
+   "sill_approx": -0.2,
+   "spaces": []
+  }
+ ],
+ "stairs": [
+  {
+   "gid": "0GcgtZmYP67vXxQb6KyQhK",
+   "cls": "IfcStair",
+   "name": "Cast-In-Place Stair:Stair:2521121",
+   "predefined": "STRAIGHT_RUN_STAIR",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.2,
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.2,
+    "Dimensions.Desired Number of Risers": 19,
+    "Dimensions.Tread/Riser Start Number": 1
+   }
+  },
+  {
+   "gid": "3IUIR8A5v9Ge7poU5yyk5o",
+   "cls": "IfcStair",
+   "name": "Cast-In-Place Stair:Stair:2576967",
+   "predefined": "STRAIGHT_RUN_STAIR",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.2,
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.2,
+    "Dimensions.Desired Number of Risers": 19
+   }
+  },
+  {
+   "gid": "3IUIR8A5v9Ge7poU5yyk5h",
+   "cls": "IfcStair",
+   "name": "Cast-In-Place Stair:Stair:2576990",
+   "predefined": "STRAIGHT_RUN_STAIR",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.2,
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.2,
+    "Dimensions.Desired Number of Risers": 19
+   }
+  },
+  {
+   "gid": "3IUIR8A5v9Ge7poU5yyk50",
+   "cls": "IfcStair",
+   "name": "Cast-In-Place Stair:Stair:2577013",
+   "predefined": "STRAIGHT_RUN_STAIR",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.2,
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.2,
+    "Dimensions.Desired Number of Risers": 19
+   }
+  },
+  {
+   "gid": "2ozJvhRSHCDRvaJs1EcWau",
+   "cls": "IfcStair",
+   "name": "Cast-In-Place Stair:Stair:2579308",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.2,
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.2,
+    "Dimensions.Desired Number of Risers": 19
+   }
+  },
+  {
+   "gid": "2ozJvhRSHCDRvaJs1EcZCq",
+   "cls": "IfcStair",
+   "name": "Cast-In-Place Stair:Stair:2580832",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.2,
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.2,
+    "Dimensions.Desired Number of Risers": 19
+   }
+  },
+  {
+   "gid": "2ozJvhRSHCDRvaJs1EcZCj",
+   "cls": "IfcStair",
+   "name": "Cast-In-Place Stair:Stair:2580857",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.2,
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.2,
+    "Dimensions.Desired Number of Risers": 19
+   }
+  },
+  {
+   "gid": "2ozJvhRSHCDRvaJs1EcZF6",
+   "cls": "IfcStair",
+   "name": "Cast-In-Place Stair:Stair:2580882",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.2,
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.2,
+    "Dimensions.Desired Number of Risers": 19
+   }
+  },
+  {
+   "gid": "0xomtnoxT9P8HY9h7XlBsz",
+   "cls": "IfcStair",
+   "name": "Cast-In-Place Stair:Stair:2581425",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.2,
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.2,
+    "Dimensions.Desired Number of Risers": 19
+   }
+  },
+  {
+   "gid": "0xomtnoxT9P8HY9h7XlBt8",
+   "cls": "IfcStair",
+   "name": "Cast-In-Place Stair:Stair:2581444",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.2,
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.2,
+    "Dimensions.Desired Number of Risers": 19
+   }
+  },
+  {
+   "gid": "0xomtnoxT9P8HY9h7XlBtR",
+   "cls": "IfcStair",
+   "name": "Cast-In-Place Stair:Stair:2581463",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.2,
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.2,
+    "Dimensions.Desired Number of Risers": 19
+   }
+  },
+  {
+   "gid": "0xomtnoxT9P8HY9h7XlBtc",
+   "cls": "IfcStair",
+   "name": "Cast-In-Place Stair:Stair:2581482",
+   "predefined": "SPIRAL_STAIR",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.2,
+    "Pset_StairCommon.NumberOfRiser": 19.0,
+    "Pset_StairCommon.NumberOfTreads": 19.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.2,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.2,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.2,
+    "Dimensions.Desired Number of Risers": 19
+   }
+  },
+  {
+   "gid": "0WaQTzLw53AhnhP0vcVNHR",
+   "cls": "IfcStair",
+   "name": "Assembled Stair:Stair:2588205",
+   "predefined": "NOTDEFINED",
+   "storey": "3rd Floor",
+   "n_riser": 20.0,
+   "riser": 0.195,
+   "tread": 0.245,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.24,
+    "Pset_StairCommon.NumberOfRiser": 20.0,
+    "Pset_StairCommon.NumberOfTreads": 20.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.245,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.245,
+    "Pset_StairFlightCommon.NumberOfRiser": 20.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 20.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.245,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 20,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.245,
+    "Dimensions.Desired Number of Risers": 21
+   }
+  },
+  {
+   "gid": "0WaQTzLw53AhnhP0vcVNK8",
+   "cls": "IfcStair",
+   "name": "Assembled Stair:Stair:2588542",
+   "predefined": "NOTDEFINED",
+   "storey": "3rd Floor",
+   "n_riser": 20.0,
+   "riser": 0.195,
+   "tread": 0.245,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.24,
+    "Pset_StairCommon.NumberOfRiser": 20.0,
+    "Pset_StairCommon.NumberOfTreads": 20.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.245,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.245,
+    "Pset_StairFlightCommon.NumberOfRiser": 20.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 20.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.245,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 20,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.245,
+    "Dimensions.Desired Number of Risers": 21
+   }
+  },
+  {
+   "gid": "0WaQTzLw53AhnhP0vcVNMt",
+   "cls": "IfcStair",
+   "name": "Assembled Stair:Stair:2588609",
+   "predefined": "NOTDEFINED",
+   "storey": "3rd Floor",
+   "n_riser": 20.0,
+   "riser": 0.195,
+   "tread": 0.245,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.24,
+    "Pset_StairCommon.NumberOfRiser": 20.0,
+    "Pset_StairCommon.NumberOfTreads": 20.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.245,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.245,
+    "Pset_StairFlightCommon.NumberOfRiser": 20.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 20.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.245,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 20,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.245,
+    "Dimensions.Desired Number of Risers": 21
+   }
+  },
+  {
+   "gid": "0WaQTzLw53AhnhP0vcVOfo",
+   "cls": "IfcStair",
+   "name": "Assembled Stair:Stair:2588676",
+   "predefined": "NOTDEFINED",
+   "storey": "3rd Floor",
+   "n_riser": 20.0,
+   "riser": 0.195,
+   "tread": 0.245,
+   "props": {
+    "Calculation Rules.Maximum Riser Height": 0.2,
+    "Calculation Rules.Minimum Run Width": 1.0,
+    "Calculation Rules.Minimum Tread Depth": 0.24,
+    "Pset_StairCommon.NumberOfRiser": 20.0,
+    "Pset_StairCommon.NumberOfTreads": 20.0,
+    "Pset_StairCommon.RiserHeight": 0.195,
+    "Pset_StairCommon.TreadLength": 0.245,
+    "Pset_StairCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairCommon.TreadLengthAtInnerSide": 0.245,
+    "Pset_StairFlightCommon.NumberOfRiser": 20.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 20.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.245,
+    "Dimensions.Tread/Riser Start Number": 1,
+    "Dimensions.Actual Number of Risers": 20,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Tread Depth": 0.245,
+    "Dimensions.Desired Number of Risers": 21
+   }
+  },
+  {
+   "gid": "0GcgtZmYP67vXxQb6KyQlW",
+   "cls": "IfcStairFlight",
+   "name": "Cast-In-Place Stair:Stair:2521121 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Risers.Riser": true,
+    "Risers.Riser Thickness": 0.02,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.02,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Constraints.Run Height": 3.7,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Number of Treads": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.2
+   }
+  },
+  {
+   "gid": "3IUIR8A5v9Ge7poU5yyk5z",
+   "cls": "IfcStairFlight",
+   "name": "Cast-In-Place Stair:Stair:2576967 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Risers.Riser": true,
+    "Risers.Riser Thickness": 0.02,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.02,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Constraints.Run Height": 3.7,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Number of Treads": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.2
+   }
+  },
+  {
+   "gid": "3IUIR8A5v9Ge7poU5yyk5g",
+   "cls": "IfcStairFlight",
+   "name": "Cast-In-Place Stair:Stair:2576990 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Risers.Riser": true,
+    "Risers.Riser Thickness": 0.02,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.02,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Constraints.Run Height": 3.7,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Number of Treads": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.2
+   }
+  },
+  {
+   "gid": "3IUIR8A5v9Ge7poU5yyk53",
+   "cls": "IfcStairFlight",
+   "name": "Cast-In-Place Stair:Stair:2577013 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Risers.Riser": true,
+    "Risers.Riser Thickness": 0.02,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.02,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Constraints.Run Height": 3.7,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Number of Treads": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.2
+   }
+  },
+  {
+   "gid": "2ozJvhRSHCDRvaJs1EcWc2",
+   "cls": "IfcStairFlight",
+   "name": "Cast-In-Place Stair:Stair:2579308 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Risers.Riser": true,
+    "Risers.Riser Thickness": 0.02,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.02,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Constraints.Run Height": 3.7,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Number of Treads": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.2
+   }
+  },
+  {
+   "gid": "2ozJvhRSHCDRvaJs1EcZCr",
+   "cls": "IfcStairFlight",
+   "name": "Cast-In-Place Stair:Stair:2580832 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Risers.Riser": true,
+    "Risers.Riser Thickness": 0.02,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.02,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Constraints.Run Height": 3.7,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Number of Treads": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.2
+   }
+  },
+  {
+   "gid": "2ozJvhRSHCDRvaJs1EcZCk",
+   "cls": "IfcStairFlight",
+   "name": "Cast-In-Place Stair:Stair:2580857 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Risers.Riser": true,
+    "Risers.Riser Thickness": 0.02,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.02,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Constraints.Run Height": 3.7,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Number of Treads": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.2
+   }
+  },
+  {
+   "gid": "2ozJvhRSHCDRvaJs1EcZF7",
+   "cls": "IfcStairFlight",
+   "name": "Cast-In-Place Stair:Stair:2580882 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Risers.Riser": true,
+    "Risers.Riser Thickness": 0.02,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.02,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Constraints.Run Height": 3.7,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Number of Treads": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.2
+   }
+  },
+  {
+   "gid": "0xomtnoxT9P8HY9h7XlBs_",
+   "cls": "IfcStairFlight",
+   "name": "Cast-In-Place Stair:Stair:2581425 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Risers.Riser": true,
+    "Risers.Riser Thickness": 0.02,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.02,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Constraints.Run Height": 3.7,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Number of Treads": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.2
+   }
+  },
+  {
+   "gid": "0xomtnoxT9P8HY9h7XlBt9",
+   "cls": "IfcStairFlight",
+   "name": "Cast-In-Place Stair:Stair:2581444 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Risers.Riser": true,
+    "Risers.Riser Thickness": 0.02,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.02,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Constraints.Run Height": 3.7,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Number of Treads": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.2
+   }
+  },
+  {
+   "gid": "0xomtnoxT9P8HY9h7XlBtK",
+   "cls": "IfcStairFlight",
+   "name": "Cast-In-Place Stair:Stair:2581463 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Risers.Riser": true,
+    "Risers.Riser Thickness": 0.02,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.02,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Constraints.Run Height": 3.7,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Number of Treads": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.2
+   }
+  },
+  {
+   "gid": "0xomtnoxT9P8HY9h7XlBtd",
+   "cls": "IfcStairFlight",
+   "name": "Cast-In-Place Stair:Stair:2581482 Run 1",
+   "predefined": "SPIRAL",
+   "storey": "3rd Floor",
+   "n_riser": 19.0,
+   "riser": 0.195,
+   "tread": 0.2,
+   "props": {
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Risers.Riser": true,
+    "Risers.Riser Thickness": 0.02,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.02,
+    "Pset_StairFlightCommon.NumberOfRiser": 19.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 19.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.2,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.2,
+    "Constraints.Run Height": 3.7,
+    "Dimensions.Actual Number of Risers": 19,
+    "Dimensions.Actual Number of Treads": 19,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.2
+   }
+  },
+  {
+   "gid": "0WaQTzLw53AhnhP0vcVNHO",
+   "cls": "IfcStairFlight",
+   "name": "Assembled Stair:Stair:2588205 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "3rd Floor",
+   "n_riser": 10.0,
+   "riser": 0.195,
+   "tread": 0.245,
+   "props": {
+    "Risers.Riser": false,
+    "Risers.Riser Thickness": 0.0,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.04,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.245,
+    "Constraints.Run Height": 1.952,
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Dimensions.Actual Number of Risers": 10,
+    "Dimensions.Actual Number of Treads": 10,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.245
+   }
+  },
+  {
+   "gid": "0WaQTzLw53AhnhP0vcVNH4",
+   "cls": "IfcStairFlight",
+   "name": "Assembled Stair:Stair:2588205 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "3rd Floor",
+   "n_riser": 10.0,
+   "riser": 0.195,
+   "tread": 0.245,
+   "props": {
+    "Risers.Riser": false,
+    "Risers.Riser Thickness": 0.0,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.04,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.245,
+    "Constraints.Run Height": 1.952,
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Dimensions.Actual Number of Risers": 10,
+    "Dimensions.Actual Number of Treads": 10,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.245
+   }
+  },
+  {
+   "gid": "0WaQTzLw53AhnhP0vcVNK9",
+   "cls": "IfcStairFlight",
+   "name": "Assembled Stair:Stair:2588542 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "3rd Floor",
+   "n_riser": 10.0,
+   "riser": 0.195,
+   "tread": 0.245,
+   "props": {
+    "Risers.Riser": false,
+    "Risers.Riser Thickness": 0.0,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.04,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.245,
+    "Constraints.Run Height": 1.952,
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Dimensions.Actual Number of Risers": 10,
+    "Dimensions.Actual Number of Treads": 10,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.245
+   }
+  },
+  {
+   "gid": "0WaQTzLw53AhnhP0vcVNNr",
+   "cls": "IfcStairFlight",
+   "name": "Assembled Stair:Stair:2588542 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "3rd Floor",
+   "n_riser": 10.0,
+   "riser": 0.195,
+   "tread": 0.245,
+   "props": {
+    "Risers.Riser": false,
+    "Risers.Riser Thickness": 0.0,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.04,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.245,
+    "Constraints.Run Height": 1.952,
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Dimensions.Actual Number of Risers": 10,
+    "Dimensions.Actual Number of Treads": 10,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.245
+   }
+  },
+  {
+   "gid": "0WaQTzLw53AhnhP0vcVNMq",
+   "cls": "IfcStairFlight",
+   "name": "Assembled Stair:Stair:2588609 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "3rd Floor",
+   "n_riser": 10.0,
+   "riser": 0.195,
+   "tread": 0.245,
+   "props": {
+    "Risers.Riser": false,
+    "Risers.Riser Thickness": 0.0,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.04,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.245,
+    "Constraints.Run Height": 1.952,
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Dimensions.Actual Number of Risers": 10,
+    "Dimensions.Actual Number of Treads": 10,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.245
+   }
+  },
+  {
+   "gid": "0WaQTzLw53AhnhP0vcVNMm",
+   "cls": "IfcStairFlight",
+   "name": "Assembled Stair:Stair:2588609 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "3rd Floor",
+   "n_riser": 10.0,
+   "riser": 0.195,
+   "tread": 0.245,
+   "props": {
+    "Risers.Riser": false,
+    "Risers.Riser Thickness": 0.0,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.04,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.245,
+    "Constraints.Run Height": 1.952,
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Dimensions.Actual Number of Risers": 10,
+    "Dimensions.Actual Number of Treads": 10,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.245
+   }
+  },
+  {
+   "gid": "0WaQTzLw53AhnhP0vcVOfp",
+   "cls": "IfcStairFlight",
+   "name": "Assembled Stair:Stair:2588676 Run 1",
+   "predefined": "STRAIGHT",
+   "storey": "3rd Floor",
+   "n_riser": 10.0,
+   "riser": 0.195,
+   "tread": 0.245,
+   "props": {
+    "Risers.Riser": false,
+    "Risers.Riser Thickness": 0.0,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.04,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.245,
+    "Constraints.Run Height": 1.952,
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Construction.Extend Below Riser Base": 0.0,
+    "Dimensions.Actual Number of Risers": 10,
+    "Dimensions.Actual Number of Treads": 10,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.245
+   }
+  },
+  {
+   "gid": "0WaQTzLw53AhnhP0vcVOf$",
+   "cls": "IfcStairFlight",
+   "name": "Assembled Stair:Stair:2588676 Run 2",
+   "predefined": "STRAIGHT",
+   "storey": "3rd Floor",
+   "n_riser": 10.0,
+   "riser": 0.195,
+   "tread": 0.245,
+   "props": {
+    "Risers.Riser": false,
+    "Risers.Riser Thickness": 0.0,
+    "Treads.Tread": true,
+    "Treads.Tread Thickness": 0.04,
+    "Pset_StairFlightCommon.NumberOfRiser": 10.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 10.0,
+    "Pset_StairFlightCommon.RiserHeight": 0.195,
+    "Pset_StairFlightCommon.TreadLength": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 0.245,
+    "Pset_StairFlightCommon.TreadLengthAtInnerSide": 0.245,
+    "Constraints.Run Height": 1.952,
+    "Construction.Begin with Riser": true,
+    "Construction.End with Riser": false,
+    "Dimensions.Actual Number of Risers": 10,
+    "Dimensions.Actual Number of Treads": 10,
+    "Dimensions.Actual Riser Height": 0.195,
+    "Dimensions.Actual Run Width": 1.0,
+    "Dimensions.Actual Tread Depth": 0.245
+   }
+  }
+ ],
+ "railings": [
+  {
+   "name": "Railing:Vertikale Stäbe:2521781",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2521785",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe mit Handlauf:2531645",
+   "type": "Railing:Vertikale Stäbe mit Handlauf",
+   "storey": "4th Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe mit Handlauf:2534028",
+   "type": "Railing:Vertikale Stäbe mit Handlauf",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe mit Handlauf:2534347",
+   "type": "Railing:Vertikale Stäbe mit Handlauf",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe mit Handlauf:2548893",
+   "type": "Railing:Vertikale Stäbe mit Handlauf",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe mit Handlauf:2549713",
+   "type": "Railing:Vertikale Stäbe mit Handlauf",
+   "storey": "4th Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2576970",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2576974",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2576993",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2576997",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2577016",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2577020",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2579482",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2579486",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2580835",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2580839",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2580860",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2580864",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2580885",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2580889",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2581428",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2581432",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2581447",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2581451",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2581466",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2581470",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2581485",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2581489",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2588235",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2588569",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2588636",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  },
+  {
+   "name": "Railing:Vertikale Stäbe:2588703",
+   "type": "Railing:Vertikale Stäbe",
+   "storey": "3rd Floor",
+   "height": 1.219
+  }
+ ],
+ "furniture": [
+  {
+   "where": "3rd Floor",
+   "item": "Bank-01",
+   "n": 8
+  },
+  {
+   "where": "3rd Floor",
+   "item": "Tisch-Sofa-Kombination-02",
+   "n": 4
+  },
+  {
+   "where": "3rd Floor",
+   "item": "Tisch-Stuhl-Kombination-08 Konferenz",
+   "n": 1
+  },
+  {
+   "where": "4th Floor",
+   "item": "Bank-01",
+   "n": 8
+  },
+  {
+   "where": "4th Floor",
+   "item": "Küchenzeile-02 Kombination",
+   "n": 2
+  },
+  {
+   "where": "4th Floor",
+   "item": "Tisch-Sofa-Kombination-02",
+   "n": 2
+  },
+  {
+   "where": "Big Meeting Room",
+   "item": "Tisch-Stuhl-Kombination-08 Konferenz",
+   "n": 1
+  },
+  {
+   "where": "Common Room 1",
+   "item": "Küchenzeile-02 Kombination",
+   "n": 1
+  },
+  {
+   "where": "Common Room 1",
+   "item": "Tisch-Sofa-Kombination-02",
+   "n": 1
+  },
+  {
+   "where": "Common Room 2",
+   "item": "Küchenzeile-02 Kombination",
+   "n": 1
+  },
+  {
+   "where": "Common Room 2",
+   "item": "Tisch-Sofa-Kombination-02",
+   "n": 1
+  },
+  {
+   "where": "Common Room 3",
+   "item": "Küchenzeile-02 Kombination",
+   "n": 1
+  },
+  {
+   "where": "Common Room 3",
+   "item": "Tisch-Sofa-Kombination-02",
+   "n": 1
+  },
+  {
+   "where": "Common Room 4",
+   "item": "Küchenzeile-02 Kombination",
+   "n": 1
+  },
+  {
+   "where": "Common Room 4",
+   "item": "Tisch-Sofa-Kombination-02",
+   "n": 1
+  },
+  {
+   "where": "Common Room 5",
+   "item": "Küchenzeile-02 Kombination",
+   "n": 1
+  },
+  {
+   "where": "Common Room 5",
+   "item": "Tisch-Sofa-Kombination-02",
+   "n": 1
+  },
+  {
+   "where": "Common Room 6",
+   "item": "Küchenzeile-02 Kombination",
+   "n": 1
+  },
+  {
+   "where": "Common Room 6",
+   "item": "Tisch-Sofa-Kombination-02",
+   "n": 1
+  },
+  {
+   "where": "Common Room 7",
+   "item": "Küchenzeile-02 Kombination",
+   "n": 1
+  },
+  {
+   "where": "Common Room 7",
+   "item": "Tisch-Sofa-Kombination-02",
+   "n": 1
+  },
+  {
+   "where": "Common Room 8",
+   "item": "Küchenzeile-02 Kombination",
+   "n": 1
+  },
+  {
+   "where": "Common Room 8",
+   "item": "Tisch-Sofa-Kombination-02",
+   "n": 1
+  },
+  {
+   "where": "Entrance Hall",
+   "item": "Tisch-Sofa-Kombination-02",
+   "n": 1
+  },
+  {
+   "where": "Gallery Balcony",
+   "item": "Tisch-Sofa-Kombination-02",
+   "n": 2
+  },
+  {
+   "where": "Gallery Balcony, Office 5",
+   "item": "Regal-01",
+   "n": 1
+  },
+  {
+   "where": "Gallery Balcony, Office 5",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 1
+  },
+  {
+   "where": "Gallery Balcony, Office 6",
+   "item": "Regal-01",
+   "n": 1
+  },
+  {
+   "where": "Gallery Balcony, Office 6",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 1
+  },
+  {
+   "where": "Gallery Balcony, Office 7",
+   "item": "Regal-01",
+   "n": 1
+  },
+  {
+   "where": "Gallery Balcony, Office 7",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 1
+  },
+  {
+   "where": "Office 1",
+   "item": "Regal-01",
+   "n": 1
+  },
+  {
+   "where": "Office 1",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 1
+  },
+  {
+   "where": "Office 10",
+   "item": "Regal-01",
+   "n": 1
+  },
+  {
+   "where": "Office 10",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 1
+  },
+  {
+   "where": "Office 11",
+   "item": "Regal-01",
+   "n": 1
+  },
+  {
+   "where": "Office 11",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 1
+  },
+  {
+   "where": "Office 12",
+   "item": "Regal-01",
+   "n": 1
+  },
+  {
+   "where": "Office 12",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 1
+  },
+  {
+   "where": "Office 13",
+   "item": "Regal-01",
+   "n": 1
+  },
+  {
+   "where": "Office 13",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 1
+  },
+  {
+   "where": "Office 2",
+   "item": "Regal-01",
+   "n": 1
+  },
+  {
+   "where": "Office 2",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 1
+  },
+  {
+   "where": "Office 3",
+   "item": "Regal-01",
+   "n": 1
+  },
+  {
+   "where": "Office 3",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 1
+  },
+  {
+   "where": "Office 4",
+   "item": "Regal-01",
+   "n": 1
+  },
+  {
+   "where": "Office 4",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 1
+  },
+  {
+   "where": "Office 8",
+   "item": "Regal-01",
+   "n": 1
+  },
+  {
+   "where": "Office 8",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 1
+  },
+  {
+   "where": "Office 9",
+   "item": "Regal-01",
+   "n": 1
+  },
+  {
+   "where": "Office 9",
+   "item": "Schreibtisch-Kombination-01",
+   "n": 1
+  }
+ ],
+ "other_counts": {
+  "IfcCurtainWall": 9,
+  "IfcColumn": 44,
+  "IfcBeam": 9,
+  "IfcSlab": 13,
+  "IfcRoof": 3,
+  "IfcTransportElement": 0,
+  "IfcRelSpaceBoundary": 0
+ }
+}

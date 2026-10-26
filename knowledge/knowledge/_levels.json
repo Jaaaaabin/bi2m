@@ -1,0 +1,1828 @@
+{
+ "levels": [
+  {
+   "id": "Site & Building",
+   "desc": "场地与建筑：整栋楼层面的宏观规则（体量、退距、面积与体积核算、建筑进深）",
+   "bot": "bot:Site, bot:Building",
+   "ifc": "IfcSite, IfcBuilding",
+   "desc_en": "Site and building: rules for the building as a whole (massing, setbacks, area and volume accounting, building depth)",
+   "ifc_en": "IfcSite, IfcBuilding"
+  },
+  {
+   "id": "Storey",
+   "desc": "楼层与竖向：层数、层高、净高，以及连接各层的楼梯、坡道、电梯、护栏",
+   "bot": "bot:Storey",
+   "ifc": "IfcBuildingStorey；竖向交通在 IFC 里是构件：IfcStair, IfcStairFlight, IfcRamp, IfcRailing, IfcTransportElement",
+   "desc_en": "Storey and vertical: number of storeys, storey and clear heights, and the stairs, ramps, lifts and railings that connect the storeys",
+   "ifc_en": "IfcBuildingStorey; vertical circulation is modelled as elements in IFC: IfcStair, IfcStairFlight, IfcRamp, IfcRailing, IfcTransportElement"
+  },
+  {
+   "id": "Zone",
+   "desc": "分区：一组房间构成的单元（一套住宅、防火分区、疏散路线、办公使用单元）",
+   "bot": "bot:Zone",
+   "ifc": "IfcZone（IFC4 另有 IfcSpatialZone）",
+   "desc_en": "Zone: a unit made of several rooms (a dwelling, a fire compartment, an escape route, an office unit)",
+   "ifc_en": "IfcZone (IFC4 also has IfcSpatialZone)"
+  },
+  {
+   "id": "Space",
+   "desc": "空间：单个房间的大小、朝向、布局与相邻关系",
+   "bot": "bot:Space",
+   "ifc": "IfcSpace",
+   "desc_en": "Space: size, orientation, layout and adjacency of a single room",
+   "ifc_en": "IfcSpace"
+  },
+  {
+   "id": "Element",
+   "desc": "构件：门、窗、墙、屋面及其构造层和性能",
+   "bot": "bot:Element",
+   "ifc": "IfcElement 的子类：IfcDoor, IfcWindow, IfcWall, IfcSlab, IfcRoof, IfcCovering …",
+   "desc_en": "Element: doors, windows, walls, roofs, their layers and performance",
+   "ifc_en": "subtypes of IfcElement: IfcDoor, IfcWindow, IfcWall, IfcSlab, IfcRoof, IfcCovering …"
+  }
+ ],
+ "needs": {
+  "adjacency": {
+   "label": "相邻/围合",
+   "ifc": "IfcRelSpaceBoundary",
+   "models": [
+    "ac20",
+    "fzk_house"
+   ],
+   "note": "没有时只能从几何推断",
+   "label_en": "adjacency / boundaries"
+  },
+  "zone": {
+   "label": "房间分组",
+   "ifc": "IfcZone / IfcSpatialZone",
+   "models": [],
+   "note": "9 个模型都没有；“哪几间是一户”只能推断",
+   "label_en": "room grouping"
+  },
+  "orientation": {
+   "label": "朝向",
+   "ifc": "IfcGeometricRepresentationContext.TrueNorth",
+   "models": [
+    "ac20",
+    "digital_hub",
+    "fantasy_hotel_1",
+    "fantasy_office_building_1",
+    "fantasy_office_building_2",
+    "fantasy_office_building_3",
+    "fantasy_residential_building_1",
+    "fzk_house",
+    "samuel_macalister_sample_house"
+   ],
+   "note": "7 个模型的值是默认的正上方为北，只有 fzk_house 和 samuel 是旋转过的值",
+   "label_en": "orientation"
+  },
+  "opening": {
+   "label": "洞口",
+   "ifc": "IfcOpeningElement + IfcRelFillsElement",
+   "models": [
+    "ac20",
+    "digital_hub",
+    "fantasy_hotel_1",
+    "fantasy_office_building_1",
+    "fantasy_office_building_2",
+    "fantasy_office_building_3",
+    "fantasy_residential_building_1",
+    "fzk_house",
+    "samuel_macalister_sample_house"
+   ],
+   "note": "",
+   "label_en": "openings"
+  },
+  "furnishing": {
+   "label": "家具/洁具",
+   "ifc": "IfcFurnishingElement / IfcFurniture / IfcSanitaryTerminal / IfcFlowTerminal",
+   "models": [
+    "ac20",
+    "fantasy_hotel_1",
+    "fantasy_office_building_1",
+    "fantasy_office_building_2",
+    "fantasy_office_building_3",
+    "fantasy_residential_building_1",
+    "samuel_macalister_sample_house"
+   ],
+   "note": "",
+   "label_en": "furniture / sanitary"
+  },
+  "layers": {
+   "label": "构造层",
+   "ifc": "IfcMaterialLayerSet",
+   "models": [
+    "ac20",
+    "fzk_house",
+    "samuel_macalister_sample_house"
+   ],
+   "note": "",
+   "label_en": "material layers"
+  },
+  "transport": {
+   "label": "电梯/坡道",
+   "ifc": "IfcTransportElement / IfcRamp",
+   "models": [],
+   "note": "9 个模型都没有",
+   "label_en": "lifts / ramps"
+  },
+  "pset": {
+   "label": "性能属性",
+   "ifc": "Pset_*Common（FireRating, ThermalTransmittance, AcousticRating, IsExternal …）",
+   "models": null,
+   "note": "文件里出现 FireRating 的有 fantasy_hotel_1、fantasy_office_building_2、fantasy_office_building_3、fzk_house；出现 ThermalTransmittance 的有 digital_hub、fantasy_hotel_1、fantasy_office_building_2、fantasy_residential_building_1、fzk_house、samuel；出现 AcousticRating 的只有 fzk_house。只统计了属性名，未核对是否填了值",
+   "label_en": "performance properties",
+   "ifc_en": "Pset_*Common (FireRating, ThermalTransmittance, AcousticRating, IsExternal …)"
+  },
+  "usage": {
+   "label": "用途/人数",
+   "ifc": "IfcSpace.Name / LongName, Pset_SpaceOccupancyRequirements, 建筑类型",
+   "models": null,
+   "note": "依赖房间命名，各模型质量不一，未逐个核对",
+   "label_en": "use / occupancy",
+   "ifc_en": "IfcSpace.Name / LongName, Pset_SpaceOccupancyRequirements, building type"
+  },
+  "site": {
+   "label": "场地",
+   "ifc": "IfcSite 的地块边界与场地几何",
+   "models": null,
+   "note": "未核对各模型的场地几何",
+   "label_en": "site",
+   "ifc_en": "plot boundary and site geometry of IfcSite"
+  }
+ },
+ "points": {
+  "K01": {
+   "title": "高层建筑",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding",
+    "IfcBuildingStorey"
+   ],
+   "needs": []
+  },
+  "K02": {
+   "title": "私宅停车",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcSite"
+   ],
+   "needs": [
+    "site"
+   ]
+  },
+  "K03": {
+   "title": "车位与通道尺寸",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcSite",
+    "IfcSpace"
+   ],
+   "needs": [
+    "site"
+   ]
+  },
+  "K04": {
+   "title": "体形系数 A/Ve",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding"
+   ],
+   "needs": [
+    "pset"
+   ]
+  },
+  "K05": {
+   "title": "退距（Abstandsfläche）",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcSite",
+    "IfcBuilding"
+   ],
+   "needs": [
+    "site"
+   ]
+  },
+  "K06": {
+   "title": "建筑密度与容积率",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcSite",
+    "IfcBuilding"
+   ],
+   "needs": [
+    "site"
+   ]
+  },
+  "K79": {
+   "title": "DIN 277 面积分类与可出租面积",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding",
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K80": {
+   "title": "DIN 277 建筑体积（总体积与净体积）",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding",
+    "IfcBuildingStorey"
+   ],
+   "needs": []
+  },
+  "K92": {
+   "title": "联排住宅进深 ≤12 m、面宽 4–8 m",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K111": {
+   "title": "婴儿车与自行车公共储藏间",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding",
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K116": {
+   "title": "建筑进深与采光深度",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K54": {
+   "title": "办公与工作建筑的朝向",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding"
+   ],
+   "needs": [
+    "orientation"
+   ]
+  },
+  "K07": {
+   "title": "舒适步距公式",
+   "level": "Storey",
+   "ifc": [
+    "IfcStairFlight"
+   ],
+   "needs": [
+    "pset"
+   ]
+  },
+  "K08": {
+   "title": "最佳坡度与踏步比",
+   "level": "Storey",
+   "ifc": [
+    "IfcStairFlight"
+   ],
+   "needs": [
+    "pset"
+   ]
+  },
+  "K09": {
+   "title": "每段梯段步数",
+   "level": "Storey",
+   "ifc": [
+    "IfcStairFlight"
+   ],
+   "needs": [
+    "pset"
+   ]
+  },
+  "K10": {
+   "title": "休息平台",
+   "level": "Storey",
+   "ifc": [
+    "IfcStair",
+    "IfcStairFlight",
+    "IfcBuildingStorey"
+   ],
+   "needs": []
+  },
+  "K11": {
+   "title": "必要楼梯宽度与踏步比",
+   "level": "Storey",
+   "ifc": [
+    "IfcStair",
+    "IfcStairFlight"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K12": {
+   "title": "两户以下住宅的楼梯",
+   "level": "Storey",
+   "ifc": [
+    "IfcStair",
+    "IfcStairFlight"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K13": {
+   "title": "室外楼梯与办公楼梯的取向",
+   "level": "Storey",
+   "ifc": [
+    "IfcStair"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K14": {
+   "title": "螺旋楼梯",
+   "level": "Storey",
+   "ifc": [
+    "IfcStair"
+   ],
+   "needs": []
+  },
+  "K15": {
+   "title": "楼座、夹层、阳台的护栏高度",
+   "level": "Storey",
+   "ifc": [
+    "IfcRailing"
+   ],
+   "needs": []
+  },
+  "K16": {
+   "title": "无障碍坡道",
+   "level": "Storey",
+   "ifc": [
+    "IfcRamp",
+    "IfcRailing"
+   ],
+   "needs": [
+    "transport"
+   ]
+  },
+  "K17": {
+   "title": "公共建筑楼梯两侧扶手",
+   "level": "Storey",
+   "ifc": [
+    "IfcStair",
+    "IfcRailing"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K18": {
+   "title": "电梯候梯区",
+   "level": "Storey",
+   "ifc": [
+    "IfcTransportElement",
+    "IfcSpace"
+   ],
+   "needs": [
+    "transport"
+   ]
+  },
+  "K19": {
+   "title": "非必要楼梯",
+   "level": "Storey",
+   "ifc": [
+    "IfcStair",
+    "IfcStairFlight"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K20": {
+   "title": "休息平台宽度不小于梯段宽度",
+   "level": "Storey",
+   "ifc": [
+    "IfcStairFlight",
+    "IfcSlab"
+   ],
+   "needs": []
+  },
+  "K43": {
+   "title": "主楼梯须设在连续封闭的楼梯间",
+   "level": "Storey",
+   "ifc": [
+    "IfcStair",
+    "IfcSpace"
+   ],
+   "needs": [
+    "adjacency"
+   ]
+  },
+  "K27": {
+   "title": "无障碍：无台阶通达与公众可达建筑的适用范围",
+   "level": "Storey",
+   "ifc": [
+    "IfcBuildingStorey",
+    "IfcTransportElement",
+    "IfcRamp"
+   ],
+   "needs": [
+    "transport",
+    "usage"
+   ]
+  },
+  "K30": {
+   "title": "无障碍电梯",
+   "level": "Storey",
+   "ifc": [
+    "IfcTransportElement",
+    "IfcSpace"
+   ],
+   "needs": [
+    "transport"
+   ]
+  },
+  "K32": {
+   "title": "楼梯起止处活动区",
+   "level": "Storey",
+   "ifc": [
+    "IfcStair",
+    "IfcSpace"
+   ],
+   "needs": []
+  },
+  "K83": {
+   "title": "电梯与每层户数",
+   "level": "Storey",
+   "ifc": [
+    "IfcBuildingStorey",
+    "IfcTransportElement"
+   ],
+   "needs": [
+    "transport",
+    "zone"
+   ]
+  },
+  "K91": {
+   "title": "一梯一户限四层（无电梯）；一梯三户",
+   "level": "Storey",
+   "ifc": [
+    "IfcBuildingStorey",
+    "IfcStair"
+   ],
+   "needs": [
+    "zone"
+   ]
+  },
+  "K112": {
+   "title": "办公楼室内净高",
+   "level": "Storey",
+   "ifc": [
+    "IfcBuildingStorey",
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K34": {
+   "title": "多户住宅的无障碍楼层",
+   "level": "Zone",
+   "ifc": [
+    "IfcZone",
+    "IfcSpace"
+   ],
+   "needs": [
+    "zone",
+    "usage"
+   ]
+  },
+  "K38": {
+   "title": "疏散距离",
+   "level": "Zone",
+   "ifc": [
+    "IfcSpace",
+    "IfcStair",
+    "IfcDoor"
+   ],
+   "needs": [
+    "adjacency"
+   ]
+  },
+  "K39": {
+   "title": "两条独立疏散路线",
+   "level": "Zone",
+   "ifc": [
+    "IfcZone",
+    "IfcStair"
+   ],
+   "needs": [
+    "zone",
+    "adjacency"
+   ]
+  },
+  "K42": {
+   "title": "防火分区与防火墙",
+   "level": "Zone",
+   "ifc": [
+    "IfcZone",
+    "IfcWall"
+   ],
+   "needs": [
+    "zone",
+    "pset"
+   ]
+  },
+  "K45": {
+   "title": "高层建筑的疏散走道",
+   "level": "Zone",
+   "ifc": [
+    "IfcSpace",
+    "IfcDoor"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K47": {
+   "title": "长疏散走廊分段与楼梯间的封闭",
+   "level": "Zone",
+   "ifc": [
+    "IfcSpace",
+    "IfcDoor"
+   ],
+   "needs": [
+    "adjacency",
+    "pset"
+   ]
+  },
+  "K76": {
+   "title": "居住面积计算",
+   "level": "Zone",
+   "ifc": [
+    "IfcZone",
+    "IfcSpace"
+   ],
+   "needs": [
+    "zone",
+    "usage"
+   ]
+  },
+  "K77": {
+   "title": "阳台计入居住面积",
+   "level": "Zone",
+   "ifc": [
+    "IfcZone",
+    "IfcSpace"
+   ],
+   "needs": [
+    "zone",
+    "usage"
+   ]
+  },
+  "K78": {
+   "title": "住宅面积的计入范围与净尺寸量法",
+   "level": "Zone",
+   "ifc": [
+    "IfcZone",
+    "IfcSpace"
+   ],
+   "needs": [
+    "zone"
+   ]
+  },
+  "K85": {
+   "title": "分组式平面与中廊式平面",
+   "level": "Zone",
+   "ifc": [
+    "IfcZone",
+    "IfcSpace"
+   ],
+   "needs": [
+    "zone",
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K94": {
+   "title": "每户必备厨房与储藏间",
+   "level": "Zone",
+   "ifc": [
+    "IfcZone",
+    "IfcSpace"
+   ],
+   "needs": [
+    "zone",
+    "usage"
+   ]
+  },
+  "K103": {
+   "title": "卫生间",
+   "level": "Zone",
+   "ifc": [
+    "IfcZone",
+    "IfcSpace"
+   ],
+   "needs": [
+    "zone",
+    "usage",
+    "furnishing"
+   ]
+  },
+  "K107": {
+   "title": "户内储藏空间",
+   "level": "Zone",
+   "ifc": [
+    "IfcZone",
+    "IfcSpace"
+   ],
+   "needs": [
+    "zone",
+    "usage"
+   ]
+  },
+  "K127": {
+   "title": "小型使用单元内的走廊",
+   "level": "Zone",
+   "ifc": [
+    "IfcZone",
+    "IfcSpace"
+   ],
+   "needs": [
+    "zone",
+    "usage"
+   ]
+  },
+  "K74": {
+   "title": "居室最低要求",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcWindow"
+   ],
+   "needs": [
+    "adjacency"
+   ]
+  },
+  "K75": {
+   "title": "厨房作为居室",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcWindow"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K81": {
+   "title": "阳台面积",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K82": {
+   "title": "户外空间的连接",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K84": {
+   "title": "设备噪声与安静房间",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcWall"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K86": {
+   "title": "卧室朝向与位置",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "orientation",
+    "usage"
+   ]
+  },
+  "K87": {
+   "title": "门厅直达厨房、WC 和楼梯",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K88": {
+   "title": "防风门斗",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcDoor"
+   ],
+   "needs": [
+    "adjacency"
+   ]
+  },
+  "K89": {
+   "title": "户内走道宽度",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K90": {
+   "title": "独立住宅每层通往户外",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcBuildingStorey"
+   ],
+   "needs": [
+    "adjacency"
+   ]
+  },
+  "K93": {
+   "title": "入户凹口尺寸",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcDoor"
+   ],
+   "needs": []
+  },
+  "K95": {
+   "title": "厨房宽度与操作空间",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "furnishing",
+    "usage"
+   ]
+  },
+  "K96": {
+   "title": "厨房面积与类型",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K97": {
+   "title": "开放式厨房",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K98": {
+   "title": "厨房位置",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K99": {
+   "title": "就餐区的朝向与连接",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "orientation",
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K100": {
+   "title": "餐桌尺寸与就餐人数",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcFurnishingElement"
+   ],
+   "needs": [
+    "furnishing"
+   ]
+  },
+  "K101": {
+   "title": "储藏与食品间靠近厨房",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K102": {
+   "title": "卧室最小面积",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K104": {
+   "title": "没有洗衣间时",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "furnishing",
+    "usage"
+   ]
+  },
+  "K105": {
+   "title": "洗衣间",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "orientation",
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K106": {
+   "title": "衣柜的位置与通风",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcFurnishingElement"
+   ],
+   "needs": [
+    "furnishing",
+    "usage"
+   ]
+  },
+  "K108": {
+   "title": "卫生间朝向、采光与通风",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcWindow"
+   ],
+   "needs": [
+    "orientation",
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K109": {
+   "title": "卫生间类型",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcSanitaryTerminal"
+   ],
+   "needs": [
+    "furnishing"
+   ]
+  },
+  "K110": {
+   "title": "卫浴与厨房共用管井",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K113": {
+   "title": "每工位总面积",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K114": {
+   "title": "工位尺寸",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcFurnishingElement"
+   ],
+   "needs": [
+    "furnishing"
+   ]
+  },
+  "K115": {
+   "title": "办公室进深、开间与模数",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K117": {
+   "title": "办公室类型",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K118": {
+   "title": "会议区",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K119": {
+   "title": "办公卫生间与茶水间配置",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K120": {
+   "title": "工作场所厕所（劳动场所规定）",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcSanitaryTerminal"
+   ],
+   "needs": [
+    "adjacency",
+    "usage",
+    "furnishing"
+   ]
+  },
+  "K121": {
+   "title": "厅室的每人容积",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K122": {
+   "title": "保洁间与物业用房",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcBuildingStorey"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K123": {
+   "title": "档案室",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K124": {
+   "title": "办公楼入口区",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K125": {
+   "title": "员工餐厅位置",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K126": {
+   "title": "组团办公室到窗距离",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcWindow"
+   ],
+   "needs": [
+    "adjacency",
+    "furnishing"
+   ]
+  },
+  "K128": {
+   "title": "餐饮厨房员工休息室",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K129": {
+   "title": "研讨室的规模与进深",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K130": {
+   "title": "高校教研人员办公室面积",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K28": {
+   "title": "轮椅活动空间",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K29": {
+   "title": "无障碍卫生间",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcSanitaryTerminal",
+    "IfcDoor"
+   ],
+   "needs": [
+    "furnishing",
+    "usage"
+   ]
+  },
+  "K31": {
+   "title": "轮椅停车位",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "site"
+   ]
+  },
+  "K33": {
+   "title": "长走廊轮椅会车位",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K35": {
+   "title": "无障碍住宅卫浴",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcSanitaryTerminal"
+   ],
+   "needs": [
+    "furnishing"
+   ]
+  },
+  "K36": {
+   "title": "轮椅住宅的起居室",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K37": {
+   "title": "无障碍住宅的户内活动区宽度",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcFurnishingElement"
+   ],
+   "needs": [
+    "furnishing"
+   ]
+  },
+  "K48": {
+   "title": "工作间的窗",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcWindow"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K49": {
+   "title": "厨房朝向",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "orientation",
+    "usage"
+   ]
+  },
+  "K50": {
+   "title": "无窗厨房",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcWindow"
+   ],
+   "needs": [
+    "adjacency",
+    "usage"
+   ]
+  },
+  "K52": {
+   "title": "视野：窗宽不小于房间宽 65%",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcWindow"
+   ],
+   "needs": [
+    "adjacency"
+   ]
+  },
+  "K53": {
+   "title": "工作区距窗约为 2 倍窗净高",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcWindow"
+   ],
+   "needs": [
+    "adjacency"
+   ]
+  },
+  "K21": {
+   "title": "洞口尺寸 ≠ 净通行宽度",
+   "level": "Element",
+   "ifc": [
+    "IfcDoor",
+    "IfcOpeningElement"
+   ],
+   "needs": [
+    "opening"
+   ]
+  },
+  "K22": {
+   "title": "住宅门的常规宽度",
+   "level": "Element",
+   "ifc": [
+    "IfcDoor"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K23": {
+   "title": "内门净高",
+   "level": "Element",
+   "ifc": [
+    "IfcDoor"
+   ],
+   "needs": []
+  },
+  "K24": {
+   "title": "紧急出口的门型",
+   "level": "Element",
+   "ifc": [
+    "IfcDoor"
+   ],
+   "needs": [
+    "pset",
+    "usage"
+   ]
+  },
+  "K25": {
+   "title": "电梯入户的户门",
+   "level": "Element",
+   "ifc": [
+    "IfcDoor",
+    "IfcTransportElement"
+   ],
+   "needs": [
+    "transport",
+    "usage"
+   ]
+  },
+  "K26": {
+   "title": "无障碍门净宽",
+   "level": "Element",
+   "ifc": [
+    "IfcDoor"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K40": {
+   "title": "疏散窗",
+   "level": "Element",
+   "ifc": [
+    "IfcWindow"
+   ],
+   "needs": [
+    "opening"
+   ]
+  },
+  "K41": {
+   "title": "出口宽度（按人数）",
+   "level": "Element",
+   "ifc": [
+    "IfcDoor"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K44": {
+   "title": "疏散走廊侧墙 F 30",
+   "level": "Element",
+   "ifc": [
+    "IfcWall",
+    "IfcWindow"
+   ],
+   "needs": [
+    "pset",
+    "usage"
+   ]
+  },
+  "K46": {
+   "title": "高层建筑立面的层间防火",
+   "level": "Element",
+   "ifc": [
+    "IfcWall",
+    "IfcCurtainWall",
+    "IfcSlab"
+   ],
+   "needs": [
+    "pset"
+   ]
+  },
+  "K51": {
+   "title": "玻璃面最小高度 1.3 m",
+   "level": "Element",
+   "ifc": [
+    "IfcWindow"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K55": {
+   "title": "按朝向选择遮阳",
+   "level": "Element",
+   "ifc": [
+    "IfcWindow",
+    "IfcShadingDevice"
+   ],
+   "needs": [
+    "orientation"
+   ]
+  },
+  "K56": {
+   "title": "遮阳挑檐的出挑计算",
+   "level": "Element",
+   "ifc": [
+    "IfcWindow",
+    "IfcShadingDevice",
+    "IfcWall"
+   ],
+   "needs": [
+    "orientation"
+   ]
+  },
+  "K57": {
+   "title": "单层外墙与附加保温层",
+   "level": "Element",
+   "ifc": [
+    "IfcWall"
+   ],
+   "needs": [
+    "layers"
+   ]
+  },
+  "K58": {
+   "title": "夹心墙（双叶墙）的外叶与空气层",
+   "level": "Element",
+   "ifc": [
+    "IfcWall"
+   ],
+   "needs": [
+    "layers"
+   ]
+  },
+  "K59": {
+   "title": "混凝土外墙必须附加保温",
+   "level": "Element",
+   "ifc": [
+    "IfcWall"
+   ],
+   "needs": [
+    "layers"
+   ]
+  },
+  "K60": {
+   "title": "背通风外挂层的空气间层",
+   "level": "Element",
+   "ifc": [
+    "IfcWall",
+    "IfcCovering"
+   ],
+   "needs": [
+    "layers"
+   ]
+  },
+  "K61": {
+   "title": "热阻与传热系数计算",
+   "level": "Element",
+   "ifc": [
+    "IfcWall",
+    "IfcRoof",
+    "IfcSlab"
+   ],
+   "needs": [
+    "layers",
+    "pset"
+   ]
+  },
+  "K62": {
+   "title": "热桥与构件连接",
+   "level": "Element",
+   "ifc": [
+    "IfcWall",
+    "IfcSlab"
+   ],
+   "needs": [
+    "layers"
+   ]
+  },
+  "K63": {
+   "title": "平屋面排水坡度",
+   "level": "Element",
+   "ifc": [
+    "IfcRoof",
+    "IfcSlab"
+   ],
+   "needs": []
+  },
+  "K64": {
+   "title": "平屋面构造：暖屋面与倒置屋面",
+   "level": "Element",
+   "ifc": [
+    "IfcRoof",
+    "IfcSlab"
+   ],
+   "needs": [
+    "layers"
+   ]
+  },
+  "K65": {
+   "title": "隔汽层设在暖侧",
+   "level": "Element",
+   "ifc": [
+    "IfcRoof",
+    "IfcWall"
+   ],
+   "needs": [
+    "layers"
+   ]
+  },
+  "K66": {
+   "title": "种植屋面的坡度",
+   "level": "Element",
+   "ifc": [
+    "IfcRoof",
+    "IfcSlab"
+   ],
+   "needs": [
+    "layers"
+   ]
+  },
+  "K67": {
+   "title": "坡屋面保温位置与通风构造",
+   "level": "Element",
+   "ifc": [
+    "IfcRoof"
+   ],
+   "needs": [
+    "layers"
+   ]
+  },
+  "K68": {
+   "title": "分户墙隔声",
+   "level": "Element",
+   "ifc": [
+    "IfcWall"
+   ],
+   "needs": [
+    "pset",
+    "layers",
+    "zone"
+   ]
+  },
+  "K69": {
+   "title": "模数协调与标志尺寸",
+   "level": "Element",
+   "ifc": [
+    "IfcWall",
+    "IfcGrid"
+   ],
+   "needs": []
+  },
+  "K70": {
+   "title": "建筑等级与承重墙耐火",
+   "level": "Element",
+   "ifc": [
+    "IfcWall",
+    "IfcColumn"
+   ],
+   "needs": [
+    "pset",
+    "usage"
+   ]
+  },
+  "K71": {
+   "title": "地下室墙体与楼板耐火",
+   "level": "Element",
+   "ifc": [
+    "IfcWall",
+    "IfcColumn",
+    "IfcSlab"
+   ],
+   "needs": [
+    "pset"
+   ]
+  },
+  "K72": {
+   "title": "住宅/商业单元之间的分隔墙",
+   "level": "Element",
+   "ifc": [
+    "IfcWall"
+   ],
+   "needs": [
+    "pset",
+    "zone"
+   ]
+  },
+  "K73": {
+   "title": "外墙及外墙饰面的燃烧性能",
+   "level": "Element",
+   "ifc": [
+    "IfcWall",
+    "IfcCovering"
+   ],
+   "needs": [
+    "pset",
+    "layers"
+   ]
+  },
+  "K131": {
+   "title": "装修网格与立面网格一致",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcGrid",
+    "IfcWall",
+    "IfcWindow"
+   ],
+   "needs": []
+  },
+  "K132": {
+   "title": "网格模数与建筑进深的搭配",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcGrid",
+    "IfcBuilding"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K133": {
+   "title": "单排、双排与三排布局",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding",
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K134": {
+   "title": "楼梯间的间距（30 m / 60 m）",
+   "level": "Storey",
+   "ifc": [
+    "IfcStair",
+    "IfcSpace"
+   ],
+   "needs": [
+    "adjacency"
+   ]
+  },
+  "K135": {
+   "title": "组合式办公（combi-office）",
+   "level": "Zone",
+   "ifc": [
+    "IfcZone",
+    "IfcSpace"
+   ],
+   "needs": [
+    "zone",
+    "usage"
+   ]
+  },
+  "K136": {
+   "title": "单间办公：疏散通道内不得放家具",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcFurnishingElement"
+   ],
+   "needs": [
+    "furnishing",
+    "usage"
+   ]
+  },
+  "K137": {
+   "title": "大空间办公的进深",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K138": {
+   "title": "非固定工位办公的面积节省",
+   "level": "Zone",
+   "ifc": [
+    "IfcSpace",
+    "IfcFurnishingElement"
+   ],
+   "needs": [
+    "usage",
+    "furnishing"
+   ]
+  },
+  "K139": {
+   "title": "可逆办公楼（出租办公）",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K140": {
+   "title": "工位面积的构成",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcFurnishingElement"
+   ],
+   "needs": [
+    "furnishing"
+   ]
+  },
+  "K141": {
+   "title": "每工位面积指标（直接工位与交通面积）",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding",
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K142": {
+   "title": "屏幕工位与窗的关系",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcFurnishingElement",
+    "IfcWindow"
+   ],
+   "needs": [
+    "furnishing",
+    "adjacency"
+   ]
+  },
+  "K143": {
+   "title": "档案存放的面积与位置",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace",
+    "IfcFurnishingElement"
+   ],
+   "needs": [
+    "furnishing",
+    "usage"
+   ]
+  },
+  "K144": {
+   "title": "收发室",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K145": {
+   "title": "数据中心与服务器机房",
+   "level": "Space",
+   "ifc": [
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K146": {
+   "title": "全空调对建筑体积的影响",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K147": {
+   "title": "立面竖梃与隔墙的连接",
+   "level": "Element",
+   "ifc": [
+    "IfcCurtainWall",
+    "IfcMember",
+    "IfcWall"
+   ],
+   "needs": []
+  },
+  "K148": {
+   "title": "轻质隔墙的隔声与上下延续",
+   "level": "Element",
+   "ifc": [
+    "IfcWall",
+    "IfcCovering"
+   ],
+   "needs": [
+    "pset",
+    "layers"
+   ]
+  },
+  "K149": {
+   "title": "消防电梯（高度超过 30 m）",
+   "level": "Storey",
+   "ifc": [
+    "IfcTransportElement",
+    "IfcBuilding"
+   ],
+   "needs": [
+    "transport"
+   ]
+  },
+  "K150": {
+   "title": "高层疏散楼梯的梯井、排烟与出口",
+   "level": "Storey",
+   "ifc": [
+    "IfcStair",
+    "IfcSpace"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K151": {
+   "title": "高层电梯分组",
+   "level": "Storey",
+   "ifc": [
+    "IfcTransportElement",
+    "IfcBuildingStorey"
+   ],
+   "needs": [
+    "transport"
+   ]
+  },
+  "K152": {
+   "title": "高层建筑的分级",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding",
+    "IfcBuildingStorey"
+   ],
+   "needs": []
+  },
+  "K153": {
+   "title": "高层建筑的用途限制",
+   "level": "Site & Building",
+   "ifc": [
+    "IfcBuilding"
+   ],
+   "needs": [
+    "usage"
+   ]
+  },
+  "K154": {
+   "title": "高层外窗的清洁",
+   "level": "Element",
+   "ifc": [
+    "IfcWindow",
+    "IfcCurtainWall"
+   ],
+   "needs": []
+  }
+ }
+}

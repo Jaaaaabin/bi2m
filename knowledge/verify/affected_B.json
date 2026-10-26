@@ -1,0 +1,409 @@
+[
+ {
+  "hid": "H-fantasy_office_building_1-02",
+  "project": "fantasy_office_building_1",
+  "points": [
+   {
+    "title": "高层建筑",
+    "issues": [
+     "楼梯要求原文限定为'高度 ≤ 60 m 的高层建筑'，摘要未保留此条件",
+     "遗漏'相对布置(opposite)'及可用一部安全楼梯代替的例外"
+    ],
+    "corrected_summary": "高层建筑指供人长期停留、最高楼层在建筑一侧高出地面 > 22 m 的建筑；高度 ≤ 60 m 的高层须至少设两部相对布置、位于两个不同防火分区的疏散楼梯，其通行宽度须 ≥ 1.25 m（例外情况下可批准仅设一部安全楼梯）。"
+   }
+  ],
+  "file": "items/fantasy_office_building_1.py",
+  "question_start": "The levels are EG 0.00, OG1 4.80, OG2 9.60, OG3 14.40 and OG4 19.20 m. Does the building count as a high-rise, and how m"
+ },
+ {
+  "hid": "H-fantasy_office_building_1-04",
+  "project": "fantasy_office_building_1",
+  "points": [
+   {
+    "title": "工位尺寸",
+    "issues": [
+     "Condition dropped: 120 × 80 cm applies to 'few documents, predominantly screen work'; for specialist employees the book gives at least 200 × 80 cm.",
+     "Modality: both values are 'should' (宜/应)."
+    ],
+    "corrected_summary": "桌面工作面积宜不小于 120 × 80 cm（文件少、以屏幕工作为主的情况；专业人员至少 200 × 80 cm）；每个工位宜有不小于 1.5 m² 的自由活动面积。"
+   }
+  ],
+  "file": "items/fantasy_office_building_1.py",
+  "question_start": "Working Space 28 (34.91 m²) holds seven \"Schreibtisch-Kombination-02 mit PC\" desk-and-chair combinations, each ≈1.42 × 1"
+ },
+ {
+  "hid": "H-fantasy_office_building_1-06",
+  "project": "fantasy_office_building_1",
+  "points": [
+   {
+    "title": "无障碍的适用范围与无台阶通达",
+    "issues": [
+     "适用建筑清单（文化、教育、体育、休闲、医疗、办公、行政、法院、商业、餐饮、停车、车库、厕所）在 p.25 指的是第(2)条'公众可达建筑须可供残障人士等无需他人帮助进出使用'，并非 p.22'各层无台阶可达'这一要求，摘要把两者混在一起",
+     "清单遗漏体育、休闲、行政、法院、商业、车库"
+    ],
+    "corrected_summary": "按无障碍原则设计的建筑，所有楼层须无台阶可达（即通过电梯或坡道）。另按 MBO §50，公众可达建筑面向公众的部分须能供残障人士、老人和带小孩的人无需他人帮助按用途进出使用，尤其适用于文化、教育、体育、休闲和医疗设施，办公、行政建筑和法院，商业和餐饮场所，停车场、车库和厕所。"
+   }
+  ],
+  "file": "items/fantasy_office_building_1.py",
+  "question_start": "Meeting rooms 8 and 9 sit at the two ends of Working Space 10 on OG1. Trace how a visitor arriving at the main entrance "
+ },
+ {
+  "hid": "H-fantasy_office_building_1-07",
+  "project": "fantasy_office_building_1",
+  "points": [
+   {
+    "title": "工作场所厕所（劳动场所规定）",
+    "issues": [
+     "Condition dropped: the 'one storey height' limit applies 'if no escalator is available'.",
+     "Context is the Industry and trade chapter (workplaces generally), not specifically offices — acceptable under 'workplace regulations' title but the topic label 办公 is broader than source."
+    ],
+    "corrected_summary": "（工作场所）厕所距每个工位不超过 100 m，或最远不超过一层楼高（无自动扶梯时）；员工超过 5 人须分设男女厕所，且宜仅供员工使用；厕所由带洗手盆的前室（每 5 个 WC 至少 1 个洗手盆）和完全分隔、至少含一个 WC 的房间组成。"
+   }
+  ],
+  "file": "items/fantasy_office_building_1.py",
+  "question_start": "The building has 24 WC rooms, each a single small room. Looking at where their doors open and how they are labelled, wha"
+ },
+ {
+  "hid": "H-fantasy_office_building_1-08",
+  "project": "fantasy_office_building_1",
+  "points": [
+   {
+    "title": "工作场所厕所（劳动场所规定）",
+    "issues": [
+     "Condition dropped: the 'one storey height' limit applies 'if no escalator is available'.",
+     "Context is the Industry and trade chapter (workplaces generally), not specifically offices — acceptable under 'workplace regulations' title but the topic label 办公 is broader than source."
+    ],
+    "corrected_summary": "（工作场所）厕所距每个工位不超过 100 m，或最远不超过一层楼高（无自动扶梯时）；员工超过 5 人须分设男女厕所，且宜仅供员工使用；厕所由带洗手盆的前室（每 5 个 WC 至少 1 个洗手盆）和完全分隔、至少含一个 WC 的房间组成。"
+   }
+  ],
+  "file": "items/fantasy_office_building_1.py",
+  "question_start": "OG1 has 16 modelled workstations (8 each in Working Spaces 10 and 13) and two WC rooms of 2.63 m² each. Is that sanitary"
+ },
+ {
+  "hid": "H-fantasy_office_building_1-09",
+  "project": "fantasy_office_building_1",
+  "points": [
+   {
+    "title": "无障碍的适用范围与无台阶通达",
+    "issues": [
+     "适用建筑清单（文化、教育、体育、休闲、医疗、办公、行政、法院、商业、餐饮、停车、车库、厕所）在 p.25 指的是第(2)条'公众可达建筑须可供残障人士等无需他人帮助进出使用'，并非 p.22'各层无台阶可达'这一要求，摘要把两者混在一起",
+     "清单遗漏体育、休闲、行政、法院、商业、车库"
+    ],
+    "corrected_summary": "按无障碍原则设计的建筑，所有楼层须无台阶可达（即通过电梯或坡道）。另按 MBO §50，公众可达建筑面向公众的部分须能供残障人士、老人和带小孩的人无需他人帮助按用途进出使用，尤其适用于文化、教育、体育、休闲和医疗设施，办公、行政建筑和法院，商业和餐饮场所，停车场、车库和厕所。"
+   }
+  ],
+  "file": "items/fantasy_office_building_1.py",
+  "question_start": "This five-storey office building is entered through glazed lobby doors and its meeting rooms are on OG1. Can a visitor i"
+ },
+ {
+  "hid": "H-fantasy_office_building_2-01",
+  "project": "fantasy_office_building_2",
+  "points": [
+   {
+    "title": "护栏高度",
+    "issues": [
+     "适用对象原文限定为楼座、夹层、阳台和剧院楼座看台（galleries, mezzanines, balconies, circle seating），摘要泛化为任何高差 ≥ 1 m 处",
+     "工作场所 1.00 m 的条件是坠落高度 < 12 m；原文另有'楼梯井宽 ≥ 20 cm 时 > 12 m 也为 1.00 m'（图注文字有乱码，含义不完全清楚），摘要丢失条件"
+    ],
+    "corrected_summary": "楼座、夹层、阳台及剧院楼座看台须设护栏，高差 ≥ 1 m 起强制：坠落高度 < 12 m 时 h = 0.90 m；坠落高度 > 12 m 时 h = 1.10 m；工作场所坠落高度 < 12 m 时 h = 1.00 m（图注另称楼梯井宽 ≥ 20 cm 时 > 12 m 亦为 1.00 m）。"
+   }
+  ],
+  "file": "items/fantasy_office_building_2.py",
+  "question_start": "The storey list gives the 4th Floor at +14.80 m, where the model places benches, planters and two external railings of t"
+ },
+ {
+  "hid": "H-fantasy_office_building_2-02",
+  "project": "fantasy_office_building_2",
+  "points": [
+   {
+    "title": "办公室净高",
+    "issues": [
+     "The 3.00 m guideline for working rooms >100 m² comes from the Industry and trade chapter (p.266, industrial buildings), not from the office section — generalised to offices.",
+     "2.75 m is stated as 'according to Vst regulation' (and to allow later raised floors/suspended ceilings); the regulation source is dropped.",
+     "2.30 m for corridors and sanitary facilities is 'permitted' — fine, but should be kept as office-building context (p.243 two-row office buildings)."
+    ],
+    "corrected_summary": "办公楼（按 Vst 规定）室内净高 2.75 m（便于日后加设架空地板和较深吊顶）；以坐姿工作为主时可降低 25 cm，但净高不低于 2.50 m；走廊和卫生设施允许为 2.30 m。（另：工业与工商建筑一章给出面积大于 100 m² 的工作间净高参考值 3.00 m。）"
+   },
+   {
+    "title": "工作间的窗",
+    "issues": [
+     "p.266 gives 1/10 of floor area (rooms up to 600 m²) as 'Approx. figures for window areas' in the industry chapter; summary states it as a firm value without 约, and omits the 1/5 for fine work.",
+     "Sill height 0.85–1.25 m is a 'should' (eye level) recommendation."
+    ],
+    "corrected_summary": "工作间（按工作场所指南）：所有对外视线窗的总宽度须至少为全部墙宽总和的 1/10；对外视线宜在视平线高度（窗台高 0.85–1.25 m）；高度超过 3.5 m 的工作间，窗玻璃面积须至少为外墙面积的 30%。工业建筑中窗面积的近似值：面积不超过 600 m² 的房间约为地面面积的 1/10，精细作业约 1/5。"
+   }
+  ],
+  "file": "items/fantasy_office_building_2.py",
+  "question_start": "The exported storeys are 3.70 m apart (+11.10, +14.80, +18.50 m), and the floor slabs are 200 mm thick. Derive the clear"
+ },
+ {
+  "hid": "H-fantasy_office_building_2-04",
+  "project": "fantasy_office_building_2",
+  "points": [
+   {
+    "title": "工位尺寸",
+    "issues": [
+     "Condition dropped: 120 × 80 cm applies to 'few documents, predominantly screen work'; for specialist employees the book gives at least 200 × 80 cm.",
+     "Modality: both values are 'should' (宜/应)."
+    ],
+    "corrected_summary": "桌面工作面积宜不小于 120 × 80 cm（文件少、以屏幕工作为主的情况；专业人员至少 200 × 80 cm）；每个工位宜有不小于 1.5 m² 的自由活动面积。"
+   }
+  ],
+  "file": "items/fantasy_office_building_2.py",
+  "question_start": "Office 13 contains one desk combination and one shelf (Regal-01 1500 × 600 × 2500). Using Neufert's workstation depth fo"
+ },
+ {
+  "hid": "H-fantasy_office_building_2-05",
+  "project": "fantasy_office_building_2",
+  "points": [
+   {
+    "title": "工作间的窗",
+    "issues": [
+     "p.266 gives 1/10 of floor area (rooms up to 600 m²) as 'Approx. figures for window areas' in the industry chapter; summary states it as a firm value without 约, and omits the 1/5 for fine work.",
+     "Sill height 0.85–1.25 m is a 'should' (eye level) recommendation."
+    ],
+    "corrected_summary": "工作间（按工作场所指南）：所有对外视线窗的总宽度须至少为全部墙宽总和的 1/10；对外视线宜在视平线高度（窗台高 0.85–1.25 m）；高度超过 3.5 m 的工作间，窗玻璃面积须至少为外墙面积的 30%。工业建筑中窗面积的近似值：面积不超过 600 m² 的房间约为地面面积的 1/10，精细作业约 1/5。"
+   }
+  ],
+  "file": "items/fantasy_office_building_2.py",
+  "question_start": "Office 13 is lit by two \"FE 2 tlg - waagrecht geteilt 1100 x 1850\" windows in its façade wall, starting about 0.37 m abo"
+ },
+ {
+  "hid": "H-fantasy_office_building_3-02",
+  "project": "fantasy_office_building_3",
+  "points": [
+   {
+    "title": "办公室净高",
+    "issues": [
+     "The 3.00 m guideline for working rooms >100 m² comes from the Industry and trade chapter (p.266, industrial buildings), not from the office section — generalised to offices.",
+     "2.75 m is stated as 'according to Vst regulation' (and to allow later raised floors/suspended ceilings); the regulation source is dropped.",
+     "2.30 m for corridors and sanitary facilities is 'permitted' — fine, but should be kept as office-building context (p.243 two-row office buildings)."
+    ],
+    "corrected_summary": "办公楼（按 Vst 规定）室内净高 2.75 m（便于日后加设架空地板和较深吊顶）；以坐姿工作为主时可降低 25 cm，但净高不低于 2.50 m；走廊和卫生设施允许为 2.30 m。（另：工业与工商建筑一章给出面积大于 100 m² 的工作间净高参考值 3.00 m。）"
+   },
+   {
+    "title": "高层建筑",
+    "issues": [
+     "楼梯要求原文限定为'高度 ≤ 60 m 的高层建筑'，摘要未保留此条件",
+     "遗漏'相对布置(opposite)'及可用一部安全楼梯代替的例外"
+    ],
+    "corrected_summary": "高层建筑指供人长期停留、最高楼层在建筑一侧高出地面 > 22 m 的建筑；高度 ≤ 60 m 的高层须至少设两部相对布置、位于两个不同防火分区的疏散楼梯，其通行宽度须 ≥ 1.25 m（例外情况下可批准仅设一部安全楼梯）。"
+   }
+  ],
+  "file": "items/fantasy_office_building_3.py",
+  "question_start": "With levels at 0.00, 3.70, 7.40, 11.10, 14.80 and 18.50 m, and rooms modelled 2.75 m high, does the office ceiling heigh"
+ },
+ {
+  "hid": "H-fantasy_office_building_3-04",
+  "project": "fantasy_office_building_3",
+  "points": [
+   {
+    "title": "工位尺寸",
+    "issues": [
+     "Condition dropped: 120 × 80 cm applies to 'few documents, predominantly screen work'; for specialist employees the book gives at least 200 × 80 cm.",
+     "Modality: both values are 'should' (宜/应)."
+    ],
+    "corrected_summary": "桌面工作面积宜不小于 120 × 80 cm（文件少、以屏幕工作为主的情况；专业人员至少 200 × 80 cm）；每个工位宜有不小于 1.5 m² 的自由活动面积。"
+   }
+  ],
+  "file": "items/fantasy_office_building_3.py",
+  "question_start": "Open-plan office 1 on the ground floor (54.57 m²) contains eight \"Schreibtisch-Kombination-01\" desk units of about 1.42 "
+ },
+ {
+  "hid": "H-fantasy_office_building_3-05",
+  "project": "fantasy_office_building_3",
+  "points": [
+   {
+    "title": "工作场所厕所（劳动场所规定）",
+    "issues": [
+     "Condition dropped: the 'one storey height' limit applies 'if no escalator is available'.",
+     "Context is the Industry and trade chapter (workplaces generally), not specifically offices — acceptable under 'workplace regulations' title but the topic label 办公 is broader than source."
+    ],
+    "corrected_summary": "（工作场所）厕所距每个工位不超过 100 m，或最远不超过一层楼高（无自动扶梯时）；员工超过 5 人须分设男女厕所，且宜仅供员工使用；厕所由带洗手盆的前室（每 5 个 WC 至少 1 个洗手盆）和完全分隔、至少含一个 WC 的房间组成。"
+   }
+  ],
+  "file": "items/fantasy_office_building_3.py",
+  "question_start": "On OK OG2 the restrooms are \"Toilet men\" (8.34 m²) and \"Toilet women\" (8.77 m²). Count the workstations on that floor an"
+ },
+ {
+  "hid": "H-fantasy_office_building_3-08",
+  "project": "fantasy_office_building_3",
+  "points": [
+   {
+    "title": "紧急出口的门型",
+    "issues": [
+     "'旋转门需另设紧急出口'仅依据图注'Revolving door with additional emergency exits'，图注只是示例，原文没有要求"
+    ],
+    "corrected_summary": "紧急出口处不允许使用推拉门和旋转门，因为危险情况下它们可能堵塞出口；旋转门通行能力较低，高峰时门扇可折叠推到一侧（图示有带附加紧急出口的旋转门示例）。"
+   }
+  ],
+  "file": "items/fantasy_office_building_3.py",
+  "question_start": "The lobby's only external door is a revolving door (\"TU Karussell\"). The two corridors each end in an external door of t"
+ },
+ {
+  "hid": "H-fzk_house-05",
+  "project": "fzk_house",
+  "points": [
+   {
+    "title": "住宅门的常规宽度",
+    "issues": [
+     "'front doors up to 115 cm' 是'最多/可达 115 cm'，摘要写成'最宽约 115 cm'加了'约'",
+     "原文为住宅中单扇门的净开启宽度，可注明"
+    ],
+    "corrected_summary": "住宅中单扇门的净开启宽度：房门约 80 cm，浴室/WC 门约 70 cm，户门 ≥ 90 cm，入户大门最大 115 cm。"
+   }
+  ],
+  "file": "items/fzk_house.py",
+  "question_start": "The three interior doors (type \"IFC Tür - Eine Öffnunsgrichtung\") are listed as 885 × 2010 mm. What does that figure des"
+ },
+ {
+  "hid": "H-fzk_house-06",
+  "project": "fzk_house",
+  "points": [
+   {
+    "title": "住宅门的常规宽度",
+    "issues": [
+     "'front doors up to 115 cm' 是'最多/可达 115 cm'，摘要写成'最宽约 115 cm'加了'约'",
+     "原文为住宅中单扇门的净开启宽度，可注明"
+    ],
+    "corrected_summary": "住宅中单扇门的净开启宽度：房门约 80 cm，浴室/WC 门约 70 cm，户门 ≥ 90 cm，入户大门最大 115 cm。"
+   },
+   {
+    "title": "紧急出口的门型",
+    "issues": [
+     "'旋转门需另设紧急出口'仅依据图注'Revolving door with additional emergency exits'，图注只是示例，原文没有要求"
+    ],
+    "corrected_summary": "紧急出口处不允许使用推拉门和旋转门，因为危险情况下它们可能堵塞出口；旋转门通行能力较低，高峰时门扇可折叠推到一侧（图示有带附加紧急出口的旋转门示例）。"
+   }
+  ],
+  "file": "items/fzk_house.py",
+  "question_start": "The three widest doors are the 2.01 m \"Terrassentuer\", the 1.01 m \"Haustuer\" and the 0.885 m interior doors. Which of th"
+ },
+ {
+  "hid": "H-fzk_house-12",
+  "project": "fzk_house",
+  "points": [
+   {
+    "title": "护栏高度",
+    "issues": [
+     "适用对象原文限定为楼座、夹层、阳台和剧院楼座看台（galleries, mezzanines, balconies, circle seating），摘要泛化为任何高差 ≥ 1 m 处",
+     "工作场所 1.00 m 的条件是坠落高度 < 12 m；原文另有'楼梯井宽 ≥ 20 cm 时 > 12 m 也为 1.00 m'（图注文字有乱码，含义不完全清楚），摘要丢失条件"
+    ],
+    "corrected_summary": "楼座、夹层、阳台及剧院楼座看台须设护栏，高差 ≥ 1 m 起强制：坠落高度 < 12 m 时 h = 0.90 m；坠落高度 > 12 m 时 h = 1.10 m；工作场所坠落高度 < 12 m 时 h = 1.00 m（图注另称楼梯井宽 ≥ 20 cm 时 > 12 m 亦为 1.00 m）。"
+   }
+  ],
+  "file": "items/fzk_house.py",
+  "question_start": "The attic floor is open over part of the living room, and two 1.00 m high railings (\"Geländer_horizontal 13\") stand on t"
+ },
+ {
+  "hid": "H-samuel_macalister_sample_house-05",
+  "project": "samuel_macalister_sample_house",
+  "points": [
+   {
+    "title": "住宅门的常规宽度",
+    "issues": [
+     "'front doors up to 115 cm' 是'最多/可达 115 cm'，摘要写成'最宽约 115 cm'加了'约'",
+     "原文为住宅中单扇门的净开启宽度，可注明"
+    ],
+    "corrected_summary": "住宅中单扇门的净开启宽度：房门约 80 cm，浴室/WC 门约 70 cm，户门 ≥ 90 cm，入户大门最大 115 cm。"
+   }
+  ],
+  "file": "items/samuel_macalister_sample_house.py",
+  "question_start": "A wheelchair user arrives over the entrance bridge at Level 2. The average door width in the house is about 1.26 m. Can "
+ },
+ {
+  "hid": "H-samuel_macalister_sample_house-07",
+  "project": "samuel_macalister_sample_house",
+  "points": [
+   {
+    "title": "护栏高度",
+    "issues": [
+     "适用对象原文限定为楼座、夹层、阳台和剧院楼座看台（galleries, mezzanines, balconies, circle seating），摘要泛化为任何高差 ≥ 1 m 处",
+     "工作场所 1.00 m 的条件是坠落高度 < 12 m；原文另有'楼梯井宽 ≥ 20 cm 时 > 12 m 也为 1.00 m'（图注文字有乱码，含义不完全清楚），摘要丢失条件"
+    ],
+    "corrected_summary": "楼座、夹层、阳台及剧院楼座看台须设护栏，高差 ≥ 1 m 起强制：坠落高度 < 12 m 时 h = 0.90 m；坠落高度 > 12 m 时 h = 1.10 m；工作场所坠落高度 < 12 m 时 h = 1.00 m（图注另称楼梯井宽 ≥ 20 cm 时 > 12 m 亦为 1.00 m）。"
+   }
+  ],
+  "file": "items/samuel_macalister_sample_house.py",
+  "question_start": "Fifteen \"Single Window:Standard\" units of 1.50 × 2.70 m are the largest windows. Do the Level-2 bedrooms get enough wind"
+ },
+ {
+  "hid": "H-samuel_macalister_sample_house-09",
+  "project": "samuel_macalister_sample_house",
+  "points": [
+   {
+    "title": "洗衣间",
+    "issues": [
+     "Modality: source says the 1.20 m worktop 'should be provided'; summary '需' reads as a requirement — use '宜/应'.",
+     "Scope: these rules concern laundry/utility rooms in homes (washroom 'laundry/utility room'); fine but keep '洗衣/家务间'."
+    ],
+    "corrected_summary": "洗衣/家务间宜设 1.20 m 宽的工作台用于处理衣物；最好朝东北、紧邻厨房或便于从厨房到达；独立住宅中应直通花园（用于晾晒衣物）。"
+   }
+  ],
+  "file": "items/samuel_macalister_sample_house.py",
+  "question_start": "Laundry 104 holds a Miele washing machine and tumble dryer. Judge where the laundry sits and how it is reached against N"
+ },
+ {
+  "hid": "H-samuel_macalister_sample_house-11",
+  "project": "samuel_macalister_sample_house",
+  "points": [
+   {
+    "title": "阳台计入居住面积",
+    "issues": [
+     "Source says balconies etc. are 'normally calculated as 25–50%'; summary drops 'normally' (一般)."
+    ],
+    "corrected_summary": "阳台、凉廊和露台属于居住面积的一部分，一般按其面积的 25–50% 计入。"
+   }
+  ],
+  "file": "items/samuel_macalister_sample_house.py",
+  "question_start": "The living room opens through two glazed double doors onto a terrace at its own floor level. How much of this terrace wo"
+ },
+ {
+  "hid": "H-samuel_macalister_sample_house-12",
+  "project": "samuel_macalister_sample_house",
+  "points": [
+   {
+    "title": "阳台计入居住面积",
+    "issues": [
+     "Source says balconies etc. are 'normally calculated as 25–50%'; summary drops 'normally' (一般)."
+    ],
+    "corrected_summary": "阳台、凉廊和露台属于居住面积的一部分，一般按其面积的 25–50% 计入。"
+   }
+  ],
+  "file": "items/samuel_macalister_sample_house.py",
+  "question_start": "The Master Bedroom has its own balcony on the glazed gable. Neufert usually ties open-air areas to living and dining roo"
+ },
+ {
+  "hid": "H-samuel_macalister_sample_house-13",
+  "project": "samuel_macalister_sample_house",
+  "points": [
+   {
+    "title": "护栏高度",
+    "issues": [
+     "适用对象原文限定为楼座、夹层、阳台和剧院楼座看台（galleries, mezzanines, balconies, circle seating），摘要泛化为任何高差 ≥ 1 m 处",
+     "工作场所 1.00 m 的条件是坠落高度 < 12 m；原文另有'楼梯井宽 ≥ 20 cm 时 > 12 m 也为 1.00 m'（图注文字有乱码，含义不完全清楚），摘要丢失条件"
+    ],
+    "corrected_summary": "楼座、夹层、阳台及剧院楼座看台须设护栏，高差 ≥ 1 m 起强制：坠落高度 < 12 m 时 h = 0.90 m；坠落高度 > 12 m 时 h = 1.10 m；工作场所坠落高度 < 12 m 时 h = 1.00 m（图注另称楼梯井宽 ≥ 20 cm 时 > 12 m 亦为 1.00 m）。"
+   }
+  ],
+  "file": "items/samuel_macalister_sample_house.py",
+  "question_start": "All ten railings in the model are 1.10 m high. Taking the largest drop that any of them guards, what minimum guard heigh"
+ },
+ {
+  "hid": "H-samuel_macalister_sample_house-14",
+  "project": "samuel_macalister_sample_house",
+  "points": [
+   {
+    "title": "车位与通道尺寸",
+    "issues": [
+     "2.50 × 5.00 m = 12.50 m² 出自加油站章节'State regulations control: Parking space size'，摘要写成通用车位尺寸，丢失语境",
+     "'90° 停车通道宽 5.50 m' 来自图注示例（配 2.50 m 车位），应标为示例而非通用要求",
+     "车库条例 2.30 m 是针对多层停车库(Garage Regulations)的语境，可保留"
+    ],
+    "corrected_summary": "多层停车库：车库条例要求车位最小宽度 2.30 m，FGSV 因车辆变大建议所有公众可达车位最小宽度 2.50 m；图示示例：90° 停车、通道宽 5.50 m、车位宽 2.50 m；加油站相关州规定中车位尺寸为 2.50 × 5.00 m = 12.50 m²。"
+   }
+  ],
+  "file": "items/samuel_macalister_sample_house.py",
+  "question_start": "The model has no parking space or garage object, but it contains a car (an RPC Beetle). Where is the car meant to be par"
+ }
+]

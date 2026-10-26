@@ -1,0 +1,42 @@
+{
+  "gemini/mcq": {
+    "n": 135,
+    "accuracy": 0.844,
+    "labels": {
+      "correct": 114,
+      "incorrect": 21
+    },
+    "needs_review": 0,
+    "median_latency_s": 2.61
+  },
+  "jev/mcq": {
+    "n": 135,
+    "accuracy": 0.756,
+    "labels": {
+      "correct": 102,
+      "incorrect": 33
+    },
+    "needs_review": 0,
+    "median_latency_s": 0.28
+  },
+  "luna/mcq": {
+    "n": 135,
+    "accuracy": 0.83,
+    "labels": {
+      "correct": 112,
+      "incorrect": 23
+    },
+    "needs_review": 0,
+    "median_latency_s": 2.36
+  },
+  "sonnet/mcq": {
+    "n": 135,
+    "accuracy": 0.852,
+    "labels": {
+      "correct": 115,
+      "incorrect": 20
+    },
+    "needs_review": 0,
+    "median_latency_s": 3.17
+  }
+}

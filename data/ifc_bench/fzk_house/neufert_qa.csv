@@ -1,0 +1,120 @@
+id,question,ground_truth,ifc_model,project,category,split,neufert_tier,neufert_topic
+511,"What are all the rooms on the ground level, including their areas and ceiling heights?","Ground Level (Erdgeschoss): 6 spaces
+   Total Ground Floor Area: 98.8 sq m
+
+   Ground Level Room Layout:
+   - Room 5: Wohnen (25.2 sq m, 2.5m height)
+   - Room 4: Schlafzimmer (21.4 sq m, 2.5m height)
+   - Room 6: KÖºche (16.3 sq m, 2.5m height)
+   - Room 2: Buero (12.6 sq m, 2.5m height)
+   - Room 3: Bad (12.1 sq m, 2.5m height)
+   - Room 1: Flur (11.2 sq m, 2.5m height)",arc,fzk_house,1,train,tier2,T2_ceiling_heights
+512,"What are all the rooms in the attic level, including their areas and ceiling heights?","Attic Level (Dachgeschoss): 1 spaces
+   Total Attic Floor Area: 74.5 sq m
+
+   Attic Level Room Layout:
+   - Room 7: Galerie (74.5 sq m, 4.0m height)",arc,fzk_house,1,test,tier2,T2_ceiling_heights
+513,"What are the elevation, floor height, and floor-to-floor height for each level?","Building Level Heights:
+
+   Erdgeschoss:
+   - Elevation: 0.00 m
+   - Floor Height: 2.70 m
+   - Gross Floor Area: 119.8 sq m
+
+   Dachgeschoss:
+   - Elevation: 2.70 m
+   - Floor Height: 2.00 m
+   - Gross Floor Area: 121.7 sq m
+
+   Floor-to-Floor Heights:
+   - Erdgeschoss to Dachgeschoss: 2.70 m",arc,fzk_house,1,test,tier2,T2_storey_heights
+515,"What door types are present in the building, how many of each type, and what are their dimensions?","Total Doors: 5
+
+   Door Types and Quantities:
+   - IFC TÖºr - Eine Öñffnunsgrichtung: 3 doors
+   - EingangstÖºr: 1 doors
+   - SchiebetÖºr_3-teilig: 1 door
+
+   Individual Door Details:
+   - Terrassentuer: SchiebetÖºr_3-teilig (2010mm x 2375mm)
+   - Haustuer: EingangstÖºr (1010mm x 2010mm)
+   - Innentuer-1: IFC TÖºr - Eine Öñffnunsgrichtung (885mm x 2010mm)
+   - Innentuer-2: IFC TÖºr - Eine Öñffnunsgrichtung (885mm x 2010mm)
+   - Innentuer-3: IFC TÖºr - Eine Öñffnunsgrichtung (885mm x 2010mm)",arc,fzk_house,2,test,tier2,T2_door_widths
+516,Which three doors have the greatest widths in the building?,"Three Largest Door Widths:
+   1. 2010mm - Terrassentuer (SchiebetÖºr_3-teilig)
+   2. 1010mm - Haustuer (EingangstÖºr)
+   3. 885mm - Innentuer-1 (IFC TÖºr - Eine Öñffnunsgrichtung)",arc,fzk_house,2,train,tier2,T2_door_widths
+517,"What is the narrowest door width used in the building, and which doors have this width?","the Shortest Door Width is 885mm, which is used in:
+   1.  Innentuer-1 (IFC TÖºr - Eine Öñffnunsgrichtung)
+   2. Innentuer-2 (IFC TÖºr - Eine Öñffnunsgrichtung)
+   3. Innentuer-3 (IFC TÖºr - Eine Öñffnunsgrichtung)",arc,fzk_house,2,train,tier2,T2_door_widths
+519,"What is the maximum window width used in this building, and which windows have this width?","the Largest Window Width is 2000mm, which is used in:
+   1. EG-Fenster-1 (IFC Fenster - zwei Panele - Vertikal)
+   2. EG-Fenster-2 (IFC Fenster - zwei Panele - Vertikal)
+   3. EG-Fenster-3 (IFC Fenster - zwei Panele - Vertikal)
+   4. EG-Fenster-4 (IFC Fenster - zwei Panele - Vertikal)
+   5. EG-Fenster-5 (IFC Fenster - zwei Panele - Vertikal)
+   6. EG-Fenster-6 (IFC Fenster - zwei Panele - Vertikal)
+   7. EG-Fenster-7 (IFC Fenster - zwei Panele - Vertikal)
+   8. EG-Fenster-8 (IFC Fenster - zwei Panele - Vertikal)
+   9. EG-Fenster-9 (IFC Fenster - zwei Panele - Vertikal)",arc,fzk_house,2,test,tier2,T2_window_sizes
+520,"What is the minimum window width used in the building, and which windows have this width?","the Shortest Window Width is 1000mm, which is used in:
+   1. OG-Fenster-2 (Rundfenster 13)
+   2. OG-Fenster-1 (Rundfenster 13)",arc,fzk_house,2,test,tier2,T2_window_sizes
+536,How many toilets are located on the ground floor?,"Toilet/Bathroom spaces on ground floor: 1
+
+   Ground floor toilet/bathroom spaces:
+   - Room 3: Bad (12.1 sq m)",arc,fzk_house,2,test,tier2,T2_room_program
+540,"Which rooms have the highest ceiling heights, and what is that height value?","Highest Ceiling Height: 4.00 m
+
+   Rooms with highest ceiling height (4.00 m):
+   - Room 7: Galerie
+     Level: Dachgeschoss, Area: 74.5 sq m
+
+   All Rooms Ranked by Ceiling Height:
+   1. Room 7 (Galerie): 4.00 m (Dachgeschoss)
+   2. Room 4 (Schlafzimmer): 2.50 m (Erdgeschoss)
+   3. Room 3 (Bad): 2.50 m (Erdgeschoss)
+   4. Room 2 (Buero): 2.50 m (Erdgeschoss)
+   5. Room 5 (Wohnen): 2.50 m (Erdgeschoss)
+   6. Room 1 (Flur): 2.50 m (Erdgeschoss)
+   7. Room 6 (KÖºche): 2.50 m (Erdgeschoss)",arc,fzk_house,2,train,tier2,T2_ceiling_heights
+541,"How is the building's space allocated by function, with areas and percentages for each?","Building Space Utilization Analysis:
+   Total Building Area: 173.3 sq m
+   Total Functions: 7
+
+   Space Utilization by Function:
+
+   Galerie:
+   - Total Area: 74.5 sq m
+   - Number of Spaces: 1
+
+   Wohnen:
+   - Total Area: 25.2 sq m
+   - Number of Spaces: 1
+
+   Schlafzimmer:
+   - Total Area: 21.4 sq m
+   - Number of Spaces: 1
+
+   KÖºche:
+   - Total Area: 16.3 sq m
+   - Number of Spaces: 1
+
+   Buero:
+   - Total Area: 12.6 sq m
+   - Number of Spaces: 1
+
+   Bad:
+   - Total Area: 12.1 sq m
+   - Number of Spaces: 1
+
+   Flur:
+   - Total Area: 11.2 sq m
+   - Number of Spaces: 1
+
+   Functional Category Summary:
+   - Residential/Living: 137.4 sq m (79.3%)
+   - Service/Circulation: 23.3 sq m (13.4%)
+   - Work/Office: 12.6 sq m (7.3%)",arc,fzk_house,2,test,tier2,T2_space_use_by_function

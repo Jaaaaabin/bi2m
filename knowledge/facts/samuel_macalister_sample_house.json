@@ -1,0 +1,954 @@
+{
+ "project": "samuel_macalister_sample_house",
+ "schema": "IFC4",
+ "length_unit_scale": 0.001,
+ "storeys": [
+  [
+   "Foundation",
+   -0.8
+  ],
+  [
+   "Level 1 Living Rm.",
+   -0.55
+  ],
+  [
+   "Level 1",
+   0.0
+  ],
+  [
+   "Ceiling",
+   2.7
+  ],
+  [
+   "Level 2",
+   3.0
+  ],
+  [
+   "Roof Line",
+   6.0
+  ]
+ ],
+ "spaces": [
+  {
+   "gid": "3ch3OBgkrCEw4mDhJ2eObq",
+   "name": "206",
+   "longname": "Master Bedroom",
+   "storey": "Level 2",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    6.37,
+    8.34,
+    6.5
+   ]
+  },
+  {
+   "gid": "3ch3OBgkrCEw4mDhJ2eObv",
+   "name": "207",
+   "longname": "Master Bath",
+   "storey": "Level 2",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.77,
+    3.94,
+    6.5
+   ]
+  },
+  {
+   "gid": "3ch3OBgkrCEw4mDhJ2eOb_",
+   "name": "204",
+   "longname": "Bedroom",
+   "storey": "Level 2",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.36,
+    5.36,
+    6.5
+   ]
+  },
+  {
+   "gid": "3ch3OBgkrCEw4mDhJ2eObZ",
+   "name": "203",
+   "longname": "Bath",
+   "storey": "Level 2",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.91,
+    2.77,
+    6.5
+   ]
+  },
+  {
+   "gid": "3ch3OBgkrCEw4mDhJ2eObW",
+   "name": "205",
+   "longname": "Bath",
+   "storey": "Level 2",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.91,
+    2.77,
+    6.5
+   ]
+  },
+  {
+   "gid": "3ch3OBgkrCEw4mDhJ2eObb",
+   "name": "202",
+   "longname": "Bedroom",
+   "storey": "Level 2",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    5.28,
+    5.3,
+    6.5
+   ]
+  },
+  {
+   "gid": "3ch3OBgkrCEw4mDhJ2eObg",
+   "name": "201",
+   "longname": "Entry Hall",
+   "storey": "Level 2",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    13.24,
+    8.38,
+    6.5
+   ]
+  },
+  {
+   "gid": "3ch3OBgkrCEw4mDhJ2eOci",
+   "name": "101",
+   "longname": "Kitchen & Dining",
+   "storey": "Level 1",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    13.68,
+    12.0,
+    4.0
+   ]
+  },
+  {
+   "gid": "3ch3OBgkrCEw4mDhJ2eOdV",
+   "name": "104",
+   "longname": "Laundry",
+   "storey": "Level 1",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    3.17,
+    3.21,
+    4.0
+   ]
+  },
+  {
+   "gid": "3ch3OBgkrCEw4mDhJ2eOWH",
+   "name": "103",
+   "longname": "Bath",
+   "storey": "Level 1",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.3,
+    2.36,
+    4.0
+   ]
+  },
+  {
+   "gid": "3ch3OBgkrCEw4mDhJ2eOZQ",
+   "name": "105",
+   "longname": "Hall",
+   "storey": "Level 1",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    8.73,
+    6.95,
+    4.0
+   ]
+  },
+  {
+   "gid": "3ch3OBgkrCEw4mDhJ2eOZ3",
+   "name": "106",
+   "longname": "Living",
+   "storey": "Level 1",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    11.85,
+    12.97,
+    4.0
+   ]
+  },
+  {
+   "gid": "2pfAHb2EL46hq_sMVbImE4",
+   "name": "102",
+   "longname": "Mech.",
+   "storey": "Level 1",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.0,
+    2.13,
+    4.0
+   ]
+  },
+  {
+   "gid": "2wm6PO6TX9IxXwLP21HyQg",
+   "name": "208",
+   "longname": "Linen",
+   "storey": "Level 2",
+   "area": null,
+   "area_src": null,
+   "height": null,
+   "height_src": null,
+   "bbox_xyz": [
+    2.25,
+    1.9,
+    6.5
+   ]
+  }
+ ],
+ "doors": [
+  {
+   "gid": "1PDnLIM013wvkZO9Lb4$s7",
+   "name": "Single-Flush:800 x 2100:422466",
+   "type": "800 x 2100",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.8,
+   "height": 2.1,
+   "storey": "Level 1",
+   "spaces": [
+    "Bath",
+    "Hall"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1PDnLIM013wvkZO9Lb4$i6",
+   "name": "Entrance door:Entrance door:423107",
+   "type": "Entrance door",
+   "op": "NOTDEFINED",
+   "width": 1.44,
+   "height": 2.66,
+   "storey": "Level 1",
+   "spaces": [
+    "Entry Hall"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1$p8tACJ938vr1_lKOJJ9g",
+   "name": "Single-Flush:800 x 2100:425292",
+   "type": "800 x 2100",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.8,
+   "height": 2.1,
+   "storey": "Level 1",
+   "spaces": [
+    "Bath",
+    "Hall",
+    "Kitchen & Dining",
+    "Laundry",
+    "Living"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0ELdlxJuP1AwzgUXpRT7je",
+   "name": "Curtain Wall Dbl Glass:Curtain Wall Dbl Glass:485452",
+   "type": "Curtain Wall Dbl Glass",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.44,
+   "height": 2.082,
+   "storey": "Level 2",
+   "spaces": [
+    "Master Bedroom"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "0lntrd6l1AGwfcnKJK5qoH",
+   "name": "Single-Flush:800 x 2100:430997",
+   "type": "800 x 2100",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.8,
+   "height": 2.1,
+   "storey": "Level 2",
+   "spaces": [
+    "Bedroom",
+    "Entry Hall"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0lntrd6l1AGwfcnKJK5qpS",
+   "name": "Single-Flush:800 x 2100:431064",
+   "type": "800 x 2100",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.8,
+   "height": 2.1,
+   "storey": "Level 2",
+   "spaces": [
+    "Bedroom",
+    "Entry Hall",
+    "Master Bedroom"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0lntrd6l1AGwfcnKJK5qii",
+   "name": "Single-Flush:800 x 2100:431144",
+   "type": "800 x 2100",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.8,
+   "height": 2.1,
+   "storey": "Level 2",
+   "spaces": [
+    "Bath",
+    "Bedroom",
+    "Entry Hall"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0lntrd6l1AGwfcnKJK5qjQ",
+   "name": "Single-Flush:800 x 2100:431198",
+   "type": "800 x 2100",
+   "op": "SINGLE_SWING_LEFT",
+   "width": 0.8,
+   "height": 2.1,
+   "storey": "Level 2",
+   "spaces": [
+    "Bath",
+    "Bedroom",
+    "Entry Hall"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "0ELdlxJuP1AwzgUXpRT7eB",
+   "name": "Single-Flush:800 x 2100:485679",
+   "type": "800 x 2100",
+   "op": "SINGLE_SWING_RIGHT",
+   "width": 0.8,
+   "height": 2.1,
+   "storey": "Level 2",
+   "spaces": [
+    "Entry Hall",
+    "Master Bedroom"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2MWqvKy9535viQk_YsG9Xh",
+   "name": "Pocket_Slider_Door_5851:2.027 x 0.945:505974",
+   "type": "2.027 x 0.945",
+   "op": "DOUBLE_SWING_RIGHT",
+   "width": 1.89,
+   "height": 2.027,
+   "storey": "Level 2",
+   "spaces": [
+    "Master Bath",
+    "Master Bedroom"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "1LMg1ZkATBJwu7hODVWkYl",
+   "name": "Curtain Wall Dbl Glass:Curtain Wall Dbl Glass:704276",
+   "type": "Curtain Wall Dbl Glass",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.44,
+   "height": 2.082,
+   "storey": "Level 1 Living Rm.",
+   "spaces": [
+    "Living"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "1LMg1ZkATBJwu7hODVWkYb",
+   "name": "Curtain Wall Dbl Glass:Curtain Wall Dbl Glass:704286",
+   "type": "Curtain Wall Dbl Glass",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.44,
+   "height": 2.082,
+   "storey": "Level 1 Living Rm.",
+   "spaces": [
+    "Living"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3Yxgiuz3TDpeHhosGP5aso",
+   "name": "Entrance door:Entrance door:709246",
+   "type": "Entrance door",
+   "op": "NOTDEFINED",
+   "width": 1.44,
+   "height": 2.66,
+   "storey": "Level 2",
+   "spaces": [
+    "Entry Hall"
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "3N2_0KfIjDgvNp985qzS00",
+   "name": "M_Double-Flush:1730 x 2134mm:906937",
+   "type": "1730 x 2134mm",
+   "op": "DOUBLE_DOOR_SINGLE_SWING",
+   "width": 1.73,
+   "height": 2.134,
+   "storey": "Level 1",
+   "spaces": [
+    "Hall",
+    "Kitchen & Dining",
+    "Mech."
+   ],
+   "fire": null,
+   "external": true
+  },
+  {
+   "gid": "2wm6PO6TX9IxXwLP21HyWr",
+   "name": "Pocket_Slider_Door_5851:2.027 x 0.945:939962",
+   "type": "2.027 x 0.945",
+   "op": "DOUBLE_SWING_LEFT",
+   "width": 1.89,
+   "height": 2.027,
+   "storey": "Level 2",
+   "spaces": [
+    "Entry Hall",
+    "Linen"
+   ],
+   "fire": null,
+   "external": false
+  },
+  {
+   "gid": "2wm6PO6TX9IxXwLP21HySo",
+   "name": "Pocket_Slider_Door_5851:2.027 x 0.945:940221",
+   "type": "2.027 x 0.945",
+   "op": "DOUBLE_SWING_RIGHT",
+   "width": 1.89,
+   "height": 2.027,
+   "storey": "Level 2",
+   "spaces": [
+    "Bath",
+    "Entry Hall",
+    "Linen"
+   ],
+   "fire": null,
+   "external": false
+  }
+ ],
+ "windows": [
+  {
+   "gid": "1ikhyTwD17yAnDcdaZ57Om",
+   "name": "Single Window:Standard:457479",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 2",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Master Bedroom"
+   ]
+  },
+  {
+   "gid": "1ikhyTwD17yAnDcdaZ57O9",
+   "name": "Single Window:Standard:457534",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 2",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Bedroom"
+   ]
+  },
+  {
+   "gid": "1ikhyTwD17yAnDcdaZ57Pn",
+   "name": "Single Window:Standard:457542",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 2",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Bedroom",
+    "Entry Hall"
+   ]
+  },
+  {
+   "gid": "0ELdlxJuP1AwzgUXpRT7iS",
+   "name": "Single Window:Standard:485432",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 2",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Master Bedroom"
+   ]
+  },
+  {
+   "gid": "12QTT5rufCoeOFfLiN060S",
+   "name": "M_Skylight:1180 x 1170mm:488881",
+   "type": "1180 x 1170mm",
+   "width": 1.173,
+   "height": 0.38,
+   "storey": "Roof Line",
+   "sill_approx": -0.204,
+   "spaces": [
+    "Bath",
+    "Bedroom",
+    "Entry Hall",
+    "Linen"
+   ]
+  },
+  {
+   "gid": "12QTT5rufCoeOFfLiN06FB",
+   "name": "M_Skylight:1180 x 1170mm:489062",
+   "type": "1180 x 1170mm",
+   "width": 1.173,
+   "height": 0.38,
+   "storey": "Roof Line",
+   "sill_approx": -1.881,
+   "spaces": [
+    "Bath",
+    "Bedroom",
+    "Entry Hall"
+   ]
+  },
+  {
+   "gid": "1jq3WIaE92UPTHNxmrWmzx",
+   "name": "Single Window:Standard:498006",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 2",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Entry Hall"
+   ]
+  },
+  {
+   "gid": "0c0us5oRfBJgddHOG86fE2",
+   "name": "Single Window:Standard:554383",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 2",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Entry Hall"
+   ]
+  },
+  {
+   "gid": "2Lyq8QMkH4ges0Q77HE131",
+   "name": "Single Window:Standard:706288",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 2",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Master Bath"
+   ]
+  },
+  {
+   "gid": "20nhVaBTTAJguMI9o6oD2l",
+   "name": "Single Window:Standard:735853",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 1 Living Rm.",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Living"
+   ]
+  },
+  {
+   "gid": "20nhVaBTTAJguMI9o6oD5Q",
+   "name": "Single Window:Standard:736152",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 1 Living Rm.",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Living"
+   ]
+  },
+  {
+   "gid": "20nhVaBTTAJguMI9o6oD4T",
+   "name": "Single Window:Standard:736223",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 1 Living Rm.",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Living"
+   ]
+  },
+  {
+   "gid": "20nhVaBTTAJguMI9o6oDQ8",
+   "name": "Single Window:Standard:736330",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 1 Living Rm.",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Living"
+   ]
+  },
+  {
+   "gid": "20nhVaBTTAJguMI9o6oBQ8",
+   "name": "Single Window:Standard:744522",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 1 Living Rm.",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Living"
+   ]
+  },
+  {
+   "gid": "20nhVaBTTAJguMI9o6oBQ9",
+   "name": "Single Window:Standard:744523",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 1 Living Rm.",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Living"
+   ]
+  },
+  {
+   "gid": "20nhVaBTTAJguMI9o6oBQE",
+   "name": "Single Window:Standard:744524",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 1 Living Rm.",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Living"
+   ]
+  },
+  {
+   "gid": "20nhVaBTTAJguMI9o6oBQF",
+   "name": "Single Window:Standard:744525",
+   "type": "Standard",
+   "width": 1.5,
+   "height": 2.7,
+   "storey": "Level 1 Living Rm.",
+   "sill_approx": 0.0,
+   "spaces": [
+    "Living"
+   ]
+  }
+ ],
+ "stairs": [
+  {
+   "gid": "07dHKEjXj6kwcHAxpyAkMS",
+   "cls": "IfcStair",
+   "name": "Precast Stair:Stair:513254",
+   "predefined": "NOTDEFINED",
+   "storey": "Level 1 Living Rm.",
+   "n_riser": 3.0,
+   "riser": 180.556,
+   "tread": 300.0,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 3.0,
+    "Pset_StairCommon.NumberOfTreads": 3.0,
+    "Pset_StairCommon.RiserHeight": 180.556,
+    "Pset_StairCommon.TreadLength": 300.0
+   }
+  },
+  {
+   "gid": "2ZlFFrvcbDavSm_g3LjLIe",
+   "cls": "IfcStair",
+   "name": "Assembled Stair:Stair:665557",
+   "predefined": "NOTDEFINED",
+   "storey": "Level 1",
+   "n_riser": 16.0,
+   "riser": 187.5,
+   "tread": 250.0,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 16.0,
+    "Pset_StairCommon.NumberOfTreads": 16.0,
+    "Pset_StairCommon.RiserHeight": 187.5,
+    "Pset_StairCommon.TreadLength": 250.0
+   }
+  },
+  {
+   "gid": "1N_4TwOEH5194SbNmRTDNX",
+   "cls": "IfcStair",
+   "name": "Precast Stair:Stair:725045",
+   "predefined": "NOTDEFINED",
+   "storey": "Ceiling",
+   "n_riser": 3.0,
+   "riser": 166.667,
+   "tread": 300.0,
+   "props": {
+    "Pset_StairCommon.NumberOfRiser": 3.0,
+    "Pset_StairCommon.NumberOfTreads": 3.0,
+    "Pset_StairCommon.RiserHeight": 166.667,
+    "Pset_StairCommon.TreadLength": 300.0
+   }
+  },
+  {
+   "gid": "07dHKEjXj6kwcHAxpyAkHd",
+   "cls": "IfcStairFlight",
+   "name": "Precast Stair:Stair:513254 Run 1",
+   "predefined": "NOTDEFINED",
+   "storey": "Level 1 Living Rm.",
+   "n_riser": 3.0,
+   "riser": 180.556,
+   "tread": 300.0,
+   "props": {
+    "Pset_StairFlightCommon.NumberOfRiser": 3.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 3.0,
+    "Pset_StairFlightCommon.RiserHeight": 180.556,
+    "Pset_StairFlightCommon.TreadLength": 300.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 300.0
+   }
+  },
+  {
+   "gid": "2ZlFFrvcbDavSm_g3LjLIb",
+   "cls": "IfcStairFlight",
+   "name": "Assembled Stair:Stair:665557 Run 1",
+   "predefined": "NOTDEFINED",
+   "storey": "Level 1",
+   "n_riser": 16.0,
+   "riser": 187.5,
+   "tread": 250.0,
+   "props": {
+    "Pset_StairFlightCommon.NumberOfRiser": 16.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 16.0,
+    "Pset_StairFlightCommon.RiserHeight": 187.5,
+    "Pset_StairFlightCommon.TreadLength": 250.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 250.0
+   }
+  },
+  {
+   "gid": "1N_4TwOEH5194SbNmRTDNY",
+   "cls": "IfcStairFlight",
+   "name": "Precast Stair:Stair:725045 Run 1",
+   "predefined": "NOTDEFINED",
+   "storey": "Ceiling",
+   "n_riser": 3.0,
+   "riser": 166.667,
+   "tread": 300.0,
+   "props": {
+    "Pset_StairFlightCommon.NumberOfRiser": 3.0,
+    "Pset_StairFlightCommon.NumberOfTreads": 3.0,
+    "Pset_StairFlightCommon.RiserHeight": 166.667,
+    "Pset_StairFlightCommon.TreadLength": 300.0,
+    "Pset_StairFlightCommon.TreadLengthAtOffset": 300.0
+   }
+  }
+ ],
+ "railings": [
+  {
+   "name": "Railing:SH_1100mm:566588",
+   "type": null,
+   "storey": "Level 1 Living Rm.",
+   "height": 1.1
+  },
+  {
+   "name": "Railing:SH_1100mm:567887",
+   "type": null,
+   "storey": "Level 2",
+   "height": 1.1
+  },
+  {
+   "name": "Railing:SH_1100mm:665711",
+   "type": null,
+   "storey": "Level 1",
+   "height": 1.1
+  },
+  {
+   "name": "Railing:SH_1100mm:931377",
+   "type": null,
+   "storey": "Level 2",
+   "height": 1.1
+  },
+  {
+   "name": "Railing:SH_1100mm:931569",
+   "type": null,
+   "storey": "Level 2",
+   "height": 1.1
+  },
+  {
+   "name": "Railing:SH_1100mm:931630",
+   "type": null,
+   "storey": "Level 2",
+   "height": 1.1
+  },
+  {
+   "name": "Railing:SH_1100mm:932401",
+   "type": null,
+   "storey": "Ceiling",
+   "height": 1.1
+  },
+  {
+   "name": "Railing:SH_1100mm:932862",
+   "type": null,
+   "storey": "Level 2",
+   "height": 1.1
+  },
+  {
+   "name": "Railing:SH_1100mm:933811",
+   "type": null,
+   "storey": "Ceiling",
+   "height": 1.1
+  },
+  {
+   "name": "Railing:SH_1100mm:933840",
+   "type": null,
+   "storey": "Ceiling",
+   "height": 1.1
+  }
+ ],
+ "furniture": [
+  {
+   "where": "Bedroom, Master Bedroom",
+   "item": "wardrobe",
+   "n": 1
+  },
+  {
+   "where": "Hall, Kitchen & Dining",
+   "item": "Bar Chair",
+   "n": 1
+  },
+  {
+   "where": "Kitchen & Dining",
+   "item": "1800 x 900 mm",
+   "n": 2
+  },
+  {
+   "where": "Kitchen & Dining",
+   "item": "4500_Kitchen Island",
+   "n": 1
+  },
+  {
+   "where": "Kitchen & Dining",
+   "item": "4500_Kitchen Island_DW",
+   "n": 1
+  },
+  {
+   "where": "Kitchen & Dining",
+   "item": "Bar Chair",
+   "n": 5
+  },
+  {
+   "where": "Kitchen & Dining",
+   "item": "Dining Chair (3)",
+   "n": 8
+  },
+  {
+   "where": "Kitchen & Dining",
+   "item": "hood enclosure",
+   "n": 1
+  },
+  {
+   "where": "Laundry, Living",
+   "item": "0810mm",
+   "n": 1
+  },
+  {
+   "where": "Laundry, Living",
+   "item": "W1500XD400XH530",
+   "n": 1
+  },
+  {
+   "where": "Living",
+   "item": "Model with Island",
+   "n": 1
+  },
+  {
+   "where": "Living",
+   "item": "Seating - Artemis - Lounge chair",
+   "n": 2
+  },
+  {
+   "where": "Living",
+   "item": "Side Table 2 (2)",
+   "n": 2
+  },
+  {
+   "where": "Living",
+   "item": "W600XD600",
+   "n": 5
+  },
+  {
+   "where": "Living",
+   "item": "W600XD600 2",
+   "n": 2
+  },
+  {
+   "where": "Master Bedroom",
+   "item": "wardrobe",
+   "n": 1
+  }
+ ],
+ "other_counts": {
+  "IfcCurtainWall": 9,
+  "IfcColumn": 3,
+  "IfcBeam": 0,
+  "IfcSlab": 12,
+  "IfcRoof": 2,
+  "IfcTransportElement": 0,
+  "IfcRelSpaceBoundary": 0
+ }
+}

@@ -19,6 +19,9 @@ import { anglesFromOffset } from "./views/direction.js";
 import { boxOfTileAssets } from "./tileBounds.js";
 import { getModelContext } from "./viewerModel.js";
 
+// How far the wheel may dolly out, as a multiple of the whole-model fit distance (fitCameraToWholeModel).
+export const MAX_DISTANCE_FACTOR = 3;
+
 // Shared bounding-box helper - OBC.BoundingBoxer is stateful/reusable across
 // calls, so it's reset both before AND after use here, otherwise a later
 // unrelated bbox calculation elsewhere would silently include this one.
@@ -320,7 +323,9 @@ export async function fitCameraToWholeModel(world, box, offsetDirection = DEFAUL
   // actually honoring the requested viewing angle.
   await controls.fitToSphere(box.getBoundingSphere(new THREE.Sphere()), false);
 
-  controls.maxDistance = controls.distance * 1.15;
+  // 3x, not 1.15x (zihan_dev1, 2026-10-26): at 1.15 the wheel hit the outer clamp after a notch or two,
+  // which read as the zoom being stuck; 3x still keeps the building on screen.
+  controls.maxDistance = controls.distance * MAX_DISTANCE_FACTOR;
   controls.minDistance = Math.max(0.5, diagonal / 30);
 }
 

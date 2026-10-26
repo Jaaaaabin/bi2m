@@ -533,6 +533,54 @@ async function setupViewer(config) {
   world.camera.threePersp.fov = DEFAULT_FOV;
   world.camera.threePersp.updateProjectionMatrix();
 
+  // Zoom feel (zihan_dev1, 2026-10-26). camera-controls' defaults dolly toward the orbit target at the screen centre
+  // and stop dead at minDistance, so zooming in on anything off-centre meant pan, zoom, pan again. Now:
+  //  - At the start of each wheel gesture the ray under the cursor is cast into the model (That Open's raycaster,
+  //    the one click-to-inspect uses). On a hit, the orbit point moves to that surface point (setOrbitPoint keeps
+  //    the camera still, so nothing jumps): the wheel then closes in on what is under the cursor, slows down as it
+  //    approaches, stops ZOOM_SURFACE_STOP in front of it, and orbiting afterwards pivots on it.
+  //  - Over empty space there is nothing to aim at: the wheel zooms toward the cursor on the current orbit plane
+  //    (dollyToCursor) and, on wheel-in only, keeps going past minDistance (infinityDolly) instead of stopping.
+  //    infinityDolly stays off on wheel-out, where it would push the orbit point away from the building once
+  //    maxDistance (cameraViews.js MAX_DISTANCE_FACTOR) is reached.
+  // A gesture starts after ZOOM_GESTURE_GAP_MS without wheel input, so the orbit point is re-picked once per
+  // gesture, never in the middle of the damped motion (setOrbitPoint must not run during an animation).
+  // The capture listener on canvasArea runs before camera-controls' own wheel handler on the canvas inside it.
+  world.camera.controls.dollyToCursor = true;
+  {
+    const ZOOM_GESTURE_GAP_MS = 300;
+    const ZOOM_SURFACE_STOP = 0.4; // metres in front of the surface where the wheel stops
+    const caster = components.get(OBC.Raycasters).get(world);
+    const ndc = new THREE.Vector2();
+    let lastWheelAt = -Infinity;
+    let anchored = false;
+    canvasArea.addEventListener(
+      "wheel",
+      (event) => {
+        const controls = world.camera.controls;
+        const now = performance.now();
+        if (now - lastWheelAt > ZOOM_GESTURE_GAP_MS) {
+          const rect = world.renderer.three.domElement.getBoundingClientRect();
+          ndc.set(((event.clientX - rect.left) / rect.width) * 2 - 1, -((event.clientY - rect.top) / rect.height) * 2 + 1);
+          let hit;
+          try {
+            hit = caster.castRay(undefined, ndc);
+          } catch {
+            hit = null; // nothing loaded yet, or a mesh the raycaster cannot read: fall back to cursor-plane zoom
+          }
+          anchored = Boolean(hit?.point);
+          if (anchored) {
+            controls.setOrbitPoint(hit.point.x, hit.point.y, hit.point.z);
+            controls.minDistance = Math.min(controls.minDistance, ZOOM_SURFACE_STOP);
+          }
+        }
+        lastWheelAt = now;
+        controls.infinityDolly = !anchored && event.deltaY < 0;
+      },
+      { capture: true, passive: true },
+    );
+  }
+
   world.camera.controls.setLookAt(...config.lookAt);
   world.scene.setup();
   // Matches the page's current background instead of SimpleScene's own

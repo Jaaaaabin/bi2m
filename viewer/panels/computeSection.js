@@ -203,10 +203,11 @@ export function createComputeSection({ fileKey, file, intents, onRecomputed }) {
 
     updateCommand();
 
-    // ---- Streaming status. The dev server tiles
-    // every upload in the background; this line says whether THIS model
-    // already streams on its next open, and offers to upload + tile it if
-    // not. Dev only - the route is a vite middleware; a 404 hides the line. ----
+    // ---- Streaming status. The server tiles an upload only when asked
+    // (this line's button) or, with BI2M_AUTO_TILE=1, for a large model
+    // (server/api.mjs); this line says whether THIS model already streams on
+    // its next open, and offers to upload + tile it if not. A 404 (a static
+    // host, no server) hides the line. ----
     const streamEl = flyout.querySelector(".intent-compute-stream");
     const streamText = flyout.querySelector(".intent-compute-stream-text");
     const prepareBtn = flyout.querySelector(".intent-compute-prepare-btn");
@@ -242,7 +243,7 @@ export function createComputeSection({ fileKey, file, intents, onRecomputed }) {
       streamText.textContent = "Streaming: uploading file to server…";
       try {
         const fileBytes = await file.arrayBuffer();
-        const res = await fetch(`/api/upload-ifc?fileKey=${encodeURIComponent(fileKey)}`, {
+        const res = await fetch(`/api/upload-ifc?fileKey=${encodeURIComponent(fileKey)}&tile=1`, {
           method: "POST",
           headers: { "Content-Type": "application/octet-stream" },
           body: fileBytes,

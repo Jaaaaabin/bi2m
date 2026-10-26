@@ -1,9 +1,7 @@
 // ======== Inspector Panel Bootstrap (lazy-loads React) ========
 // InspectorPanel.jsx (React + ReactDOM + the panel itself) previously loaded
 // eagerly via a static <script> tag in index.html, even though it renders
-// nothing until the user actually clicks an element - the same "load it even
-// if unused" issue already fixed for the 3D preview engine's own dynamic
-// import (see InspectorPanel.jsx's own comment on ThatOpenPreviewEngine).
+// nothing until the user actually clicks an element.
 //
 // This tiny, dependency-free stub is what loads eagerly instead: it listens
 // for the FIRST "element-selected" CustomEvent (dispatched by

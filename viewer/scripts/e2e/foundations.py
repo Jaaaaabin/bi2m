@@ -140,7 +140,7 @@ with sync_playwright() as p:
           or pg.evaluate(f"() => getComputedStyle(document.querySelector('{V}')).minWidth") in ("280px", "520px", "740px"),
           pg.evaluate(f"() => getComputedStyle(document.querySelector('{V}')).minWidth + ' x ' + getComputedStyle(document.querySelector('{V}')).minHeight"))
 
-    # ---- 1.7 inspector placement: select an element, no overlap with the camera panel or the tile's top buttons ----
+    # ---- 1.7 inspector placement: select an element; it opens in that tile's slot, clear of the camera panel and the tile's top buttons ----
     c = pg.locator(f"{V} .viewer-canvas-area canvas").first; bb = c.bounding_box()
     hit = False
     for dx, dy in [(0, 0), (40, 0), (-40, 0), (0, 40), (0, -40), (80, 40), (-80, -40), (120, 0)]:
@@ -157,7 +157,16 @@ with sync_playwright() as p:
         btns = [pg.locator(f"{V} .{c}").bounding_box() for c in ["viewer-close-btn", "viewer-unload-btn", "viewer-settings-btn"]]
         check("inspector does not overlap the tile's top buttons", all(overlap(ib, x) == 0 for x in btns))
         check("inspector fully on screen", ib["x"] >= 0 and ib["y"] >= 0 and ib["x"] + ib["width"] <= 1600 and ib["y"] + ib["height"] <= 900)
+        # Since 2026-10-26 the panel sits in a fixed slot of the clicked tile, not at a window position.
+        ca = pg.locator(f"{V} .viewer-canvas-area").bounding_box()
+        check("inspector sits in the clicked tile's slot",
+              pg.locator(f"{V} .viewer-inspector-slot .inspector-panel").count() == 1
+              and ib["x"] >= ca["x"] and ib["y"] >= ca["y"] and ib["x"] + ib["width"] <= ca["x"] + ca["width"] and ib["y"] + ib["height"] <= ca["y"] + ca["height"])
+        check("inspector names the geometry type", "Geometry: (none)" not in pg.locator(".inspector-meta").inner_text(),
+              pg.locator(".inspector-repr").inner_text())
         pg.click(".inspector-close")
+        pg.wait_for_timeout(300)
+        check("closing the inspector removes it", pg.locator(".inspector-panel").count() == 0)
     else:
         check("inspector opened for an element click", False, "no element hit")
 

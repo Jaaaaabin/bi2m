@@ -57,7 +57,7 @@ function apiPlugin() {
 
 // React is used for a small, additive UI island (the element inspector panel) -
 // the rest of the app stays vanilla JS / @thatopen/ui web components. See
-// InspectorPanel.jsx for the interop intent (CustomEvent bridge from the
+// inspector/InspectorPanel.jsx for the interop intent (CustomEvent bridge from the
 // existing imperative code, no dependency the other way).
 export default defineConfig({
   // The dev server must NOT watch the tile sets. `public/tiles/` is a
@@ -95,7 +95,7 @@ export default defineConfig({
   build: {
     reportCompressedSize: true,
     // Vendor deps split into their own chunks, separate from app code
-    // (ThatOpenCompanyLoader.js, InspectorPanel.jsx). Doesn't reduce
+    // (ThatOpenCompanyLoader.js, inspector/InspectorPanel.jsx). Doesn't reduce
     // first-load bytes, but vendor code changes far less often than app
     // code - without this, every deploy invalidated the entire ~5.4MB
     // bundle for returning users even when only app code changed.

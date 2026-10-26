@@ -103,11 +103,12 @@ git; every other shard is local output.
 
 Plain JavaScript on Vite, three.js and the That Open Components libraries
 (web-ifc, fragments), with one small React component for the inspector. There is
-no custom IFC parsing in the viewer.
+no custom IFC parsing in the viewer apart from one narrow scan for the
+inspector's geometry type (`inspector/geometryLabels.js`).
 
 - **`ThatOpenCompanyLoader.js`** orchestrates: viewer tiles, file intake, the
   load sequence, closing and unloading. `viewerRegistry.js` tracks the open
-  viewers; `viewerModel.js` holds per-model context (key, STEP index, GUID index,
+  viewers; `viewerModel.js` holds per-model context (key, geometry labels, GUID index,
   intents).
 - **Two load paths.** Default: parse the IFC in the browser (web-ifc), classify,
   index the spatial structure, apply highlights. If a tile set exists for
@@ -126,11 +127,14 @@ no custom IFC parsing in the viewer.
   batch driver `scripts/autocamera.py` renders one image per intent per view.
 - **Lines** (`views/lines.js` and friends): authored or recognised grid and
   alignment lines drawn in the scene; a line can be hovered and picked.
-- **Inspector**: `InspectorPanel.jsx` is a React island, loaded on the first
-  element click and coupled to the rest only through an `element-selected`
-  event. "Preview in 3D" uses `engine/`, a small separate engine that extracts
-  one element's reference closure from the raw STEP bytes and renders it with
-  web-ifc directly (ported from vscode-ifc, MIT; see `engine/README.md`).
+- **Inspector** (`inspector/`): click an element and its GUID, class, name,
+  geometry type and attributes open in a panel at a fixed place in that tile
+  (top-right of its 3D view, above the camera panel). `describeElement.js`
+  gathers what the panel shows, from ThatOpen's properties plus the geometry
+  type, which `geometryLabels.js` reads from the file text once per load (in a
+  Worker; ThatOpen keeps no geometry entities). `InspectorPanel.jsx` is a React
+  island, loaded on the first click and coupled to the loader only through
+  `element-selected` / `element-deselected` events that name the tile.
 - **Verdicts** (`verdicts.js`): accept and reject are kept in the browser's
   `localStorage`, keyed by content key and intent id. This is the known gap
   ([roadmap.md](roadmap.md)).
@@ -148,7 +152,7 @@ otherwise.
 
 | Route | What |
 |---|---|
-| `POST /api/upload-ifc` | stores the body under `data/uploads/<key>/`, with the key computed from the bytes that arrived; starts a background tile build. Refuses bodies over `BI2M_MAX_UPLOAD_MB` (default 500) with 413 |
+| `POST /api/upload-ifc` | stores the body under `data/uploads/<key>/`, with the key computed from the bytes that arrived. Builds a tile set in the background only when asked (`&tile=1`, the Compute panel's streaming button) or, with `BI2M_AUTO_TILE=1`, for a model of at least `BI2M_AUTO_TILE_MIN_MB` (default 100). Refuses bodies over `BI2M_MAX_UPLOAD_MB` (default 500) with 413 |
 | `POST /api/recognize-intents` | spawns `scripts/recognize_intents.py` for a file key and a category list (with `BI2M_PYTHON`, or `uv run python` otherwise) and returns its outcome |
 | `GET /api/tile-status?fileKey=` | `ready`, `building`, `failed` or `none` |
 | `GET /api/example-models[?fileKey=]` | lists, or streams, the `example_*.ifc` and `test_*.ifc` files in `data/`; nothing else in `data/` can be reached through it |

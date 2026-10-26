@@ -22,6 +22,7 @@ import {
   clearIntentHighlights,
   clearReferForViewer,
   visualizeIntentGroups,
+  withGeometryMembers,
 } from "../highlighting.js";
 import { enqueueViewerWork, findViewerByWorld, setCameraScope } from "../viewerRegistry.js";
 import { getModelContext } from "../viewerModel.js";
@@ -595,7 +596,10 @@ export function createIntentPanel({
           // referring:
           // referByGuids splits these very items out of their origin
           // fragments, and BoundingBoxer measures through those origins.
-          const scopeGuids = intent.members.map((member) => member.guid);
+          // Through the members' parts where a member has no geometry of its
+          // own (a stair is drawn by its flights; highlighting.js).
+          const [viewIntent] = await withGeometryMembers(components, model, [intent]);
+          const scopeGuids = viewIntent.members.map((member) => member.guid);
           // On a STREAMED model the members' tiles arrive after the camera
           // moves (below); the loader re-applies this Refer to each batch
           // that carries one of them (ThatOpenCompanyLoader.js, Step 6.9).

@@ -2039,7 +2039,7 @@ h1 {
    in the top-LEFT corner of the canvas, the filters toggle alone in the
    top-RIGHT corner of the TILE, and the Reset-camera home button is gone
    (the camera panel's Top View Max is the same fit). The row is still 30px
-   buttons at top:10px, which is what --inspector-top and
+   buttons at top:10px, which is what .viewer-inspector-slot's top and
    .viewer-camera-panel's max-height are measured against. */
 .viewer-settings-btn,
 .viewer-unload-btn,
@@ -2569,31 +2569,40 @@ h1 {
   z-index: 5;
 }
 
-/* ======== Element Inspector (React island, see InspectorPanel.jsx) ======== */
-/* Top-right, not bottom-right: that corner already holds the camera toggle,
-   the resize grip and the floating camera panel, which this panel used to
-   cover completely (252 x 168 px, measured 2026-09-20).
-   --inspector-top clears the page strip and the tile's own top button
-   row (30px buttons at top:10px - since 2026-09-23 only the filters toggle
-   is on the right, close and Unload sit top-left, Reset camera is gone; the
-   row's geometry is unchanged) in the single-viewer layout. */
-:root {
-  --inspector-top: 124px;
+/* ======== Element Inspector (React island, see inspector/InspectorPanel.jsx) ======== */
+/* A fixed place in each tile, not in the browser window: the panel renders
+   into the clicked tile's slot, top-right of its 3D viewport. The slot
+   starts below the tile's top button row (30px buttons at top:10px) and,
+   while the camera panel is open, ends above it (--camera-panel-height is
+   kept current by the loader); the panel takes its content's height and its
+   body scrolls when the slot is shorter. Until 2026-10-26 one panel sat at a
+   fixed window position tuned for the single-tile layout, poking out of the
+   tile and always over the rightmost tile. */
+#inspector-root {
+  display: none; /* React's mount point only; the panel renders into a tile slot */
 }
 
-#inspector-root {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 2000;
+.viewer-inspector-slot {
+  position: absolute;
+  top: 52px;
+  right: 10px;
+  bottom: 16px;
+  width: min(320px, calc(100% - 20px));
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
   pointer-events: none; /* re-enabled on the panel itself so empty space stays click-through */
+}
+
+.viewer-container.camera-open .viewer-inspector-slot {
+  bottom: calc(16px + var(--camera-panel-height, 150px) + 10px);
 }
 
 .inspector-panel {
   pointer-events: auto;
-  width: 320px;
-  max-height: calc(100vh - var(--inspector-top) - 16px);
-  margin: var(--inspector-top) 16px 16px;
+  width: 100%;
+  max-height: 100%;
+  min-height: 0;
   background: var(--color-surface);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
@@ -2601,7 +2610,9 @@ h1 {
   font-family: var(--font-family);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  /* The body scrolls on its own; in a very short slot (a small tile) the
+     whole panel scrolls, so the header and meta rows stay reachable. */
+  overflow-y: auto;
 }
 
 .inspector-header {
@@ -2646,14 +2657,6 @@ h1 {
   margin-bottom: 2px;
 }
 
-.inspector-guid {
-  font-size: 11px;
-  font-family: monospace;
-  color: var(--color-text-muted);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 
 .inspector-class {
   font-size: 11px;
@@ -2673,62 +2676,9 @@ h1 {
   color: var(--color-text-muted);
 }
 
-.inspector-preview {
-  padding: 8px 14px;
-  border-bottom: 1px solid var(--color-border);
-}
-
-.inspector-preview-toggle {
-  width: 100%;
-  padding: 6px 10px;
-  font-size: 12px;
-  font-family: inherit;
-  color: var(--color-text);
-  background: var(--color-btn-bg);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-}
-
-.inspector-preview-toggle:hover {
-  background: var(--color-surface-alt);
-}
-
-.inspector-preview-viewport {
-  position: relative;
-  margin-top: 8px;
-  height: 180px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  background: var(--color-surface-alt);
-}
-
-.inspector-preview-viewport canvas {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.inspector-preview-status {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  color: var(--color-text-muted);
-  pointer-events: none;
-}
-
-.inspector-preview-error {
-  color: var(--color-danger);
-  text-align: center;
-  padding: 0 12px;
-}
-
 .inspector-body {
   overflow-y: auto;
+  min-height: 0;
   padding: 6px 14px 12px;
 }
 

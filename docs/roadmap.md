@@ -31,8 +31,11 @@ Three decisions shape everything else:
   cross-references between categories that find the same fact.
 - A viewer with multi-model tiles, filtering by storey and category, refer and
   gray-out by GUID, saved views and BCF export, line overlays, snapshots with
-  metadata, and an inspector with a 3D element preview.
-- Streaming of pre-converted tile sets, built automatically for uploads.
+  metadata, and an element inspector.
+- Streaming of pre-converted tile sets, on request or automatically for large uploads
+  (`BI2M_AUTO_TILE`, off by default). A streamed model loads all of its geometry
+  once; true view-dependent streaming (only what is in view) does not suit a
+  ghosted building and is not used.
 - Self-hosting with Docker or `npm start`, with upload, Compute and tiling.
 - Review packets: `scripts/autocamera.py` renders one image per intent per view
   with its full view record.

@@ -27,14 +27,17 @@ const BUDGETS_KB = {
   "react-": 65,
   "three-": 130,
   "thatopen-": 500,
-  "web-ifc-": 400, // JS; the .wasm is checked separately below
-  "stepIndex.worker-": 5,
-  "thatopenPreviewEngine-": 5,
+  "web-ifc-": 400, // JS only; the viewer serves web-ifc's .wasm from public/wasm/ (vite.config.js)
+  "geometryLabels.worker-": 5, // inspector/geometryLabels.js in its Worker
   "hud-": 5,
   "rolldown-runtime-": 2,
 };
 const CSS_BUDGET_KB = 30;
-const WASM_RAW_KB = 1300;
+// The viewer serves web-ifc's .wasm itself, from public/wasm/ (vite.config.js),
+// so a .wasm in dist/assets is always a second, bundled copy that some import
+// pulled in (a `?url` import, a library resolving its own) - the removed 3D
+// preview shipped one, 1.2 MB, until 2026-10-26. Any such file fails the check.
+const WASM_HINT = "a bundled .wasm duplicates public/wasm/ - find the import that emits it";
 
 let failed = false;
 const rows = [];
@@ -42,10 +45,8 @@ for (const name of readdirSync(ASSETS).sort()) {
   const file = path.join(ASSETS, name);
   if (!statSync(file).isFile() || /\.(gz|br|map)$/.test(name)) continue;
   if (name.endsWith(".wasm")) {
-    const kb = statSync(file).size / 1024;
-    const over = kb > WASM_RAW_KB * TOLERANCE;
-    failed ||= over;
-    rows.push([name, `${kb.toFixed(0)} KB raw`, `${WASM_RAW_KB} KB`, over ? "OVER" : "ok"]);
+    failed = true;
+    rows.push([name, `${(statSync(file).size / 1024).toFixed(0)} KB raw`, "none", WASM_HINT]);
     continue;
   }
   if (!/\.(js|css)$/.test(name)) continue;

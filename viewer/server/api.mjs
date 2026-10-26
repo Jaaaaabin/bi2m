@@ -162,13 +162,26 @@ export function crossOriginIsolation(req, res, next) {
   next();
 }
 
-// ======== Auto-tile on upload ========
+// ======== Tiling uploads ========
 // The streamed path opens test_7 in 0.36s where the parsed path needs
-// seconds and blocks the main thread, but it only applies to models someone
-// ran scripts/tileIfc.mjs on by hand. Now every upload that lands (or is
-// found already present) without a tile set gets one built in the
-// background, so the SECOND open of any model streams. Status is readable
-// through GET /api/tile-status?fileKey=X for the Compute flyout.
+// seconds and blocks the main thread. But a model that has a tile set is
+// ALWAYS streamed from then on, and until 2026-10-26 streaming drew only part
+// of a model (71 of 2,425 meshes on data/example_autcon.ifc; fixed in
+// ThatOpenCompanyLoader.js, Step 6.9) - which every upload then inherited.
+// Tiling also costs a background job and disk per model and only pays off
+// where parsing is slow, so it is no longer automatic by default. An upload is tiled
+// when the Compute flyout's "prepare streaming" button asks for it
+// (`?tile=1`), or - only with BI2M_AUTO_TILE=1 - automatically for a model of
+// at least BI2M_AUTO_TILE_MIN_MB (default 100), where parsing is slow enough
+// to be worth it. Status is readable through GET /api/tile-status?fileKey=X.
+const AUTO_TILE = process.env.BI2M_AUTO_TILE === "1";
+const autoTileMinMb = Number(process.env.BI2M_AUTO_TILE_MIN_MB || 100);
+const AUTO_TILE_MIN_BYTES = (autoTileMinMb >= 0 ? autoTileMinMb : 100) * 1024 * 1024;
+
+function shouldTile(requested, bytes) {
+  return requested || (AUTO_TILE && bytes >= AUTO_TILE_MIN_BYTES);
+}
+
 const tileJobs = new Map(); // contentKey -> "building" | "failed"
 
 function tileSetReady(contentKey) {
@@ -271,11 +284,13 @@ export function registerApiRoutes(use) {
 
     // The client's CLAIMED content key - echoed back for a cross-check
     // only; the authoritative key is hashed from the bytes below.
-    const fileKey = new URL(req.url, "http://internal").searchParams.get("fileKey") || "";
+    const query = new URL(req.url, "http://internal").searchParams;
+    const fileKey = query.get("fileKey") || "";
     if (!TOKEN_RE.test(fileKey)) {
       sendJson(res, 400, { ok: false, error: "Invalid fileKey." });
       return;
     }
+    const tileRequested = query.get("tile") === "1";
 
     // fileKey is already a validated safe token, so this is just a
     // human-traceable prefix - Date.now() is what actually guarantees no
@@ -332,7 +347,7 @@ export function registerApiRoutes(use) {
       const claimedKeyMatches = fileKey === contentKey;
 
       if (existsSync(destPath) && statSync(destPath).size === buffer.length) {
-        tileInBackground(contentKey, destPath);
+        if (shouldTile(tileRequested, buffer.length)) tileInBackground(contentKey, destPath);
         sendJson(res, 200, {
           ok: true,
           fileKey: contentKey,
@@ -355,7 +370,7 @@ export function registerApiRoutes(use) {
         await mkdir(uploadDir, { recursive: true });
         await writeFile(tmpPath, buffer);
         await rename(tmpPath, destPath);
-        tileInBackground(contentKey, destPath);
+        if (shouldTile(tileRequested, buffer.length)) tileInBackground(contentKey, destPath);
         sendJson(res, 200, {
           ok: true,
           fileKey: contentKey,

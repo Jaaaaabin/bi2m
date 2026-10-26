@@ -5,7 +5,7 @@
 //
 //   fileIdentity.js    content-addressed file key + IFC header lineage
 //   viewerRegistry.js  the open-viewer list and the camera-sync flag
-//   viewerModel.js     per-model context (key, stepIndex, guidIndex, intents)
+//   viewerModel.js     per-model context (key, geometryLabels, guidIndex, intents)
 //   intentData.js     category manifest + lazy per-model intent shard
 //   cameraViews.js     bounding boxes, clipping planes, view presets, fitting
 //   highlighting.js    GUID index, highlight/refer/gray-out, intent colors
@@ -20,11 +20,9 @@ import * as OBC from "@thatopen/components";
 import * as OBCF from "@thatopen/components-front";
 import * as THREE from "three";
 
-import { buildStepIndexAsync } from "./engine/stepIndexClient.js";
-import { extractSubModel } from "./engine/subModel.js";
-import { describeGeometry } from "./engine/geometryInfo.js";
 
 import { resolveFileIdentity } from "./fileIdentity.js";
+import { describeElement, indexGeometry } from "./inspector/describeElement.js";
 import { getModelContext, setModelContext } from "./viewerModel.js";
 import { loadIntentsForModel } from "./intentData.js";
 import {
@@ -131,17 +129,6 @@ function syncDocumentTitle() {
     : BASE_DOCUMENT_TITLE;
 }
 
-// The element's IFC entity name for the inspector's "Class:" row (2026-10-01).
-// `properties.type` is web-ifc's numeric type code (IFCWALL = 2391406946),
-// which is what that row used to print. OBC.IfcCategoryMap is the library's
-// own code -> "IFCWALL" table, the spelling the Categories panel already uses.
-function ifcClassName(properties) {
-  const raw = properties?.type;
-  const code = raw && typeof raw === "object" && "value" in raw ? raw.value : raw;
-  if (typeof code === "number") return OBC.IfcCategoryMap?.[code] ?? String(code);
-  return typeof code === "string" && code ? code : null;
-}
-
 function removeViewerById(id) {
   if (viewerData.length <= 1) {
     console.warn("⚠️ At least one viewer must remain open.");
@@ -166,6 +153,8 @@ function removeViewerById(id) {
   if (data.onElementDeselectRequest) {
     window.removeEventListener("element-deselect-request", data.onElementDeselectRequest);
   }
+  // Close the inspector if it shows an element of this tile.
+  window.dispatchEvent(new CustomEvent("element-deselected", { detail: { container: data.container } }));
   // Lines (views/lines.js) before the scene they live in goes.
   clearLines(data.world);
   try {
@@ -563,8 +552,14 @@ async function setupViewer(config) {
   // something else forces a re-fit. Observing canvasArea (not the outer
   // container) is what makes the filter-panel toggle also refresh the camera
   // aspect, since that's the element whose actual size changes.
-  const cameraAspectObserver = new ResizeObserver(() => world.camera.updateAspect());
+  // The same observer keeps --camera-panel-height current, which the
+  // inspector slot reads to end above the camera panel (style.css).
+  const cameraAspectObserver = new ResizeObserver(() => {
+    world.camera.updateAspect();
+    canvasArea.style.setProperty("--camera-panel-height", `${cameraPanel.offsetHeight}px`);
+  });
   cameraAspectObserver.observe(canvasArea);
+  cameraAspectObserver.observe(cameraPanel);
 
   const cameraMonitor = monitorCamera(world, fragments, {
     peers: () => viewerData,
@@ -573,76 +568,46 @@ async function setupViewer(config) {
 
   // ---- Click-to-inspect: reuse the Highlighter's built-in click selection
   // (selectName "select", enabled by default) instead of writing a custom
-  // raycaster - broadcasts the picked element's properties via a CustomEvent
-  // so the React inspector panel (InspectorPanel.jsx) can pick it up without
-  // this vanilla code depending on React at all.
+  // raycaster. What the inspector shows is gathered by
+  // inspector/describeElement.js and sent as a CustomEvent, so this vanilla
+  // code never depends on React. The event names this tile (`container`):
+  // the panel opens in this tile's inspector slot, and closing it clears
+  // only this tile's selection.
   const highlighter = components.get(OBCF.Highlighter);
   if (!highlighter.isSetup) {
     await highlighter.setup({ world });
   }
+
+  // The inspector's fixed place: top-right of this tile's 3D viewport, below
+  // the button row and above the camera panel (style.css).
+  const inspectorSlot = document.createElement("div");
+  inspectorSlot.className = "viewer-inspector-slot";
+  canvasArea.appendChild(inspectorSlot);
 
   highlighter.events.select.onHighlight.add(async (fragmentIdMap) => {
     const model = fragments.groups.values().next().value;
     const [fragmentID, expressIDs] = Object.entries(fragmentIdMap)[0] || [];
     const expressID = expressIDs ? Array.from(expressIDs)[0] : undefined;
     if (!model || expressID === undefined) return;
-
-    let properties = null;
-    try {
-      const local = model.getLocalProperties?.();
-      properties = local ? local[expressID] : await model.getProperties(expressID);
-    } catch (err) {
-      console.warn("⚠️ Could not read properties for selected element:", err.message);
-    }
-
-    // 3D element preview ("Preview in 3D" in InspectorPanel.jsx): only offered when
-    // the STEP index for this file built successfully and the element actually has
-    // renderable geometry. Extraction itself is deferred to a closure so it only
-    // runs if/when the user opens the preview, not on every selection.
-    const stepIndex = getModelContext(model)?.stepIndex;
-    const isPreviewable = stepIndex ? stepIndex.isPreviewable(expressID, true) : false;
-    const getPreviewData = isPreviewable ? () => extractSubModel(stepIndex, expressID) : undefined;
-
-    // Geometry representation info (engine/geometryInfo.js) for the inspector's
-    // "Geometry:" row - synchronous, reuses the same already-built STEP index, no
-    // added latency on selection. Distinct from isPreviewable above: this is pure
-    // display data (what kind of representation actually defines this element),
-    // not a gate on whether the preview button shows up.
-    let geometryInfo = null;
-    if (stepIndex) {
-      try {
-        geometryInfo = describeGeometry(stepIndex, expressID);
-      } catch (err) {
-        console.warn("⚠️ Could not resolve geometry representation:", err.message);
-      }
-    }
-
+    const description = await describeElement(model, expressID);
     window.dispatchEvent(
-      new CustomEvent("element-selected", {
-        detail: {
-          fragmentID,
-          expressID,
-          fileName: model.name,
-          properties: properties || {},
-          ifcClass: ifcClassName(properties),
-          isPreviewable,
-          getPreviewData,
-          geometryInfo,
-        },
-      }),
+      new CustomEvent("element-selected", { detail: { container, fragmentID, ...description } }),
     );
   });
 
   highlighter.events.select.onClear.add(() => {
-    window.dispatchEvent(new CustomEvent("element-deselected"));
+    window.dispatchEvent(new CustomEvent("element-deselected", { detail: { container } }));
   });
 
-  // Elsewhere (React inspector's close button) can request the 3D selection
-  // itself be cleared, in addition to the panel closing. Named (not inline)
-  // so removeViewerById can remove it on close - previously this leaked one
+  // The inspector's close button asks for the 3D selection to be cleared
+  // too - in the tile it names (every tile listens). Named (not inline) so
+  // removeViewerById can remove it on close - previously this leaked one
   // listener (holding a reference to this viewer's highlighter) per closed
   // viewer, forever, for the rest of the page's lifetime.
-  const onElementDeselectRequest = () => highlighter.clear("select");
+  const onElementDeselectRequest = (event) => {
+    const target = event.detail?.container;
+    if (!target || target === container) highlighter.clear("select");
+  };
   window.addEventListener("element-deselect-request", onElementDeselectRequest);
 
   // ---- Per-viewer controls: close this viewer + unload model (top-left),
@@ -1109,8 +1074,8 @@ async function loadMultiIFCIntoViewer(file, viewer) {
     const arrayBuffer = await file.arrayBuffer();
     const buffer = new Uint8Array(arrayBuffer);
 
-    // Content key FIRST, while `arrayBuffer` is still intact: buildStepIndexAsync
-    // below transfers (detaches) it into a Worker, after which it can't be read
+    // Content key FIRST, while `arrayBuffer` is still intact: indexGeometry
+    // (Step 4) transfers (detaches) it into a Worker, after which it can't be read
     // again. Hashing 20MB through crypto.subtle is native and fast, and it has
     // to happen before anything that joins on the key (highlight map, intent
     // shard, verdicts) is looked up. See fileIdentity.js and
@@ -1173,14 +1138,14 @@ async function loadMultiIFCIntoViewer(file, viewer) {
     model.name = file.name;
     const isStreamed = streamedGuidSeed !== null;
 
-    // One per-model context from here on - replaces the old `model.__stepIndex`
-    // slot and every separate re-derivation of a key from the file name.
+    // One per-model context from here on - replaces properties once set on the
+    // model and every separate re-derivation of a key from the file name.
     const context = setModelContext(model, {
       key: identity.key,
       keySource: identity.keySource,
       fileName: identity.fileName,
       lineage: identity.lineage,
-      stepIndex: undefined,
+      geometryLabels: undefined,
       // For a streamed model the GUID index is already known offline (the
       // tile set ships a GlobalId -> expressID map), so it is seeded here
       // rather than being derived by walking every element's properties -
@@ -1272,30 +1237,21 @@ async function loadMultiIFCIntoViewer(file, viewer) {
 
     // ---- The model is now visible, correctly colored, and correctly
     // clipped - everything below this point is NOT required for that, only
-    // for optional features (Preview in 3D, geometry-info tooltip) or for
+    // for optional features (the inspector's Geometry row) or for
     // the filter panel/classification UI to populate. Reveal now instead of
     // making the user wait through it: hides the loading overlay here
     // (rather than only in `finally`, at the very end) so classification/
-    // indexing/STEP-index-building run in the background while the user can
+    // indexing/geometry reading run in the background while the user can
     // already see and orbit their model.
     setViewerLoading(canvasArea, false);
 
-    // A raw byte index for the "Preview in 3D" feature: extracts a single
-    // element's reference closure straight from the source bytes, bypassing
-    // the Fragments pipeline entirely. Built once per file, independent of
-    // (and never blocking) the Fragments load above - a failure here only
-    // disables the preview button, never the main model load. Deliberately
-    // built AFTER the model is already visible - it's CPU work with no
-    // bearing on whether the model can be seen, and runs in a Worker
-    // (engine/stepIndexClient.js) so it no longer blocks the main thread
-    // either. `buffer`/`arrayBuffer` must not be read again after this call,
-    // since it transfers (detaches) them - which is why the content key is
-    // computed in Step 1, before this point.
-    try {
-      context.stepIndex = await buildStepIndexAsync(buffer);
-    } catch (err) {
-      console.warn("⚠️ Could not build STEP index (3D preview will be unavailable):", err.message);
-    }
+    // The inspector's "Geometry:" row reads each element's shape type from the
+    // file text, which ThatOpen's properties leave out
+    // (inspector/geometryLabels.js). Started after the model is visible and
+    // run in a Worker, so nothing here waits for it. `buffer`/`arrayBuffer`
+    // must not be read again after this call: it transfers (detaches) them,
+    // which is why the content key is computed in Step 1, before this point.
+    indexGeometry(model, buffer);
 
     // --- Step 5: Classify entities and spatial structures ---
     // byEntity() reads the FragmentsGroup's own `data` map (expressID -> [props,
@@ -1407,6 +1363,21 @@ async function loadMultiIFCIntoViewer(file, viewer) {
       streamer.onFragmentsLoaded.add(onStreamedFragments);
       viewer.stopStreamedFragmentWatch = () =>
         streamer.onFragmentsLoaded.remove(onStreamedFragments);
+
+      // Load every geometry once and keep it (2026-10-26). The streamer's
+      // culler fetches a geometry only when its box covers more than 50
+      // pixels of an off-screen pass in which every box is opaque - so from
+      // outside a whole building, small elements and everything behind the
+      // outer walls never arrived: data/example_autcon.ifc showed 71 of
+      // 2,425 meshes. This app ghosts the building and Refers inside it, so
+      // it needs all of it. setStatic(ids, true, false) fetches each tile
+      // once and keeps it out of culling: 2,425 meshes, the same triangles
+      // as the parsed load, in 0.3 s - still without parsing the IFC.
+      // After the handler above is attached, so these batches are coloured
+      // and Referred like any other; not awaited, the panel need not wait.
+      streamer.setStatic([...model.keyFragments.values()], true, false).catch((err) => {
+        console.warn("Streaming: could not load the whole model:", err?.message ?? err);
+      });
     }
 
     // --- Step 7: Initialize viewer-specific UI ---

@@ -59,3 +59,13 @@ module is named after a concept, and correct a term when it sharpens.
 - **Tile set / streamed model**: a model loaded from pre-converted fragments
   under `public/tiles/<key>/`; its **tile metadata** (assets, geometries,
   guids) gives boxes without geometry in the scene.
+- **Inspector / element description**: the panel a click on an element
+  opens, in a fixed **inspector slot** at the top-right of that tile's 3D
+  view. The **element description** (`inspector/describeElement.js`) is
+  everything it shows: GUID, class, name, flat attributes and the
+  **geometry label** (the element's IfcShapeRepresentation type, e.g. "Swept
+  Solid", read from the file text by `inspector/geometryLabels.js`).
+- **Aggregate member**: an intent member with no geometry of its own
+  (IfcStair, IfcRamp, IfcRoof); the viewer colours, ghosts and frames it
+  through its IfcRelAggregates parts (`aggregateParts.js`). Spatial
+  elements (storeys, spaces) are never expanded.

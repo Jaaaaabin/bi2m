@@ -4,8 +4,12 @@
 // resolveGuidIndex() below. Everything touching materials, colors, opacity
 // or visibility is moved verbatim.
 
+import * as OBC from "@thatopen/components";
 import * as OBCF from "@thatopen/components-front";
 import * as THREE from "three";
+import * as WEBIFC from "web-ifc";
+
+import { expandMembersToParts } from "./aggregateParts.js";
 
 import { getGuidIndex } from "./viewerModel.js";
 import { setTransparencyValue } from "./transparency.js";
@@ -161,6 +165,114 @@ async function buildGuidIndex(model) {
 // for why that is safe, and for the measured "one Refer click = two full
 // model scans" this removes.
 export const resolveGuidIndex = (model) => getGuidIndex(model, buildGuidIndex);
+
+// ======== Members drawn through their parts ========
+// A member without geometry of its own (IfcStair, IfcRamp, IfcRoof, ...) is
+// drawn through the parts it aggregates - see aggregateParts.js for why and
+// what is left alone. The lookups come from the parsed model's own properties
+// (every entity, not only those with geometry) and the relations index the
+// loader filled (ThatOpenCompanyLoader.js, Step 5). Built once per model.
+// A streamed model has no local properties; see streamedPartsLookup.
+const SPATIAL_TYPES = new Set([
+  WEBIFC.IFCPROJECT,
+  WEBIFC.IFCSITE,
+  WEBIFC.IFCBUILDING,
+  WEBIFC.IFCBUILDINGSTOREY,
+  WEBIFC.IFCSPACE,
+]);
+const partsLookups = new WeakMap();
+
+function relationsOf(components, model) {
+  const indexer = components.get(OBC.IfcRelationsIndexer);
+  return (id, attribute) => {
+    try {
+      return indexer.getEntityRelations(model, id, attribute) ?? [];
+    } catch {
+      return [];
+    }
+  };
+}
+
+// A streamed model's GUID list (the tile set's guids.json) holds only
+// elements with geometry, so an aggregate is not in it. It is reached upwards
+// instead, from its parts ("Decomposes", repeated for nested aggregates), and
+// its GUID and type are read from the tile set's property files.
+async function streamedPartsLookup(components, model, guidIndex) {
+  const relations = relationsOf(components, model);
+  const guidById = new Map();
+  for (const [guid, location] of guidIndex) guidById.set(location.expressID, guid);
+  const parents = new Set();
+  let frontier = [...guidById.keys()];
+  while (frontier.length) {
+    const next = [];
+    for (const id of frontier) {
+      for (const parent of relations(id, "Decomposes")) {
+        if (!parents.has(parent) && !guidById.has(parent)) {
+          parents.add(parent);
+          next.push(parent);
+        }
+      }
+    }
+    frontier = next;
+  }
+  const typeById = new Map();
+  const expressIdByGuid = new Map();
+  await Promise.all(
+    [...parents].map(async (id) => {
+      const props = await model.getProperties(id).catch(() => null);
+      const guid = props?.GlobalId?.value ?? props?.GlobalId;
+      if (!guid) return;
+      guidById.set(id, guid);
+      typeById.set(id, props.type);
+      expressIdByGuid.set(guid, id);
+    }),
+  );
+  return {
+    hasGeometry: (guid) => guidIndex.has(guid),
+    expressIdOf: (guid) => expressIdByGuid.get(guid),
+    isSpatial: (id) => SPATIAL_TYPES.has(typeById.get(id)),
+    partsOf: (id) => relations(id, "IsDecomposedBy"),
+    guidOf: (id) => guidById.get(id),
+  };
+}
+
+async function partsLookupFor(components, model) {
+  if (partsLookups.has(model)) return partsLookups.get(model);
+  let lookup;
+  const guidIndex = await resolveGuidIndex(model);
+  const properties = model.getLocalProperties?.();
+  if (!properties) {
+    lookup = await streamedPartsLookup(components, model, guidIndex).catch(() => null);
+  } else {
+    const relations = relationsOf(components, model);
+    const guidOf = (id) => properties[id]?.GlobalId?.value ?? properties[id]?.GlobalId;
+    const expressIdByGuid = new Map();
+    for (const id of Object.keys(properties)) {
+      const guid = guidOf(id);
+      if (guid) expressIdByGuid.set(guid, Number(id));
+    }
+    lookup = {
+      hasGeometry: (guid) => guidIndex.has(guid),
+      expressIdOf: (guid) => expressIdByGuid.get(guid),
+      isSpatial: (id) => SPATIAL_TYPES.has(properties[id]?.type),
+      partsOf: (id) => relations(id, "IsDecomposedBy"),
+      guidOf,
+    };
+  }
+  partsLookups.set(model, lookup);
+  return lookup;
+}
+
+// The intents with each geometry-less aggregate member replaced by its parts.
+// An intent that needs no change is returned as the same object.
+export async function withGeometryMembers(components, model, intents) {
+  const lookup = await partsLookupFor(components, model);
+  if (!lookup) return intents;
+  return intents.map((intent) => {
+    const members = expandMembersToParts(intent.members, lookup);
+    return members === intent.members ? intent : { ...intent, members };
+  });
+}
 
 // ======== Refer by GUID List ========
 // Real alpha transparency, not a color trick: the base model uses the SAME
@@ -495,6 +607,7 @@ export function clearIntentHighlights(components) {
 // position in whatever subset is passed here.
 export async function visualizeIntentGroups(components, model, world, intents, styleNamespace) {
   clearIntentHighlights(components);
+  intents = await withGeometryMembers(components, model, intents);
   const palette = getIntentColorPalette();
   const allGuids = intents.flatMap((p) => p.members.map((m) => m.guid));
   const colorGuidMap = {};

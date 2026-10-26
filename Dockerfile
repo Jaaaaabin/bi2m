@@ -3,7 +3,8 @@
 # README.md "Host with Docker". Development does not use this file.
 
 # 1. Viewer build. Dev dependencies are pruned afterwards; three and web-ifc
-#    stay, because scripts/tileIfc.mjs tiles uploads at runtime.
+#    stay, because scripts/tileIfc.mjs tiles uploads at runtime
+#    when asked (see BI2M_AUTO_TILE).
 FROM node:24-bookworm-slim AS web
 WORKDIR /app/viewer
 COPY viewer/package.json viewer/package-lock.json ./

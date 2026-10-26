@@ -1,7 +1,6 @@
 // ======== Intent Validation Verdicts ========
 // Pure, dependency-free storage for human accept/reject verdicts on
-// recognized intent groups - no OBC/THREE dependency, same shape as
-// engine/*.js's pure-function convention. Backed by localStorage so verdicts
+// recognized intent groups - no OBC/THREE dependency. Backed by localStorage so verdicts
 // survive a page reload; see docs/roadmap.md "Not built yet" for the
 // eventual real store, whose batch-pipeline shape this is designed to match.
 

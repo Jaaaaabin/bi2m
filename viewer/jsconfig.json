@@ -36,6 +36,7 @@
     "views/linePicker.js",
     "views/visibility.js",
     "intentData.js",
+    "aggregateParts.js",
     "verdicts.js",
     "settings.js",
     "debug.js",
@@ -43,8 +44,7 @@
     "viewerRegistry.js",
     "viewerModel.js",
     "fileIdentity.js",
-    "engine/stepIndex.js",
-    "engine/geometryInfo.js",
-    "engine/subModel.js"
+    "inspector/geometryLabels.js",
+    "inspector/describeElement.js"
   ]
 }

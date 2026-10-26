@@ -20,6 +20,9 @@ services:
       BI2M_COI: "0"
       # Largest accepted upload, in MB.
       BI2M_MAX_UPLOAD_MB: "${BI2M_MAX_UPLOAD_MB:-500}"
+      # Tile large uploads for streaming ("1"); off by default.
+      BI2M_AUTO_TILE: "${BI2M_AUTO_TILE:-0}"
+      BI2M_AUTO_TILE_MIN_MB: "${BI2M_AUTO_TILE_MIN_MB:-100}"
       # Optional model library (see README): mount a corpus and its vis index.
       # BI2M_IFC_CORPUS: /corpus
       # BI2M_VIS_DIR: /corpus_vis

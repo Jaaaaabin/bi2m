@@ -1,6 +1,6 @@
 // ======== Per-Model Context ========
 // Everything the viewer derives ONCE per loaded model and then needs again
-// later, in one place - replacing the ad-hoc `model.__stepIndex` property and
+// later, in one place - replacing the ad-hoc properties once set on the model and
 // the several independent re-derivations of a file key from a file name.
 //
 // Held in a WeakMap keyed by the FragmentsGroup itself, not as properties on
@@ -15,7 +15,8 @@
 //   keySource  "content" | "filename" - which path produced `key`.
 //   fileName   the file's local name, for display only.
 //   lineage    {fileName, ifcFileName, projectGuid} - provenance, never joined on.
-//   stepIndex  the StepFileIndex for "Preview in 3D"/geometry info, or undefined.
+//   geometryLabels  Promise<Map<shape id, label>> for the inspector's Geometry
+//              row (inspector/describeElement.js), or undefined.
 //   guidIndex  lazily built Map<GlobalId, {fragmentID, expressID}> - see
 //              getGuidIndex() below.
 //   intents   this model's recognized intent groups, colorIndex already assigned.

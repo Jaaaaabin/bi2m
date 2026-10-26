@@ -257,9 +257,11 @@
       </div>
     </main>
 
-    <!-- Element Inspector (React island - see InspectorPanel.jsx). Not loaded
-       eagerly - see inspectorBootstrap.js, which dynamically imports it on
-       first element selection instead of paying for React on every page load. -->
+    <!-- Element Inspector (React island - see inspector/InspectorPanel.jsx).
+       React mounts here; the panel itself renders into the clicked tile's
+       .viewer-inspector-slot. Not loaded eagerly - see inspector/bootstrap.js,
+       which dynamically imports it on first element selection instead of
+       paying for React on every page load. -->
     <div id="inspector-root"></div>
 
     <!-- Popover for #example-models-btn - a sibling of #sidebar-panel (not
@@ -273,6 +275,6 @@
 
     <!-- JavaScript -->
     <script type="module" src="ThatOpenCompanyLoader.js"></script>
-    <script type="module" src="inspectorBootstrap.js"></script>
+    <script type="module" src="inspector/bootstrap.js"></script>
   </body>
 </html>

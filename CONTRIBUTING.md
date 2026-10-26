@@ -1,8 +1,8 @@
 # Working on bi2m
 
 Setup is in the [README](README.md). This page is about changing the code:
-which checks to run, what CI runs, and the conventions that keep results
-reproducible.
+which checks to run, what CI runs, the conventions that keep results
+reproducible, and what each script in `scripts/` is for.
 
 ## Checks before you push
 
@@ -94,19 +94,56 @@ never checked.
 
 ## Adding or changing a detector
 
-- A category is a registry entry (`src/recognition/registry.py`) plus a
-  function `detect(model, extracted, file_key[, graph=])` that returns intent
-  records. Say which `level` (room, storey or building), `domain` and
-  `maturity` it has; new heuristics start as `draft`.
-- Four categories are frozen (`alignment`, `connection`, `structural`,
-  `vertical`): do not edit them.
-- Record ids must be reproducible: the same model gives the same ids on every
-  run. `verify_units` and `verify_registry` check this.
-- Merged categories keep their former parts as retired entries, so old ids and
-  colours keep working. Do not delete a retired entry.
-- Neufert rules are data under `config/neufert/`: add or change a rule card and
-  its binding, and let the generic families in `src/recognition/neufert/` run
-  it, instead of writing a new detector.
+Read [docs/detectors.md](docs/detectors.md), "Writing a detector": thirteen
+rules, each from a bug that gave plausible but wrong output. A new heuristic
+starts as `draft`; the four frozen categories are not edited; a retired entry
+is never deleted; and a Neufert rule is a card under `config/neufert/`, not a
+new detector. `verify_registry` and `verify_units` check the result.
+
+## Scripts
+
+Command-line tools, run from the repository root with `uv run python
+scripts/<name>.py`. Each script's own docstring has the details and options.
+The viewer's own scripts (tiling, bundle budget, browser tests) are in
+`viewer/scripts/`. The `verify_*.py` checks are described
+[above](#the-verify_-scripts).
+
+**Recognition**: what most people need.
+
+| Script | What it does |
+|---|---|
+| `recognize_intents.py` | Runs the detectors on IFC models and writes one shard per model (see the README, "Command line"). |
+| `grid_lines.py` | Writes a model's declared grids (IfcGrid) as line files for the viewer's overlay. |
+| `tile_corpus.py` | Converts many models into tile sets the viewer streams instead of parsing. |
+
+**Corpus research**: these work on a folder of IFC models (`BI2M_IFC_CORPUS`,
+and `BI2M_VIS_DIR` for visual output; see `.env.example`). Without such a
+corpus, you do not need them.
+
+| Script | What it does |
+|---|---|
+| `autocamera.py` | Snapshots of every model in the library, taken through the viewer. |
+| `build_vis_index.py` | Index of the per-model visual outputs, which the viewer's model library reads. |
+| `library_annotations.py` | Per-model notes for the model library (unit, residual issues). |
+| `detector_sweep.py` | Runs every detector over many models and reports exceptions and odd outputs. |
+| `eligibility_survey.py` | Which categories could run on which models, without running a detector. |
+| `input_survey.py` | What each model offers the detectors, counted from the file text alone. |
+| `grid_survey.py` | The declared grids of many models, one JSON row per model. |
+| `grid_words.py` | Grid words and facade bands for models that declare a grid. |
+| `unit_sweep.py` | Detector results with and without the unit helper, across many models. |
+| `coverage_report.py` | Share of a model's elements that appear in at least one intent record. |
+| `detector_audit.py` | Read-only probes of the detectors: timing, storeys and placements. |
+| `compare_models.py` | Prototype: compares whole models with each other. |
+| `extract_batch.py` | Runs the extraction step alone over a set of models. |
+| `validate_neufert.py` | Checks the Neufert rules against a QA pack (`neufert_validation_pack.json`, not in the repository). |
+
+**Maintenance**
+
+| Script | What it does |
+|---|---|
+| `neufert_bindings.py` | Regenerates `config/neufert/` from the Neufert source plan (a maintainer file, not in the repository). |
+| `prune_uploads.py` | Removes duplicate upload folders left by an older upload scheme. Dry run by default. |
+| `load_paths.py` | Reads `paths.yaml`; used by other scripts. Run it alone to print the resolved paths. |
 
 ## License
 
@@ -116,4 +153,7 @@ under the same license.
 ## Documentation
 
 [docs/](docs/) describes the system as it is now; source comments point into
-it where a topic is covered there.
+it where a topic is covered there. They cite `docs/architecture.md` and
+`docs/detectors.md` by section heading and by rule number, so when you rename a
+heading or renumber a rule, update the citations too
+(`grep -rn 'docs/detectors.md' src scripts viewer config`).

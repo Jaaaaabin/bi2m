@@ -43,7 +43,7 @@ export default [
     languageOptions: { globals: { ...globals.node } },
   },
   {
-    files: ["engine/*.worker.js"],
+    files: ["inspector/*.worker.js"],
     languageOptions: { globals: { ...globals.worker } },
   },
   {

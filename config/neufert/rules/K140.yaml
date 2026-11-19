@@ -1,4 +1,0 @@
-# config/rules/K140.yaml
-rule: K140
-params:
-  AREAS: {op: "in", value: ["work", "shelf", "furniture function", "movement", "traffic"], severity: "REPORT", desc: "Components"}

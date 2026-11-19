@@ -124,8 +124,9 @@ section instead of being nested under SPATIAL.
   `circulation`, `Span` for `beam_framing`, doors for `unit_typology`, parts
   for `curtainwall_assembly`, spaces for `fire_compartments`.
 - `section` (2026-10-18): an entry with its own top-level panel section,
-  grouped there instead of under `level`; only the thirteen Neufert Topic
-  categories carry it ("neufert"). The manifest emits it when present.
+  grouped there instead of under `level`; only the Neufert categories
+  carry it ("neufert": the nine rules since 2026-10-28, and the thirteen
+  retired Topic tombstones). The manifest emits it when present.
 - `soft_signals` (2026-10-08): the
   same grammar plus `true:Name@Class`, `vocab:<concept>` and
   `footprints:usable` (preflight.py's docstring has the table). A failed
@@ -158,6 +159,8 @@ appended at the end and running its parts' modules unchanged
 positions, with `retired` naming the successor: 17 live categories, 11
 tombstones (grid_claims is the eleventh). Removing an entry would recolour
 every later category; the panel's Compute list hides tombstones instead.
+The thirteen Neufert Topic categories were retired the same way on
+2026-10-28 (24 tombstones; the nine Neufert rules are appended after them).
 """
 
 from .detectors import (
@@ -514,24 +517,188 @@ CATEGORIES = {
 }
 
 
-# Appended 2026-10-18 - at the END, per docs/detectors.md rule 5. The
-# thirteen Neufert Topic categories: every K-rule of neufert_logic.md is
-# data under config/neufert/, run by the generic families in
-# recognition/neufert/; a Topic entry is a label plus the rules that carry
-# that Topic. `section`
-# puts them in their own panel section instead of the level sections
-# (2026-10-18: not merged with the level-grouped detectors); `level` stays
-# the honest claim-reach tag. `signals` is empty (the families report per
-# rule); `soft_signals` names the classes the Topic's bound rules select.
-from .neufert.engine import topic_detector  # noqa: E402
-from .neufert.topics import SECTION as NEUFERT_SECTION, TOPICS as NEUFERT_TOPICS  # noqa: E402
-from .neufert.topics import category_id as _neufert_id, intent_types as _neufert_types  # noqa: E402
+# Appended 2026-10-18 - at the END, per docs/detectors.md rule 5: the
+# thirteen Neufert Topic categories (every K-rule of neufert_logic.md as data
+# under config/neufert/, run by the generic families). Retired 2026-10-28,
+# when the Neufert section became the nine Rules-pilot rules below: kept in
+# place as tombstones (a category's colour is its manifest position). Each
+# names the rule that took over its subject, or neufert_r04 where no pilot
+# rule did, so a run of the nine drops the Topics' old records
+# (writers.recomputed_with_tombstones).
+CATEGORIES.update({
+    "neufert_site": {
+        "label": "Neufert: Site and massing (retired, no pilot rule)",
+        "intent_types": [],
+        "detector": retired.detect,
+        "extraction_keys": (),
+        "domain": "neufert",
+        "level": "building",
+        "section": "neufert",
+        "maturity": "draft",
+        "signals": (),
+        "retired": "neufert_r04",
+    },
+    "neufert_rooms": {
+        "label": "Neufert: Habitable-room standards and area calculation (retired, no pilot rule)",
+        "intent_types": [],
+        "detector": retired.detect,
+        "extraction_keys": (),
+        "domain": "neufert",
+        "level": "building",
+        "section": "neufert",
+        "maturity": "draft",
+        "signals": (),
+        "retired": "neufert_r04",
+    },
+    "neufert_housing": {
+        "label": "Neufert: Housing: layout and entrance (retired, no pilot rule)",
+        "intent_types": [],
+        "detector": retired.detect,
+        "extraction_keys": (),
+        "domain": "neufert",
+        "level": "building",
+        "section": "neufert",
+        "maturity": "draft",
+        "signals": (),
+        "retired": "neufert_r04",
+    },
+    "neufert_offices": {
+        "label": "Neufert: Offices (retired, now in R10)",
+        "intent_types": [],
+        "detector": retired.detect,
+        "extraction_keys": (),
+        "domain": "neufert",
+        "level": "building",
+        "section": "neufert",
+        "maturity": "draft",
+        "signals": (),
+        "retired": "neufert_r10",
+    },
+    "neufert_highrise": {
+        "label": "Neufert: High-rise buildings (retired, no pilot rule)",
+        "intent_types": [],
+        "detector": retired.detect,
+        "extraction_keys": (),
+        "domain": "neufert",
+        "level": "building",
+        "section": "neufert",
+        "maturity": "draft",
+        "signals": (),
+        "retired": "neufert_r04",
+    },
+    "neufert_stairs": {
+        "label": "Neufert: Stairs, ramps, lifts and railings (retired, now in R05)",
+        "intent_types": [],
+        "detector": retired.detect,
+        "extraction_keys": (),
+        "domain": "neufert",
+        "level": "storey",
+        "section": "neufert",
+        "maturity": "draft",
+        "signals": (),
+        "retired": "neufert_r05",
+    },
+    "neufert_accessibility": {
+        "label": "Neufert: Accessibility (retired, now in R07)",
+        "intent_types": [],
+        "detector": retired.detect,
+        "extraction_keys": (),
+        "domain": "neufert",
+        "level": "storey",
+        "section": "neufert",
+        "maturity": "draft",
+        "signals": (),
+        "retired": "neufert_r07",
+    },
+    "neufert_escape": {
+        "label": "Neufert: Escape and fire protection (retired, now in R24)",
+        "intent_types": [],
+        "detector": retired.detect,
+        "extraction_keys": (),
+        "domain": "neufert",
+        "level": "storey",
+        "section": "neufert",
+        "maturity": "draft",
+        "signals": (),
+        "retired": "neufert_r24",
+    },
+    "neufert_bedrooms": {
+        "label": "Neufert: Housing: bedrooms, bathrooms and storage (retired, no pilot rule)",
+        "intent_types": [],
+        "detector": retired.detect,
+        "extraction_keys": (),
+        "domain": "neufert",
+        "level": "storey",
+        "section": "neufert",
+        "maturity": "draft",
+        "signals": (),
+        "retired": "neufert_r04",
+    },
+    "neufert_daylight": {
+        "label": "Neufert: Daylight, sunlight, ventilation and windows (retired, now in R10)",
+        "intent_types": [],
+        "detector": retired.detect,
+        "extraction_keys": (),
+        "domain": "neufert",
+        "level": "room",
+        "section": "neufert",
+        "maturity": "draft",
+        "signals": (),
+        "retired": "neufert_r10",
+    },
+    "neufert_doors": {
+        "label": "Neufert: Doors (retired, now in R07)",
+        "intent_types": [],
+        "detector": retired.detect,
+        "extraction_keys": (),
+        "domain": "neufert",
+        "level": "room",
+        "section": "neufert",
+        "maturity": "draft",
+        "signals": (),
+        "retired": "neufert_r07",
+    },
+    "neufert_envelope": {
+        "label": "Neufert: Building envelope and thermal insulation (retired, now in R44)",
+        "intent_types": [],
+        "detector": retired.detect,
+        "extraction_keys": (),
+        "domain": "neufert",
+        "level": "room",
+        "section": "neufert",
+        "maturity": "draft",
+        "signals": (),
+        "retired": "neufert_r44",
+    },
+    "neufert_walls": {
+        "label": "Neufert: Walls and construction (retired, no pilot rule)",
+        "intent_types": [],
+        "detector": retired.detect,
+        "extraction_keys": (),
+        "domain": "neufert",
+        "level": "room",
+        "section": "neufert",
+        "maturity": "draft",
+        "signals": (),
+        "retired": "neufert_r04",
+    },
+})
 
-for _suffix, _topic, _level, _classes in NEUFERT_TOPICS:
-    CATEGORIES[_neufert_id(_suffix)] = {
-        "label": f"Neufert: {_topic}",
-        "intent_types": _neufert_types(_suffix),
-        "detector": topic_detector(_suffix),
+
+# Appended 2026-10-28 - at the END, per docs/detectors.md rule 5. The
+# Neufert section's rules: the nine the Neufert QA Workbench's Rules pilot
+# marks final, one category each, run by the same generic families
+# (config/neufert/rules/<RID>.yaml cards, bindings in config/neufert/).
+# `level` is the honest claim-reach tag; the panel groups by `section`.
+from .neufert.engine import rule_detector  # noqa: E402
+from .neufert.pilot import RULES as NEUFERT_RULES, SECTION as NEUFERT_SECTION  # noqa: E402
+from .neufert.pilot import category_id as _rule_id, intent_types as _rule_types  # noqa: E402
+
+for _rid, _title, _level, _classes in NEUFERT_RULES:
+    CATEGORIES[_rule_id(_rid)] = {
+        "label": f"{_rid} {_title}",
+        "intent_types": _rule_types(_rid),
+        "detector": rule_detector(_rid),
         "extraction_keys": (),
         "domain": NEUFERT_SECTION,
         "level": _level,

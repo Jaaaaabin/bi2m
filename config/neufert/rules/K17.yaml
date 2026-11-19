@@ -1,4 +1,0 @@
-# config/rules/K17.yaml
-rule: K17
-params:
-  N_SIDES: {op: "is", value: "both sides", severity: "FAIL", desc: "Handrails per flight"}

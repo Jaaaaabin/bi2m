@@ -1,0 +1,29 @@
+# R44: the Neufert QA Workbench's Rules pilot rule, final (snapshot 2026-10-28).
+# `source` is the workbench's rule as it stands, English from its own translation table
+# (text it does not translate stays as written). `params` is bi2m's form of source.params:
+# {op, value, unit, severity, desc, from}, `from` naming the source param (cm and ratio
+# parts in metres); verify_neufert checks every value against it.
+rule: R44
+source:
+  snapshot: '2026-10-28'
+  from: []
+  level: Element
+  modality: must
+  priority: 2
+  chapter: Windows · Thermal
+  title: External windows of heated rooms at least double/insulating glazing
+  context:
+    entity: IfcWindow / IfcCurtainWall
+    match:
+      window.is_external: IsExternal = True
+      space.heated: Heated room
+    derive:
+      glazing: 'Glazing construction (IfcMaterial / type name: Isolierverglasung / double glazing)'
+  condition: always (within context)
+  requirement: External windows and floor-to-ceiling windows of heated rooms must use at least insulating or double
+    glazing; for new buildings the window U-value is calculated together with the whole building per EnEV
+  params:
+    glazing_min: insulating or double glazing
+  ifc_needed:
+  - IfcWindow / IfcPlate material (fantasy has "Glas - Isolierverglasung klar")
+params: {}

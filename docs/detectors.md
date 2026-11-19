@@ -56,26 +56,71 @@ runs. A category that runs and finds nothing is recorded as a zero-output case.
 The four `verified` categories (`alignment`, `connection`, `structural`,
 `vertical`) are frozen: they are not edited.
 
-## The 13 Neufert categories
+## The 9 Neufert rules
 
-`neufert_site`, `neufert_rooms`, `neufert_housing`, `neufert_offices`,
-`neufert_highrise` (building level); `neufert_stairs`, `neufert_accessibility`,
-`neufert_escape`, `neufert_bedrooms` (storey level); `neufert_daylight`,
-`neufert_doors`, `neufert_envelope`, `neufert_walls` (room level).
+Since 2026-10-28 the Neufert section holds one category per rule: the nine
+rules the Neufert QA Workbench's Rules pilot marks final. Each id is
+`neufert_` plus the rule id.
 
-These are not hand-written detectors. Each rule from the Neufert source is a
-**rule card**, a YAML file in `config/neufert/rules/`: a selector, named
-measures and thresholds. `bindings.yaml` ties each card to one of a small set
-of generic **families** in `src/recognition/neufert/families/` (`measure`,
-`provision`, `route`, `adjacency`, `aggregate`) that runs it; `families.yaml`
-maps cards to families, and rules that cannot be checked yet are listed with a
-reason in `deferred_reasons.yaml`. No code under `src/recognition/neufert/`
-knows a rule number, and `verify_neufert.py` fails on a float literal outside
-the named constants, so thresholds live only in the cards.
+Since 2026-10-29 each rule only **selects**: it lists the elements its
+requirement may concern, with related elements as context, and judges
+nothing. Rules about the same element select it the same way. A condition
+the model can state (storey height, flat count, `IsExternal`, room names)
+narrows the selection, and an element whose value for it cannot be read is
+left out. A condition the model cannot state ("legally essential stair",
+"public building", "heated room") is ignored, so the selection is wider.
 
-Each Neufert category emits records of six types: `_pass`, `_fail`, `_warn`,
-`_info`, `_nodata` (the model lacks what the rule needs) and `_scenario`.
-All are `draft`. They sit in their own section of the panel, after the level
+| Rule | Level | Selects | Context |
+|---|---|---|---|
+| `neufert_r04` steps per flight, landings | storey | stairs on storeys at least 2.75 m high | all its parts (flights, landings, railings, members), the storeys it spans |
+| `neufert_r05` essential stair width, 17/28 | storey | every stair | as R04 |
+| `neufert_r07` door clear height and width | room | internal doors | host wall |
+| `neufert_r10` daylight depth | room | office rooms outside flats | their windows |
+| `neufert_r24` enclosed stairwell | storey | stairwell rooms | their doors, neighbouring rooms |
+| `neufert_r25` essential stairs, non-residential | storey | stairs of buildings with no inferred flat (needs the door graph) | as R04 |
+| `neufert_r43` emergency exit doors | room | external doors | host wall, the rooms they open into |
+| `neufert_r44` insulating glazing | room | external windows and curtain walls | the windows' host walls, the rooms they light |
+| `neufert_r56` non-essential stairs | storey | every stair | as R04 |
+
+The context relations, since 2026-10-29 (after a check of the IfcOpenShell
+API, `research/neufert/ifcopenshell_api_check_2026-10-29.md`, not in git):
+
+- A door or window's **host wall** is the wall it fills (FillsVoids). Failing
+  that, it is the curtain wall or wall it is a panel of, or, for the panel of a
+  composite window, the wall that window fills.
+- A door's **rooms** and a room's doors come from one table. Where the door
+  graph is usable, they are its links. Where it is switched off (a frame
+  guard), they come from the same 0.4 m reach redone on the context's own
+  world-frame footprints, at most two rooms per door.
+- A window's **room** and a room's windows also come from one table. That
+  table is the proximity association. Where that association is switched off
+  (frame-suspect), it is the room within 0.6 m of the window's body in
+  IfcOpenShell's BVH tree (`geom.tree.clash_clearance_many`).
+
+R10's judging (switched off with the rest) measures the room depth from the
+daylight face. The room's footprint is cut along each external window's
+facade normal, which is the window's local Y axis. That axis is the wall
+normal on all 34,412 corpus windows that sit in a wall. Each facade reads its
+deepest window, and the room reads its shallowest facade.
+
+These are not hand-written detectors. Each rule is a **rule card**, a YAML
+file in `config/neufert/rules/`. The card holds the workbench's rule as it
+stands and bi2m's thresholds, each naming the workbench value it comes from.
+`bindings.yaml` holds each rule's selection (its `scenario` selector) and
+ties the card to one of a small set of generic **families** in
+`src/recognition/neufert/families/` (`measure`, `provision`, `route`,
+`adjacency`, `aggregate`). The families judge a requirement against the
+card's thresholds. That judging is switched off (`JUDGE` in
+`src/recognition/neufert/pilot.py`) and kept as a later second step;
+`verify_neufert.py` still tests it. No code under `src/recognition/neufert/`
+knows a rule number. `verify_neufert.py` fails on a float literal outside
+the named constants, so thresholds live only in the cards. The family tests
+run on fixture rules in `scripts/fixtures/neufert_families/`.
+
+Each Neufert category emits one record type, `_scenario`: one record per
+rule and model when its selection is not empty. With judging switched on it
+would also emit `_pass`, `_fail`, `_warn`, `_info` and `_nodata`. All are
+`draft`. They sit in their own section of the panel, after the level
 sections.
 
 ## Retired entries
@@ -92,6 +137,12 @@ records from a shard.
 | `window_alignment`, `lighting_clusters` | `window_patterns` |
 | `unit_typology`, `unit_layout` | `repeated_units` |
 | `grid_claims` | `alignment` |
+| `neufert_stairs` | `neufert_r05` |
+| `neufert_doors`, `neufert_accessibility` | `neufert_r07` |
+| `neufert_offices`, `neufert_daylight` | `neufert_r10` |
+| `neufert_escape` | `neufert_r24` |
+| `neufert_envelope` | `neufert_r44` |
+| `neufert_site`, `neufert_rooms`, `neufert_housing`, `neufert_highrise`, `neufert_bedrooms`, `neufert_walls` (no Neufert rule took them over) | `neufert_r04` |
 
 ## Writing a detector
 

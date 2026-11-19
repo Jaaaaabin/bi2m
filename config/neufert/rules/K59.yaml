@@ -1,4 +1,0 @@
-# config/rules/K59.yaml
-rule: K59
-params:
-  N_INS: {op: ">=", value: 1, severity: "FAIL", desc: "Insulation layers"}

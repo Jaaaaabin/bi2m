@@ -44,10 +44,11 @@ from shapely.geometry import Point
 
 from ifc_units import placement_xy
 
+from ..access_graph import DEFAULT_DOOR_MARGIN_M, SHAPE_ANCHOR_MAX_REACH
 from ..furnishing import DEFAULT_FURNITURE_REACH_M, FURNITURE_CLASSES, room_contents
 from ..room_graph import components, storey_room_graph
 from ..room_routes import exit_door_guids, host_element, shortest_distances, storey_adjacency
-from ..spaces import nearest_space
+from ..spaces import index_by_storey, nearest_space
 from .cores import (Z_MARGIN_M, _bboxes, stair_core_flats_per_floor, stair_core_has_lift, stair_core_storeys, storey_lift_cores,  # noqa: F401 - re-exported facts
                     storey_stair_cores, vertical_cores)
 
@@ -59,7 +60,7 @@ TALL_MARGIN_M = 0.3
 # Storey-less rooms whose bodies stand within this of a level's floor belong to that level.
 LEVEL_BAND_M = 0.5
 BUILT = ("exit_doors", "exit_seeds", "route_distances", "dwelling_units", "workstations", "seats", "dwelling_storeys", "dwelling_count", "top_storey_rise",
-         "windows_by_room", "doors_by_room", "furniture_by_room",
+         "windows_by_room", "window_rooms", "doors_by_room", "door_rooms", "furniture_by_room",
          "vertical_cores", "stair_core_storeys", "stair_core_flats_per_floor", "stair_core_has_lift", "storey_stair_cores", "storey_lift_cores")
 UNIT_SERVICE = "kitchen|bathroom|wc"
 UNIT_LIVING = "living|bedroom|dwelling"
@@ -450,27 +451,76 @@ def dwelling_count(ctx):
     return counts
 
 
-def windows_by_room(ctx):
-    """{room guid: [window guids]} by the glazing association (geometry.py:
-    the windows within WINDOW_REACH_M of the room footprint on its storey);
-    None when the model's windows do not meet its footprints at all."""
-    from .geometry import _glazing_by_space
+def window_rooms(ctx):
+    """{"rooms": window guid -> room guid, "ambiguous": the windows whose
+    room was a tie-break}, the one window-room table (2026-10-29):
+    windows_by_room is its inverse. The glazing association (geometry.py: the
+    room nearest to the window within WINDOW_REACH_M on its storey); where
+    that is frame-suspect, IfcOpenShell's BVH tree (geometry._window_tree_rooms),
+    which places every body itself."""
+    from .geometry import _glazing_by_space, _window_tree_rooms
     glazing = ctx.fact("glazing_by_space", _glazing_by_space)
     if glazing["suspect"]:
+        return ctx.fact("window_tree_rooms", _window_tree_rooms)
+    return {"rooms": {window: room for room, windows in glazing["windows"].items() for window in windows},
+            "ambiguous": set(glazing["ambiguous"])}
+
+
+def windows_by_room(ctx):
+    """{room guid: [window guids]}: the inverse of window_rooms."""
+    by_room = {}
+    for window_guid, room in ctx.fact("window_rooms", window_rooms)["rooms"].items():
+        by_room.setdefault(room, []).append(window_guid)
+    return {room: sorted(guids) for room, guids in by_room.items()}
+
+
+def door_rooms(ctx):
+    """{door guid: [room guids]}, the one door-room table (2026-10-29):
+    doors_by_room is its inverse, so a door's rooms and a room's doors agree.
+    With a usable door graph, its links as they are. Without one (25 corpus
+    models: the frame guard, or no footprints), the graph's door reach redone
+    on the context's own world-frame footprints of the door's storey; a
+    footprint the graph lent is skipped (on exactly these models it is in the
+    wrong frame), and a door reaching more than SHAPE_ANCHOR_MAX_REACH rooms
+    gets none (a doorway joins two rooms: more is container or overlap
+    noise, access_graph's shape-anchor rule). None when nothing is read or
+    the doors lie over GRAPH_FRAME_SUSPECT_M from those footprints (median).
+    Corpus: 676 of the 1,251 guarded doors get 1-2 rooms, P 0.86-1.00 /
+    R 0.80-1.00 against IfcRelSpaceBoundary (ios_web_check_guarded_reach)."""
+    from .context import GRAPH_FRAME_SUSPECT_M
+    if ctx.graph_usable():
+        return {door_guid: list(reached) for door_guid, (_storey, reached) in ctx.graph.door_links.items()}
+    lent = getattr(ctx.graph, "polygons", None) or {}
+    own = {guid: polygon for guid, polygon in ctx.polygons.items() if polygon is not lent.get(guid)}
+    by_storey = index_by_storey(ctx.model.by_type("IfcSpace"), own)
+    table, nearest = {}, []
+    for door in ctx.model.by_type("IfcDoor"):
+        storey = ctx.storey_of(door)
+        guids = by_storey.get(storey.GlobalId, []) if storey is not None else []
+        xy = placement_xy(door, ctx.length_scale) if guids else None
+        if xy is None:
+            continue
+        point = Point(*xy)
+        distances = [(own[guid].distance(point), guid) for guid in guids]
+        nearest.append(min(distance for distance, _guid in distances))
+        reached = sorted(guid for distance, guid in distances if distance <= DEFAULT_DOOR_MARGIN_M)
+        table[door.GlobalId] = reached if len(reached) <= SHAPE_ANCHOR_MAX_REACH else []
+    if not nearest:
         return None
-    return {room: sorted(guids) for room, guids in glazing["windows"].items()}
+    nearest.sort()
+    return None if nearest[len(nearest) // 2] > GRAPH_FRAME_SUSPECT_M else table
 
 
 def doors_by_room(ctx):
-    """{room guid: [door guids]} from the shared door graph's links; None
-    without a usable graph (facts of the frame-guarded models stay empty)."""
-    if not ctx.graph_usable():
+    """{room guid: [door guids]}: the inverse of door_rooms (None with it)."""
+    table = ctx.fact("door_rooms", door_rooms)
+    if table is None:
         return None
-    table = {}
-    for door_guid, (_storey, reached) in ctx.graph.door_links.items():
+    by_room = {}
+    for door_guid, reached in table.items():
         for room in reached:
-            table.setdefault(room, []).append(door_guid)
-    return {room: sorted(guids) for room, guids in table.items()}
+            by_room.setdefault(room, []).append(door_guid)
+    return {room: sorted(guids) for room, guids in by_room.items()}
 
 
 def furniture_by_room(ctx):

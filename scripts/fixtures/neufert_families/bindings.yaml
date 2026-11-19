@@ -1,0 +1,983 @@
+# Fixture rules for the generic Neufert families' tests (scripts/verify_neufert.py), 2026-10-28.
+# Not detectors: copied unchanged from the retired K layer (bindings and cards) when the Neufert
+# section became the nine Rules-pilot rules, so the family tests keep exercising the same
+# bindings. `topic` groups them the way the retired Topic categories ran them.
+
+K01:
+  title: High-rise buildings
+  topic: site
+  family: footprint
+  rule_type: MUST
+  priority: ★★★
+  level: site_building
+  status: 'deferred: family ''footprint'' not built'
+  scope: storey
+  needs:
+  - family:footprint
+  applies_text: Buildings for long-term human occupation. Height is measured on the facade side where the ground is lowest.
+  scenario:
+    class: IfcBuilding
+    where:
+    - measure: building.top_storey_rise
+      op: '>'
+      param: H_HR
+  scenario_note: a building whose highest storey holding spaces rises more than H_HR above the ground storey (checked 2026-10-20,
+    1 corpus model at 25 m; roof and parapet levels do not count)
+
+K07:
+  title: Step-length (comfort) formula
+  topic: stairs
+  family: measure
+  rule_type: SHOULD
+  priority: ★★★
+  level: storey
+  status: bound
+  scope: storey
+  select:
+    class: IfcStairFlight
+  derived:
+    flight.step_length: 2*flight.riser + flight.tread
+  checks:
+  - measure: flight.step_length
+    param: STEP_MIN
+  - measure: flight.step_length
+    param: STEP_MAX
+  applies_text: All stair flights.
+  scenario:
+    class: IfcStairFlight
+    related:
+    - via: storey
+
+K08:
+  title: Optimum pitch and riser/tread ratio
+  topic: stairs
+  family: measure
+  rule_type: GUIDE
+  priority: ★★
+  level: storey
+  status: bound
+  scope: storey
+  select:
+    class: IfcStairFlight
+  checks:
+  - measure: flight.pitch_deg
+    param: PITCH_OPT
+  - measure: flight.riser
+    param: R_OPT
+  - measure: flight.tread
+    param: T_OPT
+  applies_text: All stair flights; comfort optimum.
+  scenario:
+    class: IfcStairFlight
+    related:
+    - via: storey
+
+K09:
+  title: Number of steps per run
+  topic: stairs
+  family: measure
+  rule_type: SHOULD
+  priority: ★★★
+  level: storey
+  status: 'widened: every stair flight is judged, the legally-essential gate is not evaluated (steps counted as risers)'
+  scope: storey
+  select:
+    class: IfcStairFlight
+  checks:
+  - measure: flight.risers
+    param: N_MIN
+  - measure: flight.risers
+    param: N_MAX
+  applies_text: Legally essential stairs.
+  scenario:
+    class: IfcStairFlight
+    related:
+    - via: storey
+
+K11:
+  title: Essential stair width and riser/tread ratio
+  topic: stairs
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'widened: every flight is judged against W_ESS, R_MAX and T_MIN, the legally-essential gate is not evaluated and
+    a non-essential stair may legitimately be narrower (K19), so fail becomes info; W_HR (residential high-rise) is not evaluated'
+  scope: storey
+  select:
+    class: IfcStairFlight
+  checks:
+  - measure: flight.width
+    param: W_ESS
+  - measure: flight.riser
+    param: R_MAX
+  - measure: flight.tread
+    param: T_MIN
+  applies_text: Legally essential stairs, except in residential buildings with ≤ 2 flats (K12).
+  scenario:
+    class: IfcStairFlight
+    related:
+    - via: storey
+
+K12:
+  title: Stairs for up to two flats
+  topic: stairs
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'deferred: the dwelling count per building needs a selector over the inferred units (the flight width exists)'
+  scope: storey
+  needs:
+  - select:dwelling_units
+  applies_text: Residential buildings with no more than two flats.
+  scenario:
+    class: IfcStair
+    where:
+    - measure: element.building_dwellings
+      op: '>='
+      value: 1
+    - measure: element.building_dwellings
+      op: <=
+      value: 2
+    related:
+    - via: parts
+      class: IfcStairFlight
+    - via: served_storeys
+      span: own
+  scenario_note: stairs of a building with one or two inferred dwellings (the card's "no more than two flats")
+
+K13:
+  title: Outside stairs and office stairs
+  topic: stairs
+  family: measure
+  rule_type: GUIDE
+  priority: ★
+  level: storey
+  status: bound
+  scope: storey
+  select:
+    class: IfcStair
+    prop:
+      IsExternal: true
+    expand: IfcStairFlight
+  checks:
+  - measure: flight.riser
+    param: R_LO–R_HI
+  - measure: flight.tread
+    param: T_LO–T_HI
+  applies_text: Outside stairs. Office and emergency stairs have no numeric value here.
+  scenario:
+    class: IfcStair
+    prop:
+      IsExternal: true
+    expand: IfcStairFlight
+
+K15:
+  title: Railing heights for galleries, mezzanines, balconies
+  topic: stairs
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'widened: every IfcRailing is judged, the drop is approximated by the rise of the railing''s storey above the ground
+    storey (DROP_HI splits H_LOW from H_HIGH on it), the 1 m compulsory-railing drop and the workplace case are not evaluated,
+    and a declared Height may be the family''s imperial default (templateValue / imperialDefault flag it)'
+  scope: storey
+  select:
+    class: IfcRailing
+  checks:
+  - measure: railing.height
+    param: H_LOW
+    when:
+      measure: element.storey_rise
+      param: DROP_HI
+      side: below
+  - measure: railing.height
+    param: H_HIGH
+    when:
+      measure: element.storey_rise
+      param: DROP_HI
+      side: above
+  applies_text: Galleries, mezzanines, balconies, theatre circles and any edge with a drop of at least DROP_REQ.
+  scenario:
+    class: IfcRailing
+    related:
+    - via: storey
+
+K19:
+  title: Non-essential stairs
+  topic: stairs
+  family: measure
+  rule_type: MUST
+  priority: ★
+  level: storey
+  status: bound
+  scope: storey
+  select:
+    class: IfcStairFlight
+  checks:
+  - measure: flight.width
+    param: W_NE
+  - measure: flight.riser
+    param: R_NE
+  - measure: flight.tread
+    param: T_NE
+  notes: 'every flight is judged although the card addresses non-essential stairs only: an essential stair is held to stricter
+    values (K11: 1.00 m, 0.17 / 0.28), so a flight that falls short of W_NE, R_NE or T_NE fails whichever class its stair
+    is; the population is wider, the fails are sound'
+  applies_text: Stairs that are not legally essential.
+  scenario:
+    class: IfcStairFlight
+    related:
+    - via: storey
+
+K23:
+  title: Clear height of internal doors
+  topic: doors
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: 'partial: the clear passage height is read where a door declares it (Durchgangshöhe, Architekturlichte Höhe, ClearHeight:
+    708 doors of 26 corpus models), else the opening''s OverallHeight stands in, visible in the sources; a pass on an overall
+    height is not a measured clear height'
+  scope: storey
+  select:
+    class: IfcDoor
+    prop:
+      IsExternal: false
+  notes: a door with no IsExternal anywhere is reported as nodata on the gate (2026-10-20), not skipped
+  checks:
+  - measure: door.clear_height
+    param: H_DOOR
+  - measure: door.clear_height
+    param: H_BETTER
+  applies_text: Internal doors.
+  scenario:
+    class: IfcDoor
+    prop:
+      IsExternal: false
+    related:
+    - via: host_wall
+
+K24:
+  title: Door types at emergency exits
+  topic: doors
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: 'widened: emergency exits approximated by external doors (IsExternal); FireExit is tagged in 3 of 370 corpus models'
+  scope: storey
+  select:
+    class: IfcDoor
+    prop:
+      IsExternal: true
+  checks:
+  - measure: door.operation
+    param: OP_BANNED
+    negate: true
+  applies_text: Emergency exits.
+  scenario:
+    class: IfcDoor
+    prop:
+      IsExternal: true
+    related:
+    - via: host_wall
+
+K25:
+  title: Flat front doors accessed by lift
+  topic: doors
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: 'widened: flat entrance doors are the inferred units'' entrance doors, storeys served by a lift come from the lift
+    stacks (facts.vertical_cores), and OverallWidth / OverallHeight are the opening, not the clear passage, so fail and warn
+    become info'
+  scope: storey
+  select:
+    class: IfcDoor
+    role: unit.entrance_doors
+    where:
+    - measure: element.storey_lift_cores
+      op: '>'
+      value: 0
+  checks:
+  - measure: door.clear_width
+    param: W_LIFT
+  - measure: door.clear_height
+    param: H_LIFT
+  applies_text: Flat front doors reached by lift (MBO).
+  scenario:
+    class: IfcDoor
+    role: unit.entrance_doors
+    where:
+    - measure: element.storey_lift_cores
+      op: '>'
+      value: 0
+    related:
+    - via: storey
+
+K26:
+  title: Clear width of barrier-free doors
+  topic: accessibility
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: element
+  status: 'deferred: publicly accessible / barrier-free building flag is not available on the corpus'
+  scope: storey
+  needs:
+  - fact:public_building
+  applies_text: Barrier-free / publicly accessible buildings (MBO §50).
+  scenario: null
+  scenario_reason: barrier-free / publicly accessible is a building scope the models do not state
+
+K34:
+  title: Accessible floor in multi-flat buildings
+  topic: accessibility
+  family: route
+  rule_type: MUST
+  priority: ★★
+  level: zone
+  status: 'deferred: needs a step-free route (lifts) and door and turning-space checks per dwelling (the dwellings exist)'
+  scope: storey
+  needs:
+  - fact:lifts
+  - geom:free_square
+  applies_text: Buildings with more than two flats.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    where:
+    - measure: element.building_dwellings
+      op: '>'
+      value: 2
+    related:
+    - via: unit_doors
+  scenario_note: the rooms of inferred dwellings in a building with more than two of them (the card's N_FLATS logic)
+
+K38:
+  title: Escape distance
+  topic: escape
+  family: route
+  rule_type: MUST
+  priority: ★★★
+  level: zone
+  status: bound
+  scope: storey
+  select:
+    class: IfcSpace
+    use: living|bedroom|dining|office|meeting|dwelling|cellar
+  targets:
+    fact: exit_seeds
+    use: vertical_core
+  checks:
+  - param: D_ESC
+  notes: inhabited rooms = the habitable concepts plus cellar rooms; targets = rooms an external door touches plus rooms named
+    as vertical circulation, a superset of the legally essential stairs; the distance is a lower bound, so a fail is sound
+    and a pass optimistic
+  applies_text: Inhabited rooms and basements.
+  scenario:
+    class: IfcSpace
+    use: living|bedroom|dining|office|meeting|dwelling|cellar
+
+K63:
+  title: Drainage slope of flat roofs
+  topic: envelope
+  family: measure
+  rule_type: MUST
+  priority: ★★
+  level: element
+  status: bound
+  scope: storey
+  select:
+  - class: IfcSlab
+    predefined: ROOF
+  - class: IfcRoof
+    expand: IfcSlab
+    expand_leaf: true
+  notes: 'the ROOF slabs plus every IfcRoof read through its slab parts, or itself when it is a leaf with its own body (0286:
+    three leaf roofs, no ROOF slab; 2026-10-20)'
+  checks:
+  - measure: roof.slope_percent
+    param: S_MIN
+    when:
+      measure: roof.slope_percent
+      param: S_FLAT
+  - measure: roof.slope_percent
+    param: S_REC
+    when:
+      measure: roof.slope_percent
+      param: S_FLAT
+  applies_text: Flat roofs.
+  scenario:
+  - class: IfcSlab
+    predefined: ROOF
+  - class: IfcRoof
+    expand: IfcSlab
+    expand_leaf: true
+
+K74:
+  title: Minimum requirements for habitable rooms
+  topic: rooms
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: space
+  status: bound
+  scope: storey
+  select:
+    class: IfcSpace
+    use: living|bedroom|dining|kitchen|office|meeting|dwelling
+  derived:
+    space.glazing_ratio: space.glazed_area / space.area
+  checks:
+  - measure: space.area
+    param: A_MIN
+  - measure: space.height
+    param: H_MIN
+  - measure: space.glazing_ratio
+    param: F_WIN
+  notes: habitable = living|bedroom|dining|kitchen|office|meeting|dwelling (vocabulary concepts; kitchens since 2026-10-20,
+    the validation pack judges them as habitable rooms); window area is OverallWidth x OverallHeight of the windows nearest
+    to the room within 0.6 m; a room with no window assigned is nodata, not a glazing failure
+  applies_text: Habitable rooms.
+  scenario:
+    class: IfcSpace
+    use: living|bedroom|dining|kitchen|office|meeting|dwelling
+    related:
+    - via: windows
+
+K82:
+  title: Connections to open spaces
+  topic: housing
+  family: adjacency
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'widened: dwellings are inferred from the door graph; open spaces are the rooms tagged IsExternal or named as balcony/terrace;
+    R_MORE (more than one open space) is not evaluated'
+  scope: storey
+  per: dwelling
+  from:
+    external: true
+  to:
+    concept: living|office|dining
+  relation: door
+  quantifier: all
+  checks:
+  - param: R_FIRST
+  applies_text: Dwellings with open spaces.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: unit_doors
+    - via: neighbours
+
+K83:
+  title: Lifts and flats per floor
+  topic: housing
+  family: provision
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'widened: residential = a building whose storeys hold inferred dwellings (facts.dwelling_units), full storeys =
+    those storeys; lifts = IfcTransportElement named as a lift (12 of 13 corpus models with transport elements; the thirteenth
+    has escalators); a missing lift is as often unmodelled as absent, so fail becomes info; FPF (flats per floor per core)
+    is not evaluated'
+  scope: storey
+  per: building
+  count:
+    class: IfcTransportElement
+    use: lift
+  checks:
+  - param: N_LIFT
+    exists: true
+    when:
+      measure: building.dwelling_storeys
+      param: N_LIFT
+  notes: 'the card''s EXIST: N_LIFT gates the building (more than 5 storeys with dwellings) and lends its severity; `exists`
+    makes the threshold "at least one" since the card names no count param for the lifts'
+  applies_text: Residential buildings.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: unit_doors
+  scenario_note: a residential building (inferred dwellings); the five-storey gate of the card is judged by the rule
+
+K87:
+  title: Kitchen, WC and stairs off hall
+  topic: housing
+  family: adjacency
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'widened: dwellings and their entrance halls are inferred from the door graph; the staircase is skipped'
+  scope: storey
+  per: dwelling
+  from:
+    concept: kitchen|wc|bathroom
+  to:
+    role: unit.hall
+  relation: door
+  quantifier: all
+  checks:
+  - param: R_HALL
+  applies_text: Dwellings.
+  scenario:
+    class: IfcSpace
+    role: unit.halls
+    related:
+    - via: neighbours
+    - via: doors
+
+K90:
+  title: 'Detached house: open-space access per storey'
+  topic: housing
+  family: adjacency
+  rule_type: INFO
+  priority: ★
+  level: space
+  status: 'widened: every building is judged, the detached-house gate is not evaluated; open spaces are the rooms tagged IsExternal
+    or named as balcony/terrace'
+  scope: storey
+  per: storey
+  from:
+    concept: living|bedroom|dining|kitchen|office|dwelling
+  to:
+    external: true
+  relation: door
+  quantifier: count
+  checks:
+  - param: N_ACCESS
+  applies_text: Detached houses.
+  scenario:
+  - class: IfcSpace
+    prop:
+      IsExternal: true
+    related:
+    - via: neighbours
+    - via: doors
+  - class: IfcSpace
+    use: balcony
+  scenario_note: open spaces (external or balcony/terrace rooms); the detached-house gate is not known
+
+K91:
+  title: One or three flats per floor
+  topic: housing
+  family: measure
+  rule_type: GUIDE
+  priority: ★★★
+  level: storey
+  status: 'widened: stair cores are stacks of IfcStair bodies (facts.vertical_cores) and dwellings per floor are the inferred
+    units assigned to the nearest core, so "one flat per floor" may be an undercount; a lift serves the core when a lift stack
+    shares a storey with it; warn becomes info; the FPF == 3 note is not evaluated'
+  scope: storey
+  select:
+    class: IfcStair
+    where:
+    - measure: stair.core_flats_per_floor
+      op: ==
+      value: 1
+    - measure: stair.core_has_lift
+      op: ==
+      value: 0
+  checks:
+  - measure: stair.core_storeys
+    param: N_1F
+  notes: the where conditions are the card's logic (fpf == 1 AND no lift), N_1F its threshold; every stair of the core carries
+    the core's storey count
+  applies_text: Multi-storey housing.
+  scenario:
+    class: IfcStair
+    where:
+    - measure: stair.core_flats_per_floor
+      op: '>='
+      value: 1
+    related:
+    - via: parts
+      class: IfcStairFlight
+    - via: served_storeys
+  scenario_note: stairs whose core serves at least one inferred dwelling per floor; the rule judges the no-lift, one-flat
+    case
+
+K94:
+  title: Mandatory kitchen and storeroom per dwelling
+  topic: housing
+  family: provision
+  rule_type: MUST
+  priority: ★★★
+  level: zone
+  status: 'widened: dwellings are inferred from the door graph (facts.dwelling_units); storerooms are the rooms named as storage
+    INSIDE the unit, an allocated cellar storeroom is not tied to its flat by anything in the files'
+  scope: storey
+  per: dwelling
+  count:
+    class: IfcSpace
+    use: kitchen
+  checks:
+  - param: N_KITCHEN
+  - param: N_STORE
+    count:
+      class: IfcSpace
+      use: storage
+  applies_text: Every dwelling (house or flat).
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: unit_doors
+
+K103:
+  title: Bathroom
+  topic: bedrooms
+  family: provision
+  rule_type: MUST
+  priority: ★★★
+  level: zone
+  status: 'widened: dwellings are inferred from the door graph; a bathroom is a room matching the bathroom or wc concept,
+    fixtures are not read'
+  scope: storey
+  per: dwelling
+  count:
+    class: IfcSpace
+    use: bathroom|wc
+  checks:
+  - param: N_BATH
+  applies_text: Every dwelling.
+  scenario:
+    class: IfcSpace
+    role: unit.rooms
+    related:
+    - via: unit_doors
+
+K112:
+  title: Clear ceiling height in offices
+  topic: offices
+  family: measure
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: bound
+  scope: storey
+  select:
+    class: IfcSpace
+    use: office
+  checks:
+  - measure: space.height
+    param: H_OFF
+  - measure: space.height
+    param: H_MIN
+  - measure: space.height
+    param: H_LARGE
+    when:
+      measure: space.area
+      param: A_LARGE
+  - measure: space.height
+    param: H_AUX
+    select:
+      class: IfcSpace
+      use: horizontal_circulation|wc|bathroom
+  applies_text: Office workrooms, corridors and sanitary rooms.
+  scenario:
+    class: IfcSpace
+    use: office
+
+K113:
+  title: Total area per workstation
+  topic: offices
+  family: aggregate
+  rule_type: GUIDE
+  priority: ★★★
+  level: space
+  status: 'widened: the office-building gate is approximated by the presence of office rooms, and the gross floor area (BGF)
+    by the sum of every space''s net area, a lower bound, so a value below A_TOT is sound and one above is optimistic'
+  scope: storey
+  per: building
+  applies:
+    class: IfcSpace
+    use: office|open_plan_office
+  numerator:
+    select:
+      class: IfcSpace
+    measure: space.area
+  denominator:
+    select:
+      class: IfcSpace
+      use: office|open_plan_office|meeting
+    measure: space.workstations
+  checks:
+  - param: A_TOT
+  applies_text: Office buildings.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+
+K114:
+  title: Workstation dimensions
+  topic: offices
+  family: measure
+  rule_type: GUIDE
+  priority: ★
+  level: space
+  status: 'deferred: desktop size and the free movement area need furniture footprints (the desks themselves are counted)'
+  scope: storey
+  needs:
+  - geom:furniture_footprints
+  applies_text: Office workstations.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+    exclude_role: unit.rooms
+    where:
+    - measure: space.workstations
+      op: '>'
+      value: 0
+    related:
+    - via: furniture
+      kind: desk
+
+K118:
+  title: Conference area
+  topic: offices
+  family: route
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'deferred: the entrance-area room (the room the main entrance door opens into) has no role yet; seats per conference
+    room would come from the seating kind of the furnishing helper once it does'
+  scope: storey
+  needs:
+  - role:entrance_room
+  applies_text: Conference areas.
+  scenario:
+    class: IfcSpace
+    use: meeting
+    related:
+    - via: furniture
+      kind: seat
+    - via: neighbours
+
+K119:
+  title: Office toilets and tea kitchens
+  topic: offices
+  family: aggregate
+  rule_type: GUIDE
+  priority: ★★
+  level: space
+  status: 'partial: A_WC_WS (toilet area per workstation) and A_TK (mean tea-kitchen area) are judged; WS_PER_WC and WS_PER_TK
+    are ranges under a <= op the comparator has no meaning for, and the kitchens'' distance to the workstations is not evaluated;
+    the ratios are per storey (2026-10-20: the validation pack judges the toilets of a floor against that floor''s workstations)'
+  scope: storey
+  per: storey
+  applies:
+    class: IfcSpace
+    use: office|open_plan_office
+  denominator:
+    select:
+      class: IfcSpace
+      use: office|open_plan_office|meeting
+    measure: space.workstations
+  checks:
+  - param: A_WC_WS
+    numerator:
+      select:
+        class: IfcSpace
+        use: wc|bathroom
+      measure: space.area
+  - param: A_TK
+    numerator:
+      select:
+        class: IfcSpace
+        use: kitchen
+      measure: space.area
+    denominator:
+      count:
+        class: IfcSpace
+        use: kitchen
+  applies_text: Office buildings.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+
+K120:
+  title: Workplace toilets (workplace regulations)
+  topic: offices
+  family: route
+  rule_type: MUST
+  priority: ★★
+  level: space
+  status: 'partial: D_WC judged from each office room''s representative point to the nearest wc through doors; N_SEP (project
+    input) and WC_PER_BASIN (fixtures) are not evaluated'
+  scope: storey
+  select:
+    class: IfcSpace
+    use: office|open_plan_office|meeting
+  targets:
+    use: wc|bathroom
+  checks:
+  - param: D_WC
+  notes: the office room stands in for its workstations; the distance is a lower bound, so a fail is sound and a pass optimistic
+  applies_text: Workplaces (workplace regulations).
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office|meeting
+
+K122:
+  title: Cleaner's room and caretaker's rooms
+  topic: offices
+  family: provision
+  rule_type: GUIDE
+  priority: ★
+  level: space
+  status: 'widened: applies when the model has office spaces (the office-building gate approximated); the caretaker rooms
+    are not evaluated'
+  scope: storey
+  applies:
+    class: IfcSpace
+    use: office
+  count:
+    class: IfcSpace
+    use: cleaning
+  per: storey
+  checks:
+  - param: N_CLEAN
+  applies_text: Office buildings.
+  scenario:
+    class: IfcSpace
+    use: office
+
+K125:
+  title: Staff restaurant location
+  topic: offices
+  family: route
+  rule_type: GUIDE
+  priority: ★
+  level: space
+  status: 'deferred: no vocabulary concept for canteens and staff restaurants yet (workstations exist)'
+  scope: storey
+  needs:
+  - vocab:canteen
+  applies_text: Office buildings with a staff restaurant.
+  scenario:
+    class: IfcSpace
+    use: canteen
+
+K129:
+  title: Seminar room size and depth
+  topic: offices
+  family: measure
+  rule_type: GUIDE
+  priority: ★★★
+  level: space
+  status: 'widened: A_STUD is judged from the seats modelled in each seminar room, a floor, so the area per seat is an upper
+    bound and warn becomes info; F_DEPTH (depth vs clear height with windows on one wall only) is not evaluated'
+  scope: storey
+  select:
+    class: IfcSpace
+    use: meeting
+  derived:
+    space.area_per_seat: space.area / space.seats
+  checks:
+  - measure: space.area_per_seat
+    param: A_STUD
+  notes: seminar rooms = the meeting concept (seminar, classroom, conference ...); seats = seating furniture per room (facts.seats,
+    the classifier shared with furniture_occupancy); a room without seats is nodata
+  applies_text: University seminar rooms (usual sizes 20, 40, 50, 60 seats).
+  scenario:
+    class: IfcSpace
+    use: meeting
+    related:
+    - via: windows
+    - via: furniture
+      kind: seat
+
+K134:
+  title: Staircase spacing (30 m / 60 m)
+  topic: offices
+  family: route
+  rule_type: MUST
+  priority: ★★★
+  level: storey
+  status: 'partial: D_STAIR judged; SP_STAIRS and SP_END (staircase spacing geometry) are not evaluated'
+  scope: storey
+  select:
+    class: IfcSpace
+    use: living|bedroom|dining|office|meeting|dwelling
+  targets:
+    use: vertical_core
+  checks:
+  - param: D_STAIR
+  notes: occupied rooms = the habitable concepts; targets = rooms named as vertical circulation (any stair, a superset of
+    the essential ones); lower-bound distance
+  applies_text: All buildings with occupied rooms (MBO 2002).
+  scenario:
+    class: IfcSpace
+    use: living|bedroom|dining|office|meeting|dwelling
+
+K141:
+  title: Area per workstation (immediate and traffic)
+  topic: offices
+  family: aggregate
+  rule_type: GUIDE
+  priority: ★★★
+  level: site_building
+  status: 'widened: the workstation count is the desks modelled per room, a floor (furniture_occupancy''s reading), so every
+    ratio is an upper bound; a value below the range is a sound finding, one above is not, and warn becomes info'
+  scope: storey
+  per: building
+  applies:
+    class: IfcSpace
+    use: office|open_plan_office
+  denominator:
+    select:
+      class: IfcSpace
+      use: office|open_plan_office|meeting
+    measure: space.workstations
+  checks:
+  - param: A_WS
+    numerator:
+      select:
+        class: IfcSpace
+        use: office|open_plan_office
+      measure: space.area
+  - param: A_ADD
+    numerator:
+      select:
+        class: IfcSpace
+        use: meeting|storage|filing
+      measure: space.area
+  - param: A_TR
+    numerator:
+      select:
+        class: IfcSpace
+        use: horizontal_circulation|lobby
+      measure: space.area
+  notes: workstations = desks per room (facts.workstations, the furniture classifier shared with furniture_occupancy) or the
+    room's OccupancyNumber; areas are net (Qto or footprint) where the card says gross; the building is the container, so
+    one ratio per model
+  applies_text: Office buildings.
+  scenario:
+    class: IfcSpace
+    use: office|open_plan_office
+
+K145:
+  title: Data centres and server rooms
+  topic: offices
+  family: measure
+  rule_type: GUIDE
+  priority: ★
+  level: space
+  status: 'deferred: raised floor, air terminals and access control are not identified'
+  scope: storey
+  needs:
+  - geom:element_geometry
+  applies_text: Data centres and server rooms.
+  scenario:
+    class: IfcSpace
+    use: server_room

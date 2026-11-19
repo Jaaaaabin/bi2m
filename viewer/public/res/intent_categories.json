@@ -290,142 +290,139 @@
     },
     {
         "id": "neufert_site",
-        "label": "Neufert: Site and massing",
-        "intentTypes": [
-            "neufert_site_pass",
-            "neufert_site_fail",
-            "neufert_site_warn",
-            "neufert_site_info",
-            "neufert_site_nodata",
-            "neufert_site_scenario"
-        ],
+        "label": "Neufert: Site and massing (retired, no pilot rule)",
+        "intentTypes": [],
         "domain": "neufert",
         "level": "building",
         "maturity": "draft",
+        "retired": "neufert_r04",
         "section": "neufert"
     },
     {
         "id": "neufert_rooms",
-        "label": "Neufert: Habitable-room standards and area calculation",
-        "intentTypes": [
-            "neufert_rooms_pass",
-            "neufert_rooms_fail",
-            "neufert_rooms_warn",
-            "neufert_rooms_info",
-            "neufert_rooms_nodata",
-            "neufert_rooms_scenario"
-        ],
+        "label": "Neufert: Habitable-room standards and area calculation (retired, no pilot rule)",
+        "intentTypes": [],
         "domain": "neufert",
         "level": "building",
         "maturity": "draft",
+        "retired": "neufert_r04",
         "section": "neufert"
     },
     {
         "id": "neufert_housing",
-        "label": "Neufert: Housing: layout and entrance",
-        "intentTypes": [
-            "neufert_housing_pass",
-            "neufert_housing_fail",
-            "neufert_housing_warn",
-            "neufert_housing_info",
-            "neufert_housing_nodata",
-            "neufert_housing_scenario"
-        ],
+        "label": "Neufert: Housing: layout and entrance (retired, no pilot rule)",
+        "intentTypes": [],
         "domain": "neufert",
         "level": "building",
         "maturity": "draft",
+        "retired": "neufert_r04",
         "section": "neufert"
     },
     {
         "id": "neufert_offices",
-        "label": "Neufert: Offices",
-        "intentTypes": [
-            "neufert_offices_pass",
-            "neufert_offices_fail",
-            "neufert_offices_warn",
-            "neufert_offices_info",
-            "neufert_offices_nodata",
-            "neufert_offices_scenario"
-        ],
+        "label": "Neufert: Offices (retired, now in R10)",
+        "intentTypes": [],
         "domain": "neufert",
         "level": "building",
         "maturity": "draft",
+        "retired": "neufert_r10",
         "section": "neufert"
     },
     {
         "id": "neufert_highrise",
-        "label": "Neufert: High-rise buildings",
-        "intentTypes": [
-            "neufert_highrise_pass",
-            "neufert_highrise_fail",
-            "neufert_highrise_warn",
-            "neufert_highrise_info",
-            "neufert_highrise_nodata",
-            "neufert_highrise_scenario"
-        ],
+        "label": "Neufert: High-rise buildings (retired, no pilot rule)",
+        "intentTypes": [],
         "domain": "neufert",
         "level": "building",
         "maturity": "draft",
+        "retired": "neufert_r04",
         "section": "neufert"
     },
     {
         "id": "neufert_stairs",
-        "label": "Neufert: Stairs, ramps, lifts and railings",
-        "intentTypes": [
-            "neufert_stairs_pass",
-            "neufert_stairs_fail",
-            "neufert_stairs_warn",
-            "neufert_stairs_info",
-            "neufert_stairs_nodata",
-            "neufert_stairs_scenario"
-        ],
+        "label": "Neufert: Stairs, ramps, lifts and railings (retired, now in R05)",
+        "intentTypes": [],
         "domain": "neufert",
         "level": "storey",
         "maturity": "draft",
+        "retired": "neufert_r05",
         "section": "neufert"
     },
     {
         "id": "neufert_accessibility",
-        "label": "Neufert: Accessibility",
-        "intentTypes": [
-            "neufert_accessibility_pass",
-            "neufert_accessibility_fail",
-            "neufert_accessibility_warn",
-            "neufert_accessibility_info",
-            "neufert_accessibility_nodata",
-            "neufert_accessibility_scenario"
-        ],
+        "label": "Neufert: Accessibility (retired, now in R07)",
+        "intentTypes": [],
         "domain": "neufert",
         "level": "storey",
         "maturity": "draft",
+        "retired": "neufert_r07",
         "section": "neufert"
     },
     {
         "id": "neufert_escape",
-        "label": "Neufert: Escape and fire protection",
-        "intentTypes": [
-            "neufert_escape_pass",
-            "neufert_escape_fail",
-            "neufert_escape_warn",
-            "neufert_escape_info",
-            "neufert_escape_nodata",
-            "neufert_escape_scenario"
-        ],
+        "label": "Neufert: Escape and fire protection (retired, now in R24)",
+        "intentTypes": [],
         "domain": "neufert",
         "level": "storey",
         "maturity": "draft",
+        "retired": "neufert_r24",
         "section": "neufert"
     },
     {
         "id": "neufert_bedrooms",
-        "label": "Neufert: Housing: bedrooms, bathrooms and storage",
+        "label": "Neufert: Housing: bedrooms, bathrooms and storage (retired, no pilot rule)",
+        "intentTypes": [],
+        "domain": "neufert",
+        "level": "storey",
+        "maturity": "draft",
+        "retired": "neufert_r04",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_daylight",
+        "label": "Neufert: Daylight, sunlight, ventilation and windows (retired, now in R10)",
+        "intentTypes": [],
+        "domain": "neufert",
+        "level": "room",
+        "maturity": "draft",
+        "retired": "neufert_r10",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_doors",
+        "label": "Neufert: Doors (retired, now in R07)",
+        "intentTypes": [],
+        "domain": "neufert",
+        "level": "room",
+        "maturity": "draft",
+        "retired": "neufert_r07",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_envelope",
+        "label": "Neufert: Building envelope and thermal insulation (retired, now in R44)",
+        "intentTypes": [],
+        "domain": "neufert",
+        "level": "room",
+        "maturity": "draft",
+        "retired": "neufert_r44",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_walls",
+        "label": "Neufert: Walls and construction (retired, no pilot rule)",
+        "intentTypes": [],
+        "domain": "neufert",
+        "level": "room",
+        "maturity": "draft",
+        "retired": "neufert_r04",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_r04",
+        "label": "R04 Number of steps per flight and landings for legally essential stairs",
         "intentTypes": [
-            "neufert_bedrooms_pass",
-            "neufert_bedrooms_fail",
-            "neufert_bedrooms_warn",
-            "neufert_bedrooms_info",
-            "neufert_bedrooms_nodata",
-            "neufert_bedrooms_scenario"
+            "neufert_r04_scenario"
         ],
         "domain": "neufert",
         "level": "storey",
@@ -433,15 +430,21 @@
         "section": "neufert"
     },
     {
-        "id": "neufert_daylight",
-        "label": "Neufert: Daylight, sunlight, ventilation and windows",
+        "id": "neufert_r05",
+        "label": "R05 Width and riser/tread ratio of legally essential stairs",
         "intentTypes": [
-            "neufert_daylight_pass",
-            "neufert_daylight_fail",
-            "neufert_daylight_warn",
-            "neufert_daylight_info",
-            "neufert_daylight_nodata",
-            "neufert_daylight_scenario"
+            "neufert_r05_scenario"
+        ],
+        "domain": "neufert",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_r07",
+        "label": "R07 Door clear height and accessible clear width",
+        "intentTypes": [
+            "neufert_r07_scenario"
         ],
         "domain": "neufert",
         "level": "room",
@@ -449,15 +452,10 @@
         "section": "neufert"
     },
     {
-        "id": "neufert_doors",
-        "label": "Neufert: Doors",
+        "id": "neufert_r10",
+        "label": "R10 Natural lighting depth",
         "intentTypes": [
-            "neufert_doors_pass",
-            "neufert_doors_fail",
-            "neufert_doors_warn",
-            "neufert_doors_info",
-            "neufert_doors_nodata",
-            "neufert_doors_scenario"
+            "neufert_r10_scenario"
         ],
         "domain": "neufert",
         "level": "room",
@@ -465,15 +463,32 @@
         "section": "neufert"
     },
     {
-        "id": "neufert_envelope",
-        "label": "Neufert: Building envelope and thermal insulation",
+        "id": "neufert_r24",
+        "label": "R24 Legally essential stairs: enclosed stairwell, exit width, doors opening into the stairwell",
         "intentTypes": [
-            "neufert_envelope_pass",
-            "neufert_envelope_fail",
-            "neufert_envelope_warn",
-            "neufert_envelope_info",
-            "neufert_envelope_nodata",
-            "neufert_envelope_scenario"
+            "neufert_r24_scenario"
+        ],
+        "domain": "neufert",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_r25",
+        "label": "R25 Dimensional limits for legally essential stairs (non-residential)",
+        "intentTypes": [
+            "neufert_r25_scenario"
+        ],
+        "domain": "neufert",
+        "level": "storey",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_r43",
+        "label": "R43 Door type and width of emergency exits",
+        "intentTypes": [
+            "neufert_r43_scenario"
         ],
         "domain": "neufert",
         "level": "room",
@@ -481,18 +496,24 @@
         "section": "neufert"
     },
     {
-        "id": "neufert_walls",
-        "label": "Neufert: Walls and construction",
+        "id": "neufert_r44",
+        "label": "R44 External windows of heated rooms at least double/insulating glazing",
         "intentTypes": [
-            "neufert_walls_pass",
-            "neufert_walls_fail",
-            "neufert_walls_warn",
-            "neufert_walls_info",
-            "neufert_walls_nodata",
-            "neufert_walls_scenario"
+            "neufert_r44_scenario"
         ],
         "domain": "neufert",
         "level": "room",
+        "maturity": "draft",
+        "section": "neufert"
+    },
+    {
+        "id": "neufert_r56",
+        "label": "R56 Minimum dimensions of non-essential (additional) stairs",
+        "intentTypes": [
+            "neufert_r56_scenario"
+        ],
+        "domain": "neufert",
+        "level": "storey",
         "maturity": "draft",
         "section": "neufert"
     }

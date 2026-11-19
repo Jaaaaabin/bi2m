@@ -1,0 +1,49 @@
+# R07: the Neufert QA Workbench's Rules pilot rule, final (snapshot 2026-10-28).
+# `source` is the workbench's rule as it stands, English from its own translation table
+# (text it does not translate stays as written). `params` is bi2m's form of source.params:
+# {op, value, unit, severity, desc, from}, `from` naming the source param (cm and ratio
+# parts in metres); verify_neufert checks every value against it.
+rule: R07
+source:
+  snapshot: '2026-10-28'
+  from:
+  - K23
+  - K26
+  level: Element
+  modality: must
+  title: Door clear height and accessible clear width
+  context:
+    entity: IfcDoor
+    match:
+      door.is_internal: Pset_DoorCommon.IsExternal = False
+      building.public_access: true
+    derive:
+      h_clear: Clear opening height (Qto_DoorBaseQuantities.Height or OverallHeight minus frame)
+      w_clear: Clear passage width (OverallWidth minus frame and leaf thickness)
+  condition: always (within context)
+  requirement: Internal door h_clear ≥ 2.10 m; doors in accessible public buildings w_clear ≥ 0.90 m; at least one
+    entrance with clear width ≥ 0.90 m and no steps
+  params:
+    h_min_m: 2.1
+    w_min_m: 0.9
+  ifc_needed:
+  - IfcDoor.OverallWidth/OverallHeight
+  - Pset_DoorCommon.IsExternal
+  - Qto_DoorBaseQuantities
+  notes: IFC OverallWidth is the opening/nominal size; the clear width is usually 5–10 cm smaller, so the evaluation
+    should state whether nominal or clear dimensions were used.
+params:
+  H_CLEAR:
+    op: '>='
+    value: 2.1
+    unit: m
+    severity: FAIL
+    desc: Clear height of internal doors
+    from: h_min_m
+  W_CLEAR:
+    op: '>='
+    value: 0.9
+    unit: m
+    severity: FAIL
+    desc: Clear width of doors in accessible public buildings
+    from: w_min_m

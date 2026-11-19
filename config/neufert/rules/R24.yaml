@@ -1,0 +1,36 @@
+# R24: the Neufert QA Workbench's Rules pilot rule, final (snapshot 2026-10-28).
+# `source` is the workbench's rule as it stands, English from its own translation table
+# (text it does not translate stays as written). `params` is bi2m's form of source.params:
+# {op, value, unit, severity, desc, from}, `from` naming the source param (cm and ratio
+# parts in metres); verify_neufert checks every value against it.
+rule: R24
+source:
+  snapshot: '2026-10-28'
+  from:
+  - K43
+  level: Storey
+  modality: must
+  priority: 3
+  chapter: Stairs · Regulations
+  title: 'Legally essential stairs: enclosed stairwell, exit width, doors opening into the stairwell'
+  context:
+    entity: IfcStair / IfcSpace / IfcDoor
+    match:
+      stair.role: main / legally essential
+    derive:
+      enclosed: Whether the stair is in a continuous enclosed stairwell (enclosed by IfcSpace + walls)
+      exit_to_open_air: Whether the stairwell exit leads directly outside or via a lobby free of fire load
+      doors_into_stairwell: Whether doors opening into the stairwell obstruct the flight width
+  condition: always (within context)
+  requirement: 'All main stairs must be in continuous enclosed stairwells which, together with passages and exits
+    to the outside, can be used safely for escape; exit width corresponds to flight width (original: "Exit width
+    should be ≤ stair width"); doors opening into the stairwell must not obstruct the flight width'
+  params:
+    enclosed: true
+  ifc_needed:
+  - IfcStair and the enclosing IfcSpace / IfcWall (requires IfcRelSpaceBoundary or geometry)
+  - IfcDoor opening direction and position
+  - IfcDoor position
+  notes: The stairs in fantasy_office_building_1 are all open within the hall/office areas, with no stairwell; this
+    is the most common finding for student models.
+params: {}

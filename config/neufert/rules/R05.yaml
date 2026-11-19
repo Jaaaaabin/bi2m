@@ -1,0 +1,52 @@
+# R05: the Neufert QA Workbench's Rules pilot rule, final (snapshot 2026-10-28).
+# `source` is the workbench's rule as it stands, English from its own translation table
+# (text it does not translate stays as written). `params` is bi2m's form of source.params:
+# {op, value, unit, severity, desc, from}, `from` naming the source param (cm and ratio
+# parts in metres); verify_neufert checks every value against it.
+rule: R05
+source:
+  snapshot: '2026-10-28'
+  from:
+  - K11
+  level: Storey
+  modality: must
+  title: Width and riser/tread ratio of legally essential stairs
+  context:
+    entity: IfcStair
+    match:
+      stair.role: legally essential
+    derive:
+      w: Usable flight width (Qto_StairFlightBaseQuantities.Width; if missing, the short side of the geometric bounding
+        box)
+  condition: always (within context)
+  requirement: w ≥ 1.00 m, riser/tread ratio 17/28 (1.25 m for high-rise residential)
+  params:
+    width_min_m: 1.0
+    ratio: 17/28
+    high_rise_flats_m: 1.25
+  ifc_needed:
+  - IfcStairFlight geometry or Qto
+  notes: The original K11 table is for residential buildings; offices use the same values (the strictest, 1.00 m);
+    high-rise is tightened further to 1.25 m (see R01). The handrail clause (K17) was removed following review.
+params:
+  W_MIN:
+    op: '>='
+    value: 1.0
+    unit: m
+    severity: FAIL
+    desc: Usable flight width
+    from: width_min_m
+  R_MAX:
+    op: <=
+    value: 0.17
+    unit: m
+    severity: FAIL
+    desc: Riser (ratio 17/28)
+    from: ratio/0
+  T_MIN:
+    op: '>='
+    value: 0.28
+    unit: m
+    severity: FAIL
+    desc: Tread (ratio 17/28)
+    from: ratio/1

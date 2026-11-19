@@ -126,7 +126,7 @@ def outcome_records(ctx, file_key, category_id, rule, check, results):
         verb = {"pass": "meet", "fail": "fail", "warn": "fall short of", "info": "reported against"}[outcome]
         metrics = {
             "kid": rule["kid"], "title": rule["title"], "ruleType": rule["rule_type"],
-            "priority": rule["priority"], "topic": rule["topic"], "param": param_name,
+            "priority": rule["priority"], "from": rule.get("origin"), "param": param_name,
             "op": param.get("op"), "threshold": param.get("value", param.get("expr")),
             "unit": param.get("unit"), "measure": check.get("measure"), "count": len(members_items),
             "sources": dict(sources), "status": rule["status"],
@@ -158,6 +158,7 @@ def outcome_records(ctx, file_key, category_id, rule, check, results):
             + (f" {template[1]:.0%} of the model's {template[2]} judged values are exactly {template[0]}{_unit(param)}: a template value, not {template[2]} decisions."
                if template is not None else "")
             + (f" {status_kind(rule['status']).capitalize()} rule: {status_note(rule['status'])}." if partial else "")
+            + (f" Widened check: {check['widened']}." if check.get("widened") else "")
         )
         records.append(make_intent(
             intent_id=f"{file_key}-{rule['kid'].lower()}-{slug(param_name)}-{outcome}-{key}",
@@ -174,16 +175,17 @@ def outcome_records(ctx, file_key, category_id, rule, check, results):
     return records
 
 
-def scenario_record(ctx, file_key, category_id, rule, elements, related=None):
+def scenario_record(ctx, file_key, category_id, rule, elements, related=None, judged=True):
     """One model-level record saying the situation the card addresses is
     present: `elements` is the scenario population (members), `related`
     {guid: (element, via)} the entities reached through the selector's
     `related` facet (members of role "context"), the summary
     quotes the card's "applies when", names the counts by class and
     storey, and states whether the requirement is judged (the rule's
-    status) or what blocks it (its `needs`). Polarity positive: the record
-    asserts that something IS there (intent.py); it never asserts a
-    verdict. None for an empty population."""
+    status) or what blocks it (its `needs`); `judged` False (the run
+    judges nothing, pilot.JUDGE) says it is a selection only. Polarity
+    positive: the record asserts that something IS there (intent.py); it
+    never asserts a verdict. None for an empty population."""
     if not elements:
         return None
     guids = sorted({e.GlobalId: e for e in elements})
@@ -196,15 +198,18 @@ def scenario_record(ctx, file_key, category_id, rule, elements, related=None):
             storeys[storey.GlobalId] = storey
     by_storey = Counter(ctx.storey_name(ctx.storey_of(by_guid[g])) if ctx.storey_of(by_guid[g]) is not None else "-" for g in guids)
     kind = status_kind(rule["status"])
-    if kind == "deferred":
-        judged = "the requirement is not judged: " + status_note(rule["status"]) + (
+    if not judged:
+        verdict = "selection only: the elements the requirement may concern; the requirement is not judged" + (
+            f" (judging it needs {', '.join(rule['needs'])})" if rule.get("needs") else "")
+    elif kind == "deferred":
+        verdict = "the requirement is not judged: " + status_note(rule["status"]) + (
             f" (needs {', '.join(rule['needs'])})" if rule.get("needs") else "")
     else:
-        judged = f"the requirement is judged by this rule ({kind}; see its pass/fail/warn/info/nodata records)"
+        verdict = f"the requirement is judged by this rule ({kind}; see its pass/fail/warn/info/nodata records)"
     applies = rule.get("applies_text") or ""
     related = related or {}
     from .related import ambiguous
-    ambiguous_guids = ambiguous(ctx, related)
+    ambiguous_guids = ambiguous(ctx, related, [by_guid[g] for g in guids])
     related_counts = Counter(via for _e, via in related.values())
     related_classes = Counter(e.is_a() for e, _via in related.values())
     related_text = ", ".join(f"{n} {via.replace('_', ' ')} ({', '.join(f'{m} {c}' for c, m in Counter(e.is_a() for e, v in related.values() if v == via).most_common(3))})"
@@ -216,7 +221,7 @@ def scenario_record(ctx, file_key, category_id, rule, elements, related=None):
         + (f" on {', '.join(f'{name} x{n}' for name, n in by_storey.most_common(6))}" if by_storey else "")
         + (f", with {related_text} as context" if related else "")
         + (f" ({len(ambiguous_guids)} of the windows lie within reach of two rooms; their room is a tie-break)" if ambiguous_guids else "")
-        + f"; {judged}."
+        + f"; {verdict}."
         + (f" Scenario: {rule['scenario_note']}." if rule.get("scenario_note") else "")
     )
     return make_intent(
@@ -229,7 +234,7 @@ def scenario_record(ctx, file_key, category_id, rule, elements, related=None):
         rule=rule["kid"],
         summary=summary,
         related_guids=sorted(storeys),
-        metrics={"kid": rule["kid"], "title": rule["title"], "topic": rule["topic"], "count": len(guids),
+        metrics={"kid": rule["kid"], "title": rule["title"], "from": rule.get("origin"), "count": len(guids),
                  "classes": dict(classes), "byStorey": dict(by_storey), "status": rule["status"],
                  "needs": list(rule.get("needs") or []), "applies": applies, "scenario": rule.get("scenario"),
                  "related": {via: n for via, n in related_counts.items()}, "relatedClasses": dict(related_classes),
@@ -259,7 +264,7 @@ def nodata_record(ctx, file_key, category_id, rule, missing):
             f"rule reads ({', '.join(measures)}); not judged. Missing data is never a failure."
         ),
         related_guids=storeys,
-        metrics={"kid": rule["kid"], "title": rule["title"], "topic": rule["topic"],
+        metrics={"kid": rule["kid"], "title": rule["title"], "from": rule.get("origin"),
                  "measures": measures, "count": len(guids), "status": rule["status"]},
         polarity="negative",
     )

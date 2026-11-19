@@ -1,0 +1,64 @@
+# R56: the Neufert QA Workbench's Rules pilot rule, final (snapshot 2026-10-28).
+# `source` is the workbench's rule as it stands, English from its own translation table
+# (text it does not translate stays as written). `params` is bi2m's form of source.params:
+# {op, value, unit, severity, desc, from}, `from` naming the source param (cm and ratio
+# parts in metres); verify_neufert checks every value against it.
+rule: R56
+source:
+  snapshot: '2026-10-28'
+  from:
+  - K19
+  level: Storey
+  modality: must
+  priority: 1
+  chapter: Stairs
+  title: Minimum dimensions of non-essential (additional) stairs
+  context:
+    entity: IfcStair / IfcStairFlight
+    match:
+      stair.essential: 'false: not a legally essential stair in the regulatory sense (not used as an escape route);
+        see non_essential_stair in rules/definitions.json for definition and examples'
+    derive:
+      w: Usable width
+      r/t: Riser / tread (cm)
+    grounding:
+      legally essential: 'derived: if a storey has ≥1 other stair leading to an exit besides this one, and this
+        stair lies entirely within one dwelling/room, it is treated as non-essential'
+    concreteness: derived
+  condition: NOT stair.essential
+  requirement: 'Usable width ≥ 0.50 m, steps 21/21 (all buildings); in residential buildings with ≤ 2 storeys, basement
+    stairs not leading to habitable rooms ≥ 0.80 m and attic stairs ≥ 0.50 m, both 21/21; spiral stairs with clear
+    width < 80 cm may only be non-essential stairs. This presumes the stair carries no escape function: once it
+    is the only way down from a storey, it is judged as a legally essential stair (R05 / R25)'
+  params:
+    width_min_m: 0.5
+    riser_tread_cm: 21/21
+    cellar_stair_le2storey_width_m: 0.8
+    loft_stair_le2storey_width_m: 0.5
+    spiral_lt_0_80_only_non_essential: true
+  ifc_needed:
+  - IfcStair connections (which storeys it serves)
+  - Pset_StairFlightCommon
+  - Other stairs on the same storey
+params:
+  W_NE:
+    op: '>='
+    value: 0.5
+    unit: m
+    severity: FAIL
+    desc: Usable width, non-essential stairs
+    from: width_min_m
+  R_NE:
+    op: <=
+    value: 0.21
+    unit: m
+    severity: FAIL
+    desc: Riser (21/21)
+    from: riser_tread_cm/0
+  T_NE:
+    op: '>='
+    value: 0.21
+    unit: m
+    severity: FAIL
+    desc: Tread (21/21)
+    from: riser_tread_cm/1

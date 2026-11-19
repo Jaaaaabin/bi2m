@@ -16,9 +16,13 @@ module is named after a concept, and correct a term when it sharpens.
 - **Intent record** (`intent`): one recognised design intention with its
   **members** (element GUIDs with a role) and evidence; written per model
   into a **shard** (`public/res/intents/<key>.json`).
-- **Topic**: a Neufert category; its rules are **rule cards**
-  (`config/neufert/rules/K*.yaml`) bound through `bindings.yaml`; a rule runs
-  through a **family** (measure, provision, route, adjacency, aggregate).
+- **Neufert rule**: a Neufert category, one rule each (R04 to R56). Its
+  **rule card** (`config/neufert/rules/R*.yaml`) is bound through
+  `bindings.yaml` and runs through a **family** (measure, provision, route,
+  adjacency, aggregate). Since 2026-10-29 it emits only its **selection**
+  (the `_scenario` record: the elements the rule may concern, with context);
+  the family's judging is switched off (`pilot.JUDGE`). The 13 **Topic**
+  categories it replaced on 2026-10-28 are tombstones.
 - **Context**: the Neufert per-model object (`neufert/context.py`) that
   memoises shapes, property sets, text and **facts** for one (model, graph).
 - **AccessGraph** (door graph): the per-model door/space adjacency; a

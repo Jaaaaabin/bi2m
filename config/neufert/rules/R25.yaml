@@ -1,0 +1,76 @@
+# R25: the Neufert QA Workbench's Rules pilot rule, final (snapshot 2026-10-28).
+# `source` is the workbench's rule as it stands, English from its own translation table
+# (text it does not translate stays as written). `params` is bi2m's form of source.params:
+# {op, value, unit, severity, desc, from}, `from` naming the source param (cm and ratio
+# parts in metres); verify_neufert checks every value against it.
+rule: R25
+source:
+  snapshot: '2026-10-28'
+  from:
+  - K11
+  - K09
+  level: Storey
+  modality: must
+  priority: 3
+  chapter: Stairs · Regulations
+  title: Dimensional limits for legally essential stairs (non-residential)
+  context:
+    entity: IfcStair / IfcStairFlight
+    match:
+      building.type: other buildings (non-residential)
+      stair.role: legally essential / non-essential
+    derive:
+      w: Usable flight width
+      r: Pset_StairFlightCommon.RiserHeight
+      t: Pset_StairFlightCommon.TreadLength
+      storey_h: Storey height
+      n_riser: NumberOfRiser
+  condition: always (within context)
+  requirement: 'Legally essential stairs: w ≥ 100 cm, r ≤ 19 cm, t ≥ 26 cm; non-essential (additional) stairs: w
+    ≥ 50 cm, 21/21; standard stairs 17/29; legally essential stairs need a landing every ≤ 18 steps; a storey height
+    of 3.00 m corresponds to two flights with 18 steps, r = 16.66 cm'
+  params:
+    essential:
+      width_cm: 100
+      riser_max_cm: 19
+      tread_min_cm: 26
+    non_essential:
+      width_cm: 50
+      riser_cm: 21
+      tread_cm: 21
+    normal: 17/29
+    steps_per_run_max: 18
+  ifc_needed:
+  - Pset_StairFlightCommon RiserHeight / TreadLength / NumberOfRiser
+  - Flight width (geometry)
+  notes: 'Better suited to office buildings than R05''s 17/28: this table gives limits by building type, and offices
+    fall under "other buildings". fantasy''s r = 20 cm exceeds 19.'
+params:
+  W_ESS:
+    op: '>='
+    value: 1.0
+    unit: m
+    severity: FAIL
+    desc: Usable width, legally essential stairs
+    from: essential.width_cm
+  R_ESS:
+    op: <=
+    value: 0.19
+    unit: m
+    severity: FAIL
+    desc: Riser, legally essential stairs
+    from: essential.riser_max_cm
+  T_ESS:
+    op: '>='
+    value: 0.26
+    unit: m
+    severity: FAIL
+    desc: Tread, legally essential stairs
+    from: essential.tread_min_cm
+  N_MAX:
+    op: <=
+    value: 18
+    unit: steps
+    severity: FAIL
+    desc: Steps per flight before a landing
+    from: steps_per_run_max

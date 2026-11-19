@@ -40,8 +40,7 @@ a failure. None of them writes to the real shard directory.
 |---|---|
 | `verify_units`, `verify_shared_modules` | `data/example_autcon.ifc` and its stored shard (both tracked) |
 | `verify_registry`, `verify_soft_signals` | the same, plus the example's extraction cache, which a `verify_units` run writes to `data/extracted/` |
-| `verify_rollups`, `verify_session`, `verify_grid_lines`, `verify_grid_words` | nothing outside the repository |
-| `verify_neufert` | the Neufert source plan (`neufert_logic.md`), a maintainer file that is not in the repository; on a fresh clone one of its checks fails, so skip it |
+| `verify_rollups`, `verify_session`, `verify_grid_lines`, `verify_grid_words`, `verify_neufert` | nothing outside the repository |
 
 `verify_units.py --library DIR` adds checks on a folder of real millimetre and
 centimetre models. If you changed anything under `src/recognition/`, also
@@ -135,13 +134,11 @@ corpus, you do not need them.
 | `detector_audit.py` | Read-only probes of the detectors: timing, storeys and placements. |
 | `compare_models.py` | Prototype: compares whole models with each other. |
 | `extract_batch.py` | Runs the extraction step alone over a set of models. |
-| `validate_neufert.py` | Checks the Neufert rules against a QA pack (`neufert_validation_pack.json`, not in the repository). |
 
 **Maintenance**
 
 | Script | What it does |
 |---|---|
-| `neufert_bindings.py` | Regenerates `config/neufert/` from the Neufert source plan (a maintainer file, not in the repository). |
 | `prune_uploads.py` | Removes duplicate upload folders left by an older upload scheme. Dry run by default. |
 | `load_paths.py` | Reads `paths.yaml`; used by other scripts. Run it alone to print the resolved paths. |
 

@@ -1,7 +1,9 @@
-"""Self-checks for the Neufert Topic categories (2026-10-18):
-the two config layers, the no-literal-thresholds rule, synthetic IFC4
-fixtures for the measure and provision families, determinism, and a
-regression run of all 13 categories on data/example_autcon.ifc.
+"""Self-checks for the Neufert section (2026-10-18; its nine Rules-pilot
+rules since 2026-10-28): the live config, the no-literal-thresholds rule,
+synthetic IFC4 fixtures for the generic families (run through the fixture
+rules under scripts/fixtures/neufert_families/), the nine rules on the same
+fixtures, determinism, and a regression run of the nine on
+data/example_autcon.ifc.
 
     uv run python scripts/verify_neufert.py
 
@@ -19,21 +21,26 @@ sys.path.insert(0, str(REPO_ROOT / "src"))
 
 import ifcopenshell  # noqa: E402
 import ifcopenshell.api  # noqa: E402
+import ifcopenshell.util.element  # noqa: E402
 
 from recognition.neufert import compare, facts, measures  # noqa: E402
-from recognition.neufert.engine import run_topic  # noqa: E402
+from recognition.neufert.engine import run_rule, run_rules  # noqa: E402
 from recognition.neufert.families import BUILT, FAMILIES  # noqa: E402
 from recognition.neufert.rules import RULES_DIR, load_rules, status_kind  # noqa: E402
-from recognition.neufert.topics import TOPICS  # noqa: E402
+from recognition.neufert import pilot  # noqa: E402
 
 RESULTS = []
+# The generic families' fixture rules (2026-10-28): the retired K bindings and cards the family
+# tests below exercise, copied unchanged; `topic` groups them as the retired Topic categories ran
+# them. The live config (config/neufert) holds the Neufert section's nine rules only.
+FIXTURE_DIR = REPO_ROOT / "scripts" / "fixtures" / "neufert_families"
 EXAMPLE = REPO_ROOT / "data" / "example_autcon.ifc"
 PACKAGE = REPO_ROOT / "src" / "recognition" / "neufert"
 # Float literals a module may contain besides what the cards' YAML provides.
 ALLOWED_LITERALS = {
     "compare.py": {"0.005", "0.10"},               # EPS, EPS_REL, APPROX_REL (named, documented)
     "measures.py": {"100.0", "1e-9", "0.25", "0.1"},  # percent, the unset tolerance, CORROBORATE_TOL, COUNT_ROUND_TOL
-    "geometry.py": {"0.6", "2.0", "1e-9", "0.0", "0.2", "1.0", "0.05", "0.3"},  # WINDOW_REACH_M, WINDOW_FRAME_SUSPECT_M, tolerances, the upward-face cut, FLIGHT_RASTER_M, FLIGHT_SEGMENT_MIN_M
+    "geometry.py": {"0.6", "2.0", "1e-9", "0.0", "0.2", "1.0", "0.05", "0.3", "15.0"},  # WINDOW_REACH_M, WINDOW_FRAME_SUSPECT_M, tolerances, the upward-face cut, FLIGHT_RASTER_M, FLIGHT_SEGMENT_MIN_M, FACADE_ANGLE_TOL_DEG
     "records.py": {"0.9", "0.3048", "0.001"},        # ROLLUP_SHARE, FOOT_M, FOOT_TOLERANCE_M
     "context.py": {"1.0", "1e-9", "2.0", "0.5"},     # GRAPH_FRAME_SUSPECT_M, GRAPH_FRAME_SHIFT_M
     "facts.py": {"0.0", "0.3", "0.5"},              # seed distance, TALL_MARGIN_M, LEVEL_BAND_M
@@ -46,6 +53,25 @@ ALLOWED_LITERALS = {
 
 def check(name, condition, detail=""):
     RESULTS.append((name, bool(condition), detail))
+
+
+def fixture_rules():
+    return load_rules(FIXTURE_DIR)
+
+
+def _fixture_topics():
+    import yaml
+    with open(FIXTURE_DIR / "bindings.yaml", encoding="utf-8") as handle:
+        return {kid: binding["topic"] for kid, binding in yaml.safe_load(handle).items()}
+
+
+TOPIC_OF = _fixture_topics()
+
+
+def run_fixture(topic, model, file_key, graph=None):
+    """The fixture rules of one retired Topic as one category, in KID order, as the Topic ran them."""
+    rules = sorted((rule for kid, rule in fixture_rules().items() if TOPIC_OF[kid] == topic), key=lambda rule: int(rule["kid"][1:]))
+    return run_rules(rules, f"neufert_{topic}", model, file_key, graph=graph)
 
 
 def run(file, ifc_class, **kwargs):
@@ -148,51 +174,29 @@ def members(record):
 
 
 def section_config():
+    """The live config (2026-10-28): the Neufert section's nine rules, one
+    card per binding, every active rule on a built family, every deferred
+    one with a reason, needs tags and a scenario."""
     rules = load_rules()
-    check("122 rules load from config/neufert", len(rules) == 122, len(rules))
-    yaml_files = sorted(p.stem for p in RULES_DIR.glob("K*.yaml"))
-    check("122 rule YAML files, one per binding", yaml_files == sorted(rules), len(yaml_files))
+    check("config/neufert holds the Neufert section's rules: the 9 of pilot.RULES",
+          sorted(rules) == [entry[0] for entry in pilot.RULES], sorted(rules))
+    cards = sorted(p.stem for p in RULES_DIR.glob("*.yaml"))
+    check("one card under config/neufert/rules per binding, and no other", cards == sorted(rules), cards)
     active = [r for r in rules.values() if status_kind(r["status"]) != "deferred"]
-    check("every bound/partial rule uses a built family and has checks",
+    check("every bound/partial/widened rule uses a built family and has checks",
           all(r["family"] in BUILT and r["checks"] for r in active), [r["kid"] for r in active if r["family"] not in BUILT])
     check("every deferred rule states a reason",
           all(":" in r["status"] and r["status"].split(":", 1)[1].strip() for r in rules.values() if status_kind(r["status"]) == "deferred"))
     check("every family named in a binding exists", all(r["family"] in FAMILIES for r in rules.values()))
-    topics = {t[0] for t in TOPICS}
-    check("every rule's topic is one of the 13", all(r["topic"] in topics for r in rules.values()))
+    check("every rule has a scenario selector", all(r["scenario"] for r in rules.values()), [k for k, r in rules.items() if not r["scenario"]])
     deferred = [r for r in rules.values() if status_kind(r["status"]) == "deferred"]
     check("every deferred rule carries machine-readable needs tags", all(r["needs"] for r in deferred), [r["kid"] for r in deferred if not r["needs"]])
     stale = [(r["kid"], tag) for r in deferred for tag in r["needs"] if tag.startswith("family:") and tag[len("family:"):] in BUILT]
     check("no deferred rule waits on a family that is built (a stale reason)", not stale, stale)
     stale_facts = [(r["kid"], t) for r in deferred for t in r["needs"] if t.startswith("fact:") and t[5:] in facts.BUILT]
     check("no deferred rule waits on a fact that is built (facts.BUILT)", not stale_facts, stale_facts)
-    unlocked = Counter(tag for r in deferred for tag in r["needs"])
-    print("  rules waiting per missing fact / geometry / input / family:",
-          ", ".join(f"{tag} {n}" for tag, n in unlocked.most_common(12)))
-    print("  bound:", " ".join(r["kid"] for r in active if status_kind(r["status"]) == "bound"))
-    print("  partial:", " ".join(r["kid"] for r in active if status_kind(r["status"]) == "partial"))
-    print("  widened:", " ".join(r["kid"] for r in active if status_kind(r["status"]) == "widened"))
-    print("  deferred:", sum(1 for r in rules.values() if status_kind(r["status"]) == "deferred"))
-
-
-def section_bindings_script():
-    """scripts/neufert_bindings.py carries no rule id, and its three data
-    files reproduce the committed bindings.yaml byte for byte."""
-    import subprocess
-    script = REPO_ROOT / "scripts" / "neufert_bindings.py"
-    code = re.sub(r'"""[\s\S]*?"""', "", script.read_text(encoding="utf-8"))
-    check("the bindings generator names no rule id (the hand layer is bound.yaml)", not re.findall(r"\bK\d{2,3}\b", code))
-    plan = REPO_ROOT / "neufert_logic.md"
-    if not plan.is_file():
-        check("neufert_logic.md is present for the generator round-trip", False, str(plan))
-        return
-    with tempfile.TemporaryDirectory() as tmp:
-        cards = Path(tmp) / "cards.json"
-        target = Path(tmp) / "bindings.yaml"
-        subprocess.run([sys.executable, str(script), "cards", str(plan), str(cards)], check=True, capture_output=True)
-        subprocess.run([sys.executable, str(script), "bindings", str(cards), str(target)], check=True, capture_output=True)
-        check("cards + families.yaml + deferred_reasons.yaml + bound.yaml reproduce config/neufert/bindings.yaml",
-              target.read_bytes() == (REPO_ROOT / "config" / "neufert" / "bindings.yaml").read_bytes())
+    for kind in ("bound", "partial", "widened", "deferred"):
+        print(f"  {kind}:", " ".join(r["kid"] for r in rules.values() if status_kind(r["status"]) == kind))
 
 
 def section_literals():
@@ -241,7 +245,7 @@ def _raises(exc, fn, *args, **kwargs):
 
 def section_fixture():
     f, storey, storey2, doors, flights, spaces, stairs = fixture()
-    records = run_topic("doors", f, "fx") + run_topic("stairs", f, "fx") + run_topic("offices", f, "fx")
+    records = run_fixture("doors", f, "fx") + run_fixture("stairs", f, "fx") + run_fixture("offices", f, "fx")
     got = by_rule_outcome(records)
 
     fail = got.get(("K23", "fail", "H_DOOR"), [])
@@ -273,7 +277,7 @@ def section_fixture():
     check("K24 (partial): the revolving external door is reported as info, not fail; the external door without an OperationType is nodata",
           len(k24) == 1 and members(k24[0]) == [doors["d_rev"].GlobalId]
           and len(k24_nodata) == 1 and members(k24_nodata[0]) == [doors["d_ext"].GlobalId], ([members(r) for r in k24], [members(r) for r in k24_nodata]))
-    envelope = by_rule_outcome(run_topic("envelope", f, "fx"))
+    envelope = by_rule_outcome(run_fixture("envelope", f, "fx"))
     nod = envelope.get(("K63", "nodata", None), [])
     check("K63: a declared PitchAngle of 0 is not a verdict; without geometry the roof is nodata",
           len(nod) == 1 and members(nod[0]) == [doors["roof0"].GlobalId] and not envelope.get(("K63", "fail", "S_MIN")), list(envelope))
@@ -323,11 +327,11 @@ def section_fixture():
           and len(k122) == 1 and k122[0]["evidence"]["relatedGuids"] == [storey2.GlobalId] and k122[0]["members"] == [],
           ([members(r) for r in k122_pass], [r["evidence"]["relatedGuids"] for r in k122]))
 
-    again = run_topic("doors", f, "fx") + run_topic("stairs", f, "fx") + run_topic("offices", f, "fx")
+    again = run_fixture("doors", f, "fx") + run_fixture("stairs", f, "fx") + run_fixture("offices", f, "fx")
     check("determinism: a second run gives the same ids and member order",
           [(r["id"], members(r)) for r in records] == [(r["id"], members(r)) for r in again])
     check("no literal threshold leaked: every threshold in the records equals its YAML value",
-          all(r["evidence"]["metrics"]["threshold"] == load_rules()[r["provenance"]["rule"]]["params"][r["evidence"]["metrics"]["param"]].get("value")
+          all(r["evidence"]["metrics"]["threshold"] == fixture_rules()[r["provenance"]["rule"]]["params"][r["evidence"]["metrics"]["param"]].get("value")
               for r in records if r["evidence"]["metrics"].get("param")))
 
 
@@ -382,7 +386,7 @@ def section_route():
     d = facts.route_distances(ctx, storey.GlobalId, {spaces["E"].GlobalId})
     check("route fact: A is 10 m and B is 40 m from the exit through the doorways; the island has no distance",
           abs(d[spaces["A"].GlobalId] - 10) < 1e-6 and abs(d[spaces["B"].GlobalId] - 40) < 1e-6 and spaces["I"].GlobalId not in d, d)
-    records = run_topic("escape", f, "fx", graph=graph) + run_topic("offices", f, "fx", graph=graph)
+    records = run_fixture("escape", f, "fx", graph=graph) + run_fixture("offices", f, "fx", graph=graph)
     got = by_rule_outcome(records)
     k38_pass = got.get(("K38", "pass", "D_ESC"), []); k38_fail = got.get(("K38", "fail", "D_ESC"), []); k38_nod = got.get(("K38", "nodata", None), [])
     check("K38: the living room (10 m) and the office (20 m) pass D_ESC <= 35 m, the bedroom (40 m) fails, the island study is nodata",
@@ -475,7 +479,7 @@ def section_dwellings():
     check("dwelling units: entrance doors and halls - flat 1's hall is Flur 1, flat 2's is Flur 2, the corridor is the shared circulation",
           flat1 and flat1["halls"] == [g("H1")] and flat2 and flat2["halls"] == [g("H2")] and g("C") in flat1["shared_circulation"],
           (flat1 and flat1["halls"], flat2 and flat2["halls"]))
-    records = run_topic("housing", f, "fx", graph=graph) + run_topic("bedrooms", f, "fx", graph=graph)
+    records = run_fixture("housing", f, "fx", graph=graph) + run_fixture("bedrooms", f, "fx", graph=graph)
     got = by_rule_outcome(records)
     k94 = got.get(("K94", "pass", "N_KITCHEN"), [])
     check("K94 (widened, per dwelling): both flats hold a kitchen, one pass record over the two flats' rooms; the single-space flat counts 0 as info",
@@ -515,7 +519,7 @@ def section_dwellings():
     storeys = ctx2.fact("dwelling_storeys", facts.dwelling_storeys)
     check("dwelling_storeys fact: the one storey with dwellings counts 1 for the building; building.dwelling_storeys reads it (0 would be a count, not unset)",
           storeys == {building.GlobalId: 1} and measures.measure(ctx2, building, "building.dwelling_storeys", {})[0] == 1.0, storeys)
-    housing = run_topic("housing", f, "fx", graph=graph)
+    housing = run_fixture("housing", f, "fx", graph=graph)
     check("K83 (widened, provision with a `when` gate on the building): one dwelling storey is not > N_LIFT (5), so the lift count is not judged and no K83 verdict record exists (its scenario record may)",
           not [r for r in housing if r["provenance"]["rule"] == "K83" and not r["type"].endswith("_scenario")], [r["id"] for r in housing if r["provenance"]["rule"] == "K83"])
     from recognition.neufert.families.provision import _exists_outcome
@@ -602,8 +606,7 @@ def section_workstations():
     value, source = measures.measure(ctx, spaces["Office 1"], "space.workstations", {})
     check("space.workstations reads the fact (2, source fact:workstations); 0 is a count, not an unset value",
           value == 2.0 and source == "fact:workstations" and measures.measure(ctx, spaces["Meeting"], "space.workstations", {})[0] == 0.0, (value, source))
-    from recognition.neufert.engine import run_topic
-    records = run_topic("offices", f, "fx", graph=graph)
+    records = run_fixture("offices", f, "fx", graph=graph)
     by = by_rule_outcome(records)
     def one(kid, param, outcome):
         found = [r for r in records if r["provenance"]["rule"] == kid and r["evidence"]["metrics"].get("param") == param and r["type"].endswith("_" + outcome)]
@@ -629,7 +632,7 @@ def section_workstations():
           and [r for r in records if r["provenance"]["rule"] == "K129" and r["type"].endswith("_nodata") and members(r) == [guid["Seminar 2"]]], sorted(by))
     check("aggregate: no nodata in the office fixture (every summed room has an area, the denominator is non-zero)",
           not [r for r in records if r["provenance"]["rule"] in ("K141", "K113", "K119") and r["type"].endswith("_nodata")], sorted(by))
-    again = run_topic("offices", f, "fx", graph=graph)
+    again = run_fixture("offices", f, "fx", graph=graph)
     check("aggregate: deterministic ids and members on a second run", [r["id"] for r in records] == [r["id"] for r in again]
           and [members(r) for r in records] == [members(r) for r in again])
 
@@ -709,7 +712,6 @@ def tower_fixture(storeys_with_stair=4, lift=False):
     return f, storeys, spaces, doors, stairs, TowerGraph(storeys, spaces, doors)
 
 
-TOPIC_OF = {kid: rule["topic"] for kid, rule in load_rules().items()}
 
 
 def section_vertical_cores():
@@ -726,11 +728,11 @@ def section_vertical_cores():
     check("stair core tables: one inferred flat per served storey (flats per floor 1), no lift (0); stair.core_storeys reads 5 on every stair of the stack",
           tables["stair"][any_stair.GlobalId]["core_flats_per_floor"] == 1.0 and tables["stair"][any_stair.GlobalId]["core_has_lift"] == 0.0
           and all(measures.measure(ctx, st, "stair.core_storeys", {})[0] == 5.0 for st in stairs.values()), tables["stair"].get(any_stair.GlobalId))
-    records = run_topic("housing", f, "fx", graph=graph)
+    records = run_fixture("housing", f, "fx", graph=graph)
     k91 = [r for r in records if r["provenance"]["rule"] == "K91" and not r["type"].endswith("_scenario")]
     check("K91 (widened): one flat per floor, no lift, 5 storeys served > N_1F (4): one info record (not warn) carrying the four stairs of the core",
           len(k91) == 1 and k91[0]["type"].endswith("_info") and set(members(k91[0])) == {s.GlobalId for s in stairs.values()}, [r["id"] for r in k91])
-    k25 = [r for r in run_topic(TOPIC_OF["K25"], f, "fx", graph=graph) if r["provenance"]["rule"] == "K25"]
+    k25 = [r for r in run_fixture(TOPIC_OF["K25"], f, "fx", graph=graph) if r["provenance"]["rule"] == "K25"]
     check("K25: without a lift no storey is lift-served, so no entrance door is selected and no K25 record exists (not even a scenario)", not k25, [r["id"] for r in k25])
     f, storeys, spaces, doors, stairs, graph = tower_fixture(storeys_with_stair=4, lift=True)
     ctx = Context(f, graph)
@@ -738,10 +740,10 @@ def section_vertical_cores():
     lift_cores = [c for c in found if c["kind"] == "lift"]
     check("vertical_cores: a 15 m 'Aufzug 1' body is a lift core serving all 5 storeys; the stair core now has a lift", len(lift_cores) == 1 and len(lift_cores[0]["storeys"]) == 5
           and measures.measure(ctx, next(iter(stairs.values())), "stair.core_has_lift", {})[0] == 1.0, [len(c["storeys"]) for c in lift_cores])
-    records = run_topic("housing", f, "fx", graph=graph)
+    records = run_fixture("housing", f, "fx", graph=graph)
     k91 = [r for r in records if r["provenance"]["rule"] == "K91" and not r["type"].endswith("_scenario")]
     check("K91: with the lift the `where` condition excludes the core and K91 emits nothing", not k91, [r["id"] for r in k91])
-    records = run_topic(TOPIC_OF["K25"], f, "fx", graph=graph)
+    records = run_fixture(TOPIC_OF["K25"], f, "fx", graph=graph)
     k25 = [r for r in records if r["provenance"]["rule"] == "K25"]
     info = [r for r in k25 if r["evidence"]["metrics"].get("param") == "W_LIFT" and r["type"].endswith("_info")]
     passed = [r for r in k25 if r["evidence"]["metrics"].get("param") == "W_LIFT" and r["type"].endswith("_pass")]
@@ -845,7 +847,6 @@ def flight_fixture():
 
 def section_flight_width():
     from recognition.neufert.context import Context
-    from recognition.neufert.engine import run_topic
     f, storey, flights = flight_fixture()
     ctx = Context(f, None)
     def w(name):
@@ -856,7 +857,7 @@ def section_flight_width():
           w("u") is not None and abs(w("u") - 1.0) < 0.06 and abs(measures.measure(ctx, flights["u"], "element.local_short", {})[0] - 3.7) < 1e-6, w("u"))
     check("flight.width without a walking line: a straight body gives its short extent (1.0 m); a square body is None (nodata), never a guess",
           w("noaxis_run") is not None and abs(w("noaxis_run") - 1.0) < 1e-6 and w("noaxis_square") is None, (w("noaxis_run"), w("noaxis_square")))
-    records = run_topic("stairs", f, "fx", graph=None)
+    records = run_fixture("stairs", f, "fx", graph=None)
     by = by_rule_outcome(records)
     guid = {name: flight.GlobalId for name, flight in flights.items()}
     def one(kid, param, outcome):
@@ -880,15 +881,17 @@ def section_example():
     graph = AccessGraph(model)
     counts = Counter()
     failures = []
-    for suffix, _topic, _level, _classes in TOPICS:
+    for rid, _title, _level, _classes in pilot.RULES:
         try:
-            records = run_topic(suffix, model, "ex", graph=graph)
+            records = run_rule(rid, model, "ex", graph=graph)
         except Exception as e:  # noqa: BLE001
-            failures.append((suffix, f"{type(e).__name__}: {e}"))
+            failures.append((rid, f"{type(e).__name__}: {e}"))
             continue
         for record in records:
             counts[(record["provenance"]["rule"], record["type"].rsplit("_", 1)[1])] += 1
-    check("example model: every Neufert category runs without error", not failures, failures)
+    check("example model: every Neufert rule category runs without error", not failures, failures)
+    check("example model: the live categories emit their selection only (scenario records)",
+          counts and {outcome for _rid, outcome in counts} == {"scenario"}, dict(counts))
     # The route fact is a copy of egress_reachability's cost model (facts.py says why); the two must agree.
     from recognition.detectors import egress_reachability
     from recognition.neufert.context import Context
@@ -913,6 +916,218 @@ def section_example():
           sum(n for (_, o), n in counts.items() if o == "nodata") <= sum(counts.values()) / 2, dict(counts))
 
 
+def section_plumbing():
+    """The one-rule plumbing (2026-10-28): build_rule validates a synthetic
+    binding as load_rules does, run_rules runs it under one category, a
+    check-level `widened` note downgrades that check only, the card's
+    source.from reaches the records, and element.storey_height gates a
+    flight on its own storey (None on the top storey: nodata)."""
+    from recognition.neufert.engine import run_rules
+    from recognition.neufert.rules import build_rule
+
+    f = ifcopenshell.api.run("project.create_file", version="IFC4")
+    run(f, "IfcProject", name="P")
+    metre = ifcopenshell.api.run("unit.add_si_unit", f, unit_type="LENGTHUNIT")
+    ifcopenshell.api.run("unit.assign_unit", f, units=[metre])
+    lower = run(f, "IfcBuildingStorey", name="S1")
+    lower.Elevation = 0.0
+    upper = run(f, "IfcBuildingStorey", name="S2")
+    upper.Elevation = 3.0
+    flights = {}
+    for name, storey in (("f_low", lower), ("f_top", upper)):
+        flight = run(f, "IfcStairFlight", name=name)
+        add_pset(f, flight, "Pset_StairFlightCommon", {"NumberOfRiser": 20})
+        ifcopenshell.api.run("spatial.assign_container", f, products=[flight], relating_structure=storey)
+        flights[name] = flight
+    steps = build_rule("T1", {
+        "title": "Steps", "family": "measure", "status": "bound", "level": "storey",
+        "select": {"class": "IfcStairFlight"},
+        "checks": [{"measure": "flight.risers", "param": "N_MAX", "when": {"measure": "element.storey_height", "param": "H"}}],
+    }, {"rule": "T1", "source": {"from": ["K1"]}, "params": {
+        "H": {"op": ">=", "value": 2.75, "unit": "m", "severity": "PARAM"},
+        "N_MAX": {"op": "<=", "value": 18, "unit": "steps", "severity": "FAIL"}}})
+    got = by_rule_outcome(run_rules([steps], "neufert_t1", f, "fx"))
+    fail = got.get(("T1", "fail", "N_MAX"), [])
+    nodata = got.get(("T1", "nodata", None), [])
+    check("plumbing: a flight whose storey is 3.0 m high is judged through the element.storey_height gate",
+          len(fail) == 1 and members(fail[0]) == [flights["f_low"].GlobalId] and fail[0]["type"] == "neufert_t1_fail", sorted(got))
+    check("plumbing: a flight on the top storey has no storey height: nodata naming element.storey_height",
+          len(nodata) == 1 and members(nodata[0]) == [flights["f_top"].GlobalId]
+          and "element.storey_height" in nodata[0]["evidence"]["metrics"]["measures"], nodata and nodata[0]["evidence"]["metrics"])
+    check("plumbing: the card's source.from reaches the records as metrics.from",
+          fail and fail[0]["evidence"]["metrics"].get("from") == ["K1"], fail and fail[0]["evidence"]["metrics"])
+
+    f2, _s1, _s2, doors, _flights, _spaces, _stairs = fixture()
+    doors_rule = build_rule("T2", {
+        "title": "Doors", "family": "measure", "status": "bound", "level": "element",
+        "select": {"class": "IfcDoor", "prop": {"IsExternal": False}},
+        "checks": [{"measure": "door.clear_height", "param": "H_MIN"},
+                   {"measure": "door.clear_height", "param": "H_WIDE", "widened": "the gate of this check is not stated"}],
+    }, {"rule": "T2", "params": {
+        "H_MIN": {"op": ">=", "value": 2.1, "unit": "m", "severity": "FAIL"},
+        "H_WIDE": {"op": ">=", "value": 2.3, "unit": "m", "severity": "FAIL"}}})
+    got = by_rule_outcome(run_rules([doors_rule], "neufert_t2", f2, "fx"))
+    check("plumbing: an unwidened check keeps its fails (d_low at 2.00 m fails H_MIN)",
+          any(doors["d_low"].GlobalId in members(r) for r in got.get(("T2", "fail", "H_MIN"), [])), sorted(got))
+    wide = got.get(("T2", "info", "H_WIDE"), [])
+    check("plumbing: a check-level `widened` turns that check's fails into info and quotes its note",
+          wide and not got.get(("T2", "fail", "H_WIDE")) and "the gate of this check is not stated" in wide[0]["evidence"]["summary"], sorted(got))
+    check("plumbing: a card without source.from leaves metrics.from None",
+          wide and wide[0]["evidence"]["metrics"].get("from") is None, wide and wide[0]["evidence"]["metrics"])
+
+
+PILOT_STATUSES = {"R04": "widened", "R05": "widened", "R07": "partial", "R10": "partial", "R24": "deferred",
+                  "R25": "widened", "R43": "widened", "R44": "deferred", "R56": "partial"}
+
+
+def _source_value(source_params, path):
+    """The workbench value a bi2m param names in `from`: a dotted path into
+    the card's source.params, "/i" for the i-th number of a "17/28" ratio;
+    *_cm keys and ratio parts are centimetres, returned in metres."""
+    key, _, index = path.partition("/")
+    value = source_params
+    for part in key.split("."):
+        value = value[part]
+    if index:
+        return int(str(value).split("/")[int(index)]) / 100
+    return value / 100 if key.endswith("_cm") else value
+
+
+def section_pilot():
+    """The Neufert section's 9 rules (2026-10-28): the cards round-trip the
+    workbench's own values, the statuses are as decided, and the bindings
+    reuse the families on the door and stair fixtures."""
+    from recognition.neufert import pilot
+    from recognition.neufert.engine import run_rule
+    from recognition.neufert.rules import rule as live_rule
+    rules = {rid: live_rule(rid) for rid in PILOT_STATUSES}
+    check("pilot: the 9 rules load with the decided statuses",
+          {rid: status_kind(r["status"]) for rid, r in rules.items()} == PILOT_STATUSES, {rid: r["status"][:20] for rid, r in rules.items()})
+    check("pilot: pilot.RULES lists the 9 in RID order with the bindings' titles",
+          [entry[0] for entry in pilot.RULES] == sorted(PILOT_STATUSES) and all(entry[1] == rules[entry[0]]["title"] for entry in pilot.RULES),
+          [entry[:2] for entry in pilot.RULES])
+    import yaml
+    mismatched = []
+    for rid in PILOT_STATUSES:
+        card = yaml.safe_load((RULES_DIR / f"{rid}.yaml").read_text(encoding="utf-8"))
+        source = card["source"]["params"]
+        for name, param in card["params"].items():
+            want = _source_value(source, param["from"]) if param["from"] != "forbidden" else None
+            if param["from"] == "forbidden":
+                words = [w.upper() for w in source["forbidden"]]
+                ok = all(any(w in v for w in words) for v in param["value"]) and all(any(w in v for v in param["value"]) for w in words)
+            else:
+                ok = abs(float(param["value"]) - float(want)) < 1e-9
+            if not ok:
+                mismatched.append((rid, name, param["value"], want))
+    check("pilot: every bi2m param equals the workbench value its `from` names (cm -> m, 17/28 -> 0.17 / 0.28)", not mismatched, mismatched)
+    check("pilot: every card keeps the workbench rule (title, requirement, from) under source",
+          all(rules[rid]["origin"] is not None or rid == "R44" for rid in PILOT_STATUSES), {rid: rules[rid]["origin"] for rid in PILOT_STATUSES})
+    deferred = [rid for rid, kind in PILOT_STATUSES.items() if kind == "deferred"]
+    check("pilot: every deferred rule names its needs and a scenario selector",
+          all(rules[rid]["needs"] and rules[rid]["scenario"] for rid in deferred), {rid: (rules[rid]["needs"], bool(rules[rid]["scenario"])) for rid in deferred})
+
+    f, _storey, _storey2, doors, flights, _spaces, _stairs = fixture()
+    narrow = run(f, "IfcDoor", name="d_narrow")
+    narrow.OverallHeight, narrow.OverallWidth = 2.2, 0.8
+    add_pset(f, narrow, "Pset_DoorCommon", {"IsExternal": False})
+    ifcopenshell.api.run("spatial.assign_container", f, products=[narrow], relating_structure=_storey)
+    unknown = run(f, "IfcDoor", name="d_noext")
+    unknown.OverallHeight = 2.2
+    ifcopenshell.api.run("spatial.assign_container", f, products=[unknown], relating_structure=_storey)
+    # 2026-10-29: the section selects what each rule may concern; the judging below is parked (judge=True).
+    live = run_rule("R07", f, "fx")
+    check("pilot: the live rules select only: R07 emits its scenario record and no verdict, and OUTCOMES is the scenario alone",
+          [r["type"] for r in live] == ["neufert_r07_scenario"] and pilot.OUTCOMES == ("scenario",) and not pilot.JUDGE, [r["type"] for r in live])
+    check("pilot: the selection says the requirement is not judged",
+          live and "selection only" in live[0]["evidence"]["summary"] and "not judged" in live[0]["evidence"]["summary"]
+          and "see its pass/fail" not in live[0]["evidence"]["summary"], live and live[0]["evidence"]["summary"][-200:])
+    r07 = by_rule_outcome(run_rule("R07", f, "fx", judge=True))
+    check("R07: an internal door at 2.00 m fails H_CLEAR (the height is judged on every internal door)",
+          any(doors["d_low"].GlobalId in members(r) and r["type"] == "neufert_r07_fail" for r in r07.get(("R07", "fail", "H_CLEAR"), [])), sorted(r07))
+    check("R07: a 0.80 m internal door is info on W_CLEAR, never fail (public building not stated)",
+          any(narrow.GlobalId in members(r) for r in r07.get(("R07", "info", "W_CLEAR"), [])) and not r07.get(("R07", "fail", "W_CLEAR")), sorted(r07))
+    check("R07: a door with no IsExternal anywhere is nodata on the gate, not skipped",
+          any(unknown.GlobalId in members(r) for r in r07.get(("R07", "nodata", None), [])), sorted(r07))
+    r43 = by_rule_outcome(run_rule("R43", f, "fx", judge=True))
+    check("R43: the external revolving door is info on OP_BANNED (emergency exits approximated by external doors), never fail",
+          any(doors["d_rev"].GlobalId in members(r) for r in r43.get(("R43", "info", "OP_BANNED"), [])) and not r43.get(("R43", "fail", "OP_BANNED")), sorted(r43))
+    r04 = by_rule_outcome(run_rule("R04", f, "fx", judge=True))
+    check("R04: a 2-riser flight on a 3.0 m storey is info on N_MIN (3), the 12-riser flight passes",
+          any(flights["f_long"].GlobalId in members(r) for r in r04.get(("R04", "info", "N_MIN"), []))
+          and any(flights["f_ok"].GlobalId in members(r) for r in r04.get(("R04", "pass", "N_MIN"), [])), sorted(r04))
+    def building_with_flight(model, storey):
+        """A building over `storey` holding one IfcStair with one flight (the stair is R25's selection, the flight its judged element)."""
+        building = run(model, "IfcBuilding", name="B")
+        ifcopenshell.api.run("aggregate.assign_object", model, products=[storey], relating_object=building)
+        stair = run(model, "IfcStair", name="st")
+        ifcopenshell.api.run("spatial.assign_container", model, products=[stair], relating_structure=storey)
+        flight = run(model, "IfcStairFlight", name="fl")
+        add_pset(model, flight, "Pset_StairFlightCommon", {"RiserHeight": 0.20, "TreadLength": 0.25, "NumberOfRiser": 20})
+        ifcopenshell.api.run("aggregate.assign_object", model, products=[flight], relating_object=stair)
+        return flight
+    f, storey, _spaces, graph = dwelling_fixture()
+    building_with_flight(f, storey)
+    r25 = run_rule("R25", f, "fx", graph=graph, judge=True)
+    check("R25: a building with inferred dwellings (3 flats, usable graph) is residential: no verdict and no scenario record",
+          not r25, [r["type"] for r in r25])
+    f, storey, spaces, graph = dwelling_fixture()
+    for index, space in enumerate(spaces.values()):
+        space.Name = f"Office {index}"
+    flight = building_with_flight(f, storey)
+    r25 = by_rule_outcome(run_rule("R25", f, "fx", graph=graph, judge=True))
+    stair_of_flight = ifcopenshell.util.element.get_aggregate(flight)
+    check("R25: a building with a usable graph and no inferred dwelling is judged: the 0.20 m riser is info on R_ESS (0.19); its selection is the stair, with the flight as context",
+          any(flight.GlobalId in members(r) for r in r25.get(("R25", "info", "R_ESS"), []))
+          and any(primary_members(r) == [stair_of_flight.GlobalId] and flight.GlobalId in context_members(r) for r in r25.get(("R25", "scenario", None), [])), sorted(r25))
+    f, storey, _spaces, _graph = dwelling_fixture()
+    building_with_flight(f, storey)
+    r25 = run_rule("R25", f, "fx", graph=None, judge=True)
+    check("R25: with a building but no usable graph the dwelling count is unknown: no verdict and no scenario record",
+          not r25, [r["type"] for r in r25])
+
+    # R04's storey height skips a datum level that holds no space, and a twin storey at the same elevation
+    # (example_autcon's 'mid level' 0.3 m above Floor 0 hid its five flights, review 2026-10-28).
+    f = ifcopenshell.api.run("project.create_file", version="IFC4")
+    run(f, "IfcProject", name="P")
+    metre = ifcopenshell.api.run("unit.add_si_unit", f, unit_type="LENGTHUNIT")
+    ifcopenshell.api.run("unit.assign_unit", f, units=[metre])
+    storeys, steps = {}, {}
+    for name, elevation, occupied in (("S0", 0.0, True), ("datum", 0.3, False), ("S1", 3.0, True), ("S1 twin", 3.0, True), ("S2", 6.0, True)):
+        storey = run(f, "IfcBuildingStorey", name=name)
+        storey.Elevation = elevation
+        storeys[name] = storey
+        if occupied:
+            space = run(f, "IfcSpace", name=f"Room {name}")
+            ifcopenshell.api.run("aggregate.assign_object", f, products=[space], relating_object=storey)
+    for name in ("S0", "S1", "S1 twin", "S2"):
+        flight = run(f, "IfcStairFlight", name=f"fl {name}")
+        add_pset(f, flight, "Pset_StairFlightCommon", {"NumberOfRiser": 20})
+        ifcopenshell.api.run("spatial.assign_container", f, products=[flight], relating_structure=storeys[name])
+        steps[name] = flight
+    from recognition.neufert.context import Context
+    ctx = Context(f, None)
+    heights = {name: measures.measure(ctx, flight, "element.storey_height", {})[0] for name, flight in steps.items()}
+    check("element.storey_height: the rise to the next storey up that holds a space (S0 -> S1 over the empty datum, S1 and its twin -> S2), None on the top storey",
+          heights == {"S0": 3.0, "S1": 3.0, "S1 twin": 3.0, "S2": None}, heights)
+    r04 = by_rule_outcome(run_rule("R04", f, "fx", judge=True))
+    judged = {g for r in r04.get(("R04", "info", "N_MAX"), []) for g in members(r)}
+    check("R04: flights under a datum level or beside a twin storey are judged (20 risers: info on N_MAX); the top storey's flight is nodata, never silent",
+          judged == {steps[n].GlobalId for n in ("S0", "S1", "S1 twin")}
+          and any(steps["S2"].GlobalId in members(r) for r in r04.get(("R04", "nodata", None), [])), sorted(r04))
+
+    f, _storey, flights = flight_fixture()
+    guid = {name: flight.GlobalId for name, flight in flights.items()}
+    r56 = by_rule_outcome(run_rule("R56", f, "fx", judge=True))
+    check("R56: the U flight's 0.20 m tread fails T_NE (0.21); the other widths pass W_NE (0.50)",
+          [members(r) for r in r56.get(("R56", "fail", "T_NE"), [])] == [[guid["u"]]]
+          and set(members(r56[("R56", "pass", "W_NE")][0])) == {guid["straight"], guid["u"], guid["noaxis_run"]}, sorted(r56))
+    r05 = by_rule_outcome(run_rule("R05", f, "fx", judge=True))
+    check("R05 (widened): the U flight's 0.20 m riser is info on R_MAX (0.17), nothing fails, the 1.0 m widths pass W_MIN",
+          [members(r) for r in r05.get(("R05", "info", "R_MAX"), [])] == [[guid["u"]]]
+          and r05.get(("R05", "pass", "W_MIN")) and not [k for k in r05 if k[1] == "fail"], sorted(r05))
+
+
 def _metric_file():
     f = ifcopenshell.api.run("project.create_file", version="IFC4")
     run(f, "IfcProject", name="P")
@@ -930,6 +1145,338 @@ def _box(f, body, product, length, height, thickness, x=0.0, y=0.0, z=0.0):
     matrix = np.eye(4)
     matrix[0][3], matrix[1][3], matrix[2][3] = x, y, z
     ifcopenshell.api.run("geometry.edit_object_placement", f, product=product, matrix=matrix)
+
+
+def section_selection():
+    """The selection each live rule emits (2026-10-29): rules about the
+    same element select it the same way - every stair with its parts and
+    the storeys its body spans for R04 R05 R25 R56 - and differ only by
+    their readable conditions (R04's storey height, R25's dwellings)."""
+    import ifcopenshell.guid
+    f, body = _metric_file()
+    building = run(f, "IfcBuilding", name="B")
+    levels, stairs, parts = {}, {}, set()
+    for name, elevation in (("S0", 0.0), ("S1", 3.0), ("S2", 4.0), ("S3", 7.0)):
+        level = run(f, "IfcBuildingStorey", name=name)
+        level.Elevation = elevation
+        ifcopenshell.api.run("aggregate.assign_object", f, products=[level], relating_object=building)
+        room = run(f, "IfcSpace", name=f"Room {name}")
+        ifcopenshell.api.run("aggregate.assign_object", f, products=[room], relating_object=level)
+        levels[name] = level
+    for name, rise in (("S0", 3.0), ("S1", 1.0), ("S3", 3.0)):  # S0 is 3 m high, S1 1 m (S2 above it), S3 the top storey
+        stair = run(f, "IfcStair", name=f"Treppe {name}")
+        ifcopenshell.api.run("spatial.assign_container", f, products=[stair], relating_structure=levels[name])
+        flight = run(f, "IfcStairFlight", name=f"Lauf {name}")
+        _box(f, body, flight, 3.0, rise, 1.0, z=levels[name].Elevation)
+        landing = run(f, "IfcSlab", name=f"Podest {name}", predefined_type="LANDING")
+        rail = run(f, "IfcRailing", name=f"Geländer {name}")
+        ifcopenshell.api.run("aggregate.assign_object", f, products=[flight, landing, rail], relating_object=stair)
+        stairs[name] = stair
+        parts |= {flight.GlobalId, landing.GlobalId, rail.GlobalId}
+    selection = {rid: [r for r in run_rule(rid, f, "fx") if r["type"].endswith("_scenario")] for rid in ("R04", "R05", "R25", "R56")}
+    r05 = selection["R05"][0] if selection["R05"] else None
+    spanned = {e.Name for e in f.by_type("IfcBuildingStorey") if r05 and e.GlobalId in context_members(r05)}
+    check("selection: R05 selects every stair, with its flights, landings and railings and the storeys their bodies span as context",
+          r05 is not None and sorted(primary_members(r05)) == sorted(s.GlobalId for s in stairs.values())
+          and parts <= set(context_members(r05)) and spanned == {"S0", "S1", "S2", "S3"}, (r05 and r05["evidence"]["metrics"]["relatedClasses"], spanned))
+    check("selection: R56 selects exactly what R05 selects (same subject, no readable condition of its own)",
+          selection["R56"] and r05 and [members(r) for r in selection["R56"]] == [members(r05)], [len(r["members"]) for r in selection["R56"]])
+    r04 = selection["R04"][0] if selection["R04"] else None
+    check("selection: R04 keeps the stair on the 3.0 m storey (H_STOREY 2.75 read from its card) and drops the one on the 1.0 m storey and the one on the top storey (no height: excluded)",
+          r04 is not None and primary_members(r04) == [stairs["S0"].GlobalId], r04 and [g for g in primary_members(r04)])
+    check("selection: R25 selects nothing without a usable door graph (the dwelling count is unknown, so its stairs are excluded)",
+          not selection["R25"], [len(r["members"]) for r in selection["R25"]])
+    # Final review 2026-10-29: the pre-flight classes must be what the selection reads, and with judging off the
+    # status note no longer reaches the summary, so each selection's own note says what it holds.
+    from recognition.neufert.rules import rule as live_rule
+
+    def scenario_classes(spec):
+        return {c for part in (spec if isinstance(spec, list) else [spec])
+                for c in ([part["class"]] if isinstance(part.get("class"), str) else part.get("class") or [])}
+    off = {rid: (classes[0], sorted(scenario_classes(live_rule(rid)["scenario"]))) for rid, _t, _l, classes in pilot.RULES
+           if not set(classes[0].split("|")) <= scenario_classes(live_rule(rid)["scenario"])}
+    check("selection: each rule's first pre-flight class is its selection's subject (IfcStair for the four stair rules)", not off, off)
+    raw = {rid: live_rule(rid).get("scenario_note") for rid, *_ in pilot.RULES
+           if not live_rule(rid).get("scenario_note") or re.search(r"\b[A-Z]+_[A-Z_]+\b", live_rule(rid)["scenario_note"])}
+    check("selection: every rule's selection carries a note saying what it holds, with no raw param name in it", not raw, raw)
+    check("selection: R04's summary states the storey height from the card text (2.75 m), never the param name",
+          r04 is not None and "2.75 m" in r04["evidence"]["summary"] and "H_STOREY" not in r04["evidence"]["summary"], r04 and r04["evidence"]["summary"])
+    wall = run(f, "IfcWall", name="Außenwand")
+    window = run(f, "IfcWindow", name="Fenster")
+    add_pset(f, window, "Pset_WindowCommon", {"IsExternal": True})
+    inner = run(f, "IfcWindow", name="Innenfenster")
+    add_pset(f, inner, "Pset_WindowCommon", {"IsExternal": False})
+    opening = run(f, "IfcOpeningElement", name="Öffnung")
+    f.createIfcRelVoidsElement(ifcopenshell.guid.new(), None, None, None, wall, opening)
+    f.createIfcRelFillsElement(ifcopenshell.guid.new(), None, None, None, opening, window)
+    for element in (wall, window, inner):
+        ifcopenshell.api.run("spatial.assign_container", f, products=[element], relating_structure=levels["S0"])
+    r44 = [r for r in run_rule("R44", f, "fx2") if r["type"].endswith("_scenario")]
+    check("selection: R44 selects the external window with its host wall as context; the internal window is out",
+          len(r44) == 1 and primary_members(r44[0]) == [window.GlobalId] and context_members(r44[0]) == [wall.GlobalId],
+          [(primary_members(r), context_members(r)) for r in r44])
+
+
+def _scenario(rid, model, file_key, graph=None):
+    records = [r for r in run_rule(rid, model, file_key, graph=graph) if r["type"].endswith("_scenario")]
+    return records[0] if records else None
+
+
+def section_relations():
+    """The relations the IfcOpenShell check of 2026-10-29 completed
+    (research/neufert/ifcopenshell_api_check_2026-10-29.md): the host of a
+    curtain-wall panel or a composite window's panel, door -> rooms and
+    window -> room with their fallbacks, R10's daylight depth."""
+    import ifcopenshell.guid
+    from recognition.neufert import related as relations
+    from recognition.neufert.context import Context
+    f, _body = _metric_file()
+    storey = run(f, "IfcBuildingStorey", name="S0")
+    facade = run(f, "IfcCurtainWall", name="Fassade")  # states no IsExternal: context of R44, not one of its primaries
+    cw_window = run(f, "IfcWindow", name="Fassadenfenster")
+    cw_door = run(f, "IfcDoor", name="Fassadentür")
+    ifcopenshell.api.run("aggregate.assign_object", f, products=[cw_window, cw_door], relating_object=facade)
+    wall = run(f, "IfcWall", name="Außenwand")
+    opening = run(f, "IfcOpeningElement", name="Öffnung")
+    composite = run(f, "IfcWindow", name="Fensterelement")
+    f.createIfcRelVoidsElement(ifcopenshell.guid.new(), None, None, None, wall, opening)
+    f.createIfcRelFillsElement(ifcopenshell.guid.new(), None, None, None, opening, composite)
+    panel = run(f, "IfcWindow", name="Flügel")
+    ifcopenshell.api.run("aggregate.assign_object", f, products=[panel], relating_object=composite)
+    assembly = run(f, "IfcElementAssembly", name="Baugruppe")
+    loose = run(f, "IfcWindow", name="Baugruppenfenster")
+    ifcopenshell.api.run("aggregate.assign_object", f, products=[loose], relating_object=assembly)
+    for window in (cw_window, composite, panel, loose):
+        add_pset(f, window, "Pset_WindowCommon", {"IsExternal": True})
+    add_pset(f, cw_door, "Pset_DoorCommon", {"IsExternal": True})
+    for element in (facade, wall, composite, assembly):
+        ifcopenshell.api.run("spatial.assign_container", f, products=[element], relating_structure=storey)
+    ctx = Context(f)
+    hosts = {e.Name: [h.Name for h in relations.via_host_wall(ctx, [e])] for e in (cw_window, cw_door, panel, composite, loose, facade)}
+    check("relations: a curtain wall's window or door panel gets the curtain wall as host (no FillsVoids: its aggregate parent), a composite window's panel the wall its parent fills; an assembly's window and a curtain wall itself get none",
+          hosts == {"Fassadenfenster": ["Fassade"], "Fassadentür": ["Fassade"], "Flügel": ["Außenwand"], "Fensterelement": ["Außenwand"],
+                    "Baugruppenfenster": [], "Fassade": []}, hosts)
+    r43 = _scenario("R43", f, "rel1")
+    check("relations: R43 carries the curtain wall of its curtain-wall door as context",
+          r43 is not None and primary_members(r43) == [cw_door.GlobalId] and facade.GlobalId in context_members(r43), r43 and context_members(r43))
+    r44 = _scenario("R44", f, "rel1")
+    check("relations: R44 carries the curtain wall of its panel window and the wall of the composite window as context, never the assembly",
+          r44 is not None and {facade.GlobalId, wall.GlobalId} <= set(context_members(r44)) and assembly.GlobalId not in context_members(r44),
+          r44 and context_members(r44))
+    _relations_doors()
+
+
+class _RelGraph:
+    """A door graph stand-in: footprints, door links and a usable() verdict."""
+
+    def __init__(self, polygons, door_links=None, usable=False, door_points=None):
+        self.polygons, self.door_links, self._usable = polygons, door_links or {}, usable
+        self.door_points = door_points or {}
+        self.spaces_by_storey = {}
+
+    def usable(self):
+        return self._usable
+
+
+def _place(f, product, x, y, z=0.0):
+    import numpy as np
+    matrix = np.eye(4)
+    matrix[0][3], matrix[1][3], matrix[2][3] = x, y, z
+    ifcopenshell.api.run("geometry.edit_object_placement", f, product=product, matrix=matrix)
+
+
+def _rooms_file(rooms, doors, storey_name="S0"):
+    """Rooms {name: (x, y, length, depth)} with 3 m box bodies on one storey,
+    doors {name: (x, y)} placed and contained there."""
+    f, body = _metric_file()
+    storey = run(f, "IfcBuildingStorey", name=storey_name)
+    spaces, placed = {}, {}
+    for name, (x, y, length, depth) in rooms.items():
+        space = run(f, "IfcSpace", name=name)
+        ifcopenshell.api.run("aggregate.assign_object", f, products=[space], relating_object=storey)
+        if length:
+            _box(f, body, space, length, 3.0, depth, x=x, y=y)
+        spaces[name] = space
+    for name, (x, y) in doors.items():
+        door = run(f, "IfcDoor", name=name)
+        ifcopenshell.api.run("spatial.assign_container", f, products=[door], relating_structure=storey)
+        _place(f, door, x, y)
+        placed[name] = door
+    return f, body, storey, spaces, placed
+
+
+def _relations_doors():
+    """door -> rooms (R43): the door graph's links where it is usable, else
+    its 0.4 m reach redone on the context's own world-frame footprints."""
+    from shapely.geometry import box as box2d
+    from recognition.neufert.context import Context
+    rooms = {"A": (0.0, 0.0, 5.0, 4.0), "B": (5.0, 0.0, 5.0, 4.0), "C": (0.0, 4.0, 5.0, 4.0), "G": (0.0, 0.0, 0.0, 0.0)}
+    doors = {"d_ab": (5.0, 2.0), "d_abc": (5.0, 4.0), "d_ag": (2.0, 0.0), "d_out": (0.0, 2.0)}
+    f, _body, storey, spaces, placed = _rooms_file(rooms, doors)
+    add_pset(f, placed["d_out"], "Pset_DoorCommon", {"IsExternal": True})
+    g = {name: space.GlobalId for name, space in spaces.items()}
+    # G has no body: its footprint is the graph's alone (south of A), which an unusable graph never lends to the reach.
+    graph = _RelGraph({g["G"]: box2d(0, -4, 5, 0)}, usable=False)
+    ctx = Context(f, graph)
+    table = ctx.fact("door_rooms", facts.door_rooms)
+    name_of = {guid: name for name, guid in g.items()}
+    named = {d.Name: sorted(name_of[r] for r in table.get(d.GlobalId, [])) for d in placed.values()} if table is not None else None
+    check("door rooms without a usable door graph: the 0.4 m reach on the context's own footprints (d_ab -> A B), a door reaching three rooms gets none, a footprint lent by the graph is never reached (d_ag -> A only)",
+          named == {"d_ab": ["A", "B"], "d_abc": [], "d_ag": ["A"], "d_out": ["A"]}, named)
+    by_room = ctx.fact("doors_by_room", facts.doors_by_room)
+    inverse = {}
+    for door, reached in (table or {}).items():
+        for room in reached:
+            inverse.setdefault(room, []).append(door)
+    check("doors_by_room is the exact inverse of door_rooms (one table per pair: R24's doors and R43's rooms agree)",
+          by_room == {room: sorted(found) for room, found in inverse.items()}, (by_room, inverse))
+    r43 = _scenario("R43", f, "rel2", graph=graph)
+    check("R43 carries the rooms its external door opens into as context",
+          r43 is not None and primary_members(r43) == [placed["d_out"].GlobalId] and context_members(r43) == [g["A"]], r43 and context_members(r43))
+    far, _b, _s, _sp, _d = _rooms_file({"A": (0.0, 0.0, 5.0, 4.0)}, {"d1": (20.0, 2.0), "d2": (0.0, 30.0)})
+    check("door rooms: a model whose doors all lie over 2 m from every footprint has none (the frame guard)",
+          Context(far).fact("door_rooms", facts.door_rooms) is None, Context(far).fact("door_rooms", facts.door_rooms))
+    own = Context(f).polygons
+    links = {placed["d_abc"].GlobalId: (storey.GlobalId, [g["A"], g["B"], g["C"]])}
+    usable = _RelGraph(dict(own), door_links=links, usable=True, door_points={placed["d_abc"].GlobalId: (5.0, 4.0)})
+    usable_ctx = Context(f, usable)
+    check("door rooms with a usable door graph: its links as they are (three rooms kept)",
+          usable_ctx.graph_usable() and usable_ctx.fact("door_rooms", facts.door_rooms) == {placed["d_abc"].GlobalId: [g["A"], g["B"], g["C"]]},
+          usable_ctx.fact("door_rooms", facts.door_rooms))
+    _relations_windows()
+
+
+def _window(f, body, storey, name, x, y, z=0.0, external=True):
+    window = run(f, "IfcWindow", name=name)
+    window.OverallWidth, window.OverallHeight = 1.0, 1.2
+    ifcopenshell.api.run("spatial.assign_container", f, products=[window], relating_structure=storey)
+    _box(f, body, window, 1.0, 1.2, 0.1, x=x, y=y, z=z)
+    if external is not None:
+        add_pset(f, window, "Pset_WindowCommon", {"IsExternal": external})
+    return window
+
+
+def _relations_windows():
+    """window -> room (R44): the proximity association on a sound model;
+    where it is switched off (its windows over 2 m from the footprints of
+    their storey), the IfcOpenShell BVH tree, which places every body itself."""
+    from recognition.neufert.context import Context
+    f, body, storey, spaces, _doors = _rooms_file({"Office 1": (0.0, 0.0, 5.0, 4.0)}, {})
+    window = _window(f, body, storey, "Fenster", 2.0, -0.15)
+    ctx = Context(f)
+    sound = ctx.fact("window_rooms", facts.window_rooms)
+    check("window rooms on a sound model: the proximity association (the window 0.15 m south of Office 1), and the tree is never built",
+          sound == {"rooms": {window.GlobalId: spaces["Office 1"].GlobalId}, "ambiguous": set()} and "window_tree_rooms" not in ctx._facts, sound)
+    # Frame-suspect: the window is contained in S1, whose only room stands 20 m away; its body sits 0.05 m from Office 1 on S0.
+    f, body, s0, spaces, _doors = _rooms_file({"Office 1": (0.0, 0.0, 5.0, 4.0)}, {})
+    s1 = run(f, "IfcBuildingStorey", name="S1")
+    s1.Elevation = 3.0
+    far = run(f, "IfcSpace", name="Lager")
+    ifcopenshell.api.run("aggregate.assign_object", f, products=[far], relating_object=s1)
+    _box(f, body, far, 5.0, 3.0, 4.0, x=20.0, y=0.0, z=3.0)
+    window = _window(f, body, s1, "Fenster", 1.0, -0.15, z=1.0)
+    ctx = Context(f)
+    from recognition.neufert.geometry import _glazing_by_space
+    suspect = ctx.fact("glazing_by_space", _glazing_by_space)["suspect"]
+    table = ctx.fact("window_rooms", facts.window_rooms)
+    check("window rooms on a frame-suspect model: the BVH tree (clash_clearance_many within 0.6 m) gives the window the room its body stands by, whatever storey holds it",
+          suspect and table is not None and table["rooms"] == {window.GlobalId: spaces["Office 1"].GlobalId}, (suspect, table))
+    check("windows_by_room is the exact inverse of window_rooms (R10's windows and R44's rooms agree)",
+          ctx.fact("windows_by_room", facts.windows_by_room) == {spaces["Office 1"].GlobalId: [window.GlobalId]},
+          ctx.fact("windows_by_room", facts.windows_by_room))
+    r44 = _scenario("R44", f, "rel3")
+    check("R44 carries the room its window lights as context (here through the tree)",
+          r44 is not None and primary_members(r44) == [window.GlobalId] and spaces["Office 1"].GlobalId in context_members(r44), r44 and context_members(r44))
+    r10 = _scenario("R10", f, "rel3")
+    check("R10 carries the same window as its office's context (via windows, the same table)",
+          r10 is not None and spaces["Office 1"].GlobalId in primary_members(r10) and window.GlobalId in context_members(r10), r10 and members(r10))
+    # Final review 2026-10-29 (I2): clash_clearance_many with check_all=False reports the first pair within reach, not the nearest.
+    from recognition.neufert.geometry import _window_tree_rooms
+    f, body, storey, spaces, _doors = _rooms_file({"A": (0.0, 0.0, 10.0, 10.0), "B": (0.0, -10.4, 10.0, 10.0)}, {})
+    between = _window(f, body, storey, "Fenster", 4.0, -0.28)  # body y -0.28..-0.18: 0.18 m from A, 0.12 m from B
+    tree = _window_tree_rooms(Context(f))
+    check("window rooms by the tree: a window within reach of two rooms goes to the nearer one (B, 0.12 m, not A, 0.18 m) and is a tie-break",
+          tree["rooms"].get(between.GlobalId) == spaces["B"].GlobalId and between.GlobalId in tree["ambiguous"],
+          ({spaces["A"].GlobalId: "A", spaces["B"].GlobalId: "B"}.get(tree["rooms"].get(between.GlobalId)), tree["ambiguous"]))
+    # Final review (I1): 0.8.5's clash_clearance_many segfaults when the windows are in the tree and no space is; run apart.
+    import subprocess
+    crashed = subprocess.run([sys.executable, "-c", "import sys; sys.path.insert(0, sys.argv[1]); import verify_neufert as v; v._tree_without_space_bodies()",
+                              str(REPO_ROOT / "scripts")], capture_output=True, text=True, timeout=300)
+    check("window rooms by the tree: a frame-suspect model whose rooms have no body of their own (footprints lent by the door graph) runs R44 without crashing",
+          crashed.returncode == 0 and "R44 ok" in crashed.stdout, (crashed.returncode, crashed.stdout[-200:], crashed.stderr[-300:]))
+    # Final review (I3): R44 reaches the window's room `via: rooms`; its tie-break is said as R10 says it.
+    f, body, storey, spaces, _doors = _rooms_file({"Office A": (0.0, 0.0, 5.0, 4.0), "Office B": (5.2, 0.0, 5.0, 4.0)}, {})
+    _window(f, body, storey, "Fenster", 5.1, -0.15)  # within reach of both offices
+    said = {rid: _scenario(rid, f, "rel6") for rid in ("R44", "R10")}
+    check("R44 says its window's room is a tie-break, as R10 says it for the same window (one table, one disclosure)",
+          all(r is not None and r["evidence"]["metrics"]["relatedAmbiguous"] == 1 and "tie-break" in r["evidence"]["summary"] for r in said.values()),
+          {rid: r and r["evidence"]["metrics"]["relatedAmbiguous"] for rid, r in said.items()})
+    _relations_daylight_depth()
+
+
+def _tree_without_space_bodies():
+    """The I1 regression, run in a child process by section_relations: one
+    office with no body (the door graph lends its footprint 30 m away, so the
+    windows read as frame-suspect) and one window with a body."""
+    from shapely.geometry import box as box2d
+    f, body, storey, spaces, _doors = _rooms_file({"Office": (0.0, 0.0, 0.0, 0.0)}, {})
+    _window(f, body, storey, "Fenster", 1.0, -0.15)
+    graph = _RelGraph({spaces["Office"].GlobalId: box2d(30, 0, 35, 4)}, usable=False)
+    records = run_rule("R44", f, "rel7", graph=graph)
+    print("R44 ok" if any(r["type"].endswith("_scenario") for r in records) else "R44 empty")
+
+
+def _turn(f, product, x, y, z=0.0):
+    """Place `product` at (x, y, z) turned 90 degrees about Z: its local X runs north, its local Y west."""
+    import numpy as np
+    matrix = np.eye(4)
+    matrix[0][0], matrix[0][1], matrix[1][0], matrix[1][1] = 0.0, -1.0, 1.0, 0.0
+    matrix[0][3], matrix[1][3], matrix[2][3] = x, y, z
+    ifcopenshell.api.run("geometry.edit_object_placement", f, product=product, matrix=matrix)
+
+
+def _relations_daylight_depth():
+    """R10's depth from the daylight face (judged with judge=True; the live
+    run selects only): the footprint cut along each external window's local
+    Y (its facade normal), the deepest window per facade, the shallowest
+    facade per room."""
+    rooms = {"Office deep": (0.0, 0.0, 5.0, 8.0), "Office ok": (10.0, 0.0, 5.0, 6.0), "Office corner": (20.0, 0.0, 9.0, 6.0),
+             "Office dark": (40.0, 0.0, 5.0, 5.0)}
+    f, body, storey, spaces, _doors = _rooms_file(rooms, {})
+    _window(f, body, storey, "south deep", 2.0, -0.15)
+    inner = _window(f, body, storey, "internal west deep", 0.0, 3.0, external=False)  # would read 5.0 m across, were it a daylight face
+    _turn(f, inner, -0.05, 3.0)
+    _window(f, body, storey, "south ok", 12.0, -0.15)
+    _window(f, body, storey, "south corner", 22.0, -0.15)
+    west = _window(f, body, storey, "west corner", 0.0, 0.0)
+    _turn(f, west, 19.95, 2.0)
+    got = by_rule_outcome(run_rule("R10", f, "rel4", judge=True))
+    values = {}
+    for (_rid, outcome, _param), records in got.items():
+        for record in records:
+            metrics = record["evidence"]["metrics"]
+            # fail / warn records list each value; a pass rollup gives its range (one value when min == max)
+            listed = metrics.get("values") or {g: metrics["min"] for g in members(record)
+                                               if metrics.get("min") is not None and metrics.get("min") == metrics.get("max")}
+            for guid, value in listed.items():
+                values[guid] = (outcome, round(value, 3) if isinstance(value, float) else value)
+    g = {name: space.GlobalId for name, space in spaces.items()}
+    check("R10: an office 8 m deep from its south windows warns on DL_DEPTH (7 m); the internal window on its west edge is no daylight face",
+          values.get(g["Office deep"]) == ("warn", 8.0), values.get(g["Office deep"]))
+    check("R10: an office 6 m deep passes", values.get(g["Office ok"]) == ("pass", 6.0), values.get(g["Office ok"]))
+    check("R10: a corner office 9 m across from its west window and 6 m from its south window reads 6.0 m (its shallowest daylight face) and passes",
+          values.get(g["Office corner"]) == ("pass", 6.0), values.get(g["Office corner"]))
+    from shapely.geometry import Polygon
+    f2, body2, storey2, spaces2, _doors = _rooms_file({"Office notched": (0.0, 0.0, 0.0, 0.0)}, {})
+    _window(f2, body2, storey2, "south notched", 52.0, -0.15)
+    notched = Polygon([(50, 0), (55, 0), (55, 4), (51, 4), (51, 6), (55, 6), (55, 14), (50, 14)])  # a notch open to the east at y 4..6
+    got2 = run_rule("R10", f2, "rel5", graph=_RelGraph({spaces2["Office notched"].GlobalId: notched}), judge=True)
+    passed = [r["evidence"]["metrics"]["min"] for r in got2 if r["type"] == "neufert_r10_pass"]
+    check("R10: a window's depth is the piece of its cut that starts at the window (4 m up to a notch), not the longest piece beyond the notch (8 m)",
+          passed == [4.0], [(r["type"], r["evidence"]["metrics"].get("min"), r["evidence"]["metrics"].get("values")) for r in got2])
+    check("R10: a windowless office is nodata, never judged",
+          any(g["Office dark"] in members(r) for r in got.get(("R10", "nodata", None), []) + got.get(("R10", "nodata", "DL_DEPTH"), []))
+          and g["Office dark"] not in values, sorted(got))
 
 
 def section_validation():
@@ -972,7 +1519,7 @@ def section_validation():
           riser is None and source and source.startswith("rejected:") and m(orphan, "flight.tread")[0] is None and m(orphan, "flight.risers")[0] is None, (riser, source))
     check("flight trust is one-directional: 0.17 x 10 on a 3.4 m body (a body covering both runs) stands",
           m(both_runs, "flight.riser") == (0.17, "IfcStairFlight.RiserHeight"), m(both_runs, "flight.riser"))
-    records = run_topic("stairs", f, "fx")
+    records = run_fixture("stairs", f, "fx")
     nodata = [r for r in records if r["provenance"]["rule"] == "K07" and r["type"].endswith("_nodata")]
     k07_pass = [r for r in records if r["provenance"]["rule"] == "K07" and r["type"].endswith("_pass") and r["evidence"]["metrics"]["param"] == "STEP_MIN"]
     check("K07 on the trust fixture: the orphan is nodata, the recovered flight's 2 x 0.177 + 0.27 = 0.624 passes STEP_MIN with the parent source",
@@ -997,7 +1544,7 @@ def section_validation():
     check("door.clear_height reads the declared clear passage (1.96 m, prop:Durchgangshöhe) before the 2.01 m opening; without one the overall height stands in with its own source",
           measures.measure(ctx, clear, "door.clear_height", {}) == (1.96, "prop:Durchgangshöhe") and abs(measures.measure(ctx, clear, "door.clear_width", {})[0] - 0.785) < 1e-9
           and measures.measure(ctx, overall, "door.clear_height", {}) == (2.26, "IfcDoor.OverallHeight"), measures.measure(ctx, clear, "door.clear_height", {}))
-    records = run_topic("doors", f, "fx")
+    records = run_fixture("doors", f, "fx")
     k23 = by_rule_outcome(records)
     nod = k23.get(("K23", "nodata", None), [])
     check("K23: the door with no IsExternal anywhere is nodata on the gate ('prop:IsExternal (gate)'), not silently dropped; the 1.96 m clear height fails H_DOOR (a partial rule keeps its outcomes)",
@@ -1020,7 +1567,7 @@ def section_validation():
     ctx = Context(f, None)
     check("element.storey_rise: the ground storey is the lowest at or above 0 (S1, not the basement): S5 rises 14.8 m, B1 -3 m",
           measures.measure(ctx, railings["S5"], "element.storey_rise", {})[0] == 14.8 and measures.measure(ctx, railings["B1"], "element.storey_rise", {})[0] == -3.0)
-    records = by_rule_outcome(run_topic(TOPIC_OF["K15"], f, "fx"))
+    records = by_rule_outcome(run_fixture(TOPIC_OF["K15"], f, "fx"))
     low = records.get(("K15", "pass", "H_LOW"), [])
     high = records.get(("K15", "info", "H_HIGH"), [])
     check("K15 (widened): the 1.0 m railings on B1 and S1 pass H_LOW (rise below the 12 m split); the one on S5 (14.8 m) departs from H_HIGH (1.1 m) as info",
@@ -1040,10 +1587,10 @@ def section_validation():
     for product in (leaf, built):
         ifcopenshell.api.run("spatial.assign_container", f, products=[product], relating_structure=storey)
     ctx = Context(f, None)
-    selected, _unknown = population(ctx, load_rules()["K63"]["select"])
+    selected, _unknown = population(ctx, fixture_rules()["K63"]["select"])
     check("K63 select (a union): the leaf IfcRoof with its own body and the ROOF slab of the built roof, each once; the aggregate IfcRoof itself is not judged",
           [e.GlobalId for e in selected] == sorted([leaf.GlobalId, slab.GlobalId]), [(e.is_a(), e.Name) for e in selected])
-    k63 = by_rule_outcome(run_topic("envelope", f, "fx"))
+    k63 = by_rule_outcome(run_fixture("envelope", f, "fx"))
     fails = k63.get(("K63", "fail", "S_MIN"), [])
     check("K63: both flat bodies (0 %) fail S_MIN from geometry", len(fails) == 1 and set(members(fails[0])) == {leaf.GlobalId, slab.GlobalId}, sorted(k63))
 
@@ -1071,7 +1618,7 @@ def section_validation():
     check("vertical_cores: five lift-named doors stacked at one plan position are ONE lift core serving 5 storeys, sources ['door']; the stair core has a lift",
           len(found) == 1 and len(found[0]["elements"]) == 5 and len(found[0]["storeys"]) == 5 and found[0]["sources"] == ["door"]
           and measures.measure(ctx, next(iter(stairs.values())), "stair.core_has_lift", {})[0] == 1.0, [(c["sources"], len(c["elements"]), len(c["storeys"])) for c in found])
-    k25 = [r for r in run_topic(TOPIC_OF["K25"], f, "fx", graph=graph) if r["provenance"]["rule"] == "K25"]
+    k25 = [r for r in run_fixture(TOPIC_OF["K25"], f, "fx", graph=graph) if r["provenance"]["rule"] == "K25"]
     check("K25 now runs on a model whose lift is known from its doors only: five entrance doors judged on W_LIFT",
           sum(len(members(r)) for r in k25 if r["evidence"]["metrics"].get("param") == "W_LIFT") == 5, [r["id"] for r in k25])
     f, storeys, spaces, doors, stairs, graph = tower_fixture(storeys_with_stair=4, lift=True)
@@ -1155,13 +1702,13 @@ def section_scenarios():
     deferred; nothing when absent; nothing, with a reason, when the gate
     itself is the missing fact."""
     from recognition.neufert.context import Context
-    rules = load_rules()
+    rules = fixture_rules()
     null = {k for k, r in rules.items() if r["scenario"] is None}
     check("every rule has a scenario selector or a stated reason for none",
           all(rules[k]["scenario_reason"] for k in null) and all(rules[k]["scenario"] is not None or k in null for k in rules), sorted(k for k in null if not rules[k]["scenario_reason"]))
     print(f"  scenarios: {len(rules) - len(null)} rules with a selector, {len(null)} not determinable ({' '.join(sorted(null, key=lambda k: int(k[1:])))})")
     f, storey, spaces, furniture, graph = office_fixture()
-    records = run_topic("offices", f, "fx", graph=graph)
+    records = run_fixture("offices", f, "fx", graph=graph)
     scen = {r["provenance"]["rule"]: r for r in records if r["type"].endswith("_scenario")}
     k118 = scen.get("K118")
     check("a deferred rule's scenario on the office fixture: K118 (conference areas) finds the meeting rooms, the record is positive, model-level, names the card's 'applies when' and the blocker",
@@ -1195,7 +1742,7 @@ def section_scenarios():
     matrix = np.eye(4)
     matrix[0][3], matrix[1][3] = 5.0, 1.0
     ifcopenshell.api.run("geometry.edit_object_placement", f, product=shared, matrix=matrix)
-    rooms_records = run_topic("rooms", f, "fx", graph=graph)
+    rooms_records = run_fixture("rooms", f, "fx", graph=graph)
     k74 = next((r for r in rooms_records if r["provenance"]["rule"] == "K74" and r["type"].endswith("_scenario")), None)
     check("related facet: the windows on Office 1's edges are K74's context members (via windows, the glazing association), the primary members are the habitable rooms only, and the window on the edge shared with Office 3 is counted as ambiguous (within reach of two rooms)",
           k74 is not None and set(context_members(k74)) == {window.GlobalId, shared.GlobalId} and window.GlobalId not in primary_members(k74)
@@ -1212,9 +1759,9 @@ def section_scenarios():
           and furniture["FU-7"].GlobalId in table["inside"].get(spaces["Office 2"].GlobalId, []), (table.get(spaces["Office 2"].GlobalId), table["inside"].get(spaces["Office 2"].GlobalId)))
     check("a not-determinable scenario emits nothing: K26 (barrier-free public buildings) has no selector, its reason names the scope, and the office fixture has no K26 row",
           rules["K26"]["scenario"] is None and "scope" in rules["K26"]["scenario_reason"]
-          and "K26" not in {r["provenance"]["rule"] for r in run_topic(TOPIC_OF["K26"], f, "fx", graph=graph)}, rules["K26"]["scenario_reason"])
+          and "K26" not in {r["provenance"]["rule"] for r in run_fixture(TOPIC_OF["K26"], f, "fx", graph=graph)}, rules["K26"]["scenario_reason"])
     check("K01's scenario reads the card's H_HR through `where ... param` (22 m) and finds nothing on a one-storey fixture",
-          rules["K01"]["scenario"]["where"][0]["value"] == 22 and "K01" not in {r["provenance"]["rule"] for r in run_topic("site", f, "fx", graph=graph)}, rules["K01"]["scenario"])
+          rules["K01"]["scenario"]["where"][0]["value"] == 22 and "K01" not in {r["provenance"]["rule"] for r in run_fixture("site", f, "fx", graph=graph)}, rules["K01"]["scenario"])
     from recognition.neufert.select import population
     home = run(f, "IfcSpace", name="Home office")  # an office-named room that is NOT excluded by role on a fixture without dwellings
     ifcopenshell.api.run("aggregate.assign_object", f, products=[home], relating_object=storey)
@@ -1247,7 +1794,7 @@ def section_scenarios():
     attic = run(f, "IfcSpace", name="Dach")
     ifcopenshell.api.run("aggregate.assign_object", f, products=[attic], relating_object=top)
     ctx = Context(f, graph)
-    k01 = [r for r in run_topic("site", f, "fx", graph=graph) if r["provenance"]["rule"] == "K01"]
+    k01 = [r for r in run_fixture("site", f, "fx", graph=graph) if r["provenance"]["rule"] == "K01"]
     check("building.top_storey_rise: 12 m on the five-storey tower (S5 holds spaces), 25 m once a storey with a space sits at +25 m, and then K01's scenario finds the building",
           rise == 12.0 and measures.measure(ctx, building, "building.top_storey_rise", {})[0] == 25.0 and len(k01) == 1 and members(k01[0]) == [building.GlobalId], (rise, [r["id"] for r in k01]))
     f, storey, spaces, graph = dwelling_fixture()
@@ -1256,16 +1803,16 @@ def section_scenarios():
     ifcopenshell.api.run("aggregate.assign_object", f, products=[storey], relating_object=building)
     ctx = Context(f, graph)
     count = measures.measure(ctx, spaces["K1"], "element.building_dwellings", {})[0]
-    records = run_topic(TOPIC_OF["K34"], f, "fx", graph=graph) + run_topic(TOPIC_OF["K12"], f, "fx", graph=graph)
+    records = run_fixture(TOPIC_OF["K34"], f, "fx", graph=graph) + run_fixture(TOPIC_OF["K12"], f, "fx", graph=graph)
     scen = {r["provenance"]["rule"]: r for r in records if r["type"].endswith("_scenario")}
     check("element.building_dwellings reads the inferred dwellings of the room's building (3 on the dwelling fixture); K34 (more than two flats) finds the dwelling rooms, K12 (at most two) finds no stair",
           count == 3.0 and "K34" in scen and len(primary_members(scen["K34"])) >= 6 and "K12" not in scen, (count, sorted(scen)))
     check("scenario ids and members are stable across runs",
-          [r["id"] for r in records] == [r["id"] for r in run_topic(TOPIC_OF["K34"], f, "fx", graph=graph) + run_topic(TOPIC_OF["K12"], f, "fx", graph=graph)]
-          and [members(r) for r in records] == [members(r) for r in run_topic(TOPIC_OF["K34"], f, "fx", graph=graph) + run_topic(TOPIC_OF["K12"], f, "fx", graph=graph)])
+          [r["id"] for r in records] == [r["id"] for r in run_fixture(TOPIC_OF["K34"], f, "fx", graph=graph) + run_fixture(TOPIC_OF["K12"], f, "fx", graph=graph)]
+          and [members(r) for r in records] == [members(r) for r in run_fixture(TOPIC_OF["K34"], f, "fx", graph=graph) + run_fixture(TOPIC_OF["K12"], f, "fx", graph=graph)])
     f, storeys, spaces, doors, stairs, graph = tower_fixture(storeys_with_stair=4, lift=True)
     ctx = Context(f, graph)
-    tower_records = run_topic("housing", f, "fx", graph=graph) + run_topic(TOPIC_OF["K25"], f, "fx", graph=graph)
+    tower_records = run_fixture("housing", f, "fx", graph=graph) + run_fixture(TOPIC_OF["K25"], f, "fx", graph=graph)
     scen = {r["provenance"]["rule"]: r for r in tower_records if r["type"].endswith("_scenario")}
     check("related facet on the tower: K87's halls carry their door-graph neighbours and doors as context (via neighbours, doors); K25's entrance doors carry their five storeys (via storey); K83's dwelling rooms carry the five flat doors (via unit_doors)",
           "K87" in scen and set(context_members(scen["K87"])) >= {spaces["S1"]["K"].GlobalId, doors["S1"].GlobalId}
@@ -1284,6 +1831,20 @@ def section_scenarios():
           [e.is_a() for e, _via in parts.values()] == ["IfcSlab"], [e.is_a() for e, _via in parts.values()])
     check("served_storeys: the first tower stair's own 3 m body spans two storeys (span own) while its core serves five",
           len(own) == 2 and len(core) == 5, (len(own), len(core)))
+    # 2026-10-29: corpus stairs carry no body of their own (0 of 7 on example_autcon, 0 of 20 on 0204); their flights do.
+    f3, body3 = _metric_file()
+    levels = {}
+    for name, elevation in (("L0", 0.0), ("L1", 3.0), ("L2", 6.0)):
+        levels[name] = run(f3, "IfcBuildingStorey", name=name)
+        levels[name].Elevation = elevation
+    bare = run(f3, "IfcStair", name="stair without a body")
+    ifcopenshell.api.run("spatial.assign_container", f3, products=[bare], relating_structure=levels["L0"])
+    run_part = run(f3, "IfcStairFlight", name="flight 0-3 m")
+    _box(f3, body3, run_part, 3.0, 3.0, 1.0)
+    ifcopenshell.api.run("aggregate.assign_object", f3, products=[run_part], relating_object=bare)
+    spanned = _related(Context(f3, None), {"class": "IfcStair", "related": [{"via": "served_storeys", "span": "own"}]}, [bare])
+    check("served_storeys (span own): a stair without a body of its own spans the storeys its flights' bodies reach (L0 and L1, not L2)",
+          sorted(e.Name for e, _via in spanned.values()) == ["L0", "L1"], sorted(e.Name for e, _via in spanned.values()))
     terrace = run(f, "IfcDoor", name="Terrassentür")
     add_pset(f, terrace, "Pset_DoorCommon", {"IsExternal": True})
     ifcopenshell.api.run("spatial.assign_container", f, products=[terrace], relating_structure=storeys["S2"])
@@ -1317,7 +1878,7 @@ def section_scenarios():
     ctx2 = Context(f2, None)
     check("top_storey_rise (code review): a storey without an Elevation that holds a space does not break the fact (0 m on the one-storey building)",
           measures.measure(ctx2, bld, "building.top_storey_rise", {})[0] == 0.0)
-    k122 = [r for r in run_topic(TOPIC_OF["K122"], f2, "fx") if r["provenance"]["rule"] == "K122" and not r["type"].endswith("_scenario")]
+    k122 = [r for r in run_fixture(TOPIC_OF["K122"], f2, "fx") if r["provenance"]["rule"] == "K122" and not r["type"].endswith("_scenario")]
     check("provision (code review): a storey without an Elevation is still a container, so K122 reports both storeys (two info records, 0 cleaner's rooms each)",
           sum(1 for r in k122 if r["type"].endswith("_info")) == 2 or len(k122) >= 1 and {m for r in k122 for m in r["evidence"]["relatedGuids"]} >= {s_b.GlobalId}, [(r["type"], r["evidence"]["relatedGuids"]) for r in k122])
     from recognition.neufert.select import population as _population
@@ -1331,9 +1892,12 @@ def section_scenarios():
 
 def main():
     section_config()
-    section_bindings_script()
     section_literals()
     section_compare()
+    section_plumbing()
+    section_pilot()
+    section_selection()
+    section_relations()
     section_fixture()
     section_route()
     section_dwellings()

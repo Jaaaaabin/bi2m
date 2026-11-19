@@ -6,7 +6,10 @@ Binding keys read here: `select` (rule population), `derived`, and per
 check: `measure`, `param`, optional `select` (its own population), `when`
 ({measure, param}: a gate param that must be satisfied first, e.g. K63's
 S_FLAT), `negate` (the violation is the threshold being met, e.g. K24's
-banned operation types). A `widened` rule reports fail/warn as info.
+banned operation types), `widened` (a note: this check's gate is not
+evaluated, so its fail/warn are info while the rule's other checks keep
+theirs; R07's door width in public buildings, 2026-10-28). A `widened`
+rule reports fail/warn as info.
 
 An element whose measure (or gate measure) is None goes to the rule's
 nodata record, and so does an element the rule's selector could not gate
@@ -66,7 +69,7 @@ def run(ctx, file_key, category_id, rule):
                 missing.setdefault(element.GlobalId, (element, []))[1].append(check["measure"])
                 continue
             outcome = compare.outcome(value, param, negate=bool(check.get("negate")))
-            if widened and outcome in ("fail", "warn"):
+            if (widened or check.get("widened")) and outcome in ("fail", "warn"):
                 outcome = "info"
             if outcome is None:
                 continue

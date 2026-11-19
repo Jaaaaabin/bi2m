@@ -1,0 +1,58 @@
+# R04: the Neufert QA Workbench's Rules pilot rule, final (snapshot 2026-10-28).
+# `source` is the workbench's rule as it stands, English from its own translation table
+# (text it does not translate stays as written). `params` is bi2m's form of source.params:
+# {op, value, unit, severity, desc, from}, `from` naming the source param (cm and ratio
+# parts in metres); verify_neufert checks every value against it.
+rule: R04
+source:
+  snapshot: '2026-10-28'
+  from:
+  - K09
+  - K10
+  - K20
+  level: Storey
+  modality: must/should
+  title: Number of steps per flight and landings for legally essential stairs
+  context:
+    entity: IfcStair
+    match:
+      stair.role: legally essential (escape stair)
+    derive:
+      n_riser: Pset_StairFlightCommon.NumberOfRiser (per IfcStairFlight)
+      storey_h: Difference between adjacent IfcBuildingStorey.Elevation values
+      has_landing: Whether the decomposition of IfcStair contains a landing (IfcSlab LANDING) or more than one IfcStairFlight
+  condition: storey_h ≥ 2.75 m
+  requirement: A landing is required (must); per flight 3 ≤ n_riser ≤ 18 (18 is should); landing width ≥ flight
+    width
+  params:
+    storey_h_landing_m: 2.75
+    steps_min: 3
+    steps_max: 18
+  ifc_needed:
+  - IfcRelAggregates(IfcStair → IfcStairFlight / IfcSlab.LANDING)
+  - Pset_StairFlightCommon.NumberOfRiser
+  - IfcBuildingStorey.Elevation
+  notes: '"Legally essential stair" has no property in IFC; in office buildings, a stair that connects all storeys
+    and is the only/main vertical circulation is treated as legally essential.'
+params:
+  H_STOREY:
+    op: '>='
+    value: 2.75
+    unit: m
+    severity: PARAM
+    desc: Storey height from which the rule applies
+    from: storey_h_landing_m
+  N_MIN:
+    op: '>='
+    value: 3
+    unit: steps
+    severity: FAIL
+    desc: Steps per flight, minimum
+    from: steps_min
+  N_MAX:
+    op: <=
+    value: 18
+    unit: steps
+    severity: WARN
+    desc: Steps per flight, maximum (should)
+    from: steps_max

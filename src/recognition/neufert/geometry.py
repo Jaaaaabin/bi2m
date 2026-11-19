@@ -13,14 +13,17 @@ windows on both corpus models it was tuned on with 0.15 m to spare).
 
 import math
 
+import ifcopenshell
+import ifcopenshell.geom
 import ifcopenshell.util.element
 import ifcopenshell.util.placement
 import ifcopenshell.util.representation
 import ifcopenshell.util.shape
 import numpy as np
 import shapely
-from shapely.geometry import Point
+from shapely.geometry import LineString, Point
 
+from extraction.geometry_iteration import iterate_shapes
 from ifc_units import placement_xy, placement_xyz
 
 from ..spaces import index_by_storey, nearest_space
@@ -38,6 +41,9 @@ WINDOW_FRAME_SUSPECT_M = 2.0
 FLIGHT_RASTER_M = 0.05
 FLIGHT_SEGMENT_MIN_M = 0.3
 FLIGHT_MIN_POINTS = 10
+# Daylight depth (R10, 2026-10-29): windows whose facade normals differ by
+# less than this (plan, mod 180 degrees) light the room from one face.
+FACADE_ANGLE_TOL_DEG = 15.0
 
 
 # ---- geometry primitives: fn(ctx, element) -> float | None ----
@@ -182,6 +188,49 @@ def _glazing_by_space(ctx):
         distances.sort()
         result["median_m"] = distances[len(distances) // 2]
         result["suspect"] = result["median_m"] > WINDOW_FRAME_SUSPECT_M
+    return result
+
+
+def _instance(item):
+    return item if isinstance(item, ifcopenshell.entity_instance) else ifcopenshell.entity_instance(item)
+
+
+def _window_tree_rooms(ctx):
+    """{"rooms": window GUID -> room GUID, "ambiguous": windows within reach
+    of two or more rooms} from IfcOpenShell's BVH tree (2026-10-29): every
+    space and window body as the tree places it, clash_clearance_many within
+    WINDOW_REACH_M, the least clash distance winning (then the GUID). The
+    fallback of window_rooms where _glazing_by_space is frame-suspect (13
+    corpus models: the windows' storeys hold no room near them; the tree gives
+    exactly one room to 375 of their 1,128 windows, 2+ to 31). Built once,
+    only there. 0.8.5 specifics (final review 2026-10-29): check_all=True, as
+    without it a clash's distance is the first pair found within reach, not
+    the least; the clash runs only between bodies the tree holds, as it
+    segfaults when one side has none there; raw SWIG instances are wrapped."""
+    spaces, windows = list(ctx.model.by_type("IfcSpace")), list(ctx.model.by_type("IfcWindow"))
+    result = {"rooms": {}, "ambiguous": set()}
+    if not spaces or not windows:
+        return result
+    tree = ifcopenshell.geom.tree()
+    held = set()
+    for shape in iterate_shapes(ifcopenshell.geom.settings(), ctx.model, spaces + windows, "triangle"):
+        tree.add_element(shape)
+        held.add(shape.guid)
+    spaces = [space for space in spaces if space.GlobalId in held]
+    windows = [window for window in windows if window.GlobalId in held]
+    if not spaces or not windows:
+        return result
+    found = {}
+    for clash in tree.clash_clearance_many(windows, spaces, clearance=WINDOW_REACH_M, check_all=True):
+        a, b = _instance(clash.a), _instance(clash.b)
+        if a.is_a("IfcSpace"):
+            a, b = b, a
+        rooms = found.setdefault(a.GlobalId, {})
+        rooms[b.GlobalId] = min(rooms.get(b.GlobalId, clash.distance), clash.distance)
+    for window_guid, rooms in found.items():
+        result["rooms"][window_guid] = min(rooms, key=lambda guid: (rooms[guid], guid))
+        if len(rooms) >= 2:
+            result["ambiguous"].add(window_guid)
     return result
 
 
@@ -372,6 +421,69 @@ def geom_flight_width(ctx, element):
     return float(across.max() - across.min() + FLIGHT_RASTER_M)
 
 
+def _angle_gap(a, b):
+    gap = abs(a - b) % 180
+    return min(gap, 180 - gap)
+
+
+def _window_cut(ctx, window, polygon):
+    """(facade orientation in degrees mod 180, depth) of the room footprint
+    cut along the window's facade normal through its placement: the piece
+    nearest the window, within WINDOW_REACH_M of it; None without one. The
+    normal is the window's local Y, the normal of its wall on all 34,412
+    corpus windows with a wall host (ios_web_check_axis_corpus, 2026-10-29)."""
+    xy = placement_xy(window, ctx.length_scale)
+    if xy is None or window.ObjectPlacement is None:
+        return None
+    normal = np.array(ifcopenshell.util.placement.get_local_placement(window.ObjectPlacement)[:2, 1], dtype=float)
+    length = float(np.linalg.norm(normal))
+    if length < 1e-9:
+        return None
+    normal /= length
+    point = Point(*xy)
+    minx, miny, maxx, maxy = polygon.bounds
+    span = math.hypot(maxx - minx, maxy - miny) + polygon.distance(point) + WINDOW_REACH_M
+    origin = np.array(xy, dtype=float)
+    cut = polygon.intersection(LineString([origin - span * normal, origin + span * normal]))
+    pieces = [g for g in getattr(cut, "geoms", [cut]) if g.geom_type == "LineString" and g.length > 1e-9]
+    if not pieces:
+        return None
+    nearest = min(pieces, key=lambda piece: piece.distance(point))
+    if nearest.distance(point) > WINDOW_REACH_M:
+        return None
+    return math.degrees(math.atan2(normal[1], normal[0])) % 180, float(nearest.length)
+
+
+def geom_daylight_depth(ctx, element):
+    """The room's depth from its daylight face (R10, 2026-10-29), metres:
+    each of its windows (facts.window_rooms; one declared IsExternal false
+    is no daylight face) cuts the footprint along its facade normal
+    (_window_cut). Windows group into facades by orientation within
+    FACADE_ANGLE_TOL_DEG; a facade reads its deepest window, the room its
+    shallowest facade (a corner room is lit from its nearer face). None
+    without a footprint or a window cut: a windowless room, or one lit by a
+    curtain wall alone (not read), is not judged."""
+    from . import facts
+    polygon = ctx.polygons.get(element.GlobalId)
+    if polygon is None:
+        return None
+    faces = []  # [orientation, deepest cut]
+    for guid in ctx.fact("windows_by_room", facts.windows_by_room).get(element.GlobalId, []):
+        window = ctx.model.by_guid(guid)
+        if ctx.property_value(window, ("IsExternal",)) is False:
+            continue
+        cut = _window_cut(ctx, window, polygon)
+        if cut is None:
+            continue
+        for face in faces:
+            if _angle_gap(face[0], cut[0]) < FACADE_ANGLE_TOL_DEG:
+                face[1] = max(face[1], cut[1])
+                break
+        else:
+            faces.append(list(cut))
+    return min(depth for _orientation, depth in faces) if faces else None
+
+
 def geom_glazed_area(ctx, element):
     """Glazed area assigned to the space, or None (no data) when the model
     has no IfcWindow, the space has no footprint, no window was assigned to
@@ -404,4 +516,5 @@ GEOMETRY = {
     "storey_rise": geom_storey_rise,
     "walk_turn": geom_walk_turn,
     "flight_width": geom_flight_width,
+    "daylight_depth": geom_daylight_depth,
 }

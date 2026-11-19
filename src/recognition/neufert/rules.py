@@ -1,8 +1,10 @@
 """The two config layers, loaded lazily and validated once per process.
 
-config/neufert/rules/<KID>.yaml   the card's block, verbatim: `rule`, `params`
-                                  ({NAME: {op, value|expr, unit, severity, desc}})
-config/neufert/bindings.yaml      bi2m's binding per KID: topic, family,
+config/neufert/rules/<RID>.yaml   the card: `rule`, `source` (the Neufert QA
+                                  Workbench's rule as it stands, 2026-10-28)
+                                  and `params` ({NAME: {op, value|expr, unit,
+                                  severity, desc, from}})
+config/neufert/bindings.yaml      bi2m's binding per rule: family,
                                   status, scope, applies, select, derived,
                                   checks, needs (the shared facts, geometry
                                   or inputs a deferred rule waits for, as
@@ -54,105 +56,115 @@ def _load_yaml(path):
         return yaml.safe_load(handle)
 
 
-@functools.lru_cache(maxsize=1)
-def load_rules():
-    """{KID: rule dict}. Each rule: kid, title, topic, family, status, scope,
-    select, derived, checks, params, rule_type, priority, level, notes."""
+@functools.lru_cache(maxsize=None)
+def load_rules(config_dir=CONFIG_DIR):
+    """{rule id: rule dict} from `config_dir`'s bindings.yaml and rules/<id>.yaml
+    cards (build_rule). The live config by default; verify_neufert passes its
+    family fixtures' directory."""
+    config_dir = Path(config_dir)
+    bindings = _load_yaml(config_dir / "bindings.yaml") or {}
+    rules = {}
+    for kid, binding in bindings.items():
+        path = config_dir / "rules" / f"{kid}.yaml"
+        if not path.is_file():
+            raise ValueError(f"{kid}: no {path.name} under {config_dir / 'rules'}")
+        rules[kid] = build_rule(kid, binding, _load_yaml(path) or {})
+    return rules
+
+
+def build_rule(kid, binding, card):
+    """One rule dict from its binding and its card, validated: kid, title,
+    origin (the card's source.from), family, status, scope, select, derived,
+    checks, params, rule_type, priority, level, notes and the family keys.
+    ValueError on a binding that names a param the card lacks, an unknown
+    family, measure or selector key, or a status outside STATUSES."""
     from . import measures as M  # noqa: WPS433 - avoid an import cycle at module load
     from .families import FAMILIES
 
-    bindings = _load_yaml(BINDINGS_PATH) or {}
-    rules = {}
-    for kid, binding in bindings.items():
-        path = RULES_DIR / f"{kid}.yaml"
-        if not path.is_file():
-            raise ValueError(f"{kid}: no {path.name} under {RULES_DIR}")
-        card = _load_yaml(path) or {}
-        if card.get("rule") != kid:
-            raise ValueError(f"{kid}: {path.name} declares rule {card.get('rule')!r}")
-        params = card.get("params") or {}
-        status = binding.get("status", "deferred")
-        if status_kind(status) not in STATUSES:
-            raise ValueError(f"{kid}: status {status!r}")
-        family = binding.get("family")
-        if family not in FAMILIES:
-            raise ValueError(f"{kid}: family {family!r} is not one of {sorted(FAMILIES)}")
-        derived = dict(binding.get("derived") or {})
-        checks = list(binding.get("checks") or [])
-        if status_kind(status) != "deferred":
-            if not checks:
-                raise ValueError(f"{kid}: a {status_kind(status)} rule needs checks")
-            for check in checks:
-                param = check.get("param")
-                if param not in params:
-                    raise ValueError(f"{kid}: check names param {param!r}, YAML has {sorted(params)}")
-                for term in (check, check.get("numerator"), check.get("denominator"),
-                             binding.get("numerator"), binding.get("denominator")):
-                    measure = (term or {}).get("measure")
-                    if measure and measure not in M.PRIMITIVES and measure not in derived:
-                        raise ValueError(f"{kid}: measure {measure!r} is neither primitive nor derived")
-            for name, expression in derived.items():
-                M.validate_expression(name, expression, derived)
-        scenario = binding.get("scenario")
-        if scenario is not None:
-            _validate_selector(kid, "scenario", scenario, M, derived, params)
-        # Every other selector-valued key is validated the same way, and a `where ... param` in any of
-        # them is resolved here (code review 2026-10-20: only `scenario` was checked before).
-        for name in ("select", "applies", "count"):
-            if binding.get(name):
-                _validate_selector(kid, name, binding[name], M, derived, params)
-        # the route targets and the adjacency endpoints carry their families' own keys beside the selector's
-        if binding.get("targets"):
-            _validate_selector(kid, "targets", binding["targets"], M, derived, params, extra=ROUTE_TARGET_KEYS)
-        for name in ("from", "to"):
-            if binding.get(name):
-                _validate_selector(kid, name, binding[name], M, derived, params, extra=ADJACENCY_KEYS)
+    if card.get("rule") != kid:
+        raise ValueError(f"{kid}: its card declares rule {card.get('rule')!r}")
+    params = card.get("params") or {}
+    status = binding.get("status", "deferred")
+    if status_kind(status) not in STATUSES:
+        raise ValueError(f"{kid}: status {status!r}")
+    family = binding.get("family")
+    if family not in FAMILIES:
+        raise ValueError(f"{kid}: family {family!r} is not one of {sorted(FAMILIES)}")
+    derived = dict(binding.get("derived") or {})
+    checks = list(binding.get("checks") or [])
+    if status_kind(status) != "deferred":
+        if not checks:
+            raise ValueError(f"{kid}: a {status_kind(status)} rule needs checks")
+        for check in checks:
+            param = check.get("param")
+            if param not in params:
+                raise ValueError(f"{kid}: check names param {param!r}, YAML has {sorted(params)}")
+            for term in (check, check.get("numerator"), check.get("denominator"),
+                         binding.get("numerator"), binding.get("denominator")):
+                measure = (term or {}).get("measure")
+                if measure and measure not in M.PRIMITIVES and measure not in derived:
+                    raise ValueError(f"{kid}: measure {measure!r} is neither primitive nor derived")
+        for name, expression in derived.items():
+            M.validate_expression(name, expression, derived)
+    scenario = binding.get("scenario")
+    if scenario is not None:
+        _validate_selector(kid, "scenario", scenario, M, derived, params)
+    # Every other selector-valued key is validated the same way, and a `where ... param` in any of
+    # them is resolved here (code review 2026-10-20: only `scenario` was checked before).
+    for name in ("select", "applies", "count"):
+        if binding.get(name):
+            _validate_selector(kid, name, binding[name], M, derived, params)
+    # the route targets and the adjacency endpoints carry their families' own keys beside the selector's
+    if binding.get("targets"):
+        _validate_selector(kid, "targets", binding["targets"], M, derived, params, extra=ROUTE_TARGET_KEYS)
+    for name in ("from", "to"):
+        if binding.get(name):
+            _validate_selector(kid, name, binding[name], M, derived, params, extra=ADJACENCY_KEYS)
+    for name in ("numerator", "denominator"):
+        for sub in ("select", "count"):
+            if (binding.get(name) or {}).get(sub):
+                _validate_selector(kid, f"{name}.{sub}", binding[name][sub], M, derived, params)
+    for index, check in enumerate(checks):
+        for sub in ("select", "count"):
+            if check.get(sub):
+                _validate_selector(kid, f"checks[{index}].{sub}", check[sub], M, derived, params)
         for name in ("numerator", "denominator"):
             for sub in ("select", "count"):
-                if (binding.get(name) or {}).get(sub):
-                    _validate_selector(kid, f"{name}.{sub}", binding[name][sub], M, derived, params)
-        for index, check in enumerate(checks):
-            for sub in ("select", "count"):
-                if check.get(sub):
-                    _validate_selector(kid, f"checks[{index}].{sub}", check[sub], M, derived, params)
-            for name in ("numerator", "denominator"):
-                for sub in ("select", "count"):
-                    if (check.get(name) or {}).get(sub):
-                        _validate_selector(kid, f"checks[{index}].{name}.{sub}", check[name][sub], M, derived, params)
-        rules[kid] = {
-            "kid": kid,
-            "title": binding.get("title", kid),
-            "topic": binding["topic"],
-            "family": family,
-            "status": status,
-            "scope": binding.get("scope", "storey"),
-            "select": binding.get("select") or {},
-            "derived": derived,
-            "checks": checks,
-            "params": params,
-            "rule_type": binding.get("rule_type"),
-            "priority": binding.get("priority"),
-            "level": binding.get("level"),
-            "notes": binding.get("notes"),
-            "count": binding.get("count"),
-            "numerator": binding.get("numerator") or {},
-            "denominator": binding.get("denominator") or {},
-            "per": binding.get("per"),
-            "applies": binding.get("applies") or {},
-            "targets": binding.get("targets") or {},
-            "from": binding.get("from") or {},
-            "to": binding.get("to") or {},
-            "relation": binding.get("relation", "door"),
-            "quantifier": binding.get("quantifier", "all"),
-            "needs": list(binding.get("needs") or []),
-            # The scenario layer (2026-10-20): the selector that finds the situation the card
-            # addresses, None with `scenario_reason` when the gate itself is the missing fact.
-            "scenario": scenario,
-            "scenario_reason": binding.get("scenario_reason"),
-            "scenario_note": binding.get("scenario_note"),
-            "applies_text": binding.get("applies_text"),
-        }
-    return rules
+                if (check.get(name) or {}).get(sub):
+                    _validate_selector(kid, f"checks[{index}].{name}.{sub}", check[name][sub], M, derived, params)
+    return {
+        "kid": kid,
+        "title": binding.get("title", kid),
+        "origin": list((card.get("source") or {}).get("from") or []) or None,
+        "family": family,
+        "status": status,
+        "scope": binding.get("scope", "storey"),
+        "select": binding.get("select") or {},
+        "derived": derived,
+        "checks": checks,
+        "params": params,
+        "rule_type": binding.get("rule_type"),
+        "priority": binding.get("priority"),
+        "level": binding.get("level"),
+        "notes": binding.get("notes"),
+        "count": binding.get("count"),
+        "numerator": binding.get("numerator") or {},
+        "denominator": binding.get("denominator") or {},
+        "per": binding.get("per"),
+        "applies": binding.get("applies") or {},
+        "targets": binding.get("targets") or {},
+        "from": binding.get("from") or {},
+        "to": binding.get("to") or {},
+        "relation": binding.get("relation", "door"),
+        "quantifier": binding.get("quantifier", "all"),
+        "needs": list(binding.get("needs") or []),
+        # The scenario layer (2026-10-20): the selector that finds the situation the card
+        # addresses, None with `scenario_reason` when the gate itself is the missing fact.
+        "scenario": scenario,
+        "scenario_reason": binding.get("scenario_reason"),
+        "scenario_note": binding.get("scenario_note"),
+        "applies_text": binding.get("applies_text"),
+    }
 
 
 SELECTOR_KEYS = frozenset({"class", "query", "expand", "expand_leaf", "prop", "on_missing", "predefined", "role", "where", "use",
@@ -192,9 +204,6 @@ def _validate_selector(kid, name, spec, M, derived, params=None, extra=frozenset
                 raise ValueError(f"{kid}: {name} where-condition needs a value or a param")
 
 
-def rules_for_topic(topic_suffix, active_only=True):
-    """The rules of one Topic, in KID order; `active_only` drops deferred ones."""
-    found = [rule for rule in load_rules().values() if rule["topic"] == topic_suffix]
-    if active_only:
-        found = [rule for rule in found if status_kind(rule["status"]) != "deferred"]
-    return sorted(found, key=lambda rule: int(rule["kid"][1:]))
+def rule(rid):
+    """The Neufert section's rule `rid` ("R07") from the live config."""
+    return load_rules()[rid]

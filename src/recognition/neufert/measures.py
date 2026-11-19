@@ -68,7 +68,7 @@ import math
 import ifcopenshell.util.element
 import ifcopenshell.util.selector
 
-from . import facts, geometry
+from . import compare, facts, geometry
 
 # Values a numeric primitive treats as "not declared" unless its entry says otherwise.
 DEFAULT_UNSET = (0,)
@@ -140,6 +140,7 @@ PRIMITIVES = {
     "space.depth": ("length", (("geom", "obb_long"),)),
     "space.occupancy": ("count", (("pset", "Pset_SpaceOccupancyRequirements", "OccupancyNumber"), ("prop", "OccupancyNumber"), ("prop", "OccupancyNumberPeak"))),
     "space.glazed_area": ("area", (("geom", "glazed_area"),)),
+    "space.daylight_depth": ("length", (("geom", "daylight_depth"),)),
     # Desks per room (facts.workstations); the card's own fallback is the
     # occupancy property (K141: "count(desks) or sum OccupancyNumber").
     "space.workstations": ("count", (("fact", "workstations"), ("pset", "Pset_SpaceOccupancyRequirements", "OccupancyNumber"), ("prop", "OccupancyNumber"))),
@@ -167,6 +168,9 @@ PRIMITIVES = {
     # face and side areas, and the world-frame footprint and perimeter. A
     # card names them through a derived measure or a check on any class.
     "element.storey_rise": ("length", (("geom", "storey_rise"),)),
+    # The height of the element's own storey (to the next storey up that holds a space,
+    # _element_storey_height): R04's "storey_h >= 2.75 m" gate on a flight (2026-10-28).
+    "element.storey_height": ("length", (("geom", "element_storey_height"),)),
     "element.local_short": ("length", (("geom", "local_short"),)),
     "element.local_long": ("length", (("geom", "local_long"),)),
     "element.z_extent": ("length", (("geom", "z_extent"),)),
@@ -222,6 +226,30 @@ def _storey_height(ctx, storey):
         if below.GlobalId == storey.GlobalId:
             return (above.Elevation - below.Elevation) * ctx.length_scale
     return None
+
+
+def _occupied_storeys(ctx):
+    """GUIDs of the storeys holding an IfcSpace; None for a model without
+    spaces, where every storey counts."""
+    found = {ctx.storey_of(space).GlobalId for space in ctx.model.by_type("IfcSpace") if ctx.storey_of(space) is not None}
+    return found or None
+
+
+def _element_storey_height(ctx, element):
+    """Rise from the element's storey to the next storey up that holds a
+    space, top_storey_rise's reading of a storey: an empty datum level is
+    skipped (example_autcon's 'mid level' 0.3 m above Floor 0 hid its five
+    flights from R04, review 2026-10-28; 18 corpus flights sat under such a
+    level), and a twin storey at the same elevation is not "up". None on the
+    top storey, without a storey or without elevations."""
+    storey = ctx.storey_of(element)
+    own = ctx.storey_elevation_m(storey) if storey is not None else None
+    if own is None:
+        return None
+    occupied = ctx.fact("occupied_storeys", _occupied_storeys)
+    above = [ctx.storey_elevation_m(s) for s in ctx.storeys_sorted if occupied is None or s.GlobalId in occupied]
+    above = [e for e in above if e is not None and e > own + compare.EPS]
+    return min(above) - own if above else None
 
 
 def _read_attr(ctx, element, step):
@@ -359,7 +387,12 @@ def _read_fact_building(ctx, element, step):
 
 
 def _read_geom(ctx, element, step):
-    raw = _storey_height(ctx, element) if step[1] == "storey_height" else GEOMETRY[step[1]](ctx, element)
+    if step[1] == "storey_height":
+        raw = _storey_height(ctx, element)
+    elif step[1] == "element_storey_height":
+        raw = _element_storey_height(ctx, element)
+    else:
+        raw = GEOMETRY[step[1]](ctx, element)
     return raw, f"geom:{step[1]}"
 
 

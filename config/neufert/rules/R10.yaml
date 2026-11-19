@@ -1,0 +1,46 @@
+# R10: the Neufert QA Workbench's Rules pilot rule, final (snapshot 2026-10-28).
+# `source` is the workbench's rule as it stands, English from its own translation table
+# (text it does not translate stays as written). `params` is bi2m's form of source.params:
+# {op, value, unit, severity, desc, from}, `from` naming the source param (cm and ratio
+# parts in metres); verify_neufert checks every value against it.
+rule: R10
+source:
+  snapshot: '2026-10-28'
+  from:
+  - K116
+  level: Space
+  modality: typical
+  title: Natural lighting depth
+  context:
+    entity: IfcSpace
+    match:
+      space.function: working space / office
+      space.has_external_window_or_curtain_wall: true
+    derive:
+      d: Depth measured perpendicular from the daylight face (the external wall / curtain wall with windows) to
+        the opposite wall
+      daylight_face: 'Which side of the room is the daylight face: the external wall with an IfcWindow opening onto
+        it, or the side adjoining a curtain wall'
+  condition: always (within context)
+  requirement: Work rooms should not exceed about 7 m in depth from the daylight face; deeper parts cannot rely
+    on daylight and need artificial lighting. Central-corridor office buildings typically have an overall depth
+    of 12–13 m (rooms on each side ≈ 5–6 m + corridor)
+  params:
+    daylight_depth_m: 7.0
+    building_depth_m:
+    - 12
+    - 13
+  ifc_needed:
+  - IfcSpace geometry
+  - IfcRelSpaceBoundary or geometry to determine which wall is an external wall/curtain wall
+  notes: 'This is not a lighting rule but a depth rule: 7 m is how far daylight reaches. Depth is measured along
+    the normal of the daylight face, not along the room''s short side. Internal rooms with no daylight face are
+    judged as "cannot rely on daylight".'
+params:
+  DL_DEPTH:
+    op: <=
+    value: 7.0
+    unit: m
+    severity: WARN
+    desc: Room depth from the daylight face
+    from: daylight_depth_m

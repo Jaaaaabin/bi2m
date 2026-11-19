@@ -1,4 +1,0 @@
-# config/rules/K154.yaml
-rule: K154
-params:
-  OP:   {op: "is", value: "fixed → external cleaning", severity: "INFO", desc: "Window operation"}

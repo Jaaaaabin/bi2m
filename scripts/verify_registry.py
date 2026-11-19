@@ -82,9 +82,9 @@ def comparable(record):
 def main():
     live = {cid: info for cid, info in CATEGORIES.items() if not info.get("retired")}
     tombstones = {cid: info for cid, info in CATEGORIES.items() if info.get("retired")}
-    # The Neufert Topic categories (2026-10-18) carry `section`; the level
-    # counts and the "merged come last" order below are about the level axis
-    # and skip them. Their own block is further down.
+    # The Neufert categories (2026-10-18) carry `section`; the level counts
+    # and the "merged come last" order below are about the level axis and
+    # skip them. Their own block is further down.
     sectioned = {cid: info for cid, info in live.items() if info.get("section")}
     levelled = {cid: info for cid, info in live.items() if not info.get("section")}
     unsectioned_order = [cid for cid in CATEGORIES if not CATEGORIES[cid].get("section")]
@@ -96,24 +96,36 @@ def main():
     per_level = {lvl: sorted(cid for cid, info in levelled.items() if info["level"] == lvl) for lvl in LEVELS}
     check("17 live categories: 1 room, 8 storey, 8 building",
           [len(per_level[lvl]) for lvl in LEVELS] == [1, 8, 8], {k: len(v) for k, v in per_level.items()})
-    check("11 tombstones", len(tombstones) == 11, sorted(tombstones))
+    check("24 tombstones: 11 level categories, 13 Neufert Topics (2026-10-28)", len(tombstones) == 24, sorted(tombstones))
     check("the four merged categories come last among the level categories, in order",
           unsectioned_order[-4:] == ["room_access", "egress_fire", "window_patterns", "repeated_units"], unsectioned_order[-4:])
-    # ---- the Neufert section (2026-10-18) ----
-    from recognition.neufert.topics import TOPICS, category_id as neufert_id, intent_types as neufert_types
-    neufert_ids = [neufert_id(t[0]) for t in TOPICS]
-    check("the 13 Neufert categories come last, in topic order", list(CATEGORIES)[-13:] == neufert_ids, list(CATEGORIES)[-13:])
-    check("every Neufert entry: section neufert, a level, five outcome types, graph-taking detector, no hard signals",
-          all(info.get("section") == "neufert" and info["level"] in LEVELS and info["intent_types"] == neufert_types(cid[len("neufert_"):])
+    # ---- the Neufert section (2026-10-18; its nine rules since 2026-10-28) ----
+    from recognition import writers
+    from recognition.neufert import pilot
+    topic_ids = ["neufert_site", "neufert_rooms", "neufert_housing", "neufert_offices", "neufert_highrise", "neufert_stairs",
+                 "neufert_accessibility", "neufert_escape", "neufert_bedrooms", "neufert_daylight", "neufert_doors",
+                 "neufert_envelope", "neufert_walls"]
+    rule_ids = [pilot.category_id(entry[0]) for entry in pilot.RULES]
+    check("the 9 Neufert rule categories come last, in RID order (2026-10-28)", list(CATEGORIES)[-9:] == rule_ids, list(CATEGORIES)[-9:])
+    check("the 13 retired Neufert Topic categories keep their places just before them: tombstones of section neufert, each naming one of the 9",
+          list(CATEGORIES)[-22:-9] == topic_ids
+          and all(CATEGORIES[cid].get("retired") in rule_ids and CATEGORIES[cid].get("section") == "neufert" for cid in topic_ids),
+          {cid: CATEGORIES[cid].get("retired") for cid in list(CATEGORIES)[-22:-9]})
+    check("the live sectioned entries are exactly the 9 rules", set(sectioned) == set(rule_ids), sorted(sectioned))
+    rule_entries = [(CATEGORIES.get(pilot.category_id(rid)), rid, title, level, classes) for rid, title, level, classes in pilot.RULES]
+    check("every Neufert rule entry: section neufert, its RULES level and classes, its outcome types (pilot.intent_types), label '<RID> <title>', graph-taking detector, no hard signals",
+          all(info is not None and info.get("section") == "neufert" and info["level"] == level and info["soft_signals"] == classes
+              and info["intent_types"] == pilot.intent_types(rid) and info["label"] == f"{rid} {title}"
               and "graph" in inspect.signature(info["detector"]).parameters and info["signals"] == ()
-              for cid, info in sectioned.items()) and set(sectioned) == set(neufert_ids))
+              for info, rid, title, level, classes in rule_entries), [rid for info, rid, *_ in rule_entries if info is None])
+    check("a run of the 9 rules alone drops every retired Topic category's old records (writers.recomputed_with_tombstones)",
+          set(topic_ids) <= writers.recomputed_with_tombstones(CATEGORIES, rule_ids), sorted(set(topic_ids) - writers.recomputed_with_tombstones(CATEGORIES, rule_ids)))
     from recognition.neufert.families import BUILT
     from recognition.neufert.rules import load_rules, status_kind
     try:
         rules = load_rules()
-        check("config/neufert loads: 122 rules, every binding validated", len(rules) == 122, len(rules))
-        check("every rule's topic is a registered Topic", all(neufert_id(r["topic"]) in sectioned for r in rules.values()))
-        check("every bound or partial rule has checks and a built family",
+        check("config/neufert loads: the 9 rules, every binding validated", sorted(rules) == [entry[0] for entry in pilot.RULES], sorted(rules))
+        check("every bound, partial or widened rule has checks and a built family",
               all(r["checks"] and r["family"] in BUILT for r in rules.values() if status_kind(r["status"]) != "deferred"))
     except Exception as e:  # noqa: BLE001
         check("config/neufert loads", False, f"{type(e).__name__}: {e}")
@@ -164,10 +176,10 @@ def main():
         write_category_manifest(str(path), CATEGORIES)
         manifest = json.loads(path.read_text())
     check("manifest keeps registry order (the colour contract)", [m["id"] for m in manifest] == list(CATEGORIES))
-    check("manifest: level on every entry, retired on tombstones only, section on the Neufert entries only, no scope",
+    check("manifest: level on every entry, retired on tombstones only, section on the Neufert entries only (the 9 rules and the 13 retired Topics), no scope",
           all(m.get("level") in LEVELS for m in manifest)
           and all(("retired" in m) == (m["id"] in tombstones) for m in manifest)
-          and all(("section" in m) == (m["id"] in sectioned) for m in manifest)
+          and all(("section" in m) == (m["id"] in sectioned or m["id"] in topic_ids) for m in manifest)
           and not any("scope" in m for m in manifest))
 
     # ---- the writer's tombstone rule (spec §4, found in review) ----

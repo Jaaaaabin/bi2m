@@ -25,7 +25,7 @@ Three decisions shape everything else:
 
 ## What works today
 
-- Extraction and 41 registry entries (17 live, 13 Neufert, 11 retired); see
+- Extraction and 50 registry entries (17 live, 9 Neufert, 24 retired); see
   [detectors.md](detectors.md).
 - Per-model shards with positive and negative records, pre-flight reports, and
   cross-references between categories that find the same fact.
@@ -55,9 +55,11 @@ false-positive rates, and promoting a `draft` category all wait on it.
 - A local language-model labeller for categories that match by keyword, and for
   `convention_outlier`'s missing sense of direction.
 - A parallel batch runner for extraction.
-- Neufert rules still deferred. Each is listed with a reason in
-  `config/neufert/deferred_reasons.yaml`; typical reasons are a fact the model
-  does not provide or a selector that does not exist yet.
+- Three of the nine Neufert rules are deferred: R10 (room depth from the
+  window wall), R24 (the wall boundary relation and legally essential stairs)
+  and R44 (the glazing type). `config/neufert/bindings.yaml` states each
+  reason and what it needs; until then they report only where their
+  situation occurs.
 
 **Waiting on data, not code**
 
@@ -76,7 +78,6 @@ false-positive rates, and promoting a `draft` category all wait on it.
 ## Engineering gaps
 
 - The `verify_*` scripts and the browser tests are not run in CI yet. The
-  example model is in the repository now, so the scripts could run there
-  (all but `verify_neufert`'s source-plan check); the browser tests also need
-  a dev server and a browser on the runner.
+  example model is in the repository now, so the scripts could run there;
+  the browser tests also need a dev server and a browser on the runner.
 - Grid optimisation (GA-driven) is parked outside the repository.

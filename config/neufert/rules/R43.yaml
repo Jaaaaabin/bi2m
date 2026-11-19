@@ -1,0 +1,48 @@
+# R43: the Neufert QA Workbench's Rules pilot rule, final (snapshot 2026-10-28).
+# `source` is the workbench's rule as it stands, English from its own translation table
+# (text it does not translate stays as written). `params` is bi2m's form of source.params:
+# {op, value, unit, severity, desc, from}, `from` naming the source param (cm and ratio
+# parts in metres); verify_neufert checks every value against it.
+rule: R43
+source:
+  snapshot: '2026-10-28'
+  from:
+  - K24
+  - K41
+  level: Element
+  modality: must
+  priority: 2
+  chapter: Doors / Catering
+  title: Door type and width of emergency exits
+  context:
+    entity: IfcDoor
+    match:
+      door.on_escape_route: Door is on an escape route / is an exit
+      n_people: Number of people using the exit
+    derive:
+      type: IfcDoor OperationType (sliding / revolving / swing)
+      w: Exit width
+  condition: always (within context)
+  requirement: Emergency exits must not use sliding or revolving doors; exit width 1.0 m per 150 people (given in
+    the catering chapter)
+  params:
+    forbidden:
+    - sliding
+    - revolving
+    width_per_150_persons_m: 1.0
+  ifc_needed:
+  - IfcDoor OperationType / type name
+  - Number of people (by number of workplaces)
+  notes: fantasy's entrance is a swing glass door, so the type complies; 1.0 m/150 people comes from the catering
+    chapter and is only indicative for offices.
+params:
+  OP_BANNED:
+    op: in
+    value:
+    - SLIDING_TO_LEFT
+    - SLIDING_TO_RIGHT
+    - DOUBLE_DOOR_SLIDING
+    - REVOLVING
+    severity: FAIL
+    desc: Operation types not allowed at emergency exits (sliding, revolving)
+    from: forbidden

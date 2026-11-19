@@ -3,9 +3,10 @@ primary population to the entities a card reasons over, through relations
 the context already knows. A selector may carry
 
     related:
-    - {via: windows}                      the windows assigned to the selected rooms
-    - {via: doors}                        the doors reaching the selected rooms (door graph)
-    - {via: host_wall}                    the walls the selected windows / doors fill (FillsVoids)
+    - {via: windows}                      the windows assigned to the selected rooms (facts.window_rooms)
+    - {via: doors}                        the doors reaching the selected rooms (facts.door_rooms)
+    - {via: host_wall}                    the walls the selected windows / doors fill (FillsVoids), else
+                                          the curtain wall or wall they are a panel of
     - {via: furniture, kind: desk}        the furniture standing in the selected rooms, filtered
     - {via: furniture, inside: true}      only the pieces whose placement lies strictly inside the footprint
     - {via: parts, class: IfcSlab}        the decomposition of the selected elements, filtered
@@ -13,6 +14,8 @@ the context already knows. A selector may carry
     - {via: unit_rooms} / {via: unit_doors}  the rooms / entrance doors of the dwelling a
                                           selected room belongs to (facts.dwelling_units)
     - {via: neighbours}                   the rooms one door away (room_graph)
+    - {via: rooms}                        the rooms a selected door opens into (facts.door_rooms), the
+                                          room a selected window lights (facts.window_rooms)
     - {via: served_storeys}               the storeys a selected stair's or lift's CORE serves
     - {via: served_storeys, span: own}    the storeys the selected element's own body spans
 
@@ -25,10 +28,13 @@ them beside the primary members), never counted as judged.
 
 Corpus conditions (the measured basis): windows
 reach their room by footprint proximity on 83 % of corpus windows (space
-boundaries exist on 12 of 370 models); doors through the shared door graph
-(96 % sound on 352 models, empty under the frame guard on 17); furniture by
+boundaries exist on 12 of 370 models), by IfcOpenShell's BVH tree on the 13
+frame-suspect models (2026-10-29); doors through the shared door graph (96 %
+sound on 352 models), else by its reach redone on the world-frame footprints
+(2026-10-29: 676 of the 1,251 doors of the 25 guarded models); furniture by
 footprint containment (343 models); dwellings inferred on 92; host walls
-through FillsVoids on 97 %; parts by decomposition; cores by z-range.
+through FillsVoids on 97 %, else the curtain wall or wall a panel belongs to;
+parts by decomposition; cores by z-range.
 """
 
 import ifcopenshell.util.element
@@ -102,10 +108,53 @@ def via_doors(ctx, elements):
     return list(out.values())
 
 
+def _host_wall(element):
+    """The wall a door or window sits in: its FillsVoids host (room_routes'
+    FillsVoids -> VoidsElements walk), else the wall or curtain wall it is a
+    part of, else the host of the door or window it is a panel of
+    (2026-10-29: 1,941 corpus doors and windows have no FillsVoids host; 864
+    are curtain-wall panels, 26 panels of a composite window). Anything else
+    (an assembly's part, a curtain wall itself) has none."""
+    if not (element.is_a("IfcDoor") or element.is_a("IfcWindow")):
+        return None
+    host = host_element(element)
+    if host is not None:
+        return host
+    parent = ifcopenshell.util.element.get_aggregate(element)
+    if parent is None:
+        return None
+    if parent.is_a("IfcWall") or parent.is_a("IfcCurtainWall"):
+        return parent
+    if parent.is_a("IfcDoor") or parent.is_a("IfcWindow"):
+        return host_element(parent)
+    return None
+
+
+def via_rooms(ctx, elements):
+    """The rooms each selected door opens into (facts.door_rooms) and the
+    room each selected window lights (facts.window_rooms), each with its
+    fallback where the shared association is switched off; nothing for any
+    other element."""
+    out = {}
+    for element in elements:
+        if element.is_a("IfcDoor"):
+            guids = (ctx.fact("door_rooms", facts.door_rooms) or {}).get(element.GlobalId, ())
+        elif element.is_a("IfcWindow"):
+            room = ctx.fact("window_rooms", facts.window_rooms)["rooms"].get(element.GlobalId)
+            guids = [room] if room is not None else []
+        else:
+            guids = ()
+        for guid in guids:
+            room = _entity(ctx, guid)
+            if room is not None:
+                out[guid] = room
+    return list(out.values())
+
+
 def via_host_wall(ctx, elements):
     out = {}
     for element in elements:
-        host = host_element(element)  # room_routes' FillsVoids -> VoidsElements walk
+        host = _host_wall(element)
         if host is not None:
             out[host.GlobalId] = host
     return list(out.values())
@@ -177,10 +226,17 @@ def via_served_storeys(ctx, elements, span="core"):
     """span "core": the storeys the element's core serves (one stair per
     storey in a stack reads the whole stack: right for core-level cards);
     "own": the storeys within the element's own body z-range
-    (2026-10-20: 2,455 of 2,770 corpus stairs sit in multi-stair cores)."""
+    (2026-10-20: 2,455 of 2,770 corpus stairs sit in multi-stair cores);
+    an element without a body of its own reads its parts' bodies, as
+    cores.vertical_cores does (2026-10-29: corpus stairs carry none, their
+    flights and landings do)."""
     out = {}
     if span == "own":
-        boxes = cores._bboxes(ctx, list(elements))
+        parts = {e.GlobalId: cores._parts(e) for e in elements}
+        boxes = cores._bboxes(ctx, list(elements) + [p for members in parts.values() for p in members])
+        for element in elements:
+            if boxes.get(element.GlobalId) is None:
+                boxes[element.GlobalId] = cores._union([boxes.get(p.GlobalId) for p in parts[element.GlobalId]])
         elevations = [(s.GlobalId, ctx.storey_elevation_m(s)) for s in ctx.storeys_sorted]
         for element in elements:
             box = boxes.get(element.GlobalId)
@@ -206,7 +262,7 @@ def via_served_storeys(ctx, elements, span="core"):
 RELATIONS = {
     "parts": via_parts, "storey": via_storey, "building": via_building, "windows": via_windows, "doors": via_doors,
     "host_wall": via_host_wall, "furniture": via_furniture, "unit_rooms": via_unit_rooms, "unit_doors": via_unit_doors,
-    "neighbours": via_neighbours, "served_storeys": via_served_storeys,
+    "neighbours": via_neighbours, "served_storeys": via_served_storeys, "rooms": via_rooms,
 }
 
 
@@ -234,10 +290,16 @@ def related_elements(ctx, primary, entries, apply_gates):
     return out
 
 
-def ambiguous(ctx, related):
-    """The related window guids whose room assignment was a tie-break."""
-    if not any(via == "windows" for _e, via in related.values()):
+def ambiguous(ctx, related, primary=()):
+    """The window guids whose room assignment was a tie-break: the windows
+    related `via: windows`, and the primary windows whose room is related
+    `via: rooms` (R44; the one window_rooms table, so R10 and R44 say the
+    same of the same window)."""
+    vias = {via for _e, via in related.values()}
+    windows = set(related) if "windows" in vias else set()
+    if "rooms" in vias:
+        windows |= {element.GlobalId for element in primary if element.is_a("IfcWindow")}
+    if not windows:
         return set()
-    from .geometry import _glazing_by_space
-    return set(ctx.fact("glazing_by_space", _glazing_by_space)["ambiguous"]) & set(related)
+    return set(ctx.fact("window_rooms", facts.window_rooms)["ambiguous"]) & windows
 
